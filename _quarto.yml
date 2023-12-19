@@ -1,0 +1,43 @@
+project:
+  type: book
+
+# See also https://quarto.org/docs/reference/projects/books.html
+book:
+  title: "Handbook Template"
+  favicon: public/VU_social_avatar_blauw.png
+  # cover-image: cover.png
+  navbar: 
+    logo: public/VU_social_avatar_blauw-rectangle.png
+    background: "#0080c9"
+  site-url: https://ubvu.github.io/handbook-template
+  repo-url: https://github.com/ubvu/handbook-template
+  issue-url: https://github.com/ubvu/handbook-template/issues/new/choose
+  repo-actions: [edit, issue]
+  # page-navigation: true
+  # downloads: [pdf, epub]
+  page-footer:
+    left:
+      - text: "CC0 Public Domain Dedication"
+        href: "https://creativecommons.org/publicdomain/zero/1.0/legalcode"
+    right:
+      - text: "By VU & Liberate Science GmbH"
+  chapters:
+    - index.qmd
+    - part: "Chapters"
+      chapters:
+        - chapters/example.qmd
+    - contributing.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    toc: true
+    theme: 
+      - cosmo # https://bootswatch.com/
+      - custom.scss # https://quarto.org/docs/output-formats/html-themes.html#theme-options
+    code-copy: true
+    code-overflow: wrap
+
+
