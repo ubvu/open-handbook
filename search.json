@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Open Handbook",
+    "section": "",
+    "text": "Welcome\nThis is a template for creating (hand)books styled for VU Amsterdam.\nTo get started you only need a GitHub account. You can find the template directly on GitHub. If you need any help to set it up, contact chris@libscie.org."
+  },
+  {
+    "objectID": "chapters/example.html#section",
+    "href": "chapters/example.html#section",
+    "title": "1  Example chapter",
+    "section": "1.1 Section",
+    "text": "1.1 Section\nThis is an example section. Once you include a section this way there will be a table of contents on the page too!\nYou can use all kinds of helpful tools to highlight information - these are called “Callouts”\n\n\n\n\n\n\nNote\n\n\n\nNote that there are five types of callouts, including: note, warning, important, tip, and caution.\n\n\n\n\n\n\n\n\nWarning with Title\n\n\n\nThis is an example of a callout with a title.\n\n\n\n\n\n\n\n\nimportant with Title\n\n\n\nThis is an example of a callout with a title.\n\n\n\n\n\n\n\n\nTip with Title\n\n\n\nThis is an example of a callout with a title.\n\n\n\n\n\n\n\n\nExpand To Learn About Collapse\n\n\n\n\n\nThis is an example of a ‘folded’ caution callout that can be expanded by the user. You can use collapse=\"true\" to collapse it by default or collapse=\"false\" to make a collapsible callout that is expanded by default.\n\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "contributing.html#suggesting-edits",
+    "href": "contributing.html#suggesting-edits",
+    "title": "Contributing",
+    "section": "Suggesting edits",
+    "text": "Suggesting edits\nThe easiest and quickest way to contribute to the book is make suggested edits. On each page you will find a button reading “Edit this page” (usually on the right).\n\n\n\nScreenshot of a handbook chapter, with a red box on the right hand side of the page indicating where to find the “Edit this page” button\n\n\nWhen you click that, you will immediately be taken to GitHub to edit the text of that specific page. You may be prompted to create a fork (forking) in case these are your first edits.\n\n\n\nScreenshot of the GitHub file editor, with some changes made and the “Commit changes” button active\n\n\nOnce you made your edits, you are ready to commit (save) your changes and submit your pull request, requesting those changes to be included in the handbook."
+  },
+  {
+    "objectID": "contributing.html#adding-a-chapter",
+    "href": "contributing.html#adding-a-chapter",
+    "title": "Contributing",
+    "section": "Adding a chapter",
+    "text": "Adding a chapter\nTo add a new chapter, you need to create a new file ending in .qmd (e.g., chapters/example.qmd). You can do this by visiting the handbook page on GitHub and clicking Add file -&gt; New file.\n\n\n\nScreenshot of GitHub highlighting where to find the “New file” button\n\n\nWhen you click this button you may be asked to fork the repository. This is not a problem so go ahead!\nThe chapter itself needs to be written in Markdown. Every chapter must contain a first level heading (e.g., # Heading), which will be the chapter title. Section headings are second level headings (e.g., ## Section).\nAfter that, you are ready to submit your pull request! The reviewers will help you place the chapter in the right place of the book.1"
+  },
+  {
+    "objectID": "contributing.html#submit-a-pull-request",
+    "href": "contributing.html#submit-a-pull-request",
+    "title": "Contributing",
+    "section": "Submit a pull request",
+    "text": "Submit a pull request\nOnce you have made suggested changes, a pull request is the way for you to ask for your changes to be incorporated into the handbook. The people maintaining the handbook will review what you wrote, ask some questions, and accept or decline your contributions.\nWe recommend keeping your suggested changes small or limited in scope, and explaining why you are suggesting these changes. It is more likely your changes are included when you are fixing a typo or adding a paragraph, and less likely if you are revising the entire handbook. It is also more likely they are included if you explain why you are suggesting the changes, rather than dropping by and making edits without any context.\nIf you are adding a new chapter, it is definitely recommended to open an issue first to see whether there is a need for it (and maybe you’ll find collaborators!).\nDuring the review process you may be asked to update your changes, or revisions may be added by the people maintaining the handbook. It is helpful if you keep an eye on your GitHub account to ensure timely responses to help the process along."
+  },
+  {
+    "objectID": "contributing.html#writing-text",
+    "href": "contributing.html#writing-text",
+    "title": "Contributing",
+    "section": "Writing text",
+    "text": "Writing text\nThe book is created using Markdown - you can get familiarized with the basic syntax on the Markdown website. The getting started quick items are:\n# Heading level 1\n## Heading level 2\n### Heading level 3\n\nYou simply write text as you are used to. To make something *italic*, **bold**, or ***bold and italic***.\n\n&gt; this is how you add quotes\n\n- or lists\n- that can go on \n- and on\nIf you want to add code, use references, create links, or footnotes - it is all possible. We will expand examples here based on your needs, so if you need help, let us know by reporting an issue!"
+  },
+  {
+    "objectID": "contributing.html#github",
+    "href": "contributing.html#github",
+    "title": "Contributing",
+    "section": "GitHub",
+    "text": "GitHub\nWe use GitHub to create this website automatically, and to manage all the incoming updates. You do not need to know how it works entirely, but we want to help you understand some things so you are not confused.\n\nRepository\nA repository on GitHub is like a folder on your computer. This can be many things, depending on what files it contains.\nWhen we mention a repository here, we mean that we want you to look at a specific folder. The repository for this website for example can be found on GitHub directly](https://github.com/ubvu/open-handbook). You will always be contributing to a repository, in order to contribute to the handbook.\n\n\nForking\nA repository is owned by one or multiple people on GitHub. If you are not one of them, you can create a copy of the repository (folder) to make your edits in. This act of creating a copy is called “forking.”\nWhen you create a copy, you do not have to worry about accidentally removing or destroying the handbook. Your changes are not reflected in the website until you submit a pull request."
+  },
+  {
+    "objectID": "contributing.html#footnotes",
+    "href": "contributing.html#footnotes",
+    "title": "Contributing",
+    "section": "",
+    "text": "If you are really enthusiastic and want to do it yourself: The chapter needs to be added to the chapters list in _quarto.yml. You can find the chapters list around line 24 of that file.↩︎"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  }
+]
