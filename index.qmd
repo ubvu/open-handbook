@@ -16,3 +16,6 @@ ALL WORK AND NO PLAY MAKES JACK A DULL BOY
 ALL WORK AND NO PLAY MAKES JACK A DULL BOY
 
 <!-- ## Contributors -->
+```{r, results='asis', echo=FALSE}
+cat(knitr::knit_expand(file = "chapters/data-publication.qmd"))
+```
