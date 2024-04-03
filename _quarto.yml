@@ -1,37 +1,68 @@
 project:
-  type: book
+  type: website
 
-# See also https://quarto.org/docs/reference/projects/books.html
-book:
-  title: "Open Handbook"
+website:
+  site-url: "https://ubvu.github.io/open-handbook"
+  title: "VU Open Handbook"
+  description: "A place for all things open research at the VU."
   favicon: public/VU_social_avatar_blauw.png
-  # cover-image: cover.png
-  navbar: 
-    logo: public/VU_social_avatar_blauw-rectangle.png
-    background: "#0080c9"
-  site-url: https://ubvu.github.io/open-handbook
   repo-url: https://github.com/ubvu/open-handbook
   issue-url: https://github.com/ubvu/open-handbook/issues/new/choose
   repo-actions: [edit, issue]
-  # page-navigation: true
-  # downloads: [pdf, epub]
-  page-footer:
+  page-navigation: true
+  bread-crumbs: true
+  navbar:
+    background: "#0080c9"
+    logo: public/VU_social_avatar_blauw-rectangle.png
+    logo-alt: "VU Amsterdam logo."
+    title: "Open Handbook"
+    # title: false
+    collapse-below: lg
+    favicon: public/VU_social_avatar_blauw.png
     left:
-      - text: "CC0 Public Domain Dedication"
-        href: "https://creativecommons.org/publicdomain/zero/1.0/legalcode"
-    right:
-      - text: "By VU & Liberate Science GmbH"
-  chapters:
-    - index.qmd
-    - part: "Chapters"
-      chapters:
+      - text: "Home"
+        file: index.qmd
+      - text: "Chapters"
+        menu:
+          - chapters/conflict-chapter.qmd
+          - chapters/data-management-plan.qmd
+          - chapters/research-drive.qmd
+          - chapters/fair-data.qmd
+          - chapters/data-publication.qmd
+      - contributing.qmd
+      - references.qmd
+    tools:
+      - icon: github
+        href: https://github.com/ubvu/open-handbook
+        text: GitHub VU Open Handbook
+      # - icon: rss
+      #   href: https://quarto.org/docs/blog/index.xml
+      #   text: Quarto Blog RSS   
+  sidebar:
+    - title: "Tutorials"
+      style: "docked"
+      background: light
+      contents:
         - chapters/conflict-chapter.qmd
         - chapters/data-management-plan.qmd
         - chapters/research-drive.qmd
         - chapters/fair-data.qmd
         - chapters/data-publication.qmd
-    - contributing.qmd
-    - references.qmd
+  page-footer:
+    left:
+      - text: "CC0 Public Domain Dedication"
+        href: "https://creativecommons.org/publicdomain/zero/1.0/legalcode"
+    center:
+      - text: "About"
+        href: about.qmd
+      - text: "FAQ"
+        href: docs/faq/index.qmd
+      - text: "License"
+        href: license.qmd
+      - text: "Trademark"
+        href: trademark.qmd
+    right:
+      - text: "By VU & Liberate Science GmbH"
 
 bibliography: references.bib
 
