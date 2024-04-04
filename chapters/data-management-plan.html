@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Open Handbook - 2&nbsp; Data Management Plan</title>
+<title>VU Open Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar floating nav-fixed">
+<body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -81,16 +81,58 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../public/VU_social_avatar_blauw-rectangle.png" alt="" class="navbar-logo">
+    <img src="../public/VU_social_avatar_blauw-rectangle.png" alt="VU Amsterdam logo." class="navbar-logo">
     </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Open Handbook</span>
     </a>
   </div>
-        <div class="quarto-navbar-tools tools-end">
-    <a href="https://github.com/ubvu/open-handbook" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-chapters" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Chapters</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-chapters">    
+        <li>
+    <a class="dropdown-item" href="../chapters/conflict-chapter.html">
+ <span class="dropdown-text">conflict-chapter.html</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../chapters/data-management-plan.html">
+ <span class="dropdown-text">Data Management Plan</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../chapters/research-drive.html">
+ <span class="dropdown-text">Research Drive</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../chapters/fair-data.html">
+ <span class="dropdown-text">FAIR data</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../chapters/data-publication.html">
+ <span class="dropdown-text">Data Publication</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../contributing.html"> 
+<span class="menu-text">Contributing</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+    <a href="https://github.com/ubvu/open-handbook" title="GitHub VU Open Handbook" class="quarto-navigation-tool px-1" aria-label="GitHub VU Open Handbook"><i class="bi bi-github"></i></a>
 </div>
-          <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
     </nav>
   <nav class="quarto-secondary-nav">
@@ -98,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/conflict-chapter.html">Chapters</a></li><li class="breadcrumb-item"><a href="../chapters/data-management-plan.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data Management Plan</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/data-management-plan.html">Data Management Plan</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -107,66 +149,37 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Welcome</span></a>
-  </div>
-</li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">Chapters</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../chapters/conflict-chapter.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">conflict-chapter.html</span></span></a>
+ <span class="menu-text">conflict-chapter.html</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/data-management-plan.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data Management Plan</span></span></a>
+ <span class="menu-text">Data Management Plan</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/research-drive.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Research Drive</span></span></a>
+ <span class="menu-text">Research Drive</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/fair-data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">FAIR data</span></span></a>
+ <span class="menu-text">FAIR data</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/data-publication.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Data Publication</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../contributing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Contributing</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+ <span class="menu-text">Data Publication</span></a>
   </div>
 </li>
     </ul>
@@ -176,32 +189,35 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+    <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#what-is-a-dmp" id="toc-what-is-a-dmp" class="nav-link active" data-scroll-target="#what-is-a-dmp"><span class="header-section-number">2.1</span> What is a DMP</a></li>
-  <li><a href="#dmponline" id="toc-dmponline" class="nav-link" data-scroll-target="#dmponline"><span class="header-section-number">2.2</span> DMPonline</a></li>
-  <li><a href="#choosing-the-right-template" id="toc-choosing-the-right-template" class="nav-link" data-scroll-target="#choosing-the-right-template"><span class="header-section-number">2.3</span> Choosing the right template</a>
+  <li><a href="#data-management-plan" id="toc-data-management-plan" class="nav-link active" data-scroll-target="#data-management-plan">Data Management Plan</a>
   <ul class="collapse">
-  <li><a href="#vu-template" id="toc-vu-template" class="nav-link" data-scroll-target="#vu-template"><span class="header-section-number">2.3.1</span> VU template</a></li>
-  <li><a href="#gdpr-registration-form" id="toc-gdpr-registration-form" class="nav-link" data-scroll-target="#gdpr-registration-form"><span class="header-section-number">2.3.2</span> GDPR registration form</a></li>
-  <li><a href="#funder-template" id="toc-funder-template" class="nav-link" data-scroll-target="#funder-template"><span class="header-section-number">2.3.3</span> Funder template</a></li>
+  <li><a href="#what-is-a-dmp" id="toc-what-is-a-dmp" class="nav-link" data-scroll-target="#what-is-a-dmp">What is a DMP</a></li>
+  <li><a href="#dmponline" id="toc-dmponline" class="nav-link" data-scroll-target="#dmponline">DMPonline</a></li>
+  <li><a href="#choosing-the-right-template" id="toc-choosing-the-right-template" class="nav-link" data-scroll-target="#choosing-the-right-template">Choosing the right template</a>
+  <ul class="collapse">
+  <li><a href="#vu-template" id="toc-vu-template" class="nav-link" data-scroll-target="#vu-template">VU template</a></li>
+  <li><a href="#gdpr-registration-form" id="toc-gdpr-registration-form" class="nav-link" data-scroll-target="#gdpr-registration-form">GDPR registration form</a></li>
+  <li><a href="#funder-template" id="toc-funder-template" class="nav-link" data-scroll-target="#funder-template">Funder template</a></li>
   </ul></li>
-  <li><a href="#register-your-processing-activities-on-the-gdpr-privacy-page" id="toc-register-your-processing-activities-on-the-gdpr-privacy-page" class="nav-link" data-scroll-target="#register-your-processing-activities-on-the-gdpr-privacy-page"><span class="header-section-number">2.4</span> Register your processing activities (On the GDPR &amp; Privacy page)</a>
+  <li><a href="#register-your-processing-activities-on-the-gdpr-privacy-page" id="toc-register-your-processing-activities-on-the-gdpr-privacy-page" class="nav-link" data-scroll-target="#register-your-processing-activities-on-the-gdpr-privacy-page">Register your processing activities (On the GDPR &amp; Privacy page)</a>
   <ul class="collapse">
-  <li><a href="#how-does-registration-of-personal-data-processing-work-in-research" id="toc-how-does-registration-of-personal-data-processing-work-in-research" class="nav-link" data-scroll-target="#how-does-registration-of-personal-data-processing-work-in-research"><span class="header-section-number">2.4.1</span> How does registration of personal data processing work in research?</a></li>
-  <li><a href="#register-before-you-start-your-data-collection" id="toc-register-before-you-start-your-data-collection" class="nav-link" data-scroll-target="#register-before-you-start-your-data-collection"><span class="header-section-number">2.4.2</span> Register before you start your data collection</a></li>
+  <li><a href="#how-does-registration-of-personal-data-processing-work-in-research" id="toc-how-does-registration-of-personal-data-processing-work-in-research" class="nav-link" data-scroll-target="#how-does-registration-of-personal-data-processing-work-in-research">How does registration of personal data processing work in research?</a></li>
+  <li><a href="#register-before-you-start-your-data-collection" id="toc-register-before-you-start-your-data-collection" class="nav-link" data-scroll-target="#register-before-you-start-your-data-collection">Register before you start your data collection</a></li>
   </ul></li>
-  <li><a href="#what-is-data" id="toc-what-is-data" class="nav-link" data-scroll-target="#what-is-data"><span class="header-section-number">2.5</span> What is data</a></li>
-  <li><a href="#data-assets" id="toc-data-assets" class="nav-link" data-scroll-target="#data-assets"><span class="header-section-number">2.6</span> Data Assets</a></li>
-  <li><a href="#dmp-elements" id="toc-dmp-elements" class="nav-link" data-scroll-target="#dmp-elements"><span class="header-section-number">2.7</span> DMP Elements</a>
+  <li><a href="#what-is-data" id="toc-what-is-data" class="nav-link" data-scroll-target="#what-is-data">What is data</a></li>
+  <li><a href="#data-assets" id="toc-data-assets" class="nav-link" data-scroll-target="#data-assets">Data Assets</a></li>
+  <li><a href="#dmp-elements" id="toc-dmp-elements" class="nav-link" data-scroll-target="#dmp-elements">DMP Elements</a>
   <ul class="collapse">
-  <li><a href="#data-description" id="toc-data-description" class="nav-link" data-scroll-target="#data-description"><span class="header-section-number">2.7.1</span> Data description</a></li>
-  <li><a href="#legal-and-ethical-requirements-codes-of-conduct" id="toc-legal-and-ethical-requirements-codes-of-conduct" class="nav-link" data-scroll-target="#legal-and-ethical-requirements-codes-of-conduct"><span class="header-section-number">2.7.2</span> Legal and ethical requirements, codes of conduct</a></li>
-  <li><a href="#storage-and-backup-during-the-research-process" id="toc-storage-and-backup-during-the-research-process" class="nav-link" data-scroll-target="#storage-and-backup-during-the-research-process"><span class="header-section-number">2.7.3</span> Storage and backup during the research process</a></li>
-  <li><a href="#data-archiving-and-publishing" id="toc-data-archiving-and-publishing" class="nav-link" data-scroll-target="#data-archiving-and-publishing"><span class="header-section-number">2.7.4</span> Data archiving and publishing</a></li>
-  <li><a href="#documentation" id="toc-documentation" class="nav-link" data-scroll-target="#documentation"><span class="header-section-number">2.7.5</span> Documentation</a></li>
-  <li><a href="#data-management-responsibilities-and-resources" id="toc-data-management-responsibilities-and-resources" class="nav-link" data-scroll-target="#data-management-responsibilities-and-resources"><span class="header-section-number">2.7.6</span> Data management responsibilities and resources</a></li>
+  <li><a href="#data-description" id="toc-data-description" class="nav-link" data-scroll-target="#data-description">Data description</a></li>
+  <li><a href="#legal-and-ethical-requirements-codes-of-conduct" id="toc-legal-and-ethical-requirements-codes-of-conduct" class="nav-link" data-scroll-target="#legal-and-ethical-requirements-codes-of-conduct">Legal and ethical requirements, codes of conduct</a></li>
+  <li><a href="#storage-and-backup-during-the-research-process" id="toc-storage-and-backup-during-the-research-process" class="nav-link" data-scroll-target="#storage-and-backup-during-the-research-process">Storage and backup during the research process</a></li>
+  <li><a href="#data-archiving-and-publishing" id="toc-data-archiving-and-publishing" class="nav-link" data-scroll-target="#data-archiving-and-publishing">Data archiving and publishing</a></li>
+  <li><a href="#documentation" id="toc-documentation" class="nav-link" data-scroll-target="#documentation">Documentation</a></li>
+  <li><a href="#data-management-responsibilities-and-resources" id="toc-data-management-responsibilities-and-resources" class="nav-link" data-scroll-target="#data-management-responsibilities-and-resources">Data management responsibilities and resources</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/chapters/data-management-plan.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -209,39 +225,25 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/conflict-chapter.html">Chapters</a></li><li class="breadcrumb-item"><a href="../chapters/data-management-plan.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data Management Plan</span></a></li></ol></nav>
-<div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data Management Plan</span></h1>
-</div>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="what-is-a-dmp" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="what-is-a-dmp"><span class="header-section-number">2.1</span> What is a DMP</h2>
+<section id="data-management-plan" class="level1">
+<h1>Data Management Plan</h1>
+<section id="what-is-a-dmp" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-a-dmp">What is a DMP</h2>
 <p>Data Management Plan (DMP) is a document outlining how research data will be handled throughout research lifecycle. A DMP is a structured way to address data collection, organization, storage, sharing, and preservation. It outlines the measures taken to ensure data security. DMP also address how data will be preserved and made available for future use.</p>
 </section>
-<section id="dmponline" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="dmponline"><span class="header-section-number">2.2</span> DMPonline</h2>
+<section id="dmponline" class="level2">
+<h2 class="anchored" data-anchor-id="dmponline">DMPonline</h2>
 <p>VU Amsterdam offers the online tool <a href="https://dmponline.vu.nl/">DMPonline</a> for writing Data Management Plans. DMPonline is a platform that offers a range of templates, ensuring that researchers can create DMPs to meet the standards of diverse funders and institutions associated with their projects. The setup of DMPonline makes it easy to work on a DMP together with colleagues, advisors, or other stakeholders. VU Amsterdam researchers can use the request feedback function of DMPonline to get their DMP reviewed by a faculty data steward or RDM Support Desk colleague.</p>
 <p>If you have questions about DMPonline, or encounter problems when using the tool, please get in touch with <a href="mailto:rdm@vu.nl" class="email">rdm@vu.nl</a>.</p>
 </section>
-<section id="choosing-the-right-template" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="choosing-the-right-template"><span class="header-section-number">2.3</span> Choosing the right template</h2>
+<section id="choosing-the-right-template" class="level2">
+<h2 class="anchored" data-anchor-id="choosing-the-right-template">Choosing the right template</h2>
 <p>Various templates exist in which you can set up your DMP. We strongly recommend you to use the VU template, which is called <code>VU DMP template 2021 (NWO &amp; ZonMw certified) v1.4</code>. Below is explained how to use this template. If you need to write a DMP for funding agencies NWO, ZonMw or ERC, you can use the VU template as well.</p>
-<section id="vu-template" class="level3" data-number="2.3.1">
-<h3 data-number="2.3.1" class="anchored" data-anchor-id="vu-template"><span class="header-section-number">2.3.1</span> VU template</h3>
+<section id="vu-template" class="level3">
+<h3 class="anchored" data-anchor-id="vu-template">VU template</h3>
 <p>You can find the VU DMP template in <a href="https://dmponline.vu.nl/">DMPonline</a>. It includes concise guidance on how to complete your DMP.</p>
 <p>You can select the VU template by taking the following steps (see also the picture below).</p>
 <ol type="1">
@@ -253,13 +255,13 @@ ul.task-list li input[type="checkbox"] {
 <p>Note: Follow these steps as well if you receive funding from NWO or ZonMw (see also below).</p>
 <p><img src="../public/dmp-001.png" class="img-fluid"></p>
 </section>
-<section id="gdpr-registration-form" class="level3" data-number="2.3.2">
-<h3 data-number="2.3.2" class="anchored" data-anchor-id="gdpr-registration-form"><span class="header-section-number">2.3.2</span> GDPR registration form</h3>
+<section id="gdpr-registration-form" class="level3">
+<h3 class="anchored" data-anchor-id="gdpr-registration-form">GDPR registration form</h3>
 <p>If you’re aiming to write a full DMP based on the VU DMP template, please make sure you don’t select the GDPR registration form.</p>
 <p><img src="../public/dmp-002.png" class="img-fluid"></p>
 </section>
-<section id="funder-template" class="level3" data-number="2.3.3">
-<h3 data-number="2.3.3" class="anchored" data-anchor-id="funder-template"><span class="header-section-number">2.3.3</span> Funder template</h3>
+<section id="funder-template" class="level3">
+<h3 class="anchored" data-anchor-id="funder-template">Funder template</h3>
 <p>We recommend researchers to use the VU DMP template whenever possible, especially for researchers who work with personal data. VU DMP template includes questions that serve as input for the GDPR record of processing activities. This means that when you write a DMP based on the VU DMP template, you simultaneousely comply with the VU requirement to register the personal data you use in your research.</p>
 <p>However, it is also possible to use other templates in DMPonline. If your funder or partner organization requires you to use a certain template, it is possible to select that template in DMPonline. Please follow the steps below to select a funder’s template.</p>
 <ol type="1">
@@ -272,26 +274,26 @@ ul.task-list li input[type="checkbox"] {
 <p>Researchers who don’t work with personal data and who wish to use another DMP template than the VU template, can also follow the steps above.</p>
 </section>
 </section>
-<section id="register-your-processing-activities-on-the-gdpr-privacy-page" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="register-your-processing-activities-on-the-gdpr-privacy-page"><span class="header-section-number">2.4</span> Register your processing activities <a href="https://libguides.vu.nl/rdm/gdpr-privacy?#s-lg-box-wrapper-15125651">(On the GDPR &amp; Privacy page)</a></h2>
-<section id="how-does-registration-of-personal-data-processing-work-in-research" class="level3" data-number="2.4.1">
-<h3 data-number="2.4.1" class="anchored" data-anchor-id="how-does-registration-of-personal-data-processing-work-in-research"><span class="header-section-number">2.4.1</span> How does registration of personal data processing work in research?</h3>
+<section id="register-your-processing-activities-on-the-gdpr-privacy-page" class="level2">
+<h2 class="anchored" data-anchor-id="register-your-processing-activities-on-the-gdpr-privacy-page">Register your processing activities <a href="https://libguides.vu.nl/rdm/gdpr-privacy?#s-lg-box-wrapper-15125651">(On the GDPR &amp; Privacy page)</a></h2>
+<section id="how-does-registration-of-personal-data-processing-work-in-research" class="level3">
+<h3 class="anchored" data-anchor-id="how-does-registration-of-personal-data-processing-work-in-research">How does registration of personal data processing work in research?</h3>
 <p>If your research is subject to the (GDPR)[eventually link to a GDPR page], then you need to register information on your research in a central VU registry. This central registry lists all personal data processing activities carried out at the VU. The registry indicates why and how personal data are processed, and with whom they are shared. The registry helps organisations to demonstrate compliance with the GDPR and in the case of a data breach, the registry helps with monitoring and acting swiftly to inform all relevant stakeholders.</p>
 <p>For research projects, the VU registers data processing via <a href="https://dmponline.vu.nl/">DMPonline</a>. You can create your registration by logging into DMPonline and following the instructions under “Choose the right template”. Once you get to the two VU templates, you can fill in the VU DMP template if you need to write a DMP anyway and the information you include will be used for the registry. Alternatively, you can use the separate GDPR registration form if you don’t need to write a (new) DMP. Your faculty’s <a href="https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information">Privacy Champion</a> can help you with your registration.</p>
 <p>If your research is primarily led by Amsterdam UMC, location VUmc, your research will be registered using their own separate system.</p>
 </section>
-<section id="register-before-you-start-your-data-collection" class="level3" data-number="2.4.2">
-<h3 data-number="2.4.2" class="anchored" data-anchor-id="register-before-you-start-your-data-collection"><span class="header-section-number">2.4.2</span> Register before you start your data collection</h3>
+<section id="register-before-you-start-your-data-collection" class="level3">
+<h3 class="anchored" data-anchor-id="register-before-you-start-your-data-collection">Register before you start your data collection</h3>
 <p>If you use personal data in your research, you should register your data processing activities before you start data collection. If you are not sure whether your research data are subject to the GDPR, contact your faculty’s <a href="https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information">Privacy Champion</a>. Your privacy champion can also assist you if your research is already running, but has not yet been registered.</p>
 </section>
 </section>
-<section id="what-is-data" class="level2" data-number="2.5">
-<h2 data-number="2.5" class="anchored" data-anchor-id="what-is-data"><span class="header-section-number">2.5</span> What is data</h2>
+<section id="what-is-data" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-data">What is data</h2>
 <p>Research data is any information that has been collected, observed, generated or created to validate original research findings. Examples of data could be interview recordings, experiment results, physical measurement, notes from focus group’s meetings, notes from fieldwork, observations captured in photographs, film or audio, text files extracted from a corpus, image of archival items or artworks, scraped websites, responses to survey questions. Algorithms, code, scripts and software, simulations are often considered as research data. There is also physical data: samples, collections, artifacts.</p>
 <p>Administrative documents, like informed consent forms and key files should be acknowledged as important elements of research data as well.</p>
 </section>
-<section id="data-assets" class="level2" data-number="2.6">
-<h2 data-number="2.6" class="anchored" data-anchor-id="data-assets"><span class="header-section-number">2.6</span> Data Assets</h2>
+<section id="data-assets" class="level2">
+<h2 class="anchored" data-anchor-id="data-assets">Data Assets</h2>
 <p>[https://libguides.vu.nl/rdm/dmp?#s-lg-box-wrapper-15125649 &gt; Elisa has another look at the table description, because it is quite brief]</p>
 <p>Data assets are types of data, information collected or generated in the course of research activities. It is common to provide data assets based on data stage such as raw, processed, or analyzed. Raw Data refers to original data collected, Processed Data is data that has undergone some level of transformation or organization. Processing involves cleaning, formatting, and structuring raw data to make it more understandable and suitable for analysis. Analyzed Data usually results from statistical methods, detailed examination or interpretation.</p>
 <p>Here are some examples of data assets in research data management:</p>
@@ -362,15 +364,15 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 </section>
-<section id="dmp-elements" class="level2" data-number="2.7">
-<h2 data-number="2.7" class="anchored" data-anchor-id="dmp-elements"><span class="header-section-number">2.7</span> DMP Elements</h2>
+<section id="dmp-elements" class="level2">
+<h2 class="anchored" data-anchor-id="dmp-elements">DMP Elements</h2>
 <p>[this is in the guidance on DMPonline, but we use this as a place where we can refer to ethics committees, privacy champions, etc. Make it clear that there is not necessarily a set order - sometimes there is, e.g.&nbsp;a DPIA may follow after a pre-DPIA indicates that]</p>
 <p>The VU DMP template consists of seven sections with questions. In DMPonline, there is guidance available for all sections, as well as example answers. When you are writing your DMP, you can consult this information directly in DMPonline.</p>
-<section id="data-description" class="level3" data-number="2.7.1">
-<h3 data-number="2.7.1" class="anchored" data-anchor-id="data-description"><span class="header-section-number">2.7.1</span> Data description</h3>
+<section id="data-description" class="level3">
+<h3 class="anchored" data-anchor-id="data-description">Data description</h3>
 </section>
-<section id="legal-and-ethical-requirements-codes-of-conduct" class="level3" data-number="2.7.2">
-<h3 data-number="2.7.2" class="anchored" data-anchor-id="legal-and-ethical-requirements-codes-of-conduct"><span class="header-section-number">2.7.2</span> Legal and ethical requirements, codes of conduct</h3>
+<section id="legal-and-ethical-requirements-codes-of-conduct" class="level3">
+<h3 class="anchored" data-anchor-id="legal-and-ethical-requirements-codes-of-conduct">Legal and ethical requirements, codes of conduct</h3>
 <p>If you have questions about working with personal data in research, please get in touch with the Privacy Champion of your faculty. The <a href="https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information">overview of Privacy Champions</a> can be found on the VU website.</p>
 <p>Ethical aspects of research should be addressed in the ethics procedure of your faculty. Each faculty has their own ethics committee. The webpages of all committees are listed below.</p>
 <ul>
@@ -384,19 +386,20 @@ ul.task-list li input[type="checkbox"] {
 <li>VUmc: <a href="https://www.vumc.nl/research/overzicht/medisch-ethische-toetsingscommissie.htm">METc</a> (Medical Ethical Review Committee)</li>
 </ul>
 </section>
-<section id="storage-and-backup-during-the-research-process" class="level3" data-number="2.7.3">
-<h3 data-number="2.7.3" class="anchored" data-anchor-id="storage-and-backup-during-the-research-process"><span class="header-section-number">2.7.3</span> Storage and backup during the research process</h3>
+<section id="storage-and-backup-during-the-research-process" class="level3">
+<h3 class="anchored" data-anchor-id="storage-and-backup-during-the-research-process">Storage and backup during the research process</h3>
 </section>
-<section id="data-archiving-and-publishing" class="level3" data-number="2.7.4">
-<h3 data-number="2.7.4" class="anchored" data-anchor-id="data-archiving-and-publishing"><span class="header-section-number">2.7.4</span> Data archiving and publishing</h3>
+<section id="data-archiving-and-publishing" class="level3">
+<h3 class="anchored" data-anchor-id="data-archiving-and-publishing">Data archiving and publishing</h3>
 </section>
-<section id="documentation" class="level3" data-number="2.7.5">
-<h3 data-number="2.7.5" class="anchored" data-anchor-id="documentation"><span class="header-section-number">2.7.5</span> Documentation</h3>
+<section id="documentation" class="level3">
+<h3 class="anchored" data-anchor-id="documentation">Documentation</h3>
 </section>
-<section id="data-management-responsibilities-and-resources" class="level3" data-number="2.7.6">
-<h3 data-number="2.7.6" class="anchored" data-anchor-id="data-management-responsibilities-and-resources"><span class="header-section-number">2.7.6</span> Data management responsibilities and resources</h3>
+<section id="data-management-responsibilities-and-resources" class="level3">
+<h3 class="anchored" data-anchor-id="data-management-responsibilities-and-resources">Data management responsibilities and resources</h3>
 
 
+</section>
 </section>
 </section>
 
@@ -813,12 +816,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../chapters/conflict-chapter.html" class="pagination-link" aria-label="conflict-chapter.html">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">conflict-chapter.html</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">conflict-chapter.html</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../chapters/research-drive.html" class="pagination-link" aria-label="Research Drive">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Research Drive</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text">Research Drive</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -835,7 +838,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </ul>
     </div>   
     <div class="nav-footer-center">
-      &nbsp;
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../about.qmd">
+<p>About</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../docs/faq/index.qmd">
+<p>FAQ</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../license.qmd">
+<p>License</p>
+</a>
+  </li>  
+</ul>
     <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/chapters/data-management-plan.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
