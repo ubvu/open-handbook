@@ -8,15 +8,15 @@ Open Access publishing is one component of Open Science. The European Commission
 ## Publishing your data in a data journal
 Instead of archiving research data in a data repository, you may choose to publish an article about your data collection. This is not necessarily common for all disciplines. Some examples of data journals where you can publish your data and dataset, are:
 
-    Scientific Data - Nature
-    Geoscience Data Journal
-    Gigascience
-    Dataset Papers in Science
-    Journal of Physical and Chemical Reference Data
-    Earth System Science Data
-    Journal of Open Archaeology Data
-    Journal of Open Health Data
-    Journal of Open Psychology Data
+- [Scientific Data - Nature](http://www.nature.com/sdata/about)
+- [Geoscience Data Journal](http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)2049-6060)
+- [Gigascience](https://academic.oup.com/gigascience)
+- [Dataset Papers in Science](https://www.hindawi.com/journals/dpis/contents/)
+- [Journal of Physical and Chemical Reference Data](http://scitation.aip.org/content/aip/journal/jpcrd/browse)
+- [Earth System Science Data](http://earth-system-science-data.net/)
+- [Journal of Open Archaeology Data](http://openarchaeologydata.metajnl.com/)
+- [Journal of Open Health Data](http://openhealthdata.metajnl.com/)
+- [Journal of Open Psychology Data](http://openpsychologydata.metajnl.com/)
 
 ## What is a persistent identifier?
 A persistent identifier (PID) is a durable reference to a digital dataset document, website or other object. It is a kind of ISBN for digital files. By using a persistent identifier, you make sure that your dataset will be findable well into the future. A DOI or Handle are the commonly used PIDs. The data archiving options at the VU commonly offer DOIs.
@@ -26,26 +26,27 @@ Most data archives or repositories offer a persistent identifier and generate th
 ## Licensing the data
 A data licence agreement is a legal instrument that lets others know what they can and cannot do with your research data (and any documentation. scripts and metadata that are published with the data). It is important to consider what kind of limitations are relevant. An important component can be a guideline on how people should cite the dataset. Other components could be:
 
-    Can people make copies or even distribute copies
-    Who should be contacted if you need access to re-use data
-    Etc.
+- Can people make copies or even distribute copies
+- Who should be contacted if you need access to re-use data
+- Etc.
 
 In principle, Dataverse allows you to choose your terms of use. Some data repositories require you to use a certain licence if you want to deposit your data with them. At Dryad, for example, all datasets are published under the terms of Creative Commons Zero to minimise legal barriers and to maximise the impact for research and education. Some funders may also require that you publish the data as open data. Open data are data that can be freely used, re-used and redistributed by anyone - subject only, at most, to the requirement to attribute and share alike (Open Knowledge International definition). If you need help with drawing up license agreements, you can contact the IXA office.
 
 Additional websites and tools:
 
-    Explanation about copyrights and licences by a professor from Leiden University (English subtitles available)
-    The Guide to Creative Commons for Scholarly Publishing and Educational Resources by NWO, VSNU and the University and Royal Libraries
-    DCC how-to guide on licensing research data, a guide that links to the Creative Commons website, where many terms are explained
-    Open Data Commons Public Domain Dedication and License (PDDL)
-    EUDAT B2SHARE license selection wizard, which Pawel Kamocki (et al) released under an open source license.
+- [Explanation about copyrights and licences by a professor from Leiden University](https://www.youtube.com/watch?v=_J26POpb-rQ&feature=youtu.be) (English subtitles available)
+- [The Guide to Creative Commons for Scholarly Publishing and Educational Resources by NWO, VSNU and the University and Royal Libraries](https://zenodo.org/record/4090923#.X6ugz1DvJPY)
+- [DCC how-to guide on licensing research data](https://www.dcc.ac.uk/guidance/how-guides/license-research-data), a guide that links to the Creative Commons website, where many terms are explained
+- [Open Data Commons Public Domain Dedication and License (PDDL)](http://opendatacommons.org/licenses/pddl/)
+- [EUDAT B2SHARE license selection wizard](https://ufal.github.io/public-license-selector/), which Pawel Kamocki (et al) released under an open source license.
 
 
 ## Licensing software
-As with data, it is important to license any software that you write for your research. Some basic information about software licensing can be found here, but it is also important to keep the following in mind:
+As with data, it is important to license any software that you write for your research. Some basic information about software licensing can be found [here](https://fair-software.eu/recommendations/license), but it is also important to keep the following in mind:
 
-    If you are reusing software or libraries written by someone else, you must stick to the clauses of the licence given to the original software/library;
-    If you used proprietary software to write your code (e.g. SPSS syntax), your options in choosing a licence will probably be limited;
-    When choosing a licence, do not just think about what others may do with the software, but also what you might want to do with the software in the future.
+- For software, choosing a licence usually happens right when you start developing the software or when you put it in a public repository, rather than when the software is finished and fully baked. This makes sense: immediately when the software appears on a public repository, the software can be found and seen by others. Giving it a licence helps others to figure out what they can and can't do with it.
+- If you are reusing software or libraries written by someone else, you must stick to the clauses of the licence given to the original software/library;
+- If you used proprietary software to write your code (e.g. SPSS syntax), your options in choosing a licence will probably be limited;
+- When choosing a licence, do not just think about what others may do with the software, but also what you might want to do with the software in the future.
 
-If you need guidance in choosing a licence for your software, get in touch with the [RDM Support Desk](mailto:rdm@vu.nl).
+There are several tools that can help you to [choose](https://choosealicense.com/) a suitable sotware licence. If you have questions or need guidance in choosing a licence for your software, get in touch with the [RDM Support Desk](mailto:rdm@vu.nl).
