@@ -1,5 +1,16 @@
 ---
-title: Welcome
+toc: false
+include-in-header:
+  text: |
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            corePlugins: {
+                preflight: false,
+            },
+            prefix: 'tw-',
+        }
+    </script>
 ---
 
 This is a template for creating (hand)books styled for VU Amsterdam. 
