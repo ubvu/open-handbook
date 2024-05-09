@@ -24,10 +24,7 @@ website:
         file: index.qmd
       - text: "Chapters"
         menu:
-          - chapters/conflict-chapter.qmd
           - chapters/data-management-plan.qmd
-          - chapters/research-drive.qmd
-          - chapters/fair-data.qmd
           - chapters/data-publication.qmd
       - contributing.qmd
     tools:
@@ -38,14 +35,11 @@ website:
       #   href: https://quarto.org/docs/blog/index.xml
       #   text: Quarto Blog RSS   
   sidebar:
-    - title: "Tutorials"
+    - title: "Index"
       style: "docked"
       background: light
       contents:
-        - chapters/conflict-chapter.qmd
         - chapters/data-management-plan.qmd
-        - chapters/research-drive.qmd
-        - chapters/fair-data.qmd
         - chapters/data-publication.qmd
   page-footer:
     left:
