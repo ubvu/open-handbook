@@ -13,11 +13,11 @@ function Hero() {
         </div>
         <div className="tw-text-center">
           <h1 className="tw-text-4xl tw-font-bold tw-tracking-tight tw-text-gray-900 sm:tw-text-6xl">
-            Quality information, curated by the VU community
+            Quality information, curated by your VU community
           </h1>
           <p className="tw-mt-6 tw-text-lg tw-leading-8 tw-text-gray-600">
-            Supporting research is a collective effort. Here you can find and
-            create the resources you need.
+            Research is a collective effort. Here you can find and
+            create the resources you need to get it done.
           </p>
           <div className="tw-mt-10 tw-flex tw-items-center tw-justify-center tw-gap-x-6">
             <a

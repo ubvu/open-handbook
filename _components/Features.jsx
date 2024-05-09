@@ -2,14 +2,14 @@ const features = [
   {
     name: "Collaborative",
     description:
-      "We create this resource together. Your co-creation helps others.",
+      "Let's learn each other's best practices.",
     icon: () => (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         strokeWidth={1.5}
-        className="tw-w-6 tw-h-6 tw-stroke-sky-600"
+        className="tw-w-6 tw-h-6 tw-stroke-sky-600 tw-mr-1"
       >
         <path
           strokeLinecap="round"
@@ -22,14 +22,14 @@ const features = [
   {
     name: "Responsive",
     description:
-      "Culture and rules change, and this resource does too. When something is out of date, we can quickly update the resource.",
+      "Things changed? This resource does too with your help.",
     icon: () => (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         strokeWidth={1.5}
-        className="tw-w-6 tw-h-6 tw-stroke-sky-600"
+        className="tw-w-6 tw-h-6 tw-stroke-sky-600 tw-mr-1"
       >
         <path
           strokeLinecap="round"
@@ -42,14 +42,14 @@ const features = [
   {
     name: "Open source",
     description:
-      "Everything you see is open source. Use and share without permission.",
+      "Share and copy without permission. Join the discussions.",
     icon: () => (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         strokeWidth={1.5}
-        className="tw-w-6 tw-h-6 tw-stroke-sky-600"
+        className="tw-w-6 tw-h-6 tw-stroke-sky-600 tw-mr-1"
       >
         <path
           strokeLinecap="round"
@@ -62,14 +62,14 @@ const features = [
   {
     name: "Quality control",
     description:
-      "All content is reviewed. New content before inclusion. Old content for accuracy. By specialists from throughout the university",
+      "All content is reviewed periodically by specialists.",
     icon: () => (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         strokeWidth={1.5}
-        className="tw-w-6 tw-h-6 tw-stroke-sky-600"
+        className="tw-w-6 tw-h-6 tw-stroke-sky-600 tw-mr-1"
       >
         <path
           strokeLinecap="round"
@@ -82,14 +82,14 @@ const features = [
   {
     name: "Local",
     description:
-      "Resources are geared towards the VU specific context. This means that it ",
+      "This is for the VU, by the VU. Join in and meet colleagues.",
     icon: () => (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         strokeWidth={1.5}
-        className="tw-w-6 tw-h-6 tw-stroke-sky-600"
+        className="tw-w-6 tw-h-6 tw-stroke-sky-600 tw-mr-1"
       >
         <path
           strokeLinecap="round"
@@ -102,14 +102,14 @@ const features = [
   {
     name: "Flexible",
     description:
-      "Topic pages help you find specific information. Collections provide the topics in different contexts.",
+      "Shape the content to your needs. Find a topic or a [collection/pathways].",
     icon: () => (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         strokeWidth={1.5}
-        className="tw-w-6 tw-h-6 tw-stroke-sky-600"
+        className="tw-w-6 tw-h-6 tw-stroke-sky-600 tw-mr-1"
       >
         <path
           strokeLinecap="round"
@@ -127,16 +127,14 @@ function Features() {
       <div className="tw-bg-white tw-py-24 sm:tw-py-32">
         <div className="tw-mx-auto tw-max-w-7xl tw-px-6 lg:tw-px-8">
           <div className="tw-mx-auto tw-max-w-2xl sm:tw-text-center">
-            <h2 className="tw-text-base tw-font-semibold tw-leading-7 tw-text-sky-600">
+            {/* <h2 className="tw-text-base tw-font-semibold tw-leading-7 tw-text-sky-600">
               Everything you need
+            </h2> */}
+            <h2 className="tw-mt-2 tw-text-3xl tw-font-bold tw-tracking-tight tw-text-sky-900 sm:tw-text-4xl">
+              Benefits
             </h2>
-            <p className="tw-mt-2 tw-text-3xl tw-font-bold tw-tracking-tight tw-text-gray-900 sm:tw-text-4xl">
-              No server? No problem.
-            </p>
             <p className="tw-mt-6 tw-text-lg tw-leading-8 tw-text-gray-600">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
-              impedit perferendis suscipit eaque, iste dolor cupiditate
-              blanditiis.
+              VU has plenty of resources already. Why use this one?
             </p>
           </div>
         </div>
