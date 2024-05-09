@@ -13,19 +13,10 @@ include-in-header:
     </script>
 ---
 
-This is a template for creating (hand)books styled for VU Amsterdam. 
+{{< react Hero >}}
 
-To get started you only need a GitHub account. You can [find the template directly on GitHub]({{< meta book.repo-url >}}). If you need any help to set it up, contact [chris@libscie.org](mailto:chris@libscie.org).[@knuth84]
+* open for contributions – whatever is relevant for your department can become part of the handbook and get a sustainable spot
 
-ALL WORK AND NO PLAY MAKES JACK A DULL BOY
-ALL WORK AND NO PLAY MAKES JACK A DULL BOY
-ALL WORK AND NO PLAY MAKES JACK A DULL BOY
-ALL WORK AND NO PLAY MAKES JACK A DULL BOY
-ALL WORK AND NO PLAY MAKES JACK A DULL BOY
-ALL WORK AND NO PLAY MAKES JACK A DULL BOY
-ALL WORK AND NO PLAY MAKES JACK A DULL BOY
-ALL WORK AND NO PLAY MAKES JACK A DULL BOY
-ALL WORK AND NO PLAY MAKES JACK A DULL BOY
-ALL WORK AND NO PLAY MAKES JACK A DULL BOY
+{{< react Features >}}
 
-<!-- ## Contributors -->
+{{< react Cta >}}
