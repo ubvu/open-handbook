@@ -3,7 +3,7 @@ project:
 
 website:
   site-url: "https://ubvu.github.io/open-handbook"
-  title: "VU Open Handbook"
+  title: "{{< var title >}}"
   description: "A place for all things open research at the VU."
   favicon: public/VU_social_avatar_blauw.png
   repo-url: https://github.com/ubvu/open-handbook
