@@ -124,7 +124,7 @@ const features = [
 function Features() {
   return (
     <>
-      <div className="tw-bg-white tw-py-24 sm:tw-py-32">
+      <div className="tw-bg-white tw-py-12 sm:tw-py-16">
         <div className="tw-mx-auto tw-max-w-7xl tw-px-6 lg:tw-px-8">
           <div className="tw-mx-auto tw-max-w-2xl sm:tw-text-center">
             {/* <h2 className="tw-text-base tw-font-semibold tw-leading-7 tw-text-sky-600">
