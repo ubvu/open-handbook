@@ -1,22 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome",
-    "section": "",
-    "text": "This is a template for creating (hand)books styled for VU Amsterdam.\nTo get started you only need a GitHub account. You can find the template directly on GitHub. If you need any help to set it up, contact chris@libscie.org.[@knuth84]\nALL WORK AND NO PLAY MAKES JACK A DULL BOY ALL WORK AND NO PLAY MAKES JACK A DULL BOY ALL WORK AND NO PLAY MAKES JACK A DULL BOY ALL WORK AND NO PLAY MAKES JACK A DULL BOY ALL WORK AND NO PLAY MAKES JACK A DULL BOY ALL WORK AND NO PLAY MAKES JACK A DULL BOY ALL WORK AND NO PLAY MAKES JACK A DULL BOY ALL WORK AND NO PLAY MAKES JACK A DULL BOY ALL WORK AND NO PLAY MAKES JACK A DULL BOY ALL WORK AND NO PLAY MAKES JACK A DULL BOY"
-  },
-  {
-    "objectID": "chapters/fair-data.html",
-    "href": "chapters/fair-data.html",
-    "title": "FAIR data",
-    "section": "",
-    "text": "FAIR data",
-    "crumbs": [
-      "FAIR data"
-    ]
-  },
-  {
     "objectID": "chapters/data-management-plan.html",
     "href": "chapters/data-management-plan.html",
     "title": "Data Management Plan",
@@ -94,16 +77,6 @@
     "text": "The VU DMP template consists of seven sections with questions. In DMPonline, there is guidance available for all sections, as well as example answers. When you are writing your DMP, you can consult this information directly in DMPonline. Below we provide references to information and support available for various RDM-related aspects.\n\n\nIf you have questions about working with personal data in research, please get in touch with the Privacy Champion of your faculty. The overview of Privacy Champions can be found on the VU website. Make sure to contact your Privacy Champion in the following situations:\n\nIf you need to carry out a DPIA, or if you’re unsure if you need to do one\nIf you work with special category personal data, or otherwise very sensitive data\nIf you are collaborating with other parties\nIf you need software for which no licence is set up on behalf of the VU\nIf you wish to reuse existing data containing personal data\n\nIt is impossible to provide an overview of tasks to be carried out to ensure compliance with the GDPR that fits all research projects. For that reason, it is important to contact your Privacy Champion. They will be able to identify what needs to be arranged to adhere to the GDPR.\nEthical aspects of research should be addressed in the ethics procedure of your faculty. Each faculty has their own ethics committee. The webpages of all committees are listed below. Please go to the page of the ethics committee of your faculty to find instructions for ethical review procedures for your study.\n\nACTA: ACTA Institutional Review Board (IRB)\nBeta: Research ethics review committee Faculty of Science (BETHCIE)\nFGB: Scientific and Ethical Review Board (VCWE)\nFGW: Ethische Toetsingscommissie Onderzoek (EtCO)\nFSW: Research Ethics Review Committee (RERC)\nRCH (Faculty of Law): Ethics Committee\nSBE: Research Ethics and Integrity\nVUmc: METc (Medical Ethical Review Committee)\n\n\n\n\nAn overview of storage facilities at the VU is available in the Data Storage Finder. You can use this as a starting point to navigate storage solutions.\nIf you have questions about data storage and backup, send an email to rdm@vu.nl.\n\n\n\nIf your research data contains personal data and you’re unsure about which data may be published, please contact your Privacy Champion.",
     "crumbs": [
       "Data Management Plan"
-    ]
-  },
-  {
-    "objectID": "chapters/research-drive.html",
-    "href": "chapters/research-drive.html",
-    "title": "Research Drive",
-    "section": "",
-    "text": "This is a test chapter, meant to be one of the chapters on tools.",
-    "crumbs": [
-      "Research Drive"
     ]
   },
   {
@@ -214,5 +187,25 @@
     "title": "Contributing",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nIf you are really enthusiastic and want to do it yourself: The chapter needs to be added to the chapters list in _quarto.yml. You can find the chapters list around line 24 of that file.↩︎"
+  },
+  {
+    "objectID": "chapters/fair-data.html",
+    "href": "chapters/fair-data.html",
+    "title": "FAIR data",
+    "section": "",
+    "text": "FAIR data",
+    "crumbs": [
+      "FAIR data"
+    ]
+  },
+  {
+    "objectID": "chapters/research-drive.html",
+    "href": "chapters/research-drive.html",
+    "title": "Research Drive",
+    "section": "",
+    "text": "This is a test chapter, meant to be one of the chapters on tools.",
+    "crumbs": [
+      "Research Drive"
+    ]
   }
 ]
