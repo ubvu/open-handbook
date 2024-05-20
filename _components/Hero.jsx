@@ -1,7 +1,7 @@
 function Hero() {
   return (
     <>
-      <div className="tw-mx-auto tw-max-w-2xl tw-py-32">
+      <div className="tw-mx-auto tw-max-w-2xl tw-py-16">
         <div className="tw-hidden sm:tw-mb-8 sm:tw-flex sm:tw-justify-center">
           <div className="tw-relative tw-rounded-full tw-px-3 tw-py-1 tw-text-sm tw-leading-6 tw-text-gray-600 tw-ring-1 tw-ring-gray-900/10 hover:tw-ring-gray-900/20">
             This is a new project. Missing something?{" "}
