@@ -30,3 +30,54 @@ quarto publish gh-pages
 ```
 
 If you like commandlines and need to install Quarto, [check out the Quarto website](https://quarto.org/docs/get-started/index.html) for more info.
+
+## Contributors
+
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+All contributions to this project are gratefully acknowledged using the [`allcontributors` package](https://github.com/ropenscilabs/allcontributors) following the [all-contributors](https://allcontributors.org) specification. Contributions of any kind are welcome!
+
+<table>
+
+<tr>
+<td align="center">
+<a href="https://github.com/chartgerink">
+<img src="https://avatars.githubusercontent.com/u/2946344?v=4" width="100px;" alt=""/>
+</a><br>
+<a href="https://github.com/ubvu/open-handbook/commits?author=chartgerink">chartgerink</a>
+</td>
+<td align="center">
+<a href="https://github.com/Jolien-S">
+<img src="https://avatars.githubusercontent.com/u/142608800?v=4" width="100px;" alt=""/>
+</a><br>
+<a href="https://github.com/ubvu/open-handbook/commits?author=Jolien-S">Jolien-S</a>
+</td>
+<td align="center">
+<a href="https://github.com/Elisa-on-GitHub">
+<img src="https://avatars.githubusercontent.com/u/78543806?v=4" width="100px;" alt=""/>
+</a><br>
+<a href="https://github.com/ubvu/open-handbook/commits?author=Elisa-on-GitHub">Elisa-on-GitHub</a>
+</td>
+<td align="center">
+<a href="https://github.com/Karvovskaya">
+<img src="https://avatars.githubusercontent.com/u/44666630?v=4" width="100px;" alt=""/>
+</a><br>
+<a href="https://github.com/ubvu/open-handbook/commits?author=Karvovskaya">Karvovskaya</a>
+</td>
+<td align="center">
+<a href="https://github.com/jhrudey">
+<img src="https://avatars.githubusercontent.com/u/35424147?v=4" width="100px;" alt=""/>
+</a><br>
+<a href="https://github.com/ubvu/open-handbook/commits?author=jhrudey">jhrudey</a>
+</td>
+</tr>
+
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
