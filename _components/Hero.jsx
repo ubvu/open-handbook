@@ -5,7 +5,7 @@ function Hero() {
         <div className="tw-hidden sm:tw-mb-8 sm:tw-flex sm:tw-justify-center">
           <div className="tw-relative tw-rounded-full tw-px-3 tw-py-1 tw-text-sm tw-leading-6 tw-text-gray-600 tw-ring-1 tw-ring-gray-900/10 hover:tw-ring-gray-900/20">
             This is a new project. Missing something?{" "}
-            <a href="#" className="tw-font-semibold tw-text-sky-600">
+            <a href="https://ez-github-contributor.netlify.app/" className="tw-font-semibold tw-text-sky-600">
               <span className="tw-absolute tw-inset-0" aria-tw-hidden="true" />
               Let us know <span aria-tw-hidden="true">&rarr;</span>
             </a>
