@@ -1,6 +1,6 @@
 # Contributing {.unnumbered}
 
-You can contribute to this book by making small edits or writing entirely new chapters. From small to large, all contributions are welcome. If you are in need of specific information, you can skip ahead using the table of contents.
+You can contribute to this book by making small edits or writing entirely new topics. From small to large, all contributions are welcome. If you are in need of specific information, you can skip ahead using the table of contents.
 
 :::{.callout-note}
 You need a GitHub account to contribute. You can [create one directly on GitHub](https://github.com/signup).
@@ -20,7 +20,7 @@ Once you made your edits, you are ready to commit (save) your changes and [submi
 
 ## Adding a chapter
 
-To add a new chapter, you need to create a new file ending in `.qmd` (e.g., `chapters/example.qmd`). You can do this by visiting the [handbook page on GitHub]({{< meta book.repo-url >}}) and clicking `Add file -> New file`.
+To add a new chapter, you need to create a new file ending in `.qmd` (e.g., `topics/example.qmd`). You can do this by visiting the [handbook page on GitHub]({{< meta book.repo-url >}}) and clicking `Add file -> New file`.
 
 ![Screenshot of GitHub highlighting where to find the "New file" button](public/Screenshot%202023-12-19%20at%2010.54.20.png)
 
@@ -30,7 +30,7 @@ The chapter itself needs to be [written in Markdown](#writing-text). Every chapt
 
 After that, you are ready to [submit your pull request](#submit-a-pull-request)! The reviewers will help you place the chapter in the right place of the book.[^1]
 
-[^1]: If you are really enthusiastic and want to do it yourself: The chapter needs to be added to the chapters list in `_quarto.yml`. You can find the chapters list around line 24 of that file.
+[^1]: If you are really enthusiastic and want to do it yourself: The chapter needs to be added to the topics list in `_quarto.yml`. You can find the topics list around line 24 of that file.
 
 ## Submit a pull request 
 

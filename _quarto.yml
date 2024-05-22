@@ -22,10 +22,10 @@ website:
     left:
       - text: "Home"
         file: index.qmd
-      - text: "Chapters"
+      - text: "Topics"
         menu:
-          - chapters/data-management-plan.qmd
-          - chapters/data-publication.qmd
+          - topcis/data-management-plan.qmd
+          - topcis/data-publication.qmd
       - contributing.qmd
     tools:
       - icon: github
@@ -39,8 +39,8 @@ website:
       style: "docked"
       background: light
       contents:
-        - chapters/data-management-plan.qmd
-        - chapters/data-publication.qmd
+        - topcis/data-management-plan.qmd
+        - topcis/data-publication.qmd
   page-footer:
     left:
       - text: "CC0 Public Domain Dedication"
