@@ -26,6 +26,9 @@ header.headroom--unpinned {
     transform: translateY(0%)
 }
 
+#quarto-sidebar {
+    top: 0px;
+}
 
 .quarto-secondary-nav .quarto-search-button  {
     display: none
