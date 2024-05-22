@@ -16,7 +16,7 @@ function Hero() {
             Quality information, curated by your VU community
           </h1>
           <p className="tw-mt-6 tw-text-lg tw-leading-8 tw-text-gray-600">
-            Research is a collective effort. Here you can find and
+            Research is a collective effort. The Research Support Handbook helps you find and
             create the resources you need to get it done.
           </p>
           <div className="tw-mt-10 tw-flex tw-items-center tw-justify-center tw-gap-x-6">
