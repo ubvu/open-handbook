@@ -1,20 +1,20 @@
 ---
-title: Welcome
+toc: false
+include-in-header:
+  text: |
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            corePlugins: {
+                preflight: false,
+            },
+            prefix: 'tw-',
+        }
+    </script>
 ---
 
-This is a template for creating (hand)books styled for VU Amsterdam. 
+{{< react Hero >}}
 
-To get started you only need a GitHub account. You can [find the template directly on GitHub]({{< meta book.repo-url >}}). If you need any help to set it up, contact [chris@libscie.org](mailto:chris@libscie.org).[@knuth84]
+{{< react Features >}}
 
-ALL WORK AND NO PLAY MAKES JACK A DULL BOY
-ALL WORK AND NO PLAY MAKES JACK A DULL BOY
-ALL WORK AND NO PLAY MAKES JACK A DULL BOY
-ALL WORK AND NO PLAY MAKES JACK A DULL BOY
-ALL WORK AND NO PLAY MAKES JACK A DULL BOY
-ALL WORK AND NO PLAY MAKES JACK A DULL BOY
-ALL WORK AND NO PLAY MAKES JACK A DULL BOY
-ALL WORK AND NO PLAY MAKES JACK A DULL BOY
-ALL WORK AND NO PLAY MAKES JACK A DULL BOY
-ALL WORK AND NO PLAY MAKES JACK A DULL BOY
-
-<!-- ## Contributors -->
+{{< react Cta >}}

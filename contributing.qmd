@@ -1,6 +1,6 @@
 # Contributing {.unnumbered}
 
-You can contribute to this book by making small edits or writing entirely new chapters. From small to large, all contributions are welcome. If you are in need of specific information, you can skip ahead using the table of contents.
+You can contribute to this book by making small edits or writing entirely new topics. From small to large, all contributions are welcome. If you are in need of specific information, you can skip ahead using the table of contents.
 
 :::{.callout-note}
 You need a GitHub account to contribute. You can [create one directly on GitHub](https://github.com/signup).
@@ -8,7 +8,7 @@ You need a GitHub account to contribute. You can [create one directly on GitHub]
 
 ## Suggesting edits
 
-The easiest and quickest way to contribute to the book is make suggested edits. On each page you will find a button reading "Edit this page" (usually on the right). 
+The easiest and quickest way to contribute to the book is make suggested edits. On each page you will find a button reading "Edit this page" (usually on the right).
 
 ![Screenshot of a handbook chapter, with a red box on the right hand side of the page indicating where to find the "Edit this page" button](public/Screenshot%202023-12-19%20at%2010.41.49.png)
 
@@ -20,25 +20,25 @@ Once you made your edits, you are ready to commit (save) your changes and [submi
 
 ## Adding a chapter
 
-To add a new chapter, you need to create a new file ending in `.qmd` (e.g., `chapters/example.qmd`). You can do this by visiting the [handbook page on GitHub]({{< meta book.repo-url >}}) and clicking `Add file -> New file`.
+To add a new chapter, you need to create a new file ending in `.qmd` (e.g., `topics/example.qmd`). You can do this by visiting the [handbook page on GitHub]({{< var repo-url >}}) and clicking `Add file -> New file`.
 
 ![Screenshot of GitHub highlighting where to find the "New file" button](public/Screenshot%202023-12-19%20at%2010.54.20.png)
 
 When you click this button you may be asked to [fork](#forking) the repository. This is not a problem so go ahead!
 
-The chapter itself needs to be [written in Markdown](#writing-text). Every chapter must contain a first level heading (e.g., `# Heading`), which will be the chapter title. Section headings are second level headings (e.g., `## Section`). 
+The chapter itself needs to be [written in Markdown](#writing-text). Every chapter must contain a first level heading (e.g., `# Heading`), which will be the chapter title. Section headings are second level headings (e.g., `## Section`).
 
 After that, you are ready to [submit your pull request](#submit-a-pull-request)! The reviewers will help you place the chapter in the right place of the book.[^1]
 
-[^1]: If you are really enthusiastic and want to do it yourself: The chapter needs to be added to the chapters list in `_quarto.yml`. You can find the chapters list around line 24 of that file.
+[^1]: If you are really enthusiastic and want to do it yourself: The chapter needs to be added to the topics list in `_quarto.yml`. You can find the topics list around line 24 of that file.
 
-## Submit a pull request 
+## Submit a pull request
 
-Once you have made suggested changes, a pull request is the way for you to ask for your changes to be incorporated into the handbook. The people maintaining the handbook will review what you wrote, ask some questions, and accept or decline your contributions. 
+Once you have made suggested changes, a pull request is the way for you to ask for your changes to be incorporated into the handbook. The people maintaining the handbook will review what you wrote, ask some questions, and accept or decline your contributions.
 
-We recommend keeping your suggested changes small or limited in scope, and explaining why you are suggesting these changes. It is more likely your changes are included when you are fixing a typo or adding a paragraph, and less likely if you are revising the entire handbook. It is also more likely they are included if you explain why you are suggesting the changes, rather than dropping by and making edits without any context. 
+We recommend keeping your suggested changes small or limited in scope, and explaining why you are suggesting these changes. It is more likely your changes are included when you are fixing a typo or adding a paragraph, and less likely if you are revising the entire handbook. It is also more likely they are included if you explain why you are suggesting the changes, rather than dropping by and making edits without any context.
 
-If you are adding a new chapter, it is definitely recommended to [open an issue first]({{< meta book.issue-url >}}) to see whether there is a need for it (and maybe you'll find collaborators!).
+If you are adding a new chapter, it is definitely recommended to [open an issue first]({{< var issue-url >}}) to see whether there is a need for it (and maybe you'll find collaborators!).
 
 During the review process you may be asked to update your changes, or revisions may be added by the people maintaining the handbook. It is helpful if you keep an eye on your GitHub account to ensure timely responses to help the process along.
 
@@ -60,17 +60,17 @@ You simply write text as you are used to. To make something *italic*, **bold**, 
 - and on
 ```
 
-If you want to add code, use references, create links, or footnotes - it is all possible. We will expand examples here based on your needs, so if you need help, [let us know by reporting an issue]({{< meta book.issue-url >}})!
+If you want to add code, use references, create links, or footnotes - it is all possible. We will expand examples here based on your needs, so if you need help, [let us know by reporting an issue]({{< var issue-url >}})!
 
-## GitHub 
+## GitHub
 
 We use [GitHub](https://github.com) to create this website automatically, and to manage all the incoming updates. You do not need to know how it works entirely, but we want to help you understand some things so you are not confused.
 
 ### Repository
 
-A repository on GitHub is like a folder on your computer. This can be many things, depending on what files it contains. 
+A repository on GitHub is like a folder on your computer. This can be many things, depending on what files it contains.
 
-When we mention a repository here, we mean that we want you to look at a specific folder. The repository for this website for example can be found on GitHub directly]({{< meta book.repo-url >}}). You will always be contributing to a repository, in order to contribute to the handbook.
+When we mention a repository here, we mean that we want you to look at a specific folder. The [repository for this website for example can be found on GitHub directly]({{< var repo-url >}}). You will always be contributing to a repository, in order to contribute to the handbook.
 
 ### Forking
 
@@ -79,4 +79,3 @@ A repository is owned by one or multiple people on GitHub. If you are not one of
 When you create a copy, you do not have to worry about accidentally removing or destroying the handbook. Your changes are not reflected in the website until you [submit a pull request](#submit-a-pull-request).
 
 <!-- ## Adding references -->
-
