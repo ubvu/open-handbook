@@ -1,108 +1,10 @@
 [
   {
-    "objectID": "contributing.html",
-    "href": "contributing.html",
-    "title": "Contributing",
+    "objectID": "pathways.html",
+    "href": "pathways.html",
+    "title": "Pathways",
     "section": "",
-    "text": "You can contribute to this book by making small edits or writing entirely new topics. From small to large, all contributions are welcome. If you are in need of specific information, you can skip ahead using the table of contents.\n\n\n\n\n\n\nNote\n\n\n\nYou need a GitHub account to contribute. You can create one directly on GitHub.\n\n\n\n\nThe easiest and quickest way to contribute to the book is make suggested edits. On each page you will find a button reading “Edit this page” (usually on the right).\n\n\n\nScreenshot of a handbook chapter, with a red box on the right hand side of the page indicating where to find the “Edit this page” button\n\n\nWhen you click that, you will immediately be taken to GitHub to edit the text of that specific page. You may be prompted to create a fork (forking) in case these are your first edits.\n\n\n\nScreenshot of the GitHub file editor, with some changes made and the “Commit changes” button active\n\n\nOnce you made your edits, you are ready to commit (save) your changes and submit your pull request, requesting those changes to be included in the handbook.\n\n\n\nTo add a new chapter, you need to create a new file ending in .qmd (e.g., topics/example.qmd). You can do this by visiting the handbook page on GitHub and clicking Add file -&gt; New file.\n\n\n\nScreenshot of GitHub highlighting where to find the “New file” button\n\n\nWhen you click this button you may be asked to fork the repository. This is not a problem so go ahead!\nThe chapter itself needs to be written in Markdown. Every chapter must contain a first level heading (e.g., # Heading), which will be the chapter title. Section headings are second level headings (e.g., ## Section).\nAfter that, you are ready to submit your pull request! The reviewers will help you place the chapter in the right place of the book.1\n\n\n\nOnce you have made suggested changes, a pull request is the way for you to ask for your changes to be incorporated into the handbook. The people maintaining the handbook will review what you wrote, ask some questions, and accept or decline your contributions.\nWe recommend keeping your suggested changes small or limited in scope, and explaining why you are suggesting these changes. It is more likely your changes are included when you are fixing a typo or adding a paragraph, and less likely if you are revising the entire handbook. It is also more likely they are included if you explain why you are suggesting the changes, rather than dropping by and making edits without any context.\nIf you are adding a new chapter, it is definitely recommended to open an issue first to see whether there is a need for it (and maybe you’ll find collaborators!).\nDuring the review process you may be asked to update your changes, or revisions may be added by the people maintaining the handbook. It is helpful if you keep an eye on your GitHub account to ensure timely responses to help the process along.\n\n\n\nThe book is created using Markdown - you can get familiarized with the basic syntax on the Markdown website. The getting started quick items are:\n# Heading level 1\n## Heading level 2\n### Heading level 3\n\nYou simply write text as you are used to. To make something *italic*, **bold**, or ***bold and italic***.\n\n&gt; this is how you add quotes\n\n- or lists\n- that can go on \n- and on\nIf you want to add code, use references, create links, or footnotes - it is all possible. We will expand examples here based on your needs, so if you need help, let us know by reporting an issue!\n\n\n\nWe use GitHub to create this website automatically, and to manage all the incoming updates. You do not need to know how it works entirely, but we want to help you understand some things so you are not confused.\n\n\nA repository on GitHub is like a folder on your computer. This can be many things, depending on what files it contains.\nWhen we mention a repository here, we mean that we want you to look at a specific folder. The repository for this website for example can be found on GitHub directly. You will always be contributing to a repository, in order to contribute to the handbook.\n\n\n\nA repository is owned by one or multiple people on GitHub. If you are not one of them, you can create a copy of the repository (folder) to make your edits in. This act of creating a copy is called “forking.”\nWhen you create a copy, you do not have to worry about accidentally removing or destroying the handbook. Your changes are not reflected in the website until you submit a pull request."
-  },
-  {
-    "objectID": "contributing.html#suggesting-edits",
-    "href": "contributing.html#suggesting-edits",
-    "title": "Contributing",
-    "section": "",
-    "text": "The easiest and quickest way to contribute to the book is make suggested edits. On each page you will find a button reading “Edit this page” (usually on the right).\n\n\n\nScreenshot of a handbook chapter, with a red box on the right hand side of the page indicating where to find the “Edit this page” button\n\n\nWhen you click that, you will immediately be taken to GitHub to edit the text of that specific page. You may be prompted to create a fork (forking) in case these are your first edits.\n\n\n\nScreenshot of the GitHub file editor, with some changes made and the “Commit changes” button active\n\n\nOnce you made your edits, you are ready to commit (save) your changes and submit your pull request, requesting those changes to be included in the handbook."
-  },
-  {
-    "objectID": "contributing.html#adding-a-chapter",
-    "href": "contributing.html#adding-a-chapter",
-    "title": "Contributing",
-    "section": "",
-    "text": "To add a new chapter, you need to create a new file ending in .qmd (e.g., topics/example.qmd). You can do this by visiting the handbook page on GitHub and clicking Add file -&gt; New file.\n\n\n\nScreenshot of GitHub highlighting where to find the “New file” button\n\n\nWhen you click this button you may be asked to fork the repository. This is not a problem so go ahead!\nThe chapter itself needs to be written in Markdown. Every chapter must contain a first level heading (e.g., # Heading), which will be the chapter title. Section headings are second level headings (e.g., ## Section).\nAfter that, you are ready to submit your pull request! The reviewers will help you place the chapter in the right place of the book.1"
-  },
-  {
-    "objectID": "contributing.html#submit-a-pull-request",
-    "href": "contributing.html#submit-a-pull-request",
-    "title": "Contributing",
-    "section": "",
-    "text": "Once you have made suggested changes, a pull request is the way for you to ask for your changes to be incorporated into the handbook. The people maintaining the handbook will review what you wrote, ask some questions, and accept or decline your contributions.\nWe recommend keeping your suggested changes small or limited in scope, and explaining why you are suggesting these changes. It is more likely your changes are included when you are fixing a typo or adding a paragraph, and less likely if you are revising the entire handbook. It is also more likely they are included if you explain why you are suggesting the changes, rather than dropping by and making edits without any context.\nIf you are adding a new chapter, it is definitely recommended to open an issue first to see whether there is a need for it (and maybe you’ll find collaborators!).\nDuring the review process you may be asked to update your changes, or revisions may be added by the people maintaining the handbook. It is helpful if you keep an eye on your GitHub account to ensure timely responses to help the process along."
-  },
-  {
-    "objectID": "contributing.html#writing-text",
-    "href": "contributing.html#writing-text",
-    "title": "Contributing",
-    "section": "",
-    "text": "The book is created using Markdown - you can get familiarized with the basic syntax on the Markdown website. The getting started quick items are:\n# Heading level 1\n## Heading level 2\n### Heading level 3\n\nYou simply write text as you are used to. To make something *italic*, **bold**, or ***bold and italic***.\n\n&gt; this is how you add quotes\n\n- or lists\n- that can go on \n- and on\nIf you want to add code, use references, create links, or footnotes - it is all possible. We will expand examples here based on your needs, so if you need help, let us know by reporting an issue!"
-  },
-  {
-    "objectID": "contributing.html#github",
-    "href": "contributing.html#github",
-    "title": "Contributing",
-    "section": "",
-    "text": "We use GitHub to create this website automatically, and to manage all the incoming updates. You do not need to know how it works entirely, but we want to help you understand some things so you are not confused.\n\n\nA repository on GitHub is like a folder on your computer. This can be many things, depending on what files it contains.\nWhen we mention a repository here, we mean that we want you to look at a specific folder. The repository for this website for example can be found on GitHub directly. You will always be contributing to a repository, in order to contribute to the handbook.\n\n\n\nA repository is owned by one or multiple people on GitHub. If you are not one of them, you can create a copy of the repository (folder) to make your edits in. This act of creating a copy is called “forking.”\nWhen you create a copy, you do not have to worry about accidentally removing or destroying the handbook. Your changes are not reflected in the website until you submit a pull request."
-  },
-  {
-    "objectID": "contributing.html#footnotes",
-    "href": "contributing.html#footnotes",
-    "title": "Contributing",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nIf you are really enthusiastic and want to do it yourself: The chapter needs to be added to the topics list in _quarto.yml. You can find the topics list around line 24 of that file.↩︎"
-  },
-  {
-    "objectID": "topics/data-publication.html",
-    "href": "topics/data-publication.html",
-    "title": "Data Publication",
-    "section": "",
-    "text": "Open Access publishing means that you make your publication freely accessible online to everyone without restrictions. The Vrije Universiteit believes that government-funded research should be available free of charge to as many people as possible. To that end, the VU Library offers a guide on how to go about Open Access Publishing.\nOpen Access publishing is one component of Open Science. [UNESCO defines Open Science]((https://www.unesco.org/en/open-science/about?hub=686) as\n\na set of principles and practices that aim to make scientific research from all fields accessible to everyone for the benefits of scientists and society as a whole. Open science is about making sure not only that scientific knowledge is accessible but also that the production of that knowledge itself is inclusive, equitable and sustainable\n\nThis includes making openly available research data, methods, and documentation where possible. As such, RDM and the practices outlined in this LibGuide are a precondition of Open Science.\nYou can read more about Open Science in the Netherlands on the website of the Nationaal Programma Open Science and join the Open Science Community Amsterdam, the community of VU employees interested in Open Science (joint with the University of Amsterdam and Amsterdam University of Applied Sciences).\n\n\n\nInstead of archiving research data in a data repository, you may choose to publish an article about your data collection. This is not necessarily common for all disciplines. Some examples of data journals where you can publish your data and dataset, are:\n\nScientific Data - Nature\nGeoscience Data Journal\nGigascience\nDataset Papers in Science\nJournal of Physical and Chemical Reference Data\nEarth System Science Data\nJournal of Open Archaeology Data\nJournal of Open Health Data\nJournal of Open Psychology Data\n\n\n\n\nA persistent identifier (PID) is a durable reference to a digital dataset document, website or other object. It is a kind of ISBN for digital files. By using a persistent identifier, you make sure that your dataset will be findable well into the future. A DOI or Handle are the commonly used PIDs. The data archiving options at the VU commonly offer DOIs.\nMost data archives or repositories offer a persistent identifier and generate this automatically when research data are archived. For example, this is the case for DataverseNL at the VU. In Yoda at the VU, assigning a PID is possible, but does not happen automatically. Please get in touch with the RDM Support Desk if you have questions about assigning a PID when you archive data in Yoda.\n\n\n\nA data licence agreement is a legal instrument that lets others know what they can and cannot do with your research data (and any documentation. scripts and metadata that are published with the data). It is important to consider what kind of limitations are relevant. An important component can be a guideline on how people should cite the dataset. Other components could be:\n\nCan people make copies or even distribute copies\nWho should be contacted if you need access to re-use data\nEtc.\n\nIn principle, Dataverse allows you to choose your terms of use. Some data repositories require you to use a certain licence if you want to deposit your data with them. At Dryad, for example, all datasets are published under the terms of Creative Commons Zero to minimise legal barriers and to maximise the impact for research and education. Some funders may also require that you publish the data as open data. Open data are data that can be freely used, re-used and redistributed by anyone - subject only, at most, to the requirement to attribute and share alike (Open Knowledge International definition). If you need help with drawing up license agreements, you can contact the IXA office.\nAdditional websites and tools:\n\nExplanation about copyrights and licences by a professor from Leiden University (English subtitles available)\nThe Guide to Creative Commons for Scholarly Publishing and Educational Resources by NWO, VSNU and the University and Royal Libraries\nDCC how-to guide on licensing research data, a guide that links to the Creative Commons website, where many terms are explained\nOpen Data Commons Public Domain Dedication and License (PDDL)\nEUDAT B2SHARE license selection wizard, which Pawel Kamocki (et al) released under an open source license.\n\n\n\n\nAs with data, it is important to license any software that you write for your research. Some basic information about software licensing can be found here, but it is also important to keep the following in mind:\n\nFor software, choosing a licence usually happens right when you start developing the software or when you put it in a public repository, rather than when the software is finished and fully baked. This makes sense: immediately when the software appears on a public repository, the software can be found and seen by others. Giving it a licence helps others to figure out what they can and can’t do with it.\nIf you are reusing software or libraries written by someone else, you must stick to the clauses of the licence given to the original software/library;\nIf you used proprietary software to write your code (e.g. SPSS syntax), your options in choosing a licence will probably be limited;\nWhen choosing a licence, do not just think about what others may do with the software, but also what you might want to do with the software in the future.\n\nThere are several tools that can help you to choose a suitable sotware licence. If you have questions or need guidance in choosing a licence for your software, get in touch with the RDM Support Desk."
-  },
-  {
-    "objectID": "topics/data-publication.html#open-access-and-open-science",
-    "href": "topics/data-publication.html#open-access-and-open-science",
-    "title": "Data Publication",
-    "section": "",
-    "text": "Open Access publishing means that you make your publication freely accessible online to everyone without restrictions. The Vrije Universiteit believes that government-funded research should be available free of charge to as many people as possible. To that end, the VU Library offers a guide on how to go about Open Access Publishing.\nOpen Access publishing is one component of Open Science. [UNESCO defines Open Science]((https://www.unesco.org/en/open-science/about?hub=686) as\n\na set of principles and practices that aim to make scientific research from all fields accessible to everyone for the benefits of scientists and society as a whole. Open science is about making sure not only that scientific knowledge is accessible but also that the production of that knowledge itself is inclusive, equitable and sustainable\n\nThis includes making openly available research data, methods, and documentation where possible. As such, RDM and the practices outlined in this LibGuide are a precondition of Open Science.\nYou can read more about Open Science in the Netherlands on the website of the Nationaal Programma Open Science and join the Open Science Community Amsterdam, the community of VU employees interested in Open Science (joint with the University of Amsterdam and Amsterdam University of Applied Sciences)."
-  },
-  {
-    "objectID": "topics/data-publication.html#publishing-your-data-in-a-data-journal",
-    "href": "topics/data-publication.html#publishing-your-data-in-a-data-journal",
-    "title": "Data Publication",
-    "section": "",
-    "text": "Instead of archiving research data in a data repository, you may choose to publish an article about your data collection. This is not necessarily common for all disciplines. Some examples of data journals where you can publish your data and dataset, are:\n\nScientific Data - Nature\nGeoscience Data Journal\nGigascience\nDataset Papers in Science\nJournal of Physical and Chemical Reference Data\nEarth System Science Data\nJournal of Open Archaeology Data\nJournal of Open Health Data\nJournal of Open Psychology Data"
-  },
-  {
-    "objectID": "topics/data-publication.html#what-is-a-persistent-identifier",
-    "href": "topics/data-publication.html#what-is-a-persistent-identifier",
-    "title": "Data Publication",
-    "section": "",
-    "text": "A persistent identifier (PID) is a durable reference to a digital dataset document, website or other object. It is a kind of ISBN for digital files. By using a persistent identifier, you make sure that your dataset will be findable well into the future. A DOI or Handle are the commonly used PIDs. The data archiving options at the VU commonly offer DOIs.\nMost data archives or repositories offer a persistent identifier and generate this automatically when research data are archived. For example, this is the case for DataverseNL at the VU. In Yoda at the VU, assigning a PID is possible, but does not happen automatically. Please get in touch with the RDM Support Desk if you have questions about assigning a PID when you archive data in Yoda."
-  },
-  {
-    "objectID": "topics/data-publication.html#licensing-the-data",
-    "href": "topics/data-publication.html#licensing-the-data",
-    "title": "Data Publication",
-    "section": "",
-    "text": "A data licence agreement is a legal instrument that lets others know what they can and cannot do with your research data (and any documentation. scripts and metadata that are published with the data). It is important to consider what kind of limitations are relevant. An important component can be a guideline on how people should cite the dataset. Other components could be:\n\nCan people make copies or even distribute copies\nWho should be contacted if you need access to re-use data\nEtc.\n\nIn principle, Dataverse allows you to choose your terms of use. Some data repositories require you to use a certain licence if you want to deposit your data with them. At Dryad, for example, all datasets are published under the terms of Creative Commons Zero to minimise legal barriers and to maximise the impact for research and education. Some funders may also require that you publish the data as open data. Open data are data that can be freely used, re-used and redistributed by anyone - subject only, at most, to the requirement to attribute and share alike (Open Knowledge International definition). If you need help with drawing up license agreements, you can contact the IXA office.\nAdditional websites and tools:\n\nExplanation about copyrights and licences by a professor from Leiden University (English subtitles available)\nThe Guide to Creative Commons for Scholarly Publishing and Educational Resources by NWO, VSNU and the University and Royal Libraries\nDCC how-to guide on licensing research data, a guide that links to the Creative Commons website, where many terms are explained\nOpen Data Commons Public Domain Dedication and License (PDDL)\nEUDAT B2SHARE license selection wizard, which Pawel Kamocki (et al) released under an open source license."
-  },
-  {
-    "objectID": "topics/data-publication.html#licensing-software",
-    "href": "topics/data-publication.html#licensing-software",
-    "title": "Data Publication",
-    "section": "",
-    "text": "As with data, it is important to license any software that you write for your research. Some basic information about software licensing can be found here, but it is also important to keep the following in mind:\n\nFor software, choosing a licence usually happens right when you start developing the software or when you put it in a public repository, rather than when the software is finished and fully baked. This makes sense: immediately when the software appears on a public repository, the software can be found and seen by others. Giving it a licence helps others to figure out what they can and can’t do with it.\nIf you are reusing software or libraries written by someone else, you must stick to the clauses of the licence given to the original software/library;\nIf you used proprietary software to write your code (e.g. SPSS syntax), your options in choosing a licence will probably be limited;\nWhen choosing a licence, do not just think about what others may do with the software, but also what you might want to do with the software in the future.\n\nThere are several tools that can help you to choose a suitable sotware licence. If you have questions or need guidance in choosing a licence for your software, get in touch with the RDM Support Desk."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "The Open Handbook is a project started by Research Data Support in early 2024. After planning and design phases, we launched the initial version of the resource at the Research Support Days in May 2024.\nThe Open Handbook centralizes resources that VU researchers need to do their work. The Open Handbook also provides everyone with direct pathways to change resources in case anything has become outdated.\nPreviously such resources were spread out across many different pages at the VU and were hard to update. The Open Handbook is curated by us all, and reviewed by specialists. This way we can help each other.\n\n\nThe Open Handbook was initiated by Lena Karvovskaya, Jessica Hrudey, Elisa, and Jolien Scholten. The initial infrastructure for the Open Handbook was built by Liberate Science.\nWe want to specifically call out the following folk who contributed outside of GitHub:\n\nJochem Lybaart\n\n\n\n\n\n\nAll contributions to this project are gratefully acknowledged using the allcontributors package following the all-contributors specification. Contributions of any kind are welcome!\n\n\n\n   chartgerink\n\n\n   Jolien-S\n\n\n   Elisa-on-GitHub\n\n\n   Karvovskaya\n\n\n   jhrudey"
-  },
-  {
-    "objectID": "about.html#contributors",
-    "href": "about.html#contributors",
-    "title": "About",
-    "section": "",
-    "text": "The Open Handbook was initiated by Lena Karvovskaya, Jessica Hrudey, Elisa, and Jolien Scholten. The initial infrastructure for the Open Handbook was built by Liberate Science.\nWe want to specifically call out the following folk who contributed outside of GitHub:\n\nJochem Lybaart\n\n\n\n\n\n\nAll contributions to this project are gratefully acknowledged using the allcontributors package following the all-contributors specification. Contributions of any kind are welcome!\n\n\n\n   chartgerink\n\n\n   Jolien-S\n\n\n   Elisa-on-GitHub\n\n\n   Karvovskaya\n\n\n   jhrudey"
+    "text": "Data lifecycle\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "topics/data-management-plan.html",
@@ -159,5 +61,180 @@
     "title": "Data Management Plan",
     "section": "",
     "text": "The VU DMP template consists of seven sections with questions. In DMPonline, there is guidance available for all sections, as well as example answers. When you are writing your DMP, you can consult this information directly in DMPonline. Below we provide references to information and support available for various RDM-related aspects.\n\n\nIf you have questions about working with personal data in research, please get in touch with the Privacy Champion of your faculty. The overview of Privacy Champions can be found on the VU website. Make sure to contact your Privacy Champion in the following situations:\n\nIf you need to carry out a DPIA, or if you’re unsure if you need to do one\nIf you work with special category personal data, or otherwise very sensitive data\nIf you are collaborating with other parties\nIf you need software for which no licence is set up on behalf of the VU\nIf you wish to reuse existing data containing personal data\n\nIt is impossible to provide an overview of tasks to be carried out to ensure compliance with the GDPR that fits all research projects. For that reason, it is important to contact your Privacy Champion. They will be able to identify what needs to be arranged to adhere to the GDPR.\nEthical aspects of research should be addressed in the ethics procedure of your faculty. Each faculty has their own ethics committee. The webpages of all committees are listed below. Please go to the page of the ethics committee of your faculty to find instructions for ethical review procedures for your study.\n\nACTA: ACTA Institutional Review Board (IRB)\nBeta: Research ethics review committee Faculty of Science (BETHCIE)\nFGB: Scientific and Ethical Review Board (VCWE)\nFGW: Ethische Toetsingscommissie Onderzoek (EtCO)\nFSW: Research Ethics Review Committee (RERC)\nRCH (Faculty of Law): Ethics Committee\nSBE: Research Ethics and Integrity\nVUmc: METc (Medical Ethical Review Committee)\n\n\n\n\nAn overview of storage facilities at the VU is available in the Data Storage Finder. You can use this as a starting point to navigate storage solutions.\nIf you have questions about data storage and backup, send an email to rdm@vu.nl.\n\n\n\nIf your research data contains personal data and you’re unsure about which data may be published, please contact your Privacy Champion."
+  },
+  {
+    "objectID": "topics.html",
+    "href": "topics.html",
+    "title": "Topics",
+    "section": "",
+    "text": "Data Management Plan\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData Publication\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog/2024-05-23welcome.html",
+    "href": "blog/2024-05-23welcome.html",
+    "title": "Hello world!",
+    "section": "",
+    "text": "This is the first blog entry on the Research Support Handbook. We will be posting more at a later time, and are looking forward to your contributions as well.\nWe will follow up with more details later."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Hello world!\n\n\n\n\n\n\n\n\n\n\n\nMay 23, 2024\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "The Open Handbook is a project started by Research Data Support in early 2024. After planning and design phases, we launched the initial version of the resource at the Research Support Days in May 2024.\nThe Open Handbook centralizes resources that VU researchers need to do their work. The Open Handbook also provides everyone with direct pathways to change resources in case anything has become outdated.\nPreviously such resources were spread out across many different pages at the VU and were hard to update. The Open Handbook is curated by us all, and reviewed by specialists. This way we can help each other.\n\n\nThe Open Handbook was initiated by Lena Karvovskaya, Jessica Hrudey, Elisa, and Jolien Scholten. The initial infrastructure for the Open Handbook was built by Liberate Science.\nWe want to specifically call out the following folk who contributed outside of GitHub:\n\nJochem Lybaart\n\n\n\n\n\n\nAll contributions to this project are gratefully acknowledged using the allcontributors package following the all-contributors specification. Contributions of any kind are welcome!\n\n\n\n   chartgerink\n\n\n   Jolien-S\n\n\n   Elisa-on-GitHub\n\n\n   Karvovskaya\n\n\n   jhrudey"
+  },
+  {
+    "objectID": "about.html#contributors",
+    "href": "about.html#contributors",
+    "title": "About",
+    "section": "",
+    "text": "The Open Handbook was initiated by Lena Karvovskaya, Jessica Hrudey, Elisa, and Jolien Scholten. The initial infrastructure for the Open Handbook was built by Liberate Science.\nWe want to specifically call out the following folk who contributed outside of GitHub:\n\nJochem Lybaart\n\n\n\n\n\n\nAll contributions to this project are gratefully acknowledged using the allcontributors package following the all-contributors specification. Contributions of any kind are welcome!\n\n\n\n   chartgerink\n\n\n   Jolien-S\n\n\n   Elisa-on-GitHub\n\n\n   Karvovskaya\n\n\n   jhrudey"
+  },
+  {
+    "objectID": "pathways/data-lifecycle.html#discover-initiate",
+    "href": "pathways/data-lifecycle.html#discover-initiate",
+    "title": "Data lifecycle",
+    "section": "Discover & Initiate",
+    "text": "Discover & Initiate"
+  },
+  {
+    "objectID": "pathways/data-lifecycle.html#plan-design",
+    "href": "pathways/data-lifecycle.html#plan-design",
+    "title": "Data lifecycle",
+    "section": "Plan & Design",
+    "text": "Plan & Design"
+  },
+  {
+    "objectID": "pathways/data-lifecycle.html#collect-store",
+    "href": "pathways/data-lifecycle.html#collect-store",
+    "title": "Data lifecycle",
+    "section": "Collect & Store",
+    "text": "Collect & Store"
+  },
+  {
+    "objectID": "pathways/data-lifecycle.html#process-analyse",
+    "href": "pathways/data-lifecycle.html#process-analyse",
+    "title": "Data lifecycle",
+    "section": "Process & Analyse",
+    "text": "Process & Analyse"
+  },
+  {
+    "objectID": "pathways/data-lifecycle.html#document-preserve",
+    "href": "pathways/data-lifecycle.html#document-preserve",
+    "title": "Data lifecycle",
+    "section": "Document & Preserve",
+    "text": "Document & Preserve"
+  },
+  {
+    "objectID": "pathways/data-lifecycle.html#publish-share",
+    "href": "pathways/data-lifecycle.html#publish-share",
+    "title": "Data lifecycle",
+    "section": "Publish & Share",
+    "text": "Publish & Share"
+  },
+  {
+    "objectID": "pathways/data-lifecycle.html#support",
+    "href": "pathways/data-lifecycle.html#support",
+    "title": "Data lifecycle",
+    "section": "Support",
+    "text": "Support"
+  },
+  {
+    "objectID": "topics/data-publication.html",
+    "href": "topics/data-publication.html",
+    "title": "Data Publication",
+    "section": "",
+    "text": "Open Access publishing means that you make your publication freely accessible online to everyone without restrictions. The Vrije Universiteit believes that government-funded research should be available free of charge to as many people as possible. To that end, the VU Library offers a guide on how to go about Open Access Publishing.\nOpen Access publishing is one component of Open Science. [UNESCO defines Open Science]((https://www.unesco.org/en/open-science/about?hub=686) as\n\na set of principles and practices that aim to make scientific research from all fields accessible to everyone for the benefits of scientists and society as a whole. Open science is about making sure not only that scientific knowledge is accessible but also that the production of that knowledge itself is inclusive, equitable and sustainable\n\nThis includes making openly available research data, methods, and documentation where possible. As such, RDM and the practices outlined in this LibGuide are a precondition of Open Science.\nYou can read more about Open Science in the Netherlands on the website of the Nationaal Programma Open Science and join the Open Science Community Amsterdam, the community of VU employees interested in Open Science (joint with the University of Amsterdam and Amsterdam University of Applied Sciences).\n\n\n\nInstead of archiving research data in a data repository, you may choose to publish an article about your data collection. This is not necessarily common for all disciplines. Some examples of data journals where you can publish your data and dataset, are:\n\nScientific Data - Nature\nGeoscience Data Journal\nGigascience\nDataset Papers in Science\nJournal of Physical and Chemical Reference Data\nEarth System Science Data\nJournal of Open Archaeology Data\nJournal of Open Health Data\nJournal of Open Psychology Data\n\n\n\n\nA persistent identifier (PID) is a durable reference to a digital dataset document, website or other object. It is a kind of ISBN for digital files. By using a persistent identifier, you make sure that your dataset will be findable well into the future. A DOI or Handle are the commonly used PIDs. The data archiving options at the VU commonly offer DOIs.\nMost data archives or repositories offer a persistent identifier and generate this automatically when research data are archived. For example, this is the case for DataverseNL at the VU. In Yoda at the VU, assigning a PID is possible, but does not happen automatically. Please get in touch with the RDM Support Desk if you have questions about assigning a PID when you archive data in Yoda.\n\n\n\nA data licence agreement is a legal instrument that lets others know what they can and cannot do with your research data (and any documentation. scripts and metadata that are published with the data). It is important to consider what kind of limitations are relevant. An important component can be a guideline on how people should cite the dataset. Other components could be:\n\nCan people make copies or even distribute copies\nWho should be contacted if you need access to re-use data\nEtc.\n\nIn principle, Dataverse allows you to choose your terms of use. Some data repositories require you to use a certain licence if you want to deposit your data with them. At Dryad, for example, all datasets are published under the terms of Creative Commons Zero to minimise legal barriers and to maximise the impact for research and education. Some funders may also require that you publish the data as open data. Open data are data that can be freely used, re-used and redistributed by anyone - subject only, at most, to the requirement to attribute and share alike (Open Knowledge International definition). If you need help with drawing up license agreements, you can contact the IXA office.\nAdditional websites and tools:\n\nExplanation about copyrights and licences by a professor from Leiden University (English subtitles available)\nThe Guide to Creative Commons for Scholarly Publishing and Educational Resources by NWO, VSNU and the University and Royal Libraries\nDCC how-to guide on licensing research data, a guide that links to the Creative Commons website, where many terms are explained\nOpen Data Commons Public Domain Dedication and License (PDDL)\nEUDAT B2SHARE license selection wizard, which Pawel Kamocki (et al) released under an open source license.\n\n\n\n\nAs with data, it is important to license any software that you write for your research. Some basic information about software licensing can be found here, but it is also important to keep the following in mind:\n\nFor software, choosing a licence usually happens right when you start developing the software or when you put it in a public repository, rather than when the software is finished and fully baked. This makes sense: immediately when the software appears on a public repository, the software can be found and seen by others. Giving it a licence helps others to figure out what they can and can’t do with it.\nIf you are reusing software or libraries written by someone else, you must stick to the clauses of the licence given to the original software/library;\nIf you used proprietary software to write your code (e.g. SPSS syntax), your options in choosing a licence will probably be limited;\nWhen choosing a licence, do not just think about what others may do with the software, but also what you might want to do with the software in the future.\n\nThere are several tools that can help you to choose a suitable sotware licence. If you have questions or need guidance in choosing a licence for your software, get in touch with the RDM Support Desk."
+  },
+  {
+    "objectID": "topics/data-publication.html#open-access-and-open-science",
+    "href": "topics/data-publication.html#open-access-and-open-science",
+    "title": "Data Publication",
+    "section": "",
+    "text": "Open Access publishing means that you make your publication freely accessible online to everyone without restrictions. The Vrije Universiteit believes that government-funded research should be available free of charge to as many people as possible. To that end, the VU Library offers a guide on how to go about Open Access Publishing.\nOpen Access publishing is one component of Open Science. [UNESCO defines Open Science]((https://www.unesco.org/en/open-science/about?hub=686) as\n\na set of principles and practices that aim to make scientific research from all fields accessible to everyone for the benefits of scientists and society as a whole. Open science is about making sure not only that scientific knowledge is accessible but also that the production of that knowledge itself is inclusive, equitable and sustainable\n\nThis includes making openly available research data, methods, and documentation where possible. As such, RDM and the practices outlined in this LibGuide are a precondition of Open Science.\nYou can read more about Open Science in the Netherlands on the website of the Nationaal Programma Open Science and join the Open Science Community Amsterdam, the community of VU employees interested in Open Science (joint with the University of Amsterdam and Amsterdam University of Applied Sciences)."
+  },
+  {
+    "objectID": "topics/data-publication.html#publishing-your-data-in-a-data-journal",
+    "href": "topics/data-publication.html#publishing-your-data-in-a-data-journal",
+    "title": "Data Publication",
+    "section": "",
+    "text": "Instead of archiving research data in a data repository, you may choose to publish an article about your data collection. This is not necessarily common for all disciplines. Some examples of data journals where you can publish your data and dataset, are:\n\nScientific Data - Nature\nGeoscience Data Journal\nGigascience\nDataset Papers in Science\nJournal of Physical and Chemical Reference Data\nEarth System Science Data\nJournal of Open Archaeology Data\nJournal of Open Health Data\nJournal of Open Psychology Data"
+  },
+  {
+    "objectID": "topics/data-publication.html#what-is-a-persistent-identifier",
+    "href": "topics/data-publication.html#what-is-a-persistent-identifier",
+    "title": "Data Publication",
+    "section": "",
+    "text": "A persistent identifier (PID) is a durable reference to a digital dataset document, website or other object. It is a kind of ISBN for digital files. By using a persistent identifier, you make sure that your dataset will be findable well into the future. A DOI or Handle are the commonly used PIDs. The data archiving options at the VU commonly offer DOIs.\nMost data archives or repositories offer a persistent identifier and generate this automatically when research data are archived. For example, this is the case for DataverseNL at the VU. In Yoda at the VU, assigning a PID is possible, but does not happen automatically. Please get in touch with the RDM Support Desk if you have questions about assigning a PID when you archive data in Yoda."
+  },
+  {
+    "objectID": "topics/data-publication.html#licensing-the-data",
+    "href": "topics/data-publication.html#licensing-the-data",
+    "title": "Data Publication",
+    "section": "",
+    "text": "A data licence agreement is a legal instrument that lets others know what they can and cannot do with your research data (and any documentation. scripts and metadata that are published with the data). It is important to consider what kind of limitations are relevant. An important component can be a guideline on how people should cite the dataset. Other components could be:\n\nCan people make copies or even distribute copies\nWho should be contacted if you need access to re-use data\nEtc.\n\nIn principle, Dataverse allows you to choose your terms of use. Some data repositories require you to use a certain licence if you want to deposit your data with them. At Dryad, for example, all datasets are published under the terms of Creative Commons Zero to minimise legal barriers and to maximise the impact for research and education. Some funders may also require that you publish the data as open data. Open data are data that can be freely used, re-used and redistributed by anyone - subject only, at most, to the requirement to attribute and share alike (Open Knowledge International definition). If you need help with drawing up license agreements, you can contact the IXA office.\nAdditional websites and tools:\n\nExplanation about copyrights and licences by a professor from Leiden University (English subtitles available)\nThe Guide to Creative Commons for Scholarly Publishing and Educational Resources by NWO, VSNU and the University and Royal Libraries\nDCC how-to guide on licensing research data, a guide that links to the Creative Commons website, where many terms are explained\nOpen Data Commons Public Domain Dedication and License (PDDL)\nEUDAT B2SHARE license selection wizard, which Pawel Kamocki (et al) released under an open source license."
+  },
+  {
+    "objectID": "topics/data-publication.html#licensing-software",
+    "href": "topics/data-publication.html#licensing-software",
+    "title": "Data Publication",
+    "section": "",
+    "text": "As with data, it is important to license any software that you write for your research. Some basic information about software licensing can be found here, but it is also important to keep the following in mind:\n\nFor software, choosing a licence usually happens right when you start developing the software or when you put it in a public repository, rather than when the software is finished and fully baked. This makes sense: immediately when the software appears on a public repository, the software can be found and seen by others. Giving it a licence helps others to figure out what they can and can’t do with it.\nIf you are reusing software or libraries written by someone else, you must stick to the clauses of the licence given to the original software/library;\nIf you used proprietary software to write your code (e.g. SPSS syntax), your options in choosing a licence will probably be limited;\nWhen choosing a licence, do not just think about what others may do with the software, but also what you might want to do with the software in the future.\n\nThere are several tools that can help you to choose a suitable sotware licence. If you have questions or need guidance in choosing a licence for your software, get in touch with the RDM Support Desk."
+  },
+  {
+    "objectID": "contributing.html",
+    "href": "contributing.html",
+    "title": "Contributing",
+    "section": "",
+    "text": "You can contribute to this book by making small edits or writing entirely new topics. From small to large, all contributions are welcome. If you are in need of specific information, you can skip ahead using the table of contents.\n\n\n\n\n\n\nNote\n\n\n\nYou need a GitHub account to contribute. You can create one directly on GitHub.\n\n\n\n\nThe easiest and quickest way to contribute to the book is make suggested edits. On each page you will find a button reading “Edit this page” (usually on the right).\n\n\n\nScreenshot of a handbook chapter, with a red box on the right hand side of the page indicating where to find the “Edit this page” button\n\n\nWhen you click that, you will immediately be taken to GitHub to edit the text of that specific page. You may be prompted to create a fork (forking) in case these are your first edits.\n\n\n\nScreenshot of the GitHub file editor, with some changes made and the “Commit changes” button active\n\n\nOnce you made your edits, you are ready to commit (save) your changes and submit your pull request, requesting those changes to be included in the handbook.\n\n\n\nTo add a new chapter, you need to create a new file ending in .qmd (e.g., topics/example.qmd). You can do this by visiting the handbook page on GitHub and clicking Add file -&gt; New file.\n\n\n\nScreenshot of GitHub highlighting where to find the “New file” button\n\n\nWhen you click this button you may be asked to fork the repository. This is not a problem so go ahead!\nThe chapter itself needs to be written in Markdown. Every chapter must contain a first level heading (e.g., # Heading), which will be the chapter title. Section headings are second level headings (e.g., ## Section).\nAfter that, you are ready to submit your pull request! The reviewers will help you place the chapter in the right place of the book.1\n\n\n\nOnce you have made suggested changes, a pull request is the way for you to ask for your changes to be incorporated into the handbook. The people maintaining the handbook will review what you wrote, ask some questions, and accept or decline your contributions.\nWe recommend keeping your suggested changes small or limited in scope, and explaining why you are suggesting these changes. It is more likely your changes are included when you are fixing a typo or adding a paragraph, and less likely if you are revising the entire handbook. It is also more likely they are included if you explain why you are suggesting the changes, rather than dropping by and making edits without any context.\nIf you are adding a new chapter, it is definitely recommended to open an issue first to see whether there is a need for it (and maybe you’ll find collaborators!).\nDuring the review process you may be asked to update your changes, or revisions may be added by the people maintaining the handbook. It is helpful if you keep an eye on your GitHub account to ensure timely responses to help the process along.\n\n\n\nThe book is created using Markdown - you can get familiarized with the basic syntax on the Markdown website. The getting started quick items are:\n# Heading level 1\n## Heading level 2\n### Heading level 3\n\nYou simply write text as you are used to. To make something *italic*, **bold**, or ***bold and italic***.\n\n&gt; this is how you add quotes\n\n- or lists\n- that can go on \n- and on\nIf you want to add code, use references, create links, or footnotes - it is all possible. We will expand examples here based on your needs, so if you need help, let us know by reporting an issue!\n\n\n\nWe use GitHub to create this website automatically, and to manage all the incoming updates. You do not need to know how it works entirely, but we want to help you understand some things so you are not confused.\n\n\nA repository on GitHub is like a folder on your computer. This can be many things, depending on what files it contains.\nWhen we mention a repository here, we mean that we want you to look at a specific folder. The repository for this website for example can be found on GitHub directly. You will always be contributing to a repository, in order to contribute to the handbook.\n\n\n\nA repository is owned by one or multiple people on GitHub. If you are not one of them, you can create a copy of the repository (folder) to make your edits in. This act of creating a copy is called “forking.”\nWhen you create a copy, you do not have to worry about accidentally removing or destroying the handbook. Your changes are not reflected in the website until you submit a pull request."
+  },
+  {
+    "objectID": "contributing.html#suggesting-edits",
+    "href": "contributing.html#suggesting-edits",
+    "title": "Contributing",
+    "section": "",
+    "text": "The easiest and quickest way to contribute to the book is make suggested edits. On each page you will find a button reading “Edit this page” (usually on the right).\n\n\n\nScreenshot of a handbook chapter, with a red box on the right hand side of the page indicating where to find the “Edit this page” button\n\n\nWhen you click that, you will immediately be taken to GitHub to edit the text of that specific page. You may be prompted to create a fork (forking) in case these are your first edits.\n\n\n\nScreenshot of the GitHub file editor, with some changes made and the “Commit changes” button active\n\n\nOnce you made your edits, you are ready to commit (save) your changes and submit your pull request, requesting those changes to be included in the handbook."
+  },
+  {
+    "objectID": "contributing.html#adding-a-chapter",
+    "href": "contributing.html#adding-a-chapter",
+    "title": "Contributing",
+    "section": "",
+    "text": "To add a new chapter, you need to create a new file ending in .qmd (e.g., topics/example.qmd). You can do this by visiting the handbook page on GitHub and clicking Add file -&gt; New file.\n\n\n\nScreenshot of GitHub highlighting where to find the “New file” button\n\n\nWhen you click this button you may be asked to fork the repository. This is not a problem so go ahead!\nThe chapter itself needs to be written in Markdown. Every chapter must contain a first level heading (e.g., # Heading), which will be the chapter title. Section headings are second level headings (e.g., ## Section).\nAfter that, you are ready to submit your pull request! The reviewers will help you place the chapter in the right place of the book.1"
+  },
+  {
+    "objectID": "contributing.html#submit-a-pull-request",
+    "href": "contributing.html#submit-a-pull-request",
+    "title": "Contributing",
+    "section": "",
+    "text": "Once you have made suggested changes, a pull request is the way for you to ask for your changes to be incorporated into the handbook. The people maintaining the handbook will review what you wrote, ask some questions, and accept or decline your contributions.\nWe recommend keeping your suggested changes small or limited in scope, and explaining why you are suggesting these changes. It is more likely your changes are included when you are fixing a typo or adding a paragraph, and less likely if you are revising the entire handbook. It is also more likely they are included if you explain why you are suggesting the changes, rather than dropping by and making edits without any context.\nIf you are adding a new chapter, it is definitely recommended to open an issue first to see whether there is a need for it (and maybe you’ll find collaborators!).\nDuring the review process you may be asked to update your changes, or revisions may be added by the people maintaining the handbook. It is helpful if you keep an eye on your GitHub account to ensure timely responses to help the process along."
+  },
+  {
+    "objectID": "contributing.html#writing-text",
+    "href": "contributing.html#writing-text",
+    "title": "Contributing",
+    "section": "",
+    "text": "The book is created using Markdown - you can get familiarized with the basic syntax on the Markdown website. The getting started quick items are:\n# Heading level 1\n## Heading level 2\n### Heading level 3\n\nYou simply write text as you are used to. To make something *italic*, **bold**, or ***bold and italic***.\n\n&gt; this is how you add quotes\n\n- or lists\n- that can go on \n- and on\nIf you want to add code, use references, create links, or footnotes - it is all possible. We will expand examples here based on your needs, so if you need help, let us know by reporting an issue!"
+  },
+  {
+    "objectID": "contributing.html#github",
+    "href": "contributing.html#github",
+    "title": "Contributing",
+    "section": "",
+    "text": "We use GitHub to create this website automatically, and to manage all the incoming updates. You do not need to know how it works entirely, but we want to help you understand some things so you are not confused.\n\n\nA repository on GitHub is like a folder on your computer. This can be many things, depending on what files it contains.\nWhen we mention a repository here, we mean that we want you to look at a specific folder. The repository for this website for example can be found on GitHub directly. You will always be contributing to a repository, in order to contribute to the handbook.\n\n\n\nA repository is owned by one or multiple people on GitHub. If you are not one of them, you can create a copy of the repository (folder) to make your edits in. This act of creating a copy is called “forking.”\nWhen you create a copy, you do not have to worry about accidentally removing or destroying the handbook. Your changes are not reflected in the website until you submit a pull request."
+  },
+  {
+    "objectID": "contributing.html#footnotes",
+    "href": "contributing.html#footnotes",
+    "title": "Contributing",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nIf you are really enthusiastic and want to do it yourself: The chapter needs to be added to the topics list in _quarto.yml. You can find the topics list around line 24 of that file.↩︎"
   }
 ]
