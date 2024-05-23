@@ -14,13 +14,13 @@ function Cta() {
           </p>
           <div className="tw-mt-10 tw-flex tw-items-center tw-justify-center tw-gap-x-6">
             <a
-              href="#"
+              href="./topics.html"
               className="tw-rounded-md tw-bg-white tw-px-3.5 tw-py-2.5 tw-text-sm tw-font-semibold tw-text-sky-600 tw-shadow-sm hover:tw-bg-sky-50 focus-visible:tw-outline focus-visible:tw-outline-2 focus-visible:tw-outline-offset-2 focus-visible:tw-outline-white"
             >
-              View all topics
+              View topics
             </a>
-            <a href="#" className="tw-text-sm tw-font-semibold tw-leading-6 tw-text-white">
-              View [collections/pathways] <span aria-hidden="true">→</span>
+            <a href="./pathways.html" className="tw-text-sm tw-font-semibold tw-leading-6 tw-text-white">
+              View pathways <span aria-hidden="true">→</span>
             </a>
           </div>
         </div>
