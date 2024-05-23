@@ -22,10 +22,12 @@ website:
     left:
       - text: "Home"
         file: index.qmd
+      - text: "Blog"
+        file: blog.qmd
+      - text: "Pathways"
+        file: pathways.qmd
       - text: "Topics"
-        menu:
-          - topics/data-management-plan.qmd
-          - topics/data-publication.qmd
+        file: topics.qmd
       - contributing.qmd
     tools:
       - icon: github
