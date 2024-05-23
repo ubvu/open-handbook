@@ -21,13 +21,13 @@ function Hero() {
           </p>
           <div className="tw-mt-10 tw-flex tw-items-center tw-justify-center tw-gap-x-6">
             <a
-              href="#"
+              href="./topics.html"
               className="tw-rounded-md tw-bg-sky-600 tw-px-3.5 tw-py-2.5 tw-text-sm tw-font-semibold tw-text-white tw-shadow-sm hover:tw-bg-sky-500 focus-visible:tw-outline focus-visible:tw-outline-2 focus-visible:tw-outline-offset-2 focus-visible:tw-outline-sky-600"
             >
               View all topics
             </a>
             <a
-              href="/contributing.html"
+              href="./contributing.html"
               className="tw-text-sm tw-font-semibold tw-leading-6 tw-text-gray-900"
             >
               Learn how to contribute <span aria-tw-hidden="true">→</span>
