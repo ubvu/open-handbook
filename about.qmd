@@ -1,39 +1,24 @@
-# Handbook template
+---
+toc: false
+---
 
-This repository contains the template for handbooks to be built in the VU style. These are meant to help make it easier to create community curated books, which can be shared and released online. 
+# About
 
-## Getting started 
+The Open Handbook is a project started by Research Data Support in early 2024. After planning and design phases, we launched the initial version of the resource at the Research Support Days in May 2024.
 
-To make the template your own, please [use this template](https://github.com/new?template_name=handbook-template&template_owner=ubvu) to create a new repository.
+The Open Handbook centralizes resources that VU researchers need to do their work. The Open Handbook also provides everyone with direct pathways to change resources in case anything has become outdated.
 
-After you created your own repository based on the template, go through the checklist to update with your book's metadata:
-
-- [ ] Update `_quarto.yml` file
-    - [ ] Change title
-    - [ ] `site-url` - `https://<username>.github.io/<repo>`
-    - [ ] `repo-url` - `https://github.com/<username>/<repo>`
-    - [ ] `issue-url` - `https://github.com/<username>/<repo>/issues/new/choose`
-
-## Deploying
-
-This template tries to take away as much manual labor as possible. The idea is that the website is updated everytime something changes on the `main` branch. This way you can focus on writing great content!
-
-For the automation to work, you need to go through a few manual steps - once. If you don't like command lines and are trying to create a book under [the UBVU organization](https://github.com/ubvu), just contact @chartgerink and they'll help you out!
-
-```
-# clone the repo
-git clone https://github.com/<username>/<repo>
-cd <repo>
-
-# set up the publishing to github pages
-quarto publish gh-pages
-```
-
-If you like commandlines and need to install Quarto, [check out the Quarto website](https://quarto.org/docs/get-started/index.html) for more info.
+Previously such resources were spread out across many different pages at the VU and were hard to update. The Open Handbook is curated by us all, and reviewed by specialists. This way we can help each other.
 
 ## Contributors
 
+The Open Handbook was initiated by Lena Karvovskaya, Jessica Hrudey, Elisa, and Jolien Scholten. The initial infrastructure for the Open Handbook was built by Liberate Science.
 
+We want to specifically call out the following folk who contributed outside of GitHub:
+
+* Jochem Lybaart
+
+### GitHub contributors 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
@@ -80,4 +65,3 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-
