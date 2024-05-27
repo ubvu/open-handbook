@@ -5,7 +5,7 @@ website:
   site-url: "https://ubvu.github.io/open-handbook"
   title: "{{< var title >}}"
   description: "A place for all things open research at the VU."
-  favicon: public/VU_social_avatar_blauw.png
+  favicon: public/favicon.png
   repo-url: https://github.com/ubvu/open-handbook
   issue-url: https://github.com/ubvu/open-handbook/issues/new/choose
   repo-actions: [edit, issue]
@@ -18,7 +18,6 @@ website:
     # title: "Open Handbook"
     title: false
     collapse-below: lg
-    favicon: public/VU_social_avatar_blauw.png
     left:
       - text: "Home"
         file: index.qmd
