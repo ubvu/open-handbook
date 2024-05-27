@@ -102,7 +102,7 @@ const features = [
   {
     name: "Flexible",
     description:
-      "Shape the content to your needs. Find a topic or a [collection/pathways].",
+      "Shape the content to your needs. Find topics or pathways.",
     icon: () => (
       <svg
         xmlns="http://www.w3.org/2000/svg"
