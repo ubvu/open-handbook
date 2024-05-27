@@ -1,6 +1,6 @@
 # Handbook template
 
-This repository contains the template for handbooks to be built in the VU style. These are meant to help make it easier to create community curated books, which can be shared and released online. 
+This repository contains the template for handbooks to be built in VU style. These are meant to help make it easier to create community curated books, which can be shared and released online. 
 
 ## Getting started 
 

@@ -82,7 +82,7 @@ const features = [
   {
     name: "Local",
     description:
-      "This is for the VU, by the VU. Join in, meet colleagues.",
+      "This is for VU, by VU. Join in, meet colleagues.",
     icon: () => (
       <svg
         xmlns="http://www.w3.org/2000/svg"
