@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>VU Open Handbook - Data lifecycle</title>
+<title>Research Support Handbook - Data lifecycle</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -97,12 +117,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../pathways.html"> 
-<span class="menu-text">Pathways</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../topics.html"> 
 <span class="menu-text">Topics</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../pathways.html"> 
+<span class="menu-text">Pathways</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../contributing.html"> 
@@ -126,13 +146,21 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#discover-initiate" id="toc-discover-initiate" class="nav-link" data-scroll-target="#discover-initiate">Discover &amp; Initiate</a></li>
+  <li><a href="#research-data-management" id="toc-research-data-management" class="nav-link" data-scroll-target="#research-data-management">Research Data Management</a></li>
+  <li><a href="#fair-principles" id="toc-fair-principles" class="nav-link" data-scroll-target="#fair-principles">FAIR Principles</a>
+  <ul class="collapse">
+  <li><a href="#discover-initiate" id="toc-discover-initiate" class="nav-link" data-scroll-target="#discover-initiate">Discover &amp; Initiate</a>
+  <ul class="collapse">
+  <li><a href="#finding-existing-data" id="toc-finding-existing-data" class="nav-link" data-scroll-target="#finding-existing-data">Finding Existing Data</a></li>
+  <li><a href="#data-citation" id="toc-data-citation" class="nav-link" data-scroll-target="#data-citation">Data Citation</a></li>
+  </ul></li>
   <li><a href="#plan-design" id="toc-plan-design" class="nav-link" data-scroll-target="#plan-design">Plan &amp; Design</a></li>
   <li><a href="#collect-store" id="toc-collect-store" class="nav-link" data-scroll-target="#collect-store">Collect &amp; Store</a></li>
   <li><a href="#process-analyse" id="toc-process-analyse" class="nav-link" data-scroll-target="#process-analyse">Process &amp; Analyse</a></li>
   <li><a href="#document-preserve" id="toc-document-preserve" class="nav-link" data-scroll-target="#document-preserve">Document &amp; Preserve</a></li>
   <li><a href="#publish-share" id="toc-publish-share" class="nav-link" data-scroll-target="#publish-share">Publish &amp; Share</a></li>
   <li><a href="#support" id="toc-support" class="nav-link" data-scroll-target="#support">Support</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/pathways/data-lifecycle.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -158,11 +186,111 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>The data lifecycle helps you find, document, and preserve data.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This is an ongoing transfer from <a href="https://libguides.vu.nl/rdm/overview">RDM LibGuide</a>. We welcome all suggestions on how to refine the content - see also <a href="../contributing.html">the contributing guide</a>.</p>
+</div>
+</div>
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 </section>
+<section id="research-data-management" class="level1">
+<h1>Research Data Management</h1>
+<p>Research data management (RDM) concerns the organisation, documentation, storage, archiving and sharing of digital and analogue data. Data management applies throughout the entire research data life cycle, which is visualised in the circle above. RDM aims to ensure reliable verification of results, and permits new and innovative research built on existing information. RDM is also part of the research process and is intended to make the research process as efficient as possible. This LibGuide provides guidance on research data management planning, data storage and protection, data archiving, and other resources. The Data Management Plan provides information on how these activities will be carried out during the research project.</p>
+<p>Good data management will heighten the quality of your own research (data) as well as your institution’s scientific output, and it contributes significantly to your field as a whole.</p>
+<p>Good data management:</p>
+<ul>
+<li>Promotes the integrity of your research,</li>
+<li>Increases the impact of your research,</li>
+<li>Improves the quality of your data,</li>
+<li>Supports future use of your research data, and</li>
+<li>Complies with internal and external regulations.</li>
+</ul>
+</section>
+<section id="fair-principles" class="level1">
+<h1>FAIR Principles</h1>
+<p>The purpose of good data documentation is to facilitate knowledge exchange. The FAIR principles <span class="citation" data-cites="Wilkinson2016-lh">(<a href="#ref-Wilkinson2016-lh" role="doc-biblioref">Wilkinson et al. 2016</a>)</span> are the guidelines for every form of research output, and in making data available to others.</p>
+<p>Every research group should apply these principles when structuring and preserving their data or other research outputs. Making data FAIR involves many aspects of data collection, organization, availability and storage. FAIR does not mean open or public, it means that there is documentation about how access to the data can be achieved.</p>
 <section id="discover-initiate" class="level2">
 <h2 class="anchored" data-anchor-id="discover-initiate">Discover &amp; Initiate</h2>
+<p>There are two pages in this section:</p>
+<p><a href="#finding-existing-data">Finding Existing Data</a>: how to find and reuse data that already exist</p>
+<p><a href="#data-citation">Data Citation</a>: how to cite data that you use in your research</p>
+<section id="finding-existing-data" class="level3">
+<h3 class="anchored" data-anchor-id="finding-existing-data">Finding Existing Data</h3>
+<section id="re-using-existing-data" class="level4">
+<h4 class="anchored" data-anchor-id="re-using-existing-data">Re-using Existing Data</h4>
+<p>Anything that can be used for analysis can be considered “data(sets)”. Many national and international organisations provide access to large datasets free of charge: this is called <a href="https://opendefinition.org/">Open Data</a>.</p>
+<p>Datasets may contain different kinds of data files, e.g.&nbsp;raw or edited/cleaned data, and macro or micro data. <strong>Raw data</strong> refers to the data as they are primarily collected, and includes all data, even the missed or mismatched pieces in the data file. <strong>Edited or cleaned data</strong> refers to data that have been tidied up for analysis and publication. <strong>Macro data</strong> and statistics are results based on <strong>micro data</strong> units and provide a general overview of the micro data. Although datasets can contain data of varying type or aggregation level, and there may be overlap between these definitions, each element can contain very important information.</p>
+<p>When re-using research data, scientists must be familiar with the rules and regulations governing data copyright, intellectual property rights, and laws governing sensitive or personal information. SURF has compiled a <a href="https://www.surf.nl/en/report-the-legal-status-of-raw-data-a-guide-for-research-practice">report on the legal status of raw data</a> including information on the types of consent required for the re-use of data. Your <a href="https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information">Privacy Champion</a> can answer questions about the use of personal data. <a href="https://www.ixa.nl/for-researchers/">IXA</a> can provide legal help with the re-use of data.</p>
+<p>See also the ZonMw explanation of <a href="http://www.zonmw.nl/fileadmin/documenten/Toegang_Tot_Data__TTD/TTD_Toelichting_verschillende_eigendomsrechten.pdf">different kinds of property rights in the Netherlands</a> (text available in Dutch only).</p>
+</section>
+<section id="sources-for-finding-existing-datasets" class="level4">
+<h4 class="anchored" data-anchor-id="sources-for-finding-existing-datasets">Sources for Finding Existing Datasets</h4>
+<p>The number of datasets that are available grows rapidly. Datasets are made available in many formats, by many people or organizations. Some datasets are raw files and some are specifically organised and formatted as databases that require a licence or subscription to use them. The library of the Vrije Universiteit Amsterdam has collected links to some of the data repositories used and has licensed several databases.</p>
+<ol type="1">
+<li><strong>Popular Free and Licensed Databases</strong>: These can be found in the <a href="http://www.ubvu.vu.nl/pub/index_oclc.cfm?SearchObjectId=7&amp;lang=_en&amp;ordering=1&amp;objectid=109">library e-resources list</a> or with <a href="https://vu.on.worldcat.org/advancedsearch">LibSearch Advanced</a>.</li>
+</ol>
+<p>If you need help finding &amp; using free or licensed sources you can contact the <a href="http://www.ub.vu.nl/RDS">Research Data Services Helpdesk</a>. For students and personnel in the fields of economics, finance, or organisation science a <a href="http://libguides.vu.nl/finding-data">separate LibGuide</a> has been created to help them find and use/re-use data.</p>
+<p>You can also start looking for data in these four places:</p>
+<ol type="1">
+<li><strong>The literature</strong>. Research articles may point you to the data that they are based on. Sometimes, (part of) the data are added to the article as supplementary files, and sometimes the data are published separately in a data repository. In the latter case, the article usually provides a clear reference to the published dataset. Some datasets may even be specifically published in <a href="http://libguides.vu.nl/rdm/data-publication">Data Journals</a>.</li>
+<li><strong>Scientific data repositories</strong>. Data repositories are platforms used to access and archive research data. Universities often provide a repository for data archiving, but other platforms arranged by discipline or by country also exist. Some repositories are only accessible to consortium members, whereas others are free of charge. Many universities in the Netherlands&nbsp;use <a href="https://dataverse.nl/">DataverseNL</a> to archive datasets for the mid-term. Long-term archiving&nbsp;is provided by the national research data archives&nbsp;<a href="https://easy.dans.knaw.nl/ui/home">DANS</a>&nbsp;and <a href="http://researchdata.4tu.nl/en/home/">4TU.Research Data</a>.&nbsp;In Europe, <a href="https://b2share.eudat.eu/">B2SHARE</a>&nbsp;and <a href="https://zenodo.org/">Zenodo</a>&nbsp;are platforms used&nbsp;to access research data. Data repositories can be accessed by searching by topic or country using <a href="http://service.re3data.org/search">Re3data</a>, a data repository registry. The VU has its own research portal, <a href="https://research.vu.nl/en/">PURE</a>, where researchers register their datasets. You can find instructions on how to register your own dataset in PURE on the <a href="http://libguides.vu.nl/rdm/dataset-registration">Dataset Registration</a> page of this LibGuide.</li>
+<li><strong>Data search engines</strong>. Search engines allow you to quickly browse data sets and supplementary data files published by researchers. They cover data sets from many sources. This makes them useful for quick orientation on a topic. Example of a search engines are: <a href="https://search.datacite.org/">DataCite</a>, <a href="https://toolbox.google.com/datasetsearch">Google DataSet Search</a>, <a href="https://datasearch.elsevier.com/">Elsevier Dataset Search</a>.</li>
+<li><strong>Data portals of (governmental) organisations</strong>. Organisations that regularly collect (statistical) data sometimes offer these data through their own portal. An example is <a href="http://ec.europa.eu/eurostat/data/database">Eurostat</a>, which collects and disseminates statistics at the European level, by country and by theme. Some of these websites have been linked in the <a href="http://libguides.vu.nl/finding-data/international-organizations">Finding data LibGuide</a>.</li>
+</ol>
+</section>
+<section id="data-sources-for-vu-researchers" class="level4">
+<h4 class="anchored" data-anchor-id="data-sources-for-vu-researchers">Data Sources for VU Researchers</h4>
+<p>Researchers from the Vrije Universiteit Amsterdam have also developed some databases containing data collected during research. See here for some examples:</p>
+<ul>
+<li><a href="http://www.tweelingenregister.org/">Nederlands Tweelingenregister</a> (Netherlands Twin Register) The database contains data on twins and their families and was created to do research on the relationship between genetics and growth, development, personality, behaviour, diseases, mental health and all kinds of risks.</li>
+<li><a href="http://geoplaza.vu.nl/cms/">Geoplaza VU</a> - the portal for all matters related to GIS (Geographical Information Systems) and geodata at the VU University Amsterdam. It offers students and employers a platform to exchange, examine and download digital map material.</li>
+<li><a href="http://www2.fgw.vu.nl/oz/kloosterlijst/kform.php">Dutch monasteries</a>&nbsp;- database with information about Dutch monasteries&nbsp;of the Middle Ages.</li>
+<li><a href="http://geoplaza.vu.nl/cms/maps/198-slaveneigenaren-in-amsterdam-1863">Slave owners in Amsterdam 1863</a>&nbsp;- the place of living of owners of slaves in Amsterdam in 1863, visualized in GeoPlaza.</li>
+<li><a href="http://www.borderdeaths.org/">Deaths at the Borders Database</a>&nbsp;- collection of official, state-produced evidence on people who died while attempting to reach southern EU countries from the Balkans, the Middle East, and North &amp; West Africa, and whose bodies were found in or brought to Europe.</li>
+<li>Datasets published by VU Researchers can be found at the <a href="https://research.vu.nl/en/datasets/">VU Research Portal</a>.</li>
+</ul>
+</section>
+</section>
+<section id="data-citation" class="level3">
+<h3 class="anchored" data-anchor-id="data-citation">Data Citation</h3>
+<section id="citation-elements" class="level4">
+<h4 class="anchored" data-anchor-id="citation-elements">Citation Elements</h4>
+<p>Citing data is not different from citing a publication. Make sure to check the rules of the journal to know how you should cite when writing an article for a specific academic journal. For all of the journals, however, the minimum compulsory elements in a data citation include:</p>
+<ul>
+<li>Author(s): Name of the author (creator) of the dataset</li>
+<li>Title: Name of the dataset</li>
+<li>Date of publication</li>
+<li>Publisher: Archive where dataset is stored</li>
+<li>Persistent Identifier: Unique identifier, most common is the DOI (see section <a href="http://libguides.vu.nl/researchdata/data-publication">Data Publication</a>).</li>
+</ul>
+<p>Optional elements that may be included in the reference are:</p>
+<ul>
+<li>File Type: Codebook, movie, software</li>
+<li>Version: Version number of the edition</li>
+<li>Creation Date</li>
+<li>Date of Consultation (last) <strong>Example of a data citation:</strong></li>
+</ul>
+<p>Stephens, William, 2020, “Resiliences to Radicalisation - QSort Data”, <a href="https://doi.org/10.34894/35MTMN">https://doi.org/10.34894/35MTMN</a>, DataverseNL, V1.</p>
+<p>For more information, see the following guidelines:</p>
+<ul>
+<li><a href="https://dataverse.org/best-practices/data-citation">Dataverse</a></li>
+<li><a href="https://datacite.org/cite-your-data.html">DataCite</a></li>
+<li><a href="http://www.dcc.ac.uk/resources/briefing-papers/introduction-curation/data-citation-and-linking">DCC UK</a></li>
+<li><a href="https://www.force11.org/group/joint-declaration-data-citation-principles-final">Data Citation Synthesis Group (2014). Joint Declaration of Data Citation Principles. Martone M. (ed.) San Diego CA: FORCE11</a></li>
+</ul>
+</section>
+</section>
 </section>
 <section id="plan-design" class="level2">
 <h2 class="anchored" data-anchor-id="plan-design">Plan &amp; Design</h2>
@@ -180,12 +308,18 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="publish-share">Publish &amp; Share</h2>
 </section>
 <section id="support" class="level2">
-<h2 class="anchored" data-anchor-id="support">Support</h2>
+
+
 
 
 </section>
+</section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Support</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Wilkinson2016-lh" class="csl-entry" role="listitem">
+Wilkinson, Mark D, Michel Dumontier, Ijsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, et al. 2016. <span>“The <span>FAIR</span> Guiding Principles for Scientific Data Management and Stewardship.”</span> <em>Sci. Data</em> 3 (1): 160018.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
