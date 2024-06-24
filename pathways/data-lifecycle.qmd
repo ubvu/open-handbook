@@ -15,85 +15,173 @@ This is an ongoing transfer from [RDM LibGuide](https://libguides.vu.nl/rdm/over
 
 {{< include ../topics/fair-principles.qmd >}}
 
-## Discover & Initiate
+* Overview
+* Discover & Initiate
+* Plan & Design
+* Collect & Store
+* Process & Analyse
+* Document & Preserve
+* Publish & Share
+* Support
 
-There are two pages in this section:
-
-[Finding Existing Data](#finding-existing-data): how to find and reuse data that already exist
-
-[Data Citation](#data-citation): how to cite data that you use in your research
-
-### Finding Existing Data
-
-#### Re-using Existing Data
-
-Anything that can be used for analysis can be considered "data(sets)". Many national and international organisations provide access to large datasets free of charge: this is called [Open Data](https://opendefinition.org/).
-
-Datasets may contain different kinds of data files, e.g. raw or edited/cleaned data, and macro or micro data. **Raw data** refers to the data as they are primarily collected, and includes all data, even the missed or mismatched pieces in the data file. **Edited or cleaned data** refers to data that have been tidied up for analysis and publication. **Macro data** and statistics are results based on **micro data** units and provide a general overview of the micro data. Although datasets can contain data of varying type or aggregation level, and there may be overlap between these definitions, each element can contain very important information.
-
-When re-using research data, scientists must be familiar with the rules and regulations governing data copyright, intellectual property rights, and laws governing sensitive or personal information. SURF has compiled a [report on the legal status of raw data](https://www.surf.nl/en/report-the-legal-status-of-raw-data-a-guide-for-research-practice) including information on the types of consent required for the re-use of data. Your [Privacy Champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information) can answer questions about the use of personal data. [IXA](https://www.ixa.nl/for-researchers/) can provide legal help with the re-use of data.
-
-See also the ZonMw explanation of [different kinds of property rights in the Netherlands](http://www.zonmw.nl/fileadmin/documenten/Toegang_Tot_Data__TTD/TTD_Toelichting_verschillende_eigendomsrechten.pdf) (text available in Dutch only).
-
-#### Sources for Finding Existing Datasets
-
-The number of datasets that are available grows rapidly. Datasets are made available in many formats, by many people or organizations. Some datasets are raw files and some are specifically organised and formatted as databases that require a licence or subscription to use them. The library of the Vrije Universiteit Amsterdam has collected links to some of the data repositories used and has licensed several databases.
-
-1. **Popular Free and Licensed Databases**: These can be found in the [library e-resources list](http://www.ubvu.vu.nl/pub/index_oclc.cfm?SearchObjectId=7&lang=_en&ordering=1&objectid=109) or with [LibSearch Advanced](https://vu.on.worldcat.org/advancedsearch).
-
-If you need help finding & using free or licensed sources you can contact the [Research Data Services Helpdesk](http://www.ub.vu.nl/RDS). For students and personnel in the fields of economics, finance, or organisation science a [separate LibGuide](http://libguides.vu.nl/finding-data) has been created to help them find and use/re-use data.
-
-You can also start looking for data in these four places:
-
-1. **The literature**. Research articles may point you to the data that they are based on. Sometimes, (part of) the data are added to the article as supplementary files, and sometimes the data are published separately in a data repository. In the latter case, the article usually provides a clear reference to the published dataset. Some datasets may even be specifically published in [Data Journals](http://libguides.vu.nl/rdm/data-publication).
-2. **Scientific data repositories**. Data repositories are platforms used to access and archive research data. Universities often provide a repository for data archiving, but other platforms arranged by discipline or by country also exist. Some repositories are only accessible to consortium members, whereas others are free of charge. Many universities in the Netherlands use [DataverseNL](https://dataverse.nl/) to archive datasets for the mid-term. Long-term archiving is provided by the national research data archives [DANS](https://easy.dans.knaw.nl/ui/home) and [4TU.Research Data](http://researchdata.4tu.nl/en/home/). In Europe, [B2SHARE](https://b2share.eudat.eu/) and [Zenodo](https://zenodo.org/) are platforms used to access research data. Data repositories can be accessed by searching by topic or country using [Re3data](http://service.re3data.org/search), a data repository registry. The VU has its own research portal, [PURE](https://research.vu.nl/en/), where researchers register their datasets. You can find instructions on how to register your own dataset in PURE on the [Dataset Registration](http://libguides.vu.nl/rdm/dataset-registration) page of this LibGuide.
-3. **Data search engines**. Search engines allow you to quickly browse data sets and supplementary data files published by researchers. They cover data sets from many sources. This makes them useful for quick orientation on a topic. Example of a search engines are: [DataCite](https://search.datacite.org/), [Google DataSet Search](https://toolbox.google.com/datasetsearch), [Elsevier Dataset Search](https://datasearch.elsevier.com/).
-4. **Data portals of (governmental) organisations**. Organisations that regularly collect (statistical) data sometimes offer these data through their own portal. An example is [Eurostat](http://ec.europa.eu/eurostat/data/database), which collects and disseminates statistics at the European level, by country and by theme. Some of these websites have been linked in the [Finding data LibGuide](http://libguides.vu.nl/finding-data/international-organizations).
-
-#### Data Sources for VU Researchers
-
-Researchers from the Vrije Universiteit Amsterdam have also developed some databases containing data collected during research. See here for some examples:
-
-* [Nederlands Tweelingenregister](http://www.tweelingenregister.org/) (Netherlands Twin Register) The database contains data on twins and their families and was created to do research on the relationship between genetics and growth, development, personality, behaviour, diseases, mental health and all kinds of risks.
-* [Geoplaza VU](http://geoplaza.vu.nl/cms/) - the portal for all matters related to GIS (Geographical Information Systems) and geodata at the VU University Amsterdam. It offers students and employers a platform to exchange, examine and download digital map material.
-* [Dutch monasteries](http://www2.fgw.vu.nl/oz/kloosterlijst/kform.php) - database with information about Dutch monasteries of the Middle Ages.
-* [Slave owners in Amsterdam 1863](http://geoplaza.vu.nl/cms/maps/198-slaveneigenaren-in-amsterdam-1863) - the place of living of owners of slaves in Amsterdam in 1863, visualized in GeoPlaza.
-* [Deaths at the Borders Database](http://www.borderdeaths.org/) - collection of official, state-produced evidence on people who died while attempting to reach southern EU countries from the Balkans, the Middle East, and North & West Africa, and whose bodies were found in or brought to Europe.
-* Datasets published by VU Researchers can be found at the [VU Research Portal](https://research.vu.nl/en/datasets/).
-
-### Data Citation
-
-#### Citation Elements
-
-Citing data is not different from citing a publication. Make sure to check the rules of the journal to know how you should cite when writing an article for a specific academic journal. For all of the journals, however, the minimum compulsory elements in a data citation include:
-
-* Author(s): Name of the author (creator) of the dataset
-* Title: Name of the dataset
-* Date of publication
-* Publisher: Archive where dataset is stored
-* Persistent Identifier: Unique identifier, most common is the DOI (see section [Data Publication](http://libguides.vu.nl/researchdata/data-publication)).
-
-Optional elements that may be included in the reference are:
-
-* File Type: Codebook, movie, software
-* Version: Version number of the edition
-* Creation Date
-* Date of Consultation (last)
-**Example of a data citation:**
-
-Stephens, William, 2020, "Resiliences to Radicalisation - QSort Data", [https://doi.org/10.34894/35MTMN](https://doi.org/10.34894/35MTMN), DataverseNL, V1.
-
-For more information, see the following guidelines:
-
-* [Dataverse](https://dataverse.org/best-practices/data-citation)
-* [DataCite](https://datacite.org/cite-your-data.html)
-* [DCC UK](http://www.dcc.ac.uk/resources/briefing-papers/introduction-curation/data-citation-and-linking)
-* [Data Citation Synthesis Group (2014). Joint Declaration of Data Citation Principles. Martone M. (ed.) San Diego CA: FORCE11](https://www.force11.org/group/joint-declaration-data-citation-principles-final)
-
-## Plan & Design
-## Collect & Store
-## Process & Analyse
-## Document & Preserve
-## Publish & Share
 ## Support
 
+Research Data Services
+----------------------
+
+![Image Scheme VU Research Data Support Offices](//libapps-eu.s3.amazonaws.com/accounts/46034/images/VU-research-data-service-offices.png)     Research Data Management is supported by various departments at the VU. These departments will help all VU researchers. There are also faculty specific support departments for research data support; they support their own faculty members.
+
+Here you find references to other organisational units and departments that can help you with matters related to collecting and managing data.
+
+**VU research data support (for all researchers)**
+
+*   [](https://vu.nl/en/about-vu/more-about/off-campus-access)[Grant office](https://vu.nl/en/about-vu/more-about/vu-grants-office)
+*   [Library](https://vu.nl/en/about-vu/more-about/rdm-support-desk)
+*   [](https://vu.nl/en/about-vu/more-about/off-campus-access)[Legal](https://vu.nl/en/employee/board-and-strategy/institutional-and-legal-affairs)
+*   [](https://vu.nl/en/about-vu/more-about/off-campus-access)[Security](https://vu.nl/en/about-vu/more-about/protection-awareness)
+*   [](https://vu.nl/en/about-vu/more-about/off-campus-access)[IT for Research](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=4cb138ee97fa0950e553359fe153afff)
+*   [IXA](https://www.ixa.nl/)
+
+General Faculty research support and management guidelines are available in the section [Policies & Regulations](https://libguides.vu.nl/rdm/policies-regulations).
+
+**This LibGuide**
+
+Questions regarding your data or the information on this website?
+
+The [RDS Support](mailto:researchdatamanagement@vu.nl?subject=Libguides%20question) team can help you with all your question on data management plan, data archiving, data store or data privacy & security.
+
+The RDS Helpdesk provides information about Research Data Management through the page [Research Support](https://vu.nl/en/employee/research-support) on VUweb.
+
+// JavaScript Document $(function() { $('.dialogMouse').each(function() { var $link=$(this); var p = $('#img\_research\_data\_service').position(); var $coords=$link.attr('coords').split(',') var $leftextra = parseInt($coords\[0\])-parseInt($coords\[2\]); var $topextra = parseInt($coords\[1\])+parseInt($coords\[2\]); var $dialog = $("#"+$link.attr('ref')) .dialog({ autoOpen: false, resizable: false, width:250, minHeight:20, dialogClass: "no-close" }); $link.mouseover(function() { $dialog.dialog("option","position",{ my: "left top", at: "left+"+$leftextra+" top+"+$topextra, of: $('#img\_research\_data\_service') }) $dialog.dialog("open"); }).mouseout(function() { $dialog.dialog("close"); }); }); //$(".ui-dialog-titlebar").hide(); });
+
+Box Link & Embedded Code
+
+VU IT for Research
+------------------
+
+The VU has an IT team specifically devoted to research: ITvO (from 'IT voor Onderzoek' in Dutch). They provide the following services:
+
+*   [](https://vu.nl/en/about-vu/more-about/off-campus-access)[Bazis HPC cluster computing](https://services.vu.nl/esc?id=kb_article&sysparm_article=KB0012830): access to your own linux computational cluster at the VU
+*   [](https://vu.nl/en/about-vu/more-about/off-campus-access)[SciCloud](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=d80aee1f97cf09d0e553359fe153afd7): a service with which you lease virtual server capacity for research purposes
+*   [](https://vu.nl/en/about-vu/more-about/off-campus-access)[SciStor](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=86ad5a5f978f09d0e553359fe153afb3): inexpensively store large sets with research data
+*   Advice/consultancy: ITvO will help you to find a suitable technical solution or support for your research group or project
+*   Housing: rack space in the server room for (remotely managed) equipment of research groups
+
+Read more about and get in touch with [IT for Research](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=4cb138ee97fa0950e553359fe153afff)
+
+Box Link & Embedded Code
+
+External sources
+----------------
+
+*   [
+    
+    ![RDNL logo](https://libapps-eu.s3.amazonaws.com/accounts/144379/images/logo-rdnl.png)
+    
+    Research Data Netherlands](http://www.researchdata.nl/)
+    
+    Research Data Netherlands is an alliance between 4TU.Centre for Research Data, Data Archiving and Networked Services (DANS) and SURFsara. With this coalition, which is also open to other parties, the three data archives join forces in the area of long-term data archiving.
+    
+*   [
+    
+    ![](https://libapps-eu.s3.amazonaws.com/accounts/144379/images/lcrdm.gif)
+    
+    Landelijk Coördinatiepunt Research Data Management](https://lcrdm.nl/rdm-in-nl/)
+    
+    The foundation of co-operating Dutch universities (VSNU) pointed out a need for a co-ordinated and decisive approach to Research Data Management through a dedicated Centre at SURF. The SURF Foundation is an organisation that facilitates education and research in the Netherlands.  
+    The LCRDM aims to support the preparation, development and monitoring of Research Data Management policies for scientific research in the Netherlands. Important elements of this central approach are close co-operation with researchers in the field and the exchange of knowledge and experience.
+    
+*   [
+    
+    ![](https://www.esciencecenter.nl/wp-content/themes/raadhuis/dist/assets/img/favicons/favicon-32x32.png)
+    
+    The Netherlands eScience Center](https://www.esciencecenter.nl/)
+    
+    The eScience Center develops software for academic research specifically. Their software and tools enhance the use of digital methods in scientific research across all disciplines. Researchers - including those at the VU - can choose to collaborate on projects funded by the NWO or, if they already have funding, ask the eScience Center to collaborate with them.
+    
+*   [
+    
+    ![](https://dmeg.cessda.eu/)
+    
+    CESSDA](https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide)
+    
+    The Data Management Expert Guide of the Consortium of European Social Science Data Archives is a practical guide for researchers, addressing many issues they may have
+    
+
+Box Link & Embedded Code
+
+RDM Training
+------------
+
+The VU Library offers [Workshops on writing a DMP](https://vu.nl/en/employee/library/training-seminars), which are offered separately for each faculty. These workshops are also announced via the [Library Calendar](https://vu-nl.libcal.com/calendar/infoworkshops?cid=7052&t=g&d=0000-00-00&cal=7052&inc=0), where you can register. Questions about these workshops may be directed to the [RDM Support Desk](mailto:rdm@vu.nl)
+
+Box Link & Embedded Code
+
+SURFsara
+--------
+
+![](//s3.amazonaws.com/libapps/accounts/62029/images/surf_sara.png)
+
+SURF is the collaborative organisation for ICT in Dutch education and research. SURF offers advanced ICT services specifically for researchers. You can start using some of these services right away with your VU credentials. For others you have to get in touch with SURF yourself. Please check [SURF's website](https://www.surf.nl/en) and the pages about the specific services below for more information.
+
+SURF's services are listed on this page.
+
+### Data services
+
+SURF offers a wide range of services for different phases in the life cycle of your research data. Everything for the secure storage, management, sharing and reuse of data.
+
+Research Drive*   **[Research Drive](https://www.surf.nl/en/research-drive-securely-and-easily-store-and-share-research-data): securely and easily store and share research data.**
+*   Does your research team need large storage quotas, a secure environment to store personal and/or sensitive data, and work collaboratively with other educational and governmental institutions or external private parties? Research Drive is a cloud-based shared-storage environment specifically designed for these requirements.
+
+SURFfilesender*   **[SURFfilesender](https://www.surf.nl/en/surffilesender-send-large-files-securely-and-encrypted): send large files securely and encrypted.**
+*   Want to send and receive files quickly, securely and easily? With SURFfilesender, you can send large files, such as research data. The files are stored in the Netherlands. Encryption provides added security.
+
+SURFdrive*   **Store and share your files securely in the cloud with [SURFdrive](https://www.surf.nl/en/services-and-products/surfdrive/surfdrive.html).**
+*   Store, synchronise and share your documents easily with SURFdrive. SURFdrive is a personal cloudservice for the Dutch education and research. Your documents are kept safe and sound in our community cloud.
+
+Data Archive*   **Secure, long-term storage with [Data Archive](https://www.surf.nl/en/services-and-products/data-archive/index.html).**
+*   The Data Archive is the centralised location for data archiving and (long-term) storage. You can securely store research data there, even in volumes running into the petabytes. The archive provides quick access to SURFsara's computing facilities.
+
+Data Ingest Service*   **[Data Ingest Service](https://www.surf.nl/en/data-ingest-service-upload-a-large-amount-of-data-to-surf): upload a large amount of data to SURF.**
+*   The Data Ingest Service is intended for researchers who want to store or analyse large amounts of data at SURFsara. The service is convenient for users who lack sufficient bandwidth or who have stored their data on a number of external hard disks.
+
+Data Persistent Identifier*   **[Data Persistent Identifier](https://www.surf.nl/en/services-and-products/data-persistent-identifier/index.html): data always findable by permanent references.**
+*   Persistent identifiers (PIDs) ensure the findability of your data, now and always. PIDs are comparable to the ISBN numbers assigned to books. Even if the location or underlying infrastructure changes, the reference path remains intact. SURFsara offers the PID service in cooperation with the European Persistent Identifier Consortium (EPIC).
+
+### Data processing and analysis (see also 'Computing')
+
+Jupyter Notebook*   **[Jupyter Notebook](https://www.surf.nl/en/jupyter-notebook-accessible-and-interactive-data-analysis-for-research-and-education): accessible and interactive data analysis for research and education.**
+*   A Jupyter Notebook is an interactive web application that you can use to create documents, known as notebooks, that contain computer code, formatted text, comparisons and visualisations. The code can be executed in the environment and you can even create streaming applications and dashboards.
+
+### Computing
+
+Do you encounter limitations with your own systems? SURF offers researchers a wide range of services in the field of high performance computing (HPC): thousands of times faster than your PC.
+
+Cartesius: National Supercomputer*   **[Cartesius: National Super Computer](https://www.surf.nl/en/services-and-products/dutch-national-supercomputer/index.html).**
+*   It is the most comprehensive system in the field of capability computing in the Netherlands. Cartesius is especially in high demand for its combination of fast processors and internal network, large storage capacity and the ability to process large datasets.
+
+Lisa Compute Cluster*   **[Lisa Compute Cluster](https://www.surf.nl/en/services-and-products/lisa-compute-cluster/index.html): extra processing power for research.**
+*   Lisa Compute Cluster combines processing power with user friendliness. Are the limits of your own system inhibiting your research? This service lets you upscale to a higher level. Lisa Compute Cluster is preconfigured with a range of software packages, meaning you can start working right away.
+
+HPC Cloud*   **[HPC Cloud](https://www.surf.nl/en/services-and-products/hpc-cloud/index.html): your flexible compute infrastructure.**
+*   HPC Cloud gives you and your project team complete control over your computing infrastructure. The infrastructure ranges from a single work station to a complete cluster and can be expanded to suit your needs. You can use your own operating system and analysis software. HPC Cloud is housed in SURF's own data centre.
+
+Grid*   **[Grid](https://www.surf.nl/en/services-and-products/grid/index.html): for processing and storing large datasets.**
+*   Do you want to process and store large- amounts of data? The Grid may very well be suitable for your project. The grid infrastructure consists of a large number of clusters for computing and data storage, which are interconnected via a fast network.
+
+Visualisation*   **[Visualisation](https://www.surf.nl/en/services-and-products/visualisation/index.html): more insight into your data.**
+*   Do you want to analyse, process or visualise complex research data or big data? These services give you insight into your research data. SURF's Visualisation service allows you to visualise your own datasets on your desktop. This makes it easy to identify connections between data or gain other insight into your datasets. SURFsara offers a powerful remote visualisation service that combines high performance with ease of use.
+
+Collaboratorium*   **[Collaboratorium](https://userinfo.surfsara.nl/systems/collaboratorium): a visualization and presentation space for science and industry.**
+
+### Expertise, advice and training
+
+SURF offers advice and training on their services. Their training sessions are announced in the [SURF Agenda](https://www.surf.nl/en/agenda/research-and-ict).
+
+SURF training*   **[Training courses for research](https://www.surf.nl/en/training-courses-for-research).**
+*   Want to get started with SURF systems but lack the necessary knowledge? SURF regularly organizes hands-on systems training courses at their offices in Utrecht and Amsterdam or at your education or research institution. You can also include the training courses in the educational programme of your institution.
+
+SURF consultancy*   **[Consultancy](https://www.surf.nl/en/services-and-products/consultancy/index.html) on ICT solutions for researchers.**
+*   SURFsara possesses a wealth of experience in the field of ICT services for researchers. If you need help developing/improving your application or designing your infrastructure, then you've come to the right place. SURF experts will be happy to lend their expertise to support your research.
+
+Box Link & Embedded Code
