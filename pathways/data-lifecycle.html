@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.554">
+<meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -88,6 +88,35 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -146,20 +175,21 @@ div.csl-indent {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#research-data-management" id="toc-research-data-management" class="nav-link" data-scroll-target="#research-data-management">Research Data Management</a></li>
+  <li><a href="#research-data-management-rdm" id="toc-research-data-management-rdm" class="nav-link" data-scroll-target="#research-data-management-rdm">Research Data Management (RDM)</a></li>
   <li><a href="#fair-principles" id="toc-fair-principles" class="nav-link" data-scroll-target="#fair-principles">FAIR Principles</a>
   <ul class="collapse">
-  <li><a href="#discover-initiate" id="toc-discover-initiate" class="nav-link" data-scroll-target="#discover-initiate">Discover &amp; Initiate</a>
-  <ul class="collapse">
-  <li><a href="#finding-existing-data" id="toc-finding-existing-data" class="nav-link" data-scroll-target="#finding-existing-data">Finding Existing Data</a></li>
-  <li><a href="#data-citation" id="toc-data-citation" class="nav-link" data-scroll-target="#data-citation">Data Citation</a></li>
-  </ul></li>
-  <li><a href="#plan-design" id="toc-plan-design" class="nav-link" data-scroll-target="#plan-design">Plan &amp; Design</a></li>
-  <li><a href="#collect-store" id="toc-collect-store" class="nav-link" data-scroll-target="#collect-store">Collect &amp; Store</a></li>
-  <li><a href="#process-analyse" id="toc-process-analyse" class="nav-link" data-scroll-target="#process-analyse">Process &amp; Analyse</a></li>
-  <li><a href="#document-preserve" id="toc-document-preserve" class="nav-link" data-scroll-target="#document-preserve">Document &amp; Preserve</a></li>
-  <li><a href="#publish-share" id="toc-publish-share" class="nav-link" data-scroll-target="#publish-share">Publish &amp; Share</a></li>
   <li><a href="#support" id="toc-support" class="nav-link" data-scroll-target="#support">Support</a></li>
+  <li><a href="#research-data-services" id="toc-research-data-services" class="nav-link" data-scroll-target="#research-data-services">Research Data Services</a></li>
+  <li><a href="#vu-it-for-research" id="toc-vu-it-for-research" class="nav-link" data-scroll-target="#vu-it-for-research">VU IT for Research</a></li>
+  <li><a href="#external-sources" id="toc-external-sources" class="nav-link" data-scroll-target="#external-sources">External sources</a></li>
+  <li><a href="#rdm-training" id="toc-rdm-training" class="nav-link" data-scroll-target="#rdm-training">RDM Training</a></li>
+  <li><a href="#surfsara" id="toc-surfsara" class="nav-link" data-scroll-target="#surfsara">SURFsara</a>
+  <ul class="collapse">
+  <li><a href="#data-services" id="toc-data-services" class="nav-link" data-scroll-target="#data-services">Data services</a></li>
+  <li><a href="#data-processing-and-analysis-see-also-computing" id="toc-data-processing-and-analysis-see-also-computing" class="nav-link" data-scroll-target="#data-processing-and-analysis-see-also-computing">Data processing and analysis (see also ‘Computing’)</a></li>
+  <li><a href="#computing" id="toc-computing" class="nav-link" data-scroll-target="#computing">Computing</a></li>
+  <li><a href="#expertise-advice-and-training" id="toc-expertise-advice-and-training" class="nav-link" data-scroll-target="#expertise-advice-and-training">Expertise, advice and training</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/pathways/data-lifecycle.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -203,9 +233,9 @@ Note
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 </section>
-<section id="research-data-management" class="level1">
-<h1>Research Data Management</h1>
-<p>Research data management (RDM) concerns the organisation, documentation, storage, archiving and sharing of digital and analogue data. Data management applies throughout the entire research data life cycle, which is visualised in the circle above. RDM aims to ensure reliable verification of results, and permits new and innovative research built on existing information. RDM is also part of the research process and is intended to make the research process as efficient as possible. This LibGuide provides guidance on research data management planning, data storage and protection, data archiving, and other resources. The Data Management Plan provides information on how these activities will be carried out during the research project.</p>
+<section id="research-data-management-rdm" class="level1">
+<h1>Research Data Management (RDM)</h1>
+<p>RDM concerns the organisation, documentation, storage, archiving and sharing of digital and analogue data. Data management applies throughout the entire research data life cycle, which is visualised in the circle above. RDM aims to ensure reliable verification of results, and permits new and innovative research built on existing information. RDM is also part of the research process and is intended to make the research process as efficient as possible. This LibGuide provides guidance on research data management planning, data storage and protection, data archiving, and other resources. The Data Management Plan provides information on how these activities will be carried out during the research project.</p>
 <p>Good data management will heighten the quality of your own research (data) as well as your institution’s scientific output, and it contributes significantly to your field as a whole.</p>
 <p>Good data management:</p>
 <ul>
@@ -220,102 +250,129 @@ Note
 <h1>FAIR Principles</h1>
 <p>The purpose of good data documentation is to facilitate knowledge exchange. The FAIR principles <span class="citation" data-cites="Wilkinson2016-lh">(<a href="#ref-Wilkinson2016-lh" role="doc-biblioref">Wilkinson et al. 2016</a>)</span> are the guidelines for every form of research output, and in making data available to others.</p>
 <p>Every research group should apply these principles when structuring and preserving their data or other research outputs. Making data FAIR involves many aspects of data collection, organization, availability and storage. FAIR does not mean open or public, it means that there is documentation about how access to the data can be achieved.</p>
-<section id="discover-initiate" class="level2">
-<h2 class="anchored" data-anchor-id="discover-initiate">Discover &amp; Initiate</h2>
-<p>There are two pages in this section:</p>
-<p><a href="#finding-existing-data">Finding Existing Data</a>: how to find and reuse data that already exist</p>
-<p><a href="#data-citation">Data Citation</a>: how to cite data that you use in your research</p>
-<section id="finding-existing-data" class="level3">
-<h3 class="anchored" data-anchor-id="finding-existing-data">Finding Existing Data</h3>
-<section id="re-using-existing-data" class="level4">
-<h4 class="anchored" data-anchor-id="re-using-existing-data">Re-using Existing Data</h4>
-<p>Anything that can be used for analysis can be considered “data(sets)”. Many national and international organisations provide access to large datasets free of charge: this is called <a href="https://opendefinition.org/">Open Data</a>.</p>
-<p>Datasets may contain different kinds of data files, e.g.&nbsp;raw or edited/cleaned data, and macro or micro data. <strong>Raw data</strong> refers to the data as they are primarily collected, and includes all data, even the missed or mismatched pieces in the data file. <strong>Edited or cleaned data</strong> refers to data that have been tidied up for analysis and publication. <strong>Macro data</strong> and statistics are results based on <strong>micro data</strong> units and provide a general overview of the micro data. Although datasets can contain data of varying type or aggregation level, and there may be overlap between these definitions, each element can contain very important information.</p>
-<p>When re-using research data, scientists must be familiar with the rules and regulations governing data copyright, intellectual property rights, and laws governing sensitive or personal information. SURF has compiled a <a href="https://www.surf.nl/en/report-the-legal-status-of-raw-data-a-guide-for-research-practice">report on the legal status of raw data</a> including information on the types of consent required for the re-use of data. Your <a href="https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information">Privacy Champion</a> can answer questions about the use of personal data. <a href="https://www.ixa.nl/for-researchers/">IXA</a> can provide legal help with the re-use of data.</p>
-<p>See also the ZonMw explanation of <a href="http://www.zonmw.nl/fileadmin/documenten/Toegang_Tot_Data__TTD/TTD_Toelichting_verschillende_eigendomsrechten.pdf">different kinds of property rights in the Netherlands</a> (text available in Dutch only).</p>
-</section>
-<section id="sources-for-finding-existing-datasets" class="level4">
-<h4 class="anchored" data-anchor-id="sources-for-finding-existing-datasets">Sources for Finding Existing Datasets</h4>
-<p>The number of datasets that are available grows rapidly. Datasets are made available in many formats, by many people or organizations. Some datasets are raw files and some are specifically organised and formatted as databases that require a licence or subscription to use them. The library of the Vrije Universiteit Amsterdam has collected links to some of the data repositories used and has licensed several databases.</p>
-<ol type="1">
-<li><strong>Popular Free and Licensed Databases</strong>: These can be found in the <a href="http://www.ubvu.vu.nl/pub/index_oclc.cfm?SearchObjectId=7&amp;lang=_en&amp;ordering=1&amp;objectid=109">library e-resources list</a> or with <a href="https://vu.on.worldcat.org/advancedsearch">LibSearch Advanced</a>.</li>
-</ol>
-<p>If you need help finding &amp; using free or licensed sources you can contact the <a href="http://www.ub.vu.nl/RDS">Research Data Services Helpdesk</a>. For students and personnel in the fields of economics, finance, or organisation science a <a href="http://libguides.vu.nl/finding-data">separate LibGuide</a> has been created to help them find and use/re-use data.</p>
-<p>You can also start looking for data in these four places:</p>
-<ol type="1">
-<li><strong>The literature</strong>. Research articles may point you to the data that they are based on. Sometimes, (part of) the data are added to the article as supplementary files, and sometimes the data are published separately in a data repository. In the latter case, the article usually provides a clear reference to the published dataset. Some datasets may even be specifically published in <a href="http://libguides.vu.nl/rdm/data-publication">Data Journals</a>.</li>
-<li><strong>Scientific data repositories</strong>. Data repositories are platforms used to access and archive research data. Universities often provide a repository for data archiving, but other platforms arranged by discipline or by country also exist. Some repositories are only accessible to consortium members, whereas others are free of charge. Many universities in the Netherlands&nbsp;use <a href="https://dataverse.nl/">DataverseNL</a> to archive datasets for the mid-term. Long-term archiving&nbsp;is provided by the national research data archives&nbsp;<a href="https://easy.dans.knaw.nl/ui/home">DANS</a>&nbsp;and <a href="http://researchdata.4tu.nl/en/home/">4TU.Research Data</a>.&nbsp;In Europe, <a href="https://b2share.eudat.eu/">B2SHARE</a>&nbsp;and <a href="https://zenodo.org/">Zenodo</a>&nbsp;are platforms used&nbsp;to access research data. Data repositories can be accessed by searching by topic or country using <a href="http://service.re3data.org/search">Re3data</a>, a data repository registry. The VU has its own research portal, <a href="https://research.vu.nl/en/">PURE</a>, where researchers register their datasets. You can find instructions on how to register your own dataset in PURE on the <a href="http://libguides.vu.nl/rdm/dataset-registration">Dataset Registration</a> page of this LibGuide.</li>
-<li><strong>Data search engines</strong>. Search engines allow you to quickly browse data sets and supplementary data files published by researchers. They cover data sets from many sources. This makes them useful for quick orientation on a topic. Example of a search engines are: <a href="https://search.datacite.org/">DataCite</a>, <a href="https://toolbox.google.com/datasetsearch">Google DataSet Search</a>, <a href="https://datasearch.elsevier.com/">Elsevier Dataset Search</a>.</li>
-<li><strong>Data portals of (governmental) organisations</strong>. Organisations that regularly collect (statistical) data sometimes offer these data through their own portal. An example is <a href="http://ec.europa.eu/eurostat/data/database">Eurostat</a>, which collects and disseminates statistics at the European level, by country and by theme. Some of these websites have been linked in the <a href="http://libguides.vu.nl/finding-data/international-organizations">Finding data LibGuide</a>.</li>
-</ol>
-</section>
-<section id="data-sources-for-vu-researchers" class="level4">
-<h4 class="anchored" data-anchor-id="data-sources-for-vu-researchers">Data Sources for VU Researchers</h4>
-<p>Researchers from the Vrije Universiteit Amsterdam have also developed some databases containing data collected during research. See here for some examples:</p>
 <ul>
-<li><a href="http://www.tweelingenregister.org/">Nederlands Tweelingenregister</a> (Netherlands Twin Register) The database contains data on twins and their families and was created to do research on the relationship between genetics and growth, development, personality, behaviour, diseases, mental health and all kinds of risks.</li>
-<li><a href="http://geoplaza.vu.nl/cms/">Geoplaza VU</a> - the portal for all matters related to GIS (Geographical Information Systems) and geodata at the VU University Amsterdam. It offers students and employers a platform to exchange, examine and download digital map material.</li>
-<li><a href="http://www2.fgw.vu.nl/oz/kloosterlijst/kform.php">Dutch monasteries</a>&nbsp;- database with information about Dutch monasteries&nbsp;of the Middle Ages.</li>
-<li><a href="http://geoplaza.vu.nl/cms/maps/198-slaveneigenaren-in-amsterdam-1863">Slave owners in Amsterdam 1863</a>&nbsp;- the place of living of owners of slaves in Amsterdam in 1863, visualized in GeoPlaza.</li>
-<li><a href="http://www.borderdeaths.org/">Deaths at the Borders Database</a>&nbsp;- collection of official, state-produced evidence on people who died while attempting to reach southern EU countries from the Balkans, the Middle East, and North &amp; West Africa, and whose bodies were found in or brought to Europe.</li>
-<li>Datasets published by VU Researchers can be found at the <a href="https://research.vu.nl/en/datasets/">VU Research Portal</a>.</li>
+<li>Overview</li>
+<li>Discover &amp; Initiate</li>
+<li>Plan &amp; Design</li>
+<li>Collect &amp; Store</li>
+<li>Process &amp; Analyse</li>
+<li>Document &amp; Preserve</li>
+<li>Publish &amp; Share</li>
+<li>Support</li>
 </ul>
-</section>
-</section>
-<section id="data-citation" class="level3">
-<h3 class="anchored" data-anchor-id="data-citation">Data Citation</h3>
-<section id="citation-elements" class="level4">
-<h4 class="anchored" data-anchor-id="citation-elements">Citation Elements</h4>
-<p>Citing data is not different from citing a publication. Make sure to check the rules of the journal to know how you should cite when writing an article for a specific academic journal. For all of the journals, however, the minimum compulsory elements in a data citation include:</p>
-<ul>
-<li>Author(s): Name of the author (creator) of the dataset</li>
-<li>Title: Name of the dataset</li>
-<li>Date of publication</li>
-<li>Publisher: Archive where dataset is stored</li>
-<li>Persistent Identifier: Unique identifier, most common is the DOI (see section <a href="http://libguides.vu.nl/researchdata/data-publication">Data Publication</a>).</li>
-</ul>
-<p>Optional elements that may be included in the reference are:</p>
-<ul>
-<li>File Type: Codebook, movie, software</li>
-<li>Version: Version number of the edition</li>
-<li>Creation Date</li>
-<li>Date of Consultation (last) <strong>Example of a data citation:</strong></li>
-</ul>
-<p>Stephens, William, 2020, “Resiliences to Radicalisation - QSort Data”, <a href="https://doi.org/10.34894/35MTMN">https://doi.org/10.34894/35MTMN</a>, DataverseNL, V1.</p>
-<p>For more information, see the following guidelines:</p>
-<ul>
-<li><a href="https://dataverse.org/best-practices/data-citation">Dataverse</a></li>
-<li><a href="https://datacite.org/cite-your-data.html">DataCite</a></li>
-<li><a href="http://www.dcc.ac.uk/resources/briefing-papers/introduction-curation/data-citation-and-linking">DCC UK</a></li>
-<li><a href="https://www.force11.org/group/joint-declaration-data-citation-principles-final">Data Citation Synthesis Group (2014). Joint Declaration of Data Citation Principles. Martone M. (ed.) San Diego CA: FORCE11</a></li>
-</ul>
-</section>
-</section>
-</section>
-<section id="plan-design" class="level2">
-<h2 class="anchored" data-anchor-id="plan-design">Plan &amp; Design</h2>
-</section>
-<section id="collect-store" class="level2">
-<h2 class="anchored" data-anchor-id="collect-store">Collect &amp; Store</h2>
-</section>
-<section id="process-analyse" class="level2">
-<h2 class="anchored" data-anchor-id="process-analyse">Process &amp; Analyse</h2>
-</section>
-<section id="document-preserve" class="level2">
-<h2 class="anchored" data-anchor-id="document-preserve">Document &amp; Preserve</h2>
-</section>
-<section id="publish-share" class="level2">
-<h2 class="anchored" data-anchor-id="publish-share">Publish &amp; Share</h2>
-</section>
 <section id="support" class="level2">
-
+<h2 class="anchored" data-anchor-id="support">Support</h2>
+</section>
+<section id="research-data-services" class="level2">
+<h2 class="anchored" data-anchor-id="research-data-services">Research Data Services</h2>
+<p><img src="../libapps-eu.s3.amazonaws.com/accounts/46034/images/VU-research-data-service-offices.png" class="img-fluid" alt="Image Scheme VU Research Data Support Offices"> Research Data Management is supported by various departments at the VU. These departments will help all VU researchers. There are also faculty specific support departments for research data support; they support their own faculty members.</p>
+<p>Here you find references to other organisational units and departments that can help you with matters related to collecting and managing data.</p>
+<p><strong>VU research data support (for all researchers)</strong></p>
+<ul>
+<li><a href="https://vu.nl/en/about-vu/more-about/off-campus-access"></a><a href="https://vu.nl/en/about-vu/more-about/vu-grants-office">Grant office</a></li>
+<li><a href="https://vu.nl/en/about-vu/more-about/rdm-support-desk">Library</a></li>
+<li><a href="https://vu.nl/en/about-vu/more-about/off-campus-access"></a><a href="https://vu.nl/en/employee/board-and-strategy/institutional-and-legal-affairs">Legal</a></li>
+<li><a href="https://vu.nl/en/about-vu/more-about/off-campus-access"></a><a href="https://vu.nl/en/about-vu/more-about/protection-awareness">Security</a></li>
+<li><a href="https://vu.nl/en/about-vu/more-about/off-campus-access"></a><a href="https://services.vu.nl/esc?id=emp_taxonomy_topic&amp;topic_id=4cb138ee97fa0950e553359fe153afff">IT for Research</a></li>
+<li><a href="https://www.ixa.nl/">IXA</a></li>
+</ul>
+<p>General Faculty research support and management guidelines are available in the section <a href="https://libguides.vu.nl/rdm/policies-regulations">Policies &amp; Regulations</a>.</p>
+<p><strong>This LibGuide</strong></p>
+<p>Questions regarding your data or the information on this website?</p>
+<p>The <a href="mailto:researchdatamanagement@vu.nl?subject=Libguides%20question">RDS Support</a>&nbsp;team can help you with all your question on data management plan, data archiving, data store or data privacy &amp; security.</p>
+<p>The RDS Helpdesk provides information about Research Data Management through the page <a href="https://vu.nl/en/employee/research-support">Research Support</a> on VUweb.</p>
+<p>// JavaScript Document $(function() { $(‘.dialogMouse’).each(function() { var <span class="math inline">\(link=\)</span>(this); var p = $(‘#img_research_data_service’).position(); var <span class="math inline">\(coords=\)</span>link.attr(‘coords’).split(‘,’) var <span class="math inline">\(leftextra = parseInt(\)</span>coords[0])-parseInt($coords[2]); var <span class="math inline">\(topextra = parseInt(\)</span>coords[1])+parseInt($coords[2]); var $dialog = <span class="math inline">\(("#"+\)</span>link.attr(‘ref’)) .dialog({ autoOpen: false, resizable: false, width:250, minHeight:20, dialogClass: “no-close” }); $link.mouseover(function() { <span class="math inline">\(dialog.dialog("option","position",{ my: "left top", at: "left+"+\)</span>leftextra+” top+“+$topextra, of: $(‘#img_research_data_service’) }) $dialog.dialog(”open”); }).mouseout(function() { <span class="math inline">\(dialog.dialog("close"); }); }); //\)</span>(“.ui-dialog-titlebar”).hide(); });</p>
+<p>Box Link &amp; Embedded Code</p>
+</section>
+<section id="vu-it-for-research" class="level2">
+<h2 class="anchored" data-anchor-id="vu-it-for-research">VU IT for Research</h2>
+<p>The VU has an IT team specifically devoted to research: ITvO (from ‘IT voor Onderzoek’ in Dutch). They provide the following services:</p>
+<ul>
+<li><a href="https://vu.nl/en/about-vu/more-about/off-campus-access"></a><a href="https://services.vu.nl/esc?id=kb_article&amp;sysparm_article=KB0012830">Bazis HPC cluster computing</a>: access to your own linux computational cluster at the VU</li>
+<li><a href="https://vu.nl/en/about-vu/more-about/off-campus-access"></a><a href="https://services.vu.nl/esc?id=emp_taxonomy_topic&amp;topic_id=d80aee1f97cf09d0e553359fe153afd7">SciCloud</a>: a service with which you lease virtual server capacity for research purposes</li>
+<li><a href="https://vu.nl/en/about-vu/more-about/off-campus-access"></a><a href="https://services.vu.nl/esc?id=emp_taxonomy_topic&amp;topic_id=86ad5a5f978f09d0e553359fe153afb3">SciStor</a>: inexpensively store large sets with research data</li>
+<li>Advice/consultancy: ITvO will help you to find a suitable technical solution or support for your research group or project</li>
+<li>Housing: rack space in the server room for (remotely managed) equipment of research groups</li>
+</ul>
+<p>Read more about and get in touch with <a href="https://services.vu.nl/esc?id=emp_taxonomy_topic&amp;topic_id=4cb138ee97fa0950e553359fe153afff">IT for Research</a></p>
+<p>Box Link &amp; Embedded Code</p>
+</section>
+<section id="external-sources" class="level2">
+<h2 class="anchored" data-anchor-id="external-sources">External sources</h2>
+<ul>
+<li><p>[</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://libapps-eu.s3.amazonaws.com/accounts/144379/images/logo-rdnl.png" class="img-fluid figure-img"></p>
+<figcaption>RDNL logo</figcaption>
+</figure>
+</div>
+<p>Research Data Netherlands](http://www.researchdata.nl/)</p>
+<p>Research Data Netherlands is an alliance between 4TU.Centre for Research Data, Data Archiving and Networked Services (DANS) and SURFsara. With this coalition, which is also open to other parties, the three data archives join forces in the area of long-term data archiving.</p></li>
+<li><p>[</p>
+<p><img src="https://libapps-eu.s3.amazonaws.com/accounts/144379/images/lcrdm.gif" class="img-fluid"></p>
+<p>Landelijk Coördinatiepunt Research Data Management](https://lcrdm.nl/rdm-in-nl/)</p>
+<p>The foundation of co-operating Dutch universities (VSNU) pointed out a need for a co-ordinated and decisive approach to Research Data Management through a dedicated Centre at SURF. The SURF Foundation is an organisation that facilitates education and research in the Netherlands.<br>
+The LCRDM aims to support the preparation, development and monitoring of Research Data Management policies for scientific research in the Netherlands. Important elements of this central approach are close co-operation with researchers in the field and the exchange of knowledge and experience.</p></li>
+<li><p>[</p>
+<p><img src="https://www.esciencecenter.nl/wp-content/themes/raadhuis/dist/assets/img/favicons/favicon-32x32.png" class="img-fluid"></p>
+<p>The Netherlands eScience Center](https://www.esciencecenter.nl/)</p>
+<p>The eScience Center develops software for academic research specifically. Their software and tools enhance the use of digital methods in scientific research across all disciplines. Researchers - including those at the VU - can choose to collaborate on projects funded by the NWO or, if they already have funding, ask the eScience Center to collaborate with them.</p></li>
+<li><p>[</p>
+<p><img src="https://dmeg.cessda.eu/.png" class="img-fluid"></p>
+<p>CESSDA](https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide)</p>
+<p>The Data Management Expert Guide of the Consortium of European Social Science Data Archives is a practical guide for researchers, addressing many issues they may have</p></li>
+</ul>
+<p>Box Link &amp; Embedded Code</p>
+</section>
+<section id="rdm-training" class="level2">
+<h2 class="anchored" data-anchor-id="rdm-training">RDM Training</h2>
+<p>The VU Library offers <a href="https://vu.nl/en/employee/library/training-seminars">Workshops on writing a DMP</a>, which are offered separately for each faculty. These workshops are also announced via the <a href="https://vu-nl.libcal.com/calendar/infoworkshops?cid=7052&amp;t=g&amp;d=0000-00-00&amp;cal=7052&amp;inc=0">Library Calendar</a>, where you can register. Questions about these workshops may be directed to the <a href="mailto:rdm@vu.nl">RDM Support Desk</a></p>
+<p>Box Link &amp; Embedded Code</p>
+</section>
+<section id="surfsara" class="level2">
+<h2 class="anchored" data-anchor-id="surfsara">SURFsara</h2>
+<p><img src="../s3.amazonaws.com/libapps/accounts/62029/images/surf_sara.png" class="img-fluid"></p>
+<p>SURF is the collaborative organisation for ICT in Dutch education and research. SURF offers advanced ICT services specifically for researchers. You can start using some of these services right away with your VU credentials. For others you have to get in touch with SURF yourself. Please check <a href="https://www.surf.nl/en">SURF’s website</a> and the pages about the specific services below for more information.</p>
+<p>SURF’s services are listed on this page.</p>
+<section id="data-services" class="level3">
+<h3 class="anchored" data-anchor-id="data-services">Data services</h3>
+<p>SURF offers a wide range of services for different phases in the life cycle of your research data. Everything for the secure storage, management, sharing and reuse of data.</p>
+<p>Research Drive* <strong><a href="https://www.surf.nl/en/research-drive-securely-and-easily-store-and-share-research-data">Research Drive</a>: securely and easily store and share research data.</strong> * Does your research team need large storage quotas, a secure environment to store personal and/or sensitive data, and work collaboratively with other educational and governmental institutions or external private parties? Research Drive is a cloud-based shared-storage environment specifically designed for these requirements.</p>
+<p>SURFfilesender* <strong><a href="https://www.surf.nl/en/surffilesender-send-large-files-securely-and-encrypted">SURFfilesender</a>: send large files securely and encrypted.</strong> * Want to send and receive files quickly, securely and easily? With SURFfilesender, you can send large files, such as research data. The files are stored in the Netherlands. Encryption provides added security.</p>
+<p>SURFdrive* <strong>Store and share your files securely in the cloud with <a href="https://www.surf.nl/en/services-and-products/surfdrive/surfdrive.html">SURFdrive</a>.</strong> * Store, synchronise and share your documents easily with SURFdrive. SURFdrive is a personal cloudservice for the Dutch education and research. Your documents are kept safe and sound in our community cloud.</p>
+<p>Data Archive* <strong>Secure, long-term storage with <a href="https://www.surf.nl/en/services-and-products/data-archive/index.html">Data Archive</a>.</strong> * The Data Archive is the centralised location for data archiving and (long-term) storage. You can securely store research data there, even in volumes running into the petabytes. The archive provides quick access to SURFsara’s computing facilities.</p>
+<p>Data Ingest Service* <strong><a href="https://www.surf.nl/en/data-ingest-service-upload-a-large-amount-of-data-to-surf">Data Ingest Service</a>: upload a large amount of data to SURF.</strong> * The Data Ingest Service is intended for researchers who want to store or analyse large amounts of data at SURFsara. The service is convenient for users who lack sufficient bandwidth or who have stored their data on a number of external hard disks.</p>
+<p>Data Persistent Identifier* <strong><a href="https://www.surf.nl/en/services-and-products/data-persistent-identifier/index.html">Data Persistent Identifier</a>: data always findable by permanent references.</strong> * Persistent identifiers (PIDs) ensure the findability of your data, now and always. PIDs are comparable to the ISBN numbers assigned to books. Even if the location or underlying infrastructure changes, the reference path remains intact. SURFsara offers the PID service in cooperation with the European Persistent Identifier Consortium (EPIC).</p>
+</section>
+<section id="data-processing-and-analysis-see-also-computing" class="level3">
+<h3 class="anchored" data-anchor-id="data-processing-and-analysis-see-also-computing">Data processing and analysis (see also ‘Computing’)</h3>
+<p>Jupyter Notebook* <strong><a href="https://www.surf.nl/en/jupyter-notebook-accessible-and-interactive-data-analysis-for-research-and-education">Jupyter Notebook</a>: accessible and interactive data analysis for research and education.</strong> * A Jupyter Notebook is an interactive web application that you can use to create documents, known as notebooks, that contain computer code, formatted text, comparisons and visualisations. The code can be executed in the environment and you can even create streaming applications and dashboards.</p>
+</section>
+<section id="computing" class="level3">
+<h3 class="anchored" data-anchor-id="computing">Computing</h3>
+<p>Do you encounter limitations with your own systems? SURF offers researchers a wide range of services in the field of high performance computing (HPC): thousands of times faster than your PC.</p>
+<p>Cartesius: National Supercomputer* <strong><a href="https://www.surf.nl/en/services-and-products/dutch-national-supercomputer/index.html">Cartesius: National Super Computer</a>.</strong> * It is the most comprehensive system in the field of capability computing in the Netherlands. Cartesius is especially in high demand for its combination of fast processors and internal network, large storage capacity and the ability to process large datasets.</p>
+<p>Lisa Compute Cluster* <strong><a href="https://www.surf.nl/en/services-and-products/lisa-compute-cluster/index.html">Lisa Compute Cluster</a>: extra processing power for research.</strong> * Lisa Compute Cluster combines processing power with user friendliness. Are the limits of your own system inhibiting your research? This service lets you upscale to a higher level. Lisa Compute Cluster is preconfigured with a range of software packages, meaning you can start working right away.</p>
+<p>HPC Cloud* <strong><a href="https://www.surf.nl/en/services-and-products/hpc-cloud/index.html">HPC Cloud</a>: your flexible compute infrastructure.</strong> * HPC Cloud gives you and your project team complete control over your computing infrastructure. The infrastructure ranges from a single work station to a complete cluster and can be expanded to suit your needs. You can use your own operating system and analysis software. HPC Cloud is housed in SURF’s own data centre.</p>
+<p>Grid* <strong><a href="https://www.surf.nl/en/services-and-products/grid/index.html">Grid</a>: for processing and storing large datasets.</strong> * Do you want to process and store large- amounts of data? The Grid may very well be suitable for your project. The grid infrastructure consists of a large number of clusters for computing and data storage, which are interconnected via a fast network.</p>
+<p>Visualisation* <strong><a href="https://www.surf.nl/en/services-and-products/visualisation/index.html">Visualisation</a>: more insight into your data.</strong> * Do you want to analyse, process or visualise complex research data or big data? These services give you insight into your research data. SURF’s Visualisation service allows you to visualise your own datasets on your desktop. This makes it easy to identify connections between data or gain other insight into your datasets. SURFsara offers a powerful remote visualisation service that combines high performance with ease of use.</p>
+<p>Collaboratorium* <strong><a href="https://userinfo.surfsara.nl/systems/collaboratorium">Collaboratorium</a>: a visualization and presentation space for science and industry.</strong></p>
+</section>
+<section id="expertise-advice-and-training" class="level3">
+<h3 class="anchored" data-anchor-id="expertise-advice-and-training">Expertise, advice and training</h3>
+<p>SURF offers advice and training on their services. Their training sessions are announced in the <a href="https://www.surf.nl/en/agenda/research-and-ict">SURF Agenda</a>.</p>
+<p>SURF training* <strong><a href="https://www.surf.nl/en/training-courses-for-research">Training courses for research</a>.</strong> * Want to get started with SURF systems but lack the necessary knowledge? SURF regularly organizes hands-on systems training courses at their offices in Utrecht and Amsterdam or at your education or research institution. You can also include the training courses in the educational programme of your institution.</p>
+<p>SURF consultancy* <strong><a href="https://www.surf.nl/en/services-and-products/consultancy/index.html">Consultancy</a> on ICT solutions for researchers.</strong> * SURFsara possesses a wealth of experience in the field of ICT services for researchers. If you need help developing/improving your application or designing your infrastructure, then you’ve come to the right place. SURF experts will be happy to lend their expertise to support your research.</p>
+<p>Box Link &amp; Embedded Code</p>
 
 
 
 </section>
 </section>
+</section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Support</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-Wilkinson2016-lh" class="csl-entry" role="listitem">
 Wilkinson, Mark D, Michel Dumontier, Ijsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, et al. 2016. <span>“The <span>FAIR</span> Guiding Principles for Scientific Data Management and Stewardship.”</span> <em>Sci. Data</em> 3 (1): 160018.
 </div>
