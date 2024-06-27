@@ -1,10 +1,10 @@
-# Publish & Share
+# Publish & Share Data
 ## Selecting an Archive
 
 Data archiving: mid- or long-term?
 ----------------------------------
 
-![](//libapps-eu.s3.amazonaws.com/accounts/46351/images/Two_women_operating_ENIAC.gif)
+![](https://libapps-eu.s3.amazonaws.com/accounts/46351/images/Two_women_operating_ENIAC.gif)
 
 In the Data Management Plan the researcher describes if the data will be stored for the mid or the long term.  
    
@@ -20,7 +20,7 @@ In the Data Management Plan the researcher describes if the data will be stored 
 
 Researchers should bear in mind that repositories can charge for archiving data. These costs can vary according to the data volume and the archive used. It is important that you consider in advance how you will budget for these costs. Whatever archiving option is used, proper descriptions of the dataset(s) and adding [metadata](http://libguides.vu.nl/rdm/metadata) are important.
 
-Box Link & Embedded Code
+
 
 Deposit your data @VU Amsterdam
 -------------------------------
@@ -29,9 +29,9 @@ VU Amsterdam requests that researchers archive the data used in a publication in
   
 The right archival option depends on the nature of the data and the field of science as described in faculty or departmental data management policy documents. The university offers 2 different general repositories for data archiving.
 
-![](//libapps-eu.s3.amazonaws.com/accounts/46351/images/RDS_SelWizard.gif)The RDM Support Desk and faculty data stewards can help researchers with the selection of a repository that meets all the relevant criteria of privacy (sensitivity), dataset size, etc.
+![](https://libapps-eu.s3.amazonaws.com/accounts/46351/images/RDS_SelWizard.gif)The RDM Support Desk and faculty data stewards can help researchers with the selection of a repository that meets all the relevant criteria of privacy (sensitivity), dataset size, etc.
 
-![](//s3.amazonaws.com/libapps/accounts/62029/images/Icon_dataverse.png)
+![](https://s3.amazonaws.com/libapps/accounts/62029/images/Icon_dataverse.png)
 
 [DataverseNL](https://dataverse.nl/dataverse/vuamsterdam) - an online platform for the publication of citable research data in a semi-open environment. DataverseNL allows users to link publications to datasets directly, and to share the data through online archives such as DANS.
 
@@ -53,7 +53,7 @@ Specifications:
 
 Before sending data to the vault, you will need to add [metadata](https://libguides.vu.nl/rdm/metadata). A data steward, metadata specialist or functional manager can help you with the metadata and the entire process of sending data to the vault. Please get in touch with the [RDM Support Desk](mailto:rdm@vu.nl?subject=Sending%20data%20to%20the%20Yoda%20vault) to find this help.
 
-Box Link & Embedded Code
+
 
 Archiving vs. Publishing Data
 -----------------------------
@@ -68,7 +68,7 @@ Use the image below to remind yourself of the difference between archiving and p
 
 _This illustration is created by Scriberia with The Turing Way community. Used under a CC-BY 4.0 licence. DOI: [10.5281/zenodo.3332807](https://doi.org/10.5281/zenodo.3332807)_
 
-Box Link & Embedded Code
+
 
 Choosing a different repository
 -------------------------------
@@ -95,7 +95,7 @@ More recommendations for choosing a data repository can be found on the websites
 
 If you would like advice about what would be a good place for you to archive your research data, you can always reach out to the [RDM Support Desk](mailto:rdm@vu.nl).
 
-Box Link & Embedded Code
+
 
 ## Data Publication
 
@@ -106,7 +106,7 @@ Open Access publishing means that you make your publication freely accessible o
 
 Open Access publishing is one component of Open Science. The European Commission has defined open science as follows: “Open Science represents a new approach to the scientific process based on cooperative work and new ways of diffusing knowledge by using digital technologies and new collaborative tools. The idea captures a systemic change to the way science and research have been carried out for the last fifty years: shifting from the standard practices of publishing research results in scientific publications towards sharing and using all available knowledge at an earlier stage in the research process”. (Definition taken from [Nationaal Programma Open Science](https://www.openscience.nl/en/open-science/what-is-open-science).) This includes making openly available research data, methods and documentation where possible. As such, RDM and the practices outlined in this LibGuide are a precondition of Open Science. You can read more about Open Science in the Netherlands on the website of the [Nationaal Programma Open Science](https://www.openscience.nl/en) and join the [Open Science Community Amsterdam](https://openscience-amsterdam.com/), the community of VU employees interested in Open Science (joint with the University of Amsterdam).
 
-Box Link & Embedded Code
+
 
 Publishing your data in a data journal
 --------------------------------------
@@ -123,21 +123,14 @@ Instead of archiving research data in a data repository, you may choose to publi
 *   [Journal of Open Health Data](http://openhealthdata.metajnl.com/)
 *   [Journal of Open Psychology Data](http://openpsychologydata.metajnl.com/)
 
-Box Link & Embedded Code
 
-What is a persistent identifier?
---------------------------------
+{{< include ../topics/persistent-identifier.qmd >}}
 
-A persistent identifier (PID) is a durable reference to a digital dataset document, website or other object. It is a kind of [ISBN](http://www.isbn.org/about_isbn_standard) for digital files. By using a persistent identifier, you make sure that your dataset will be findable well into the future. A [DOI](https://en.wikipedia.org/wiki/Digital_object_identifier) or [Handle](https://en.wikipedia.org/wiki/Handle_(computing)) are the commonly used PIDs. The [data archiving options](//libguides.vu.nl/rdm/selecting-data-archiving#s-lg-box-wrapper-17896166) at the VU commonly offer DOIs.
-
-Most data archives or repositories offer a persistent identifier and generate this automatically when research data are archived. For example, this is the case for DataverseNL at the VU. In Yoda at the VU, assigning a PID is possible, but does not happen automatically. Please get in touch with the [RDM Support Desk](mailto:rdm@vu.nl) if you have questions about assigning a PID when you archive data in Yoda.
-
-Box Link & Embedded Code
 
 Licensing the data
 ------------------
 
-![](//libapps-eu.s3.amazonaws.com/accounts/46351/images/Open_Data_CC0_Wikidata.gif)A data licence agreement is a legal instrument that lets others know what they can and cannot do with your research data (and any documentation. scripts and metadata that are published with the data). It is important to consider what kind of limitations are relevant. An important component can be a guideline on how people should cite the dataset. Other components could be:
+![](https://libapps-eu.s3.amazonaws.com/accounts/46351/images/Open_Data_CC0_Wikidata.gif)A data licence agreement is a legal instrument that lets others know what they can and cannot do with your research data (and any documentation. scripts and metadata that are published with the data). It is important to consider what kind of limitations are relevant. An important component can be a guideline on how people should cite the dataset. Other components could be:
 
 *   Can people make copies or even distribute copies
 *   Who should be contacted if you need access to re-use data
@@ -147,13 +140,13 @@ In principle, Dataverse allows you to choose your terms of use. Some data reposi
 
 Additional websites and tools:
 
-*   [Explanation about copyrights and licences](https://www.youtube.com/watch?v=_J26POpb-rQ&feature=youtu.be) by a professor from Leiden University (English subtitles available)
-*   The [Guide to Creative Commons for Scholarly Publishing and Educational Resources](https://zenodo.org/record/4090923#.X6ugz1DvJPY) by NWO, VSNU and the University and Royal Libraries
-*   [DCC how-to guide on licensing research data](https://www.dcc.ac.uk/guidance/how-guides/license-research-data), a guide that links to the Creative Commons website, where many terms are explained
-*   [Open Data Commons Public Domain Dedication and License (PDDL)](http://opendatacommons.org/licenses/pddl/)
-*   [EUDAT B2SHARE license selection wizard](https://ufal.github.io/public-license-selector/), which Pawel Kamocki (et al) released under an open source license.
+* [Explanation about copyrights and licences](https://www.youtube.com/watch?v=_J26POpb-rQ&feature=youtu.be) by a professor from Leiden University (English subtitles available)
+* The [Guide to Creative Commons for Scholarly Publishing and Educational Resources](https://zenodo.org/record/4090923#.X6ugz1DvJPY) by NWO, VSNU and the University and Royal Libraries
+* [DCC how-to guide on licensing research data](https://www.dcc.ac.uk/guidance/how-guides/license-research-data), a guide that links to the Creative Commons website, where many terms are explained
+* [Open Data Commons Public Domain Dedication and License (PDDL)](http://opendatacommons.org/licenses/pddl/)
+* [EUDAT B2SHARE license selection wizard](https://ufal.github.io/public-license-selector/), which Pawel Kamocki (et al) released under an open source license.
 
-Box Link & Embedded Code
+
 
 Licensing software
 ------------------
@@ -166,7 +159,7 @@ As with data, it is important to license any [software](https://libguides.vu.nl/
 
 If you need guidance in choosing a licence for your software, get in touch with the [RDM Support Desk](mailto:rdm@vu.nl?subject=Research%20Software).
 
-Box Link & Embedded Code
+
 
 ## Dataset Registration
 
@@ -186,7 +179,7 @@ Some archives also allow you to preregister your project/dataset. Examples are:
 *   [Open Science Framework](https://help.osf.io/hc/en-us/sections/360003624093-Create-Registrations) (OSF) Registration
 *   [Zenodo & registration](https://zenodo.org/deposit)
 
-Box Link & Embedded Code
+
 
 Register your Dataset in PURE
 -----------------------------
@@ -202,11 +195,10 @@ Just like your publications, data that you have collected for your research cons
 
 #### How to register your dataset in PURE?
 
-![Screenshot: adding a dataset to your PURE profile](//libapps-eu.s3.amazonaws.com/accounts/133513/images/PURE-AddDataset.png)
+![Screenshot: adding a dataset to your PURE profile](https://libapps-eu.s3.amazonaws.com/accounts/133513/images/PURE-AddDataset.png)
 
 1.  Log into the [VU](https://research.vu.nl/admin/workspace.xhtml) or [VUmc](https://research.vumc.nl/admin/workspace.xhtml) Research Portal (PURE) using your VU or VUmc credentials
 2.  Click on the “+” (plus) icon next to selecting “Datasets” in the overview
-3.  You can fill in the form using this [manual (NL)](//libguides.vu.nl/ld.php?content_id=32324060)/[manual (EN)](//libguides.vu.nl/ld.php?content_id=32735556), and read more about the various metadata in use (generic and subject specific)
+3.  You can fill in the form using this [manual (NL)](https://libguides.vu.nl/ld.php?content_id=32324060)/[manual (EN)](https://libguides.vu.nl/ld.php?content_id=32735556), and read more about the various metadata in use (generic and subject specific)
 4.  Click on “Save” to store the registration
 
-Box Link & Embedded Code

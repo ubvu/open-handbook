@@ -1,0 +1,55 @@
+## Data Collection
+
+Data collection may consist of the re-use of existing data and/or the generation of new data. You can find more specific information on the re-use of existing data on the [Finding Existing Data](http://libguides.vu.nl/researchdata/finding-existing-data) page in this LibGuide
+
+For data to be considered valid and reliable, data collection should occur consistently and systematically throughout the course of the research project. Data collection guidelines and established methodologies should be used to gather data. Some disciplines make use of codebooks, whereas others use protocols for data gathering. These procedures help researchers collect data according to conventional methodological steps. If a research project involves multiple partners (in a consortium) it should be clear who is responsible for the collection of what (part of the) data. Important aspects of data collection include:
+
+*   Standardisation: [codebooks](https://libguides.vu.nl/rdm/codebooks) & [protocols](https://libguides.vu.nl/rdm/data-collection#s-lg-box-wrapper-17896154)
+*   Structure / organisation of the data
+*   [Data quality assurance methods](https://libguides.vu.nl/rdm/data-processing)
+*   [Documentation](http://libguides.vu.nl/rdm/data-documentation) & [metadata](http://libguides.vu.nl/rdm/metadata)
+*   [Storage](http://libguides.vu.nl/rdm/data-storage) & [protection](http://libguides.vu.nl/rdm/data-protection)
+
+This relates to the Reproducibility of your research according to the [FAIR-data principles](//libguides.vu.nl/rdm/overview#s-lg-box-wrapper-17896126).
+
+### Data Collection Tools
+
+The tools being used in research to collect data are immensely diverse. For that reason, we will not provide an exhaustive overview here. What is important for data collection tools in relation to RDM is where such tools store the data that you collect and in which format. The storage location is particularly important when you are working with personal data. For example, the privacy legislation in the United States is very different from the European General Data Protection Regulation (GDPR). Hence, personal data collected in a Dutch research institute may not be stored on American servers. It is important to keep that in mind when you are contemplating which tool to use for your data collection.
+
+If you are collecting personal data and you decide to use a tool for which no contract exists between VU Amsterdam and the provider of the software or tool, a service agreement and a processing agreement must be drawn up. Contact the [](https://vu.nl/en/about-vu/more-about/off-campus-access)[privacy champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information) of your faculty for more information and a model processing agreement.
+
+**Questionnaire tools**
+
+The Faculty of Behavioural and Movement Sciences has developed a [document with tips for safe use](https://fgb-rdm.nl/Images/Secure_Use_of_Questionnaire_Tools.pdf) of the questionnaire tools Qualtrics and Survalyzer. The document was made for FGB researchers specifically but can also be helpful for others. Consult this document if you need a questionnaire tool to collect your data.
+
+
+### Data Collection in Collaboration
+
+Some research projects involve the participation of multiple organisations or institutes and may include even cross-border co-operation. When data is collected by several organisations, a Data Management Plan should provide information on who is responsible for which part of the data collection and storage. It should also provide information on how specific data collections are related to which part(s) of the research goal(s). Describing this precisely will help you to determine if a consortium agreement or joint controller agreement is necessary. You see a general example of such a specification in the table below:
+
+| Data Stage | Dataset description                 | Responsible organization for collection                | Data origin                     | Data purpose                                                                               |
+|------------|-------------------------------------|--------------------------------------------------------|---------------------------------|--------------------------------------------------------------------------------------------|
+| Raw data   | Community level surveys             | Vrije Universiteit Amsterdam                           | Amsterdam, The Hague, Rotterdam | Identifying perceived problems, System responsiveness                                      |
+| Raw data   | Trials &amp; Focus Group Interviews | London School of Hygiene and Tropical Medicine (LSHTM) | Germany, Switzerland            | Trials to evaluate programs on . . ., Focus Group interviews to identify barriers to . . . |
+| Raw data   | Pollution measurements using fish   | Oceanographic Institute of Sweden                      | Coastal waters, Northeast Spain | Establish pollution levels of plastic                                                      |
+
+
+### Data Collection Protocols
+
+Regardless of the field of study or preference for defining data (quantitative, qualitative), accurate data collection is essential to maintaining the integrity (structure) of research. Both the selection of appropriate data collection instruments (existing, modified, or newly developed) and clearly delineated instructions for their correct use reduce the likelihood of errors.
+
+There are two approaches for reducing and/or detecting errors in data which can help to preserve the integrity of your data and ensure scientific validity. These are:
+
+1.  **Quality assurance** - activities that take place **before** data collection begins
+2.  **Quality control** - activities that take place **during and after** data collection
+
+Quality assurance precedes data collection and its main focus is 'prevention' (i.e., forestalling problems with data collection). Prevention is the most cost-effective activity to ensure the integrity of data collection. This proactive measure is best demonstrated by the standardization of protocol developed in a comprehensive and detailed procedures manual for data collection.
+
+While quality control activities (detection/monitoring and action) occur during and after data collection, the details should be carefully documented in the procedures manual. A clearly defined communication structure is a necessary pre-condition for monitoring and tracking down errors. Quality control also identifies the required responses, or ‘actions’ necessary to correct faulty data collection practices and also minimise future occurrences.
+
+Some sources for protocols:
+
+*   [HANDS](https://data4lifesciences.nl/hands2/data-stewardship/) Handbook for Adequate Natural Data Stewardship by the Federation of Dutch University Medical Centers (UMCs)
+*   [Protocols.io](https://www.protocols.io/) - an open access repository of protocols
+*   [Protocols Online](http://www.protocol-online.org/) - website with protocols available on the internet, sorted by discipline.
+*   [Springer Protocols](https://experiments.springernature.com/) - free and subscribed protocols collected by Springer.
