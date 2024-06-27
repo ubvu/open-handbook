@@ -1,0 +1,83 @@
+## Data Protection
+
+### What is Data Protection?
+
+Protection from what? From whom? When, and why? Before we talk about data protection, let us consider security first. More often than not, 'security' is regarded as a fixed state. In reality, security is an assessment of the level of protection against a certain threat, that you consider to deal with that threat adequately enough. Whether or not security is accurate depends on the value of the data and the quality of protective measures.
+
+The question for you as a researcher is 'when are the measures that you take secure enough?'. In order to answer this, please be aware that there are three entities that have an opinion about what is 'secure enough', namely: the law, the University, and you yourself as the data processor.
+
+The University has a Security Baseline that sets a norm for levels of protection for every application it uses. The Baseline is based on international standards. For each of these applications, the University is considering for which means the security of these applications are adequate enough.
+
+The legal requirements for the processing of personal data can be found in the section 'GDPR and Privacy' under \_Plan & Design\_ There are additional laws and regulations as well. The assumption is that you are familiar with these, especially with laws regulating medical and criminal research.
+
+What you personally consider to be secure might be very different from what your colleagues, the Faculty or the University considers to be secure enough and the norms will vary with the variety of data that is being processed by different researchers and Faculties of the VU. Very generally speaking, there are three points of protection to consider:
+
+1.  Protection against data loss, for which you need a back up periodically.
+2.  Protection against data leakage, for which you need to consider all storage places and their access points.
+3.  Protection of data integrity, for which you need version control and synchronisation management.
+
+The security of your protection measures depends on the threat you face. We often think of threats as active, and motivated by bad intentions. But most common forms of data loss are accidental and most leakage is caused by trusting others. In reality, devices just get lost or break down, people download malware by accident, and each one of us forgets to save a document at times or gets confused about which version was last updated.
+
+In all cases, protection starts with oversight on where your data is stored and processed. If you forget that you temporarily stored it in a certain place, you have then lost oversight of where that data is. The opposite is also true: if you know where you data is, you have insight in the level of security of the space in which you store it. As you can see, protection begins with organising your work in a reliable manner and thinking through your steps. 
+
+For example, if you data is on your laptop and synchronised with your phone, then it is stored in two places. Perhaps this is enough back up, perhaps not. If you put both you devices in the same bag and you lose your bag, you have no backup. A backup to an online storage might be a good solution, but might also mean your data leaks via the internet of via the storage provider who sells the data and your behavioural data for profit. Most importantly, there is no absolute security. It is best if you consider your personal behaviour and then think of scenarios that are more or less likely to happen and what would impact you most. If you frequently work in public places you should make it a habit to lock your device each time you leave it. If you eat and drink behind your desk often, better work with a remote keyboard to protect your laptop from the unavoidable coffee shower. Do you save your respondents’ contact details on your personal phone? Then protect it with a pin.
+
+Here are some basic protection guidelines:
+
+1.  Data are very difficult to erase. You have probably never done it.
+2.  Decide how to back up data and test it before you rely on it.
+3.  Do not give others your log-in credentials. If you have done so and your family members use your work device, then change it.
+4.  Do not use passwords twice, do not use your birthday, initials, streetname, hobby.
+5.  Encryption sounds secure, but it fails completely without good password management.
+
+
+### Data Protection
+
+There can be many reasons why the data of a project needs to be kept protected:![](//libapps-eu.s3.amazonaws.com/accounts/46351/images/20130404encryption.jpg)
+
+*   Sensitivity of the data collected
+*   Protection of the research data from competition
+*   Commercial reasons / Intellectual property
+*   Etc.
+
+There are also many levels of security that may be implemented, depending on the needs. Sometimes it will be enough to use a password-protected cloud-based server. In extreme cases encryption may be needed and also when data is transmitted between researchers or organisations. You should contact the [RDM Support Desk](mailto:rdm@vu.nl) to discuss available options, who may connect you to legal experts where sensitive data is concerned. Check the [Data Storage section of this LibGuide](http://libguides.vu.nl/rdm/data-storage) with links to find out more on campus solutions and cloud-based options.
+
+
+### Safe Transportation and Transfer
+
+It is important to protect your data during the entire data life cycle. To find out whether your data are secure during all stages of your research, think about your data flow: where do your data originate and where do they go to? If data need to be transported from one physical place to the other, or need to be transferred from one device to another, these actions should happen in a secure way.
+
+#### Transferring digital data
+
+##### Online connection on campus
+
+If data collection takes place through a certain measurement device (e.g. MRI scanner, EEG scanner, eye tracker), the data need to be transferred from the measurement device to the storage location that you will use during your research project. Make sure that this transfer takes place in a secure way and also make a plan for the data on the measurement device; find out whether they need to be destroyed or can remain there.
+
+##### Online connection outside campus (with and without VUnetID)
+
+If you are doing fieldwork outside the campus and you have reliable and secure internet access, it is a good idea to upload the data to a storage location that is regularly backed up and secure, in order to prevent data loss. If you have a VUnetID, you can for example use:
+
+*   [SURFdrive](https://www.surf.nl/en/store-and-share-your-files-securely-in-the-cloud-with-surfdrive) to store your data in a secure cloud service
+*   [SURFfilesender](https://www.surf.nl/en/surffilesender-send-large-files-securely-and-encrypted) to send you data to a colleague or consortium partner, who can store your data in an appropriate place
+
+You can find more information about each of these storage options on the [Data Storage](https://libguides.vu.nl/rdm/data-storage) page of this LibGuide.
+
+If you need to receive data from colleagues in your project who don’t have access to these tools (e.g. because they are students, don’t work for a Dutch educational institution, or have no VUnetID), SURFdrive, SURFfilesender and Edugroepen can also be used:
+
+*   [SURFdrive](https://www.surf.nl/en/store-and-share-your-files-securely-in-the-cloud-with-surfdrive): you can set up a ‘File drop’ folder. By sharing the link of this folder to the researchers who need to upload documents, you enable them to do anonymous uploads to this folder. These users have solely upload rights, no view or download rights. The folder can be protected with a password, which you preferably share with the uploaders through another channel.
+*   [SURFfilesender](https://www.surf.nl/en/surffilesender-send-large-files-securely-and-encrypted): as a SURFfilesender user, you can send a voucher to someone who doesn’t have access to this tool. This person can use this voucher to send documents to you. These files can be encrypted.
+*   [](https://vu.nl/en/about-vu/more-about/off-campus-access)[Zivver i](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=01d4a69797cf09d0e553359fe153afdd)s an email plugin with which you can encrypt emails and attachments.
+
+##### Offline data outside campus
+
+If you are doing fieldwork in an area with limited internet access, you might use a portable device to initially store your data during the phase of data collection, such as a USB drive or an external hard drive. These data can be transferred to a storage location that is connected to the internet (e.g. G-drive, SURFdrive) later. Please make sure that the data on such portable devices are secured, by using encryption (and by transporting them safely by using a lockable briefcase or backpack).
+
+#### Transporting physical data
+
+If physical objects need to be transported, you should check with the data manager at your department (if available) what options are available. Special briefcases that can be locked or secure backpacks may need to be used to keep informed consent forms or other sensitive data objects (USB drives etc.) secure during transport.
+
+#### Data transportation and transfer across borders
+
+Some countries have rules to control the movement of encryption technology that enter or exit their borders. If you need to travel with an encrypted laptop to secure your data, for example during fieldwork abroad, please keep this in mind. If you need to transfer data in and out of such countries, please get advice on encryption and secure transportation at the [IT Service Desk](mailto:servicedesk.it@vu.nl).
+
+If you have general questions about how to protect your data when transporting or transferring them, you can contact the [IT Service Desk](mailto:servicedesk.it@vu.nl). In case of complex situations for which you need tailored support, you can consult the IT [](https://vu.nl/en/about-vu/more-about/off-campus-access)[Relationship Manager](https://vu.nl/en/employee/research-support/contact-research-support) representing the research domain, who can request capacity at IT for setting up an information security plan. Such a plan is usually based on documents which need to be completed beforehand, like a [Data Protection Impact Assessment](//libguides.vu.nl/rdm/data-security#s-lg-box-wrapper-17896144) and a [Data Classification](//libguides.vu.nl/rdm/data-security#s-lg-box-wrapper-17896139). Please note that IT-capacity for tailored support is a paid service for which budget needs to be reserved.

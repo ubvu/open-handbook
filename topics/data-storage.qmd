@@ -1,0 +1,60 @@
+## Data Storage
+
+### Storage During Research
+
+![](//libapps-eu.s3.amazonaws.com/accounts/46351/images/storage.gif)
+
+Many storage options exist that can be used for research data. Depending on the conditions and scope of the research the choices may be broader or narrower. The choices may depend on factors like:
+
+*   Does a project involve multiple organisations or departments?
+*   The sensitivity of the data: does it involve personal data or copyrighted / commercial data?
+*   Are any commercial parties involved?
+*   Does the research project involve multiple locations (multinational, even)?
+*   Will there be (lab) devices producing data that need to be stored as well?
+*   What will be the volume of the data?
+*   Will there be lots of interactions with the data (using software/tools)?
+
+Many solutions exist and may be used:
+
+*   Local storage on computers/networks
+*   Data storage by creating a shared database on a server
+*   Specific locations where physical data samples are stored
+*   A powerful (cloud-based) High Performance Computer
+
+Researchers and PhD students have multiple options that can be used, some of which are listed below. More information about these storage options is available behind their respective links. It is also possible to ask the [Research Data Services team](mailto:rdm@vu.nl) for advice or, in case of complex projects, the [](https://vu.nl/en/about-vu/more-about/off-campus-access)[relationship manager](https://vu.nl/en/employee/research-support/contact-research-support) from the IT domain team for research.
+
+
+### Local Storage & Protection
+
+VU IT and the department IT for Research (ITvO) offer several services for both employees and students to store the data that are being collected and used during research. Examples of local storage options are:
+
+*   **[](https://vu.nl/en/about-vu/more-about/off-campus-access)[Group (network) drives](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=525eda9f978f09d0e553359fe153afaa).** Most departments of faculties at the university will already have group drives or folders available to them. A research project may require strict limitations on who has access to specific folders or drives for sensitive data. Contact IT via the [](https://vu.nl/en/about-vu/more-about/off-campus-access)[selfservice portal](https://services.vu.nl/esc?id=vu_it_ecp_dashboard) to discuss your requirements. **Note:** The Home and Group drives will be phased in the course of 2022/2023 and the university will shift to using Microsoft 365 (OneDrive and Sharepoint) as default storage. A security classification for these systems is not yet available, so we cannot give advice yet about if these are good places to store (potentially) sensitive data. Research Drive or Yoda (see [below](https://libguides.vu.nl/rdm/data-storage?#s-lg-box-wrapper-15125671)) is a better option to store sensitive data.  
+     
+*   [](https://vu.nl/en/about-vu/more-about/off-campus-access)[**SciStor**](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=86ad5a5f978f09d0e553359fe153afb3) (short for ‘Storage for Scientists’): This option allows for inexpensive storage of large files. There are various levels of security possible and various ways to get access to the files. SciStor is only intended for ongoing research, not for archiving.
+
+An **overview of storage and file transfer options** is available below and online as the [Storage finder](https://vu.nl/en/research/storagefinder). This overview and/or the storage finder will help you to choose the storage option most suitable to your research. In the left column, you will find criteria about the research and the data. The matrix shows you what storage options meet these criteria. You can then choose the appropriate storage option based on your needs. Please make use of the RDM Support Desk and/or your local data stewards to get help on which tool to pick, particularly when working with confidential, sensitive and/or personal data
+
+*   [Storage Matrix](https://libguides.vu.nl/ld.php?content_id=33369063)  
+
+### Protected Cloud Storage & File sharing
+
+A number of research projects will involve researchers from multiple organisations. It may also ![](//libapps-eu.s3.amazonaws.com/accounts/46351/images/CloudSecurity.jpg)involve researchers from multiple countries. Developments in cloud-based solutions go fast and many options are available these days. When selecting a cloud-based service it is important to remember to check **where** the data will be hosted. If the research project involves sensitive data it may be necessary to choose cloud-based options that guarantee that the data will stay in Europe or on European-based servers.
+
+*   [**Yoda**](https://yoda.vu.nl/site/index.html) (short for Your Data) is a cloud storage at SURF and is suitable for storing large-scale and sensitive datasets. Yoda also supports collaborating on projects in and outside the VU and adding contextual information ([metadata](https://libguides.vu.nl/rdm/metadata)) about your dataset as you go. Yoda is the best choice if your research is very sensitive.
+*   [](https://vu.nl/en/about-vu/more-about/off-campus-access)[**Research Drive**](https://services.vu.nl/esc?id=sc_cat_item&sys_id=39d345f097066990e553359fe153af01) is a cloud storage at Surf for research projects and is suitable for collaboration in and outside the VU, for storing sensitive data and large-scale research projects. You can also [encrypt](https://wiki.surfnet.nl/display/RDRIVE/How+to+encrypt+your+files) data in Research Drive using several tools. You are able to request storage space in Research Drive via a [](https://vu.nl/en/about-vu/more-about/off-campus-access)[web form](https://services.vu.nl/esc?id=sc_cat_item&sys_id=39d345f097066990e553359fe153af01) in the selfservice portal (VU employees only). Research Drive is the best choice if you need to manage access rights on a folder level. More general information about Research Drive can be found [here](https://www.surf.nl/en/research-drive-securely-and-easily-store-and-share-research-data), and its wiki pages, including tutorials, are [here](https://wiki.surfnet.nl/display/RDRIVE/Tutorials).
+*   There are differences between Research Drive and Yoda and each one may support certain projects better than others. Use the [storage finder](https://vu.nl/en/research/storagefinder) to understand what would be the best choice for your project, and, if you have questions, get in touch with the [RDM Support Desk](mailto:rdm@vu.nl).
+
+*   **[](https://vu.nl/en/about-vu/more-about/off-campus-access)[Surf Filesender](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=da7a9e1b978f09d0e553359fe153af98)**: cloud service that allows you to send files of 1 Terabyte to other researchers and encrypted files of up to 250 GB.  
+     
+*   **[](https://vu.nl/en/about-vu/more-about/off-campus-access)[Surfdrive](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=fb4eda9f978f09d0e553359fe153afa5)**: is a personal cloud storage service for the Dutch education and research community, offering staff, researchers and students an easy way to store, synchronise and share files in the secure and reliable SURF community cloud. All users receive storage space of up to 500 GB.  
+     
+*   **[](https://vu.nl/en/about-vu/more-about/off-campus-access)[Zivver](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=01d4a69797cf09d0e553359fe153afdd)**: All employees of Vrije Universiteit Amsterdam can use Zivver, the encryption program that allows you to send email or data (sensitive or otherwise) securely by email. Attachments will also be encrypted and can be several Terabyte in size (max = 5 TB). Specific information on how to get and use Zivver are available on the selfservice portal. General explanations on how to use it are available at the [Zivver website](https://docs.zivver.com/en/index.html).  
+     
+*   **[Open Science Framework](https://osf.io/abwzm/)**: OSF can be used to store data, but it is primarily a tool for data publication and knowledge/research dissemination. The URL in the bullet point leads to more information about how to work with OSF as a VU researcher, but if your question is not answered in the documentation, please [get in touch](mailto:rdm@vu.nl?subject=OSF) with the RDM Support Desk.
+
+*   [Storage Matrix](https://libguides.vu.nl/ld.php?content_id=33369063)
+    
+
+
+  
+
