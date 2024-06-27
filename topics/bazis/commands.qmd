@@ -1,0 +1,74 @@
+# Using Slurm 
+
+## Usefull commands
+
+See jobs in the queue for a given user
+```
+   squeue -u username
+```
+Show available node features 
+```
+   sinfo -o "%20N  %10c  %10m  %25f  %10G "
+```
+Submit a job
+```
+   sbatch script
+```
+Show the status of a currently running job
+```
+   sstat -j jobID
+```
+Show the final status of a finished job
+```
+   sacct -j jobID
+```
+Cancel a job
+```
+   scancel jobid
+```
+
+## Best practices
+
+Organise your input, output and temporary data. Make use of fast scratch directory ($TMPDIR).
+
+Don't run large computation on the login nodes! It negatively impacts all cluster users. Grab a compute node with srun --pty bash option.
+
+## Constraints
+
+The SLURM constraint option allows for further control over which nodes your job can be scheduled on in a particular parition/queue. You may require a specific processor family or network interconnect. The features that can be used with the sbatch constraint option are defined by the system administrator and thus vary among HPC sites.
+
+Constraints available on BAZIS are cpu architecture and gpu.
+Example (singole constraint):
+```
+#SBATCH --constraint=zen2
+```
+Example combining constraints:
+```
+#SBATCH --constraint="zen2|haswell"
+```
+
+##Computer architecture
+The parts of a modern computer we need to understand to apply to running jobs are listed here. (Note: This is way oversimplified and intended to give a basic overview for the purposes of understanding how to request resources from Slurm, there are a lot of resources out there to dig deeper into computer architecture.)
+
+###Board
+A physical motherboard which contains one or more of each of Socket, Memory bus and PCI bus.
+
+###Socket
+A physical socket on a motherboard which accepts a physical CPU part.
+
+###CPU
+A physical part that is plugged into a socket.
+
+###Core
+A physical CPU core, one of many possible cores, that are part of a CPU.
+
+###HyperThread
+A virtual CPU thread, associated with a specific Core. This can be enabled or disabled on a system.  On BAZIS hyperthreading is typically enabled. Compute intensive workloads will benefit to disable hyperthreading.
+
+###Memory Bus
+A communication bus between system memory and a Socket/CPU.
+
+###PCI Bus
+A communication bus between a Socket/CPU and I/O controllers (disks, networking, graphics,...) in the server.
+
+Slurm complicates this, however, by using the terms core and cpu interchangeably depending on the context and Slurm command. --cpus-per-taks= for example is actually specifying the number of cores per task.

@@ -1,0 +1,60 @@
+# Python virtual environments
+
+Python has many powerfull powerfull packages. In scientific computing many packages may be used in a single project.
+To manage many python packages often a package manager as conda is used.
+
+On a HPC system we do not prefer conda as it does not use optimised binaries and the cache can take up a lot of space, but we understand 
+it is usefull in some cases and try to help.
+
+Working  with virtual environments further makes the python environment better to manage
+
+* A virtual environment is a named, isolated, working copy of Python that that maintains its own files,
+* directories, and paths so that you can work with specific versions of libraries or Python itself without affecting other Python projects. 
+* Virtual environmets make it easy to cleanly separate different projects and avoid problems with different dependencies
+  and version requirements across components.
+
+In short:
+- use virtualenv (preferred) or conda
+- create an isolated environment
+- Install packages
+- Activate a virtual environment
+- Deactivate a virtual environment
+- Delete a virtual environment
+
+# Adding a requirements file
+Python requirements files are a great way to keep track of the Python modules. It is a simple text file that saves a list of the modules and packages required by your project. By creating a Python requirements.txt file, you save yourself the hassle of having to track down and install all of the required modules manually. 
+
+A reuirements file is a simple text file, which looks like this.
+```
+tensorflow==2.3.1
+uvicorn==0.12.2
+fastapi==0.63.0
+```
+Installing modules from a requirements file is easy as.
+```
+pip install -r requirements.txt
+```
+A requirements file can also be generated with:
+```
+pip freeze > requirements.txt
+```
+See the article referenced below for more information.
+
+# Portable scripts
+The first line in a script usually starts the interpreter and is called the Shebang.
+It is recommended to use /usr/bin/env, which can interpret your $PATH. This makes scripts more portable than hard coded paths..
+
+```
+#!/usr/local/bin/python
+Will only run your script if python is installed in /usr/local/bin.
+```
+```
+#!/usr/bin/env python
+Will interpret your $PATH, and find python in any directory in your $PATH.
+```
+So your script is more portable, and will work without modification on systems where python is installed as /usr/bin/python, or /usr/local/bin/python, or even custom directories (that have been added to $PATH), like /opt/local/bin/python.
+
+
+Further Reading
+* [python virtual environments primer](https://realpython.com/python-virtual-environments-a-primer/#an-isolated-python-installation)
+* [python requirements.txt file](https://learnpython.com/blog/python-requirements-file)

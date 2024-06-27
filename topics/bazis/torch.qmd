@@ -1,0 +1,64 @@
+# PyTorch
+
+## Introduction
+PyTorch is a popular deep learning library for training artificial neural networks. 
+
+It can be installed in many ways. Optimized versions with Easybuild are available in the software stack on BAZIS. Search the module environment for the appropiate version.
+
+## Example GPU job
+
+This example recipe from the [PyTorch tutorials site](https://pytorch.org/tutorials/recipes/recipes/amp_recipe.html) measures the performance of a simple network in default precision, then walks through adding autocast and GradScaler to run the same network in mixed precision with improved performance.
+
+It can be run as a standalone python script.
+Download the script:
+
+    wget https://github.com/pytorch/tutorials/blob/main/recipes_source/recipes/amp_recipe.py
+
+This script can be run interactively
+    
+    python amp_recipe.py
+
+But we will create a slurm script Torch-AMP-ex.sh to run on a compute node in batch mode. In this example 1 Node, 2 cores and 1 GPU are requested for 10 minutes. 
+
+    #!/bin/bash -l
+    #SBATCH -J Torch-AMP-example
+    #SBATCH -N 1
+    #SBATCH --ntasks-per-node=2
+    #SBATCH --gpus=1
+    #SBATCH --time=0-00:10:00
+    #SBATCH --mail-type=end,fail
+    #SBATCH --mail-user= <your email address>
+
+    echo "== Starting run at $(date)"
+    echo "== Job ID: ${SLURM_JOBID}"
+    echo "== Node list: ${SLURM_NODELIST}"
+    echo "== Submit dir. : ${SLURM_SUBMIT_DIR}"
+    echo "== Scratch dir. : ${TMPDIR}"
+
+    # environment modules
+    module load shared 2022
+    module load PyTorch/1.12.1-foss-2021a-CUDA-11.3.1
+
+    # https://github.com/pytorch/tutorials/blob/main/recipes_source/recipes/amp_recipe.py
+    # Your more useful application can be started below!
+    python amp_recipe.py
+
+Submit and run the script with Slurm
+
+    sbatch Torch-AMP-ex.sh
+
+You can monitor the status of the job with squeue -u $USER. Once the job runs, you'll have a slurm-xxxxx.out file in the directory. This log file contains both PyTorch and Slurm output.
+
+## Performance and Results
+
+Depending on the type of GPU you may find different performance.
+
+GPU                 | NVIDIA RTX 2070 super  | NVIDIA A30       
+--------------------|------------------------|--------------
+Default precision:  |  6.835 sec             | 4.444 sec
+--------------------|------------------------|--------------
+Mixed precision:    |  4.747 sec             | 0.858 sec
+--------------------|------------------------|--------------
+
+## References
+* [PyTorch tutorials site](https://pytorch.org/tutorials/recipes/recipes/amp_recipe.html)

@@ -1,0 +1,44 @@
+# Slurm examplejobs
+
+## Run a jupyter notebook as a script
+
+Jupyter notebooks are widely in use and can even be used as an IDE, for teaching and sharing code and comments.
+When notebooks are taking a long time to process, yo umay turn to a HPC cluster and have to deal with a scheduler.
+
+Running the notebook interactively on a compute node with a webservice is possible, but wastes a lot of compute resources when the notebook is not actively used or keeps running untill stopped by the scheduler.
+
+One solution on recent jupyterlab versions is to save the notebook as a python script and process it like any other script.
+
+Alternatively if the script is an ipynb notebook and you have a python environment with jupyter installed, you can run it with nbconvert
+
+   jupyter nbconvert --to notebook --execute mynotebook.ipynb
+
+This command can be wrapped in whatever job submission script you would normally use:
+example:
+
+    #!/bin/bash -l
+    #SBATCH -J Mynotebook
+    #SBATCH -N 1
+    #SBATCH -p defq
+   
+    echo "== Starting run at $(date)"
+    echo "== Job ID: ${SLURM_JOBID}"
+    echo "== Node list: ${SLURM_NODELIST}"
+    echo "== Submit dir. : ${SLURM_SUBMIT_DIR}"
+    echo "== Scratch dir. : ${TMPDIR}"
+    
+    module load jupyter
+   
+    # Run ipynb non-interactive and save the result as a notebook
+    srun jupyter nbconvert --to notebook --execute mynotebook.ipynb
+
+Running notebooks through the web would need some port redirection but can also be done using our Open on Demand portal: <https://hpc-ood.labs.vu.nl>
+
+Here's a way to add your ikernel to jupyter list of kernels, using a fresh environment.
+
+$ module load shared 2022 Python jupyter
+$ python -m venv myIkernel
+$ source myIkernel/activate
+$ pip install ipykernel
+$ jupyter kernelspec install ~/myIkernel/share/jupyter/kernels/python3 --user
+ 

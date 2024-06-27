@@ -1,0 +1,48 @@
+# Slurm examplejobs
+
+## Monte-Carlo simulation using GNU parallel
+
+Running multiple experiments with different parameters can make efficient use of a
+compute cluster by running them in parallel. Such parameter sweeps are called MOnte Carlo simulations. GNU parallel makes it easy to setup a set of workers for you.
+
+    #!/bin/bash
+    #SBATCH --ntasks=32
+    #SBATCH --time=40:00:00
+    
+    # load modules
+    module load shared 2022
+    module load Python/3.9.6-GCCcore-11.2.0
+    
+    # install extra packages
+    pip install -r requirements.txt
+    
+    # prepare output directories
+    mkdir $HOME/output_dir
+    # assuming scratch-shared present created module hpc-workspace
+    # for limited i/o using a folder under $HOME is sufficient.
+    TMPSHARED = /scratch-shared/ws/xyz123-MyData
+    mkdir "$TMPSHARED"/output_dir
+    seq 800 | parallel mkdir "$TMPSHARD"/output_dir/{}
+    
+    # prepare input directories
+    mkdir "$TMPSHARED"/input_dir
+    cp -r $HOME/data/ "$TMPSHARED"/input_dir/
+    
+    # This specifies the options used to run srun. The "-N1 -n1" options are
+    # used to allocates a single core to each task.
+    srun="srun --export=all --exclusive -N1 -n1"
+    
+    # This specifies the options used to run GNU parallel:
+    #
+    #   -j is the number of tasks run simultaneously.
+    #   --joblog uses a log to track task execution, and can be used to later resume tasks or retry failed tasks by adding --resume or --resume-failed to the below command respectively.
+    parallel="parallel -j $SLURM_NTASKS --joblog runtask.log"
+
+    # Execute command that runs the simulation in parallel, and copies the output after each succesfull execution to the home directory. This way the outputs of the tasks that did succeeded are not lost in case the job runs out of time of fails.
+    $parallel "$srun python experiment.py --data_path $TMPSHARED/input_dir/data --output_path $TMPSHARED/output_dir --run_id {#} && cp -r $TMPSHARED/output_dir/{#} $HOME/output_dir" ::: {1..800}
+
+Links:  
+
+* [How to schedule massively parallel jobs on clusters](https://waterprogramming.wordpress.com/2021/06/30/how-to-schedule-massively-parallel-jobs-on-clusters-some-basic-ways/)  
+* [Matlab](https://nl.mathworks.com/help/finance/improving-performance-of-monte-carlo-simulation-with-parallel-computing.html)  
+* [HPC workspaces](https://bazis.readthedocs.io/en/latest/workspace/)  

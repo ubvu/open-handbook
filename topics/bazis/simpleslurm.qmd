@@ -1,0 +1,19 @@
+# Slurm examplejobs
+
+## simple job
+
+    #!/bin/bash -l
+    #SBATCH -J MyTestJob
+    #SBATCH -N 1
+    #SBATCH -p defq
+    
+    echo "== Starting run at $(date)"
+    echo "== Job ID: ${SLURM_JOBID}"
+    echo "== Node list: ${SLURM_NODELIST}"
+    echo "== Submit dir. : ${SLURM_SUBMIT_DIR}"
+    echo "== Scratch dir. : ${TMPDIR}"
+    
+    cd $TMPDIR
+    # Your more useful application can be started below!
+    hostname
+

@@ -1,0 +1,73 @@
+# Matlab example
+
+Matlab has several features to work in batch mode on a HPC cluster. 
+Assuming you know how to create matlab scripts we start simply by executing matlab interactively on a compute node
+
+## Interactive 
+
+Request resources (1 node, 1 cpu) in a partition
+```
+srun -N 1 -p defq --pty /bin/bash
+module load matlab/R2023a
+cd your/data/
+```
+Here is an example of a trivial MATLAB script (hello_world.m):
+```
+fprintf('Hello world.\n')
+```
+Run with matlab using only one computational thread.
+```
+$ matlab -nodisplay -singleCompThread -r hello_world
+Hello world.
+>>
+```
+Matlab waits at the end of the script if there is no exit. In an compute job this would keep the job running untill the wallclocklimit so we add an exit at the end. The convenient "-batch" option combines these options.
+```
+-batch MATLAB_command   - Start MATLAB and execute the MATLAB command(s) with no desktop
+                              and certain interactive capabilities disabled. Terminates
+                              upon successful completion of the command and returns exit
+                              code 0. Upon failure, MATLAB terminates with a non-zero exit.
+                              Cannot be combined with -r.
+``` 
+```
+$ matlab -batch hello_world
+```
+
+## Batch mode
+
+Combining this in a slurm script we can queue matlab workloads. 
+
+```
+    #!/bin/bash -l
+    #SBATCH -J MyMatlab
+    #SBATCH -N 1
+    #SBATCH --cpus-per-task=1
+    #SBATCH -p defq   
+    #SBATCH --output=%x_%j.out
+    #SBATCH --error=%x_%j.err
+    #SBATCH --mail-type=END,FAIL
+    #SBATCH --mail-user=<YOUR EMAIL>
+    
+    # Note: for parallel operations increase cpus-per-task above
+    # Note 2: output and error logs can be given absolute paths 
+    
+    echo "== Starting run at $(date)"
+    echo "== Job ID: ${SLURM_JOBID}"
+    echo "== Node list: ${SLURM_NODELIST}"
+    echo "== Submit dir. : ${SLURM_SUBMIT_DIR}"
+    echo "== Scratch dir. : ${TMPDIR}"
+    
+    # cd $TMPDIR
+    # or change to a project folder with matlab file e.g. hello_World.m
+    # cd your/data
+
+    # Load matlab module
+    module load 2022 matlab/R2023a
+    
+    # execute
+    matlab -batch hello_world
+```
+## Parpool
+
+## Reading
+* [mathworks-parpool](https://nl.mathworks.com/help/parallel-computing/parpool.html)
