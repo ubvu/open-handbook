@@ -10,3 +10,29 @@
 ::: {.callout-note collapse="true" title="RSM"}
 ## all types
 :::
+
+# Training around Open Science, Research Data - and Software Management
+
+
+
+## Training beyond the VU
+
+Haven't found what you were looking for? Taxila is a one-stop shop for training opportunities across the Netherlands. Here are the next events around Open Science, Research Data Management, and Open Science:
+
+
+<link rel="stylesheet" property="stylesheet" href="https://elixirtess.github.io/TeSS_widgets/css/tess-widget.css"/>
+<div id="dev-tess-widget-materials-list" class="tess-widget tess-widget-list"></div>
+<script>
+function initTeSSWidgets() {
+    TessWidget.Materials(document.getElementById('dev-tess-widget-materials-list'),
+        'SimpleList',
+        {
+            params: { 
+                q: "(open science) OR (research data management) OR RDM OR (open software) OR (open access) OR (FAIR data)",
+                pageSize: 10
+            },
+            baseUrl: 'https://taxila.nl'
+        });
+}
+</script>
+<script async="" defer="" src="https://elixirtess.github.io/TeSS_widgets/js/tess-widget-standalone.js" onload="initTeSSWidgets()"></script>
