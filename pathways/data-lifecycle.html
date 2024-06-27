@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.555">
+<meta name="generator" content="quarto-1.4.556">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -88,35 +88,6 @@ div.csl-indent {
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -174,14 +145,12 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#research-data-management-rdm" id="toc-research-data-management-rdm" class="nav-link" data-scroll-target="#research-data-management-rdm">Research Data Management (RDM)</a></li>
+  <li><a href="#research-data-management-rdm" id="toc-research-data-management-rdm" class="nav-link active" data-scroll-target="#research-data-management-rdm">Research Data Management (RDM)</a></li>
   <li><a href="#fair-principles" id="toc-fair-principles" class="nav-link" data-scroll-target="#fair-principles">FAIR Principles</a>
   <ul class="collapse">
   <li><a href="#support" id="toc-support" class="nav-link" data-scroll-target="#support">Support</a></li>
   <li><a href="#research-data-services" id="toc-research-data-services" class="nav-link" data-scroll-target="#research-data-services">Research Data Services</a></li>
   <li><a href="#vu-it-for-research" id="toc-vu-it-for-research" class="nav-link" data-scroll-target="#vu-it-for-research">VU IT for Research</a></li>
-  <li><a href="#external-sources" id="toc-external-sources" class="nav-link" data-scroll-target="#external-sources">External sources</a></li>
   <li><a href="#rdm-training" id="toc-rdm-training" class="nav-link" data-scroll-target="#rdm-training">RDM Training</a></li>
   <li><a href="#surfsara" id="toc-surfsara" class="nav-link" data-scroll-target="#surfsara">SURFsara</a>
   <ul class="collapse">
@@ -230,9 +199,6 @@ Note
 <p>This is an ongoing transfer from <a href="https://libguides.vu.nl/rdm/overview">RDM LibGuide</a>. We welcome all suggestions on how to refine the content - see also <a href="../contributing.html">the contributing guide</a>.</p>
 </div>
 </div>
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-</section>
 <section id="research-data-management-rdm" class="level1">
 <h1>Research Data Management (RDM)</h1>
 <p>RDM concerns the organisation, documentation, storage, archiving and sharing of digital and analogue data. Data management applies throughout the entire research data life cycle, which is visualised in the circle above. RDM aims to ensure reliable verification of results, and permits new and innovative research built on existing information. RDM is also part of the research process and is intended to make the research process as efficient as possible. This LibGuide provides guidance on research data management planning, data storage and protection, data archiving, and other resources. The Data Management Plan provides information on how these activities will be carried out during the research project.</p>
@@ -251,13 +217,12 @@ Note
 <p>The purpose of good data documentation is to facilitate knowledge exchange. The FAIR principles <span class="citation" data-cites="Wilkinson2016-lh">(<a href="#ref-Wilkinson2016-lh" role="doc-biblioref">Wilkinson et al. 2016</a>)</span> are the guidelines for every form of research output, and in making data available to others.</p>
 <p>Every research group should apply these principles when structuring and preserving their data or other research outputs. Making data FAIR involves many aspects of data collection, organization, availability and storage. FAIR does not mean open or public, it means that there is documentation about how access to the data can be achieved.</p>
 <ul>
-<li>Overview</li>
-<li>Discover &amp; Initiate</li>
-<li>Plan &amp; Design</li>
-<li>Collect &amp; Store</li>
-<li>Process &amp; Analyse</li>
-<li>Document &amp; Preserve</li>
-<li>Publish &amp; Share</li>
+<li><a href="../pathways/discover-and-initiate.html">Discover &amp; Initiate Research</a></li>
+<li><a href="../pathways/plan-and-design.html">Plan &amp; Design Data</a></li>
+<li><a href="../pathways/collect-and-store.html">Collect &amp; Store Data</a></li>
+<li><a href="../pathways/process-and-analyze.html">Process &amp; Analyse Data</a></li>
+<li><a href="../pathways/document-and-preserve.html">Document &amp; Preserve Data</a></li>
+<li><a href="../pathways/publish-and-share.html">Publish &amp; Share Data</a></li>
 <li>Support</li>
 </ul>
 <section id="support" class="level2">
@@ -267,104 +232,144 @@ Note
 <h2 class="anchored" data-anchor-id="research-data-services">Research Data Services</h2>
 <p><img src="../libapps-eu.s3.amazonaws.com/accounts/46034/images/VU-research-data-service-offices.png" class="img-fluid" alt="Image Scheme VU Research Data Support Offices"> Research Data Management is supported by various departments at the VU. These departments will help all VU researchers. There are also faculty specific support departments for research data support; they support their own faculty members.</p>
 <p>Here you find references to other organisational units and departments that can help you with matters related to collecting and managing data.</p>
-<p><strong>VU research data support (for all researchers)</strong></p>
+<p><strong>VU research data support (for all researchers)</strong>* <a href="https://vu.nl/en/about-vu/more-about/off-campus-access"></a><a href="https://vu.nl/en/about-vu/more-about/vu-grants-office">Grant office</a></p>
 <ul>
-<li><a href="https://vu.nl/en/about-vu/more-about/off-campus-access"></a><a href="https://vu.nl/en/about-vu/more-about/vu-grants-office">Grant office</a></li>
-<li><a href="https://vu.nl/en/about-vu/more-about/rdm-support-desk">Library</a></li>
-<li><a href="https://vu.nl/en/about-vu/more-about/off-campus-access"></a><a href="https://vu.nl/en/employee/board-and-strategy/institutional-and-legal-affairs">Legal</a></li>
-<li><a href="https://vu.nl/en/about-vu/more-about/off-campus-access"></a><a href="https://vu.nl/en/about-vu/more-about/protection-awareness">Security</a></li>
-<li><a href="https://vu.nl/en/about-vu/more-about/off-campus-access"></a><a href="https://services.vu.nl/esc?id=emp_taxonomy_topic&amp;topic_id=4cb138ee97fa0950e553359fe153afff">IT for Research</a></li>
-<li><a href="https://www.ixa.nl/">IXA</a></li>
+<li><p><a href="https://vu.nl/en/about-vu/more-about/rdm-support-desk">Library</a></p></li>
+<li><p><a href="https://vu.nl/en/about-vu/more-about/off-campus-access"></a><a href="https://vu.nl/en/employee/board-and-strategy/institutional-and-legal-affairs">Legal</a></p></li>
+<li><p><a href="https://vu.nl/en/about-vu/more-about/off-campus-access"></a><a href="https://vu.nl/en/about-vu/more-about/protection-awareness">Security</a></p></li>
+<li><p><a href="https://vu.nl/en/about-vu/more-about/off-campus-access"></a><a href="https://services.vu.nl/esc?id=emp_taxonomy_topic&amp;topic_id=4cb138ee97fa0950e553359fe153afff">IT for Research</a></p></li>
+<li><p><a href="https://www.ixa.nl/">IXA</a></p></li>
 </ul>
 <p>General Faculty research support and management guidelines are available in the section <a href="https://libguides.vu.nl/rdm/policies-regulations">Policies &amp; Regulations</a>.</p>
 <p><strong>This LibGuide</strong></p>
 <p>Questions regarding your data or the information on this website?</p>
 <p>The <a href="mailto:researchdatamanagement@vu.nl?subject=Libguides%20question">RDS Support</a>&nbsp;team can help you with all your question on data management plan, data archiving, data store or data privacy &amp; security.</p>
 <p>The RDS Helpdesk provides information about Research Data Management through the page <a href="https://vu.nl/en/employee/research-support">Research Support</a> on VUweb.</p>
-<p>// JavaScript Document $(function() { $(‘.dialogMouse’).each(function() { var <span class="math inline">\(link=\)</span>(this); var p = $(‘#img_research_data_service’).position(); var <span class="math inline">\(coords=\)</span>link.attr(‘coords’).split(‘,’) var <span class="math inline">\(leftextra = parseInt(\)</span>coords[0])-parseInt($coords[2]); var <span class="math inline">\(topextra = parseInt(\)</span>coords[1])+parseInt($coords[2]); var $dialog = <span class="math inline">\(("#"+\)</span>link.attr(‘ref’)) .dialog({ autoOpen: false, resizable: false, width:250, minHeight:20, dialogClass: “no-close” }); $link.mouseover(function() { <span class="math inline">\(dialog.dialog("option","position",{ my: "left top", at: "left+"+\)</span>leftextra+” top+“+$topextra, of: $(‘#img_research_data_service’) }) $dialog.dialog(”open”); }).mouseout(function() { <span class="math inline">\(dialog.dialog("close"); }); }); //\)</span>(“.ui-dialog-titlebar”).hide(); });</p>
-<p>Box Link &amp; Embedded Code</p>
 </section>
 <section id="vu-it-for-research" class="level2">
 <h2 class="anchored" data-anchor-id="vu-it-for-research">VU IT for Research</h2>
-<p>The VU has an IT team specifically devoted to research: ITvO (from ‘IT voor Onderzoek’ in Dutch). They provide the following services:</p>
+<p>The VU has an IT team specifically devoted to research: ITvO (from ‘IT voor Onderzoek’ in Dutch). They provide the following services:* <a href="https://vu.nl/en/about-vu/more-about/off-campus-access"></a><a href="https://services.vu.nl/esc?id=kb_article&amp;sysparm_article=KB0012830">Bazis HPC cluster computing</a>: access to your own linux computational cluster at the VU</p>
 <ul>
-<li><a href="https://vu.nl/en/about-vu/more-about/off-campus-access"></a><a href="https://services.vu.nl/esc?id=kb_article&amp;sysparm_article=KB0012830">Bazis HPC cluster computing</a>: access to your own linux computational cluster at the VU</li>
-<li><a href="https://vu.nl/en/about-vu/more-about/off-campus-access"></a><a href="https://services.vu.nl/esc?id=emp_taxonomy_topic&amp;topic_id=d80aee1f97cf09d0e553359fe153afd7">SciCloud</a>: a service with which you lease virtual server capacity for research purposes</li>
-<li><a href="https://vu.nl/en/about-vu/more-about/off-campus-access"></a><a href="https://services.vu.nl/esc?id=emp_taxonomy_topic&amp;topic_id=86ad5a5f978f09d0e553359fe153afb3">SciStor</a>: inexpensively store large sets with research data</li>
-<li>Advice/consultancy: ITvO will help you to find a suitable technical solution or support for your research group or project</li>
-<li>Housing: rack space in the server room for (remotely managed) equipment of research groups</li>
+<li><p><a href="https://vu.nl/en/about-vu/more-about/off-campus-access"></a><a href="https://services.vu.nl/esc?id=emp_taxonomy_topic&amp;topic_id=d80aee1f97cf09d0e553359fe153afd7">SciCloud</a>: a service with which you lease virtual server capacity for research purposes</p></li>
+<li><p><a href="https://vu.nl/en/about-vu/more-about/off-campus-access"></a><a href="https://services.vu.nl/esc?id=emp_taxonomy_topic&amp;topic_id=86ad5a5f978f09d0e553359fe153afb3">SciStor</a>: inexpensively store large sets with research data</p></li>
+<li><p>Advice/consultancy: ITvO will help you to find a suitable technical solution or support for your research group or project</p></li>
+<li><p>Housing: rack space in the server room for (remotely managed) equipment of research groups</p></li>
 </ul>
-<p>Read more about and get in touch with <a href="https://services.vu.nl/esc?id=emp_taxonomy_topic&amp;topic_id=4cb138ee97fa0950e553359fe153afff">IT for Research</a></p>
-<p>Box Link &amp; Embedded Code</p>
-</section>
-<section id="external-sources" class="level2">
-<h2 class="anchored" data-anchor-id="external-sources">External sources</h2>
-<ul>
-<li><p>[</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://libapps-eu.s3.amazonaws.com/accounts/144379/images/logo-rdnl.png" class="img-fluid figure-img"></p>
-<figcaption>RDNL logo</figcaption>
-</figure>
-</div>
-<p>Research Data Netherlands](http://www.researchdata.nl/)</p>
-<p>Research Data Netherlands is an alliance between 4TU.Centre for Research Data, Data Archiving and Networked Services (DANS) and SURFsara. With this coalition, which is also open to other parties, the three data archives join forces in the area of long-term data archiving.</p></li>
-<li><p>[</p>
-<p><img src="https://libapps-eu.s3.amazonaws.com/accounts/144379/images/lcrdm.gif" class="img-fluid"></p>
-<p>Landelijk Coördinatiepunt Research Data Management](https://lcrdm.nl/rdm-in-nl/)</p>
-<p>The foundation of co-operating Dutch universities (VSNU) pointed out a need for a co-ordinated and decisive approach to Research Data Management through a dedicated Centre at SURF. The SURF Foundation is an organisation that facilitates education and research in the Netherlands.<br>
-The LCRDM aims to support the preparation, development and monitoring of Research Data Management policies for scientific research in the Netherlands. Important elements of this central approach are close co-operation with researchers in the field and the exchange of knowledge and experience.</p></li>
-<li><p>[</p>
-<p><img src="https://www.esciencecenter.nl/wp-content/themes/raadhuis/dist/assets/img/favicons/favicon-32x32.png" class="img-fluid"></p>
-<p>The Netherlands eScience Center](https://www.esciencecenter.nl/)</p>
-<p>The eScience Center develops software for academic research specifically. Their software and tools enhance the use of digital methods in scientific research across all disciplines. Researchers - including those at the VU - can choose to collaborate on projects funded by the NWO or, if they already have funding, ask the eScience Center to collaborate with them.</p></li>
-<li><p>[</p>
-<p><img src="https://dmeg.cessda.eu/.png" class="img-fluid"></p>
-<p>CESSDA](https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide)</p>
-<p>The Data Management Expert Guide of the Consortium of European Social Science Data Archives is a practical guide for researchers, addressing many issues they may have</p></li>
-</ul>
-<p>Box Link &amp; Embedded Code</p>
+<p>Read more about and get in touch with <a href="https://services.vu.nl/esc?id=emp_taxonomy_topic&amp;topic_id=4cb138ee97fa0950e553359fe153afff">IT for Research</a> External sources —————-* [</p>
+<pre><code>![RDNL logo](https://libapps-eu.s3.amazonaws.com/accounts/144379/images/logo-rdnl.png)
+
+Research Data Netherlands](http://www.researchdata.nl/)
+
+Research Data Netherlands is an alliance between 4TU.Centre for Research Data, Data Archiving and Networked Services (DANS) and SURFsara. With this coalition, which is also open to other parties, the three data archives join forces in the area of long-term data archiving.
+
+
+* [
+
+![](https://libapps-eu.s3.amazonaws.com/accounts/144379/images/lcrdm.gif)
+
+Landelijk Coördinatiepunt Research Data Management](https://lcrdm.nl/rdm-in-nl/)
+
+The foundation of co-operating Dutch universities (VSNU) pointed out a need for a co-ordinated and decisive approach to Research Data Management through a dedicated Centre at SURF. The SURF Foundation is an organisation that facilitates education and research in the Netherlands.  
+The LCRDM aims to support the preparation, development and monitoring of Research Data Management policies for scientific research in the Netherlands. Important elements of this central approach are close co-operation with researchers in the field and the exchange of knowledge and experience.
+
+
+* [
+
+![](https://www.esciencecenter.nl/wp-content/themes/raadhuis/dist/assets/img/favicons/favicon-32x32.png)
+
+The Netherlands eScience Center](https://www.esciencecenter.nl/)
+
+The eScience Center develops software for academic research specifically. Their software and tools enhance the use of digital methods in scientific research across all disciplines. Researchers - including those at the VU - can choose to collaborate on projects funded by the NWO or, if they already have funding, ask the eScience Center to collaborate with them.
+
+
+* [
+
+![](https://dmeg.cessda.eu/)
+
+CESSDA](https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide)
+
+The Data Management Expert Guide of the Consortium of European Social Science Data Archives is a practical guide for researchers, addressing many issues they may have</code></pre>
 </section>
 <section id="rdm-training" class="level2">
 <h2 class="anchored" data-anchor-id="rdm-training">RDM Training</h2>
 <p>The VU Library offers <a href="https://vu.nl/en/employee/library/training-seminars">Workshops on writing a DMP</a>, which are offered separately for each faculty. These workshops are also announced via the <a href="https://vu-nl.libcal.com/calendar/infoworkshops?cid=7052&amp;t=g&amp;d=0000-00-00&amp;cal=7052&amp;inc=0">Library Calendar</a>, where you can register. Questions about these workshops may be directed to the <a href="mailto:rdm@vu.nl">RDM Support Desk</a></p>
-<p>Box Link &amp; Embedded Code</p>
 </section>
 <section id="surfsara" class="level2">
 <h2 class="anchored" data-anchor-id="surfsara">SURFsara</h2>
-<p><img src="../s3.amazonaws.com/libapps/accounts/62029/images/surf_sara.png" class="img-fluid"></p>
+<p><img src="https://s3.amazonaws.com/libapps/accounts/62029/images/surf_sara.png" class="img-fluid"></p>
 <p>SURF is the collaborative organisation for ICT in Dutch education and research. SURF offers advanced ICT services specifically for researchers. You can start using some of these services right away with your VU credentials. For others you have to get in touch with SURF yourself. Please check <a href="https://www.surf.nl/en">SURF’s website</a> and the pages about the specific services below for more information.</p>
 <p>SURF’s services are listed on this page.</p>
 <section id="data-services" class="level3">
 <h3 class="anchored" data-anchor-id="data-services">Data services</h3>
 <p>SURF offers a wide range of services for different phases in the life cycle of your research data. Everything for the secure storage, management, sharing and reuse of data.</p>
-<p>Research Drive* <strong><a href="https://www.surf.nl/en/research-drive-securely-and-easily-store-and-share-research-data">Research Drive</a>: securely and easily store and share research data.</strong> * Does your research team need large storage quotas, a secure environment to store personal and/or sensitive data, and work collaboratively with other educational and governmental institutions or external private parties? Research Drive is a cloud-based shared-storage environment specifically designed for these requirements.</p>
-<p>SURFfilesender* <strong><a href="https://www.surf.nl/en/surffilesender-send-large-files-securely-and-encrypted">SURFfilesender</a>: send large files securely and encrypted.</strong> * Want to send and receive files quickly, securely and easily? With SURFfilesender, you can send large files, such as research data. The files are stored in the Netherlands. Encryption provides added security.</p>
-<p>SURFdrive* <strong>Store and share your files securely in the cloud with <a href="https://www.surf.nl/en/services-and-products/surfdrive/surfdrive.html">SURFdrive</a>.</strong> * Store, synchronise and share your documents easily with SURFdrive. SURFdrive is a personal cloudservice for the Dutch education and research. Your documents are kept safe and sound in our community cloud.</p>
-<p>Data Archive* <strong>Secure, long-term storage with <a href="https://www.surf.nl/en/services-and-products/data-archive/index.html">Data Archive</a>.</strong> * The Data Archive is the centralised location for data archiving and (long-term) storage. You can securely store research data there, even in volumes running into the petabytes. The archive provides quick access to SURFsara’s computing facilities.</p>
-<p>Data Ingest Service* <strong><a href="https://www.surf.nl/en/data-ingest-service-upload-a-large-amount-of-data-to-surf">Data Ingest Service</a>: upload a large amount of data to SURF.</strong> * The Data Ingest Service is intended for researchers who want to store or analyse large amounts of data at SURFsara. The service is convenient for users who lack sufficient bandwidth or who have stored their data on a number of external hard disks.</p>
-<p>Data Persistent Identifier* <strong><a href="https://www.surf.nl/en/services-and-products/data-persistent-identifier/index.html">Data Persistent Identifier</a>: data always findable by permanent references.</strong> * Persistent identifiers (PIDs) ensure the findability of your data, now and always. PIDs are comparable to the ISBN numbers assigned to books. Even if the location or underlying infrastructure changes, the reference path remains intact. SURFsara offers the PID service in cooperation with the European Persistent Identifier Consortium (EPIC).</p>
+<p>Research Drive* <strong><a href="https://www.surf.nl/en/research-drive-securely-and-easily-store-and-share-research-data">Research Drive</a>: securely and easily store and share research data.</strong></p>
+<ul>
+<li>Does your research team need large storage quotas, a secure environment to store personal and/or sensitive data, and work collaboratively with other educational and governmental institutions or external private parties? Research Drive is a cloud-based shared-storage environment specifically designed for these requirements.</li>
+</ul>
+<p>SURFfilesender* <strong><a href="https://www.surf.nl/en/surffilesender-send-large-files-securely-and-encrypted">SURFfilesender</a>: send large files securely and encrypted.</strong></p>
+<ul>
+<li>Want to send and receive files quickly, securely and easily? With SURFfilesender, you can send large files, such as research data. The files are stored in the Netherlands. Encryption provides added security.</li>
+</ul>
+<p>SURFdrive* <strong>Store and share your files securely in the cloud with <a href="https://www.surf.nl/en/services-and-products/surfdrive/surfdrive.html">SURFdrive</a>.</strong></p>
+<ul>
+<li>Store, synchronise and share your documents easily with SURFdrive. SURFdrive is a personal cloudservice for the Dutch education and research. Your documents are kept safe and sound in our community cloud.</li>
+</ul>
+<p>Data Archive* <strong>Secure, long-term storage with <a href="https://www.surf.nl/en/services-and-products/data-archive/index.html">Data Archive</a>.</strong></p>
+<ul>
+<li>The Data Archive is the centralised location for data archiving and (long-term) storage. You can securely store research data there, even in volumes running into the petabytes. The archive provides quick access to SURFsara’s computing facilities.</li>
+</ul>
+<p>Data Ingest Service* <strong><a href="https://www.surf.nl/en/data-ingest-service-upload-a-large-amount-of-data-to-surf">Data Ingest Service</a>: upload a large amount of data to SURF.</strong></p>
+<ul>
+<li>The Data Ingest Service is intended for researchers who want to store or analyse large amounts of data at SURFsara. The service is convenient for users who lack sufficient bandwidth or who have stored their data on a number of external hard disks.</li>
+</ul>
+<p>Data Persistent Identifier* <strong><a href="https://www.surf.nl/en/services-and-products/data-persistent-identifier/index.html">Data Persistent Identifier</a>: data always findable by permanent references.</strong></p>
+<ul>
+<li>Persistent identifiers (PIDs) ensure the findability of your data, now and always. PIDs are comparable to the ISBN numbers assigned to books. Even if the location or underlying infrastructure changes, the reference path remains intact. SURFsara offers the PID service in cooperation with the European Persistent Identifier Consortium (EPIC).</li>
+</ul>
 </section>
 <section id="data-processing-and-analysis-see-also-computing" class="level3">
 <h3 class="anchored" data-anchor-id="data-processing-and-analysis-see-also-computing">Data processing and analysis (see also ‘Computing’)</h3>
-<p>Jupyter Notebook* <strong><a href="https://www.surf.nl/en/jupyter-notebook-accessible-and-interactive-data-analysis-for-research-and-education">Jupyter Notebook</a>: accessible and interactive data analysis for research and education.</strong> * A Jupyter Notebook is an interactive web application that you can use to create documents, known as notebooks, that contain computer code, formatted text, comparisons and visualisations. The code can be executed in the environment and you can even create streaming applications and dashboards.</p>
+<p>Jupyter Notebook* <strong><a href="https://www.surf.nl/en/jupyter-notebook-accessible-and-interactive-data-analysis-for-research-and-education">Jupyter Notebook</a>: accessible and interactive data analysis for research and education.</strong></p>
+<ul>
+<li>A Jupyter Notebook is an interactive web application that you can use to create documents, known as notebooks, that contain computer code, formatted text, comparisons and visualisations. The code can be executed in the environment and you can even create streaming applications and dashboards.</li>
+</ul>
 </section>
 <section id="computing" class="level3">
 <h3 class="anchored" data-anchor-id="computing">Computing</h3>
 <p>Do you encounter limitations with your own systems? SURF offers researchers a wide range of services in the field of high performance computing (HPC): thousands of times faster than your PC.</p>
-<p>Cartesius: National Supercomputer* <strong><a href="https://www.surf.nl/en/services-and-products/dutch-national-supercomputer/index.html">Cartesius: National Super Computer</a>.</strong> * It is the most comprehensive system in the field of capability computing in the Netherlands. Cartesius is especially in high demand for its combination of fast processors and internal network, large storage capacity and the ability to process large datasets.</p>
-<p>Lisa Compute Cluster* <strong><a href="https://www.surf.nl/en/services-and-products/lisa-compute-cluster/index.html">Lisa Compute Cluster</a>: extra processing power for research.</strong> * Lisa Compute Cluster combines processing power with user friendliness. Are the limits of your own system inhibiting your research? This service lets you upscale to a higher level. Lisa Compute Cluster is preconfigured with a range of software packages, meaning you can start working right away.</p>
-<p>HPC Cloud* <strong><a href="https://www.surf.nl/en/services-and-products/hpc-cloud/index.html">HPC Cloud</a>: your flexible compute infrastructure.</strong> * HPC Cloud gives you and your project team complete control over your computing infrastructure. The infrastructure ranges from a single work station to a complete cluster and can be expanded to suit your needs. You can use your own operating system and analysis software. HPC Cloud is housed in SURF’s own data centre.</p>
-<p>Grid* <strong><a href="https://www.surf.nl/en/services-and-products/grid/index.html">Grid</a>: for processing and storing large datasets.</strong> * Do you want to process and store large- amounts of data? The Grid may very well be suitable for your project. The grid infrastructure consists of a large number of clusters for computing and data storage, which are interconnected via a fast network.</p>
-<p>Visualisation* <strong><a href="https://www.surf.nl/en/services-and-products/visualisation/index.html">Visualisation</a>: more insight into your data.</strong> * Do you want to analyse, process or visualise complex research data or big data? These services give you insight into your research data. SURF’s Visualisation service allows you to visualise your own datasets on your desktop. This makes it easy to identify connections between data or gain other insight into your datasets. SURFsara offers a powerful remote visualisation service that combines high performance with ease of use.</p>
+<p>Cartesius: National Supercomputer* <strong><a href="https://www.surf.nl/en/services-and-products/dutch-national-supercomputer/index.html">Cartesius: National Super Computer</a>.</strong></p>
+<ul>
+<li>It is the most comprehensive system in the field of capability computing in the Netherlands. Cartesius is especially in high demand for its combination of fast processors and internal network, large storage capacity and the ability to process large datasets.</li>
+</ul>
+<p>Lisa Compute Cluster* <strong><a href="https://www.surf.nl/en/services-and-products/lisa-compute-cluster/index.html">Lisa Compute Cluster</a>: extra processing power for research.</strong></p>
+<ul>
+<li>Lisa Compute Cluster combines processing power with user friendliness. Are the limits of your own system inhibiting your research? This service lets you upscale to a higher level. Lisa Compute Cluster is preconfigured with a range of software packages, meaning you can start working right away.</li>
+</ul>
+<p>HPC Cloud* <strong><a href="https://www.surf.nl/en/services-and-products/hpc-cloud/index.html">HPC Cloud</a>: your flexible compute infrastructure.</strong></p>
+<ul>
+<li>HPC Cloud gives you and your project team complete control over your computing infrastructure. The infrastructure ranges from a single work station to a complete cluster and can be expanded to suit your needs. You can use your own operating system and analysis software. HPC Cloud is housed in SURF’s own data centre.</li>
+</ul>
+<p>Grid* <strong><a href="https://www.surf.nl/en/services-and-products/grid/index.html">Grid</a>: for processing and storing large datasets.</strong></p>
+<ul>
+<li>Do you want to process and store large- amounts of data? The Grid may very well be suitable for your project. The grid infrastructure consists of a large number of clusters for computing and data storage, which are interconnected via a fast network.</li>
+</ul>
+<p>Visualisation* <strong><a href="https://www.surf.nl/en/services-and-products/visualisation/index.html">Visualisation</a>: more insight into your data.</strong></p>
+<ul>
+<li>Do you want to analyse, process or visualise complex research data or big data? These services give you insight into your research data. SURF’s Visualisation service allows you to visualise your own datasets on your desktop. This makes it easy to identify connections between data or gain other insight into your datasets. SURFsara offers a powerful remote visualisation service that combines high performance with ease of use.</li>
+</ul>
 <p>Collaboratorium* <strong><a href="https://userinfo.surfsara.nl/systems/collaboratorium">Collaboratorium</a>: a visualization and presentation space for science and industry.</strong></p>
 </section>
 <section id="expertise-advice-and-training" class="level3">
 <h3 class="anchored" data-anchor-id="expertise-advice-and-training">Expertise, advice and training</h3>
 <p>SURF offers advice and training on their services. Their training sessions are announced in the <a href="https://www.surf.nl/en/agenda/research-and-ict">SURF Agenda</a>.</p>
-<p>SURF training* <strong><a href="https://www.surf.nl/en/training-courses-for-research">Training courses for research</a>.</strong> * Want to get started with SURF systems but lack the necessary knowledge? SURF regularly organizes hands-on systems training courses at their offices in Utrecht and Amsterdam or at your education or research institution. You can also include the training courses in the educational programme of your institution.</p>
-<p>SURF consultancy* <strong><a href="https://www.surf.nl/en/services-and-products/consultancy/index.html">Consultancy</a> on ICT solutions for researchers.</strong> * SURFsara possesses a wealth of experience in the field of ICT services for researchers. If you need help developing/improving your application or designing your infrastructure, then you’ve come to the right place. SURF experts will be happy to lend their expertise to support your research.</p>
-<p>Box Link &amp; Embedded Code</p>
+<p>SURF training* <strong><a href="https://www.surf.nl/en/training-courses-for-research">Training courses for research</a>.</strong></p>
+<ul>
+<li>Want to get started with SURF systems but lack the necessary knowledge? SURF regularly organizes hands-on systems training courses at their offices in Utrecht and Amsterdam or at your education or research institution. You can also include the training courses in the educational programme of your institution.</li>
+</ul>
+<p>SURF consultancy* <strong><a href="https://www.surf.nl/en/services-and-products/consultancy/index.html">Consultancy</a> on ICT solutions for researchers.</strong></p>
+<ul>
+<li>SURFsara possesses a wealth of experience in the field of ICT services for researchers. If you need help developing/improving your application or designing your infrastructure, then you’ve come to the right place. SURF experts will be happy to lend their expertise to support your research.</li>
+</ul>
 
 
 
