@@ -1,4 +1,4 @@
-# BAZIS HPC user documentation  
+# BAZIS HPC
 
 The BAZIS is a compute cluster for research at the Vrije Universiteit Amsterdam. It provides a service between the general facilties at the SURF HPC center and the desktop. It is a heterogenious system composed of clusters and servers from research departments and a general partition.
 
@@ -11,3 +11,161 @@ Information and how to get an account can be found on [VU Service Portal](https:
 BAZIS is maintained by IT for Research.
 
 ![VU BAZIS Cluster](public/HPCVUbazis.png)
+
+## Connect
+
+### ssh
+
+Use your favourite SSH client to login at <your login>@bazis.labs.vu.nl.
+On windows we recommend MobaXterm or MS Terminal; Mac users can use iterm. 
+Direct access is only possible from the Campus or from SURF. 
+From other network locations first connect to the stepstone <vunetid>@ssh.data.vu.nl, or use eduVPN Institutional Access (below).
+
+### eduVPN
+Install the [client](https://www.eduvpn.org/client-apps/).
+Start eduVPN and choose Institute Access to connect. You will need MFA to authenticate. Students can activate MFA at the servicedesk ( [kb-item 11809](https://services.vu.nl/kb_view.do?sysparm_article=KB0011809) )
+
+### Data transfer
+MobaXterm has an integrated FTP file browser. Once you have logged in to the HPC system, you will see the file browser to the left of the terminal window, where it shows the contents of your home folder. You can browse through these folders, and drag-and-drop files and folders between this FTP file browser and the Windows File Explorer. Alternatively, you can use the download/upload buttons at the top of the FTP file browser window. A green refresh button is also located there to refresh the contents of the current folder. You can also open files in the FTP file browser to edit them directly. Upon saving, you'll be asked if you want change these files on the HPC system.
+
+Other SFTP browsers
+There are a large number of free FTP browser out there. Some examples are
+
+* Filezilla (Windows, MacOS, Linux)
+* Cyberduck (Windows, MacOS)
+* WinSCP (Windows)
+
+### Advanced: Using SSH keys
+SSH keys are an alternative method for authentication to obtain access to remote computing systems. They can also be used for authentication when transferring files or for accessing version control systems like github.
+
+The cluster uses ssh keys to manage batch jobs.
+
+On your workstation create ssh key pair 
+`ssh-keygen -t ed25519 -a 100`
+
+- `-a` (default is 16): number of rounds of passphrase derivation; increase to slow down brute force attacks.
+- `-t` (default is rsa): specify the cryptographic algorithm. ed25519 is faster and shorter than RSA for comparable strength.
+- `-f` (default is /home/user/.ssh/id_algorithm): filename to store your keys. If you already have SSH keys, make sure you specify a different name: ssh-keygen will overwrite the default key if you don't specify!
+
+If ed25519 is not available, use the older (but strong and trusted) RSA cryptography:
+`ssh-keygen -a 100 -t rsa -b 4096`
+
+When prompted, enter a strong password that you will remember. 
+
+Note: on windows you can use MobaKeyGen from MobaXterm, but on Windows 11 Powershell or Command Prompt works as well.
+ 
+In your ~/.ssh directory you will find a public and private key. Make sure to keep the private key safe as anyone with the private key has access.
+
+Now, when you add your public key to the ~/.ssh/authorized_keys file in a remote system, your key will be used to login. 
+
+You can either use copy-paste or the ssh-copy-id command:
+```
+$ ssh-copy-id user@remote-host
+The authenticity of host 'remote-host (192.168.111.135)' can't be established.
+ECDSA key fingerprint is SHA256:hXGpY0ALjXvDUDF1cDs2N8WRO9SuJZ/lfq+9q99BPV0.
+Are you sure you want to continue connecting (yes/no)? yes
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 2 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+user@remote-host's password:
+
+Number of key(s) added: 2
+```
+Now try logging into the machine, with:   "ssh 'user@remote-host'"
+and check to make sure that only the key(s) you wanted were added.
+
+##Advanced: Forwarding X
+
+##Fix Warning: Remote Host Identification Has Changed
+If you are sure that it is harmless and the remote host key has been changed in a legitimate way, you can skip the host key checking by sending the key to a null known_hosts file:
+```
+$ ssh -o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no" username@bazis.labs.vu.nl
+```
+
+To make the change permanent remove the offending host key from your ~/.ssh/known_hosts file with:
+```
+ssh-keygen -R "hostname"
+```
+
+---
+References:
+1. [hpc carpentry](http://www.hpc-carpentry.org/hpc-shell/01-connecting/index.html)
+2. [Comparing SSH keys](https://goteleport.com/blog/comparing-ssh-keys/)
+3. [public key cryptography for non geeks](https://blog.vrypan.net/2013/08/28/public-key-cryptography-for-non-geeks/)
+4. [disable ssh host key checking](https://www.shellhacks.com/disable-ssh-host-key-checking)
+
+
+## Using Slurm 
+
+### Usefull commands
+
+See jobs in the queue for a given user
+```
+   squeue -u username
+```
+Show available node features 
+```
+   sinfo -o "%20N  %10c  %10m  %25f  %10G "
+```
+Submit a job
+```
+   sbatch script
+```
+Show the status of a currently running job
+```
+   sstat -j jobID
+```
+Show the final status of a finished job
+```
+   sacct -j jobID
+```
+Cancel a job
+```
+   scancel jobid
+```
+
+### Best practices
+
+Organise your input, output and temporary data. Make use of fast scratch directory ($TMPDIR).
+
+Don't run large computation on the login nodes! It negatively impacts all cluster users. Grab a compute node with srun --pty bash option.
+
+### Constraints
+
+The SLURM constraint option allows for further control over which nodes your job can be scheduled on in a particular parition/queue. You may require a specific processor family or network interconnect. The features that can be used with the sbatch constraint option are defined by the system administrator and thus vary among HPC sites.
+
+Constraints available on BAZIS are cpu architecture and gpu.
+Example (singole constraint):
+```
+#SBATCH --constraint=zen2
+```
+Example combining constraints:
+```
+#SBATCH --constraint="zen2|haswell"
+```
+
+### Computer architecture
+The parts of a modern computer we need to understand to apply to running jobs are listed here. (Note: This is way oversimplified and intended to give a basic overview for the purposes of understanding how to request resources from Slurm, there are a lot of resources out there to dig deeper into computer architecture.)
+
+#### Board
+A physical motherboard which contains one or more of each of Socket, Memory bus and PCI bus.
+
+#### Socket
+A physical socket on a motherboard which accepts a physical CPU part.
+
+#### CPU
+A physical part that is plugged into a socket.
+
+#### Core
+A physical CPU core, one of many possible cores, that are part of a CPU.
+
+#### HyperThread
+A virtual CPU thread, associated with a specific Core. This can be enabled or disabled on a system.  On BAZIS hyperthreading is typically enabled. Compute intensive workloads will benefit to disable hyperthreading.
+
+#### Memory Bus
+A communication bus between system memory and a Socket/CPU.
+
+#### PCI Bus
+A communication bus between a Socket/CPU and I/O controllers (disks, networking, graphics,...) in the server.
+
+Slurm complicates this, however, by using the terms core and cpu interchangeably depending on the context and Slurm command. --cpus-per-taks= for example is actually specifying the number of cores per task.
+
