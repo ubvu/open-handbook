@@ -1,0 +1,211 @@
+:: StoryTitle
+Research Support Handbook
+
+
+:: StoryData
+{
+  "ifid": "4B60A0A9-BA71-4B79-A088-B9CAEB627D40",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Start your new adventure",
+  "zoom": 1
+}
+
+
+:: Continue the journey {"position":"575,700","size":"100,100"}
+How many topics are in your list now? You started with three (hopefully) and now you may have an overwhelming amount of topics.
+
+We do not expect you to write them all! These are now your options to choose from. Which one exites you most? That is the one we recommend you focus on.
+
+[[I found one that excites me]]
+[[I did not find one that excites me]]
+
+
+:: Contribute through our platform {"position":"900,1275","size":"100,100"}
+You can write your notes and submit them to be included using our contribution platform. You do not need to make an account, it should just work!
+
+You can ''Report a problem'' - which stands for sharing your notes with us. Everything you write will be included in a report to the editors of the Handbook, and we will work on making the changes.
+
+You can also ''Propose a new page'' - this will allow you to write an entire page and submit it for inclusion in the handbook. Be as complete as possible, and include somewhere whether this is a topic or a pathway. A page can be one topic, or the list of topics in a pathway.
+
+So (link:"go on over to our contribution platform")[(goto-url:"https://ez-github-contributor.netlify.app/")] and share your notes, or propose new pages!
+
+---
+
+Once you completed your notes or proposed a page, you can always restart the adventure and go for another round!
+
+[[Start your new adventure]] 
+
+
+
+:: I did not find one that excites me {"position":"575,1000","size":"100,100"}
+That's okay :-) Maybe take a moment to browse the Research Support Handbook, talk to the people at the hackathon, or think about what your ideal resource would look like.
+
+You can always restart this journey and try again.
+
+[[I would like to browse the topics]]
+[[I would like to browse the pathways]]
+(link:"Share your reflections")[(goto-url:"https://ez-github-contributor.netlify.app/")]
+
+
+:: I don't know yet {"position":"775,525","size":"100,100"}
+Let us find out together what you could contribute :-)
+
+The handbook is split into topics and pathways. A ''topic'' is a smaller, contained page around a specific subject. A ''pathway'' is a collection of topics into a coherent whole.
+
+Let us focus on topics for now. 
+
+Take a moment to think about three topics you engage with on a regular basis. List them out on a piece of paper as they come to mind - no need to filter!
+
+---
+
+[[Okay,  I have three topics]]
+
+
+:: I found one that excites me {"position":"400,950","size":"100,100"}
+🎉 Yay!
+
+Before you add your topic, go and check whether it already exists. (link:"Open the topics page")[(open-url:"https://ubvu.github.io/open-handbook/topics.html")] and do a quick search - does your topic already exist?
+
+[[Yes, it already exists]]
+[[No, it does not exist]]
+
+
+:: I have picked a specific resource {"position":"1025,650","size":"100,100"}
+Thanks for picking one! You can now get started to contribute this to the Research Support Handbook.
+
+First, you need to assess whether this resource is a ''topic'' or a ''pathway''.
+
+> ''Topic'': a smaller, contained pages around a specific subject
+> ''Pathway'': A collection of topics into a coherent whole
+
+Is your resource a topic or a pathway?
+
+[[Topic]]
+[[Pathway]]
+
+
+
+
+:: I have shared the platform and resource {"position":"1150,650","size":"100,100"}
+Great! This will help the editors ensure we have all the platforms in sight that contain potential resources.
+
+Now it is your task to see whether the resource contains multiple topics, and whether it is a pathway.
+
+> ''Topic'': a smaller, contained pages around a specific subject
+> ''Pathway'': A collection of topics into a coherent whole
+
+It is likely there are multiple topics in here, and that these are part of a pathway. Articulating the structure now will make it easier to contribute in the next steps. 
+
+Once you have created a list of topics and how the order in which they appear on the resource, you can contribute each one step by step.
+
+Contribute [[Topic]] (repeat as often as needed)
+Contribute [[Pathway]] 
+
+
+:: I would like to add a specific resource {"position":"900,525","size":"100,100"}
+Great! You can add multiple resources over time, but take a moment to pick one for now. This helps make it more concrete.
+
+---
+
+[[I have picked a specific resource]]
+
+
+:: I would like to browse the pathways {"position":"962.5,775","size":"100,100"}
+(open-url: "https://ubvu.github.io/open-handbook/pathways.html")
+
+
+:: I would like to browse the topics {"position":"850,925","size":"100,100"}
+(open-url: "https://ubvu.github.io/open-handbook/topics.html")
+
+
+:: I would like to migrate a resource from another platform {"position":"1025,525","size":"100,100"}
+This is probably the hardest adventure to choose!
+
+It depends on how big the migration is, so we need to take this step by step. 
+
+First off, share the platform and resource that you would like to migrate using our easy contributor tool: (link:"Share platform + resource")[(goto-url:"https://ez-github-contributor.netlify.app/")]
+
+[[I have shared the platform and resource]]
+
+
+:: No, I want to browse the Research Support Handbook {"position":"900,650","size":"100,100"}
+Browsing the handbook is a great start to contributing!
+
+Would you like to browse topics or pathways? ''Topics'' are smaller, contained pages around specific subjects and ''pathways'' collect these topics into a coherent whole.
+
+[[I would like to browse the topics]]
+[[I would like to browse the pathways]]
+
+
+:: No, it does not exist {"position":"1025,1100","size":"100,100"}
+You are about to break new ground in the handbook! 
+
+Collect your thoughts around the topic and continue to the next page.
+
+[[Contribute through our platform]] 
+
+
+:: Okay,  I have three topics {"position":"775,650","size":"100,100"}
+Great! Those three topics are your starting point.
+
+Now take a moment to ask yourself, whether you can further split these topics. For example, if the topic is Open Science, you might want to split it into Open Access, Open Data, and Citizen Science.
+
+Try to break down the topics, if it is possible. Once you feel like you have exhausted your current ideas, click continue.
+
+[[Continue the journey]]
+
+
+:: Pathway {"position":"1225,950","size":"100,100"}
+Pathways are great ways to make sense of all the different topics. They can help target specific information to different audiences.
+
+A pathway is  a list of topics in a specific order. The handbook creates these pathways based on the existing topics. In that sense, a pathway includes minimal original content. 
+
+For example, for the pathway "Collect & Store Data" we reuse the following topics in this specific order.
+
+1. Data Collection
+2. Data Storage
+3. Data Protection
+
+Whenever one of the topics changes, the pathway also gets updated immediately!
+
+So, what is your pathway and what topics does it include in what order? Once you have that in place, continue to the next step.
+
+[[Contribute through our platform]] 
+
+
+
+
+:: Start your new adventure {"position":"900,400","size":"100,100"}
+Welcome to the first hackathon of the Research Support Handbook! 😊
+
+The Research Support Handbook is a collectively created resource on all things related to research support at VU Amsterdam. This means you get to shape what it becomes.
+
+This interactive page will help you hack away and contribute to the Handbook at your own pace. We all create our own adventures for this hackathon, and can support each other throughout the session. You can also come back to this page at any time and take a different journey.
+
+So let's start off with this - do you have resources you would like to add or migrate from another platform?
+
+[[No, I want to browse the Research Support Handbook]]
+[[I don't know yet]]
+[[I would like to add a specific resource]]
+[[I would like to migrate a resource from another platform]]
+
+
+:: Topic {"position":"1100,850","size":"100,100"}
+Topics are a great and contained contribution. Good choice!
+
+Topics are a great way to help make people aware of all kinds of pieces of information and nothing else. The more specific the topic, the better.
+
+Before you add your topic, go and check whether it already exists. (link:"Open the topics page")[(open-url:"https://ubvu.github.io/open-handbook/topics.html")] and do a quick search - does your topic already exist?
+
+[[Yes, it already exists]]
+[[No, it does not exist]]
+
+
+:: Yes, it already exists {"position":"900,1150","size":"100,100"}
+That means somebody else also thought this was worth adding!
+
+Your contribution can focus on reading the topic page and reporting back your thoughts. Did the topic contain enough information? What did you miss? Are there typo's or broken links? 
+
+[[Contribute through our platform]]
+
