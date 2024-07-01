@@ -34,6 +34,7 @@ If you like commandlines and need to install Quarto, [check out the Quarto websi
 ## Contributors
 
 
+
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
@@ -50,16 +51,22 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 <a href="https://github.com/ubvu/open-handbook/commits?author=chartgerink">chartgerink</a>
 </td>
 <td align="center">
-<a href="https://github.com/Jolien-S">
-<img src="https://avatars.githubusercontent.com/u/142608800?v=4" width="100px;" alt=""/>
-</a><br>
-<a href="https://github.com/ubvu/open-handbook/commits?author=Jolien-S">Jolien-S</a>
-</td>
-<td align="center">
 <a href="https://github.com/Elisa-on-GitHub">
 <img src="https://avatars.githubusercontent.com/u/78543806?v=4" width="100px;" alt=""/>
 </a><br>
 <a href="https://github.com/ubvu/open-handbook/commits?author=Elisa-on-GitHub">Elisa-on-GitHub</a>
+</td>
+<td align="center">
+<a href="https://github.com/jhrudey">
+<img src="https://avatars.githubusercontent.com/u/35424147?v=4" width="100px;" alt=""/>
+</a><br>
+<a href="https://github.com/ubvu/open-handbook/commits?author=jhrudey">jhrudey</a>
+</td>
+<td align="center">
+<a href="https://github.com/Jolien-S">
+<img src="https://avatars.githubusercontent.com/u/142608800?v=4" width="100px;" alt=""/>
+</a><br>
+<a href="https://github.com/ubvu/open-handbook/commits?author=Jolien-S">Jolien-S</a>
 </td>
 <td align="center">
 <a href="https://github.com/Karvovskaya">
@@ -68,10 +75,10 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 <a href="https://github.com/ubvu/open-handbook/commits?author=Karvovskaya">Karvovskaya</a>
 </td>
 <td align="center">
-<a href="https://github.com/jhrudey">
-<img src="https://avatars.githubusercontent.com/u/35424147?v=4" width="100px;" alt=""/>
+<a href="https://github.com/peer35">
+<img src="https://avatars.githubusercontent.com/u/5236397?u=a93ac937c9df9b61ac845b386f2414f5862a8438&v=4" width="100px;" alt=""/>
 </a><br>
-<a href="https://github.com/ubvu/open-handbook/commits?author=jhrudey">jhrudey</a>
+<a href="https://github.com/ubvu/open-handbook/commits?author=peer35">peer35</a>
 </td>
 </tr>
 
@@ -80,4 +87,5 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
 
