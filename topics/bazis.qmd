@@ -4,7 +4,7 @@ The BAZIS is a compute cluster for research at the Vrije Universiteit Amsterdam.
 
 In this topic you will find information to get you started and best practices. Clustercomputing can be very powerfull and usefull skill to add to your toolbox and get more science done.
 
-Also take a look at the [SURF wiki about Snellius](), it contains a lot of information which applies to Bazis as well. https://servicedesk.surf.nl/wiki/display/WIKI/Snellius
+Also take a look at the [SURF wiki about Snellius](https://servicedesk.surf.nl/wiki/display/WIKI/Snellius), it contains a lot of information which applies to Bazis as well.
 
 Information and how to get an account can be found on [VU Service Portal](https://services.vu.nl/esc) under IT > Research > HPC Cluster Computing 
 
@@ -234,7 +234,7 @@ For user guide see https://github.com/holgerBerger/hpc-workspace/blob/master/use
 
 ## Python virtual environments
 
-Python has many powerfull powerfull packages. In scientific computing many packages may be used in a single project.
+Python has many powerfull packages. In scientific computing many packages may be used in a single project.
 To manage many python packages often a package manager as conda is used.
 
 On a HPC system we do not prefer conda as it does not use optimised binaries and the cache can take up a lot of space, but we understand 
