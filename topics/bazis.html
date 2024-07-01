@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.557">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Research Support Handbook</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../public/favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../blog.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../topics.html"> 
+<span class="menu-text">Topics</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../pathways.html"> 
+<span class="menu-text">Pathways</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../contributing.html"> 
+<span class="menu-text">Contributing</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+    <a href="https://github.com/ubvu/open-handbook" title="GitHub VU Open Handbook" class="quarto-navigation-tool px-1" aria-label="GitHub VU Open Handbook"><i class="bi bi-github"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#bazis-hpc" id="toc-bazis-hpc" class="nav-link active" data-scroll-target="#bazis-hpc">BAZIS HPC</a>
+  <ul class="collapse">
+  <li><a href="#connect" id="toc-connect" class="nav-link" data-scroll-target="#connect">Connect</a>
+  <ul class="collapse">
+  <li><a href="#ssh" id="toc-ssh" class="nav-link" data-scroll-target="#ssh">ssh</a></li>
+  <li><a href="#eduvpn" id="toc-eduvpn" class="nav-link" data-scroll-target="#eduvpn">eduVPN</a></li>
+  <li><a href="#data-transfer" id="toc-data-transfer" class="nav-link" data-scroll-target="#data-transfer">Data transfer</a></li>
+  <li><a href="#advanced-using-ssh-keys" id="toc-advanced-using-ssh-keys" class="nav-link" data-scroll-target="#advanced-using-ssh-keys">Advanced: Using SSH keys</a></li>
+  </ul></li>
+  <li><a href="#using-slurm" id="toc-using-slurm" class="nav-link" data-scroll-target="#using-slurm">Using Slurm</a>
+  <ul class="collapse">
+  <li><a href="#usefull-commands" id="toc-usefull-commands" class="nav-link" data-scroll-target="#usefull-commands">Usefull commands</a></li>
+  <li><a href="#best-practices" id="toc-best-practices" class="nav-link" data-scroll-target="#best-practices">Best practices</a></li>
+  <li><a href="#constraints" id="toc-constraints" class="nav-link" data-scroll-target="#constraints">Constraints</a></li>
+  <li><a href="#computer-architecture" id="toc-computer-architecture" class="nav-link" data-scroll-target="#computer-architecture">Computer architecture</a></li>
+  <li><a href="#slurm-example-jobs" id="toc-slurm-example-jobs" class="nav-link" data-scroll-target="#slurm-example-jobs">Slurm example jobs</a></li>
+  </ul></li>
+  <li><a href="#workspace" id="toc-workspace" class="nav-link" data-scroll-target="#workspace">Workspace</a>
+  <ul class="collapse">
+  <li><a href="#scratch-tmpdir" id="toc-scratch-tmpdir" class="nav-link" data-scroll-target="#scratch-tmpdir">scratch tmpdir</a></li>
+  <li><a href="#scratch-shared-experimental" id="toc-scratch-shared-experimental" class="nav-link" data-scroll-target="#scratch-shared-experimental">scratch-shared (experimental)</a></li>
+  </ul></li>
+  <li><a href="#python-virtual-environments" id="toc-python-virtual-environments" class="nav-link" data-scroll-target="#python-virtual-environments">Python virtual environments</a>
+  <ul class="collapse">
+  <li><a href="#adding-a-requirements-file" id="toc-adding-a-requirements-file" class="nav-link" data-scroll-target="#adding-a-requirements-file">Adding a requirements file</a></li>
+  <li><a href="#portable-scripts" id="toc-portable-scripts" class="nav-link" data-scroll-target="#portable-scripts">Portable scripts</a></li>
+  </ul></li>
+  <li><a href="#r-environment" id="toc-r-environment" class="nav-link" data-scroll-target="#r-environment">R environment</a>
+  <ul class="collapse">
+  <li><a href="#errors" id="toc-errors" class="nav-link" data-scroll-target="#errors">Errors</a></li>
+  <li><a href="#tips-and-caveats" id="toc-tips-and-caveats" class="nav-link" data-scroll-target="#tips-and-caveats">Tips and Caveats</a></li>
+  </ul></li>
+  <li><a href="#matlab" id="toc-matlab" class="nav-link" data-scroll-target="#matlab">Matlab</a>
+  <ul class="collapse">
+  <li><a href="#interactive" id="toc-interactive" class="nav-link" data-scroll-target="#interactive">Interactive</a></li>
+  <li><a href="#batch-mode" id="toc-batch-mode" class="nav-link" data-scroll-target="#batch-mode">Batch mode</a></li>
+  <li><a href="#parpool" id="toc-parpool" class="nav-link" data-scroll-target="#parpool">Parpool</a></li>
+  <li><a href="#reading" id="toc-reading" class="nav-link" data-scroll-target="#reading">Reading</a></li>
+  </ul></li>
+  <li><a href="#connect-to-vu-yodairods-with-icommands" id="toc-connect-to-vu-yodairods-with-icommands" class="nav-link" data-scroll-target="#connect-to-vu-yodairods-with-icommands">Connect to VU Yoda/iRODS with icommands</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/bazis.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+
+<section id="bazis-hpc" class="level1">
+<h1>BAZIS HPC</h1>
+<p>The BAZIS is a compute cluster for research at the Vrije Universiteit Amsterdam. It provides a service between the general facilties at the SURF HPC center and the desktop. It is a heterogenious system composed of clusters and servers from research departments and a general partition.</p>
+<p>In this topic you will find information to get you started and best practices. Clustercomputing can be very powerfull and usefull skill to add to your toolbox and get more science done.</p>
+<p>Also take a look at the <a href="https://servicedesk.surf.nl/wiki/display/WIKI/Snellius">SURF wiki about Snellius</a>, it contains a lot of information which applies to Bazis as well.</p>
+<p>Information and how to get an account can be found on <a href="https://services.vu.nl/esc">VU Service Portal</a> under IT &gt; Research &gt; HPC Cluster Computing</p>
+<p>BAZIS is maintained by IT for Research.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../public/HPCVUbazis.png" class="img-fluid figure-img"></p>
+<figcaption>VU BAZIS Cluster</figcaption>
+</figure>
+</div>
+<section id="connect" class="level2">
+<h2 class="anchored" data-anchor-id="connect">Connect</h2>
+<section id="ssh" class="level3">
+<h3 class="anchored" data-anchor-id="ssh">ssh</h3>
+<p>Use your favourite SSH client to login at <your login=""><span class="citation" data-cites="bazis.labs.vu.nl">(<a href="#ref-bazis.labs.vu.nl" role="doc-biblioref"><strong>bazis.labs.vu.nl?</strong></a>)</span>. On windows we recommend MobaXterm or MS Terminal; Mac users can use iterm. Direct access is only possible from the Campus or from SURF. From other network locations first connect to the stepstone <vunetid><span class="citation" data-cites="ssh.data.vu.nl">(<a href="#ref-ssh.data.vu.nl" role="doc-biblioref"><strong>ssh.data.vu.nl?</strong></a>)</span>, or use eduVPN Institutional Access (below).</vunetid></your></p>
+</section>
+<section id="eduvpn" class="level3">
+<h3 class="anchored" data-anchor-id="eduvpn">eduVPN</h3>
+<p>Install the <a href="https://www.eduvpn.org/client-apps/">client</a>. Start eduVPN and choose Institute Access to connect. You will need MFA to authenticate. Students can activate MFA at the servicedesk ( <a href="https://services.vu.nl/kb_view.do?sysparm_article=KB0011809">kb-item 11809</a> )</p>
+</section>
+<section id="data-transfer" class="level3">
+<h3 class="anchored" data-anchor-id="data-transfer">Data transfer</h3>
+<p>MobaXterm has an integrated FTP file browser. Once you have logged in to the HPC system, you will see the file browser to the left of the terminal window, where it shows the contents of your home folder. You can browse through these folders, and drag-and-drop files and folders between this FTP file browser and the Windows File Explorer. Alternatively, you can use the download/upload buttons at the top of the FTP file browser window. A green refresh button is also located there to refresh the contents of the current folder. You can also open files in the FTP file browser to edit them directly. Upon saving, you’ll be asked if you want change these files on the HPC system.</p>
+<p>Other SFTP browsers There are a large number of free FTP browser out there. Some examples are</p>
+<ul>
+<li>Filezilla (Windows, MacOS, Linux)</li>
+<li>Cyberduck (Windows, MacOS)</li>
+<li>WinSCP (Windows)</li>
+</ul>
+</section>
+<section id="advanced-using-ssh-keys" class="level3">
+<h3 class="anchored" data-anchor-id="advanced-using-ssh-keys">Advanced: Using SSH keys</h3>
+<p>SSH keys are an alternative method for authentication to obtain access to remote computing systems. They can also be used for authentication when transferring files or for accessing version control systems like github.</p>
+<p>The cluster uses ssh keys to manage batch jobs.</p>
+<p>On your workstation create ssh key pair <code>ssh-keygen -t ed25519 -a 100</code></p>
+<ul>
+<li><code>-a</code> (default is 16): number of rounds of passphrase derivation; increase to slow down brute force attacks.</li>
+<li><code>-t</code> (default is rsa): specify the cryptographic algorithm. ed25519 is faster and shorter than RSA for comparable strength.</li>
+<li><code>-f</code> (default is /home/user/.ssh/id_algorithm): filename to store your keys. If you already have SSH keys, make sure you specify a different name: ssh-keygen will overwrite the default key if you don’t specify!</li>
+</ul>
+<p>If ed25519 is not available, use the older (but strong and trusted) RSA cryptography: <code>ssh-keygen -a 100 -t rsa -b 4096</code></p>
+<p>When prompted, enter a strong password that you will remember.</p>
+<p>Note: on windows you can use MobaKeyGen from MobaXterm, but on Windows 11 Powershell or Command Prompt works as well.</p>
+<p>In your ~/.ssh directory you will find a public and private key. Make sure to keep the private key safe as anyone with the private key has access.</p>
+<p>Now, when you add your public key to the ~/.ssh/authorized_keys file in a remote system, your key will be used to login.</p>
+<p>You can either use copy-paste or the ssh-copy-id command:</p>
+<pre><code>$ ssh-copy-id user@remote-host
+The authenticity of host 'remote-host (192.168.111.135)' can't be established.
+ECDSA key fingerprint is SHA256:hXGpY0ALjXvDUDF1cDs2N8WRO9SuJZ/lfq+9q99BPV0.
+Are you sure you want to continue connecting (yes/no)? yes
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 2 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+user@remote-host's password:
+
+Number of key(s) added: 2</code></pre>
+<p>Now try logging into the machine, with: “ssh ‘user@remote-host’” and check to make sure that only the key(s) you wanted were added.</p>
+<p>##Advanced: Forwarding X</p>
+<p>##Fix Warning: Remote Host Identification Has Changed If you are sure that it is harmless and the remote host key has been changed in a legitimate way, you can skip the host key checking by sending the key to a null known_hosts file:</p>
+<pre><code>$ ssh -o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no" username@bazis.labs.vu.nl</code></pre>
+<p>To make the change permanent remove the offending host key from your ~/.ssh/known_hosts file with:</p>
+<pre><code>ssh-keygen -R "hostname"</code></pre>
+<hr>
+<p>References: 1. <a href="http://www.hpc-carpentry.org/hpc-shell/01-connecting/index.html">hpc carpentry</a> 2. <a href="https://goteleport.com/blog/comparing-ssh-keys/">Comparing SSH keys</a> 3. <a href="https://blog.vrypan.net/2013/08/28/public-key-cryptography-for-non-geeks/">public key cryptography for non geeks</a> 4. <a href="https://www.shellhacks.com/disable-ssh-host-key-checking">disable ssh host key checking</a></p>
+</section>
+</section>
+<section id="using-slurm" class="level2">
+<h2 class="anchored" data-anchor-id="using-slurm">Using Slurm</h2>
+<section id="usefull-commands" class="level3">
+<h3 class="anchored" data-anchor-id="usefull-commands">Usefull commands</h3>
+<p>See jobs in the queue for a given user</p>
+<pre><code>   squeue -u username</code></pre>
+<p>Show available node features</p>
+<pre><code>   sinfo -o "%20N  %10c  %10m  %25f  %10G "</code></pre>
+<p>Submit a job</p>
+<pre><code>   sbatch script</code></pre>
+<p>Show the status of a currently running job</p>
+<pre><code>   sstat -j jobID</code></pre>
+<p>Show the final status of a finished job</p>
+<pre><code>   sacct -j jobID</code></pre>
+<p>Cancel a job</p>
+<pre><code>   scancel jobid</code></pre>
+</section>
+<section id="best-practices" class="level3">
+<h3 class="anchored" data-anchor-id="best-practices">Best practices</h3>
+<p>Organise your input, output and temporary data. Make use of fast scratch directory ($TMPDIR).</p>
+<p>Don’t run large computation on the login nodes! It negatively impacts all cluster users. Grab a compute node with srun –pty bash option.</p>
+</section>
+<section id="constraints" class="level3">
+<h3 class="anchored" data-anchor-id="constraints">Constraints</h3>
+<p>The SLURM constraint option allows for further control over which nodes your job can be scheduled on in a particular parition/queue. You may require a specific processor family or network interconnect. The features that can be used with the sbatch constraint option are defined by the system administrator and thus vary among HPC sites.</p>
+<p>Constraints available on BAZIS are cpu architecture and gpu. Example (singole constraint):</p>
+<pre><code>#SBATCH --constraint=zen2</code></pre>
+<p>Example combining constraints:</p>
+<pre><code>#SBATCH --constraint="zen2|haswell"</code></pre>
+</section>
+<section id="computer-architecture" class="level3">
+<h3 class="anchored" data-anchor-id="computer-architecture">Computer architecture</h3>
+<p>The parts of a modern computer we need to understand to apply to running jobs are listed here. (Note: This is way oversimplified and intended to give a basic overview for the purposes of understanding how to request resources from Slurm, there are a lot of resources out there to dig deeper into computer architecture.)</p>
+<section id="board" class="level4">
+<h4 class="anchored" data-anchor-id="board">Board</h4>
+<p>A physical motherboard which contains one or more of each of Socket, Memory bus and PCI bus.</p>
+</section>
+<section id="socket" class="level4">
+<h4 class="anchored" data-anchor-id="socket">Socket</h4>
+<p>A physical socket on a motherboard which accepts a physical CPU part.</p>
+</section>
+<section id="cpu" class="level4">
+<h4 class="anchored" data-anchor-id="cpu">CPU</h4>
+<p>A physical part that is plugged into a socket.</p>
+</section>
+<section id="core" class="level4">
+<h4 class="anchored" data-anchor-id="core">Core</h4>
+<p>A physical CPU core, one of many possible cores, that are part of a CPU.</p>
+</section>
+<section id="hyperthread" class="level4">
+<h4 class="anchored" data-anchor-id="hyperthread">HyperThread</h4>
+<p>A virtual CPU thread, associated with a specific Core. This can be enabled or disabled on a system. On BAZIS hyperthreading is typically enabled. Compute intensive workloads will benefit to disable hyperthreading.</p>
+</section>
+<section id="memory-bus" class="level4">
+<h4 class="anchored" data-anchor-id="memory-bus">Memory Bus</h4>
+<p>A communication bus between system memory and a Socket/CPU.</p>
+</section>
+<section id="pci-bus" class="level4">
+<h4 class="anchored" data-anchor-id="pci-bus">PCI Bus</h4>
+<p>A communication bus between a Socket/CPU and I/O controllers (disks, networking, graphics,…) in the server.</p>
+<p>Slurm complicates this, however, by using the terms core and cpu interchangeably depending on the context and Slurm command. –cpus-per-taks= for example is actually specifying the number of cores per task.</p>
+</section>
+</section>
+<section id="slurm-example-jobs" class="level3">
+<h3 class="anchored" data-anchor-id="slurm-example-jobs">Slurm example jobs</h3>
+<section id="simple-job" class="level4">
+<h4 class="anchored" data-anchor-id="simple-job">simple job</h4>
+<pre><code>#!/bin/bash -l
+#SBATCH -J MyTestJob
+#SBATCH -N 1
+#SBATCH -p defq
+
+echo "== Starting run at $(date)"
+echo "== Job ID: ${SLURM_JOBID}"
+echo "== Node list: ${SLURM_NODELIST}"
+echo "== Submit dir. : ${SLURM_SUBMIT_DIR}"
+echo "== Scratch dir. : ${TMPDIR}"
+
+cd $TMPDIR
+# Your more useful application can be started below!
+hostname</code></pre>
+</section>
+</section>
+</section>
+<section id="workspace" class="level2">
+<h2 class="anchored" data-anchor-id="workspace">Workspace</h2>
+<section id="scratch-tmpdir" class="level3">
+<h3 class="anchored" data-anchor-id="scratch-tmpdir">scratch tmpdir</h3>
+<p>Each slurm job will have a fast scratch dir allocated on the nodes which is deleted after finishing the job. use the $TMPDIR virable to use this space for example to store intermediate results or work on many files.</p>
+</section>
+<section id="scratch-shared-experimental" class="level3">
+<h3 class="anchored" data-anchor-id="scratch-shared-experimental">scratch-shared (experimental)</h3>
+<p>Use the workspace tools on the beegfs parallel filesystem to create a project space. The project space is a directory, with an associated expiration date, created on behalf of a user, to prevent disks from uncontrolled filling. The beegeefs parallel filesystem is faster than your usual NFS home space, but not backed up, so ideal for data which is easily recreated.</p>
+<p>Your project space lives in the filesystem under: /scratch-shared/ws</p>
+<p>The project space is managed with the hpc-workspace tooling You can add them to your environment with: <code>module load hpc-workspace</code></p>
+<p>Example: setup a workspace “MyData” in a batchjob for 10 days.</p>
+<pre><code>SCR=$(ws_allocate MyData 10)
+cd $SCR</code></pre>
+<p>Check your workspaces</p>
+<pre><code>$ ws_list 
+id: MyData
+     workspace directory  : /scratch-shared/ws/username-MyData
+     remaining time       : 9 days 23 hours
+     creation time        : Wed Mar 13 23:51:57 2013
+     expiration date      : Sat Mar 23 23:51:57 2013
+     available extensions : 15</code></pre>
+<p>Release the project space with</p>
+<pre><code>ws_release MyData</code></pre>
+<p>For user guide see https://github.com/holgerBerger/hpc-workspace/blob/master/user-guide.md</p>
+</section>
+</section>
+<section id="python-virtual-environments" class="level2">
+<h2 class="anchored" data-anchor-id="python-virtual-environments">Python virtual environments</h2>
+<p>Python has many powerfull packages. In scientific computing many packages may be used in a single project. To manage many python packages often a package manager as conda is used.</p>
+<p>On a HPC system we do not prefer conda as it does not use optimised binaries and the cache can take up a lot of space, but we understand it is usefull in some cases and try to help.</p>
+<p>Working with virtual environments further makes the python environment better to manage</p>
+<ul>
+<li>A virtual environment is a named, isolated, working copy of Python that that maintains its own files,</li>
+<li>directories, and paths so that you can work with specific versions of libraries or Python itself without affecting other Python projects.</li>
+<li>Virtual environmets make it easy to cleanly separate different projects and avoid problems with different dependencies and version requirements across components.</li>
+</ul>
+<p>In short: - use virtualenv (preferred) or conda - create an isolated environment - Install packages - Activate a virtual environment - Deactivate a virtual environment - Delete a virtual environment</p>
+<section id="adding-a-requirements-file" class="level3">
+<h3 class="anchored" data-anchor-id="adding-a-requirements-file">Adding a requirements file</h3>
+<p>Python requirements files are a great way to keep track of the Python modules. It is a simple text file that saves a list of the modules and packages required by your project. By creating a Python requirements.txt file, you save yourself the hassle of having to track down and install all of the required modules manually.</p>
+<p>A reuirements file is a simple text file, which looks like this.</p>
+<pre><code>tensorflow==2.3.1
+uvicorn==0.12.2
+fastapi==0.63.0</code></pre>
+<p>Installing modules from a requirements file is easy as.</p>
+<pre><code>pip install -r requirements.txt</code></pre>
+<p>A requirements file can also be generated with:</p>
+<pre><code>pip freeze &gt; requirements.txt</code></pre>
+<p>See the article referenced below for more information.</p>
+</section>
+<section id="portable-scripts" class="level3">
+<h3 class="anchored" data-anchor-id="portable-scripts">Portable scripts</h3>
+<p>The first line in a script usually starts the interpreter and is called the Shebang. It is recommended to use /usr/bin/env, which can interpret your $PATH. This makes scripts more portable than hard coded paths..</p>
+<pre><code>#!/usr/local/bin/python
+Will only run your script if python is installed in /usr/local/bin.</code></pre>
+<pre><code>#!/usr/bin/env python
+Will interpret your $PATH, and find python in any directory in your $PATH.</code></pre>
+<p>So your script is more portable, and will work without modification on systems where python is installed as /usr/bin/python, or /usr/local/bin/python, or even custom directories (that have been added to $PATH), like /opt/local/bin/python.</p>
+<p>Further Reading * <a href="https://realpython.com/python-virtual-environments-a-primer/#an-isolated-python-installation">python virtual environments primer</a> * <a href="https://learnpython.com/blog/python-requirements-file">python requirements.txt file</a></p>
+</section>
+</section>
+<section id="r-environment" class="level2">
+<h2 class="anchored" data-anchor-id="r-environment">R environment</h2>
+<p>R has many powerfull scientific packages and a strong community. Installing and maintaining packages for R can be hard. On BAZIS the Bioconductor suite is installed and can be loaded with the appropiate module environment.</p>
+<p>When first running R on a Cluster some changes in the workflow are required making the transition from working interactively from a terminal to scripts in batchmode.</p>
+<section id="errors" class="level3">
+<h3 class="anchored" data-anchor-id="errors">Errors</h3>
+<p>Pretty much all the time we get errors. Errors can be simple e.g.syntax error, R/python version error or more complex e.g.&nbsp;a problem in our data. In either case, please pay attention to what the error says carefully, because often the solution is in that message or at least it is the starting point of the solution while debugging your code. If it is an error you have not seen before, simply google it. Often you will find a solution in websites like stackoverflow.</p>
+</section>
+<section id="tips-and-caveats" class="level3">
+<h3 class="anchored" data-anchor-id="tips-and-caveats">Tips and Caveats</h3>
+<section id="producing-png-graphics-and-x11-related-plotting-errors" class="level4">
+<h4 class="anchored" data-anchor-id="producing-png-graphics-and-x11-related-plotting-errors">Producing PNG graphics and X11 related plotting errors</h4>
+<p>The png() default device used the X11 driver, which is not avaialble in batch mode or remote operation. Adding the type=“cairo” option to your code solves this issue.</p>
+<p>Example:</p>
+<pre><code>pdf(file = "testR.pdf", width = 4, height = 4)
+plot(x = 1:10, y = 1:10)
+abline(v = 0 )
+text(x=0, y=1, labels = "random text")
+dev.off()</code></pre>
+<pre><code>png(file = "testR.png", type="cairo", width = 4, height = 4)
+plot(x = 1:10, y = 1:10)
+abline(v = 0 )
+text(x=0, y=1, labels = "random text")
+dev.off()</code></pre>
+<p>References * <a href="https://cran.r-project.org/doc/FAQ/R-FAQ.html#How-do-I-produce-PNG-graphics-in-batch-mode_003f">How do I produce PNG graphics in batch mode?</a></p>
+</section>
+</section>
+</section>
+<section id="matlab" class="level2">
+<h2 class="anchored" data-anchor-id="matlab">Matlab</h2>
+<p>Matlab has several features to work in batch mode on a HPC cluster. Assuming you know how to create matlab scripts we start simply by executing matlab interactively on a compute node</p>
+<section id="interactive" class="level3">
+<h3 class="anchored" data-anchor-id="interactive">Interactive</h3>
+<p>Request resources (1 node, 1 cpu) in a partition</p>
+<pre><code>srun -N 1 -p defq --pty /bin/bash
+module load matlab/R2023a
+cd your/data/</code></pre>
+<p>Here is an example of a trivial MATLAB script (hello_world.m):</p>
+<pre><code>fprintf('Hello world.\n')</code></pre>
+<p>Run with matlab using only one computational thread.</p>
+<pre><code>$ matlab -nodisplay -singleCompThread -r hello_world
+Hello world.
+&gt;&gt;</code></pre>
+<p>Matlab waits at the end of the script if there is no exit. In an compute job this would keep the job running untill the wallclocklimit so we add an exit at the end. The convenient “-batch” option combines these options.</p>
+<pre><code>-batch MATLAB_command   - Start MATLAB and execute the MATLAB command(s) with no desktop
+                              and certain interactive capabilities disabled. Terminates
+                              upon successful completion of the command and returns exit
+                              code 0. Upon failure, MATLAB terminates with a non-zero exit.
+                              Cannot be combined with -r.</code></pre>
+<pre><code>$ matlab -batch hello_world</code></pre>
+</section>
+<section id="batch-mode" class="level3">
+<h3 class="anchored" data-anchor-id="batch-mode">Batch mode</h3>
+<p>Combining this in a slurm script we can queue matlab workloads.</p>
+<pre><code>    #!/bin/bash -l
+    #SBATCH -J MyMatlab
+    #SBATCH -N 1
+    #SBATCH --cpus-per-task=1
+    #SBATCH -p defq   
+    #SBATCH --output=%x_%j.out
+    #SBATCH --error=%x_%j.err
+    #SBATCH --mail-type=END,FAIL
+    #SBATCH --mail-user=&lt;YOUR EMAIL&gt;
+    
+    # Note: for parallel operations increase cpus-per-task above
+    # Note 2: output and error logs can be given absolute paths 
+    
+    echo "== Starting run at $(date)"
+    echo "== Job ID: ${SLURM_JOBID}"
+    echo "== Node list: ${SLURM_NODELIST}"
+    echo "== Submit dir. : ${SLURM_SUBMIT_DIR}"
+    echo "== Scratch dir. : ${TMPDIR}"
+    
+    # cd $TMPDIR
+    # or change to a project folder with matlab file e.g. hello_World.m
+    # cd your/data
+
+    # Load matlab module
+    module load 2022 matlab/R2023a
+    
+    # execute
+    matlab -batch hello_world</code></pre>
+</section>
+<section id="parpool" class="level3">
+<h3 class="anchored" data-anchor-id="parpool">Parpool</h3>
+</section>
+<section id="reading" class="level3">
+<h3 class="anchored" data-anchor-id="reading">Reading</h3>
+<ul>
+<li><a href="https://nl.mathworks.com/help/parallel-computing/parpool.html">mathworks-parpool</a></li>
+</ul>
+</section>
+</section>
+<section id="connect-to-vu-yodairods-with-icommands" class="level2">
+<h2 class="anchored" data-anchor-id="connect-to-vu-yodairods-with-icommands">Connect to VU Yoda/iRODS with icommands</h2>
+<p>iRODS/Yoda is a middleware and webinterface to store enriched data. On BAZIS the icommands are available to allow direct access.</p>
+<p>To use the icommands a configuration file in your home folder is required. https://yoda.vu.nl/site/getting-started/icommands.html#configuration</p>
+<p>After configuration use <code>iinit</code> to connect, use a Data Access Password, similar to a WebDAV connection.</p>
+<p>Find an overview of the icommands here: https://docs.irods.org/master/icommands/user/ Check the <code>ipwd</code>, <code>ils</code>, <code>icd</code>, <code>iput</code>, <code>iget</code> en <code>irsync</code> commands for navigation and data transfer.</p>
+<p>Your project folder is located at <code>/vu/home</code></p>
+<p><a href="https://docs.irods.org/master/icommands/user/">icommands</a> <a href="https://yoda.vu.nl">Yoda-VU</a></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/ubvu\.github\.io\/open-handbook");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://creativecommons.org/publicdomain/zero/1.0/legalcode">
+<p>CC0 Public Domain Dedication</p>
+</a>
+  </li>  
+</ul>
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../about.html">
+<p>About</p>
+</a>
+  </li>  
+</ul>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/bazis.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ By VU &amp; Liberate Science GmbH
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
