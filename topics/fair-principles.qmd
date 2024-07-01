@@ -1,5 +1,50 @@
 # FAIR Principles
 
-The purpose of good data documentation is to facilitate knowledge exchange. The FAIR principles [@Wilkinson2016-lh] are the guidelines for every form of research output, and in making data available to others.
+This page discusses what the FAIR principles are, why they are important and how you can work in line with these principles at VU.
 
-Every research group should apply these principles when structuring and preserving their data or other research outputs. Making data FAIR involves many aspects of data collection, organization, availability and storage. FAIR does not mean open or public, it means that there is documentation about how access to the data can be achieved.
+## What are the FAIR principles?
+The FAIR principles were formulated in 2016 to guide researchers in increasing the **F**indability, **A**ccessibility, **I**nteroperability and **R**eusability of their data (see the [publication](https://www.nature.com/articles/sdata201618) in the journal Scientific Data and the [summary](https://force11.org/info/the-fair-data-principles/) of the principles). The goal is to ensure that scholarly data can be used as widely as possible – accelerating scientific discoveries and benefiting society in the process. 
+
+A lot of good resources exist already that explain the FAIR principles very well:
+- [GO FAIR](https://www.go-fair.org/fair-principles/) provides a clear overview of the FAIR principles
+- [The Turing Way](https://the-turing-way.netlify.app/reproducible-research/rdm/rdm-fair) has a great information page about FAIR, containing a lot of references to other useful sources
+- The story [A FAIRy tale](https://zenodo.org/records/2248200) explains all principles in an understable way
+
+The FAIR principles were rapidly adopted by Dutch and European funding agencies. If you receive a research grant from [NWO](https://www.nwo.nl/en/research-data-management), [ZonMw](https://www.zonmw.nl/en/everything-about-fair-data-management), or the [European Commission}(https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/programme-guide_horizon_en.pdf), you will be asked to make your data FAIR.
+
+## How can you benefit from working in line with the FAIR principles?
+
+You do not need to apply all FAIR principles at once to start benefiting from making your data FAIR. Applying even just some of the principles will increase the visibility and impact of your data, leading to:
+- Increased citations of the datasets themselves and your research
+- Improved reproducibility of your research
+- Compliance with funder and publisher requirements
+
+Making your data FAIR will also make it possible for you to easily find, access and reuse your own data in the future. You may be the first and most important beneficiary of making your own data FAIR.
+
+## Making data FAIR – how to get started in three easy steps?
+
+### Start with a data management plan
+A DMP is a living document in which you specify what kinds of data you will use in your project, and how you will process, store and archive them. Preparing a data management plan should be your first step in the process to make data FAIR. The DMP template will ask questions that enable you to systematically address the things that need to be done to make your data FAIR. Writing a DMP [link to handbook page about DMPs] is also a requirement from funding agencies and some faculties at the VU. At the VU, you can use [DMPonline](https://dmponline.vu.nl/?perform_check=false) to create and share DMPs.
+
+### Describe and document your data
+To be findable, data need to be described with appropriate metadata. Metadata can include keywords, references to related papers, the researchers’ [ORCID identifiers](https://libguides.vu.nl/orcid), and the codes for the grants that supported the research. You will need to provide such metadata when you are uploading data to a repository (see below). You increase findability by filling out as many metadata fields as possible and by providing rich descriptions in terminology that is common in your field.
+
+To be reusable, data need to be accompanied by documentation describing how the data was created, structured, processed, and so on. It is good practice to integrate writing documentation during the research process. It will be easier and take less time compared to when you try to do this at the end. Having documentation on the research process will also help you to redo parts of your data cleaning actions or data analysis if necessary.
+
+If you have questions about metadata and documentation, contact the [RDM Support Desk](rdm@vu.nl) and we will be happy to help you and to provide advice.
+
+### Make your data available through a trustworthy repository
+If you choose a repository that: assigns a persistent identifier to both the data and the metadata; attaches metadata to the data according to standard metadata schemas; releases data with a license; and provides access to the data and metadata via an open and standard communication protocol (such as http) – then your data will meet many, if not most, of the FAIR principles. 
+
+The VU provides three repositories which meets all of these conditions:
+[link to pages about repositories]
+- [DataverseNL](https://dataverse.nl/dataverse/vuamsterdam)
+- Yoda - [Yoda information page](https://yoda.vu.nl/site/) and [Yoda publication platform](https://commons.datacite.org/doi.org?query=client.uid:delft.vudata)
+- [Open Science Framework](https://osf.io/institutions/vua) (OSF)
+
+Costs for using these repositories for datasets up to 500 GB are covered by the faculty. There are costs involved for you department or project if a datasets is larger than 500 GB. See the [storage cost model](https://vu.nl/en/employee/research-data-support/research-archiving-storage-cost-model) for details.
+
+## What if I cannot share my data?
+
+Data do not need to be open to be FAIR. The FAIR principles allow for controlled access, which can be important for certain types of data, such as personal data, medical data, competitive company data. The guiding principle is always that data should be as “as open as possible, as closed as necessary”. If data cannot be openly shared, because they are too sensitive, then “[the FAIR approach would be to make the metadata publicly available and provide information about the conditions for accessing the data itself.](https://www.nature.com/nature-index/news/what-scientists-need-to-know-about-fair-data)”
+
