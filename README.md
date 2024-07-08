@@ -35,6 +35,7 @@ If you like commandlines and need to install Quarto, [check out the Quarto websi
 
 
 
+
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
@@ -44,6 +45,12 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 <table>
 
 <tr>
+<td align="center">
+<a href="https://github.com/Alex-van-der-Jagt">
+<img src="https://avatars.githubusercontent.com/u/107620785?v=4" width="100px;" alt=""/>
+</a><br>
+<a href="https://github.com/ubvu/open-handbook/commits?author=Alex-van-der-Jagt">Alex-van-der-Jagt</a>
+</td>
 <td align="center">
 <a href="https://github.com/chartgerink">
 <img src="https://avatars.githubusercontent.com/u/2946344?v=4" width="100px;" alt=""/>
@@ -76,7 +83,7 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 </td>
 <td align="center">
 <a href="https://github.com/peer35">
-<img src="https://avatars.githubusercontent.com/u/5236397?u=a93ac937c9df9b61ac845b386f2414f5862a8438&v=4" width="100px;" alt=""/>
+<img src="https://avatars.githubusercontent.com/u/5236397?v=4" width="100px;" alt=""/>
 </a><br>
 <a href="https://github.com/ubvu/open-handbook/commits?author=peer35">peer35</a>
 </td>
@@ -87,5 +94,6 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
 
 
