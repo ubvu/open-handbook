@@ -1,40 +1,30 @@
-# Handbook template
+# VU Research Support Handbook
 
-This repository contains the template for handbooks to be built in VU style. These are meant to help make it easier to create community curated books, which can be shared and released online. 
+Welcome to the source code for the VU Research Support Handbook! If you want to report a problem or suggest a new page, [you can do so using our contribution portal](https://ez-github-contributor.netlify.app/).
 
-## Getting started 
+## What is this?
 
-To make the template your own, please [use this template](https://github.com/new?template_name=handbook-template&template_owner=ubvu) to create a new repository.
+This is a community led handbook for all things related to research at VU. The handbook is split into **topics** and **pathways**. 
 
-After you created your own repository based on the template, go through the checklist to update with your book's metadata:
+> [Topics](https://ubvu.github.io/open-handbook/topics.html) - self-contained descriptions of specific things relevant to your work at VU Amsterdam.
 
-- [ ] Update `_quarto.yml` file
-    - [ ] Change title
-    - [ ] `site-url` - `https://<username>.github.io/<repo>`
-    - [ ] `repo-url` - `https://github.com/<username>/<repo>`
-    - [ ] `issue-url` - `https://github.com/<username>/<repo>/issues/new/choose`
+> [Pathways](https://ubvu.github.io/open-handbook/pathways.html) - a collection of topics in a meaningful order to achieve a goal
 
-## Deploying
+All information in the handbook is specific to VU's local context. We are happy to hear if things are (un)helpful and you work at VU Amsterdam. 
 
-This template tries to take away as much manual labor as possible. The idea is that the website is updated everytime something changes on the `main` branch. This way you can focus on writing great content!
+## Blog
 
-For the automation to work, you need to go through a few manual steps - once. If you don't like command lines and are trying to create a book under [the UBVU organization](https://github.com/ubvu), just contact @chartgerink and they'll help you out!
+The handbook also [has a blog](https://ubvu.github.io/open-handbook/blog.html), which you can [follow on RSS](https://ubvu.github.io/open-handbook/blog.xml). If you'd like to write a blog post, you are more than welcome to share it with us.
 
-```
-# clone the repo
-git clone https://github.com/<username>/<repo>
-cd <repo>
+Our requirements for blogs:
 
-# set up the publishing to github pages
-quarto publish gh-pages
-```
+* It articulates its relevance to VU employees
+* It has a clear message and communicates it effectively
+* It is clear and concise
 
-If you like commandlines and need to install Quarto, [check out the Quarto website](https://quarto.org/docs/get-started/index.html) for more info.
+We will assess blogs on a case by case basis before including them. Please mind that we may not immediately post your blog and submitting one does not entitle you to it being posted.
 
 ## Contributors
-
-
-
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
