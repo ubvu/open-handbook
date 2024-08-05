@@ -23,16 +23,16 @@ Unstructured metadata are mainly intended to provide more detailed information a
 A README file provides information about data and is intended to ensure that data can be correctly interpreted, by yourself or by others. A README file must be submitted along with the data.
 
 Example of READMEs
-*[Guidelines for creating a README file – 4TU.ResearchData](https://data.4tu.nl/s/documents/Guidelines_for_creating_a_README_file.pdf)
-*[Guide to writing "readme"-style metatada - Cornell Data Services](https://data.research.cornell.edu/data-management/sharing/readme/)
+- [Guidelines for creating a README file – 4TU.ResearchData](https://data.4tu.nl/s/documents/Guidelines_for_creating_a_README_file.pdf)
+- [Guide to writing "readme"-style metatada - Cornell Data Services](https://data.research.cornell.edu/data-management/sharing/readme/)
 
 ### Codebook
 A Codebook is another way to describe the contents, structure and layout of the data. A well documented codebook is intended to be complete and self-explanatory and contains information about each variable in a data file. A codebook must be submitted along with the data.
 
 Examples of codebooks are
--[Creating a codebook - Kent State University](https://libguides.library.kent.edu/SPSS/Codebooks)
--[Codebook - Amsterdam Public Health](https://aph-qualityhandbook.org/set-up-conduct/methods-data-collection/2-2-quantitative-research/2-2-1-preparation/codebook/)
--[DDI-Codebook - Data Documentation Initiative Alliance](https://ddialliance.org/Specification/DDI-Codebook/) 
+- [Creating a codebook - Kent State University](https://libguides.library.kent.edu/SPSS/Codebooks)
+- [Codebook - Amsterdam Public Health](https://aph-qualityhandbook.org/set-up-conduct/methods-data-collection/2-2-quantitative-research/2-2-1-preparation/codebook/)
+- [DDI-Codebook - Data Documentation Initiative Alliance](https://ddialliance.org/Specification/DDI-Codebook/) 
 
 ## Structured metadata
 Structured metadata are intended to provide information in a standardised way. The structured metadata are readable for both humans and machines. It can be used by data catalogues, for example DataCite Commons. 
@@ -45,9 +45,9 @@ The standardisation of metadata involves the following aspects:
 
 ### Metadata standards
 Metadata standards allow for easier exchange of metadata and harvesting of the metadata by search engines. Many certified archives use a metadata standard for the descriptions. If you choose a data repository or registry, you should find out which metadata standard they use. At the VU the following standards are used:
-*Yoda uses the DataCite metadata standard
-*DataverseNL uses the Dublin Core metadata standard
-*The VU Research Information System PURE uses the CERIF metadata standard
+- Yoda uses the DataCite metadata standard
+- DataverseNL uses the Dublin Core metadata standard
+- The VU Research Information System PURE uses the CERIF metadata standard
 
 Many archives implement or make use of specific metadata standards. The UK Digital Curation Centre (DCC) provides an [overview of metadata standards for different disciplines](https://www.dcc.ac.uk/guidance/standards/metadata). The list is a great and useful resource in establishing and carrying out your research methodology.
 
@@ -56,10 +56,10 @@ Controlled vocabularies are created by domain experts to help translate ontologi
 
 Examples of controlled vocabularies are:
 
-*[CDWA (Categories for the Description of Works of Art)](https://www.getty.edu/research/publications/electronic_publications/cdwa/)
-*[Getty Thesaurus of Geographic names](https://www.getty.edu/research/tools/vocabularies/tgn/)
-*[NUTS (Nomenclature of territorial units for statistics)](https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/territorial-units-statistics)
-*[Medical Subject HEadings (MeSH)](https://www.nlm.nih.gov/mesh/meshhome.html)
+- [CDWA (Categories for the Description of Works of Art)](https://www.getty.edu/research/publications/electronic_publications/cdwa/)
+- [Getty Thesaurus of Geographic names](https://www.getty.edu/research/tools/vocabularies/tgn/)
+- [NUTS (Nomenclature of territorial units for statistics)](https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/territorial-units-statistics)
+- [Medical Subject HEadings (MeSH)](https://www.nlm.nih.gov/mesh/meshhome.html)
 
 Many examples of vocabularies and classification systems can be found at the [FAIRsharing.org website](https://fairsharing.org/). It has  a large list for multiple disciplines. If you are working on new concepts or new ideas and are using or creating your own ontology/terminology, be sure to include them as part of the metadata documentation in your dataset (for example as part of your [codebook](###Codebook).
 
