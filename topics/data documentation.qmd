@@ -1,13 +1,13 @@
 # Data Documentation
-By creating documentation about your research data you can make it easier for yourself or for others to manage, find, assess and use your data. The process of documenting is also known as the proces of describing. The documentation or descriptions are also referred to as metadata, i.e. data about data. These metadata can take various forms and can describe data on different levels.
+By creating documentation about your research data you can make it easier for yourself or for others to manage, find, assess and use your data. The process of documenting means to describe your data and the methods by which they were collected, processed and analysed. The documentation or descriptions are also referred to as metadata, i.e. data about data. These metadata can take various forms and can describe data on different levels.
 
 An example that is frequently used to illustrate the importance of metadata is the use of the label on a can of soup. The label tells you what kind of soup the can contains, what ingredients are used, who made it, when it expires and how you should prepare the soup for consumption.
 
 When you are documenting data, you should take into account that there are different kinds of metadata and that these metadata are governed by various standards. These include, but are not limited to:
 
 1.	FAIR data principles: a set of principles to make data Findable, Accessible, Interoperable and Reusable. 
-2.	Guidelines for unstructured metadata: mostly research domain specific guidelines on how to create READMEs or Codebooks to describe data.
-3.	Standards for structured metadata: generic or research domain specific standards to describe data.
+2.	Guidelines for unstructured metadata: mostly research domain-specific guidelines on how to create READMEs or Codebooks to describe data.
+3.	Standards for structured metadata: generic or research domain-specific standards to describe data.
 
 ![](../public/data_documentation.png)
 
@@ -17,13 +17,14 @@ The FAIR data principles provide guidelines to improve the Findability, Accessib
 More information can be found in the section about the [FAIR data principles](https://ubvu.github.io/open-handbook/topics/fair-principles.html).
 
 ## Unstructured metadata
-Unstructured metadata is mainly intended to provide more detailed information about the data and is primarily readable for humans. The type of research and the nature of the data influence what kind of unstructured metadata is necessary. Unstructured metadata is attached to the data in a file. The format of the file is chosen by the researcher. 
+Unstructured metadata are mainly intended to provide more detailed information about the data and is primarily readable for humans. The type of research and the nature of the data influence what kind of unstructured metadata is necessary. Unstructured metadata are attached to the data in a file. The format of the file is chosen by the researcher. 
 
 ### README
-A README file provides information about data and is intended to help ensure that data can be correctly interpreted, by yourself or by others. A README file must be submitted along with the data.
+A README file provides information about data and is intended to ensure that data can be correctly interpreted, by yourself or by others. A README file must be submitted along with the data.
 
 Example of READMEs
 -	[Guidelines for creating a README file – 4TU.ResearchData](https://data.4tu.nl/s/documents/Guidelines_for_creating_a_README_file.pdf)
+- [Guide to writing "readme"-style metatada - Cornell Data Services(https://data.research.cornell.edu/data-management/sharing/readme/)
 
 ### Codebook
 A Codebook is another way to describe the contents, structure and layout of the data. A well documented codebook is intended to be complete and self-explanatory and contains information about each variable in a data file. A codebook must be submitted along with the data.
@@ -34,9 +35,9 @@ Examples of codebooks are
 - [DDI-Codebook - Data Documentation Initiative Alliance](https://ddialliance.org/Specification/DDI-Codebook/) 
 
 ## Structured metadata
-Structured metadata is intended to provide information in a standardized way. The structured metadata is readable for both humans and machines. It can be used by data catalogs, for example DataCite Commons. 
+Structured metadata are intended to provide information in a standardised way. The structured metadata are readable for both humans and machines. It can be used by data catalogues, for example DataCite Commons. 
 
-The standardization of metadata involves the following parts:
+The standardisation of metadata involves the following aspects:
 
 1.	Elements: rules about the fields that must be used to describe an object, for example the <title>, <author> and <publicationDate>. 
 2.	Values: rules about the values that must be used within specific elements. Controlled vocabularies, classifications and Persistent Identifiers are used to reduce ambiguity and ensure consistency, for example by using a term from a controlled vocabulary like the Medical Subject HEadings (MeSH) as a <subject> and an Perstent Identifier such as an ORCID to identify a <person>.
@@ -51,7 +52,7 @@ Metadata standards allow for easier exchange of metadata and harvesting of the m
 Many archives implement or make use of specific metadata standards. The UK Digital Curation Centre (DCC) provides an [overview of metadata standards for different disciplines](https://www.dcc.ac.uk/guidance/standards/metadata). The list is a great and useful resource in establishing and carrying out your research methodology.
 
 ### Controlled Vocabularies & classifications
-Controlled vocabularies are created by domain experts to help translate ontological concepts as well as to organise knowledge for subsequent (information) retrieval. Controlled vocabularies (CESSDA: "structured controlled vocabularies") are intended to reduce ambiguity that is inherent in normal human languages where the same concept can be given different names and to ensure consistency. Controlled vocabularies are used in subject indexing schemes, subject headings, thesauri, taxonomies and other knowledge organization systems. Some vocabularies are very internationally accepted and standardized and may even become an ISO standard or a regional standard/classification. Controlled vocabularies can be broad in scope or very limited to a specific field. When a Data Management Plan template includes a question on the used ontology (if any), what is usually meant is: is there a specific vocabulary or classification system used.
+Controlled vocabularies are created by domain experts to help translate ontological concepts as well as to organise knowledge for subsequent (information) retrieval. Controlled vocabularies are intended to reduce ambiguity that is inherent in normal human languages where the same concept can be given different names and to ensure consistency. Controlled vocabularies are used in subject indexing schemes, subject headings, thesauri, taxonomies and other knowledge organization systems. Some vocabularies are very internationally accepted and standardized and may even become an ISO standard or a regional standard/classification. Controlled vocabularies can be broad in scope or very limited to a specific field. When a Data Management Plan template includes a question on the used ontology (if any), what is usually meant is: is there a specific vocabulary or classification system used.
 
 Examples of controlled vocabularies are:
 
@@ -60,12 +61,12 @@ Examples of controlled vocabularies are:
 - [NUTS (Nomenclature of territorial units for statistics)](https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/territorial-units-statistics)
 - [Medical Subject HEadings (MeSH)](https://www.nlm.nih.gov/mesh/meshhome.html)
 
-Many examples of vocabularies and classification systems can be found at the [FAIRsharing.org website](https://fairsharing.org/). It has  a large list for multiple disciplines. If you are working on new concepts or new ideas and are using or creating your own ontology/terminology, be sure to include them as part of the metadata documentation in your dataset (for example as part of your codebook).
+Many examples of vocabularies and classification systems can be found at the [FAIRsharing.org website](https://fairsharing.org/). It has  a large list for multiple disciplines. If you are working on new concepts or new ideas and are using or creating your own ontology/terminology, be sure to include them as part of the metadata documentation in your dataset (for example as part of your [codebook](###Codebook).
 
 {{< include ../topics/persistent-identifier.qmd >}}
 
 ### Metadata levels
-Finally a distinction can be made on the level op description. Metadata can be about the data as a whole or about part of the data. It can depend on the research domain and the tools that are used on how many levels the data can be described. In repositories like Yoda and DataverseNL it is common practice to only create structured metadata on the level of the data as a whole. 
+Finally a distinction can be made on the level of description. Metadata can be about the data as a whole or about part of the data. It can depend on the research domain and the tools that are used on how many levels the data can be described. In repositories like Yoda and DataverseNL it is common practice to only create structured metadata on the level of the data as a whole. The Consortium of European Social Science Data Archives (CESSDA) explains this distinction for several types of data in their [Data Management Expert Guide](https://dmeg.cessda.eu/Data-Management-Expert-Guide/2.-Organise-Document/Documentation-and-metadata).
 
 ![](../public/metadata_levels.png)
 
