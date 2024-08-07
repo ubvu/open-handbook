@@ -40,9 +40,9 @@ Structured metadata are intended to provide information in a standardised way. T
 
 The standardisation of metadata involves the following aspects:
 
-1.	Elements: rules about the fields that must be used to describe an object, for example the <title>, <author> and <publicationDate>. 
-2.	Values: rules about the values that must be used within specific elements. Controlled vocabularies, classifications and Persistent Identifiers are used to reduce ambiguity and ensure consistency, for example by using a term from a controlled vocabulary like the Medical Subject HEadings (MeSH) as a <subject> and an Perstent Identifier such as an ORCID to identify a <person>.
-3.	Formats: rules about the formats used to exchange metadata, for example JSON or XML.
+1. Elements: rules about the fields that must be used to describe an object, for example the <title>, <author> and <publicationDate>. 
+2. Values: rules about the values that must be used within specific elements. Controlled vocabularies, classifications and Persistent Identifiers are used to reduce ambiguity and ensure consistency, for example by using a term from a controlled vocabulary like the Medical Subject HEadings (MeSH) as a <subject> and an Perstent Identifier such as an ORCID to identify a <person>.
+3. Formats: rules about the formats used to exchange metadata, for example JSON or XML.
 
 ### Metadata standards
 Metadata standards allow for easier exchange of metadata and harvesting of the metadata by search engines. Many certified archives use a metadata standard for the descriptions. If you choose a data repository or registry, you should find out which metadata standard they use. At the VU the following standards are used:
