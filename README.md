@@ -10,7 +10,7 @@ This is a community led handbook for all things related to research at VU. The h
 
 > [Pathways](https://ubvu.github.io/open-handbook/pathways.html) - a collection of topics in a meaningful order to achieve a goal
 
-All information in the handbook is specific to VU's local context. We are happy to hear if things are (un)helpful and you work at VU Amsterdam. 
+All information in the handbook is specific to VU's local context. We are happy to hear if dfadfathings are (un)helpful and you work at VU Amsterdam. 
 
 ## Blog
 
