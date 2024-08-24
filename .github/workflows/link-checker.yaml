@@ -19,5 +19,5 @@ jobs:
           site_name: "ubvu-open-handbook"
       - name: Check links with linkcheck
         uses: filiph/linkcheck@3.0.0
-          with:
-            arguments: {{ steps.wait-for-netlify-preview.outputs.url }}
+        with:
+          arguments: {{ steps.wait-for-netlify-preview.outputs.url }}
