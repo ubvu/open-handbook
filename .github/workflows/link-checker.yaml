@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: 20.x
       - name: Waiting for 200 from the Netlify Preview
-        uses: kamranayub/wait-for-netlify-action@v2
+        uses: kamranayub/wait-for-netlify-action@v2.1.1
         id: wait-for-netflify-preview
         with:
           site_name: "ubvu-open-handbook"
