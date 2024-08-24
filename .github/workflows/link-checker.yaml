@@ -1,0 +1,23 @@
+name: URL Checks
+
+on: [pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js 20.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 20.x
+      - name: Waiting for 200 from the Netlify Preview
+        uses: archiewood/wait-for-netlify-action@v1
+        id: wait-for-netflify-preview
+        with:
+          site_name: "ubvu-open-handbook"
+      - name: Check links with linkcheck
+        uses: filiph/linkcheck@3.0.0
+          with:
+            arguments: {{ steps.wait-for-netlify-preview.outputs.url }}
