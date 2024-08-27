@@ -1,3 +1,11 @@
+---
+format:
+  html:
+    toc: true
+    toc-depth: 4
+    toc-expand: 4
+---
+
 # Contributing {.unnumbered}
 
 You can contribute to this book by making small edits or writing entirely new topics. From small to large, all contributions are welcome. If you are in need of specific information, you can skip ahead using the table of contents.
@@ -39,7 +47,7 @@ Once you made your edits, you are ready to commit (save) your changes and [submi
 
 ### Adding a topic
 
-To add a new topic, you need to create a new file ending in `.qmd` (e.g., `topics/example.qmd`). You can do this by visiting the [handbook page on GitHub]({{< var repo-url >}}) and clicking `Add file -> New file`.
+To add a new topic, you need to create a new file ending in `.qmd` in the `topics` folder (e.g., `topics/example.qmd`). You can do this by visiting the [handbook page on GitHub]({{< var repo-url >}}) and clicking `Add file -> New file`.
 
 ![Screenshot of GitHub highlighting where to find the "New file" button](public/Screenshot%202023-12-19%20at%2010.54.20.png)
 
@@ -50,6 +58,32 @@ The topic itself needs to be [written in Markdown](#writing-text). Every topic m
 After that, you are ready to [submit your pull request](#submit-a-pull-request)! The reviewers will help you place the topic in the right place of the book.[^1]
 
 [^1]: If you are really enthusiastic and want to do it yourself: The topic needs to be added to the topics list in `_quarto.yml`. You can find the topics list around line 24 of that file.
+
+### Adding a pathway
+
+To add a new pathway, you need to create a new file ending in `.qmd` in the `pathways` folder (e.g., `pathways/example.qmd`). You can do this by visiting the [handbook page on GitHub]({{< var repo-url >}}) and clicking `Add file -> New file`.
+
+![Screenshot of GitHub highlighting where to find the "New file" button](public/Screenshot%202023-12-19%20at%2010.54.20.png)
+
+When you click this button you may be asked to [fork](#forking) the repository. This is not a problem so go ahead!
+
+Every pathway must contain a first level heading (e.g., `# Heading`), which will be the pathway title. Section headings are second level headings (e.g., `## Section`).
+
+The pathway itself needs to be [written in Markdown](#writing-text). For each topic you want to include, you can either mention so on a line surrounded by whitespaces:
+
+```markdown
+INSERT TOPIC: DATA MANAGEMENT PLAN
+```
+
+This will tell the editorial team to include that topic there. Please be specific in the naming. You can also directly include the topic yourself directly using the following code:
+
+``` markdown
+{{{< include ../topics/filename.qmd >}}}
+```
+
+You can verify the filename directly, but it should correspond to each word separated by a minus sign (for example, `data-management-plan.qmd`).
+
+After that, you are ready to [submit your pull request](#submit-a-pull-request)! The reviewers will help you place the topic in the right place of the book.[^1]
 
 ### Submit a pull request
 
@@ -98,3 +132,4 @@ A repository is owned by one or multiple people on GitHub. If you are not one of
 When you create a copy, you do not have to worry about accidentally removing or destroying the handbook. Your changes are not reflected in the website until you [submit a pull request](#submit-a-pull-request).
 
 <!-- ## Adding references -->
+###
