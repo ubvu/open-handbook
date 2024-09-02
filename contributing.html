@@ -155,20 +155,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="4">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
   <li><a href="#contributing" id="toc-contributing" class="nav-link active" data-scroll-target="#contributing">Contributing</a>
-  <ul class="collapse">
+  <ul>
   <li><a href="#direct-contributions" id="toc-direct-contributions" class="nav-link" data-scroll-target="#direct-contributions">Direct contributions</a></li>
   <li><a href="#contributing-via-github" id="toc-contributing-via-github" class="nav-link" data-scroll-target="#contributing-via-github">Contributing via GitHub</a>
   <ul class="collapse">
   <li><a href="#suggesting-edits" id="toc-suggesting-edits" class="nav-link" data-scroll-target="#suggesting-edits">Suggesting edits</a></li>
   <li><a href="#adding-a-topic" id="toc-adding-a-topic" class="nav-link" data-scroll-target="#adding-a-topic">Adding a topic</a></li>
+  <li><a href="#adding-a-pathway" id="toc-adding-a-pathway" class="nav-link" data-scroll-target="#adding-a-pathway">Adding a pathway</a></li>
   <li><a href="#submit-a-pull-request" id="toc-submit-a-pull-request" class="nav-link" data-scroll-target="#submit-a-pull-request">Submit a pull request</a></li>
   <li><a href="#writing-text" id="toc-writing-text" class="nav-link" data-scroll-target="#writing-text">Writing text</a></li>
-  <li><a href="#more-information-about-github" id="toc-more-information-about-github" class="nav-link" data-scroll-target="#more-information-about-github">More information about GitHub</a></li>
+  <li><a href="#more-information-about-github" id="toc-more-information-about-github" class="nav-link" data-scroll-target="#more-information-about-github">More information about GitHub</a>
+  <ul class="collapse">
+  <li><a href="#repository" id="toc-repository" class="nav-link" data-scroll-target="#repository">Repository</a></li>
+  <li><a href="#forking" id="toc-forking" class="nav-link" data-scroll-target="#forking">Forking</a></li>
+  </ul></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
   </ul></li>
   </ul></li>
   </ul>
@@ -244,7 +250,7 @@ Note
 </section>
 <section id="adding-a-topic" class="level3">
 <h3 class="anchored" data-anchor-id="adding-a-topic">Adding a topic</h3>
-<p>To add a new topic, you need to create a new file ending in <code>.qmd</code> (e.g., <code>topics/example.qmd</code>). You can do this by visiting the <a href="https://github.com/ubvu/open-handbook">handbook page on GitHub</a> and clicking <code>Add file -&gt; New file</code>.</p>
+<p>To add a new topic, you need to create a new file ending in <code>.qmd</code> in the <code>topics</code> folder (e.g., <code>topics/example.qmd</code>). You can do this by visiting the <a href="https://github.com/ubvu/open-handbook">handbook page on GitHub</a> and clicking <code>Add file -&gt; New file</code>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="public/Screenshot 2023-12-19 at 10.54.20.png" class="img-fluid figure-img"></p>
@@ -254,6 +260,24 @@ Note
 <p>When you click this button you may be asked to <a href="#forking">fork</a> the repository. This is not a problem so go ahead!</p>
 <p>The topic itself needs to be <a href="#writing-text">written in Markdown</a>. Every topic must contain a first level heading (e.g., <code># Heading</code>), which will be the topic title. Section headings are second level headings (e.g., <code>## Section</code>).</p>
 <p>After that, you are ready to <a href="#submit-a-pull-request">submit your pull request</a>! The reviewers will help you place the topic in the right place of the book.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+</section>
+<section id="adding-a-pathway" class="level3">
+<h3 class="anchored" data-anchor-id="adding-a-pathway">Adding a pathway</h3>
+<p>To add a new pathway, you need to create a new file ending in <code>.qmd</code> in the <code>pathways</code> folder (e.g., <code>pathways/example.qmd</code>). You can do this by visiting the <a href="https://github.com/ubvu/open-handbook">handbook page on GitHub</a> and clicking <code>Add file -&gt; New file</code>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="public/Screenshot 2023-12-19 at 10.54.20.png" class="img-fluid figure-img"></p>
+<figcaption>Screenshot of GitHub highlighting where to find the “New file” button</figcaption>
+</figure>
+</div>
+<p>When you click this button you may be asked to <a href="#forking">fork</a> the repository. This is not a problem so go ahead!</p>
+<p>Every pathway must contain a first level heading (e.g., <code># Heading</code>), which will be the pathway title. Section headings are second level headings (e.g., <code>## Section</code>).</p>
+<p>The pathway itself needs to be <a href="#writing-text">written in Markdown</a>. For each topic you want to include, you can either mention so on a line surrounded by whitespaces:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="an">INSERT TOPIC:</span><span class="co"> DATA MANAGEMENT PLAN</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This will tell the editorial team to include that topic there. Please be specific in the naming. You can also directly include the topic yourself directly using the following code:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>{{&lt; include ../topics/filename.qmd &gt;}}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>You can verify the filename directly, but it should correspond to each word separated by a minus sign (for example, <code>data-management-plan.qmd</code>).</p>
+<p>After that, you are ready to <a href="#submit-a-pull-request">submit your pull request</a>! The reviewers will help you place the topic in the right place of the book.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
 </section>
 <section id="submit-a-pull-request" class="level3">
 <h3 class="anchored" data-anchor-id="submit-a-pull-request">Submit a pull request</h3>
@@ -265,17 +289,17 @@ Note
 <section id="writing-text" class="level3">
 <h3 class="anchored" data-anchor-id="writing-text">Writing text</h3>
 <p>The book is created using Markdown - you can get familiarized with <a href="https://www.markdownguide.org/basic-syntax">the basic syntax on the Markdown website</a>. The getting started quick items are:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Heading level 1</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">## Heading level 2</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">### Heading level 3</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>You simply write text as you are used to. To make something *italic*, **bold**, or ***bold and italic***.</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; this is how you add quotes</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>or lists</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>that can go on </span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>and on</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Heading level 1</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">## Heading level 2</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">### Heading level 3</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>You simply write text as you are used to. To make something *italic*, **bold**, or ***bold and italic***.</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; this is how you add quotes</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>or lists</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>that can go on </span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>and on</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>If you want to add code, use references, create links, or footnotes - it is all possible. We will expand examples here based on your needs, so if you need help, <a href="https://github.com/ubvu/open-handbook/issues/new/choose">let us know by reporting an issue</a>!</p>
 </section>
 <section id="more-information-about-github" class="level3">
@@ -291,9 +315,12 @@ Note
 <p>A repository is owned by one or multiple people on GitHub. If you are not one of them, you can create a copy of the repository (folder) to make your edits in. This act of creating a copy is called “forking.”</p>
 <p>When you create a copy, you do not have to worry about accidentally removing or destroying the handbook. Your changes are not reflected in the website until you <a href="#submit-a-pull-request">submit a pull request</a>.</p>
 <!-- ## Adding references -->
-
-
 </section>
+</section>
+<section id="section" class="level3">
+<h3 class="anchored" data-anchor-id="section"></h3>
+
+
 </section>
 </section>
 </section>
@@ -303,6 +330,7 @@ Note
 
 <ol>
 <li id="fn1"><p>If you are really enthusiastic and want to do it yourself: The topic needs to be added to the topics list in <code>_quarto.yml</code>. You can find the topics list around line 24 of that file.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>If you are really enthusiastic and want to do it yourself: The topic needs to be added to the topics list in <code>_quarto.yml</code>. You can find the topics list around line 24 of that file.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
