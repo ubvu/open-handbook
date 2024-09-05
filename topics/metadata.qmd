@@ -1,0 +1,58 @@
+# Metadata
+
+## Controlled Vocabularies & Classifications
+
+When a metadata section in a Data Management Plan template includes a question on the used ontology (if any) what is usually meant is: is there a specific vocabulary or classification system used. Controlled vocabularies are created by domain experts to help translate ontological concepts as well as to organise knowledge for subsequent (information) retrieval. [Controlled vocabularies](https://en.wikipedia.org/wiki/Controlled_vocabulary) ([CESSDA](https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide/3.-Process/Adapt-your-DMP-part-3): "structured controlled vocabularies") are intended to reduce ambiguity that is inherent in normal human languages where the same concept can be given different names and to ensure consistency. Controlled vocabularies are used in subject indexing schemes, subject headings, thesauri, taxonomies and other knowledge organization systems. Some vocabularies are very internationally accepted and standardized and may even become an [ISO standard](https://www.iso.org/standards.html) or a regional standard/classification. Controlled vocabularies can be broad in scope or very limited to a specific field. When a Data Management Plan template includes a question on the used ontology (if any), what is usually meant is: is there a specific vocabulary or classification system used.
+
+Examples are:
+
+* [CDWA](http://www.getty.edu/research/publications/electronic_publications/cdwa/) (Categories for the Description of Works of Art)
+* [Getty Thesaurus of Geographic names](http://www.getty.edu/research/tools/vocabularies/tgn/index.html)
+* [NUTS](https://ec.europa.eu/eurostat/web/nuts/background) (Eurostat)
+* [Medical Subject HEadings](https://meshb.nlm.nih.gov/) (MeSH)
+
+Many examples of vocabularies and classification systems can be found at the FAIRsharing.org website. It has  a large list for [multiple disciplines.](https://fairsharing.org/standards/) If you are working on new concepts or new ideas and are using or creating your own ontology/terminology, be sure to include them as part of the metadata documentation in your dataset (for example as part of your [codebook](https://libguides.vu.nl/rdm/codebooks)).
+
+Controlled vocabularies help make searching for and re-using information or data much easier when they are part of a machine-readable metadata scheme or system.
+
+## Metadata & Datasets
+
+Metadata is descriptive information about data / information. Metadata allow humans and programs to more easily understand and interpret information or data. Controlled vocabularies are often used to help make searching for and re-using information or data much easier when they are part of a machine-readable metadata scheme or system.
+
+The CESSDA has created [helpful guidance](https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide/2.-Organise-Document/Documentation-and-metadata) about creating metadata.
+
+There are three main levels of metadata: Data assets, Dataset documentation and Dataset registration ([more information](https://guides.lib.utexas.edu/metadata-basics/intro)):.
+
+### **Data assets**
+
+On a micro-level there are four functional categories of metadata standards for datasets themselves that describe elements like structure, content, values (definitions, see also code book), and data formats (CSV, XML, etc.). Additionally, research groups often use a discipline's standards to also describe data objects using naming conventions. There are, however, other guidelines for naming conventions and document versioning which can be useful for all documents, independent of whether they are research data or not. Often The table below gives an example of this.
+
+| Data Stage     | Dataset description                            | Type of data          | Versioning                                                                                                                                     |
+|----------------|------------------------------------------------|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
+| Raw data       | Consumer spending data                         | Text files            | `2017-02-23_ConsumerSpending_1.2.txt` |
+| Processed data | Anonymized Transcription of patient interviews | Word files, Excel     | `2014-11-17_RawTranscription_Checked1.docx`  |
+| Analysed data  | Photo Images with descriptions                 | TIFF files, Word file | `C:\Images\Raw\2016-07-01_Subject1-V2.tiff  C:\Images\Clean\2016-07-01_Subject1-H1c.tiff`<br />`C:\Images\Clean\Descript\2016-07-01_Subject1-H1c.Docx` |
+
+### **Dataset documentation**
+
+On this general, descriptive, level the metadata concerns [data packaging](https://libguides.vu.nl/rdm/selecting-data-archiving?#s-lg-box-wrapper-15125674) & [metadata documentation](https://vu-nl.libapps.com/libguides/admin_c.php?g=683732&p=4880184#s-lg-box-wrapper-15265799) on the dataset. It can include items like:
+
+* Readme files that lists the period of research, collaborators, a short description of the research as well as the elements within the dataset
+* [Code Book](https://libguides.vu.nl/rdm/codebooks): it provides descriptions, explanations or definitions of variables in a dataset
+* Policy documents describing the context of the research as well as referring to standard operating procedures used
+* Re-use guidelines (or [licences](https://libguides.vu.nl/rdm/data-publication?#s-lg-box-wrapper-15125678)) describing if there are re-use restrictions or limitations, including contact details.
+
+### Dataset registration
+
+When you want to make sure that your dataset is findable it is recommended that the elements of the description of your dataset are made according to a certain metadata standard that allows for easier exchange of metadata and harvesting of the metadata by search engines. Many certified archives use a metadata standard for the descriptions. If you choose a data repository or registry, you should find out which metadata standard they use. At the VU the following standards are used:
+
+* [DataverseNL](https://libguides.vu.nl/rdm/selecting-data-archiving#s-lg-box-wrapper-17896166) and [DANS](https://easy.dans.knaw.nl/ui/home) use the [Dublin Core](https://dublincore.org/specifications/dublin-core/) metadata standard
+* The VU Research Portal [PURE](https://libguides.vu.nl/researchdatamanagement/dataset-registration) uses the [CERIF](https://www.eurocris.org/cerif/main-features-cerif) metadata standard
+
+Many archives implement or make use of specific metadata standards. The UK Digital Curation Centre (DCC) provides an overview of metadata standards for different disciplines. The list is a great and useful resource in establishing and carrying out your research methodology. Go to the [overview of metadata standards](https://www.dcc.ac.uk/guidance/standards/metadata). More important tips are available at [Dataset & Publication](https://libguides.vu.nl/rdm/dataset-registration).
+
+## Archiving & FAIR Principles
+
+If you want to archive your dataset in such a way that it is compatible with the FAIR-principles, you can use the information in this [practical guide](http://libguides.vu.nl/ld.php?content_id=31290272) which describes how to implement the FAIR data policy and [this table](http://libguides.vu.nl/ld.php?content_id=31290289) which matches metadata fields from different systems (these documents were written for the Faculty of Behavioural and Movement Sciences).
+
+The Dutch Techcentre for Life Sciences has developed open source software code to enable you to make your dataset's metadata FAIR. The software is being developed through GitHub and full details on the [FAIR Data Point Software](https://github.com/FAIRDataTeam/FAIRDataPoint-Spec) are available there. The Dutch eScience Center also developed Fair Data Point software, of which full details are, similarly, available on [GitHub](https://github.com/NLeSC/fairdatapoint).
