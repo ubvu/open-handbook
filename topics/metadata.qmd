@@ -1,1 +1,36 @@
+## Structured metadata
+Metadata provide information about your data. Structured metadata are intended to provide this information in a standardised way. The structured metadata are readable for both humans and machines. It can be used by data catalogues, for example DataCite Commons. 
 
+The standardisation of metadata involves the following aspects:
+
+1. Elements: rules about the fields that must be used to describe an object, for example the `title`, `author` and `publicationDate`. 
+2. Values: rules about the values that must be used within specific elements. Controlled vocabularies, classifications and Persistent Identifiers are used to reduce ambiguity and ensure consistency, for example by using a term from a controlled vocabulary like the Medical Subject HEadings (MeSH) as a `subject` and an Perstent Identifier such as an ORCID to identify a `person`.
+3. Formats: rules about the formats used to exchange metadata, for example JSON or XML.
+
+### Metadata standards
+Metadata standards allow for easier exchange of metadata and harvesting of the metadata by search engines. Many certified archives use a metadata standard for the descriptions. If you choose a data repository or registry, you should find out which metadata standard they use. At the VU the following standards are used:
+
+- Yoda uses the DataCite metadata standard
+- DataverseNL uses the Dublin Core metadata standard
+- The VU Research Information System PURE uses the CERIF metadata standard
+
+Many archives implement or make use of specific metadata standards. The UK Digital Curation Centre (DCC) provides an [overview of metadata standards for different disciplines](https://www.dcc.ac.uk/guidance/standards/metadata). The list is a great and useful resource in establishing and carrying out your research methodology.
+
+### Controlled Vocabularies & classifications
+Controlled vocabularies are created by domain experts to help translate ontological concepts as well as to organise knowledge for subsequent (information) retrieval. Controlled vocabularies are intended to reduce ambiguity that is inherent in normal human languages where the same concept can be given different names and to ensure consistency. Controlled vocabularies are used in subject indexing schemes, subject headings, thesauri, taxonomies and other knowledge organization systems. Some vocabularies are very internationally accepted and standardized and may even become an ISO standard or a regional standard/classification. Controlled vocabularies can be broad in scope or very limited to a specific field. When a Data Management Plan template includes a question on the used ontology (if any), what is usually meant is: is there a specific vocabulary or classification system used.
+
+Examples of controlled vocabularies are:
+
+- [CDWA (Categories for the Description of Works of Art)](https://www.getty.edu/research/publications/electronic_publications/cdwa/)
+- [Getty Thesaurus of Geographic names](https://www.getty.edu/research/tools/vocabularies/tgn/)
+- [NUTS (Nomenclature of territorial units for statistics)](https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/territorial-units-statistics)
+- [Medical Subject HEadings (MeSH)](https://www.nlm.nih.gov/mesh/meshhome.html)
+
+Many examples of vocabularies and classification systems can be found at the [FAIRsharing.org website](https://fairsharing.org/). It has  a large list for multiple disciplines. If you are working on new concepts or new ideas and are using or creating your own ontology/terminology, be sure to include them as part of the metadata documentation in your dataset (for example as part of your [codebook](topics/data-documentation.qmd###Codebook).
+
+{{< include ../topics/persistent-identifier.qmd >}}
+
+### Metadata levels
+Finally a distinction can be made on the level of description. Metadata can be about the data as a whole or about part of the data. It can depend on the research domain and the tools that are used on how many levels the data can be described. In repositories like Yoda and DataverseNL it is common practice to only create structured metadata on the level of the data as a whole. The Consortium of European Social Science Data Archives (CESSDA) explains this distinction for several types of data in their [Data Management Expert Guide](https://dmeg.cessda.eu/Data-Management-Expert-Guide/2.-Organise-Document/Documentation-and-metadata).
+
+![](../public/metadata_levels.png)
