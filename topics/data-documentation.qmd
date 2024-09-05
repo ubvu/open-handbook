@@ -2,16 +2,18 @@
 
 ## Documenting your data
 
-Data documentation aims to describe the collected data to make ![](//s3.amazonaws.com/libapps/accounts/62029/images/Metadata.png)it easier to use, retrieve and manage. Data documentation takes various forms and describes the data on multiple levels. The description of the dataset and data object is also referred to as metadata, i.e. data about the data. One way to do add metadata is to attach a readme file to your data. [ResearchData NL](https://datasupport.researchdata.nl/en/start-the-course/iii-research-phase/data-documentation) offers guidance for this. The CESSDA has made very detailed guidance available for creating [documentation and metadata](https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide/2.-Organise-Document/Documentation-and-metadata) for your data.
+Data documentation aims to describe the collected data to make it easier to use, retrieve and manage. Data documentation takes various forms and describes the data on multiple levels. The description of the dataset and data object is also referred to as metadata, i.e. data about the data. One way to do add metadata is to attach a readme file to your data. [ResearchData NL](https://researchdata.nl/en/services/datamanagement/) offers guidance for this. The CESSDA has made very detailed guidance available for creating [documentation and metadata](https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide/2.-Organise-Document/Documentation-and-metadata) for your data.
+
+![](https://libapps-eu.s3.amazonaws.com/accounts/62029/images/Metadata.png) 
 
 In addition to describing their own datasets and objects, researchers can cross-refer to the project proposal where other researchers can find information about the research, e.g. aims and goals, methodology and data collection, the persons responsible for the project etc. The type of research and the nature of the data also influence what kind of documentation is necessary.
 
 Different types of data are governed by different standards (see also the image above), and these should be taken into account when documenting data. These requirements include, but are not limited to:
 
-1. [FAIR data principles](//libguides.vu.nl/rdm/overview#s-lg-box-wrapper-17896126): the set of principles (Findable, Accessible, Interoperable, Reusable) for data exchange.
-2. Disciplinary [metadata standards](https://libguides.vu.nl/rdm/metadata): guidelines for documenting data. This can refer to the dataset documentation, the object description, or both. Disciplinary metadata standards can document the dataset as a whole or as a data object (see number 5).
+1. [FAIR data principles](../pathways/document-and-preserve.html#metadata#fair-principles): the set of principles (Findable, Accessible, Interoperable, Reusable) for data exchange.
+2. Disciplinary [metadata standards](../pathways/document-and-preserve.html#metadata): guidelines for documenting data. This can refer to the dataset documentation, the object description, or both. Disciplinary metadata standards can document the dataset as a whole or as a data object (see number 5).
 3. Project documentation: the description of a project involving data collection. This documentation is often used for research verification and provenance.
-4. [Metadata dataset](https://libguides.vu.nl/c.php?g=683732&p=4880185#s-lg-box-wrapper-18229640): the description of a dataset, often used for discovering datasets within a repository.
+4. [Metadata dataset](../pathways/document-and-preserve.html#metadata-datasets): the description of a dataset, often used for discovering datasets within a repository.
 5. Metadata of a data object: name definition of a data object, often set up by the researcher to structure data or by the research group for collaboration during the project.
 
 ## Codebooks
@@ -34,4 +36,4 @@ More information about codebooks can be found on the website of the [Kent State 
 Examples of codebooks are
 
 * [The Guide to Social Science Data Preparation and Archiving. 5th ed. Inter-university Consortium for Political and Social Research (ICPSR) (2012)](http://www.icpsr.umich.edu/files/deposit/dataprep.pdf).
-* [Institute for Health and Care Research (EMGO) codebook (2015)](http://www.emgo.nl/kc/codebook/)
+* [Institute for Health and Care Research (EMGO) codebook (2015)]
