@@ -3,9 +3,11 @@
 This page discusses what the FAIR principles [@Wilkinson2016-lh] are, why they are important and how you can work in line with these principles at VU.
 
 ## What are the FAIR principles?
+
 The FAIR principles were formulated in 2016 to guide researchers in increasing the **F**indability, **A**ccessibility, **I**nteroperability and **R**eusability of their data (see the [publication](https://www.nature.com/articles/sdata201618) in the journal Scientific Data and the [summary](https://force11.org/info/the-fair-data-principles/) of the principles). The goal is to ensure that scholarly data can be used as widely as possible – accelerating scientific discoveries and benefiting society in the process. 
 
 A lot of good resources exist already that explain the FAIR principles very well:
+
 - [GO FAIR](https://www.go-fair.org/fair-principles/) provides a clear overview of the FAIR principles
 - [The Turing Way](https://the-turing-way.netlify.app/reproducible-research/rdm/rdm-fair) has a great information page about FAIR, containing a lot of references to other useful sources
 - The story [A FAIRy tale](https://zenodo.org/records/2248200) explains all principles in an understable way
@@ -15,6 +17,7 @@ The FAIR principles were rapidly adopted by Dutch and European funding agencies.
 ## How can you benefit from working in line with the FAIR principles?
 
 You do not need to apply all FAIR principles at once to start benefiting from making your data FAIR. Applying even just some of the principles will increase the visibility and impact of your data, leading to:
+
 - Increased citations of the datasets themselves and your research
 - Improved reproducibility of your research
 - Compliance with funder and publisher requirements
@@ -24,7 +27,8 @@ Making your data FAIR will also make it possible for you to easily find, access 
 ## Making data FAIR – how to get started in three easy steps?
 
 ### Start with a data management plan
-A DMP is a living document in which you specify what kinds of data you will use in your project, and how you will process, store and archive them. Preparing a data management plan should be your first step in the process to make data FAIR. The DMP template will ask questions that enable you to systematically address the things that need to be done to make your data FAIR. Writing a DMP [link to handbook page about DMPs] is also a requirement from funding agencies and some faculties at the VU. At the VU, you can use [DMPonline](https://dmponline.vu.nl/?perform_check=false) to create and share DMPs.
+
+A DMP is a living document in which you specify what kinds of data you will use in your project, and how you will process, store and archive them. Preparing a data management plan should be your first step in the process to make data FAIR. The DMP template will ask questions that enable you to systematically address the things that need to be done to make your data FAIR. Writing a [DMP](data-management-plan.qmd) is also a requirement from funding agencies and some faculties at the VU. At the VU, you can use [DMPonline](https://dmponline.vu.nl/?perform_check=false) to create and share DMPs.
 
 ### Describe and document your data
 
@@ -38,8 +42,7 @@ If you have questions about metadata and documentation, contact the [RDM Support
 
 If you choose a repository that: assigns a persistent identifier to both the data and the metadata; attaches metadata to the data according to standard metadata schemas; releases data with a license; and provides access to the data and metadata via an open and standard communication protocol (such as http) – then your data will meet many, if not most, of the FAIR principles.
 
-The VU provides three repositories which meets all of these conditions:
-[link to pages about repositories]
+The VU provides [three repositories](repositories.qmd) which meets all of these conditions:
 
 - [DataverseNL](https://dataverse.nl/dataverse/vuamsterdam)
 - Yoda - [Yoda information page](https://yoda.vu.nl/site/) and [Yoda publication platform](https://commons.datacite.org/doi.org?query=client.uid:delft.vudata)
