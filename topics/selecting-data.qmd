@@ -1,0 +1,63 @@
+# Selecting Data
+
+## Storing vs. Archiving Data
+
+There is a difference between storing and archiving data. Storing refers to putting the data in a safe location while the research is ongoing. Because you are still working on the data, the data still change from time to time: they are cleaned, and analysed, and this analysis generates output. As the image below illustrates, storing could be like cooking a dish: you are cleaning and combining ingredients.
+
+Archiving, on the other hand, refers to putting the data in a safe place after the research is finished. The data are in a fixed state, they don't change anymore. Archiving is done for verification purposes: so others can check that your research is sound. Or: it is done so that others can reuse the resulting dataset. There is also a [difference between archiving and publishing](https://libguides.vu.nl/rdm/selecting-archive?#s-lg-box-wrapper-16034272), but in essence, archiving and publishing happen at a similar moment and for both, data do not change anymore.
+
+![](https://libapps-eu.s3.amazonaws.com/accounts/144379/images/storage-archiving.jpg)
+
+_This illustration is created by Scriberia with The Turing Way community. Used under a CC-BY 4.0 licence. DOI: [10.5281/zenodo.3332807](https://doi.org/10.5281/zenodo.3332807)_
+
+## Selecting Data for Archiving
+
+There are various reasons to [archive your data](https://libguides.vu.nl/rdm/selecting-archive): replication, longitudinal research, data being unique or expensive to collect, re-usability and acceleration of research inside or outside your own discipline. It is VU policy to archive your data for (at least) 10 years after the last publication based on the dataset. Part of preparing your dataset for archiving is appraising and selecting your data.
+
+### Make a selection before archiving your data
+
+During your research you may accumulate a lot of data, some of which will be eligible for archiving. It is impossible to preserve all data infinitely. Archiving all digital data leads to high costs for storage itself and for maintaining and managing this ever-growing volume of data and their metadata; it may also lead to decline in discoverability (see the website of the [Digital Curation Centre](http://www.dcc.ac.uk/resources/how-guides/appraise-select-data)). For those reasons, it is crucial that you make a selection.
+
+### Remove redundant and sensitive data
+
+Selecting data means making choices about what to keep for the long term, and what data to [archive securely and what data to publish openly](https://libguides.vu.nl/rdm/selecting-archive). This means that you have to decide whether your dataset contains data that need to be removed or separated. Reasons to exclude data from publishing include (but are not limited to):
+
+* data are redundant
+* data concern temporary byproducts which are irrelevant for future use
+* data contain material that is sensitive, for example personal data in the sense of the [GDPR](http://libguides.vu.nl/rdm/gdpr-privacy), like consent forms, voice recordings, DNA data; state secrets; data that are sensitive to competition in a commercial sense. These data need to be separated from other data and archived securely
+* preserving data for the long term is in breach of contractual arrangements with your consortium partners or other parties involved
+
+In preparing your dataset for archiving, the first step is to determine which parts of your data are sensitive, which can then be separated from the other data. Redundant data can be removed altogether.
+
+### Different forms of datasets for different purposes
+
+Once you have separated the sensitive data from the rest of your dataset, you have to think about what to do with these sensitive materials. In some cases they may be destroyed, but you may also opt for archiving multiple datasets. For example, you may want to archive your dataset in more than one form depending on the purpose. For example:
+
+1. One for reusability to share, and
+2. A second one that contains the sensitive data, and needs to be handled differently.
+
+For the first, the non-sensitive data can be stored in an archive under restricted or open access conditions, so that you can share it and link it to publications. For the second, you need to make a separate selection, so the sensitive part can be stored safely in a secure archive (a so-called offline or dark archive). In the metadata of both archives you can create stable links between the two datasets using [persistent identifiers](//libguides.vu.nl/rdm/data-publication#s-lg-box-wrapper-17896170).
+
+### What to appraise for archiving
+
+There are several factors that determine what data to select for archiving. For example, whether data are unique, expensive to reproduce, or if your funder requires that you make your data publicly available. This might also help you or your department to think about a standard policy or procedures for what needs to be kept, what is vital for reproducing research or reuse in future research projects.
+
+More information on selecting data:
+
+* Tjalsma, H. & Rombouts, J. (2011). [Selection of research data: Guidelines for appraising and selecting research data](https://dans.knaw.nl/nl/over/organisatie-beleid/publicaties/DANSselectionofresearchdata.pdf). Data Archiving and Networked Services (DANS).
+* Digital Curation Centre (DCC): Whyte, A. & Wilson, A. (2010). [How to appraise and select research data for curation](http://www.dcc.ac.uk/resources/how-guides/appraise-select-data). DCC How-to Guides. Edinburgh: Digital Curation Centre.
+* Research Data Netherlands: [Data selection](https://datasupport.researchdata.nl/en/start-the-course/iv-harvest-phase/data-selection).
+
+## Data Set Packaging: Which Files should be Part of my Dataset?
+
+A dataset consists of the following documents:
+
+* Raw or cleaned data (if the cleaned data has been archived, the [provenance](http://libguides.vu.nl/rdm/data-provenance) documentation is also required)
+* [Project documentation](http://libguides.vu.nl/rdm/data-documentation)
+* [Codebook](http://libguides.vu.nl/rdm/codebooks) or [protocol](//libguides.vu.nl/rdm/data-collection#s-lg-box-wrapper-17896154)
+* [Logbook or lab journal](http://libguides.vu.nl/rdm/data-provenance) (when available, dependent on the discipline)
+* [Software](https://libguides.vu.nl/rdm/data-processing) (& version) needed to open the files when no preferred formats for the data can be provided
+
+See the section [Metadata](http://libguides.vu.nl/rdm/metadata) for more information about documenting your data.
+
+Depending on the research project it may be that more than one dataset is stored in more than one repository. Make sure that each consortium partner that collects data also stores all necessary data that is required for transparency and verification. A [Consortium Agreement](http://libguides.vu.nl/rdm/collaboration) and [Data Management Plan](//libguides.vu.nl/rdm/dmp) will include information on who is responsible for archiving the data.
