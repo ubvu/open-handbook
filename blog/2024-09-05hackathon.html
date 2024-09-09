@@ -6,8 +6,20 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Alex van der Jagt">
+<meta name="author" content="Chris Hartgerink">
+<meta name="author" content="Elisa Rodenburg">
+<meta name="author" content="Jens de Bruijn">
+<meta name="author" content="Jolien Scholten">
+<meta name="author" content="Joy Jiayi Cheng">
+<meta name="author" content="Lena Karvovskaya">
+<meta name="author" content="Meron Vermaas">
+<meta name="author" content="Peter Vos">
+<meta name="author" content="Stephanie van de Sandt">
+<meta name="author" content="Tycho Hofstra">
+<meta name="dcterms.date" content="2024-09-05">
 
-<title>Pathways – Research Support Handbook</title>
+<title>Second Handbook Hackathon – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +35,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./public/favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../public/favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,65 +79,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -138,8 +90,8 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -149,23 +101,23 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html"> 
+    <a class="nav-link" href="../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./topics.html"> 
+    <a class="nav-link" href="../topics.html"> 
 <span class="menu-text">Topics</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./pathways.html" aria-current="page"> 
+    <a class="nav-link" href="../pathways.html"> 
 <span class="menu-text">Pathways</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./contributing.html"> 
+    <a class="nav-link" href="../contributing.html"> 
 <span class="menu-text">Contributing</span></a>
   </li>  
 </ul>
@@ -180,22 +132,51 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#hackathon-issues" id="toc-hackathon-issues" class="nav-link active" data-scroll-target="#hackathon-issues">Hackathon Issues</a></li>
+  <li><a href="#hackathon-pull-requests" id="toc-hackathon-pull-requests" class="nav-link" data-scroll-target="#hackathon-pull-requests">Hackathon Pull Requests</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/blog/2024-09-05hackathon.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Pathways</h1>
+<h1 class="title">Second Handbook Hackathon</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-contents">
+             <p>Alex van der Jagt </p>
+             <p>Chris Hartgerink </p>
+             <p>Elisa Rodenburg </p>
+             <p>Jens de Bruijn </p>
+             <p>Jolien Scholten </p>
+             <p>Joy Jiayi Cheng </p>
+             <p>Lena Karvovskaya </p>
+             <p>Meron Vermaas </p>
+             <p>Peter Vos </p>
+             <p>Stephanie van de Sandt </p>
+             <p>Tycho Hofstra </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 5, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -205,159 +186,39 @@ window.Quarto = {
 </header>
 
 
+<p>On September 5th, 2024, all authors participated in the second hackathon for the Research Support Handbook. For this hackathon, we focused on quality assurance. Quality assurance is crucial in ensuring that all parties at VU Amsterdam feel confident adopting this evolving, community-led resource as an official university page. Our goal is to migrate the handbook to rdm.vu.nl in the near future, which requires us to everything is in tip-top shape.</p>
+<p>Collectively, we proofread the migrated LibGuide pages. The result of this are seven GitHub issues and nine pull requests for revisions. These include <a href="https://github.com/ubvu/open-handbook/issues/125">making sure all images are migrated into the handbook</a>, <a href="https://github.com/ubvu/open-handbook/issues/124">ensuring appropriate page titles</a>, and <a href="https://github.com/ubvu/open-handbook/issues/131">refining the contribution guide</a>.</p>
+<p>During the hackathon, we observed a lot of links in <a href="https://libguides.vu.nl/rdm">the old LibGuide resource</a>, are broken. We did some much needed maintenance work during the hackathon, given that the Research Support Handbook will replace the LibGuide resource. We identified broken links and replaced them where possible. There is a need to make this a less manual process in the future and will seek out automations to help us maintain the links moving forward. Additionally, there are many internal links that need updating, changing from LibGuide URLs to GitHub pages. We also discovered several links accessible only with university credentials, which we believe detract from the user experience; these links will require special labeling and contextualization.</p>
+<p>The general sentiment at the end of the hackathon is that there is still lots of work to do. The community standards are manifesting themselves, and it is clear that pathways need more work to be production ready. These discussions surfaced a wish to have more frequent hackathons at this time, until the standards are set and the included content is ready for rdm.vu.nl.</p>
+<section id="hackathon-issues" class="level2">
+<h2 class="anchored" data-anchor-id="hackathon-issues">Hackathon Issues</h2>
+<ul>
+<li>https://github.com/ubvu/open-handbook/issues/123</li>
+<li>https://github.com/ubvu/open-handbook/issues/128</li>
+<li>https://github.com/ubvu/open-handbook/issues/125</li>
+<li>https://github.com/ubvu/open-handbook/issues/124</li>
+<li>https://github.com/ubvu/open-handbook/issues/123</li>
+<li>https://github.com/ubvu/open-handbook/issues/130</li>
+<li>https://github.com/ubvu/open-handbook/issues/131</li>
+</ul>
+</section>
+<section id="hackathon-pull-requests" class="level2">
+<h2 class="anchored" data-anchor-id="hackathon-pull-requests">Hackathon Pull Requests</h2>
+<ul>
+<li>https://github.com/ubvu/open-handbook/pull/126</li>
+<li>https://github.com/ubvu/open-handbook/pull/110</li>
+<li>https://github.com/ubvu/open-handbook/pull/127</li>
+<li>https://github.com/ubvu/open-handbook/pull/129</li>
+<li>https://github.com/ubvu/open-handbook/pull/132</li>
+<li>https://github.com/ubvu/open-handbook/pull/133</li>
+<li>https://github.com/ubvu/open-handbook/pull/134</li>
+<li>https://github.com/ubvu/open-handbook/pull/135</li>
+</ul>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1725872573375" data-listing-reading-time-sort="1" data-listing-word-count-sort="10">
-<a href="./pathways/collect-and-store.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Collect &amp; Store Data
-</h5>
-<div class="card-text listing-description">
-Data collection may consist of the re-use of existing data and/or the generation of new data. You can find more specific information on the re-use of existing data on the Fin…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1725872573375" data-listing-reading-time-sort="8" data-listing-word-count-sort="1525">
-<a href="./pathways/data-lifecycle.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/mika-baumeister-Wpnoqo2plFA-unsplash.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Data lifecycle
-</h5>
-<div class="card-text listing-description">
-The data lifecycle helps you find, document, and preserve data.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1725872573375" data-listing-reading-time-sort="1" data-listing-word-count-sort="23">
-<a href="./pathways/discover-and-initiate.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Discover &amp; Initiate Research
-</h5>
-<div class="card-text listing-description">
-Anything that can be used for analysis can be considered “data(sets)”. Many national and international organisations provide access to large datasets free of charge: this is…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1725872573375" data-listing-reading-time-sort="13" data-listing-word-count-sort="2548">
-<a href="./pathways/document-and-preserve.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Document &amp; Preserve Data
-</h5>
-<div class="card-text listing-description">
-There is a difference between storing and archiving data. Storing refers to putting the data in a safe location while the research is ongoing. Because you are still working…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1725872573375" data-listing-reading-time-sort="28" data-listing-word-count-sort="5499">
-<a href="./pathways/plan-and-design.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Plan &amp; Design
-</h5>
-<div class="card-text listing-description">
-Grant programmes from organisations like NWO, ZonMW and ERC increasingly require you to not only think about the journey of the data in your research project, but also the…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1725872573375" data-listing-reading-time-sort="10" data-listing-word-count-sort="1902">
-<a href="./pathways/process-and-analyze.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Process &amp; Analyse Data
-</h5>
-<div class="card-text listing-description">
-Provenance describes the origin of an object. Data provenance refers to the knowledge of where data originate, where they were collected, by whom, for what reason, and…<strong></strong>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="6" data-listing-file-modified-sort="1725872573379" data-listing-reading-time-sort="13" data-listing-word-count-sort="2558">
-<a href="./pathways/publish-and-share.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Publish &amp; Share Data
-</h5>
-<div class="card-text listing-description">
-In the Data Management Plan the researcher describes if the data will be stored for the mid or the long term.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -793,17 +654,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="./about.html">
+    <a class="nav-link" href="../about.html">
 <p>About</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="./editors-guide.html">
+    <a class="nav-link" href="../editors-guide.html">
 <p>Editor’s guide</p>
 </a>
   </li>  
 </ul>
-    <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/pathways.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/blog/2024-09-05hackathon.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
