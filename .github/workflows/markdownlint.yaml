@@ -1,0 +1,39 @@
+name: MarkdownLint for QMD files
+
+on:
+  push:
+    paths:
+      - 'topics/**/*.qmd'
+      - 'pathway/**/*.qmd'
+  pull_request:
+    paths:
+      - 'topics/**/*.qmd'
+      - 'pathway/**/*.qmd'
+
+jobs:
+  markdownlint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20' # Specify the Node.js version you prefer
+
+      - name: Install markdownlint-cli
+        run: npm install -g markdownlint-cli
+
+      - name: Run markdownlint with fix on .qmd files
+        run: markdownlint '**/{topics,pathway}/**/*.qmd' --fix
+
+      - name: Commit changes if any fixes were made
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add .
+          git commit -m "Apply markdownlint fixes" || echo "No changes to commit"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
