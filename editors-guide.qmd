@@ -2,31 +2,35 @@
 title: "Editor's guide"
 ---
 
-Welcome to the Editor's guide to the Handbook. This page contains resources around how the editors work. We make this open so you can see how it works behind the scenes.
+Welcome to the Editor's guide to the Handbook! This page contains resources around how the editors work.
 
-## Deleting branches
+## What does an editor do?
+
+Editors are those tying together all the strings in this community handbook. We keep a bird's eye view to ensure that what you read makes sense. Each editor commits themselves to providing timely reviews of topics, guides, or both.[^1]
+
+[^1]: Each editor chooses which of these they want to focus on. Editors get auto-invited to review the changes. Timely means within a week.
+
+All changes to the handbook are made via pull requests. A content pull request can only be included when:
+
+* Two editors approved the change[^2]
+* All pending conversations are marked resolved
+
+[^2]: Note that any changes after having received a review, will require new reviews. This is especially relevant if the changes have been approved already.
+
+## How to keep an overview of everything?
+
+With so many issues and pull requests, it is easy to get lost. We have a project management board that can be helpful identifying what is going on at this time:
+
+* [Topics](https://github.com/orgs/ubvu/projects/7/views/1)
+* [Guides](https://github.com/orgs/ubvu/projects/7/views/2)
+
+## Etiquette
+
+As editors, we may have to make tough calls at times. It is important for us to make people feel welcome and appreciated, even if their contribution is not immediately included. That being said, we reciprocate the consideration given to us.
+
+### Deleting branches
 
 After merging Pull Requests, it is expected to clean up the branch by deleting it. We enable auto deletion upon merging, but if that for some reason does not happen, please go ahead and "Delete branch"
-
-## Netlify
-
-Netlify is a hosting service, where the files for the website live. This means that even though we create the website on GitHub, Netlify is where the website is hosted. When GitHub is down, the website should be unaffected.
-
-## Pull Request handling
-
-We maintain strict standards for the content included in the Research Support Handbook. Below we expand on the norms we maintain to merge and close pull requests.
-
-### Merging pull requests
-
-We maintain a set of rules to ensure content does not get included prematurely:
-
-- At least one editor needs to approve the pull request
-- All discussions in the pull request need to be marked as resolved
-- All automated quality checks need to be successful
-
-All three criteria have to be met for successful inclusion in the Research Support Handbook. Note that any approvals are voided when someone adds additional changes. A new review will have to be provided at that time.
-
-A more implicit norm is that we provide at least 24 hours for people to review, even if the first editor reviews within the first hour. As such, everyone knows they have at least 24 hours to take a look at the content.
 
 ### Closing pull requests
 
