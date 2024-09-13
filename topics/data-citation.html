@@ -128,6 +128,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#data-citation" id="toc-data-citation" class="nav-link active" data-scroll-target="#data-citation">Data Citation</a>
   <ul class="collapse">
   <li><a href="#citation-elements" id="toc-citation-elements" class="nav-link" data-scroll-target="#citation-elements">Citation Elements</a></li>
+  <li><a href="#citation-file" id="toc-citation-file" class="nav-link" data-scroll-target="#citation-file">Citation file</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/data-citation.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -166,6 +167,30 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="http://www.dcc.ac.uk/resources/briefing-papers/introduction-curation/data-citation-and-linking">DCC UK</a></li>
 <li><a href="https://www.force11.org/group/joint-declaration-data-citation-principles-final">Data Citation Synthesis Group (2014). Joint Declaration of Data Citation Principles. Martone M. (ed.) San Diego CA: FORCE11</a></li>
 </ul>
+</section>
+<section id="citation-file" class="level3">
+<h3 class="anchored" data-anchor-id="citation-file">Citation file</h3>
+<p>A citation file is a computer file that contains all information needed to cite a dataset. Several data and software repositories, such as Zenodo and GitHub, support this format and enables enables others to easily select the citation information in their preferred format. Most reference managers (e.g., Zenodo) can work with these standardized citation files, and automatically format the references in a document.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../public/github_citation_file.png" title="Cite a GitHub repository that contains a citation file" class="img-fluid figure-img"></p>
+<figcaption>A screenshot of the interface to cite a GitHub repository</figcaption>
+</figure>
+</div>
+<p>An example, CFF-file is given below, but to enable you to easily create a CFF-file you can use this <a href="https://citation-file-format.github.io/cff-initializer-javascript/#/">website</a>.</p>
+<pre>cff-version: 1.2.0
+message: "If you use this data, please cite it as below."
+authors:
+ - family-names: Druskat
+   given-names: Stephan
+   orcid: https://orcid.org/1234-5678-9101-1121
+title: "My Research Software"
+version: 2.0.4
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.1234
+date-released: 2021-08-11
+</pre>
 
 
 </section>
