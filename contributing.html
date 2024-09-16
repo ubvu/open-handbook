@@ -135,8 +135,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Topics</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./pathways.html"> 
-<span class="menu-text">Pathways</span></a>
+    <a class="nav-link" href="./guides.html"> 
+<span class="menu-text">Guides</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./contributing.html" aria-current="page"> 
@@ -166,7 +166,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#suggesting-edits" id="toc-suggesting-edits" class="nav-link" data-scroll-target="#suggesting-edits">Suggesting edits</a></li>
   <li><a href="#adding-a-topic" id="toc-adding-a-topic" class="nav-link" data-scroll-target="#adding-a-topic">Adding a topic</a></li>
-  <li><a href="#adding-a-pathway" id="toc-adding-a-pathway" class="nav-link" data-scroll-target="#adding-a-pathway">Adding a pathway</a></li>
+  <li><a href="#adding-a-guide" id="toc-adding-a-guide" class="nav-link" data-scroll-target="#adding-a-guide">Adding a guide</a></li>
   <li><a href="#submit-a-pull-request" id="toc-submit-a-pull-request" class="nav-link" data-scroll-target="#submit-a-pull-request">Submit a pull request</a></li>
   <li><a href="#writing-text" id="toc-writing-text" class="nav-link" data-scroll-target="#writing-text">Writing text</a></li>
   <li><a href="#more-information-about-github" id="toc-more-information-about-github" class="nav-link" data-scroll-target="#more-information-about-github">More information about GitHub</a>
@@ -261,9 +261,9 @@ Note
 <p>The topic itself needs to be <a href="#writing-text">written in Markdown</a>. Every topic must contain a first level heading (e.g., <code># Heading</code>), which will be the topic title. Section headings are second level headings (e.g., <code>## Section</code>).</p>
 <p>After that, you are ready to <a href="#submit-a-pull-request">submit your pull request</a>! The reviewers will help you place the topic in the right place of the book.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 </section>
-<section id="adding-a-pathway" class="level3">
-<h3 class="anchored" data-anchor-id="adding-a-pathway">Adding a pathway</h3>
-<p>To add a new pathway, you need to create a new file ending in <code>.qmd</code> in the <code>pathways</code> folder (e.g., <code>pathways/example.qmd</code>). You can do this by visiting the <a href="https://github.com/ubvu/open-handbook">handbook page on GitHub</a> and clicking <code>Add file -&gt; New file</code>.</p>
+<section id="adding-a-guide" class="level3">
+<h3 class="anchored" data-anchor-id="adding-a-guide">Adding a guide</h3>
+<p>To add a new guide, you need to create a new file ending in <code>.qmd</code> in the <code>guides</code> folder (e.g., <code>guides/example.qmd</code>). You can do this by visiting the <a href="https://github.com/ubvu/open-handbook">handbook page on GitHub</a> and clicking <code>Add file -&gt; New file</code>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="public/Screenshot 2023-12-19 at 10.54.20.png" class="img-fluid figure-img"></p>
@@ -271,8 +271,8 @@ Note
 </figure>
 </div>
 <p>When you click this button you may be asked to <a href="#forking">fork</a> the repository. This is not a problem so go ahead!</p>
-<p>Every pathway must contain a first level heading (e.g., <code># Heading</code>), which will be the pathway title. Section headings are second level headings (e.g., <code>## Section</code>).</p>
-<p>The pathway itself needs to be <a href="#writing-text">written in Markdown</a>. For each topic you want to include, you can either mention so on a line surrounded by whitespaces:</p>
+<p>Every guide must contain a first level heading (e.g., <code># Heading</code>), which will be the guide title. Section headings are second level headings (e.g., <code>## Section</code>).</p>
+<p>The guide itself needs to be <a href="#writing-text">written in Markdown</a>. For each topic you want to include, you can either mention so on a line surrounded by whitespaces:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="an">INSERT TOPIC:</span><span class="co"> DATA MANAGEMENT PLAN</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>This will tell the editorial team to include that topic there. Please be specific in the naming. You can also directly include the topic yourself directly using the following code:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>{{&lt; include ../topics/filename.qmd &gt;}}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>

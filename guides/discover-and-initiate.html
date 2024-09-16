@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Process &amp; Analyse Data – Research Support Handbook</title>
+<title>Discover &amp; Initiate Research – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -101,8 +101,8 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Topics</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../pathways.html"> 
-<span class="menu-text">Pathways</span></a>
+    <a class="nav-link" href="../guides.html"> 
+<span class="menu-text">Guides</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../contributing.html"> 
@@ -125,31 +125,26 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#data-provenance" id="toc-data-provenance" class="nav-link active" data-scroll-target="#data-provenance">Data Provenance</a></li>
-  <li><a href="#data-processing" id="toc-data-processing" class="nav-link" data-scroll-target="#data-processing">Data processing</a>
+  <li><a href="#finding-existing-data" id="toc-finding-existing-data" class="nav-link active" data-scroll-target="#finding-existing-data">Finding Existing Data</a>
   <ul class="collapse">
-  <li><a href="#data-cleaning" id="toc-data-cleaning" class="nav-link" data-scroll-target="#data-cleaning">Data cleaning</a></li>
-  <li><a href="#data-transcription" id="toc-data-transcription" class="nav-link" data-scroll-target="#data-transcription">Data transcription</a></li>
-  <li><a href="#anonymisationpseudonymisation" id="toc-anonymisationpseudonymisation" class="nav-link" data-scroll-target="#anonymisationpseudonymisation">Anonymisation/Pseudonymisation</a></li>
+  <li><a href="#re-using-existing-data" id="toc-re-using-existing-data" class="nav-link" data-scroll-target="#re-using-existing-data">Re-using Existing Data</a></li>
+  <li><a href="#sources-for-finding-existing-datasets" id="toc-sources-for-finding-existing-datasets" class="nav-link" data-scroll-target="#sources-for-finding-existing-datasets">Sources for Finding Existing Datasets</a></li>
+  <li><a href="#data-sources-for-vu-researchers" id="toc-data-sources-for-vu-researchers" class="nav-link" data-scroll-target="#data-sources-for-vu-researchers">Data Sources for VU Researchers</a></li>
   </ul></li>
-  <li><a href="#data-analysis" id="toc-data-analysis" class="nav-link" data-scroll-target="#data-analysis">Data analysis</a>
+  <li><a href="#data-citation" id="toc-data-citation" class="nav-link" data-scroll-target="#data-citation">Data Citation</a>
   <ul class="collapse">
-  <li><a href="#data-analysis-1" id="toc-data-analysis-1" class="nav-link" data-scroll-target="#data-analysis-1">Data Analysis</a></li>
-  <li><a href="#open-software" id="toc-open-software" class="nav-link" data-scroll-target="#open-software">Open Software</a></li>
-  </ul></li>
-  <li><a href="#high-performance-computing" id="toc-high-performance-computing" class="nav-link" data-scroll-target="#high-performance-computing">High performance computing</a>
-  <ul class="collapse">
-  <li><a href="#when-do-you-need-access-to-high-performance-computing" id="toc-when-do-you-need-access-to-high-performance-computing" class="nav-link" data-scroll-target="#when-do-you-need-access-to-high-performance-computing">When do you need access to High Performance Computing?</a></li>
+  <li><a href="#citation-elements" id="toc-citation-elements" class="nav-link" data-scroll-target="#citation-elements">Citation Elements</a></li>
+  <li><a href="#citation-file" id="toc-citation-file" class="nav-link" data-scroll-target="#citation-file">Citation file</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/pathways/process-and-analyze.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/guides/discover-and-initiate.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Process &amp; Analyse Data</h1>
+<h1 class="title">Discover &amp; Initiate Research</h1>
 </div>
 
 
@@ -166,128 +161,99 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="data-provenance" class="level2">
-<h2 class="anchored" data-anchor-id="data-provenance">Data Provenance</h2>
-<p>Provenance describes the origin of an object. Data provenance refers to the knowledge of where data originate, where they were collected, by whom, for what reason, and similar aspects that help to understand how the data were originally gathered, processed and altered. In daily use, the term “<strong>data provenance</strong>” refers to a record trail that accounts for the origin of a piece of data (in a database, document or repository) together with an explanation of how and why it got to the present place (Encyclopedia of Database Systems, pp <a href="http://link.springer.com/referenceworkentry/10.1007%2F978-0-387-39940-9_1305">608-608</a>). You can also call it the process of keeping records of changes in the data. The need for Data Provenance increases as the reuse of datasets becomes more common in research. The term was originally mostly used in relation to works of art, but is now used in similar senses in a wide range of fields (<a href="https://en.wikipedia.org/wiki/Provenance">Wikipedia</a>).</p>
-<p><a href="https://commons.wikimedia.org/wiki/File:Credibility_Trust_Provenace_data.svg"><img src="https://libapps-eu.s3.amazonaws.com/accounts/46351/images/Credibility_Trust_Provenace_data.gif" class="img-fluid"></a></p>
-<p>Researchers regularly use a lab notebook or a journal to document their hypotheses, experiments and initial analysis or interpretation of these experiments. If you manually change data in a dataset, this should also be documented. Sometimes records of changes in data can be kept by adding notes to programmes or scripts that are used.</p>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/List_of_ELN_software_packages">Electronic Lab Journals</a> or Electronic Lab Notebooks are used to meticulously describe and document the process of analysis. Mostly used used in a laboratory environment,; biolab, chemical lab, etc.</li>
-<li>For computational analyses, <a href="http://jupyter.org/">Computational Notebooks like Jupyter notebook</a> are used, where you can describe the analysis steps alongside the computer code in different languages like Python, R, Spark, etc. It is important to document steps and changes in your code by writing comments. This way, others and future you can understand how your code works.</li>
-<li>The <a href="https://osf.io">Open Science Framework</a> connects different storage types you already use (SURFdrive, Dataverse, etc) and logs automatically all changes of all the steps you make while you progress. With the fine grained history-log and version control system of OSF, you can see all steps you made. You can store and archive the whole provenance trail for citable reproducibility.</li>
-</ul>
-<p>Finally, when a dataset contains personal data, data provenance can help researchers to understand the specifics and the context in which the data were gathered, also to be able to assess whether or not the informed consent given for the first research, is applicable.</p>
-<p>For every step of your data analysis, good <a href="http://libguides.vu.nl/rdm/data-documentation">data documentation</a> is necessary.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/He96Mt0o00o?si=_gB6y8dgdpmyHoja" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+</iframe>
+<section id="finding-existing-data" class="level2">
+<h2 class="anchored" data-anchor-id="finding-existing-data">Finding Existing Data</h2>
+<section id="re-using-existing-data" class="level3">
+<h3 class="anchored" data-anchor-id="re-using-existing-data">Re-using Existing Data</h3>
+<p>Anything that can be used for analysis can be considered “data(sets)”. Many national and international organisations provide access to large datasets free of charge: this is called <a href="https://opendefinition.org/">Open Data</a>.</p>
+<p>Datasets may contain different kinds of data files, e.g.&nbsp;raw or edited/cleaned data, and macro or micro data. <strong>Raw data</strong> refers to the data as they are primarily collected, and includes all data, even the missed or mismatched pieces in the data file. <strong>Edited or cleaned data</strong> refers to data that have been tidied up for analysis and publication. <strong>Macro data</strong> and statistics are results based on <strong>micro data</strong> units and provide a general overview of the micro data. Although datasets can contain data of varying type or aggregation level, and there may be overlap between these definitions, each element can contain very important information.</p>
+<p>When re-using research data, scientists must be familiar with the rules and regulations governing data copyright, intellectual property rights, and laws governing sensitive or personal information. SURF has compiled a <a href="https://www.surf.nl/en/report-the-legal-status-of-raw-data-a-guide-for-research-practice">report on the legal status of raw data</a> including information on the types of consent required for the re-use of data. Your <a href="https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information">Privacy Champion</a> can answer questions about the use of personal data. <a href="https://www.ixa.nl/for-researchers/">IXA</a> can provide legal help with the re-use of data.</p>
+<p>See also the ZonMw explanation of <a href="http://www.zonmw.nl/fileadmin/documenten/Toegang_Tot_Data__TTD/TTD_Toelichting_verschillende_eigendomsrechten.pdf">different kinds of property rights in the Netherlands</a> (text available in Dutch only).</p>
 </section>
-<section id="data-processing" class="level2">
-<h2 class="anchored" data-anchor-id="data-processing">Data processing</h2>
-<section id="data-cleaning" class="level3">
-<h3 class="anchored" data-anchor-id="data-cleaning">Data cleaning</h3>
-<p>The process of detecting and correcting (or removing) corrupt or inaccurate information or records, is called data cleaning. In essence, it refers to identifying incomplete, incorrect, inaccurate or irrelevant parts of the data and then replacing, modifying, or deleting this data (<a href="https://en.wikipedia.org/wiki/Data_cleansing">Wikipedia</a>). Depending on the type of analysis that is done, different pieces of software can be used to do this data cleaning. More often than not, the same software can also be used to perform the analysis. Licensed software may sometimes also be installed on personal computers or laptops.</p>
-<p><img src="https://libapps-eu.s3.amazonaws.com/accounts/46351/images/MessyData.jpg" class="img-fluid"></p>
-<p>Software especially designed to clean re-used data is <a href="http://openrefine.org/">OpenRefine</a>. It cleans starting and trailing blank spaces in cell field, clusters values based on similarities (e.g.&nbsp;in free text fields: Alphen a/d Rhijn, alfen ad rijn, etc. can be easily clustered), normalise data fields into one standard, etc. See below for several tutorials.</p>
-<p>In some cases, researchers write their own scripts (in programming languages such as Python, R or SQL) to clean data, in which case the process must be documented. Researchers should include their scripts when they archive the datasets to allow for replication and verification.</p>
-<p>Extra background information:</p>
-<ul>
-<li>EMGO <a href="https://aph-qualityhandbook.org/set-up-conduct/process-analyze-data/3-2-quantitative-research/3-2-1-data-processing/data-cleaning-and-transformation//">Quality Handbook on data cleaning</a></li>
-<li>Making sense of data I: a practical guide to exploratory data analysis and data mining / Glenn J. Myatt, Wayne P. Johnson, 2014 (<a href="http://onlinelibrary.wiley.com.vu-nl.idm.oclc.org/book/10.1002/9781118422007">eBook</a>)</li>
-<li><a href="http://openrefine.org/">Open Refine</a>
-<ul>
-<li><a href="http://www.datacarpentry.org/2015-03-09-ISI-CODATA/lessons/open_refine/open-refine-demo.html">Data Carpentry Open Refine website</a></li>
-<li><a href="https://programminghistorian.org/en/lessons/cleaning-data-with-openrefine">Tutorial</a> by the Programming Historian</li>
-<li><a href="http://digitalnomad.ie/simple-openrefine-tutorial/">Tutorial</a> by Digitalnomad</li>
-<li>Introduction to <a href="http://miriamposner.com/classes/dh101f17/tutorials-guides/data-manipulation/get-started-with-openrefine/">Digital Humanities</a> with Open Refine</li>
-</ul></li>
-</ul>
-<p>For every step of your data cleaning, good <a href="http://libguides.vu.nl/rdm/data-documentation">documentation</a> and clarifying the <a href="https://libguides.vu.nl/rdm/data-provenance">data provenance</a> is necessary.</p>
+<section id="sources-for-finding-existing-datasets" class="level3">
+<h3 class="anchored" data-anchor-id="sources-for-finding-existing-datasets">Sources for Finding Existing Datasets</h3>
+<p>The number of datasets that are available grows rapidly. Datasets are made available in many formats, by many people or organizations. Some datasets are raw files and some are specifically organised and formatted as databases that require a licence or subscription to use them. The library of the Vrije Universiteit Amsterdam has collected links to some of the data repositories used and has licensed several databases.</p>
+<ol type="1">
+<li><strong>Popular Free and Licensed Databases</strong>: These can be found in the <a href="http://www.ubvu.vu.nl/pub/index_oclc.cfm?SearchObjectId=7&amp;lang=_en&amp;ordering=1&amp;objectid=109">library e-resources list</a> or with <a href="https://vu.on.worldcat.org/advancedsearch">LibSearch Advanced</a>.</li>
+</ol>
+<p>If you need help finding &amp; using free or licensed sources you can contact the <a href="http://www.ub.vu.nl/RDS">Research Data Services Helpdesk</a>. For students and personnel in the fields of economics, finance, or organisation science a <a href="http://libguides.vu.nl/finding-data">separate LibGuide</a> has been created to help them find and use/re-use data.</p>
+<p>You can also start looking for data in these four places:</p>
+<ol type="1">
+<li><strong>The literature</strong>. Research articles may point you to the data that they are based on. Sometimes, (part of) the data are added to the article as supplementary files, and sometimes the data are published separately in a data repository. In the latter case, the article usually provides a clear reference to the published dataset. Some datasets may even be specifically published in <a href="http://libguides.vu.nl/rdm/data-publication">Data Journals</a>.</li>
+<li><strong>Scientific data repositories</strong>. Data repositories are platforms used to access and archive research data. Universities often provide a repository for data archiving, but other platforms arranged by discipline or by country also exist. Some repositories are only accessible to consortium members, whereas others are free of charge. Many universities in the Netherlands&nbsp;use <a href="https://dataverse.nl/">DataverseNL</a> to archive datasets for the mid-term. Long-term archiving&nbsp;is provided by the national research data archives&nbsp;<a href="https://easy.dans.knaw.nl/ui/home">DANS</a>&nbsp;and <a href="http://researchdata.4tu.nl/en/home/">4TU.Research Data</a>.&nbsp;In Europe, <a href="https://b2share.eudat.eu/">B2SHARE</a>&nbsp;and <a href="https://zenodo.org/">Zenodo</a>&nbsp;are platforms used&nbsp;to access research data. Data repositories can be accessed by searching by topic or country using <a href="http://service.re3data.org/search">Re3data</a>, a data repository registry. The VU has its own research portal, <a href="https://research.vu.nl/en/">PURE</a>, where researchers register their datasets. You can find instructions on how to register your own dataset in PURE on the <a href="http://libguides.vu.nl/rdm/dataset-registration">Dataset Registration</a> page of this LibGuide.</li>
+<li><strong>Data search engines</strong>. Search engines allow you to quickly browse data sets and supplementary data files published by researchers. They cover data sets from many sources. This makes them useful for quick orientation on a topic. Example of a search engines are: <a href="https://search.datacite.org/">DataCite</a>, <a href="https://toolbox.google.com/datasetsearch">Google DataSet Search</a>, <a href="https://datasearch.elsevier.com/">Elsevier Dataset Search</a>.</li>
+<li><strong>Data portals of (governmental) organisations</strong>. Organisations that regularly collect (statistical) data sometimes offer these data through their own portal. An example is <a href="http://ec.europa.eu/eurostat/data/database">Eurostat</a>, which collects and disseminates statistics at the European level, by country and by theme. Some of these websites have been linked in the <a href="http://libguides.vu.nl/finding-data/international-organizations">Finding data LibGuide</a>.</li>
+</ol>
 </section>
-<section id="data-transcription" class="level3">
-<h3 class="anchored" data-anchor-id="data-transcription">Data transcription</h3>
-<p>It is common in many fields to hold interviews, focus group sessions, or make other observations that were recorded - video or audio. If indeed you have done so, and you need to have the text transcribed, there are several ways to do this. One option is to do this by hand, although this is very time-consuming.</p>
-<p>Another option is to pay a transcription service to make the transcription or to use specialised software. The VU has drawn up processing agreements with one transcription service, <a href="https://transcriptonline.nl">Transcript Online</a>, and one transcription software service, <a href="https://www.amberscript.com/en/">Amberscript</a>.</p>
-<p>You can find more information on the <a href="https://vu.nl/en/about-vu/divisions/university-library/more-about/transcription%20at%20vu">VU Library page</a>&nbsp;on what these transcription options do, how they work, how much they cost, and how they can be used.</p>
-</section>
-<section id="anonymisationpseudonymisation" class="level3">
-<h3 class="anchored" data-anchor-id="anonymisationpseudonymisation">Anonymisation/Pseudonymisation</h3>
-<p>Processing of personal data requires you as a researcher to make sure that any personal data collected from a human subject is according to the EU GDPR regulation. Anonymisation and Pseudonymisation are two ways to make personal data less easy to identify, in other words, it allows you to de-identify personal data.</p>
-<p>There are various online tools that may help facilitate these processes. The VU has therefore recommended Amnesia as one of the tools to assist in the anonysmisation/pseudonymistaion of data.</p>
-<p>VU Amsterdam is preparing a decision guide on anonymisation and pseudonymisation.</p>
-<p>You can find more information <a href="https://libguides.vu.nl/ld.php?content_id=35095603">here</a>&nbsp;on how Amnesia works, how it can be used and how you can make your data compliant with the GDPR regulations.</p>
-</section>
-</section>
-<section id="data-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="data-analysis">Data analysis</h2>
-<section id="data-analysis-1" class="level3">
-<h3 class="anchored" data-anchor-id="data-analysis-1">Data Analysis</h3>
-<p>Although data analysis is an ongoing process throughout the research project, this page focuses on the analysis of the data subsequent to its collection. To ensure that research is empirical and verifiable, it is crucial that researchers keep records (<a href="https://libguides.vu.nl/rdm/data-documentation">data documentation</a>) of every step made during the data analysis.</p>
-<p>Data analysis converts raw/processed data into information that is useful for understanding. Many steps may be required to gain useful information from raw data. The process of <a href="https://libguides.vu.nl/rdm/data-processing">processing</a> and analysing data may require computing power not readily available or specific storage and protection options. If multiple parties are involved in the analysis, data sharing may also be necessary.</p>
-<p>Data analysis often requires the use of specialised software.The software offered and licensed by the university currently includes: Stata, SPSS, and Atlas.TI. Some of the software is available for download at: <a href="https://vu.nl/en/about-vu/more-about/off-campus-access"></a><a href="https://download.vu.nl/">download.vu.nl</a>. For open software, see below.</p>
-<p>In some cases researchers write their own scripts to analyse the data. At the VU, most scripts are written in R, Python and SQL.</p>
-<p>If you want to read up on data analysis you should check out what journal articles and books the VU library has available on the subject:</p>
+<section id="data-sources-for-vu-researchers" class="level3">
+<h3 class="anchored" data-anchor-id="data-sources-for-vu-researchers">Data Sources for VU Researchers</h3>
+<p>Researchers from the Vrije Universiteit Amsterdam have also developed some databases containing data collected during research. See here for some examples:</p>
 <ul>
-<li>All sources: <a href="https://vu.on.worldcat.org/external-search?queryString=data+analysis">Data analysis</a></li>
-<li><a href="https://vu.on.worldcat.org/external-search?queryString=quantitative+data+analysis">Quantitative data analysis</a></li>
-<li><a href="https://vu.on.worldcat.org/external-search?queryString=qualitative+data+analysis">Qualitative data analysis</a></li>
-<li><a href="https://vu.on.worldcat.org/external-search?queryString=big+data">Big data</a></li>
-<li><a href="https://vu.on.worldcat.org/external-search?queryString=data+mining">Data mining</a></li>
-</ul>
-</section>
-<section id="open-software" class="level3">
-<h3 class="anchored" data-anchor-id="open-software">Open Software</h3>
-<p>Using open software increases the Accessiblity, Interoperability and Reusability of your data. For that reason, we recommend that you use open software as much as possible for your data analysis. This could be software, code or scripts that you have written yourself - where possible, please make this software public, so your analysis is reproducible. Examples of open software are R and Python, which can be used instead of proprietary, commercial software such as SPSS and Matlab.</p>
-<p>Researchers often write their software themselves. There are also organisations that specialise in writing research software, such as the eScience Center. The eScience Center offers the software they built for free use <a href="https://www.research-software.nl/">online</a>. Their software is tagged with a DOI and stored in Zenodo as well as GitHub.<br>
-If you use software for analysing personal or otherwise sensitive data, you need a processing agreement with the developer if the software does not run locally. You can contact your <a href="https://vu.nl/en/about-vu/more-about/off-campus-access"></a><a href="https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information">Privacy Champion</a> if you are not sure if you need one, and for help to set up a processing agreement.</p>
-<p>There are several ways in which to start using open software:</p>
-<ul>
-<li>For Python: you should install <a href="https://www.anaconda.com/products/individual">Anaconda</a> and launch the Jupyter Notebook from the Navigator.</li>
-<li>For R: you should install <a href="https://www.anaconda.com/products/individual">Anaconda</a> and launch R Studio from the Navigator.</li>
-<li>Use the <a href="https://software-carpentry.org/lessons/">Software Carpentries</a> to learn the basics of programming in Python and R and version control with Git</li>
-<li>Read the recommendations for <a href="https://fair-software.nl/">FAIR Software</a>.</li>
-</ul>
-<p>The VU has several research groups that offer their code online. You can find them here:</p>
-<ul>
-<li>The Systems Bioinformatics research group, on <a href="https://github.com/SystemsBioinformatics">GitHub</a></li>
-<li>The Computational Lexicology &amp; Terminology Lab, on <a href="https://cltl.github.io/">GitHub</a></li>
-<li>The course Python for Text Analysis, on <a href="https://github.com/cltl/python-for-text-analysis">GitHub</a></li>
-<li>VU RDM Tech IT group, on <a href="https://github.com/vu-rdm-tech">GitHub</a></li>
-<li>A list of RDM tools, on <a href="https://htmlpreview.github.io/?https://github.com/vu-rdm-tech/api-scripts/blob/master/tool_descriptions/doctext.html">GitHub</a></li>
+<li><a href="http://www.tweelingenregister.org/">Nederlands Tweelingenregister</a> (Netherlands Twin Register) The database contains data on twins and their families and was created to do research on the relationship between genetics and growth, development, personality, behaviour, diseases, mental health and all kinds of risks.</li>
+<li><a href="http://geoplaza.vu.nl/cms/">Geoplaza VU</a> - the portal for all matters related to GIS (Geographical Information Systems) and geodata at the VU University Amsterdam. It offers students and employers a platform to exchange, examine and download digital map material.</li>
+<li><a href="http://www2.fgw.vu.nl/oz/kloosterlijst/kform.php">Dutch monasteries</a>&nbsp;- database with information about Dutch monasteries&nbsp;of the Middle Ages.</li>
+<li><a href="http://geoplaza.vu.nl/cms/maps/198-slaveneigenaren-in-amsterdam-1863">Slave owners in Amsterdam 1863</a>&nbsp;- the place of living of owners of slaves in Amsterdam in 1863, visualized in GeoPlaza.</li>
+<li><a href="http://www.borderdeaths.org/">Deaths at the Borders Database</a>&nbsp;- collection of official, state-produced evidence on people who died while attempting to reach southern EU countries from the Balkans, the Middle East, and North &amp; West Africa, and whose bodies were found in or brought to Europe.</li>
+<li>Datasets published by VU Researchers can be found at the <a href="https://research.vu.nl/en/datasets/">VU Research Portal</a>.</li>
 </ul>
 </section>
 </section>
-<section id="high-performance-computing" class="level2">
-<h2 class="anchored" data-anchor-id="high-performance-computing">High performance computing</h2>
-<p>If your pc or laptop takes too much time performing your analysis, it is time to scale up to a higher level. There are several options for employees and&nbsp;students who require more computing power than their own desktop or laptop can provide.</p>
-<p><img src="https://libapps-eu.s3.amazonaws.com/accounts/46351/images/noaa-ibmsupercomputer.gif" class="img-fluid"></p>
-<section id="when-do-you-need-access-to-high-performance-computing" class="level3">
-<h3 class="anchored" data-anchor-id="when-do-you-need-access-to-high-performance-computing">When do you need access to High Performance Computing?</h3>
-<p>Roughly speaking, you should try to get access to the HPC when you need to stick a post-it on your laptop or PC that says: “do not touch, analysis ongoing”. Or when you want to run analyses parallel to each other, because they take too long. It is important to consider such a situation at the very beginning of your research or when writing your Data Management Plan: is it conceivable that your dataset will become so large or your analysis so complicated that you will need HPC? Please note that this can occur for any discipline and any sort of data, qualitative and quantitative. If you may need HPC, you also need to reconsider your analysis methods. Programmes like SPSS and Excel do not run well on a HPC, and you would need to (learn to) write scripts in <a href="https://libguides.vu.nl/rdm/data-analysis">R or Python</a>. If you want to know if using HPC may be necessary or useful for your project, you can contact <a href="https://services.vu.nl/esc?id=emp_taxonomy_topic&amp;topic_id=4cb138ee97fa0950e553359fe153afff">IT for Research</a> to ask for more information.</p>
-<section id="surf-lisa-compute-cluster" class="level4">
-<h4 class="anchored" data-anchor-id="surf-lisa-compute-cluster">SURF Lisa Compute Cluster:</h4>
-<p><a href="https://services.vu.nl/esc?id=kb_article&amp;sysparm_article=KB0012774">Lisa Compute Cluster</a> is a centrally managed Linux cluster, that is ideal for large-scale computations. It’s a service comprising a wide range of resources, compilers and <a href="https://userinfo.surfsara.nl/systems/lisa/software"><strong>software</strong></a>, such as R statistics and MATLAB, and libraries, such as the Math Kernel Library (MKL) or Intel. SURFsara continually adjusts the service to the needs of the user community. For example, Lisa Compute Cluster includes accelerators (very fast processors) and high memory nodes (for users who need nodes with extra memory). When processing batch jobs, SURFsara applies a ‘fair share’ mechanism.</p>
-</section>
-<section id="bazis-compute-cluster" class="level4">
-<h4 class="anchored" data-anchor-id="bazis-compute-cluster">BAZIS Compute Cluster</h4>
-<p>IT for Research (ITvO) offers access to your own Linux computational cluster at the VU.<a href="https://services.vu.nl/esc?id=emp_taxonomy_topic&amp;topic_id=68b9e61f97cf09d0e553359fe153af51">BAZIS</a> is a managed service for high performance computing (HPC). Research groups can add their own compute servers to BAZIS and directly use software and options that are usually only available on a supercomputer. BAZIS also has 7 GPU nodes with 240GB memory and 32 cores for general use, sponsored by the VU HPC Counsel. Compute results are stored in Scistor and can be directly available on your own workstation for further analysis.</p>
-</section>
-<section id="surf-rccs" class="level4">
-<h4 class="anchored" data-anchor-id="surf-rccs">SURF RCCS</h4>
-<p><a href="https://services.vu.nl/esc?id=kb_article&amp;sysparm_article=KB0012777">SURF Research Capacity Computing Service</a> (RCCS) further extends the solutions available with the on-premise Bazis cluster and SURF Lisa CPU cluster with:</p>
+<section id="data-citation" class="level2">
+<h2 class="anchored" data-anchor-id="data-citation">Data Citation</h2>
+<section id="citation-elements" class="level3">
+<h3 class="anchored" data-anchor-id="citation-elements">Citation Elements</h3>
+<p>Citing data is not different from citing a publication. Make sure to check the rules of the journal to know how you should cite when writing an article for a specific academic journal. For all of the journals, however, the minimum compulsory elements in a data citation include:</p>
 <ul>
-<li>Access to <a href="https://www.surf.nl/en/lisa-compute-cluster-extra-processing-power-for-research">Lisa GPU island</a><br>
-</li>
-<li>Access to the <a href="https://www.surf.nl/en/dutch-national-supercomputer-snellius">National Supercomputer Snellius</a> at SURF<br>
-</li>
-<li>Access to <a href="https://www.surf.nl/en/hpc-cloud-your-flexible-compute-infrastructure">SURF HPC Cloud</a><br>
-</li>
-<li>Project space on SURF systems</li>
+<li>Author(s): Name of the author (creator) of the dataset</li>
+<li>Title: Name of the dataset</li>
+<li>Date of publication</li>
+<li>Publisher: Archive where dataset is stored</li>
+<li>Persistent Identifier: Unique identifier, most common is the DOI (see section <a href="http://libguides.vu.nl/researchdata/data-publication">Data Publication</a>).</li>
 </ul>
-<p>Watch <a href="https://youtu.be/z0dWGmFRjLs">this youtube video</a> for detailed information.</p>
-<p>To help you to efficiently use scientific software on your workstation or compute cluster there are regular training possibilities. Check in your department, at <a href="https://hpc.labs.vu.nl">https://hpc.labs.vu.nl</a> or <a href="https://training.prace-ri.eu/">https://training.prace-ri.eu/</a></p>
-<p>Please contact the&nbsp;<a href="https://services.vu.nl/esc?id=emp_taxonomy_topic&amp;topic_id=4cb138ee97fa0950e553359fe153afff">IT for Research department</a>&nbsp;in order to discuss your possibilities.</p>
-<p>For every step of your data analysis, good <a href="http://libguides.vu.nl/rdm/data-documentation">documentation</a> is necessary.</p>
+<p>Optional elements that may be included in the reference are:</p>
+<ul>
+<li>File Type: Codebook, movie, software</li>
+<li>Version: Version number of the edition</li>
+<li>Creation Date</li>
+<li>Date of Consultation (last)</li>
+</ul>
+<p><strong>Example of a data citation:</strong></p>
+<p>Stephens, William, 2020, “Resiliences to Radicalisation - QSort Data”, <a href="https://doi.org/10.34894/35MTMN">https://doi.org/10.34894/35MTMN</a>, DataverseNL, V1.</p>
+<p>For more information, see the following guidelines:</p>
+<ul>
+<li><a href="https://dataverse.org/best-practices/data-citation">Dataverse</a></li>
+<li><a href="https://datacite.org/cite-your-data.html">DataCite</a></li>
+<li><a href="http://www.dcc.ac.uk/resources/briefing-papers/introduction-curation/data-citation-and-linking">DCC UK</a></li>
+<li><a href="https://www.force11.org/group/joint-declaration-data-citation-principles-final">Data Citation Synthesis Group (2014). Joint Declaration of Data Citation Principles. Martone M. (ed.) San Diego CA: FORCE11</a></li>
+</ul>
+</section>
+<section id="citation-file" class="level3">
+<h3 class="anchored" data-anchor-id="citation-file">Citation file</h3>
+<p>A citation file is a computer file that contains all information needed to cite a dataset. Several data and software repositories, such as Zenodo and GitHub, support this format and enables enables others to easily select the citation information in their preferred format. Most reference managers (e.g., Zenodo) can work with these standardized citation files, and automatically format the references in a document.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../public/github_citation_file.png" title="Cite a GitHub repository that contains a citation file" class="img-fluid figure-img"></p>
+<figcaption>A screenshot of the interface to cite a GitHub repository</figcaption>
+</figure>
+</div>
+<p>An example, CFF-file is given below, but to enable you to easily create a CFF-file you can use this <a href="https://citation-file-format.github.io/cff-initializer-javascript/#/">website</a>.</p>
+<pre>cff-version: 1.2.0
+message: "If you use this data, please cite it as below."
+authors:
+ - family-names: Druskat
+   given-names: Stephan
+   orcid: https://orcid.org/1234-5678-9101-1121
+title: "My Research Software"
+version: 2.0.4
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.1234
+date-released: 2021-08-11
+</pre>
 
 
-</section>
 </section>
 </section>
 
@@ -737,7 +703,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </a>
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/pathways/process-and-analyze.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/guides/discover-and-initiate.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
