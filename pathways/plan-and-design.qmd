@@ -48,13 +48,17 @@ Most material costs of the storage solutions offered by the VU are covered centr
 
 Examples to put in a data management plan:
 
-| Data Stage     | Dataset                     | Type of data    | Costs                                                                                       |
-| -------------- | --------------------------- | --------------- | ------------------------------------------------------------------------------------------- |
-| Raw data       | Interviews                  | Audio files     | Audio equipment rental<br />Location rental costs<br />Data storage &amp; backup            |
-| Processed data | Transcription of interviews | Word files      | Personnel costs: hiring research assistants for manual entry<br />Data storage &amp; backup |
-|                | Analysis software           | R script        | Personnel costs: programmer to write a programme to mine the data                           |
-| Analysed data  | Regression graphic          | Photoshop files | Software costs                                                                              |
-|                | Project Website             | HTML, Java      | Hosting fee<br />Personnel to build initial website                                         |
+| Data Stage     | Dataset                     | Type of data    | Costs                                                             |
+|----------------|-----------------------------|-----------------|-------------------------------------------------------------------|
+| Raw data       | Interviews                  | Audio files     | Audio equipment rental                                            |
+|                |                             |                 | Location rental costs                                             |
+|                |                             |                 | Data storage &amp; backup                                         |
+| Processed data | Transcription of interviews | Word files      | Personnel costs: hiring research assistants for manual entry      |
+|                |                             |                 | Data storage &amp; backup                                         |
+|                | Analysis software           | R script        | Personnel costs: programmer to write a programme to mine the data |
+| Analysed data  | Regression graphic          | Photoshop files | Software costs                                                    |
+|                | Project Website             | HTML, Java      | Hosting fee                                                       |
+|                |                             |                 | Personnel to build initial website                                |
 
 ## RDM Requirements
 
@@ -204,7 +208,7 @@ On the VU Intranet [information](https://vu.nl/en/employee/emergencies/data-leak
   * a combination of information that uniquely singles out an individual (e.g. a male with breast cancer in a breast cancer registry, a pregnant individual over 50 etc.), this includes information in one record and information across different data files or datasets
   * unique information or patterns that are specific to an individual (e.g. genomic data, a very specific occupation, such as the president of a large company, repeated physical measurements or movement patterns that create a unique profile of an individual or measurements that are extreme and could be linked to subjects such as high-level athletes)
   * data that are linked to directly identifying information through a random identification code or number
-* **Pseudonymous data**: Data that are indirectly identifiable are generally considered to be pseudonymous; this means that they are NOT anonymous and still qualify as personal data. Therefore privacy laws, such as the GDPR, do in fact apply to these data. This is for example the case when direct identifiers are removed from the research data and put into a key file (or what is usually called a subject identification log in medical research) with which the direct identifiers can be mapped to the research data through unique codes, so that reidentification is possible. These data are therefore pseudonymous, and not anonymous. The LCRDM has made a [reference card](https://www.lcrdm.nl/files/lcrdm/2020-01/Anonymization - reference card for researchers.pdf) that illustrates the difference between pseudonymous and anonymous data.
+* **Pseudonymous data**: Data that are indirectly identifiable are generally considered to be pseudonymous; this means that they are NOT anonymous and still qualify as personal data. Therefore privacy laws, such as the GDPR, do in fact apply to these data. This is for example the case when direct identifiers are removed from the research data and put into a key file (or what is usually called a subject identification log in medical research) with which the direct identifiers can be mapped to the research data through unique codes, so that reidentification is possible. These data are therefore pseudonymous, and not anonymous. The LCRDM has made a [reference card](<https://www.lcrdm.nl/files/lcrdm/2020-01/Anonymization> - reference card for researchers.pdf) that illustrates the difference between pseudonymous and anonymous data.
 
 #### Background information
 
