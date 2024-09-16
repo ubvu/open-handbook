@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Discover &amp; Initiate Research – Research Support Handbook</title>
+<title>Data Citation – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -125,15 +159,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#finding-existing-data" id="toc-finding-existing-data" class="nav-link active" data-scroll-target="#finding-existing-data">Finding Existing Data</a>
-  <ul class="collapse">
-  <li><a href="#re-using-existing-data" id="toc-re-using-existing-data" class="nav-link" data-scroll-target="#re-using-existing-data">Re-using Existing Data</a></li>
+  <li><a href="#re-using-existing-data" id="toc-re-using-existing-data" class="nav-link active" data-scroll-target="#re-using-existing-data">Re-using Existing Data</a></li>
   <li><a href="#sources-for-finding-existing-datasets" id="toc-sources-for-finding-existing-datasets" class="nav-link" data-scroll-target="#sources-for-finding-existing-datasets">Sources for Finding Existing Datasets</a></li>
   <li><a href="#data-sources-for-vu-researchers" id="toc-data-sources-for-vu-researchers" class="nav-link" data-scroll-target="#data-sources-for-vu-researchers">Data Sources for VU Researchers</a></li>
-  </ul></li>
-  <li><a href="#data-citation" id="toc-data-citation" class="nav-link" data-scroll-target="#data-citation">Data Citation</a>
+  <li><a href="#citation-elements" id="toc-citation-elements" class="nav-link" data-scroll-target="#citation-elements">Citation Elements</a>
   <ul class="collapse">
-  <li><a href="#citation-elements" id="toc-citation-elements" class="nav-link" data-scroll-target="#citation-elements">Citation Elements</a></li>
   <li><a href="#citation-file" id="toc-citation-file" class="nav-link" data-scroll-target="#citation-file">Citation file</a></li>
   </ul></li>
   </ul>
@@ -144,7 +174,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Discover &amp; Initiate Research</h1>
+<h1 class="title">Data Citation</h1>
 </div>
 
 
@@ -161,19 +191,18 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<!-- markdownlint-disable-next-line MD033 -->
 <iframe width="560" height="315" src="https://www.youtube.com/embed/He96Mt0o00o?si=_gB6y8dgdpmyHoja" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
 </iframe>
-<section id="finding-existing-data" class="level2">
-<h2 class="anchored" data-anchor-id="finding-existing-data">Finding Existing Data</h2>
-<section id="re-using-existing-data" class="level3">
-<h3 class="anchored" data-anchor-id="re-using-existing-data">Re-using Existing Data</h3>
+<section id="re-using-existing-data" class="level2">
+<h2 class="anchored" data-anchor-id="re-using-existing-data">Re-using Existing Data</h2>
 <p>Anything that can be used for analysis can be considered “data(sets)”. Many national and international organisations provide access to large datasets free of charge: this is called <a href="https://opendefinition.org/">Open Data</a>.</p>
 <p>Datasets may contain different kinds of data files, e.g.&nbsp;raw or edited/cleaned data, and macro or micro data. <strong>Raw data</strong> refers to the data as they are primarily collected, and includes all data, even the missed or mismatched pieces in the data file. <strong>Edited or cleaned data</strong> refers to data that have been tidied up for analysis and publication. <strong>Macro data</strong> and statistics are results based on <strong>micro data</strong> units and provide a general overview of the micro data. Although datasets can contain data of varying type or aggregation level, and there may be overlap between these definitions, each element can contain very important information.</p>
 <p>When re-using research data, scientists must be familiar with the rules and regulations governing data copyright, intellectual property rights, and laws governing sensitive or personal information. SURF has compiled a <a href="https://www.surf.nl/en/report-the-legal-status-of-raw-data-a-guide-for-research-practice">report on the legal status of raw data</a> including information on the types of consent required for the re-use of data. Your <a href="https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information">Privacy Champion</a> can answer questions about the use of personal data. <a href="https://www.ixa.nl/for-researchers/">IXA</a> can provide legal help with the re-use of data.</p>
 <p>See also the ZonMw explanation of <a href="http://www.zonmw.nl/fileadmin/documenten/Toegang_Tot_Data__TTD/TTD_Toelichting_verschillende_eigendomsrechten.pdf">different kinds of property rights in the Netherlands</a> (text available in Dutch only).</p>
 </section>
-<section id="sources-for-finding-existing-datasets" class="level3">
-<h3 class="anchored" data-anchor-id="sources-for-finding-existing-datasets">Sources for Finding Existing Datasets</h3>
+<section id="sources-for-finding-existing-datasets" class="level2">
+<h2 class="anchored" data-anchor-id="sources-for-finding-existing-datasets">Sources for Finding Existing Datasets</h2>
 <p>The number of datasets that are available grows rapidly. Datasets are made available in many formats, by many people or organizations. Some datasets are raw files and some are specifically organised and formatted as databases that require a licence or subscription to use them. The library of the Vrije Universiteit Amsterdam has collected links to some of the data repositories used and has licensed several databases.</p>
 <ol type="1">
 <li><strong>Popular Free and Licensed Databases</strong>: These can be found in the <a href="http://www.ubvu.vu.nl/pub/index_oclc.cfm?SearchObjectId=7&amp;lang=_en&amp;ordering=1&amp;objectid=109">library e-resources list</a> or with <a href="https://vu.on.worldcat.org/advancedsearch">LibSearch Advanced</a>.</li>
@@ -187,8 +216,8 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Data portals of (governmental) organisations</strong>. Organisations that regularly collect (statistical) data sometimes offer these data through their own portal. An example is <a href="http://ec.europa.eu/eurostat/data/database">Eurostat</a>, which collects and disseminates statistics at the European level, by country and by theme. Some of these websites have been linked in the <a href="http://libguides.vu.nl/finding-data/international-organizations">Finding data LibGuide</a>.</li>
 </ol>
 </section>
-<section id="data-sources-for-vu-researchers" class="level3">
-<h3 class="anchored" data-anchor-id="data-sources-for-vu-researchers">Data Sources for VU Researchers</h3>
+<section id="data-sources-for-vu-researchers" class="level2">
+<h2 class="anchored" data-anchor-id="data-sources-for-vu-researchers">Data Sources for VU Researchers</h2>
 <p>Researchers from the Vrije Universiteit Amsterdam have also developed some databases containing data collected during research. See here for some examples:</p>
 <ul>
 <li><a href="http://www.tweelingenregister.org/">Nederlands Tweelingenregister</a> (Netherlands Twin Register) The database contains data on twins and their families and was created to do research on the relationship between genetics and growth, development, personality, behaviour, diseases, mental health and all kinds of risks.</li>
@@ -199,11 +228,8 @@ ul.task-list li input[type="checkbox"] {
 <li>Datasets published by VU Researchers can be found at the <a href="https://research.vu.nl/en/datasets/">VU Research Portal</a>.</li>
 </ul>
 </section>
-</section>
-<section id="data-citation" class="level2">
-<h2 class="anchored" data-anchor-id="data-citation">Data Citation</h2>
-<section id="citation-elements" class="level3">
-<h3 class="anchored" data-anchor-id="citation-elements">Citation Elements</h3>
+<section id="citation-elements" class="level2">
+<h2 class="anchored" data-anchor-id="citation-elements">Citation Elements</h2>
 <p>Citing data is not different from citing a publication. Make sure to check the rules of the journal to know how you should cite when writing an article for a specific academic journal. For all of the journals, however, the minimum compulsory elements in a data citation include:</p>
 <ul>
 <li>Author(s): Name of the author (creator) of the dataset</li>
@@ -228,7 +254,6 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="http://www.dcc.ac.uk/resources/briefing-papers/introduction-curation/data-citation-and-linking">DCC UK</a></li>
 <li><a href="https://www.force11.org/group/joint-declaration-data-citation-principles-final">Data Citation Synthesis Group (2014). Joint Declaration of Data Citation Principles. Martone M. (ed.) San Diego CA: FORCE11</a></li>
 </ul>
-</section>
 <section id="citation-file" class="level3">
 <h3 class="anchored" data-anchor-id="citation-file">Citation file</h3>
 <p>A citation file is a computer file that contains all information needed to cite a dataset. Several data and software repositories, such as Zenodo and GitHub, support this format and enables enables others to easily select the citation information in their preferred format. Most reference managers (e.g., Zenodo) can work with these standardized citation files, and automatically format the references in a document.</p>
@@ -239,19 +264,18 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <p>An example, CFF-file is given below, but to enable you to easily create a CFF-file you can use this <a href="https://citation-file-format.github.io/cff-initializer-javascript/#/">website</a>.</p>
-<pre>cff-version: 1.2.0
-message: "If you use this data, please cite it as below."
-authors:
- - family-names: Druskat
-   given-names: Stephan
-   orcid: https://orcid.org/1234-5678-9101-1121
-title: "My Research Software"
-version: 2.0.4
-identifiers:
-  - type: doi
-    value: 10.5281/zenodo.1234
-date-released: 2021-08-11
-</pre>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cff-version</span><span class="kw">:</span><span class="at"> </span><span class="fl">1.2.0</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">message</span><span class="kw">:</span><span class="at"> </span><span class="st">"If you use this data, please cite it as below."</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">authors</span><span class="kw">:</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="at"> </span><span class="kw">-</span><span class="at"> </span><span class="fu">family-names</span><span class="kw">:</span><span class="at"> Druskat</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="at">   </span><span class="fu">given-names</span><span class="kw">:</span><span class="at"> Stephan</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="at">   </span><span class="fu">orcid</span><span class="kw">:</span><span class="at"> https://orcid.org/1234-5678-9101-1121</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Research Software"</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">version</span><span class="kw">:</span><span class="at"> </span><span class="fl">2.0.4</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">identifiers</span><span class="kw">:</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">type</span><span class="kw">:</span><span class="at"> doi</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">value</span><span class="kw">:</span><span class="at"> 10.5281/zenodo.1234</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">date-released</span><span class="kw">:</span><span class="at"> 2021-08-11</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>bazis – {{&lt; var title &gt;}}</title>
+<title>BAZIS HPC – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -125,15 +159,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#bazis-hpc" id="toc-bazis-hpc" class="nav-link active" data-scroll-target="#bazis-hpc">BAZIS HPC</a>
-  <ul class="collapse">
-  <li><a href="#connect" id="toc-connect" class="nav-link" data-scroll-target="#connect">Connect</a>
+  <li><a href="#connect" id="toc-connect" class="nav-link active" data-scroll-target="#connect">Connect</a>
   <ul class="collapse">
   <li><a href="#ssh" id="toc-ssh" class="nav-link" data-scroll-target="#ssh">ssh</a></li>
   <li><a href="#eduvpn" id="toc-eduvpn" class="nav-link" data-scroll-target="#eduvpn">eduVPN</a></li>
   <li><a href="#data-transfer" id="toc-data-transfer" class="nav-link" data-scroll-target="#data-transfer">Data transfer</a></li>
   <li><a href="#advanced-using-ssh-keys" id="toc-advanced-using-ssh-keys" class="nav-link" data-scroll-target="#advanced-using-ssh-keys">Advanced: Using SSH keys</a></li>
   </ul></li>
+  <li><a href="#advanced-forwarding-x" id="toc-advanced-forwarding-x" class="nav-link" data-scroll-target="#advanced-forwarding-x">Advanced: Forwarding X</a></li>
+  <li><a href="#fix-warning-remote-host-identification-has-changed" id="toc-fix-warning-remote-host-identification-has-changed" class="nav-link" data-scroll-target="#fix-warning-remote-host-identification-has-changed">Fix Warning: Remote Host Identification Has Changed</a></li>
   <li><a href="#using-slurm" id="toc-using-slurm" class="nav-link" data-scroll-target="#using-slurm">Using Slurm</a>
   <ul class="collapse">
   <li><a href="#usefull-commands" id="toc-usefull-commands" class="nav-link" data-scroll-target="#usefull-commands">Usefull commands</a></li>
@@ -165,18 +199,31 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#reading" id="toc-reading" class="nav-link" data-scroll-target="#reading">Reading</a></li>
   </ul></li>
   <li><a href="#connect-to-vu-yodairods-with-icommands" id="toc-connect-to-vu-yodairods-with-icommands" class="nav-link" data-scroll-target="#connect-to-vu-yodairods-with-icommands">Connect to VU Yoda/iRODS with icommands</a></li>
-  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/bazis.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">BAZIS HPC</h1>
+</div>
 
 
 
-<section id="bazis-hpc" class="level1">
-<h1>BAZIS HPC</h1>
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
 <p>The BAZIS is a compute cluster for research at the Vrije Universiteit Amsterdam. It provides a service between the general facilties at the SURF HPC center and the desktop. It is a heterogenious system composed of clusters and servers from research departments and a general partition.</p>
 <p>In this topic you will find information to get you started and best practices. Clustercomputing can be very powerfull and usefull skill to add to your toolbox and get more science done.</p>
 <p>Also take a look at the <a href="https://servicedesk.surf.nl/wiki/display/WIKI/Snellius">SURF wiki about Snellius</a>, it contains a lot of information which applies to Bazis as well.</p>
@@ -192,7 +239,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="connect">Connect</h2>
 <section id="ssh" class="level3">
 <h3 class="anchored" data-anchor-id="ssh">ssh</h3>
-<p>Use your favourite SSH client to login at <your login=""><span class="citation" data-cites="bazis.labs.vu.nl">(<a href="#ref-bazis.labs.vu.nl" role="doc-biblioref"><strong>bazis.labs.vu.nl?</strong></a>)</span>. On windows we recommend MobaXterm or MS Terminal; Mac users can use iterm. Direct access is only possible from the Campus or from SURF. From other network locations first connect to the stepstone <vunetid><span class="citation" data-cites="ssh.data.vu.nl">(<a href="#ref-ssh.data.vu.nl" role="doc-biblioref"><strong>ssh.data.vu.nl?</strong></a>)</span>, or use eduVPN Institutional Access (below).</vunetid></your></p>
+<p>Use your favourite SSH client to login at <code>&lt;your login&gt;@bazis.labs.vu.nl</code>. On windows we recommend MobaXterm or MS Terminal; Mac users can use iterm. Direct access is only possible from the Campus or from SURF. From other network locations first connect to the stepstone <code>&lt;vu net id&gt;@ssh.data.vu.nl</code>, or use eduVPN Institutional Access (below).</p>
 </section>
 <section id="eduvpn" class="level3">
 <h3 class="anchored" data-anchor-id="eduvpn">eduVPN</h3>
@@ -224,41 +271,52 @@ ul.task-list li input[type="checkbox"] {
 <p>In your ~/.ssh directory you will find a public and private key. Make sure to keep the private key safe as anyone with the private key has access.</p>
 <p>Now, when you add your public key to the ~/.ssh/authorized_keys file in a remote system, your key will be used to login.</p>
 <p>You can either use copy-paste or the ssh-copy-id command:</p>
-<pre><code>$ ssh-copy-id user@remote-host
-The authenticity of host 'remote-host (192.168.111.135)' can't be established.
-ECDSA key fingerprint is SHA256:hXGpY0ALjXvDUDF1cDs2N8WRO9SuJZ/lfq+9q99BPV0.
-Are you sure you want to continue connecting (yes/no)? yes
-/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
-/usr/bin/ssh-copy-id: INFO: 2 key(s) remain to be installed -- if you are prompted now it is to install the new keys
-user@remote-host's password:
-
-Number of key(s) added: 2</code></pre>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ssh-copy-id user@remote-host</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">The</span> authenticity of host <span class="st">'remote-host (192.168.111.135)'</span> can<span class="st">'t be established.</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="st">ECDSA key fingerprint is SHA256:hXGpY0ALjXvDUDF1cDs2N8WRO9SuJZ/lfq+9q99BPV0.</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="st">Are you sure you want to continue connecting (yes/no)? yes</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="st">/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="st">/usr/bin/ssh-copy-id: INFO: 2 key(s) remain to be installed -- if you are prompted now it is to install the new keys</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="st">user@remote-host'</span>s password:</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ex">Number</span> of key<span class="er">(</span><span class="ex">s</span><span class="kw">)</span> <span class="ex">added:</span> 2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Now try logging into the machine, with: “ssh ‘user@remote-host’” and check to make sure that only the key(s) you wanted were added.</p>
-<p>##Advanced: Forwarding X</p>
-<p>##Fix Warning: Remote Host Identification Has Changed If you are sure that it is harmless and the remote host key has been changed in a legitimate way, you can skip the host key checking by sending the key to a null known_hosts file:</p>
-<pre><code>$ ssh -o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no" username@bazis.labs.vu.nl</code></pre>
-<p>To make the change permanent remove the offending host key from your ~/.ssh/known_hosts file with:</p>
-<pre><code>ssh-keygen -R "hostname"</code></pre>
-<hr>
-<p>References: 1. <a href="http://www.hpc-carpentry.org/hpc-shell/01-connecting/index.html">hpc carpentry</a> 2. <a href="https://goteleport.com/blog/comparing-ssh-keys/">Comparing SSH keys</a> 3. <a href="https://blog.vrypan.net/2013/08/28/public-key-cryptography-for-non-geeks/">public key cryptography for non geeks</a> 4. <a href="https://www.shellhacks.com/disable-ssh-host-key-checking">disable ssh host key checking</a></p>
 </section>
+</section>
+<section id="advanced-forwarding-x" class="level2">
+<h2 class="anchored" data-anchor-id="advanced-forwarding-x">Advanced: Forwarding X</h2>
+</section>
+<section id="fix-warning-remote-host-identification-has-changed" class="level2">
+<h2 class="anchored" data-anchor-id="fix-warning-remote-host-identification-has-changed">Fix Warning: Remote Host Identification Has Changed</h2>
+<p>If you are sure that it is harmless and the remote host key has been changed in a legitimate way, you can skip the host key checking by sending the key to a null known_hosts file:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh</span> <span class="at">-o</span> <span class="st">"UserKnownHostsFile=/dev/null"</span> <span class="at">-o</span> <span class="st">"StrictHostKeyChecking=no"</span> username@bazis.labs.vu.nl</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>To make the change permanent remove the offending host key from your ~/.ssh/known_hosts file with:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh-keygen</span> <span class="at">-R</span> <span class="st">"hostname"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+<p>References:</p>
+<ol type="1">
+<li><a href="http://www.hpc-carpentry.org/hpc-shell/01-connecting/index.html">hpc carpentry</a></li>
+<li><a href="https://goteleport.com/blog/comparing-ssh-keys/">Comparing SSH keys</a></li>
+<li><a href="https://blog.vrypan.net/2013/08/28/public-key-cryptography-for-non-geeks/">public key cryptography for non geeks</a></li>
+<li><a href="https://www.shellhacks.com/disable-ssh-host-key-checking">disable ssh host key checking</a></li>
+</ol>
 </section>
 <section id="using-slurm" class="level2">
 <h2 class="anchored" data-anchor-id="using-slurm">Using Slurm</h2>
 <section id="usefull-commands" class="level3">
 <h3 class="anchored" data-anchor-id="usefull-commands">Usefull commands</h3>
 <p>See jobs in the queue for a given user</p>
-<pre><code>   squeue -u username</code></pre>
+<div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>   <span class="ex">squeue</span> <span class="at">-u</span> username</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Show available node features</p>
-<pre><code>   sinfo -o "%20N  %10c  %10m  %25f  %10G "</code></pre>
+<div class="sourceCode" id="cb5"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>   <span class="ex">sinfo</span> <span class="at">-o</span> <span class="st">"%20N  %10c  %10m  %25f  %10G "</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Submit a job</p>
-<pre><code>   sbatch script</code></pre>
+<div class="sourceCode" id="cb6"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>   <span class="ex">sbatch</span> script</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Show the status of a currently running job</p>
-<pre><code>   sstat -j jobID</code></pre>
+<div class="sourceCode" id="cb7"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>   <span class="ex">sstat</span> <span class="at">-j</span> jobID</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Show the final status of a finished job</p>
-<pre><code>   sacct -j jobID</code></pre>
+<div class="sourceCode" id="cb8"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>   <span class="ex">sacct</span> <span class="at">-j</span> jobID</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Cancel a job</p>
-<pre><code>   scancel jobid</code></pre>
+<div class="sourceCode" id="cb9"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>   <span class="ex">scancel</span> jobid</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="best-practices" class="level3">
 <h3 class="anchored" data-anchor-id="best-practices">Best practices</h3>
@@ -269,9 +327,9 @@ Number of key(s) added: 2</code></pre>
 <h3 class="anchored" data-anchor-id="constraints">Constraints</h3>
 <p>The SLURM constraint option allows for further control over which nodes your job can be scheduled on in a particular parition/queue. You may require a specific processor family or network interconnect. The features that can be used with the sbatch constraint option are defined by the system administrator and thus vary among HPC sites.</p>
 <p>Constraints available on BAZIS are cpu architecture and gpu. Example (singole constraint):</p>
-<pre><code>#SBATCH --constraint=zen2</code></pre>
+<div class="sourceCode" id="cb10"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --constraint=zen2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Example combining constraints:</p>
-<pre><code>#SBATCH --constraint="zen2|haswell"</code></pre>
+<div class="sourceCode" id="cb11"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --constraint="zen2|haswell"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="computer-architecture" class="level3">
 <h3 class="anchored" data-anchor-id="computer-architecture">Computer architecture</h3>
@@ -310,20 +368,20 @@ Number of key(s) added: 2</code></pre>
 <h3 class="anchored" data-anchor-id="slurm-example-jobs">Slurm example jobs</h3>
 <section id="simple-job" class="level4">
 <h4 class="anchored" data-anchor-id="simple-job">simple job</h4>
-<pre><code>#!/bin/bash -l
-#SBATCH -J MyTestJob
-#SBATCH -N 1
-#SBATCH -p defq
-
-echo "== Starting run at $(date)"
-echo "== Job ID: ${SLURM_JOBID}"
-echo "== Node list: ${SLURM_NODELIST}"
-echo "== Submit dir. : ${SLURM_SUBMIT_DIR}"
-echo "== Scratch dir. : ${TMPDIR}"
-
-cd $TMPDIR
-# Your more useful application can be started below!
-hostname</code></pre>
+<div class="sourceCode" id="cb12"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>    <span class="co">#!/bin/bash -l</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">#SBATCH -J MyTestJob</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">#SBATCH -N 1</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>    <span class="co">#SBATCH -p defq</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"== Starting run at </span><span class="va">$(</span><span class="fu">date</span><span class="va">)</span><span class="st">"</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"== Job ID: </span><span class="va">${SLURM_JOBID}</span><span class="st">"</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"== Node list: </span><span class="va">${SLURM_NODELIST}</span><span class="st">"</span></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"== Submit dir. : </span><span class="va">${SLURM_SUBMIT_DIR}</span><span class="st">"</span></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"== Scratch dir. : </span><span class="va">${TMPDIR}</span><span class="st">"</span></span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>    <span class="bu">cd</span> <span class="va">$TMPDIR</span></span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Your more useful application can be started below!</span></span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">hostname</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 </section>
 </section>
@@ -339,19 +397,19 @@ hostname</code></pre>
 <p>Your project space lives in the filesystem under: /scratch-shared/ws</p>
 <p>The project space is managed with the hpc-workspace tooling You can add them to your environment with: <code>module load hpc-workspace</code></p>
 <p>Example: setup a workspace “MyData” in a batchjob for 10 days.</p>
-<pre><code>SCR=$(ws_allocate MyData 10)
-cd $SCR</code></pre>
+<div class="sourceCode" id="cb13"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="va">SCR</span><span class="op">=</span><span class="va">$(</span><span class="ex">ws_allocate</span> MyData 10<span class="va">)</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> <span class="va">$SCR</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Check your workspaces</p>
-<pre><code>$ ws_list 
-id: MyData
-     workspace directory  : /scratch-shared/ws/username-MyData
-     remaining time       : 9 days 23 hours
-     creation time        : Wed Mar 13 23:51:57 2013
-     expiration date      : Sat Mar 23 23:51:57 2013
-     available extensions : 15</code></pre>
+<div class="sourceCode" id="cb14"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ws_list </span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="ex">id:</span> MyData</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>     <span class="ex">workspace</span> directory  : /scratch-shared/ws/username-MyData</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>     <span class="ex">remaining</span> time       : 9 days 23 hours</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>     <span class="ex">creation</span> time        : Wed Mar 13 23:51:57 2013</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>     <span class="ex">expiration</span> date      : Sat Mar 23 23:51:57 2013</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>     <span class="ex">available</span> extensions : 15</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Release the project space with</p>
-<pre><code>ws_release MyData</code></pre>
-<p>For user guide see https://github.com/holgerBerger/hpc-workspace/blob/master/user-guide.md</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ex">ws_release</span> MyData</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>For user guide see <a href="https://github.com/holgerBerger/hpc-workspace/blob/master/user-guide.md" class="uri">https://github.com/holgerBerger/hpc-workspace/blob/master/user-guide.md</a></p>
 </section>
 </section>
 <section id="python-virtual-environments" class="level2">
@@ -364,29 +422,41 @@ id: MyData
 <li>directories, and paths so that you can work with specific versions of libraries or Python itself without affecting other Python projects.</li>
 <li>Virtual environmets make it easy to cleanly separate different projects and avoid problems with different dependencies and version requirements across components.</li>
 </ul>
-<p>In short: - use virtualenv (preferred) or conda - create an isolated environment - Install packages - Activate a virtual environment - Deactivate a virtual environment - Delete a virtual environment</p>
+<p>In short:</p>
+<ul>
+<li>use virtualenv (preferred) or conda</li>
+<li>create an isolated environment</li>
+<li>Install packages</li>
+<li>Activate a virtual environment</li>
+<li>Deactivate a virtual environment</li>
+<li>Delete a virtual environment</li>
+</ul>
 <section id="adding-a-requirements-file" class="level3">
 <h3 class="anchored" data-anchor-id="adding-a-requirements-file">Adding a requirements file</h3>
 <p>Python requirements files are a great way to keep track of the Python modules. It is a simple text file that saves a list of the modules and packages required by your project. By creating a Python requirements.txt file, you save yourself the hassle of having to track down and install all of the required modules manually.</p>
 <p>A reuirements file is a simple text file, which looks like this.</p>
-<pre><code>tensorflow==2.3.1
-uvicorn==0.12.2
-fastapi==0.63.0</code></pre>
+<div class="sourceCode" id="cb16"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="va">tensorflow</span><span class="op">=</span>=2.3.1</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="va">uvicorn</span><span class="op">=</span>=0.12.2</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="va">fastapi</span><span class="op">=</span>=0.63.0</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Installing modules from a requirements file is easy as.</p>
-<pre><code>pip install -r requirements.txt</code></pre>
+<div class="sourceCode" id="cb17"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-r</span> requirements.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>A requirements file can also be generated with:</p>
-<pre><code>pip freeze &gt; requirements.txt</code></pre>
+<div class="sourceCode" id="cb18"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> freeze <span class="op">&gt;</span> requirements.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>See the article referenced below for more information.</p>
 </section>
 <section id="portable-scripts" class="level3">
 <h3 class="anchored" data-anchor-id="portable-scripts">Portable scripts</h3>
 <p>The first line in a script usually starts the interpreter and is called the Shebang. It is recommended to use /usr/bin/env, which can interpret your $PATH. This makes scripts more portable than hard coded paths..</p>
-<pre><code>#!/usr/local/bin/python
-Will only run your script if python is installed in /usr/local/bin.</code></pre>
-<pre><code>#!/usr/bin/env python
-Will interpret your $PATH, and find python in any directory in your $PATH.</code></pre>
+<div class="sourceCode" id="cb19"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/usr/local/bin/python</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Will</span> only run your script if python is installed in /usr/local/bin.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/usr/bin/env python</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Will</span> interpret your <span class="va">$PATH</span>, and find python in any directory in your <span class="va">$PATH</span>.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>So your script is more portable, and will work without modification on systems where python is installed as /usr/bin/python, or /usr/local/bin/python, or even custom directories (that have been added to $PATH), like /opt/local/bin/python.</p>
-<p>Further Reading * <a href="https://realpython.com/python-virtual-environments-a-primer/#an-isolated-python-installation">python virtual environments primer</a> * <a href="https://learnpython.com/blog/python-requirements-file">python requirements.txt file</a></p>
+<p>Further Reading</p>
+<ul>
+<li><a href="https://realpython.com/python-virtual-environments-a-primer/#an-isolated-python-installation">python virtual environments primer</a></li>
+<li><a href="https://learnpython.com/blog/python-requirements-file">python requirements.txt file</a></li>
+</ul>
 </section>
 </section>
 <section id="r-environment" class="level2">
@@ -403,17 +473,20 @@ Will interpret your $PATH, and find python in any directory in your $PATH.</code
 <h4 class="anchored" data-anchor-id="producing-png-graphics-and-x11-related-plotting-errors">Producing PNG graphics and X11 related plotting errors</h4>
 <p>The png() default device used the X11 driver, which is not avaialble in batch mode or remote operation. Adding the type=“cairo” option to your code solves this issue.</p>
 <p>Example:</p>
-<pre><code>pdf(file = "testR.pdf", width = 4, height = 4)
-plot(x = 1:10, y = 1:10)
-abline(v = 0 )
-text(x=0, y=1, labels = "random text")
-dev.off()</code></pre>
-<pre><code>png(file = "testR.png", type="cairo", width = 4, height = 4)
-plot(x = 1:10, y = 1:10)
-abline(v = 0 )
-text(x=0, y=1, labels = "random text")
-dev.off()</code></pre>
-<p>References * <a href="https://cran.r-project.org/doc/FAQ/R-FAQ.html#How-do-I-produce-PNG-graphics-in-batch-mode_003f">How do I produce PNG graphics in batch mode?</a></p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pdf</span><span class="er">(</span><span class="fu">file</span> = <span class="st">"testR.pdf"</span>, width = 4, height = 4<span class="kw">)</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="ex">plot</span><span class="er">(</span><span class="ex">x</span> = 1:10, y = 1:10<span class="kw">)</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="ex">abline</span><span class="er">(</span><span class="ex">v</span> = 0 <span class="kw">)</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="ex">text</span><span class="er">(</span><span class="va">x</span><span class="op">=</span>0, <span class="va">y</span><span class="op">=</span>1, <span class="ex">labels</span> = <span class="st">"random text"</span><span class="kw">)</span></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.off()</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="ex">png</span><span class="er">(</span><span class="fu">file</span> = <span class="st">"testR.png"</span>, type=<span class="st">"cairo"</span>, width = 4, height = 4<span class="kw">)</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="ex">plot</span><span class="er">(</span><span class="ex">x</span> = 1:10, y = 1:10<span class="kw">)</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="ex">abline</span><span class="er">(</span><span class="ex">v</span> = 0 <span class="kw">)</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="ex">text</span><span class="er">(</span><span class="va">x</span><span class="op">=</span>0, <span class="va">y</span><span class="op">=</span>1, <span class="ex">labels</span> = <span class="st">"random text"</span><span class="kw">)</span></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.off()</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>References</p>
+<ul>
+<li><a href="https://cran.r-project.org/doc/FAQ/R-FAQ.html#How-do-I-produce-PNG-graphics-in-batch-mode_003f">How do I produce PNG graphics in batch mode?</a></li>
+</ul>
 </section>
 </section>
 </section>
@@ -423,54 +496,54 @@ dev.off()</code></pre>
 <section id="interactive" class="level3">
 <h3 class="anchored" data-anchor-id="interactive">Interactive</h3>
 <p>Request resources (1 node, 1 cpu) in a partition</p>
-<pre><code>srun -N 1 -p defq --pty /bin/bash
-module load matlab/R2023a
-cd your/data/</code></pre>
+<div class="sourceCode" id="cb23"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="ex">srun</span> <span class="at">-N</span> 1 <span class="at">-p</span> defq <span class="at">--pty</span> /bin/bash</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load matlab/R2023a</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> your/data/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Here is an example of a trivial MATLAB script (hello_world.m):</p>
-<pre><code>fprintf('Hello world.\n')</code></pre>
+<div class="sourceCode" id="cb24"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="ex">fprintf</span><span class="er">(</span><span class="st">'Hello world.\n'</span><span class="kw">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Run with matlab using only one computational thread.</p>
-<pre><code>$ matlab -nodisplay -singleCompThread -r hello_world
-Hello world.
-&gt;&gt;</code></pre>
+<div class="sourceCode" id="cb25"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> matlab <span class="at">-nodisplay</span> <span class="at">-singleCompThread</span> <span class="at">-r</span> hello_world</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Hello</span> world.</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Matlab waits at the end of the script if there is no exit. In an compute job this would keep the job running untill the wallclocklimit so we add an exit at the end. The convenient “-batch” option combines these options.</p>
-<pre><code>-batch MATLAB_command   - Start MATLAB and execute the MATLAB command(s) with no desktop
-                              and certain interactive capabilities disabled. Terminates
-                              upon successful completion of the command and returns exit
-                              code 0. Upon failure, MATLAB terminates with a non-zero exit.
-                              Cannot be combined with -r.</code></pre>
-<pre><code>$ matlab -batch hello_world</code></pre>
+<div class="sourceCode" id="cb26"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="ex">-batch</span> MATLAB_command   <span class="at">-</span> Start MATLAB and execute the MATLAB command<span class="er">(</span><span class="ex">s</span><span class="kw">)</span> <span class="ex">with</span> no desktop</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>                              <span class="ex">and</span> certain interactive capabilities disabled. Terminates</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>                              <span class="ex">upon</span> successful completion of the command and returns exit</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>                              <span class="ex">code</span> 0. Upon failure, MATLAB terminates with a non-zero exit.</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>                              <span class="ex">Cannot</span> be combined with <span class="at">-r.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="ex">matlab</span> <span class="at">-batch</span> hello_world</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="batch-mode" class="level3">
 <h3 class="anchored" data-anchor-id="batch-mode">Batch mode</h3>
 <p>Combining this in a slurm script we can queue matlab workloads.</p>
-<pre><code>    #!/bin/bash -l
-    #SBATCH -J MyMatlab
-    #SBATCH -N 1
-    #SBATCH --cpus-per-task=1
-    #SBATCH -p defq   
-    #SBATCH --output=%x_%j.out
-    #SBATCH --error=%x_%j.err
-    #SBATCH --mail-type=END,FAIL
-    #SBATCH --mail-user=&lt;YOUR EMAIL&gt;
-    
-    # Note: for parallel operations increase cpus-per-task above
-    # Note 2: output and error logs can be given absolute paths 
-    
-    echo "== Starting run at $(date)"
-    echo "== Job ID: ${SLURM_JOBID}"
-    echo "== Node list: ${SLURM_NODELIST}"
-    echo "== Submit dir. : ${SLURM_SUBMIT_DIR}"
-    echo "== Scratch dir. : ${TMPDIR}"
-    
-    # cd $TMPDIR
-    # or change to a project folder with matlab file e.g. hello_World.m
-    # cd your/data
-
-    # Load matlab module
-    module load 2022 matlab/R2023a
-    
-    # execute
-    matlab -batch hello_world</code></pre>
+<div class="sourceCode" id="cb28"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>    <span class="co">#!/bin/bash -l</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">#SBATCH -J MyMatlab</span></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">#SBATCH -N 1</span></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>    <span class="co">#SBATCH --cpus-per-task=1</span></span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>    <span class="co">#SBATCH -p defq   </span></span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>    <span class="co">#SBATCH --output=%x_%j.out</span></span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>    <span class="co">#SBATCH --error=%x_%j.err</span></span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a>    <span class="co">#SBATCH --mail-type=</span><span class="re">END</span><span class="co">,FAIL</span></span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a>    <span class="co">#SBATCH --mail-user=&lt;YOUR EMAIL&gt;</span></span>
+<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Note: for parallel operations increase cpus-per-task above</span></span>
+<span id="cb28-12"><a href="#cb28-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Note 2: output and error logs can be given absolute paths </span></span>
+<span id="cb28-13"><a href="#cb28-13" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb28-14"><a href="#cb28-14" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"== Starting run at </span><span class="va">$(</span><span class="fu">date</span><span class="va">)</span><span class="st">"</span></span>
+<span id="cb28-15"><a href="#cb28-15" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"== Job ID: </span><span class="va">${SLURM_JOBID}</span><span class="st">"</span></span>
+<span id="cb28-16"><a href="#cb28-16" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"== Node list: </span><span class="va">${SLURM_NODELIST}</span><span class="st">"</span></span>
+<span id="cb28-17"><a href="#cb28-17" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"== Submit dir. : </span><span class="va">${SLURM_SUBMIT_DIR}</span><span class="st">"</span></span>
+<span id="cb28-18"><a href="#cb28-18" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="st">"== Scratch dir. : </span><span class="va">${TMPDIR}</span><span class="st">"</span></span>
+<span id="cb28-19"><a href="#cb28-19" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb28-20"><a href="#cb28-20" aria-hidden="true" tabindex="-1"></a>    <span class="co"># cd $TMPDIR</span></span>
+<span id="cb28-21"><a href="#cb28-21" aria-hidden="true" tabindex="-1"></a>    <span class="co"># or change to a project folder with matlab file e.g. hello_World.m</span></span>
+<span id="cb28-22"><a href="#cb28-22" aria-hidden="true" tabindex="-1"></a>    <span class="co"># cd your/data</span></span>
+<span id="cb28-23"><a href="#cb28-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-24"><a href="#cb28-24" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Load matlab module</span></span>
+<span id="cb28-25"><a href="#cb28-25" aria-hidden="true" tabindex="-1"></a>    <span class="ex">module</span> load 2022 matlab/R2023a</span>
+<span id="cb28-26"><a href="#cb28-26" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb28-27"><a href="#cb28-27" aria-hidden="true" tabindex="-1"></a>    <span class="co"># execute</span></span>
+<span id="cb28-28"><a href="#cb28-28" aria-hidden="true" tabindex="-1"></a>    <span class="ex">matlab</span> <span class="at">-batch</span> hello_world</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="parpool" class="level3">
 <h3 class="anchored" data-anchor-id="parpool">Parpool</h3>
@@ -485,14 +558,13 @@ Hello world.
 <section id="connect-to-vu-yodairods-with-icommands" class="level2">
 <h2 class="anchored" data-anchor-id="connect-to-vu-yodairods-with-icommands">Connect to VU Yoda/iRODS with icommands</h2>
 <p>iRODS/Yoda is a middleware and webinterface to store enriched data. On BAZIS the icommands are available to allow direct access.</p>
-<p>To use the icommands a configuration file in your home folder is required. https://yoda.vu.nl/site/getting-started/icommands.html#configuration</p>
+<p>To use the icommands a configuration file in your home folder is required. <a href="https://yoda.vu.nl/site/getting-started/icommands.html#configuration" class="uri">https://yoda.vu.nl/site/getting-started/icommands.html#configuration</a></p>
 <p>After configuration use <code>iinit</code> to connect, use a Data Access Password, similar to a WebDAV connection.</p>
-<p>Find an overview of the icommands here: https://docs.irods.org/master/icommands/user/ Check the <code>ipwd</code>, <code>ils</code>, <code>icd</code>, <code>iput</code>, <code>iget</code> en <code>irsync</code> commands for navigation and data transfer.</p>
+<p>Find an overview of the icommands here: <a href="https://docs.irods.org/master/icommands/user/" class="uri">https://docs.irods.org/master/icommands/user/</a> Check the <code>ipwd</code>, <code>ils</code>, <code>icd</code>, <code>iput</code>, <code>iget</code> en <code>irsync</code> commands for navigation and data transfer.</p>
 <p>Your project folder is located at <code>/vu/home</code></p>
 <p><a href="https://docs.irods.org/master/icommands/user/">icommands</a> <a href="https://yoda.vu.nl">Yoda-VU</a></p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

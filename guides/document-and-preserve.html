@@ -173,7 +173,12 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="storing-vs.-archiving-data">Storing vs.&nbsp;Archiving Data</h3>
 <p>There is a difference between storing and archiving data. Storing refers to putting the data in a safe location while the research is ongoing. Because you are still working on the data, the data still change from time to time: they are cleaned, and analysed, and this analysis generates output. As the image below illustrates, storing could be like cooking a dish: you are cleaning and combining ingredients.</p>
 <p>Archiving, on the other hand, refers to putting the data in a safe place after the research is finished. The data are in a fixed state, they don’t change anymore. Archiving is done for verification purposes: so others can check that your research is sound. Or: it is done so that others can reuse the resulting dataset. There is also a <a href="https://libguides.vu.nl/rdm/selecting-archive?#s-lg-box-wrapper-16034272">difference between archiving and publishing</a>, but in essence, archiving and publishing happen at a similar moment and for both, data do not change anymore.</p>
-<p><img src="https://libapps-eu.s3.amazonaws.com/accounts/144379/images/storage-archiving.jpg" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://libapps-eu.s3.amazonaws.com/accounts/144379/images/storage-archiving.jpg" class="img-fluid figure-img"></p>
+<figcaption>A Scriberia sketch about archiving and storage</figcaption>
+</figure>
+</div>
 <p><em>This illustration is created by Scriberia with The Turing Way community. Used under a CC-BY 4.0 licence. DOI: <a href="https://doi.org/10.5281/zenodo.3332807">10.5281/zenodo.3332807</a></em></p>
 </section>
 <section id="selecting-data-for-archiving" class="level3">
@@ -232,7 +237,13 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="data-documentation">Data Documentation</h2>
 <section id="documenting-your-data" class="level3">
 <h3 class="anchored" data-anchor-id="documenting-your-data">Documenting your data</h3>
-<p>Data documentation aims to describe the collected data to make <img src="../s3.amazonaws.com/libapps/accounts/62029/images/Metadata.png" class="img-fluid">it easier to use, retrieve and manage. Data documentation takes various forms and describes the data on multiple levels. The description of the dataset and data object is also referred to as metadata, i.e.&nbsp;data about the data. One way to do add metadata is to attach a readme file to your data. <a href="https://datasupport.researchdata.nl/en/start-the-course/iii-research-phase/data-documentation">ResearchData NL</a> offers guidance for this. The CESSDA has made very detailed guidance available for creating <a href="https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide/2.-Organise-Document/Documentation-and-metadata">documentation and metadata</a> for your data.</p>
+<p>Data documentation aims to describe the collected data to make it easier to use, retrieve and manage. Data documentation takes various forms and describes the data on multiple levels. The description of the dataset and data object is also referred to as metadata, i.e.&nbsp;data about the data. One way to do add metadata is to attach a readme file to your data. <a href="https://datasupport.researchdata.nl/en/start-the-course/iii-research-phase/data-documentation">ResearchData NL</a> offers guidance for this. The CESSDA has made very detailed guidance available for creating <a href="https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide/2.-Organise-Document/Documentation-and-metadata">documentation and metadata</a> for your data.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://s3.amazonaws.com/libapps/accounts/62029/images/Metadata.png" class="img-fluid figure-img"></p>
+<figcaption>An image layering five different kinds of metadata, with the FAIR principles on the outside, followed by discipline metadata standards, project documentation, metadata data set, and metadata data object.</figcaption>
+</figure>
+</div>
 <p>In addition to describing their own datasets and objects, researchers can cross-refer to the project proposal where other researchers can find information about the research, e.g.&nbsp;aims and goals, methodology and data collection, the persons responsible for the project etc. The type of research and the nature of the data also influence what kind of documentation is necessary.</p>
 <p>Different types of data are governed by different standards (see also the image above), and these should be taken into account when documenting data. These requirements include, but are not limited to:</p>
 <ol type="1">
@@ -246,7 +257,12 @@ ul.task-list li input[type="checkbox"] {
 <section id="codebooks" class="level3">
 <h3 class="anchored" data-anchor-id="codebooks">Codebooks</h3>
 <p>A codebook is a technical description of the data that were collected for a particular purpose in one or more datasets. It describes how the data are arranged in the computer file or files and what the parts or variables (numbers and letters) mean. A good description may also include specific instructions on how to use and interpret the data properly.</p>
-<p><img src="https://libapps-eu.s3.amazonaws.com/accounts/46351/images/pivot-table-layout-in-excel-2003.gif" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://libapps-eu.s3.amazonaws.com/accounts/46351/images/pivot-table-layout-in-excel-2003.gif" class="img-fluid figure-img"></p>
+<figcaption>A low resolution screenshot of a spreadsheet</figcaption>
+</figure>
+</div>
 <p>Like any other kind of “book,” some codebooks are better than others. The best codebooks include the following elements:</p>
 <ul>
 <li>Description of the study: who did it, why they did it, how they did it</li>
@@ -285,14 +301,14 @@ ul.task-list li input[type="checkbox"] {
 <p>The CESSDA has created <a href="https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide/2.-Organise-Document/Documentation-and-metadata">helpful guidance</a> about creating metadata.</p>
 <p>There are three main levels of metadata: Data assets, Dataset documentation and Dataset registration (<a href="https://guides.lib.utexas.edu/metadata-basics/intro">more information</a>):.</p>
 <section id="data-assets" class="level4">
-<h4 class="anchored" data-anchor-id="data-assets"><strong>Data assets</strong></h4>
+<h4 class="anchored" data-anchor-id="data-assets">Data assets</h4>
 <p>On a micro-level there are four functional categories of metadata standards for datasets themselves that describe elements like structure, content, values (definitions, see also code book), and data formats (CSV, XML, etc.). Additionally, research groups often use a discipline’s standards to also describe data objects using naming conventions. There are, however, other guidelines for naming conventions and document versioning which can be useful for all documents, independent of whether they are research data or not. Often The table below gives an example of this.</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 6%">
-<col style="width: 20%">
 <col style="width: 9%">
-<col style="width: 62%">
+<col style="width: 27%">
+<col style="width: 10%">
+<col style="width: 52%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -318,14 +334,20 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td>Analysed data</td>
 <td>Photo Images with descriptions</td>
-<td>TIFF files, Word file</td>
-<td><code>C:\Images\Raw\2016-07-01_Subject1-V2.tiff  C:\Images\Clean\2016-07-01_Subject1-H1c.tiff</code><br><code>C:\Images\Clean\Descript\2016-07-01_Subject1-H1c.Docx</code></td>
+<td>TIFF files</td>
+<td><code>C:\Images\Raw\2016-07-01_Subject1-V2.tiff    C:\Images\Clean\2016-07-01_Subject1-H1c.tiff</code></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td>Word files</td>
+<td><code>C:\Images\Clean\Descript\2016-07-01_Subject1-H1c.Docx</code></td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="dataset-documentation" class="level4">
-<h4 class="anchored" data-anchor-id="dataset-documentation"><strong>Dataset documentation</strong></h4>
+<h4 class="anchored" data-anchor-id="dataset-documentation">Dataset documentation</h4>
 <p>On this general, descriptive, level the metadata concerns <a href="https://libguides.vu.nl/rdm/selecting-data-archiving?#s-lg-box-wrapper-15125674">data packaging</a> &amp; <a href="https://vu-nl.libapps.com/libguides/admin_c.php?g=683732&amp;p=4880184#s-lg-box-wrapper-15265799">metadata documentation</a> on the dataset. It can include items like:</p>
 <ul>
 <li>Readme files that lists the period of research, collaborators, a short description of the research as well as the elements within the dataset</li>
