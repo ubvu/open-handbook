@@ -136,10 +136,7 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#data-analysis-1" id="toc-data-analysis-1" class="nav-link" data-scroll-target="#data-analysis-1">Data Analysis</a></li>
   <li><a href="#open-software" id="toc-open-software" class="nav-link" data-scroll-target="#open-software">Open Software</a></li>
-  </ul></li>
-  <li><a href="#high-performance-computing" id="toc-high-performance-computing" class="nav-link" data-scroll-target="#high-performance-computing">High performance computing</a>
-  <ul class="collapse">
-  <li><a href="#when-do-you-need-access-to-high-performance-computing" id="toc-when-do-you-need-access-to-high-performance-computing" class="nav-link" data-scroll-target="#when-do-you-need-access-to-high-performance-computing">When do you need access to High Performance Computing?</a></li>
+  <li><a href="#compute-services" id="toc-compute-services" class="nav-link" data-scroll-target="#compute-services">Compute services</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/guides/process-and-analyze.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -253,40 +250,49 @@ If you use software for analysing personal or otherwise sensitive data, you need
 <li>A list of RDM tools, on <a href="https://htmlpreview.github.io/?https://github.com/vu-rdm-tech/api-scripts/blob/master/tool_descriptions/doctext.html">GitHub</a></li>
 </ul>
 </section>
-</section>
-<section id="high-performance-computing" class="level2">
-<h2 class="anchored" data-anchor-id="high-performance-computing">High performance computing</h2>
+<section id="compute-services" class="level3">
+<h3 class="anchored" data-anchor-id="compute-services">Compute services</h3>
+<!--# I'm thinking this might also be worh its own topic page -->
 <p>If your pc or laptop takes too much time performing your analysis, it is time to scale up to a higher level. There are several options for employees and&nbsp;students who require more computing power than their own desktop or laptop can provide.</p>
+<p>Several options are detailed below. <a href="https://services.vu.nl/esc?id=sc_cat_item&amp;sys_id=4e079166978d5950e553359fe153afc5">Contact IT for Research</a> for advice on which solution could best fit your workflow</p>
+<section id="high-performance-computing-hpc" class="level4">
+<h4 class="anchored" data-anchor-id="high-performance-computing-hpc">High Performance Computing (HPC)</h4>
 <p><img src="https://libapps-eu.s3.amazonaws.com/accounts/46351/images/noaa-ibmsupercomputer.gif" class="img-fluid"></p>
-<section id="when-do-you-need-access-to-high-performance-computing" class="level3">
-<h3 class="anchored" data-anchor-id="when-do-you-need-access-to-high-performance-computing">When do you need access to High Performance Computing?</h3>
-<p>Roughly speaking, you should try to get access to the HPC when you need to stick a post-it on your laptop or PC that says: “do not touch, analysis ongoing”. Or when you want to run analyses parallel to each other, because they take too long. It is important to consider such a situation at the very beginning of your research or when writing your Data Management Plan: is it conceivable that your dataset will become so large or your analysis so complicated that you will need HPC? Please note that this can occur for any discipline and any sort of data, qualitative and quantitative. If you may need HPC, you also need to reconsider your analysis methods. Programmes like SPSS and Excel do not run well on a HPC, and you would need to (learn to) write scripts in <a href="https://libguides.vu.nl/rdm/data-analysis">R or Python</a>. If you want to know if using HPC may be necessary or useful for your project, you can contact <a href="https://services.vu.nl/esc?id=emp_taxonomy_topic&amp;topic_id=4cb138ee97fa0950e553359fe153afff">IT for Research</a> to ask for more information.</p>
-<section id="surf-lisa-compute-cluster" class="level4">
-<h4 class="anchored" data-anchor-id="surf-lisa-compute-cluster">SURF Lisa Compute Cluster:</h4>
-<p><a href="https://services.vu.nl/esc?id=kb_article&amp;sysparm_article=KB0012774">Lisa Compute Cluster</a> is a centrally managed Linux cluster, that is ideal for large-scale computations. It’s a service comprising a wide range of resources, compilers and <a href="https://userinfo.surfsara.nl/systems/lisa/software"><strong>software</strong></a>, such as R statistics and MATLAB, and libraries, such as the Math Kernel Library (MKL) or Intel. SURFsara continually adjusts the service to the needs of the user community. For example, Lisa Compute Cluster includes accelerators (very fast processors) and high memory nodes (for users who need nodes with extra memory). When processing batch jobs, SURFsara applies a ‘fair share’ mechanism.</p>
+<p>Roughly speaking, you should try to get access to the HPC when you need to stick a post-it on your laptop or PC that says: “do not touch, analysis ongoing”. Or when you want to run analyses parallel to each other, because they take too long. It is important to consider such a situation at the very beginning of your research or when writing your Data Management Plan: is it conceivable that your dataset will become so large or your analysis so complicated that you will need HPC? Please note that this can occur for any discipline and any sort of data, qualitative and quantitative. If you may need HPC, you also need to reconsider your analysis methods. Programmes like SPSS and Excel do not run well on a HPC, and you would need to (learn to) write scripts in R or Python <!-- # [R or Python](https://libguides.vu.nl/rdm/data-analysis) -->. If you want to know if using HPC may be necessary or useful for your project, you can contact <a href="https://services.vu.nl/esc?id=sc_cat_item&amp;sys_id=4e079166978d5950e553359fe153afc5">IT for Research</a> to ask for more information (select the “Onderzoek service domain”).</p>
+</section>
+<section id="surf-snellius-compute-cluster" class="level4">
+<h4 class="anchored" data-anchor-id="surf-snellius-compute-cluster">SURF Snellius Compute Cluster</h4>
+<p>Snellius is the Dutch National supercomputer hosted at SURF. The system facilitates scientific research carried out in many Universities, independent research institutes, governmental organizations, and private companies in the Netherlands.</p>
+<p>It’s a service comprising a wide range of resources, compilers and, such as R statistics and MATLAB, and libraries. SURF continually adjusts the service to the needs of the user community. For example, Snellius Compute Cluster includes accelerators (very fast processors),high memory nodes and GPU nodes. <!--# might need a further rewrite --></p>
+<p>You can find more information on the <a href="https://servicedesk.surf.nl/wiki/display/WIKI/Snellius">SURF Snellius Wiki</a>.</p>
 </section>
 <section id="bazis-compute-cluster" class="level4">
 <h4 class="anchored" data-anchor-id="bazis-compute-cluster">BAZIS Compute Cluster</h4>
-<p>IT for Research (ITvO) offers access to your own Linux computational cluster at the VU.<a href="https://services.vu.nl/esc?id=emp_taxonomy_topic&amp;topic_id=68b9e61f97cf09d0e553359fe153af51">BAZIS</a> is a managed service for high performance computing (HPC). Research groups can add their own compute servers to BAZIS and directly use software and options that are usually only available on a supercomputer. BAZIS also has 7 GPU nodes with 240GB memory and 32 cores for general use, sponsored by the VU HPC Counsel. Compute results are stored in Scistor and can be directly available on your own workstation for further analysis.</p>
+<p>IT for Research (ITvO) offers access to your own Linux computational cluster at the VU. BAZIS is a managed service for high performance computing (HPC). Research groups can add their own compute server hardware to <a href="../topics/bazis.html">BAZIS</a>, ITvO will take care of configuring and maintaining the software stack on your servers.</p>
+<p>BAZIS also has several “community” nodes for use by all VU researchers, sponsored by the VU HPC Council.</p>
+<p>BAZIS is connected to SciStor <!--# needs internal link --> providing easy access to your research data and analysis result.</p>
 </section>
-<section id="surf-rccs" class="level4">
-<h4 class="anchored" data-anchor-id="surf-rccs">SURF RCCS</h4>
-<p><a href="https://services.vu.nl/esc?id=kb_article&amp;sysparm_article=KB0012777">SURF Research Capacity Computing Service</a> (RCCS) further extends the solutions available with the on-premise Bazis cluster and SURF Lisa CPU cluster with:</p>
-<ul>
-<li>Access to <a href="https://www.surf.nl/en/lisa-compute-cluster-extra-processing-power-for-research">Lisa GPU island</a><br>
-</li>
-<li>Access to the <a href="https://www.surf.nl/en/dutch-national-supercomputer-snellius">National Supercomputer Snellius</a> at SURF<br>
-</li>
-<li>Access to <a href="https://www.surf.nl/en/hpc-cloud-your-flexible-compute-infrastructure">SURF HPC Cloud</a><br>
-</li>
-<li>Project space on SURF systems</li>
-</ul>
-<p>Watch <a href="https://youtu.be/z0dWGmFRjLs">this youtube video</a> for detailed information.</p>
-<p>To help you to efficiently use scientific software on your workstation or compute cluster there are regular training possibilities. Check in your department, at <a href="https://hpc.labs.vu.nl">https://hpc.labs.vu.nl</a> or <a href="https://training.prace-ri.eu/">https://training.prace-ri.eu/</a></p>
-<p>Please contact the&nbsp;<a href="https://services.vu.nl/esc?id=emp_taxonomy_topic&amp;topic_id=4cb138ee97fa0950e553359fe153afff">IT for Research department</a>&nbsp;in order to discuss your possibilities.</p>
-<p>For every step of your data analysis, good <a href="http://libguides.vu.nl/rdm/data-documentation">documentation</a> is necessary.</p>
+<section id="vu-jupyterhub-for-education" class="level4">
+<h4 class="anchored" data-anchor-id="vu-jupyterhub-for-education">VU JupyterHub for education</h4>
+<p>If you are not yet ready to take the leap to cluster computing and work with Python consider JupyterHub. VU IT has built a Jupyter Notebook environment meant mainly for Education purposes, but accessible for researchers as well on <a href="https://hub.compute.vu.nl/" class="uri">https://hub.compute.vu.nl/</a></p>
+</section>
+<section id="virtual-servers" class="level4">
+<h4 class="anchored" data-anchor-id="virtual-servers">(Virtual) servers</h4>
+<p>There are also several options to run applications in a server environment. This is useful if for example you use software that does not work on HPC, you want to run a web service, you want to create a research environment for your project. There are several options available for researchers.</p>
+<section id="scicloud" class="level5">
+<h5 class="anchored" data-anchor-id="scicloud">SciCloud</h5>
+<p>IT for Research (ITvO) offers a virtual server environment where you can run your own server (Linux or Windows). ITvO installs the basic operating system and you are free to install needed software. Web services can be made accessible on the internet. You can find more information and a request form on the <a href="https://services.vu.nl/esc?id=emp_taxonomy_topic&amp;topic_id=d80aee1f97cf09d0e553359fe153afd7">VU service portal</a></p>
+</section>
+<section id="surf-research-cloud" class="level5">
+<h5 class="anchored" data-anchor-id="surf-research-cloud">SURF Research Cloud</h5>
+<p>SURF also offers a virtual server environment. Several environments with pre-installed software can easily be installed from a catalog. Find more information on the (SURF wiki)[https://servicedesk.surf.nl/wiki/display/WIKI/SURF+Research+Cloud]</p>
+</section>
+<section id="dedicated-hardware" class="level5">
+<h5 class="anchored" data-anchor-id="dedicated-hardware">Dedicated hardware</h5>
+<p>Sometimes your workload needs dedicated hardware. ITvO offers the option to host your own server hardware in our on-campus data center. Please <a href="https://services.vu.nl/esc?id=sc_cat_item&amp;sys_id=4e079166978d5950e553359fe153afc5">Contact IT for Research</a> to discuss possibilities.</p>
 
 
+</section>
 </section>
 </section>
 </section>
