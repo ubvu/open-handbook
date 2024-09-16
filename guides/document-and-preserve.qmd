@@ -10,7 +10,7 @@ There is a difference between storing and archiving data. Storing refers to putt
 
 Archiving, on the other hand, refers to putting the data in a safe place after the research is finished. The data are in a fixed state, they don't change anymore. Archiving is done for verification purposes: so others can check that your research is sound. Or: it is done so that others can reuse the resulting dataset. There is also a [difference between archiving and publishing](https://libguides.vu.nl/rdm/selecting-archive?#s-lg-box-wrapper-16034272), but in essence, archiving and publishing happen at a similar moment and for both, data do not change anymore.
 
-![](https://libapps-eu.s3.amazonaws.com/accounts/144379/images/storage-archiving.jpg)
+![A Scriberia sketch about archiving and storage](https://libapps-eu.s3.amazonaws.com/accounts/144379/images/storage-archiving.jpg)
 
 _This illustration is created by Scriberia with The Turing Way community. Used under a CC-BY 4.0 licence. DOI: [10.5281/zenodo.3332807](https://doi.org/10.5281/zenodo.3332807)_
 
@@ -70,7 +70,9 @@ Depending on the research project it may be that more than one dataset is stored
 
 ### Documenting your data
 
-Data documentation aims to describe the collected data to make ![](//s3.amazonaws.com/libapps/accounts/62029/images/Metadata.png)it easier to use, retrieve and manage. Data documentation takes various forms and describes the data on multiple levels. The description of the dataset and data object is also referred to as metadata, i.e. data about the data. One way to do add metadata is to attach a readme file to your data. [ResearchData NL](https://datasupport.researchdata.nl/en/start-the-course/iii-research-phase/data-documentation) offers guidance for this. The CESSDA has made very detailed guidance available for creating [documentation and metadata](https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide/2.-Organise-Document/Documentation-and-metadata) for your data.
+Data documentation aims to describe the collected data to make it easier to use, retrieve and manage. Data documentation takes various forms and describes the data on multiple levels. The description of the dataset and data object is also referred to as metadata, i.e. data about the data. One way to do add metadata is to attach a readme file to your data. [ResearchData NL](https://datasupport.researchdata.nl/en/start-the-course/iii-research-phase/data-documentation) offers guidance for this. The CESSDA has made very detailed guidance available for creating [documentation and metadata](https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide/2.-Organise-Document/Documentation-and-metadata) for your data.
+
+![An image layering five different kinds of metadata, with the FAIR principles on the outside, followed by discipline metadata standards, project documentation, metadata data set, and metadata data object.](https://s3.amazonaws.com/libapps/accounts/62029/images/Metadata.png)
 
 In addition to describing their own datasets and objects, researchers can cross-refer to the project proposal where other researchers can find information about the research, e.g. aims and goals, methodology and data collection, the persons responsible for the project etc. The type of research and the nature of the data also influence what kind of documentation is necessary.
 
@@ -86,7 +88,7 @@ Different types of data are governed by different standards (see also the image 
 
 A codebook is a technical description of the data that were collected for a particular purpose in one or more datasets. It describes how the data are arranged in the computer file or files and what the parts or variables (numbers and letters) mean. A good description may also include specific instructions on how to use and interpret the data properly.
 
-![](https://libapps-eu.s3.amazonaws.com/accounts/46351/images/pivot-table-layout-in-excel-2003.gif)
+![A low resolution screenshot of a spreadsheet](https://libapps-eu.s3.amazonaws.com/accounts/46351/images/pivot-table-layout-in-excel-2003.gif)
 
 Like any other kind of "book," some codebooks are better than others. The best codebooks include the following elements:
 
@@ -129,17 +131,18 @@ The CESSDA has created [helpful guidance](https://www.cessda.eu/Training/Trainin
 
 There are three main levels of metadata: Data assets, Dataset documentation and Dataset registration ([more information](https://guides.lib.utexas.edu/metadata-basics/intro)):.
 
-#### **Data assets**
+#### Data assets
 
 On a micro-level there are four functional categories of metadata standards for datasets themselves that describe elements like structure, content, values (definitions, see also code book), and data formats (CSV, XML, etc.). Additionally, research groups often use a discipline's standards to also describe data objects using naming conventions. There are, however, other guidelines for naming conventions and document versioning which can be useful for all documents, independent of whether they are research data or not. Often The table below gives an example of this.
 
-| Data Stage     | Dataset description                            | Type of data          | Versioning                                                                                                                                     |
-|----------------|------------------------------------------------|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| Raw data       | Consumer spending data                         | Text files            | `2017-02-23_ConsumerSpending_1.2.txt` |
-| Processed data | Anonymized Transcription of patient interviews | Word files, Excel     | `2014-11-17_RawTranscription_Checked1.docx`  |
-| Analysed data  | Photo Images with descriptions                 | TIFF files, Word file | `C:\Images\Raw\2016-07-01_Subject1-V2.tiff  C:\Images\Clean\2016-07-01_Subject1-H1c.tiff`<br />`C:\Images\Clean\Descript\2016-07-01_Subject1-H1c.Docx` |
+| Data Stage     | Dataset description                            | Type of data      | Versioning                                                                                  |
+|----------------|------------------------------------------------|-------------------|---------------------------------------------------------------------------------------------|
+| Raw data       | Consumer spending data                         | Text files        | `2017-02-23_ConsumerSpending_1.2.txt`                                                       |
+| Processed data | Anonymized Transcription of patient interviews | Word files, Excel | `2014-11-17_RawTranscription_Checked1.docx`                                                 |
+| Analysed data  | Photo Images with descriptions                 | TIFF files        | `C:\Images\Raw\2016-07-01_Subject1-V2.tiff    C:\Images\Clean\2016-07-01_Subject1-H1c.tiff` |
+|                |                                                | Word files        | `C:\Images\Clean\Descript\2016-07-01_Subject1-H1c.Docx`                                     |
 
-#### **Dataset documentation**
+#### Dataset documentation
 
 On this general, descriptive, level the metadata concerns [data packaging](https://libguides.vu.nl/rdm/selecting-data-archiving?#s-lg-box-wrapper-15125674) & [metadata documentation](https://vu-nl.libapps.com/libguides/admin_c.php?g=683732&p=4880184#s-lg-box-wrapper-15265799) on the dataset. It can include items like:
 

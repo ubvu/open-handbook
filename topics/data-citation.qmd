@@ -1,6 +1,8 @@
-## Data Citation
+---
+title: Data Citation
+---
 
-### Citation Elements
+## Citation Elements
 
 Citing data is not different from citing a publication. Make sure to check the rules of the journal to know how you should cite when writing an article for a specific academic journal. For all of the journals, however, the minimum compulsory elements in a data citation include:
 
@@ -28,16 +30,15 @@ For more information, see the following guidelines:
 * [DCC UK](http://www.dcc.ac.uk/resources/briefing-papers/introduction-curation/data-citation-and-linking)
 * [Data Citation Synthesis Group (2014). Joint Declaration of Data Citation Principles. Martone M. (ed.) San Diego CA: FORCE11](https://www.force11.org/group/joint-declaration-data-citation-principles-final)
 
-
 ### Citation file
 
 A citation file is a computer file that contains all information needed to cite a dataset. Several data and software repositories, such as Zenodo and GitHub, support this format and enables enables others to easily select the citation information in their preferred format. Most reference managers (e.g., Zenodo) can work with these standardized citation files, and automatically format the references in a document.
 
 ![A screenshot of the interface to cite a GitHub repository](../public/github_citation_file.png "Cite a GitHub repository that contains a citation file")
 
-An example, CFF-file is given below, but to enable you to easily create a CFF-file you can use this [website](https://citation-file-format.github.io/cff-initializer-javascript/#/). 
+An example, CFF-file is given below, but to enable you to easily create a CFF-file you can use this [website](https://citation-file-format.github.io/cff-initializer-javascript/#/).
 
-<pre>
+```yaml
 cff-version: 1.2.0
 message: "If you use this data, please cite it as below."
 authors:
@@ -50,4 +51,4 @@ identifiers:
   - type: doi
     value: 10.5281/zenodo.1234
 date-released: 2021-08-11
-</pre>
+```
