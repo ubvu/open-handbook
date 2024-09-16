@@ -1,10 +1,6 @@
 name: MarkdownLint for QMD files
 
 on:
-  push:
-    paths:
-      - 'topics/**/*.qmd'
-      - 'pathway/**/*.qmd'
   pull_request:
     paths:
       - 'topics/**/*.qmd'
