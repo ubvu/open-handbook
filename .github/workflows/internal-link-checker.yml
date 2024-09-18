@@ -1,0 +1,30 @@
+name: Check Internal Links
+
+on:
+  pull_request:
+    paths:
+      - 'topics/**/*.qmd'
+      - 'pathway/**/*.qmd'
+      - '*.qmd'
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+
+    - name: Render Quarto website
+      uses: quarto-dev/quarto-actions/render@v2
+
+    - name: Install hyperlink
+      run: npm install -g hyperlink
+
+    - name: Check internal links
+      run: hyperlink ./_site --internal
