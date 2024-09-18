@@ -4,19 +4,19 @@ title: Process & Analyse Data
 
 ## Data Provenance
 
-Provenance describes the origin of an object. Data provenance refers to the knowledge of where data originate, where they were collected, by whom, for what reason, and similar aspects that help to understand how the data were originally gathered, processed and altered. In daily use, the term “**data provenance**” refers to a record trail that accounts for the origin of a piece of data (in a database, document or repository) together with an explanation of how and why it got to the present place (Encyclopedia of Database Systems, pp [608-608](http://link.springer.com/referenceworkentry/10.1007%2F978-0-387-39940-9_1305)). You can also call it the process of keeping records of changes in the data. The need for Data Provenance increases as the reuse of datasets becomes more common in research. The term was originally mostly used in relation to works of art, but is now used in similar senses in a wide range of fields ([Wikipedia](https://en.wikipedia.org/wiki/Provenance)).
+Provenance describes the origin of an object. Data provenance refers to the knowledge of where data originate, where they were collected, by whom, for what reason, and similar aspects that help to understand how the data were originally gathered, processed and altered. In daily use, the term “**data provenance**” refers to a record trail that accounts for the origin of a piece of data (in a database, document or repository) together with an explanation of how and why it got to the present place (Encyclopedia of Database Systems, pp [608-608](https://link.springer.com/referenceworkentry/10.1007%2F978-0-387-39940-9_1305)). You can also call it the process of keeping records of changes in the data. The need for Data Provenance increases as the reuse of datasets becomes more common in research. The term was originally mostly used in relation to works of art, but is now used in similar senses in a wide range of fields ([Wikipedia](https://en.wikipedia.org/wiki/Provenance)).
 
 [![](https://libapps-eu.s3.amazonaws.com/accounts/46351/images/Credibility_Trust_Provenace_data.gif)](https://commons.wikimedia.org/wiki/File:Credibility_Trust_Provenace_data.svg)
 
 Researchers regularly use a lab notebook or a journal to document their hypotheses, experiments and initial analysis or interpretation of these experiments. If you manually change data in a dataset, this should also be documented. Sometimes records of changes in data can be kept by adding notes to programmes or scripts that are used.
 
 * [Electronic Lab Journals](https://en.wikipedia.org/wiki/List_of_ELN_software_packages) or Electronic Lab Notebooks are used to meticulously describe and document the process of analysis. Mostly used used in a laboratory environment,; biolab, chemical lab, etc.
-* For computational analyses, [Computational Notebooks like Jupyter notebook](http://jupyter.org/) are used, where you can describe the analysis steps alongside the computer code in different languages like Python, R, Spark, etc. It is important to document steps and changes in your code by writing comments. This way, others and future you can understand how your code works.
+* For computational analyses, [Computational Notebooks like Jupyter notebook](https://jupyter.org/) are used, where you can describe the analysis steps alongside the computer code in different languages like Python, R, Spark, etc. It is important to document steps and changes in your code by writing comments. This way, others and future you can understand how your code works.
 * The [Open Science Framework](https://osf.io) connects different storage types you already use (SURFdrive, Dataverse, etc) and logs automatically all changes of all the steps you make while you progress. With the fine grained history-log and version control system of OSF, you can see all steps you made. You can store and archive the whole provenance trail for citable reproducibility.
 
 Finally, when a dataset contains personal data, data provenance can help researchers to understand the specifics and the context in which the data were gathered, also to be able to assess whether or not the informed consent given for the first research, is applicable.
 
-For every step of your data analysis, good [data documentation](http://libguides.vu.nl/rdm/data-documentation) is necessary.
+For every step of your data analysis, good [data documentation](https://libguides.vu.nl/rdm/data-documentation) is necessary.
 
 ## Data processing
 
@@ -26,21 +26,21 @@ The process of detecting and correcting (or removing) corrupt or inaccurate info
 
 ![](https://libapps-eu.s3.amazonaws.com/accounts/46351/images/MessyData.jpg)
 
-Software especially designed to clean re-used data is [OpenRefine](http://openrefine.org/). It cleans starting and trailing blank spaces in cell field, clusters values based on similarities (e.g. in free text fields: Alphen a/d Rhijn, alfen ad rijn, etc. can be easily clustered), normalise data fields into one standard, etc. See below for several tutorials.
+Software especially designed to clean re-used data is [OpenRefine](https://openrefine.org/). It cleans starting and trailing blank spaces in cell field, clusters values based on similarities (e.g. in free text fields: Alphen a/d Rhijn, alfen ad rijn, etc. can be easily clustered), normalise data fields into one standard, etc. See below for several tutorials.
 
 In some cases, researchers write their own scripts (in programming languages such as Python, R or SQL) to clean data, in which case the process must be documented. Researchers should include their scripts when they archive the datasets to allow for replication and verification.
 
 Extra background information:
 
 * EMGO [Quality Handbook on data cleaning](https://aph-qualityhandbook.org/set-up-conduct/process-analyze-data/3-2-quantitative-research/3-2-1-data-processing/data-cleaning-and-transformation//)
-* Making sense of data I: a practical guide to exploratory data analysis and data mining / Glenn J. Myatt, Wayne P. Johnson, 2014 ([eBook](http://onlinelibrary.wiley.com.vu-nl.idm.oclc.org/book/10.1002/9781118422007))
-* [Open Refine](http://openrefine.org/)
-  * [Data Carpentry Open Refine website](http://www.datacarpentry.org/2015-03-09-ISI-CODATA/lessons/open_refine/open-refine-demo.html)
+* Making sense of data I: a practical guide to exploratory data analysis and data mining / Glenn J. Myatt, Wayne P. Johnson, 2014 ([eBook](https://doi.org/10.1002/9781118422007))
+* [Open Refine](https://openrefine.org/)
+  * [Data Carpentry Open Refine website](https://www.datacarpentry.org/2015-03-09-ISI-CODATA/lessons/open_refine/open-refine-demo.html)
   * [Tutorial](https://programminghistorian.org/en/lessons/cleaning-data-with-openrefine) by the Programming Historian
-  * [Tutorial](http://digitalnomad.ie/simple-openrefine-tutorial/) by Digitalnomad
-  * Introduction to [Digital Humanities](http://miriamposner.com/classes/dh101f17/tutorials-guides/data-manipulation/get-started-with-openrefine/) with Open Refine
+  <!-- * [Tutorial](http://digitalnomad.ie/simple-openrefine-tutorial/) by Digitalnomad -->
+  * Introduction to [Digital Humanities](https://miriamposner.com/classes/dh101f17/tutorials-guides/data-manipulation/get-started-with-openrefine/) with Open Refine
 
-For every step of your data cleaning, good [documentation](http://libguides.vu.nl/rdm/data-documentation) and clarifying the [data provenance](https://libguides.vu.nl/rdm/data-provenance) is necessary.
+For every step of your data cleaning, good [documentation](https://libguides.vu.nl/rdm/data-documentation) and clarifying the [data provenance](https://libguides.vu.nl/rdm/data-provenance) is necessary.
 
 ### Data transcription
 

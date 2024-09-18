@@ -20,7 +20,7 @@ There are various reasons to [archive your data](https://libguides.vu.nl/rdm/sel
 
 #### Make a selection before archiving your data
 
-During your research you may accumulate a lot of data, some of which will be eligible for archiving. It is impossible to preserve all data infinitely. Archiving all digital data leads to high costs for storage itself and for maintaining and managing this ever-growing volume of data and their metadata; it may also lead to decline in discoverability (see the website of the [Digital Curation Centre](http://www.dcc.ac.uk/resources/how-guides/appraise-select-data)). For those reasons, it is crucial that you make a selection.
+During your research you may accumulate a lot of data, some of which will be eligible for archiving. It is impossible to preserve all data infinitely. Archiving all digital data leads to high costs for storage itself and for maintaining and managing this ever-growing volume of data and their metadata; it may also lead to decline in discoverability (see the website of the [Digital Curation Centre](https://www.dcc.ac.uk/resources/how-guides/appraise-select-data)). For those reasons, it is crucial that you make a selection.
 
 #### Remove redundant and sensitive data
 
@@ -28,7 +28,7 @@ Selecting data means making choices about what to keep for the long term, and wh
 
 * data are redundant
 * data concern temporary byproducts which are irrelevant for future use
-* data contain material that is sensitive, for example personal data in the sense of the [GDPR](http://libguides.vu.nl/rdm/gdpr-privacy), like consent forms, voice recordings, DNA data; state secrets; data that are sensitive to competition in a commercial sense. These data need to be separated from other data and archived securely
+* data contain material that is sensitive, for example personal data in the sense of the [GDPR](https://libguides.vu.nl/rdm/gdpr-privacy), like consent forms, voice recordings, DNA data; state secrets; data that are sensitive to competition in a commercial sense. These data need to be separated from other data and archived securely
 * preserving data for the long term is in breach of contractual arrangements with your consortium partners or other parties involved
 
 In preparing your dataset for archiving, the first step is to determine which parts of your data are sensitive, which can then be separated from the other data. Redundant data can be removed altogether.
@@ -40,7 +40,7 @@ Once you have separated the sensitive data from the rest of your dataset, you ha
 1. One for reusability to share, and
 2. A second one that contains the sensitive data, and needs to be handled differently.
 
-For the first, the non-sensitive data can be stored in an archive under restricted or open access conditions, so that you can share it and link it to publications. For the second, you need to make a separate selection, so the sensitive part can be stored safely in a secure archive (a so-called offline or dark archive). In the metadata of both archives you can create stable links between the two datasets using [persistent identifiers](//libguides.vu.nl/rdm/data-publication#s-lg-box-wrapper-17896170).
+For the first, the non-sensitive data can be stored in an archive under restricted or open access conditions, so that you can share it and link it to publications. For the second, you need to make a separate selection, so the sensitive part can be stored safely in a secure archive (a so-called offline or dark archive). In the metadata of both archives you can create stable links between the two datasets using [persistent identifiers](https://libguides.vu.nl/rdm/data-publication#s-lg-box-wrapper-17896170).
 
 #### What to appraise for archiving
 
@@ -49,22 +49,22 @@ There are several factors that determine what data to select for archiving. For 
 More information on selecting data:
 
 * Tjalsma, H. & Rombouts, J. (2011). [Selection of research data: Guidelines for appraising and selecting research data](https://dans.knaw.nl/nl/over/organisatie-beleid/publicaties/DANSselectionofresearchdata.pdf). Data Archiving and Networked Services (DANS).
-* Digital Curation Centre (DCC): Whyte, A. & Wilson, A. (2010). [How to appraise and select research data for curation](http://www.dcc.ac.uk/resources/how-guides/appraise-select-data). DCC How-to Guides. Edinburgh: Digital Curation Centre.
+* Digital Curation Centre (DCC): Whyte, A. & Wilson, A. (2010). [How to appraise and select research data for curation](https://www.dcc.ac.uk/resources/how-guides/appraise-select-data). DCC How-to Guides. Edinburgh: Digital Curation Centre.
 * Research Data Netherlands: [Data selection](https://danstraining.moodlecloud.com/mod/page/view.php?id=280).
 
 ### Data Set Packaging: Which Files should be Part of my Dataset?
 
 A dataset consists of the following documents:
 
-* Raw or cleaned data (if the cleaned data has been archived, the [provenance](http://libguides.vu.nl/rdm/data-provenance) documentation is also required)
-* [Project documentation](http://libguides.vu.nl/rdm/data-documentation)
-* [Codebook](http://libguides.vu.nl/rdm/codebooks) or [protocol](//libguides.vu.nl/rdm/data-collection#s-lg-box-wrapper-17896154)
-* [Logbook or lab journal](http://libguides.vu.nl/rdm/data-provenance) (when available, dependent on the discipline)
+* Raw or cleaned data (if the cleaned data has been archived, the [provenance](https://libguides.vu.nl/rdm/data-provenance) documentation is also required)
+* [Project documentation](https://libguides.vu.nl/rdm/data-documentation)
+* [Codebook](https://libguides.vu.nl/rdm/codebooks) or [protocol](https://libguides.vu.nl/rdm/data-collection#s-lg-box-wrapper-17896154)
+* [Logbook or lab journal](https://libguides.vu.nl/rdm/data-provenance) (when available, dependent on the discipline)
 * [Software](https://libguides.vu.nl/rdm/data-processing) (& version) needed to open the files when no preferred formats for the data can be provided
 
-See the section [Metadata](http://libguides.vu.nl/rdm/metadata) for more information about documenting your data.
+See the section [Metadata](https://libguides.vu.nl/rdm/metadata) for more information about documenting your data.
 
-Depending on the research project it may be that more than one dataset is stored in more than one repository. Make sure that each consortium partner that collects data also stores all necessary data that is required for transparency and verification. A [Consortium Agreement](http://libguides.vu.nl/rdm/collaboration) and [Data Management Plan](//libguides.vu.nl/rdm/dmp) will include information on who is responsible for archiving the data.
+Depending on the research project it may be that more than one dataset is stored in more than one repository. Make sure that each consortium partner that collects data also stores all necessary data that is required for transparency and verification. A [Consortium Agreement](https://libguides.vu.nl/rdm/collaboration) and [Data Management Plan](https://libguides.vu.nl/rdm/dmp) will include information on who is responsible for archiving the data.
 
 ## Data Documentation
 
@@ -78,7 +78,7 @@ In addition to describing their own datasets and objects, researchers can cross-
 
 Different types of data are governed by different standards (see also the image above), and these should be taken into account when documenting data. These requirements include, but are not limited to:
 
-1. [FAIR data principles](//libguides.vu.nl/rdm/overview#s-lg-box-wrapper-17896126): the set of principles (Findable, Accessible, Interoperable, Reusable) for data exchange.
+1. [FAIR data principles](https://libguides.vu.nl/rdm/overview#s-lg-box-wrapper-17896126): the set of principles (Findable, Accessible, Interoperable, Reusable) for data exchange.
 2. Disciplinary [metadata standards](https://libguides.vu.nl/rdm/metadata): guidelines for documenting data. This can refer to the dataset documentation, the object description, or both. Disciplinary metadata standards can document the dataset as a whole or as a data object (see number 5).
 3. Project documentation: the description of a project involving data collection. This documentation is often used for research verification and provenance.
 4. [Metadata dataset](https://libguides.vu.nl/c.php?g=683732&p=4880185#s-lg-box-wrapper-18229640): the description of a dataset, often used for discovering datasets within a repository.
@@ -99,7 +99,7 @@ Like any other kind of "book," some codebooks are better than others. The best c
 * Details about the data: the meaning of the variables, whether they are character or numeric, and if numeric, what format
 * Text of the questions and responses: some even include how many people responded a particular way.
 
-More information about codebooks can be found on the website of the [Kent State University Library](https://libguides.library.kent.edu/SPSS/Codebooks) (specifically useful if you want to create a codebook in SPSS) and on the website of the [Data Documentation Initiative](https://ddialliance.org/training/getting-started-new-content/create-a-codebook) (specifically useful for researchers in the social sciences). You can also look at [The Guide to Social Science Data Preparation and Archiving. 5th ed. Inter-university Consortium for Political and Social Research (ICPSR) (2012)](http://www.icpsr.umich.edu/files/deposit/dataprep.pdf).
+More information about codebooks can be found on the website of the [Kent State University Library](https://libguides.library.kent.edu/SPSS/Codebooks) (specifically useful if you want to create a codebook in SPSS) and on the website of the [Data Documentation Initiative](https://ddialliance.org/training/getting-started-new-content/create-a-codebook) (specifically useful for researchers in the social sciences). You can also look at [The Guide to Social Science Data Preparation and Archiving. 5th ed. Inter-university Consortium for Political and Social Research (ICPSR) (2012)](https://www.icpsr.umich.edu/files/deposit/dataprep.pdf).
 
 ## Metadata
 
@@ -109,8 +109,8 @@ When a metadata section in a Data Management Plan template includes a question o
 
 Examples are:
 
-* [CDWA](http://www.getty.edu/research/publications/electronic_publications/cdwa/) (Categories for the Description of Works of Art)
-* [Getty Thesaurus of Geographic names](http://www.getty.edu/research/tools/vocabularies/tgn/index.html)
+* [CDWA](https://www.getty.edu/research/publications/electronic_publications/cdwa/) (Categories for the Description of Works of Art)
+* [Getty Thesaurus of Geographic names](https://www.getty.edu/research/tools/vocabularies/tgn/index.html)
 * [NUTS](https://ec.europa.eu/eurostat/web/nuts/background) (Eurostat)
 * [Medical Subject HEadings](https://meshb.nlm.nih.gov/) (MeSH)
 
@@ -157,6 +157,6 @@ Many archives implement or make use of specific metadata standards. The UK Digit
 
 ### Archiving & FAIR Principles
 
-If you want to archive your dataset in such a way that it is compatible with the FAIR-principles, you can use the information in this [practical guide](http://libguides.vu.nl/ld.php?content_id=31290272) which describes how to implement the FAIR data policy and [this table](http://libguides.vu.nl/ld.php?content_id=31290289) which matches metadata fields from different systems (these documents were written for the Faculty of Behavioural and Movement Sciences).
+If you want to archive your dataset in such a way that it is compatible with the FAIR-principles, you can use the information in this [practical guide](https://libguides.vu.nl/ld.php?content_id=31290272) which describes how to implement the FAIR data policy and [this table](https://libguides.vu.nl/ld.php?content_id=31290289) which matches metadata fields from different systems (these documents were written for the Faculty of Behavioural and Movement Sciences).
 
 The Dutch Techcentre for Life Sciences has developed open source software code to enable you to make your dataset's metadata FAIR. The software is being developed through GitHub and full details on the [FAIR Data Point Software](https://github.com/FAIRDataTeam/FAIRDataPoint-Spec) are available there. The Dutch eScience Center also developed Fair Data Point software, of which full details are, similarly, available on [GitHub](https://github.com/NLeSC/fairdatapoint).
