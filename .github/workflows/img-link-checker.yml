@@ -36,34 +36,37 @@ jobs:
         const imageLinks = [];
 
         markdownFiles.forEach(file => {
-          const content = fs.readFileSync(file, 'utf8');
-          const regex = /!\[.*?\]\((.*?)\)/g;
-          let match;
-          while ((match = regex.exec(content)) !== null) {
-            imageLinks.push({ file, url: match[1] });
-          }
+            const content = fs.readFileSync(file, 'utf8');
+            const regex = /!\[.*?\]\((.*?)\)/g;
+            let match;
+            while ((match = regex.exec(content)) !== null) {
+              const url = match[1];
+              if (url.startsWith('http://') || url.startsWith('https://')) {
+                  imageLinks.push({ file, url });
+              }
+            }
         });
 
         const checkLinks = async () => {
-          const results = await Promise.all(imageLinks.map(async ({ file, url }) => {
+            const results = await Promise.all(imageLinks.map(async ({ file, url }) => {
             try {
-              const response = await axios.head(url);
-              return response.status === 200 ? null : { file, url, status: response.status };
+                const response = await axios.head(url);
+                return response.status === 200 ? null : { file, url, status: response.status };
             } catch (error) {
-              return { file, url, status: error.response ? error.response.status : 'Unknown error' };
+                return { file, url, status: error.response ? error.response.status : 'Unknown error' };
             }
-          }));
+            }));
 
-          const brokenLinks = results.filter(result => result !== null);
-          if (brokenLinks.length > 0) {
+            const brokenLinks = results.filter(result => result !== null);
+            if (brokenLinks.length > 0) {
             console.log('Broken image links found:');
             brokenLinks.forEach(({ file, url, status }) => {
-              console.log(`File: ${file}, URL: ${url}, Status: ${status}`);
+                console.log(`File: ${file}, URL: ${url}, Status: ${status}`);
             });
             process.exit(1);
-          } else {
+            } else {
             console.log('No broken image links found.');
-          }
+            }
         };
 
         checkLinks();
