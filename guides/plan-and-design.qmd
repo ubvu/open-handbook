@@ -6,16 +6,16 @@ title: Plan & Design
 
 ### Research Proposal / Grant Office
 
-Grant programmes from organisations like NWO, ZonMW and ERC increasingly require you to not only think about the journey of the data in your research project, but also the method of data collection and how to protect or share data during and after the research project. It is important to bear in mind the specific laws and regulations that apply to the kind of data that is collected. If a project involves data on persons and organisations this impacts the design of the necessary IT infrastructure. A more detailed description of this will later be captured in the data management plan.
+Grant programmes from organisations like NWO, ZonMw and ERC require you to think about the method of data collection, the journey of the data in your research project and how to protect or share data during and after the research project. It is important to bear in mind the specific laws and regulations that apply to the kind of data that is collected. If a project involves data on individuals and organisations this impacts the design of the necessary IT infrastructure. A more detailed description of this will later be captured in the data management plan.
 
 When writing your research proposal the following items are important:
 
-* Fill in the data management paragraph (see the four questions below)
-* Planning: one of the early deliverables will be a detailed [data management plan](https://libguides.vu.nl/rdm/dmp)
-* Budget: take into account the [costs](https://libguides.vu.nl/rdm/rdm-costs) (labour and material) for data storage during and data archiving after your project.
-* Writing: Funders that distribute grants like to maximise the effectiveness of this investment. It is therefore highly recommended that the data will be made Findable, Accessible, Interoperable and Re-usable (FAIRdata). This does not mean that the data have to be open: laws, licenses and contracts regarding personal and sensitive data may limit the possibility to share the data publicly.
+* Fill in the data management section if your funder requires this
+* Planning: One of the early deliverables will be a detailed [data management plan](https://libguides.vu.nl/rdm/dmp)
+* Budget: Take into account the [costs](https://libguides.vu.nl/rdm/rdm-costs) (labour and material) for data storage during and data archiving after your project.
+* Writing: Funders that distribute grants like to maximise the effectiveness of this investment. It is therefore highly recommended that the data will be made Findable, Accessible, Interoperable and Re-usable (FAIR). This does not mean that the data have to be open: Laws, licenses and contracts regarding personal and sensitive data may limit the possibility to share the data publicly.
 
-Research Data Services provides advice and help when writing a **data paragraph** as part of the Research proposal. The Library also regularly organises [workshops](https://vu.nl/en/employee/library/training-seminars) to help you get started. Together with the VU [Grants Office](https://vu.nl/en/about-vu/more-about/vu-grants-office) and project control we are part of the grant support team offering advice and practical aid for your grant. You will be directed to the specific unit during your support trajectory. Make sure to contact the team as early as possible.
+The [RDM Support Desk[(https://vu.nl/en/about-vu/more-about/rdm-support-desk) provides advice and help when writing a **data management section** as part of the research proposal. Also make sure to reach out to the VU [Grants Office](https://vu.nl/en/about-vu/more-about/vu-grants-office) (IXA-GO) for advice and practical aid for your grant in general as early as possible.
 
 #### Data Management Section
 
@@ -29,17 +29,14 @@ Research Data Services provides advice and help when writing a **data paragraph*
 
 Many research funders encourage applicants to include data management and sharing costs in research proposals. Some funders will provide advice on costs related to data management. Some remarks on costs are provided here:
 
-* [The Data Management Plan](https://libguides.vu.nl/researchdata/dmp) should describe the activities that incur costs and provide justification for the allocation of resources (example: acquisition of a programmer who will write software needed to capture the data).
+* [The Data Management Plan](../topics/data-management-plan.qmd) should describe the activities that incur costs and provide justification for the allocation of resources (example: acquisition of a programmer who will write software needed to capture the data).
 * No expenditure can be ‘double funded’, i.e. a service that is centrally supported by indirect costs must not be included as a direct cost as well (example: computers that are already provided to employees and paid for by the university may not be included).
 * The budget and justification should broadly indicate where RDM costs will be incurred, where possible. E.g. data capture and cleaning, data curation and preservation, data sharing.
-* Include budget for long-term storage if data are expected to be deposited in a repository not funded by the university or external funders (VU repositories are: DataverseNL, Yoda). The VU has a breakdown of costs for storage and archiving for VU-managed storage and repositories. This is available [here](https://vu.nl/en/employee/research-data-support/costs-research-en-archiving-storage).
+* Include budget for long-term storage if data are expected to be deposited in a repository not funded by the university or external funders (VU repositories are: DataverseNL, Yoda, Open Science Framework). The VU has a breakdown of costs for storage and archiving for VU-managed storage and repositories. This is available [here](https://vu.nl/en/employee/research-data-support/costs-research-en-archiving-storage).
 
 A practical costing tool is available from the [UK Data Archive](https://www.ukdataservice.ac.uk/manage-data/plan/costing). Based on this costing tool, Utrecht University has developed a [guide to calculate the costs of data management](https://www.uu.nl/en/research/research-data-management/guides/costs-of-data-management). Similarly, in collaboration with RDM experts from several Dutch universities, the Landelijk Coördinatiepunt Research Data Management (LCRDM) has made an [RDM costs table](https://libguides.vu.nl/ld.php?content_id=34692283) that includes budgetting for technical applications. You can use those guides as well to estimate the costs needed specifically for RDM.
 
-Most material costs of the storage solutions offered by the VU are covered centrally (up to 500 GB), but if you need to specify the costs for your project, look at the following sections in the LibGuide:
-
-* [Storage Solutions During Research](https://libguides.vu.nl/rdm/data-storage)
-* [Archival Solutions After Research](https://libguides.vu.nl/rdm/selecting-data-archiving#s-lg-box-wrapper-17896166) (please note that most funders do not cover archival costs)
+Most material costs of the storage solutions offered by the VU are covered centrally (up to 500 GB), but if you need to specify the costs for your project, look at the [Research & Archiving Storage Cost Model](https://vu.nl/en/employee/research-data-support/costs-research-en-archiving-storage)
 
 Examples to put in a data management plan:
 
@@ -59,22 +56,22 @@ Examples to put in a data management plan:
 
 If you do research at the VU, you may be subject to the requirements for Research Data Management formulated by various parties. Please check which requirements apply to your research project.
 
-Many funders have specific requirements for RDM. The exact requirements vary by funder. They usually include a data management paragraph in the project proposal and a Data Management Plan (DMP) after funding has been granted. As funding agencies invest financially in your research project, they often have demands concerning research integrity, data quality, data publication and reusability. As research output, data are often compared to a kind of public good that should be made available to the community for re-use if possible. So always check what demands are set by a funder before you apply.
+Many funders have specific requirements for RDM. The exact requirements vary by funder. They usually include a data management section in the project proposal and a Data Management Plan (DMP) after funding has been granted. As funding agencies invest financially in your research project, they often have demands concerning research integrity, data quality, data publication and reusability. As research output, data are often compared to a kind of public good that should be made available to the community for re-use if possible. Always check what demands are set by a funder before you apply.
 
 ### Funding agencies
 
-#### Data management paragraph in project proposal
+#### Data management section in project proposal
 
-At a grant application, some funders request a short data paragraph in your project proposal or an outline of a Data Management Plan. Without these your proposal will not be eligible for review.
+At a grant application, some funders request a short data section in your project proposal or an outline of a Data Management Plan. Without these your proposal will not be eligible for review.
 
 * NWO: [Data management section](https://www.nwo.nl/en/policies/open+science/data+management+chapter)
 * ZonMw: [Orientation of data management in project proposal](https://www.zonmw.nl/en/research-and-results/fair-data-and-data-management/)
 
 #### Data Management Plan
 
-In a Data Management Plan (DMP; see also the section [Data Management Plan](https://libguides.vu.nl/rdm/dmp)) you explain how you will handle your research data. Check with your funder at what stage a DMP has to be submitted and how it should be composed. Many funders have their own templates.
+In a Data Management Plan (DMP; see also the section [Data Management Plan](../topics/data-management-plan.qmd)) you explain how you will handle your research data. Check with your funder at what stage a DMP has to be submitted and how it should be composed. VU has a DMP template that has been acknowledged by NWO, ZonMw and ERC. We recommend you to use this VU template. See the [DMP page](../topics/data-management-plan.qmd) for more information and instructions on how to select this template in [DMPonline](https://dmponline.vu.nl/?perform_check=false).
 
-The tool [DMPonline](https://dmponline.vu.nl/) can be used to access and fill in a DMP template. You can also write a DMP in collaboration and invite a third party to comment or give feedback on your DMP. Most funders’ templates are available in DMPonline. In order to write a DMP, you need to create your own account. We are working on better integration of this tool with the rest of VU infrastructure.
+The tool [DMPonline](https://dmponline.vu.nl/) can be used to access and fill in a DMP template. You can also write a DMP in collaboration and invite a third party to comment or give feedback on your DMP. You can use the button 'Request feedback' to ask for feedback from a data steward. In order to write a DMP, you need to create your own account. 
 
 #### Overview of funders’ RDM requirements and DMP templates
 
