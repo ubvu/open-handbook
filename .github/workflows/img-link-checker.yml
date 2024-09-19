@@ -1,0 +1,70 @@
+name: Check Image Links
+
+on:
+  pull_request:
+    paths:
+      - 'topics/**/*.qmd'
+      - 'pathway/**/*.qmd'
+      - '*.qmd'
+
+
+jobs:
+  check-image-links:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+
+    - name: Install dependencies
+      run: npm install axios glob
+
+    - name: Check image links
+      run: |
+        node -e "
+        const fs = require('fs');
+        const path = require('path');
+        const axios = require('axios');
+        const glob = require('glob');
+
+        const markdownFiles = glob.sync('**/*.qmd');
+        const imageLinks = [];
+
+        markdownFiles.forEach(file => {
+          const content = fs.readFileSync(file, 'utf8');
+          const regex = /!\[.*?\]\((.*?)\)/g;
+          let match;
+          while ((match = regex.exec(content)) !== null) {
+            imageLinks.push({ file, url: match[1] });
+          }
+        });
+
+        const checkLinks = async () => {
+          const results = await Promise.all(imageLinks.map(async ({ file, url }) => {
+            try {
+              const response = await axios.head(url);
+              return response.status === 200 ? null : { file, url, status: response.status };
+            } catch (error) {
+              return { file, url, status: error.response ? error.response.status : 'Unknown error' };
+            }
+          }));
+
+          const brokenLinks = results.filter(result => result !== null);
+          if (brokenLinks.length > 0) {
+            console.log('Broken image links found:');
+            brokenLinks.forEach(({ file, url, status }) => {
+              console.log(`File: ${file}, URL: ${url}, Status: ${status}`);
+            });
+            process.exit(1);
+          } else {
+            console.log('No broken image links found.');
+          }
+        };
+
+        checkLinks();
+        "
