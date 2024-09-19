@@ -165,16 +165,16 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="data-provenance" class="level2">
 <h2 class="anchored" data-anchor-id="data-provenance">Data Provenance</h2>
-<p>Provenance describes the origin of an object. Data provenance refers to the knowledge of where data originate, where they were collected, by whom, for what reason, and similar aspects that help to understand how the data were originally gathered, processed and altered. In daily use, the term “<strong>data provenance</strong>” refers to a record trail that accounts for the origin of a piece of data (in a database, document or repository) together with an explanation of how and why it got to the present place (Encyclopedia of Database Systems, pp <a href="http://link.springer.com/referenceworkentry/10.1007%2F978-0-387-39940-9_1305">608-608</a>). You can also call it the process of keeping records of changes in the data. The need for Data Provenance increases as the reuse of datasets becomes more common in research. The term was originally mostly used in relation to works of art, but is now used in similar senses in a wide range of fields (<a href="https://en.wikipedia.org/wiki/Provenance">Wikipedia</a>).</p>
+<p>Provenance describes the origin of an object. Data provenance refers to the knowledge of where data originate, where they were collected, by whom, for what reason, and similar aspects that help to understand how the data were originally gathered, processed and altered. In daily use, the term “<strong>data provenance</strong>” refers to a record trail that accounts for the origin of a piece of data (in a database, document or repository) together with an explanation of how and why it got to the present place (Encyclopedia of Database Systems, pp <a href="https://link.springer.com/referenceworkentry/10.1007%2F978-0-387-39940-9_1305">608-608</a>). You can also call it the process of keeping records of changes in the data. The need for Data Provenance increases as the reuse of datasets becomes more common in research. The term was originally mostly used in relation to works of art, but is now used in similar senses in a wide range of fields (<a href="https://en.wikipedia.org/wiki/Provenance">Wikipedia</a>).</p>
 <p><a href="https://commons.wikimedia.org/wiki/File:Credibility_Trust_Provenace_data.svg"><img src="https://libapps-eu.s3.amazonaws.com/accounts/46351/images/Credibility_Trust_Provenace_data.gif" class="img-fluid"></a></p>
 <p>Researchers regularly use a lab notebook or a journal to document their hypotheses, experiments and initial analysis or interpretation of these experiments. If you manually change data in a dataset, this should also be documented. Sometimes records of changes in data can be kept by adding notes to programmes or scripts that are used.</p>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/List_of_ELN_software_packages">Electronic Lab Journals</a> or Electronic Lab Notebooks are used to meticulously describe and document the process of analysis. Mostly used used in a laboratory environment,; biolab, chemical lab, etc.</li>
-<li>For computational analyses, <a href="http://jupyter.org/">Computational Notebooks like Jupyter notebook</a> are used, where you can describe the analysis steps alongside the computer code in different languages like Python, R, Spark, etc. It is important to document steps and changes in your code by writing comments. This way, others and future you can understand how your code works.</li>
+<li>For computational analyses, <a href="https://jupyter.org/">Computational Notebooks like Jupyter notebook</a> are used, where you can describe the analysis steps alongside the computer code in different languages like Python, R, Spark, etc. It is important to document steps and changes in your code by writing comments. This way, others and future you can understand how your code works.</li>
 <li>The <a href="https://osf.io">Open Science Framework</a> connects different storage types you already use (SURFdrive, Dataverse, etc) and logs automatically all changes of all the steps you make while you progress. With the fine grained history-log and version control system of OSF, you can see all steps you made. You can store and archive the whole provenance trail for citable reproducibility.</li>
 </ul>
 <p>Finally, when a dataset contains personal data, data provenance can help researchers to understand the specifics and the context in which the data were gathered, also to be able to assess whether or not the informed consent given for the first research, is applicable.</p>
-<p>For every step of your data analysis, good <a href="http://libguides.vu.nl/rdm/data-documentation">data documentation</a> is necessary.</p>
+<p>For every step of your data analysis, good <a href="https://libguides.vu.nl/rdm/data-documentation">data documentation</a> is necessary.</p>
 </section>
 <section id="data-processing" class="level2">
 <h2 class="anchored" data-anchor-id="data-processing">Data processing</h2>
@@ -182,21 +182,20 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="data-cleaning">Data cleaning</h3>
 <p>The process of detecting and correcting (or removing) corrupt or inaccurate information or records, is called data cleaning. In essence, it refers to identifying incomplete, incorrect, inaccurate or irrelevant parts of the data and then replacing, modifying, or deleting this data (<a href="https://en.wikipedia.org/wiki/Data_cleansing">Wikipedia</a>). Depending on the type of analysis that is done, different pieces of software can be used to do this data cleaning. More often than not, the same software can also be used to perform the analysis. Licensed software may sometimes also be installed on personal computers or laptops.</p>
 <p><img src="https://libapps-eu.s3.amazonaws.com/accounts/46351/images/MessyData.jpg" class="img-fluid"></p>
-<p>Software especially designed to clean re-used data is <a href="http://openrefine.org/">OpenRefine</a>. It cleans starting and trailing blank spaces in cell field, clusters values based on similarities (e.g.&nbsp;in free text fields: Alphen a/d Rhijn, alfen ad rijn, etc. can be easily clustered), normalise data fields into one standard, etc. See below for several tutorials.</p>
+<p>Software especially designed to clean re-used data is <a href="https://openrefine.org/">OpenRefine</a>. It cleans starting and trailing blank spaces in cell field, clusters values based on similarities (e.g.&nbsp;in free text fields: Alphen a/d Rhijn, alfen ad rijn, etc. can be easily clustered), normalise data fields into one standard, etc. See below for several tutorials.</p>
 <p>In some cases, researchers write their own scripts (in programming languages such as Python, R or SQL) to clean data, in which case the process must be documented. Researchers should include their scripts when they archive the datasets to allow for replication and verification.</p>
 <p>Extra background information:</p>
 <ul>
 <li>EMGO <a href="https://aph-qualityhandbook.org/set-up-conduct/process-analyze-data/3-2-quantitative-research/3-2-1-data-processing/data-cleaning-and-transformation//">Quality Handbook on data cleaning</a></li>
-<li>Making sense of data I: a practical guide to exploratory data analysis and data mining / Glenn J. Myatt, Wayne P. Johnson, 2014 (<a href="http://onlinelibrary.wiley.com.vu-nl.idm.oclc.org/book/10.1002/9781118422007">eBook</a>)</li>
-<li><a href="http://openrefine.org/">Open Refine</a>
+<li>Making sense of data I: a practical guide to exploratory data analysis and data mining / Glenn J. Myatt, Wayne P. Johnson, 2014 (<a href="https://doi.org/10.1002/9781118422007">eBook</a>)</li>
+<li><a href="https://openrefine.org/">Open Refine</a>
 <ul>
-<li><a href="http://www.datacarpentry.org/2015-03-09-ISI-CODATA/lessons/open_refine/open-refine-demo.html">Data Carpentry Open Refine website</a></li>
-<li><a href="https://programminghistorian.org/en/lessons/cleaning-data-with-openrefine">Tutorial</a> by the Programming Historian</li>
-<li><a href="http://digitalnomad.ie/simple-openrefine-tutorial/">Tutorial</a> by Digitalnomad</li>
-<li>Introduction to <a href="http://miriamposner.com/classes/dh101f17/tutorials-guides/data-manipulation/get-started-with-openrefine/">Digital Humanities</a> with Open Refine</li>
+<li><a href="https://www.datacarpentry.org/2015-03-09-ISI-CODATA/lessons/open_refine/open-refine-demo.html">Data Carpentry Open Refine website</a></li>
+<li><a href="https://programminghistorian.org/en/lessons/cleaning-data-with-openrefine">Tutorial</a> by the Programming Historian <!-- * [Tutorial](http://digitalnomad.ie/simple-openrefine-tutorial/) by Digitalnomad --></li>
+<li>Introduction to <a href="https://miriamposner.com/classes/dh101f17/tutorials-guides/data-manipulation/get-started-with-openrefine/">Digital Humanities</a> with Open Refine</li>
 </ul></li>
 </ul>
-<p>For every step of your data cleaning, good <a href="http://libguides.vu.nl/rdm/data-documentation">documentation</a> and clarifying the <a href="https://libguides.vu.nl/rdm/data-provenance">data provenance</a> is necessary.</p>
+<p>For every step of your data cleaning, good <a href="https://libguides.vu.nl/rdm/data-documentation">documentation</a> and clarifying the <a href="https://libguides.vu.nl/rdm/data-provenance">data provenance</a> is necessary.</p>
 </section>
 <section id="data-transcription" class="level3">
 <h3 class="anchored" data-anchor-id="data-transcription">Data transcription</h3>
