@@ -4,19 +4,19 @@ title: Process & Analyse Data
 
 ## Data Provenance
 
-Provenance describes the origin of an object. Data provenance refers to the knowledge of where data originate, where they were collected, by whom, for what reason, and similar aspects that help to understand how the data were originally gathered, processed and altered. In daily use, the term “**data provenance**” refers to a record trail that accounts for the origin of a piece of data (in a database, document or repository) together with an explanation of how and why it got to the present place (Encyclopedia of Database Systems, pp [608-608](http://link.springer.com/referenceworkentry/10.1007%2F978-0-387-39940-9_1305)). You can also call it the process of keeping records of changes in the data. The need for Data Provenance increases as the reuse of datasets becomes more common in research. The term was originally mostly used in relation to works of art, but is now used in similar senses in a wide range of fields ([Wikipedia](https://en.wikipedia.org/wiki/Provenance)).
+Provenance describes the origin of an object. Data provenance refers to the knowledge of where data originate, where they were collected, by whom, for what reason, and similar aspects that help to understand how the data were originally gathered, processed and altered. In daily use, the term “**data provenance**” refers to a record trail that accounts for the origin of a piece of data (in a database, document or repository) together with an explanation of how and why it got to the present place (Encyclopedia of Database Systems, pp [608-608](https://link.springer.com/referenceworkentry/10.1007%2F978-0-387-39940-9_1305)). You can also call it the process of keeping records of changes in the data. The need for Data Provenance increases as the reuse of datasets becomes more common in research. The term was originally mostly used in relation to works of art, but is now used in similar senses in a wide range of fields ([Wikipedia](https://en.wikipedia.org/wiki/Provenance)).
 
 [![](https://libapps-eu.s3.amazonaws.com/accounts/46351/images/Credibility_Trust_Provenace_data.gif)](https://commons.wikimedia.org/wiki/File:Credibility_Trust_Provenace_data.svg)
 
 Researchers regularly use a lab notebook or a journal to document their hypotheses, experiments and initial analysis or interpretation of these experiments. If you manually change data in a dataset, this should also be documented. Sometimes records of changes in data can be kept by adding notes to programmes or scripts that are used.
 
 * [Electronic Lab Journals](https://en.wikipedia.org/wiki/List_of_ELN_software_packages) or Electronic Lab Notebooks are used to meticulously describe and document the process of analysis. Mostly used used in a laboratory environment,; biolab, chemical lab, etc.
-* For computational analyses, [Computational Notebooks like Jupyter notebook](http://jupyter.org/) are used, where you can describe the analysis steps alongside the computer code in different languages like Python, R, Spark, etc. It is important to document steps and changes in your code by writing comments. This way, others and future you can understand how your code works.
+* For computational analyses, [Computational Notebooks like Jupyter notebook](https://jupyter.org/) are used, where you can describe the analysis steps alongside the computer code in different languages like Python, R, Spark, etc. It is important to document steps and changes in your code by writing comments. This way, others and future you can understand how your code works.
 * The [Open Science Framework](https://osf.io) connects different storage types you already use (SURFdrive, Dataverse, etc) and logs automatically all changes of all the steps you make while you progress. With the fine grained history-log and version control system of OSF, you can see all steps you made. You can store and archive the whole provenance trail for citable reproducibility.
 
 Finally, when a dataset contains personal data, data provenance can help researchers to understand the specifics and the context in which the data were gathered, also to be able to assess whether or not the informed consent given for the first research, is applicable.
 
-For every step of your data analysis, good [data documentation](http://libguides.vu.nl/rdm/data-documentation) is necessary.
+For every step of your data analysis, good [data documentation](https://libguides.vu.nl/rdm/data-documentation) is necessary.
 
 ## Data processing
 
@@ -26,21 +26,21 @@ The process of detecting and correcting (or removing) corrupt or inaccurate info
 
 ![](https://libapps-eu.s3.amazonaws.com/accounts/46351/images/MessyData.jpg)
 
-Software especially designed to clean re-used data is [OpenRefine](http://openrefine.org/). It cleans starting and trailing blank spaces in cell field, clusters values based on similarities (e.g. in free text fields: Alphen a/d Rhijn, alfen ad rijn, etc. can be easily clustered), normalise data fields into one standard, etc. See below for several tutorials.
+Software especially designed to clean re-used data is [OpenRefine](https://openrefine.org/). It cleans starting and trailing blank spaces in cell field, clusters values based on similarities (e.g. in free text fields: Alphen a/d Rhijn, alfen ad rijn, etc. can be easily clustered), normalise data fields into one standard, etc. See below for several tutorials.
 
 In some cases, researchers write their own scripts (in programming languages such as Python, R or SQL) to clean data, in which case the process must be documented. Researchers should include their scripts when they archive the datasets to allow for replication and verification.
 
 Extra background information:
 
 * EMGO [Quality Handbook on data cleaning](https://aph-qualityhandbook.org/set-up-conduct/process-analyze-data/3-2-quantitative-research/3-2-1-data-processing/data-cleaning-and-transformation//)
-* Making sense of data I: a practical guide to exploratory data analysis and data mining / Glenn J. Myatt, Wayne P. Johnson, 2014 ([eBook](http://onlinelibrary.wiley.com.vu-nl.idm.oclc.org/book/10.1002/9781118422007))
-* [Open Refine](http://openrefine.org/)
-  * [Data Carpentry Open Refine website](http://www.datacarpentry.org/2015-03-09-ISI-CODATA/lessons/open_refine/open-refine-demo.html)
+* Making sense of data I: a practical guide to exploratory data analysis and data mining / Glenn J. Myatt, Wayne P. Johnson, 2014 ([eBook](https://doi.org/10.1002/9781118422007))
+* [Open Refine](https://openrefine.org/)
+  * [Data Carpentry Open Refine website](https://www.datacarpentry.org/2015-03-09-ISI-CODATA/lessons/open_refine/open-refine-demo.html)
   * [Tutorial](https://programminghistorian.org/en/lessons/cleaning-data-with-openrefine) by the Programming Historian
-  * [Tutorial](http://digitalnomad.ie/simple-openrefine-tutorial/) by Digitalnomad
-  * Introduction to [Digital Humanities](http://miriamposner.com/classes/dh101f17/tutorials-guides/data-manipulation/get-started-with-openrefine/) with Open Refine
+  <!-- * [Tutorial](http://digitalnomad.ie/simple-openrefine-tutorial/) by Digitalnomad -->
+  * Introduction to [Digital Humanities](https://miriamposner.com/classes/dh101f17/tutorials-guides/data-manipulation/get-started-with-openrefine/) with Open Refine
 
-For every step of your data cleaning, good [documentation](http://libguides.vu.nl/rdm/data-documentation) and clarifying the [data provenance](https://libguides.vu.nl/rdm/data-provenance) is necessary.
+For every step of your data cleaning, good [documentation](https://libguides.vu.nl/rdm/data-documentation) and clarifying the [data provenance](https://libguides.vu.nl/rdm/data-provenance) is necessary.
 
 ### Data transcription
 
@@ -102,37 +102,42 @@ The VU has several research groups that offer their code online. You can find th
 * VU RDM Tech IT group, on [GitHub](https://github.com/vu-rdm-tech)
 * A list of RDM tools, on [GitHub](https://htmlpreview.github.io/?https://github.com/vu-rdm-tech/api-scripts/blob/master/tool_descriptions/doctext.html)
 
-## High performance computing
-
+### Compute services
+<!--# I'm thinking this might also be worh its own topic page -->
 If your pc or laptop takes too much time performing your analysis, it is time to scale up to a higher level. There are several options for employees and students who require more computing power than their own desktop or laptop can provide.
 
+Several options are detailed below. [Contact IT for Research](https://services.vu.nl/esc?id=sc_cat_item&sys_id=4e079166978d5950e553359fe153afc5) for advice on which solution could best fit your workflow
+
+#### High Performance Computing (HPC)
 ![](https://libapps-eu.s3.amazonaws.com/accounts/46351/images/noaa-ibmsupercomputer.gif)
 
-### When do you need access to High Performance Computing?
+Roughly speaking, you should try to get access to the HPC when you need to stick a post-it on your laptop or PC that says: "do not touch, analysis ongoing". Or when you want to run analyses parallel to each other, because they take too long. It is important to consider such a situation at the very beginning of your research or when writing your Data Management Plan: is it conceivable that your dataset will become so large or your analysis so complicated that you will need HPC? Please note that this can occur for any discipline and any sort of data, qualitative and quantitative. If you may need HPC, you also need to reconsider your analysis methods. Programmes like SPSS and Excel do not run well on a HPC, and you would need to (learn to) write scripts in R or Python <!-- # [R or Python](https://libguides.vu.nl/rdm/data-analysis) -->. If you want to know if using HPC may be necessary or useful for your project, you can contact [IT for Research](https://services.vu.nl/esc?id=sc_cat_item&sys_id=4e079166978d5950e553359fe153afc5) to ask for more information (select the "Onderzoek service domain").
 
-Roughly speaking, you should try to get access to the HPC when you need to stick a post-it on your laptop or PC that says: "do not touch, analysis ongoing". Or when you want to run analyses parallel to each other, because they take too long. It is important to consider such a situation at the very beginning of your research or when writing your Data Management Plan: is it conceivable that your dataset will become so large or your analysis so complicated that you will need HPC? Please note that this can occur for any discipline and any sort of data, qualitative and quantitative. If you may need HPC, you also need to reconsider your analysis methods. Programmes like SPSS and Excel do not run well on a HPC, and you would need to (learn to) write scripts in [R or Python](https://libguides.vu.nl/rdm/data-analysis). If you want to know if using HPC may be necessary or useful for your project, you can contact [IT for Research](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=4cb138ee97fa0950e553359fe153afff) to ask for more information.
+#### SURF Snellius Compute Cluster
+Snellius is the Dutch National supercomputer hosted at SURF. The system facilitates scientific research carried out in many Universities, independent research institutes, governmental organizations, and private companies in the Netherlands.  
 
-#### SURF Lisa Compute Cluster:
+It’s a service comprising a wide range of resources, compilers and, such as R statistics and MATLAB, and libraries. SURF continually adjusts the service to the needs of the user community. For example, Snellius Compute Cluster includes accelerators (very fast processors),high memory nodes and GPU nodes. <!--# might need a further rewrite -->
 
-[Lisa Compute Cluster](https://services.vu.nl/esc?id=kb_article&sysparm_article=KB0012774) is a centrally managed Linux cluster, that is ideal for large-scale computations. It’s a service comprising a wide range of resources, compilers and [**software**](https://userinfo.surfsara.nl/systems/lisa/software), such as R statistics and MATLAB, and libraries, such as the Math Kernel Library (MKL) or Intel. SURFsara continually adjusts the service to the needs of the user community. For example, Lisa Compute Cluster includes accelerators (very fast processors) and high memory nodes (for users who need nodes with extra memory). When processing batch jobs, SURFsara applies a ‘fair share’ mechanism.
+You can find more information on the [SURF Snellius Wiki](https://servicedesk.surf.nl/wiki/display/WIKI/Snellius).
 
 #### BAZIS Compute Cluster
+IT for Research (ITvO) offers access to your own Linux computational cluster at the VU. BAZIS is a managed service for high performance computing (HPC). Research groups can add their own compute server hardware to [BAZIS](../topics/bazis.qmd), ITvO will take care of configuring and maintaining the software stack on your servers.
 
-IT for Research (ITvO) offers access to your own Linux computational cluster at the VU.[BAZIS](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=68b9e61f97cf09d0e553359fe153af51) is a managed service for high performance computing (HPC). Research groups can add their own compute servers to BAZIS and directly use software and options that are usually only available on a supercomputer. BAZIS also has 7 GPU nodes with 240GB memory and 32 cores for general use, sponsored by the VU HPC Counsel. Compute results are stored in Scistor and can be directly available on your own workstation for further analysis.
+BAZIS also has several "community" nodes for use by all VU researchers, sponsored by the VU HPC Council. 
 
-#### SURF RCCS
+BAZIS is connected to SciStor <!--# needs internal link --> providing easy access to your research data and analysis result. 
 
-[SURF Research Capacity Computing Service](https://services.vu.nl/esc?id=kb_article&sysparm_article=KB0012777) (RCCS) further extends the solutions available with the on-premise Bazis cluster and SURF Lisa CPU cluster with:  
+#### VU JupyterHub for education 
+If you are not yet ready to take the leap to cluster computing and work with Python consider JupyterHub. VU IT has built a Jupyter Notebook environment meant mainly for Education purposes, but accessible for researchers as well on <https://hub.compute.vu.nl/>
 
-* Access to [Lisa GPU island](https://www.surf.nl/en/lisa-compute-cluster-extra-processing-power-for-research)  
-* Access to the [National Supercomputer Snellius](https://www.surf.nl/en/dutch-national-supercomputer-snellius) at SURF  
-* Access to [SURF HPC Cloud](https://www.surf.nl/en/hpc-cloud-your-flexible-compute-infrastructure)  
-* Project space on SURF systems  
+#### (Virtual) servers
+There are also several options to run applications in a server environment. This is useful if for example you use software that does not work on HPC, you want to run a web service, you want to create a research environment for your project. There are several options available for researchers.
 
-Watch [this youtube video](https://youtu.be/z0dWGmFRjLs) for detailed information.
+##### SciCloud
+IT for Research (ITvO) offers a virtual server environment where you can run your own server (Linux or Windows). ITvO installs the basic operating system and you are free to install needed software. Web services can be made accessible on the internet. You can find more information and a request form on the [VU service portal](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=d80aee1f97cf09d0e553359fe153afd7)
 
-To help you to efficiently use scientific software on your workstation or compute cluster there are regular training possibilities. Check in your department, at [https://hpc.labs.vu.nl](https://hpc.labs.vu.nl) or [https://training.prace-ri.eu/](https://training.prace-ri.eu/)
+##### SURF Research Cloud
+SURF also offers a virtual server environment. Several environments with pre-installed software can easily be installed from a catalog. Find more information on the (SURF wiki)[https://servicedesk.surf.nl/wiki/display/WIKI/SURF+Research+Cloud] 
 
-Please contact the [IT for Research department](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=4cb138ee97fa0950e553359fe153afff) in order to discuss your possibilities.
-
-For every step of your data analysis, good [documentation](http://libguides.vu.nl/rdm/data-documentation) is necessary.
+##### Dedicated hardware 
+Sometimes your workload needs dedicated hardware. ITvO offers the option to host your own server hardware in our on-campus data center. Please [Contact IT for Research](https://services.vu.nl/esc?id=sc_cat_item&sys_id=4e079166978d5950e553359fe153afc5) to discuss possibilities.

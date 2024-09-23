@@ -1,4 +1,6 @@
-# Data Management Plan (DMP)
+---
+title: Data Management Plan (DMP)
+---
 
 ## What is a DMP
 
@@ -8,7 +10,7 @@ A Data Management Plan (DMP) is a document outlining how research data will be h
 
 VU Amsterdam offers the online tool [DMPonline](https://dmponline.vu.nl/) for writing Data Management Plans. DMPonline is a platform that offers a range of templates, ensuring that researchers can create DMPs to meet the standards of diverse funders and institutions associated with their projects. DMPonline makes it easy to work on a DMP together with colleagues, advisors, or other stakeholders. VU Amsterdam researchers can use the `request feedback` function of DMPonline to get their DMP reviewed by a faculty data steward or RDM Support Desk colleague.
 
-If you have questions about DMPonline, or encounter problems when using the tool, please get in touch with <rdm@vu.nl>.
+If you have questions about DMPonline, or encounter problems when using the tool, please get in touch with [rdm@vu.nl](mailto:rdm@vu.nl).
 
 ## Choosing the right template
 
@@ -27,15 +29,15 @@ You can select the VU template by taking the following steps (see also the pictu
 
 Note: Follow these steps as well if you receive funding from NWO or ZonMw (see also below).
 
-![](../public/dmp-001.png)
+![Screenshot of a form for creating a data management plan, asking for the research project, where it is being done, who is funding it and what template you would like to use.](../public/dmp-001.png)
 
-If you're aiming to write a full DMP based on the VU DMP template, please make sure you don't select the GDPR registration form. 
+If you're aiming to write a full DMP based on the VU DMP template, please make sure you don't select the GDPR registration form.
 
-![](../public/dmp-002.png)
+![A screenshot highlighting to not use the VU GDPR Registration form](../public/dmp-002.png)
 
 ### Funder template
 
-We recommend researchers to use the VU DMP template whenever possible, especially for researchers who work with personal data. The VU DMP template includes questions that serve as input for the GDPR record of processing activities. This means that when you write a DMP based on the VU DMP template, you simultaneousely comply with the VU requirement to register the personal data you use in your research. 
+We recommend researchers to use the VU DMP template whenever possible, especially for researchers who work with personal data. The VU DMP template includes questions that serve as input for the GDPR record of processing activities. This means that when you write a DMP based on the VU DMP template, you simultaneousely comply with the VU requirement to register the personal data you use in your research.
 
 However, it is also possible to use other templates in DMPonline. If your funder or partner organization requires you to use a certain template, it is possible to select that template in DMPonline. Please follow the steps below to select a funder's template.
 
@@ -44,7 +46,7 @@ However, it is also possible to use other templates in DMPonline. If your funder
 3. Select `Vrije Universiteit Amsterdam` as your primary research organisation.
 4. In the field under `Select the primary funding organisation`, start typing the name of your funder and select their template.
 
-![](../public/dmp-003.png)
+![Screenshot of a filled out form for creating a data management plan, with example data included.](../public/dmp-003.png)
 
 Researchers who don't work with personal data and who wish to use another DMP template than the VU template, can also follow the steps above.
 
@@ -61,9 +63,9 @@ For research projects, the VU registers data processing via [DMPonline](https://
 3. Select `Vrije Universiteit Amsterdam` as your primary research organisation.
 4. For the question on primary funding organisation, select the check box on the right, saying that no funder is associated with your plan.
 
-![](../public/dmp-001.png)
+![Screenshot of a form for creating a data management plan, asking for the research project, where it is being done, who is funding it and what template you would like to use.](../public/dmp-001.png)
 
-Once you get to the two VU templates, you can fill in the `VU DMP template 2021 v1.4` if you need to write a DMP anyway; the information you include in this DMP template will be used for the registry. If you don't need to write a (new) DMP, you can use the separate `VU GDPR registration form for research v1.1`. Your faculty's [Privacy Champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information) can help you with your registration. 
+Once you get to the two VU templates, you can fill in the `VU DMP template 2021 v1.4` if you need to write a DMP anyway; the information you include in this DMP template will be used for the registry. If you don't need to write a (new) DMP, you can use the separate `VU GDPR registration form for research v1.1`. Your faculty's [Privacy Champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information) can help you with your registration.
 
 If your research is primarily led by Amsterdam UMC, location VUmc, your research will be registered using their own separate system.
 
@@ -115,20 +117,20 @@ It is impossible to provide an overview of tasks to be carried out to ensure com
 
 Ethical aspects of research should be addressed in the ethics procedure of your faculty. Each faculty has their own ethics committee. The webpages of all committees are listed below. Please go to the page of the ethics committee of your faculty to find instructions for ethical review procedures for your study.
 
-* ACTA: [ACTA Institutional Review Board](https://acta.nl/en/research/more-about/acta-institutional-review-board-irb) (IRB)
-* Beta: [Research ethics review committee Faculty of Science](https://vu.nl/en/about-vu/faculties/faculty-of-science/more-about/research-ethics-review-committee-beta) (BETHCIE)
-* FGB: [Scientific and Ethical Review Board](https://vu.nl/en/employee/behavioural-and-movement-sciences-getting-started/the-scientific-and-ethical-review-board-vcwe) (VCWE)
-* FGW: [Ethische Toetsingscommissie Onderzoek](https://vu.nl/en/about-vu/faculties/faculty-of-humanities/more-about/research-ethics-and-integrity) (EtCO)
-* FSW: [Research Ethics Review Committee](https://vu.nl/en/employee/social-sciences-getting-started/research-ethics-review-fss) (RERC)
-* RCH (Faculty of Law): [Ethics Committee](http://www.rechten.vu.nl/en/about-the-faculty/committees/ethics/index.aspx)
-* SBE: [Research Ethics and Integrity](https://vu.nl/en/about-vu/more-about/research-office)
-* VUmc: [METc](https://www.vumc.nl/research/overzicht/medisch-ethische-toetsingscommissie.htm) (Medical Ethical Review Committee)
+- ACTA: [ACTA Institutional Review Board](https://acta.nl/en/research/more-about/acta-institutional-review-board-irb) (IRB)
+- Beta: [Research ethics review committee Faculty of Science](https://vu.nl/en/about-vu/faculties/faculty-of-science/more-about/research-ethics-review-committee-beta) (BETHCIE)
+- FGB: [Scientific and Ethical Review Board](https://vu.nl/en/employee/behavioural-and-movement-sciences-getting-started/the-scientific-and-ethical-review-board-vcwe) (VCWE)
+- FGW: [Ethische Toetsingscommissie Onderzoek](https://vu.nl/en/about-vu/faculties/faculty-of-humanities/more-about/research-ethics-and-integrity) (EtCO)
+- FSW: [Research Ethics Review Committee](https://vu.nl/en/employee/social-sciences-getting-started/research-ethics-review-fss) (RERC)
+- RCH (Faculty of Law): [Ethics Committee](https://www.rechten.vu.nl/en/about-the-faculty/committees/ethics/index.aspx)
+- SBE: [Research Ethics and Integrity](https://vu.nl/en/about-vu/more-about/research-office)
+- VUmc: [METc](https://www.vumc.nl/research/overzicht/medisch-ethische-toetsingscommissie.htm) (Medical Ethical Review Committee)
 
 ### Storage and backup during the research process
 
-An overview of storage facilities at the VU is available in the [Data Storage Finder](https://vu.nl/en/research/storagefinder). You can use this as a starting point to navigate storage solutions. 
+An overview of storage facilities at the VU is available in the [Data Storage Finder](https://vu.nl/en/research/storagefinder). You can use this as a starting point to navigate storage solutions.
 
-If you have questions about data storage and backup, send an email to [rdm@vu.nl](rdm@vu.nl).
+If you have questions about data storage and backup, send an email to [rdm@vu.nl](mailto:rdm@vu.nl).
 
 ### Data archiving and publishing
 

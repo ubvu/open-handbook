@@ -25,8 +25,8 @@ website:
         file: blog.qmd
       - text: "Topics"
         file: topics.qmd
-      - text: "Pathways"
-        file: pathways.qmd
+      - text: "Guides"
+        file: guides.qmd
       - contributing.qmd
     tools:
       - icon: github
@@ -60,6 +60,7 @@ format:
       - custom.scss # https://quarto.org/docs/output-formats/html-themes.html#theme-options
     code-copy: true
     code-overflow: wrap
-
+filters:
+  - utils/include-files.lua
 execute:
   freeze: auto

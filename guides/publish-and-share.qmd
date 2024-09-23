@@ -8,7 +8,7 @@ title: Publish & Share Data
 
 In the Data Management Plan the researcher describes if the data will be stored for the mid or the long term.
 
-![](https://libapps-eu.s3.amazonaws.com/accounts/46351/images/Two_women_operating_ENIAC.gif)
+![A monochrome picture of two women operating the ENIAC, an early computer](https://libapps-eu.s3.amazonaws.com/accounts/46351/images/Two_women_operating_ENIAC.gif)
 
 #### Mid-term archive
 
@@ -23,21 +23,16 @@ Data relevant for future research should be archived for the long term. A datase
 3. Others may want to reuse the data  
 4. The data cannot be reproduced
 
-Researchers should bear in mind that repositories can charge for archiving data. These costs can vary according to the data volume and the archive used. It is important that you consider in advance how you will budget for these costs. Whatever archiving option is used, proper descriptions of the dataset(s) and adding [metadata](http://libguides.vu.nl/rdm/metadata) are important.
+Researchers should bear in mind that repositories can charge for archiving data. These costs can vary according to the data volume and the archive used. It is important that you consider in advance how you will budget for these costs. Whatever archiving option is used, proper descriptions of the dataset(s) and adding [metadata](https://libguides.vu.nl/rdm/metadata) are important.
 
-### Deposit your data @VU Amsterdam
+### Deposit your data
 
-VU Amsterdam requests that researchers archive the data used in a publication in a repository for at least ten years after the release of the publication (see also [VU Policies & Regulations](http://libguides.vu.nl/rdm/policies-regulations)). There are a lot of digital archives and many more keep appearing.  
+VU Amsterdam requests that researchers archive the data used in a publication in a repository for at least ten years after the release of the publication (see also [VU Policies & Regulations](https://libguides.vu.nl/rdm/policies-regulations)). There are a lot of digital archives and many more keep appearing.  
   
 The right archival option depends on the nature of the data and the field of science as described in faculty or departmental data management policy documents. The university offers 2 different general repositories for data archiving.
 
-![](https://libapps-eu.s3.amazonaws.com/accounts/46351/images/RDS_SelWizard.gif)
-
-The RDM Support Desk and faculty data stewards can help researchers with the selection of a repository that meets all the relevant criteria of privacy (sensitivity), dataset size, etc.
-
-![](https://s3.amazonaws.com/libapps/accounts/62029/images/Icon_dataverse.png)
-
-[DataverseNL](https://dataverse.nl/dataverse/vuamsterdam) - an online platform for the publication of citable research data in a semi-open environment. DataverseNL allows users to link publications to datasets directly, and to share the data through online archives such as DANS.
+1. The RDM Support Desk and faculty data stewards can help researchers with the selection of a repository that meets all the relevant criteria of privacy (sensitivity), dataset size, etc.
+2. [DataverseNL](https://dataverse.nl/dataverse/vuamsterdam) - an online platform for the publication of citable research data in a semi-open environment. DataverseNL allows users to link publications to datasets directly, and to share the data through online archives such as DANS.
 
 Specifications:
 
@@ -47,8 +42,6 @@ Specifications:
 * Enables researchers to publish open data according to grant providers' regulations
 * Generates a link (persistent identifier), e.g. for data citations in publications
 * Retention period is at least 10 years
-
-![](https://libapps-eu.s3.amazonaws.com/accounts/144379/images/Icon_yoda.png)
 
 [Yoda](https://yoda.vu.nl/site/) - besides [active storage](https://libguides.vu.nl/rdm/data-storage?#s-lg-box-wrapper-15125671), Yoda also has an archive function: the vault. You can use the vault in two ways:
 
@@ -65,7 +58,7 @@ Publishing refers to depositing data in a public repository that allows others t
 
 Use the image below to remind yourself of the difference between archiving and publishing, and read the [data publication](https://libguides.vu.nl/rdm/data-publication) page to find out what aspects are important when you decide to publish your data.
 
-![](https://libapps-eu.s3.amazonaws.com/accounts/144379/images/archive-or-publish.jpg)
+![A sketch diagram by Scriberia illustrating the archive or publish data journey](https://libapps-eu.s3.amazonaws.com/accounts/144379/images/archive-or-publish.jpg)
 
 _This illustration is created by Scriberia with The Turing Way community. Used under a CC-BY 4.0 licence. DOI: [10.5281/zenodo.3332807](https://doi.org/10.5281/zenodo.3332807)_
 
@@ -105,15 +98,15 @@ Open Access publishing is one component of Open Science. The European Commission
 
 Instead of archiving research data in a data repository, you may choose to publish an article about your data collection. This is not necessarily common for all disciplines. Some examples of data journals where you can publish your data and dataset, are:
 
-* [Scientific Data - Nature](http://www.nature.com/sdata/about)
-* [Geoscience Data Journal](http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)2049-6060)
+* [Scientific Data - Nature](https://www.nature.com/sdata/about)
+* [Geoscience Data Journal](https://doi.org/10.1002/(ISSN)2049-6060)
 * [Gigascience](https://academic.oup.com/gigascience)
 * [Dataset Papers in Science](https://www.hindawi.com/journals/dpis/contents/)
-* [Journal of Physical and Chemical Reference Data](http://scitation.aip.org/content/aip/journal/jpcrd/browse)
-* [Earth System Science Data](http://earth-system-science-data.net/)
-* [Journal of Open Archaeology Data](http://openarchaeologydata.metajnl.com/)
-* [Journal of Open Health Data](http://openhealthdata.metajnl.com/)
-* [Journal of Open Psychology Data](http://openpsychologydata.metajnl.com/)
+* [Journal of Physical and Chemical Reference Data](https://scitation.aip.org/content/aip/journal/jpcrd/browse)
+* [Earth System Science Data](https://earth-system-science-data.net/)
+* [Journal of Open Archaeology Data](https://openarchaeologydata.metajnl.com/)
+<!-- * [Journal of Open Health Data](http://openhealthdata.metajnl.com/) -->
+* [Journal of Open Psychology Data](https://openpsychologydata.metajnl.com/)
 
 {{< include ../topics/persistent-identifier.qmd >}}
 
@@ -125,16 +118,16 @@ A data licence agreement is a legal instrument that lets others know what they c
 * Who should be contacted if you need access to re-use data
 * Etc.
 
-![](https://libapps-eu.s3.amazonaws.com/accounts/46351/images/Open_Data_CC0_Wikidata.gif)
+![An image of open data, made up of public domain icons](https://libapps-eu.s3.amazonaws.com/accounts/46351/images/Open_Data_CC0_Wikidata.gif)
 
-In principle, Dataverse allows you to choose your terms of use. Some data repositories require you to use a certain licence if you want to deposit your data with them. At [Dryad](http://datadryad.org/ "http://datadryad.org/"), for example, all datasets are published under the terms of [Creative Commons Zero](https://creativecommons.org/share-your-work/public-domain/cc0/ "https://creativecommons.org/share-your-work/public-domain/cc0/") to minimise legal barriers and to maximise the impact for research and education. Some funders may also require that you publish the data as open data. **Open data** are data that can be freely used, re-used and redistributed by anyone - subject only, at most, to the requirement to attribute and share alike ([Open Knowledge International definition)](http://opendatahandbook.org/guide/en/what-is-open-data/). If you need help with drawing up license agreements, you can contact the [IXA office](https://www.ixa.nl/).
+In principle, Dataverse allows you to choose your terms of use. Some data repositories require you to use a certain licence if you want to deposit your data with them. At [Dryad](https://datadryad.org/), for example, all datasets are published under the terms of [Creative Commons Zero](https://creativecommons.org/share-your-work/public-domain/cc0/) to minimise legal barriers and to maximise the impact for research and education. Some funders may also require that you publish the data as open data. **Open data** are data that can be freely used, re-used and redistributed by anyone - subject only, at most, to the requirement to attribute and share alike ([Open Knowledge International definition)](https://opendatahandbook.org/guide/en/what-is-open-data/). If you need help with drawing up license agreements, you can contact the [IXA office](https://www.ixa.nl/).
 
 Additional websites and tools:
 
 * [Explanation about copyrights and licences](https://www.youtube.com/watch?v=_J26POpb-rQ&feature=youtu.be) by a professor from Leiden University (English subtitles available)
 * The [Guide to Creative Commons for Scholarly Publishing and Educational Resources](https://zenodo.org/record/4090923#.X6ugz1DvJPY) by NWO, VSNU and the University and Royal Libraries
 * [DCC how-to guide on licensing research data](https://www.dcc.ac.uk/guidance/how-guides/license-research-data), a guide that links to the Creative Commons website, where many terms are explained
-* [Open Data Commons Public Domain Dedication and License (PDDL)](http://opendatacommons.org/licenses/pddl/)
+* [Open Data Commons Public Domain Dedication and License (PDDL)](https://opendatacommons.org/licenses/pddl/)
 * [EUDAT B2SHARE license selection wizard](https://ufal.github.io/public-license-selector/), which Pawel Kamocki (et al) released under an open source license.
 
 ### Licensing software

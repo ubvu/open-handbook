@@ -4,11 +4,11 @@ Welcome to the source code for the VU Research Support Handbook! If you want to 
 
 ## What is this?
 
-This is a community led handbook for all things related to research at VU. The handbook is split into **topics** and **pathways**. 
+This is a community led handbook for all things related to research at VU. The handbook is split into **topics** and **guides**. 
 
 > [Topics](https://ubvu.github.io/open-handbook/topics.html) - self-contained descriptions of specific things relevant to your work at VU Amsterdam.
 
-> [Pathways](https://ubvu.github.io/open-handbook/pathways.html) - a collection of topics in a meaningful order to achieve a goal
+> [Guides](https://ubvu.github.io/open-handbook/guides.html) - a collection of topics in a meaningful order to achieve a goal
 
 All information in the handbook is specific to VU's local context. We are happy to hear if things are (un)helpful and you work at VU Amsterdam. 
 
