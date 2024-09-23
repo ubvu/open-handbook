@@ -1,0 +1,19 @@
+name: Check External Links
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+
+    - name: Run lychee-action on .qmd files
+      uses: lycheeverse/lychee-action@v1
+      with:
+        args: "--exclude doi.org '**/*.qmd'"
