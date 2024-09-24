@@ -16,5 +16,5 @@ jobs:
     - name: Run lychee-action on .qmd files
       uses: lycheeverse/lychee-action@v1
       with:
-        args: "--exclude doi.org '**/*.qmd'"
+        args: "--exclude doi.org --exclude data.4tu.nl --exclude isbn.org '**/*.qmd'"
         fail: true
