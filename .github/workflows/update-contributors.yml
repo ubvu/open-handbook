@@ -25,10 +25,14 @@ jobs:
                     gh
                     allcontributors
 
-            - name: Collect contributor data
-              run: Rscript -e 'allcontributors::add_contributors(files = c("about.qmd", "README.md"), num_sections = 1, alphabetical = TRUE)'
-            - uses: EndBug/add-and-commit@v9
+            - name: Create Pull Request
+              uses: peter-evans/create-pull-request@v5
               with:
-                default_author: github_actions
-                message: "Update contributors"
-                add: 'README.md about.qmd'
+                commit-message: "Update contributors"
+                branch: update-contributors
+                title: "Update contributors"
+                body: "This PR updates the contributors list."
+                labels: "auto-update"
+                add-paths: |
+                  README.md
+                  about.qmd
