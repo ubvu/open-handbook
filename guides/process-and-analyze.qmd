@@ -37,7 +37,6 @@ Extra background information:
 * [Open Refine](https://openrefine.org/)
   * [Data Carpentry Open Refine website](https://www.datacarpentry.org/2015-03-09-ISI-CODATA/lessons/open_refine/open-refine-demo.html)
   * [Tutorial](https://programminghistorian.org/en/lessons/cleaning-data-with-openrefine) by the Programming Historian
-  <!-- * [Tutorial](http://digitalnomad.ie/simple-openrefine-tutorial/) by Digitalnomad -->
   * Introduction to [Digital Humanities](https://miriamposner.com/classes/dh101f17/tutorials-guides/data-manipulation/get-started-with-openrefine/) with Open Refine
 
 For every step of your data cleaning, good [documentation](https://libguides.vu.nl/rdm/data-documentation) and clarifying the [data provenance](https://libguides.vu.nl/rdm/data-provenance) is necessary.
@@ -58,8 +57,6 @@ There are various online tools that may help facilitate these processes. The VU 
 
 VU Amsterdam is preparing a decision guide on anonymisation and pseudonymisation.
 
-You can find more information [here](https://libguides.vu.nl/ld.php?content_id=35095603) on how Amnesia works, how it can be used and how you can make your data compliant with the GDPR regulations.
-
 ## Data analysis
 
 ### Data Analysis
@@ -68,7 +65,7 @@ Although data analysis is an ongoing process throughout the research project, th
 
 Data analysis converts raw/processed data into information that is useful for understanding. Many steps may be required to gain useful information from raw data. The process of [processing](https://libguides.vu.nl/rdm/data-processing) and analysing data may require computing power not readily available or specific storage and protection options. If multiple parties are involved in the analysis, data sharing may also be necessary.
 
-Data analysis often requires the use of specialised software.The software offered and licensed by the university currently includes: Stata, SPSS, and Atlas.TI. Some of the software is available for download at: [](https://vu.nl/en/about-vu/more-about/off-campus-access)[download.vu.nl](https://download.vu.nl/). For open software, see below.
+Data analysis often requires the use of specialised software.The software offered and licensed by the university currently includes: Stata, SPSS, and Atlas.TI. Some of the software is available for download at: [download.vu.nl](https://download.vu.nl/). For open software, see below.
 
 In some cases researchers write their own scripts to analyse the data. At the VU, most scripts are written in R, Python and SQL.
 
@@ -85,7 +82,7 @@ If you want to read up on data analysis you should check out what journal articl
 Using open software increases the Accessiblity, Interoperability and Reusability of your data. For that reason, we recommend that you use open software as much as possible for your data analysis. This could be software, code or scripts that you have written yourself - where possible, please make this software public, so your analysis is reproducible. Examples of open software are R and Python, which can be used instead of proprietary, commercial software such as SPSS and Matlab.
 
 Researchers often write their software themselves. There are also organisations that specialise in writing research software, such as the eScience Center. The eScience Center offers the software they built for free use [online](https://www.research-software.nl/). Their software is tagged with a DOI and stored in Zenodo as well as GitHub.  
-If you use software for analysing personal or otherwise sensitive data, you need a processing agreement with the developer if the software does not run locally. You can contact your [](https://vu.nl/en/about-vu/more-about/off-campus-access)[Privacy Champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information) if you are not sure if you need one, and for help to set up a processing agreement.
+If you use software for analysing personal or otherwise sensitive data, you need a processing agreement with the developer if the software does not run locally. You can contact your [Privacy Champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information) if you are not sure if you need one, and for help to set up a processing agreement.
 
 There are several ways in which to start using open software:
 
