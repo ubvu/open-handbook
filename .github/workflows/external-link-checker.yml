@@ -23,5 +23,4 @@ jobs:
     - name: Comment PR
       uses: thollander/actions-comment-pull-request@v2
       with:
-        message: |
-          ${{ steps.lychee.outputs.summary }}
+        filePath: lychee/results.md
