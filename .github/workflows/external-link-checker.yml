@@ -20,3 +20,19 @@ jobs:
         args: "--exclude doi.org --exclude data.4tu.nl --exclude isbn.org '**/*.qmd'"
         format: markdown
         jobSummary: true
+    - name: Post results to PR
+      uses: actions/github-script@v3
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        script: |
+          const results = ${{ steps.lychee.outputs.results }}
+          const summary = ${{ steps.lychee.outputs.summary }}
+          const body = `## External link check
+          ${summary}
+          ${results}`
+          github.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: body
+          })
