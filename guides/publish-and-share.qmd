@@ -108,7 +108,9 @@ Instead of archiving research data in a data repository, you may choose to publi
 <!-- * [Journal of Open Health Data](http://openhealthdata.metajnl.com/) -->
 * [Journal of Open Psychology Data](https://openpsychologydata.metajnl.com/)
 
-{{< include ../topics/persistent-identifier.qmd >}}
+```{.include shift-heading-level-by=3}
+../topics/persistent-identifier.qmd
+```
 
 ### Licensing the data
 
