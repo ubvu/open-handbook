@@ -1,0 +1,125 @@
+## [What is Qualtrics]()
+
+Qualtrics is a cloud-based subscription and software platform (SaaS) that enables users to create and manage online surveys. The Qualtrics survey tool can support a variety of (complex) survey design requirements by providing such functionalities as different question types, display and branching logic configuration and the use of embedded data and API’s.             
+
+The Vrije Universiteit Amsterdam (VU) holds an academic license which includes non-standard, advanced features and functions, including but not limited to:   
+
+ 
+
+·        **FILE UPLOAD** – a non-standard question type that allows respondents to upload a file along with their survey response
+
+
+
+·        **SIGNATURE QUESTION** – a non-standard question type that presents survey participants with an entry box where they can draw their signature.
+
+
+
+·        **API INTEGRATION** – an advanced license feature that can be used to automate repetitive processes inside of Qualtrics or to pass information in and out of Qualtrics.
+
+
+
+·        **OFFLINE SURVEY APP** – an advanced license feature that comprises a downloadable application available for iOS and Android that allows you to administer surveys on your mobile device or tablet without an internet connection.
+
+ 
+
+ 
+
+## [License Limitation]()
+
+Whilst all VU students, employees and researchers are eligible to make use of a Qualtrics license, VU’s Qualtrics license usage is limited for creating, managing and collecting data for scientific research purposes only. Qualtrics should not be used for non-scientific purposes such as the creation of registration or attendance lists, and course evaluation surveys for example; instead users should to other available tools such as MS Forms.
+
+##  
+
+ 
+
+## [Creating and Accessing User Accounts]()
+
+The VU Qualtrics Central Brand (hereafter VU’s Central Brand) at [vuamsterdam.eu.qualtrics.com] allows for user’s auto-enrolment, an automated account creation and registration process. Any user having an enabled VU email address may auto-enrol on VU’s Central Brand. The email address will function as the account’s username.
+
+VU’s Central Brand makes use of Single-Sign On (SSO). This means that users can log in to Qualtrics using VU’s internal login system.
+
+**** 
+
+**To create a user account and access the Qualtrics environment** at the Central Brand, please proceed as follows:
+
+ 
+
+1.      Go to: [https://vuamsterdam.eu.qualtrics.com](https://vuamsterdam.eu.qualtrics.com)
+
+2.      On the login page, choose: Vrije Universiteit SSO
+
+3.      Log in with your VU account credentials (e-mail address and password)
+
+ 
+
+VU’s Central Brand Login Page:
+
+[]()
+
+It is recommended saving VU’s Central Brand internet address (URL) as a Favourite or Bookmark link for future reference.  
+
+ 
+
+ 
+
+Multi-Factor Authentication (MFA) is mandatory to all Qualtrics users utilizing the **vuamsterdam** brand.  
+
+MFA acts as an additional layer of security to prevent unauthorized users from accessing accounts and resources, even when the password has been stolen.  Qualtrics will use multi-factor authentication to validate user identity and provide quick and convenient access to authorized users.  
+
+ 
+
+ 
+
+[ ]()
+
+## Note to Existing Users
+
+### [Security Settings: Login Error Disabled Account]()
+
+ 
+
+ 
+
+ 
+
+
+
+Security  settings are in place which set an user account to [Status: Disabled] when a certain inactivity threshold is reached. This threshold is currently 12 months. This setting follows security requirements regarding User Account Management (SISO).
+
+A disabled account status does not affect its data.  
+
+
+Users who receive an error [User account is disabled] when trying to log back in after an inactivity period should contact the RDM Support Desk to have their accounts re-enabled (see Available Support).
+
+ 
+
+## [ ]()
+
+##  
+
+## Getting Started
+
+The following resources are available for you to get started with Qualtrics:
+
+**** 
+
+BASECAMP
+Go to [basecamp.qualtrics.com](https://basecamp.qualtrics.com), the online learning platform where you have access to learning instructions on how to use Qualtrics.
+
+**** 
+
+KNOWLEDGE BASE ARTICLES
+Qualtrics offers access to an extensive library of knowledge base articles, including detailed instructions on how to use and configure (advance) features.
+
+Qualtrics Knowledge Base library can be accessed  directly at [qualtrics.com/support](https://www.qualtrics.com/support/)
+
+**** 
+
+QUALTRICS COMMUNITY
+Ask questions to the [Qualtrics community](https://www.qualtrics.com/community/) (platform of all Qualtrics users).
+
+ 
+
+When logging in choose "Sign in with SSO", when asked "Enter your company's Organization ID" fill in "vuamsterdam".
+
+ 
