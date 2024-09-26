@@ -21,12 +21,12 @@ website:
     left:
       - text: "Home"
         file: index.qmd
-      - text: "Blog"
-        file: blog.qmd
       - text: "Topics"
         file: topics.qmd
       - text: "Guides"
         file: guides.qmd
+      - text: "Blog"
+        file: blog.qmd
       - contributing.qmd
     tools:
       - icon: github
