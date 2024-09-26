@@ -69,7 +69,7 @@ Besides the repositories offered by the VU, there are many others. **Unless you 
 There can be various reasons to decide to use a different repository, including funder requirements, preferences of research partners, and a repository being a common choice in your field. For example, Dutch archaeologists mostly use [DANS Data Stations](https://dans.knaw.nl/en/data-stations/archaeology/) to deposit and publish their data. Using a repository that is a common choice in your field will make your data more findable for your colleagues and increase the visibility of your work as a researcher. Some of the data repositories most commonly used in the Netherlands include:
 
 * [DANS Data Stations](https://dans.knaw.nl/en/): a domain-agnostic research data repository hosted by the Data Archiving and Networked Services, an institute of NWO and KNAW. DANS also develops policies, services and new infrastructures for research data and provides researchers with advice on how to preserve their data. VU researchers are also welcome to deposit their data at DANS-EASY;
-* [4TU.ResearchData](https://data.4tu.nl/info/en/): a repository for science, engineering and design data hosted by the 4TU Federation. This is a consortium of the four Dutch technical universities: TU Delft, TU Eindhoven, University of Twente and Wageningen University and Research. VU researchers are also welcome to deposit their data at 4TU;
+* [4TU.ResearchData](https://data.4tu.nl): a repository for science, engineering and design data hosted by the 4TU Federation. This is a consortium of the four Dutch technical universities: TU Delft, TU Eindhoven, University of Twente and Wageningen University and Research. VU researchers are also welcome to deposit their data at 4TU;
 * [Zenodo](https://zenodo.org/): a domain-agnostic research data repository hosted by CERN in Switzerland and funded by the European Commission. Zenodo does not only host data, but also presentations, conference procedures and policy documents. It is also possible to archive GitHub repositories directly into Zenodo, by which you contribute to Open Science by making a snapshot of your code available in its current form and for the long term;
 * [OSF (Open Science Framework)](https://osf.io/): a data management and research dissemination platform. The VU is an institutional member of the OSF, which means that you can sign up (and in) using your VU account by clicking on the Institution Button on the sign in/up pages. You can use the OSF to create registrations and preregistrations for your research, to publish preprints, and publish and share data and documentation. You can also link other repositories such as DataverseNL to your OSF project. The same goes for GitHub and storage options such as Research Drive and Surfdrive. Do be careful about what you connect! A full guide for VU OSF users, including instructions about connecting external storage can be found [here](https://osf.io/abwzm/).
 
@@ -82,7 +82,7 @@ You can also find repositories via the [Registry of Research Data Repositories](
 * The repository is funded sustainably for at least the next 50 years;
 * And, in some cases, that the repository's servers are located in the EU.
 
-More recommendations for choosing a data repository can be found on the websites of [OpenAire](https://www.openaire.eu/opendatapilot-repository-guide) or [CESSDA](https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide/6.-Archive-Publish/Data-publishing-routes).
+More recommendations for choosing a data repository can be found on [CESSDA](https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide/6.-Archive-Publish/Data-publishing-routes).
 
 If you would like advice about what would be a good place for you to archive your research data, you can always reach out to the [RDM Support Desk](mailto:rdm@vu.nl).
 
@@ -90,9 +90,9 @@ If you would like advice about what would be a good place for you to archive you
 
 ### Open Access and Open Science
 
-Open Access publishing means that you make your publication freely accessible online to everyone without restrictions. The Vrije Universiteit believes that government-funded research should be available free of charge to as many people as possible. To that end, the VU Library offers [a guide](https://ub.vu.nl/en/university-library-for-researchers/open-access/index.aspx) on how to go about Open Access Publishing.
+Open Access publishing means that you make your publication freely accessible online to everyone without restrictions. VU believes that government-funded research should be available free of charge to as many people as possible.
 
-Open Access publishing is one component of Open Science. The European Commission has defined open science as follows: “Open Science represents a new approach to the scientific process based on cooperative work and new ways of diffusing knowledge by using digital technologies and new collaborative tools. The idea captures a systemic change to the way science and research have been carried out for the last fifty years: shifting from the standard practices of publishing research results in scientific publications towards sharing and using all available knowledge at an earlier stage in the research process”. (Definition taken from [Nationaal Programma Open Science](https://www.openscience.nl/en/open-science/what-is-open-science).) This includes making openly available research data, methods and documentation where possible. As such, RDM and the practices outlined in this LibGuide are a precondition of Open Science. You can read more about Open Science in the Netherlands on the website of the [Nationaal Programma Open Science](https://www.openscience.nl/en) and join the [Open Science Community Amsterdam](https://openscience-amsterdam.com/), the community of VU employees interested in Open Science (joint with the University of Amsterdam).
+Open Access publishing is one component of Open Science. The European Commission has defined open science as follows: “Open Science represents a new approach to the scientific process based on cooperative work and new ways of diffusing knowledge by using digital technologies and new collaborative tools. The idea captures a systemic change to the way science and research have been carried out for the last fifty years: shifting from the standard practices of publishing research results in scientific publications towards sharing and using all available knowledge at an earlier stage in the research process” (Definition taken from [Nationaal Programma Open Science](https://www.openscience.nl/en)). This includes making openly available research data, methods and documentation where possible. As such, RDM and the practices outlined in this LibGuide are a precondition of Open Science. You can read more about Open Science in the Netherlands on the website of the [Nationaal Programma Open Science](https://www.openscience.nl/en) and join the [Open Science Community Amsterdam](https://osc-international.com/osc-amsterdam/), the community of VU employees interested in Open Science (joint with the University of Amsterdam).
 
 ### Publishing your data in a data journal
 
@@ -101,14 +101,14 @@ Instead of archiving research data in a data repository, you may choose to publi
 * [Scientific Data - Nature](https://www.nature.com/sdata/about)
 * [Geoscience Data Journal](https://doi.org/10.1002/(ISSN)2049-6060)
 * [Gigascience](https://academic.oup.com/gigascience)
-* [Dataset Papers in Science](https://www.hindawi.com/journals/dpis/contents/)
 * [Journal of Physical and Chemical Reference Data](https://scitation.aip.org/content/aip/journal/jpcrd/browse)
 * [Earth System Science Data](https://earth-system-science-data.net/)
 * [Journal of Open Archaeology Data](https://openarchaeologydata.metajnl.com/)
-<!-- * [Journal of Open Health Data](http://openhealthdata.metajnl.com/) -->
 * [Journal of Open Psychology Data](https://openpsychologydata.metajnl.com/)
 
-{{< include ../topics/persistent-identifier.qmd >}}
+```{.include shift-heading-level-by=3}
+../topics/persistent-identifier.qmd
+```
 
 ### Licensing the data
 
@@ -172,7 +172,7 @@ Just like your publications, data that you have collected for your research cons
 
 ![Screenshot: adding a dataset to your PURE profile](https://libapps-eu.s3.amazonaws.com/accounts/133513/images/PURE-AddDataset.png)
 
-1. Log into the [VU](https://research.vu.nl/admin/workspace.xhtml) or [VUmc](https://research.vumc.nl/admin/workspace.xhtml) Research Portal (PURE) using your VU or VUmc credentials
+1. Log into the [VU](https://research.vu.nl/admin/workspace.xhtml) Research Portal (PURE) using your VU or VUmc credentials
 2. Click on the “+” (plus) icon next to selecting “Datasets” in the overview
-3. You can fill in the form using this [manual (NL)](https://libguides.vu.nl/ld.php?content_id=32324060)/[manual (EN)](https://libguides.vu.nl/ld.php?content_id=32735556), and read more about the various metadata in use (generic and subject specific)
+3. You can fill in the form using this [manual (NL)]()/[manual (EN)](), and read more about the various metadata in use (generic and subject specific)
 4. Click on “Save” to store the registration

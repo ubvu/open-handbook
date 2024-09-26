@@ -48,7 +48,7 @@ There are several factors that determine what data to select for archiving. For 
 
 More information on selecting data:
 
-* Tjalsma, H. & Rombouts, J. (2011). [Selection of research data: Guidelines for appraising and selecting research data](https://dans.knaw.nl/nl/over/organisatie-beleid/publicaties/DANSselectionofresearchdata.pdf). Data Archiving and Networked Services (DANS).
+* Tjalsma, H. & Rombouts, J. (2011). [Selection of research data: Guidelines for appraising and selecting research data](https://pure.knaw.nl/portal/en/publications/selection-of-research-data-guidelines-for-appraising-and-selectin). Data Archiving and Networked Services (DANS).
 * Digital Curation Centre (DCC): Whyte, A. & Wilson, A. (2010). [How to appraise and select research data for curation](https://www.dcc.ac.uk/resources/how-guides/appraise-select-data). DCC How-to Guides. Edinburgh: Digital Curation Centre.
 * Research Data Netherlands: [Data selection](https://danstraining.moodlecloud.com/mod/page/view.php?id=280).
 
@@ -81,7 +81,7 @@ Different types of data are governed by different standards (see also the image 
 1. [FAIR data principles](https://libguides.vu.nl/rdm/overview#s-lg-box-wrapper-17896126): the set of principles (Findable, Accessible, Interoperable, Reusable) for data exchange.
 2. Disciplinary [metadata standards](https://libguides.vu.nl/rdm/metadata): guidelines for documenting data. This can refer to the dataset documentation, the object description, or both. Disciplinary metadata standards can document the dataset as a whole or as a data object (see number 5).
 3. Project documentation: the description of a project involving data collection. This documentation is often used for research verification and provenance.
-4. [Metadata dataset](https://libguides.vu.nl/c.php?g=683732&p=4880185#s-lg-box-wrapper-18229640): the description of a dataset, often used for discovering datasets within a repository.
+4. Metadata dataset: the description of a dataset, often used for discovering datasets within a repository.
 5. Metadata of a data object: name definition of a data object, often set up by the researcher to structure data or by the research group for collaboration during the project.
 
 ### Codebooks
@@ -151,12 +151,10 @@ On this general, descriptive, level the metadata concerns [data packaging](https
 When you want to make sure that your dataset is findable it is recommended that the elements of the description of your dataset are made according to a certain metadata standard that allows for easier exchange of metadata and harvesting of the metadata by search engines. Many certified archives use a metadata standard for the descriptions. If you choose a data repository or registry, you should find out which metadata standard they use. At the VU the following standards are used:
 
 * [DataverseNL](https://libguides.vu.nl/rdm/selecting-data-archiving#s-lg-box-wrapper-17896166) and [DANS](https://easy.dans.knaw.nl/ui/home) use the [Dublin Core](https://dublincore.org/specifications/dublin-core/) metadata standard
-* The VU Research Portal [PURE](https://libguides.vu.nl/researchdatamanagement/dataset-registration) uses the [CERIF](https://www.eurocris.org/cerif/main-features-cerif) metadata standard
+* The VU Research Portal [PURE](https://libguides.vu.nl/rdm/dataset-registration) uses the CERIF metadata standard
 
 Many archives implement or make use of specific metadata standards. The UK Digital Curation Centre (DCC) provides an overview of metadata standards for different disciplines. The list is a great and useful resource in establishing and carrying out your research methodology. Go to the [overview of metadata standards](https://www.dcc.ac.uk/guidance/standards/metadata). More important tips are available at [Dataset & Publication](https://libguides.vu.nl/rdm/dataset-registration).
 
 ### Archiving & FAIR Principles
-
-If you want to archive your dataset in such a way that it is compatible with the FAIR-principles, you can use the information in this [practical guide](https://libguides.vu.nl/ld.php?content_id=31290272) which describes how to implement the FAIR data policy and [this table](https://libguides.vu.nl/ld.php?content_id=31290289) which matches metadata fields from different systems (these documents were written for the Faculty of Behavioural and Movement Sciences).
 
 The Dutch Techcentre for Life Sciences has developed open source software code to enable you to make your dataset's metadata FAIR. The software is being developed through GitHub and full details on the [FAIR Data Point Software](https://github.com/FAIRDataTeam/FAIRDataPoint-Spec) are available there. The Dutch eScience Center also developed Fair Data Point software, of which full details are, similarly, available on [GitHub](https://github.com/NLeSC/fairdatapoint).

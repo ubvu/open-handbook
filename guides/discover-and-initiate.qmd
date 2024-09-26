@@ -5,6 +5,10 @@ title: Discover & Initiate Research
 <!-- markdownlint-disable-next-line MD033 -->
 <iframe width="560" height="315" src="https://www.youtube.com/embed/He96Mt0o00o?si=_gB6y8dgdpmyHoja" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-{{< include ../topics/finding-existing-data.qmd >}}
+```{.include shift-heading-level-by=1}
+../topics/finding-existing-data.qmd
+```
 
-{{< include ../topics/data-citation.qmd >}}
+```{.include shift-heading-level-by=1}
+../topics/data-citation.qmd
+```

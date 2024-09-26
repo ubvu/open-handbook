@@ -34,7 +34,8 @@ Many research funders encourage applicants to include data management and sharin
 * The budget and justification should broadly indicate where RDM costs will be incurred, where possible. E.g. data capture and cleaning, data curation and preservation, data sharing.
 * Include budget for long-term storage if data are expected to be deposited in a repository not funded by the university or external funders (VU repositories are: DataverseNL, Yoda, Open Science Framework). The VU has a breakdown of costs for storage and archiving for VU-managed storage and repositories. This is available [here](https://vu.nl/en/employee/research-data-support/costs-research-en-archiving-storage).
 
-A practical costing tool is available from the [UK Data Archive](https://www.ukdataservice.ac.uk/manage-data/plan/costing). Based on this costing tool, Utrecht University has developed a [guide to calculate the costs of data management](https://www.uu.nl/en/research/research-data-management/guides/costs-of-data-management). Similarly, in collaboration with RDM experts from several Dutch universities, the Landelijk Coördinatiepunt Research Data Management (LCRDM) has made an [RDM costs table](https://libguides.vu.nl/ld.php?content_id=34692283) that includes budgetting for technical applications. You can use those guides as well to estimate the costs needed specifically for RDM.
+A practical costing tool is available from the [UK Data Archive](https://www.ukdataservice.ac.uk/manage-data/plan/costing). Based on this costing tool, Utrecht University has developed a [guide to calculate the costs of data management](https://www.uu.nl/en/research/research-data-management/guides/costs-of-data-management).
+You can use those guides as well to estimate the costs needed specifically for RDM.
 
 Most material costs of the storage solutions offered by the VU are covered centrally (up to 500 GB), but if you need to specify the costs for your project, look at the [Research & Archiving Storage Cost Model](https://vu.nl/en/employee/research-data-support/costs-research-en-archiving-storage)
 
@@ -78,7 +79,6 @@ The tool [DMPonline](https://dmponline.vu.nl/) can be used to access and fill in
 The Consortium of European Social Science Data Archives (CESSDA) presents a [comprehensive overview of data management requirements and templates](https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide/1.-Plan/European-diversity) of the main Dutch and European funding bodies. This is helpful if you want to quickly find more information. However, make sure you always check the details that you receive in the documentation of your actual funding agency, so that you are aware of all up-to-date requirements.
 
 * National: [NWO](https://www.nwo.nl/beleid/open+science/datamanagement), [ZonMw](https://www.zonmw.nl/en/research-and-results/fair-data-and-data-management/data-management-in-your-project/)
-* International: [European Research Council](https://erc.europa.eu/managing-your-project/open-access) (including H2020)
 
 #### Publishing your data and terms of use
 
@@ -123,7 +123,6 @@ If you are working with personal data, GDPR requires that all parties working wi
 For projects funded by the European Union, several sources are available:
 
 * For Horizon 2020 projects a document is available, called "[Guidance How to draw up your consortium agreement](https://ec.europa.eu/research/participants/data/ref/h2020/other/gm/h2020-guide-cons-a_en.pdf)".
-* The European Union also has the [European IPR Helpdesk](https://www.iprhelpdesk.eu/frequently-asked-questions/consortium-agreement) which can provide guidance.
 
 ## Data Security
 
@@ -200,7 +199,7 @@ On the VU website [information](https://vu.nl/en/employee/emergencies/data-leaks
   * a combination of information that uniquely singles out an individual (e.g. a male with breast cancer in a breast cancer registry, a pregnant individual over 50 etc.), this includes information in one record and information across different data files or datasets
   * unique information or patterns that are specific to an individual (e.g. genomic data, a very specific occupation, such as the president of a large company, repeated physical measurements or movement patterns that create a unique profile of an individual or measurements that are extreme and could be linked to subjects such as high-level athletes)
   * data that are linked to directly identifying information through a random identification code or number
-* **Pseudonymous data**: Data that are indirectly identifiable are generally considered to be pseudonymous; this means that they are NOT anonymous and still qualify as personal data. Therefore privacy laws, such as the GDPR, do in fact apply to these data. This is for example the case when direct identifiers are removed from the research data and put into a key file (or what is usually called a subject identification log in medical research) with which the direct identifiers can be mapped to the research data through unique codes, so that reidentification is possible. These data are therefore pseudonymous, and not anonymous. The LCRDM has made a [reference card](<https://www.lcrdm.nl/files/lcrdm/2020-01/Anonymization> - reference card for researchers.pdf) that illustrates the difference between pseudonymous and anonymous data.
+* **Pseudonymous data**: Data that are indirectly identifiable are generally considered to be pseudonymous; this means that they are NOT anonymous and still qualify as personal data. Therefore privacy laws, such as the GDPR, do in fact apply to these data. This is for example the case when direct identifiers are removed from the research data and put into a key file (or what is usually called a subject identification log in medical research) with which the direct identifiers can be mapped to the research data through unique codes, so that reidentification is possible. These data are therefore pseudonymous, and not anonymous. The LCRDM has made a [reference card](https://lcrdm.nl/wp-content/uploads/2023/03/Anonymization-reference-card-for-researchers.pdf) that illustrates the difference between pseudonymous and anonymous data.
 
 #### Background information
 
@@ -210,7 +209,7 @@ Where research requires the collection of personal data, the researcher has to f
 
 VSNU Code of Conduct for using personal data in research
 
-The VSNU's Code of Conduct for Research Integrity ([Dutch](https://www.universiteitenvannederland.nl/files/publications/1.%20Nederlandse%20gedragscode%20wetenschappelijke%20integriteit%202018_0.pdf), [English](https://www.universiteitenvannederland.nl/files/publications/Netherlands%20Code%20of%20Conduct%20for%20Research%20Integrity%202018.pdf), 2018) includes a reference to the GDPR and its Dutch implementation law UAVG. An updated Code of Conduct for Using Personal Data in Research which complies with GDPR is still work in progress.
+The VSNU's Code of Conduct for Research Integrity ([Dutch](https://www.nwo.nl/sites/nwo/files/documents/Nederlandse%2Bgedragscode%2Bwetenschappelijke%2Bintegriteit_2018_NL.pdf), [English](https://www.nwo.nl/sites/nwo/files/documents/Netherlands%2BCode%2Bof%2BConduct%2Bfor%2BResearch%2BIntegrity_2018_UK.pdf), 2018) includes a reference to the GDPR and its Dutch implementation law UAVG. An updated Code of Conduct for Using Personal Data in Research which complies with GDPR is still work in progress.
 
 #### Support within your faculty: Privacy Champions
 
@@ -228,22 +227,22 @@ A DPIA is an assessment to identify the risks of processing personal data. It co
 
 ## When is a DPIA required?
 
-A DPIA is required when the processing of personal data is likely to result in a “high risk” for the participants of your research project. This is for example most likely the case when scientific research includes the processing of special categories of personal data, such as data concerning health, religious or philosophical beliefs, political opinions or criminal convictions and offences (see [Privacy in Research - 10 key rules](https://libguides.vu.nl/ld.php?content_id=32422706) for more information about special categories of personal data).
+A DPIA is required when the processing of personal data is likely to result in a “high risk” for the participants of your research project. This is for example most likely the case when scientific research includes the processing of special categories of personal data, such as data concerning health, religious or philosophical beliefs, political opinions or criminal convictions and offences (see [Privacy in Research - 10 key rules](https://doi.org/10.25397/eur.12205019.v1) for more information about special categories of personal data).
 
 There are two DPIA lists which describe situations in which a DPIA is required:
 
 * The Dutch data protection authority (Autoriteit Persoonsgegevens) has published a [list of 17 “high risk” situations](https://www.autoriteitpersoonsgegevens.nl/nl/zelf-doen/data-protection-impact-assessment-dpia#voor-welke-soorten-verwerkingen-is-het-uitvoeren-van-een-dpia-verplicht-6667) in which a DPIA is mandatory.
 * The European data protection authorities have together published a [list of 9 criteria](https://www.autoriteitpersoonsgegevens.nl/nl/zelf-doen/data-protection-impact-assessment-dpia#wat-zijn-de-criteria-van-de-europese-privacytoezichthouders-6668) which can be used to determine whether there is a “high risk”.
 
-The VU has developed a tool which combines these two DPIA lists. By completing this [PreDPIA](https://libguides.vu.nl/ld.php?content_id=34943732) tool, you can determine whether a DPIA is required in your situation. You should consult your [](https://vu.nl/en/about-vu/more-about/off-campus-access)[Privacy Champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information) when filling in the PreDPIA.
+The VU has developed a tool which combines these two DPIA lists. By completing this [PreDPIA]() tool, you can determine whether a DPIA is required in your situation. You should consult your [Privacy Champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information) when filling in the PreDPIA.
 
 ## How can I complete a DPIA?
 
-The VU has a [DPIA](https://libguides.vu.nl/ld.php?content_id=32452892) template based on a form provided by the Dutch Government (see the [original template](https://www.rijksoverheid.nl/documenten/rapporten/2017/09/29/model-gegevensbeschermingseffectbeoordeling-rijksdienst-pia) if you wish to have more background information, only available in Dutch).
+The VU has a [DPIA]() template based on a form provided by the Dutch Government (see the [original template](https://www.rijksoverheid.nl/documenten/rapporten/2017/09/29/model-gegevensbeschermingseffectbeoordeling-rijksdienst-pia) if you wish to have more background information, only available in Dutch).
 
 We advise you to use this template to complete a DPIA. Please complete a DPIA at least before you start collecting personal data. In some cases, it might be useful to have a look at the DPIA template at the stage of writing a research proposal.
 
-If you are not sure whether it is required to conduct a DPIA or if you need help completing a DPIA, please contact your faculty’s [](https://vu.nl/en/about-vu/more-about/off-campus-access)[Privacy Champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information). If needed they can contact the legal specialists of Institutional and Legal Affairs.
+If you are not sure whether it is required to conduct a DPIA or if you need help completing a DPIA, please contact your faculty’s [Privacy Champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information). If needed they can contact the legal specialists of Institutional and Legal Affairs.
 
 ## Policies & Regulations
 
@@ -253,32 +252,33 @@ If you are not sure whether it is required to conduct a DPIA or if you need help
 
 Vrije Universiteit Amsterdam considers the careful handling of research data to be very important. The university has therefore formulated a Research Data Management policy which provides guidance for researchers and policy officers at VU Amsterdam.
 
-* [VU RDM policy](https://libguides.vu.nl/ld.php?content_id=35189052) (2020)
+* [VU RDM policy](../public/policies-regulations/RDM-policy-VU-2020.pdf) (2020)
 
 Since the VU policy for RDM is formulated in general terms, faculties have worked out more detailed guidelines for their own faculty. These faculty-specific guidelines can be found below.
 
-* [ACTA RDM policy](https://libguides.vu.nl/ld.php?content_id=35189057), Academisch Centrum Tandheelkunde Amsterdam (2016, in Dutch)
-* [Beta RDM policy](https://libguides.vu.nl/ld.php?content_id=35189058), Faculty of Science (2022)
-* [FGB RDM policy](https://libguides.vu.nl/ld.php?content_id=35189060), Faculty of Behavioural and Movement Sciences (2023)
-* [FGW RDM policy](https://libguides.vu.nl/ld.php?content_id=35189064) , Faculty of Humanities (2023)
-* [FRT RDM policy](https://libguides.vu.nl/ld.php?content_id=35189067), Faculty of Religion and Theology (2024)
+* [ACTA RDM policy](../public/policies-regulations/ACTA-RDM-policy-2016.pdf), Academisch Centrum Tandheelkunde Amsterdam (2016, in Dutch)
+* [Beta RDM policy](../public/policies-regulations/BETA-RDM-policy-2022.pdf), Faculty of Science (2022)
+* [FGB RDM policy](../public/policies-regulations/public/policies-regulations/FGB-RDM-policy-2023.pdf), Faculty of Behavioural and Movement Sciences (2023)
+* [FGW RDM policy](../public/policies-regulations/FGW-RDM-policy-2023.pdf) , Faculty of Humanities (2023)
+* [FRT RDM policy](../public/policies-regulations/FRT-RDM-policy-2024.pdf), Faculty of Religion and Theology (2024)
 * [FSW RDM policy](https://vu.nl/en/employee/social-sciences-getting-started/fss-guidelines-for-data-management), Faculty of Social Sciences (2023)
-* [RCH RDM policy](https://libguides.vu.nl/ld.php?content_id=35189076), Faculty of Law (2021)
-* [SBE RDM policy](https://libguides.vu.nl/ld.php?content_id=35189079), School of Business and Economics (2023)
+* [RCH RDM policy](../public/policies-regulations/RCH-RDM-policy-2021.pdf), Faculty of Law (2021)
+* [SBE RDM policy](../public/policies-regulations/SBE-RDM-policy-2023.pdf), School of Business and Economics (2023)
 
 For RDM policies and guidelines at Amterdam UMC, location VUmc, please get in touch with [Research Data Management Support](https://www.amsterdamumc.org/en/research/support/services-facilities/data-management/contact.htm) at Amsterdam UMC.
 
 #### Academic integrity complaints procedure
 
-Both VU Amsterdam and Amsterdam UMC, location VUmc employ a joint policy for the handling academic integrity complaints. This [policy](https://vu.nl/en/about-vu/more-about/academic-integrity-at-vu-vumc) outlines the steps to be taken in the event of a complaint, the officers who play a role in this procedure, and what should be expected once a complaint has been lodged.
+Both VU Amsterdam and Amsterdam UMC, location VUmc employ a joint policy for the handling academic integrity complaints. This [policy](https://vu.nl/en/about-vu/more-about/academic-integrity) outlines the steps to be taken in the event of a complaint, the officers who play a role in this procedure, and what should be expected once a complaint has been lodged.
 
 #### Confidential counselors
 
-​The VU has a number of [confidential counsellors](https://vu.nl/en/about-vu/more-about/academic-integrity) who handle academic integrity issues.
+The VU has a number of [confidential counsellors](https://vu.nl/en/about-vu/more-about/academic-integrity) who handle academic integrity issues.
 
 #### Data breach incident report
 
-​From 2016 onwards, any data security breaches (particularly those that have, or are likely to have, serious adverse consequences to the protection of personal data) should be reported immediately to the [IT Servicedesk](mailto:servicedesk.it@vu.nl). Read the [](https://vu.nl/en/about-vu/more-about/off-campus-access)[protocol reporting a data breach](https://assets.vu.nl/d8b6f1f5-816c-005b-1dc1-e363dd7ce9a5/061ec9b1-f94f-47a7-81c4-099827ec4996/Werkproces%20meldplicht%20datalekken.pdf) (available in Dutch only).
+From 2016 onwards, any data security breaches (particularly those that have, or are likely to have, serious adverse consequences to the protection of personal data) should be reported immediately to the [IT Servicedesk](mailto:servicedesk.it@vu.nl).
+Read the [protocol reporting a data breach]() (available in Dutch only).
 
 #### Regulations and Guidelines
 
@@ -289,7 +289,7 @@ Some faculties and departments have their own guidelines for RDM. You can find a
 * FGB:
   * [Code of Ethics for Research in the Social and Behavioural Sciences Involving Human Participants](https://www.fgb.vu.nl/en/Images/ethiek-reglement-adh-landelijk-nov-2016_tcm264-810069.pdf)
   * Collection of [guidelines and Standard Operating Procedures](https://www.fgb.vu.nl/en/about-the-faculty/faculty-committees/scientific-and-ethical-review-committee/index.aspx) (SOPs)
-* SBE [Research Ethics Regulations for Researchers](https://www.feweb.vu.nl/nl/Images/FEWEB_RERB_Guidelines_tcm257-753079.pdf) and [route map](https://libguides.vu.nl/ld.php?content_id=31289044) for research data management
+* SBE [Research Ethics Regulations for Researchers](https://vu.nl/en/about-vu/faculties/school-of-business-and-economics/more-about/research-office) and [route map](https://libguides.vu.nl/ld.php?content_id=31289044) for research data management
 
 ### Ethics Committees
 
@@ -301,7 +301,6 @@ In cases where research involves human or animal participants, a research propos
 * FGW: [Ethische Toetsingscommissie Onderzoek](https://vu.nl/en/about-vu/faculties/faculty-of-humanities/more-about/research-ethics-and-integrity) (EtCO)
 * FSW: [Research Ethics Review Committee](https://vu.nl/en/employee/social-sciences-getting-started/research-ethics-review-fss) (RERC)
 * RCH (Faculty of Law): [Ethics Committee](https://www.rechten.vu.nl/en/about-the-faculty/committees/ethics/index.aspx)
-* SBE: [Research Ethics and Integrity](https://vu.nl/en/about-vu/more-about/research-office)
 * VUmc (Amsterdam UMC): [Medical Ethical Review Committee](https://www.vumc.nl/research/overzicht/medisch-ethische-toetsingscommissie.htm) (METc)
 
 ### Netherlands Code of Conduct for Scientific Integrity
@@ -327,12 +326,12 @@ To live up to these general principles, the Code of Conduct provides the followi
 * Make research data public upon completion of your research project; if this is not possible, explain why (standards 3.2.11 and 3.4.45)
 * Describe the data you have collected and used in your research honestly, scrupulously and transparently (standard 3.3.23)
 * Manage your data carefully and store both the raw and processed versions for a period appropriate for your discipline (standard 3.3.24)
-* Contribute towards making data [FAIR](https://libguides.vu.nl/researchdata/overview#s-lg-box-wrapper-17896126), where possible (standard 3.3.25)
+* Contribute towards making data [FAIR](https://libguides.vu.nl/rdm/overview#s-lg-box-wrapper-17896126), where possible (standard 3.3.25)
 * Be transparent about your methods and working procedures by using e.g. research protocols, logs, lab journals or reports to describe these processes (standard 3.4.35)
 
 ### Strategy Evalution Protocol
 
-The [Strategy Evaluation Protocol 2021-2027](https://vsnu.nl/en_GB/sep-eng.html) (SEP) from the VSNU is used to assess the quality of research at Dutch universities, NWO and Academy institutes. It promotes the handling and storing of raw and processed data with care and integrity.
+The [Strategy Evaluation Protocol 2021-2027](https://www.universiteitenvannederland.nl/files/publications/SEP_2021-2027.pdf) (SEP) from the VSNU is used to assess the quality of research at Dutch universities, NWO and Academy institutes. It promotes the handling and storing of raw and processed data with care and integrity.
 
 The SEP formulates questions on how a research institute deals with and stores raw and processed data. It also assesses the output of research institutes, including datasets, and the use of such output by peers and societal target groups.
 
