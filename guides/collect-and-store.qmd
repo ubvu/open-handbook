@@ -2,8 +2,14 @@
 title: Collect & Store Data
 ---
 
-{{< include ../topics/data-collection.qmd >}}
+```{.include shift-heading-level-by=1}
+../topics/data-collection.qmd
+```
 
-{{< include ../topics/data-storage.qmd >}}
+```{.include shift-heading-level-by=1}
+../topics/data-storage.qmd
+```
 
-{{< include ../topics/data-protection.qmd >}}
+```{.include shift-heading-level-by=1}
+../topics/data-protection.qmd
+```
