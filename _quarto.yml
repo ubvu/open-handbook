@@ -19,14 +19,12 @@ website:
     title: false
     collapse-below: lg
     left:
-      - text: "Home"
-        file: index.qmd
-      - text: "Blog"
-        file: blog.qmd
       - text: "Topics"
         file: topics.qmd
-      - text: "Pathways"
-        file: pathways.qmd
+      - text: "Guides"
+        file: guides.qmd
+      - text: "Blog"
+        file: blog.qmd
       - contributing.qmd
     tools:
       - icon: github
@@ -60,6 +58,8 @@ format:
       - custom.scss # https://quarto.org/docs/output-formats/html-themes.html#theme-options
     code-copy: true
     code-overflow: wrap
-
+from: "markdown+emoji"
+filters:
+  - utils/include-files.lua
 execute:
   freeze: auto
