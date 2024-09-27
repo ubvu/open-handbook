@@ -1,4 +1,8 @@
-### Controlled Vocabularies & Classifications
+---
+title: Metadata
+---
+
+## Controlled Vocabularies & Classifications
 
 When a metadata section in a Data Management Plan template includes a question on the used ontology (if any) what is usually meant is: is there a specific vocabulary or classification system used. Controlled vocabularies are created by domain experts to help translate ontological concepts as well as to organise knowledge for subsequent (information) retrieval. [Controlled vocabularies](https://en.wikipedia.org/wiki/Controlled_vocabulary) ([CESSDA](https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide/3.-Process/Adapt-your-DMP-part-3): "structured controlled vocabularies") are intended to reduce ambiguity that is inherent in normal human languages where the same concept can be given different names and to ensure consistency. Controlled vocabularies are used in subject indexing schemes, subject headings, thesauri, taxonomies and other knowledge organization systems. Some vocabularies are very internationally accepted and standardized and may even become an [ISO standard](https://www.iso.org/standards.html) or a regional standard/classification. Controlled vocabularies can be broad in scope or very limited to a specific field. When a Data Management Plan template includes a question on the used ontology (if any), what is usually meant is: is there a specific vocabulary or classification system used.
 
@@ -19,16 +23,18 @@ Metadata is descriptive information about data / information. Metadata allow hum
 
 The CESSDA has created [helpful guidance](https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide/2.-Organise-Document/Documentation-and-metadata) about creating metadata.
 
-There are three main levels of metadata: Data assets, Dataset documentation and Dataset registration ([more information](https://guides.lib.utexas.edu/metadata-basics/intro)):.
+There are three main levels of metadata: Data assets, Dataset documentation and Dataset registration ([more information](https://guides.lib.utexas.edu/metadata-basics/intro)).
 
 ### Data assets
 
 On a micro-level there are four functional categories of metadata standards for datasets themselves that describe elements like structure, content, values (definitions, see also code book), and data formats (CSV, XML, etc.). Additionally, research groups often use a discipline's standards to also describe data objects using naming conventions. There are, however, other guidelines for naming conventions and document versioning which can be useful for all documents, independent of whether they are research data or not. Often The table below gives an example of this.
-| Data Stage     | Dataset description                            | Type of data          | Versioning                                                                                                                                     |
-|----------------|------------------------------------------------|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| Raw data       | Consumer spending data                         | Text files            | `2017-02-23_ConsumerSpending_1.2.txt` |
-| Processed data | Anonymized Transcription of patient interviews | Word files, Excel     | `2014-11-17_RawTranscription_Checked1.docx`  |
-| Analysed data  | Photo Images with descriptions                 | TIFF files, Word file | `C:\Images\Raw\2016-07-01_Subject1-V2.tiff  C:\Images\Clean\2016-07-01_Subject1-H1c.tiff`<br />`C:\Images\Clean\Descript\2016-07-01_Subject1-H1c.Docx` |
+
+| Data Stage     | Dataset description                            | Type of data      | Versioning                                                                                  |
+|----------------|------------------------------------------------|-------------------|---------------------------------------------------------------------------------------------|
+| Raw data       | Consumer spending data                         | Text files        | `2017-02-23_ConsumerSpending_1.2.txt`                                                       |
+| Processed data | Anonymized Transcription of patient interviews | Word files, Excel | `2014-11-17_RawTranscription_Checked1.docx`                                                 |
+| Analysed data  | Photo Images with descriptions                 | TIFF files        | `C:\Images\Raw\2016-07-01_Subject1-V2.tiff    C:\Images\Clean\2016-07-01_Subject1-H1c.tiff` |
+|                |                                                | Word files        | `C:\Images\Clean\Descript\2016-07-01_Subject1-H1c.Docx`                                     |
 
 ### Dataset documentation
 
@@ -43,10 +49,10 @@ On this general, descriptive, level the metadata concerns [data packaging](../gu
 
 When you want to make sure that your dataset is findable it is recommended that the elements of the description of your dataset are made according to a certain metadata standard that allows for easier exchange of metadata and harvesting of the metadata by search engines. Many certified archives use a metadata standard for the descriptions. If you choose a data repository or registry, you should find out which metadata standard they use. At the VU the following standards are used:
 
-* [DataverseNL](../guides/publish-and-share.html#deposit-your-data-vu-amsterdam) and [DANS](https://easy.dans.knaw.nl/ui/home) use the [Dublin Core](https://dublincore.org/specifications/dublin-core/) metadata standard
-* The VU Research Portal [PURE](../guides/publish-and-share.html#register-your-dataset-in-pure) uses the [CERIF](https://eurocris.org/services/main-features-cerif) metadata standard
+* [DataverseNL](../guides/publish-and-share.qmd#deposit-your-data) and [DANS](https://easy.dans.knaw.nl/ui/home) use the [Dublin Core](https://dublincore.org/specifications/dublin-core/) metadata standard
+* The VU Research Portal [PURE](../guides/publish-and-share.qmd#register-your-dataset-in-pure) uses the [CERIF](https://eurocris.org/services/main-features-cerif) metadata standard
 
-Many archives implement or make use of specific metadata standards. The UK Digital Curation Centre (DCC) provides an overview of metadata standards for different disciplines. The list is a great and useful resource in establishing and carrying out your research methodology. Go to the [overview of metadata standards](https://www.dcc.ac.uk/guidance/standards/metadata). More important tips are available at [Dataset & Publication](../guides/publish-and-share.html#dataset-registration).
+Many archives implement or make use of specific metadata standards. The UK Digital Curation Centre (DCC) provides an overview of metadata standards for different disciplines. The list is a great and useful resource in establishing and carrying out your research methodology. Go to the [overview of metadata standards](https://www.dcc.ac.uk/guidance/standards/metadata). More important tips are available at [Dataset & Publication](../guides/publish-and-share.qmd#dataset-registration).
 
 ## Archiving & FAIR Principles
 

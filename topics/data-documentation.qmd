@@ -1,25 +1,31 @@
+---
+title: Data documentation
+---
+
 ## Documenting your data
 
 Data documentation aims to describe the collected data to make it easier to use, retrieve and manage. Data documentation takes various forms and describes the data on multiple levels. The description of the dataset and data object is also referred to as metadata, i.e. data about the data. One way to do add metadata is to attach a readme file to your data. [ResearchData NL](https://danstraining.moodlecloud.com/mod/page/view.php?id=275) offers guidance for this. The CESSDA has made very detailed guidance available for creating [documentation and metadata](https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide/2.-Organise-Document/Documentation-and-metadata) for your data.
 
-![](https://libapps-eu.s3.amazonaws.com/accounts/62029/images/Metadata.png) 
+![An image layering five different kinds of metadata, with the FAIR principles on the outside, followed by discipline metadata standards, project documentation, metadata data set, and metadata data object.](https://libapps-eu.s3.amazonaws.com/accounts/62029/images/Metadata.png)
 
 In addition to describing their own datasets and objects, researchers can cross-refer to the project proposal where other researchers can find information about the research, e.g. aims and goals, methodology and data collection, the persons responsible for the project etc. The type of research and the nature of the data also influence what kind of documentation is necessary.
 
 Different types of data are governed by different standards (see also the image above), and these should be taken into account when documenting data. These requirements include, but are not limited to:
 
-1. [FAIR data principles](../guides/document-and-preserve.html#metadata#fair-principles): the set of principles (Findable, Accessible, Interoperable, Reusable) for data exchange.
-2. Disciplinary [metadata standards](../guides/document-and-preserve.html#metadata): guidelines for documenting data. This can refer to the dataset documentation, the object description, or both. Disciplinary metadata standards can document the dataset as a whole or as a data object (see number 5).
+1. [FAIR data principles](./fair-principles.qmd): the set of principles (Findable, Accessible, Interoperable, Reusable) for data exchange.
+2. Disciplinary [metadata standards](./metadata.qmd): guidelines for documenting data. This can refer to the dataset documentation, the object description, or both. Disciplinary metadata standards can document the dataset as a whole or as a data object (see number 5).
 3. Project documentation: the description of a project involving data collection. This documentation is often used for research verification and provenance.
-4. [Metadata dataset](../guides/document-and-preserve.html#metadata-datasets): the description of a dataset, often used for discovering datasets within a repository.
+4. [Metadata dataset](./metadata.qmd#metadata--datasets): the description of a dataset, often used for discovering datasets within a repository.
 5. Metadata of a data object: name definition of a data object, often set up by the researcher to structure data or by the research group for collaboration during the project.
 
 ## Codebooks
 
 A codebook is a technical description of the data that were collected for a particular purpose in one or more datasets. It describes how the data are arranged in the computer file or files and what the parts or variables (numbers and letters) mean. A good description may also include specific instructions on how to use and interpret the data properly.
-![](https://libapps-eu.s3.amazonaws.com/accounts/46351/images/pivot-table-layout-in-excel-2003.gif)
+
+![A low resolution screenshot of a spreadsheet](https://libapps-eu.s3.amazonaws.com/accounts/46351/images/pivot-table-layout-in-excel-2003.gif)
 
 Like any other kind of "book," some codebooks are better than others. The best codebooks include the following elements:
+
 * Description of the study: who did it, why they did it, how they did it
 * Sampling information: what was the population studied, how was the sample drawn, what was the response rate
 * Technical information about the files themselves: number of observations, record length, number of records per observation, etc.
