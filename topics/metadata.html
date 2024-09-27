@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Guides – Research Support Handbook</title>
+<title>Metadata – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +23,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./public/favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../public/favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,70 +67,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-<style type="text/css">
-.quarto-grid-item .listing-item-img-placeholder {
-  background-color: #0080c9;
-}
-</style>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -143,8 +78,8 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -154,19 +89,19 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./topics.html"> 
+    <a class="nav-link" href="../topics.html"> 
 <span class="menu-text">Topics</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./guides.html" aria-current="page"> 
+    <a class="nav-link" href="../guides.html"> 
 <span class="menu-text">Guides</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html"> 
+    <a class="nav-link" href="../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./contributing.html"> 
+    <a class="nav-link" href="../contributing.html"> 
 <span class="menu-text">Contributing</span></a>
   </li>  
 </ul>
@@ -182,14 +117,27 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(7)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#controlled-vocabularies-classifications" id="toc-controlled-vocabularies-classifications" class="nav-link active" data-scroll-target="#controlled-vocabularies-classifications">Controlled Vocabularies &amp; Classifications</a></li>
+  <li><a href="#metadata-datasets" id="toc-metadata-datasets" class="nav-link" data-scroll-target="#metadata-datasets">Metadata &amp; Datasets</a>
+  <ul class="collapse">
+  <li><a href="#data-assets" id="toc-data-assets" class="nav-link" data-scroll-target="#data-assets">Data assets</a></li>
+  <li><a href="#dataset-documentation" id="toc-dataset-documentation" class="nav-link" data-scroll-target="#dataset-documentation">Dataset documentation</a></li>
+  <li><a href="#dataset-registration" id="toc-dataset-registration" class="nav-link" data-scroll-target="#dataset-registration">Dataset registration</a></li>
+  </ul></li>
+  <li><a href="#archiving-fair-principles" id="toc-archiving-fair-principles" class="nav-link" data-scroll-target="#archiving-fair-principles">Archiving &amp; FAIR Principles</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/metadata.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Guides</h1>
+<h1 class="title">Metadata</h1>
 </div>
 
 
@@ -206,159 +154,98 @@ window.Quarto = {
 </header>
 
 
+<section id="controlled-vocabularies-classifications" class="level2">
+<h2 class="anchored" data-anchor-id="controlled-vocabularies-classifications">Controlled Vocabularies &amp; Classifications</h2>
+<p>When a metadata section in a Data Management Plan template includes a question on the used ontology (if any) what is usually meant is: is there a specific vocabulary or classification system used. Controlled vocabularies are created by domain experts to help translate ontological concepts as well as to organise knowledge for subsequent (information) retrieval. <a href="https://en.wikipedia.org/wiki/Controlled_vocabulary">Controlled vocabularies</a> (<a href="https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide/3.-Process/Adapt-your-DMP-part-3">CESSDA</a>: “structured controlled vocabularies”) are intended to reduce ambiguity that is inherent in normal human languages where the same concept can be given different names and to ensure consistency. Controlled vocabularies are used in subject indexing schemes, subject headings, thesauri, taxonomies and other knowledge organization systems. Some vocabularies are very internationally accepted and standardized and may even become an <a href="https://www.iso.org/standards.html">ISO standard</a> or a regional standard/classification. Controlled vocabularies can be broad in scope or very limited to a specific field. When a Data Management Plan template includes a question on the used ontology (if any), what is usually meant is: is there a specific vocabulary or classification system used.</p>
+<p>Examples are:</p>
+<ul>
+<li><a href="https://www.getty.edu/research/publications/electronic_publications/cdwa/">CDWA</a> (Categories for the Description of Works of Art)</li>
+<li><a href="https://www.getty.edu/research/tools/vocabularies/tgn/index.html">Getty Thesaurus of Geographic names</a></li>
+<li><a href="https://ec.europa.eu/eurostat/web/nuts/background">NUTS</a> (Eurostat)</li>
+<li><a href="https://meshb.nlm.nih.gov/">Medical Subject HEadings</a> (MeSH)</li>
+</ul>
+<p>Many examples of vocabularies and classification systems can be found at the FAIRsharing.org website. It has a large list for <a href="https://fairsharing.org/standards/">multiple disciplines.</a> If you are working on new concepts or new ideas and are using or creating your own ontology/terminology, be sure to include them as part of the metadata documentation in your dataset (for example as part of your <a href="../guides/document-and-preserve.html#codebooks">codebook</a>).</p>
+<p>Controlled vocabularies help make searching for and re-using information or data much easier when they are part of a machine-readable metadata scheme or system.</p>
+</section>
+<section id="metadata-datasets" class="level2">
+<h2 class="anchored" data-anchor-id="metadata-datasets">Metadata &amp; Datasets</h2>
+<p>Metadata is descriptive information about data / information. Metadata allow humans and programs to more easily understand and interpret information or data. Controlled vocabularies are often used to help make searching for and re-using information or data much easier when they are part of a machine-readable metadata scheme or system.</p>
+<p>The CESSDA has created <a href="https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide/2.-Organise-Document/Documentation-and-metadata">helpful guidance</a> about creating metadata.</p>
+<p>There are three main levels of metadata: Data assets, Dataset documentation and Dataset registration (<a href="https://guides.lib.utexas.edu/metadata-basics/intro">more information</a>).</p>
+<section id="data-assets" class="level3">
+<h3 class="anchored" data-anchor-id="data-assets">Data assets</h3>
+<p>On a micro-level there are four functional categories of metadata standards for datasets themselves that describe elements like structure, content, values (definitions, see also code book), and data formats (CSV, XML, etc.). Additionally, research groups often use a discipline’s standards to also describe data objects using naming conventions. There are, however, other guidelines for naming conventions and document versioning which can be useful for all documents, independent of whether they are research data or not. Often The table below gives an example of this.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 27%">
+<col style="width: 10%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Data Stage</th>
+<th>Dataset description</th>
+<th>Type of data</th>
+<th>Versioning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Raw data</td>
+<td>Consumer spending data</td>
+<td>Text files</td>
+<td><code>2017-02-23_ConsumerSpending_1.2.txt</code></td>
+</tr>
+<tr class="even">
+<td>Processed data</td>
+<td>Anonymized Transcription of patient interviews</td>
+<td>Word files, Excel</td>
+<td><code>2014-11-17_RawTranscription_Checked1.docx</code></td>
+</tr>
+<tr class="odd">
+<td>Analysed data</td>
+<td>Photo Images with descriptions</td>
+<td>TIFF files</td>
+<td><code>C:\Images\Raw\2016-07-01_Subject1-V2.tiff    C:\Images\Clean\2016-07-01_Subject1-H1c.tiff</code></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td>Word files</td>
+<td><code>C:\Images\Clean\Descript\2016-07-01_Subject1-H1c.Docx</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="dataset-documentation" class="level3">
+<h3 class="anchored" data-anchor-id="dataset-documentation">Dataset documentation</h3>
+<p>On this general, descriptive, level the metadata concerns <a href="../guides/document-and-preserve.html#data-set-packaging-which-files-should-be-part-of-my-dataset">data packaging</a> &amp; <a href="../guides/document-and-preserve.html#documenting-your-data">metadata documentation</a> on the dataset. It can include items like:</p>
+<ul>
+<li>Readme files that lists the period of research, collaborators, a short description of the research as well as the elements within the dataset</li>
+<li><a href="../guides/document-and-preserve.html#codebooks">Code Book</a>: it provides descriptions, explanations or definitions of variables in a dataset</li>
+<li>Policy documents describing the context of the research as well as referring to standard operating procedures used</li>
+<li>Re-use guidelines (or <a href="../guides/publish-and-share.html#licensing-the-data">licences</a>) describing if there are re-use restrictions or limitations, including contact details.</li>
+</ul>
+</section>
+<section id="dataset-registration" class="level3">
+<h3 class="anchored" data-anchor-id="dataset-registration">Dataset registration</h3>
+<p>When you want to make sure that your dataset is findable it is recommended that the elements of the description of your dataset are made according to a certain metadata standard that allows for easier exchange of metadata and harvesting of the metadata by search engines. Many certified archives use a metadata standard for the descriptions. If you choose a data repository or registry, you should find out which metadata standard they use. At the VU the following standards are used:</p>
+<ul>
+<li><a href="../guides/publish-and-share.html#deposit-your-data">DataverseNL</a> and <a href="https://easy.dans.knaw.nl/ui/home">DANS</a> use the <a href="https://dublincore.org/specifications/dublin-core/">Dublin Core</a> metadata standard</li>
+<li>The VU Research Portal <a href="../guides/publish-and-share.html#register-your-dataset-in-pure">PURE</a> uses the <a href="https://eurocris.org/services/main-features-cerif">CERIF</a> metadata standard</li>
+</ul>
+<p>Many archives implement or make use of specific metadata standards. The UK Digital Curation Centre (DCC) provides an overview of metadata standards for different disciplines. The list is a great and useful resource in establishing and carrying out your research methodology. Go to the <a href="https://www.dcc.ac.uk/guidance/standards/metadata">overview of metadata standards</a>. More important tips are available at <a href="../guides/publish-and-share.html#dataset-registration">Dataset &amp; Publication</a>.</p>
+</section>
+</section>
+<section id="archiving-fair-principles" class="level2">
+<h2 class="anchored" data-anchor-id="archiving-fair-principles">Archiving &amp; FAIR Principles</h2>
+<p>The Dutch Techcentre for Life Sciences has developed open source software code to enable you to make your dataset’s metadata FAIR. The software is being developed through GitHub and full details on the&nbsp;<a href="https://github.com/FAIRDataTeam/FAIRDataPoint-Spec">FAIR Data Point Software</a>&nbsp;are available there. The Dutch eScience Center also developed Fair Data Point software, of which full details are, similarly, available on <a href="https://github.com/NLeSC/fairdatapoint">GitHub</a>.</p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1727434765438" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
-<a href="./guides/collect-and-store.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="topics/https:/libapps-eu.s3.amazonaws.com/accounts/46351/images/20130404encryption.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Collect &amp; Store Data
-</h5>
-<div class="card-text listing-description">
-Data collection may consist of the re-use of existing data and/or the generation of new data.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1727434765438" data-listing-reading-time-sort="8" data-listing-word-count-sort="1421">
-<a href="./guides/data-lifecycle.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/mika-baumeister-Wpnoqo2plFA-unsplash.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Data lifecycle
-</h5>
-<div class="card-text listing-description">
-The data lifecycle helps you find, document, and preserve data.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1727434765438" data-listing-reading-time-sort="1" data-listing-word-count-sort="22">
-<a href="./guides/discover-and-initiate.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="public/github_citation_file.png" style="height: 150px;" title="Cite a GitHub repository that contains a citation file" class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Discover &amp; Initiate Research
-</h5>
-<div class="card-text listing-description">
-Anything that can be used for analysis can be considered “data(sets)”. Many national and international organisations provide access to large datasets free of charge: this is…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1727434765439" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
-<a href="./guides/document-and-preserve.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="topics/https:/libapps-eu.s3.amazonaws.com/accounts/144379/images/storage-archiving.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Document &amp; Preserve Data
-</h5>
-<div class="card-text listing-description">
-There is a difference between storing and archiving data. Storing refers to putting the data in a safe location while the research is ongoing. Because you are still working…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1727434765439" data-listing-reading-time-sort="28" data-listing-word-count-sort="5594">
-<a href="./guides/plan-and-design.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Plan &amp; Design
-</h5>
-<div class="card-text listing-description">
-Grant programmes from organisations like NWO, ZonMW and ERC increasingly require you to not only think about the journey of the data in your research project, but also the…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1727434765439" data-listing-reading-time-sort="11" data-listing-word-count-sort="2007">
-<a href="./guides/process-and-analyze.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Process &amp; Analyse Data
-</h5>
-<div class="card-text listing-description">
-Provenance describes the origin of an object. Data provenance refers to the knowledge of where data originate, where they were collected, by whom, for what reason, and…<strong></strong>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="6" data-listing-file-modified-sort="1727434765439" data-listing-reading-time-sort="13" data-listing-word-count-sort="2552">
-<a href="./guides/publish-and-share.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Publish &amp; Share Data
-</h5>
-<div class="card-text listing-description">
-In the Data Management Plan the researcher describes if the data will be stored for the mid or the long term.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -794,17 +681,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="./about.html">
+    <a class="nav-link" href="../about.html">
 <p>About</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="./editors-guide.html">
+    <a class="nav-link" href="../editors-guide.html">
 <p>Editor’s guide</p>
 </a>
   </li>  
 </ul>
-    <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/guides.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/metadata.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
