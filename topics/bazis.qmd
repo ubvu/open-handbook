@@ -31,7 +31,7 @@ Use your favourite SSH client to login at `\<VUNETID\>@bazis.labs.vu.nl`. Exampl
 1. Download and install MobaXTerm from [mobatek.net](https://mobaxterm.mobatek.net/download.html).
 2. Open MobaXTerm and click on Session
 3. Enter the Basic SSH settings as follows:
-   1. Remote host: bazis.labs.vu.nl
+   1. Remote host: `bazis.labs.vu.nl`
    2. Tick "specify username"
    3. Enter your username (VUnetID)
 4. Go to “Network settings” and click SSH gateway (jump host)
