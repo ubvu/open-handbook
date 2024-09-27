@@ -2,36 +2,71 @@
 title: "Editor's guide"
 ---
 
-Welcome to the Editor's guide to the Handbook. This page contains resources around how the editors work. We make this open so you can see how it works behind the scenes.
+Welcome to the Editor's guide to the Handbook! This page contains resources around how the editors work.
 
-## Deleting branches
+Temporary initial editors are:
 
-After merging Pull Requests, it is expected to clean up the branch by deleting it. We enable auto deletion upon merging, but if that for some reason does not happen, please go ahead and "Delete branch"
+* Chris Hartgerink
+* Elisa Rodenburg
+* Jessica Hrudey
+* Jolien Scholten
+* Lena Karvovskaya
 
-## Netlify
+## What does an editor do?
 
-Netlify is a hosting service, where the files for the website live. This means that even though we create the website on GitHub, Netlify is where the website is hosted. When GitHub is down, the website should be unaffected.
+Editors tie together all the strings in this community handbook. We keep a bird's eye view to ensure that what you read makes sense. Editors also help ensure the style and quality of the different pages are similar.
 
-## Pull Request handling
+Each editor commits themselves to providing timely reviews of topics, guides, or both.[^1] This commitment is for a limited time and can be renewed. We also welcome more editors at any time, given that we do not expect all editors to review everything.
 
-We maintain strict standards for the content included in the Research Support Handbook. Below we expand on the norms we maintain to merge and close pull requests.
+[^1]: Each editor chooses which of these they want to focus on. Editors get auto-invited to review the changes. Timely means within a week.
 
-### Merging pull requests
+As we go on this journey together, we may assign more specific responsibilities as they emerge.
 
-We maintain a set of rules to ensure content does not get included prematurely:
+## Quality standards
 
-- At least one editor needs to approve the pull request
-- All discussions in the pull request need to be marked as resolved
-- All automated quality checks need to be successful
+As editors, we maintain a bunch of quality standards, both automated and not automated. If you are reading this as a contributor, you will greatly help us out by taking these into account.
 
-All three criteria have to be met for successful inclusion in the Research Support Handbook. Note that any approvals are voided when someone adds additional changes. A new review will have to be provided at that time.
+Here are some quality standards we maintain throughout the handbook:
 
-A more implicit norm is that we provide at least 24 hours for people to review, even if the first editor reviews within the first hour. As such, everyone knows they have at least 24 hours to take a look at the content.
+* Acronyms must be written in full at least once on the page where they are used
+* All changes to the handbook are made via pull requests. Each change needs approval from two editors.
+* All images must have alt text
+* Links must be descriptive (no "click here" links)
+* No writing in name of the handbook (for example, "we recommend repository X")
 
-### Closing pull requests
+### Topics
+
+For topics we maintain an additional set of standards:
+
+* Topics must be nouns or noun phrases
+* All topics must be title capitalized (see also the helpful tool [CapitalizeMyTitle.com](https://capitalizemytitle.com/style/APA/))
+* No `include` statements are allowed in topics
+
+### Guides
+
+For guides we maintain other standards:
+
+* Guides must be phrased as questions that the reader will get answers to
+
+## How to keep an overview of everything?
+
+With so many issues and pull requests, it is easy to get lost as an editor. We have a project management board that can be helpful identifying what is going on at this time:
+
+* [Topics](https://github.com/orgs/ubvu/projects/7/views/1)
+* [Guides](https://github.com/orgs/ubvu/projects/7/views/2)
+
+## Etiquette
+
+As editors, we may have to make tough calls at times. It is important for us to make people feel welcome and appreciated, even if their contribution is not immediately included. That being said, we reciprocate the consideration given to us. We operate under a generosity policy, and if reciprocated, we stay generous.
+
+<!-- ### Deleting branches
+
+After merging Pull Requests, it is expected to clean up the branch by deleting it. We enable auto deletion upon merging, but if that for some reason does not happen, please go ahead and "Delete branch". We may periodically clean up branches in the repository. -->
+
+<!-- ### Closing pull requests
 
 Not all pull requests make it into the handbook, and that is okay. We want to ensure that pull requests are not closed at random, and provide some norms around doing so.
 
 Stale pull requests can be closed with a note for the contributor that they are welcome to request the pull request to be re-opened. We automatically mark pull requests as stale after 30 days.
 
-Pull requests that provide too much discussion and do not have a guide to resolution may be closed for being disputed. This does not mean the content goes to waste – here we recommend an issue to be opened to continue the discussion. Please note that disputed topics can only be carried on if done so in a mutually constructive manner. 
+Pull requests that provide too much discussion and do not have a pathway to resolution may be closed for being disputed. This does not mean the content goes to waste – here we recommend an issue to be opened to continue the discussion. Please note that disputed topics can only be carried on if done so in a mutually constructive manner. -->
