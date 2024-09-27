@@ -198,7 +198,7 @@ You can only access the cluster with you VUNETID and thus when you are no longer
 ### Best practices
 
 - Make use of fast scratch directory ($TMPDIR).
-- Don't run large computation on the login nodes! It negatively impacts all cluster users. Grab a compute node with srun --pty bash option.
+- Don't run large computation on the login nodes! It negatively impacts all cluster users. Grab a compute node with `srun --pty` bash option.
 
 ### Constraints
 
