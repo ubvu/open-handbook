@@ -1,8 +1,7 @@
 const features = [
   {
     name: "Collaborative",
-    description:
-      "Let's learn each other's best practices.",
+    description: "We learn each other's best practices.",
     icon: () => (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -21,8 +20,7 @@ const features = [
   },
   {
     name: "Responsive",
-    description:
-      "Things changed? This resource does too with your help.",
+    description: "With your help, we can respond to changes on a daily basis.",
     icon: () => (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -41,8 +39,7 @@ const features = [
   },
   {
     name: "Open source",
-    description:
-      "Share and copy without permission. Join the discussions.",
+    description: "Share and copy without permission. Join the discussions.",
     icon: () => (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -61,8 +58,7 @@ const features = [
   },
   {
     name: "Quality control",
-    description:
-      "All content is reviewed periodically by specialists.",
+    description: "All content is reviewed periodically by VU specialists.",
     icon: () => (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -81,8 +77,7 @@ const features = [
   },
   {
     name: "Local",
-    description:
-      "This is for VU, by VU. Join in, meet colleagues.",
+    description: "This is for VU, by VU. Join in, meet colleagues.",
     icon: () => (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -101,8 +96,7 @@ const features = [
   },
   {
     name: "Flexible",
-    description:
-      "Shape the content to your needs. Find topics or guides.",
+    description: "Shape the content to your needs. Find topics or guides.",
     icon: () => (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -119,6 +113,26 @@ const features = [
       </svg>
     ),
   },
+  {
+    name: "One stop shop",
+    description: "Find all the information you need in one place.",
+    icon: () => (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={1.5}
+        stroke="currentColor"
+        className="tw-w-6 tw-h-6 tw-stroke-sky-600 tw-mr-1"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z"
+        />
+      </svg>
+    ),
+  },
 ];
 
 function Features() {
@@ -127,14 +141,11 @@ function Features() {
       <div className="tw-bg-white tw-py-12 sm:tw-py-16">
         <div className="tw-mx-auto tw-max-w-7xl tw-px-6 lg:tw-px-8">
           <div className="tw-mx-auto tw-max-w-2xl sm:tw-text-center">
-            {/* <h2 className="tw-text-base tw-font-semibold tw-leading-7 tw-text-sky-600">
-              Everything you need
-            </h2> */}
             <h2 className="tw-mt-2 tw-text-3xl tw-font-bold tw-tracking-tight tw-text-sky-900 sm:tw-text-4xl">
               Benefits
             </h2>
             <p className="tw-mt-6 tw-text-lg tw-leading-8 tw-text-gray-600">
-              VU has plenty of resources already. Why use this one?
+              Why use the Research Support Handbook?
             </p>
           </div>
         </div>
@@ -145,9 +156,7 @@ function Features() {
               return (
                 <div key={feature.name} className="tw-flex tw-flex-col">
                   <dt className="tw-inline tw-font-semibold tw-text-gray-900">
-                    <Component
-                      aria-hidden="true"
-                      />
+                    <Component aria-hidden="true" />
                     {feature.name}
                   </dt>{" "}
                   <dd className="tw-inline">{feature.description}</dd>
