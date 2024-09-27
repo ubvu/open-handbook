@@ -44,7 +44,7 @@ Use your favourite SSH client to login at \<VUNETID\>@bazis.labs.vu.nl. On windo
 9. You will now see a terminal window, similar to this one. On connecting for the first time, you will be asked to change your CLUSTER password. Enter your CLUSTER password, then enter a new password (this can be identical to your VUNETID password).
 10. Congratulations, you are now connected to the cluster! The next steps are to set up your scripts and data!
 
-As an alternative, you can use eduVPN to connect to the VU network, however the above configuration is recommended and generally works best in the long term. You can find the client [here](https://www.eduvpn.org/client-apps/). Start eduVPN and choose Institute Access to connect. You will need MFA to authenticate. Students can activate MFA at the servicedesk ([kb-item 11809](https://services.vu.nl/kb_view.do?sysparm_article=KB0011809)).
+As an alternative, you can use eduVPN to connect to the VU network, however the above configuration is recommended and generally works best in the long term. You can [find the client on the eduVPN pages](https://www.eduvpn.org/client-apps/). Start eduVPN and choose Institute Access to connect. You will need to enable Multi-Factor Authentication (MFA). Students can activate MFA at the servicedesk ([kb-item 11809](https://services.vu.nl/kb_view.do?sysparm_article=KB0011809)).
 
 ### Running your first Python script
 
