@@ -60,36 +60,39 @@ Here, we go through some steps to run your first script. We provide instructions
 Your first script was just executed on the login "node". A node can be thought of as a single computer of the cluster. This login node should only be used for doing very minor things, and any command you execute only runs while you are connected to the server. In the next steps you will learn how to execute a so-called "job" on one of the other nodes using slurm. A job can execute in the background, and if configured correctly, you will receive an email when the job is done.
 
 1. Create a new file called `test.sh` (just like you did before), and enter the following in the file. Make sure to replace `<YOUR-EMAIL>@vu.nl` with your own email. When you copy the contents of this file on Windows you may need to set the "format" to Unix, which can be done using the top menu of the MobaXtermEditor (format -> UNIX).
-   
-   ```bash
-   #!/bin/bash
-   #SBATCH --job-name=my_job
-   #SBATCH --ntasks=1
-   #SBATCH --cpus-per-task=1
-   #SBATCH --time=05:00:00
-   #SBATCH --mem-per-cpu=9000
-   #SBATCH --output=output.out
-   #SBATCH --mail-type=ALL
-   #SBATCH --mail-user=<YOUR-EMAIL>@vu.nl
 
-   source ~/.bashrc
-   
-   python test.py
-   ```
+```bash
+#!/bin/bash
+#SBATCH --job-name=my_job
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --time=05:00:00
+#SBATCH --mem-per-cpu=9000
+#SBATCH --output=output.out
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=<YOUR-EMAIL>@vu.nl
+
+source ~/.bashrc
+
+python test.py
+```
+
 2. In additon, edit the Python script as follows. This ensures that the script will run for a while (60 seconds). This is to simulate a long running job. 
 
-   ```python
-   import time
-   print("starting job...")
-   time.sleep(60)
-   print("hello world!")
-   ```
+```python
+import time
+print("starting job...")
+time.sleep(60)
+print("hello world!")
+```
+
 3. Now, in the terminal type `sbatch test.sh`, which should give the following output "Submitted batch job \<JOBID\>".
 4. Your job is now submitted and executed on the more powerful computational nodes. You can check whether it is running by typing "squeue". You should see a short or long list of jobs from all users on the cluster. Yours should be included in the list. In addtional, you should have received an email that the job started.
 5. While your job is running you can check the output of your job in the file "output.out", as specified in the test.sh-script (see above). This file should contain "starting job..." and after 60 seconds, "hello world!" should also appear, and you will receive another email. Your job is now finished.
 6. Congratulations, you can now use the cluster! You can adapt this to your own scripts. The rest of this manual shows more useful slurm commands, advanced set up of job scripts, installing of custom Python and R versions, data management etc. etc.
 
 ### Data transfer
+
 MobaXterm has an integrated FTP file browser. Once you have logged in to the cluster, you will see the file browser to the left of the terminal window, where it shows the contents of your home folder. You can browse through these folders, and drag-and-drop files and folders between this FTP file browser and the Windows File Explorer. Alternatively, you can use the download/upload buttons at the top of the FTP file browser window. A green refresh button is also located there to refresh the contents of the current folder. You can also open files in the FTP file browser to edit them directly. Upon saving, you'll be asked if you want change these files on the HPC system.
 
 MobaXterm works fine for most small data transfers. If you want to transfer a large number of files, or large files, you may want to use a dedicated FTP client. We recommend using WinSCP, Cyberduck or FileZilla, which you can configure as follows.
@@ -104,62 +107,62 @@ MobaXterm works fine for most small data transfers. If you want to transfer a la
 6. Click "OK" and "Save" to save the session. Do this BEFORE you click "Login", otherwise all your settings are forgotten next time.
 7. You will be asked for your passwords. Similar to connecting with MobaXterm, you will first be asked for your VUNETID password (when connecting to `ssh.data.vu.nl`), and then for your cluster password (when connecting to `bazis.labs.vu.nl`).
 
-## Using Slurm 
+## Using Slurm
 
 ### Useful commands
 
 See jobs in the queue for a given user
 
 ```bash
-   squeue -u username
+squeue -u username
 ```
 
-Show available node features 
+Show available node features
 
 ```bash
-   sinfo -o "%20N  %10c  %10m  %25f  %10G "
+sinfo -o "%20N  %10c  %10m  %25f  %10G "
 ```
 
 Submit a job
 
 ```bash
-   sbatch script
+sbatch script
 ```
 
 Show the status of a currently running job
 
 ```bash
-   sstat -j jobID
+sstat -j jobID
 ```
 
 Show the final status of a finished job
 
 ```bash
-   sacct -j jobID
+sacct -j jobID
 ```
 
 Cancel a job
 
 ```bash
-   scancel jobid
+scancel jobid
 ```
 
 Cancel all jobs for a user
 
 ```bash
-   scancel -u username
+scancel -u username
 ```
 
 Displays some statistics of a running or previously running job, including maximum memory usage. This can be useful especially to learn about the amount of memory required to run the job (again)
 
 ```bash
-   seff <JOBID>
+seff <JOBID>
 ```
 
 Displays some control stats of running job, e.g., number of CPUs used
 
 ```bash
-   scontrol show job <JOBID>
+scontrol show job <JOBID>
 ```
 
 ## Input and output
@@ -169,7 +172,7 @@ Any script you run on the cluster, can read all the files in your home directory
 ```python
 import os
 with open(os.getenv("TMPDIR") + "/test.txt", "w") as f:
-	f.write("hello world!")
+  f.write("hello world!")
 ```
 
 You can also all or a selection of files from the scratch directory to your home directory after the job is done. This can be done by including the `cp` command in your slurm-file. For example, to copy all files from the scratch directory to your home directory, you can use the following command:
@@ -182,7 +185,7 @@ cp $TMPDIR/* ~/
 
 Most departments have a backup system in place, but configurations may vary. For example, an automatic backup may be made each day with a rentention period of 7 days, and a weekly backuup with a retention period of 5 weeks.
 
-You can find all thour data under `.zfs/snapshot`. You can then copy your data from there to your home folder. 
+You can find all thour data under `.zfs/snapshot`. You can then copy your data from there to your home folder.
 
 ```bash
 cd ~/.zfs/snapshot
@@ -255,20 +258,20 @@ Slurm complicates this, however, by using the terms core and cpu interchangeably
 #### Simple job
 
 ```sh
-    #!/bin/bash -l
-    #SBATCH -J MyTestJob
-    #SBATCH -N 1
-    #SBATCH -p defq
-    
-    echo "== Starting run at $(date)"
-    echo "== Job ID: ${SLURM_JOBID}"
-    echo "== Node list: ${SLURM_NODELIST}"
-    echo "== Submit dir. : ${SLURM_SUBMIT_DIR}"
-    echo "== Scratch dir. : ${TMPDIR}"
-    
-    cd $TMPDIR
-    # Your more useful application can be started below!
-    hostname
+#!/bin/bash -l
+#SBATCH -J MyTestJob
+#SBATCH -N 1
+#SBATCH -p defq
+
+echo "== Starting run at $(date)"
+echo "== Job ID: ${SLURM_JOBID}"
+echo "== Node list: ${SLURM_NODELIST}"
+echo "== Submit dir. : ${SLURM_SUBMIT_DIR}"
+echo "== Scratch dir. : ${TMPDIR}"
+
+cd $TMPDIR
+# Your more useful application can be started below!
+hostname
 ```
 
 ## Workspace
@@ -300,11 +303,11 @@ Check your workspaces
 ```sh
 $ ws_list 
 id: MyData
-     workspace directory  : /scratch-shared/ws/username-MyData
-     remaining time       : 9 days 23 hours
-     creation time        : Wed Mar 13 23:51:57 2013
-     expiration date      : Sat Mar 23 23:51:57 2013
-     available extensions : 15
+workspace directory  : /scratch-shared/ws/username-MyData
+remaining time       : 9 days 23 hours
+creation time        : Wed Mar 13 23:51:57 2013
+expiration date      : Sat Mar 23 23:51:57 2013
+available extensions : 15
 ```
 
 Release the project space with
@@ -325,19 +328,19 @@ it is usefull in some cases and try to help.
 
 Working  with virtual environments further makes the python environment better to manage
 
-* A virtual environment is a named, isolated, working copy of Python that that maintains its own files,
-* directories, and paths so that you can work with specific versions of libraries or Python itself without affecting other Python projects.
-* Virtual environmets make it easy to cleanly separate different projects and avoid problems with different dependencies
+- A virtual environment is a named, isolated, working copy of Python that that maintains its own files,
+- directories, and paths so that you can work with specific versions of libraries or Python itself without affecting other Python projects.
+- Virtual environmets make it easy to cleanly separate different projects and avoid problems with different dependencies
   and version requirements across components.
 
 In short:
 
-* use virtualenv (preferred) or conda
-* create an isolated environment
-* Install packages
-* Activate a virtual environment
-* Deactivate a virtual environment
-* Delete a virtual environment
+- use virtualenv (preferred) or conda
+- create an isolated environment
+- Install packages
+- Activate a virtual environment
+- Deactivate a virtual environment
+- Delete a virtual environment
 
 ### Adding a requirements file
 
@@ -384,8 +387,8 @@ So your script is more portable, and will work without modification on systems w
 
 Further Reading
 
-* [python virtual environments primer](https://realpython.com/python-virtual-environments-a-primer/#an-isolated-python-installation)
-* [python requirements.txt file](https://learnpython.com/blog/python-requirements-file)
+- [python virtual environments primer](https://realpython.com/python-virtual-environments-a-primer/#an-isolated-python-installation)
+- [python requirements.txt file](https://learnpython.com/blog/python-requirements-file)
 
 ## R environment
 
@@ -424,7 +427,7 @@ dev.off()
 
 References
 
-* [How do I produce PNG graphics in batch mode?](https://cran.r-project.org/doc/FAQ/R-FAQ.html#How-do-I-produce-PNG-graphics-in-batch-mode_003f)
+- [How do I produce PNG graphics in batch mode?](https://cran.r-project.org/doc/FAQ/R-FAQ.html#How-do-I-produce-PNG-graphics-in-batch-mode_003f)
 
 ## Matlab
 
@@ -474,41 +477,41 @@ matlab -batch hello_world
 Combining this in a slurm script we can queue matlab workloads.
 
 ```sh
-    #!/bin/bash -l
-    #SBATCH -J MyMatlab
-    #SBATCH -N 1
-    #SBATCH --cpus-per-task=1
-    #SBATCH -p defq   
-    #SBATCH --output=%x_%j.out
-    #SBATCH --error=%x_%j.err
-    #SBATCH --mail-type=END,FAIL
-    #SBATCH --mail-user=<YOUR EMAIL>
-    
-    # Note: for parallel operations increase cpus-per-task above
-    # Note 2: output and error logs can be given absolute paths 
-    
-    echo "== Starting run at $(date)"
-    echo "== Job ID: ${SLURM_JOBID}"
-    echo "== Node list: ${SLURM_NODELIST}"
-    echo "== Submit dir. : ${SLURM_SUBMIT_DIR}"
-    echo "== Scratch dir. : ${TMPDIR}"
-    
-    # cd $TMPDIR
-    # or change to a project folder with matlab file e.g. hello_World.m
-    # cd your/data
+#!/bin/bash -l
+#SBATCH -J MyMatlab
+#SBATCH -N 1
+#SBATCH --cpus-per-task=1
+#SBATCH -p defq   
+#SBATCH --output=%x_%j.out
+#SBATCH --error=%x_%j.err
+#SBATCH --mail-type=END,FAIL
+#SBATCH --mail-user=<YOUR EMAIL>
 
-    # Load matlab module
-    module load 2022 matlab/R2023a
-    
-    # execute
-    matlab -batch hello_world
+# Note: for parallel operations increase cpus-per-task above
+# Note 2: output and error logs can be given absolute paths 
+
+echo "== Starting run at $(date)"
+echo "== Job ID: ${SLURM_JOBID}"
+echo "== Node list: ${SLURM_NODELIST}"
+echo "== Submit dir. : ${SLURM_SUBMIT_DIR}"
+echo "== Scratch dir. : ${TMPDIR}"
+
+# cd $TMPDIR
+# or change to a project folder with matlab file e.g. hello_World.m
+# cd your/data
+
+# Load matlab module
+module load 2022 matlab/R2023a
+
+# execute
+matlab -batch hello_world
 ```
 
 ### Parpool
 
 ### Reading
 
-* [mathworks-parpool](https://nl.mathworks.com/help/parallel-computing/parpool.html)
+- [mathworks-parpool](https://nl.mathworks.com/help/parallel-computing/parpool.html)
 
 ## Acknowledging the cluster
 
@@ -519,6 +522,7 @@ When you use the cluster for your research, please acknowledge the cluster in yo
 ## Advanced topics
 
 ### Using SSH keys
+
 SSH keys are an alternative method for authentication to obtain access to remote computing systems. They can also be used for authentication when transferring files or for accessing version control systems like github.
 
 The cluster uses ssh keys to manage batch jobs.
@@ -526,9 +530,9 @@ The cluster uses ssh keys to manage batch jobs.
 On your workstation create ssh key pair
 `ssh-keygen -t ed25519 -a 100`
 
-* `-a` (default is 16): number of rounds of passphrase derivation; increase to slow down brute force attacks.
-* `-t` (default is rsa): specify the cryptographic algorithm. ed25519 is faster and shorter than RSA for comparable strength.
-* `-f` (default is /home/user/.ssh/id_algorithm): filename to store your keys. If you already have SSH keys, make sure you specify a different name: ssh-keygen will overwrite the default key if you don't specify!
+- `-a` (default is 16): number of rounds of passphrase derivation; increase to slow down brute force attacks.
+- `-t` (default is rsa): specify the cryptographic algorithm. ed25519 is faster and shorter than RSA for comparable strength.
+- `-f` (default is /home/user/.ssh/id_algorithm): filename to store your keys. If you already have SSH keys, make sure you specify a different name: ssh-keygen will overwrite the default key if you don't specify!
 
 If ed25519 is not available, use the older (but strong and trusted) RSA cryptography:
 `ssh-keygen -a 100 -t rsa -b 4096`
@@ -539,7 +543,7 @@ Note: on windows you can use MobaKeyGen from MobaXterm, but on Windows 11 Powers
 
 In your ~/.ssh directory you will find a public and private key. Make sure to keep the private key safe as anyone with the private key has access.
 
-Now, when you add your public key to the ~/.ssh/authorized_keys file in a remote system, your key will be used to login. 
+Now, when you add your public key to the ~/.ssh/authorized_keys file in a remote system, your key will be used to login.
 
 You can either use copy-paste or the ssh-copy-id command:
 
@@ -561,10 +565,11 @@ and check to make sure that only the key(s) you wanted were added.
 ## Forwarding X
 
 ## Fix Warning: Remote Host Identification Has Changed
+
 If you are sure that it is harmless and the remote host key has been changed in a legitimate way, you can skip the host key checking by sending the key to a null known_hosts file:
 
 ```sh
-$ ssh -o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no" username@bazis.labs.vu.nl
+ssh -o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no" username@bazis.labs.vu.nl
 ```
 
 To make the change permanent remove the offending host key from your ~/.ssh/known_hosts file with:
@@ -574,6 +579,7 @@ ssh-keygen -R "hostname"
 ```
 
 ---
+
 References:
 
 1. [hpc carpentry](http://www.hpc-carpentry.org/hpc-shell/01-connecting/index.html)
@@ -586,13 +592,11 @@ References:
 Yoda is a data storage solution for research data at the Vrije Universiteit Amsterdam. You can use the icommands to upload and download data from Yoda directly from the cluster.
 
 To use the icommands a configuration file in your home folder is required.
-https://yoda.vu.nl/site/getting-started/icommands.html#configuration
+<https://yoda.vu.nl/site/getting-started/icommands.html#configuration>
 
 After configuration use `iinit` to connect, use a  Data Access Password, similar to a  WebDAV connection.
- 
-Find an overview of the icommands here:
-https://docs.irods.org/master/icommands/user/
-Check the  `ipwd`, `ils`, `icd`, `iput`, `iget` en `irsync` commands for navigation and data transfer.
+
+Find an overview of the icommands here: <https://docs.irods.org/master/icommands/user/>. Check the  `ipwd`, `ils`, `icd`, `iput`, `iget` en `irsync` commands for navigation and data transfer.
 
 Your project folder is located at `/vu/home`
 
