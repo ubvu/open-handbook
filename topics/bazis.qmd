@@ -36,7 +36,7 @@ Use your favourite SSH client to login at `\<VUNETID\>@bazis.labs.vu.nl`. Exampl
    3. Enter your username (VUnetID)
 4. Go to “Network settings” and click SSH gateway (jump host)
 5. Enter the following details and click OK
-   1. Gateway host: ssh.data.vu.nl
+   1. Gateway host: `ssh.data.vu.nl`
    2. Enter your username (VUnetID)
 6. Save the settings. When not connected automatically, you can click on User sessions, and double click "bazis.labs.vu.nl (VUNETID)"
 7. You will be asked for a password for "ssh.data.vu.nl". This is your NORMAL VUNETID password, NOT the cluster password your received from ITVO.
