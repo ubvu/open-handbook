@@ -59,7 +59,7 @@ Here, we go through some steps to run your first script. We provide instructions
 
 Your first script was just executed on the login "node". A node can be thought of as a single computer of the cluster. This login node should only be used for doing very minor things, and any command you execute only runs while you are connected to the server. In the next steps you will learn how to execute a so-called "job" on one of the other nodes using slurm. A job can execute in the background, and if configured correctly, you will receive an email when the job is done.
 
-1. Create a new file called `test.sh` (just like you did before), and enter the following in the file. Make sure to replace \<YOUR-EMAIL\>@vu.nl with your own email. When you copy the contents of this file on Windows you may need to set the "format" to Unix, which can be done using the top menu of the MobaXtermEditor (format -> UNIX).
+1. Create a new file called `test.sh` (just like you did before), and enter the following in the file. Make sure to replace `<YOUR-EMAIL>@vu.nl` with your own email. When you copy the contents of this file on Windows you may need to set the "format" to Unix, which can be done using the top menu of the MobaXtermEditor (format -> UNIX).
    
    ```bash
    #!/bin/bash
