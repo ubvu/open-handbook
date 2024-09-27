@@ -6,7 +6,7 @@ title: Data documentation
 
 Data documentation aims to describe the collected data to make it easier to use, retrieve and manage. Data documentation takes various forms and describes the data on multiple levels. The description of the dataset and data object is also referred to as metadata, i.e. data about the data. One way to do add metadata is to attach a readme file to your data. [ResearchData NL](https://danstraining.moodlecloud.com/mod/page/view.php?id=275) offers guidance for this. The CESSDA has made very detailed guidance available for creating [documentation and metadata](https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide/2.-Organise-Document/Documentation-and-metadata) for your data.
 
-![An image layering five different kinds of metadata, with the FAIR principles on the outside, followed by discipline metadata standards, project documentation, metadata data set, and metadata data object.](https://libapps-eu.s3.amazonaws.com/accounts/62029/images/Metadata.png)
+![An image layering five different kinds of metadata, with the FAIR principles on the outside, followed by discipline metadata standards, project documentation, metadata data set, and metadata data object.](../public/metadata.png)
 
 In addition to describing their own datasets and objects, researchers can cross-refer to the project proposal where other researchers can find information about the research, e.g. aims and goals, methodology and data collection, the persons responsible for the project etc. The type of research and the nature of the data also influence what kind of documentation is necessary.
 
@@ -22,7 +22,7 @@ Different types of data are governed by different standards (see also the image 
 
 A codebook is a technical description of the data that were collected for a particular purpose in one or more datasets. It describes how the data are arranged in the computer file or files and what the parts or variables (numbers and letters) mean. A good description may also include specific instructions on how to use and interpret the data properly.
 
-![A low resolution screenshot of a spreadsheet](https://libapps-eu.s3.amazonaws.com/accounts/46351/images/pivot-table-layout-in-excel-2003.gif)
+![A low resolution screenshot of a spreadsheet](../public/spreadsheet.gif)
 
 Like any other kind of "book," some codebooks are better than others. The best codebooks include the following elements:
 

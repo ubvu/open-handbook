@@ -6,7 +6,7 @@ title: Process & Analyse Data
 
 Provenance describes the origin of an object. Data provenance refers to the knowledge of where data originate, where they were collected, by whom, for what reason, and similar aspects that help to understand how the data were originally gathered, processed and altered. In daily use, the term “**data provenance**” refers to a record trail that accounts for the origin of a piece of data (in a database, document or repository) together with an explanation of how and why it got to the present place (Encyclopedia of Database Systems, pp [608-608](https://link.springer.com/referenceworkentry/10.1007%2F978-0-387-39940-9_1305)). You can also call it the process of keeping records of changes in the data. The need for Data Provenance increases as the reuse of datasets becomes more common in research. The term was originally mostly used in relation to works of art, but is now used in similar senses in a wide range of fields ([Wikipedia](https://en.wikipedia.org/wiki/Provenance)).
 
-[![](https://libapps-eu.s3.amazonaws.com/accounts/46351/images/Credibility_Trust_Provenace_data.gif)](https://commons.wikimedia.org/wiki/File:Credibility_Trust_Provenace_data.svg)
+[![](../public/Credibility_Trust_Provenace_data.gif)](https://commons.wikimedia.org/wiki/File:Credibility_Trust_Provenace_data.svg)
 
 Researchers regularly use a lab notebook or a journal to document their hypotheses, experiments and initial analysis or interpretation of these experiments. If you manually change data in a dataset, this should also be documented. Sometimes records of changes in data can be kept by adding notes to programmes or scripts that are used.
 
@@ -24,7 +24,7 @@ For every step of your data analysis, good [data documentation](https://libguide
 
 The process of detecting and correcting (or removing) corrupt or inaccurate information or records, is called data cleaning. In essence, it refers to identifying incomplete, incorrect, inaccurate or irrelevant parts of the data and then replacing, modifying, or deleting this data ([Wikipedia](https://en.wikipedia.org/wiki/Data_cleansing)). Depending on the type of analysis that is done, different pieces of software can be used to do this data cleaning. More often than not, the same software can also be used to perform the analysis. Licensed software may sometimes also be installed on personal computers or laptops.
 
-![](https://libapps-eu.s3.amazonaws.com/accounts/46351/images/MessyData.jpg)
+![](../public/MessyData.jpg)
 
 Software especially designed to clean re-used data is [OpenRefine](https://openrefine.org/). It cleans starting and trailing blank spaces in cell field, clusters values based on similarities (e.g. in free text fields: Alphen a/d Rhijn, alfen ad rijn, etc. can be easily clustered), normalise data fields into one standard, etc. See below for several tutorials.
 
@@ -106,7 +106,7 @@ If your pc or laptop takes too much time performing your analysis, it is time to
 Several options are detailed below. [Contact IT for Research](https://services.vu.nl/esc?id=sc_cat_item&sys_id=4e079166978d5950e553359fe153afc5) for advice on which solution could best fit your workflow
 
 #### High Performance Computing (HPC)
-![](https://libapps-eu.s3.amazonaws.com/accounts/46351/images/noaa-ibmsupercomputer.gif)
+![](../public/noaa-ibmsupercomputer.gif)
 
 Roughly speaking, you should try to get access to the HPC when you need to stick a post-it on your laptop or PC that says: "do not touch, analysis ongoing". Or when you want to run analyses parallel to each other, because they take too long. It is important to consider such a situation at the very beginning of your research or when writing your Data Management Plan: is it conceivable that your dataset will become so large or your analysis so complicated that you will need HPC? Please note that this can occur for any discipline and any sort of data, qualitative and quantitative. If you may need HPC, you also need to reconsider your analysis methods. Programmes like SPSS and Excel do not run well on a HPC, and you would need to (learn to) write scripts in R or Python <!-- # [R or Python](https://libguides.vu.nl/rdm/data-analysis) -->. If you want to know if using HPC may be necessary or useful for your project, you can contact [IT for Research](https://services.vu.nl/esc?id=sc_cat_item&sys_id=4e079166978d5950e553359fe153afc5) to ask for more information (select the "Onderzoek service domain").
 
