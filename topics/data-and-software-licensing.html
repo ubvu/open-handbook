@@ -121,8 +121,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#licensing-the-data" id="toc-licensing-the-data" class="nav-link active" data-scroll-target="#licensing-the-data">Licensing the data</a></li>
+  <li><a href="#licensing-the-data" id="toc-licensing-the-data" class="nav-link active" data-scroll-target="#licensing-the-data">Licensing the data</a>
+  <ul class="collapse">
   <li><a href="#licensing-software" id="toc-licensing-software" class="nav-link" data-scroll-target="#licensing-software">Licensing software</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/data-and-software-licensing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -148,8 +150,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="licensing-the-data" class="level3">
-<h3 class="anchored" data-anchor-id="licensing-the-data">Licensing the data</h3>
+<section id="licensing-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="licensing-the-data">Licensing the data</h2>
 <p>A data licence agreement is a legal instrument that lets others know what they can and cannot do with your research data (and any documentation. scripts and metadata that are published with the data). It is important to consider what kind of limitations are relevant. An important component can be a guideline on how people should cite the dataset. Other components could be:</p>
 <ul>
 <li>Can people make copies or even distribute copies</li>
@@ -169,23 +171,30 @@ ul.task-list li input[type="checkbox"] {
 <li>The <a href="https://zenodo.org/record/4090923#.X6ugz1DvJPY">Guide to Creative Commons for Scholarly Publishing and Educational Resources</a> by NWO, VSNU and the University and Royal Libraries</li>
 <li><a href="https://www.dcc.ac.uk/guidance/how-guides/license-research-data">DCC how-to guide on licensing research data</a>, a guide that links to the Creative Commons website, where many terms are explained</li>
 <li><a href="https://opendatacommons.org/licenses/pddl/">Open Data Commons Public Domain Dedication and License (PDDL)</a></li>
-<li><a href="https://ufal.github.io/public-license-selector/">EUDAT B2SHARE license selection wizard</a>, which Pawel Kamocki (et al) released under an open source license.</li>
+<li><a href="https://ufal.github.io/public-license-selector/">EUDAT B2SHARE license selection wizard</a>, which Pawel Kamocki (et al.) released under an open source license.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li>
 </ul>
-</section>
 <section id="licensing-software" class="level3">
 <h3 class="anchored" data-anchor-id="licensing-software">Licensing software</h3>
-<p>As with data, it is important to license any <a href="https://libguides.vu.nl/rdm/data-analysis?#s-lg-box-wrapper-15134909">software</a> that you write for your research. Some basic information about software licensing can be found <a href="https://fair-software.eu/recommendations/license">here</a>, but it is also important to keep the following in mind:</p>
+<p>As with data, it is important to <a href="https://libguides.vu.nl/rdm/data-analysis?#s-lg-box-wrapper-15134909">license any software</a> that you write for your research. <a href="https://fair-software.eu/recommendations/license">You can find basic information about software licensing can be found</a>, but it is also important to keep the following in mind:</p>
 <ul>
+<li>For software, choosing a licence usually happens right when you start developing the software or when you put it in a public repository, rather than when the software is finished and fully baked. This makes sense: immediately when the software appears on a public repository, the software can be found and seen by others. Giving it a licence helps others to figure out what they can and can’t do with it.</li>
 <li>If you are reusing software or libraries written by someone else, you must stick to the clauses of the licence given to the original software/library;</li>
 <li>If you used proprietary software to write your code (e.g.&nbsp;SPSS syntax), your options in choosing a licence will probably be limited;</li>
 <li>When choosing a licence, do not just think about what <em>others</em> may do with the software, but also what <em>you</em> might want to do with the software in the future.</li>
 </ul>
-<p>If you need guidance in choosing a licence for your software, get in touch with the <a href="mailto:rdm@vu.nl?subject=Research%20Software">RDM Support Desk</a>.</p>
+<p>There are several tools that can help you to <a href="https://choosealicense.com/">choose</a> a suitable sotware licence. If you need guidance in choosing a licence for your software, get in touch with the <a href="mailto:rdm@vu.nl?subject=Research%20Software">RDM Support Desk</a>.</p>
 
 
 </section>
+</section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>For the source code, see <a href="https://github.com/ufal/public-license-selector/" class="uri">https://github.com/ufal/public-license-selector/</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
