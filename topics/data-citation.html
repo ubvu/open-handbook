@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -157,7 +123,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#citation-elements" id="toc-citation-elements" class="nav-link active" data-scroll-target="#citation-elements">Citation Elements</a>
   <ul class="collapse">
-  <li><a href="#citation-file" id="toc-citation-file" class="nav-link" data-scroll-target="#citation-file">Citation file</a></li>
+  <li><a href="#example-data-citation" id="toc-example-data-citation" class="nav-link" data-scroll-target="#example-data-citation">Example data citation</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/data-citation.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -186,7 +152,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="citation-elements" class="level2">
 <h2 class="anchored" data-anchor-id="citation-elements">Citation Elements</h2>
-<p>Citing data is not different from citing a publication. Make sure to check the rules of the journal to know how you should cite when writing an article for a specific academic journal. For all of the journals, however, the minimum compulsory elements in a data citation include:</p>
+<p>Citing data is not different from citing a journal publication. Similar to citing a journal publication, it helps to give and receive credit, and show the impact of the original source.</p>
+<p>Make sure to check the rules of the journal to know how you should cite when writing an article for a specific academic journal. For all of the journals, however, the minimum compulsory elements in a data citation include:</p>
 <ul>
 <li>Author(s): Name of the author (creator) of the dataset</li>
 <li>Title: Name of the dataset</li>
@@ -201,8 +168,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Creation Date</li>
 <li>Date of Consultation (last)</li>
 </ul>
-<p><strong>Example of a data citation:</strong></p>
+<section id="example-data-citation" class="level3">
+<h3 class="anchored" data-anchor-id="example-data-citation">Example data citation</h3>
 <p>Stephens, William, 2020, “Resiliences to Radicalisation - QSort Data”, <a href="https://doi.org/10.34894/35MTMN">https://doi.org/10.34894/35MTMN</a>, DataverseNL, V1.</p>
+<hr>
 <p>For more information, see the following guidelines:</p>
 <ul>
 <li><a href="https://dataverse.org/best-practices/data-citation">Dataverse</a></li>
@@ -210,28 +179,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><a href="https://www.dcc.ac.uk/resources/briefing-papers/introduction-curation/data-citation-and-linking">DCC UK</a></li>
 <li><a href="https://www.force11.org/group/joint-declaration-data-citation-principles-final">Data Citation Synthesis Group (2014). Joint Declaration of Data Citation Principles. Martone M. (ed.) San Diego CA: FORCE11</a></li>
 </ul>
-<section id="citation-file" class="level3">
-<h3 class="anchored" data-anchor-id="citation-file">Citation file</h3>
-<p>A citation file is a computer file that contains all information needed to cite a dataset. Several data and software repositories, such as Zenodo and GitHub, support this format and enables enables others to easily select the citation information in their preferred format. Most reference managers (e.g., Zenodo) can work with these standardized citation files, and automatically format the references in a document.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../public/github_citation_file.png" title="Cite a GitHub repository that contains a citation file" class="img-fluid figure-img"></p>
-<figcaption>A screenshot of the interface to cite a GitHub repository</figcaption>
-</figure>
-</div>
-<p>An example, CFF-file is given below, but to enable you to easily create a CFF-file you can use this <a href="https://citation-file-format.github.io/cff-initializer-javascript/#/">website</a>.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cff-version</span><span class="kw">:</span><span class="at"> </span><span class="fl">1.2.0</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">message</span><span class="kw">:</span><span class="at"> </span><span class="st">"If you use this data, please cite it as below."</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">authors</span><span class="kw">:</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="at"> </span><span class="kw">-</span><span class="at"> </span><span class="fu">family-names</span><span class="kw">:</span><span class="at"> Druskat</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="at">   </span><span class="fu">given-names</span><span class="kw">:</span><span class="at"> Stephan</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="at">   </span><span class="fu">orcid</span><span class="kw">:</span><span class="at"> https://orcid.org/1234-5678-9101-1121</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Research Software"</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">version</span><span class="kw">:</span><span class="at"> </span><span class="fl">2.0.4</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">identifiers</span><span class="kw">:</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">type</span><span class="kw">:</span><span class="at"> doi</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">value</span><span class="kw">:</span><span class="at"> 10.5281/zenodo.1234</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">date-released</span><span class="kw">:</span><span class="at"> 2021-08-11</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Relevant is also the <a href="../topics/cff.html">Citation File Format (CFF)</a>.</p>
 
 
 </section>
