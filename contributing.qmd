@@ -1,4 +1,5 @@
 ---
+title: Contributing
 format:
   html:
     toc: true
@@ -6,26 +7,27 @@ format:
     toc-expand: 4
 ---
 
-# Contributing {.unnumbered}
+You can contribute to the {{< var title >}} by making small edits, writing entirely new topics, or writing guides. All contributions are welcome and appreciated, small and large. If you are in need of specific information, you can skip ahead using the table of contents.
 
-You can contribute to this book by making small edits or writing entirely new topics. From small to large, all contributions are welcome. If you are in need of specific information, you can skip ahead using the table of contents.
-
-## Direct contributions
+## Contributing portal
 
 We offer a portal to reduce the barriers to contribute to the {{< var title >}}. You only need an internet connection and articulate what you want us to include. No accounts necessary 😊
 
 :::{.callout-note}
-Open the contribution portal by [clicking here](https://ez-github-contributor.netlify.app/) or copy-pasting: https://ez-github-contributor.netlify.app/
+Open the contribution portal by [clicking here](https://ez-github-contributor.netlify.app/) or copy-pasting: <https://ez-github-contributor.netlify.app/>
 :::
 
 You can report issues you find with the {{< var title >}} using the "Report a problem" tab. This is a way for you to share your feedback with us.
 
-You can propose new topics to the {{< var title >}} using the "Propose new page" tab. This will be considered for inclusion as a topic.
+You can propose new topics or guides to the {{< var title >}} using the "Propose new page" tab. This will be considered for inclusion. Please mention whether it should be a topic or a guide. The text editor allows you to use rich text formatting.
+
+:::{.callout-warning}
+The portal does not save your work. Use the portal when you are ready to submit your work, but do not use it to manage your submissions.
+:::
 
 ![Screenshot of the contributor portal](public/Screenshot%202024-05-27%20at%2013.43.25.png)
 
 If you want to be credited with contributing, please share your name. If you'd like to hear back about what was done with your feedback or proposal, please also provide a direct way to contact you.
-
 
 ## Contributing via GitHub
 
@@ -53,11 +55,17 @@ To add a new topic, you need to create a new file ending in `.qmd` in the `topic
 
 When you click this button you may be asked to [fork](#forking) the repository. This is not a problem so go ahead!
 
-The topic itself needs to be [written in Markdown](#writing-text). Every topic must contain a first level heading (e.g., `# Heading`), which will be the topic title. Section headings are second level headings (e.g., `## Section`).
+The topic itself needs to be [written in Markdown](#writing-text). Every topic must be a noun/noun phrase and contain the title as such:
 
-After that, you are ready to [submit your pull request](#submit-a-pull-request)! The reviewers will help you place the topic in the right place of the book.[^1]
+```yaml
+---
+title: Example topic
+---
+```
 
-[^1]: If you are really enthusiastic and want to do it yourself: The topic needs to be added to the topics list in `_quarto.yml`. You can find the topics list around line 24 of that file.
+Section headings are second level headings (e.g., `## Section`). You can add all needed information as you want, but please mind that topics are supposed to short and self-contained for readers of the {{< var title >}}.
+
+After that, you are ready to [submit your pull request](#submit-a-pull-request)! The reviewers will help you place the topic in the right place of the book.
 
 ### Adding a guide
 
@@ -67,33 +75,47 @@ To add a new guide, you need to create a new file ending in `.qmd` in the `guide
 
 When you click this button you may be asked to [fork](#forking) the repository. This is not a problem so go ahead!
 
-Every guide must contain a first level heading (e.g., `# Heading`), which will be the guide title. Section headings are second level headings (e.g., `## Section`).
+Every guide title must reflect the question the guide answers. Add the title by adding the following information at the top of your document:
 
-The guide itself needs to be [written in Markdown](#writing-text). For each topic you want to include, you can either mention so on a line surrounded by whitespaces:
+```yaml
+---
+title: How do I create a guide?
+---
+```
+
+Section headings are second level headings (e.g., `## Section`). The guide itself needs to be [written in Markdown](#writing-text).
+
+You can re-use topics literally in your guides. For each topic you want to include, you can either mention so on a line surrounded by whitespaces:
 
 ```markdown
 INSERT TOPIC: DATA MANAGEMENT PLAN
 ```
 
-This will tell the editorial team to include that topic there. Please be specific in the naming. You can also directly include the topic yourself directly using the following code:
+This will tell the editorial team to include that topic there. Please be specific in naming the topic. You can also directly include the topic yourself directly using the following code:
 
-``` markdown
-{{{< include ../topics/filename.qmd >}}}
+```markdown
+
+## Topic name
+
+    ```{.include shift-heading-level-by=2}
+    ../topics/replace-with-filename.qmd
+    ```
+
 ```
 
-You can verify the filename directly, but it should correspond to each word separated by a minus sign (for example, `data-management-plan.qmd`).
+You need to count the heading level in your guide to identify your shift number. In this case, there are two `##` so we shift by two. You can verify the filename directly, but it should correspond to each word separated by a minus sign (for example, `data-management-plan.qmd`).
 
-After that, you are ready to [submit your pull request](#submit-a-pull-request)! The reviewers will help you place the topic in the right place of the book.[^1]
+After that, you are ready to [submit your pull request](#submit-a-pull-request)!
 
 ### Submit a pull request
 
-Once you have made suggested changes, a pull request is the way for you to ask for your changes to be incorporated into the handbook. The people maintaining the handbook will review what you wrote, ask some questions, and accept or decline your contributions.
+Once you have made suggested changes, a pull request is the way for you to ask for your changes to be incorporated into the {{< var title >}}. The handbook editors will review what you wrote, ask some questions, and accept or decline your contributions.
 
 We recommend keeping your suggested changes small or limited in scope, and explaining why you are suggesting these changes. It is more likely your changes are included when you are fixing a typo or adding a paragraph, and less likely if you are revising the entire handbook. It is also more likely they are included if you explain why you are suggesting the changes, rather than dropping by and making edits without any context.
 
-If you are adding a new topic, it is definitely recommended to [open an issue first]({{< var issue-url >}}) to see whether there is a need for it (and maybe you'll find collaborators!).
+If you are adding a **new** topic or guide, it is definitely recommended to [open an issue first]({{< var issue-url >}}) to see whether there is a need for it (and maybe you'll find collaborators!).
 
-During the review process you may be asked to update your changes, or revisions may be added by the people maintaining the handbook. It is helpful if you keep an eye on your GitHub account to ensure timely responses to help the process along.
+During the review process you may be asked to update your changes, or revisions may be added by the people maintaining the handbook. It is helpful if you keep an eye on your GitHub account to ensure timely responses to help the process along. By contributing, you become part of the process :blush:
 
 ### Writing text
 
@@ -115,6 +137,46 @@ You simply write text as you are used to. To make something *italic*, **bold**, 
 
 If you want to add code, use references, create links, or footnotes - it is all possible. We will expand examples here based on your needs, so if you need help, [let us know by reporting an issue]({{< var issue-url >}})!
 
+#### Adding relative links
+
+Often, you will want to link to other pages or sections in the {{< var title >}}. Instead of going to the website, and pasting the link from there (for example, `https://ubvu.github.io/open-handbook/contributing.html`), you can add what is called "relative links."
+
+Relative links require three concepts:
+
+- Working directory: The folder in which the file you are editing is located
+- `./` = indicates the current folder
+- `../` = indicates the folder one level up
+
+This Contributing guide is located in the "root" directory, and there is no upper folder. If we wanted to link to a topic, we would use `./topics/example-topic.qmd`. This would create a relative link to the example file.
+
+:::{.callout-note}
+Relative links link to the `.qmd` files, never to the `.html` pages. These only exist when the pages are rendered!
+:::
+
+If we were editing a topic, and we wanted to link out to a guide, we would need to use `../guides/example-guide.qmd`. This because we would be in the topic folder for that file, and need to navigate one level up (`../`) and then down into the guides folder.
+
+##### Section links
+
+Whenever we link to a specific guide or topic, you can also link to a specific section. This helps you point readers to what you want them to read, and helps them find the information they need.
+
+The easiest way to find these section links is to navigate to the relevant page, and click on the link icon next to the heading. This will cause your URL to change.
+
+![Screenshot indicating the link icon next to a heading, and the updated URL as a result](public/CleanShot 2024-09-28 at 15.17.42.png)
+
+You add the `#adding-a-guide` (as applicable in your case) to the end of your relative link, and you will have created a relative section link! :blush:
+
+If the section is on the same, you can drop the relative link altogether and keep only the part after the `#` (for example, `#adding-a-guide`).
+
+### Adding images
+
+In markdown, you can easily add images and alt text at the same time. We require alt text on all images, and if you are contributing an image, you can best describe its value in the text.
+
+You add images by using:
+
+```markdown
+![Alt text](https://image-url.com)
+```
+
 ### More information about GitHub
 
 We use [GitHub](https://github.com) to create this website automatically, and to manage all the incoming updates. You do not need to know how it works entirely, but we want to help you understand some things so you are not confused.
@@ -131,5 +193,48 @@ A repository is owned by one or multiple people on GitHub. If you are not one of
 
 When you create a copy, you do not have to worry about accidentally removing or destroying the handbook. Your changes are not reflected in the website until you [submit a pull request](#submit-a-pull-request).
 
-<!-- ## Adding references -->
-###
+## Adding references
+
+If you want to include references throughout the handbook, we recommend you do so in the following way.
+
+### Add the BibTex
+
+You can find the relevant BibTeX information using a tool like [the DOI to BibTeX converter](https://www.bibtex.com/c/doi-to-bibtex-converter/). Counterintuitively, it also works on ISBNs for example.
+
+After you found the BibTeX information, you add it to the `references.bib` file (preferably all the way at the bottom). Example BibTeX information is:
+
+```bibtex
+@ARTICLE{example-code,
+  title     = "Example Title",
+  author    = "Author, Example"
+  journal   = "Example Journal",
+  year      =  2042,
+  copyright = "https://creativecommons.org/licenses/by/4.0",
+  language  = "en"
+}
+```
+
+### Add the citation
+
+To add the citation to a page, you use `[@example-code]` or `@example-code`.
+
+`@example-code` will result in an in-text citation, like "Author (2042)."
+
+`[@example-code]` will result in a regular citation such as "(Author, 2042)".
+
+For more details on citations, [see also the Quarto help page on citations](https://quarto.org/docs/authoring/citations.html).
+
+## Rendering handbook locally
+
+Sometimes you may want to preview the changes you are making to the handbook. That is possible in most cases, but requires you to install some software. [You need to install Quarto](https://quarto.org/docs/download/) and assuming a successful installation, you then need to run the following code in your terminal:
+
+```sh
+# Clone the git repository
+git repo clone https://github.com/ubvu/open-handbook
+# Go into the right folder
+cd open-handbook
+# Render the handbook
+quarto render .
+```
+
+We do not guarantee this will work immediately, but should cover most instances. If you are looking to contribute and want to render things locally, try this first, and if you run into any issues, [let us know in an issue report](https://github.com/ubvu/open-handbook/issues/new). We're happy to try our best if you share your error messages :blush:
