@@ -12,10 +12,10 @@ In addition to describing their own datasets and objects, researchers can cross-
 
 Different types of data are governed by different standards (see also the image above), and these should be taken into account when documenting data. These requirements include, but are not limited to:
 
-1. [FAIR data principles](https://ubvu.github.io/open-handbook/topics/fair-principles.html): the set of principles (Findable, Accessible, Interoperable, Reusable) for data exchange.
-2. Disciplinary [metadata standards](https://ubvu.github.io/open-handbook/topics/metadata.html): guidelines for documenting data. This can refer to the dataset documentation, the object description, or both. Disciplinary metadata standards can document the dataset as a whole or as a data object (see number 5).
+1. [FAIR data principles](../topics/fair-principles.qmd): the set of principles (Findable, Accessible, Interoperable, Reusable) for data exchange.
+2. Disciplinary [metadata standards](../topics/metadata.qmd): guidelines for documenting data. This can refer to the dataset documentation, the object description, or both. Disciplinary metadata standards can document the dataset as a whole or as a data object (see number 5).
 3. Project documentation: the description of a project involving data collection. This documentation is often used for research verification and provenance.
-4. [Metadata dataset](https://ubvu.github.io/open-handbook/topics/metadata.html#metadata-datasets): the description of a dataset, often used for discovering datasets within a repository.
+4. [Metadata dataset](../topics/metadata.qmd#metadata-datasets): the description of a dataset, often used for discovering datasets within a repository.
 5. Metadata of a data object: name definition of a data object, often set up by the researcher to structure data or by the research group for collaboration during the project.
 
 ## Codebooks

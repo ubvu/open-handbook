@@ -16,7 +16,7 @@ Researchers regularly use a lab notebook or a journal to document their hypothes
 
 Finally, when a dataset contains personal data, data provenance can help researchers to understand the specifics and the context in which the data were gathered, also to be able to assess whether or not the informed consent given for the first research, is applicable.
 
-For every step of your data analysis, good [data documentation](https://libguides.vu.nl/rdm/data-documentation) is necessary.
+For every step of your data analysis, good [Data Documentation](../topics/data-documentation.qmd) is necessary.
 
 ## Data processing
 
@@ -39,7 +39,7 @@ Extra background information:
   * [Tutorial](https://programminghistorian.org/en/lessons/cleaning-data-with-openrefine) by the Programming Historian
   * Introduction to [Digital Humanities](https://miriamposner.com/classes/dh101f17/tutorials-guides/data-manipulation/get-started-with-openrefine/) with Open Refine
 
-For every step of your data cleaning, good [documentation](https://libguides.vu.nl/rdm/data-documentation) and clarifying the [data provenance](https://libguides.vu.nl/rdm/data-provenance) is necessary.
+For every step of your data cleaning, good [documentation](../topics/data-documentation.qmd) and clarifying the [data provenance](./process-and-analyze.qmd#data-provenance) is necessary.
 
 ### Data transcription
 
@@ -61,9 +61,9 @@ VU Amsterdam is preparing a decision guide on anonymisation and pseudonymisation
 
 ### Data Analysis
 
-Although data analysis is an ongoing process throughout the research project, this page focuses on the analysis of the data subsequent to its collection. To ensure that research is empirical and verifiable, it is crucial that researchers keep records ([data documentation](https://libguides.vu.nl/rdm/data-documentation)) of every step made during the data analysis.
+Although data analysis is an ongoing process throughout the research project, this page focuses on the analysis of the data subsequent to its collection. To ensure that research is empirical and verifiable, it is crucial that researchers keep records ([data documentation](../topics/data-documentation.qmd)) of every step made during the data analysis.
 
-Data analysis converts raw/processed data into information that is useful for understanding. Many steps may be required to gain useful information from raw data. The process of [processing](https://libguides.vu.nl/rdm/data-processing) and analysing data may require computing power not readily available or specific storage and protection options. If multiple parties are involved in the analysis, data sharing may also be necessary.
+Data analysis converts raw/processed data into information that is useful for understanding. Many steps may be required to gain useful information from raw data. The process of [processing](./process-and-analyze.qmd#data-processing) and analysing data may require computing power not readily available or specific storage and protection options. If multiple parties are involved in the analysis, data sharing may also be necessary.
 
 Data analysis often requires the use of specialised software.The software offered and licensed by the university currently includes: Stata, SPSS, and Atlas.TI. For open software, see below.
 
@@ -107,9 +107,9 @@ Several options are detailed below. 🔒 [Contact IT for Research](https://servi
 
 #### High Performance Computing (HPC)
 
-![](../public/noaa-ibmsupercomputer.gif)
+![A set of servers in an undescript room](../public/noaa-ibmsupercomputer.gif)
 
-Roughly speaking, you should try to get access to the HPC when you need to stick a post-it on your laptop or PC that says: "do not touch, analysis ongoing". Or when you want to run analyses parallel to each other, because they take too long. It is important to consider such a situation at the very beginning of your research or when writing your Data Management Plan: is it conceivable that your dataset will become so large or your analysis so complicated that you will need HPC? Please note that this can occur for any discipline and any sort of data, qualitative and quantitative. If you may need HPC, you also need to reconsider your analysis methods. Programmes like SPSS and Excel do not run well on a HPC, and you would need to (learn to) write scripts in R or Python <!-- # [R or Python](https://libguides.vu.nl/rdm/data-analysis) -->. If you want to know if using HPC may be necessary or useful for your project, you can contact [IT for Research](https://services.vu.nl/esc?id=sc_cat_item&sys_id=4e079166978d5950e553359fe153afc5) to ask for more information (select the "Onderzoek service domain").
+Roughly speaking, you should try to get access to the HPC when you need to stick a post-it on your laptop or PC that says: "do not touch, analysis ongoing". Or when you want to run analyses parallel to each other, because they take too long. It is important to consider such a situation at the very beginning of your research or when writing your Data Management Plan: is it conceivable that your dataset will become so large or your analysis so complicated that you will need HPC? Please note that this can occur for any discipline and any sort of data, qualitative and quantitative. If you may need HPC, you also need to reconsider your analysis methods. Programmes like SPSS and Excel do not run well on a HPC, and you would need to (learn to) write scripts in [R or Python](../guides/process-and-analyze.qmd#data-analysis). If you want to know if using HPC may be necessary or useful for your project, you can contact [IT for Research](https://services.vu.nl/esc?id=sc_cat_item&sys_id=4e079166978d5950e553359fe153afc5) to ask for more information (select the "Onderzoek service domain").
 
 #### SURF Snellius Compute Cluster
 
