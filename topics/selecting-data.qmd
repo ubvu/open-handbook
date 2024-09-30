@@ -36,7 +36,7 @@ Once you have separated the sensitive data from the rest of your dataset, you ha
 1. One for reusability to share
 2. A second one that contains the sensitive data, and needs to be handled differently.
 
-For the first, the non-sensitive data can be stored in an archive under restricted or open access conditions, so that you can share it and link it to publications. For the second, you need to make a separate selection, so the sensitive part can be stored safely in a secure archive (a so-called offline or dark archive). In the metadata of both archives you can create stable links between the two datasets using [persistent identifiers](https://ubvu.github.io/open-handbook/topics/persistent-identifier.html).
+For the first, the non-sensitive data can be stored in an archive under restricted or open access conditions, so that you can share it and link it to publications. For the second, you need to make a separate selection, so the sensitive part can be stored safely in a secure archive (a so-called offline or dark archive). In the metadata of both archives you can create stable links between the two datasets using [persistent identifiers](../topics/persistent-identifier.qmd).
 
 ### What to appraise for archiving
 
@@ -53,11 +53,11 @@ More information on selecting data:
 A dataset consists of the following documents:
 
 * Raw or cleaned data (if the cleaned data has been archived, the [provenance](../guides/process-and-analyze.qmd#data-provenance) documentation is also required)
-* [Project documentation](https://ubvu.github.io/open-handbook/topics/data-documentation.html)
-* [Codebook](https://ubvu.github.io/open-handbook/topics/data-documentation.html#codebooks) or [protocol](https://ubvu.github.io/open-handbook/topics/data-collection.html#data-collection-protocols)
+* [Project documentation](../topics/data-documentation.qmd)
+* [Codebook](../topics/data-documentation.qmd#codebooks) or [protocol](../topics/data-collection.qmd#data-collection-protocols)
 * [Logbook or lab journal](../guides/process-and-analyze.qmd#data-provenance) (when available, dependent on the discipline)
 * [Software](../guides/process-and-analyze.qmd#data-processing) (& version) needed to open the files when no preferred formats for the data can be provided
 
-See the topic [Metadata](https://ubvu.github.io/open-handbook/topics/metadata.html) for more information about documenting your data.
+See the topic [Metadata](../topics/metadata.qmd) for more information about documenting your data.
 
 Depending on the research project it may be that more than one dataset is stored in more than one repository. Make sure that each consortium partner that collects data also stores all necessary data that is required for transparency and verification. A [Consortium Agreement](../guides/plan-and-design.qmd#collaboration) and [Data Management Plan](../guides/plan-and-design.qmd#data-management-plan) will include information on who is responsible for archiving the data.

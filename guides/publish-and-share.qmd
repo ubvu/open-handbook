@@ -12,7 +12,7 @@ In the Data Management Plan the researcher describes if the data will be stored 
 
 #### Mid-term archive
 
-According to the [VU RDM Policy](https://libguides.vu.nl/ld.php?content_id=35189052), all publication-related data should be archived for at least **ten years** for verification and replication of research. For this purpose, Vrije Universiteit Amsterdam offers researchers two options to archive their data in one of the organisational repositories (DataverseNL and Yoda). Other archival options may be used depending on the discipline as described in faculty data management policy documents.  
+According to the [VU RDM Policy](../public/policies-regulations/RDM-policy-VU-2020-EN-v2.0.pdf), all publication-related data should be archived for at least **ten years** for verification and replication of research. For this purpose, Vrije Universiteit Amsterdam offers researchers two options to archive their data in one of the organisational repositories (DataverseNL and Yoda). Other archival options may be used depending on the discipline as described in faculty data management policy documents.  
 
 #### Long-term archive
 
@@ -23,11 +23,11 @@ Data relevant for future research should be archived for the long term. A datase
 3. Others may want to reuse the data  
 4. The data cannot be reproduced
 
-Researchers should bear in mind that repositories can charge for archiving data. These costs can vary according to the data volume and the archive used. It is important that you consider in advance how you will budget for these costs. Whatever archiving option is used, proper descriptions of the dataset(s) and adding [metadata](https://libguides.vu.nl/rdm/metadata) are important.
+Researchers should bear in mind that repositories can charge for archiving data. These costs can vary according to the data volume and the archive used. It is important that you consider in advance how you will budget for these costs. Whatever archiving option is used, proper descriptions of the dataset(s) and adding [metadata](../topics/metadata.qmd) are important.
 
 ### Deposit your data
 
-VU Amsterdam requests that researchers archive the data used in a publication in a repository for at least ten years after the release of the publication (see also [VU Policies & Regulations](https://libguides.vu.nl/rdm/policies-regulations)). There are a lot of digital archives and many more keep appearing.  
+VU Amsterdam requests that researchers archive the data used in a publication in a repository for at least ten years after the release of the publication (see also [VU Policies & Regulations](../guides/plan-and-design.qmd#policies-regulations)). There are a lot of digital archives and many more keep appearing.  
   
 The right archival option depends on the nature of the data and the field of science as described in faculty or departmental data management policy documents. The university offers 2 different general repositories for data archiving.
 
@@ -43,20 +43,20 @@ Specifications:
 * Generates a link (persistent identifier), e.g. for data citations in publications
 * Retention period is at least 10 years
 
-[Yoda](https://yoda.vu.nl/site/) - besides [active storage](https://libguides.vu.nl/rdm/data-storage?#s-lg-box-wrapper-15125671), Yoda also has an archive function: the vault. You can use the vault in two ways:
+[Yoda](https://yoda.vu.nl/site/) - besides [active storage](../topics/data-storage.qmd), Yoda also has an archive function: the vault. You can use the vault in two ways:
 
 * For archiving data securely; data are only available for verification purposes and may be access only by special request. A special procedure will be followed if anyone requests access to the data in order to verify them.
 * For publishing data; data can be available for anyone, or on request. The data will get a persistent identifier as well.
 
-Before sending data to the vault, you will need to add [metadata](https://libguides.vu.nl/rdm/metadata). A data steward, metadata specialist or functional manager can help you with the metadata and the entire process of sending data to the vault. Please get in touch with the [RDM Support Desk](mailto:rdm@vu.nl?subject=Sending%20data%20to%20the%20Yoda%20vault) to find this help.
+Before sending data to the vault, you will need to add [metadata](../topics/metadata.qmd). A data steward, metadata specialist or functional manager can help you with the metadata and the entire process of sending data to the vault. Please get in touch with the [RDM Support Desk](mailto:rdm@vu.nl?subject=Sending%20data%20to%20the%20Yoda%20vault) to find this help.
 
 ### Archiving vs. Publishing Data
 
 There is a difference between archiving and publishing data. When we talk about archiving data, we mean that data are deposited securely, in a fixed state, in a location that is not accessible to the public or even a colleague at the VU. Archiving often happens for data that are confidential - for privacy or other reasons - and that should not be accessible publicly. Archiving is usually done for verification purposes, or, in case of medical research, to comply with the preservation requirements within the WMO.
 
-Publishing refers to depositing data in a public repository that allows others to view, access and download your data. You can set certain restrictions, but as a rule of thumb, publishing should only happen for data that are not confidential at all. That includes data that have been anonymised, or were not personal to begin with, and data that were never otherwise confidential. If you cannot publish any data at all, we do usually recommend trying to publish some [documentation](https://libguides.vu.nl/rdm/data-documentation), such as data collection protocols, scripts, codebooks, etc. In this way, others can see how the research was carried out, even if they cannot simply access the data.
+Publishing refers to depositing data in a public repository that allows others to view, access and download your data. You can set certain restrictions, but as a rule of thumb, publishing should only happen for data that are not confidential at all. That includes data that have been anonymised, or were not personal to begin with, and data that were never otherwise confidential. If you cannot publish any data at all, we do usually recommend trying to publish some [documentation](../topics/data-documentation.qmd), such as data collection protocols, scripts, codebooks, etc. In this way, others can see how the research was carried out, even if they cannot simply access the data.
 
-Use the image below to remind yourself of the difference between archiving and publishing, and read the [data publication](https://libguides.vu.nl/rdm/data-publication) page to find out what aspects are important when you decide to publish your data.
+Use the image below to remind yourself of the difference between archiving and publishing, and read the [data publication](../topics/data-publication.qmd) page to find out what aspects are important when you decide to publish your data.
 
 ![A sketch diagram by Scriberia illustrating the archive or publish data journey](../public/archive-or-publish.jpg)
 
@@ -75,10 +75,10 @@ There can be various reasons to decide to use a different repository, including 
 
 You can also find repositories via the [Registry of Research Data Repositories](https://www.re3data.org/). When you are choosing a repository, it is important to check that it provides all the services you need. A good way to find out is to check if a repository as a [Core Trust Seal](https://www.coretrustseal.org/why-certification/certified-repositories/), which is a form of certification for quality repositories. But if a repository does not have the Core Trust Seal, it does not necessarily mean it is not a good repository. As a minimum, you should check that:
 
-* The repository provides a persistent identifier, such as a [DOI](https://libguides.vu.nl/rdm/data-publication?#s-lg-box-wrapper-15125676);
-* The repository enables you to add rich [metadata](https://libguides.vu.nl/rdm/metadata) to your dataset and ideally follows an internationally recognised metadata standard, such as Dublin Core or DataCite;
+* The repository provides [a persistent identifier](../topics/persistent-identifier.qmd), such as a DOI;
+* The repository enables you to add rich [metadata](../topics/metadata.qmd) to your dataset and ideally follows an internationally recognised metadata standard, such as Dublin Core or DataCite;
 * The repository offers functionality to publish data with an embargo or under restrictions, if you need that;
-* The repository allows you to add a [licence](https://libguides.vu.nl/rdm/data-publication?#s-lg-box-wrapper-15125678) to the dataset;
+* The repository allows you to add a [licence](#data-publication) to the dataset;
 * The repository is funded sustainably for at least the next 50 years;
 * And, in some cases, that the repository's servers are located in the EU.
 
@@ -92,7 +92,7 @@ If you would like advice about what would be a good place for you to archive you
 
 Open Access publishing means that you make your publication freely accessible online to everyone without restrictions. VU believes that government-funded research should be available free of charge to as many people as possible.
 
-Open Access publishing is one component of Open Science. The European Commission has defined open science as follows: “Open Science represents a new approach to the scientific process based on cooperative work and new ways of diffusing knowledge by using digital technologies and new collaborative tools. The idea captures a systemic change to the way science and research have been carried out for the last fifty years: shifting from the standard practices of publishing research results in scientific publications towards sharing and using all available knowledge at an earlier stage in the research process” (Definition taken from [Nationaal Programma Open Science](https://www.openscience.nl/en)). This includes making openly available research data, methods and documentation where possible. As such, RDM and the practices outlined in this LibGuide are a precondition of Open Science. You can read more about Open Science in the Netherlands on the website of the [Nationaal Programma Open Science](https://www.openscience.nl/en) and join the [Open Science Community Amsterdam](https://osc-international.com/osc-amsterdam/), the community of VU employees interested in Open Science (joint with the University of Amsterdam).
+Open Access publishing is one component of Open Science. The European Commission has defined open science as follows: “Open Science represents a new approach to the scientific process based on cooperative work and new ways of diffusing knowledge by using digital technologies and new collaborative tools. The idea captures a systemic change to the way science and research have been carried out for the last fifty years: shifting from the standard practices of publishing research results in scientific publications towards sharing and using all available knowledge at an earlier stage in the research process” (Definition taken from [Nationaal Programma Open Science](https://www.openscience.nl/en)). This includes making openly available research data, methods and documentation where possible. As such, RDM and the practices outlined in the {{< var title >}} are a precondition of Open Science. You can read more about Open Science in the Netherlands on the website of the [Nationaal Programma Open Science](https://www.openscience.nl/en) and join the [Open Science Community Amsterdam](https://osc-international.com/osc-amsterdam/), the community of VU employees interested in Open Science (joint with the University of Amsterdam).
 
 ### Publishing your data in a data journal
 
@@ -122,7 +122,7 @@ Instead of archiving research data in a data repository, you may choose to publi
 
 ### Registration & Findability
 
-When you have finished finalizing a dataset and are ready to archive it, there are many options available. Depending on the research and choices made earlier the archive provides the option to fill in descriptive fields for a dataset. The descriptions in the archives often are automatically created using metadata standards like DataCite or Dublin Core, or some other type of standard. See also the item [Metadata](https://libguides.vu.nl/rdm/metadata) in this LibGuide.
+When you have finished finalizing a dataset and are ready to archive it, there are many options available. Depending on the research and choices made earlier the archive provides the option to fill in descriptive fields for a dataset. The descriptions in the archives often are automatically created using metadata standards like DataCite or Dublin Core, or some other type of standard. See also the item [Metadata](../topics/metadata.qmd) in this LibGuide.
 
 When registering a dataset in an archive it is important to use unique identifiers to allow for increased findability and easy attribution & citation. Examples of this are:
 
