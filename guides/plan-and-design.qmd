@@ -10,16 +10,16 @@ Grant programmes from organisations like NWO, ZonMw and ERC require you to think
 
 When writing your research proposal the following items are important:
 
-* Fill in the data management section if your funder requires this
-* Planning: One of the early deliverables will be a detailed [data management plan](https://libguides.vu.nl/rdm/dmp)
-* Budget: Take into account the [costs](https://libguides.vu.nl/rdm/rdm-costs) (labour and material) for data storage during and data archiving after your project.
-* Writing: Funders that distribute grants like to maximise the effectiveness of this investment. It is therefore highly recommended that the data will be made Findable, Accessible, Interoperable and Re-usable (FAIR). This does not mean that the data have to be open: Laws, licenses and contracts regarding personal and sensitive data may limit the possibility to share the data publicly.
+* Fill in the [Data Management Section](#data-management-section) if your funder requires this
+* Planning: One of the early deliverables will be a detailed [Data Management Plan](../topics/data-management-plan.qmd)
+* Budget: Take into account the [costs](#rdm-costs) (labour and material) for data storage during and data archiving after your project.
+* Writing: Funders that distribute grants like to maximise the effectiveness of this investment. It is therefore highly recommended that the data will be made Findable, Accessible, Interoperable and Re-usable ([FAIR Principles](../topics/fair-principles.qmd)). This does not mean that the data have to be open: Laws, licenses and contracts regarding personal and sensitive data may limit the possibility to share the data publicly.
 
-The [RDM Support Desk[(https://vu.nl/en/about-vu/more-about/rdm-support-desk) provides advice and help when writing a **data management section** as part of the research proposal. Also make sure to reach out to the VU [Grants Office](https://vu.nl/en/about-vu/more-about/vu-grants-office) (IXA-GO) for advice and practical aid for your grant in general as early as possible.
+The [RDM Support Desk[(https://vu.nl/en/about-vu/more-about/rdm-support-desk) provides advice and help when writing a [Data Management Section](#data-management-section) as part of the research proposal. Also make sure to reach out to the VU [Grants Office](https://vu.nl/en/about-vu/more-about/vu-grants-office) (IXA-GO) for advice and practical aid for your grant in general as early as possible.
 
 #### Data Management Section
 
-```{.include shift-heading-level-by=3}
+```{.include shift-heading-level-by=4}
 ../topics/data-management-section.qmd
 ```
 
@@ -30,7 +30,7 @@ The [RDM Support Desk[(https://vu.nl/en/about-vu/more-about/rdm-support-desk) pr
 Many research funders encourage applicants to include data management and sharing costs in research proposals. Some funders will provide advice on costs related to data management. Some remarks on costs are provided here:
 
 * [The Data Management Plan](../topics/data-management-plan.qmd) should describe the activities that incur costs and provide justification for the allocation of resources (example: acquisition of a programmer who will write software needed to capture the data).
-* No expenditure can be ‘double funded’, i.e. a service that is centrally supported by indirect costs must not be included as a direct cost as well (example: computers that are already provided to employees and paid for by the university may not be included).
+* No expenditure can be 'double funded', i.e. a service that is centrally supported by indirect costs must not be included as a direct cost as well (example: computers that are already provided to employees and paid for by the university may not be included).
 * The budget and justification should broadly indicate where RDM costs will be incurred, where possible. E.g. data capture and cleaning, data curation and preservation, data sharing.
 * Include budget for long-term storage if data are expected to be deposited in a repository not funded by the university or external funders (VU repositories are: DataverseNL, Yoda). :lock: [VU has an internal breakdown of costs for storage and archiving for VU-managed storage and repositories](https://vu.nl/en/employee/research-data-support/costs-research-en-archiving-storage).
 
@@ -72,9 +72,9 @@ At a grant application, some funders request a short data section in your projec
 
 In a Data Management Plan (DMP; see also the section [Data Management Plan](../topics/data-management-plan.qmd)) you explain how you will handle your research data. Check with your funder at what stage a DMP has to be submitted and how it should be composed. VU has a DMP template that has been acknowledged by NWO, ZonMw and ERC. We recommend you to use this VU template. See the [DMP page](../topics/data-management-plan.qmd) for more information and instructions on how to select this template in [DMPonline](https://dmponline.vu.nl/?perform_check=false).
 
-The tool [DMPonline](https://dmponline.vu.nl/) can be used to access and fill in a DMP template. You can also write a DMP in collaboration and invite a third party to comment or give feedback on your DMP. You can use the button 'Request feedback' to ask for feedback from a data steward. In order to write a DMP, you need to create your own account. 
+The tool [DMPonline](https://dmponline.vu.nl/) can be used to access and fill in a DMP template. You can also write a DMP in collaboration and invite a third party to comment or give feedback on your DMP. You can use the button 'Request feedback' to ask for feedback from a data steward. In order to write a DMP, you need to create your own account.
 
-#### Overview of funders’ RDM requirements and DMP templates
+#### Overview of funders' RDM requirements and DMP templates
 
 The Consortium of European Social Science Data Archives (CESSDA) presents a [comprehensive overview of data management requirements and templates](https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide/1.-Plan/European-diversity) of the main Dutch and European funding bodies. This is helpful if you want to quickly find more information. However, make sure you always check the details that you receive in the documentation of your actual funding agency, so that you are aware of all up-to-date requirements.
 
@@ -89,7 +89,7 @@ Normally a funder requires you to publish your data in a data repository at the 
 * how your data are documented
 * whether your data may be reused freely or not and which terms and conditions apply
 
-Please consider your funder’s data publishing requirements, so that you can take the necessary steps before and during your research project. For example, if you are working with personal data and you want to publish them in a data repository, this needs to be included in the informed consent forms that your participants have to sign.
+Please consider your funder's data publishing requirements, so that you can take the necessary steps before and during your research project. For example, if you are working with personal data and you want to publish them in a data repository, this needs to be included in the informed consent forms that your participants have to sign.
 
 ### Local requirements from your university and faculty
 
@@ -103,10 +103,10 @@ Please check the relevant local policies and Standard Operating Procedures relev
 
 Partner institutions in a consortium may also have research data management requirements, for example with respect to data security. They may ask for:
 
-* certification in relation to data security of the VU’s infrastructure
+* certification in relation to data security of the VU's infrastructure
 * statements from the IT department about the IT systems being used at the VU
 
-The [RDM Support Desk](mailto:rdm@vu.nl) or your faculty’s research support office can help you with this.
+The [RDM Support Desk](mailto:rdm@vu.nl) or your faculty's research support office can help you with this.
 
 ## Collaboration
 
@@ -193,7 +193,7 @@ On the :lock: [VU Intranet](https://vu.nl/en/employee/emergencies/data-leaks-and
 
 #### Important definitions
 
-* **Personal data** refers to any information relating to an identified or identifiable natural person (‘data subject’). See also the [definition of 'personal data](https://www.privacy-regulation.eu/en/4.htm)' according to the official text of the GDPR.
+* **Personal data** refers to any information relating to an identified or identifiable natural person ('data subject'). See also the [definition of 'personal data](https://www.privacy-regulation.eu/en/4.htm)' according to the official text of the GDPR.
 * **Data processing** refers to any action performed on data, such as collecting, storing, modifying, distributing, deleting data. See also the [definition of 'processing'](https://www.privacy-regulation.eu/en/4.htm) according the official text of the GDPR.
 * **Direct and indirect identification**: Some identifiers enable you to single out an indiviual directly, such as name, address, IP-address etc. Individuals can also be identifed indirectly through:
   * a combination of information that uniquely singles out an individual (e.g. a male with breast cancer in a breast cancer registry, a pregnant individual over 50 etc.), this includes information in one record and information across different data files or datasets
@@ -215,8 +215,8 @@ The VSNU's Code of Conduct for Research Integrity ([Dutch](https://www.nwo.nl/si
 
 Each faculty has one or more Privacy Champions, who are the first point of contact for questions relating to privacy and the GDPR. The Privacy Champions can help you with completing a Data Protection Impact Assessment, registering your research in the record of processing activities, designing informed consent forms and other questions relating to the GDPR. The :lock: [list of Privacy Champions](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information) can be found on VU's website. It is important that you make an overview of what data you are collecting. Your privacy champion can help you with this.
 
-An important issue in informed consent forms, is the possible future (re-)use of the data. 
-<!--- The Privacy Champion of the Faculty of Behavioural and Movement Sciences has prepared a [checklist](https://assets.vu.nl/d8b6f1f5-816c-005b-1dc1-e363dd7ce9a5/ae86a9d8-90a8-4d05-a924-4f6646a5351f/Informed_Consent_and_Information_Letter_Checklist_tcm263-917997.pdf) for what to consider when creating an informed consent form. An important issue in informed consent forms, is the possible future (re-)use of the data. ---> 
+An important issue in informed consent forms, is the possible future (re-)use of the data.
+<!--- The Privacy Champion of the Faculty of Behavioural and Movement Sciences has prepared a [checklist](https://assets.vu.nl/d8b6f1f5-816c-005b-1dc1-e363dd7ce9a5/ae86a9d8-90a8-4d05-a924-4f6646a5351f/Informed_Consent_and_Information_Letter_Checklist_tcm263-917997.pdf) for what to consider when creating an informed consent form. An important issue in informed consent forms, is the possible future (re-)use of the data. --->
 You should always ask your :lock: [Privacy Champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information) for advice when drawing up an informed consent form.
 
 ### Complete a Data Protection Impact Assessment (DPIA)
@@ -225,7 +225,7 @@ When scientific research includes the processing of personal data, conducting a 
 
 ## What is a DPIA?
 
-A DPIA is an assessment to identify the risks of processing personal data. It consists of a number of questions on the basis of which you determine whether the processing of personal data in your research project is legitimate and which measures should be taken to make sure this processing takes place within the boundaries of the GDPR. A DPIA doesn’t deliver an automatic report at the end, but it rather makes you think about all relevant topics you need to address before starting the processing of personal data. The outcome of a DPIA should be used to determine appropriate measures to mitigate the identified risks, such as data minimisation (not collecting more data than necessary), pseudonymising data, selecting appropriate tools for data storage and data sharing.
+A DPIA is an assessment to identify the risks of processing personal data. It consists of a number of questions on the basis of which you determine whether the processing of personal data in your research project is legitimate and which measures should be taken to make sure this processing takes place within the boundaries of the GDPR. A DPIA doesn't deliver an automatic report at the end, but it rather makes you think about all relevant topics you need to address before starting the processing of personal data. The outcome of a DPIA should be used to determine appropriate measures to mitigate the identified risks, such as data minimisation (not collecting more data than necessary), pseudonymising data, selecting appropriate tools for data storage and data sharing.
 
 ## When is a DPIA required?
 
@@ -341,7 +341,7 @@ By [registering your datasets](https://libguides.vu.nl/rdm/dataset-registration)
 
 ### NWO Data Policy
 
-NWO aims to ensure that all the research it funds is openly accessible to everyone as part of it's [Open Science policy](https://www.nwo.nl/en/open-science). Researchers are therefore expected to preserve the data resulting from their projects for at least ten years, unless legal provisions or discipline-specific guidelines dictate otherwise. As much as possible, research data should be made publicly available for re-use. As a minimum, NWO requires that the data underpinning research papers should be made available to other researchers at the time of the article’s publication, unless there are valid reasons not to do so.
+NWO aims to ensure that all the research it funds is openly accessible to everyone as part of it's [Open Science policy](https://www.nwo.nl/en/open-science). Researchers are therefore expected to preserve the data resulting from their projects for at least ten years, unless legal provisions or discipline-specific guidelines dictate otherwise. As much as possible, research data should be made publicly available for re-use. As a minimum, NWO requires that the data underpinning research papers should be made available to other researchers at the time of the article's publication, unless there are valid reasons not to do so.
 
 The guiding principle here is 'as open as possible, as closed as necessary.' Due consideration is given to aspects such as privacy, public security, ethical limitations, property rights and commercial interests. In relation to research data, NWO recognizes that software (algorithms, scripts and code developed by researchers in the course of their work) may be necessary to access and interpret data. In such cases, the data management plan will be expected to address how information about such items will be made available alongside the data.
 
