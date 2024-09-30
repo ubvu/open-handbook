@@ -58,7 +58,7 @@ format:
       - custom.scss # https://quarto.org/docs/output-formats/html-themes.html#theme-options
     code-copy: true
     code-overflow: wrap
-from: "markdown+emoji"
+# from: "markdown+emoji"
 filters:
   - utils/include-files.lua
 execute:
