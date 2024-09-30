@@ -1,161 +1,215 @@
 ---
-title: BAZIS HPC
+title: High-Performance Computing Facilities
 ---
 
-The BAZIS is a compute cluster for research at the Vrije Universiteit Amsterdam. It provides a service between the general facilties at the SURF HPC center and the desktop. It is a heterogenious system composed of clusters and servers from research departments and a general partition.
+## BAZIS HPC
 
-In this topic you will find information to get you started and best practices. Clustercomputing can be very powerfull and usefull skill to add to your toolbox and get more science done.
+The BAZIS is a compute cluster for research at VU Amsterdam. It provides a service between the general facilties at the SURF HPC center and the desktop. It is a heterogenious system composed of clusters and servers from research departments.
+
+In this topic you will find information to get you started and best practices. Clustercomputing can be very powerfull and useful skill to add to your toolbox and get more science done.
 
 Also take a look at the [SURF wiki about Snellius](https://servicedesk.surf.nl/wiki/display/WIKI/Snellius), it contains a lot of information which applies to Bazis as well.
 
-Information and how to get an account can be found on [VU Service Portal](https://services.vu.nl/esc) under IT > Research > HPC Cluster Computing
+Information and how to get an account can be found on :lock: [VU Service Portal](https://services.vu.nl/esc) under IT > Research > HPC Cluster Computing
 
 BAZIS is maintained by IT for Research.
 
 ![VU BAZIS Cluster](../public/HPCVUbazis.png)
 
-## Connect
+## Requesting access
 
-### ssh
+To access the cluster you can contact your department cluster manager, they will request an account for you with the IT for Research team (ITvO).
 
-Use your favourite SSH client to login at `<your login>@bazis.labs.vu.nl`.
-On windows we recommend MobaXterm or MS Terminal; Mac users can use iterm.
-Direct access is only possible from the Campus or from SURF.
-From other network locations first connect to the stepstone `<vu net id>@ssh.data.vu.nl`, or use eduVPN Institutional Access (below).
+## Setup
 
-### eduVPN
+### Your first time
 
-Install the [client](https://www.eduvpn.org/client-apps/).
-Start eduVPN and choose Institute Access to connect. You will need MFA to authenticate. Students can activate MFA at the servicedesk ( [kb-item 11809](https://services.vu.nl/kb_view.do?sysparm_article=KB0011809) )
+When you get your account you will receive a temporary password, which you can use when you connect to the cluster using ssh. To log in to the cluster you first need to log in to the VU network (`ssh.data.vu.nl`) and then “hop” to the actual cluster (`bazis.labs.vu.nl`). For ssh.data.vu.nl you use your VUnetID and VUnetID password. For `bazis.labs.vu.nl`, you use your VUnetID and cluster password (given by ITvO). This does NOT work in the browser, instead use the tools below.
+
+### Connecting with SSH
+
+Use your favourite SSH client to login at `\<VUNETID\>@bazis.labs.vu.nl`. Example clients are [MobaXterm](https://mobaxterm.mobatek.net/) (Windows) and [iTerm2](https://iterm2.com/) (macOS). Direct access is only possible from the Campus or from SURF. From other network locations, first connect to the stepstone `\<VUNETID\>@ssh.data.vu.nl`, or use eduVPN Institutional Access (below). Here we provide the steps to connect to the cluster using MobaXterm.
+
+1. Download and install MobaXTerm from [mobatek.net](https://mobaxterm.mobatek.net/download.html).
+2. Open MobaXTerm and click on Session
+3. Enter the Basic SSH settings as follows:
+   1. Remote host: `bazis.labs.vu.nl`
+   2. Tick "specify username"
+   3. Enter your username (VUnetID)
+4. Go to “Network settings” and click SSH gateway (jump host)
+5. Enter the following details and click OK
+   1. Gateway host: `ssh.data.vu.nl`
+   2. Enter your username (VUnetID)
+6. Save the settings. When not connected automatically, you can click on User sessions, and double click "bazis.labs.vu.nl (VUNETID)"
+7. You will be asked for a password for "ssh.data.vu.nl". This is your NORMAL VUNETID password, NOT the cluster password your received from ITVO.
+8. If not connected automatically, connect to the server again. Now you will see a terminal window which asks for another password. Here you should enter the CLUSTER password that you received from ITVO. Note that you will not see the cursor moving when typing. This is normal. When you finished typing your password hit ENTER.
+9. You will now see a terminal window, similar to this one. On connecting for the first time, you will be asked to change your CLUSTER password. Enter your CLUSTER password, then enter a new password (this can be identical to your VUNETID password).
+10. Congratulations, you are now connected to the cluster! The next steps are to set up your scripts and data!
+
+As an alternative, you can use eduVPN to connect to the VU network, however the above configuration is recommended and generally works best in the long term. You can [find the client on the eduVPN pages](https://www.eduvpn.org/client-apps/). Start eduVPN and choose Institute Access to connect. You will need to enable Multi-Factor Authentication (MFA). Students can activate MFA at the servicedesk (:lock: [kb-item 11809](https://services.vu.nl/kb_view.do?sysparm_article=KB0011809)).
+
+### Running your first Python script
+
+Here, we go through some steps to run your first script. We provide instructions for Python. If you run R or another language we still recommend you to follow these steps first. They do not require a complex setup. Then once you got that down, to start working with your own. First we will run a simple Python script that prints "hello world!" to the console, and ensure that it runs before we go to more advanced methods.
+
+- Right click on the file explorer of MobaXTerm on the left, and click "New empty file".
+- Call the file test.py and click OK.
+- Double click the new file in the file explorer, after which the MobaTextEditor will open. In the file you can write `print("hello world!")`.
+- Save the file, click "Yes" to sync the file to the server, and wait for it to synchronize.
+- In the terminal type `python test.py`.
+- You should see the output `hello world!` printed to the console.
+
+Your first script was just executed on the login "node". A node can be thought of as a single computer of the cluster. This login node should only be used for doing very minor things, and any command you execute only runs while you are connected to the server. In the next steps you will learn how to execute a so-called "job" on one of the other nodes using slurm. A job can execute in the background, and if configured correctly, you will receive an email when the job is done.
+
+- Create a new file called `test.sh` (just like you did before), and enter the following in the file. Make sure to replace `<YOUR-EMAIL>@vu.nl` with your own email. When you copy the contents of this file on Windows you may need to set the "format" to Unix, which can be done using the top menu of the MobaXtermEditor (format -> UNIX).
+
+```bash
+#!/bin/bash
+#SBATCH --job-name=my_job
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --time=05:00:00
+#SBATCH --mem-per-cpu=9000
+#SBATCH --output=output.out
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=<YOUR-EMAIL>@vu.nl
+
+source ~/.bashrc
+
+python test.py
+```
+
+- In additon, edit the Python script as follows. This ensures that the script will run for a while (60 seconds). This is to simulate a long running job.
+
+```python
+import time
+print("starting job...")
+time.sleep(60)
+print("hello world!")
+```
+
+- Now, in the terminal type `sbatch test.sh`, which should give the following output "Submitted batch job \<JOBID\>".
+- Your job is now submitted and executed on the more powerful computational nodes. You can check whether it is running by typing "squeue". You should see a short or long list of jobs from all users on the cluster. Yours should be included in the list. In addtional, you should have received an email that the job started.
+- While your job is running you can check the output of your job in the file "output.out", as specified in the test.sh-script (see above). This file should contain "starting job..." and after 60 seconds, "hello world!" should also appear, and you will receive another email. Your job is now finished.
+- Congratulations, you can now use the cluster! You can adapt this to your own scripts. The rest of this manual shows more useful slurm commands, advanced set up of job scripts, installing of custom Python and R versions, data management etc. etc.
 
 ### Data transfer
 
-MobaXterm has an integrated FTP file browser. Once you have logged in to the HPC system, you will see the file browser to the left of the terminal window, where it shows the contents of your home folder. You can browse through these folders, and drag-and-drop files and folders between this FTP file browser and the Windows File Explorer. Alternatively, you can use the download/upload buttons at the top of the FTP file browser window. A green refresh button is also located there to refresh the contents of the current folder. You can also open files in the FTP file browser to edit them directly. Upon saving, you'll be asked if you want change these files on the HPC system.
+MobaXterm has an integrated FTP file browser. Once you have logged in to the cluster, you will see the file browser to the left of the terminal window, where it shows the contents of your home folder. You can browse through these folders, and drag-and-drop files and folders between this FTP file browser and the Windows File Explorer. Alternatively, you can use the download/upload buttons at the top of the FTP file browser window. A green refresh button is also located there to refresh the contents of the current folder. You can also open files in the FTP file browser to edit them directly. Upon saving, you'll be asked if you want change these files on the HPC system.
 
-Other SFTP browsers
-There are a large number of free FTP browser out there. Some examples are
+MobaXterm works fine for most small data transfers. If you want to transfer a large number of files, or large files, you may want to use a dedicated FTP client. We recommend using WinSCP, Cyberduck or FileZilla, which you can configure as follows.
 
-* Filezilla (Windows, MacOS, Linux)
-* Cyberduck (Windows, MacOS)
-* WinSCP (Windows)
+#### WinSCP
 
-### Advanced: Using SSH keys
-
-SSH keys are an alternative method for authentication to obtain access to remote computing systems. They can also be used for authentication when transferring files or for accessing version control systems like github.
-
-The cluster uses ssh keys to manage batch jobs.
-
-On your workstation create ssh key pair
-`ssh-keygen -t ed25519 -a 100`
-
-* `-a` (default is 16): number of rounds of passphrase derivation; increase to slow down brute force attacks.
-* `-t` (default is rsa): specify the cryptographic algorithm. ed25519 is faster and shorter than RSA for comparable strength.
-* `-f` (default is /home/user/.ssh/id_algorithm): filename to store your keys. If you already have SSH keys, make sure you specify a different name: ssh-keygen will overwrite the default key if you don't specify!
-
-If ed25519 is not available, use the older (but strong and trusted) RSA cryptography:
-`ssh-keygen -a 100 -t rsa -b 4096`
-
-When prompted, enter a strong password that you will remember.
-
-Note: on windows you can use MobaKeyGen from MobaXterm, but on Windows 11 Powershell or Command Prompt works as well.
-
-In your ~/.ssh directory you will find a public and private key. Make sure to keep the private key safe as anyone with the private key has access.
-
-Now, when you add your public key to the ~/.ssh/authorized_keys file in a remote system, your key will be used to login.
-
-You can either use copy-paste or the ssh-copy-id command:
-
-```sh
-$ ssh-copy-id user@remote-host
-The authenticity of host 'remote-host (192.168.111.135)' can't be established.
-ECDSA key fingerprint is SHA256:hXGpY0ALjXvDUDF1cDs2N8WRO9SuJZ/lfq+9q99BPV0.
-Are you sure you want to continue connecting (yes/no)? yes
-/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
-/usr/bin/ssh-copy-id: INFO: 2 key(s) remain to be installed -- if you are prompted now it is to install the new keys
-user@remote-host's password:
-
-Number of key(s) added: 2
-```
-
-Now try logging into the machine, with:   "ssh 'user@remote-host'"
-and check to make sure that only the key(s) you wanted were added.
-
-## Advanced: Forwarding X
-
-## Fix Warning: Remote Host Identification Has Changed
-
-If you are sure that it is harmless and the remote host key has been changed in a legitimate way, you can skip the host key checking by sending the key to a null known_hosts file:
-
-```sh
-ssh -o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no" username@bazis.labs.vu.nl
-```
-
-To make the change permanent remove the offending host key from your ~/.ssh/known_hosts file with:
-
-```sh
-ssh-keygen -R "hostname"
-```
-
----
-References:
-
-1. [hpc carpentry](https://www.hpc-carpentry.org/hpc-shell/01-connecting/index.html)
-2. [Comparing SSH keys](https://goteleport.com/blog/comparing-ssh-keys/)
-3. [public key cryptography for non geeks](https://blog.vrypan.net/2013/08/28/public-key-cryptography-for-non-geeks/)
-4. [disable ssh host key checking](https://www.shellhacks.com/disable-ssh-host-key-checking)
+1. Download and install WinSCP from [winscp.net](https://winscp.net/eng/download.php).
+2. Click the "New Session" button.
+3. Fill in the hostname `bazis.labs.vu.nl` and your username (VUNETID).
+4. Click the "Advanced" button, and go to the "Connection" -> "SSH" -> "Tunnels" section.
+5. Tick the "Connect through SSH tunnel" box and fill in the host name `ssh.data.vu.nl` and your username. Ensure that the given port is 22.
+6. Click "OK" and "Save" to save the session. Do this BEFORE you click "Login", otherwise all your settings are forgotten next time.
+7. You will be asked for your passwords. Similar to connecting with MobaXterm, you will first be asked for your VUNETID password (when connecting to `ssh.data.vu.nl`), and then for your cluster password (when connecting to `bazis.labs.vu.nl`).
 
 ## Using Slurm
 
-### Usefull commands
+### Useful commands
 
 See jobs in the queue for a given user
 
-```sh
-   squeue -u username
+```bash
+squeue -u username
 ```
 
 Show available node features
 
-```sh
-   sinfo -o "%20N  %10c  %10m  %25f  %10G "
+```bash
+sinfo -o "%20N  %10c  %10m  %25f  %10G "
 ```
 
 Submit a job
 
-```sh
-   sbatch script
+```bash
+sbatch script
 ```
 
 Show the status of a currently running job
 
-```sh
-   sstat -j jobID
+```bash
+sstat -j jobID
 ```
 
 Show the final status of a finished job
 
-```sh
-   sacct -j jobID
+```bash
+sacct -j jobID
 ```
 
 Cancel a job
 
-```sh
-   scancel jobid
+```bash
+scancel jobid
 ```
+
+Cancel all jobs for a user
+
+```bash
+scancel -u username
+```
+
+Displays some statistics of a running or previously running job, including maximum memory usage. This can be useful especially to learn about the amount of memory required to run the job (again)
+
+```bash
+seff <JOBID>
+```
+
+Displays some control stats of running job, e.g., number of CPUs used
+
+```bash
+scontrol show job <JOBID>
+```
+
+## Input and output
+
+Any script you run on the cluster, can read all the files in your home directory, and also create files in the home directory. These files are stored on a network drive, and thus file operations can be slow. For small files this is no issue, but when you work with large files, it is recommended to use the scratch directory for intermediate files that are not needed after the job is done. The scratch directory is a fast disk, which is not backed up. The scratch directory location can be found in the environment variable `$TMPDIR`. You can access this environment variable in your scripts, for example in Python:
+
+```python
+import os
+with open(os.getenv("TMPDIR") + "/test.txt", "w") as f:
+  f.write("hello world!")
+```
+
+You can also all or a selection of files from the scratch directory to your home directory after the job is done. This can be done by including the `cp` command in your slurm-file. For example, to copy all files from the scratch directory to your home directory, you can use the following command:
+
+```bash
+cp $TMPDIR/* ~/
+```
+
+## Data recovery
+
+Most departments have a backup system in place, but configurations may vary. For example, an automatic backup may be made each day with a rentention period of 7 days, and a weekly backuup with a retention period of 5 weeks.
+
+You can find all thour data under `.zfs/snapshot`. You can then copy your data from there to your home folder.
+
+```bash
+cd ~/.zfs/snapshot
+ls
+```
+
+Note that the folder is hidden, so you need to use `ls -a` to see it, or configure your file browser to show hidden files.
+
+## Data deletion
+
+You can only access the cluster with you VUNETID and thus when you are no longer affiliated with the VU, your account will be disabled. However, it is good practice to clean up your data when you are done with it. Depending on the department, data may be deleted after a certain period.
 
 ### Best practices
 
-Organise your input, output and temporary data. Make use of fast scratch directory ($TMPDIR).
-
-Don't run large computation on the login nodes! It negatively impacts all cluster users. Grab a compute node with srun --pty bash option.
+- Make use of fast scratch directory (`$TMPDIR`).
+- Don't run large computation on the login nodes! It negatively impacts all cluster users. Grab a compute node with `srun --pty` bash option.
 
 ### Constraints
 
 The SLURM constraint option allows for further control over which nodes your job can be scheduled on in a particular parition/queue. You may require a specific processor family or network interconnect. The features that can be used with the sbatch constraint option are defined by the system administrator and thus vary among HPC sites.
 
-Constraints available on BAZIS are cpu architecture and gpu.
-Example (singole constraint):
+Constraints available on BAZIS are cpu architecture and gpu. Example (single constraint):
 
 ```sh
 #SBATCH --constraint=zen2
@@ -203,23 +257,23 @@ Slurm complicates this, however, by using the terms core and cpu interchangeably
 
 ### Slurm example jobs
 
-#### simple job
+#### Simple job
 
 ```sh
-    #!/bin/bash -l
-    #SBATCH -J MyTestJob
-    #SBATCH -N 1
-    #SBATCH -p defq
-    
-    echo "== Starting run at $(date)"
-    echo "== Job ID: ${SLURM_JOBID}"
-    echo "== Node list: ${SLURM_NODELIST}"
-    echo "== Submit dir. : ${SLURM_SUBMIT_DIR}"
-    echo "== Scratch dir. : ${TMPDIR}"
-    
-    cd $TMPDIR
-    # Your more useful application can be started below!
-    hostname
+#!/bin/bash -l
+#SBATCH -J MyTestJob
+#SBATCH -N 1
+#SBATCH -p defq
+
+echo "== Starting run at $(date)"
+echo "== Job ID: ${SLURM_JOBID}"
+echo "== Node list: ${SLURM_NODELIST}"
+echo "== Submit dir. : ${SLURM_SUBMIT_DIR}"
+echo "== Scratch dir. : ${TMPDIR}"
+
+cd $TMPDIR
+# Your more useful application can be started below!
+hostname
 ```
 
 ## Workspace
@@ -251,11 +305,11 @@ Check your workspaces
 ```sh
 $ ws_list 
 id: MyData
-     workspace directory  : /scratch-shared/ws/username-MyData
-     remaining time       : 9 days 23 hours
-     creation time        : Wed Mar 13 23:51:57 2013
-     expiration date      : Sat Mar 23 23:51:57 2013
-     available extensions : 15
+workspace directory  : /scratch-shared/ws/username-MyData
+remaining time       : 9 days 23 hours
+creation time        : Wed Mar 13 23:51:57 2013
+expiration date      : Sat Mar 23 23:51:57 2013
+available extensions : 15
 ```
 
 Release the project space with
@@ -276,19 +330,19 @@ it is usefull in some cases and try to help.
 
 Working  with virtual environments further makes the python environment better to manage
 
-* A virtual environment is a named, isolated, working copy of Python that that maintains its own files,
-* directories, and paths so that you can work with specific versions of libraries or Python itself without affecting other Python projects.
-* Virtual environmets make it easy to cleanly separate different projects and avoid problems with different dependencies
+- A virtual environment is a named, isolated, working copy of Python that that maintains its own files,
+- directories, and paths so that you can work with specific versions of libraries or Python itself without affecting other Python projects.
+- Virtual environmets make it easy to cleanly separate different projects and avoid problems with different dependencies
   and version requirements across components.
 
 In short:
 
-* use virtualenv (preferred) or conda
-* create an isolated environment
-* Install packages
-* Activate a virtual environment
-* Deactivate a virtual environment
-* Delete a virtual environment
+- use virtualenv (preferred) or conda
+- create an isolated environment
+- Install packages
+- Activate a virtual environment
+- Deactivate a virtual environment
+- Delete a virtual environment
 
 ### Adding a requirements file
 
@@ -335,8 +389,8 @@ So your script is more portable, and will work without modification on systems w
 
 Further Reading
 
-* [python virtual environments primer](https://realpython.com/python-virtual-environments-a-primer/#an-isolated-python-installation)
-* [python requirements.txt file](https://learnpython.com/blog/python-requirements-file)
+- [python virtual environments primer](https://realpython.com/python-virtual-environments-a-primer/#an-isolated-python-installation)
+- [python requirements.txt file](https://learnpython.com/blog/python-requirements-file)
 
 ## R environment
 
@@ -375,7 +429,7 @@ dev.off()
 
 References
 
-* [How do I produce PNG graphics in batch mode?](https://cran.r-project.org/doc/FAQ/R-FAQ.html#How-do-I-produce-PNG-graphics-in-batch-mode_003f)
+- [How do I produce PNG graphics in batch mode?](https://cran.r-project.org/doc/FAQ/R-FAQ.html#How-do-I-produce-PNG-graphics-in-batch-mode_003f)
 
 ## Matlab
 
@@ -425,55 +479,126 @@ matlab -batch hello_world
 Combining this in a slurm script we can queue matlab workloads.
 
 ```sh
-    #!/bin/bash -l
-    #SBATCH -J MyMatlab
-    #SBATCH -N 1
-    #SBATCH --cpus-per-task=1
-    #SBATCH -p defq   
-    #SBATCH --output=%x_%j.out
-    #SBATCH --error=%x_%j.err
-    #SBATCH --mail-type=END,FAIL
-    #SBATCH --mail-user=<YOUR EMAIL>
-    
-    # Note: for parallel operations increase cpus-per-task above
-    # Note 2: output and error logs can be given absolute paths 
-    
-    echo "== Starting run at $(date)"
-    echo "== Job ID: ${SLURM_JOBID}"
-    echo "== Node list: ${SLURM_NODELIST}"
-    echo "== Submit dir. : ${SLURM_SUBMIT_DIR}"
-    echo "== Scratch dir. : ${TMPDIR}"
-    
-    # cd $TMPDIR
-    # or change to a project folder with matlab file e.g. hello_World.m
-    # cd your/data
+#!/bin/bash -l
+#SBATCH -J MyMatlab
+#SBATCH -N 1
+#SBATCH --cpus-per-task=1
+#SBATCH -p defq   
+#SBATCH --output=%x_%j.out
+#SBATCH --error=%x_%j.err
+#SBATCH --mail-type=END,FAIL
+#SBATCH --mail-user=<YOUR EMAIL>
 
-    # Load matlab module
-    module load 2022 matlab/R2023a
-    
-    # execute
-    matlab -batch hello_world
+# Note: for parallel operations increase cpus-per-task above
+# Note 2: output and error logs can be given absolute paths 
+
+echo "== Starting run at $(date)"
+echo "== Job ID: ${SLURM_JOBID}"
+echo "== Node list: ${SLURM_NODELIST}"
+echo "== Submit dir. : ${SLURM_SUBMIT_DIR}"
+echo "== Scratch dir. : ${TMPDIR}"
+
+# cd $TMPDIR
+# or change to a project folder with matlab file e.g. hello_World.m
+# cd your/data
+
+# Load matlab module
+module load 2022 matlab/R2023a
+
+# execute
+matlab -batch hello_world
 ```
 
 ### Parpool
 
 ### Reading
 
-* [mathworks-parpool](https://nl.mathworks.com/help/parallel-computing/parpool.html)
+- [mathworks-parpool](https://nl.mathworks.com/help/parallel-computing/parpool.html)
 
-## Connect to VU Yoda/iRODS with icommands
+## Acknowledging the cluster
 
-iRODS/Yoda is a middleware and webinterface to store enriched data.
-On BAZIS the icommands are available to allow direct access.
+When you use the cluster for your research, please acknowledge the cluster in your publications. You can use the following text:
+
+   > We kindly acknowledge sponsoring by the VU HPC Council and the IT for Research (ITvO) BAZIS Linux computational cluster at VU Amsterdam.
+
+## Advanced topics
+
+### Using SSH keys
+
+SSH keys are an alternative method for authentication to obtain access to remote computing systems. They can also be used for authentication when transferring files or for accessing version control systems like github.
+
+The cluster uses ssh keys to manage batch jobs.
+
+On your workstation create ssh key pair
+`ssh-keygen -t ed25519 -a 100`
+
+- `-a` (default is 16): number of rounds of passphrase derivation; increase to slow down brute force attacks.
+- `-t` (default is rsa): specify the cryptographic algorithm. ed25519 is faster and shorter than RSA for comparable strength.
+- `-f` (default is /home/user/.ssh/id_algorithm): filename to store your keys. If you already have SSH keys, make sure you specify a different name: ssh-keygen will overwrite the default key if you don't specify!
+
+If ed25519 is not available, use the older (but strong and trusted) RSA cryptography:
+`ssh-keygen -a 100 -t rsa -b 4096`
+
+When prompted, enter a strong password that you will remember.
+
+Note: on windows you can use MobaKeyGen from MobaXterm, but on Windows 11 Powershell or Command Prompt works as well.
+
+In your ~/.ssh directory you will find a public and private key. Make sure to keep the private key safe as anyone with the private key has access.
+
+Now, when you add your public key to the ~/.ssh/authorized_keys file in a remote system, your key will be used to login.
+
+You can either use copy-paste or the ssh-copy-id command:
+
+```sh
+$ ssh-copy-id user@remote-host
+The authenticity of host 'remote-host (192.168.111.135)' can't be established.
+ECDSA key fingerprint is SHA256:hXGpY0ALjXvDUDF1cDs2N8WRO9SuJZ/lfq+9q99BPV0.
+Are you sure you want to continue connecting (yes/no)? yes
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 2 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+user@remote-host's password:
+
+Number of key(s) added: 2
+```
+
+Now try logging into the machine, with:   "ssh 'user@remote-host'"
+and check to make sure that only the key(s) you wanted were added.
+
+## Forwarding X
+
+## Fix Warning: Remote Host Identification Has Changed
+
+If you are sure that it is harmless and the remote host key has been changed in a legitimate way, you can skip the host key checking by sending the key to a null known_hosts file:
+
+```sh
+ssh -o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no" username@bazis.labs.vu.nl
+```
+
+To make the change permanent remove the offending host key from your ~/.ssh/known_hosts file with:
+
+```sh
+ssh-keygen -R "hostname"
+```
+
+---
+
+References:
+
+1. [hpc carpentry](http://www.hpc-carpentry.org/hpc-shell/01-connecting/index.html)
+2. [Comparing SSH keys](https://goteleport.com/blog/comparing-ssh-keys/)
+3. [public key cryptography for non geeks](https://blog.vrypan.net/2013/08/28/public-key-cryptography-for-non-geeks/)
+4. [disable ssh host key checking](https://www.shellhacks.com/disable-ssh-host-key-checking)
+
+### Connect to VU Yoda/iRODS with icommands
+
+Yoda is a data storage solution for research data at the Vrije Universiteit Amsterdam. You can use the icommands to upload and download data from Yoda directly from the cluster.
 
 To use the icommands a configuration file in your home folder is required.
 <https://yoda.vu.nl/site/getting-started/icommands.html#configuration>
 
 After configuration use `iinit` to connect, use a  Data Access Password, similar to a  WebDAV connection.
 
-Find an overview of the icommands here:
-<https://docs.irods.org/master/icommands/user/>
-Check the  `ipwd`, `ils`, `icd`, `iput`, `iget` en `irsync` commands for navigation and data transfer.
+Find an overview of the icommands here: <https://docs.irods.org/master/icommands/user/>. Check the  `ipwd`, `ils`, `icd`, `iput`, `iget` en `irsync` commands for navigation and data transfer.
 
 Your project folder is located at `/vu/home`
 

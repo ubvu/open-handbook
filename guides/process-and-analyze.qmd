@@ -6,7 +6,7 @@ title: Process & Analyse Data
 
 Provenance describes the origin of an object. Data provenance refers to the knowledge of where data originate, where they were collected, by whom, for what reason, and similar aspects that help to understand how the data were originally gathered, processed and altered. In daily use, the term “**data provenance**” refers to a record trail that accounts for the origin of a piece of data (in a database, document or repository) together with an explanation of how and why it got to the present place (Encyclopedia of Database Systems, pp [608-608](https://link.springer.com/referenceworkentry/10.1007%2F978-0-387-39940-9_1305)). You can also call it the process of keeping records of changes in the data. The need for Data Provenance increases as the reuse of datasets becomes more common in research. The term was originally mostly used in relation to works of art, but is now used in similar senses in a wide range of fields ([Wikipedia](https://en.wikipedia.org/wiki/Provenance)).
 
-[![](https://libapps-eu.s3.amazonaws.com/accounts/46351/images/Credibility_Trust_Provenace_data.gif)](https://commons.wikimedia.org/wiki/File:Credibility_Trust_Provenace_data.svg)
+[![](../public/Credibility_Trust_Provenace_data.gif)](https://commons.wikimedia.org/wiki/File:Credibility_Trust_Provenace_data.svg)
 
 Researchers regularly use a lab notebook or a journal to document their hypotheses, experiments and initial analysis or interpretation of these experiments. If you manually change data in a dataset, this should also be documented. Sometimes records of changes in data can be kept by adding notes to programmes or scripts that are used.
 
@@ -24,7 +24,7 @@ For every step of your data analysis, good [data documentation](https://libguide
 
 The process of detecting and correcting (or removing) corrupt or inaccurate information or records, is called data cleaning. In essence, it refers to identifying incomplete, incorrect, inaccurate or irrelevant parts of the data and then replacing, modifying, or deleting this data ([Wikipedia](https://en.wikipedia.org/wiki/Data_cleansing)). Depending on the type of analysis that is done, different pieces of software can be used to do this data cleaning. More often than not, the same software can also be used to perform the analysis. Licensed software may sometimes also be installed on personal computers or laptops.
 
-![](https://libapps-eu.s3.amazonaws.com/accounts/46351/images/MessyData.jpg)
+![](../public/MessyData.jpg)
 
 Software especially designed to clean re-used data is [OpenRefine](https://openrefine.org/). It cleans starting and trailing blank spaces in cell field, clusters values based on similarities (e.g. in free text fields: Alphen a/d Rhijn, alfen ad rijn, etc. can be easily clustered), normalise data fields into one standard, etc. See below for several tutorials.
 
@@ -82,7 +82,7 @@ If you want to read up on data analysis you should check out what journal articl
 Using open software increases the Accessiblity, Interoperability and Reusability of your data. For that reason, we recommend that you use open software as much as possible for your data analysis. This could be software, code or scripts that you have written yourself - where possible, please make this software public, so your analysis is reproducible. Examples of open software are R and Python, which can be used instead of proprietary, commercial software such as SPSS and Matlab.
 
 Researchers often write their software themselves. There are also organisations that specialise in writing research software, such as the eScience Center. The eScience Center offers the software they built for free use [online](https://www.research-software.nl/). Their software is tagged with a DOI and stored in Zenodo as well as GitHub.  
-If you use software for analysing personal or otherwise sensitive data, you need a processing agreement with the developer if the software does not run locally. You can contact your [Privacy Champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information) if you are not sure if you need one, and for help to set up a processing agreement.
+If you use software for analysing personal or otherwise sensitive data, you need a processing agreement with the developer if the software does not run locally. You can contact your :lock: [Privacy Champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information) if you are not sure if you need one, and for help to set up a processing agreement.
 
 There are several ways in which to start using open software:
 
@@ -103,14 +103,16 @@ The VU has several research groups that offer their code online. You can find th
 <!--# I'm thinking this might also be worh its own topic page -->
 If your pc or laptop takes too much time performing your analysis, it is time to scale up to a higher level. There are several options for employees and students who require more computing power than their own desktop or laptop can provide.
 
-Several options are detailed below. [Contact IT for Research](https://services.vu.nl/esc?id=sc_cat_item&sys_id=4e079166978d5950e553359fe153afc5) for advice on which solution could best fit your workflow
+Several options are detailed below. :lock: [Contact IT for Research](https://services.vu.nl/esc?id=sc_cat_item&sys_id=4e079166978d5950e553359fe153afc5) for advice on which solution could best fit your workflow
 
 #### High Performance Computing (HPC)
-![](https://libapps-eu.s3.amazonaws.com/accounts/46351/images/noaa-ibmsupercomputer.gif)
+
+![](../public/noaa-ibmsupercomputer.gif)
 
 Roughly speaking, you should try to get access to the HPC when you need to stick a post-it on your laptop or PC that says: "do not touch, analysis ongoing". Or when you want to run analyses parallel to each other, because they take too long. It is important to consider such a situation at the very beginning of your research or when writing your Data Management Plan: is it conceivable that your dataset will become so large or your analysis so complicated that you will need HPC? Please note that this can occur for any discipline and any sort of data, qualitative and quantitative. If you may need HPC, you also need to reconsider your analysis methods. Programmes like SPSS and Excel do not run well on a HPC, and you would need to (learn to) write scripts in R or Python <!-- # [R or Python](https://libguides.vu.nl/rdm/data-analysis) -->. If you want to know if using HPC may be necessary or useful for your project, you can contact [IT for Research](https://services.vu.nl/esc?id=sc_cat_item&sys_id=4e079166978d5950e553359fe153afc5) to ask for more information (select the "Onderzoek service domain").
 
 #### SURF Snellius Compute Cluster
+
 Snellius is the Dutch National supercomputer hosted at SURF. The system facilitates scientific research carried out in many Universities, independent research institutes, governmental organizations, and private companies in the Netherlands.  
 
 It’s a service comprising a wide range of resources, compilers and, such as R statistics and MATLAB, and libraries. SURF continually adjusts the service to the needs of the user community. For example, Snellius Compute Cluster includes accelerators (very fast processors),high memory nodes and GPU nodes. <!--# might need a further rewrite -->
@@ -118,23 +120,29 @@ It’s a service comprising a wide range of resources, compilers and, such as R 
 You can find more information on the [SURF Snellius Wiki](https://servicedesk.surf.nl/wiki/display/WIKI/Snellius).
 
 #### BAZIS Compute Cluster
+
 IT for Research (ITvO) offers access to your own Linux computational cluster at the VU. BAZIS is a managed service for high performance computing (HPC). Research groups can add their own compute server hardware to [BAZIS](../topics/bazis.qmd), ITvO will take care of configuring and maintaining the software stack on your servers.
 
-BAZIS also has several "community" nodes for use by all VU researchers, sponsored by the VU HPC Council. 
+BAZIS also has several "community" nodes for use by all VU researchers, sponsored by the VU HPC Council.
 
-BAZIS is connected to SciStor <!--# needs internal link --> providing easy access to your research data and analysis result. 
+BAZIS is connected to SciStor <!--# needs internal link --> providing easy access to your research data and analysis result.
 
 #### VU JupyterHub for education 
+
 If you are not yet ready to take the leap to cluster computing and work with Python consider JupyterHub. VU IT has built a Jupyter Notebook environment meant mainly for Education purposes, but accessible for researchers as well on <https://hub.compute.vu.nl/>
 
 #### (Virtual) servers
+
 There are also several options to run applications in a server environment. This is useful if for example you use software that does not work on HPC, you want to run a web service, you want to create a research environment for your project. There are several options available for researchers.
 
 ##### SciCloud
-IT for Research (ITvO) offers a virtual server environment where you can run your own server (Linux or Windows). ITvO installs the basic operating system and you are free to install needed software. Web services can be made accessible on the internet. You can find more information and a request form on the [VU service portal](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=d80aee1f97cf09d0e553359fe153afd7)
+
+IT for Research (ITvO) offers a virtual server environment where you can run your own server (Linux or Windows). ITvO installs the basic operating system and you are free to install needed software. Web services can be made accessible on the internet. You can find more information and a request form on the :lock: [VU service portal](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=d80aee1f97cf09d0e553359fe153afd7)
 
 ##### SURF Research Cloud
-SURF also offers a virtual server environment. Several environments with pre-installed software can easily be installed from a catalog. Find more information on the (SURF wiki)[https://servicedesk.surf.nl/wiki/display/WIKI/SURF+Research+Cloud] 
 
-##### Dedicated hardware 
-Sometimes your workload needs dedicated hardware. ITvO offers the option to host your own server hardware in our on-campus data center. Please [Contact IT for Research](https://services.vu.nl/esc?id=sc_cat_item&sys_id=4e079166978d5950e553359fe153afc5) to discuss possibilities.
+SURF also offers a virtual server environment. Several environments with pre-installed software can easily be installed from a catalog. Find more information on the [SURF wiki](https://servicedesk.surf.nl/wiki/display/WIKI/SURF+Research+Cloud).
+
+##### Dedicated hardware
+
+Sometimes your workload needs dedicated hardware. ITvO offers the option to host your own server hardware in our on-campus data center. Please :lock: [Contact IT for Research](https://services.vu.nl/esc?id=sc_cat_item&sys_id=4e079166978d5950e553359fe153afc5) to discuss possibilities.

@@ -17,7 +17,7 @@ jobs:
       id: lychee
       uses: lycheeverse/lychee-action@v1
       with:
-        args: "--exclude doi.org --exclude data.4tu.nl --exclude isbn.org '**/*.qmd'"
+        args: "'**/*.qmd' --exclude doi.org --exclude data.4tu.nl --exclude isbn.org --exclude github.com/ubvu/open-handbook"
         format: markdown
         jobSummary: true
     - name: Comment PR
