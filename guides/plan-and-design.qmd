@@ -37,7 +37,7 @@ Many research funders encourage applicants to include data management and sharin
 A practical costing tool is available from the [UK Data Archive](https://www.ukdataservice.ac.uk/manage-data/plan/costing). Based on this costing tool, Utrecht University has developed a [guide to calculate the costs of data management](https://www.uu.nl/en/research/research-data-management/guides/costs-of-data-management).
 You can use those guides as well to estimate the costs needed specifically for RDM.
 
-Most material costs of the storage solutions offered by the VU are covered centrally (up to 500 GB), but if you need to specify the costs for your project, look at the [Research & Archiving Storage Cost Model](https://vu.nl/en/employee/research-data-support/costs-research-en-archiving-storage)
+Most material costs of the storage solutions offered by the VU are covered centrally (up to 500 GB), but if you need to specify the costs for your project, look at the :lock: [Research & Archiving Storage Cost Model](https://vu.nl/en/employee/research-data-support/costs-research-en-archiving-storage)
 
 Examples to put in a data management plan:
 
@@ -57,7 +57,7 @@ Examples to put in a data management plan:
 
 If you do research at the VU, you may be subject to the requirements for Research Data Management formulated by various parties. Please check which requirements apply to your research project.
 
-Many funders have specific requirements for RDM. The exact requirements vary by funder. They usually include a data management section in the project proposal and a Data Management Plan (DMP) after funding has been granted. As funding agencies invest financially in your research project, they often have demands concerning research integrity, data quality, data publication and reusability. As research output, data are often compared to a kind of public good that should be made available to the community for re-use if possible. Always check what demands are set by a funder before you apply.
+Many funders have specific requirements for RDM. The exact requirements vary by funder. They usually include a [Data Management Section](#data-management-section) in the project proposal and a [Data Management Plan (DMP)](#data-management-plan) after funding has been granted. As funding agencies invest financially in your research project, they often have demands concerning research integrity, data quality, data publication and reusability. As research output, data are often compared to a kind of public good that should be made available to the community for re-use if possible. Always check what demands are set by a funder before you apply.
 
 ### Funding agencies
 
@@ -70,7 +70,7 @@ At a grant application, some funders request a short data section in your projec
 
 #### Data Management Plan
 
-In a Data Management Plan (DMP; see also the section [Data Management Plan](../topics/data-management-plan.qmd)) you explain how you will handle your research data. Check with your funder at what stage a DMP has to be submitted and how it should be composed. VU has a DMP template that has been acknowledged by NWO, ZonMw and ERC. We recommend you to use this VU template. See the [DMP page](../topics/data-management-plan.qmd) for more information and instructions on how to select this template in [DMPonline](https://dmponline.vu.nl/?perform_check=false).
+In a Data Management Plan (DMP; see also the section [Data Management Plan](../topics/data-management-plan.qmd)) you explain how you will handle your research data. Check with your funder at what stage a DMP has to be submitted and how it should be composed. VU has a DMP template that has been acknowledged by NWO, ZonMw and ERC. We recommend you to use this VU template. See the [DMP page](../topics/data-management-plan.qmd#vu-template) for more information and instructions on how to select this template in [DMPonline](https://dmponline.vu.nl/?perform_check=false).
 
 The tool [DMPonline](https://dmponline.vu.nl/) can be used to access and fill in a DMP template. You can also write a DMP in collaboration and invite a third party to comment or give feedback on your DMP. You can use the button 'Request feedback' to ask for feedback from a data steward. In order to write a DMP, you need to create your own account.
 
@@ -85,7 +85,7 @@ The Consortium of European Social Science Data Archives (CESSDA) presents a [com
 Normally a funder requires you to publish your data in a data repository at the end of the project (unless this is prohibited by legislation). For that reason, DMP templates usually include the following questions:
 
 * where your dataset can be found
-* whether your dataset has a [persistent identifier](../topics/persistent-identifier.qmd)
+* whether your dataset has a [Persistent Identifier](../topics/persistent-identifier.qmd)
 * how your data are documented
 * whether your data may be reused freely or not and which terms and conditions apply
 
@@ -93,7 +93,7 @@ Please consider your funder's data publishing requirements, so that you can take
 
 ### Local requirements from your university and faculty
 
-The VU is committed to support research that meets the highest requirements of replicability and transparency. The [FAIR data principles](https://www.force11.org/group/fairgroup/fairprinciples) (see also [Overview]((../topics/fair-principles.qmd)), the purpose of which is to render research data Findable, Accessible, Interoperable and Reusable, the General Data Protection Regulation (GDPR) and the principles of Open Science are at the foundation of the Research Data Management (RDM) policy of the VU.
+The VU is committed to support research that meets the highest requirements of replicability and transparency. The [FAIR data principles](../topics/fair-principles.qmd), the purpose of which is to render research data Findable, Accessible, Interoperable and Reusable, the General Data Protection Regulation (GDPR) and the principles of Open Science are at the foundation of the Research Data Management (RDM) policy of the VU.
 
 In addition to the central policy for RDM, faculties of the VU also have developed their own implementation of this policy.
 
@@ -134,7 +134,7 @@ The value of data or applications is established through classification in Confi
 
 Traditionally, this classification assesses the value of an entity (data or application) to an organisation. For research data, however, the value to the University is in all cases the same. The value of each research project is the same. Does that mean that there is no need to classify research data? Referring back to the definition of security, it is the assessment of the level of protection against a certain threat and its accuracy depends on the value of (in this case) data. The reason to classify research data is that there is a huge variety in potential risks in case of data loss or theft.
 
-The reason that the Vrije Universiteit and its reseachers need to classify data is to understand the variety in risk that exists in order to assess if security measures are accurate.
+The reason that VU and its reseachers need to classify data is to understand the variety in risk that exists in order to assess if security measures are accurate.
 
 Data classification is about the level of sensitivity (low, medium or high) of your data assets so you can judge the risks to your research (group). This will help you when deciding what security and protection measures you need to take for handling the data or parts of the data.
 
@@ -159,7 +159,7 @@ Your data are classified as 'high' when you collect or process the following dat
 
 #### Personal data
 
-Do not confuse the risks of data loss with the need to comply to legal regulations. Data security is part of risk management and is aimed at balancing protection against productivity, investments against profit. The General Data Protection Regulation is a European Law in the legal area of Human Rights and concerns the use of personal data. Personal data are a type of data that is commonly processed in many fields of scientific research. You collect or process personal data when the data can be linked to a unique individual, either directly through direct identifiers such as name, address, IP-address etc., or indirectly through a combination of information. Personal data need to be protected. More information about personal data, data protection and the GDPR can be found in the section [GDPR & Privacy](#gdpr-privacy).
+Do not confuse the risks of data loss with the need to comply to legal regulations. Data security is part of risk management and is aimed at balancing protection against productivity, investments against profit. The General Data Protection Regulation is a European Law in the legal area of Human Rights and concerns the use of personal data. Personal data are a type of data that is commonly processed in many fields of scientific research. You collect or process personal data when the data can be linked to a unique individual, either directly through direct identifiers such as name, address, IP-address etc., or indirectly through a combination of information. Personal data need to be protected. More information about personal data, data protection and the GDPR can be found in the section [GDPR & Privacy](#gdpr--privacy).
 
 #### Data Classification tool for researchers
 
@@ -203,11 +203,11 @@ On the :lock: [VU Intranet](https://vu.nl/en/employee/emergencies/data-leaks-and
 
 #### Background information
 
-Privacy in research - Privacy five-step plan
+##### Privacy in research - Privacy five-step plan
 
 Where research requires the collection of personal data, the researcher has to follow the [Privacy five-step plan](https://vu.nl/en/employee/privacy-and-information-security/working-with-personal-data) to make sure to carry out the research in line with the GDPR.
 
-VSNU Code of Conduct for using personal data in research
+##### VSNU Code of Conduct for using personal data in research
 
 The VSNU's Code of Conduct for Research Integrity ([Dutch](https://www.nwo.nl/sites/nwo/files/documents/Nederlandse%2Bgedragscode%2Bwetenschappelijke%2Bintegriteit_2018_NL.pdf), [English](https://www.nwo.nl/sites/nwo/files/documents/Netherlands%2BCode%2Bof%2BConduct%2Bfor%2BResearch%2BIntegrity_2018_UK.pdf), 2018) includes a reference to the GDPR and its Dutch implementation law UAVG. An updated Code of Conduct for Using Personal Data in Research which complies with GDPR is still work in progress.
 
@@ -252,7 +252,7 @@ If you are not sure whether it is required to conduct a DPIA or if you need help
 
 #### Research data management policy
 
-Vrije Universiteit Amsterdam considers the careful handling of research data to be very important. The university has therefore formulated a Research Data Management policy which provides guidance for researchers and policy officers at VU Amsterdam.
+VU Amsterdam considers the careful handling of research data to be very important. The university has therefore formulated a Research Data Management policy which provides guidance for researchers and policy officers at VU Amsterdam.
 
 * [VU RDM policy](../public/policies-regulations/RDM-policy-VU-2020.pdf) (2020)
 
@@ -267,11 +267,11 @@ Since the VU policy for RDM is formulated in general terms, faculties have worke
 * [RCH RDM policy](../public/policies-regulations/RCH-RDM-policy-2021.pdf), Faculty of Law (2021)
 * [SBE RDM policy](../public/policies-regulations/SBE-RDM-policy-2023.pdf), School of Business and Economics (2023)
 
-For RDM policies and guidelines at Amterdam UMC, location VUmc, please get in touch with [Research Data Management Support](https://www.amsterdamumc.org/en/research/support/services-facilities/data-management/contact.htm) at Amsterdam UMC.
+For RDM policies and guidelines at Amsterdam UMC, location VUmc, please get in touch with [Research Data Management Support](https://www.amsterdamumc.org/en/research/support/services-facilities/data-management/contact.htm) at Amsterdam UMC.
 
 #### Academic integrity complaints procedure
 
-Both VU Amsterdam and Amsterdam UMC, location VUmc employ a joint policy for the handling academic integrity complaints. This [policy](https://vu.nl/en/about-vu/more-about/academic-integrity) outlines the steps to be taken in the event of a complaint, the officers who play a role in this procedure, and what should be expected once a complaint has been lodged.
+Both VU Amsterdam and Amsterdam UMC, location VUmc, employ a joint policy for the handling academic integrity complaints. This [policy](https://vu.nl/en/about-vu/more-about/academic-integrity) outlines the steps to be taken in the event of a complaint, the officers who play a role in this procedure, and what should be expected once a complaint has been lodged.
 
 #### Confidential counselors
 
@@ -328,7 +328,7 @@ To live up to these general principles, the Code of Conduct provides the followi
 * Make research data public upon completion of your research project; if this is not possible, explain why (standards 3.2.11 and 3.4.45)
 * Describe the data you have collected and used in your research honestly, scrupulously and transparently (standard 3.3.23)
 * Manage your data carefully and store both the raw and processed versions for a period appropriate for your discipline (standard 3.3.24)
-* Contribute towards making data [FAIR](https://libguides.vu.nl/rdm/overview#s-lg-box-wrapper-17896126), where possible (standard 3.3.25)
+* Contribute towards making data [FAIR](../topics/fair-principles.qmd), where possible (standard 3.3.25)
 * Be transparent about your methods and working procedures by using e.g. research protocols, logs, lab journals or reports to describe these processes (standard 3.4.35)
 
 ### Strategy Evalution Protocol
@@ -337,7 +337,7 @@ The [Strategy Evaluation Protocol 2021-2027](https://www.universiteitenvannederl
 
 The SEP formulates questions on how a research institute deals with and stores raw and processed data. It also assesses the output of research institutes, including datasets, and the use of such output by peers and societal target groups.
 
-By [registering your datasets](https://libguides.vu.nl/rdm/dataset-registration) in the VU Research Portal, you contribute to an overview of datasets of your department, faculty and the VU as a whole.
+By [registering your datasets](./publish-and-share.qmd#dataset-registration) in the VU Research Portal, you contribute to an overview of datasets of your department, faculty and the VU as a whole.
 
 ### NWO Data Policy
 
@@ -345,4 +345,4 @@ NWO aims to ensure that all the research it funds is openly accessible to everyo
 
 The guiding principle here is 'as open as possible, as closed as necessary.' Due consideration is given to aspects such as privacy, public security, ethical limitations, property rights and commercial interests. In relation to research data, NWO recognizes that software (algorithms, scripts and code developed by researchers in the course of their work) may be necessary to access and interpret data. In such cases, the data management plan will be expected to address how information about such items will be made available alongside the data.
 
-More information on Data Management is also available on the [NWO website](https://www.nwo.nl/en/research-data-management) where a NWO Data Management Template is made available. The [VU Data Management template in DMP Online](https://libguides.vu.nl/rdm/dmp) is certified by both NWO and ZonMW and can also be used by VU researchers for projects funded by both organizations.
+More information on Data Management is also available on the [NWO website](https://www.nwo.nl/en/research-data-management) where a NWO Data Management Template is made available. The [VU Data Management template in DMP Online](../topics/data-management-plan.qmd#vu-template) is certified by both NWO and ZonMW and can also be used by VU researchers for projects funded by both organizations.
