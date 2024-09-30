@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -130,12 +150,13 @@ ul.task-list li input[type="checkbox"] {
 <p>Previously such resources were spread out across many different pages at VU and were hard to update. The Open Handbook is curated by us all, and reviewed by specialists. This way we can help each other.</p>
 <section id="contributors" class="level2">
 <h2 class="anchored" data-anchor-id="contributors">Contributors</h2>
-<p>The Open Handbook was initiated by Lena Karvovskaya, Jessica Hrudey, Elisa, and Jolien Scholten. The initial infrastructure for the Open Handbook was built by Liberate Science.</p>
+<p>The Open Handbook was initiated by Lena Karvovskaya, Jessica Hrudey, Elisa, and Jolien Scholten. The initial infrastructure for the Open Handbook was built by Liberate Science. Guide images are by <span class="citation" data-cites="bres_2024_11147887">Bres and Bittner (<a href="#ref-bres_2024_11147887" role="doc-biblioref">2024</a>)</span>.</p>
 <p>We want to specifically call out the following folk who contributed outside of GitHub:</p>
 <ul>
+<li>Diogenes Cruz de Arcelino</li>
 <li>Jochem Lybaart</li>
-<li>Rebecca Silva dos Santos</li>
 <li>Jochem Nijs</li>
+<li>Rebecca Silva dos Santos</li>
 </ul>
 <section id="github-contributors" class="level3">
 <h3 class="anchored" data-anchor-id="github-contributors">GitHub contributors</h3>
@@ -184,11 +205,16 @@ ul.task-list li input[type="checkbox"] {
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 
+
 </section>
 </section>
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-bres_2024_11147887" class="csl-entry" role="listitem">
+Bres, Ewa Elizabeth, and Christian Bittner. 2024. <span>“<span class="nocase">A collection of AI generated images visualising various RDM aspects</span>.”</span> Zenodo. <a href="https://doi.org/10.5281/zenodo.11147887">https://doi.org/10.5281/zenodo.11147887</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
