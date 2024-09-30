@@ -170,7 +170,7 @@ ul.task-list li input[type="checkbox"] {
 <li>The <a href="https://osf.io">Open Science Framework</a> connects different storage types you already use (SURFdrive, Dataverse, etc) and logs automatically all changes of all the steps you make while you progress. With the fine grained history-log and version control system of OSF, you can see all steps you made. You can store and archive the whole provenance trail for citable reproducibility.</li>
 </ul>
 <p>Finally, when a dataset contains personal data, data provenance can help researchers to understand the specifics and the context in which the data were gathered, also to be able to assess whether or not the informed consent given for the first research, is applicable.</p>
-<p>For every step of your data analysis, good <a href="https://libguides.vu.nl/rdm/data-documentation">data documentation</a> is necessary.</p>
+<p>For every step of your data analysis, good <a href="../topics/data-documentation.html">Data Documentation</a> is necessary.</p>
 </section>
 <section id="data-processing" class="level2">
 <h2 class="anchored" data-anchor-id="data-processing">Data processing</h2>
@@ -191,7 +191,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Introduction to <a href="https://miriamposner.com/classes/dh101f17/tutorials-guides/data-manipulation/get-started-with-openrefine/">Digital Humanities</a> with Open Refine</li>
 </ul></li>
 </ul>
-<p>For every step of your data cleaning, good <a href="https://libguides.vu.nl/rdm/data-documentation">documentation</a> and clarifying the <a href="https://libguides.vu.nl/rdm/data-provenance">data provenance</a> is necessary.</p>
+<p>For every step of your data cleaning, good <a href="../topics/data-documentation.html">documentation</a> and clarifying the <a href="../guides/process-and-analyze.html#data-provenance">data provenance</a> is necessary.</p>
 </section>
 <section id="data-transcription" class="level3">
 <h3 class="anchored" data-anchor-id="data-transcription">Data transcription</h3>
@@ -210,8 +210,8 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="data-analysis">Data analysis</h2>
 <section id="data-analysis-1" class="level3">
 <h3 class="anchored" data-anchor-id="data-analysis-1">Data Analysis</h3>
-<p>Although data analysis is an ongoing process throughout the research project, this page focuses on the analysis of the data subsequent to its collection. To ensure that research is empirical and verifiable, it is crucial that researchers keep records (<a href="https://libguides.vu.nl/rdm/data-documentation">data documentation</a>) of every step made during the data analysis.</p>
-<p>Data analysis converts raw/processed data into information that is useful for understanding. Many steps may be required to gain useful information from raw data. The process of <a href="https://libguides.vu.nl/rdm/data-processing">processing</a> and analysing data may require computing power not readily available or specific storage and protection options. If multiple parties are involved in the analysis, data sharing may also be necessary.</p>
+<p>Although data analysis is an ongoing process throughout the research project, this page focuses on the analysis of the data subsequent to its collection. To ensure that research is empirical and verifiable, it is crucial that researchers keep records (<a href="../topics/data-documentation.html">data documentation</a>) of every step made during the data analysis.</p>
+<p>Data analysis converts raw/processed data into information that is useful for understanding. Many steps may be required to gain useful information from raw data. The process of <a href="../guides/process-and-analyze.html#data-processing">processing</a> and analysing data may require computing power not readily available or specific storage and protection options. If multiple parties are involved in the analysis, data sharing may also be necessary.</p>
 <p>Data analysis often requires the use of specialised software.The software offered and licensed by the university currently includes: Stata, SPSS, and Atlas.TI. For open software, see below.</p>
 <p>In some cases researchers write their own scripts to analyse the data. At the VU, most scripts are written in R, Python and SQL.</p>
 <p>If you want to read up on data analysis you should check out what journal articles and books the VU library has available on the subject:</p>
@@ -251,8 +251,13 @@ If you use software for analysing personal or otherwise sensitive data, you need
 <p>Several options are detailed below. 🔒 <a href="https://services.vu.nl/esc?id=sc_cat_item&amp;sys_id=4e079166978d5950e553359fe153afc5">Contact IT for Research</a> for advice on which solution could best fit your workflow</p>
 <section id="high-performance-computing-hpc" class="level4">
 <h4 class="anchored" data-anchor-id="high-performance-computing-hpc">High Performance Computing (HPC)</h4>
-<p><img src="../public/noaa-ibmsupercomputer.gif" class="img-fluid"></p>
-<p>Roughly speaking, you should try to get access to the HPC when you need to stick a post-it on your laptop or PC that says: “do not touch, analysis ongoing”. Or when you want to run analyses parallel to each other, because they take too long. It is important to consider such a situation at the very beginning of your research or when writing your Data Management Plan: is it conceivable that your dataset will become so large or your analysis so complicated that you will need HPC? Please note that this can occur for any discipline and any sort of data, qualitative and quantitative. If you may need HPC, you also need to reconsider your analysis methods. Programmes like SPSS and Excel do not run well on a HPC, and you would need to (learn to) write scripts in R or Python <!-- # [R or Python](https://libguides.vu.nl/rdm/data-analysis) -->. If you want to know if using HPC may be necessary or useful for your project, you can contact <a href="https://services.vu.nl/esc?id=sc_cat_item&amp;sys_id=4e079166978d5950e553359fe153afc5">IT for Research</a> to ask for more information (select the “Onderzoek service domain”).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../public/noaa-ibmsupercomputer.gif" class="img-fluid figure-img"></p>
+<figcaption>A set of servers in an undescript room</figcaption>
+</figure>
+</div>
+<p>Roughly speaking, you should try to get access to the HPC when you need to stick a post-it on your laptop or PC that says: “do not touch, analysis ongoing”. Or when you want to run analyses parallel to each other, because they take too long. It is important to consider such a situation at the very beginning of your research or when writing your Data Management Plan: is it conceivable that your dataset will become so large or your analysis so complicated that you will need HPC? Please note that this can occur for any discipline and any sort of data, qualitative and quantitative. If you may need HPC, you also need to reconsider your analysis methods. Programmes like SPSS and Excel do not run well on a HPC, and you would need to (learn to) write scripts in <a href="../guides/process-and-analyze.html#data-analysis">R or Python</a>. If you want to know if using HPC may be necessary or useful for your project, you can contact <a href="https://services.vu.nl/esc?id=sc_cat_item&amp;sys_id=4e079166978d5950e553359fe153afc5">IT for Research</a> to ask for more information (select the “Onderzoek service domain”).</p>
 </section>
 <section id="surf-snellius-compute-cluster" class="level4">
 <h4 class="anchored" data-anchor-id="surf-snellius-compute-cluster">SURF Snellius Compute Cluster</h4>
