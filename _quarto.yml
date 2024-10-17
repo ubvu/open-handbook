@@ -32,7 +32,7 @@ website:
         text: GitHub VU Open Handbook
       # - icon: rss
       #   href: https://quarto.org/docs/blog/index.xml
-      #   text: Quarto Blog RSS   
+      #   text: Quarto Blog RSS
   page-footer:
     left:
       - text: "CC0 Public Domain Dedication"
@@ -50,10 +50,11 @@ bibliography: references.bib
 
 resources:
   - "public/*"
+  - CNAME
 format:
   html:
     toc: true
-    theme: 
+    theme:
       - cosmo # https://bootswatch.com/
       - custom.scss # https://quarto.org/docs/output-formats/html-themes.html#theme-options
     code-copy: true
