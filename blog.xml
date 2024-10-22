@@ -10,7 +10,67 @@
 <atom:link href="https://ubvu.github.io/open-handbook/blog.xml" rel="self" type="application/rss+xml"/>
 <description>A place for all things open research at the VU.</description>
 <generator>quarto-1.5.57</generator>
-<lastBuildDate>Mon, 30 Sep 2024 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 22 Oct 2024 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Why was rdm.vu.nl down for ten hours?</title>
+  <dc:creator>Chris Hartgerink</dc:creator>
+  <dc:creator>Lena Karvovskaya</dc:creator>
+  <link>https://ubvu.github.io/open-handbook/blog/2024-10-22post-mortem.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>On Friday October 18th 2024, we experienced around ten hours of downtime on the <code>rdm.vu.nl</code> website. The downtime started around 10AM after merging changes to the handbook and was resolved the same day, by 8PM.<sup>1</sup></p>
+<section id="root-cause" class="level2">
+<h2 class="anchored" data-anchor-id="root-cause">Root cause</h2>
+<p>The downtime started after merging changes to the handbook in commit <a href="https://github.com/ubvu/open-handbook/commit/669b06528731f95566d605d65b9c3a507f58bced">669b065</a>. These changes themselves, did not cause the downtime. The root cause was an incorrect configuration in the deployment of the webpage, which inadvertently removed the <code>rdm.vu.nl</code> domain name from the GitHub settings every time we made changes in the handbook and redeployed the website. This resulted in 404 errors that the page could not be found.</p>
+<p>We first observed this issue on Thursday, one day prior to the downtime, in commit <a href="https://github.com/ubvu/open-handbook/commit/678ff8843dc018f76661b24ee25c64bff5c459df">678ff88</a>. We proposed a fix for this issue in <a href="https://github.com/ubvu/open-handbook/pull/220">#220</a>, before the downtime started.</p>
+</section>
+<section id="how-could-the-downtime-happen-if-the-fix-was-clear" class="level2">
+<h2 class="anchored" data-anchor-id="how-could-the-downtime-happen-if-the-fix-was-clear">How could the downtime happen if the fix was clear?</h2>
+<p>The fix for the domain specification was not merged in time for two reasons.</p>
+<section id="reason-1" class="level3">
+<h3 class="anchored" data-anchor-id="reason-1">Reason 1</h3>
+<p>At this time, we require two reviews before merging changes to the handbook. The fix was proposed at 1.11PM on Thursday, and did not receive the required reviews by the time the downtime happened (reason 1). However, this was a technical administration task and could have been merged immediately, as this supercedes regular review procedures.</p>
+</section>
+<section id="reason-2" class="level3">
+<h3 class="anchored" data-anchor-id="reason-2">Reason 2</h3>
+<p>The domain specification fix was not immediately merged to allow time to pass and ensure the fix was appropriate upon further reflection. This is because administrator <span class="citation" data-cites="chartgerink">(<strong>chartgerink?</strong>)</span> both proposed the fix and would also be the one to supercede the “two reviews” requirement. Due to travel, the administrator forgot about it in the morning, and only saw the messages about the downtime at 8PM. At that time, the fix was quickly merged and the downtime resolved.</p>
+</section>
+</section>
+<section id="improvements" class="level2">
+<h2 class="anchored" data-anchor-id="improvements">Improvements</h2>
+<p>The domain configuration is corrected and the deployment ensures the domain name is re-added to the GitHub settings every time there are changes to the handbook. This is now automated, which ensures that the domain name will not be removed inadvertently when future changes are incorporated.</p>
+<p>However, we also learned that critical administration fixes should not be left open for longer than is absolutely necessary. Here it was left open for longer than absolutely necessary due to travel, and a second administrator could have caught this issue sooner. This means we should work towards resilient reporting mechanisms to escalate such critical issues, and build capacity in the editor team to ensure no one person is responsible for merging critical fixes that are already available.</p>
+</section>
+<section id="acknowledgements" class="level2">
+<h2 class="anchored" data-anchor-id="acknowledgements">Acknowledgements</h2>
+<p>We would like to thank the editors for dealing with the stress from this inadvertent issue. We also thank the community for their patience as we only recently migrated to <code>rdm.vu.nl</code> and figure out these initial unexpected hurdles.</p>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<ul>
+<li>Root cause for the downtime first observed in commit <a href="https://github.com/ubvu/open-handbook/commit/678ff8843dc018f76661b24ee25c64bff5c459df">678ff88</a></li>
+<li>Proposed a fix for the root cause in <a href="https://github.com/ubvu/open-handbook/pull/220">pull Request #220</a></li>
+<li>Downtime started at <a href="https://github.com/ubvu/open-handbook/commit/669b06528731f95566d605d65b9c3a507f58bced">commit 669b065</a> is where the</li>
+<li>Resolved downtime in <a href="https://github.com/ubvu/open-handbook/commit/678ff8843dc018f76661b24ee25c64bff5c459df">commit 678ff88</a></li>
+</ul>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p><code>ubvu.github.io/open-handbook</code> remained online during this entire time, and functions indirectly as a backup.↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>downtime</category>
+  <guid>https://ubvu.github.io/open-handbook/blog/2024-10-22post-mortem.html</guid>
+  <pubDate>Tue, 22 Oct 2024 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Third Handbook Hackathon</title>
   <dc:creator>Alex van der Jagt, FGB, sec. KNOP</dc:creator>
