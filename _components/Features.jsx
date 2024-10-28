@@ -1,6 +1,6 @@
 const features = [
   {
-    name: "Collaborative",
+    name: <p className="tw-inline"><a href="https://rdm.vu.nl/contributing.html">Quality control</a></p>,
     description: "We learn each other's best practices.",
     icon: () => (
       <svg
@@ -38,7 +38,7 @@ const features = [
     ),
   },
   {
-    name: "Open source",
+    name: <p className="tw-inline"><a href="https://github.com/ubvu/open-handbook">Open source</a></p>,
     description: "Share and copy without permission. Join the discussions.",
     icon: () => (
       <svg
@@ -57,7 +57,7 @@ const features = [
     ),
   },
   {
-    name: "Quality control",
+    name: <p className="tw-inline"><a href="https://rdm.vu.nl/editors-guide.html">Quality control</a></p>,
     description: "All content is reviewed periodically by VU specialists.",
     icon: () => (
       <svg
