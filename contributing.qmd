@@ -177,6 +177,12 @@ You add images by using:
 ![Alt text](URL)
 ```
 
+If you want the image to be hosted in the Research Support Handbook, use the following steps:
+
+1. Add the image you want to the `public/` folder
+2. Mark the exact filename
+3. Use `../public/<filename>` as the URL for the image (for example `../public/image.png`)
+
 ### More information about GitHub
 
 We use [GitHub](https://github.com) to create this website automatically, and to manage all the incoming updates. You do not need to know how it works entirely, but we want to help you understand some things so you are not confused.
