@@ -1,6 +1,6 @@
 const features = [
   {
-    name: "Collaborative",
+    name: <p className="tw-inline"><a href="https://rdm.vu.nl/contributing.html">Quality control</a></p>,
     description: "We learn each other's best practices.",
     icon: () => (
       <svg
@@ -19,7 +19,7 @@ const features = [
     ),
   },
   {
-    name: "Responsive",
+    name: <p className="tw-inline"><a href="https://rdm.vu.nl/blog.html">Responsive</a></p>,
     description: "With your help, we can respond to changes on a daily basis.",
     icon: () => (
       <svg
@@ -38,7 +38,7 @@ const features = [
     ),
   },
   {
-    name: "Open source",
+    name: <p className="tw-inline"><a href="https://github.com/ubvu/open-handbook">Open source</a></p>,
     description: "Share and copy without permission. Join the discussions.",
     icon: () => (
       <svg
@@ -57,7 +57,7 @@ const features = [
     ),
   },
   {
-    name: "Quality control",
+    name: <p className="tw-inline"><a href="https://rdm.vu.nl/editors-guide.html">Quality control</a></p>,
     description: "All content is reviewed periodically by VU specialists.",
     icon: () => (
       <svg
@@ -71,25 +71,6 @@ const features = [
           strokeLinecap="round"
           strokeLinejoin="round"
           d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"
-        />
-      </svg>
-    ),
-  },
-  {
-    name: "Local",
-    description: "This is for VU, by VU. Join in, meet colleagues.",
-    icon: () => (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        className="tw-w-6 tw-h-6 tw-stroke-sky-600 tw-mr-1"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="m20.893 13.393-1.135-1.135a2.252 2.252 0 0 1-.421-.585l-1.08-2.16a.414.414 0 0 0-.663-.107.827.827 0 0 1-.812.21l-1.273-.363a.89.89 0 0 0-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.212.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 0 1-1.81 1.025 1.055 1.055 0 0 1-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.655-.261a2.25 2.25 0 0 1-1.383-2.46l.007-.042a2.25 2.25 0 0 1 .29-.787l.09-.15a2.25 2.25 0 0 1 2.37-1.048l1.178.236a1.125 1.125 0 0 0 1.302-.795l.208-.73a1.125 1.125 0 0 0-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 0 1-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 0 1-1.458-1.137l1.411-2.353a2.25 2.25 0 0 0 .286-.76m11.928 9.869A9 9 0 0 0 8.965 3.525m11.928 9.868A9 9 0 1 1 8.965 3.525"
         />
       </svg>
     ),
