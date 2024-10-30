@@ -45,41 +45,6 @@ There can be many reasons why the data of a project needs to be kept protected:
 
 There are also many levels of security that may be implemented, depending on the needs. Sometimes it will be enough to use a password-protected cloud-based server. In extreme cases encryption may be needed and also when data is transmitted between researchers or organisations. You should contact the [RDM Support Desk](mailto:rdm@vu.nl) to discuss available options, who may connect you to legal experts where sensitive data is concerned. Check the [Data Storage topic](../topics/data-storage.qmd) for links to find out more on campus solutions and cloud-based options.
 
-## Safe Transportation and Transfer
-
-It is important to protect your data during the entire data life cycle. To find out whether your data are secure during all stages of your research, think about your data flow: where do your data originate and where do they go to? If data need to be transported from one physical place to the other, or need to be transferred from one device to another, these actions should happen in a secure way.
-
-### Transferring digital data
-
-#### Online connection on campus
-
-If data collection takes place through a certain measurement device (e.g. MRI scanner, EEG scanner, eye tracker), the data need to be transferred from the measurement device to the storage location that you will use during your research project. Make sure that this transfer takes place in a secure way and also make a plan for the data on the measurement device; find out whether they need to be destroyed or can remain there.
-
-#### Online connection outside campus (with and without VUnetID)
-
-If you are doing fieldwork outside the campus and you have reliable and secure internet access, it is a good idea to upload the data to a storage location that is regularly backed up and secure, in order to prevent data loss. If you have a VUnetID, you can for example use:
-
-* [SURFdrive](https://www.surf.nl/en/store-and-share-your-files-securely-in-the-cloud-with-surfdrive) to store your data in a secure cloud service
-* [SURFfilesender](https://www.surf.nl/en/surffilesender-send-large-files-securely-and-encrypted) to send you data to a colleague or consortium partner, who can store your data in an appropriate place
-
-You can find more information about each of these storage options in the [Data Storage](../topics/data-storage.qmd) topic.
-
-If you need to receive data from colleagues in your project who don’t have access to these tools (e.g. because they are students, don’t work for a Dutch educational institution, or have no VUnetID), SURFdrive, SURFfilesender and Edugroepen can also be used:
-
-* [SURFdrive](https://www.surf.nl/en/store-and-share-your-files-securely-in-the-cloud-with-surfdrive): you can set up a ‘File drop’ folder. By sharing the link of this folder to the researchers who need to upload documents, you enable them to do anonymous uploads to this folder. These users have solely upload rights, no view or download rights. The folder can be protected with a password, which you preferably share with the uploaders through another channel.
-* [SURFfilesender](https://www.surf.nl/en/surffilesender-send-large-files-securely-and-encrypted): as a SURFfilesender user, you can send a voucher to someone who doesn’t have access to this tool. This person can use this voucher to send documents to you. These files can be encrypted.
-* 🔒 [Zivver i](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=01d4a69797cf09d0e553359fe153afdd)s an email plugin with which you can encrypt emails and attachments.
-
-#### Offline data outside campus
-
-If you are doing fieldwork in an area with limited internet access, you might use a portable device to initially store your data during the phase of data collection, such as a USB drive or an external hard drive. These data can be transferred to a storage location that is connected to the internet (e.g. G-drive, SURFdrive) later. Please make sure that the data on such portable devices are secured, by using encryption (and by transporting them safely by using a lockable briefcase or backpack).
-
-### Transporting physical data
-
-If physical objects need to be transported, you should check with the data manager at your department (if available) what options are available. Special briefcases that can be locked or secure backpacks may need to be used to keep informed consent forms or other sensitive data objects (USB drives etc.) secure during transport.
-
-### Data transportation and transfer across borders
-
-Some countries have rules to control the movement of encryption technology that enter or exit their borders. If you need to travel with an encrypted laptop to secure your data, for example during fieldwork abroad, please keep this in mind. If you need to transfer data in and out of such countries, please get advice on encryption and secure transportation at the [IT Service Desk](mailto:servicedesk.it@vu.nl).
-
-If you have general questions about how to protect your data when transporting or transferring them, you can contact the [IT Service Desk](mailto:servicedesk.it@vu.nl). In case of complex situations for which you need tailored support, you can consult the IT Relationship Manager representing the research domain, who can request capacity at IT for setting up an information security plan. Such a plan is usually based on documents which need to be completed beforehand, like a [Data Protection Impact Assessment](https://ubvu.github.io/open-handbook/guides/plan-and-design.html#what-is-a-dpia) and a [Data Classification](https://ubvu.github.io/open-handbook/guides/plan-and-design.html#data-classification). Please note that IT-capacity for tailored support is a paid service for which budget needs to be reserved.
+:::{.callout-tip}
+See also the [Safe Data Transfer](/topics/safe-data-transfer.qmd) topic for more information on how to transport and transfer data.
+:::
