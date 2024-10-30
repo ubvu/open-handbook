@@ -17,23 +17,22 @@ The FAIR data principles provide guidelines to improve the Findability, Accessib
 More information can be found in the section about the [FAIR data principles](./fair-principles.qmd).
 
 ## Unstructured metadata
-Most data documentation is an example of unstructured metadata. Unstructured metadata are mainly intended to provide more detailed information about the data and is primarily readable for humans. The type of research and the nature of the data influence what kind of unstructured metadata is necessary. Unstructured metadata are attached to the data in a file. The format of the file is chosen by the researcher. 
+Most data documentation (codebooks can be an exception) is an example of unstructured metadata. Unstructured metadata are mainly intended to provide more detailed information about the data and is primarily readable for humans. The type of research and the nature of the data influence what kind of unstructured metadata is necessary. Unstructured metadata are attached to the data in a file. The format of the file is chosen by the researcher. More explanation about structured metadata can be found on the [metadata page](./metadata.qmd).
 
 ### README
-A README file provides information about data and is intended to ensure that data can be correctly interpreted, by yourself or by others. A README file must be submitted along with the data.
+A README file provides information about data and is intended to ensure that data can be correctly interpreted, by yourself or by others. A README file is required whenever you are archiving or publishing data.
 
 Example of READMEs
 
 - [Guidelines for creating a README file – 4TU.ResearchData](https://data.4tu.nl/s/documents/Guidelines_for_creating_a_README_file.pdf)
 - [Guide to writing "readme"-style metatada - Cornell Data Services](https://data.research.cornell.edu/data-management/sharing/readme/)
+- [Guidelines for researchers of the VU Faculty of Behavioural and Movement Sciences on what a README file should contain](https://fgb-rdm.nl/rdm/archiving/ArchivingGuidelinesFull.html#subsection9)
 
 ### Codebook
 A Codebook is another way to describe the contents, structure and layout of the data. A well documented codebook is intended to be complete and self-explanatory and contains information about each variable in a data file. A codebook must be submitted along with the data.
 
-Examples of codebooks are
+There are several guides for creating a codebook available:
 - [Creating a codebook - Kent State University](https://libguides.library.kent.edu/SPSS/Codebooks)
+- [Creating a codebook - for researchers at the VU Faculty for Behavioural and Movement Sciences](https://fgb-rdm.nl/rdm/documentation/Codebooks.html)
 - [Codebook - Amsterdam Public Health](https://aph-qualityhandbook.org/set-up-conduct/methods-data-collection/2-2-quantitative-research/2-2-1-preparation/codebook/)
-- [DDI-Codebook - Data Documentation Initiative Alliance](https://ddialliance.org/Specification/DDI-Codebook/) 
-
-
-
+- [DDI-Codebook - Data Documentation Initiative Alliance](https://ddialliance.org/Specification/DDI-Codebook/)
