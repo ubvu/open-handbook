@@ -1,0 +1,22 @@
+---
+title: Software Licensing
+---
+
+Publishing scientific software under an appropriate license is crucial for ensuring its accessibility, usability, and integration into further research. A license states how other people may re-use your code under which circumstances. For scientific works, it is recommended (and often required by funders) that licenses are as permissible as possible. There are a large number of licenses out there, but below we list some very frequently used licenses in science. However, if none of these licenses fit your case, you can explore beyond, such as (choosealicense.com)[https://choosealicense.com/].
+
+- MIT License is a popular choice, due to its simplicity and permissiveness. It allows users to do almost anything they want with the software, including using, copying, modifying, and distributing it, provided they include the original copyright notice and license text. However, its permissiveness means that derivative works can be closed-source and do not need to mention that they use your code, which might not align with all scientific openness goals or general. In conclusion, when you have no issue with anyone using your code in any way they see fit, this is the way to go.
+- GNU General Public License (GPL) is another common option, designed to ensure that the software and any derivatives remain open-source. This encourages collaborative improvement of software but can be restrictive, as any software that includes GPL-licensed code must also be open-source under the GPL, potentially deterring commercial use or integration with proprietary software. In conclusion, when you want your code to be used by others, but only the code that uses your code is also open source, this is the way to go.
+- Apache License 2.0 is the “middle ground”, allowing for modification and distribution of the software and its derivative works, with the requirement that changes to the original code are documented. However, it is more complex than the MIT License and can be incompatible with GPL-licensed software. The specifics of this go beyond the scope of this guide. In conclusion, in general this license is more difficult to deal for users of your code as compared to MIT or GPL, so those remain the preferred options, but in some cases this may be the preferred option.
+
+This license is usually located in a file called LICENSE in the main folder of your repository.
+
+## Adding a license to GitHub
+
+On GitHub you add a license on creating a new repository (easy), just select the license from the drop-down menu. If your repository already exists, add a new file called "LICENCE" using the "+"-button on top of the repository (see below).
+
+![Location of file creation button](github_file_creation_button.png)
+ 
+One the next page, start type LICENCE as the file name, and a button to "Choose a licence template" should automatically pop up. Follow the steps to finish adding the license to the repository.
+ 
+Of course, it is also possible to include a custom license. However, this is generally not required.
+You should now see your license shown on the main page of your repository.
