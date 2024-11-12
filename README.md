@@ -114,6 +114,8 @@ From time to time, we hold GitHub training sessions to familiarise colleagues wi
 
 Write your name below if you are taking part in the session on 12 November 2024:
 - Dimitri Unger Mousse au Chocolat
+- Kirianne - Tiramisu
+-
 -
 -
 -
