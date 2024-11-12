@@ -113,7 +113,7 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 From time to time, we hold GitHub training sessions to familiarise colleagues with the contribution process. Get in touch with the [RDM Support Desk](mailto:rdm@vu.nl) to find out when they are held.
 
 Write your name below if you are taking part in the session on 12 November 2024:
-- ...
+- Reinout: chocolate mousse
 -
 -
 -
