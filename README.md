@@ -107,20 +107,3 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-
-## GitHub training sessions
-
-From time to time, we hold GitHub training sessions to familiarise colleagues with the contribution process. Get in touch with the [RDM Support Desk](mailto:rdm@vu.nl) to find out when they are held.
-
-Write your name below if you are taking part in the session on 12 November 2024:
-- Dimitri Unger Mousse au Chocolat
-- Kirianne - Tiramisu
--
--
--
--
--
-
-
-
-
