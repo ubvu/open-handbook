@@ -133,7 +133,6 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#open-access-and-open-science" id="toc-open-access-and-open-science" class="nav-link" data-scroll-target="#open-access-and-open-science">Open Access and Open Science</a></li>
   <li><a href="#publishing-your-data-in-a-data-journal" id="toc-publishing-your-data-in-a-data-journal" class="nav-link" data-scroll-target="#publishing-your-data-in-a-data-journal">Publishing your data in a data journal</a></li>
-  <li><a href="#data-and-software-licensing" id="toc-data-and-software-licensing" class="nav-link" data-scroll-target="#data-and-software-licensing">Data and Software Licensing</a></li>
   </ul></li>
   <li><a href="#dataset-registration" id="toc-dataset-registration" class="nav-link" data-scroll-target="#dataset-registration">Dataset Registration</a>
   <ul class="collapse">
@@ -279,11 +278,8 @@ ul.task-list li input[type="checkbox"] {
 <p>A persistent identifier (PID) is a durable reference to a digital dataset document, website or other object. It is a kind of <a href="https://www.isbn.org/about_isbn_standard">ISBN</a> for digital files. By using a persistent identifier, you make sure that your dataset will be findable well into the future. A <a href="https://en.wikipedia.org/wiki/Digital_object_identifier">DOI</a> or <a href="https://en.wikipedia.org/wiki/Handle_(computing)">Handle</a> are the commonly used PIDs. The <a href="../topics/selecting-data.html">data archiving options</a> at the VU commonly offer DOIs.</p>
 <p>Most data archives or repositories offer a persistent identifier and generate this automatically when research data are archived. For example, this is the case for DataverseNL at the VU. In Yoda at the VU, assigning a PID is possible, but does not happen automatically. Please get in touch with the <a href="mailto:rdm@vu.nl">RDM Support Desk</a> if you have questions about assigning a PID when you archive data in Yoda.</p>
 </section>
-</section>
-<section id="data-and-software-licensing" class="level3">
-<h3 class="anchored" data-anchor-id="data-and-software-licensing">Data and Software Licensing</h3>
-<section id="licensing-the-data" class="level5">
-<h5 class="anchored" data-anchor-id="licensing-the-data">Licensing the data</h5>
+<section id="licensing-the-data" class="level4">
+<h4 class="anchored" data-anchor-id="licensing-the-data">Licensing the data</h4>
 <p>A data licence agreement is a legal instrument that lets others know what they can and cannot do with your research data (and any documentation. scripts and metadata that are published with the data). It is important to consider what kind of limitations are relevant. An important component can be a guideline on how people should cite the dataset. Other components could be:</p>
 <ul>
 <li>Can people make copies or even distribute copies</li>
@@ -305,17 +301,43 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="https://opendatacommons.org/licenses/pddl/">Open Data Commons Public Domain Dedication and License (PDDL)</a></li>
 <li><a href="https://ufal.github.io/public-license-selector/">EUDAT B2SHARE license selection wizard</a>, which Pawel Kamocki (et al.) released under an open source license.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li>
 </ul>
-<section id="licensing-software" class="level6">
-<h6 class="anchored" data-anchor-id="licensing-software">Licensing software</h6>
-<p>As with data, it is important to <a href="../guides/process-and-analyze.html#open-software">license any software</a> that you write for your research. <a href="https://fair-software.eu/recommendations/license">You can find basic information about software licensing can be found</a>, but it is also important to keep the following in mind:</p>
+<p>Publishing research software under an appropriate license is crucial for its accessibility, usability, and further integration into research. Choosing a license usually happens right when you start developing the software or when you put it in a public repository, rather than when the software is finished and fully baked.</p>
+<p>A software license states how other people may re-use your code and under which circumstances. For research software, it is recommended (and often required by funders) that licenses are as permissible as possible.</p>
+<p>There are many licenses out there; below we list some very frequently used licenses in research software. However, if none of these licenses fit your case, there are several tools that can help you to <a href="https://choosealicense.com/">choose</a> a suitable software license. If you need guidance in choosing a licence for your software, get in touch with the <a href="mailto:rdm@vu.nl?subject=Research%20Software">RDM Support Desk</a>.</p>
+</section>
+<section id="mit-license" class="level4">
+<h4 class="anchored" data-anchor-id="mit-license">MIT License</h4>
+<p>The <a href="https://mit-license.org">MIT License</a> is a popular choice, due to its readability and permissiveness. It allows users to reuse the software for any purpose, including using, copying, modifying, and distributing it, provided they include the original copyright notice and license text.</p>
+<p>However, its permissiveness means that derivative works can be closed-source and do not need to mention that they use your code, which might not align with all scientific openness goals or general.</p>
+</section>
+<section id="gnu-gplv3" class="level4">
+<h4 class="anchored" data-anchor-id="gnu-gplv3">GNU GPLv3</h4>
+<p>The <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU General Public License (GPLv3)</a> is another option, designed to ensure that the software and any derivatives remain open-source.</p>
+<p>This encourages collaborative improvement of software. Any software that includes GPL-licensed code must also be open-source under the GPLpotentially deterring commercial use or integration with proprietary software. In conclusion, when you want your code to be used by others, but only the code that uses your code is also open source, this is the way to go.</p>
+</section>
+<section id="apache-license-2.0" class="level4">
+<h4 class="anchored" data-anchor-id="apache-license-2.0">Apache License 2.0</h4>
+<p>The <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a> allows for modification and distribution of the software and its derivative works, with the requirement that changes to the original code are documented.</p>
+<p>It is a more complex license than the MIT License and can be incompatible with GPL-licensed software. The specifics of this go beyond the scope of the handbook.</p>
+</section>
+<section id="adding-a-license-to-github" class="level4">
+<h4 class="anchored" data-anchor-id="adding-a-license-to-github">Adding a license to GitHub</h4>
+<p>On GitHub you add a license on creating a new repository, by selecting the license from the drop-down menu. If your repository already exists, add a new file called “LICENSE” using the “+”-button on top of the repository (see below).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../topics/github_file_creation_button.png" class="img-fluid figure-img"></p>
+<figcaption>Location of file creation button</figcaption>
+</figure>
+</div>
+<p>One the next page, start type LICENSE as the file name, and a button to “Choose a licence template” should automatically pop up. Follow the steps provided by GitHub to finish adding the license to the repository.</p>
+<p>You should now see your license shown on the main page of your repository.</p>
+</section>
+<section id="further-considerations" class="level4">
+<h4 class="anchored" data-anchor-id="further-considerations">Further considerations</h4>
 <ul>
-<li>For software, choosing a licence usually happens right when you start developing the software or when you put it in a public repository, rather than when the software is finished and fully baked. This makes sense: immediately when the software appears on a public repository, the software can be found and seen by others. Giving it a licence helps others to figure out what they can and can’t do with it.</li>
 <li>If you are reusing software or libraries written by someone else, you must stick to the clauses of the licence given to the original software/library;</li>
-<li>If you used proprietary software to write your code (e.g.&nbsp;SPSS syntax), your options in choosing a licence will probably be limited;</li>
 <li>When choosing a licence, do not just think about what <em>others</em> may do with the software, but also what <em>you</em> might want to do with the software in the future.</li>
 </ul>
-<p>There are several tools that can help you to <a href="https://choosealicense.com/">choose</a> a suitable sotware licence. If you need guidance in choosing a licence for your software, get in touch with the <a href="mailto:rdm@vu.nl?subject=Research%20Software">RDM Support Desk</a>.</p>
-</section>
 </section>
 </section>
 </section>
