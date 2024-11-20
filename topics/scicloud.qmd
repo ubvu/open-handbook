@@ -4,13 +4,18 @@ title: SciCloud
 IT for Research (ITvO) offers SciCloud, a service where server capacity can be purchased to support research applications. SciCloud virtual servers are easy to implement, easy to scale up and down and have competitive pricing based on agreed purchase. The virtual server can be placed in an external network so services running on it can be made internet accessible. It can also run on an internal network for easy security and access to some VU services.
 
 SciCloud is based on the open source middleware [OpenNebula (ONE)](https://opennebula.io/) and offers a service that allows users to quickly start with a virtual server based on available templates, or to upload one of their own virtual images. This concept is known as Infrastructure as a Service (IaaS).
-<!--
-## Use-cases of SciCloud
-Applications you want to run 24/7, for example:
-- Running a custom web service or application. For example a chatbot or linked data experiment.
-- Hosting a licensed server application for your group.
-- Running scheduled scripts.
--->
+
+Purchase of virtual server capacity takes place according to standard building blocks, combinations of the following two options can be purchased: 
+
+• Building Block 1: 1 CPU core with 2 GB RAM 
+
+• Building Block 2: 1 CPU core with 4 GB RAM 
+<!-- add a link to page on costs somewhere (? haven't found it yet) --> 
+
+Different configurations are possible in consultation and based on availability.  
+ 
+You are responsible for installing and maintaining any applications on the server yourself. On a consultancy basis, ITvO can assist in the configuration and optimization of the virtual server.
+
 ## SciCloud functionalities 
 - A virtual server with guaranteed CPU power and reserved RAM.
 - Full administrator (root) access, so that the server can be adapted to your own wishes.
@@ -28,14 +33,4 @@ It is possible to take _snapshots_ or _clones_ of the virtual server yourself. T
 ## Requesting process
 Via form on [ServiceNow](https://services.vu.nl/esc), go to: IT > My work field > Research > SciCloud > Order SciCloud capacity
 
-After you have requested a SciCloud virtual server, one of the IT for Research employees will schedule an interview to discuss ypur wishes and the cost. 
-
-Purchase of virtual server capacity takes place according to standard building blocks, so that the server capacity is used optimally. This means that combinations of the following two options can be purchased: 
-
-• Building Block 1: 1 CPU core with 2 GB RAM 
-• Building Block 2: 1 CPU core with 4 GB RAM 
-<!-- add a link to page on costs somewhere (? haven't found it yet) --> 
-
-Different configurations are possible in consultation and based on availability.  
- 
-You are responsible for installing and maintaining any applications on the server yourself. On a consultancy basis, ITvO can assist in the configuration and optimization of the virtual server.
+After you have requested a SciCloud virtual server, IT for Research will schedule an interview to discuss your wishes. 
