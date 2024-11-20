@@ -19,8 +19,8 @@ function Cta() {
             >
               View topics
             </a>
-            <a href="./pathways.html" className="tw-text-sm tw-font-semibold tw-leading-6 tw-text-white">
-              View pathways <span aria-hidden="true">→</span>
+            <a href="./guides.html" className="tw-text-sm tw-font-semibold tw-leading-6 tw-text-white">
+              View guides
             </a>
           </div>
         </div>

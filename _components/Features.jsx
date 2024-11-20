@@ -1,8 +1,7 @@
 const features = [
   {
-    name: "Collaborative",
-    description:
-      "Let's learn each other's best practices.",
+    name: <p className="tw-inline"><a href="https://rdm.vu.nl/contributing.html">Quality control</a></p>,
+    description: "We learn each other's best practices.",
     icon: () => (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -20,9 +19,8 @@ const features = [
     ),
   },
   {
-    name: "Responsive",
-    description:
-      "Things changed? This resource does too with your help.",
+    name: <p className="tw-inline"><a href="https://rdm.vu.nl/blog.html">Responsive</a></p>,
+    description: "With your help, we can respond to changes on a daily basis.",
     icon: () => (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -40,9 +38,8 @@ const features = [
     ),
   },
   {
-    name: "Open source",
-    description:
-      "Share and copy without permission. Join the discussions.",
+    name: <p className="tw-inline"><a href="https://github.com/ubvu/open-handbook">Open source</a></p>,
+    description: "Share and copy without permission. Join the discussions.",
     icon: () => (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -60,9 +57,8 @@ const features = [
     ),
   },
   {
-    name: "Quality control",
-    description:
-      "All content is reviewed periodically by specialists.",
+    name: <p className="tw-inline"><a href="https://rdm.vu.nl/editors-guide.html">Quality control</a></p>,
+    description: "All content is reviewed periodically by VU specialists.",
     icon: () => (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -80,29 +76,8 @@ const features = [
     ),
   },
   {
-    name: "Local",
-    description:
-      "This is for VU, by VU. Join in, meet colleagues.",
-    icon: () => (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        className="tw-w-6 tw-h-6 tw-stroke-sky-600 tw-mr-1"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="m20.893 13.393-1.135-1.135a2.252 2.252 0 0 1-.421-.585l-1.08-2.16a.414.414 0 0 0-.663-.107.827.827 0 0 1-.812.21l-1.273-.363a.89.89 0 0 0-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.212.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 0 1-1.81 1.025 1.055 1.055 0 0 1-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.655-.261a2.25 2.25 0 0 1-1.383-2.46l.007-.042a2.25 2.25 0 0 1 .29-.787l.09-.15a2.25 2.25 0 0 1 2.37-1.048l1.178.236a1.125 1.125 0 0 0 1.302-.795l.208-.73a1.125 1.125 0 0 0-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 0 1-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 0 1-1.458-1.137l1.411-2.353a2.25 2.25 0 0 0 .286-.76m11.928 9.869A9 9 0 0 0 8.965 3.525m11.928 9.868A9 9 0 1 1 8.965 3.525"
-        />
-      </svg>
-    ),
-  },
-  {
     name: "Flexible",
-    description:
-      "Shape the content to your needs. Find topics or pathways.",
+    description: "Shape the content to your needs. Find topics or guides.",
     icon: () => (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -119,6 +94,26 @@ const features = [
       </svg>
     ),
   },
+  {
+    name: "One stop shop",
+    description: "Find all the information you need in one place.",
+    icon: () => (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={1.5}
+        stroke="currentColor"
+        className="tw-w-6 tw-h-6 tw-stroke-sky-600 tw-mr-1"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z"
+        />
+      </svg>
+    ),
+  },
 ];
 
 function Features() {
@@ -127,14 +122,11 @@ function Features() {
       <div className="tw-bg-white tw-py-12 sm:tw-py-16">
         <div className="tw-mx-auto tw-max-w-7xl tw-px-6 lg:tw-px-8">
           <div className="tw-mx-auto tw-max-w-2xl sm:tw-text-center">
-            {/* <h2 className="tw-text-base tw-font-semibold tw-leading-7 tw-text-sky-600">
-              Everything you need
-            </h2> */}
             <h2 className="tw-mt-2 tw-text-3xl tw-font-bold tw-tracking-tight tw-text-sky-900 sm:tw-text-4xl">
               Benefits
             </h2>
             <p className="tw-mt-6 tw-text-lg tw-leading-8 tw-text-gray-600">
-              VU has plenty of resources already. Why use this one?
+              Why use the Research Support Handbook?
             </p>
           </div>
         </div>
@@ -145,9 +137,7 @@ function Features() {
               return (
                 <div key={feature.name} className="tw-flex tw-flex-col">
                   <dt className="tw-inline tw-font-semibold tw-text-gray-900">
-                    <Component
-                      aria-hidden="true"
-                      />
+                    <Component aria-hidden="true" />
                     {feature.name}
                   </dt>{" "}
                   <dd className="tw-inline">{feature.description}</dd>

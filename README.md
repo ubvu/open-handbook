@@ -4,11 +4,11 @@ Welcome to the source code for the VU Research Support Handbook! If you want to 
 
 ## What is this?
 
-This is a community led handbook for all things related to research at VU. The handbook is split into **topics** and **pathways**. 
+This is a community led handbook for all things related to research at VU. The handbook is split into **topics** and **guides**. 
 
 > [Topics](https://ubvu.github.io/open-handbook/topics.html) - self-contained descriptions of specific things relevant to your work at VU Amsterdam.
 
-> [Pathways](https://ubvu.github.io/open-handbook/pathways.html) - a collection of topics in a meaningful order to achieve a goal
+> [Guides](https://ubvu.github.io/open-handbook/guides.html) - a collection of topics in a meaningful order to achieve a goal
 
 All information in the handbook is specific to VU's local context. We are happy to hear if things are (un)helpful and you work at VU Amsterdam. 
 
@@ -25,6 +25,7 @@ Our requirements for blogs:
 We will assess blogs on a case by case basis before including them. Please mind that we may not immediately post your blog and submitting one does not entitle you to it being posted.
 
 ## Contributors
+
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -54,6 +55,12 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 <a href="https://github.com/ubvu/open-handbook/commits?author=Elisa-on-GitHub">Elisa-on-GitHub</a>
 </td>
 <td align="center">
+<a href="https://github.com/jensdebruijn">
+<img src="https://avatars.githubusercontent.com/u/2176353?v=4" width="100px;" alt=""/>
+</a><br>
+<a href="https://github.com/ubvu/open-handbook/commits?author=jensdebruijn">jensdebruijn</a>
+</td>
+<td align="center">
 <a href="https://github.com/jhrudey">
 <img src="https://avatars.githubusercontent.com/u/35424147?v=4" width="100px;" alt=""/>
 </a><br>
@@ -71,11 +78,27 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 </a><br>
 <a href="https://github.com/ubvu/open-handbook/commits?author=Karvovskaya">Karvovskaya</a>
 </td>
+</tr>
+
+
+<tr>
 <td align="center">
 <a href="https://github.com/peer35">
 <img src="https://avatars.githubusercontent.com/u/5236397?v=4" width="100px;" alt=""/>
 </a><br>
 <a href="https://github.com/ubvu/open-handbook/commits?author=peer35">peer35</a>
+</td>
+<td align="center">
+<a href="https://github.com/vansteph">
+<img src="https://avatars.githubusercontent.com/u/102951422?u=01c1b894fd1d9c3d2a40bba6dad86a5475227693&v=4" width="100px;" alt=""/>
+</a><br>
+<a href="https://github.com/ubvu/open-handbook/commits?author=vansteph">vansteph</a>
+</td>
+<td align="center">
+<a href="https://github.com/TMHofstra">
+<img src="https://avatars.githubusercontent.com/u/171931947?u=f595688955917247eb8ec3000262c15654d9528d&v=4" width="100px;" alt=""/>
+</a><br>
+<a href="https://github.com/ubvu/open-handbook/commits?author=TMHofstra">TMHofstra</a>
 </td>
 </tr>
 
@@ -84,6 +107,3 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-
-
-

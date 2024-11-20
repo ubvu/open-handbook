@@ -1,0 +1,23 @@
+---
+title: "Guides"
+listing:
+  contents: guides
+  type: grid
+  categories: true
+include-in-header:
+  text: |
+    <style type="text/css">
+    .quarto-grid-item .listing-item-img-placeholder {
+      background-color: #0080c9;
+    }
+    </style>
+---
+
+::: {.callout-tip}
+
+## What is a guide?
+
+These guides help you find answers to questions that come up while doing research. They help guide you through various topics at once.
+
+Missing a guide? You can [submit questions you are dealing with using the Contribution portal](https://ez-github-contributor.netlify.app/).
+:::

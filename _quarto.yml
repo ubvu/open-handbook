@@ -19,14 +19,12 @@ website:
     title: false
     collapse-below: lg
     left:
-      - text: "Home"
-        file: index.qmd
-      - text: "Blog"
-        file: blog.qmd
       - text: "Topics"
         file: topics.qmd
-      - text: "Pathways"
-        file: pathways.qmd
+      - text: "Guides"
+        file: guides.qmd
+      - text: "Blog"
+        file: blog.qmd
       - contributing.qmd
     tools:
       - icon: github
@@ -34,7 +32,7 @@ website:
         text: GitHub VU Open Handbook
       # - icon: rss
       #   href: https://quarto.org/docs/blog/index.xml
-      #   text: Quarto Blog RSS   
+      #   text: Quarto Blog RSS
   page-footer:
     left:
       - text: "CC0 Public Domain Dedication"
@@ -42,8 +40,9 @@ website:
     center:
       - text: "About"
         href: about.qmd
-      # - text: "FAQ"
-      #   href: docs/faq/index.qmd
+      - href: editors-guide.qmd
+      - text: "GHOST Collective"
+        href: https://ghostcollective.github.io/games.html
     right:
       - text: "By VU & Liberate Science GmbH"
 
@@ -51,14 +50,17 @@ bibliography: references.bib
 
 resources:
   - "public/*"
+  - CNAME
 format:
   html:
     toc: true
-    theme: 
+    theme:
       - cosmo # https://bootswatch.com/
       - custom.scss # https://quarto.org/docs/output-formats/html-themes.html#theme-options
     code-copy: true
     code-overflow: wrap
-
+# from: "markdown+emoji"
+filters:
+  - utils/include-files.lua
 execute:
   freeze: auto

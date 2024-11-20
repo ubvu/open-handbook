@@ -13,24 +13,23 @@ function Hero() {
         </div>
         <div className="tw-text-center">
           <h1 className="tw-text-4xl tw-font-bold tw-tracking-tight tw-text-gray-900 sm:tw-text-6xl">
-            Quality information, curated by your VU community
+            Find quality information on research practices at VU Amsterdam
           </h1>
-          <p className="tw-mt-6 tw-text-lg tw-leading-8 tw-text-gray-600">
-            Research is a collective effort. The Research Support Handbook helps you find and
-            create the resources you need to get it done.
+          <p className="tw-mt-6 tw-text-base tw-leading-8 tw-text-gray-600">
+            The Research Support Handbook helps you learn about topics relevant to your research. It also guides you through specific issues you might encounter in your modern day research. All of the information on these pages is curated by VU staff, for VU staff. The handbook is updated on a daily basis.
           </p>
           <div className="tw-mt-10 tw-flex tw-items-center tw-justify-center tw-gap-x-6">
             <a
               href="./topics.html"
               className="tw-rounded-md tw-bg-sky-600 tw-px-3.5 tw-py-2.5 tw-text-sm tw-font-semibold tw-text-white tw-shadow-sm hover:tw-bg-sky-500 focus-visible:tw-outline focus-visible:tw-outline-2 focus-visible:tw-outline-offset-2 focus-visible:tw-outline-sky-600"
             >
-              View all topics
+              View topics
             </a>
             <a
-              href="./contributing.html"
+              href="./guides.html"
               className="tw-text-sm tw-font-semibold tw-leading-6 tw-text-gray-900"
             >
-              Learn how to contribute <span aria-tw-hidden="true">→</span>
+              View guides
             </a>
           </div>
         </div>

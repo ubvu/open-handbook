@@ -1,0 +1,47 @@
+---
+title: Why was rdm.vu.nl down for ten hours?
+date: "2024-10-22"
+author:
+  - Chris Hartgerink
+  - Lena Karvovskaya
+categories: ["downtime"]
+---
+
+On Friday October 18th 2024, we experienced around ten hours of downtime on the `rdm.vu.nl` website. The downtime started around 10AM after merging changes to the handbook and was resolved the same day, by 8PM.[^1]
+
+[^1]: `ubvu.github.io/open-handbook` remained online during this entire time, and functions indirectly as a backup.
+
+## Root cause
+
+The downtime started after merging changes to the handbook in commit [669b065](https://github.com/ubvu/open-handbook/commit/669b06528731f95566d605d65b9c3a507f58bced). These changes themselves, did not cause the downtime. The root cause was an incorrect configuration in the deployment of the webpage, which inadvertently removed the `rdm.vu.nl` domain name from the GitHub settings every time we made changes in the handbook and redeployed the website. This resulted in 404 errors that the page could not be found.
+
+We first observed this issue on Thursday, one day prior to the downtime, in commit [678ff88](https://github.com/ubvu/open-handbook/commit/678ff8843dc018f76661b24ee25c64bff5c459df). We proposed a fix for this issue in [#220](https://github.com/ubvu/open-handbook/pull/220), before the downtime started.
+
+## How could the downtime happen if the fix was clear?
+
+The fix for the domain specification was not merged in time for two reasons.
+
+### Reason 1
+
+At this time, we require two reviews before merging changes to the handbook. The fix was proposed at 1.11PM on Thursday, and did not receive the required reviews by the time the downtime happened (reason 1). However, this was a technical administration task and could have been merged immediately, as this supercedes regular review procedures.
+
+### Reason 2
+
+The domain specification fix was not immediately merged to allow time to pass and ensure the fix was appropriate upon further reflection. This is because administrator @chartgerink both proposed the fix and would also be the one to supercede the "two reviews" requirement. Due to travel, the administrator forgot about it in the morning, and only saw the messages about the downtime at 8PM. At that time, the fix was quickly merged and the downtime resolved.
+
+## Improvements
+
+The domain configuration is corrected and the deployment ensures the domain name is re-added to the GitHub settings every time there are changes to the handbook. This is now automated, which ensures that the domain name will not be removed inadvertently when future changes are incorporated.
+
+However, we also learned that critical administration fixes should not be left open for longer than is absolutely necessary. Here it was left open for longer than absolutely necessary due to travel, and a second administrator could have caught this issue sooner. This means we should work towards resilient reporting mechanisms to escalate such critical issues, and build capacity in the editor team to ensure no one person is responsible for merging critical fixes that are already available.
+
+## Acknowledgements
+
+We would like to thank the editors for dealing with the stress from this inadvertent issue. We also thank the community for their patience as we only recently migrated to `rdm.vu.nl` and figure out these initial unexpected hurdles.
+
+## References
+
+- Root cause for the downtime first observed in commit [678ff88](https://github.com/ubvu/open-handbook/commit/678ff8843dc018f76661b24ee25c64bff5c459df)
+- Proposed a fix for the root cause in [pull Request #220](https://github.com/ubvu/open-handbook/pull/220)
+- Downtime started at [commit 669b065](https://github.com/ubvu/open-handbook/commit/669b06528731f95566d605d65b9c3a507f58bced) is where the 
+- Resolved downtime in [commit 678ff88](https://github.com/ubvu/open-handbook/commit/678ff8843dc018f76661b24ee25c64bff5c459df)

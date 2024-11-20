@@ -3,5 +3,16 @@ title: "Topics"
 listing:
   contents: topics
   type: table
+  table-striped: true
+  table-hover: true
+  fields: [title, reading-time]
 ---
 
+::: {.callout-tip}
+
+## What is a topic?
+
+A topic is a specific subject that can be helpful to know about in your daily research. Each page can be read on its own. These pages are a quick way to learn about specific things.
+
+Missing a topic? You can [submit suggestion using the Contribution portal](https://ez-github-contributor.netlify.app/).
+:::
