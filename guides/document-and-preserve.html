@@ -124,11 +124,12 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#selecting-data-for-archiving" id="toc-selecting-data-for-archiving" class="nav-link active" data-scroll-target="#selecting-data-for-archiving">Selecting Data for Archiving</a></li>
   <li><a href="#data-set-packaging-which-files-should-be-part-of-my-dataset" id="toc-data-set-packaging-which-files-should-be-part-of-my-dataset" class="nav-link" data-scroll-target="#data-set-packaging-which-files-should-be-part-of-my-dataset">Data Set Packaging: Which Files should be Part of my Dataset?</a></li>
-  <li><a href="#documenting-your-data" id="toc-documenting-your-data" class="nav-link" data-scroll-target="#documenting-your-data">Documenting your data</a></li>
-  <li><a href="#codebooks" id="toc-codebooks" class="nav-link" data-scroll-target="#codebooks">Codebooks</a></li>
+  <li><a href="#fair-data-principles" id="toc-fair-data-principles" class="nav-link" data-scroll-target="#fair-data-principles">FAIR data principles</a></li>
+  <li><a href="#unstructured-metadata" id="toc-unstructured-metadata" class="nav-link" data-scroll-target="#unstructured-metadata">Unstructured metadata</a></li>
+  <li><a href="#metadata-standards" id="toc-metadata-standards" class="nav-link" data-scroll-target="#metadata-standards">Metadata standards</a></li>
   <li><a href="#controlled-vocabularies-classifications" id="toc-controlled-vocabularies-classifications" class="nav-link" data-scroll-target="#controlled-vocabularies-classifications">Controlled Vocabularies &amp; Classifications</a></li>
-  <li><a href="#metadata-datasets" id="toc-metadata-datasets" class="nav-link" data-scroll-target="#metadata-datasets">Metadata &amp; Datasets</a></li>
-  <li><a href="#archiving-fair-principles" id="toc-archiving-fair-principles" class="nav-link" data-scroll-target="#archiving-fair-principles">Archiving &amp; FAIR Principles</a></li>
+  <li><a href="#metadata-levels" id="toc-metadata-levels" class="nav-link" data-scroll-target="#metadata-levels">Metadata levels</a></li>
+  <li><a href="#dataset-registration" id="toc-dataset-registration" class="nav-link" data-scroll-target="#dataset-registration">Dataset registration</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/guides/document-and-preserve.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -218,133 +219,99 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>See the topic <a href="../topics/metadata.html">Metadata</a> for more information about documenting your data.</p>
 <p>Depending on the research project it may be that more than one dataset is stored in more than one repository. Make sure that each consortium partner that collects data also stores all necessary data that is required for transparency and verification. A <a href="../guides/plan-and-design.html#collaboration">Consortium Agreement</a> and <a href="../guides/plan-and-design.html#data-management-plan">Data Management Plan</a> will include information on who is responsible for archiving the data.</p>
-</section>
-<section id="documenting-your-data" class="level3">
-<h3 class="anchored" data-anchor-id="documenting-your-data">Documenting your data</h3>
-<p>Data documentation aims to describe the collected data to make it easier to use, retrieve and manage. Data documentation takes various forms and describes the data on multiple levels. The description of the dataset and data object is also referred to as metadata, i.e.&nbsp;data about the data. One way to do add metadata is to attach a readme file to your data. <a href="https://danstraining.moodlecloud.com/mod/page/view.php?id=275">ResearchData NL</a> offers guidance for this. The CESSDA has made very detailed guidance available for creating <a href="https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide/2.-Organise-Document/Documentation-and-metadata">documentation and metadata</a> for your data.</p>
+<p>By creating documentation about your research data you can make it easier for yourself or for others to manage, find, assess and use your data. The process of documenting means to describe your data and the methods by which they were collected, processed and analysed. The documentation or descriptions are also referred to as metadata, i.e.&nbsp;data about data. These metadata can take various forms and can describe data on different levels.</p>
+<p>An example that is frequently used to illustrate the importance of metadata is the use of the label on a can of soup. The label tells you what kind of soup the can contains, what ingredients are used, who made it, when it expires and how you should prepare the soup for consumption.</p>
+<p>When you are documenting data, you should take into account that there are different kinds of metadata and that these metadata are governed by various standards. These include, but are not limited to:</p>
+<ol type="1">
+<li><a href="#fair-data-principles">FAIR data principles</a>: a set of principles to make data Findable, Accessible, Interoperable and Reusable.</li>
+<li><a href="#unstructured-metadata">Guidelines for unstructured metadata</a>: mostly research domain-specific guidelines on how to create READMEs or Codebooks to describe data.</li>
+<li><a href="../topics/metadata.html">Standards for structured metadata</a>: generic or research domain-specific standards to describe data.</li>
+</ol>
+<p>The CESSDA has made very detailed guidance available for creating <a href="https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide/2.-Organise-Document/Documentation-and-metadata">documentation and metadata</a> for your data.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../topics/../public/metadata.png" class="img-fluid figure-img"></p>
-<figcaption>An image layering five different kinds of metadata, with the FAIR principles on the outside, followed by discipline metadata standards, project documentation, metadata data set, and metadata data object.</figcaption>
+<p><img src="../topics/../public/data_documentation.png" class="img-fluid figure-img"></p>
+<figcaption>A layered diagram with the FAIR principles as the outermost layer, followed by an inner layer for Metadata. Within Metadata there are two separate cores, one for unstructured and one for structured metadata. Unstructured metadata contains README and codebook; Structured metadata contains Generic and Specific.</figcaption>
 </figure>
 </div>
-<p>In addition to describing their own datasets and objects, researchers can cross-refer to the project proposal where other researchers can find information about the research, e.g.&nbsp;aims and goals, methodology and data collection, the persons responsible for the project etc. The type of research and the nature of the data also influence what kind of documentation is necessary.</p>
-<p>Different types of data are governed by different standards (see also the image above), and these should be taken into account when documenting data. These requirements include, but are not limited to:</p>
+</section>
+<section id="fair-data-principles" class="level3">
+<h3 class="anchored" data-anchor-id="fair-data-principles">FAIR data principles</h3>
+<p>The FAIR data principles provide guidelines to improve the Findability, Accessibility, Interoperability, and Reuse of digital assets. The principles emphasise machine-actionability, i.e., the capacity of computational systems to find, access, interoperate, and reuse data with none or minimal human intervention.</p>
+<p>More information can be found in the section about the <a href="../topics/fair-principles.html">FAIR data principles</a>.</p>
+</section>
+<section id="unstructured-metadata" class="level3">
+<h3 class="anchored" data-anchor-id="unstructured-metadata">Unstructured metadata</h3>
+<p>Most data documentation is an example of unstructured metadata. Unstructured metadata are mainly intended to provide more detailed information about the data and is primarily readable for humans. The type of research and the nature of the data influence what kind of unstructured metadata is necessary. Unstructured metadata are attached to the data in a file. The format of the file is chosen by the researcher. More explanation about structured metadata can be found on the <a href="../topics/metadata.html">metadata page</a>.</p>
+<section id="readme" class="level4">
+<h4 class="anchored" data-anchor-id="readme">README</h4>
+<p>A README file provides information about data and is intended to ensure that data can be correctly interpreted, by yourself or by others. A README file is required whenever you are archiving or publishing data.</p>
+<p>Example of READMEs</p>
+<ul>
+<li><a href="https://data.4tu.nl/s/documents/Guidelines_for_creating_a_README_file.pdf">Guidelines for creating a README file – 4TU.ResearchData</a></li>
+<li><a href="https://data.research.cornell.edu/data-management/sharing/readme/">Guide to writing “readme”-style metatada - Cornell Data Services</a></li>
+<li><a href="https://fgb-rdm.nl/rdm/archiving/ArchivingGuidelinesFull.html#subsection9">Guidelines for researchers of the VU Faculty of Behavioural and Movement Sciences on what a README file should contain</a></li>
+</ul>
+</section>
+<section id="codebook" class="level4">
+<h4 class="anchored" data-anchor-id="codebook">Codebook</h4>
+<p>A Codebook is another way to describe the contents, structure and layout of the data. A well documented codebook is intended to be complete and self-explanatory and contains information about each variable in a data file. A codebook must be submitted along with the data.</p>
+<p>There are several guides for creating a codebook available:</p>
+<ul>
+<li><a href="https://libguides.library.kent.edu/SPSS/Codebooks">Creating a codebook - Kent State University</a></li>
+<li><a href="https://fgb-rdm.nl/rdm/documentation/Codebooks.html">Creating a codebook - for researchers at the VU Faculty for Behavioural and Movement Sciences</a></li>
+<li><a href="https://aph-qualityhandbook.org/set-up-conduct/methods-data-collection/2-2-quantitative-research/2-2-1-preparation/codebook/">Codebook - Amsterdam Public Health</a></li>
+<li><a href="https://ddialliance.org/Specification/DDI-Codebook/">DDI-Codebook - Data Documentation Initiative Alliance</a></li>
+</ul>
+<p>Metadata provide information about your data. Structured metadata are intended to provide this information in a standardised way. The structured metadata are readable for both humans and machines. It can be used by data catalogues, for example DataCite Commons.</p>
+<p>The standardisation of metadata involves the following aspects:</p>
 <ol type="1">
-<li><a href="../topics/fair-principles.html">FAIR data principles</a>: the set of principles (Findable, Accessible, Interoperable, Reusable) for data exchange.</li>
-<li>Disciplinary <a href="../topics/metadata.html">metadata standards</a>: guidelines for documenting data. This can refer to the dataset documentation, the object description, or both. Disciplinary metadata standards can document the dataset as a whole or as a data object (see number 5).</li>
-<li>Project documentation: the description of a project involving data collection. This documentation is often used for research verification and provenance.</li>
-<li><a href="../topics/metadata.html#metadata-datasets">Metadata dataset</a>: the description of a dataset, often used for discovering datasets within a repository.</li>
-<li>Metadata of a data object: name definition of a data object, often set up by the researcher to structure data or by the research group for collaboration during the project.</li>
+<li>Elements: rules about the fields that must be used to describe an object, for example the <code>title</code>, <code>author</code> and <code>publicationDate</code>.</li>
+<li>Values: rules about the values that must be used within specific elements. Controlled vocabularies, classifications and Persistent Identifiers are used to reduce ambiguity and ensure consistency, for example by using a term from a controlled vocabulary like the Medical Subject HEadings (MeSH) as a <code>subject</code> and an Perstent Identifier such as an ORCID to identify a <code>person</code>.</li>
+<li>Formats: rules about the formats used to exchange metadata, for example JSON or XML.</li>
 </ol>
 </section>
-<section id="codebooks" class="level3">
-<h3 class="anchored" data-anchor-id="codebooks">Codebooks</h3>
-<p>A codebook is a technical description of the data that were collected for a particular purpose in one or more datasets. It describes how the data are arranged in the computer file or files and what the parts or variables (numbers and letters) mean. A good description may also include specific instructions on how to use and interpret the data properly.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../topics/../public/spreadsheet.gif" class="img-fluid figure-img"></p>
-<figcaption>A low resolution screenshot of a spreadsheet</figcaption>
-</figure>
-</div>
-<p>Like any other kind of “book,” some codebooks are better than others. The best codebooks include the following elements:</p>
+</section>
+<section id="metadata-standards" class="level3">
+<h3 class="anchored" data-anchor-id="metadata-standards">Metadata standards</h3>
+<p>Metadata standards allow for easier exchange of metadata and harvesting of the metadata by search engines. Many certified archives use a metadata standard for the descriptions. If you choose a data repository or registry, you should find out which metadata standard they use. At the VU the following standards are used:</p>
 <ul>
-<li>Description of the study: who did it, why they did it, how they did it</li>
-<li>Sampling information: what was the population studied, how was the sample drawn, what was the response rate</li>
-<li>Technical information about the files themselves: number of observations, record length, number of records per observation, etc.</li>
-<li>Structure of the data within the file: hierarchical, multiple cards, etc.</li>
-<li>Details about the data: the meaning of the variables, whether they are character or numeric, and if numeric, what format</li>
-<li>Text of the questions and responses: some even include how many people responded a particular way.</li>
+<li>Yoda uses the DataCite metadata standard</li>
+<li>DataverseNL uses the Dublin Core metadata standard</li>
+<li>The VU Research Information System PURE uses the CERIF metadata standard</li>
 </ul>
-<p>More information about codebooks can be found on the website of the <a href="https://libguides.library.kent.edu/SPSS/Codebooks">Kent State University Library</a> (specifically useful if you want to create a codebook in SPSS) and on the website of the <a href="https://ddialliance.org/training/getting-started-new-content/create-a-codebook">Data Documentation Initiative</a> (specifically useful for researchers in the social sciences).</p>
+<p>Many archives implement or make use of specific metadata standards. The UK Digital Curation Centre (DCC) provides an <a href="https://www.dcc.ac.uk/guidance/standards/metadata">overview of metadata standards for different disciplines</a>. The list is a great and useful resource in establishing and carrying out your research methodology.</p>
 </section>
 <section id="controlled-vocabularies-classifications" class="level3">
 <h3 class="anchored" data-anchor-id="controlled-vocabularies-classifications">Controlled Vocabularies &amp; Classifications</h3>
-<p>When a metadata section in a Data Management Plan template includes a question on the used ontology (if any) what is usually meant is: is there a specific vocabulary or classification system used. Controlled vocabularies are created by domain experts to help translate ontological concepts as well as to organise knowledge for subsequent (information) retrieval. <a href="https://en.wikipedia.org/wiki/Controlled_vocabulary">Controlled vocabularies</a> (<a href="https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide/3.-Process/Adapt-your-DMP-part-3">CESSDA</a>: “structured controlled vocabularies”) are intended to reduce ambiguity that is inherent in normal human languages where the same concept can be given different names and to ensure consistency. Controlled vocabularies are used in subject indexing schemes, subject headings, thesauri, taxonomies and other knowledge organization systems. Some vocabularies are very internationally accepted and standardized and may even become an <a href="https://www.iso.org/standards.html">ISO standard</a> or a regional standard/classification. Controlled vocabularies can be broad in scope or very limited to a specific field. When a Data Management Plan template includes a question on the used ontology (if any), what is usually meant is: is there a specific vocabulary or classification system used.</p>
-<p>Examples are:</p>
+<p>Controlled vocabularies are lists of terms created by domain experts to refer to a specific phenomenon or event. Controlled vocabularies are intended to reduce ambiguity that is inherent in normal human languages where the same concept can be given different names and to ensure consistency. <a href="https://en.wikipedia.org/wiki/Controlled_vocabulary">Controlled vocabularies</a> are used in subject indexing schemes, subject headings, thesauri, taxonomies and other knowledge organisation systems. Some vocabularies are very internationally accepted and standardised and may even become an <a href="https://www.iso.org/standards.html">ISO standard</a> or a regional standard/classification. Controlled vocabularies can be broad in scope or very limited to a specific field. When a Data Management Plan template includes a question on the used ontology (if any), what is usually meant is: is there a specific vocabulary or classification system used? The National Bioinformatics Infrastructure Sweden gives some more explanation about controlled vocabularies and ontologies <a href="https://nbisweden.github.io/module-metadata-dm-practices/02-ontologies/index.html">here</a>. In short, an ontology does not only describe terms, but also indicates relationships between these terms.</p>
+<p>Examples of controlled vocabularies are:</p>
 <ul>
-<li><a href="https://www.getty.edu/research/publications/electronic_publications/cdwa/">CDWA</a> (Categories for the Description of Works of Art)</li>
-<li><a href="https://www.getty.edu/research/tools/vocabularies/tgn/index.html">Getty Thesaurus of Geographic names</a></li>
-<li><a href="https://ec.europa.eu/eurostat/web/nuts/background">NUTS</a> (Eurostat)</li>
-<li><a href="https://meshb.nlm.nih.gov/">Medical Subject HEadings</a> (MeSH)</li>
+<li><a href="https://www.getty.edu/research/publications/electronic_publications/cdwa/">CDWA (Categories for the Description of Works of Art)</a></li>
+<li><a href="https://www.getty.edu/research/tools/vocabularies/tgn/">Getty Thesaurus of Geographic names</a></li>
+<li><a href="https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/territorial-units-statistics">NUTS (Nomenclature of territorial units for statistics)</a></li>
+<li><a href="https://www.nlm.nih.gov/mesh/meshhome.html">Medical Subject HEadings (MeSH)</a></li>
 </ul>
-<p>Many examples of vocabularies and classification systems can be found at the FAIRsharing.org website. It has a large list for <a href="https://fairsharing.org/standards/">multiple disciplines.</a> If you are working on new concepts or new ideas and are using or creating your own ontology/terminology, be sure to include them as part of the metadata documentation in your dataset (for example as part of your <a href="../guides/document-and-preserve.html#codebooks">codebook</a>).</p>
-<p>Controlled vocabularies help make searching for and re-using information or data much easier when they are part of a machine-readable metadata scheme or system.</p>
+<p>Many examples of vocabularies and classification systems can be found at the <a href="https://fairsharing.org/">FAIRsharing.org website</a>. It has a large list for multiple disciplines. If you are working on new concepts or new ideas and are using or creating your own ontology/terminology, be sure to include them as part of the metadata documentation in your dataset (for example as part of your <a href="../data-documentation.qmd#codebook">codebook</a>.</p>
 </section>
-<section id="metadata-datasets" class="level3">
-<h3 class="anchored" data-anchor-id="metadata-datasets">Metadata &amp; Datasets</h3>
-<p>Metadata is descriptive information about data / information. Metadata allow humans and programs to more easily understand and interpret information or data. Controlled vocabularies are often used to help make searching for and re-using information or data much easier when they are part of a machine-readable metadata scheme or system.</p>
-<p>The CESSDA has created <a href="https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide/2.-Organise-Document/Documentation-and-metadata">helpful guidance</a> about creating metadata.</p>
-<p>There are three main levels of metadata: Data assets, Dataset documentation and Dataset registration (<a href="https://guides.lib.utexas.edu/metadata-basics/intro">more information</a>).</p>
-<section id="data-assets" class="level4">
-<h4 class="anchored" data-anchor-id="data-assets">Data assets</h4>
-<p>On a micro-level there are four functional categories of metadata standards for datasets themselves that describe elements like structure, content, values (definitions, see also code book), and data formats (CSV, XML, etc.). Additionally, research groups often use a discipline’s standards to also describe data objects using naming conventions. There are, however, other guidelines for naming conventions and document versioning which can be useful for all documents, independent of whether they are research data or not. Often The table below gives an example of this.</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 9%">
-<col style="width: 27%">
-<col style="width: 10%">
-<col style="width: 52%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Data Stage</th>
-<th>Dataset description</th>
-<th>Type of data</th>
-<th>Versioning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Raw data</td>
-<td>Consumer spending data</td>
-<td>Text files</td>
-<td><code>2017-02-23_ConsumerSpending_1.2.txt</code></td>
-</tr>
-<tr class="even">
-<td>Processed data</td>
-<td>Anonymized Transcription of patient interviews</td>
-<td>Word files, Excel</td>
-<td><code>2014-11-17_RawTranscription_Checked1.docx</code></td>
-</tr>
-<tr class="odd">
-<td>Analysed data</td>
-<td>Photo Images with descriptions</td>
-<td>TIFF files</td>
-<td><code>C:\Images\Raw\2016-07-01_Subject1-V2.tiff    C:\Images\Clean\2016-07-01_Subject1-H1c.tiff</code></td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td>Word files</td>
-<td><code>C:\Images\Clean\Descript\2016-07-01_Subject1-H1c.Docx</code></td>
-</tr>
-</tbody>
-</table>
+<section id="metadata-levels" class="level3">
+<h3 class="anchored" data-anchor-id="metadata-levels">Metadata levels</h3>
+<p>Finally a distinction can be made on the level of description. Metadata can be about the data as a whole or about part of the data. It can depend on the research domain and the tools that are used on how many levels the data can be described. In repositories like Yoda and DataverseNL it is common practice to only create structured metadata on the level of the data as a whole. The Consortium of European Social Science Data Archives (CESSDA) explains this distinction for several types of data in their <a href="https://dmeg.cessda.eu/Data-Management-Expert-Guide/2.-Organise-Document/Documentation-and-metadata">Data Management Expert Guide</a>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../topics/../public/metadata_levels.png" class="img-fluid figure-img"></p>
+<figcaption>Flowchart indicating a project with a Folder A and Folder B, where Folder A has File 1 and File 2. The project, Folder A, and File 1, have linked metadata to them.</figcaption>
+</figure>
+</div>
 </section>
-<section id="dataset-documentation" class="level4">
-<h4 class="anchored" data-anchor-id="dataset-documentation">Dataset documentation</h4>
-<p>On this general, descriptive, level the metadata concerns <a href="../guides/document-and-preserve.html#data-set-packaging-which-files-should-be-part-of-my-dataset">data packaging</a> &amp; <a href="../guides/document-and-preserve.html#documenting-your-data">metadata documentation</a> on the dataset. It can include items like:</p>
-<ul>
-<li>Readme files that lists the period of research, collaborators, a short description of the research as well as the elements within the dataset</li>
-<li><a href="../guides/document-and-preserve.html#codebooks">Code Book</a>: it provides descriptions, explanations or definitions of variables in a dataset</li>
-<li>Policy documents describing the context of the research as well as referring to standard operating procedures used</li>
-<li>Re-use guidelines (or <a href="../guides/publish-and-share.html#licensing-the-data">licences</a>) describing if there are re-use restrictions or limitations, including contact details.</li>
-</ul>
-</section>
-<section id="dataset-registration" class="level4">
-<h4 class="anchored" data-anchor-id="dataset-registration">Dataset registration</h4>
+<section id="dataset-registration" class="level3">
+<h3 class="anchored" data-anchor-id="dataset-registration">Dataset registration</h3>
 <p>When you want to make sure that your dataset is findable it is recommended that the elements of the description of your dataset are made according to a certain metadata standard that allows for easier exchange of metadata and harvesting of the metadata by search engines. Many certified archives use a metadata standard for the descriptions. If you choose a data repository or registry, you should find out which metadata standard they use. At the VU the following standards are used:</p>
 <ul>
 <li><a href="../guides/publish-and-share.html#deposit-your-data">DataverseNL</a> and <a href="https://easy.dans.knaw.nl/ui/home">DANS</a> use the <a href="https://dublincore.org/specifications/dublin-core/">Dublin Core</a> metadata standard</li>
 <li>The VU Research Portal <a href="../guides/publish-and-share.html#register-your-dataset-in-pure">PURE</a> uses the <a href="https://eurocris.org/services/main-features-cerif">CERIF</a> metadata standard</li>
 </ul>
 <p>Many archives implement or make use of specific metadata standards. The UK Digital Curation Centre (DCC) provides an overview of metadata standards for different disciplines. The list is a great and useful resource in establishing and carrying out your research methodology. Go to the <a href="https://www.dcc.ac.uk/guidance/standards/metadata">overview of metadata standards</a>. More important tips are available at <a href="../guides/publish-and-share.html#dataset-registration">Dataset &amp; Publication</a>.</p>
-</section>
-</section>
-<section id="archiving-fair-principles" class="level3">
-<h3 class="anchored" data-anchor-id="archiving-fair-principles">Archiving &amp; FAIR Principles</h3>
-<p>The Dutch Techcentre for Life Sciences has developed open source software code to enable you to make your dataset’s metadata FAIR. The software is being developed through GitHub and full details on the&nbsp;<a href="https://github.com/FAIRDataTeam/FAIRDataPoint-Spec">FAIR Data Point Software</a>&nbsp;are available there. The Dutch eScience Center also developed Fair Data Point software, of which full details are, similarly, available on <a href="https://github.com/NLeSC/fairdatapoint">GitHub</a>.</p>
 
 
 </section>

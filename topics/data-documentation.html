@@ -121,8 +121,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#documenting-your-data" id="toc-documenting-your-data" class="nav-link active" data-scroll-target="#documenting-your-data">Documenting your data</a></li>
-  <li><a href="#codebooks" id="toc-codebooks" class="nav-link" data-scroll-target="#codebooks">Codebooks</a></li>
+  <li><a href="#fair-data-principles" id="toc-fair-data-principles" class="nav-link active" data-scroll-target="#fair-data-principles">FAIR data principles</a></li>
+  <li><a href="#unstructured-metadata" id="toc-unstructured-metadata" class="nav-link" data-scroll-target="#unstructured-metadata">Unstructured metadata</a>
+  <ul class="collapse">
+  <li><a href="#readme" id="toc-readme" class="nav-link" data-scroll-target="#readme">README</a></li>
+  <li><a href="#codebook" id="toc-codebook" class="nav-link" data-scroll-target="#codebook">Codebook</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/data-documentation.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -148,46 +152,52 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="documenting-your-data" class="level2">
-<h2 class="anchored" data-anchor-id="documenting-your-data">Documenting your data</h2>
-<p>Data documentation aims to describe the collected data to make it easier to use, retrieve and manage. Data documentation takes various forms and describes the data on multiple levels. The description of the dataset and data object is also referred to as metadata, i.e.&nbsp;data about the data. One way to do add metadata is to attach a readme file to your data. <a href="https://danstraining.moodlecloud.com/mod/page/view.php?id=275">ResearchData NL</a> offers guidance for this. The CESSDA has made very detailed guidance available for creating <a href="https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide/2.-Organise-Document/Documentation-and-metadata">documentation and metadata</a> for your data.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../public/metadata.png" class="img-fluid figure-img"></p>
-<figcaption>An image layering five different kinds of metadata, with the FAIR principles on the outside, followed by discipline metadata standards, project documentation, metadata data set, and metadata data object.</figcaption>
-</figure>
-</div>
-<p>In addition to describing their own datasets and objects, researchers can cross-refer to the project proposal where other researchers can find information about the research, e.g.&nbsp;aims and goals, methodology and data collection, the persons responsible for the project etc. The type of research and the nature of the data also influence what kind of documentation is necessary.</p>
-<p>Different types of data are governed by different standards (see also the image above), and these should be taken into account when documenting data. These requirements include, but are not limited to:</p>
+<p>By creating documentation about your research data you can make it easier for yourself or for others to manage, find, assess and use your data. The process of documenting means to describe your data and the methods by which they were collected, processed and analysed. The documentation or descriptions are also referred to as metadata, i.e.&nbsp;data about data. These metadata can take various forms and can describe data on different levels.</p>
+<p>An example that is frequently used to illustrate the importance of metadata is the use of the label on a can of soup. The label tells you what kind of soup the can contains, what ingredients are used, who made it, when it expires and how you should prepare the soup for consumption.</p>
+<p>When you are documenting data, you should take into account that there are different kinds of metadata and that these metadata are governed by various standards. These include, but are not limited to:</p>
 <ol type="1">
-<li><a href="../topics/fair-principles.html">FAIR data principles</a>: the set of principles (Findable, Accessible, Interoperable, Reusable) for data exchange.</li>
-<li>Disciplinary <a href="../topics/metadata.html">metadata standards</a>: guidelines for documenting data. This can refer to the dataset documentation, the object description, or both. Disciplinary metadata standards can document the dataset as a whole or as a data object (see number 5).</li>
-<li>Project documentation: the description of a project involving data collection. This documentation is often used for research verification and provenance.</li>
-<li><a href="../topics/metadata.html#metadata-datasets">Metadata dataset</a>: the description of a dataset, often used for discovering datasets within a repository.</li>
-<li>Metadata of a data object: name definition of a data object, often set up by the researcher to structure data or by the research group for collaboration during the project.</li>
+<li><a href="#fair-data-principles">FAIR data principles</a>: a set of principles to make data Findable, Accessible, Interoperable and Reusable.</li>
+<li><a href="#unstructured-metadata">Guidelines for unstructured metadata</a>: mostly research domain-specific guidelines on how to create READMEs or Codebooks to describe data.</li>
+<li><a href="../topics/metadata.html">Standards for structured metadata</a>: generic or research domain-specific standards to describe data.</li>
 </ol>
-</section>
-<section id="codebooks" class="level2">
-<h2 class="anchored" data-anchor-id="codebooks">Codebooks</h2>
-<p>A codebook is a technical description of the data that were collected for a particular purpose in one or more datasets. It describes how the data are arranged in the computer file or files and what the parts or variables (numbers and letters) mean. A good description may also include specific instructions on how to use and interpret the data properly.</p>
+<p>The CESSDA has made very detailed guidance available for creating <a href="https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide/2.-Organise-Document/Documentation-and-metadata">documentation and metadata</a> for your data.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../public/spreadsheet.gif" class="img-fluid figure-img"></p>
-<figcaption>A low resolution screenshot of a spreadsheet</figcaption>
+<p><img src="../public/data_documentation.png" class="img-fluid figure-img"></p>
+<figcaption>A layered diagram with the FAIR principles as the outermost layer, followed by an inner layer for Metadata. Within Metadata there are two separate cores, one for unstructured and one for structured metadata. Unstructured metadata contains README and codebook; Structured metadata contains Generic and Specific.</figcaption>
 </figure>
 </div>
-<p>Like any other kind of “book,” some codebooks are better than others. The best codebooks include the following elements:</p>
+<section id="fair-data-principles" class="level2">
+<h2 class="anchored" data-anchor-id="fair-data-principles">FAIR data principles</h2>
+<p>The FAIR data principles provide guidelines to improve the Findability, Accessibility, Interoperability, and Reuse of digital assets. The principles emphasise machine-actionability, i.e., the capacity of computational systems to find, access, interoperate, and reuse data with none or minimal human intervention.</p>
+<p>More information can be found in the section about the <a href="../topics/fair-principles.html">FAIR data principles</a>.</p>
+</section>
+<section id="unstructured-metadata" class="level2">
+<h2 class="anchored" data-anchor-id="unstructured-metadata">Unstructured metadata</h2>
+<p>Most data documentation is an example of unstructured metadata. Unstructured metadata are mainly intended to provide more detailed information about the data and is primarily readable for humans. The type of research and the nature of the data influence what kind of unstructured metadata is necessary. Unstructured metadata are attached to the data in a file. The format of the file is chosen by the researcher. More explanation about structured metadata can be found on the <a href="../topics/metadata.html">metadata page</a>.</p>
+<section id="readme" class="level3">
+<h3 class="anchored" data-anchor-id="readme">README</h3>
+<p>A README file provides information about data and is intended to ensure that data can be correctly interpreted, by yourself or by others. A README file is required whenever you are archiving or publishing data.</p>
+<p>Example of READMEs</p>
 <ul>
-<li>Description of the study: who did it, why they did it, how they did it</li>
-<li>Sampling information: what was the population studied, how was the sample drawn, what was the response rate</li>
-<li>Technical information about the files themselves: number of observations, record length, number of records per observation, etc.</li>
-<li>Structure of the data within the file: hierarchical, multiple cards, etc.</li>
-<li>Details about the data: the meaning of the variables, whether they are character or numeric, and if numeric, what format</li>
-<li>Text of the questions and responses: some even include how many people responded a particular way.</li>
+<li><a href="https://data.4tu.nl/s/documents/Guidelines_for_creating_a_README_file.pdf">Guidelines for creating a README file – 4TU.ResearchData</a></li>
+<li><a href="https://data.research.cornell.edu/data-management/sharing/readme/">Guide to writing “readme”-style metatada - Cornell Data Services</a></li>
+<li><a href="https://fgb-rdm.nl/rdm/archiving/ArchivingGuidelinesFull.html#subsection9">Guidelines for researchers of the VU Faculty of Behavioural and Movement Sciences on what a README file should contain</a></li>
 </ul>
-<p>More information about codebooks can be found on the website of the <a href="https://libguides.library.kent.edu/SPSS/Codebooks">Kent State University Library</a> (specifically useful if you want to create a codebook in SPSS) and on the website of the <a href="https://ddialliance.org/training/getting-started-new-content/create-a-codebook">Data Documentation Initiative</a> (specifically useful for researchers in the social sciences).</p>
+</section>
+<section id="codebook" class="level3">
+<h3 class="anchored" data-anchor-id="codebook">Codebook</h3>
+<p>A Codebook is another way to describe the contents, structure and layout of the data. A well documented codebook is intended to be complete and self-explanatory and contains information about each variable in a data file. A codebook must be submitted along with the data.</p>
+<p>There are several guides for creating a codebook available:</p>
+<ul>
+<li><a href="https://libguides.library.kent.edu/SPSS/Codebooks">Creating a codebook - Kent State University</a></li>
+<li><a href="https://fgb-rdm.nl/rdm/documentation/Codebooks.html">Creating a codebook - for researchers at the VU Faculty for Behavioural and Movement Sciences</a></li>
+<li><a href="https://aph-qualityhandbook.org/set-up-conduct/methods-data-collection/2-2-quantitative-research/2-2-1-preparation/codebook/">Codebook - Amsterdam Public Health</a></li>
+<li><a href="https://ddialliance.org/Specification/DDI-Codebook/">DDI-Codebook - Data Documentation Initiative Alliance</a></li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
