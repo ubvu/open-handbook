@@ -2,35 +2,47 @@
 title: Data documentation
 ---
 
-## Documenting your data
+By creating documentation about your research data you can make it easier for yourself or for others to manage, find, assess and use your data. The process of documenting means to describe your data and the methods by which they were collected, processed and analysed. The documentation or descriptions are also referred to as metadata, i.e. data about data. These metadata can take various forms and can describe data on different levels.
 
-Data documentation aims to describe the collected data to make it easier to use, retrieve and manage. Data documentation takes various forms and describes the data on multiple levels. The description of the dataset and data object is also referred to as metadata, i.e. data about the data. One way to do add metadata is to attach a readme file to your data. [ResearchData NL](https://danstraining.moodlecloud.com/mod/page/view.php?id=275) offers guidance for this. The CESSDA has made very detailed guidance available for creating [documentation and metadata](https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide/2.-Organise-Document/Documentation-and-metadata) for your data.
+An example that is frequently used to illustrate the importance of metadata is the use of the label on a can of soup. The label tells you what kind of soup the can contains, what ingredients are used, who made it, when it expires and how you should prepare the soup for consumption.
 
-![An image layering five different kinds of metadata, with the FAIR principles on the outside, followed by discipline metadata standards, project documentation, metadata data set, and metadata data object.](../public/metadata.png)
+When you are documenting data, you should take into account that there are different kinds of metadata and that these metadata are governed by various standards. These include, but are not limited to:
 
-In addition to describing their own datasets and objects, researchers can cross-refer to the project proposal where other researchers can find information about the research, e.g. aims and goals, methodology and data collection, the persons responsible for the project etc. The type of research and the nature of the data also influence what kind of documentation is necessary.
+1. [FAIR data principles](#fair-data-principles): a set of principles to make data Findable, Accessible, Interoperable and Reusable. 
+2. [Guidelines for unstructured metadata](#unstructured-metadata): mostly research domain-specific guidelines on how to create READMEs or Codebooks to describe data.
+3. [Standards for structured metadata](../topics/metadata.qmd): generic or research domain-specific standards to describe data.
 
-Different types of data are governed by different standards (see also the image above), and these should be taken into account when documenting data. These requirements include, but are not limited to:
+The CESSDA has made very detailed guidance available for creating [documentation and metadata](https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide/2.-Organise-Document/Documentation-and-metadata) for your data.
 
-1. [FAIR data principles](../topics/fair-principles.qmd): the set of principles (Findable, Accessible, Interoperable, Reusable) for data exchange.
-2. Disciplinary [metadata standards](../topics/metadata.qmd): guidelines for documenting data. This can refer to the dataset documentation, the object description, or both. Disciplinary metadata standards can document the dataset as a whole or as a data object (see number 5).
-3. Project documentation: the description of a project involving data collection. This documentation is often used for research verification and provenance.
-4. [Metadata dataset](../topics/metadata.qmd#metadata-datasets): the description of a dataset, often used for discovering datasets within a repository.
-5. Metadata of a data object: name definition of a data object, often set up by the researcher to structure data or by the research group for collaboration during the project.
+![A layered diagram with the FAIR principles as the outermost layer, followed by an inner layer for Metadata. Within Metadata there are two separate cores, one for unstructured and one for structured metadata. Unstructured metadata contains README and codebook; Structured metadata contains Generic and Specific.](../public/data_documentation.png)
 
-## Codebooks
+## FAIR data principles
 
-A codebook is a technical description of the data that were collected for a particular purpose in one or more datasets. It describes how the data are arranged in the computer file or files and what the parts or variables (numbers and letters) mean. A good description may also include specific instructions on how to use and interpret the data properly.
+The FAIR data principles provide guidelines to improve the Findability, Accessibility, Interoperability, and Reuse of digital assets. The principles emphasise machine-actionability, i.e., the capacity of computational systems to find, access, interoperate, and reuse data with none or minimal human intervention. 
 
-![A low resolution screenshot of a spreadsheet](../public/spreadsheet.gif)
+More information can be found in the section about the [FAIR data principles](../topics/fair-principles.qmd).
 
-Like any other kind of "book," some codebooks are better than others. The best codebooks include the following elements:
+## Unstructured metadata
 
-* Description of the study: who did it, why they did it, how they did it
-* Sampling information: what was the population studied, how was the sample drawn, what was the response rate
-* Technical information about the files themselves: number of observations, record length, number of records per observation, etc.
-* Structure of the data within the file: hierarchical, multiple cards, etc.
-* Details about the data: the meaning of the variables, whether they are character or numeric, and if numeric, what format
-* Text of the questions and responses: some even include how many people responded a particular way.
+Most data documentation is an example of unstructured metadata. Unstructured metadata are mainly intended to provide more detailed information about the data and is primarily readable for humans. The type of research and the nature of the data influence what kind of unstructured metadata is necessary. Unstructured metadata are attached to the data in a file. The format of the file is chosen by the researcher. More explanation about structured metadata can be found on the [metadata page](../topics/metadata.qmd).
 
-More information about codebooks can be found on the website of the [Kent State University Library](https://libguides.library.kent.edu/SPSS/Codebooks) (specifically useful if you want to create a codebook in SPSS) and on the website of the [Data Documentation Initiative](https://ddialliance.org/training/getting-started-new-content/create-a-codebook) (specifically useful for researchers in the social sciences).
+### README
+
+A README file provides information about data and is intended to ensure that data can be correctly interpreted, by yourself or by others. A README file is required whenever you are archiving or publishing data.
+
+Example of READMEs
+
+- [Guidelines for creating a README file – 4TU.ResearchData](https://data.4tu.nl/s/documents/Guidelines_for_creating_a_README_file.pdf)
+- [Guide to writing "readme"-style metatada - Cornell Data Services](https://data.research.cornell.edu/data-management/sharing/readme/)
+- [Guidelines for researchers of the VU Faculty of Behavioural and Movement Sciences on what a README file should contain](https://fgb-rdm.nl/rdm/archiving/ArchivingGuidelinesFull.html#subsection9)
+
+### Codebook
+
+A Codebook is another way to describe the contents, structure and layout of the data. A well documented codebook is intended to be complete and self-explanatory and contains information about each variable in a data file. A codebook must be submitted along with the data.
+
+There are several guides for creating a codebook available:
+
+- [Creating a codebook - Kent State University](https://libguides.library.kent.edu/SPSS/Codebooks)
+- [Creating a codebook - for researchers at the VU Faculty for Behavioural and Movement Sciences](https://fgb-rdm.nl/rdm/documentation/Codebooks.html)
+- [Codebook - Amsterdam Public Health](https://aph-qualityhandbook.org/set-up-conduct/methods-data-collection/2-2-quantitative-research/2-2-1-preparation/codebook/)
+- [DDI-Codebook - Data Documentation Initiative Alliance](https://ddialliance.org/Specification/DDI-Codebook/)
