@@ -1,0 +1,31 @@
+---
+title: SciStor
+---
+
+The storage service SciStor (Storage for Scientists) is intended for storing large amounts of research data. SciStor can be used from any VU workstation and, via utilities, from home or on the road. The access rights can be set relatively fine-grained.  
+
+SciStor is hosted by IT for Research (ITvO) on the VU campus and is therefore close to lab equipment, workstations, the [BAZIS HPC cluster](../topics/bazis.qmd) and SciCloud. 
+
+If desired, automatic backups can be made of the data.
+
+Because SciStor is mainly intended for high performance on-campus use, access is only possible with a VUnetId.
+<!-- add information on obtaining vunetid's for guests -->
+
+## Storage space reservation 
+
+Storage space on SciStor is provided on a reservation basis. This means that the amount of space requested is guaranteed to be available. If desired, the reservation can be adjusted up or down very quickly, subject to a few exceptions. The owner of the SciStor share receives monthly usage reports. The report provides insight on used and available space. 
+<!-- link to cost model -->
+
+## Backups 
+
+SciStor shares can be backed up using the 'snapshot' technique. This makes it possible, among other things, for Windows users of a SciStor share to retrieve data from the backup themselves. The backup data is stored at an off-campus datacenter to ensure your data protected against disasters. 
+
+## Requesting a SciStor share
+
+SciStor is available for all VU research groups. Minimum storage space that can be requested is 100 GB, for a minimum of three months. The capacity can be increased or decreased in units of 100 GB if needed.
+
+You can find the request form on 🔒 [ServiceNow](https://services.vu.nl/esc), go to: IT > My work field > Research > SciStor > Realisation of new storage for research (SciStor)
+
+After submitting the application, IT for Research will contact you to schedule an interview to discuss naming the SciStor share, how the backups work, who should have access, etc.
+
+Most SciStor configurations can be delivered within one or two days. More complex configurations may take a little longer.
