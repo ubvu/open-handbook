@@ -593,14 +593,61 @@ References:
 
 Yoda is a data storage solution for research data at the Vrije Universiteit Amsterdam. You can use the icommands to upload and download data from Yoda directly from the cluster.
 
-To use the icommands a configuration file in your home folder is required.
-<https://yoda.vu.nl/site/getting-started/icommands.html#configuration>
+To do so, you need to configure iRODS, such that it links to your account on Yoda by taking the following steps:
 
-After configuration use `iinit` to connect, use a  Data Access Password, similar to a  WebDAV connection.
+1. Point the cluster to the Yoda server by creating a file called `.irods/irods_environment.json` in this folder. The file should look like this, replacing \<EMAIL-ADDRESS\> with your VU email:
 
-Find an overview of the icommands here: <https://docs.irods.org/master/icommands/user/>. Check the  `ipwd`, `ils`, `icd`, `iput`, `iget` en `irsync` commands for navigation and data transfer.
+   ```json
+   {
+      "irods_host": "portal.yoda.vu.nl",
+      "irods_port": 1247,
+      "irods_home": "/vu/home",
+      "irods_user_name": "\<EMAIL-ADDRESS\>",
+      "irods_zone_name": "vu",
+      "irods_authentication_scheme": "pam",
+      "irods_encryption_algorithm": "AES-256-CBC",
+      "irods_encryption_key_size": 32,
+      "irods_encryption_num_hash_rounds": 16,
+      "irods_encryption_salt_size": 8,
+      "irods_client_server_negotiation": "request_server_negotiation"
+   }
+   ```
 
-Your project folder is located at `/vu/home`
+2. Then, you need to set a password on the Yoda portal, and use this password to authenticate the iRODS connection. Go to `https://portal.yoda.vu.nl/user/data_access`, and generate a password.
+3. You can connect to Yoda using the `iinit` command. You will be prompted for the password you just generated.
 
-[icommands](https://docs.irods.org/master/icommands/user/)
-[Yoda-VU](https://yoda.vu.nl)
+Finally, you can use the icommands to navigate and transfer data between the cluster and Yoda. These commands are generally similar to Linux commands .
+
+For example, to list the contents of your home directory on Yoda, you can use the `ils` command:
+
+```sh
+ils
+```
+
+This will show you the contents of your home directory on Yoda. The project folders you have access to is located at `/vu/home`.
+
+To set the current working directory to a specific folder on Yoda, you can use the `icd` command (make sure to replace `<PROJECT_FOLDER>` with the folder you want to navigate to):
+
+```sh
+icd /vu/home/<PROJECT_FOLDER>
+```
+
+To upload a file to Yoda, you can use the `iput` command with `.` being the current working directory (you can also set the destination folder by replacing `.` with the desired folder):
+
+```sh
+iput file.txt .
+```
+
+Then, to delete the file from the cluster, you can use the `irm` command:
+
+```sh
+irm file.txt
+```
+
+To synchronize a local directory with a directory on Yoda, you can use the `irsync` command. In this command `i:` refers to the iRODS server. Optionally specify `-r` to recursively copy the contents of the subdirectories. The following example recursively copies the contents of the local directory `test` to the directory `i:test` on Yoda:
+
+```sh
+irsync -r test i:test
+```
+
+You can find an overview of all icommands [here](https://docs.irods.org/master/icommands/user/).
