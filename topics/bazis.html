@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -70,10 +70,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-29e2c20b02301cfff04dc8050bf30c7e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-6c55fe718d7beef5da5db529fd12474b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -684,11 +684,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="connect-to-vu-yodairods-with-icommands" class="level3">
 <h3 class="anchored" data-anchor-id="connect-to-vu-yodairods-with-icommands">Connect to VU Yoda/iRODS with icommands</h3>
 <p>Yoda is a data storage solution for research data at the Vrije Universiteit Amsterdam. You can use the icommands to upload and download data from Yoda directly from the cluster.</p>
-<p>To use the icommands a configuration file in your home folder is required. <a href="https://yoda.vu.nl/site/getting-started/icommands.html#configuration" class="uri">https://yoda.vu.nl/site/getting-started/icommands.html#configuration</a></p>
-<p>After configuration use <code>iinit</code> to connect, use a Data Access Password, similar to a WebDAV connection.</p>
-<p>Find an overview of the icommands here: <a href="https://docs.irods.org/master/icommands/user/" class="uri">https://docs.irods.org/master/icommands/user/</a>. Check the <code>ipwd</code>, <code>ils</code>, <code>icd</code>, <code>iput</code>, <code>iget</code> en <code>irsync</code> commands for navigation and data transfer.</p>
-<p>Your project folder is located at <code>/vu/home</code></p>
-<p><a href="https://docs.irods.org/master/icommands/user/">icommands</a> <a href="https://yoda.vu.nl">Yoda-VU</a></p>
+<p>To do so, you need to configure iRODS, such that it links to your account on Yoda by taking the following steps:</p>
+<ol type="1">
+<li><p>Point the cluster to the Yoda server by creating a file called <code>.irods/irods_environment.json</code> in this folder. The file should look like this, replacing &lt;EMAIL-ADDRESS&gt; with your VU email:</p>
+<div class="sourceCode" id="cb37"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>   <span class="dt">"irods_host"</span><span class="fu">:</span> <span class="st">"portal.yoda.vu.nl"</span><span class="fu">,</span></span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>   <span class="dt">"irods_port"</span><span class="fu">:</span> <span class="dv">1247</span><span class="fu">,</span></span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>   <span class="dt">"irods_home"</span><span class="fu">:</span> <span class="st">"/vu/home"</span><span class="fu">,</span></span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>   <span class="dt">"irods_user_name"</span><span class="fu">:</span> <span class="st">"</span><span class="er">\&lt;</span><span class="st">EMAIL-ADDRESS</span><span class="er">\&gt;</span><span class="st">"</span><span class="fu">,</span></span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>   <span class="dt">"irods_zone_name"</span><span class="fu">:</span> <span class="st">"vu"</span><span class="fu">,</span></span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a>   <span class="dt">"irods_authentication_scheme"</span><span class="fu">:</span> <span class="st">"pam"</span><span class="fu">,</span></span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a>   <span class="dt">"irods_encryption_algorithm"</span><span class="fu">:</span> <span class="st">"AES-256-CBC"</span><span class="fu">,</span></span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a>   <span class="dt">"irods_encryption_key_size"</span><span class="fu">:</span> <span class="dv">32</span><span class="fu">,</span></span>
+<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a>   <span class="dt">"irods_encryption_num_hash_rounds"</span><span class="fu">:</span> <span class="dv">16</span><span class="fu">,</span></span>
+<span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a>   <span class="dt">"irods_encryption_salt_size"</span><span class="fu">:</span> <span class="dv">8</span><span class="fu">,</span></span>
+<span id="cb37-12"><a href="#cb37-12" aria-hidden="true" tabindex="-1"></a>   <span class="dt">"irods_client_server_negotiation"</span><span class="fu">:</span> <span class="st">"request_server_negotiation"</span></span>
+<span id="cb37-13"><a href="#cb37-13" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Then, you need to set a password on the Yoda portal, and use this password to authenticate the iRODS connection. Go to <code>https://portal.yoda.vu.nl/user/data_access</code>, and generate a password.</p></li>
+<li><p>You can connect to Yoda using the <code>iinit</code> command. You will be prompted for the password you just generated.</p></li>
+</ol>
+<p>Finally, you can use the icommands to navigate and transfer data between the cluster and Yoda. These commands are generally similar to Linux commands .</p>
+<p>For example, to list the contents of your home directory on Yoda, you can use the <code>ils</code> command:</p>
+<div class="sourceCode" id="cb38"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="ex">ils</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This will show you the contents of your home directory on Yoda. The project folders you have access to is located at <code>/vu/home</code>.</p>
+<p>To set the current working directory to a specific folder on Yoda, you can use the <code>icd</code> command (make sure to replace <code>&lt;PROJECT_FOLDER&gt;</code> with the folder you want to navigate to):</p>
+<div class="sourceCode" id="cb39"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="ex">icd</span> /vu/home/<span class="op">&lt;</span>PROJECT_FOLDER<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>To upload a file to Yoda, you can use the <code>iput</code> command with <code>.</code> being the current working directory (you can also set the destination folder by replacing <code>.</code> with the desired folder):</p>
+<div class="sourceCode" id="cb40"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="ex">iput</span> file.txt .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Then, to delete the file from the cluster, you can use the <code>irm</code> command:</p>
+<div class="sourceCode" id="cb41"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="ex">irm</span> file.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>To synchronize a local directory with a directory on Yoda, you can use the <code>irsync</code> command. In this command <code>i:</code> refers to the iRODS server. Optionally specify <code>-r</code> to recursively copy the contents of the subdirectories. The following example recursively copies the contents of the local directory <code>test</code> to the directory <code>i:test</code> on Yoda:</p>
+<div class="sourceCode" id="cb42"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="ex">irsync</span> <span class="at">-r</span> test i:test</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>You can find an overview of all icommands <a href="https://docs.irods.org/master/icommands/user/">here</a>.</p>
 
 
 </section>
@@ -777,8 +804,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -889,7 +914,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
