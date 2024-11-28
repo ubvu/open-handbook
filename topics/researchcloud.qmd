@@ -1,23 +1,21 @@
 ---
 title: SURF Research Cloud
 ---
-## Platform for research and collaboration
+## What is it?
 [SURF Research Cloud](https://www.surf.nl/en/services/surf-research-cloud) is a portal where you easily build a virtual research environment. You can use preconfigured workspaces and datasets or add them yourself. Institutions, research communities and suppliers can contribute to Research Cloud's functionality and catalogue by integrating their computing and data services. 
 
-SURF Research Cloud is hosted at the SURF datacenter in Amsterdam. Documentation for Research Cloud can be found on the [SURF User Knowledge Base](https://servicedesk.surf.nl/wiki/display/WIKI/SURF+Research+Cloud).
+SURF Research Cloud is hosted at the SURF datacenter in Amsterdam. 
 
-## Research Cloud functionalities
-- Growing catalog of pre-built application environments, allowing easy install.
-- Easy connection to your data on [Research Drive](researchdrive.qmd).
-- Access to GPU resources possible.
-- Uses [SRAM (SURF Research Access Management)](https://www.surf.nl/diensten/surf-research-access-management) for secure authentication to your environment.
-- Easily scale your environment up or down.
-- Pay for use, inactive systems incur no cost.
+## What can it be used for?
+SURF Research Cloud enables you to run 1 or more servers with applications that can be accessible over the internet.
 
-Wondering if SURF Research Cloud fits your research needs? Please contact [IT for Research](mailto:itvo.it@vu.nl)
+- Hosting web applications, these can be connected to SRAM for secure authentication. You can easily start more servers to increase availability and preformance.
 
-## How to gain access
-<!-- Maybe this is too long for a topic and needs to go in a guide. Problem is these steps are not that well described in the SURF wiki and we know researchers currently get lost -->
+- Running a desktop environment with analysis tools, use your favorite desktop tools on an environment with more performance. Unlike [SciCloud][./scicloud.qmd] GPU resources are available. You can easily connect environment to your data on Research Drive or Yoda.
+
+- Hosting a highly secure research environment where sensitive data cannot leave the VRE: [SURF SANE](https://www.surf.nl/en/themes/research-infrastructure/sane-secure-environment-for-analysing-sensitive-data).
+
+## How to request access
 All VU researchers can get access to SURF Research Cloud. To start building an environment in Research Cloud you need 2 things:
 
 **1. An SRAM Collaboration connected to Research Cloud**
@@ -40,4 +38,10 @@ There are 2 ways to obtain credits:
 
 Once the request is granted you will have access to a _wallet_ in Research Cloud and can start to build an environment.
 
+## Getting started 
+Documentation for Research Cloud can be found on the [SURF User Knowledge Base](https://servicedesk.surf.nl/wiki/display/WIKI/SURF+Research+Cloud).
+
 [IT for Research](mailto:itvo.it@vu.nl) can assist you in setting up a new Research Cloud environment.
+
+## Contact
+Wondering if SURF Research Cloud fits your research needs? Please contact [IT for Research](mailto:itvo.it@vu.nl)
