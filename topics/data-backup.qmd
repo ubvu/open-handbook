@@ -4,27 +4,27 @@
 
 ### Why backup?
 
-Hard drives fail, computers get stolen or lost, or you or someone else may accidentally delete your data etc. Therefore, to avoid data loss, backing up your data regularly is essential. Ideally, you should have your data stored in at least two, but ideally three different locations. Most cloud-based tools will automatically do backup for you, but it might be adviseable to also do backup manually.
+Hard drives fail, computers get stolen or lost, or you or someone else may accidentally delete your data etc. Therefore, to avoid data loss, backing up your data regularly is essential. Ideally, you should have your data stored in at least two, but ideally three different locations. Most cloud-based tools will automatically do backup for you, but they don't protect you from your own mistakes. If you work with data that cannot be easily recreated or recalculated and ensure that it is sufficiently backed up with the 3-2-1 rule. This is especially important when migrating your data, such as when updating your operating system to a new major version, or when you get a new computer. 
 
-### OneDrive: A Simple Backup Solution 
+### 3-2-1 Rule
+The 3-2-1 rule states that you should have: 
 
-The VU provides access to 1 TB of OneDrive storage for all employees and is the most convenient option for most users, as it automatically synchonizes your files to the cloud and provides a good solution to restore old files. Here’s how to set it up: 
+3 Copies of your data 
+2 Different mediums (2 different kinds of storage) 
+1 Copy is kept off-site 
+Ideally, this should all be automated so that you as a user do not have to manually do anything extra to manage your data. If possible, automate this backup as well with computer scheduling tools such as Task Scheduler (Windows) or Crontab (Linux).  
 
-1. On Windows, move your files to the OneDrive folder in your home directory. You can also set OneDrive to automatically synchonize your Documents folder and Desktop in the settings of your OneDrive application in your computer (Settings -> Manage backup). For Mac users: Install OneDrive and log in with your VU account, then proceed similar to Windows users.
-2. Verify that your files are synced by visiting [onedrive.com](https://onedrive.com) (log in with your VU account). 
 
-Restore Deleted Files: If you accidentally delete a file, you can restore your entire OneDrive to a previous date up to 28 days ago via [onedrive.com](https://onedrive.com) (Settings -> Restore your OneDrive). 
 
-### Manual backups
+### Simple Synching Solutions
+The VU provides access to multiple [storage systems](..topics/data-storage). You may use a mix of the different platforms.
+If you use these tools they will  automatically synchonizes your files to the cloud and provides.
+If you accidentally delete a file, you can restore your folder to a previous date - various systems will have different retention periods but it is usually around 1 month. 
 
-In addition, it is highly advisable to manually copy your files (and especially critical files) to a folder, external hard drive, or other VU storage tools [SURFdrive](..topics/data-storage.html) that is not affected by the OneDrive synchronization. In rare cases, it is possible for your data on OneDrive to be deleted. This is especially important when migrating your data, such as when updating your operating system to a new major version, or when you get a new computer. This means that you will temporarily only have one version of your files and thus no backup.
-
-### Other solutions
-
-In some cases, other solutions are preferred. For example, you can back up your code on GitHub, or save very large files (>100s GB) on external hard drives or [Yoda](https://yoda.vu.nl/site/). 
 
 ### Notes 
+(Utrecht University Geo Data Team Services)[https://geo-data-support.sites.uu.nl/data-management/data-backup/] provide a very detailed page on data backup including a discussion of data selection for backaup.
 
 When your laptop and hard drive are in the same bag, the “backup” can easily get lost along with the primary data and there is thus no proper backup. 
 
-These are just some tips, and you are ultimately responsible for your data and documents. 
+These are just some tips, please take responsibility over your data and make sure it's protected from loss but also from your own mistakes.
