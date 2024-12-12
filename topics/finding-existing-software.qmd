@@ -16,14 +16,16 @@ Practically, you will need to be [compatible](https://book.the-turing-way.org/re
 
 The following scheme provides an overview of compatibility of commonly used [software licenses](../topics/software-licensing.qmd):
 
-| Original &rarr;           Combine with &darr;  | CC0 | MIT | BSD | Apache  | GPL, AGPL, LGPL | Proprietary        |
-|------------------------------------------------|-----|-----|-----|---------|-----------------|--------------------|
-| CCO                                            | YES | YES | YES | YES     | NO              | NO                 |
-| MIT                                            | YES | YES | YES | YES     | NO              | NO                 |
-| BSD                                            | YES | YES | YES | YES     | NO              | NO                 |
-| Apache                                         | YES | YES | YES | YES     | NO              | NO                 |
-| GPL, AGPL, LGPL                                | YES | YES | YES | NO      | YES             | NO                 |
-| Proprietary                                    | YES | YES | YES | Claused | NO              | Depends on license |
+|            | Combine with ↓   |      |      |      |          |                  |                    |
+|------------|------------------|------|------|------|----------|------------------|--------------------|
+| Original → |                  | CC0  | MIT  | BSD  | Apache   | GPL, AGPL, LGPL  | Proprietary        |
+|            | CCO              | YES  | YES  | YES  | YES      | NO               | NO                 |
+|            | MIT              | YES  | YES  | YES  | YES      | NO               | NO                 |
+|            | BSD              | YES  | YES  | YES  | YES      | NO               | NO                 |
+|            | Apache           | YES  | YES  | YES  | YES      | NO               | NO                 |
+|            | GPL, AGPL, LGPL  | YES  | YES  | YES  | NO       | YES              | NO                 |
+|            | Proprietary      | YES  | YES  | YES  | Claused  | NO               | Depends on license |
+
 
 A more complete list of open source licenses with terms and conditions is available [here](https://choosealicense.com/appendix/).
 
