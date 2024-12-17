@@ -1,0 +1,24 @@
+---
+title: Research Software
+---
+
+## What is Research Software?
+
+![Examples of how research software is integral to research; from [Nieuwpoort en Katz](https://doi.org/10.54900/9akm9y5-5ject5y)](../public/what_is_researchsoftware.jpg)
+
+
+There is a broad definition of research software from the [FAIR4RS working group](https://doi.org/10.5281/zenodo.5504015):
+
+> "Research Software includes source code files, algorithms, scripts, computational workflows and executables that were created during the research process or for a research purpose. Software components (e.g., operating systems, libraries, dependencies, packages, scripts, etc) that are used for research but were not created during or with a clear research intent should be considered software in research and not Research Software."
+
+It is important to note that not all software that is used in research is research software.
+
+For example, a text editor that is used to write a paper is not research software. Nor is powerpoint, a web browser, or the software used to guide the telescope.
+Even tools like R or Python are not necessarily research software.
+
+The code written in R or Python for an analysis would be research software, however.
+Just like a custom-made Excel macro that is used to analyse data. Or a custom-made web application that is used to collect data.
+
+Research Software is mainly used in "Collecting" and "Processing & analyzing" steps. However, non-research software can also be used in these steps, and research software can also be used in other steps.
+
+_Materials adapted from [the Netherlands eScience Center](https://esciencecenter-digital-skills.github.io/research-software-support) under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)._
