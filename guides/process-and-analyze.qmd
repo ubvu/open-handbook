@@ -14,7 +14,7 @@ Researchers regularly use a lab notebook or a journal to document their hypothes
 
 * [Electronic Lab Journals](https://en.wikipedia.org/wiki/List_of_ELN_software_packages) or Electronic Lab Notebooks are used to meticulously describe and document the process of analysis. Mostly used used in a laboratory environment,; biolab, chemical lab, etc.
 * For computational analyses, [Computational Notebooks like Jupyter notebook](https://jupyter.org/) are used, where you can describe the analysis steps alongside the computer code in different languages like Python, R, Spark, etc. It is important to document steps and changes in your code by writing comments. This way, others and future you can understand how your code works.
-* The [Open Science Framework](https://osf.io) connects different storage types you already use (SURFdrive, Dataverse, etc) and logs automatically all changes of all the steps you make while you progress. With the fine grained history-log and version control system of OSF, you can see all steps you made. You can store and archive the whole provenance trail for citable reproducibility.
+* The [Open Science Framework](https://osf.io) connects different storage types you already use (for example, Dataverse) and logs automatically all changes of all the steps you make while you progress. With the fine grained history-log and version control system of OSF, you can see all steps you made. You can store and archive the whole provenance trail for citable reproducibility.
 
 Finally, when a dataset contains personal data, data provenance can help researchers to understand the specifics and the context in which the data were gathered, also to be able to assess whether or not the informed consent given for the first research, is applicable.
 
@@ -129,7 +129,7 @@ BAZIS also has several "community" nodes for use by all VU researchers, sponsore
 
 BAZIS is connected to SciStor <!--# needs internal link --> providing easy access to your research data and analysis result.
 
-#### VU JupyterHub for education 
+#### VU JupyterHub for education
 
 If you are not yet ready to take the leap to cluster computing and work with Python consider JupyterHub. VU IT has built a Jupyter Notebook environment meant mainly for Education purposes, but accessible for researchers as well on <https://hub.compute.vu.nl/>
 
