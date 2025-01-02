@@ -198,7 +198,7 @@ Note that the folder is hidden, so you need to use `ls -a` to see it, or configu
 
 ## Data deletion
 
-You can only access the cluster with you VUNETID and thus when you are no longer affiliated with the VU, your account will be disabled. However, it is good practice to clean up your data when you are done with it. Depending on the department, data may be deleted after a certain period.
+You can only access the cluster with you VUNETID and thus when you are no longer affiliated with VU Amsterdam, your account will be disabled. However, it is good practice to clean up your data when you are done with it. Depending on the department, data may be deleted after a certain period.
 
 ### Best practices
 
@@ -591,7 +591,7 @@ References:
 
 ### Connect to VU Yoda/iRODS with icommands
 
-Yoda is a data storage solution for research data at the Vrije Universiteit Amsterdam. You can use the icommands to upload and download data from Yoda directly from the cluster.
+Yoda is a data storage solution for research data at VU Amsterdam. You can use the icommands to upload and download data from Yoda directly from the cluster.
 
 To do so, you need to configure iRODS, such that it links to your account on Yoda by taking the following steps:
 

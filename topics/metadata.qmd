@@ -2,21 +2,21 @@
 title: Metadata
 ---
 
-Metadata provide information about your data. Structured metadata are intended to provide this information in a standardised way. The structured metadata are readable for both humans and machines. It can be used by data catalogues, for example DataCite Commons. 
+Metadata provide information about your data. Structured metadata are intended to provide this information in a standardised way. The structured metadata are readable for both humans and machines. It can be used by data catalogues, for example DataCite Commons.
 
 The standardisation of metadata involves the following aspects:
 
-1. Elements: rules about the fields that must be used to describe an object, for example the `title`, `author` and `publicationDate`. 
+1. Elements: rules about the fields that must be used to describe an object, for example the `title`, `author` and `publicationDate`.
 2. Values: rules about the values that must be used within specific elements. Controlled vocabularies, classifications and Persistent Identifiers are used to reduce ambiguity and ensure consistency, for example by using a term from a controlled vocabulary like the Medical Subject HEadings (MeSH) as a `subject` and an Persistent Identifier such as an ORCID to identify a `person`.
 3. Formats: rules about the formats used to exchange metadata, for example JSON or XML.
 
 ## Metadata standards
 
-Metadata standards allow for easier exchange of metadata and harvesting of the metadata by search engines. Many certified archives use a metadata standard for the descriptions. If you choose a data repository or registry, you should find out which metadata standard they use. At the VU the following standards are used:
+Metadata standards allow for easier exchange of metadata and harvesting of the metadata by search engines. Many certified archives use a metadata standard for the descriptions. If you choose a data repository or registry, you should find out which metadata standard they use. At VU Amsterdam the following standards are used:
 
 - Yoda uses the [DataCite metadata standard](https://schema.datacite.org)
 - DataverseNL uses the [Dublin Core metadata standard](https://www.dublincore.org/specifications/dublin-core/dces/)
-- The VU Research Information System PURE uses the [CERIF metadata standard](https://eurocris.org/services/main-features-cerif) 
+- VU Amsterdam Research Information System PURE uses the [CERIF metadata standard](https://eurocris.org/services/main-features-cerif)
 
 Many archives implement or make use of specific metadata standards. The UK Digital Curation Centre (DCC) provides an [overview of metadata standards for different disciplines](https://www.dcc.ac.uk/guidance/standards/metadata). The list is a great and useful resource in establishing and carrying out your research methodology.
 
@@ -42,9 +42,9 @@ Finally a distinction can be made on the level of description. Metadata can be a
 
 ## Dataset registration
 
-When you want to make sure that your dataset is findable it is recommended that the elements of the description of your dataset are made according to a certain metadata standard that allows for easier exchange of metadata and harvesting of the metadata by search engines. Many certified archives use a metadata standard for the descriptions. If you choose a data repository or registry, you should find out which metadata standard they use. At the VU the following standards are used:
+When you want to make sure that your dataset is findable it is recommended that the elements of the description of your dataset are made according to a certain metadata standard that allows for easier exchange of metadata and harvesting of the metadata by search engines. Many certified archives use a metadata standard for the descriptions. If you choose a data repository or registry, you should find out which metadata standard they use. At VU Amsterdam the following standards are used:
 
-* [DataverseNL](../guides/publish-and-share.qmd#deposit-your-data) and [DANS](https://easy.dans.knaw.nl/ui/home) use the [Dublin Core](https://dublincore.org/specifications/dublin-core/) metadata standard
-* The VU Research Portal [PURE](../guides/publish-and-share.qmd#register-your-dataset-in-pure) uses the [CERIF](https://eurocris.org/services/main-features-cerif) metadata standard
+- [DataverseNL](../guides/publish-and-share.qmd#deposit-your-data) and [DANS](https://easy.dans.knaw.nl/ui/home) use the [Dublin Core](https://dublincore.org/specifications/dublin-core/) metadata standard
+- VU Amsterdam Research Portal [PURE](../guides/publish-and-share.qmd#register-your-dataset-in-pure) uses the [CERIF](https://eurocris.org/services/main-features-cerif) metadata standard
 
 Many archives implement or make use of specific metadata standards. The UK Digital Curation Centre (DCC) provides an overview of metadata standards for different disciplines. The list is a great and useful resource in establishing and carrying out your research methodology. Go to the [overview of metadata standards](https://www.dcc.ac.uk/guidance/standards/metadata). More important tips are available at [Dataset & Publication](../guides/publish-and-share.qmd#dataset-registration).
