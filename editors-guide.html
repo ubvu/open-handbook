@@ -180,12 +180,19 @@ ul.task-list li input[type="checkbox"] {
 <p>As editors, we maintain a bunch of quality standards, both automated and not automated. If you are reading this as a contributor, you will greatly help us out by taking these into account.</p>
 <p>Here are some quality standards we maintain throughout the handbook:</p>
 <ul>
+<li>Writing must be primarily in active voice, both for consistent and engaging text across all pages</li>
 <li>Acronyms must be written in full at least once on the page where they are used</li>
-<li>All changes to the handbook are made via pull requests. Each change needs approval from two editors.</li>
+<li>All changes to the handbook are made via pull requests. Each change needs approval from two editors.
+<ul>
+<li>Pull requests may not be merged if the QA automations fail</li>
+</ul></li>
+<li>Links must be <code>https://</code></li>
 <li>All images must have alt text</li>
 <li>Links must be descriptive (no “click here” links)</li>
 <li>No writing in name of the handbook (for example, “we recommend repository X”)</li>
+<li>Where possible, pages with a DOI must link through the DOI (for example, <code>https://doi.org/10.4444/xxxx</code> instead of the direct link <code>https://nature.com/...</code>)</li>
 </ul>
+<p>We try to automate most of these rules, but this is not always possible or accurate enough.</p>
 <section id="topics" class="level3">
 <h3 class="anchored" data-anchor-id="topics">Topics</h3>
 <p>For topics we maintain an additional set of standards:</p>
@@ -204,7 +211,7 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="guides">Guides</h3>
 <p>For guides we maintain other standards:</p>
 <ul>
-<li>Guides must be phrased as questions that the reader will get answers to</li>
+<li>Guides must be phrased as questions that the reader will get answers to (for example, “how do I preserve data?”)</li>
 </ul>
 </section>
 </section>
