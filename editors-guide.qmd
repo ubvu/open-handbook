@@ -4,17 +4,17 @@ title: "Editor's guide"
 
 Welcome to the Editor's guide to the Handbook! This page contains resources around how the editors work.
 
-Temporary initial editors are:
+The current editors are:
 
 * Chris Hartgerink
 * Elisa Rodenburg
-* Jessica Hrudey
 * Jolien Scholten
-* Lena Karvovskaya
+
+They can be pinged on GitHub as a team by using `@ubvu/editors` as the tag.
 
 ## What does an editor do?
 
-Editors tie together all the strings in this community handbook. We keep a bird's eye view to ensure that what you read makes sense. Editors also help ensure the style and quality of the different pages are similar.
+Editors tie together all the strings in this VU Amsterdam community handbook. We keep a bird's eye view to ensure that what you read makes sense. Editors also help ensure the style and quality of the different pages are similar. Editors also help keep the content relevant to the entirety of VU Amsterdam (faculty specific information is not within scope).
 
 Each editor commits themselves to providing timely reviews of topics, guides, or both.[^1] This commitment is for a limited time and can be renewed. We also welcome more editors at any time, given that we do not expect all editors to review everything.
 
@@ -28,17 +28,24 @@ As editors, we maintain a bunch of quality standards, both automated and not aut
 
 Here are some quality standards we maintain throughout the handbook:
 
+* Writing must be primarily in active voice, both for consistent and engaging text across all pages
 * Acronyms must be written in full at least once on the page where they are used
 * All changes to the handbook are made via pull requests. Each change needs approval from two editors.
+  * Pull requests may not be merged if the QA automations fail
+* Links must be `https://`
 * All images must have alt text
 * Links must be descriptive (no "click here" links)
 * No writing in name of the handbook (for example, "we recommend repository X")
+* Where possible, pages with a DOI must link through the DOI (for example, `https://doi.org/10.4444/xxxx` instead of the direct link `https://nature.com/...`)
+
+We try to automate most of these rules, but this is not always possible or accurate enough.
 
 ### Topics
 
 For topics we maintain an additional set of standards:
 
 * Topics must be nouns or noun phrases
+* Topics are self-contained and aim for brevity
 * All topics must be title capitalized (see also the helpful tool [CapitalizeMyTitle.com](https://capitalizemytitle.com/style/APA/))
 * No `include` statements are allowed in topics
   * Include statements must be prefaced with the relevant section heading, as the title of a topic is not reproduced.
@@ -48,7 +55,7 @@ For topics we maintain an additional set of standards:
 
 For guides we maintain other standards:
 
-* Guides must be phrased as questions that the reader will get answers to
+* Guides must be phrased as questions that the reader will get answers to (for example, "how do I preserve data?")
 
 ## How to keep an overview of everything?
 
