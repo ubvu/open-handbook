@@ -28,11 +28,17 @@ As editors, we maintain a bunch of quality standards, both automated and not aut
 
 Here are some quality standards we maintain throughout the handbook:
 
+* Writing must be primarily in active voice, both for consistent and engaging text across all pages
 * Acronyms must be written in full at least once on the page where they are used
 * All changes to the handbook are made via pull requests. Each change needs approval from two editors.
+  * Pull requests may not be merged if the QA automations fail
+* Links must be `https://`
 * All images must have alt text
 * Links must be descriptive (no "click here" links)
 * No writing in name of the handbook (for example, "we recommend repository X")
+* Where possible, pages with a DOI must link through the DOI (for example, `https://doi.org/10.4444/xxxx` instead of the direct link `https://nature.com/...`)
+
+We try to automate most of these rules, but this is not always possible or accurate enough.
 
 ### Topics
 
@@ -49,7 +55,7 @@ For topics we maintain an additional set of standards:
 
 For guides we maintain other standards:
 
-* Guides must be phrased as questions that the reader will get answers to
+* Guides must be phrased as questions that the reader will get answers to (for example, "how do I preserve data?")
 
 ## How to keep an overview of everything?
 
