@@ -7,20 +7,21 @@ on:
 
 jobs:
   check-links:
+    if: github.event.pull_request.head.repo.owner.login == github.event.pull_request.base.repo.owner.login
     runs-on: ubuntu-latest
 
     steps:
-    - name: Check out repository
-      uses: actions/checkout@v3
+      - name: Check out repository
+        uses: actions/checkout@v3
 
-    - name: Run lychee-action on .qmd files
-      id: lychee
-      uses: lycheeverse/lychee-action@v1
-      with:
-        args: "'**/*.qmd' --exclude doi.org --exclude data.4tu.nl --exclude isbn.org --exclude github.com/ubvu/open-handbook"
-        format: markdown
-        jobSummary: true
-    - name: Comment PR
-      uses: thollander/actions-comment-pull-request@v2
-      with:
-        filePath: ./lychee/out.md
+      - name: Run lychee-action on .qmd files
+        id: lychee
+        uses: lycheeverse/lychee-action@v1
+        with:
+          args: "'**/*.qmd' --exclude doi.org --exclude data.4tu.nl --exclude isbn.org --exclude github.com/ubvu/open-handbook"
+          format: markdown
+          jobSummary: true
+      - name: Comment PR
+        uses: thollander/actions-comment-pull-request@v2
+        with:
+          filePath: ./lychee/out.md

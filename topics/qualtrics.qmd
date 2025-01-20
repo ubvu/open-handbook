@@ -19,7 +19,7 @@ Qualtrics should not be used for non-scientific purposes such as the creation of
 
 ## Creating and Accessing User Accounts
 
-The VU Qualtrics Central Brand (hereafter VU's Central Brand) at [vuamsterdam.eu.qualtrics.com] allows for user's auto-enrolment, an automated account creation, and registration process. Any user with an enabled VU email address may auto-enroll on VU's Central Brand. The email address will function as the account's username.
+VU Amsterdam Qualtrics Central Brand (hereafter VU's Central Brand) at [vuamsterdam.eu.qualtrics.com] allows for user's auto-enrolment, an automated account creation, and registration process. Any user with an enabled VU email address may auto-enroll on VU's Central Brand. The email address will function as the account's username.
 
 VU's Central Brand makes use of Single-Sign On (SSO). This means that users can log in to Qualtrics using VU's internal login system. Multi-Factor Authentication (MFA) is mandatory to all Qualtrics users utilizing the `vuamsterdam` brand. MFA acts as an additional layer of security to prevent unauthorized users from accessing accounts and resources, even when the password has been stolen. Qualtrics will use multi-factor authentication to validate user identity and provide quick and convenient access to authorized users.
 
@@ -31,6 +31,8 @@ VU's Central Brand makes use of Single-Sign On (SSO). This means that users can 
 2. On the login page, choose: Vrije Universiteit SSO
 3. Log in with your VU account credentials (email address and password)
 
+![VU's central brand login page](../public/qualtrics-vu-brand-login-page.png)
+
 It is recommended to save [VU's Central Brand](vuamsterdam.eu.qualtrics.com) as a Favourite or Bookmark link for future reference.
 
 ## Note to Existing Users
@@ -38,6 +40,8 @@ It is recommended to save [VU's Central Brand](vuamsterdam.eu.qualtrics.com) as 
 ### Security Settings: Login Error Disabled Account
 
 Security settings are in place that disable a user account after a certain amount of inactivity. This threshold is currently 12 months. This setting follows security requirements regarding User Account Management.
+
+![Notification of disabled Qualtrics account](../public/qualtrics-account-disabled.png)
 
 A disabled account status does not affect its data.
 

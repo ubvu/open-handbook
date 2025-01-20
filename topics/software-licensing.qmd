@@ -1,0 +1,42 @@
+---
+title: Software Licensing
+---
+
+Publishing research software under an appropriate license is crucial for its accessibility, usability, and further integration into research. Choosing a license usually happens right when you start developing the software or when you put it in a public repository, rather than when the software is finished and fully baked. 
+
+A software license states how other people may re-use your code and under which circumstances. For research software, it is recommended (and often required by funders) that licenses are as permissible as possible. 
+
+There are many licenses out there; below we list some very frequently used licenses in research software. However, if none of these licenses fit your case, there are several tools that can help you to [choose](https://choosealicense.com/) a suitable software license. If you need guidance in choosing a licence for your software, get in touch with the [RDM Support Desk](mailto:rdm@vu.nl?subject=Research%20Software).
+
+## MIT License
+
+The [MIT License](https://mit-license.org) is a popular choice, due to its readability and permissiveness. It allows users to reuse the software for any purpose, including using, copying, modifying, and distributing it, provided they include the original copyright notice and license text. 
+
+However, its permissiveness means that derivative works can be closed-source and do not need to mention that they use your code, which might not align with all scientific openness goals or general. 
+
+## GNU GPLv3
+
+The [GNU General Public License (GPLv3)](https://www.gnu.org/licenses/gpl-3.0.en.html) is another option, designed to ensure that the software and any derivatives remain open-source. 
+
+This encourages collaborative improvement of software. Any software that includes GPL-licensed code must also be open-source under the GPLpotentially deterring commercial use or integration with proprietary software. In conclusion, when you want your code to be used by others, but only the code that uses your code is also open source, this is the way to go.
+
+## Apache License 2.0
+
+The [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) allows for modification and distribution of the software and its derivative works, with the requirement that changes to the original code are documented. 
+
+It is a more complex license than the MIT License and can be incompatible with GPL-licensed software. The specifics of this go beyond the scope of the handbook.
+
+## Adding a license to GitHub
+
+On GitHub you add a license on creating a new repository, by selecting the license from the drop-down menu. If your repository already exists, add a new file called "LICENSE" using the "+"-button on top of the repository (see below). 
+
+![Location of file creation button](github_file_creation_button.png)
+ 
+One the next page, start type LICENSE as the file name, and a button to "Choose a licence template" should automatically pop up. Follow the steps provided by GitHub to finish adding the license to the repository.
+ 
+You should now see your license shown on the main page of your repository.
+
+## Further considerations
+
+ * If you are reusing software or libraries written by someone else, you must stick to the clauses of the licence given to the original software/library;
+ * When choosing a licence, do not just think about what _others_ may do with the software, but also what _you_ might want to do with the software in the future.

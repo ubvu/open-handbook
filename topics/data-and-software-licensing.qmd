@@ -1,5 +1,5 @@
 ---
-title: Data and Software Licensing
+title: Data Licensing
 ---
 
 ## Licensing the data
@@ -23,14 +23,3 @@ Additional websites and tools:
 * [EUDAT B2SHARE license selection wizard](https://ufal.github.io/public-license-selector/), which Pawel Kamocki (et al.) released under an open source license.[^1]
 
 [^1]: For the source code, see <https://github.com/ufal/public-license-selector/>
-
-### Licensing software
-
-As with data, it is important to [license any software](../guides/process-and-analyze.qmd#open-software) that you write for your research. [You can find basic information about software licensing can be found](https://fair-software.eu/recommendations/license), but it is also important to keep the following in mind:
-
-* For software, choosing a licence usually happens right when you start developing the software or when you put it in a public repository, rather than when the software is finished and fully baked. This makes sense: immediately when the software appears on a public repository, the software can be found and seen by others. Giving it a licence helps others to figure out what they can and can't do with it.
-* If you are reusing software or libraries written by someone else, you must stick to the clauses of the licence given to the original software/library;
-* If you used proprietary software to write your code (e.g. SPSS syntax), your options in choosing a licence will probably be limited;
-* When choosing a licence, do not just think about what _others_ may do with the software, but also what _you_ might want to do with the software in the future.
-
-There are several tools that can help you to [choose](https://choosealicense.com/) a suitable sotware licence. If you need guidance in choosing a licence for your software, get in touch with the [RDM Support Desk](mailto:rdm@vu.nl?subject=Research%20Software).

@@ -1,0 +1,36 @@
+name: Open issues for topics that need to be updated
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 1 * *" # Runs on the first day of every month
+
+jobs:
+  check-topics:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Find outdated files (90 days)
+        id: find-outdated
+        run: |
+          outdated_files=$(find topics/ -type f -mtime +90)
+          echo "::set-output name=outdated_files::$outdated_files"
+
+      - name: Create issues for outdated files
+        if: steps.find-outdated.outputs.outdated_files != ''
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const outdatedFiles = `{{ steps.find-outdated.outputs.outdated_files }}`.split('\n').filter(Boolean);
+            for (const file of outdatedFiles) {
+              github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: `Update needed for ${file}`,
+                body: `The file \`${file}\` has not been updated in the last three months. Please review and update it as necessary.`,
+                labels: ['maintenance']
+              });
