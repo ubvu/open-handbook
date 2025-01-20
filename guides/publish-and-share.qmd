@@ -14,7 +14,7 @@ In the Data Management Plan the researcher describes if the data will be stored 
 
 #### Mid-term archive
 
-According to the [VU RDM Policy](../public/policies-regulations/RDM-policy-VU-2020-EN-v2.0.pdf), all publication-related data should be archived for at least **ten years** for verification and replication of research. For this purpose, Vrije Universiteit Amsterdam offers researchers two options to archive their data in one of the organisational repositories (DataverseNL and Yoda). Other archival options may be used depending on the discipline as described in faculty data management policy documents.  
+According to the [VU RDM Policy](../public/policies-regulations/RDM-policy-VU-2020-EN-v2.0.pdf), all publication-related data should be archived for at least **ten years** for verification and replication of research. For this purpose, VU Amsterdam offers researchers two options to archive their data in one of the organisational repositories (DataverseNL and Yoda). Other archival options may be used depending on the discipline as described in faculty data management policy documents.  
 
 #### Long-term archive
 
@@ -54,7 +54,7 @@ Before sending data to the vault, you will need to add [metadata](../topics/meta
 
 ### Archiving vs. Publishing Data
 
-There is a difference between archiving and publishing data. When we talk about archiving data, we mean that data are deposited securely, in a fixed state, in a location that is not accessible to the public or even a colleague at the VU. Archiving often happens for data that are confidential - for privacy or other reasons - and that should not be accessible publicly. Archiving is usually done for verification purposes, or, in case of medical research, to comply with the preservation requirements within the WMO.
+There is a difference between archiving and publishing data. When we talk about archiving data, we mean that data are deposited securely, in a fixed state, in a location that is not accessible to the public or even a colleague at VU Amsterdam. Archiving often happens for data that are confidential - for privacy or other reasons - and that should not be accessible publicly. Archiving is usually done for verification purposes, or, in case of medical research, to comply with the preservation requirements within the WMO.
 
 Publishing refers to depositing data in a public repository that allows others to view, access and download your data. You can set certain restrictions, but as a rule of thumb, publishing should only happen for data that are not confidential at all. That includes data that have been anonymised, or were not personal to begin with, and data that were never otherwise confidential. If you cannot publish any data at all, we do usually recommend trying to publish some [documentation](../topics/data-documentation.qmd), such as data collection protocols, scripts, codebooks, etc. In this way, others can see how the research was carried out, even if they cannot simply access the data.
 
@@ -66,14 +66,14 @@ _This illustration is created by Scriberia with The Turing Way community. Used u
 
 ### Choosing a different repository
 
-Besides the repositories offered by the VU, there are many others. **Unless you are working with personal or otherwise confidential data** and you need to archive them in Yoda, you are, in principle, free to choose a different repository from the ones hosted by the VU.
+Besides the repositories offered by VU Amsterdam, there are many others. **Unless you are working with personal or otherwise confidential data** and you need to archive them in Yoda, you are, in principle, free to choose a different repository from the ones hosted by VU Amsterdam.
 
 There can be various reasons to decide to use a different repository, including funder requirements, preferences of research partners, and a repository being a common choice in your field. For example, Dutch archaeologists mostly use [DANS Data Stations](https://dans.knaw.nl/en/data-stations/archaeology/) to deposit and publish their data. Using a repository that is a common choice in your field will make your data more findable for your colleagues and increase the visibility of your work as a researcher. Some of the data repositories most commonly used in the Netherlands include:
 
 * [DANS Data Stations](https://dans.knaw.nl/en/): a domain-agnostic research data repository hosted by the Data Archiving and Networked Services, an institute of NWO and KNAW. DANS also develops policies, services and new infrastructures for research data and provides researchers with advice on how to preserve their data. VU researchers are also welcome to deposit their data at DANS-EASY;
 * [4TU.ResearchData](https://data.4tu.nl): a repository for science, engineering and design data hosted by the 4TU Federation. This is a consortium of the four Dutch technical universities: TU Delft, TU Eindhoven, University of Twente and Wageningen University and Research. VU researchers are also welcome to deposit their data at 4TU;
 * [Zenodo](https://zenodo.org/): a domain-agnostic research data repository hosted by CERN in Switzerland and funded by the European Commission. Zenodo does not only host data, but also presentations, conference procedures and policy documents. It is also possible to archive GitHub repositories directly into Zenodo, by which you contribute to Open Science by making a snapshot of your code available in its current form and for the long term;
-* [OSF (Open Science Framework)](https://osf.io/): a data management and research dissemination platform. The VU is an institutional member of the OSF, which means that you can sign up (and in) using your VU account by clicking on the Institution Button on the sign in/up pages. You can use the OSF to create registrations and preregistrations for your research, to publish preprints, and publish and share data and documentation. You can also link other repositories such as DataverseNL to your OSF project. The same goes for GitHub and storage options such as Research Drive and Surfdrive. Do be careful about what you connect! A full guide for VU OSF users, including instructions about connecting external storage can be found [here](https://osf.io/abwzm/).
+* [OSF (Open Science Framework)](https://osf.io/): a data management and research dissemination platform. VU Amsterdam is an institutional member of the OSF, which means that you can sign up (and in) using your VU account by clicking on the Institution Button on the sign in/up pages. You can use the OSF to create registrations and preregistrations for your research, to publish preprints, and publish and share data and documentation. You can also link other repositories such as DataverseNL to your OSF project. The same goes for GitHub and storage options such as Research Drive and Surfdrive. Do be careful about what you connect! A full guide for VU OSF users, including instructions about connecting external storage can be found [here](https://osf.io/abwzm/).
 
 You can also find repositories via the [Registry of Research Data Repositories](https://www.re3data.org/). When you are choosing a repository, it is important to check that it provides all the services you need. A good way to find out is to check if a repository as a [Core Trust Seal](https://www.coretrustseal.org/why-certification/certified-repositories/), which is a form of certification for quality repositories. But if a repository does not have the Core Trust Seal, it does not necessarily mean it is not a good repository. As a minimum, you should check that:
 
@@ -114,7 +114,6 @@ Instead of archiving research data in a data repository, you may choose to publi
 ../topics/persistent-identifier.qmd
 ```
 
-
 ```{.include shift-heading-level-by=2}
 ../topics/data-and-software-licensing.qmd
 ```
@@ -125,37 +124,6 @@ Instead of archiving research data in a data repository, you may choose to publi
 
 ## Dataset Registration
 
-### Registration & Findability
-
-When you have finished finalizing a dataset and are ready to archive it, there are many options available. Depending on the research and choices made earlier the archive provides the option to fill in descriptive fields for a dataset. The descriptions in the archives often are automatically created using metadata standards like DataCite or Dublin Core, or some other type of standard. See also the item [Metadata](../topics/metadata.qmd) in this LibGuide.
-
-When registering a dataset in an archive it is important to use unique identifiers to allow for increased findability and easy attribution & citation. Examples of this are:
-
-* **Personal names**: try to consistently use the same notation for all researchers and assistants that are included as authors
-* **ORCID**: using a unique identifier like this for all authors is recommended. More information is [available here](https://libguides.vu.nl/orcid).
-* **Institutonal names**: avoid using different versions (or language versions) of participating Institutes/organizations and departments. In the case of the VU the official written name is: Vrije Universiteit Amsterdam. For each organization or Institute that is included: try to make sure that the official name is used each time.
-
-Some archives also allow you to preregister your project/dataset. Examples are:
-
-* [Open Science Framework](https://help.osf.io/hc/en-us/sections/360003624093-Create-Registrations) (OSF) Registration
-* [Zenodo & registration](https://zenodo.org/deposit)
-
-### Register your Dataset in PURE
-
-Just like your publications, data that you have collected for your research constitute research output, too. Therefore you are required to record your datasets in PURE. Your datasets can be of interest to others, which can in turn lead to new collaboration opportunities. Datasets recorded in PURE also appear in reports that are used for research evaluations. Even if access to your dataset is closed, you are required to register your dataset in PURE. It is a record of the research, data collection and analysis that you have carried out.
-
-#### Benefits of recording your dataset in PURE
-
-* It increases the visibility and findability of your datasets
-* It contributes to re-use and transparency
-* It boosts your collaboration opportunities
-* It counts towards research evaluations and assessments
-
-#### How to register your dataset in PURE?
-
-![Screenshot: adding a dataset to your PURE profile](../public/PURE-AddDataset.png)
-
-1. Log into the [VU](https://research.vu.nl/admin/workspace.xhtml) Research Portal (PURE) using your VU or VUmc credentials
-2. Click on the “+” (plus) icon next to selecting “Datasets” in the overview
-3. You can fill in the form using this [manual (NL)](../public/Registreer_Datasets_in_Pure.pdf)/[manual (EN)](https://libguides.vu.nl/pure-managing-publications/start), and read more about the various metadata in use (generic and subject specific)
-4. Click on “Save” to store the registration
+```{.include shift-heading-level-by=1}
+../topics/dataset-and-software-registration.qmd
+```
