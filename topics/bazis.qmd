@@ -20,16 +20,16 @@ A next step might be purchasing a Workstation with more performance and maybe a 
 
 The point where your pc becomes unusable for your analysis workflow is when you should consider HPC. HPC nodes have a large amount of RAM, many processor cores and often multiple GPUs. HPC clusters work with a queueing system, meaning the system will wait until enough resources are available to run your job and it will run multiple jobs simultaneously so its resources are used optimally.
 
-Be aware that it is generally not possible to run graphical desktop applications (such as R studio, SPSS or ARCGIS) on a HPC cluster. Your analysis needs to be able to run as a script that can be started from a Linux commandline. This means there is a learning curve to use HPC, especially if you are not used to a Commandline Interface (CLI) and scripting, but these are very useful skills to have as a researcher!
+Be aware that it is generally not possible to run graphical desktop applications (such as R studio, SPSS or ArcGIS) on a HPC cluster. Your analysis needs to be able to run as a script that can be started from a Linux command line. This means there is a learning curve to use HPC, especially if you are not used to a Command-line Interface (CLI) and scripting, but these are very useful skills to have as a researcher!
 
 Note that if you feel you do not have the time to learn CLI skills there might be other options available such as [the VU Compute Hub](https://compute.vu.nl) or [SURF Research Cloud](./researchcloud.qmd) where you can run some graphical tools.
 <!-- PV: Compute hub will get its own topic and there will be a topic or guide that lists the pros and cons of each compute solution  -->
 
-At the moment the community partition does not include GPU resources. If you have tasks that need a GPU (such as Machine Learning) you can apply for access to the national HPC infrastructure [Snellius](./snellius.qmd) or consider [buying compute nodes]() 
+At the moment the community partition does not include GPU resources. If you have tasks that need a GPU (such as Machine Learning) you can apply for access to the national HPC infrastructure [Snellius](./snellius.qmd) or consider [buying compute nodes](#buying-dedicated-compute-nodes). 
 
 ## How to request access
 
-A form to request an account can be found on 🔒 [VU Service Portal](https://services.vu.nl/esc) under IT > My work field > Research > HPC Cluster Computing > New BAZIS HPC Cluster Computing.
+A form to request an account on BAZIS can be found on 🔒 [VU Service Portal](https://services.vu.nl/esc) under IT > My work field > Research > HPC Cluster Computing > New BAZIS HPC Cluster Computing.
 
 ## Are there costs involved?
 
