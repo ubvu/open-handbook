@@ -7,11 +7,11 @@ IT for Research (ITvO) offers SciCloud, a service where server capacity can be p
 SciCloud is based on the open source middleware [OpenNebula (ONE)](https://opennebula.io/) and offers a service that allows users to quickly start with a virtual server based on available templates, or to upload one of their own virtual images. This concept is known as Infrastructure as a Service (IaaS).
 
 ## What can it be used for?
-In principle you can run any software you want on a SciCloud server. Linux OS is preferred, but Windows server is also a possibility.
+In principle you can run any software you want on a SciCloud server. Linux OS is preferred, but a Windows server is also a possibility.
 
 Typical use cases are:
 
-- Running web applications and services that need to be publicly accessible 24/7, for example a website showcasing of your research, a wiki, chatbot, etc.
+- Running web applications and services that need to be publicly accessible 24/7, for example a website showcasing your research, a wiki, chatbot, etc.
 
 - Hosting a licensed server application for your research group, such as software for analysis, software needed to run lab equipment or elab journal software.
 
@@ -42,7 +42,7 @@ The IT for Research Team will set up the server(s) with the OS of your choice (W
 
 Root access to the server allows you to install all the software you need. Note that IT for Research can help you getting started and will automatically install OS security updates, but you are responsible for installing and maintaining software yourself.
 
-It is possible to take _snapshots_ or _clones_ of the virtual server yourself. This allows you to go back to a previously created configuration, if necessary. In addition, ITvO makes daily backups with which a virtual machine can be restored up to a month ago on request. 
+It is possible to take _snapshots_ or _clones_ of the virtual server yourself. This allows you to go back to a previously created configuration, if necessary. In addition, ITvO makes daily backups with which a virtual machine can be restored for up to 30 days on request. 
 
 ## Contact
 Wondering if SciCloud fits your research needs? Please contact [IT for Research](mailto:itvo.it@vu.nl)
