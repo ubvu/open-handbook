@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Blog – Research Support Handbook</title>
+<title>Snellius – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +23,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./public/favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f16c22b6b6b760b90415d21888f36db8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../public/favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-f16c22b6b6b760b90415d21888f36db8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,67 +67,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="alternate" type="application/rss+xml" title="{{< var title >}}" href="blog.xml" data-external="1"></head>
+</head>
 
 <body class="nav-fixed">
 
@@ -138,8 +78,8 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -149,19 +89,19 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./topics.html"> 
+    <a class="nav-link" href="../topics.html"> 
 <span class="menu-text">Topics</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./guides.html"> 
+    <a class="nav-link" href="../guides.html"> 
 <span class="menu-text">Guides</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./contributing.html"> 
+    <a class="nav-link" href="../contributing.html"> 
 <span class="menu-text">Contributing</span></a>
   </li>  
 </ul>
@@ -176,15 +116,35 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#what-is-it" id="toc-what-is-it" class="nav-link active" data-scroll-target="#what-is-it">What is it?</a></li>
+  <li><a href="#what-can-it-be-used-for" id="toc-what-can-it-be-used-for" class="nav-link" data-scroll-target="#what-can-it-be-used-for">What can it be used for?</a>
+  <ul class="collapse">
+  <li><a href="#simulation-and-modelling" id="toc-simulation-and-modelling" class="nav-link" data-scroll-target="#simulation-and-modelling"><strong>Simulation and modelling</strong></a></li>
+  <li><a href="#computing-power" id="toc-computing-power" class="nav-link" data-scroll-target="#computing-power"><strong>Computing power</strong></a></li>
+  <li><a href="#tools-and-libraries" id="toc-tools-and-libraries" class="nav-link" data-scroll-target="#tools-and-libraries"><strong>Tools and libraries</strong></a></li>
+  </ul></li>
+  <li><a href="#how-to-request-access" id="toc-how-to-request-access" class="nav-link" data-scroll-target="#how-to-request-access">How to request access</a>
+  <ul class="collapse">
+  <li><a href="#direct-institute-contract" id="toc-direct-institute-contract" class="nav-link" data-scroll-target="#direct-institute-contract"><strong>1. Direct institute contract</strong></a></li>
+  <li><a href="#nwo-compute-grant" id="toc-nwo-compute-grant" class="nav-link" data-scroll-target="#nwo-compute-grant"><strong>2. NWO compute grant</strong></a></li>
+  </ul></li>
+  <li><a href="#are-there-costs-involved" id="toc-are-there-costs-involved" class="nav-link" data-scroll-target="#are-there-costs-involved">Are there costs involved?</a></li>
+  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting started</a></li>
+  <li><a href="#contact" id="toc-contact" class="nav-link" data-scroll-target="#contact">Contact</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/snellius.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog</h1>
+<h1 class="title">Snellius</h1>
 </div>
 
 
@@ -201,210 +161,60 @@ window.Quarto = {
 </header>
 
 
+<section id="what-is-it" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-it">What is it?</h2>
+<p>Snellius is the National Supercomputer infrastructure hosted by SURF in Amsterdam.</p>
+</section>
+<section id="what-can-it-be-used-for" class="level2">
+<h2 class="anchored" data-anchor-id="what-can-it-be-used-for">What can it be used for?</h2>
+<section id="simulation-and-modelling" class="level3">
+<h3 class="anchored" data-anchor-id="simulation-and-modelling"><strong>Simulation and modelling</strong></h3>
+<p>Do you work with large and complex models that require a lot of computing power? The National Supercomputer provides that with a large number of super-fast processors. The system is ideally suited for large-scale experiments, such as simulations and modelling. These require a lot of processing power and memory usage, but also communication between the different processors. An important feature of Snellius is its fast internal network.</p>
+</section>
+<section id="computing-power" class="level3">
+<h3 class="anchored" data-anchor-id="computing-power"><strong>Computing power</strong></h3>
+<p>Snellius runs on Linux. Besides AMD processors, the system also features GPGPUs (General Purpose Graphics Processing Units). These accelerators combine the processing power of graphics cards (GPUs) with that of CPUs. In addition, Snellius has ‘fat nodes’ with more memory space (1 TB) and ‘high-memory nodes’ (4 TB and 8 TB of memory space).</p>
+</section>
+<section id="tools-and-libraries" class="level3">
+<h3 class="anchored" data-anchor-id="tools-and-libraries"><strong>Tools and libraries</strong></h3>
+<p>As a researcher, you can make use of a large collection of tools, compilers and libraries.</p>
+<p>Are you doing research or experiments in the field of machine learning, e.g.&nbsp;neural networks? The libraries and tools on Snellius make it a lot easier.</p>
+</section>
+</section>
+<section id="how-to-request-access" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-request-access">How to request access</h2>
+<p>You can request access via a form on the 🔒<a href="https://servicedesk.surf.nl">SURF service desk portal</a>. There are 2 options:</p>
+<section id="direct-institute-contract" class="level3">
+<h3 class="anchored" data-anchor-id="direct-institute-contract"><strong>1. Direct institute contract</strong></h3>
+<p>The VU has a contract with SURF for the usage of Snellius. Every VU researcher or master student can request Snellius SBUs (System Billing Units). The total amount available to the VU is limited however, only use this option for smaller projects, say up to 1.000.000 CPU and/or GPU SBUs.</p>
+<p>The <a href="https://servicedesk.surf.nl/wiki/display/WIKI/Estimating+SBUs">SURF wiki</a> provides some guidance on estimating the amount of SBUs you need. We recommend you start with the default 50.000 CPU and/or GPU SBUs. You can use the same form to request a top-up if you run out.</p>
+</section>
+<section id="nwo-compute-grant" class="level3">
+<h3 class="anchored" data-anchor-id="nwo-compute-grant"><strong>2. NWO compute grant</strong></h3>
+<p>If you have a large project involving more than 1.000.000 CPU and/or GPU SBUs you should apply for an <a href="https://www.surf.nl/en/large-compute-applications-nwo">NWO Large Compute applications grant</a>.</p>
+<p>Each Snellius account is provided with 200GB Home space (backups available), apart from that 8TB of temporary fast <em>scratch</em> space is available for your calculations. If the Home space is not sufficient or you can request <em>Project Space</em> to store your data during your project. Note that the <em>Project Space</em> is not backed-up! Always make sure a copy of valuable data is also stored on a <a href="../topics/data-storage.html">recommended storage system</a>.</p>
+<p>Note that for large-scale GPU projects access the European <a href="https://www.surf.nl/en/services/lumi">LUMI</a> supercomputer can also be requested by VU researcers. <a href="https://servicedesk.surf.nl/wiki/display/WIKI/Obtaining+compute+time">Obtaining compute time on LUMI</a>.</p>
+</section>
+</section>
+<section id="are-there-costs-involved" class="level2">
+<h2 class="anchored" data-anchor-id="are-there-costs-involved">Are there costs involved?</h2>
+<p>There are no direct costs for researchers, but be aware that “Direct institute contract” usage costs are billed to the faculties via KDM (“Kosten Doorbelasting Model”).</p>
+</section>
+<section id="getting-started" class="level2">
+<h2 class="anchored" data-anchor-id="getting-started">Getting started</h2>
+<p>The <a href="https://servicedesk.surf.nl/wiki/display/WIKI/Snellius">SURF User Knowledge Base</a> has lots of information to get you started.</p>
+<p>SURF organises regular “Introduction to Supercomputing” training sessions, these are free to attend for VU researchers. Please consult the <a href="https://www.surf.nl/en/agenda">SURF Agenda</a> for dates and registration.</p>
+<p>Note that there is a free community partition available on the <a href="../topics/bazis.html">VU HPC cluser BAZIS</a>, where you can refine your analysis scripts before running them on the more expensive Snellius cluster. Experts at <a href="mailto:itvo.it@vu.nl">IT for Research</a> can help you optimise your code to run more efficiently.</p>
+</section>
+<section id="contact" class="level2">
+<h2 class="anchored" data-anchor-id="contact">Contact</h2>
+<p>SURF offers limited direct support for researchers using Snellius. To ask a question create a ticket on the 🔒<a href="https://servicedesk.surf.nl/">SURF Service Desk Portal</a>.</p>
+<p>For general questions on HPC please contact <a href="mailto:itvo.it@vu.nl">IT for Research</a>.</p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="aGFja2F0aG9u" data-listing-date-sort="1732752000000" data-listing-file-modified-sort="1737466295617" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="206">
-<div class="thumbnail">
-<p><a href="./blog/2024-11-28hackathon.html" class="no-external"></a></p><a href="./blog/2024-11-28hackathon.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./blog/2024-11-28hackathon.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-11-28hackathon.html" class="no-external">Fifth Handbook Hackathon</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./blog/2024-11-28hackathon.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./blog/2024-11-28hackathon.html" class="no-external">On November 28, 2024, all authors participated in the fifth hackathon for the Research Support Handbook. For this hackathon, we focused on adding new content and…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-11-28hackathon.html" class="no-external">
-<div class="listing-date">
-Nov 28, 2024
-</div>
-<div class="listing-author">
-Lena Karvovskaya, Jolien Scholten, Kostas Vilkelis, Tycho Hofstra, Irene Martorelli, Peter Vos
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="aGFja2F0aG9u" data-listing-date-sort="1730419200000" data-listing-file-modified-sort="1737466295617" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="242">
-<div class="thumbnail">
-<p><a href="./blog/2024-11-01hackathon.html" class="no-external"></a></p><a href="./blog/2024-11-01hackathon.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./blog/2024-11-01hackathon.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-11-01hackathon.html" class="no-external">Fourth Handbook Hackathon</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./blog/2024-11-01hackathon.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./blog/2024-11-01hackathon.html" class="no-external">On October 30th, 2024, all authors participated in the fourth hackathon for the Research Support Handbook. Since the third hackathon, we migrated to <code>rdm.vu.nl</code>, which is a…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-11-01hackathon.html" class="no-external">
-<div class="listing-date">
-Nov 1, 2024
-</div>
-<div class="listing-author">
-Chris Hartgerink, Lena Karvovskaya, Jolien Scholten, Tycho Hofstra, Elisa Rodenburg, Stephanie van de Sandt
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="ZG93bnRpbWU=" data-listing-date-sort="1729555200000" data-listing-file-modified-sort="1737466295617" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="496">
-<div class="thumbnail">
-<p><a href="./blog/2024-10-22post-mortem.html" class="no-external"></a></p><a href="./blog/2024-10-22post-mortem.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./blog/2024-10-22post-mortem.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-10-22post-mortem.html" class="no-external">Why was rdm.vu.nl down for ten hours?</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./blog/2024-10-22post-mortem.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./blog/2024-10-22post-mortem.html" class="no-external">On Friday October 18th 2024, we experienced around ten hours of downtime on the <code>rdm.vu.nl</code> website. The downtime started around 10AM after merging changes to the handbook and…<sup></sup></a>
-</div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-10-22post-mortem.html" class="no-external">
-<div class="listing-date">
-Oct 22, 2024
-</div>
-<div class="listing-author">
-Chris Hartgerink, Lena Karvovskaya
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1727654400000" data-listing-file-modified-sort="1737466295617" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="240">
-<div class="thumbnail">
-<p><a href="./blog/2024-09-30hackathon.html" class="no-external"></a></p><a href="./blog/2024-09-30hackathon.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./blog/2024-09-30hackathon.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-09-30hackathon.html" class="no-external">Third Handbook Hackathon</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./blog/2024-09-30hackathon.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./blog/2024-09-30hackathon.html" class="no-external">In the third hackathon for the Research Support Handbook, held on September 25th, 2024, contributors gathered to make significant progress towards migrating the handbook to…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-09-30hackathon.html" class="no-external">
-<div class="listing-date">
-Sep 30, 2024
-</div>
-<div class="listing-author">
-Alex van der Jagt, FGB, sec.&nbsp;KNOP, Chris Hartgerink (host), Diogenes Cruz de Arcelino, Elisa Rodenburg, UBVU, Jessica Hrudey, FGB, Jolien Scholten, UB, Lena Karvovskaya, UBVU, Stephanie van de Sandt, UBVU, Tycho Hofstra, UBVU
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1725494400000" data-listing-file-modified-sort="1737466295617" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="306">
-<div class="thumbnail">
-<p><a href="./blog/2024-09-05hackathon.html" class="no-external"></a></p><a href="./blog/2024-09-05hackathon.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./blog/2024-09-05hackathon.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-09-05hackathon.html" class="no-external">Second Handbook Hackathon</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./blog/2024-09-05hackathon.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./blog/2024-09-05hackathon.html" class="no-external">On September 5th, 2024, all authors participated in the second hackathon for the Research Support Handbook. For this hackathon, we focused on quality assurance. Quality…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-09-05hackathon.html" class="no-external">
-<div class="listing-date">
-Sep 5, 2024
-</div>
-<div class="listing-author">
-Alex van der Jagt, Chris Hartgerink, Elisa Rodenburg, Jens de Bruijn, Jolien Scholten, Joy Jiayi Cheng, Lena Karvovskaya, Meron Vermaas, Peter Vos, Stephanie van de Sandt, Tycho Hofstra
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1719446400000" data-listing-file-modified-sort="1737466295617" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="504">
-<div class="thumbnail">
-<p><a href="./blog/2024-06-27hackathon.html" class="no-external"></a></p><a href="./blog/2024-06-27hackathon.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./blog/2024-06-27hackathon.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-06-27hackathon.html" class="no-external">First Handbook Hackathon</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./blog/2024-06-27hackathon.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./blog/2024-06-27hackathon.html" class="no-external">On June 27th, 2024, the first hackathon for the Research Support Handbook took place with all the post authors. For this hackathon, we focused on non-GitHub based…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-06-27hackathon.html" class="no-external">
-<div class="listing-date">
-Jun 27, 2024
-</div>
-<div class="listing-author">
-Alex van der Jagt, Chris Hartgerink, Dimitri Unger, Elisa Rodenburg, Jessica Hrudey, Jolien Scholten, Lena Karvovskaya, Lucy O’ Shea, Mar Barrantes-Cepas, Meron Vermaas, Peter Vos, Stephanie van de Sandt
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-listing-date-sort="1716422400000" data-listing-file-modified-sort="1737466295617" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="36">
-<div class="thumbnail">
-<p><a href="./blog/2024-05-23welcome.html" class="no-external"></a></p><a href="./blog/2024-05-23welcome.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./blog/2024-05-23welcome.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-05-23welcome.html" class="no-external">Hello world!</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./blog/2024-05-23welcome.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./blog/2024-05-23welcome.html" class="no-external">This is the first blog entry on the Research Support Handbook. We will be posting more at a later time, and are looking forward to your contributions as well.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-05-23welcome.html" class="no-external">
-<div class="listing-date">
-May 23, 2024
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -837,12 +647,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="./about.html">
+    <a class="nav-link" href="../about.html">
 <p>About</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="./editors-guide.html">
+    <a class="nav-link" href="../editors-guide.html">
 <p>Editor’s guide</p>
 </a>
   </li>  
@@ -852,7 +662,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </a>
   </li>  
 </ul>
-    <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/blog.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/snellius.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
