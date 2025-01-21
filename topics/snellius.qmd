@@ -6,15 +6,15 @@ title: Snellius
 Snellius is the National Supercomputer infrastructure hosted by SURF in Amsterdam. 
 
 ## What can it be used for?
-**Simulation and modelling**
+### **Simulation and modelling**
 
 Do you work with large and complex models that require a lot of computing power? The National Supercomputer provides that with a large number of super-fast processors. The system is ideally suited for large-scale experiments, such as simulations and modelling. These require a lot of processing power and memory usage, but also communication between the different processors. An important feature of Snellius is its fast internal network.
 
-**Computing power**
+### **Computing power**
 
 Snellius runs on Linux. Besides AMD processors, the system also features GPGPUs (General Purpose Graphics Processing Units). These accelerators combine the processing power of graphics cards (GPUs) with that of CPUs. In addition, Snellius has 'fat nodes' with more memory space (1 TB) and 'high-memory nodes' (4 TB and 8 TB of memory space).
 
-**Tools and libraries**
+### **Tools and libraries**
 
 As a researcher, you can make use of a large collection of tools, compilers and libraries.
 
@@ -23,13 +23,13 @@ Are you doing research or experiments in the field of machine learning, e.g. neu
 ## How to request access
 You can request access via a form on the 🔒[SURF service desk portal](https://servicedesk.surf.nl). There are 2 options:
 
-**1. Direct institute contract**
+### **1. Direct institute contract**
 
 The VU has a contract with SURF for the usage of Snellius. Every VU researcher or master student can request Snellius SBUs (System Billing Units). The total amount available to the VU is limited however, only use this option for smaller projects, say up to 1.000.000 CPU and/or GPU SBUs. 
 
 The [SURF wiki](https://servicedesk.surf.nl/wiki/display/WIKI/Estimating+SBUs) provides some guidance on estimating the amount of SBUs you need. We recommend you start with the default 50.000 CPU and/or GPU SBUs. You can use the same form to request a top-up if you run out.
 
-**2. NWO compute grant**
+### **2. NWO compute grant**
 
 If you have a large project involving more than 1.000.000 CPU and/or GPU SBUs you should apply for an [NWO Large Compute applications grant](https://www.surf.nl/en/large-compute-applications-nwo).
 
