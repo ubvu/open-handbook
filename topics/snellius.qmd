@@ -1,0 +1,54 @@
+---
+title: Snellius
+---
+
+## What is it?
+Snellius is the National Supercomputer infrastructure hosted by SURF in Amsterdam. 
+
+## What can it be used for?
+### **Simulation and modelling**
+
+Do you work with large and complex models that require a lot of computing power? The National Supercomputer provides that with a large number of super-fast processors. The system is ideally suited for large-scale experiments, such as simulations and modelling. These require a lot of processing power and memory usage, but also communication between the different processors. An important feature of Snellius is its fast internal network.
+
+### **Computing power**
+
+Snellius runs on Linux. Besides AMD processors, the system also features GPGPUs (General Purpose Graphics Processing Units). These accelerators combine the processing power of graphics cards (GPUs) with that of CPUs. In addition, Snellius has 'fat nodes' with more memory space (1 TB) and 'high-memory nodes' (4 TB and 8 TB of memory space).
+
+### **Tools and libraries**
+
+As a researcher, you can make use of a large collection of tools, compilers and libraries.
+
+Are you doing research or experiments in the field of machine learning, e.g. neural networks? The libraries and tools on Snellius make it a lot easier.
+
+## How to request access
+You can request access via a form on the 🔒[SURF service desk portal](https://servicedesk.surf.nl). There are 2 options:
+
+### **1. Direct institute contract**
+
+The VU has a contract with SURF for the usage of Snellius. Every VU researcher or master student can request Snellius SBUs (System Billing Units). The total amount available to the VU is limited however, only use this option for smaller projects, say up to 1.000.000 CPU and/or GPU SBUs. 
+
+The [SURF wiki](https://servicedesk.surf.nl/wiki/display/WIKI/Estimating+SBUs) provides some guidance on estimating the amount of SBUs you need. We recommend you start with the default 50.000 CPU and/or GPU SBUs. You can use the same form to request a top-up if you run out.
+
+### **2. NWO compute grant**
+
+If you have a large project involving more than 1.000.000 CPU and/or GPU SBUs you should apply for an [NWO Large Compute applications grant](https://www.surf.nl/en/large-compute-applications-nwo).
+
+Each Snellius account is provided with 200GB Home space (backups available), apart from that 8TB of temporary fast _scratch_ space is available for your calculations. If the Home space is not sufficient or you can request _Project Space_ to store your data during your project. Note that the _Project Space_ is not backed-up! Always make sure a copy of valuable data is also stored on a [recommended storage system](./data-storage.qmd). 
+
+Note that for large-scale GPU projects access the European [LUMI](https://www.surf.nl/en/services/lumi) supercomputer can also be requested by VU researcers. [Obtaining compute time on LUMI](https://servicedesk.surf.nl/wiki/display/WIKI/Obtaining+compute+time).
+
+## Are there costs involved?
+There are no direct costs for researchers, but be aware that "Direct institute contract" usage costs are billed to the faculties via KDM ("Kosten Doorbelasting Model"). 
+
+## Getting started
+The [SURF User Knowledge Base](https://servicedesk.surf.nl/wiki/display/WIKI/Snellius) has lots of information to get you started.
+
+SURF organises regular "Introduction to Supercomputing" training sessions, these are free to attend for VU researchers. Please consult the [SURF Agenda](https://www.surf.nl/en/agenda) for dates and registration.
+
+Note that there is a free community partition available on the [VU HPC cluser BAZIS](./bazis.qmd), where you can refine your analysis scripts before running them on the more expensive Snellius cluster. Experts at [IT for Research](mailto:itvo.it@vu.nl) can help you optimise your code to run more efficiently. 
+
+## Contact
+SURF offers limited direct support for researchers using Snellius. To ask a question create a ticket on the 🔒[SURF Service Desk Portal](https://servicedesk.surf.nl/).
+
+For general questions on HPC please contact [IT for Research](mailto:itvo.it@vu.nl). 
+
