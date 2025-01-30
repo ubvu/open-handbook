@@ -14,7 +14,7 @@ A large collection of tools, compilers and libraries is available for your analy
 
 Most researchers start out by running their analysis tools on their laptop. The performance of a laptop is limited however. You might find your analysis takes up so many resources that your laptop becomes unusable for other tasks, or tasks take so long that you have to find a way to keep your laptop running overnight. For example a lot of AI tasks, such as running Large Language Models (LLMs), require a dedicated GPU, which most laptops don't have. These tasks will run very slowly, or not at all.
 
-A next step might be purchasing a Workstation with more performance and maybe a GPU. You can run the same applications as your laptop and leave it running overnight and during weekends. The modern VU offices are not geared for workstations, however, so that might not possible.
+A next step might be purchasing a Workstation with more performance and maybe a GPU. You can run the same applications as your laptop and leave it running overnight and during weekends. The modern VU offices are not geared for workstations, however, so that might not be possible.
 
 The point where your laptop or even a workstation becomes unusable for your analysis workflow is when you should consider HPC. HPC nodes have a large amount of RAM, many processor cores and often multiple GPUs. HPC clusters work with a queueing system, meaning the system will wait until enough resources are available to run your job and it will run multiple jobs simultaneously so its resources are used optimally.
 
@@ -30,7 +30,7 @@ A form to request an account on BAZIS can be found on 🔒 [VU Service Portal](h
 
 ## Are there costs involved?
 
-The BAZIS cluster community nodes are free to use for VU researchers, resources are limited however. 
+The BAZIS cluster community nodes are free to use for VU researchers, although resources are limited. 
 
 ### Buying dedicated compute nodes
 
@@ -40,7 +40,7 @@ If your research projects require heavy usage of HPC you can consider spending p
 
 There is a [guide with BAZIS tips & tricks](../guides/bazis-tips-and-tricks.qmd) in the Handbook.
 
-Also take a look at the [SURF wiki Snellius pages](https://servicedesk.surf.nl/wiki/display/WIKI/Snellius), they contain a lot of information which applies to Bazis as well.
+Also take a look at the [SURF wiki Snellius pages](https://servicedesk.surf.nl/wiki/display/WIKI/Snellius), they contain a lot of information that applies to Bazis as well.
 
 SURF organises regular "Introduction to Supercomputing" training sessions, these are free to attend for VU researchers. The course is aimed at using [Snellius](./snellius.qmd), but what you learn is applicable to BAZIS as well. Please consult the [SURF Agenda](https://www.surf.nl/en/agenda) for dates and registration.
 
