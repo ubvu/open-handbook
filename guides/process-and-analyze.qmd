@@ -14,7 +14,7 @@ Researchers regularly use a lab notebook or a journal to document their hypothes
 
 * [Electronic Lab Journals](https://en.wikipedia.org/wiki/List_of_ELN_software_packages) or Electronic Lab Notebooks are used to meticulously describe and document the process of analysis. Mostly used used in a laboratory environment,; biolab, chemical lab, etc.
 * For computational analyses, [Computational Notebooks like Jupyter notebook](https://jupyter.org/) are used, where you can describe the analysis steps alongside the computer code in different languages like Python, R, Spark, etc. It is important to document steps and changes in your code by writing comments. This way, others and future you can understand how your code works.
-* The [Open Science Framework](https://osf.io) connects different storage types you already use (SURFdrive, Dataverse, etc) and logs automatically all changes of all the steps you make while you progress. With the fine grained history-log and version control system of OSF, you can see all steps you made. You can store and archive the whole provenance trail for citable reproducibility.
+* The [Open Science Framework](https://osf.io) connects different storage types you already use (for example, Dataverse) and logs automatically all changes of all the steps you make while you progress. With the fine grained history-log and version control system of OSF, you can see all steps you made. You can store and archive the whole provenance trail for citable reproducibility.
 
 Finally, when a dataset contains personal data, data provenance can help researchers to understand the specifics and the context in which the data were gathered, also to be able to assess whether or not the informed consent given for the first research, is applicable.
 
@@ -47,7 +47,7 @@ For every step of your data cleaning, good [documentation](../topics/data-docume
 
 It is common in many fields to hold interviews, focus group sessions, or make other observations that were recorded - video or audio. If indeed you have done so, and you need to have the text transcribed, there are several ways to do this. One option is to do this by hand, although this is very time-consuming.
 
-Another option is to pay a transcription service to make the transcription or to use specialised software. The VU has drawn up processing agreements with one transcription service, [Transcript Online](https://transcriptonline.nl), and one transcription software service, [Amberscript](https://www.amberscript.com/en/).
+Another option is to pay a transcription service to make the transcription or to use specialised software. VU Amsterdam has drawn up processing agreements with one transcription service, [Transcript Online](https://transcriptonline.nl), and one transcription software service, [Amberscript](https://www.amberscript.com/en/).
 
 You can find more information on the [VU Library page](https://vu.nl/en/about-vu/divisions/university-library/more-about/transcription%20at%20vu) on what these transcription options do, how they work, how much they cost, and how they can be used.
 
@@ -55,7 +55,7 @@ You can find more information on the [VU Library page](https://vu.nl/en/about-vu
 
 Processing of personal data requires you as a researcher to make sure that any personal data collected from a human subject is according to the EU GDPR regulation. Anonymisation and Pseudonymisation are two ways to make personal data less easy to identify, in other words, it allows you to de-identify personal data.
 
-There are various online tools that may help facilitate these processes. The VU has therefore recommended Amnesia as one of the tools to assist in the anonysmisation/pseudonymistaion of data.
+There are various online tools that may help facilitate these processes. VU Amsterdam has therefore recommended Amnesia as one of the tools to assist in the anonysmisation/pseudonymistaion of data.
 
 VU Amsterdam is preparing a decision guide on anonymisation and pseudonymisation.
 
@@ -69,9 +69,9 @@ Data analysis converts raw/processed data into information that is useful for un
 
 Data analysis often requires the use of specialised software.The software offered and licensed by the university currently includes: Stata, SPSS, and Atlas.TI. For open software, see below.
 
-In some cases researchers write their own scripts to analyse the data. At the VU, most scripts are written in R, Python and SQL.
+In some cases researchers write their own scripts to analyse the data. At VU Amsterdam, most scripts are written in R, Python and SQL.
 
-If you want to read up on data analysis you should check out what journal articles and books the VU library has available on the subject:
+If you want to read up on data analysis you should check out what journal articles and books VU Amsterdam library has available on the subject:
 
 * All sources: [Data analysis](https://vu.on.worldcat.org/external-search?queryString=data+analysis)
 * [Quantitative data analysis](https://vu.on.worldcat.org/external-search?queryString=quantitative+data+analysis)
@@ -93,7 +93,7 @@ There are several ways in which to start using open software:
 * Use the [Software Carpentries](https://software-carpentry.org/lessons/) to learn the basics of programming in Python and R and version control with Git
 * Read the recommendations for [FAIR Software](https://fair-software.nl/).
 
-The VU has several research groups that offer their code online. You can find them here:
+VU Amsterdam has several research groups that offer their code online. You can find them here:
 
 * The Systems Bioinformatics research group, on [GitHub](https://github.com/SystemsBioinformatics)
 * The Computational Lexicology & Terminology Lab, on [GitHub](https://cltl.github.io/)
@@ -123,13 +123,13 @@ You can find more information on the [SURF Snellius Wiki](https://servicedesk.su
 
 #### BAZIS Compute Cluster
 
-IT for Research (ITvO) offers access to your own Linux computational cluster at the VU. BAZIS is a managed service for high performance computing (HPC). Research groups can add their own compute server hardware to [BAZIS](../topics/bazis.qmd), ITvO will take care of configuring and maintaining the software stack on your servers.
+IT for Research (ITvO) offers access to your own Linux computational cluster at VU Amsterdam. BAZIS is a managed service for high performance computing (HPC). Research groups can add their own compute server hardware to [BAZIS](../topics/bazis.qmd), ITvO will take care of configuring and maintaining the software stack on your servers.
 
-BAZIS also has several "community" nodes for use by all VU researchers, sponsored by the VU HPC Council.
+BAZIS also has several "community" nodes for use by all VU researchers, sponsored by VU Amsterdam HPC Council.
 
 BAZIS is connected to SciStor <!--# needs internal link --> providing easy access to your research data and analysis result.
 
-#### VU JupyterHub for education 
+#### VU JupyterHub for education
 
 If you are not yet ready to take the leap to cluster computing and work with Python consider JupyterHub. VU IT has built a Jupyter Notebook environment meant mainly for Education purposes, but accessible for researchers as well on <https://hub.compute.vu.nl/>
 

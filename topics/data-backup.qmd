@@ -1,0 +1,33 @@
+---
+title: Data Backup
+---
+
+Backing up your data is about ensuring your data are in at least two and ideally three *independent* places.
+
+## Why backup?
+
+Hard drives fail, computers get stolen or lost, or your data may accidentally get deleted. To avoid data loss, backing up your data regularly is essential. Ideally, you should have your data stored in at least two, but ideally three different locations. Most cloud-based tools will automatically do backup for you, but they don't protect you from your own mistakes. If you work with data that cannot be easily recreated or recalculated and ensure that it is sufficiently backed up with [the 3-2-1 rule](#3-2-1-rule). This is especially important when migrating your data, such as when updating your operating system to a new major version, or when you get a new computer.
+
+## 3-2-1 Rule
+
+The 3-2-1 rule states that you should have:
+
+* 3 Copies of your data
+* 2 Different mediums (2 different kinds of storage)
+* 1 Copy is kept off-site
+
+Ideally, this is automated so that you as a user do not have to manually do anything extra to manage your data. If possible, automate this backup as well with computer scheduling tools such as Task Scheduler (Windows) or Crontab (Linux).
+
+## Simple Synchronizing Solutions
+
+The VU provides access to multiple [storage systems](../topics/data-storage). You may use a mix of the different platforms.
+If you use these tools they will automatically synchronize your files to the cloud.
+If you accidentally delete a file, you can restore your folder to a previous date - various systems will have different retention periods but it is usually around 1 month.
+
+## Notes
+
+[Utrecht University Geo Data Team Services](https://geo-data-support.sites.uu.nl/data-management/data-backup/) provide a detailed page on data backup including a discussion of data selection for backup.
+
+When your laptop and hard drive are in the same bag, the "backup" can easily get lost along with the primary data and there is thus no proper backup.
+
+These are just some tips, please take responsibility over your data and make sure it's protected from loss but also from your own mistakes.
