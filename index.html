@@ -101,10 +101,21 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./topics.html"> 
-<span class="menu-text">Topics</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-topics" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Topics</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-topics">    
+        <li>
+    <a class="dropdown-item" href="./topics.html">
+ <span class="dropdown-text">All</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./topics.html#category=Tools">
+ <span class="dropdown-text">Tools</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="./guides.html"> 
 <span class="menu-text">Guides</span></a>
@@ -136,9 +147,9 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p></p><div id="react-Hero-GEKO06ap"></div><p></p>
-<p></p><div id="react-Features-22BrW2Wy"></div><p></p>
-<p></p><div id="react-Cta-oVyoGNFn"></div><p></p>
+<p></p><div id="react-Hero-gakmXyGB"></div><p></p>
+<p></p><div id="react-Features-T9hYvC3I"></div><p></p>
+<p></p><div id="react-Cta-7TTYPwlJ"></div><p></p>
 
 
 
@@ -639,7 +650,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </>
   );
 }
-ReactDOM.render( <React.StrictMode>    <Hero/>  </React.StrictMode>,  document.getElementById("react-Hero-GEKO06ap") );</script>
+ReactDOM.render( <React.StrictMode>    <Hero/>  </React.StrictMode>,  document.getElementById("react-Hero-gakmXyGB") );</script>
 <script type="text/babel" data-type="module" data-presets="env-plus,react,typescript">const features = [
   {
     name: <p className="tw-inline"><a href="https://rdm.vu.nl/contributing.html">Quality control</a></p>,
@@ -791,7 +802,7 @@ function Features() {
       </div>
     </>
   );
-}ReactDOM.render( <React.StrictMode>    <Features/>  </React.StrictMode>,  document.getElementById("react-Features-22BrW2Wy") );</script>
+}ReactDOM.render( <React.StrictMode>    <Features/>  </React.StrictMode>,  document.getElementById("react-Features-T9hYvC3I") );</script>
 <script type="text/babel" data-type="module" data-presets="env-plus,react,typescript">function Cta() {
   return (
     <>
@@ -824,7 +835,7 @@ function Features() {
 
   );
 }
-ReactDOM.render( <React.StrictMode>    <Cta/>  </React.StrictMode>,  document.getElementById("react-Cta-oVyoGNFn") );</script>
+ReactDOM.render( <React.StrictMode>    <Cta/>  </React.StrictMode>,  document.getElementById("react-Cta-7TTYPwlJ") );</script>
 
 
 
