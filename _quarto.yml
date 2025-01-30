@@ -19,11 +19,7 @@ website:
     title: false
     collapse-below: lg
     left:
-      - text: "Topics #1"
-        file: topics.qmd
-      - text: Tools
-        href: /topics.html#category=Tools
-      - text: "Topics #2"
+      - text: "Topics"
         menu:
           - text: All
             file: topics.qmd
