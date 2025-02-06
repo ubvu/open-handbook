@@ -4,9 +4,9 @@ categories: [Tools]
 ---
 
 ## What is it?
-The storage service SciStor (Storage for Scientists) is intended for cheaply storing large amounts of research data.
+The storage service SciStor is intended for cheaply storing large amounts of research data.
 
-SciStor is hosted by IT for Research (ITvO) on VU Amsterdam campus and therefore has a high-speed connection to lab equipment, workstations, the [BAZIS HPC cluster](./bazis.qmd) and [SciCloud](./scicloud.qmd). It can also be accessed off-campus. 
+SciStor is hosted by IT for Research (ITvO) on VU Amsterdam campus enabling a high-speed connection to lab equipment, laptops and workstations, the [BAZIS HPC cluster](./bazis.qmd) and [SciCloud](./scicloud.qmd). It can also be accessed off-campus. 
 
 Your data is stored in a **share**, basically a folder with group-based access rights (read/write or read-only). Access rights can be set one level deep, so one share could be used to host data from different projects.
 
@@ -14,19 +14,19 @@ If desired, automatic backups can be made of the data.
 
 ## What can it be used for?
 ### Networked Drive
-Because SciStor is connected to the VU on-campus network you can directly mount SciStor shares on your laptop (on Windows this is called a mapped network drive) and work as if the data is on a local disk. There is no need for up- and downloading data or sync-tools.
+Because SciStor is connected to the VU on-campus network you can directly mount (map a network drive) SciStor shares on your laptop and work as if the data is on a local disk. 
 
 ### Off-campus access
-Although SciStor is most useful on campus you can also [access your shares off-campus](#off-campus-access)
+Although SciStor is most useful on campus you can also [access your shares off-campus](#off-campus-access).
 
 ### Lab instruments
-In many cases lab equipment can write data directly to SciStor. IT for Research can help you setup an automated and secure connection.
+In many cases lab equipment can write data directly to SciStor. [IT for Research](mailto:itvo.it@vu.nl) can help you setup an automated and secure connection.
 
 ### Storage space for SciCloud servers
-[SciCloud](./scicloud.qmd) virtual servers are provisioned with a 20 to 50GB disk. A SciStor share can be directly mounted on the server to increase storage for your application or directly access your source data for analysis.
+[SciCloud](./scicloud.qmd) virtual servers are provisioned with a 20 to 50GB local disk. A SciStor share can be directly mounted on the server to increase storage for your application or directly access your source data for analysis.
 
 ### BAZIS
-The [BAZIS HPC cluster](./bazis.qmd) is connected to SciStor via a high speed network. You can run your analysis software directly on your data and easily access the results on your laptop.
+The [BAZIS HPC cluster](./bazis.qmd) is connected to SciStor via a high speed netwodrk. You can run your analysis software directly on your data and easily access the results on your laptop.
 
 ### Sharing data
 Because SciStor is mainly intended for high performance, on-campus use, access is only possible with a VUnetId. If you need to share data with non-VU researchers you could [register them as an external employee](https://vu.nl/en/employee/start-employment-contract/onboarding-external-employees) or host a copy of the data on another storage platform like Research Drive or [Yoda](./yoda.qmd)
@@ -36,9 +36,9 @@ SciStor is meant for data you are actively working with. We recommend archiving 
 
 ## How to request access
 ### Requesting a new share
-SciStor is available for all VU research groups. Minimum storage space that can be requested is 100 GB, for a minimum of three months. The capacity can be increased or decreased in units of 100 GB if needed.
+SciStor is available for all VU research groups. You can find the request form on 🔒 [ServiceNow](https://services.vu.nl/esc), go to: IT > My work field > Research > SciStor > Realisation of new storage for research (SciStor)
 
-You can find the request form on 🔒 [ServiceNow](https://services.vu.nl/esc), go to: IT > My work field > Research > SciStor > Realisation of new storage for research (SciStor)
+Minimum storage space that can be requested is 100 GB, for a minimum of three months. The capacity can be increased or decreased in units of 100 GB if needed.
 
 After submitting the application, IT for Research will contact you to schedule an interview to discuss naming the SciStor share, how the backups work, who should have access, etc.
 
@@ -50,7 +50,7 @@ The owner of a SciStor share can request to add or remove access to the share vi
 ## Are there costs involved?
 You pay for the amount of space reserved for your share: €0,10 per GB per year without backup or €0,20 per GB per year with backup. Note that without backup data will be lost in case of accidental deletion or major problems with the SciStor infrastructure.  
 
-If activated backups will be made using the 'snapshot' technique.  The backup data is stored at an off-campus datacenter to ensure your data protected against disasters.
+If activated, backups will be made using the 'snapshot' technique.  The backup data is stored at an off-campus datacenter to ensure your data is protected against disasters.
 
 The owner of the SciStor share receives monthly usage reports. The report provides insight on used and available space.
 
@@ -59,57 +59,50 @@ The owner of the SciStor share receives monthly usage reports. The report provid
 - MacOS
 
 1. Open the Finder application
-2. In the Go menu, pick Connect to Server...
-3. Fill in: smb://scistor.vu.nl/shares
-4. Click Connect
-5. If this is your first time connecting to SciStor the following prompt will be generated. Click Connect
-6. Select Registered User if this is not yet selected
-7. Fill in your VUnetID and password
-8. Press Connect
-Optionally, tick the Remember this password in my keychain checkbox. After doing this, macOS will no longer ask for credentials the next time this connection is used.
+2. In the "Go" menu, pick "Connect to Server..."
+3. Fill in: `smb://scistor.vu.nl/shares`
+4. Click "Connect"
+5. Select "Registered User" if this is not yet selected
+6. Fill in your VUnetID and password
+7. Press "Connect". Optionally, tick the "Remember this password in my keychain" checkbox. After doing this, macOS will no longer ask for credentials the next time this connection is used.
 
 SciStor shares appear on the left after opening the SciStor location. You may open the desired SciStor share by double-clicking it.
 
 - Windows
 
 1. Open Windows File Explorer
-2. Right-click on This PC and choose Map network drive... 
-3. Select a desired drive letter, for example S:
-In the Folder field you can enter the following: \\scistor.vu.nl\shares\<the name of the share folder>
-Make sure the checkboxes are checked.
-4. Click Finish
-5. You will now be asked to log in. This is not possible with your PIN code. Choose the More choices option, then you can log in with your VU email address and password
+2. Right-click on This PC and choose "Map network drive..."" 
+3. Select a desired drive letter, for example S. In the Folder field you can enter the following:  `\\scistor.vu.nl\shares\<the name of the share folder>`. Make sure the checkboxes are checked.
+4. Click "Finish"
+5. You will now be asked to log in. This is not possible with your PIN code. Choose the "More choices" option, and log in with your VU email address and password
 
 - 'Green' Linux workspaces
 
-Green Linux workplaces (supported by VU IT) have a connection to SciStor from home. All SciStor shares can be found under the path /research.
+Green Linux workplaces (supported by VU IT) have a connection to SciStor from home. All SciStor shares can be found under the path `/research`.
 
 - Other Linux workstations
 
-Other self-managed Linux workstations can also connect to SciStor. This can be done in a number of ways:
+Other self-managed Linux workstations can also connect to SciStor.
 
-    - Via the SMB protocol
+Via the SMB protocol: Modern Linux variants have the ability to connect to shares from the GUI via the SMB protocol. SciStor shares can be linked with this SMB address: `smb://scistor.vu.nl/shares`.
 
-Modern Linux variants have the ability to connect to shares from the GUI via the SMB protocol. SciStor shares can be linked with this SMB address: smb: //scistor.vu.nl/shares.
-
-    - Via the SFTP protocol
-
-SciStor with the SFTP protocol can be used via the server sftp.data.vu.nl. All SciStor shares can be found under the path /research.
+Via the SFTP protocol: SciStor with the SFTP protocol can be used via the server `sftp.data.vu.nl`. Find the shares under the path `/research`.
 
 <!--    Via the NFS protocol
-PV: KB artikel is verdwenen
+PV: KB artikel is verdwenen en ik kan geen andere vinden, nog navragen
 It is also possible to use SciStor shares via the NFS protocol. The knowledge item [KB0012101](https://vu.service-now.com/kb?id=kb_article_view&sysparm_article=KB0012101) describes how you can access home and groups from a Linux workplace via NFS. This manual can also be used to realise a link with SciStor. Use the path /research for this.
 -->
 
 ### Off-campus access
-- The easiest way is to install the app for [eduVPN institute access](https://vu.eduvpn.nl/portal/home). Once the VPN is active you can follow the "on-campus access" steps above. Note that performance over the internet is limited, you might run into problems when editing large files. If needed copy them to you local disk.
+- eduVPN
 
-- Via SFTP
-On windows you could uise a tool like Webdrive, WinSCP or CyberDuck to access your data via the SFTP protocol. The server URL is `sftp.data.vu.nl`
+The easiest way is to install the app for [eduVPN institute access](https://vu.eduvpn.nl/portal/home). Once the VPN is active you can follow the "on-campus access" steps above. Note that performance over the internet is limited, you might run into problems when editing large files. If needed copy them to you local disk.
 
-IT has a few knowledhe base articles available to help you connect. 
-[Webdrive on Windows](https://vu.service-now.com/kb_view.do?sysparm_article=KB0011851). Webdrive can be downloaded from [download.vu.nl](https://download.vu.nl)
-[Expandrive on Mac](https://vu.service-now.com/kb_view.do?sysparm_article=KB0011846) (follow the SDTP instructions).  
+- SFTP
+
+On windows you can use a free tool like [WinSCP](https://winscp.net/eng/download.php) or [CyberDuck](https://cyberduck.io/download/) to access your data via the SFTP protocol. The server URL is `sftp.data.vu.nl`, find the shares under the path `/research`.
+
+On a Mac you can connect via the IT supported 🔒 [Expandrive](https://vu.service-now.com/kb_view.do?sysparm_article=KB0011846) (follow the SFTP instructions).  
 
 ## Contact
 Wondering if SciStor fits your research needs? Please contact [IT for Research](mailto:itvo.it@vu.nl)
