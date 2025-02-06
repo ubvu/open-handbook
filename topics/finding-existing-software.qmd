@@ -1,0 +1,38 @@
+---
+title: Finding Existing Research Software
+---
+
+## Re-using Existing Software
+
+Depending on your particular field of research, there may be [research software](../topics/research-software.qmd) available that can help you develop your research.
+
+There is a lot of proprietary software which can be acquired [through the VU](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=2ef1fcee97fa0950e553359fe153af10). Proprietary software generally has strict constraints regarding further [sharing and re-use of the software](https://book.the-turing-way.org/reproducible-research/licensing.html).
+
+[Open-source software](https://opensource.org/osd) allows you to use and build upon existing software available in a variety of programming languages and domains. Research software can be found through both generic and discipline-specific registries or catalogues.
+
+When re-using research software, you must comply to constraints imposed by the licence of that software.
+Technically, this means some familiarity is needed with the rules and regulations governing software copyright and intellectual property rights.
+Practically, you will need to be [compatible](https://book.the-turing-way.org/reproducible-research/licensing/licensing-compatibility.html) with the licence's terms and conditions.
+
+The following scheme provides an overview of compatibility of commonly used [software licences](../topics/software-licensing.qmd):
+
+|                | Combine with ↓   |      |      |      |          |                  |                    |
+|----------------|------------------|------|------|------|----------|------------------|--------------------|
+| **Original →** |                  | CC0  | MIT  | BSD  | Apache   | GPL, AGPL, LGPL  | Proprietary        |
+|                | CCO              | YES  | YES  | YES  | YES      | NO               | NO                 |
+|                | MIT              | YES  | YES  | YES  | YES      | NO               | NO                 |
+|                | BSD              | YES  | YES  | YES  | YES      | NO               | NO                 |
+|                | Apache           | YES  | YES  | YES  | YES      | NO               | NO                 |
+|                | GPL, AGPL, LGPL  | YES  | YES  | YES  | NO       | YES              | NO                 |
+|                | Proprietary      | YES  | YES  | YES  | Claused  | NO               | Depends on licence |
+
+A more complete list of open source licences with terms and conditions is available [here](https://choosealicense.com/appendix/).
+
+[IXA](https://www.ixa.nl/for-researchers/) can provide legal help with the re-use of software.
+
+## Finding Existing Research Software
+
+There is a large growth in the number of available open source research software.
+Many registries (also known as catalogues or “yellow pages”) are available to find existing research software. For example, [PyPI](https://pypi.org/) (for python), [CRAN](https://cran.r-project.org/) (for R), [Research Software Directory](https://research-software-directory.org/) (generic).
+
+An extensive list of research software registries is maintained by the eScience Center [here](https://github.com/NLeSC/awesome-research-software-registries).
