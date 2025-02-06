@@ -137,28 +137,49 @@
     "href": "topics/scistor.html",
     "title": "SciStor",
     "section": "",
-    "text": "The storage service SciStor (Storage for Scientists) is intended for storing large amounts of research data. SciStor can be used from any VU workstation and, via utilities, from home or on the road. The access rights can be set relatively fine-grained.\nSciStor is hosted by IT for Research (ITvO) on VU Amsterdam campus and is therefore close to lab equipment, workstations, the BAZIS HPC cluster and SciCloud.\nIf desired, automatic backups can be made of the data.\nBecause SciStor is mainly intended for high performance on-campus use, access is only possible with a VUnetId."
+    "text": "The storage service SciStor is intended for cheaply storing large amounts of research data.\nSciStor is hosted by IT for Research (ITvO) on the VU campus enabling a high-speed connection to lab equipment, laptops and workstations, the BAZIS HPC cluster and SciCloud. It can also be accessed off-campus.\nYour data is stored in a share, basically a folder with group-based access rights (read/write or read-only). Access rights can be set one level deep, so one share could be used to host data from different projects.\nIf desired, automatic backups can be made of the data."
   },
   {
-    "objectID": "topics/scistor.html#storage-space-reservation",
-    "href": "topics/scistor.html#storage-space-reservation",
+    "objectID": "topics/scistor.html#what-is-it",
+    "href": "topics/scistor.html#what-is-it",
     "title": "SciStor",
-    "section": "Storage space reservation",
-    "text": "Storage space reservation\nStorage space on SciStor is provided on a reservation basis. This means that the amount of space requested is guaranteed to be available. If desired, the reservation can be adjusted up or down very quickly, subject to a few exceptions. The owner of the SciStor share receives monthly usage reports. The report provides insight on used and available space."
+    "section": "",
+    "text": "The storage service SciStor is intended for cheaply storing large amounts of research data.\nSciStor is hosted by IT for Research (ITvO) on the VU campus enabling a high-speed connection to lab equipment, laptops and workstations, the BAZIS HPC cluster and SciCloud. It can also be accessed off-campus.\nYour data is stored in a share, basically a folder with group-based access rights (read/write or read-only). Access rights can be set one level deep, so one share could be used to host data from different projects.\nIf desired, automatic backups can be made of the data."
   },
   {
-    "objectID": "topics/scistor.html#backups",
-    "href": "topics/scistor.html#backups",
+    "objectID": "topics/scistor.html#what-can-it-be-used-for",
+    "href": "topics/scistor.html#what-can-it-be-used-for",
     "title": "SciStor",
-    "section": "Backups",
-    "text": "Backups\nSciStor shares can be backed up using the ‘snapshot’ technique. This makes it possible, among other things, for Windows users of a SciStor share to retrieve data from the backup themselves. The backup data is stored at an off-campus datacenter to ensure your data protected against disasters."
+    "section": "What can it be used for?",
+    "text": "What can it be used for?\n\nNetworked Drive\nBecause SciStor is connected to the VU on-campus network you can directly mount (map a network drive) SciStor shares on your laptop and work as if the data is on a local disk.\n\n\nAccess off-campus\nAlthough SciStor is most useful on campus you can also access your shares off-campus.\n\n\nLab instruments\nIn many cases lab equipment can write data directly to SciStor. IT for Research can help you setup an automated and secure connection.\n\n\nStorage space for SciCloud servers\nSciCloud virtual servers are provisioned with a 20 to 50GB local disk. A SciStor share can be directly mounted on the server to increase storage for your application or directly access your source data for analysis.\n\n\nBAZIS\nThe BAZIS HPC cluster is connected to SciStor via a high speed netwodrk. You can run your analysis software directly on your data and easily access the results on your laptop.\n\n\nSharing data\nBecause SciStor is mainly intended for high performance, on-campus use, access is only possible with a VUnetId. If you need to share data with non-VU researchers you could register them as an external employee or host a copy of the data on another storage platform like Research Drive or Yoda\n\n\nData life-cycle\nSciStor is meant for data you are actively working with. We recommend archiving datasets that are no langer actively used, but can’t be deleted, in Yoda. This ensures SciStor is used optimally and costs are kept down for your research group and the VU."
   },
   {
-    "objectID": "topics/scistor.html#requesting-a-scistor-share",
-    "href": "topics/scistor.html#requesting-a-scistor-share",
+    "objectID": "topics/scistor.html#how-to-request-access",
+    "href": "topics/scistor.html#how-to-request-access",
     "title": "SciStor",
-    "section": "Requesting a SciStor share",
-    "text": "Requesting a SciStor share\nSciStor is available for all VU research groups. Minimum storage space that can be requested is 100 GB, for a minimum of three months. The capacity can be increased or decreased in units of 100 GB if needed.\nYou can find the request form on 🔒 ServiceNow, go to: IT &gt; My work field &gt; Research &gt; SciStor &gt; Realisation of new storage for research (SciStor)\nAfter submitting the application, IT for Research will contact you to schedule an interview to discuss naming the SciStor share, how the backups work, who should have access, etc.\nMost SciStor configurations can be delivered within one or two days. More complex configurations may take a little longer."
+    "section": "How to request access",
+    "text": "How to request access\n\nRequesting a new share\nSciStor is available for all VU research groups. You can find the request form on 🔒 ServiceNow, go to: IT &gt; My work field &gt; Research &gt; SciStor &gt; Realisation of new storage for research (SciStor)\nMinimum storage space that can be requested is 100 GB, for a minimum of three months. The capacity can be increased or decreased in units of 100 GB if needed.\nAfter submitting the application, IT for Research will contact you to schedule an interview to discuss naming the SciStor share, how the backups work, who should have access, etc.\nMost SciStor configurations can be delivered within one or two days. More complex configurations may take a little longer.\n\n\nAdding a colleague to an existing share\nThe owner of a SciStor share can request to add or remove access to the share via 🔒 ServiceNow, go to: IT &gt; My work field &gt; Research &gt; SciStor &gt; Change SciStor access rights"
+  },
+  {
+    "objectID": "topics/scistor.html#are-there-costs-involved",
+    "href": "topics/scistor.html#are-there-costs-involved",
+    "title": "SciStor",
+    "section": "Are there costs involved?",
+    "text": "Are there costs involved?\nYou pay for the amount of space reserved for your share: €0,10 per GB per year without backup or €0,20 per GB per year with backup. Note that without backup data will be lost in case of accidental deletion or major problems with the SciStor infrastructure.\nIf activated, backups will be made using the ‘snapshot’ technique. The backup data is stored at an off-campus data centre to ensure your data is protected against disasters.\nThe owner of the SciStor share receives monthly usage reports. The report provides insight on used and available space."
+  },
+  {
+    "objectID": "topics/scistor.html#getting-started",
+    "href": "topics/scistor.html#getting-started",
+    "title": "SciStor",
+    "section": "Getting started",
+    "text": "Getting started\n\nOn-campus access\n\nMacOS\n\n\nOpen the Finder application\nIn the “Go” menu, pick “Connect to Server…”\nFill in: smb://scistor.vu.nl/shares\nClick “Connect”\nSelect “Registered User” if this is not yet selected\nFill in your VUnetID and password\nPress “Connect”. Optionally, tick the “Remember this password in my keychain” checkbox. After doing this, macOS will no longer ask for credentials the next time this connection is used.\n\nSciStor shares appear on the left after opening the SciStor location. You may open the desired SciStor share by double-clicking it.\n\nWindows\n\n\nOpen Windows File Explorer\nRight-click on This PC and choose “Map network drive…””\nSelect a desired drive letter, for example S. In the Folder field you can enter the following: \\\\scistor.vu.nl\\shares\\&lt;the name of the share folder&gt;. Make sure the checkboxes are checked.\nClick “Finish”\nYou will now be asked to log in. This is not possible with your PIN code. Choose the “More choices” option, and log in with your VU email address and password\n\n\n‘Green’ Linux workspaces\n\nGreen Linux workplaces (supported by VU IT) have a connection to SciStor from home. All SciStor shares can be found under the path /research.\n\nOther Linux workstations\n\nOther self-managed Linux workstations can also connect to SciStor.\nVia the SMB protocol: Modern Linux variants have the ability to connect to shares from the GUI via the SMB protocol. SciStor shares can be linked with this SMB address: smb://scistor.vu.nl/shares.\nVia the SFTP protocol: SciStor with the SFTP protocol can be used via the server sftp.data.vu.nl. Find the shares under the path /research.\n\n\n\nOff-campus access\n\neduVPN\n\nThe easiest way is to install the app for eduVPN institute access. Once the VPN is active you can follow the “on-campus access” steps above. Note that performance over the internet is limited, you might run into problems when editing large files. If needed copy them to you local disk.\n\nSFTP\n\nOn windows you can use a free tool like WinSCP or CyberDuck to access your data via the SFTP protocol. The server URL is sftp.data.vu.nl, find the shares under the path /research.\nOn a Mac you can connect via the IT supported 🔒 Expandrive (follow the SFTP instructions)."
+  },
+  {
+    "objectID": "topics/scistor.html#contact",
+    "href": "topics/scistor.html#contact",
+    "title": "SciStor",
+    "section": "Contact",
+    "text": "Contact\nWondering if SciStor fits your research needs? Please contact IT for Research"
   },
   {
     "objectID": "topics/software-licensing.html",
@@ -1313,6 +1334,6 @@
     "href": "topics.html",
     "title": "Topics",
     "section": "",
-    "text": "What is a topic?\n\n\n\nA topic is a specific subject that can be helpful to know about in your daily research. Each page can be read on its own. These pages are a quick way to learn about specific things.\nMissing a topic? You can submit suggestion using the Contribution portal.\n\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTitle\n\n\nReading Time\n\n\n\n\n\n\nBAZIS HPC\n\n\n4 min\n\n\n\n\nCitation File Format (CFF)\n\n\n1 min\n\n\n\n\nData Backup\n\n\n2 min\n\n\n\n\nData Citation\n\n\n1 min\n\n\n\n\nData Collection\n\n\n6 min\n\n\n\n\nData Documentation\n\n\n3 min\n\n\n\n\nData Licensing\n\n\n2 min\n\n\n\n\nData Management Plan (DMP)\n\n\n11 min\n\n\n\n\nData Management Section\n\n\n1 min\n\n\n\n\nData Protection\n\n\n5 min\n\n\n\n\nData Publication\n\n\n2 min\n\n\n\n\nData Storage\n\n\n5 min\n\n\n\n\nDataset and Software Registration in PURE\n\n\n3 min\n\n\n\n\nFAIR Principles\n\n\n4 min\n\n\n\n\nFinding Existing Data\n\n\n5 min\n\n\n\n\nFinding Existing Research Software\n\n\n4 min\n\n\n\n\nMetadata\n\n\n4 min\n\n\n\n\nPersistent Identifier\n\n\n1 min\n\n\n\n\nQualtrics\n\n\n3 min\n\n\n\n\nResearch Data Management (RDM)\n\n\n1 min\n\n\n\n\nResearch Software\n\n\n2 min\n\n\n\n\nSURF Research Cloud\n\n\n3 min\n\n\n\n\nSafe Data Transportation and Transfer\n\n\n4 min\n\n\n\n\nSciCloud\n\n\n3 min\n\n\n\n\nSciStor\n\n\n2 min\n\n\n\n\nSnellius\n\n\n3 min\n\n\n\n\nSoftware Licensing\n\n\n3 min\n\n\n\n\nStoring vs. Archiving Data\n\n\n5 min\n\n\n\n\nTrainings\n\n\n7 min\n\n\n\n\nYoda\n\n\n3 min\n\n\n\n\n\nNo matching items"
+    "text": "What is a topic?\n\n\n\nA topic is a specific subject that can be helpful to know about in your daily research. Each page can be read on its own. These pages are a quick way to learn about specific things.\nMissing a topic? You can submit suggestion using the Contribution portal.\n\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTitle\n\n\nReading Time\n\n\n\n\n\n\nBAZIS HPC\n\n\n4 min\n\n\n\n\nCitation File Format (CFF)\n\n\n1 min\n\n\n\n\nData Backup\n\n\n2 min\n\n\n\n\nData Citation\n\n\n1 min\n\n\n\n\nData Collection\n\n\n6 min\n\n\n\n\nData Documentation\n\n\n3 min\n\n\n\n\nData Licensing\n\n\n2 min\n\n\n\n\nData Management Plan (DMP)\n\n\n11 min\n\n\n\n\nData Management Section\n\n\n1 min\n\n\n\n\nData Protection\n\n\n5 min\n\n\n\n\nData Publication\n\n\n2 min\n\n\n\n\nData Storage\n\n\n5 min\n\n\n\n\nDataset and Software Registration in PURE\n\n\n3 min\n\n\n\n\nFAIR Principles\n\n\n4 min\n\n\n\n\nFinding Existing Data\n\n\n5 min\n\n\n\n\nFinding Existing Research Software\n\n\n4 min\n\n\n\n\nMetadata\n\n\n4 min\n\n\n\n\nPersistent Identifier\n\n\n1 min\n\n\n\n\nQualtrics\n\n\n3 min\n\n\n\n\nResearch Data Management (RDM)\n\n\n1 min\n\n\n\n\nResearch Software\n\n\n2 min\n\n\n\n\nSURF Research Cloud\n\n\n3 min\n\n\n\n\nSafe Data Transportation and Transfer\n\n\n4 min\n\n\n\n\nSciCloud\n\n\n3 min\n\n\n\n\nSciStor\n\n\n6 min\n\n\n\n\nSnellius\n\n\n3 min\n\n\n\n\nSoftware Licensing\n\n\n3 min\n\n\n\n\nStoring vs. Archiving Data\n\n\n5 min\n\n\n\n\nTrainings\n\n\n7 min\n\n\n\n\nYoda\n\n\n3 min\n\n\n\n\n\nNo matching items"
   }
 ]

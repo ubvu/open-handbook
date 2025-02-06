@@ -132,9 +132,29 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#storage-space-reservation" id="toc-storage-space-reservation" class="nav-link active" data-scroll-target="#storage-space-reservation">Storage space reservation</a></li>
-  <li><a href="#backups" id="toc-backups" class="nav-link" data-scroll-target="#backups">Backups</a></li>
-  <li><a href="#requesting-a-scistor-share" id="toc-requesting-a-scistor-share" class="nav-link" data-scroll-target="#requesting-a-scistor-share">Requesting a SciStor share</a></li>
+  <li><a href="#what-is-it" id="toc-what-is-it" class="nav-link active" data-scroll-target="#what-is-it">What is it?</a></li>
+  <li><a href="#what-can-it-be-used-for" id="toc-what-can-it-be-used-for" class="nav-link" data-scroll-target="#what-can-it-be-used-for">What can it be used for?</a>
+  <ul class="collapse">
+  <li><a href="#networked-drive" id="toc-networked-drive" class="nav-link" data-scroll-target="#networked-drive">Networked Drive</a></li>
+  <li><a href="#access-off-campus" id="toc-access-off-campus" class="nav-link" data-scroll-target="#access-off-campus">Access off-campus</a></li>
+  <li><a href="#lab-instruments" id="toc-lab-instruments" class="nav-link" data-scroll-target="#lab-instruments">Lab instruments</a></li>
+  <li><a href="#storage-space-for-scicloud-servers" id="toc-storage-space-for-scicloud-servers" class="nav-link" data-scroll-target="#storage-space-for-scicloud-servers">Storage space for SciCloud servers</a></li>
+  <li><a href="#bazis" id="toc-bazis" class="nav-link" data-scroll-target="#bazis">BAZIS</a></li>
+  <li><a href="#sharing-data" id="toc-sharing-data" class="nav-link" data-scroll-target="#sharing-data">Sharing data</a></li>
+  <li><a href="#data-life-cycle" id="toc-data-life-cycle" class="nav-link" data-scroll-target="#data-life-cycle">Data life-cycle</a></li>
+  </ul></li>
+  <li><a href="#how-to-request-access" id="toc-how-to-request-access" class="nav-link" data-scroll-target="#how-to-request-access">How to request access</a>
+  <ul class="collapse">
+  <li><a href="#requesting-a-new-share" id="toc-requesting-a-new-share" class="nav-link" data-scroll-target="#requesting-a-new-share">Requesting a new share</a></li>
+  <li><a href="#adding-a-colleague-to-an-existing-share" id="toc-adding-a-colleague-to-an-existing-share" class="nav-link" data-scroll-target="#adding-a-colleague-to-an-existing-share">Adding a colleague to an existing share</a></li>
+  </ul></li>
+  <li><a href="#are-there-costs-involved" id="toc-are-there-costs-involved" class="nav-link" data-scroll-target="#are-there-costs-involved">Are there costs involved?</a></li>
+  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting started</a>
+  <ul class="collapse">
+  <li><a href="#on-campus-access" id="toc-on-campus-access" class="nav-link" data-scroll-target="#on-campus-access">On-campus access</a></li>
+  <li><a href="#off-campus-access" id="toc-off-campus-access" class="nav-link" data-scroll-target="#off-campus-access">Off-campus access</a></li>
+  </ul></li>
+  <li><a href="#contact" id="toc-contact" class="nav-link" data-scroll-target="#contact">Contact</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/scistor.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -163,24 +183,122 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The storage service SciStor (Storage for Scientists) is intended for storing large amounts of research data. SciStor can be used from any VU workstation and, via utilities, from home or on the road. The access rights can be set relatively fine-grained.</p>
-<p>SciStor is hosted by IT for Research (ITvO) on VU Amsterdam campus and is therefore close to lab equipment, workstations, the <a href="../topics/bazis.html">BAZIS HPC cluster</a> and SciCloud.</p>
+<section id="what-is-it" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-it">What is it?</h2>
+<p>The storage service SciStor is intended for cheaply storing large amounts of research data.</p>
+<p>SciStor is hosted by IT for Research (ITvO) on the VU campus enabling a high-speed connection to lab equipment, laptops and workstations, the <a href="../topics/bazis.html">BAZIS HPC cluster</a> and <a href="../topics/scicloud.html">SciCloud</a>. It can also be accessed off-campus.</p>
+<p>Your data is stored in a <strong>share</strong>, basically a folder with group-based access rights (read/write or read-only). Access rights can be set one level deep, so one share could be used to host data from different projects.</p>
 <p>If desired, automatic backups can be made of the data.</p>
-<p>Because SciStor is mainly intended for high performance on-campus use, access is only possible with a VUnetId. <!-- add information on obtaining vunetid's for guests --></p>
-<section id="storage-space-reservation" class="level2">
-<h2 class="anchored" data-anchor-id="storage-space-reservation">Storage space reservation</h2>
-<p>Storage space on SciStor is provided on a reservation basis. This means that the amount of space requested is guaranteed to be available. If desired, the reservation can be adjusted up or down very quickly, subject to a few exceptions. The owner of the SciStor share receives monthly usage reports. The report provides insight on used and available space. <!-- link to cost model --></p>
 </section>
-<section id="backups" class="level2">
-<h2 class="anchored" data-anchor-id="backups">Backups</h2>
-<p>SciStor shares can be backed up using the ‘snapshot’ technique. This makes it possible, among other things, for Windows users of a SciStor share to retrieve data from the backup themselves. The backup data is stored at an off-campus datacenter to ensure your data protected against disasters.</p>
+<section id="what-can-it-be-used-for" class="level2">
+<h2 class="anchored" data-anchor-id="what-can-it-be-used-for">What can it be used for?</h2>
+<section id="networked-drive" class="level3">
+<h3 class="anchored" data-anchor-id="networked-drive">Networked Drive</h3>
+<p>Because SciStor is connected to the VU on-campus network you can directly mount (map a network drive) SciStor shares on your laptop and work as if the data is on a local disk.</p>
 </section>
-<section id="requesting-a-scistor-share" class="level2">
-<h2 class="anchored" data-anchor-id="requesting-a-scistor-share">Requesting a SciStor share</h2>
-<p>SciStor is available for all VU research groups. Minimum storage space that can be requested is 100 GB, for a minimum of three months. The capacity can be increased or decreased in units of 100 GB if needed.</p>
-<p>You can find the request form on 🔒 <a href="https://services.vu.nl/esc">ServiceNow</a>, go to: IT &gt; My work field &gt; Research &gt; SciStor &gt; Realisation of new storage for research (SciStor)</p>
+<section id="access-off-campus" class="level3">
+<h3 class="anchored" data-anchor-id="access-off-campus">Access off-campus</h3>
+<p>Although SciStor is most useful on campus you can also <a href="#off-campus-access">access your shares off-campus</a>.</p>
+</section>
+<section id="lab-instruments" class="level3">
+<h3 class="anchored" data-anchor-id="lab-instruments">Lab instruments</h3>
+<p>In many cases lab equipment can write data directly to SciStor. <a href="mailto:itvo.it@vu.nl">IT for Research</a> can help you setup an automated and secure connection.</p>
+</section>
+<section id="storage-space-for-scicloud-servers" class="level3">
+<h3 class="anchored" data-anchor-id="storage-space-for-scicloud-servers">Storage space for SciCloud servers</h3>
+<p><a href="../topics/scicloud.html">SciCloud</a> virtual servers are provisioned with a 20 to 50GB local disk. A SciStor share can be directly mounted on the server to increase storage for your application or directly access your source data for analysis.</p>
+</section>
+<section id="bazis" class="level3">
+<h3 class="anchored" data-anchor-id="bazis">BAZIS</h3>
+<p>The <a href="../topics/bazis.html">BAZIS HPC cluster</a> is connected to SciStor via a high speed netwodrk. You can run your analysis software directly on your data and easily access the results on your laptop.</p>
+</section>
+<section id="sharing-data" class="level3">
+<h3 class="anchored" data-anchor-id="sharing-data">Sharing data</h3>
+<p>Because SciStor is mainly intended for high performance, on-campus use, access is only possible with a VUnetId. If you need to share data with non-VU researchers you could <a href="https://vu.nl/en/employee/start-employment-contract/onboarding-external-employees">register them as an external employee</a> or host a copy of the data on another storage platform like Research Drive or <a href="../topics/yoda.html">Yoda</a></p>
+</section>
+<section id="data-life-cycle" class="level3">
+<h3 class="anchored" data-anchor-id="data-life-cycle">Data life-cycle</h3>
+<p>SciStor is meant for data you are actively working with. We recommend archiving datasets that are no langer actively used, but can’t be deleted, in <a href="../topics/yoda.html">Yoda</a>. This ensures SciStor is used optimally and costs are kept down for your research group and the VU.</p>
+</section>
+</section>
+<section id="how-to-request-access" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-request-access">How to request access</h2>
+<section id="requesting-a-new-share" class="level3">
+<h3 class="anchored" data-anchor-id="requesting-a-new-share">Requesting a new share</h3>
+<p>SciStor is available for all VU research groups. You can find the request form on 🔒 <a href="https://services.vu.nl/esc">ServiceNow</a>, go to: IT &gt; My work field &gt; Research &gt; SciStor &gt; Realisation of new storage for research (SciStor)</p>
+<p>Minimum storage space that can be requested is 100 GB, for a minimum of three months. The capacity can be increased or decreased in units of 100 GB if needed.</p>
 <p>After submitting the application, IT for Research will contact you to schedule an interview to discuss naming the SciStor share, how the backups work, who should have access, etc.</p>
 <p>Most SciStor configurations can be delivered within one or two days. More complex configurations may take a little longer.</p>
+</section>
+<section id="adding-a-colleague-to-an-existing-share" class="level3">
+<h3 class="anchored" data-anchor-id="adding-a-colleague-to-an-existing-share">Adding a colleague to an existing share</h3>
+<p>The owner of a SciStor share can request to add or remove access to the share via 🔒 <a href="https://services.vu.nl/esc">ServiceNow</a>, go to: IT &gt; My work field &gt; Research &gt; SciStor &gt; Change SciStor access rights</p>
+</section>
+</section>
+<section id="are-there-costs-involved" class="level2">
+<h2 class="anchored" data-anchor-id="are-there-costs-involved">Are there costs involved?</h2>
+<p>You pay for the amount of space reserved for your share: €0,10 per GB per year without backup or €0,20 per GB per year with backup. Note that without backup data will be lost in case of accidental deletion or major problems with the SciStor infrastructure.</p>
+<p>If activated, backups will be made using the ‘snapshot’ technique. The backup data is stored at an off-campus data centre to ensure your data is protected against disasters.</p>
+<p>The owner of the SciStor share receives monthly usage reports. The report provides insight on used and available space.</p>
+</section>
+<section id="getting-started" class="level2">
+<h2 class="anchored" data-anchor-id="getting-started">Getting started</h2>
+<section id="on-campus-access" class="level3">
+<h3 class="anchored" data-anchor-id="on-campus-access">On-campus access</h3>
+<ul>
+<li>MacOS</li>
+</ul>
+<ol type="1">
+<li>Open the Finder application</li>
+<li>In the “Go” menu, pick “Connect to Server…”</li>
+<li>Fill in: <code>smb://scistor.vu.nl/shares</code></li>
+<li>Click “Connect”</li>
+<li>Select “Registered User” if this is not yet selected</li>
+<li>Fill in your VUnetID and password</li>
+<li>Press “Connect”. Optionally, tick the “Remember this password in my keychain” checkbox. After doing this, macOS will no longer ask for credentials the next time this connection is used.</li>
+</ol>
+<p>SciStor shares appear on the left after opening the SciStor location. You may open the desired SciStor share by double-clicking it.</p>
+<ul>
+<li>Windows</li>
+</ul>
+<ol type="1">
+<li>Open Windows File Explorer</li>
+<li>Right-click on This PC and choose “Map network drive…””</li>
+<li>Select a desired drive letter, for example S. In the Folder field you can enter the following: <code>\\scistor.vu.nl\shares\&lt;the name of the share folder&gt;</code>. Make sure the checkboxes are checked.</li>
+<li>Click “Finish”</li>
+<li>You will now be asked to log in. This is not possible with your PIN code. Choose the “More choices” option, and log in with your VU email address and password</li>
+</ol>
+<ul>
+<li>‘Green’ Linux workspaces</li>
+</ul>
+<p>Green Linux workplaces (supported by VU IT) have a connection to SciStor from home. All SciStor shares can be found under the path <code>/research</code>.</p>
+<ul>
+<li>Other Linux workstations</li>
+</ul>
+<p>Other self-managed Linux workstations can also connect to SciStor.</p>
+<p>Via the SMB protocol: Modern Linux variants have the ability to connect to shares from the GUI via the SMB protocol. SciStor shares can be linked with this SMB address: <code>smb://scistor.vu.nl/shares</code>.</p>
+<p>Via the SFTP protocol: SciStor with the SFTP protocol can be used via the server <code>sftp.data.vu.nl</code>. Find the shares under the path <code>/research</code>.</p>
+<!--    Via the NFS protocol
+PV: KB artikel is verdwenen en ik kan geen andere vinden, nog navragen
+It is also possible to use SciStor shares via the NFS protocol. The knowledge item [KB0012101](https://vu.service-now.com/kb?id=kb_article_view&sysparm_article=KB0012101) describes how you can access home and groups from a Linux workplace via NFS. This manual can also be used to realise a link with SciStor. Use the path /research for this.
+-->
+</section>
+<section id="off-campus-access" class="level3">
+<h3 class="anchored" data-anchor-id="off-campus-access">Off-campus access</h3>
+<ul>
+<li>eduVPN</li>
+</ul>
+<p>The easiest way is to install the app for <a href="https://vu.eduvpn.nl/portal/home">eduVPN institute access</a>. Once the VPN is active you can follow the “on-campus access” steps above. Note that performance over the internet is limited, you might run into problems when editing large files. If needed copy them to you local disk.</p>
+<ul>
+<li>SFTP</li>
+</ul>
+<p>On windows you can use a free tool like <a href="https://winscp.net/eng/download.php">WinSCP</a> or <a href="https://cyberduck.io/download/">CyberDuck</a> to access your data via the SFTP protocol. The server URL is <code>sftp.data.vu.nl</code>, find the shares under the path <code>/research</code>.</p>
+<p>On a Mac you can connect via the IT supported 🔒 <a href="https://vu.service-now.com/kb_view.do?sysparm_article=KB0011846">Expandrive</a> (follow the SFTP instructions).</p>
+</section>
+</section>
+<section id="contact" class="level2">
+<h2 class="anchored" data-anchor-id="contact">Contact</h2>
+<p>Wondering if SciStor fits your research needs? Please contact <a href="mailto:itvo.it@vu.nl">IT for Research</a></p>
 
 
 </section>
