@@ -20,12 +20,12 @@ const CheckIcon = () => {
 };
 
 const steps = [
-  { id: "01", name: "Discover & Initiate", href: "./guides.html#category=Discover%20&%20Initiate", status: "complete" },
-  { id: "02", name: "Plan & Design", href: "./guides.html#category=Plan%20&%20Design", status: "upcoming" },
-  { id: "03", name: "Collect & Store", href: "./guides.html#category=Collect%20&%20Store", status: "upcoming" },
-  { id: "04", name: "Process & Analyse", href: "./guides.html#category=Process%20&%20Analyse", status: "upcoming" },
-  { id: "05", name: "Document & Preserve", href: "./guides.html#category=Document%20&%20Preserve", status: "upcoming" },
-  { id: "06", name: "Publish & Share", href: "./guides.html#category=Publish%20&%20Share", status: "upcoming" },
+  { id: "01", name: "Discover & Initiate", href: "./guides.html#category=Discover%20%26%20Initiate", status: "complete" },
+  { id: "02", name: "Plan & Design", href: "./guides.html#category=Plan%20%26%20Design", status: "upcoming" },
+  { id: "03", name: "Collect & Store", href: "./guides.html#category=Collect%20%26%20Store", status: "upcoming" },
+  { id: "04", name: "Process & Analyse", href: "./guides.html#category=Process%20%26%20Analyse", status: "upcoming" },
+  { id: "05", name: "Document & Preserve", href: "./guides.html#category=Document%20%26%20Preserve", status: "upcoming" },
+  { id: "06", name: "Publish & Share", href: "./guides.html#category=Publish%20%26%20Share", status: "upcoming" },
 ];
 
 // Adapted from
