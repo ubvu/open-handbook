@@ -60,7 +60,9 @@ There are two type of flavours when it comes to data protection within SciStor.
 | Snapshots                                                                                                                 | Backups                                               |
 |---------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------|
 | "Photo moments" of your data stored  within the same location storage                                                     | Complete copy stored in a different physical location |
-| Default Policies within ITvO: <br>  - Daily snapshots kept for 1 week (1d:1w) <br>  - Weekly snapshots kept for 4 weeks (1w:4w) | Automatic daily backups around midnight               |
+| Default Policies within ITvO:\
+  - Daily snapshots kept for 1 week (1d:1w)\
+  - Weekly snapshots kept for 4 weeks (1w:4w) | Automatic daily backups around midnight               |
 | Custom policies available upon request                                                                                    | Invisible to users - runs in the background           |
 | No additional storage costs                                                                                               | Additional Costs: Doubles the storage costs           |
 
