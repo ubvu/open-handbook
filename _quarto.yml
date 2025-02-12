@@ -20,10 +20,14 @@ website:
     collapse-below: lg
     left:
       - text: "Topics"
-        file: topics.qmd
-      - text: "Guides"
+        menu:
+          - text: All
+            file: topics.qmd
+          - text: Tools
+            href: /topics.html#category=Tools
+      - text: Guides
         file: guides.qmd
-      - text: "Blog"
+      - text: Blog
         file: blog.qmd
       - contributing.qmd
     tools:
