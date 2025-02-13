@@ -191,9 +191,7 @@ On the 🔒 [VU Intranet](https://vu.nl/en/employee/emergencies/data-leaks-and-o
 
 ## GDPR & Privacy
 
-### GDPR in Practice
-
-#### Important definitions
+### Definitions
 
 * **Personal data** refers to any information relating to an identified or identifiable natural person ('data subject'). See also the [definition of 'personal data](https://www.privacy-regulation.eu/en/4.htm)' according to the official text of the GDPR.
 * **Data processing** refers to any action performed on data, such as collecting, storing, modifying, distributing, deleting data. See also the [definition of 'processing'](https://www.privacy-regulation.eu/en/4.htm) according the official text of the GDPR.
@@ -203,17 +201,17 @@ On the 🔒 [VU Intranet](https://vu.nl/en/employee/emergencies/data-leaks-and-o
   * data that are linked to directly identifying information through a random identification code or number
 * **Pseudonymous data**: Data that are indirectly identifiable are generally considered to be pseudonymous; this means that they are NOT anonymous and still qualify as personal data. Therefore privacy laws, such as the GDPR, do in fact apply to these data. This is for example the case when direct identifiers are removed from the research data and put into a key file (or what is usually called a subject identification log in medical research) with which the direct identifiers can be mapped to the research data through unique codes, so that reidentification is possible. These data are therefore pseudonymous, and not anonymous. The LCRDM has made a [reference card](https://lcrdm.nl/wp-content/uploads/2023/03/Anonymization-reference-card-for-researchers.pdf) that illustrates the difference between pseudonymous and anonymous data.
 
-#### Background information
+### Background information
 
-##### Privacy in research - Privacy five-step plan
+#### Privacy in research - Privacy five-step plan
 
 Where research requires the collection of personal data, the researcher has to follow the [Privacy five-step plan](https://vu.nl/en/employee/privacy-and-information-security/working-with-personal-data) to make sure to carry out the research in line with the GDPR.
 
-##### VSNU Code of Conduct for using personal data in research
+#### VSNU Code of Conduct for using personal data in research
 
 The VSNU's Code of Conduct for Research Integrity ([Dutch](https://www.nwo.nl/sites/nwo/files/documents/Nederlandse%2Bgedragscode%2Bwetenschappelijke%2Bintegriteit_2018_NL.pdf), [English](https://www.nwo.nl/sites/nwo/files/documents/Netherlands%2BCode%2Bof%2BConduct%2Bfor%2BResearch%2BIntegrity_2018_UK.pdf), 2018) includes a reference to the GDPR and its Dutch implementation law UAVG. An updated Code of Conduct for Using Personal Data in Research which complies with GDPR is still work in progress.
 
-#### Support within your faculty: Privacy Champions
+### Support within your faculty: Privacy Champions
 
 Each faculty has one or more Privacy Champions, who are the first point of contact for questions relating to privacy and the GDPR. The Privacy Champions can help you with completing a Data Protection Impact Assessment, registering your research in the record of processing activities, designing informed consent forms and other questions relating to the GDPR. The 🔒 [list of Privacy Champions](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information) can be found on VU's website. It is important that you make an overview of what data you are collecting. Your privacy champion can help you with this.
 
@@ -225,11 +223,11 @@ You should always ask your 🔒 [Privacy Champion](https://vu.nl/en/employee/pri
 
 When scientific research includes the processing of personal data, conducting a Data Protection Impact Assessment (DPIA) may be a legal requirement under the GDPR. If it is not a legal requirement, conducting a DPIA is always a helpful exercise to make sure that you address all legal aspects that need to be addressed. It is the best way to GDPR-proof your research.
 
-## What is a DPIA?
+#### What is a DPIA?
 
 A DPIA is an assessment to identify the risks of processing personal data. It consists of a number of questions on the basis of which you determine whether the processing of personal data in your research project is legitimate and which measures should be taken to make sure this processing takes place within the boundaries of the GDPR. A DPIA doesn't deliver an automatic report at the end, but it rather makes you think about all relevant topics you need to address before starting the processing of personal data. The outcome of a DPIA should be used to determine appropriate measures to mitigate the identified risks, such as data minimisation (not collecting more data than necessary), pseudonymising data, selecting appropriate tools for data storage and data sharing.
 
-## When is a DPIA required?
+#### When is a DPIA required?
 
 A DPIA is required when the processing of personal data is likely to result in a “high risk” for the participants of your research project. This is for example most likely the case when scientific research includes the processing of special categories of personal data, such as data concerning health, religious or philosophical beliefs, political opinions or criminal convictions and offences (see [Privacy in Research - 10 key rules](https://doi.org/10.25397/eur.12205019.v1) for more information about special categories of personal data).
 
@@ -240,7 +238,7 @@ There are two DPIA lists which describe situations in which a DPIA is required:
 
 You should consult your 🔒 [Privacy Champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information) to determine whether a PreDPIA is required in your situation.
 
-## How can I complete a DPIA?
+#### How can I complete a DPIA?
 
 VU Amsterdam has a DPIA template based on a form provided by the Dutch Government (see the [original template](https://www.rijksoverheid.nl/documenten/rapporten/2017/09/29/model-gegevensbeschermingseffectbeoordeling-rijksdienst-pia) if you wish to have more background information, only available in Dutch).
 
@@ -250,98 +248,39 @@ Please complete a DPIA at least before you start collecting personal data. In so
 
 If you are not sure whether it is required to conduct a DPIA or if you need help completing a DPIA, please contact your faculty’s 🔒 [Privacy Champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information). If needed they can contact the legal specialists of Institutional and Legal Affairs.
 
-## Policies & Regulations
-
-### VU General Policies and Regulations
-
-#### Research data management policy
-
-VU Amsterdam considers the careful handling of research data to be very important. The university has therefore formulated a Research Data Management policy which provides guidance for researchers and policy officers at VU Amsterdam.
-
-* [VU RDM policy](../public/policies-regulations/RDM-policy-VU-2020.pdf) (2020)
-
-Since VU Amsterdam policy for RDM is formulated in general terms, faculties have worked out more detailed guidelines for their own faculty. These faculty-specific guidelines can be found below.
-
-* [ACTA RDM policy](../public/policies-regulations/ACTA-RDM-policy-2020.pdf), Academisch Centrum Tandheelkunde Amsterdam (2020, in Dutch)
-* [Beta RDM policy](../public/policies-regulations/BETA-RDM-policy-2022.pdf), Faculty of Science (2022)
-* [FGB RDM policy](../public/policies-regulations/public/policies-regulations/FGB-RDM-policy-2023.pdf), Faculty of Behavioural and Movement Sciences (2023)
-* [FGW RDM policy](../public/policies-regulations/FGW-RDM-policy-2023.pdf) , Faculty of Humanities (2023)
-* [FRT RDM policy](../public/policies-regulations/FRT-RDM-policy-2024.pdf), Faculty of Religion and Theology (2024)
-* 🔒 [FSW RDM policy](https://vu.nl/en/employee/social-sciences-getting-started/fss-guidelines-for-data-management), Faculty of Social Sciences (2023)
-* [RCH RDM policy](../public/policies-regulations/RCH-RDM-policy-2021.pdf), Faculty of Law (2021)
-* [SBE RDM policy](../public/policies-regulations/SBE-RDM-policy-2023.pdf), School of Business and Economics (2023)
-
-For RDM policies and guidelines at Amsterdam UMC, location VUmc, please get in touch with [Research Data Management Support](https://www.amsterdamumc.org/en/research/support/services-facilities/data-management/contact.htm) at Amsterdam UMC.
-
-#### Academic integrity complaints procedure
-
-Both VU Amsterdam and Amsterdam UMC, location VUmc, employ a joint policy for the handling academic integrity complaints. This [policy](https://vu.nl/en/about-vu/more-about/academic-integrity) outlines the steps to be taken in the event of a complaint, the officers who play a role in this procedure, and what should be expected once a complaint has been lodged.
-
-#### Confidential counselors
-
-VU Amsterdam has a number of [confidential counsellors](https://vu.nl/en/about-vu/more-about/academic-integrity) who handle academic integrity issues.
-
-#### Data breach incident report
+### Data breach incident report
 
 From 2016 onwards, any data security breaches (particularly those that have, or are likely to have, serious adverse consequences to the protection of personal data) should be reported immediately to the [IT Servicedesk](mailto:servicedesk.it@vu.nl).
 Read the 🔒 [protocol reporting a data breach](https://vu.nl/en/employee/emergencies/data-leaks-and-other-incidents).
 
-#### Regulations and Guidelines
+## Policies & Regulations
+
+### VU General Policies and Regulations
+
+#### Research Data and Software Management Policy
+
+```{.include shift-heading-level-by=4}
+../topics/research-data-and-software-management-policy.qmd
+```
+
+#### Domain-specific guidelines and protocols
 
 Some faculties and departments have their own guidelines for RDM. You can find an overview of such guidelines below.
 
-* [ACTA Research Code](https://acta.nl/en/research/more-about/research-programs)
 * [Amsterdam Public Health Quality Handbook](https://aph-qualityhandbook.org/)
-* FGB:
-  * [Code of Ethics for Research in the Social and Behavioural Sciences Involving Human Participants](https://www.fgb.vu.nl/en/Images/ethiek-reglement-adh-landelijk-nov-2016_tcm264-810069.pdf)
-  * Collection of [guidelines and Standard Operating Procedures](https://www.fgb.vu.nl/en/about-the-faculty/faculty-committees/scientific-and-ethical-review-committee/index.aspx) (SOPs)
-* SBE [Research Ethics Regulations for Researchers](https://vu.nl/en/about-vu/faculties/school-of-business-and-economics/more-about/research-office) and [route map](../public/170925_RDMposter_SBE.pdf) for research data management
+* FGB: [Code of Ethics for Research in the Social and Behavioural Sciences Involving Human Participants](https://nethics.nl/gedragscode-ethical-code)
 
-### Ethics Committees
+### Ethical Review
 
-In cases where research involves human or animal participants, a research proposal may need to be reviewed by an ethics committee. VU and Amsterdam UMC, location VUmc, have several ethics committees, which are listed below. Please note that researchers at VU Amsterdam also have to go to the METc at VUmc if their research is [subject to the WMO](https://english.ccmo.nl/investigators/legal-framework-for-medical-scientific-research/your-research-is-it-subject-to-the-wmo-or-not), which is not restricted to research at VUmc.
+```{.include shift-heading-level-by=3}
+../topics/ethical-review.qmd
+```
 
-* ACTA: [ACTA Institutional Review Board](https://acta.nl/en/research/more-about/acta-institutional-review-board-irb) (IRB)
-* Beta: [Research ethics review committee Faculty of Science](https://vu.nl/en/about-vu/faculties/faculty-of-science/more-about/research-ethics-review-committee-beta) (BETHCIE)
-* FGB: 🔒 [Scientific and Ethical Review Board](https://vu.nl/en/employee/behavioural-and-movement-sciences-getting-started/the-scientific-and-ethical-review-board-vcwe) (VCWE)
-* FGW: [Ethische Toetsingscommissie Onderzoek](https://vu.nl/en/about-vu/faculties/faculty-of-humanities/more-about/research-ethics-and-integrity) (EtCO)
-* FSW: 🔒 [Research Ethics Review Committee](https://vu.nl/en/employee/social-sciences-getting-started/research-ethics-review-fss) (RERC)
-* RCH (Faculty of Law): [Ethics Committee](https://www.rechten.vu.nl/en/about-the-faculty/committees/ethics/index.aspx)
-* VUmc (Amsterdam UMC): [Medical Ethical Review Committee](https://www.vumc.nl/research/overzicht/medisch-ethische-toetsingscommissie.htm) (METc)
+### Academic Integrity
 
-### Netherlands Code of Conduct for Scientific Integrity
-
-Dutch scientists are required to comply with the [Netherlands Code of Conduct for Research Integrity](https://www.universiteitenvannederland.nl/en/research-integrity) (VSNU, 2018). The principles of proper scientific and scholarly research, according to the Code of Conduct are:
-
-* Honesty
-* Scrupulousness
-* Transparency
-* Independence
-* Responsibility
-
-The principles of honesty and transparency state explicit guidelines on the way in which you treat your research data:
-
-* Honesty: you should refrain from fabricating or falsifying data
-* Transparency:
-  * You should ensure that it is clear to others what data your research is based on, how the data were obtained, what the results are and how you got to these results
-  * All steps in your research process must be verifiable (e.g. choice of research question, research design, methodology, sources used), so that it is clear to others how your research was conducted
-
-To live up to these general principles, the Code of Conduct provides the following standards, which are addressed in a DMP, for good research practices related to data management:
-
-* Provide a description of the way in which the collected research data are organised and classified, so that they can be verified and re-used (standard 3.2.10)
-* Make research data public upon completion of your research project; if this is not possible, explain why (standards 3.2.11 and 3.4.45)
-* Describe the data you have collected and used in your research honestly, scrupulously and transparently (standard 3.3.23)
-* Manage your data carefully and store both the raw and processed versions for a period appropriate for your discipline (standard 3.3.24)
-* Contribute towards making data [FAIR](../topics/fair-principles.qmd), where possible (standard 3.3.25)
-* Be transparent about your methods and working procedures by using e.g. research protocols, logs, lab journals or reports to describe these processes (standard 3.4.35)
-
-### Strategy Evalution Protocol
-
-The [Strategy Evaluation Protocol 2021-2027](https://www.universiteitenvannederland.nl/files/publications/SEP_2021-2027.pdf) (SEP) from the VSNU is used to assess the quality of research at Dutch universities, NWO and Academy institutes. It promotes the handling and storing of raw and processed data with care and integrity.
-
-The SEP formulates questions on how a research institute deals with and stores raw and processed data. It also assesses the output of research institutes, including datasets, and the use of such output by peers and societal target groups.
-
-By [registering your datasets](./publish-and-share.qmd#dataset-registration) in VU Amsterdam Research Portal, you contribute to an overview of datasets of your department, faculty and VU Amsterdam as a whole.
+```{.include shift-heading-level-by=3}
+../topics/academic-integrity.qmd
+```
 
 ### NWO Data Policy
 
