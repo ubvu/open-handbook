@@ -96,8 +96,6 @@ Green Linux workplaces (supported by VU IT) have a connection to SciStor from ho
 
 Other self-managed Linux workstations can also connect to SciStor.
 
-<!-- Via the SMB protocol: Modern Linux variants have the ability to connect to shares from the GUI via the SMB protocol. SciStor shares can be linked with this SMB address: `smb://scistor.vu.nl/shares`. -->
-
 Via the SFTP protocol: SciStor with the SFTP protocol can be used via the server `sftp.data.vu.nl`. Find the shares under the path `/research`.
 
 You can do as follows:
