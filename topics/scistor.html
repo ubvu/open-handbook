@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -148,7 +182,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#requesting-a-new-share" id="toc-requesting-a-new-share" class="nav-link" data-scroll-target="#requesting-a-new-share">Requesting a new share</a></li>
   <li><a href="#adding-a-colleague-to-an-existing-share" id="toc-adding-a-colleague-to-an-existing-share" class="nav-link" data-scroll-target="#adding-a-colleague-to-an-existing-share">Adding a colleague to an existing share</a></li>
   </ul></li>
-  <li><a href="#are-there-costs-involved" id="toc-are-there-costs-involved" class="nav-link" data-scroll-target="#are-there-costs-involved">Are there costs involved?</a></li>
+  <li><a href="#are-there-costs-involved" id="toc-are-there-costs-involved" class="nav-link" data-scroll-target="#are-there-costs-involved">Are there costs involved?</a>
+  <ul class="collapse">
+  <li><a href="#backups" id="toc-backups" class="nav-link" data-scroll-target="#backups">Backups</a></li>
+  </ul></li>
   <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting started</a>
   <ul class="collapse">
   <li><a href="#on-campus-access" id="toc-on-campus-access" class="nav-link" data-scroll-target="#on-campus-access">On-campus access</a></li>
@@ -188,7 +225,7 @@ ul.task-list li input[type="checkbox"] {
 <p>The storage service SciStor is intended for cheaply storing large amounts of research data.</p>
 <p>SciStor is hosted by IT for Research (ITvO) on the VU campus enabling a high-speed connection to lab equipment, laptops and workstations, the <a href="../topics/bazis.html">BAZIS HPC cluster</a> and <a href="../topics/scicloud.html">SciCloud</a>. It can also be accessed off-campus.</p>
 <p>Your data is stored in a <strong>share</strong>, basically a folder with group-based access rights (read/write or read-only). Access rights can be set one level deep, so one share could be used to host data from different projects.</p>
-<p>If desired, automatic backups can be made of the data.</p>
+<p>If desired, automatic <a href="#backups">backups</a> can be made of the data.</p>
 </section>
 <section id="what-can-it-be-used-for" class="level2">
 <h2 class="anchored" data-anchor-id="what-can-it-be-used-for">What can it be used for?</h2>
@@ -238,19 +275,52 @@ ul.task-list li input[type="checkbox"] {
 <section id="are-there-costs-involved" class="level2">
 <h2 class="anchored" data-anchor-id="are-there-costs-involved">Are there costs involved?</h2>
 <p>You pay for the amount of space reserved for your share: €0,10 per GB per year without backup or €0,20 per GB per year with backup. Note that without backup data will be lost in case of accidental deletion or major problems with the SciStor infrastructure.</p>
-<p>If activated, backups will be made using the ‘snapshot’ technique. The backup data is stored at an off-campus data centre to ensure your data is protected against disasters.</p>
 <p>The owner of the SciStor share receives monthly usage reports. The report provides insight on used and available space.</p>
+<section id="backups" class="level3">
+<h3 class="anchored" data-anchor-id="backups">Backups</h3>
+<p>There are two type of flavours when it comes to data protection within SciStor.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Snapshots</th>
+<th>Backups</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>“Photo moments” of your data stored within the same location storage</td>
+<td>Complete copy stored in a different physical location</td>
+</tr>
+<tr class="even">
+<td>Default Policies within ITvO: a) Daily snapshots kept for 1 week (1d:1w) b) Weekly snapshots kept for 4 weeks (1w:4w)</td>
+<td>Automatic daily backups around midnight</td>
+</tr>
+<tr class="odd">
+<td>Custom policies available upon request</td>
+<td>Invisible to users - runs in the background</td>
+</tr>
+<tr class="even">
+<td>No additional storage costs</td>
+<td>Additional Costs: Doubles the storage costs</td>
+</tr>
+</tbody>
+</table>
+<p>The ITvO team recommend having both ways activated for complete data protection.</p>
+</section>
 </section>
 <section id="getting-started" class="level2">
 <h2 class="anchored" data-anchor-id="getting-started">Getting started</h2>
 <section id="on-campus-access" class="level3">
 <h3 class="anchored" data-anchor-id="on-campus-access">On-campus access</h3>
-<ul>
-<li>MacOS</li>
-</ul>
+<section id="macos" class="level4">
+<h4 class="anchored" data-anchor-id="macos">MacOS</h4>
 <ol type="1">
 <li>Open the Finder application</li>
-<li>In the “Go” menu, pick “Connect to Server…”</li>
+<li>In the “Go” menu, pick “Connect to Server…” or press “⌘K”</li>
 <li>Fill in: <code>smb://scistor.vu.nl/shares</code></li>
 <li>Click “Connect”</li>
 <li>Select “Registered User” if this is not yet selected</li>
@@ -258,9 +328,9 @@ ul.task-list li input[type="checkbox"] {
 <li>Press “Connect”. Optionally, tick the “Remember this password in my keychain” checkbox. After doing this, macOS will no longer ask for credentials the next time this connection is used.</li>
 </ol>
 <p>SciStor shares appear on the left after opening the SciStor location. You may open the desired SciStor share by double-clicking it.</p>
-<ul>
-<li>Windows</li>
-</ul>
+</section>
+<section id="windows" class="level4">
+<h4 class="anchored" data-anchor-id="windows">Windows</h4>
 <ol type="1">
 <li>Open Windows File Explorer</li>
 <li>Right-click on This PC and choose “Map network drive…””</li>
@@ -268,32 +338,77 @@ ul.task-list li input[type="checkbox"] {
 <li>Click “Finish”</li>
 <li>You will now be asked to log in. This is not possible with your PIN code. Choose the “More choices” option, and log in with your VU email address and password</li>
 </ol>
-<ul>
-<li>‘Green’ Linux workspaces</li>
-</ul>
+</section>
+<section id="green-linux-workspaces" class="level4">
+<h4 class="anchored" data-anchor-id="green-linux-workspaces">‘Green’ Linux workspaces</h4>
 <p>Green Linux workplaces (supported by VU IT) have a connection to SciStor from home. All SciStor shares can be found under the path <code>/research</code>.</p>
-<ul>
-<li>Other Linux workstations</li>
-</ul>
+</section>
+<section id="other-linux-workstations" class="level4">
+<h4 class="anchored" data-anchor-id="other-linux-workstations">Other Linux workstations</h4>
 <p>Other self-managed Linux workstations can also connect to SciStor.</p>
-<p>Via the SMB protocol: Modern Linux variants have the ability to connect to shares from the GUI via the SMB protocol. SciStor shares can be linked with this SMB address: <code>smb://scistor.vu.nl/shares</code>.</p>
 <p>Via the SFTP protocol: SciStor with the SFTP protocol can be used via the server <code>sftp.data.vu.nl</code>. Find the shares under the path <code>/research</code>.</p>
+<p>You can do as follows:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ssh <span class="op">&lt;</span>vunetID<span class="op">&gt;</span>@sftp.data.vu.nl <span class="co"># this will ask your vunet password</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> cd /research/<span class="op">&lt;</span>name-of-scitstor-share<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>To to connect to SciStor using samba protocol, you can do as follows:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> sudo apt install cifs-utils</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> sudo nano /etc/credentials/<span class="op">&lt;</span>vunetID<span class="op">&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># nano</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="va">username</span><span class="op">=&lt;</span>vumail@vu.nl<span class="op">&gt;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="va">password</span><span class="op">=&lt;</span>your-vunet-password<span class="op">&gt;</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> sudo mkdir /data/VU/shares/<span class="op">&lt;</span>name-of-your-share<span class="op">&gt;</span> </span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> sudo mount <span class="at">-t</span> cifs //scistor.vu.nl/shares/<span class="op">&lt;</span>name-of-your-share<span class="op">&gt;</span> /data/VU/shares/<span class="op">&lt;</span>name-of-your-share<span class="op">&gt;</span> -o credentials=/etc/credentials/<span class="op">&lt;</span>vunetID<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The scistor share will be mounted at location: <code>/data/VU/shares</code>. To unmount it, simply do:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> sudo umount /data/VU/shares/<span class="op">&lt;</span>name-of-your-share<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <!--    Via the NFS protocol
 PV: KB artikel is verdwenen en ik kan geen andere vinden, nog navragen
 It is also possible to use SciStor shares via the NFS protocol. The knowledge item [KB0012101](https://vu.service-now.com/kb?id=kb_article_view&sysparm_article=KB0012101) describes how you can access home and groups from a Linux workplace via NFS. This manual can also be used to realise a link with SciStor. Use the path /research for this.
 -->
 </section>
+</section>
 <section id="off-campus-access" class="level3">
 <h3 class="anchored" data-anchor-id="off-campus-access">Off-campus access</h3>
-<ul>
-<li>eduVPN</li>
-</ul>
+<section id="eduvpn" class="level4">
+<h4 class="anchored" data-anchor-id="eduvpn">eduVPN</h4>
 <p>The easiest way is to install the app for <a href="https://vu.eduvpn.nl/portal/home">eduVPN institute access</a>. Once the VPN is active you can follow the “on-campus access” steps above. Note that performance over the internet is limited, you might run into problems when editing large files. If needed copy them to you local disk.</p>
-<ul>
-<li>SFTP</li>
-</ul>
+</section>
+<section id="sftp" class="level4">
+<h4 class="anchored" data-anchor-id="sftp">SFTP</h4>
 <p>On windows you can use a free tool like <a href="https://winscp.net/eng/download.php">WinSCP</a> or <a href="https://cyberduck.io/download/">CyberDuck</a> to access your data via the SFTP protocol. The server URL is <code>sftp.data.vu.nl</code>, find the shares under the path <code>/research</code>.</p>
 <p>On a Mac you can connect via the IT supported 🔒 <a href="https://vu.service-now.com/kb_view.do?sysparm_article=KB0011846">Expandrive</a> (follow the SFTP instructions).</p>
+<p>The configuration is as follows:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Host</td>
+<td><code>ssh.data.vu.nl</code> OR <code>sftp.data.vu.nl</code></td>
+</tr>
+<tr class="even">
+<td>Protocol</td>
+<td>SFTP</td>
+</tr>
+<tr class="odd">
+<td>Port</td>
+<td>22</td>
+</tr>
+<tr class="even">
+<td>Username</td>
+<td>Your VUnetID</td>
+</tr>
+<tr class="odd">
+<td>Password</td>
+<td>Your VUnet password</td>
+</tr>
+</tbody>
+</table>
+<p>Linux users outside campus can follow the previous SFTP explanation.</p>
+</section>
 </section>
 </section>
 <section id="contact" class="level2">
