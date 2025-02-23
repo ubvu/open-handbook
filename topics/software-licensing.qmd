@@ -2,15 +2,17 @@
 title: Software Licensing
 ---
 
-Publishing research software under an appropriate license is crucial for its accessibility, usability, and further integration into research. Choosing a license usually happens right when you start developing the software or when you put it in a public repository, rather than when the software is finished and fully baked. 
+## Licensing software
 
-A software license states how other people may re-use your code and under which circumstances. For research software, it is recommended (and often required by funders) that licenses are as permissible as possible. 
+Publishing research software under an appropriate licence is crucial for its accessibility, usability, and further integration into research. Choosing a licence usually happens right when you start developing the software or when you put it in a public repository, rather than when the software is finished and fully baked. 
 
-There are many licenses out there; below we list some very frequently used licenses in research software. However, if none of these licenses fit your case, there are several tools that can help you to [choose](https://choosealicense.com/) a suitable software license. If you need guidance in choosing a licence for your software, get in touch with the [RDM Support Desk](mailto:rdm@vu.nl?subject=Research%20Software).
+A software licence states how other people may re-use your code and under which circumstances. For research software, it is recommended (and often required by funders) that licences are as permissible as possible. 
+
+There are many licences out there; below we list some very frequently used licences in research software. However, if none of these licences fit your case, there are several tools that can help you to [choose](https://choosealicense.com/) a suitable software licence. If you need guidance in choosing a licence for your software, get in touch with the [RDM Support Desk](mailto:rdm@vu.nl?subject=Research%20Software).
 
 ## MIT License
 
-The [MIT License](https://mit-license.org) is a popular choice, due to its readability and permissiveness. It allows users to reuse the software for any purpose, including using, copying, modifying, and distributing it, provided they include the original copyright notice and license text. 
+The [MIT License](https://mit-license.org) is a popular choice, due to its readability and permissiveness. It allows users to reuse the software for any purpose, including using, copying, modifying, and distributing it, provided they include the original copyright notice and licence text. 
 
 However, its permissiveness means that derivative works can be closed-source and do not need to mention that they use your code, which might not align with all scientific openness goals or general. 
 
@@ -24,17 +26,17 @@ This encourages collaborative improvement of software. Any software that include
 
 The [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) allows for modification and distribution of the software and its derivative works, with the requirement that changes to the original code are documented. 
 
-It is a more complex license than the MIT License and can be incompatible with GPL-licensed software. The specifics of this go beyond the scope of the handbook.
+It is a more complex licence than the MIT License and can be incompatible with GPL-licensed software. The specifics of this go beyond the scope of the handbook.
 
-## Adding a license to GitHub
+## Adding a licence to GitHub
 
-On GitHub you add a license on creating a new repository, by selecting the license from the drop-down menu. If your repository already exists, add a new file called "LICENSE" using the "+"-button on top of the repository (see below). 
+On GitHub you add a licence on creating a new repository, by selecting the licence from the drop-down menu. If your repository already exists, add a new file called "LICENSE" using the "+"-button on top of the repository (see below). 
 
-![Location of file creation button](github_file_creation_button.png)
+![Location of file creation button](../public/github_file_creation_button.png)
  
-One the next page, start type LICENSE as the file name, and a button to "Choose a licence template" should automatically pop up. Follow the steps provided by GitHub to finish adding the license to the repository.
+One the next page, start to type LICENSE as the file name, and a button to "Choose a license template" should automatically pop up. Follow the steps provided by GitHub to finish adding the licence to the repository.
  
-You should now see your license shown on the main page of your repository.
+You should now see your licence shown on the main page of your repository.
 
 ## Further considerations
 
