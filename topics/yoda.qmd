@@ -14,7 +14,7 @@ Yoda presents researchers a comfortable, easy-to-use solution for securely stori
 
 Project space in Yoda is basically a folder with group based access rights. Access restrictions are only set on the top level, meaning you need one Project Space per research project.
 
-[Yoda is open source software](https://github.com/UtrechtUniversity/Yoda) developed and maintained by Utrecht University for the Yoda Consortium, of which VU Amsterdam is a member.  Yoda is hosted by SURF in their Amsterdam datacenter.
+[Yoda is open source software](https://github.com/UtrechtUniversity/Yoda) developed and maintained by Utrecht University for the Yoda Consortium (VU, Wageningen University, Erasmus University, Amsterdam UMC, Utrecht University and SURF). Yoda is hosted by SURF in their Amsterdam datacentre.
 
 ## What can it be used for?
 
@@ -24,38 +24,38 @@ The particular strength of Yoda lies in the fact that it is an all-in-one soluti
 Yoda is a Cloud storage solution that can be used for small to very large datasets. The underlying [iRODS](https://irods.org) software ensures data integrity. Data in Yoda is backed up daily. 
 
 ### Data sharing
-Once a new Yoda group has been created you can invite collaborators yourself. Researchers from national and international research institutes can login with their institutional account via SURF Research Access Management (SRAM). Collaborators from non-research institutes can create a free EduID NL account. 
+Once a new Yoda group has been created you can invite collaborators yourself. Researchers from national and international research institutes can login with their institutional account via [SURF Research Access Management (SRAM)](https://www.surf.nl/en/services/surf-research-access-management). Collaborators from non-research institutes can create a free EduID NL account. 
 
 ### Sensitive data
-Among other things the use of MFA with SRAM and hosting at SURF means Yoda is suitable for the storage and sharing of Highly Sensitive data. Please make sure to contact the Privacy Champion of your faculty to ensure if further measures are needed.
+The use of MFA with SRAM and hosting at SURF ensure, among other things, Yoda is suitable for the storage and sharing of Highly Sensitive data. Please make sure to contact the 🔒 [Privacy Champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information) of your faculty to check if further measures are needed.
 
 ### Metadata
-At any moment you can add metadata to a folder in Yoda via a web form. This means you can easily organize your data in such a way that it is not only ready for archiving and publishing but also findable for your collaborators. 
+At any moment you can add descriptive metadata to a folder in Yoda via a web form. This means you can easily organize your data in such a way that it is not only ready for archiving and publishing but also findable for your collaborators. 
 
 ### Archiving
-At any moment you can submit a data folder for Archiving in the Yoda **Vault**. Data in the Vault is read-only and cannot be deleted. To help make sure the dataset is suitable for archiving a Yoda datamanager (usually a data manager from you department or a faculty data steward) will need to approve your submission. Data in the Vault is directly accessible for your collaborators. Access for the Yoda datamanager ensures the data remains accessible on the long term.
+At any moment you can submit a data folder with metadata for Archiving in the Yoda **Vault**. Data in the Vault is read-only and cannot be deleted. To help make sure the dataset is suitable for archiving a Yoda **datamanager** (usually a data manager from you department or a faculty data steward) will review your submission before final approval. Data in the Vault is directly accessible for your collaborators. Access for the Yoda datamanager role ensures the data remains accessible on the long term.
 
 ### Publishing metadata and data
-From the Yoda Vault you can submit the dataset for **publication**. A DOI is generated and registered with DataCite together with the metadata. DataCite ensures your dataset is findable and citable.
+From the Yoda Vault you can submit the dataset for **publication**. A [DOI](https://www.doi.org/the-identifier/what-is-a-doi/) will be generated and registered with [DataCite](https://datacite.org/) together with the metadata. DataCite ensures your dataset becomes findable on the internet and citable.
 
-The DOI link will lead to a landing page in Yoda. The dataset itself can be Open, allowing direct download, Restricted, meaning other researchers need to contact you, or Closed, signalling the dataset is properly archived but not available for reuse. 
+The DOI link will lead to a **landing page** in Yoda showing the metadata. The dataset itself can be Open, allowing direct download, Restricted, meaning other researchers need to contact you for access, or Closed, signalling the dataset is properly archived but not available for reuse. 
 
 ### Automated workflows
-Since Yoda is build on iRODS you can also build (automated) workflows using iRODS Rules and Policies. 
+Since Yoda is build on iRODS you could also build (automated) ingest and analysis workflows using iRODS Rules and Policies. Please [contact IT for Research](mailto:itvo.it@vu.nl) if you need assistance.
 
 ## How to request access
-Yoda is available for every VU researcher. If you need space to store data for your research project, [you can request it via the linked form](https://yoda.vu.nl/site/getting-started/requesting-space.html).
+Yoda is available for every VU researcher. If you need space to store data for your research project, you can [request it via the linked form](https://yoda.vu.nl/site/getting-started/requesting-space.html).
 
-Once the project space has been created you can start to invite your collaborators.
+Once the project space has been created you can start to invite your collaborators yourself.
 
 ## Are there costs involved?
 The costs of storing data in Yoda are detailed on the 🔒 [VU website](https://vu.nl/en/employee/research-data-support/research-archiving-storage-cost-model). 
 
 ## Getting Started
 
-the VU Yoda website has practical information on the use of the Yoda for users [starting with Yoda](https://yoda.vu.nl/site/getting-started/index.html).
+The VU Yoda website has practical information on the use of the Yoda for users [starting with Yoda](https://yoda.vu.nl/site/getting-started/index.html).
 
-More information can be found on the [SURFsara Knowledge Base](https://servicedesk.surfsara.nl/wiki/display/WIKI/Yoda+Hosting)
+More information can be found on the [SURF User Knowledge base](https://servicedesk.surf.nl/wiki/display/WIKI/Yoda+Hosting)
 
 The [Yoda site of Utrecht University](https://www.uu.nl/en/research/Yoda) also contains useful information and is being redeveloped so it can also be used by VU Amsterdam and the other Consortium Partners.
 
