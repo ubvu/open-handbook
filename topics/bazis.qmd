@@ -21,7 +21,7 @@ The point where your laptop or even a workstation becomes unusable for your anal
 
 Be aware that it is generally not possible to run graphical desktop applications (such as R studio, SPSS or ArcGIS) on an HPC cluster. Your analysis needs to be able to run as a script that can be started from a Linux command line. This means there is a learning curve to use HPC, especially if you are not used to a Command-line Interface (CLI) and scripting.
 
-CLI and scripting skills are very useful to have for every researcher, but  if you feel you do not have the time to learn these skills there might be other options available such as [the VU Compute Hub](https://compute.vu.nl) or [SURF Research Cloud](./researchcloud.qmd) where you can run some graphical tools.
+CLI and scripting skills are very useful to have for every researcher, but  if you feel you do not have the time to learn these skills there might be other options available such as [the VU Compute Hub](https://hub.compute.vu.nl) or [SURF Research Cloud](./researchcloud.qmd) where you can run some graphical tools.
 
 At the moment the community partition does not include GPU resources. If you have tasks that need a GPU (such as Machine Learning) you can apply for access to the national HPC infrastructure [Snellius](./snellius.qmd) or consider [buying BAZIS compute nodes](#buying-dedicated-compute-nodes). 
 
