@@ -37,7 +37,7 @@ function Lifecycle() {
       <div className="tw-mx-auto tw-max-w-7xl tw-px-6 lg:tw-px-8">
         <div className="tw-mx-auto tw-max-w-2xl sm:tw-text-center">
           <h2 className="tw-mt-2 tw-text-3xl tw-font-bold tw-tracking-tight tw-text-sky-900 sm:tw-text-4xl">
-            Research Lifecycle
+            Research Life Cycle
           </h2>
           <p className="tw-m-6 tw-text-lg tw-leading-8 tw-text-gray-600">
             Find the relevant guides for the stage of your research.
