@@ -19,8 +19,9 @@ const CheckIcon = () => {
   );
 };
 
+// complete, current, upcoming
 const steps = [
-  { id: "01", name: "Discover & Initiate", href: "./guides.html#category=Discover%20%26%20Initiate", status: "complete" },
+  { id: "01", name: "Discover & Initiate", href: "./guides.html#category=Discover%20%26%20Initiate", status: "upcoming" },
   { id: "02", name: "Plan & Design", href: "./guides.html#category=Plan%20%26%20Design", status: "upcoming" },
   { id: "03", name: "Collect & Store", href: "./guides.html#category=Collect%20%26%20Store", status: "upcoming" },
   { id: "04", name: "Process & Analyse", href: "./guides.html#category=Process%20%26%20Analyse", status: "upcoming" },
