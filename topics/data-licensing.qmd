@@ -1,0 +1,29 @@
+---
+title: Data Licensing
+---
+
+## Licensing the data
+
+A data licence agreement is a legal instrument that lets others know what they can and cannot do with your research data (and any documentation, scripts and metadata that are published with the data - information about software licensing can be found on the [software licensing](../topics/software-licensing.qmd) page). It is important to consider what kind of limitations are relevant. Usually, at least the following questions are considered:
+
+* Can people make copies or even distribute copies?
+* Do others (and you) reusing the dataset need to acknowledge you as the author of the original dataset? (This is called Attribution.)
+* Do others (and you) who reuse the dataset and/or make derivatives of the dataset need to share their work under a similar licence? (This is called Share-Alike.)
+* Can others (and you) use your dataset commercially? (A restriction on commercial use is called Non-Commercial.)
+* Can others (and you) create a new work based on the dataset? (This is called a Derivative.)
+
+The considerations above are the 'building blocks' that [Creative Commons licences](https://creativecommons.org/share-your-work/cclicenses/) use. There are also other considerations, and also other licences.
+
+![An image of open data, made up of public domain icons](../public/Open_Data_CC0_Wikidata.gif)
+
+In principle, Dataverse allows you to choose your terms of use. If you publish your data in Yoda, there is [guidance](https://yoda.vu.nl/site/getting-started/selecting-license.html) available on how to choose a licence and how to customise licences. Some data repositories require you to use a certain licence if you want to deposit your data with them. At [Dryad](https://datadryad.org/), for example, all datasets are published under the terms of [Creative Commons Zero](https://creativecommons.org/share-your-work/public-domain/cc0/) to minimise legal barriers and to maximise the impact for research and education. Some funders may also require that you publish the data as open data. **Open data** are data that can be freely used, re-used and redistributed by anyone - subject only, at most, to the requirement to attribute and share alike ([Open Knowledge International definition)](https://opendatahandbook.org/guide/en/what-is-open-data/). If you need help with drawing up licence agreements, you can contact the [VU's legal office](https://vu.nl/en/research/portal/research-impact-support-portal/check-legal-support).
+
+## Additional websites and tools:
+
+* [Explanation about copyrights and licences](https://www.youtube.com/watch?v=_J26POpb-rQ&feature=youtu.be) by a professor from Leiden University (English subtitles available)
+* The [Guide to Creative Commons for Scholarly Publishing and Educational Resources](https://zenodo.org/record/4090923#.X6ugz1DvJPY) by NWO, VSNU and the University and Royal Libraries
+* [DCC how-to guide on licensing research data](https://www.dcc.ac.uk/guidance/how-guides/license-research-data), a guide that links to the Creative Commons website, where many terms are explained
+* [Open Data Commons Public Domain Dedication and License (PDDL)](https://opendatacommons.org/licenses/pddl/)
+* [EUDAT B2SHARE licence selection wizard](https://ufal.github.io/public-license-selector/), which Pawel Kamocki (et al.) released under an open source licence.[^1]
+
+[^1]: For the source code, see <https://github.com/ufal/public-license-selector/>
