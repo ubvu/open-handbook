@@ -145,11 +145,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#open-access-and-open-science" id="toc-open-access-and-open-science" class="nav-link" data-scroll-target="#open-access-and-open-science">Open Access and Open Science</a></li>
   <li><a href="#publishing-your-data-in-a-data-journal" id="toc-publishing-your-data-in-a-data-journal" class="nav-link" data-scroll-target="#publishing-your-data-in-a-data-journal">Publishing your data in a data journal</a></li>
   </ul></li>
-  <li><a href="#dataset-registration" id="toc-dataset-registration" class="nav-link" data-scroll-target="#dataset-registration">Dataset Registration</a>
-  <ul class="collapse">
-  <li><a href="#registration-findability" id="toc-registration-findability" class="nav-link" data-scroll-target="#registration-findability">Registration &amp; Findability</a></li>
-  <li><a href="#register-your-datasetsoftware-in-pure" id="toc-register-your-datasetsoftware-in-pure" class="nav-link" data-scroll-target="#register-your-datasetsoftware-in-pure">Register your Dataset/Software in PURE</a></li>
-  </ul></li>
+  <li><a href="#persistent-identifier" id="toc-persistent-identifier" class="nav-link" data-scroll-target="#persistent-identifier">Persistent Identifier</a></li>
+  <li><a href="#licensing-data-and-software" id="toc-licensing-data-and-software" class="nav-link" data-scroll-target="#licensing-data-and-software">Licensing data and software</a></li>
+  <li><a href="#dataset-registration" id="toc-dataset-registration" class="nav-link" data-scroll-target="#dataset-registration">Dataset Registration</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/guides/publish-and-share.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -287,41 +285,53 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="https://openarchaeologydata.metajnl.com/">Journal of Open Archaeology Data</a></li>
 <li><a href="https://openpsychologydata.metajnl.com/">Journal of Open Psychology Data</a></li>
 </ul>
-<section id="persistent-identifier" class="level4">
-<h4 class="anchored" data-anchor-id="persistent-identifier">Persistent Identifier</h4>
+</section>
+</section>
+<section id="persistent-identifier" class="level2">
+<h2 class="anchored" data-anchor-id="persistent-identifier">Persistent Identifier</h2>
 <p>A persistent identifier (PID) is a durable reference to a digital dataset document, website or other object. It is a kind of <a href="https://www.isbn.org/about_isbn_standard">ISBN</a> for digital files. By using a persistent identifier, you make sure that your dataset will be findable well into the future. A <a href="https://en.wikipedia.org/wiki/Digital_object_identifier">DOI</a> or <a href="https://en.wikipedia.org/wiki/Handle_(computing)">Handle</a> are the commonly used PIDs. The <a href="../topics/selecting-data.html">data archiving options</a> at VU Amsterdam commonly offer DOIs.</p>
 <p>Most data archives or repositories offer a persistent identifier and generate this automatically when research data are archived. For example, this is the case for DataverseNL at VU Amsterdam. In Yoda at VU Amsterdam, assigning a PID is possible, but does not happen automatically. Please get in touch with the <a href="mailto:rdm@vu.nl">RDM Support Desk</a> if you have questions about assigning a PID when you archive data in Yoda.</p>
 </section>
+<section id="licensing-data-and-software" class="level2">
+<h2 class="anchored" data-anchor-id="licensing-data-and-software">Licensing data and software</h2>
 <section id="licensing-the-data" class="level4">
 <h4 class="anchored" data-anchor-id="licensing-the-data">Licensing the data</h4>
-<p>A data licence agreement is a legal instrument that lets others know what they can and cannot do with your research data (and any documentation. scripts and metadata that are published with the data). It is important to consider what kind of limitations are relevant. An important component can be a guideline on how people should cite the dataset. Other components could be:</p>
+<p>A data licence agreement is a legal instrument that lets others know what they can and cannot do with your research data (and any documentation, scripts and metadata that are published with the data - information about software licensing can be found on the <a href="../topics/software-licensing.html">software licensing</a> page). It is important to consider what kind of limitations are relevant. Usually, at least the following questions are considered:</p>
 <ul>
-<li>Can people make copies or even distribute copies</li>
-<li>Who should be contacted if you need access to re-use data</li>
-<li>Etc.</li>
+<li>Can people make copies or even distribute copies?</li>
+<li>Do others (and you) reusing the dataset need to acknowledge you as the author of the original dataset? (This is called Attribution.)</li>
+<li>Do others (and you) who reuse the dataset and/or make derivatives of the dataset need to share their work under a similar licence? (This is called Share-Alike.)</li>
+<li>Can others (and you) use your dataset commercially? (A restriction on commercial use is called Non-Commercial.)</li>
+<li>Can others (and you) create a new work based on the dataset? (This is called a Derivative.)</li>
 </ul>
+<p>The considerations above are the ‘building blocks’ that <a href="https://creativecommons.org/share-your-work/cclicenses/">Creative Commons licences</a> use. There are also other considerations, and also other licences.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../topics/../public/Open_Data_CC0_Wikidata.gif" class="img-fluid figure-img"></p>
 <figcaption>An image of open data, made up of public domain icons</figcaption>
 </figure>
 </div>
-<p>In principle, Dataverse allows you to choose your terms of use. Some data repositories require you to use a certain licence if you want to deposit your data with them. At <a href="https://datadryad.org/">Dryad</a>, for example, all datasets are published under the terms of <a href="https://creativecommons.org/share-your-work/public-domain/cc0/">Creative Commons Zero</a> to minimise legal barriers and to maximise the impact for research and education. Some funders may also require that you publish the data as open data. <strong>Open data</strong> are data that can be freely used, re-used and redistributed by anyone - subject only, at most, to the requirement to attribute and share alike (<a href="https://opendatahandbook.org/guide/en/what-is-open-data/">Open Knowledge International definition)</a>. If you need help with drawing up license agreements, you can contact the <a href="https://www.ixa.nl/">IXA office</a>.</p>
-<p>Additional websites and tools:</p>
+<p>In principle, Dataverse allows you to choose your terms of use. If you publish your data in Yoda, there is <a href="https://yoda.vu.nl/site/getting-started/selecting-license.html">guidance</a> available on how to choose a licence and how to customise licences. Some data repositories require you to use a certain licence if you want to deposit your data with them. At <a href="https://datadryad.org/">Dryad</a>, for example, all datasets are published under the terms of <a href="https://creativecommons.org/share-your-work/public-domain/cc0/">Creative Commons Zero</a> to minimise legal barriers and to maximise the impact for research and education. Some funders may also require that you publish the data as open data. <strong>Open data</strong> are data that can be freely used, re-used and redistributed by anyone - subject only, at most, to the requirement to attribute and share alike (<a href="https://opendatahandbook.org/guide/en/what-is-open-data/">Open Knowledge International definition)</a>. If you need help with drawing up licence agreements, you can contact the <a href="https://vu.nl/en/research/portal/research-impact-support-portal/check-legal-support">VU’s legal office</a>.</p>
+</section>
+<section id="additional-websites-and-tools" class="level4">
+<h4 class="anchored" data-anchor-id="additional-websites-and-tools">Additional websites and tools:</h4>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=_J26POpb-rQ&amp;feature=youtu.be">Explanation about copyrights and licences</a> by a professor from Leiden University (English subtitles available)</li>
 <li>The <a href="https://zenodo.org/record/4090923#.X6ugz1DvJPY">Guide to Creative Commons for Scholarly Publishing and Educational Resources</a> by NWO, VSNU and the University and Royal Libraries</li>
 <li><a href="https://www.dcc.ac.uk/guidance/how-guides/license-research-data">DCC how-to guide on licensing research data</a>, a guide that links to the Creative Commons website, where many terms are explained</li>
 <li><a href="https://opendatacommons.org/licenses/pddl/">Open Data Commons Public Domain Dedication and License (PDDL)</a></li>
-<li><a href="https://ufal.github.io/public-license-selector/">EUDAT B2SHARE license selection wizard</a>, which Pawel Kamocki (et al.) released under an open source license.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li>
+<li><a href="https://ufal.github.io/public-license-selector/">EUDAT B2SHARE licence selection wizard</a>, which Pawel Kamocki (et al.) released under an open source licence.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li>
 </ul>
-<p>Publishing research software under an appropriate license is crucial for its accessibility, usability, and further integration into research. Choosing a license usually happens right when you start developing the software or when you put it in a public repository, rather than when the software is finished and fully baked.</p>
-<p>A software license states how other people may re-use your code and under which circumstances. For research software, it is recommended (and often required by funders) that licenses are as permissible as possible.</p>
-<p>There are many licenses out there; below we list some very frequently used licenses in research software. However, if none of these licenses fit your case, there are several tools that can help you to <a href="https://choosealicense.com/">choose</a> a suitable software license. If you need guidance in choosing a licence for your software, get in touch with the <a href="mailto:rdm@vu.nl?subject=Research%20Software">RDM Support Desk</a>.</p>
+</section>
+<section id="licensing-software" class="level4">
+<h4 class="anchored" data-anchor-id="licensing-software">Licensing software</h4>
+<p>Publishing research software under an appropriate licence is crucial for its accessibility, usability, and further integration into research. Choosing a licence usually happens right when you start developing the software or when you put it in a public repository, rather than when the software is finished and fully baked.</p>
+<p>A software licence states how other people may re-use your code and under which circumstances. For research software, it is recommended (and often required by funders) that licences are as permissible as possible.</p>
+<p>There are many licences out there; below we list some very frequently used licences in research software. However, if none of these licences fit your case, there are several tools that can help you to <a href="https://choosealicense.com/">choose</a> a suitable software licence. If you need guidance in choosing a licence for your software, get in touch with the <a href="mailto:rdm@vu.nl?subject=Research%20Software">RDM Support Desk</a>.</p>
 </section>
 <section id="mit-license" class="level4">
 <h4 class="anchored" data-anchor-id="mit-license">MIT License</h4>
-<p>The <a href="https://mit-license.org">MIT License</a> is a popular choice, due to its readability and permissiveness. It allows users to reuse the software for any purpose, including using, copying, modifying, and distributing it, provided they include the original copyright notice and license text.</p>
+<p>The <a href="https://mit-license.org">MIT License</a> is a popular choice, due to its readability and permissiveness. It allows users to reuse the software for any purpose, including using, copying, modifying, and distributing it, provided they include the original copyright notice and licence text.</p>
 <p>However, its permissiveness means that derivative works can be closed-source and do not need to mention that they use your code, which might not align with all scientific openness goals or general.</p>
 </section>
 <section id="gnu-gplv3" class="level4">
@@ -332,19 +342,19 @@ ul.task-list li input[type="checkbox"] {
 <section id="apache-license-2.0" class="level4">
 <h4 class="anchored" data-anchor-id="apache-license-2.0">Apache License 2.0</h4>
 <p>The <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a> allows for modification and distribution of the software and its derivative works, with the requirement that changes to the original code are documented.</p>
-<p>It is a more complex license than the MIT License and can be incompatible with GPL-licensed software. The specifics of this go beyond the scope of the handbook.</p>
+<p>It is a more complex licence than the MIT License and can be incompatible with GPL-licensed software. The specifics of this go beyond the scope of the handbook.</p>
 </section>
-<section id="adding-a-license-to-github" class="level4">
-<h4 class="anchored" data-anchor-id="adding-a-license-to-github">Adding a license to GitHub</h4>
-<p>On GitHub you add a license on creating a new repository, by selecting the license from the drop-down menu. If your repository already exists, add a new file called “LICENSE” using the “+”-button on top of the repository (see below).</p>
+<section id="adding-a-licence-to-github" class="level4">
+<h4 class="anchored" data-anchor-id="adding-a-licence-to-github">Adding a licence to GitHub</h4>
+<p>On GitHub you add a licence on creating a new repository, by selecting the licence from the drop-down menu. If your repository already exists, add a new file called “LICENSE” using the “+”-button on top of the repository (see below).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../topics/github_file_creation_button.png" class="img-fluid figure-img"></p>
+<p><img src="../topics/../public/github_file_creation_button.png" class="img-fluid figure-img"></p>
 <figcaption>Location of file creation button</figcaption>
 </figure>
 </div>
-<p>One the next page, start type LICENSE as the file name, and a button to “Choose a licence template” should automatically pop up. Follow the steps provided by GitHub to finish adding the license to the repository.</p>
-<p>You should now see your license shown on the main page of your repository.</p>
+<p>One the next page, start to type LICENSE as the file name, and a button to “Choose a license template” should automatically pop up. Follow the steps provided by GitHub to finish adding the licence to the repository.</p>
+<p>You should now see your licence shown on the main page of your repository.</p>
 </section>
 <section id="further-considerations" class="level4">
 <h4 class="anchored" data-anchor-id="further-considerations">Further considerations</h4>
@@ -354,11 +364,10 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 </section>
-</section>
 <section id="dataset-registration" class="level2">
 <h2 class="anchored" data-anchor-id="dataset-registration">Dataset Registration</h2>
-<section id="registration-findability" class="level3">
-<h3 class="anchored" data-anchor-id="registration-findability">Registration &amp; Findability</h3>
+<section id="registration-findability" class="level4">
+<h4 class="anchored" data-anchor-id="registration-findability">Registration &amp; Findability</h4>
 <p>When you have finished finalizing a dataset or research software and are ready to archive it, there are many options available. Depending on the research and choices made earlier the archive provides the option to fill in descriptive fields for a dataset. The descriptions in the archives often are automatically created using metadata standards like DataCite or Dublin Core, or some other type of standard. See also section <a href="../topics/metadata.html">Metadata</a></p>
 <p>When registering a dataset or research software in an archive it is important to use unique identifiers to allow for increased findability and easy attribution &amp; citation. Examples of this are:</p>
 <ul>
@@ -372,11 +381,11 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="https://zenodo.org/deposit">Zenodo &amp; registration</a></li>
 </ul>
 </section>
-<section id="register-your-datasetsoftware-in-pure" class="level3">
-<h3 class="anchored" data-anchor-id="register-your-datasetsoftware-in-pure">Register your Dataset/Software in PURE</h3>
+<section id="register-your-datasetsoftware-in-pure" class="level4">
+<h4 class="anchored" data-anchor-id="register-your-datasetsoftware-in-pure">Register your Dataset/Software in PURE</h4>
 <p>Just like your publications, data that you have collected for your research constitute research output, too. Therefore you are required to record your datasets and research software in PURE. Your datasets and research software can be of interest to others, which can in turn lead to new collaboration opportunities. Datasets and research software recorded in PURE also appear in reports that are used for research evaluations. Even if access to your dataset and research software is closed, you are required to register your dataset and research software in PURE. It is a record of the research, data collection and analysis that you have carried out.</p>
-<section id="benefits-of-recording-your-datasetsoftware-in-pure" class="level4">
-<h4 class="anchored" data-anchor-id="benefits-of-recording-your-datasetsoftware-in-pure">Benefits of recording your dataset/software in PURE</h4>
+<section id="benefits-of-recording-your-datasetsoftware-in-pure" class="level5">
+<h5 class="anchored" data-anchor-id="benefits-of-recording-your-datasetsoftware-in-pure">Benefits of recording your dataset/software in PURE</h5>
 <ul>
 <li>It increases the visibility and findability of your datasets and research software</li>
 <li>It contributes to re-use and transparency</li>
@@ -384,8 +393,8 @@ ul.task-list li input[type="checkbox"] {
 <li>It counts towards research evaluations and assessments</li>
 </ul>
 </section>
-<section id="how-to-register-your-datasetsoftware-in-pure" class="level4">
-<h4 class="anchored" data-anchor-id="how-to-register-your-datasetsoftware-in-pure">How to register your dataset/software in PURE?</h4>
+<section id="how-to-register-your-datasetsoftware-in-pure" class="level5">
+<h5 class="anchored" data-anchor-id="how-to-register-your-datasetsoftware-in-pure">How to register your dataset/software in PURE?</h5>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../topics/../public/PURE-AddDataset.png" class="img-fluid figure-img"></p>
