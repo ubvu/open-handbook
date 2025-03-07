@@ -1,0 +1,244 @@
+---
+title: "Publishing FAIR software"
+image: '/public/cover-images/DALLE_DMP.jpg'
+description: "A step-wise guide to make your software Findable, Accesible, Interoperable and Reusable."
+---
+
+## Introduction
+
+This document provides some pointers that can help to set you up with a coding repository that follows the FAIR guiding principles, meaning Findability, Accessibility, Interoperability, and Reuse of digital assets. It is not meant to be an exhaustive guide for every step, but rather acts as a starting point and link to more exhaustive sources.
+
+## Publishing online
+
+Research code (or other code) is best stored on GitHub, this is used by millions of programmers and researchers around the world. To upload your code to GitHub, you first need to make an account here, and then a repository that hosts your code.
+
+### Creating a repository
+
+After logging in, click your profile picture on the top right -> "Your repositories" -> "New". Choose a name, set the visibility (do you want everyone to see your code already or wait a bit before sharing with the world?). It is also advisable to immediately add a "README" file and add a license (see next section). You can update the visibility of your repository later under the repository settings.
+
+### GitHub Pro (free for university employees)
+
+As a university employee, you can use your university email address to get a free "Pro" account, which gives you access to some additional features. You can find more information [here](https://education.github.com/).
+
+### Adding code to your repository
+
+The easiest way is add your (already) written code to the repository using the "Add file" or "+"-button.
+
+![Adding code to your GitHub repository](/public/adding-code-github.png)
+
+Once you uploaded your files, you need to write a "commit" message. This is basically a description of the changes that were made between the previous version of the code and the current version. Since this is the first version of the files (that is available online) you can write something like "initial".
+
+When you plan to use GitHub more often, adding files through the web interface can become cumbersome, and it is recommended to use [GitHub Desktop](https://github.com/apps/desktop) or to use a git manager which is integrated in your IDE (integrated development environment), like [Visual Studio Code](https://code.visualstudio.com/). Git can also be used on the command line, for example, when using git from a server. A really nice tutorial on using git from the command line can be found [here](https://www.codecademy.com/learn/learn-git).
+
+Well done! Your research code is not sitting on your own computer (or worse – deleted after publication*), but is available online for others to find. This is step one in following the [FAIR guiding principles](https://www.go-fair.org/fair-principles/). In the remainder of this guide, you will find steps that will guide you through all steps to release a "perfect" code repository. The first sections are most important, further sections provide room for further improvement, so please use this guide at your own discretion.
+
+*NWO requires data and code to be preserved for at least 10 years, unless legal provisions or discipline-specific guidelines dictate otherwise.
+
+## License
+
+```{.include shift-heading-level-by=4}
+../topics/software-licensing.qmd
+```
+
+## DOI
+
+A DOI, or Digital Object Identifier, string assigned to a document, dataset, or object to provide a permanent link. DOIs ensure that even if the URL of the content changes, the DOI link remains constant, making it a reliable way to cite and access digital materials. There are two ways to do this. Depending on how often you intend to update your code one or the other may be simpler.
+
+1.  If you do not intend to update your code often, it is often to upload your code separately to Zenodo (or similar repository). This will then automatically generate a DOI for you, which can be included in a publication.
+2.  If however, you intend to update your code frequently, it may be easier to set up an automatic link between GitHub and Zenodo, so that a new version of the code is released on Zenodo on publication of a new version on GitHub. You can find a guide on how to do so [here](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content).
+
+## Readme, commenting, code formatting
+
+To allow others to understand and use your code effectively it is important to include a "README" file, and to comment your code.
+
+### Readme file
+
+The README file is the general introduction to a code repository. A good readme includes the following components (but may include other sections of course depending on the project):
+
+* Project Title
+* Project description
+* Installation Instructions: Provide step-by-step guidelines to get the project running.
+* Usage Examples: Include examples of how to use the code, which can be particularly beneficial for libraries or APIs.
+* Dependencies: List any libraries or other software required to run the project.
+* License: Specify the licensing under which the code is released (see above).
+* Citation: Collect more citations 😉 by providing researchers a way to easily cite your paper.
+* [if applicable] Contributing Guidelines: Explain how others can contribute to the project.
+
+On GitHub, the README file should ideally be named "README.md". GitHub automatically renders this file and displays it on the home page of your repository. You can find an example [here](https://github.com/numpy/numpy).
+
+### Code commenting
+
+Code commenting serves several essential purposes, such as enhancing readability, maintainability, and usability for original authors, future contributors and others interested in your code. Comments provide context or explanations for complex logic, variables, and algorithms, making the codebase accessible and understandable. Good practices include describing the purpose of functions, explaining the rationale behind decisions, and highlighting potential side effects.
+
+A huge part of commenting your code is variable naming. Good variable naming, can go a long way in making your code "self-documenting". In general, do not use abbreviations or very short variable names. This may save a couple of keystrokes but this time is easily recovered when looking at the code again months later, and will help your colleagues or other interested people even more. Modern integrated development environments also usually include autocompletion.
+
+### Code formatting
+
+Consistency in code formatting, and adherence to standards can be highly beneficial, allowing other people and yourself to more quickly grasp your code. Each language has different conventions. For example, Python uses [PEP8](https://peps.python.org/pep-0008/), for which some examples are given below:
+
+* Use 4 spaces as indentation
+* local `variable_names` are all lowercase
+* `ClassNames` have each word starting with a Capital letter
+* `GLOBAL_VARIABLES` are all uppercase
+
+Other examples are Google's [R Style Guide](https://google.github.io/styleguide/Rguide.html) and [Google's C++ Style Guide](https://google.github.io/styleguide/cppguide.html).
+
+### Code formatting tools
+
+You can also configure Visual Studio Code to automatically help you formatting your code. You can find more information [here](https://code.visualstudio.com/docs/python/formatting). Even more strict formatting can be done with [ruff](https://github.com/astral-sh/ruff), which is PEP8-compliant but introduces additional rules. ruff can also format your code in place, running `ruff format {source_file_or_directory}`.
+
+You can also use GitHub Actions to automatically check and format your code when you push new commits to your repository. For example for Python, ruff publishes GitHub [actions](https://github.com/astral-sh/ruff-action) that can be used to automatically check and format your code.
+
+Your code is now following the FAIR principles already! However, there is always room for improvement. Futher steps are explained below.
+
+## Documentation
+
+Extensive documentation can help users of your code re-use your code effectively. There are some great tools out there to help you automatically build documentation from your code comments, which can be supplemented with general documentation. Sphinx is a great way to do this, and can be nicely integrated with your existing GitHub repository. Sphinx is – of course – documented using Sphinx, so an example of code documentation can be found here. This guide is not meant to be a full guide on how to use Sphinx as many useful resources can be found on the internet. However, some useful resources (here, and here) are listed, and pointers are given.
+
+### Installing Sphinx
+
+To use Sphinx for automatic documentation generation in a GitHub repository, start by installing Sphinx using pip (`pip install sphinx`). Next, run `sphinx-quickstart` in your project's root directory to generate the basic configuration (`conf.py`) and structure for your documentation.
+
+### Automatic documentation building
+
+Documentation can be automatically updated when you push new commits to your GitHub repository. To do so, you can set up a continuous integration (CI) workflow using GitHub Actions. In a workflow file, you specify the steps to install Sphinx, build the documentation using the `sphinx-build` command, and then push the generated HTML files to the `gh-pages` branch or another branch designated for hosting your documentation. A guide on how to set this up can be found [here](https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html).
+
+This guide is not meant to be a full guide on how to use Sphinx as many useful resources can be found on the internet. However, some useful resources ([here](https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html), and [here](https://towardsdatascience.com/documenting-python-code-with-sphinx-554e1d6c4f6d)) are listed, and pointers are given.
+
+### Installing Sphinx
+
+To use Sphinx for automatic documentation generation in a GitHub repository, start by installing Sphinx using pip (`pip install sphinx`). Next, run `sphinx-quickstart` in your project's root directory to generate the basic configuration (`conf.py`) and structure for your documentation.
+
+### Automatically documenting your code
+
+To document a Python function using autodoc, ensure that the functions in your code have a properly formatted docstring. For example:
+
+```python
+def add_numbers(a, b):
+    """
+    Adds two numbers together.
+
+    :param a: first number
+    :type a: int or float
+    :param b: second number
+    :type b: int or float
+    :return: The sum of `a` and `b`
+    :rtype: int or float
+    """
+    return a + b
+```
+
+In the `conf.py` file, enable the autodoc extension by adding `'sphinx.ext.autodoc'` to the `extensions` list. This extension allows Sphinx to generate documentation directly from your source code's docstrings. Then, in your Sphinx documentation source directory (usually `docs/source`), create a `.rst` file where you want this function's documentation to appear. Use the `autofunction` directive to automatically include the function's documentation:
+
+```rst
+.. autofunction:: path.to.module.add_numbers
+```
+
+Replace path.to.module with the actual Python import path to your function. Sphinx will extract the docstring from the function and incorporate it into the generated documentation, complete with the parameter descriptions and types.
+
+## Released as a package
+
+Creating a Python package allows you to share your code with a broader audience, promoting collaboration, and ensuring reproducibility. There are two "levels" of publishing your code. First of all, you can ensure that your code is directly installable from the GitHub repository. To do so, you can follow the steps explained [here](https://packaging.python.org/en/latest/tutorials/packaging-projects/), but only up to and including the section "Configuring metadata". Here, we assume you already created a `README.md` and added a LICENSE as explained above.
+
+In brief, you need to take the following steps, which are explained in full:
+
+1. Structure your code as a package
+2. Create a metadata file
+
+Then, once this is added to GitHub, you can install the package using the following command (of course adjusted to point to your own repository):
+
+```sh
+pip install git+https://github.com/your_username/your_repository.git
+```
+
+### PyPi
+
+If this works, you can go on to the next step and publish your package on PyPi. When your package is published here, it is possible to directly install your code from pip, as such:
+
+```sh
+pip install your_package
+```
+
+For a full explanation of how to do so, follow the remaining steps explained [here](https://packaging.python.org/en/latest/tutorials/packaging-projects/).
+
+### Automatic publishing versions
+
+If you publish new versions frequently, it may be useful to automatically release these versions to PyPi, directly from GitHub without taking manual steps. To do so, you can follow the guide [here](https://github.com/pypa/gh-action-pypi-publish).
+
+##  Testing
+
+Testing your code is a crucial aspect of software development, ensuring that your application behaves as expected and maintains a high level of quality. You can usually catch bugs much earlier, although it also requires some investment, especially in the beginning. Apart from catching bugs, testing can also focus on syntax use.
+
+### Code testing
+
+One of the most frequently used Python packages for software testing is `pytest`. Here are some quick steps to set up `pytest` in your repository:
+
+#### Python
+
+1. Install `pytest`:
+
+   ```sh
+   pip install pytest
+   ```
+
+2. Create a `tests` directory in your repository's main folder.
+3. Assuming you have a function called `add_one` in the file `my_package/math_functions.py`, you can start by creating a test file within the `tests` directory to test this function:
+
+   ```python
+   # my_package/math_functions.py
+   def add_one(x):
+       return x + 1
+   ```
+
+4. Create a test file named `test_math_functions.py` inside the `tests` directory. This file will contain the tests for your `add_one` function:
+
+   ```python
+   # tests/test_math_functions.py
+   from my_package.math_functions import add_one
+
+   def test_add_one():
+       assert add_one(1) == 2
+       assert add_one(0) == 1
+       assert add_one(-1) == 0
+       assert add_one(100) == 101
+   ```
+
+5. Run the tests by executing `pytest` from the command line. Navigate to your project's root directory and run:
+
+   ```sh
+   pytest
+   ```
+
+#### R
+
+For R, the most frequently used package for software testing is `testthat`, more information can be found [here](https://github.com/r-lib/testthat).
+
+#### C++
+
+For C++, there are a lot of different testing frameworks available, but one of the most frequently used are [Catch2](https://github.com/catchorg/Catch2) and [Google Test](https://google.github.io/googletest/).
+
+### Testing tools
+
+- The [Visual Studio Code Python extension](https://code.visualstudio.com/docs/python/testing) has really good support for testing, saving you lots of time.
+- On GitHub, you can use GitHub Actions to automatically run your tests when you push new commits to your repository. For example for Python, `pytest` publishes GitHub [actions](https://github.com/pavelzw/pytest-action) that can be used to automatically run your tests.
+
+## Updating
+
+Regularly updating your repository and engaging with users can help build a community around your software. For example, users can report bugs to your repository or even contribute to new features (or fix those bugs).
+
+### GitHub Issues
+
+GitHub Issues is a feature that allows project maintainers and contributors to track tasks, enhancements, and bugs for their projects. It can be found by clicking on "Issues" for most repositories (unless explicitly disabled). For example, issues can be used to:
+
+- **Report Bugs**: Users and developers can report bugs they encounter, including descriptions, steps to reproduce, and screenshots.
+- **Request Features**: Suggestions for new features or improvements can be tracked as issues, allowing maintainers to prioritize and discuss them.
+
+## Publication
+
+Finally, publishing your code alongside a scientific publication can help build trust in the software you developed. This can, of course, be done in a traditional journal alongside a journal article. However, in some cases, it may be useful to publish your code in a journal specifically focused on software development. Here, we recommend [JOSS (Journal of Open Source Software)](https://joss.theoj.org/).
+
+Increasingly, traditional scientific publications also include a section that describes where the code can be found. This can be a DOI, a link to a GitHub repository, or a link to a Zenodo repository. An example of such a section can be found here:
+
+```markdown
+Code for data cleaning and analysis is provided as part of the replication package, writting in R. The specific code that was used for this article is available at https://doi.org/10.xxxx/path/to/journal/archive, while further updates are released at https://github.com/repository/your_code.
+```
