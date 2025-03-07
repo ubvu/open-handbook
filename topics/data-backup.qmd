@@ -24,6 +24,12 @@ The VU provides access to multiple [storage systems](../topics/data-storage). Yo
 If you use these tools they will automatically synchronize your files to the cloud.
 If you accidentally delete a file, you can restore your folder to a previous date - various systems will have different retention periods but it is usually around 1 month.
 
+## Data rentention for VU data storage platforms
+
+- **OneDrive**: if you're signed in with a work or school account, items in the recycle bin are automatically deleted after 93 days. The files can be restored to OneDrive before then, or you can permanently delete them from your OneDrive. Additionally, you can restore your OneDrive to a state in the previous 29 days. Finally, the university has an additional backup of data, which can be accessed in case of emergency.
+- **Snellius**: Data on the compute clusters is **NOT** backed up.
+- **SciStore**: Depending on the agreements of your department, data may be backed up. Please check with your department cluster manager.
+
 ## Notes
 
 [Utrecht University Geo Data Team Services](https://geo-data-support.sites.uu.nl/data-management/data-backup/) provide a detailed page on data backup including a discussion of data selection for backup.
