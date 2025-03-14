@@ -127,8 +127,17 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#multiple-pid-systems" id="toc-multiple-pid-systems" class="nav-link active" data-scroll-target="#multiple-pid-systems">Multiple PID systems</a></li>
+  <li><a href="#persistent-identifiers-for-data-and-software-in-repositories" id="toc-persistent-identifiers-for-data-and-software-in-repositories" class="nav-link" data-scroll-target="#persistent-identifiers-for-data-and-software-in-repositories">Persistent Identifiers for data and software in repositories</a></li>
+  <li><a href="#creating-and-using-an-orcid" id="toc-creating-and-using-an-orcid" class="nav-link" data-scroll-target="#creating-and-using-an-orcid">Creating and using an ORCiD</a></li>
+  <li><a href="#using-a-ror" id="toc-using-a-ror" class="nav-link" data-scroll-target="#using-a-ror">Using a ROR</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/persistent-identifier.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -152,10 +161,33 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>A persistent identifier (PID) is a durable reference to a digital dataset document, website or other object. It is a kind of <a href="https://www.isbn.org/about_isbn_standard">ISBN</a> for digital files. By using a persistent identifier, you make sure that your dataset will be findable well into the future. A <a href="https://en.wikipedia.org/wiki/Digital_object_identifier">DOI</a> or <a href="https://en.wikipedia.org/wiki/Handle_(computing)">Handle</a> are the commonly used PIDs. The <a href="../topics/selecting-data.html">data archiving options</a> at VU Amsterdam commonly offer DOIs.</p>
-<p>Most data archives or repositories offer a persistent identifier and generate this automatically when research data are archived. For example, this is the case for DataverseNL at VU Amsterdam. In Yoda at VU Amsterdam, assigning a PID is possible, but does not happen automatically. Please get in touch with the <a href="mailto:rdm@vu.nl">RDM Support Desk</a> if you have questions about assigning a PID when you archive data in Yoda.</p>
+<p>A Persistent Identifier (PID) is a durable reference to a digital dataset, document, website or other object. In the context of research data and software, it is essentially a URL that will never break. By using a Persistent Identifier, you make sure that your dataset will be findable well into the future when it is registered online (for example at <a href="https://datacite.org/">DataCite</a>. Another advantage is that it makes a digital object citable.</p>
+<section id="multiple-pid-systems" class="level2">
+<h2 class="anchored" data-anchor-id="multiple-pid-systems">Multiple PID systems</h2>
+<p>There are multiple PID systems, each with its own particular properties. Examples of widely used PIDs in the research domain include the following.</p>
+<ul>
+<li><strong>DOI</strong>: A <a href="https://www.doi.org/">Digital Object Identifier</a> can be used to refer to research data, research software and publications.</li>
+<li><strong>ORCiD</strong>: An <a href="https://info.orcid.org/researchers/">Open Researcher and Contributor ID</a> is used to create a researcher profile with a unique identification number.</li>
+<li><strong>ROR</strong>: The <a href="https://ror.org/">Research Organization Registry</a> is a global register with persistent identifiers for research institutes.</li>
+</ul>
+<p>See the <a href="https://www.pidwijzer.nl/en/">Persistent Identifier guide</a> of Netwerk Digitaal Erfgoed for a more elaborate overview. Apart from widely used domain-agnostic PIDs, there is a wide range of domain-specific unique identifiers that can be used. If you are interested in domain-specific identifiers, it is useful to ask colleagues in your department or discipline.</p>
+</section>
+<section id="persistent-identifiers-for-data-and-software-in-repositories" class="level2">
+<h2 class="anchored" data-anchor-id="persistent-identifiers-for-data-and-software-in-repositories">Persistent Identifiers for data and software in repositories</h2>
+<p>Persistent Identifiers can be assigned to datasets and software upon their deposit in a repository. In many repositories, this is a DOI. Data repositories are entitled to generate Persistent Identifiers for data and software. This is one of the reasons why <a href="../topics/data-archiving.html">archiving</a> and <a href="topics/data-publication.qmd">publishing</a> data and software has to be done in a repository. After the process of uploading data or software to a repository, a Persistent Identifier will be generated. Upon publishing the data or software, the DOI is registered online (usually at <a href="https://datacite.org/">DataCite</a> when it concerns a dataset).</p>
+<p>Some repositories enable their users to reserve a Persistent Identifier before the publishing process has finished, so that you can include the Persistent Identifier in a publication before the data will be actually published, or to include the Persistent Identifier in a readme file. This is for example possible in <a href="https://zenodo.org/">Zenodo</a>.</p>
+<p>The repositories offered by VU Amsterdam, <a href="https://publication.yoda.vu.nl/">Yoda</a> and <a href="https://dataverse.nl/dataverse/vuamsterdam">DataverseNL</a> provide DOIs for deposited datasets and software.</p>
+</section>
+<section id="creating-and-using-an-orcid" class="level2">
+<h2 class="anchored" data-anchor-id="creating-and-using-an-orcid">Creating and using an ORCiD</h2>
+<p>Researchers can use an <a href="https://info.orcid.org/researchers/">ORCiD</a> to identify their research output as their work. You can request an ORCiD yourself. Instructions for setting up an ORCiD and connecting it to your VU research profile in PURE are available in this <a href="https://libguides.vu.nl/orcid">ORCiD LibGuide</a>. An ORCiD is often asked for when you submit a publication or upload data or software to a repository. You can use your ORCiD record to create a research profile as well.</p>
+</section>
+<section id="using-a-ror" class="level2">
+<h2 class="anchored" data-anchor-id="using-a-ror">Using a ROR</h2>
+<p>Researchers can use the <a href="https://ror.org/">ROR</a> for <a href="https://ror.org/008xxew50">VU Amsterdam</a> when filling metadata forms for their research output to show that their work has been created within their employment at VU Amsterdam.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -605,7 +637,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </a>
   </li>  
 </ul>
-    <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/persistent-identifier.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/persistent-identifier.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
