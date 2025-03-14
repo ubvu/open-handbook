@@ -1,0 +1,29 @@
+---
+title: Data Publishing
+---
+
+## What is data publishing?
+
+When we mention **data publishing** at VU Amsterdam, we mean the following:
+
+> Making research data, associated metadata, accompanying documentation, and software code (where relevant) accessible in a repository in such a manner that **they can be discovered on the Web** and **referred to in a unique and persistent way** (Inspired by the definition in the [CODATA Research Data Management Terminology](http://vocabs.ardc.edu.au/repository/api/lda/codata/codata-research-data-management-terminology/v001/resource?uri=https%3A%2F%2Fterms.codata.org%2Frdmt%2Fdata-publication)).
+
+As stated in the [Research Data and Software Management Policy](../topics/research-data-and-software-management-policy.qmd), researchers are responsible for publishing all research data that leads to a published result (either in an article or other narrative form) for scientific reuse, meaning that these materials can be discovered on the Web and referred to in a unique and persistent way. This means that the existence of a dataset is announced and that basic information about this dataset (like title, creator, moment of publication, etc.) can be found online, but it doesn't necessarily mean that others will be able to access and download the actual data. The level of accessibility to the data must be determined during the publication process. If data or software contain confidential information, information to which intellectual properties apply, and/or personal data, an assessment must take place to determine whether these data can be made available for reuse and if so, under which conditions. A custom licence ('restricted' or 'closed') will indicate if conditional access can be granted, and if so, what the conditions are. 
+
+## Purpose
+
+Data publishing is crucial for the accessibility of research output. It helps to make VU Amsterdam's research visible, verifiable and, where possible, reusable. These are important goals for VU Amsterdam, as they contribute to a transparent reseach practice and enable other researchers to build on work that has been done by VU researchers. Publishing data means that researchers make their datasets known to the world, even if they cannot be accessed by others directly, but only after granting conditional access. This enables other researchers reusing these data, leading to more impact of research that is carried out at VU Amsterdam. It may also result in new collaborations. Another advantage is that it makes the work of a researcher more visible, going beyond the visibility of a publication alone.
+
+## Requirements
+
+At VU Amsterdam, we strive to make our research data [FAIR](../topics/fair-principles.qmd). Publishing data is a crucial step in making data findable. As explained in the definition above, publishing means that you make data discoverable on the internet. As a result, other researchers can find out about the existence of your dataset and consider whether it may be useful for them in their own research.
+
+A [persistent identifier](../topics/persistent-identifier.qmd) helps in making data findable, because it ensures that the persistent identifier always resolves to the correct digital object. Rich [metadata](../topics/metadata.qmd) also contribute to the findability of a dataset. The more information you provide, the more likely it is that others will be able to find your dataset. It is beneficial to use terminology that is common in your discipline when filling out the metadata fields in a repository. Rich information about your dataset will also help other researchers determine whether your dataset is potentially relevant for them.
+
+Repositories provided by VU Amsterdam ([Yoda](https://publication.yoda.vu.nl/), [DataverseNL](https://dataverse.nl/dataverse/vuamsterdam) or [Open Science Framework](https://osf.io/institutions/vua)) will generate a [Persistent Identifier](../topics/persistent-identifier.qmd) for your dataset and they will ask you to fill out [metadata(../topics/metadata.qmd) fields. In this way, they contribute to making your data findable. This will also be the case for external trusted repositories.
+
+When you publish your data, it is important to apply a [licence](../topics/data-licensing.qmd) to it. If you don't do that, others will not be allowed to reuse your data. A licence is a legal instrument that tells others what they can and cannot do with your data and is therefore an important aspect of making data reusable.
+
+## How does data publishing work in practice?
+
+As mentioned above, data publishing must happen through a repository. Detailed workflows addressing publishing data can be found in the guides about [making your data FAIR](../guides/document-and-preserve.qmd) and [archiving and publishing data](../guides/publish-and-share.qmd).
