@@ -2,6 +2,30 @@
 title: Persistent Identifier
 ---
 
-A persistent identifier (PID) is a durable reference to a digital dataset document, website or other object. It is a kind of [ISBN](https://www.isbn.org/about_isbn_standard) for digital files. By using a persistent identifier, you make sure that your dataset will be findable well into the future. A [DOI](https://en.wikipedia.org/wiki/Digital_object_identifier) or [Handle](https://en.wikipedia.org/wiki/Handle_(computing)) are the commonly used PIDs. The [data archiving options](../topics/selecting-data.qmd) at VU Amsterdam commonly offer DOIs.
+A Persistent Identifier (PID) is a durable reference to a digital dataset, document, website or other object. In the context of research data and software, it is essentially a URL that will never break. By using a Persistent Identifier, you make sure that your dataset will be findable well into the future when it is registered online (for example at [DataCite](https://datacite.org/). Another advantage is that it makes a digital object citable.
 
-Most data archives or repositories offer a persistent identifier and generate this automatically when research data are archived. For example, this is the case for DataverseNL at VU Amsterdam. In Yoda at VU Amsterdam, assigning a PID is possible, but does not happen automatically. Please get in touch with the [RDM Support Desk](mailto:rdm@vu.nl) if you have questions about assigning a PID when you archive data in Yoda.
+## Multiple PID systems
+
+There are multiple PID systems, each with its own particular properties. Examples of widely used PIDs in the research domain include the following.
+
+- **DOI**: A [Digital Object Identifier](https://www.doi.org/) can be used to refer to research data, research software and publications.
+- **ORCiD**: An [Open Researcher and Contributor ID](https://info.orcid.org/researchers/) is used to create a researcher profile with a unique identification number.
+- **ROR**: The [Research Organization Registry](https://ror.org/) is a global register with persistent identifiers for research institutes. 
+
+See the [Persistent Identifier guide](https://www.pidwijzer.nl/en/) of Netwerk Digitaal Erfgoed for a more elaborate overview. Apart from widely used domain-agnostic PIDs, there is a wide range of domain-specific unique identifiers that can be used. If you are interested in domain-specific identifiers, it is useful to ask colleagues in your department or discipline.
+
+## Persistent Identifiers for data and software in repositories
+
+Persistent Identifiers can be assigned to datasets and software upon their deposit in a repository. In many repositories, this is a DOI. Data repositories are entitled to generate Persistent Identifiers for data and software. This is one of the reasons why [archiving](../topics/data-archiving.qmd) and [publishing](topics/data-publication.qmd) data and software has to be done in a repository. After the process of uploading data or software to a repository, a Persistent Identifier will be generated. Upon publishing the data or software, the DOI is registered online (usually at [DataCite](https://datacite.org/) when it concerns a dataset). 
+
+Some repositories enable their users to reserve a Persistent Identifier before the publishing process has finished, so that you can include the Persistent Identifier in a publication before the data will be actually published, or to include the Persistent Identifier in a readme file. This is for example possible in [Zenodo](https://zenodo.org/).
+
+The repositories offered by VU Amsterdam, [Yoda](https://publication.yoda.vu.nl/) and [DataverseNL](https://dataverse.nl/dataverse/vuamsterdam) provide DOIs for deposited datasets and software.
+
+## Creating and using an ORCiD
+
+Researchers can use an [ORCiD](https://info.orcid.org/researchers/) to identify their research output as their work. You can request an ORCiD yourself. Instructions for setting up an ORCiD and connecting it to your VU research profile in PURE are available in this [ORCiD LibGuide](https://libguides.vu.nl/orcid). An ORCiD is often asked for when you submit a publication or upload data or software to a repository. You can use your ORCiD record to create a research profile as well.
+
+## Using a ROR
+
+Researchers can use the [ROR](https://ror.org/) for [VU Amsterdam](https://ror.org/008xxew50) when filling metadata forms for their research output to show that their work has been created within their employment at VU Amsterdam.
