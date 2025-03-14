@@ -1,7 +1,7 @@
 ---
-title: What data assets should you publish and what data assets should you archive?
+title: How can I archive and publish my data?
 image: '/public/cover-images/DALLE_sharing-research-data.jpg'
-description: "Archival must happen, publishing can happen."
+description: "All data and software leading to a published result, must be archived and published."
 categories: ["Publish & Share"]
 ---
 
@@ -53,18 +53,6 @@ Specifications:
 
 Before sending data to the vault, you will need to add [metadata](../topics/metadata.qmd). A data steward, metadata specialist or functional manager can help you with the metadata and the entire process of sending data to the vault. Please get in touch with the [RDM Support Desk](mailto:rdm@vu.nl?subject=Sending%20data%20to%20the%20Yoda%20vault) to find this help.
 
-### Archiving vs. Publishing Data
-
-There is a difference between archiving and publishing data. When we talk about archiving data, we mean that data are deposited securely, in a fixed state, in a location that is not accessible to the public or even a colleague at VU Amsterdam. Archiving often happens for data that are confidential - for privacy or other reasons - and that should not be accessible publicly. Archiving is usually done for verification purposes, or, in case of medical research, to comply with the preservation requirements within the WMO.
-
-Publishing refers to depositing data in a public repository that allows others to view, access and download your data. You can set certain restrictions, but as a rule of thumb, publishing should only happen for data that are not confidential at all. That includes data that have been anonymised, or were not personal to begin with, and data that were never otherwise confidential. If you cannot publish any data at all, we do usually recommend trying to publish some [documentation](../topics/data-documentation.qmd), such as data collection protocols, scripts, codebooks, etc. In this way, others can see how the research was carried out, even if they cannot simply access the data.
-
-Use the image below to remind yourself of the difference between archiving and publishing, and read the [data publication](../topics/data-publication.qmd) page to find out what aspects are important when you decide to publish your data.
-
-![A sketch diagram by Scriberia illustrating the archive or publish data journey](../public/archive-or-publish.jpg)
-
-_This illustration is created by Scriberia with The Turing Way community. Used under a CC-BY 4.0 licence. DOI: [10.5281/zenodo.3332807](https://doi.org/10.5281/zenodo.3332807)_
-
 ### Choosing a different repository
 
 Besides the repositories offered by VU Amsterdam, there are many others. **Unless you are working with personal or otherwise confidential data** and you need to archive them in Yoda, you are, in principle, free to choose a different repository from the ones hosted by VU Amsterdam.
@@ -89,13 +77,7 @@ More recommendations for choosing a data repository can be found on [CESSDA](htt
 
 If you would like advice about what would be a good place for you to archive your research data, you can always reach out to the [RDM Support Desk](mailto:rdm@vu.nl).
 
-## Data Publication
-
-### Open Access and Open Science
-
-Open Access publishing means that you make your publication freely accessible online to everyone without restrictions. VU believes that government-funded research should be available free of charge to as many people as possible.
-
-Open Access publishing is one component of Open Science. The European Commission has defined open science as follows: “Open Science represents a new approach to the scientific process based on cooperative work and new ways of diffusing knowledge by using digital technologies and new collaborative tools. The idea captures a systemic change to the way science and research have been carried out for the last fifty years: shifting from the standard practices of publishing research results in scientific publications towards sharing and using all available knowledge at an earlier stage in the research process” (Definition taken from [Nationaal Programma Open Science](https://www.openscience.nl/en)). This includes making openly available research data, methods and documentation where possible. As such, RDM and the practices outlined in the {{< var title >}} are a precondition of Open Science. You can read more about Open Science in the Netherlands on the website of the [Nationaal Programma Open Science](https://www.openscience.nl/en) and join the [Open Science Community Amsterdam](https://osc-international.com/osc-amsterdam/), the community of VU employees interested in Open Science (joint with the University of Amsterdam).
+## Alternative strategies
 
 ### Publishing your data in a data journal
 
@@ -108,6 +90,17 @@ Instead of archiving research data in a data repository, you may choose to publi
 * [Earth System Science Data](https://earth-system-science-data.net/)
 * [Journal of Open Archaeology Data](https://openarchaeologydata.metajnl.com/)
 * [Journal of Open Psychology Data](https://openpsychologydata.metajnl.com/)
+
+### Publishing your data as supplementary information with your article
+
+Another way to make your data available, is to add them as supplementary information with your article in a journal. At first sight, this may seem a practical solution, because the publication and the underlying data in that case appear together as part of a single publication. However, making your data available as a seperate piece of research output has other advantages:
+
+* The dataset will be citable on its own, which also enables you to get acknowledged for the work on your dataset
+* Datasets with many files or many different types of files are easier to structure and present in a repository
+* You can assign different levels of accessibility (unrestricted, restricted or closed) if necessary, which is not possible in a publication
+* You don't transfer copyright of your data publication to the publisher of your article
+
+If you make your data available through a repository, you can link from your article to your dataset and the other way around, so that you can present them as related research output.
 
 ## Persistent Identifier
 
