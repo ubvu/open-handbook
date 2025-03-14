@@ -16,7 +16,7 @@ Data archiving is crucial for enabling verification of research data. Verificati
 
 ## Requirements
 
-At VU Amsterdam, we strive to make our research data [FAIR](../topics/fair-principles.qmd). When datasets are archived in a repository provided by VU Amsterdam ([Yoda](https://publication.yoda.vu.nl/), [DataverseNL](https://dataverse.nl/dataverse/vuamsterdam) or [Open Science Framework](https://osf.io/institutions/vua)), the following requirements apply:
+At VU Amsterdam, we strive to make our research data [FAIR](../topics/fair-principles.qmd). When datasets are archived in a repository provided by VU Amsterdam ([Yoda](https://publication.yoda.vu.nl/) or [DataverseNL](https://dataverse.nl/dataverse/vuamsterdam), the following requirements apply:
 
 - the data must be provided with Metadata according to the [VU Minimal metadata guide](https://github.com/vu-rdm-tech/metadata/blob/main/minimal_metadata_guide.md);
 - the data and software must have a [Persistent identifier](../topics/persistent-identifier.qmd) (or Identifiers) to increase findability;
@@ -26,4 +26,4 @@ If you use an external repository, these requirements are useful to keep in mind
 
 ## How does data archiving work in practice?
 
-As mentioned above, data archiving must happen in a repository. This means that data storage solutions for during research, like Research Drive, are not suitable for data archiving. They don't generate a [Persistent identier](../topics/persistent-identifier.qmd) and do not ask for metadata or a licence. Detailed workflows addressing archiving data can be found in the guides about [making your data FAIR](../guides/document-and-preserve.qmd) and [archiving and publishing data](../guides/publish-and-share.qmd).
+As mentioned above, data archiving must happen in a repository. This means that data storage solutions for during research, like Research Drive, are not suitable for data archiving. They don't generate a [Persistent Identifier](../topics/persistent-identifier.qmd) and do not ask for metadata or a licence. Detailed workflows addressing archiving data can be found in the guides about [making your data FAIR](../guides/document-and-preserve.qmd) and [archiving and publishing data](../guides/publish-and-share.qmd).
