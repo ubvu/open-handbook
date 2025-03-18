@@ -3,7 +3,7 @@ title: Research Drive
 categories: [Tools]
 ---
 ## What is it?
-[SURF Research Drive](https://www.surf.nl/en/services/research-drive) is an online storage and collaboration platform for research data. With Research Drive you can easily store and share files with other researchers, inside and outside the VU. You can access your data via a web interface or tools, from anywhere in the world. 
+[SURF Research Drive](https://www.surf.nl/en/services/research-drive) is an online storage and collaboration platform for research data. With Research Drive you can easily store and share files with other researchers, inside and outside VU Amsterdam. You can access your data via a web interface or tools, from anywhere in the world. 
 
 Research Drive is based on the Open Source [ownCloud](https://owncloud.com/) software and is hosted by SURF in their Amsterdam datacentre.
 
@@ -20,18 +20,18 @@ As project owner you can invite internal and external collaborators yourself, or
 You can set access rights to folders and subfolders yourself, making Research Drive ideal for use in collaborations with many institutions.
 
 ### Sensitive data
-Hosting at SURF and the use of Multi Factor Authentication (MFA), among other measures, makes Research Drive suitable for storing Medium Sensitive data (High with extra measures).  Please make sure to contact the 🔒 [Privacy Champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information) of your faculty to check if further measures are needed.
+Hosting at SURF and the use of Multi Factor Authentication (MFA), among other measures, makes Research Drive suitable for storing data that score Medium on confidentiality (see the [Policy Classification of Research Data](https://rdm.vu.nl/guides/policies-supporting-vision-open-science.html#policy-classification-of-research-data) and the [Research Data Classification Tool](https://vu.nl/en/research/dataclassification)). Data that score High on confidentiality can be stored in Research Drive with additional security measures. Please make sure to contact the 🔒 [Privacy Champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information) of your faculty to check if further measures are needed.
 
-### Data life-cycle
-Research Drive is meant for data you are actively working with. We recommend archiving datasets that are no langer actively used, but can't be deleted, in [Yoda](./yoda.qmd). This ensures Research Drive is used optimally and costs are kept down for your research group and the VU.
+### Data life cycle
+Research Drive is meant for data you are actively working with. We recommend archiving datasets that are no longer actively used, but can't be deleted, in [Yoda](./yoda.qmd). This ensures Research Drive is used optimally and costs are kept down for your research group and VU Amsterdam.
 
 ### Collaborative tools
-Within Research Drive, various apps and integrations are available to simplify the use and handling of research data, such as a tool to edit documents directly in the web interface. You can find a current list of app integrations on the [SURF User Knowledge Base](https://servicedesk.surf.nl/wiki/pages/viewpage.action?pageId=102828080)
+Within Research Drive, various apps and integrations are available to simplify the use and handling of research data, such as a tool to edit documents directly in the web interface. You can find a current list of app integrations on the [SURF User Knowledge Base](https://servicedesk.surf.nl/wiki/pages/viewpage.action?pageId=102828080).
 
 ### SURFdrive replacement
 Since both are based on ownCloud, Research Drive is very similar to SURFdrive, the main difference is that SURFdrive is personal storage while Research Drive is group based. 
 
-Researchers looking for a new home for research data currently on SURFdrive are encouraged to migrate to Research Drive, please contact the [Research Support Desk](mailto:rdm@vu.nl) if you have any questions about migrating to Research Drive.
+Researchers looking for a new home for research data currently on SURFdrive are encouraged to migrate to Research Drive. Manuals for migrating data to Research Drive are available in [English](../public/Manual-migrating-data-SURFdrive-to-ResearchDrive_EN.pdf) and [Dutch](../public/Handleiding-Migreren-data-SURFdrive-naar-ResearchDrive_NL.pdf). Please contact the [Research Support Desk](mailto:rdm@vu.nl) if you have any questions about migrating to Research Drive.
 
 ## How to request access
 A new Research Drive projectfolder can be requested via the form on 🔒 [ServiceNow](https://services.vu.nl/esc), go to: Research Data Support > Research Data Support > Request Research Drive.
@@ -49,4 +49,4 @@ The costs of storing data in Research Drive are detailed on the 🔒 [VU website
 The SURF User Knowledge Base contains a number of [Tutorials](https://servicedesk.surf.nl/wiki/display/WIKI/Tutorials) on working with Research Drive.
 
 ## Contact
-Wondering if Research Drive fits your research needs? Please contact the [Research Support Desk](mailto:rdm@vu.nl)
+Wondering if Research Drive fits your research needs? Please contact the [Research Support Desk](mailto:rdm@vu.nl).
