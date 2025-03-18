@@ -1,0 +1,29 @@
+---
+title: VU Compute Hub
+categories: [Tools]
+---
+
+## What is it?
+The [VU Compute Hub](https://hub.compute.vu.nl) is a [JupyterHub](https://jupyter.org/hub) instance hosted by IT at the VU. It allows you to run a number of common analysis tools on a central server. The Hub is mainly aimed at creating environments for Student Courses, but is available for VU Researchers as well.
+
+### Available tools
+The following applications are currently available: Jupyter Notebooks, MATLAB, STATA and R Studio.
+
+## What can it be used for?
+The VU Compute Hub is a great environment when your analysis takes too much time for a laptop. It allows you to use the graphical tools you are familiar with in an environment with more compute power where you can leave your script running until it is finished. 
+
+Since every researcher can just log in the barrier to entry is very low. 
+
+Be aware the service is mainly aimed at education. If your scripts use a lot of resources it might be time for you to start using a High Performance Computing (HPC) environment: [BAZIS](./bazis.qmd) at the VU or the national supercomputer [Snellius](./snellius.qmd). Please contact [IT for Research](mailto:itvo.it@vu.nl) to discuss the best options.
+
+## How to request access
+You do not need to request access. 
+
+## Are there costs involved?
+There are no costs involved.
+
+## Getting started
+Just go to [hub.compute.vu.nl](https://hub.compute.vu.nl), click the server with the least load, login with your VUnetID and select the environment you would like to use.
+
+## Contact
+Wondering if the VU Compute Hub fits your research needs? Please contact [IT for Research](mailto:itvo.it@vu.nl). If you run into any issues 
