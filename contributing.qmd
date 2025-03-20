@@ -147,7 +147,7 @@ Relative links require three concepts:
 - `./` = indicates the current folder
 - `../` = indicates the folder one level up
 
-This Contributing guide is located in the "root" directory, and there is no upper folder. If we wanted to link to a topic, we would use `./topics/example-topic.qmd`. This would create a relative link to the example file.
+This Contributing guide is located in the "root" directory, and there is no upper folder. If we wanted to link to a topic, we would use `../topics/example-topic.qmd`. This would create a relative link to the example file.
 
 :::{.callout-note}
 Relative links link to the `.qmd` files, never to the `.html` pages. These only exist when the pages are rendered!
