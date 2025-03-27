@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Snellius – Research Support Handbook</title>
+<title>ADA HPC – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -133,30 +133,27 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#what-is-it" id="toc-what-is-it" class="nav-link active" data-scroll-target="#what-is-it">What is it?</a></li>
-  <li><a href="#what-can-it-be-used-for" id="toc-what-can-it-be-used-for" class="nav-link" data-scroll-target="#what-can-it-be-used-for">What can it be used for?</a>
+  <li><a href="#what-can-it-be-used-for" id="toc-what-can-it-be-used-for" class="nav-link" data-scroll-target="#what-can-it-be-used-for">What can it be used for?</a></li>
+  <li><a href="#how-to-request-access" id="toc-how-to-request-access" class="nav-link" data-scroll-target="#how-to-request-access">How to request access</a></li>
+  <li><a href="#are-there-costs-involved" id="toc-are-there-costs-involved" class="nav-link" data-scroll-target="#are-there-costs-involved">Are there costs involved?</a>
   <ul class="collapse">
-  <li><a href="#simulation-and-modelling" id="toc-simulation-and-modelling" class="nav-link" data-scroll-target="#simulation-and-modelling"><strong>Simulation and modelling</strong></a></li>
-  <li><a href="#computing-power" id="toc-computing-power" class="nav-link" data-scroll-target="#computing-power"><strong>Computing power</strong></a></li>
-  <li><a href="#tools-and-libraries" id="toc-tools-and-libraries" class="nav-link" data-scroll-target="#tools-and-libraries"><strong>Tools and libraries</strong></a></li>
+  <li><a href="#buying-dedicated-compute-nodes" id="toc-buying-dedicated-compute-nodes" class="nav-link" data-scroll-target="#buying-dedicated-compute-nodes">Buying dedicated compute nodes</a></li>
   </ul></li>
-  <li><a href="#how-to-request-access" id="toc-how-to-request-access" class="nav-link" data-scroll-target="#how-to-request-access">How to request access</a>
-  <ul class="collapse">
-  <li><a href="#direct-institute-contract" id="toc-direct-institute-contract" class="nav-link" data-scroll-target="#direct-institute-contract"><strong>1. Direct institute contract</strong></a></li>
-  <li><a href="#nwo-compute-grant" id="toc-nwo-compute-grant" class="nav-link" data-scroll-target="#nwo-compute-grant"><strong>2. NWO compute grant</strong></a></li>
-  </ul></li>
-  <li><a href="#are-there-costs-involved" id="toc-are-there-costs-involved" class="nav-link" data-scroll-target="#are-there-costs-involved">Are there costs involved?</a></li>
   <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting started</a></li>
   <li><a href="#contact" id="toc-contact" class="nav-link" data-scroll-target="#contact">Contact</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/snellius.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/ada.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Snellius</h1>
-</div>
+<h1 class="title">ADA HPC</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Tools</div>
+  </div>
+  </div>
 
 
 
@@ -174,53 +171,41 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="what-is-it" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-it">What is it?</h2>
-<p>Snellius is the National Supercomputer infrastructure hosted by SURF in Amsterdam.</p>
+<p>ADA is a compute cluster for research at the Vrije Universiteit Amsterdam. ADA is named in honor of <a href="https://en.wikipedia.org/wiki/Ada_Lovelace">Ada Lovelace</a>, the pioneering mathematician and writer known for her work on Charles Babbage’s Analytical Engine. She was the first to recognise that the machine had applications beyond pure calculation. ADA is the rebranded name of our previous cluster, BAZIS, and is maintained by the IT for Research team.</p>
+<p>ADA is a heterogenious cluster composed of partitions and servers financed by various VU research departments and the VU IT department. The cluster is particularly useful for executing multi-node computations that are not possible on the general VU compute servers but do not require the scale of the National Supercomputer, Snellius.</p>
+<p>ADA users are granted access to a set of compute partitions based on the resources owned by their research department. Users not affiliated with a research department that owns cluster hardware can get access to the general (IT) partition.</p>
+<p>A large collection of tools, compilers and libraries is available for your analysis, and your data on <a href="./SciStor.qmd">SciStor</a> are directly accessible from ADA.</p>
 </section>
 <section id="what-can-it-be-used-for" class="level2">
 <h2 class="anchored" data-anchor-id="what-can-it-be-used-for">What can it be used for?</h2>
-<section id="simulation-and-modelling" class="level3">
-<h3 class="anchored" data-anchor-id="simulation-and-modelling"><strong>Simulation and modelling</strong></h3>
-<p>Do you work with large and complex models that require a lot of computing power? The National Supercomputer provides that with a large number of super-fast processors. The system is ideally suited for large-scale experiments, such as simulations and modelling. These require a lot of processing power and memory usage, but also communication between the different processors. An important feature of Snellius is its fast internal network.</p>
-</section>
-<section id="computing-power" class="level3">
-<h3 class="anchored" data-anchor-id="computing-power"><strong>Computing power</strong></h3>
-<p>Snellius runs on Linux. Besides AMD processors, the system also features GPGPUs (General Purpose Graphics Processing Units). These accelerators combine the processing power of graphics cards (GPUs) with that of CPUs. In addition, Snellius has ‘fat nodes’ with more memory space (1 TB) and ‘high-memory nodes’ (4 TB and 8 TB of memory space).</p>
-</section>
-<section id="tools-and-libraries" class="level3">
-<h3 class="anchored" data-anchor-id="tools-and-libraries"><strong>Tools and libraries</strong></h3>
-<p>As a researcher, you can make use of a large collection of tools, compilers and libraries.</p>
-<p>Are you doing research or experiments in the field of machine learning, e.g.&nbsp;neural networks? The libraries and tools on Snellius make it a lot easier.</p>
-</section>
+<p>Most researchers start out by running their analysis tools on their laptop. The performance of a laptop is limited however. You might find your analysis takes up so many resources that your laptop becomes unusable for other tasks, or tasks take so long that you have to find a way to keep your laptop running overnight. For example a lot of AI tasks, such as running Large Language Models (LLMs), require a dedicated GPU, which most laptops don’t have. These tasks will run very slowly, or not at all.</p>
+<p>A next step might be purchasing a Workstation with more performance and maybe a GPU. You can run the same applications as your laptop and leave it running overnight and during weekends. The modern VU offices are not geared for workstations, however, so that might not be possible.</p>
+<p>The point where your laptop or even a workstation becomes unusable for your analysis workflow is when you should consider HPC. HPC nodes have a large amount of RAM, many processor cores and often multiple GPUs. HPC clusters work with a queueing system, meaning the system will wait until enough resources are available to run your job and it will run multiple jobs simultaneously so its resources are used optimally.</p>
+<p>Be aware that it is generally not possible to run graphical desktop applications (such as RStudio, SPSS or ArcGIS) on an HPC cluster. Your analysis needs to be able to run as a script that can be started from a Linux command line. This means there is a learning curve to use HPC, especially if you are not used to a Command-line Interface (CLI) and scripting.</p>
+<p>CLI and scripting skills are very useful to have for every researcher, but if you feel you do not have the time to learn these skills there might be other options available such as <a href="https://hub.compute.vu.nl">the VU Compute Hub</a> or <a href="../topics/researchcloud.html">SURF Research Cloud</a> where you can run some graphical tools.</p>
+<p>At the moment the community partition does not include GPU resources. If you have tasks that need a GPU (such as Machine Learning) you can apply for access to the national HPC infrastructure <a href="../topics/snellius.html">Snellius</a> or consider <a href="#buying-dedicated-compute-nodes">buying ADA compute nodes</a>.</p>
 </section>
 <section id="how-to-request-access" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-request-access">How to request access</h2>
-<p>You can request access via a form on the 🔒<a href="https://servicedesk.surf.nl">SURF service desk portal</a>. There are 2 options:</p>
-<section id="direct-institute-contract" class="level3">
-<h3 class="anchored" data-anchor-id="direct-institute-contract"><strong>1. Direct institute contract</strong></h3>
-<p>The VU has a contract with SURF for the usage of Snellius. Every VU researcher or master student can request Snellius SBUs (System Billing Units). The total amount available to the VU is limited however, only use this option for smaller projects, say up to 1.000.000 CPU and/or GPU SBUs.</p>
-<p>The <a href="https://servicedesk.surf.nl/wiki/display/WIKI/Estimating+SBUs">SURF wiki</a> provides some guidance on estimating the amount of SBUs you need. We recommend you start with the default 50.000 CPU and/or GPU SBUs. You can use the same form to request a top-up if you run out.</p>
-</section>
-<section id="nwo-compute-grant" class="level3">
-<h3 class="anchored" data-anchor-id="nwo-compute-grant"><strong>2. NWO compute grant</strong></h3>
-<p>If you have a large project involving more than 1.000.000 CPU and/or GPU SBUs you should apply for an <a href="https://www.surf.nl/en/large-compute-applications-nwo">NWO Large Compute applications grant</a>.</p>
-<p>Each Snellius account is provided with 200GB Home space (backups available), apart from that 8TB of temporary fast <em>scratch</em> space is available for your calculations. If the Home space is not sufficient or you can request <em>Project Space</em> to store your data during your project. Note that the <em>Project Space</em> is not backed-up! Always make sure a copy of valuable data is also stored on a <a href="../topics/data-storage.html">recommended storage system</a>.</p>
-<p>Note that for large-scale GPU projects access the European <a href="https://www.surf.nl/en/services/lumi">LUMI</a> supercomputer can also be requested by VU researcers. <a href="https://servicedesk.surf.nl/wiki/display/WIKI/Obtaining+compute+time">Obtaining compute time on LUMI</a>.</p>
-</section>
+<p>A form to request an account on ADA can be found on 🔒 <a href="https://services.vu.nl/esc">VU Service Portal</a> under IT &gt; My work field &gt; Research &gt; HPC Cluster Computing &gt; New ADA HPC Cluster Computing.</p>
 </section>
 <section id="are-there-costs-involved" class="level2">
 <h2 class="anchored" data-anchor-id="are-there-costs-involved">Are there costs involved?</h2>
-<p>There are no direct costs for researchers, but be aware that “Direct institute contract” usage costs are billed to the faculties via KDM (“Kosten Doorbelasting Model”).</p>
+<p>The ADA cluster community nodes are free to use for VU researchers, although resources are limited.</p>
+<section id="buying-dedicated-compute-nodes" class="level3">
+<h3 class="anchored" data-anchor-id="buying-dedicated-compute-nodes">Buying dedicated compute nodes</h3>
+<p>If your research projects require heavy usage of HPC you can consider spending part of your research budget to buy compute hardware for your group. Please contact <a href="mailto:itvo.it@vu.nl">IT for Research</a> for more information on what is possible.</p>
+</section>
 </section>
 <section id="getting-started" class="level2">
 <h2 class="anchored" data-anchor-id="getting-started">Getting started</h2>
-<p>The <a href="https://servicedesk.surf.nl/wiki/display/WIKI/Snellius">SURF User Knowledge Base</a> has lots of information to get you started.</p>
-<p>SURF organises regular “Introduction to Supercomputing” training sessions, these are free to attend for VU researchers. Please consult the <a href="https://www.surf.nl/en/agenda">SURF Agenda</a> for dates and registration.</p>
-<p>Note that there is a free community partition available on the <a href="./bazis.qmd">VU HPC cluser BAZIS</a>, where you can refine your analysis scripts before running them on the more expensive Snellius cluster. Experts at <a href="mailto:itvo.it@vu.nl">IT for Research</a> can help you optimise your code to run more efficiently.</p>
+<p>There is a <a href="../guides/ADA-tips-and-tricks.qmd">guide with ADA tips &amp; tricks</a> in the Handbook.</p>
+<p>Also take a look at the <a href="https://servicedesk.surf.nl/wiki/display/WIKI/Snellius">SURF wiki Snellius pages</a>, they contain a lot of information that applies to ADA as well.</p>
+<p>SURF organises regular “Introduction to Supercomputing” training sessions, these are free to attend for VU researchers. The course is aimed at using <a href="../topics/snellius.html">Snellius</a>, but what you learn is applicable to ADA as well. Please consult the <a href="https://www.surf.nl/en/agenda">SURF Agenda</a> for dates and registration.</p>
 </section>
 <section id="contact" class="level2">
 <h2 class="anchored" data-anchor-id="contact">Contact</h2>
-<p>SURF offers limited direct support for researchers using Snellius. To ask a question create a ticket on the 🔒<a href="https://servicedesk.surf.nl/">SURF Service Desk Portal</a>.</p>
-<p>For general questions on HPC please contact <a href="mailto:itvo.it@vu.nl">IT for Research</a>.</p>
+<p>Wondering if ADA fits your research needs? Please contact <a href="mailto:itvo.it@vu.nl">IT for Research</a></p>
 
 
 </section>
@@ -673,7 +658,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </a>
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/snellius.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/ada.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
