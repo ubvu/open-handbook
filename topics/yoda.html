@@ -40,8 +40,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-6ee2a4e5d13000102894f3420c610d96.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="../site_libs/quarto-contrib/videojs/video.min.js"></script>
-<link href="../site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -134,10 +132,21 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#yoda-and-fair-data" id="toc-yoda-and-fair-data" class="nav-link active" data-scroll-target="#yoda-and-fair-data">Yoda and FAIR data</a></li>
-  <li><a href="#yoda-for-the-researcher" id="toc-yoda-for-the-researcher" class="nav-link" data-scroll-target="#yoda-for-the-researcher">Yoda for the researcher</a></li>
-  <li><a href="#access-to-yoda" id="toc-access-to-yoda" class="nav-link" data-scroll-target="#access-to-yoda">Access to Yoda</a></li>
+  <li><a href="#what-is-it" id="toc-what-is-it" class="nav-link active" data-scroll-target="#what-is-it">What is it?</a></li>
+  <li><a href="#what-can-it-be-used-for" id="toc-what-can-it-be-used-for" class="nav-link" data-scroll-target="#what-can-it-be-used-for">What can it be used for?</a>
+  <ul class="collapse">
+  <li><a href="#data-storage" id="toc-data-storage" class="nav-link" data-scroll-target="#data-storage">Data storage</a></li>
+  <li><a href="#data-sharing" id="toc-data-sharing" class="nav-link" data-scroll-target="#data-sharing">Data sharing</a></li>
+  <li><a href="#sensitive-data" id="toc-sensitive-data" class="nav-link" data-scroll-target="#sensitive-data">Sensitive data</a></li>
+  <li><a href="#metadata" id="toc-metadata" class="nav-link" data-scroll-target="#metadata">Metadata</a></li>
+  <li><a href="#archiving" id="toc-archiving" class="nav-link" data-scroll-target="#archiving">Archiving</a></li>
+  <li><a href="#publishing-metadata-and-data" id="toc-publishing-metadata-and-data" class="nav-link" data-scroll-target="#publishing-metadata-and-data">Publishing metadata and data</a></li>
+  <li><a href="#automated-workflows" id="toc-automated-workflows" class="nav-link" data-scroll-target="#automated-workflows">Automated workflows</a></li>
+  </ul></li>
+  <li><a href="#how-to-request-access" id="toc-how-to-request-access" class="nav-link" data-scroll-target="#how-to-request-access">How to request access</a></li>
+  <li><a href="#are-there-costs-involved" id="toc-are-there-costs-involved" class="nav-link" data-scroll-target="#are-there-costs-involved">Are there costs involved?</a></li>
   <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting Started</a></li>
+  <li><a href="#contact" id="toc-contact" class="nav-link" data-scroll-target="#contact">Contact</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/yoda.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -166,38 +175,66 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Yoda is an application for institutions that supports RDM throughout the entire research cycle: from the safe and easy storage and sharing of data during the research process, to the sharing of data within research groups and projects and ultimately to research data archiving and publication.</p>
-<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="<https://www.youtube.com/embed/N67v2v62Qn0?si=MhjAv6lDHAyCgfUy>"></video></div>
-<section id="yoda-and-fair-data" class="level2">
-<h2 class="anchored" data-anchor-id="yoda-and-fair-data">Yoda and FAIR data</h2>
-<p>Yoda helps the researcher make their data “<a href="../topics/fair-principles.html">FAIR</a>” by providing a solution that enables data discovery and sharing (i.e., findable, accessible). In addition, it facilitates and enforces the use of metadata, thereby, contributing to data interoperability and reusability. Yoda provides a platform for the implementation of standard workflows that can ensure metadata quality satisfying (institutional) policy requirements, for example, for data archiving and publication. In addition, Yoda’s integration with iRODS forms a single platform that accommodates both researchers with data heavy requirements, as well as those seeking an accessible, user-friendly solution.</p>
+<section id="what-is-it" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-it">What is it?</h2>
+<p>Yoda is an application for institutions that supports Research Data Management (RDM) throughout the entire research cycle: from the safe and easy storage and sharing of data during the research process, to the sharing of data within research collaborations and ultimately to research data archiving and publication.</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/N67v2v62Qn0?si=MhjAv6lDHAyCgfUy" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<p>Yoda helps the researcher make their data “<a href="../topics/fair-principles.html">FAIR</a>” by providing a solution that enables data discovery and sharing (i.e., findable, accessible). In addition, it facilitates the use of metadata, contributing to data interoperability and reusability. Yoda provides a platform for the implementation of standard workflows that can ensure metadata quality satisfying <a href="../topics/research-data-and-software-management-policy.html">VU policy requirements</a> for data archiving and publication. In addition, Yoda is built on <a href="https://irods.org">iRODS</a> so it accommodates both researchers with data heavy requirements, as well as those seeking an accessible, user-friendly solution.</p>
+<p>Yoda presents researchers a comfortable, easy-to-use solution for securely storing, sharing and organising their research data that follows the internationally adopted <a href="../topics/fair-principles.html">FAIR</a> data principles. Many research institutions and funding organisations (such as NWO and ZonMw) require researchers to make their data FAIR.</p>
+<p>Project space in Yoda is basically a folder with group based access rights. Access restrictions are only set on the top level, meaning you need one Project Space per research project.</p>
+<p><a href="https://github.com/UtrechtUniversity/Yoda">Yoda is open source software</a> developed and maintained by Utrecht University for the Yoda Consortium (VU, Wageningen University, Erasmus University, Amsterdam UMC, Utrecht University and SURF). Yoda is hosted by SURF in their Amsterdam datacentre.</p>
 </section>
-<section id="yoda-for-the-researcher" class="level2">
-<h2 class="anchored" data-anchor-id="yoda-for-the-researcher">Yoda for the researcher</h2>
-<p>Yoda makes use of <a href="https://irods.org">iRODS</a> as a foundation technology. However, it is much easier to use thereby making it more accessible to a wide range of researchers.</p>
-<p>Yoda presents researchers a comfortable, easy-to-use solution for securely storing, sharing and organising their research data that follows the internationally adopted <a href="../topics/fair-principles.html">FAIR</a> data principles. Many research institutions and funding organisations (such as NWO and ZonMw) require researchers to make their data FAIR. You can invite both VU and non-VU collaborators to work with you in Yoda.</p>
-<p>The following features make Yoda particularly attractive for researchers (end-users):</p>
-<ul>
-<li>Easy-to-use (web-based, graphical user interface and the WebDAV interface)</li>
-<li>Supports the entire research process from data acquisition to publication</li>
-<li>Supports standardised workflows for the storage and archiving of research data</li>
-<li>Direct coupling between data and metadata (including flexible metadata schemas)</li>
-<li>Data publication and the associated minting of Digital Object Identifiers (DOIs)</li>
-<li>A flexible integration with iRODS that also caters for (very) data-intensive research.</li>
-<li>Secure authentication using institutional accounts (both national and international) or <a href="https://eduid.nl/">eduID</a></li>
-</ul>
-<p><a href="https://github.com/UtrechtUniversity/Yoda">Yoda is open source software</a> developed and maintained by Utrecht University for the Yoda Consortium, of which VU Amsterdam is a member.</p>
+<section id="what-can-it-be-used-for" class="level2">
+<h2 class="anchored" data-anchor-id="what-can-it-be-used-for">What can it be used for?</h2>
+<p>The particular strength of Yoda lies in the fact that it is an all-in-one solution for managing your data during and after your project. It makes it easy to share and organise your data and add descriptive metadata at any moment. If (part of) your datasets needs to be published during or after your project, this can be done by a few simple steps within Yoda itself. There is no need to upload your data to another platform.</p>
+<section id="data-storage" class="level3">
+<h3 class="anchored" data-anchor-id="data-storage">Data storage</h3>
+<p>Yoda is a Cloud storage solution that can be used for small to very large datasets. The underlying <a href="https://irods.org">iRODS</a> software ensures data integrity. Data in Yoda is backed up daily.</p>
 </section>
-<section id="access-to-yoda" class="level2">
-<h2 class="anchored" data-anchor-id="access-to-yoda">Access to Yoda</h2>
-<p>Yoda is available for every VU researcher. If you need space to store data for your research project, <a href="https://yoda.vu.nl/site/getting-started/requesting-space.html">you can request it via the linked form</a>.</p>
-<p>Once the project space has been created you can start to invite your collaborators.</p>
+<section id="data-sharing" class="level3">
+<h3 class="anchored" data-anchor-id="data-sharing">Data sharing</h3>
+<p>Once a new Yoda group has been created you can invite collaborators yourself. Researchers from national and international research institutes can login with their institutional account via <a href="https://www.surf.nl/en/services/surf-research-access-management">SURF Research Access Management (SRAM)</a>. Collaborators from non-research institutes can create a free EduID NL account.</p>
+</section>
+<section id="sensitive-data" class="level3">
+<h3 class="anchored" data-anchor-id="sensitive-data">Sensitive data</h3>
+<p>The use of Multi-Factor Authentication (MFA) with SRAM and hosting at SURF ensure, among other things, Yoda is suitable for the storage and sharing of data that score High on confidentiality in a data classification (see the <a href="https://rdm.vu.nl/guides/policies-supporting-vision-open-science.html#policy-classification-of-research-data">Policy Classification of Research Data</a> and the <a href="https://vu.nl/en/research/dataclassification">Research Data Classification Tool</a>). Please make sure to contact the <a href="rdm@vu.nl">RDM Support Desk</a> to check if further measures are needed.</p>
+</section>
+<section id="metadata" class="level3">
+<h3 class="anchored" data-anchor-id="metadata">Metadata</h3>
+<p>At any moment you can add descriptive metadata to a folder in Yoda via a web form. This means you can easily organize your data in such a way that it is not only ready for archiving and publishing but also findable for your collaborators.</p>
+</section>
+<section id="archiving" class="level3">
+<h3 class="anchored" data-anchor-id="archiving">Archiving</h3>
+<p>At any moment you can submit a data folder with metadata for Archiving in the Yoda <strong>Vault</strong>. Data in the Vault is read-only and cannot be deleted. To help make sure the dataset is suitable for archiving a Yoda <strong>datamanager</strong> (usually a data manager from your department or a faculty data steward) will review your submission before final approval. Data in the Vault is directly accessible for your collaborators. Access for the Yoda datamanager role ensures the data remains accessible on the long term.</p>
+</section>
+<section id="publishing-metadata-and-data" class="level3">
+<h3 class="anchored" data-anchor-id="publishing-metadata-and-data">Publishing metadata and data</h3>
+<p>From the Yoda Vault you can submit the dataset for <strong>publication</strong>. A <a href="https://www.doi.org/the-identifier/what-is-a-doi/">DOI</a> will be generated and registered with <a href="https://datacite.org/">DataCite</a> together with the metadata. DataCite ensures your dataset becomes findable on the internet and citable.</p>
+<p>The DOI link will lead to a <strong>landing page</strong> in Yoda showing the metadata. The dataset itself can be Open, allowing direct download, Restricted, meaning other researchers need to follow a data request procedure, or Closed, signalling the dataset is properly archived but not available for reuse.</p>
+</section>
+<section id="automated-workflows" class="level3">
+<h3 class="anchored" data-anchor-id="automated-workflows">Automated workflows</h3>
+<p>Since Yoda is build on iRODS you could also build (automated) ingest and analysis workflows using iRODS Rules and Policies. Please <a href="mailto:itvo.it@vu.nl">contact IT for Research</a> if you need assistance.</p>
+</section>
+</section>
+<section id="how-to-request-access" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-request-access">How to request access</h2>
+<p>Yoda is available for every VU researcher. If you need space to store data for your research project, you can <a href="https://yoda.vu.nl/site/getting-started/requesting-space.html">request it via the linked form</a>.</p>
+<p>Once the project space has been created you can start to invite your collaborators yourself. Note that VU students must 🔒 <a href="https://services.vu.nl/kb_view.do?sysparm_article=KB0011809">connect a token to SURFsecureID</a> to be able to log in.</p>
+</section>
+<section id="are-there-costs-involved" class="level2">
+<h2 class="anchored" data-anchor-id="are-there-costs-involved">Are there costs involved?</h2>
+<p>The costs of storing data in Yoda are detailed on the 🔒 <a href="https://vu.nl/en/employee/research-data-support/research-archiving-storage-cost-model">VU website</a>.</p>
 </section>
 <section id="getting-started" class="level2">
 <h2 class="anchored" data-anchor-id="getting-started">Getting Started</h2>
-<p>VU Amsterdam Yoda website has practical information on the use of the Yoda for users <a href="https://yoda.vu.nl/site/getting-started/index.html">starting with Yoda</a>.</p>
-<p>More information can be found on the <a href="https://servicedesk.surfsara.nl/wiki/display/WIKI/Yoda+Hosting">SURFsara Knowledge Base</a></p>
+<p>The VU Yoda website has practical information on the use of the Yoda for users <a href="https://yoda.vu.nl/site/getting-started/index.html">starting with Yoda</a>.</p>
+<p>More information can be found on the <a href="https://servicedesk.surf.nl/wiki/display/WIKI/Yoda+Hosting">SURF User Knowledge base</a>.</p>
 <p>The <a href="https://www.uu.nl/en/research/Yoda">Yoda site of Utrecht University</a> also contains useful information and is being redeveloped so it can also be used by VU Amsterdam and the other Consortium Partners.</p>
+</section>
+<section id="contact" class="level2">
+<h2 class="anchored" data-anchor-id="contact">Contact</h2>
+<p>Wondering if Yoda fits your research needs? Please contact the <a href="mailto:rdm@vu.nl">RDM support desk</a>.</p>
 
 
 </section>
@@ -660,7 +697,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>videojs(video_shortcode_videojs_video1);</script>
 
 
 
