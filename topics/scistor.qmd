@@ -6,7 +6,7 @@ categories: [Tools]
 ## What is it?
 The storage service SciStor is intended for cheaply storing large amounts of research data.
 
-SciStor is hosted by IT for Research (ITvO) on the VU campus enabling a high-speed connection to lab equipment, laptops and workstations, the [BAZIS HPC cluster](./bazis.qmd) and [SciCloud](./scicloud.qmd). It can also be accessed off-campus. 
+SciStor is hosted by IT for Research (ITvO) on the VU campus enabling a high-speed connection to lab equipment, laptops and workstations, the [ADA HPC cluster](./ada.qmd) and [SciCloud](./scicloud.qmd). It can also be accessed off-campus. 
 
 Your data is stored in a **share**, basically a folder with group-based access rights (read/write or read-only). Access rights can be set one level deep, so one share could be used to host data from different projects.
 
@@ -25,8 +25,8 @@ In many cases lab equipment can write data directly to SciStor. [IT for Research
 ### Storage space for SciCloud servers
 [SciCloud](./scicloud.qmd) virtual servers are provisioned with a 20 to 50GB local disk. A SciStor share can be directly mounted on the server to increase storage for your application or directly access your source data for analysis.
 
-### BAZIS
-The [BAZIS HPC cluster](./bazis.qmd) is connected to SciStor via a high speed netwodrk. You can run your analysis software directly on your data and easily access the results on your laptop.
+### ADA
+The [ADA HPC cluster](./ada.qmd) is connected to SciStor via a high speed netwodrk. You can run your analysis software directly on your data and easily access the results on your laptop.
 
 ### Sharing data
 Because SciStor is mainly intended for high performance, on-campus use, access is only possible with a VUnetId. If you need to share data with non-VU researchers you could [register them as an external employee](https://vu.nl/en/employee/start-employment-contract/onboarding-external-employees) or host a copy of the data on another storage platform like Research Drive or [Yoda](./yoda.qmd)
