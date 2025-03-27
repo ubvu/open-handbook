@@ -26,11 +26,17 @@ There are no costs involved.
 You can access the Linux Compute Services through [VU JupyterHub](https://hub.compute.vu.nl) in your web browser. The VU JupyterHub gives you access to familiar interfaces like Jupyter Notebooks, MATLAB and R Studio.
 
 If you prefer using SSH, you can connect in the following way:
+
+```
+
+{
 $ ssh <VUnetID>@x.compute.vu.nl
 
 # from home or outside campus:
 $ ssh -J <VUnetID>@ssh.data.vu.nl <VUnetID>@x.compute.vu.nl
 }
+```
+
 _Replace x with either 1, 2, or 3, depending on your choice._
 
 ## Contact
