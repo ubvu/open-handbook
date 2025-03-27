@@ -13,7 +13,7 @@ ADA is a heterogenious cluster composed of partitions and servers financed by va
 
 ADA users are granted access to a set of compute partitions based on the resources owned by their research department. Users not affiliated with a research department that owns cluster hardware can get access to the general (IT) partition.
 
-A large collection of tools, compilers and libraries is available for your analysis and your data on [SciStor](./SciStor.qmd) is directly accessible from ADA.
+A large collection of tools, compilers and libraries is available for your analysis, and your data on [SciStor](./SciStor.qmd) are directly accessible from ADA.
 
 ## What can it be used for?
 
@@ -23,7 +23,7 @@ A next step might be purchasing a Workstation with more performance and maybe a 
 
 The point where your laptop or even a workstation becomes unusable for your analysis workflow is when you should consider HPC. HPC nodes have a large amount of RAM, many processor cores and often multiple GPUs. HPC clusters work with a queueing system, meaning the system will wait until enough resources are available to run your job and it will run multiple jobs simultaneously so its resources are used optimally.
 
-Be aware that it is generally not possible to run graphical desktop applications (such as R studio, SPSS or ArcGIS) on an HPC cluster. Your analysis needs to be able to run as a script that can be started from a Linux command line. This means there is a learning curve to use HPC, especially if you are not used to a Command-line Interface (CLI) and scripting.
+Be aware that it is generally not possible to run graphical desktop applications (such as RStudio, SPSS or ArcGIS) on an HPC cluster. Your analysis needs to be able to run as a script that can be started from a Linux command line. This means there is a learning curve to use HPC, especially if you are not used to a Command-line Interface (CLI) and scripting.
 
 CLI and scripting skills are very useful to have for every researcher, but  if you feel you do not have the time to learn these skills there might be other options available such as [the VU Compute Hub](https://hub.compute.vu.nl) or [SURF Research Cloud](./researchcloud.qmd) where you can run some graphical tools.
 
