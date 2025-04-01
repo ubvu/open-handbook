@@ -21,16 +21,20 @@ Ideally, this is automated so that you as a user do not have to manually do anyt
 ## Simple Synchronising Solutions
 
 The VU provides access to multiple [storage systems](../topics/data-storage). You may use a mix of the different platforms.
-If you use these tools they will automatically synchronise your files to the cloud.
+Some of these tools are able to automatically synchronise your data to the cloud: Teams, Onedrive and Research Drive. Check regularly if all the relevant data folders are indeed still synchronised.
 If you accidentally delete a file, you can restore your folder to a previous date - various systems will have different retention periods but it is usually around 1 month.
 
 ## Data rentention for VU data storage platforms
 
 - **OneDrive**: if you're signed in with a work or school account, items in the recycle bin are automatically deleted after 93 days. The files can be restored to OneDrive before then, or you can permanently delete them from your OneDrive. Additionally, you can restore your OneDrive to a state from the previous 29 days. Finally, the university has an additional backup of data, which can be accessed in case of emergency. However, no rights can be derived for the emergency backup.
-- **Snellius**: Data on the compute clusters are **NOT** backed up.
-- **SciStor**: Depending on the agreements of your department, data may be backed up. Please check with your department cluster manager.
+- **Snellius**: Not all of the filesystems on Snellius are backed up automatically, most notably the Project and Scratch spaces. Your home folder is backed up however. You can find more information on the [Snellius website](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/85295828/Snellius+filesystems).
+- **[SciStor](../topics/scistor.qmd)**: Depending on the agreements of your department, data may be backed up. Please check with your department cluster manager.
+- **Research Drive**: The Research Drive is backed up daily by SURF.
+- **[Yoda](../topics/yoda.qmd)**: Yoda is backed up daily by SURF.
 
 ## Notes
+
+Make sure the backup storage is suitable if your data are (privacy) sensitive. The [Data Storage Finder](https://vu.nl/en/research/storagefinder) can help you select the right tool. If you backup sensitive data to a USB drive make sure to encrypt it, for example with a tool like [Cryptomator](https://cryptomator.org/).
 
 [Utrecht University Geo Data Team Services](https://geo-data-support.sites.uu.nl/data-management/data-backup/) provide a detailed page on data backup including a discussion of data selection for backup.
 
