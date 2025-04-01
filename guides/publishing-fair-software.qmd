@@ -11,25 +11,30 @@ This document provides some pointers that can help to set you up with a coding r
 
 ## Publishing online
 
-Research code (or other code) is best stored on GitHub. GitHub is a platform that is used by millions of programmers and researchers around the world. To upload your code to GitHub, you first need to make an account here. Once you have an account, you can create a repository that hosts your code.
+Research code (or other code) is best stored on a git repostory, like GitHub or GitLab. Both platforms are is used by millions of programmers and researchers around the world. To upload your code to GitHub/GitLab, you first need to make an account here. Once you have an account, you can create a repository that hosts your code.
+
+**GitHub**: You can create a free account. In addition, as a university employee, you can use your university email address to get a free "Pro" account, which gives you access to some additional features. You can find more information at the [GitHub Education platform](https://education.github.com/).
+**GitLab**: As VU employee, you can access GitLab using your VU credentials (VUnetID) by logging in through the [VU portal](https://git.vu.nl).
 
 ### Creating a repository
 
-After logging in, click your profile picture on the top right -> "Your repositories" -> "New". Choose a name and set the visibility (do you want everyone to see your code already or wait a bit before sharing with the world?). It is common practice to immediately add a "README" file and add a licence (see next section). You can update the visibility of your repository later under the repository settings.
+**GitHub**: After logging in, click your profile picture on the top right -> "Your repositories" -> "New". Choose a name and set the visibility (do you want everyone to see your code already or wait a bit before sharing with the world?). It is common practice to immediately add a "README" file and add a licence (see next section). You can update the visibility of your repository later under the repository settings.
 
-### GitHub Pro (free for university employees)
-
-As a university employee, you can use your university email address to get a free "Pro" account, which gives you access to some additional features. You can find more information at the [GitHub Education platform](https://education.github.com/).
+**GitLab**: After logging, click on "Projects" in the left menu, and then on "Create project". Choose a name and set the visibility (do you want everyone to see your code already or wait a bit before sharing with the world?). It is common practice to immediately add a "README" file and add a licence (see next section). You can update the visibility of your repository later under the repository settings.
 
 ### Adding code to your repository
 
-The easiest way to add content to your repository is uploading your (already) written code using the "Add file" or "+"-button.
+**GitHub**: You can create a new file using the "Add file" or "+"-button.
 
-![Adding code to your GitHub repository](/public/adding-code-github.png)
+**GitLab**: You can create a new file using the "+"-button and click "New file".
 
-Once you have uploaded your files, you need to write a "commit" message. This is basically a description of the changes you made between the previous version of the code and the current version. Since this is the first version of the files (that is available online) you can write something like "initial".
+Once you have uploaded your files or written your code, you need to write a "commit" message. This is basically a description of the changes you made between the previous version of the code and the current version. Since this is the first version of the files (that is available online) you can write something like "initial".
 
-When you plan to use GitHub more often, adding files through the web interface can become cumbersome. In that case, it is useful to consider using [GitHub Desktop](https://github.com/apps/desktop) or a git manager which is integrated in your IDE (integrated development environment), like [Visual Studio Code](https://code.visualstudio.com/). Git can also be used on the command line, for example, when using git from a server. The course [Learn Git & GitHub](https://www.codecademy.com/learn/learn-git) provides a useful tutorial on using git from the command line.
+Note: never put sentitive information (like passwords or API keys) in your code.
+
+### Using Git locally
+
+When you plan to use GitHub/GitLab more often, adding files through the web interface can become cumbersome. In that case, it is useful to consider using [GitHub Desktop](https://github.com/apps/desktop) or a git manager which is integrated in your IDE (integrated development environment), like [Visual Studio Code](https://code.visualstudio.com/). Git can also be used on the command line, for example, when using git from a server. The course [Learn Git & GitHub](https://www.codecademy.com/learn/learn-git) provides a useful tutorial on using git from the command line.
 
 Well done! Your research code is not sitting on your own computer (or worse – deleted after publication*), but is available online for others to find. This is step one in following the [FAIR principles](../topics/fair-principles.qmd). In the remainder of this guide, you will find steps that will guide you through all steps to release a "perfect" code repository. The first sections are most important, further sections provide room for further improvement, so please use this guide at your own discretion.
 
@@ -94,7 +99,7 @@ If you follow the steps above, your code is now following the FAIR principles al
 
 ## Documentation
 
-Extensive documentation can help users of your code re-use your code effectively. There are some great tools out there to help you automatically build documentation from your code comments, which can be supplemented with general documentation. Sphinx is a great way to do this, and can be nicely integrated with your existing GitHub repository. Sphinx is – of course – documented using Sphinx, so an example of code documentation can be found here. This guide is not meant to be a full guide on how to use Sphinx as many useful resources can be found on the internet. However, some useful resources (here, and here) are listed, and pointers are given.
+Extensive documentation can help users of your code re-use your code effectively. There are some great tools out there to help you automatically build documentation from your code comments, which can be supplemented with general documentation. Sphinx is a great way to do this, and can be nicely integrated with your existing GitHub repository. An example of code documentation can be found in the [ReadTheDocs](https://docs.readthedocs.com/platform/stable/intro/sphinx.html) documentation, which uses Sphinx. This guide is not meant to be a full guide on how to use Sphinx as many useful resources can be found on the internet. An example of a great resource is this [blog post](https://towardsdatascience.com/documenting-python-code-with-sphinx-554e1d6c4f6d/).
 
 ### Installing Sphinx
 
@@ -105,10 +110,6 @@ To use Sphinx for automatic documentation generation in a GitHub repository, sta
 Documentation can be automatically updated when you push new commits to your GitHub repository. To do so, you can set up a continuous integration (CI) workflow using GitHub Actions. In a workflow file, you specify the steps to install Sphinx, build the documentation using the `sphinx-build` command, and then push the generated HTML files to the `gh-pages` branch or another branch designated for hosting your documentation. A guide on how to set this up can be found in this [Sphinx manual](https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html).
 
 This guide is not meant to be a full guide on how to use Sphinx, as many useful resources can be found on the internet. However, some useful resources ([here](https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html), and [here](https://towardsdatascience.com/documenting-python-code-with-sphinx-554e1d6c4f6d)) are listed, and pointers are given.
-
-### Installing Sphinx
-
-To use Sphinx for automatic documentation generation in a GitHub repository, start by installing Sphinx using pip (`pip install sphinx`). Next, run `sphinx-quickstart` in your project's root directory to generate the basic configuration (`conf.py`) and structure for your documentation.
 
 ### Automatically documenting your code
 
@@ -141,7 +142,7 @@ Replace path.to.module with the actual Python import path to your function. Sphi
 
 Creating a Python package allows you to share your code with a broader audience, promoting collaboration, and ensuring reproducibility. There are two "levels" of publishing your code. First of all, you can ensure that your code is directly installable from the GitHub repository. To do so, you can follow the steps explained in this [Python tutorial](https://packaging.python.org/en/latest/tutorials/packaging-projects/), but only up to and including the section "Configuring metadata". Here, we assume you already created a `README.md` and added a LICENCE as explained above.
 
-In brief, you need to take the following steps, which are explained in full:
+In brief, you need to take the following steps, which are explained in full below:
 
 1. Structure your code as a package
 2. Create a metadata file
@@ -238,7 +239,7 @@ GitHub Issues is a feature that allows project maintainers and contributors to t
 
 Finally, publishing your code alongside a scientific publication can help build trust in the software you developed. This can, of course, be done in a traditional journal alongside a journal article. However, in some cases, it may be useful to publish your code in a journal specifically focused on software development. Here, we recommend [JOSS (Journal of Open Source Software)](https://joss.theoj.org/).
 
-Increasingly, traditional scientific publications also include a section that describes where the code can be found. This can be a DOI, a link to a GitHub repository, or a link to a Zenodo repository. An example of such a section can be found here:
+Increasingly, traditional scientific publications also include a section that describes where the code can be found. This can be a DOI, a link to a GitHub repository, or a link to a Zenodo repository. This allows other researchers to reliably cite your software, which also improves the findability. An example of such a section can be found here:
 
 ```markdown
 Code for data cleaning and analysis is provided as part of the replication package, written in R. The specific code that was used for this article is available at https://doi.org/10.xxxx/path/to/journal/archive, while further updates are released at https://github.com/repository/your_code.
