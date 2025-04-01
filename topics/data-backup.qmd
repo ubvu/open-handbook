@@ -16,6 +16,8 @@ The 3-2-1 rule states that you should have:
 * 2 Different mediums (2 different kinds of storage)
 * 1 Copy is kept off-site
 
+For example, a combination of VU research data storage systems [SciStor](../topics/scistor.qmd), [Yoda](../topics/yoda.qmd) and Research Drive satisfy the 3-2-1 Rule
+
 Ideally, this is automated so that you as a user do not have to manually do anything extra to manage your data. If possible, automate this backup as well with computer scheduling tools such as Task Scheduler (Windows) or Crontab (Linux).
 
 ## Simple Synchronising Solutions
