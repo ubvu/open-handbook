@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Blog – Research Support Handbook</title>
+<title>Research Drive – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +23,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./public/favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6ee2a4e5d13000102894f3420c610d96.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../public/favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-6ee2a4e5d13000102894f3420c610d96.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,67 +67,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="alternate" type="application/rss+xml" title="{{< var title >}}" href="blog.xml" data-external="1"></head>
+</head>
 
 <body class="nav-fixed">
 
@@ -138,8 +78,8 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -154,25 +94,25 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-topics">    
         <li>
-    <a class="dropdown-item" href="./topics.html">
+    <a class="dropdown-item" href="../topics.html">
  <span class="dropdown-text">All</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./topics.html#category=Tools">
+    <a class="dropdown-item" href="../topics.html#category=Tools">
  <span class="dropdown-text">Tools</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./guides.html"> 
+    <a class="nav-link" href="../guides.html"> 
 <span class="menu-text">Guides</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./contributing.html"> 
+    <a class="nav-link" href="../contributing.html"> 
 <span class="menu-text">Contributing</span></a>
   </li>  
 </ul>
@@ -187,16 +127,38 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#what-is-it" id="toc-what-is-it" class="nav-link active" data-scroll-target="#what-is-it">What is it?</a></li>
+  <li><a href="#what-can-it-be-used-for" id="toc-what-can-it-be-used-for" class="nav-link" data-scroll-target="#what-can-it-be-used-for">What can it be used for?</a>
+  <ul class="collapse">
+  <li><a href="#data-storage" id="toc-data-storage" class="nav-link" data-scroll-target="#data-storage">Data storage</a></li>
+  <li><a href="#data-sharing" id="toc-data-sharing" class="nav-link" data-scroll-target="#data-sharing">Data sharing</a></li>
+  <li><a href="#sensitive-data" id="toc-sensitive-data" class="nav-link" data-scroll-target="#sensitive-data">Sensitive data</a></li>
+  <li><a href="#data-life-cycle" id="toc-data-life-cycle" class="nav-link" data-scroll-target="#data-life-cycle">Data life cycle</a></li>
+  <li><a href="#collaborative-tools" id="toc-collaborative-tools" class="nav-link" data-scroll-target="#collaborative-tools">Collaborative tools</a></li>
+  <li><a href="#surfdrive-replacement" id="toc-surfdrive-replacement" class="nav-link" data-scroll-target="#surfdrive-replacement">SURFdrive replacement</a></li>
+  </ul></li>
+  <li><a href="#how-to-request-access" id="toc-how-to-request-access" class="nav-link" data-scroll-target="#how-to-request-access">How to request access</a></li>
+  <li><a href="#are-there-costs-involved" id="toc-are-there-costs-involved" class="nav-link" data-scroll-target="#are-there-costs-involved">Are there costs involved?</a></li>
+  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting started</a></li>
+  <li><a href="#contact" id="toc-contact" class="nav-link" data-scroll-target="#contact">Contact</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/researchdrive.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog</h1>
-</div>
+<h1 class="title">Research Drive</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Tools</div>
+  </div>
+  </div>
 
 
 
@@ -212,210 +174,66 @@ window.Quarto = {
 </header>
 
 
+<section id="what-is-it" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-it">What is it?</h2>
+<p><a href="https://www.surf.nl/en/services/research-drive">SURF Research Drive</a> is an online storage and collaboration platform for research data. With Research Drive you can easily store and share files with other researchers, inside and outside VU Amsterdam. You can access your data via a web interface or tools, from anywhere in the world.</p>
+<p>Research Drive is based on the Open Source <a href="https://owncloud.com/">ownCloud</a> software and is hosted by SURF in their Amsterdam datacentre.</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/6QLzSHbq0Ks" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</section>
+<section id="what-can-it-be-used-for" class="level2">
+<h2 class="anchored" data-anchor-id="what-can-it-be-used-for">What can it be used for?</h2>
+<section id="data-storage" class="level3">
+<h3 class="anchored" data-anchor-id="data-storage">Data storage</h3>
+<p>Research Drive is a Cloud storage solution that can be used for small (a few GBs) to larger (a few TBs) datasets. Because it is a cloud storage platform you will need to download data to your laptop to work with it. Research Drive makes this easy by using the ownCloud client, which allows you to automatically sync the folders you want to work with. Data is backed up daily.</p>
+</section>
+<section id="data-sharing" class="level3">
+<h3 class="anchored" data-anchor-id="data-sharing">Data sharing</h3>
+<p>As project owner you can invite internal and external collaborators yourself, or you can delegate this task to others.</p>
+<p>You can set access rights to folders and subfolders yourself, making Research Drive ideal for use in collaborations with many institutions.</p>
+</section>
+<section id="sensitive-data" class="level3">
+<h3 class="anchored" data-anchor-id="sensitive-data">Sensitive data</h3>
+<p>Hosting at SURF and the use of Multi Factor Authentication (MFA), among other measures, makes Research Drive suitable for storing data that score Medium on confidentiality (see the <a href="https://rdm.vu.nl/guides/policies-supporting-vision-open-science.html#policy-classification-of-research-data">Policy Classification of Research Data</a> and the <a href="https://vu.nl/en/research/dataclassification">Research Data Classification Tool</a>). Data that score High on confidentiality can be stored in Research Drive with additional security measures. Please make sure to contact the <a href="mailto:rdm@vu.nl">RDM Support Desk</a> to check if further measures are needed.</p>
+</section>
+<section id="data-life-cycle" class="level3">
+<h3 class="anchored" data-anchor-id="data-life-cycle">Data life cycle</h3>
+<p>Research Drive is meant for data you are actively working with. We recommend archiving datasets that are no longer actively used, but can’t be deleted, in <a href="../topics/yoda.html">Yoda</a>. This ensures Research Drive is used optimally and costs are kept down for your research group and VU Amsterdam.</p>
+</section>
+<section id="collaborative-tools" class="level3">
+<h3 class="anchored" data-anchor-id="collaborative-tools">Collaborative tools</h3>
+<p>Within Research Drive, various apps and integrations are available to simplify the use and handling of research data, such as a tool to edit documents directly in the web interface. You can find a current list of app integrations on the <a href="https://servicedesk.surf.nl/wiki/pages/viewpage.action?pageId=102828080">SURF User Knowledge Base</a>.</p>
+</section>
+<section id="surfdrive-replacement" class="level3">
+<h3 class="anchored" data-anchor-id="surfdrive-replacement">SURFdrive replacement</h3>
+<p>Since both are based on ownCloud, Research Drive is very similar to SURFdrive, the main difference is that SURFdrive is personal storage while Research Drive is group based.</p>
+<p>Researchers looking for a new home for research data currently on SURFdrive are encouraged to migrate to Research Drive. Manuals for migrating data to Research Drive are available in <a href="../public/Manual-migrating-data-SURFdrive-to-ResearchDrive_EN.pdf">English</a> and <a href="../public/Handleiding-Migreren-data-SURFdrive-naar-ResearchDrive_NL.pdf">Dutch</a>. Please contact the <a href="mailto:rdm@vu.nl">Research Support Desk</a> if you have any questions about migrating to Research Drive.</p>
+</section>
+</section>
+<section id="how-to-request-access" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-request-access">How to request access</h2>
+<p>A new Research Drive projectfolder can be requested via the form on 🔒 <a href="https://services.vu.nl/esc">ServiceNow</a>, go to: Research Data Support &gt; Research Data Support &gt; Request Research Drive.</p>
+<p>Once the projectfolder is created you can invite internal and external collaborators yourself.</p>
+</section>
+<section id="are-there-costs-involved" class="level2">
+<h2 class="anchored" data-anchor-id="are-there-costs-involved">Are there costs involved?</h2>
+<p>The costs of storing data in Research Drive are detailed on the 🔒 <a href="https://vu.nl/en/employee/research-data-support/research-archiving-storage-cost-model">VU website</a>.</p>
+</section>
+<section id="getting-started" class="level2">
+<h2 class="anchored" data-anchor-id="getting-started">Getting started</h2>
+<ol type="1">
+<li><p>Log in to the Research Drive web application at <a href="https://vu.data.surfsara.nl">vu.data.surfsara.nl</a>. You are only able to log in after you have been invited to one or more project folders. The login process requires a Multi-Factor Authentication (MFA) account, which students do not have by default. If you do not yet have an MFA account, you can, as a VU student, researcher or employee, request an account at the IT Servicedesk in the main building with a legitimate ID.</p></li>
+<li><p>Install the ownCloud Client software, you can find installation instructions on the <a href="https://servicedesk.surf.nl/wiki/display/WIKI/ownCloud+desktop+client">SURF User Knowledge Base</a>. The Server Address is <code>https://vu.data.surfsara.nl</code>.</p></li>
+</ol>
+<p>The SURF User Knowledge Base contains a number of <a href="https://servicedesk.surf.nl/wiki/display/WIKI/Tutorials">Tutorials</a> on working with Research Drive.</p>
+</section>
+<section id="contact" class="level2">
+<h2 class="anchored" data-anchor-id="contact">Contact</h2>
+<p>Wondering if Research Drive fits your research needs? Please contact the <a href="mailto:rdm@vu.nl">Research Support Desk</a>.</p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="aGFja2F0aG9u" data-listing-date-sort="1732752000000" data-listing-file-modified-sort="1743673599372" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="206">
-<div class="thumbnail">
-<p><a href="./blog/2024-11-28hackathon.html" class="no-external"></a></p><a href="./blog/2024-11-28hackathon.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./blog/2024-11-28hackathon.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-11-28hackathon.html" class="no-external">Fifth Handbook Hackathon</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./blog/2024-11-28hackathon.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./blog/2024-11-28hackathon.html" class="no-external">On November 28, 2024, all authors participated in the fifth hackathon for the Research Support Handbook. For this hackathon, we focused on adding new content and…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-11-28hackathon.html" class="no-external">
-<div class="listing-date">
-Nov 28, 2024
-</div>
-<div class="listing-author">
-Lena Karvovskaya, Jolien Scholten, Kostas Vilkelis, Tycho Hofstra, Irene Martorelli, Peter Vos
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="aGFja2F0aG9u" data-listing-date-sort="1730419200000" data-listing-file-modified-sort="1743673599372" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="242">
-<div class="thumbnail">
-<p><a href="./blog/2024-11-01hackathon.html" class="no-external"></a></p><a href="./blog/2024-11-01hackathon.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./blog/2024-11-01hackathon.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-11-01hackathon.html" class="no-external">Fourth Handbook Hackathon</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./blog/2024-11-01hackathon.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./blog/2024-11-01hackathon.html" class="no-external">On October 30th, 2024, all authors participated in the fourth hackathon for the Research Support Handbook. Since the third hackathon, we migrated to <code>rdm.vu.nl</code>, which is a…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-11-01hackathon.html" class="no-external">
-<div class="listing-date">
-Nov 1, 2024
-</div>
-<div class="listing-author">
-Chris Hartgerink, Lena Karvovskaya, Jolien Scholten, Tycho Hofstra, Elisa Rodenburg, Stephanie van de Sandt
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="ZG93bnRpbWU=" data-listing-date-sort="1729555200000" data-listing-file-modified-sort="1743673599372" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="496">
-<div class="thumbnail">
-<p><a href="./blog/2024-10-22post-mortem.html" class="no-external"></a></p><a href="./blog/2024-10-22post-mortem.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./blog/2024-10-22post-mortem.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-10-22post-mortem.html" class="no-external">Why was rdm.vu.nl down for ten hours?</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./blog/2024-10-22post-mortem.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./blog/2024-10-22post-mortem.html" class="no-external">On Friday October 18th 2024, we experienced around ten hours of downtime on the <code>rdm.vu.nl</code> website. The downtime started around 10AM after merging changes to the handbook and…<sup></sup></a>
-</div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-10-22post-mortem.html" class="no-external">
-<div class="listing-date">
-Oct 22, 2024
-</div>
-<div class="listing-author">
-Chris Hartgerink, Lena Karvovskaya
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1727654400000" data-listing-file-modified-sort="1743673599372" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="240">
-<div class="thumbnail">
-<p><a href="./blog/2024-09-30hackathon.html" class="no-external"></a></p><a href="./blog/2024-09-30hackathon.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./blog/2024-09-30hackathon.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-09-30hackathon.html" class="no-external">Third Handbook Hackathon</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./blog/2024-09-30hackathon.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./blog/2024-09-30hackathon.html" class="no-external">In the third hackathon for the Research Support Handbook, held on September 25th, 2024, contributors gathered to make significant progress towards migrating the handbook to…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-09-30hackathon.html" class="no-external">
-<div class="listing-date">
-Sep 30, 2024
-</div>
-<div class="listing-author">
-Alex van der Jagt, FGB, sec.&nbsp;KNOP, Chris Hartgerink (host), Diogenes Cruz de Arcelino, Elisa Rodenburg, UBVU, Jessica Hrudey, FGB, Jolien Scholten, UB, Lena Karvovskaya, UBVU, Stephanie van de Sandt, UBVU, Tycho Hofstra, UBVU
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1725494400000" data-listing-file-modified-sort="1743673599372" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="306">
-<div class="thumbnail">
-<p><a href="./blog/2024-09-05hackathon.html" class="no-external"></a></p><a href="./blog/2024-09-05hackathon.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./blog/2024-09-05hackathon.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-09-05hackathon.html" class="no-external">Second Handbook Hackathon</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./blog/2024-09-05hackathon.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./blog/2024-09-05hackathon.html" class="no-external">On September 5th, 2024, all authors participated in the second hackathon for the Research Support Handbook. For this hackathon, we focused on quality assurance. Quality…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-09-05hackathon.html" class="no-external">
-<div class="listing-date">
-Sep 5, 2024
-</div>
-<div class="listing-author">
-Alex van der Jagt, Chris Hartgerink, Elisa Rodenburg, Jens de Bruijn, Jolien Scholten, Joy Jiayi Cheng, Lena Karvovskaya, Meron Vermaas, Peter Vos, Stephanie van de Sandt, Tycho Hofstra
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1719446400000" data-listing-file-modified-sort="1743673599372" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="504">
-<div class="thumbnail">
-<p><a href="./blog/2024-06-27hackathon.html" class="no-external"></a></p><a href="./blog/2024-06-27hackathon.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./blog/2024-06-27hackathon.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-06-27hackathon.html" class="no-external">First Handbook Hackathon</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./blog/2024-06-27hackathon.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./blog/2024-06-27hackathon.html" class="no-external">On June 27th, 2024, the first hackathon for the Research Support Handbook took place with all the post authors. For this hackathon, we focused on non-GitHub based…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-06-27hackathon.html" class="no-external">
-<div class="listing-date">
-Jun 27, 2024
-</div>
-<div class="listing-author">
-Alex van der Jagt, Chris Hartgerink, Dimitri Unger, Elisa Rodenburg, Jessica Hrudey, Jolien Scholten, Lena Karvovskaya, Lucy O’ Shea, Mar Barrantes-Cepas, Meron Vermaas, Peter Vos, Stephanie van de Sandt
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-listing-date-sort="1716422400000" data-listing-file-modified-sort="1743673599372" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="36">
-<div class="thumbnail">
-<p><a href="./blog/2024-05-23welcome.html" class="no-external"></a></p><a href="./blog/2024-05-23welcome.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./blog/2024-05-23welcome.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-05-23welcome.html" class="no-external">Hello world!</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./blog/2024-05-23welcome.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./blog/2024-05-23welcome.html" class="no-external">This is the first blog entry on the Research Support Handbook. We will be posting more at a later time, and are looking forward to your contributions as well.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-05-23welcome.html" class="no-external">
-<div class="listing-date">
-May 23, 2024
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -848,12 +666,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="./about.html">
+    <a class="nav-link" href="../about.html">
 <p>About</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="./editors-guide.html">
+    <a class="nav-link" href="../editors-guide.html">
 <p>Editor’s guide</p>
 </a>
   </li>  
@@ -863,7 +681,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </a>
   </li>  
 </ul>
-    <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/blog.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/researchdrive.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
