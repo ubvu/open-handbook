@@ -1,6 +1,6 @@
 ---
 title: "How can you publish FAIR software"
-image: '/public/cover-images/DALLE_DMP.jpg'
+image: '/public/RSM_sticker.png'
 description: "A step-wise guide to make your software Findable, Accesible, Interoperable and Reusable."
 categories: ["Publish & Share"]
 ---
@@ -46,9 +46,9 @@ Well done! Your research code is not sitting on your own computer (or worse – 
 ../topics/software-licensing.qmd
 ```
 
-## DOI
+## Persistent Identifier
 
-A DOI, or Digital Object Identifier, string assigned to a document, dataset, or object to provide a permanent link. DOIs ensure that even if the URL of the content changes, the DOI link remains constant, making it a reliable way to cite and access digital materials. There are two ways to do this. Depending on how often you intend to update your code, one or the other may be simpler.
+A [persistent identifier](../topics/persistent-identifier.qmd)  is a durable reference to a digital dataset, document, website or other object. A Digital Object Identifier (DOI) is a widely used Persistent Identifier in the research domain and hence for research software as well. There are two ways to generate a DOI for your code. Depending on how often you intend to update your code, one or the other may be simpler.
 
 1.  If you do not intend to update your code often, it is sufficient to upload your code separately to Zenodo (or similar repository). This will then automatically generate a DOI for you, which can be included in a publication.
 2.  If however, you intend to update your code frequently, it may be easier to set up an automatic link between GitHub and Zenodo, so that a new version of the code is released on Zenodo on publication of a new version on GitHub. You can find instructions for this in this [guide on referencing and citing content](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content).
