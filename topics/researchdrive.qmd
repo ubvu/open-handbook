@@ -1,0 +1,52 @@
+---
+title: Research Drive
+categories: [Tools]
+---
+## What is it?
+[SURF Research Drive](https://www.surf.nl/en/services/research-drive) is an online storage and collaboration platform for research data. With Research Drive you can easily store and share files with other researchers, inside and outside VU Amsterdam. You can access your data via a web interface or tools, from anywhere in the world. 
+
+Research Drive is based on the Open Source [ownCloud](https://owncloud.com/) software and is hosted by SURF in their Amsterdam datacentre.
+
+{{< video https://www.youtube.com/embed/6QLzSHbq0Ks >}}
+
+## What can it be used for?
+
+### Data storage
+Research Drive is a Cloud storage solution that can be used for small (a few GBs) to larger (a few TBs) datasets. Because it is a cloud storage platform you will need to download data to your laptop to work with it. Research Drive makes this easy by using the ownCloud client, which allows you to automatically sync the folders you want to work with. Data is backed up daily. 
+
+### Data sharing
+As project owner you can invite internal and external collaborators yourself, or you can delegate this task to others.
+
+You can set access rights to folders and subfolders yourself, making Research Drive ideal for use in collaborations with many institutions.
+
+### Sensitive data
+Hosting at SURF and the use of Multi Factor Authentication (MFA), among other measures, makes Research Drive suitable for storing data that score Medium on confidentiality (see the [Policy Classification of Research Data](https://rdm.vu.nl/guides/policies-supporting-vision-open-science.html#policy-classification-of-research-data) and the [Research Data Classification Tool](https://vu.nl/en/research/dataclassification)). Data that score High on confidentiality can be stored in Research Drive with additional security measures. Please make sure to contact the [RDM Support Desk](mailto:rdm@vu.nl) to check if further measures are needed.
+
+### Data life cycle
+Research Drive is meant for data you are actively working with. We recommend archiving datasets that are no longer actively used, but can't be deleted, in [Yoda](./yoda.qmd). This ensures Research Drive is used optimally and costs are kept down for your research group and VU Amsterdam.
+
+### Collaborative tools
+Within Research Drive, various apps and integrations are available to simplify the use and handling of research data, such as a tool to edit documents directly in the web interface. You can find a current list of app integrations on the [SURF User Knowledge Base](https://servicedesk.surf.nl/wiki/pages/viewpage.action?pageId=102828080).
+
+### SURFdrive replacement
+Since both are based on ownCloud, Research Drive is very similar to SURFdrive, the main difference is that SURFdrive is personal storage while Research Drive is group based. 
+
+Researchers looking for a new home for research data currently on SURFdrive are encouraged to migrate to Research Drive. Manuals for migrating data to Research Drive are available in [English](../public/Manual-migrating-data-SURFdrive-to-ResearchDrive_EN.pdf) and [Dutch](../public/Handleiding-Migreren-data-SURFdrive-naar-ResearchDrive_NL.pdf). Please contact the [Research Support Desk](mailto:rdm@vu.nl) if you have any questions about migrating to Research Drive.
+
+## How to request access
+A new Research Drive projectfolder can be requested via the form on 🔒 [ServiceNow](https://services.vu.nl/esc), go to: Research Data Support > Research Data Support > Request Research Drive.
+
+Once the projectfolder is created you can invite internal and external collaborators yourself.
+
+## Are there costs involved?
+The costs of storing data in Research Drive are detailed on the 🔒 [VU website](https://vu.nl/en/employee/research-data-support/research-archiving-storage-cost-model). 
+
+## Getting started
+1. Log in to the Research Drive web application at [vu.data.surfsara.nl](https://vu.data.surfsara.nl). You are only able to log in after you have been invited to one or more project folders. The login process requires a Multi-Factor Authentication (MFA) account, which students do not have by default. If you do not yet have an MFA account, you can, as a VU student, researcher or employee, request an account at the IT Servicedesk in the main building with a legitimate ID.
+
+2. Install the ownCloud Client software, you can find installation instructions on the [SURF User Knowledge Base](https://servicedesk.surf.nl/wiki/display/WIKI/ownCloud+desktop+client). The Server Address is `https://vu.data.surfsara.nl`. 
+
+The SURF User Knowledge Base contains a number of [Tutorials](https://servicedesk.surf.nl/wiki/display/WIKI/Tutorials) on working with Research Drive.
+
+## Contact
+Wondering if Research Drive fits your research needs? Please contact the [Research Support Desk](mailto:rdm@vu.nl).
