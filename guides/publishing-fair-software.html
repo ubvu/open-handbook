@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="A step-wise guide to make your software Findable, Accesible, Interoperable and Reusable.">
+
+<title>How can you publish FAIR software – Research Support Handbook</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../public/favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-6ee2a4e5d13000102894f3420c610d96.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-topics" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Topics</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-topics">    
+        <li>
+    <a class="dropdown-item" href="../topics.html">
+ <span class="dropdown-text">All</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../topics.html#category=Tools">
+ <span class="dropdown-text">Tools</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../guides.html"> 
+<span class="menu-text">Guides</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../blog.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../contributing.html"> 
+<span class="menu-text">Contributing</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="https://github.com/ubvu/open-handbook" title="GitHub VU Open Handbook" class="quarto-navigation-tool px-1" aria-label="GitHub VU Open Handbook"><i class="bi bi-github"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#publishing-online" id="toc-publishing-online" class="nav-link" data-scroll-target="#publishing-online">Publishing online</a>
+  <ul class="collapse">
+  <li><a href="#creating-a-repository" id="toc-creating-a-repository" class="nav-link" data-scroll-target="#creating-a-repository">Creating a repository</a></li>
+  <li><a href="#adding-code-to-your-repository" id="toc-adding-code-to-your-repository" class="nav-link" data-scroll-target="#adding-code-to-your-repository">Adding code to your repository</a></li>
+  <li><a href="#using-git-locally" id="toc-using-git-locally" class="nav-link" data-scroll-target="#using-git-locally">Using Git locally</a></li>
+  </ul></li>
+  <li><a href="#licence" id="toc-licence" class="nav-link" data-scroll-target="#licence">Licence</a></li>
+  <li><a href="#persistent-identifier" id="toc-persistent-identifier" class="nav-link" data-scroll-target="#persistent-identifier">Persistent Identifier</a></li>
+  <li><a href="#readme-commenting-code-formatting" id="toc-readme-commenting-code-formatting" class="nav-link" data-scroll-target="#readme-commenting-code-formatting">Readme, commenting, code formatting</a>
+  <ul class="collapse">
+  <li><a href="#readme-file" id="toc-readme-file" class="nav-link" data-scroll-target="#readme-file">Readme file</a></li>
+  <li><a href="#code-commenting" id="toc-code-commenting" class="nav-link" data-scroll-target="#code-commenting">Code commenting</a></li>
+  <li><a href="#code-formatting" id="toc-code-formatting" class="nav-link" data-scroll-target="#code-formatting">Code formatting</a></li>
+  <li><a href="#code-formatting-tools" id="toc-code-formatting-tools" class="nav-link" data-scroll-target="#code-formatting-tools">Code formatting tools</a></li>
+  </ul></li>
+  <li><a href="#documentation" id="toc-documentation" class="nav-link" data-scroll-target="#documentation">Documentation</a>
+  <ul class="collapse">
+  <li><a href="#installing-sphinx" id="toc-installing-sphinx" class="nav-link" data-scroll-target="#installing-sphinx">Installing Sphinx</a></li>
+  <li><a href="#automatic-documentation-building" id="toc-automatic-documentation-building" class="nav-link" data-scroll-target="#automatic-documentation-building">Automatic documentation building</a></li>
+  <li><a href="#automatically-documenting-your-code" id="toc-automatically-documenting-your-code" class="nav-link" data-scroll-target="#automatically-documenting-your-code">Automatically documenting your code</a></li>
+  </ul></li>
+  <li><a href="#released-as-a-package" id="toc-released-as-a-package" class="nav-link" data-scroll-target="#released-as-a-package">Released as a package</a>
+  <ul class="collapse">
+  <li><a href="#pypi" id="toc-pypi" class="nav-link" data-scroll-target="#pypi">PyPi</a></li>
+  <li><a href="#automatic-publishing-versions" id="toc-automatic-publishing-versions" class="nav-link" data-scroll-target="#automatic-publishing-versions">Automatic publishing versions</a></li>
+  </ul></li>
+  <li><a href="#testing" id="toc-testing" class="nav-link" data-scroll-target="#testing">Testing</a>
+  <ul class="collapse">
+  <li><a href="#code-testing" id="toc-code-testing" class="nav-link" data-scroll-target="#code-testing">Code testing</a></li>
+  <li><a href="#testing-tools" id="toc-testing-tools" class="nav-link" data-scroll-target="#testing-tools">Testing tools</a></li>
+  </ul></li>
+  <li><a href="#updating" id="toc-updating" class="nav-link" data-scroll-target="#updating">Updating</a>
+  <ul class="collapse">
+  <li><a href="#github-issues" id="toc-github-issues" class="nav-link" data-scroll-target="#github-issues">GitHub Issues</a></li>
+  </ul></li>
+  <li><a href="#publication" id="toc-publication" class="nav-link" data-scroll-target="#publication">Publication</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/guides/publishing-fair-software.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">How can you publish FAIR software</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Publish &amp; Share</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    A step-wise guide to make your software Findable, Accesible, Interoperable and Reusable.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>This document provides some pointers that can help to set you up with a coding repository that follows the FAIR guiding principles, meaning Findability, Accessibility, Interoperability, and Reuse of digital assets. It is not meant to be an exhaustive guide for every step, but rather acts as a starting point and links to more exhaustive sources.</p>
+</section>
+<section id="publishing-online" class="level2">
+<h2 class="anchored" data-anchor-id="publishing-online">Publishing online</h2>
+<p>Research code (or other code) is best stored on a git repostory, like GitHub or GitLab. Both platforms are is used by millions of programmers and researchers around the world. To upload your code to GitHub/GitLab, you first need to make an account here. Once you have an account, you can create a repository that hosts your code.</p>
+<p><strong>GitHub</strong>: You can create a free account. In addition, as a university employee, you can use your university email address to get a free “Pro” account, which gives you access to some additional features. You can find more information at the <a href="https://education.github.com/">GitHub Education platform</a>. <strong>GitLab</strong>: As VU employee, you can access GitLab using your VU credentials (VUnetID) by logging in through the <a href="https://git.vu.nl">VU portal</a>.</p>
+<section id="creating-a-repository" class="level3">
+<h3 class="anchored" data-anchor-id="creating-a-repository">Creating a repository</h3>
+<p><strong>GitHub</strong>: After logging in, click your profile picture on the top right -&gt; “Your repositories” -&gt; “New”. Choose a name and set the visibility (do you want everyone to see your code already or wait a bit before sharing with the world?). It is common practice to immediately add a “README” file and add a licence (see next section). You can update the visibility of your repository later under the repository settings.</p>
+<p><strong>GitLab</strong>: After logging, click on “Projects” in the left menu, and then on “Create project”. Choose a name and set the visibility (do you want everyone to see your code already or wait a bit before sharing with the world?). It is common practice to immediately add a “README” file and add a licence (see next section). You can update the visibility of your repository later under the repository settings.</p>
+</section>
+<section id="adding-code-to-your-repository" class="level3">
+<h3 class="anchored" data-anchor-id="adding-code-to-your-repository">Adding code to your repository</h3>
+<p><strong>GitHub</strong>: You can create a new file using the “Add file” or “+”-button.</p>
+<p><strong>GitLab</strong>: You can create a new file using the “+”-button and click “New file”.</p>
+<p>Once you have uploaded your files or written your code, you need to write a “commit” message. This is basically a description of the changes you made between the previous version of the code and the current version. Since this is the first version of the files (that is available online) you can write something like “initial”.</p>
+<p>Note: never put sentitive information (like passwords or API keys) in your code.</p>
+</section>
+<section id="using-git-locally" class="level3">
+<h3 class="anchored" data-anchor-id="using-git-locally">Using Git locally</h3>
+<p>When you plan to use GitHub/GitLab more often, adding files through the web interface can become cumbersome. In that case, it is useful to consider using <a href="https://github.com/apps/desktop">GitHub Desktop</a> or a git manager which is integrated in your IDE (integrated development environment), like <a href="https://code.visualstudio.com/">Visual Studio Code</a>. Git can also be used on the command line, for example, when using git from a server. The course <a href="https://www.codecademy.com/learn/learn-git">Learn Git &amp; GitHub</a> provides a useful tutorial on using git from the command line.</p>
+<p>Well done! Your research code is not sitting on your own computer (or worse – deleted after publication*), but is available online for others to find. This is step one in following the <a href="../topics/fair-principles.html">FAIR principles</a>. In the remainder of this guide, you will find steps that will guide you through all steps to release a “perfect” code repository. The first sections are most important, further sections provide room for further improvement, so please use this guide at your own discretion.</p>
+<p>*VU Amsterdam requires research data and software to be preserved for at least 10 years, unless legal provisions or discipline-specific guidelines dictate otherwise, as per the <a href="../topics/research-data-and-software-management-policy.html">Research Data and Software Management Policy</a>. Note that funding organisations may have specific requirements for preserving code as well. If you receive external funding for your research, please make sure to familiarise yourself with such requirements.</p>
+</section>
+</section>
+<section id="licence" class="level2">
+<h2 class="anchored" data-anchor-id="licence">Licence</h2>
+<section id="licensing-software" class="level6">
+<h6 class="anchored" data-anchor-id="licensing-software">Licensing software</h6>
+<p>Publishing research software under an appropriate licence is crucial for its accessibility, usability, and further integration into research. Choosing a licence usually happens right when you start developing the software or when you put it in a public repository, rather than when the software is finished and fully baked.</p>
+<p>A software licence states how other people may re-use your code and under which circumstances. For research software, it is recommended (and often required by funders) that licences are as permissible as possible.</p>
+<p>There are many licences out there; below we list some very frequently used licences in research software. However, if none of these licences fit your case, there are several tools that can help you to <a href="https://choosealicense.com/">choose</a> a suitable software licence. If you need guidance in choosing a licence for your software, get in touch with the <a href="mailto:rdm@vu.nl?subject=Research%20Software">RDM Support Desk</a>.</p>
+</section>
+<section id="mit-license" class="level6">
+<h6 class="anchored" data-anchor-id="mit-license">MIT License</h6>
+<p>The <a href="https://mit-license.org">MIT License</a> is a popular choice, due to its readability and permissiveness. It allows users to reuse the software for any purpose, including using, copying, modifying, and distributing it, provided they include the original copyright notice and licence text.</p>
+<p>However, its permissiveness means that derivative works can be closed-source and do not need to mention that they use your code, which might not align with all scientific openness goals or general.</p>
+</section>
+<section id="gnu-gplv3" class="level6">
+<h6 class="anchored" data-anchor-id="gnu-gplv3">GNU GPLv3</h6>
+<p>The <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU General Public License (GPLv3)</a> is another option, designed to ensure that the software and any derivatives remain open-source.</p>
+<p>This encourages collaborative improvement of software. Any software that includes GPL-licensed code must also be open-source under the GPLpotentially deterring commercial use or integration with proprietary software. In conclusion, when you want your code to be used by others, but only the code that uses your code is also open source, this is the way to go.</p>
+</section>
+<section id="apache-license-2.0" class="level6">
+<h6 class="anchored" data-anchor-id="apache-license-2.0">Apache License 2.0</h6>
+<p>The <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a> allows for modification and distribution of the software and its derivative works, with the requirement that changes to the original code are documented.</p>
+<p>It is a more complex licence than the MIT License and can be incompatible with GPL-licensed software. The specifics of this go beyond the scope of the handbook.</p>
+</section>
+<section id="adding-a-licence-to-github" class="level6">
+<h6 class="anchored" data-anchor-id="adding-a-licence-to-github">Adding a licence to GitHub</h6>
+<p>On GitHub you add a licence on creating a new repository, by selecting the licence from the drop-down menu. If your repository already exists, add a new file called “LICENSE” using the “+”-button on top of the repository (see below).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../topics/../public/github_file_creation_button.png" class="img-fluid figure-img"></p>
+<figcaption>Location of file creation button</figcaption>
+</figure>
+</div>
+<p>One the next page, start to type LICENSE as the file name, and a button to “Choose a license template” should automatically pop up. Follow the steps provided by GitHub to finish adding the licence to the repository.</p>
+<p>You should now see your licence shown on the main page of your repository.</p>
+</section>
+<section id="further-considerations" class="level6">
+<h6 class="anchored" data-anchor-id="further-considerations">Further considerations</h6>
+<ul>
+<li>If you are reusing software or libraries written by someone else, you must stick to the clauses of the licence given to the original software/library;</li>
+<li>When choosing a licence, do not just think about what <em>others</em> may do with the software, but also what <em>you</em> might want to do with the software in the future.</li>
+</ul>
+</section>
+</section>
+<section id="persistent-identifier" class="level2">
+<h2 class="anchored" data-anchor-id="persistent-identifier">Persistent Identifier</h2>
+<p>A <a href="../topics/persistent-identifier.html">persistent identifier</a> is a durable reference to a digital dataset, document, website or other object. A Digital Object Identifier (DOI) is a widely used Persistent Identifier in the research domain and hence for research software as well. There are two ways to generate a DOI for your code. Depending on how often you intend to update your code, one or the other may be simpler.</p>
+<ol type="1">
+<li>If you do not intend to update your code often, it is sufficient to upload your code separately to Zenodo (or similar repository). This will then automatically generate a DOI for you, which can be included in a publication.</li>
+<li>If however, you intend to update your code frequently, it may be easier to set up an automatic link between GitHub and Zenodo, so that a new version of the code is released on Zenodo on publication of a new version on GitHub. You can find instructions for this in this <a href="https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content">guide on referencing and citing content</a>.</li>
+</ol>
+</section>
+<section id="readme-commenting-code-formatting" class="level2">
+<h2 class="anchored" data-anchor-id="readme-commenting-code-formatting">Readme, commenting, code formatting</h2>
+<p>To allow others to understand and use your code effectively it is important to include a “README” file, and to comment your code.</p>
+<section id="readme-file" class="level3">
+<h3 class="anchored" data-anchor-id="readme-file">Readme file</h3>
+<p>The README file is the general introduction to a code repository. A good readme includes the following components (but may include other sections depending on the project):</p>
+<ul>
+<li>Project Title</li>
+<li>Project description</li>
+<li>Installation Instructions: Provide step-by-step guidelines to get the project running.</li>
+<li>Usage Examples: Include examples of how to use the code, which can be particularly beneficial for libraries or APIs.</li>
+<li>Dependencies: List any libraries or other software required to run the project.</li>
+<li>License: Specify the licensing under which the code is released (see above).</li>
+<li>Citation: Collect more citations 😉 by providing researchers a way to easily cite your paper.</li>
+<li>[if applicable] Contributing Guidelines: Explain how others can contribute to the project.</li>
+</ul>
+<p>On GitHub, the README file should ideally be named “README.md”. GitHub automatically renders this file and displays it on the home page of your repository. You can find an <a href="https://github.com/numpy/numpy">example of a README file</a> in the numpy repository.</p>
+</section>
+<section id="code-commenting" class="level3">
+<h3 class="anchored" data-anchor-id="code-commenting">Code commenting</h3>
+<p>Code commenting serves several essential purposes, such as enhancing readability, maintainability, and usability for original authors, future contributors and others interested in your code. Comments provide context or explanations for complex logic, variables, and algorithms, making the codebase accessible and understandable. Good practices include describing the purpose of functions, explaining the rationale behind decisions, and highlighting potential side effects.</p>
+<p>A huge part of commenting your code is variable naming. Good variable naming can go a long way in making your code “self-documenting”. In general, do not use abbreviations or very short variable names. This may save a couple of keystrokes when writing your code, but this time is easily recovered when looking at the code again months later. Good variable naming will help your colleagues or other interested people even more. Modern integrated development environments also usually include autocompletion.</p>
+</section>
+<section id="code-formatting" class="level3">
+<h3 class="anchored" data-anchor-id="code-formatting">Code formatting</h3>
+<p>Consistency in code formatting, and adherence to standards can be highly beneficial, allowing other people and yourself to more quickly grasp your code. Each language has different conventions. For example, Python uses <a href="https://peps.python.org/pep-0008/">PEP8</a>, for which some examples are given below:</p>
+<ul>
+<li>Use 4 spaces as indentation</li>
+<li>local <code>variable_names</code> are all lowercase</li>
+<li><code>ClassNames</code> have each word starting with a Capital letter</li>
+<li><code>GLOBAL_VARIABLES</code> are all uppercase</li>
+</ul>
+<p>Other examples are Google’s <a href="https://google.github.io/styleguide/Rguide.html">R Style Guide</a> and <a href="https://google.github.io/styleguide/cppguide.html">Google’s C++ Style Guide</a>.</p>
+</section>
+<section id="code-formatting-tools" class="level3">
+<h3 class="anchored" data-anchor-id="code-formatting-tools">Code formatting tools</h3>
+<p>You can also configure Visual Studio Code to automatically help you formatting your code. You can find more information in <a href="https://code.visualstudio.com/docs/python/formatting">the Visual Studio code formatting manual</a>. Even more strict formatting can be done with <a href="https://github.com/astral-sh/ruff">ruff</a>, which is PEP8-compliant but introduces additional rules. ruff can also format your code in place, running <code>ruff format {source_file_or_directory}</code>.</p>
+<p>You can also use GitHub Actions to automatically check and format your code when you push new commits to your repository. For example for Python, ruff publishes GitHub <a href="https://github.com/astral-sh/ruff-action">actions</a> that can be used to automatically check and format your code.</p>
+<p>If you follow the steps above, your code is now following the FAIR principles already! However, there is always room for improvement. Further steps are explained below.</p>
+</section>
+</section>
+<section id="documentation" class="level2">
+<h2 class="anchored" data-anchor-id="documentation">Documentation</h2>
+<p>Extensive documentation can help users of your code re-use your code effectively. There are some great tools out there to help you automatically build documentation from your code comments, which can be supplemented with general documentation. Sphinx is a great way to do this, and can be nicely integrated with your existing GitHub repository. An example of code documentation can be found in the <a href="https://docs.readthedocs.com/platform/stable/intro/sphinx.html">ReadTheDocs</a> documentation, which uses Sphinx. This guide is not meant to be a full guide on how to use Sphinx as many useful resources can be found on the internet. An example of a great resource is this <a href="https://towardsdatascience.com/documenting-python-code-with-sphinx-554e1d6c4f6d/">blog post</a>.</p>
+<section id="installing-sphinx" class="level3">
+<h3 class="anchored" data-anchor-id="installing-sphinx">Installing Sphinx</h3>
+<p>To use Sphinx for automatic documentation generation in a GitHub repository, start by installing Sphinx using pip (<code>pip install sphinx</code>). Next, run <code>sphinx-quickstart</code> in your project’s root directory to generate the basic configuration (<code>conf.py</code>) and structure for your documentation.</p>
+</section>
+<section id="automatic-documentation-building" class="level3">
+<h3 class="anchored" data-anchor-id="automatic-documentation-building">Automatic documentation building</h3>
+<p>Documentation can be automatically updated when you push new commits to your GitHub repository. To do so, you can set up a continuous integration (CI) workflow using GitHub Actions. In a workflow file, you specify the steps to install Sphinx, build the documentation using the <code>sphinx-build</code> command, and then push the generated HTML files to the <code>gh-pages</code> branch or another branch designated for hosting your documentation. A guide on how to set this up can be found in this <a href="https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html">Sphinx manual</a>.</p>
+<p>This guide is not meant to be a full guide on how to use Sphinx, as many useful resources can be found on the internet. However, some useful resources (<a href="https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html">here</a>, and <a href="https://towardsdatascience.com/documenting-python-code-with-sphinx-554e1d6c4f6d">here</a>) are listed, and pointers are given.</p>
+</section>
+<section id="automatically-documenting-your-code" class="level3">
+<h3 class="anchored" data-anchor-id="automatically-documenting-your-code">Automatically documenting your code</h3>
+<p>To document a Python function using autodoc, ensure that the functions in your code have a properly formatted docstring. For example:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> add_numbers(a, b):</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">    Adds two numbers together.</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">    :param a: first number</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">    :type a: int or float</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">    :param b: second number</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">    :type b: int or float</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">    :return: The sum of `a` and `b`</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">    :rtype: int or float</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> a <span class="op">+</span> b</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>In the <code>conf.py</code> file, enable the autodoc extension by adding <code>'sphinx.ext.autodoc'</code> to the <code>extensions</code> list. This extension allows Sphinx to generate documentation directly from your source code’s docstrings. Then, in your Sphinx documentation source directory (usually <code>docs/source</code>), create a <code>.rst</code> file where you want this function’s documentation to appear. Use the <code>autofunction</code> directive to automatically include the function’s documentation:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode rst code-with-copy"><code class="sourceCode rest"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dt">.. autofunction:: </span>path.to.module.add_numbers</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Replace path.to.module with the actual Python import path to your function. Sphinx will extract the docstring from the function and incorporate it into the generated documentation, complete with the parameter descriptions and types.</p>
+</section>
+</section>
+<section id="released-as-a-package" class="level2">
+<h2 class="anchored" data-anchor-id="released-as-a-package">Released as a package</h2>
+<p>Creating a Python package allows you to share your code with a broader audience, promoting collaboration, and ensuring reproducibility. There are two “levels” of publishing your code. First of all, you can ensure that your code is directly installable from the GitHub repository. To do so, you can follow the steps explained in this <a href="https://packaging.python.org/en/latest/tutorials/packaging-projects/">Python tutorial</a>, but only up to and including the section “Configuring metadata”. Here, we assume you already created a <code>README.md</code> and added a LICENCE as explained above.</p>
+<p>In brief, you need to take the following steps, which are explained in full below:</p>
+<ol type="1">
+<li>Structure your code as a package</li>
+<li>Create a metadata file</li>
+</ol>
+<p>Then, once this is added to GitHub, you can install the package using the following command (of course adjusted to point to your own repository):</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install git+https://github.com/your_username/your_repository.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="pypi" class="level3">
+<h3 class="anchored" data-anchor-id="pypi">PyPi</h3>
+<p>If this works, you can go on to the next step and publish your package on PyPi. When your package is published here, it is possible to directly install your code from pip, as such:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install your_package</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>For a full explanation of how to do so, follow the remaining steps explained in this <a href="https://packaging.python.org/en/latest/tutorials/packaging-projects/">Python tutorial</a>.</p>
+</section>
+<section id="automatic-publishing-versions" class="level3">
+<h3 class="anchored" data-anchor-id="automatic-publishing-versions">Automatic publishing versions</h3>
+<p>If you publish new versions frequently, it may be useful to automatically release these versions to PyPi, directly from GitHub without taking manual steps. To do so, you can follow the guide in this <a href="https://github.com/pypa/gh-action-pypi-publish">repository on PyPI publish GitHub Action</a>.</p>
+</section>
+</section>
+<section id="testing" class="level2">
+<h2 class="anchored" data-anchor-id="testing">Testing</h2>
+<p>Testing your code is a crucial aspect of software development, ensuring that your application behaves as expected and maintains a high level of quality. You can usually catch bugs much earlier, although it also requires some investment, especially in the beginning. Apart from catching bugs, testing can also focus on syntax use.</p>
+<section id="code-testing" class="level3">
+<h3 class="anchored" data-anchor-id="code-testing">Code testing</h3>
+<p>One of the most frequently used Python packages for software testing is <code>pytest</code>. Here are some quick steps to set up <code>pytest</code> in your repository:</p>
+<section id="python" class="level4">
+<h4 class="anchored" data-anchor-id="python">Python</h4>
+<ol type="1">
+<li><p>Install <code>pytest</code>:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install pytest</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Create a <code>tests</code> directory in your repository’s main folder.</p></li>
+<li><p>Assuming you have a function called <code>add_one</code> in the file <code>my_package/math_functions.py</code>, you can start by creating a test file within the <code>tests</code> directory to test this function:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># my_package/math_functions.py</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> add_one(x):</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> x <span class="op">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Create a test file named <code>test_math_functions.py</code> inside the <code>tests</code> directory. This file will contain the tests for your <code>add_one</code> function:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># tests/test_math_functions.py</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> my_package.math_functions <span class="im">import</span> add_one</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> test_add_one():</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">assert</span> add_one(<span class="dv">1</span>) <span class="op">==</span> <span class="dv">2</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">assert</span> add_one(<span class="dv">0</span>) <span class="op">==</span> <span class="dv">1</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">assert</span> add_one(<span class="op">-</span><span class="dv">1</span>) <span class="op">==</span> <span class="dv">0</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">assert</span> add_one(<span class="dv">100</span>) <span class="op">==</span> <span class="dv">101</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Run the tests by executing <code>pytest</code> from the command line. Navigate to your project’s root directory and run:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pytest</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ol>
+</section>
+<section id="r" class="level4">
+<h4 class="anchored" data-anchor-id="r">R</h4>
+<p>For R, the most frequently used package for software testing is <code>testthat</code>, more information can be found in the <a href="https://github.com/r-lib/testthat">testthat repository</a>.</p>
+</section>
+<section id="c" class="level4">
+<h4 class="anchored" data-anchor-id="c">C++</h4>
+<p>For C++, there are a lot of different testing frameworks available, but one of the most frequently used are <a href="https://github.com/catchorg/Catch2">Catch2</a> and <a href="https://google.github.io/googletest/">Google Test</a>.</p>
+</section>
+</section>
+<section id="testing-tools" class="level3">
+<h3 class="anchored" data-anchor-id="testing-tools">Testing tools</h3>
+<ul>
+<li>The <a href="https://code.visualstudio.com/docs/python/testing">Visual Studio Code Python extension</a> has really good support for testing, saving you lots of time.</li>
+<li>On GitHub, you can use GitHub Actions to automatically run your tests when you push new commits to your repository. For example for Python, <code>pytest</code> publishes GitHub <a href="https://github.com/pavelzw/pytest-action">actions</a> that can be used to automatically run your tests.</li>
+</ul>
+</section>
+</section>
+<section id="updating" class="level2">
+<h2 class="anchored" data-anchor-id="updating">Updating</h2>
+<p>Regularly updating your repository and engaging with users can help build a community around your software. For example, users can report bugs to your repository or even contribute to new features (or fix those bugs).</p>
+<section id="github-issues" class="level3">
+<h3 class="anchored" data-anchor-id="github-issues">GitHub Issues</h3>
+<p>GitHub Issues is a feature that allows project maintainers and contributors to track tasks, enhancements, and bugs for their projects. It can be found by clicking on “Issues” for most repositories (unless explicitly disabled). For example, issues can be used to:</p>
+<ul>
+<li><strong>Report Bugs</strong>: Users and developers can report bugs they encounter, including descriptions, steps to reproduce, and screenshots.</li>
+<li><strong>Request Features</strong>: Suggestions for new features or improvements can be tracked as issues, allowing maintainers to prioritize and discuss them.</li>
+</ul>
+</section>
+</section>
+<section id="publication" class="level2">
+<h2 class="anchored" data-anchor-id="publication">Publication</h2>
+<p>Finally, publishing your code alongside a scientific publication can help build trust in the software you developed. This can, of course, be done in a traditional journal alongside a journal article. However, in some cases, it may be useful to publish your code in a journal specifically focused on software development. Here, we recommend <a href="https://joss.theoj.org/">JOSS (Journal of Open Source Software)</a>.</p>
+<p>Increasingly, traditional scientific publications also include a section that describes where the code can be found. This can be a DOI, a link to a GitHub repository, or a link to a Zenodo repository. This allows other researchers to reliably cite your software, which also improves the findability. An example of such a section can be found here:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>Code for data cleaning and analysis is provided as part of the replication package, written in R. The specific code that was used for this article is available at https://doi.org/10.xxxx/path/to/journal/archive, while further updates are released at https://github.com/repository/your_code.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/ubvu\.github\.io\/open-handbook");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://creativecommons.org/publicdomain/zero/1.0/legalcode">
+<p>CC0 Public Domain Dedication</p>
+</a>
+  </li>  
+</ul>
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../about.html">
+<p>About</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../editors-guide.html">
+<p>Editor’s guide</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://ghostcollective.github.io/games.html">
+<p>GHOST Collective</p>
+</a>
+  </li>  
+</ul>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/guides/publishing-fair-software.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ By VU &amp; Liberate Science GmbH
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
