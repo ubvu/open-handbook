@@ -1,0 +1,86 @@
+---
+title: How can you comply with the GDPR?
+image: '/public/gdpr-europe-united-lock-74673f-1024.jpg'
+description: "Personal data must be protected."
+categories: ["Plan & Design"]
+
+## General Data Protection Regulation
+
+```{.include shift-heading-level-by=2}
+../topics/gdpr.qmd
+```
+
+## Complete a Data Protection Impact Assessment (DPIA)
+
+When scientific research includes the processing of personal data, conducting a Data Protection Impact Assessment (DPIA) may be a legal requirement under the GDPR. If it is not a legal requirement, conducting a DPIA is always a helpful exercise to make sure that you address all legal aspects that need to be addressed. It is the best way to GDPR-proof your research.
+
+### What is a DPIA?
+
+A DPIA is an assessment to identify the risks of processing personal data. It consists of a number of questions on the basis of which you determine whether the processing of personal data in your research project is legitimate and which measures should be taken to make sure this processing takes place within the boundaries of the GDPR. A DPIA doesn't deliver an automatic report at the end, but it rather makes you think about all relevant topics you need to address before starting the processing of personal data. The outcome of a DPIA should be used to determine appropriate measures to mitigate the identified risks, such as data minimisation (not collecting more data than necessary), pseudonymising data, selecting appropriate tools for data storage and data sharing.
+
+### When is a DPIA required?
+
+A DPIA is required when the processing of personal data is likely to result in a “high risk” for the participants of your research project. This is for example most likely the case when scientific research includes the processing of special categories of personal data, such as data concerning health, religious or philosophical beliefs, political opinions or criminal convictions and offences (see [Privacy in Research - 10 key rules](https://doi.org/10.25397/eur.12205019.v1) for more information about special categories of personal data).
+
+There are two DPIA lists which describe situations in which a DPIA is required:
+
+* The Dutch data protection authority (Autoriteit Persoonsgegevens) has published a [list of 17 “high risk” situations](https://www.autoriteitpersoonsgegevens.nl/nl/zelf-doen/data-protection-impact-assessment-dpia#voor-welke-soorten-verwerkingen-is-het-uitvoeren-van-een-dpia-verplicht-6667) in which a DPIA is mandatory.
+* The European data protection authorities have together published a [list of 9 criteria](https://www.autoriteitpersoonsgegevens.nl/nl/zelf-doen/data-protection-impact-assessment-dpia#wat-zijn-de-criteria-van-de-europese-privacytoezichthouders-6668) which can be used to determine whether there is a “high risk”.
+
+You should consult your 🔒 [Privacy Champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information) to determine whether a PreDPIA is required in your situation.
+
+### How can I complete a DPIA?
+
+VU Amsterdam has a DPIA template based on a form provided by the Dutch Government (see the [original template](https://www.rijksoverheid.nl/documenten/rapporten/2017/09/29/model-gegevensbeschermingseffectbeoordeling-rijksdienst-pia) if you wish to have more background information, only available in Dutch).
+
+You should request the template from your 🔒 [Privacy Champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information).
+
+Please complete a DPIA at least before you start collecting personal data. In some cases, it might be useful to have a look at the DPIA template at the stage of writing a research proposal.
+
+If you are not sure whether it is required to conduct a DPIA or if you need help completing a DPIA, please contact your faculty’s 🔒 [Privacy Champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information). If needed they can contact the legal specialists of Institutional and Legal Affairs.
+
+## Agreements
+
+If, in addition to the VU, another party is involved in data processing, in most cases an agreement must be set up to regulate the rights and obligations of all parties involved. This means that if you are collaborating with other universities, medical centres, companies, etcetera, an agreement has to be drawn up. This is also true if you would like to use software that stores personal data and for which VU Amsterdam doesn't have an agreement yet. If these things apply to your research, please reach out to your faculty's 🔒 [Privacy Champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information) for support.
+
+## Legal ground
+
+Personal data are only allowed to be processed with a suitable legal ground. For research, the most commonly used legal ground is informed consent. Please make sure that your consent procedure meets the requirements of the GDPR.
+
+An important issue in informed consent forms, is the possible future (re-)use of the data. The Privacy Champion of the Faculty of Behavioural and Movement Sciences prepared a [checklist](https://fgb-rdm.nl/legal/ICFChecklist.html) for what to consider when creating an informed consent form. You should always ask your 🔒 [Privacy Champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information) for advice when drawing up an informed consent form.
+
+### Reusing existing data
+
+If you like to reuse existing data containing personal data, you need a legal ground as well. Since determining what is allowed to do with existing personal data (e.g. does the original consent cover reuse, should you ask for consent again) can be complex, you should always aks your 🔒 [Privacy Champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information) for help in situations like this.
+
+## Privacy statement
+
+The GDPR requires us to be transparent about how we handle personal data. For scientific research you need to draw up a specific statement for your particular study. The GDPR imposes requirements on what must be included in a privacy statement. VU Amsterdam has a model privacy statement available in Dutch and English that meets these requirements. You can contact your faculty's 🔒 [Privacy Champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information) for this.
+
+## Regiser your processing activities
+
+If your research is subject to the [GDPR](../topics/gdpr.qmd), then you need to register information on your research in a central VU registry. This central registry lists all personal data processing activities carried out at VU Amsterdam. The registry indicates why and how personal data are processed, and with whom they are shared. The registry helps VU Amsterdam demonstrate compliance with the GDPR and in the case of a data breach, the registry helps with monitoring and acting swiftly to inform all relevant stakeholders.
+
+For research projects, VU Amsterdam registers data processing via [DMPonline](https://dmponline.vu.nl/). You can create your registration by logging into DMPonline and following the following instructions:
+
+1. On your dashboard, click on `Create plan`.
+2. Enter the title of your research project (you don't have to select the check box for mock testing).
+3. Select `Vrije Universiteit Amsterdam` as your primary research organisation.
+4. For the question on primary funding organisation, select the check box on the right, saying that no funder is associated with your plan.
+
+![Screenshot of a form for creating a data management plan, asking for the research project, where it is being done, who is funding it and what template you would like to use.](../public/dmp-001.png)
+
+Once you have completed the steps above, you will see two VU templates. You can fill in the `VU DMP template 2021 v1.4` if you need to write a DMP anyway; the information you include in this DMP template will be used for the registry. If you don't need to write a (new) DMP, you can use the separate `VU GDPR registration form for research v1.1`. Your faculty's 🔒 [Privacy Champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information) can help you with your registration.
+
+If your research is primarily led by Amsterdam UMC, location VUmc, your research will be registered using their own separate system.
+
+### Register before you start your data collection
+
+If you use personal data in your research, you should register your data processing activities before you start data collection. If you are not sure whether your research data are subject to the GDPR, contact your faculty's 🔒 [Privacy Champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information). Your privacy champion can also assist you if your research is already running, but has not yet been registered.
+
+## Support
+The [Privacy five-step plan](https://assets-us-01.kc-usercontent.com/d8b6f1f5-816c-005b-1dc1-e363dd7ce9a5/ad3de0e7-b935-471a-8d31-51c06ba47c88/Privacy%20five-step%20plan.pdf) explains the steps you must take before you start a new research with personal data.
+
+On the VU page [Working with personal data](https://vu.nl/en/employee/privacy-and-information-security/working-with-personal-data), you can find more information about how VU Amsterdam protects personal data.
+
+For all questions relating to privacy and the GDPR, please contact your faculty's 🔒 [Privacy Champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information).
