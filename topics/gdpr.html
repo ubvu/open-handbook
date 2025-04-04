@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Guides – Research Support Handbook</title>
+<title>gdpr – {{&lt; var title &gt;}}</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +23,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./public/favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6ee2a4e5d13000102894f3420c610d96.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../public/favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-6ee2a4e5d13000102894f3420c610d96.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,70 +67,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-<style type="text/css">
-.quarto-grid-item .listing-item-img-placeholder {
-  background-color: #0080c9;
-}
-</style>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -143,8 +78,8 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -159,25 +94,25 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-topics">    
         <li>
-    <a class="dropdown-item" href="./topics.html">
+    <a class="dropdown-item" href="../topics.html">
  <span class="dropdown-text">All</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./topics.html#category=Tools">
+    <a class="dropdown-item" href="../topics.html#category=Tools">
  <span class="dropdown-text">Tools</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="./guides.html" aria-current="page"> 
+    <a class="nav-link" href="../guides.html"> 
 <span class="menu-text">Guides</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html"> 
+    <a class="nav-link" href="../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./contributing.html"> 
+    <a class="nav-link" href="../contributing.html"> 
 <span class="menu-text">Contributing</span></a>
   </li>  
 </ul>
@@ -193,288 +128,69 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(9)</span></div><div class="category" data-category="Q29sbGVjdCUyMCUyNiUyMFN0b3Jl">Collect &amp; Store <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGlzY292ZXIlMjAlMjYlMjBJbml0aWF0ZQ==">Discover &amp; Initiate <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RG9jdW1lbnQlMjAlMjYlMjBQcmVzZXJ2ZQ==">Document &amp; Preserve <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGxhbiUyMCUyNiUyMERlc2lnbg==">Plan &amp; Design <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UHJvY2VzcyUyMCUyNiUyMEFuYWx5c2U=">Process &amp; Analyse <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UHVibGlzaCUyMCUyNiUyMFNoYXJl">Publish &amp; Share <span class="quarto-category-count">(2)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#definitions" id="toc-definitions" class="nav-link" data-scroll-target="#definitions">Definitions</a></li>
+  <li><a href="#background-information" id="toc-background-information" class="nav-link" data-scroll-target="#background-information">Background information</a>
+  <ul class="collapse">
+  <li><a href="#privacy-in-research---privacy-five-step-plan" id="toc-privacy-in-research---privacy-five-step-plan" class="nav-link" data-scroll-target="#privacy-in-research---privacy-five-step-plan">Privacy in research - Privacy five-step plan</a></li>
+  <li><a href="#vsnu-code-of-conduct-for-using-personal-data-in-research" id="toc-vsnu-code-of-conduct-for-using-personal-data-in-research" class="nav-link" data-scroll-target="#vsnu-code-of-conduct-for-using-personal-data-in-research">VSNU Code of Conduct for using personal data in research</a></li>
+  </ul></li>
+  <li><a href="#support-in-your-faculty-privacy-champions" id="toc-support-in-your-faculty-privacy-champions" class="nav-link" data-scroll-target="#support-in-your-faculty-privacy-champions">Support in your faculty: Privacy Champions</a></li>
+  <li><a href="#more-information" id="toc-more-information" class="nav-link" data-scroll-target="#more-information">More information</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/gdpr.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Guides</h1>
-</div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-What is a guide?
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>These guides help you find answers to questions that come up while doing research. They help guide you through various topics at once.</p>
-<p>Missing a guide? You can <a href="https://ez-github-contributor.netlify.app/">submit questions you are dealing with using the Contribution portal</a>.</p>
-</div>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="UHVibGlzaCUyMCUyNiUyMFNoYXJl" data-listing-file-modified-sort="1743774407347" data-listing-reading-time-sort="8" data-listing-word-count-sort="1445">
-<a href="./guides/publish-and-share.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/cover-images/DALLE_sharing-research-data.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How can I archive and publish my data?
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('UHVibGlzaCUyMCUyNiUyMFNoYXJl'); return false;">
-Publish &amp; Share
-</div>
-</div>
-<div class="card-text listing-description">
-All data and software leading to a published result, must be archived and published.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>The <a href="https://gdpr-info.eu/">General Data Protection Regulation</a> (GDPR) is a European legislation that lays down rules relating to the protection of natural persons with regard to the processing of personal data. The <a href="https://wetten.overheid.nl/BWBR0040940/2021-07-01">Dutch Implementation Act for the GDPR</a> (UAVG) describes the implementation of the GDPR for the Netherlands.</p>
+</section>
+<section id="definitions" class="level2">
+<h2 class="anchored" data-anchor-id="definitions">Definitions</h2>
+<ul>
+<li><strong>Personal data</strong> refers to any information relating to an identified or identifiable natural person (‘data subject’). See also the <a href="https://www.privacy-regulation.eu/en/4.htm">definition of ’personal data</a>’ according to the official text of the GDPR.</li>
+<li><strong>Data processing</strong> refers to any action performed on data, such as collecting, storing, modifying, distributing, deleting data. See also the <a href="https://www.privacy-regulation.eu/en/4.htm">definition of ‘processing’</a> according the official text of the GDPR.</li>
+<li><strong>Direct and indirect identification</strong>: Some identifiers enable you to single out an indiviual directly, such as name, address, IP-address etc. Individuals can also be identifed indirectly through:
+<ul>
+<li>a combination of information that uniquely singles out an individual (e.g.&nbsp;a male with breast cancer in a breast cancer registry, a pregnant individual over 50 etc.), this includes information in one record and information across different data files or datasets</li>
+<li>unique information or patterns that are specific to an individual (e.g.&nbsp;genomic data, a very specific occupation, such as the president of a large company, repeated physical measurements or movement patterns that create a unique profile of an individual or measurements that are extreme and could be linked to subjects such as high-level athletes)</li>
+<li>data that are linked to directly identifying information through a random identification code or number</li>
+</ul></li>
+<li><strong>Pseudonymous data</strong>: Data that are indirectly identifiable are generally considered to be pseudonymous; this means that they are NOT anonymous and still qualify as personal data. Therefore privacy laws, such as the GDPR, do in fact apply to these data. This is for example the case when direct identifiers are removed from the research data and put into a key file (or what is usually called a subject identification log in medical research) with which the direct identifiers can be mapped to the research data through unique codes, so that reidentification is possible. These data are therefore pseudonymous, and not anonymous. The LCRDM has made a <a href="https://lcrdm.nl/wp-content/uploads/2023/03/Anonymization-reference-card-for-researchers.pdf">reference card</a> that illustrates the difference between pseudonymous and anonymous data.</li>
+</ul>
+</section>
+<section id="background-information" class="level2">
+<h2 class="anchored" data-anchor-id="background-information">Background information</h2>
+<section id="privacy-in-research---privacy-five-step-plan" class="level3">
+<h3 class="anchored" data-anchor-id="privacy-in-research---privacy-five-step-plan">Privacy in research - Privacy five-step plan</h3>
+<p>Where research requires the collection of personal data, the researcher has to follow the <a href="https://vu.nl/en/employee/privacy-and-information-security/working-with-personal-data">Privacy five-step plan</a> to make sure to carry out the research in line with the GDPR.</p>
+</section>
+<section id="vsnu-code-of-conduct-for-using-personal-data-in-research" class="level3">
+<h3 class="anchored" data-anchor-id="vsnu-code-of-conduct-for-using-personal-data-in-research">VSNU Code of Conduct for using personal data in research</h3>
+<p>The VSNU’s Code of Conduct for Research Integrity (<a href="https://www.nwo.nl/sites/nwo/files/documents/Nederlandse%2Bgedragscode%2Bwetenschappelijke%2Bintegriteit_2018_NL.pdf">Dutch</a>, <a href="https://www.nwo.nl/sites/nwo/files/documents/Netherlands%2BCode%2Bof%2BConduct%2Bfor%2BResearch%2BIntegrity_2018_UK.pdf">English</a>, 2018) includes a reference to the GDPR and its Dutch implementation law UAVG. An updated Code of Conduct for Using Personal Data in Research which complies with GDPR is still work in progress.</p>
+</section>
+</section>
+<section id="support-in-your-faculty-privacy-champions" class="level2">
+<h2 class="anchored" data-anchor-id="support-in-your-faculty-privacy-champions">Support in your faculty: Privacy Champions</h2>
+<p>Each faculty has one or more Privacy Champions, who are the first point of contact for questions relating to privacy and the GDPR. The Privacy Champions can help you with completing a Data Protection Impact Assessment, registering your research in the record of processing activities, designing informed consent forms and other questions relating to the GDPR. The 🔒 <a href="https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information">list of Privacy Champions</a> can be found on the VU website.</p>
+</section>
+<section id="more-information" class="level2">
+<h2 class="anchored" data-anchor-id="more-information">More information</h2>
+<p>On the VU page <a href="https://vu.nl/en/employee/privacy-and-information-security/working-with-personal-data">Working with personal data</a>, you can find more information about how VU Amsterdam protects personal data.</p>
 
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="RGlzY292ZXIlMjAlMjYlMjBJbml0aWF0ZQ==" data-listing-file-modified-sort="1743774407346" data-listing-reading-time-sort="1" data-listing-word-count-sort="22">
-<a href="./guides/discover-and-initiate.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/cover-images/DALLE_LEGO-scientist-discovering-metadata.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How can you discover and reuse existing research data?
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('RGlzY292ZXIlMjAlMjYlMjBJbml0aWF0ZQ=='); return false;">
-Discover &amp; Initiate
-</div>
-</div>
-<div class="card-text listing-description">
-There is so much data out there, that we want to help you find your way more easily.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
 
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="Q29sbGVjdCUyMCUyNiUyMFN0b3Jl" data-listing-file-modified-sort="1743774407346" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
-<a href="./guides/collect-and-store.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/cover-images/DALLE_research-data-storage-2.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How can you ensure data protection and security during collection, storage, and transfer?
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Q29sbGVjdCUyMCUyNiUyMFN0b3Jl'); return false;">
-Collect &amp; Store
-</div>
-</div>
-<div class="card-text listing-description">
-Learn about how to secure research data at any stage.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
+</section>
 
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="UHJvY2VzcyUyMCUyNiUyMEFuYWx5c2U=" data-listing-file-modified-sort="1743774407347" data-listing-reading-time-sort="11" data-listing-word-count-sort="2007">
-<a href="./guides/process-and-analyze.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/cover-images/DALLE_LEGO-figures-swimming-in-sea-of-notes.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How can you ensure data provenance and accurate data analysis?
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('UHJvY2VzcyUyMCUyNiUyMEFuYWx5c2U='); return false;">
-Process &amp; Analyse
-</div>
-</div>
-<div class="card-text listing-description">
-Where data and results come from matters.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="RG9jdW1lbnQlMjAlMjYlMjBQcmVzZXJ2ZQ==" data-listing-file-modified-sort="1743774407346" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
-<a href="./guides/document-and-preserve.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/cover-images/DALLE_LEGO-egyptologist-evaluating-folder-structure.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How can you ensure research data is FAIR?
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('RG9jdW1lbnQlMjAlMjYlMjBQcmVzZXJ2ZQ=='); return false;">
-Document &amp; Preserve
-</div>
-</div>
-<div class="card-text listing-description">
-Making your data Findable, Accessible, Interopable, Reusable is more doable than you might think.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="UHVibGlzaCUyMCUyNiUyMFNoYXJl" data-listing-file-modified-sort="1743774407347" data-listing-reading-time-sort="14" data-listing-word-count-sort="2625">
-<a href="./guides/publishing-fair-software.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/RSM_sticker_3x2.PNG" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How can you publish FAIR software
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('UHVibGlzaCUyMCUyNiUyMFNoYXJl'); return false;">
-Publish &amp; Share
-</div>
-</div>
-<div class="card-text listing-description">
-A step-wise guide to make your software Findable, Accesible, Interoperable and Reusable.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="6" data-categories="UGxhbiUyMCUyNiUyMERlc2lnbg==" data-listing-file-modified-sort="1743774407346" data-listing-reading-time-sort="25" data-listing-word-count-sort="4884">
-<a href="./guides/plan-and-design.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/cover-images/DALLE_LEGO-scientists-discussing-metadata.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How can you set up research data management from the start?
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('UGxhbiUyMCUyNiUyMERlc2lnbg=='); return false;">
-Plan &amp; Design
-</div>
-</div>
-<div class="card-text listing-description">
-A good plan is half the work.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="7" data-listing-file-modified-sort="1743774407346" data-listing-reading-time-sort="5" data-listing-word-count-sort="829">
-<a href="./guides/policies-supporting-vision-open-science.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/VU_social_avatar_blauw-rectangle.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-What policies and regulations support VU’s vision on Open Science?
-</h5>
-<div class="card-text listing-description">
-As open as possible, as closed as necessary.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="8" data-listing-file-modified-sort="1743774407346" data-listing-reading-time-sort="7" data-listing-word-count-sort="1352">
-<a href="./guides/data-lifecycle.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/cover-images/DALLE_DMP.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-What research data services and support are available for VU researchers?
-</h5>
-<div class="card-text listing-description">
-Find some resources that can help you along your research journey.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -907,12 +623,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="./about.html">
+    <a class="nav-link" href="../about.html">
 <p>About</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="./editors-guide.html">
+    <a class="nav-link" href="../editors-guide.html">
 <p>Editor’s guide</p>
 </a>
   </li>  
@@ -922,7 +638,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </a>
   </li>  
 </ul>
-    <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/guides.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/gdpr.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
