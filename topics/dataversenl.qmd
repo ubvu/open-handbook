@@ -2,157 +2,41 @@
 title: DataverseNL
 categories: [Tools]
 ---
-
+ 
 ## What is it?
-The storage service SciStor is intended for cheaply storing large amounts of research data.
-
-SciStor is hosted by IT for Research (ITvO) on the VU campus enabling a high-speed connection to lab equipment, laptops and workstations, the [BAZIS HPC cluster](./bazis.qmd) and [SciCloud](./scicloud.qmd). It can also be accessed off-campus. 
-
-Your data is stored in a **share**, basically a folder with group-based access rights (read/write or read-only). Access rights can be set one level deep, so one share could be used to host data from different projects.
-
-If desired, automatic [backups](#backups) can be made of the data.
-
+DataverseNL is an Open Access dataset archiving and publication platform used by various institutions. The VU has a section for each faculty to archive their datasets.
+ 
+DataverseNL helps the researcher make their data "[FAIR](../topics/fair-principles.qmd)" by providing a solution that enables data discovery and sharing (i.e., findable, accessible). In addition, it facilitates the use of metadata, contributing to data interoperability and reusability. DataverseNL provides a platform for the implementation of standard workflows that can ensure metadata quality satisfying [VU policy requirements](../topics/research-data-and-software-management-policy.qmd) for data archiving and publication. Many research institutions and funding organisations (such as NWO and ZonMw) require researchers to make their data FAIR.
+ 
+DataverseNL is open source software developed and maintained by [Harvard University]( https://dataverse.org/). The Dutch version is hosted by [DANS]( https://dans.knaw.nl/en/data-services/dataversenl/).
+ 
 ## What can it be used for?
-### Networked Drive
-Because SciStor is connected to the VU on-campus network you can directly mount (map a network drive) SciStor shares on your laptop and work as if the data is on a local disk. 
-
-### Access off-campus
-Although SciStor is most useful on campus you can also [access your shares off-campus](#off-campus-access).
-
-### Lab instruments
-In many cases lab equipment can write data directly to SciStor. [IT for Research](mailto:itvo.it@vu.nl) can help you setup an automated and secure connection.
-
-### Storage space for SciCloud servers
-[SciCloud](./scicloud.qmd) virtual servers are provisioned with a 20 to 50GB local disk. A SciStor share can be directly mounted on the server to increase storage for your application or directly access your source data for analysis.
-
-### BAZIS
-The [BAZIS HPC cluster](./bazis.qmd) is connected to SciStor via a high speed netwodrk. You can run your analysis software directly on your data and easily access the results on your laptop.
-
-### Sharing data
-Because SciStor is mainly intended for high performance, on-campus use, access is only possible with a VUnetId. If you need to share data with non-VU researchers you could [register them as an external employee](https://vu.nl/en/employee/start-employment-contract/onboarding-external-employees) or host a copy of the data on another storage platform like Research Drive or [Yoda](./yoda.qmd)
-
-### Data life-cycle
-SciStor is meant for data you are actively working with. We recommend archiving datasets that are no langer actively used, but can't be deleted, in [Yoda](./yoda.qmd). This ensures SciStor is used optimally and costs are kept down for your research group and the VU.
-
+ 
+DataverseNL is a simple method to archive and publish datasets. Through the platform it becomes very easy to share data and documents from your research. The platforms generates a webpage and DOI which enables increased visibility and quick references to your dataset. It is possible to make files within your dataset only accessible on request. This makes it a good solution for non-sensitive datasets. 
+ 
+### Data storage
+DataverseNL is a Cloud storage solution that can be used for small to large datasets. The datasets are preserved through backups copies of the data.
+ 
+### Data sharing
+Through the generated DOI you can make your dataset easy to find and access. You can reference it in your publications and through your profile page on the [VU CRIS](https://research.vu.nl/) (Current Research Information System).
+ 
+### Sensitive data
+---
+ 
+### Metadata
+You can add descriptive metadata to a dataset draft in DataverseNL. After publication of the dataset it is still possible to alter the metadata, but this will result in a new version of the dataset. If metadata fields are missing a request can sent to SURF to add these fields. The requirement for this change is that the added metadata fields are part of an internationally recognised dataset metadata scheme. 
+ 
 ## How to request access
-### Requesting a new share
-SciStor is available for all VU research groups. You can find the request form on 🔒 [ServiceNow](https://services.vu.nl/esc), go to: IT > My work field > Research > SciStor > Realisation of new storage for research (SciStor)
-
-Minimum storage space that can be requested is 100 GB, for a minimum of three months. The capacity can be increased or decreased in units of 100 GB if needed.
-
-After submitting the application, IT for Research will contact you to schedule an interview to discuss naming the SciStor share, how the backups work, who should have access, etc.
-
-Most SciStor configurations can be delivered within one or two days. More complex configurations may take a little longer.
-
-### Adding a colleague to an existing share
-The owner of a SciStor share can request to add or remove access to the share via 🔒 [ServiceNow](https://services.vu.nl/esc), go to: IT > My work field > Research > SciStor > Change SciStor access rights
-
+DataverseNL is available for everyone. Anyone can gain access to the datasets by creating an account in DataverseNL, unless the dataset contains restricted files. In this case the contactperson for the dataset needs to grant access in order for others to use the data.
+ 
 ## Are there costs involved?
-You pay for the amount of space reserved for your share: €0,10 per GB per year without backup or €0,20 per GB per year with backup. Note that without backup data will be lost in case of accidental deletion or major problems with the SciStor infrastructure.  
-
-
-The owner of the SciStor share receives monthly usage reports. The report provides insight on used and available space.
-
-### Backups
-
-There are two type of flavours when it comes to data protection within SciStor.
-
-| Snapshots | Backups |
-|-----------|---------|
-| "Photo moments" of your data stored within the same location storage | Complete copy stored in a different physical location |
-| Default Policies within ITvO:    a) Daily snapshots kept for 1 week (1d:1w)    b) Weekly snapshots kept for 4 weeks (1w:4w) | Automatic daily backups around midnight |
-| Custom policies available upon request | Invisible to users - runs in the background |
-| No additional storage costs | Additional Costs: Doubles the storage costs |
-
-The ITvO team recommend having both ways activated for complete data protection.
-
-## Getting started
-### On-campus access
-#### MacOS
-
-1. Open the Finder application
-2. In the "Go" menu, pick "Connect to Server..." or press  "⌘K"
-3. Fill in: `smb://scistor.vu.nl/shares`
-4. Click "Connect"
-5. Select "Registered User" if this is not yet selected
-6. Fill in your VUnetID and password
-7. Press "Connect". Optionally, tick the "Remember this password in my keychain" checkbox. After doing this, macOS will no longer ask for credentials the next time this connection is used.
-
-SciStor shares appear on the left after opening the SciStor location. You may open the desired SciStor share by double-clicking it.
-
-#### Windows
-
-1. Open Windows File Explorer
-2. Right-click on This PC and choose "Map network drive..."" 
-3. Select a desired drive letter, for example S. In the Folder field you can enter the following:  `\\scistor.vu.nl\shares\<the name of the share folder>`. Make sure the checkboxes are checked.
-4. Click "Finish"
-5. You will now be asked to log in. This is not possible with your PIN code. Choose the "More choices" option, and log in with your VU email address and password
-
-#### 'Green' Linux workspaces
-
-Green Linux workplaces (supported by VU IT) have a connection to SciStor from home. All SciStor shares can be found under the path `/research`.
-
-#### Other Linux workstations
-
-Other self-managed Linux workstations can also connect to SciStor.
-
-Via the SFTP protocol: SciStor with the SFTP protocol can be used via the server `sftp.data.vu.nl`. Find the shares under the path `/research`.
-
-You can do as follows:
-
-```bash
-$ ssh <vunetID>@sftp.data.vu.nl # this will ask your vunet password
-$ cd /research/<name-of-scitstor-share>
-```
-
-To to connect to SciStor using samba protocol, you can do as follows:
-
-```bash
-$ sudo apt install cifs-utils
-$ sudo nano /etc/credentials/<vunetID>
-    # nano
-username=<vumail@vu.nl>
-password=<your-vunet-password>
-$ sudo mkdir /data/VU/shares/<name-of-your-share> 
-$ sudo mount -t cifs //scistor.vu.nl/shares/<name-of-your-share> /data/VU/shares/<name-of-your-share> -o credentials=/etc/credentials/<vunetID>
-```
-
-
-The scistor share will be mounted at location: `/data/VU/shares`. To unmount it, simply do:
-
-```bash
-$ sudo umount /data/VU/shares/<name-of-your-share>
-```
-
-<!--    Via the NFS protocol
-PV: KB artikel is verdwenen en ik kan geen andere vinden, nog navragen
-It is also possible to use SciStor shares via the NFS protocol. The knowledge item [KB0012101](https://vu.service-now.com/kb?id=kb_article_view&sysparm_article=KB0012101) describes how you can access home and groups from a Linux workplace via NFS. This manual can also be used to realise a link with SciStor. Use the path /research for this.
--->
-
-### Off-campus access
-#### eduVPN
-
-The easiest way is to install the app for [eduVPN institute access](https://vu.eduvpn.nl/portal/home). Once the VPN is active you can follow the "on-campus access" steps above. Note that performance over the internet is limited, you might run into problems when editing large files. If needed copy them to you local disk.
-
-#### SFTP 
-
-On windows you can use a free tool like [WinSCP](https://winscp.net/eng/download.php) or [CyberDuck](https://cyberduck.io/download/) to access your data via the SFTP protocol. The server URL is `sftp.data.vu.nl`, find the shares under the path `/research`.
-
-On a Mac you can connect via the IT supported 🔒 [Expandrive](https://vu.service-now.com/kb_view.do?sysparm_article=KB0011846) (follow the SFTP instructions).  
-
-
-The configuration is as follows:
-
-
-| Item      | Value                        |
-|-----------|------------------------------|
-| Host      | `ssh.data.vu.nl` OR `sftp.data.vu.nl` |
-| Protocol  | SFTP                         |
-| Port      | 22                           |
-| Username  | Your VUnetID                 |
-| Password  | Your VUnet password          |
-
-Linux users outside campus can follow the previous SFTP explanation.
-
+The costs for archiving datasets for the required period stated in the [Research Data and Software Management Policy]( https://rdm.vu.nl/guides/policies-supporting-vision-open-science.html) are currently covered through the Cost Recharge Model (KDM). The details can be found in the [Research Archiving & Storage Cost Model](https://vu.nl/en/employee/research-data-support/research-archiving-storage-cost-model). 
+ 
+## Getting Started
+ 
+The DataverseNL website has practical information in their [User Guide]( https://dans.knaw.nl/en/data-services/dataversenl/user-guide/).
+ 
 ## Contact
-Wondering if SciStor fits your research needs? Please contact [IT for Research](mailto:itvo.it@vu.nl)
+Wondering if DataverseNL fits your research needs? Please contact the [RDM support desk](mailto:rdm@vu.nl).
+
+
