@@ -21,6 +21,8 @@ Optional elements that may be included in the reference are:
 * Creation Date
 * Date of Consultation (last)
 
+If you (re)used another, openly-accessible dataset *to create your own*, it is also important to (first check that the original dataset's licence permits this and to) cite that dataset correctly. If you want to make clear in a journal article that another dataset was reused, you can add this information, including a citation to the original dataset, to the data availability statement, besides the reference list. In your own dataset, you can use the [README file](./data-documentation.qmd#readme) to cite the original dataset and explain how it was reused. You should also add documentation about what processing you did to the original dataset to create your own, and refer to this documentation in the README file. Many repositories prescribe a standard way to cite datasets for several citation styles, and one can very often simply copy and paste that. For example, Zenodo has a citation box on the bottom right of the page, and there one can choose a citation style and simply copy that or export the citation to a citation file (which is useful if you are using EndNote or Zotero). The same can be done in Datacite ([example](https://commons.datacite.org/doi.org/10.5281/zenodo.6949511)).
+
 ### Example data citation
 
 Stephens, William, 2020, "Resiliences to Radicalisation - QSort Data", [https://doi.org/10.34894/35MTMN](https://doi.org/10.34894/35MTMN), DataverseNL, V1.
@@ -33,5 +35,7 @@ For more information, see the following guidelines:
 * [DataCite](https://datacite.org/cite-your-data.html)
 * [DCC UK](https://www.dcc.ac.uk/resources/briefing-papers/introduction-curation/data-citation-and-linking)
 * [Data Citation Synthesis Group (2014). Joint Declaration of Data Citation Principles. Martone M. (ed.) San Diego CA: FORCE11](https://www.force11.org/group/joint-declaration-data-citation-principles-final)
+* [CESSDA on accessing, using and citing data](https://dmeg.cessda.eu/Data-Management-Expert-Guide/7.-Discover/Access-use-and-cite-data)
+* [CESSDA on citing your own data](https://dmeg.cessda.eu/Data-Management-Expert-Guide/6.-Archive-Publish/Publishing-with-CESSDA-archives/Citing-your-data)
 
 Relevant is also the [Citation File Format (CFF)](../topics/cff.qmd).
