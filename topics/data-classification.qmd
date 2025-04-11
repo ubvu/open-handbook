@@ -1,0 +1,32 @@
+---
+title: Data Classification
+---
+
+Before the start of a new research project, it is necessary to assess the risks associated with the data that will be collected and/or used in the project.
+
+## Data Classification
+
+The purpose of classifying data is to assess the risks associated with the data in terms of Confidentiality, Availability and Integrity, and to determine a suitable level of protection. Classifying research data enables researchers to protect the data in an appropriate manner. What is relevant, is that the security level matches the identified risks. This enables the researcher to determine where the data may or may not be processed and under which conditions. 
+
+A data classification addresses risks relating to Confidentiality, Integrity and Availability. For the research domain, Confidentiality is the crucial aspect in many cases. Examples of data that are classified as confidential are personal data (as defined in the [General Data Protection Regulation](../topics/gdpr.qmd)), commercially or politically sensitive data and data under protection of a non-disclosure agreement. If you work with these types of data, it is necessary to classify your data. You can address the classification of your data in your [Data Management Plan](../topics/data-management-plan.qmd) (DMP) and use the [Data Classification Tool](https://vu.nl/en/research/dataclassification) (see below) as a starting point. 
+
+## Data Classification Tool
+
+The [data classification tool](https://vu.nl/en/research/dataclassification) will help assess the risks associated with research data and provide feedback on what measures need to be undertaken to protect the data. The tool assesses the three risk categories i.e., Confidentiality, Integrity and Availability, by asking whether certain conditions apply to the data. Each category has an "i" which provides for more explanation on each condition.  
+
+The first category (Confidentiality) is relevant to privacy or other data that needs to be kept confidential. The other two categories relate to the impacts of data losses (Availability) and inappropriate alterations or corruption (Integrity). Once all relevant boxes under each category have been checked, a tile will be highlighted. This tile contains further details about the data related risks and describes the steps that should be taken.  
+
+You can save the results of the risk assessment by pressing the "Export" button. This will produce a PDF, including the links. The result you get is not a formal data classification, although it will be sufficient for many projects with low risks.
+
+The information from the assessment can be used for [DMPs](../topics/data-management-plan.qmd), Data Protection Impact Assessments (DPIAs) or full (formal) classification. You can also use it to find a suitable storage location for your data through the [Data Storage Finder](https://vu.nl/en/research/storagefinder). One of the filters in the Data Storage Finder is called 'Data classification', which refers to the level of 'Confidentiality' from a data classification.
+
+Note that because the risks may vary for different types of data, you should repeat this process for each type of data you will use in your research. For example, a research project with multiple datasets, will require numerous risk assessments.
+
+## Policy Classification of Research Data
+
+The [Policy Classification of Research Data](../public/policies-regulations/Dataclassificatiebeleid-VU-NL-v1.0.pdf) contains more information about classifying research data in terms of Confidentiality, Integrity and Availability. It also explains how the classification process should be carried out. The Research Data Classification Policy will determine what level of security measures are necessary to manage data securely. The document contains tables with practical information relating to information security:
+
+* examples of data for the various levels of Confidentiality, Integrity and Availability;
+* a list of standard security measures per aspect;
+* an overview of research data management tools and what types of data are allowed in these systems;
+* an overview of what research data management tool is suitable in which situation.
