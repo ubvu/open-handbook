@@ -28,7 +28,7 @@ Be aware that it is generally not possible to run graphical desktop applications
 CLI and scripting skills are very useful to have for every researcher, but  if you feel you do not have the time to learn these skills there might be other options available such as [the VU Compute Hub](https://hub.compute.vu.nl) or [SURF Research Cloud](./researchcloud.qmd) where you can run some graphical tools.
 
 ### GPUs in ADA
-Some workloads, such as Machine Learning, require a GPU. At the moment the ADA general (IT) partition does not include GPU resources. If your department has no dedicated compute nodes with GPUs, you can apply for access to the national HPC infrastructure [Snellius](./snellius.qmd) or consider [buying ADA compute nodes](#buying-dedicated-compute-nodes) with your department. 
+Some workloads, such as Machine Learning, require a GPU. At the moment the compute nodes in the ADA general (IT) partition do not have GPUs. If your department also has no dedicated compute nodes with GPUs, you can apply for access to the national HPC infrastructure [Snellius](./snellius.qmd) or consider [buying ADA compute nodes](#buying-dedicated-compute-nodes) with GPU nodes for your department. 
 
 ## How to request access
 
