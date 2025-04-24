@@ -5,14 +5,32 @@ description: "Making your data Findable, Accessible, Interopable, Reusable is mo
 categories: ["Document & Preserve"]
 ---
 
-```{.include shift-heading-level-by=1}
-../topics/selecting-data.qmd
+## FAIR Principles
+
+```{.include shift-heading-level-by=2}
+../topics/fair-principles.qmd
 ```
 
-```{.include shift-heading-level-by=1}
+## Persistent Identifier
+
+```{.include shift-heading-level-by=2}
+../topics/persistent-identifier.qmd
+```
+
+## Data Documentation
+
+```{.include shift-heading-level-by=2}
 ../topics/data-documentation.qmd
 ```
 
-```{.include shift-heading-level-by=1}
+## Metadata
+
+```{.include shift-heading-level-by=2}
 ../topics/metadata.qmd
+```
+
+## Data Licensing
+
+```{.include shift-heading-level-by=2}
+../topics/data-licensing.qmd
 ```
