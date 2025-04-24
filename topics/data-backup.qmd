@@ -6,7 +6,7 @@ Backing up your data is about ensuring your data are in at least two and ideally
 
 ## Why backup?
 
-Hard drives fail, computers get stolen or lost, or your data may accidentally get deleted. To avoid data loss, backing up your data regularly is essential. Ideally, you should have your data stored in at least two, but ideally three different locations. Most cloud-based tools will automatically do backup for you, but they don't protect you from your own mistakes. If you work with data that cannot be easily recreated or recalculated and ensure that it is sufficiently backed up with [the 3-2-1 rule](#3-2-1-rule). This is especially important when migrating your data, such as when updating your operating system to a new major version, or when you get a new computer.
+Hard drives fail, computers get stolen or lost, or your data may accidentally get deleted. To avoid data loss, backing up your data regularly is essential. Ideally, you should have your data stored in at least two, but ideally three different locations. Most cloud-based tools will automatically handle backup for you, but they don't protect you from your own mistakes. If you work with data that cannot be easily recreated or recalculated and ensure that it is sufficiently backed up with [the 3-2-1 rule](#3-2-1-rule). This is especially important when migrating your data, such as when updating your operating system to a new major version, or when you get a new computer.
 
 ## 3-2-1 Rule
 
@@ -18,16 +18,28 @@ The 3-2-1 rule states that you should have:
 
 Ideally, this is automated so that you as a user do not have to manually do anything extra to manage your data. If possible, automate this backup as well with computer scheduling tools such as Task Scheduler (Windows) or Crontab (Linux).
 
-## Simple Synchronizing Solutions
+Note that the VU-supported storage solutions (SciStor, Research Drive and Yoda) have enough safeguards to satisfy the 3-2-1 rule. Storing your data on one of these platforms plus a working copy on your laptop, if needed, is sufficient.
+
+## Simple Synchronising Solutions
 
 The VU provides access to multiple [storage systems](../topics/data-storage). You may use a mix of the different platforms.
-If you use these tools they will automatically synchronize your files to the cloud.
+Some of these tools are able to automatically synchronise your data to the cloud: Teams, Onedrive and Research Drive. Check regularly if all the relevant data folders are indeed still synchronised.
 If you accidentally delete a file, you can restore your folder to a previous date - various systems will have different retention periods but it is usually around 1 month.
 
+## Data rentention for VU data storage platforms
+
+- **OneDrive**: if you're signed in with a work or school account, items in the recycle bin are automatically deleted after 93 days. The files can be restored to OneDrive before then, or you can permanently delete them from your OneDrive. Additionally, you can restore your OneDrive to a state from the previous 29 days. Finally, the university has an additional backup of data, which can be accessed in case of emergency. However, no rights can be derived for the emergency backup.
+- **Snellius**: Not all of the filesystems on Snellius are backed up automatically, most notably the Project and Scratch spaces. Your home folder is backed up however. You can find more information on the [Snellius website](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/85295828/Snellius+filesystems).
+- **[SciStor](../topics/scistor.qmd)**: Depending on the agreements of your department, data may be backed up. Please check with your department cluster manager.
+- **Research Drive**: The Research Drive is backed up daily by SURF.
+- **[Yoda](../topics/yoda.qmd)**: Yoda is backed up daily by SURF.
+
 ## Notes
+
+Make sure the backup storage is suitable if your data are (privacy) sensitive. The [Data Storage Finder](https://vu.nl/en/research/storagefinder) can help you select the right tool. If you backup sensitive data to a USB drive make sure to encrypt it, for example with a tool like [Cryptomator](https://cryptomator.org/).
 
 [Utrecht University Geo Data Team Services](https://geo-data-support.sites.uu.nl/data-management/data-backup/) provide a detailed page on data backup including a discussion of data selection for backup.
 
 When your laptop and hard drive are in the same bag, the "backup" can easily get lost along with the primary data and there is thus no proper backup.
 
-These are just some tips, please take responsibility over your data and make sure it's protected from loss but also from your own mistakes.
+These are just some tips, please take responsibility over your data and make sure they are protected from loss but also from your own mistakes.
