@@ -39,7 +39,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-6ee2a4e5d13000102894f3420c610d96.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-a2d371da0993da4e3873f912acc5e552.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -134,7 +134,8 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#why-backup" id="toc-why-backup" class="nav-link active" data-scroll-target="#why-backup">Why backup?</a></li>
   <li><a href="#rule" id="toc-rule" class="nav-link" data-scroll-target="#rule">3-2-1 Rule</a></li>
-  <li><a href="#simple-synchronizing-solutions" id="toc-simple-synchronizing-solutions" class="nav-link" data-scroll-target="#simple-synchronizing-solutions">Simple Synchronizing Solutions</a></li>
+  <li><a href="#simple-synchronising-solutions" id="toc-simple-synchronising-solutions" class="nav-link" data-scroll-target="#simple-synchronising-solutions">Simple Synchronising Solutions</a></li>
+  <li><a href="#data-rentention-for-vu-data-storage-platforms" id="toc-data-rentention-for-vu-data-storage-platforms" class="nav-link" data-scroll-target="#data-rentention-for-vu-data-storage-platforms">Data rentention for VU data storage platforms</a></li>
   <li><a href="#notes" id="toc-notes" class="nav-link" data-scroll-target="#notes">Notes</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/data-backup.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -164,7 +165,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Backing up your data is about ensuring your data are in at least two and ideally three <em>independent</em> places.</p>
 <section id="why-backup" class="level2">
 <h2 class="anchored" data-anchor-id="why-backup">Why backup?</h2>
-<p>Hard drives fail, computers get stolen or lost, or your data may accidentally get deleted. To avoid data loss, backing up your data regularly is essential. Ideally, you should have your data stored in at least two, but ideally three different locations. Most cloud-based tools will automatically do backup for you, but they don’t protect you from your own mistakes. If you work with data that cannot be easily recreated or recalculated and ensure that it is sufficiently backed up with <a href="#3-2-1-rule">the 3-2-1 rule</a>. This is especially important when migrating your data, such as when updating your operating system to a new major version, or when you get a new computer.</p>
+<p>Hard drives fail, computers get stolen or lost, or your data may accidentally get deleted. To avoid data loss, backing up your data regularly is essential. Ideally, you should have your data stored in at least two, but ideally three different locations. Most cloud-based tools will automatically handle backup for you, but they don’t protect you from your own mistakes. If you work with data that cannot be easily recreated or recalculated and ensure that it is sufficiently backed up with <a href="#3-2-1-rule">the 3-2-1 rule</a>. This is especially important when migrating your data, such as when updating your operating system to a new major version, or when you get a new computer.</p>
 </section>
 <section id="rule" class="level2">
 <h2 class="anchored" data-anchor-id="rule">3-2-1 Rule</h2>
@@ -175,16 +176,28 @@ ul.task-list li input[type="checkbox"] {
 <li>1 Copy is kept off-site</li>
 </ul>
 <p>Ideally, this is automated so that you as a user do not have to manually do anything extra to manage your data. If possible, automate this backup as well with computer scheduling tools such as Task Scheduler (Windows) or Crontab (Linux).</p>
+<p>Note that the VU-supported storage solutions (SciStor, Research Drive and Yoda) have enough safeguards to satisfy the 3-2-1 rule. Storing your data on one of these platforms plus a working copy on your laptop, if needed, is sufficient.</p>
 </section>
-<section id="simple-synchronizing-solutions" class="level2">
-<h2 class="anchored" data-anchor-id="simple-synchronizing-solutions">Simple Synchronizing Solutions</h2>
-<p>The VU provides access to multiple <a href="../topics/data-storage">storage systems</a>. You may use a mix of the different platforms. If you use these tools they will automatically synchronize your files to the cloud. If you accidentally delete a file, you can restore your folder to a previous date - various systems will have different retention periods but it is usually around 1 month.</p>
+<section id="simple-synchronising-solutions" class="level2">
+<h2 class="anchored" data-anchor-id="simple-synchronising-solutions">Simple Synchronising Solutions</h2>
+<p>The VU provides access to multiple <a href="../topics/data-storage">storage systems</a>. You may use a mix of the different platforms. Some of these tools are able to automatically synchronise your data to the cloud: Teams, Onedrive and Research Drive. Check regularly if all the relevant data folders are indeed still synchronised. If you accidentally delete a file, you can restore your folder to a previous date - various systems will have different retention periods but it is usually around 1 month.</p>
+</section>
+<section id="data-rentention-for-vu-data-storage-platforms" class="level2">
+<h2 class="anchored" data-anchor-id="data-rentention-for-vu-data-storage-platforms">Data rentention for VU data storage platforms</h2>
+<ul>
+<li><strong>OneDrive</strong>: if you’re signed in with a work or school account, items in the recycle bin are automatically deleted after 93 days. The files can be restored to OneDrive before then, or you can permanently delete them from your OneDrive. Additionally, you can restore your OneDrive to a state from the previous 29 days. Finally, the university has an additional backup of data, which can be accessed in case of emergency. However, no rights can be derived for the emergency backup.</li>
+<li><strong>Snellius</strong>: Not all of the filesystems on Snellius are backed up automatically, most notably the Project and Scratch spaces. Your home folder is backed up however. You can find more information on the <a href="https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/85295828/Snellius+filesystems">Snellius website</a>.</li>
+<li><strong><a href="../topics/scistor.html">SciStor</a></strong>: Depending on the agreements of your department, data may be backed up. Please check with your department cluster manager.</li>
+<li><strong>Research Drive</strong>: The Research Drive is backed up daily by SURF.</li>
+<li><strong><a href="../topics/yoda.html">Yoda</a></strong>: Yoda is backed up daily by SURF.</li>
+</ul>
 </section>
 <section id="notes" class="level2">
 <h2 class="anchored" data-anchor-id="notes">Notes</h2>
+<p>Make sure the backup storage is suitable if your data are (privacy) sensitive. The <a href="https://vu.nl/en/research/storagefinder">Data Storage Finder</a> can help you select the right tool. If you backup sensitive data to a USB drive make sure to encrypt it, for example with a tool like <a href="https://cryptomator.org/">Cryptomator</a>.</p>
 <p><a href="https://geo-data-support.sites.uu.nl/data-management/data-backup/">Utrecht University Geo Data Team Services</a> provide a detailed page on data backup including a discussion of data selection for backup.</p>
 <p>When your laptop and hard drive are in the same bag, the “backup” can easily get lost along with the primary data and there is thus no proper backup.</p>
-<p>These are just some tips, please take responsibility over your data and make sure it’s protected from loss but also from your own mistakes.</p>
+<p>These are just some tips, please take responsibility over your data and make sure they are protected from loss but also from your own mistakes.</p>
 
 
 </section>
