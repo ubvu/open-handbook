@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.30">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Personal data must be protected.">
+
+<title>How can you comply with the GDPR? – Research Support Handbook</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../public/favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-bd251130e3da89664d1ead38a1ff0390.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-topics" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Topics</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-topics">    
+        <li>
+    <a class="dropdown-item" href="../topics.html">
+ <span class="dropdown-text">All</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../topics.html#category=Tools">
+ <span class="dropdown-text">Tools</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../guides.html"> 
+<span class="menu-text">Guides</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../blog.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../contributing.html"> 
+<span class="menu-text">Contributing</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="https://github.com/ubvu/open-handbook" title="GitHub VU Open Handbook" class="quarto-navigation-tool px-1" aria-label="GitHub VU Open Handbook"><i class="bi bi-github"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#general-data-protection-regulation" id="toc-general-data-protection-regulation" class="nav-link active" data-scroll-target="#general-data-protection-regulation">General Data Protection Regulation</a></li>
+  <li><a href="#complete-a-data-protection-impact-assessment-dpia" id="toc-complete-a-data-protection-impact-assessment-dpia" class="nav-link" data-scroll-target="#complete-a-data-protection-impact-assessment-dpia">Complete a Data Protection Impact Assessment (DPIA)</a>
+  <ul class="collapse">
+  <li><a href="#what-is-a-dpia" id="toc-what-is-a-dpia" class="nav-link" data-scroll-target="#what-is-a-dpia">What is a DPIA?</a></li>
+  <li><a href="#when-is-a-dpia-required" id="toc-when-is-a-dpia-required" class="nav-link" data-scroll-target="#when-is-a-dpia-required">When is a DPIA required?</a></li>
+  <li><a href="#how-can-i-complete-a-dpia" id="toc-how-can-i-complete-a-dpia" class="nav-link" data-scroll-target="#how-can-i-complete-a-dpia">How can I complete a DPIA?</a></li>
+  </ul></li>
+  <li><a href="#agreements" id="toc-agreements" class="nav-link" data-scroll-target="#agreements">Agreements</a></li>
+  <li><a href="#legal-ground" id="toc-legal-ground" class="nav-link" data-scroll-target="#legal-ground">Legal ground</a>
+  <ul class="collapse">
+  <li><a href="#reusing-existing-data" id="toc-reusing-existing-data" class="nav-link" data-scroll-target="#reusing-existing-data">Reusing existing data</a></li>
+  </ul></li>
+  <li><a href="#privacy-statement" id="toc-privacy-statement" class="nav-link" data-scroll-target="#privacy-statement">Privacy statement</a></li>
+  <li><a href="#regiser-your-processing-activities" id="toc-regiser-your-processing-activities" class="nav-link" data-scroll-target="#regiser-your-processing-activities">Regiser your processing activities</a>
+  <ul class="collapse">
+  <li><a href="#register-before-you-start-your-data-collection" id="toc-register-before-you-start-your-data-collection" class="nav-link" data-scroll-target="#register-before-you-start-your-data-collection">Register before you start your data collection</a></li>
+  </ul></li>
+  <li><a href="#support" id="toc-support" class="nav-link" data-scroll-target="#support">Support</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/guides/comply-with-gdpr.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">How can you comply with the GDPR?</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Plan &amp; Design</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Personal data must be protected.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="general-data-protection-regulation" class="level2">
+<h2 class="anchored" data-anchor-id="general-data-protection-regulation">General Data Protection Regulation</h2>
+<section id="introduction" class="level4">
+<h4 class="anchored" data-anchor-id="introduction">Introduction</h4>
+<p>The <a href="https://gdpr-info.eu/">General Data Protection Regulation</a> (GDPR) is a European legislation that lays down rules relating to the protection of natural persons with regard to the processing of personal data. The <a href="https://wetten.overheid.nl/BWBR0040940/2021-07-01">Dutch Implementation Act for the GDPR</a> (UAVG) describes the implementation of the GDPR for the Netherlands.</p>
+</section>
+<section id="definitions" class="level4">
+<h4 class="anchored" data-anchor-id="definitions">Definitions</h4>
+<ul>
+<li><strong>Personal data</strong> refers to any information relating to an identified or identifiable natural person (‘data subject’). See also the <a href="https://www.privacy-regulation.eu/en/4.htm">definition of ’personal data</a>’ according to the official text of the GDPR.</li>
+<li><strong>Data processing</strong> refers to any action performed on data, such as collecting, storing, modifying, distributing, deleting data. See also the <a href="https://www.privacy-regulation.eu/en/4.htm">definition of ‘processing’</a> according the official text of the GDPR.</li>
+<li><strong>Direct and indirect identification</strong>: Some identifiers enable you to single out an indiviual directly, such as name, address, IP-address etc. Individuals can also be identifed indirectly through:
+<ul>
+<li>a combination of information that uniquely singles out an individual (e.g.&nbsp;a male with breast cancer in a breast cancer registry, a pregnant individual over 50 etc.), this includes information in one record and information across different data files or datasets</li>
+<li>unique information or patterns that are specific to an individual (e.g.&nbsp;genomic data, a very specific occupation, such as the president of a large company, repeated physical measurements or movement patterns that create a unique profile of an individual or measurements that are extreme and could be linked to subjects such as high-level athletes)</li>
+<li>data that are linked to directly identifying information through a random identification code or number</li>
+</ul></li>
+<li><strong>Pseudonymous data</strong>: Data that are indirectly identifiable are generally considered to be pseudonymous; this means that they are NOT anonymous and still qualify as personal data. Therefore privacy laws, such as the GDPR, do in fact apply to these data. This is for example the case when direct identifiers are removed from the research data and put into a key file (or what is usually called a subject identification log in medical research) with which the direct identifiers can be mapped to the research data through unique codes, so that reidentification is possible. These data are therefore pseudonymous, and not anonymous. The LCRDM has made a <a href="https://lcrdm.nl/wp-content/uploads/2023/03/Anonymization-reference-card-for-researchers.pdf">reference card</a> that illustrates the difference between pseudonymous and anonymous data.</li>
+</ul>
+</section>
+<section id="background-information" class="level4">
+<h4 class="anchored" data-anchor-id="background-information">Background information</h4>
+<section id="privacy-in-research---privacy-five-step-plan" class="level5">
+<h5 class="anchored" data-anchor-id="privacy-in-research---privacy-five-step-plan">Privacy in research - Privacy five-step plan</h5>
+<p>Where research requires the collection of personal data, the researcher has to follow the <a href="https://vu.nl/en/employee/privacy-and-information-security/working-with-personal-data">Privacy five-step plan</a> to make sure to carry out the research in line with the GDPR.</p>
+</section>
+<section id="vsnu-code-of-conduct-for-using-personal-data-in-research" class="level5">
+<h5 class="anchored" data-anchor-id="vsnu-code-of-conduct-for-using-personal-data-in-research">VSNU Code of Conduct for using personal data in research</h5>
+<p>The VSNU’s Code of Conduct for Research Integrity (<a href="https://www.nwo.nl/sites/nwo/files/documents/Nederlandse%2Bgedragscode%2Bwetenschappelijke%2Bintegriteit_2018_NL.pdf">Dutch</a>, <a href="https://www.nwo.nl/sites/nwo/files/documents/Netherlands%2BCode%2Bof%2BConduct%2Bfor%2BResearch%2BIntegrity_2018_UK.pdf">English</a>, 2018) includes a reference to the GDPR and its Dutch implementation law UAVG. An updated Code of Conduct for Using Personal Data in Research which complies with GDPR is still work in progress.</p>
+</section>
+</section>
+<section id="support-in-your-faculty-privacy-champions" class="level4">
+<h4 class="anchored" data-anchor-id="support-in-your-faculty-privacy-champions">Support in your faculty: Privacy Champions</h4>
+<p>Each faculty has one or more Privacy Champions, who are the first point of contact for questions relating to privacy and the GDPR. The Privacy Champions can help you with completing a Data Protection Impact Assessment, registering your research in the record of processing activities, designing informed consent forms and other questions relating to the GDPR. The 🔒 <a href="https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information">list of Privacy Champions</a> can be found on the VU website.</p>
+</section>
+<section id="more-information" class="level4">
+<h4 class="anchored" data-anchor-id="more-information">More information</h4>
+<p>On the VU page <a href="https://vu.nl/en/employee/privacy-and-information-security/working-with-personal-data">Working with personal data</a>, you can find more information about how VU Amsterdam protects personal data.</p>
+</section>
+</section>
+<section id="complete-a-data-protection-impact-assessment-dpia" class="level2">
+<h2 class="anchored" data-anchor-id="complete-a-data-protection-impact-assessment-dpia">Complete a Data Protection Impact Assessment (DPIA)</h2>
+<p>When scientific research includes the processing of personal data, conducting a Data Protection Impact Assessment (DPIA) may be a legal requirement under the GDPR. If it is not a legal requirement, conducting a DPIA is always a helpful exercise to make sure that you address all legal aspects that need to be addressed. It is the best way to GDPR-proof your research.</p>
+<section id="what-is-a-dpia" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-a-dpia">What is a DPIA?</h3>
+<p>A DPIA is an assessment to identify the risks of processing personal data. It consists of a number of questions on the basis of which you determine whether the processing of personal data in your research project is legitimate and which measures should be taken to make sure this processing takes place within the boundaries of the GDPR. A DPIA doesn’t deliver an automatic report at the end, but it rather makes you think about all relevant topics you need to address before starting the processing of personal data. The outcome of a DPIA should be used to determine appropriate measures to mitigate the identified risks, such as data minimisation (not collecting more data than necessary), pseudonymising data, selecting appropriate tools for data storage and data sharing.</p>
+</section>
+<section id="when-is-a-dpia-required" class="level3">
+<h3 class="anchored" data-anchor-id="when-is-a-dpia-required">When is a DPIA required?</h3>
+<p>A DPIA is required when the processing of personal data is likely to result in a “high risk” for the participants of your research project. This is for example most likely the case when scientific research includes the processing of special categories of personal data, such as data concerning health, religious or philosophical beliefs, political opinions or criminal convictions and offences (see <a href="https://doi.org/10.25397/eur.12205019.v1">Privacy in Research - 10 key rules</a> for more information about special categories of personal data).</p>
+<p>There are two DPIA lists which describe situations in which a DPIA is required:</p>
+<ul>
+<li>The Dutch data protection authority (Autoriteit Persoonsgegevens) has published a <a href="https://www.autoriteitpersoonsgegevens.nl/nl/zelf-doen/data-protection-impact-assessment-dpia#voor-welke-soorten-verwerkingen-is-het-uitvoeren-van-een-dpia-verplicht-6667">list of 17 “high risk” situations</a> in which a DPIA is mandatory.</li>
+<li>The European data protection authorities have together published a <a href="https://www.autoriteitpersoonsgegevens.nl/nl/zelf-doen/data-protection-impact-assessment-dpia#wat-zijn-de-criteria-van-de-europese-privacytoezichthouders-6668">list of 9 criteria</a> which can be used to determine whether there is a “high risk”.</li>
+</ul>
+<p>You should consult your 🔒 <a href="https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information">Privacy Champion</a> to determine whether a PreDPIA is required in your situation.</p>
+</section>
+<section id="how-can-i-complete-a-dpia" class="level3">
+<h3 class="anchored" data-anchor-id="how-can-i-complete-a-dpia">How can I complete a DPIA?</h3>
+<p>VU Amsterdam has a DPIA template based on a form provided by the Dutch Government (see the <a href="https://www.rijksoverheid.nl/documenten/rapporten/2017/09/29/model-gegevensbeschermingseffectbeoordeling-rijksdienst-pia">original template</a> if you wish to have more background information, only available in Dutch).</p>
+<p>You should request the template from your 🔒 <a href="https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information">Privacy Champion</a>.</p>
+<p>Please complete a DPIA at least before you start collecting personal data. In some cases, it might be useful to have a look at the DPIA template at the stage of writing a research proposal.</p>
+<p>If you are not sure whether it is required to conduct a DPIA or if you need help completing a DPIA, please contact your faculty’s 🔒 <a href="https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information">Privacy Champion</a>. If needed they can contact the legal specialists of Institutional and Legal Affairs.</p>
+</section>
+</section>
+<section id="agreements" class="level2">
+<h2 class="anchored" data-anchor-id="agreements">Agreements</h2>
+<p>If, in addition to the VU, another party is involved in data processing, in most cases an agreement must be set up to regulate the rights and obligations of all parties involved. This means that if you are collaborating with other universities, medical centres, companies, etcetera, an agreement has to be drawn up. This is also true if you would like to use software that stores personal data and for which VU Amsterdam doesn’t have an agreement yet. If these things apply to your research, please reach out to your faculty’s 🔒 <a href="https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information">Privacy Champion</a> for support.</p>
+</section>
+<section id="legal-ground" class="level2">
+<h2 class="anchored" data-anchor-id="legal-ground">Legal ground</h2>
+<p>Personal data are only allowed to be processed with a suitable legal ground. For research, the most commonly used legal ground is informed consent. Please make sure that your consent procedure meets the requirements of the GDPR.</p>
+<p>An important issue in informed consent forms, is the possible future (re-)use of the data. The Privacy Champion of the Faculty of Behavioural and Movement Sciences prepared a <a href="https://fgb-rdm.nl/legal/ICFChecklist.html">checklist</a> for what to consider when creating an informed consent form. You should always ask your 🔒 <a href="https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information">Privacy Champion</a> for advice when drawing up an informed consent form.</p>
+<section id="reusing-existing-data" class="level3">
+<h3 class="anchored" data-anchor-id="reusing-existing-data">Reusing existing data</h3>
+<p>If you like to reuse existing data containing personal data, you need a legal ground as well. Since determining what is allowed to do with existing personal data (e.g.&nbsp;does the original consent cover reuse, should you ask for consent again) can be complex, you should always aks your 🔒 <a href="https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information">Privacy Champion</a> for help in situations like this.</p>
+</section>
+</section>
+<section id="privacy-statement" class="level2">
+<h2 class="anchored" data-anchor-id="privacy-statement">Privacy statement</h2>
+<p>The GDPR requires us to be transparent about how we handle personal data. For scientific research you need to draw up a specific statement for your particular study. The GDPR imposes requirements on what must be included in a privacy statement. VU Amsterdam has a model privacy statement available in Dutch and English that meets these requirements. You can contact your faculty’s 🔒 <a href="https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information">Privacy Champion</a> for this.</p>
+</section>
+<section id="regiser-your-processing-activities" class="level2">
+<h2 class="anchored" data-anchor-id="regiser-your-processing-activities">Regiser your processing activities</h2>
+<p>If your research is subject to the <a href="../topics/gdpr.html">GDPR</a>, then you need to register information on your research in a central VU registry. This central registry lists all personal data processing activities carried out at VU Amsterdam. The registry indicates why and how personal data are processed, and with whom they are shared. The registry helps VU Amsterdam demonstrate compliance with the GDPR and in the case of a data breach, the registry helps with monitoring and acting swiftly to inform all relevant stakeholders.</p>
+<p>For research projects, VU Amsterdam registers data processing via <a href="https://dmponline.vu.nl/">DMPonline</a>. You can create your registration by logging into DMPonline and following the following instructions:</p>
+<ol type="1">
+<li>On your dashboard, click on <code>Create plan</code>.</li>
+<li>Enter the title of your research project (you don’t have to select the check box for mock testing).</li>
+<li>Select <code>Vrije Universiteit Amsterdam</code> as your primary research organisation.</li>
+<li>For the question on primary funding organisation, select the check box on the right, saying that no funder is associated with your plan.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../public/dmp-001.png" class="img-fluid figure-img"></p>
+<figcaption>Screenshot of a form for creating a data management plan, asking for the research project, where it is being done, who is funding it and what template you would like to use.</figcaption>
+</figure>
+</div>
+<p>Once you have completed the steps above, you will see two VU templates. You can fill in the <code>VU DMP template 2021 v1.4</code> if you need to write a DMP anyway; the information you include in this DMP template will be used for the registry. If you don’t need to write a (new) DMP, you can use the separate <code>VU GDPR registration form for research v1.1</code>. Your faculty’s 🔒 <a href="https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information">Privacy Champion</a> can help you with your registration.</p>
+<p>If your research is primarily led by Amsterdam UMC, location VUmc, your research will be registered using their own separate system.</p>
+<section id="register-before-you-start-your-data-collection" class="level3">
+<h3 class="anchored" data-anchor-id="register-before-you-start-your-data-collection">Register before you start your data collection</h3>
+<p>If you use personal data in your research, you should register your data processing activities before you start data collection. If you are not sure whether your research data are subject to the GDPR, contact your faculty’s 🔒 <a href="https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information">Privacy Champion</a>. Your privacy champion can also assist you if your research is already running, but has not yet been registered.</p>
+</section>
+</section>
+<section id="support" class="level2">
+<h2 class="anchored" data-anchor-id="support">Support</h2>
+<p>The <a href="https://assets-us-01.kc-usercontent.com/d8b6f1f5-816c-005b-1dc1-e363dd7ce9a5/ad3de0e7-b935-471a-8d31-51c06ba47c88/Privacy%20five-step%20plan.pdf">Privacy five-step plan</a> explains the steps you must take before you start a new research with personal data.</p>
+<p>On the VU page <a href="https://vu.nl/en/employee/privacy-and-information-security/working-with-personal-data">Working with personal data</a>, you can find more information about how VU Amsterdam protects personal data.</p>
+<p>For all questions relating to privacy and the GDPR, please contact your faculty’s 🔒 <a href="https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information">Privacy Champion</a>.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/ubvu\.github\.io\/open-handbook");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://creativecommons.org/publicdomain/zero/1.0/legalcode">
+<p>CC0 Public Domain Dedication</p>
+</a>
+  </li>  
+</ul>
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../about.html">
+<p>About</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../editors-guide.html">
+<p>Editor’s guide</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://ghostcollective.github.io/games.html">
+<p>GHOST Collective</p>
+</a>
+  </li>  
+</ul>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/guides/comply-with-gdpr.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ By VU &amp; Liberate Science GmbH
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
