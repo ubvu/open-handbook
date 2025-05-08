@@ -1,0 +1,51 @@
+---
+title: DataverseNL
+categories: [Tools]
+---
+ 
+## What is it?
+[DataverseNL](https://dataverse.nl/dataverse/vuamsterdam) is an Open Access dataset archiving and publication platform used by various institutions. VU Amsterdam has a section for each faculty to archive and publish their datasets.
+ 
+DataverseNL helps the researcher make their data "[FAIR](../topics/fair-principles.qmd)" by providing a solution that enables data discovery and sharing (i.e., findable, accessible). In addition, it facilitates the use of metadata, contributing to data interoperability and reusability. DataverseNL provides a platform for the implementation of standard workflows that can ensure metadata quality satisfying [VU policy requirements](../topics/research-data-and-software-management-policy.qmd) for data archiving and publication. Many research institutions and funding organisations (such as NWO and ZonMw) require researchers to make their data FAIR.
+ 
+DataverseNL is open source software developed and maintained by [Harvard University](https://dataverse.org/). The Dutch version is hosted by [DANS](https://dans.knaw.nl/en/data-services/dataversenl/).
+ 
+## What can it be used for?
+ 
+DataverseNL is a simple method to archive and publish datasets. Through the platform it becomes very easy to share data and documents from your research. The platforms generates a webpage displaying your data and accompanying metadata, and a Digital Object Identifier (DOI) which enables increased visibility and quick references to your dataset. It is possible to make files within your dataset only accessible on request. Please note that DataverseNL is only suitable for archiving and publishing datasets that do not contain personal data or other types of confidential data. Even though access to data files in DataverseNL can be restricted, datasets containing personal data or other types of confidential data must not be uploaded to DataverseNL. A suitable repository for archiving and publishing personal and sensitive data is [Yoda](../topics/yoda.qmd). 
+ 
+### Data storage
+DataverseNL is a Cloud storage solution that can be used for small to large datasets. The datasets are preserved through backup copies of the data.
+ 
+### Data sharing
+Through the generated DOI you can make your dataset easy to find and access. You can reference it in your publications and through your profile page on the [VU Research Portal](https://research.vu.nl/) ([PURE](http://research.vu.nl/admin)).
+ 
+### Sensitive data
+Although DataverseNL is meant for Open Access datasets, it is possible to restrict access to particular files. This means it is possible to archive medium sensitive (anonymised) data. As explained above, personal data or other types of confidential data that score High or Very High on confidentiality (see the [Policy Classification of Research Data](https://rdm.vu.nl/guides/policies-supporting-vision-open-science.html#policy-classification-of-research-data) and the [Research Data Classification Tool](https://vu.nl/en/research/dataclassification)) must not be uploaded to DataverseNL. Data that score High or Very High on confidentiality can be archived and published in [Yoda](../topics/yoda.qmd).
+ 
+### Metadata
+You can add descriptive metadata to a dataset draft in DataverseNL. After publication of the dataset it is still possible to alter the metadata, but this will result in a new version of the dataset. If you feel metadata fields are missing, a request can be sent to SURF to add these fields. The requirement for this change is that the added metadata fields are part of an internationally recognised dataset metadata scheme. 
+ 
+## How to request access
+
+### Uploading data
+
+All VU employees can create an account in DataverseNL and upload and publish datasets. When you wish to upload data to DataverseNL, it is important to select your faculty or department. If you want to upload your dataset as part of a certain department, and your department is not yet included in DataverseNL, you can contact the DataverseNL manager to request your department to be added. You can use the Contact button in DataverseNL to submit such a request.
+
+### Viewing and reusing data
+
+Data that are publicly available, are visible and downloadable for everyone. 
+
+If a dataset includes files with restricted access, people interested in the data have to create an account in DataverseNL to be able to request access to those files. The contact person for the dataset needs to grant access in order for others to use the data.
+ 
+## Are there costs involved?
+The costs for archiving datasets for the required period stated in the [Research Data and Software Management Policy](https://rdm.vu.nl/guides/policies-supporting-vision-open-science.html) are currently covered through the Cost Recharge Model (KDM). The details can be found in the 🔒 [Research Archiving & Storage Cost Model](https://vu.nl/en/employee/research-data-support/research-archiving-storage-cost-model). 
+ 
+## Getting Started
+ 
+The DataverseNL website has practical information in their [User Guide](https://dans.knaw.nl/en/data-services/dataversenl/user-guide/).
+ 
+## Contact
+Wondering if DataverseNL fits your research needs? Please contact the [RDM support desk](mailto:rdm@vu.nl).
+
+
