@@ -32,10 +32,9 @@ Researchers should bear in mind that repositories can charge for archiving data.
 
 VU Amsterdam requests that researchers archive the data used in a publication in a repository for at least ten years after the release of the publication (see also [VU Policies & Regulations](../guides/plan-and-design.qmd#policies-regulations)). There are a lot of digital archives and many more keep appearing.  
   
-The right archival option depends on the nature of the data and the field of science as described in faculty or departmental data management policy documents. The university offers 2 different general repositories for data archiving.
+The right archival option depends on the nature of the data and the field of science as described in faculty or departmental data management policy documents. The university offers 2 different general repositories for data archiving. The RDM Support Desk and faculty data stewards can help researchers with the selection of a repository that meets all the relevant criteria of privacy (sensitivity), dataset size, etc.
 
-1. The RDM Support Desk and faculty data stewards can help researchers with the selection of a repository that meets all the relevant criteria of privacy (sensitivity), dataset size, etc.
-2. [DataverseNL](https://dataverse.nl/dataverse/vuamsterdam) - an online platform for the publication of citable research data in a semi-open environment. DataverseNL allows users to link publications to datasets directly, and to share the data through online archives such as DANS.
+1. [DataverseNL](../topics/dataversenl.qmd) - an online platform for the publication of citable research data in a semi-open environment. DataverseNL allows users to link publications to datasets directly, and to share the data through online archives such as DANS.
 
 Specifications:
 
@@ -46,7 +45,7 @@ Specifications:
 * Generates a link (persistent identifier), e.g. for data citations in publications
 * Retention period is at least 10 years
 
-[Yoda](https://yoda.vu.nl/site/) - besides [active storage](../topics/data-storage.qmd), Yoda also has an archive function: the vault. You can use the vault in two ways:
+2. [Yoda](https://yoda.vu.nl/site/) - besides [active storage](../topics/data-storage.qmd), Yoda also has an archive function: the vault. You can use the vault in two ways:
 
 * For archiving data securely; data are only available for verification purposes and may be access only by special request. A special procedure will be followed if anyone requests access to the data in order to verify them.
 * For publishing data; data can be available for anyone, or on request. The data will get a persistent identifier as well.
@@ -59,7 +58,7 @@ Besides the repositories offered by VU Amsterdam, there are many others. **Unles
 
 There can be various reasons to decide to use a different repository, including funder requirements, preferences of research partners, and a repository being a common choice in your field. For example, Dutch archaeologists mostly use [DANS Data Stations](https://dans.knaw.nl/en/data-stations/archaeology/) to deposit and publish their data. Using a repository that is a common choice in your field will make your data more findable for your colleagues and increase the visibility of your work as a researcher. Some of the data repositories most commonly used in the Netherlands include:
 
-* [DANS Data Stations](https://dans.knaw.nl/en/): a domain-agnostic research data repository hosted by the Data Archiving and Networked Services, an institute of NWO and KNAW. DANS also develops policies, services and new infrastructures for research data and provides researchers with advice on how to preserve their data. VU researchers are also welcome to deposit their data at DANS-EASY;
+* [DANS Data Stations](https://dans.knaw.nl/en/): a collection of four domain-specific repositories hosted by the Data Archiving and Networked Services (DANS), an institute of NWO and KNAW (Koninklijke Nederlandse Akademie van Wetenschappen). They have Data Stations for Social Sciences and Humanities, Archaeology, Life Sciences, and Physical and Technical Sciences. DANS also develops policies, services and new infrastructures for research data and provides researchers with advice on how to preserve their data. VU researchers are also welcome to deposit their data at DANS Data Stations;
 * [4TU.ResearchData](https://data.4tu.nl): a repository for science, engineering and design data hosted by the 4TU Federation. This is a consortium of the four Dutch technical universities: TU Delft, TU Eindhoven, University of Twente and Wageningen University and Research. VU researchers are also welcome to deposit their data at 4TU;
 * [Zenodo](https://zenodo.org/): a domain-agnostic research data repository hosted by CERN in Switzerland and funded by the European Commission. Zenodo does not only host data, but also presentations, conference procedures and policy documents. It is also possible to archive GitHub repositories directly into Zenodo, by which you contribute to Open Science by making a snapshot of your code available in its current form and for the long term;
 * [OSF (Open Science Framework)](https://osf.io/): a data management and research dissemination platform. VU Amsterdam is an institutional member of the OSF, which means that you can sign up (and in) using your VU account by clicking on the Institution Button on the sign in/up pages. You can use the OSF to create registrations and preregistrations for your research, to publish preprints, and publish and share data and documentation. You can also link other repositories such as DataverseNL to your OSF project. The same goes for GitHub and storage options such as Research Drive and Surfdrive. Do be careful about what you connect! A full guide for VU OSF users, including instructions about connecting external storage can be found [here](https://osf.io/abwzm/).
