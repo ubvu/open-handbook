@@ -1848,6 +1848,13 @@
     "text": "Rendering handbook locally\nSometimes you may want to preview the changes you are making to the handbook. That is possible in most cases, but requires you to install some software. You need to install Quarto and assuming a successful installation, you then need to run the following code in your terminal:\n# Clone the git repository\ngit repo clone https://github.com/ubvu/open-handbook\n# Go into the right folder\ncd open-handbook\n# Render the handbook\nquarto render .\nWe do not guarantee this will work immediately, but should cover most instances. If you are looking to contribute and want to render things locally, try this first, and if you run into any issues, let us know in an issue report. We’re happy to try our best if you share your error messages :blush:"
   },
   {
+    "objectID": "index.html#upcoming-events",
+    "href": "index.html#upcoming-events",
+    "title": "{{< var title >}}",
+    "section": "Upcoming events",
+    "text": "Upcoming events"
+  },
+  {
     "objectID": "topics.html",
     "href": "topics.html",
     "title": "Topics",
