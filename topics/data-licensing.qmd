@@ -2,9 +2,9 @@
 title: Data Licensing
 ---
 
-## Licensing the data
+## Introduction
 
-A data licence agreement is a legal instrument that lets others know what they can and cannot do with your research data (and any documentation, scripts and metadata that are published with the data - information about software licensing can be found on the [software licensing](../topics/software-licensing.qmd) page). It is important to consider what kind of limitations are relevant. Usually, at least the following questions are considered:
+A data licence agreement is a legal instrument that lets others know what they can and cannot do with a particular dataset (and any documentation, scripts and metadata that are published with the data - information about software licensing can be found on the [software licensing](../topics/software-licensing.qmd) page). It is important to consider what kind of limitations are relevant. Usually, at least the following questions are considered:
 
 * Can people make copies or even distribute copies?
 * Do others (and you) reusing the dataset need to acknowledge you as the author of the original dataset? (This is called Attribution.)
@@ -16,7 +16,36 @@ The considerations above are the 'building blocks' that [Creative Commons licenc
 
 ![An image of open data, made up of public domain icons](../public/Open_Data_CC0_Wikidata.gif)
 
-In principle, Dataverse allows you to choose your terms of use. If you publish your data in Yoda, there is [guidance](https://yoda.vu.nl/site/getting-started/selecting-license.html) available on how to choose a licence and how to customise licences. Some data repositories require you to use a certain licence if you want to deposit your data with them. At [Dryad](https://datadryad.org/), for example, all datasets are published under the terms of [Creative Commons Zero](https://creativecommons.org/share-your-work/public-domain/cc0/) to minimise legal barriers and to maximise the impact for research and education. Some funders may also require that you publish the data as open data. **Open data** are data that can be freely used, re-used and redistributed by anyone - subject only, at most, to the requirement to attribute and share alike ([Open Knowledge International definition)](https://opendatahandbook.org/guide/en/what-is-open-data/). If you need help with drawing up licence agreements, you can contact the [VU's legal office](https://vu.nl/en/research/portal/research-impact-support-portal/check-legal-support).
+## Reusing existing data
+
+If you wish to reuse data collected by others (this could be data you received from for example Statistics Netherlands or from a company, a dataset you have found in an online repository, commonly used databases for which VU Amsterdam has a licence, etc.), make sure that you read the licence or terms of use. Also make sure that you work with the data according to the licence or terms of use. This can mean different things depending on the licence, but common things to consider are for example: 
+
+* cite the data in an appropriate manner;
+* do not share the data beyond the project/purpose for which you received them;
+* share the outcome of your research based on the data under a similar licence;
+* only use them for scientific purposes (and not for commercial purposes, for example).
+
+If you have questions about the legal context of using an existing dataset, you can contact the [RDM Support Desk](mailto:rdm@vu.nl) or the legal experts at [IXA VU](mailto:ixa@vu.nl).
+
+## Licensing data
+
+If you want to make **your data** available for other (research) purposes, it is important to apply a licence to it. Without a licence, it is impossible for others to reuse your data without your explicit approval. When you deposit your data in a repository, the repository will usually ask you to select a standard licence, or to create and add a custom licence yourself. If you need help with drawing up licence agreements, you can contact the [VU's legal office](https://vu.nl/en/research/portal/research-impact-support-portal/check-legal-support).
+
+### DataverseNL
+
+In [DataverseNL](./dataversenl.qmd) you can choose your terms of use when uploading data to the repository. The [DataverseNL user guide](https://guides.dataverse.org/en/latest/user/dataset-management.html#terms) explains how licensing works in the repository.
+
+### Yoda
+
+If you publish your data in Yoda, there is [guidance](https://yoda.vu.nl/site/getting-started/selecting-license.html) available on how to choose a licence and how to customise licences. 
+
+### Open Science Framework (OSF)
+
+In OSF, you can apply a standard licence to your materials or upload your own custom licence. The [OSF user guide](https://help.osf.io/article/288-license-your-project#Upload-your-own-license) explains both options.
+
+### External repositories
+
+Some data repositories require you to use a certain licence if you want to deposit your data with them. At [Dryad](https://datadryad.org/), for example, all datasets are published under the terms of [Creative Commons Zero](https://creativecommons.org/share-your-work/public-domain/cc0/) to minimise legal barriers and to maximise the impact for research and education. Some funders may also require that you publish the data as open data. **Open data** are data that can be freely used, re-used and redistributed by anyone - subject only, at most, to the requirement to attribute and share alike ([Open Knowledge International definition)](https://opendatahandbook.org/guide/en/what-is-open-data/). 
 
 ## Additional websites and tools:
 
