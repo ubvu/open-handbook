@@ -7,11 +7,11 @@ categories: [Tools]
 The [VU Compute Hub](https://hub.compute.vu.nl) is a [JupyterHub](https://jupyter.org/hub) instance hosted by IT at  VU Amsterdam. It allows you to run a number of common analysis tools on a server. The Hub is mainly aimed at providing environments for student courses, but is available for VU researchers as well.
 
 ## What can it be used for?
-The VU Compute Hub is a great environment to try if your analysis takes too much time on a laptop. It allows you to use the graphical tools you are familiar with in an environment with more compute power where you can leave your script running until it is finished. 
+The VU Compute Hub is a great environment to try if your analysis takes too much time on a laptop. It allows you to use the graphical tools you are familiar with in an environment with more compute power where you can leave your script running until it is finished.
 
-Since every VU researcher can just log in, the barrier to entry is very low. 
+Since every VU researcher can just log in, the barrier to entry is very low.
 
-Be aware the service is mainly aimed at education. If your scripts use a lot of resources, it might be time for you to start using a High Performance Computing (HPC) environment: [ADA](./ada.qmd) at VU Amsterdam or the national supercomputer [Snellius](./snellius.qmd). Please contact [IT for Research](mailto:itvo.it@vu.nl) to discuss the best options.
+Be aware the service is mainly aimed at education. If your scripts use a lot of resources, it might be time for you to start using a High Performance Computing (HPC) environment: [ADA](../topics/ada.qmd) at VU Amsterdam or the national supercomputer [Snellius](../topics/snellius.qmd). Please contact [IT for Research](mailto:itvo.it@vu.nl) to discuss the best options.
 
 ### Available tools
 The following applications are currently available: Jupyter Notebooks, MATLAB, STATA, R Studio and QGIS.
@@ -38,6 +38,6 @@ $ ssh -J <VUnetID>@ssh.data.vu.nl <VUnetID>@x.compute.vu.nl
 _Replace x with either 1, 2, or 3, depending on your choice._
 
 ## Contact
-Wondering if the VU Compute Hub fits your research needs? Please contact [IT for Research](mailto:itvo.it@vu.nl). 
+Wondering if the VU Compute Hub fits your research needs? Please contact [IT for Research](mailto:itvo.it@vu.nl).
 
 If you run into any issues while using the Compute Servers please send a mail to the [IT Service Desk](servicedesk.it.vu.nl) mentioning "JupyterHub".
