@@ -2,11 +2,11 @@
 title: How to embed handbook pages using iframes
 authors:
   - Chris Hartgerink
-  - Elisa van Rodenburg
+  - Elisa Rodenburg
   - Jessica Hrudey
 ---
 
-If you want to dynamically reuse content from the {{< var title >}}, you can do so using an HTML `iframe`. This post will help you through the steps to successfully embed a handbook page on a website you administer.
+If you want to reuse content from the {{< var title >}}, you can do so using an HTML `iframe`. This post will help you through the steps to successfully embed a handbook page on a website you administer.
 
 ## Selecting what to embed
 
@@ -27,7 +27,7 @@ This link is all you need to anchor the embedding itself, which we explain in th
 
 ## How to embed
 
-After you identified the page and possible anchor to embed, we can now move on to actually embedding it. Embedding the pages themselves is supported by all major browsers using the HTML element [`iframe`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/iframe#loading).
+After you identified the page and possible anchor to embed, we can now move on to actually embedding it. Embedding the pages themselves is supported by all major browsers using the HTML element [`iframe`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/iframe).
 
 Concretely, you can use the following example code for the link we found in [Selecting what to embed](#selecting-what-to-embed).
 
@@ -53,6 +53,6 @@ You can switch out the link, title, and other attributes to your liking – we i
     style="border: solid 1px #0080c9; overflow: hidden;">
 </iframe>
 
-You can find the [detailed code on how this page embeds the content, on GitHub](https://github.com/ubvu/open-handbook/blob/main/blog/2025-05-15embed-iframe.qmd#L43).
+You can find the [detailed code on how this page embeds the content, on GitHub](https://github.com/ubvu/open-handbook/blob/main/blog/2025-05-15embed-iframe.qmd#L43), from line 43.
 
-Thanks for reading and good luck creating your own embeds of the {{< var title >}} across VU Amsterdam pages 😊
+Thanks for reading and good luck creating your own embeds of the {{< var title >}} across VU Amsterdam pages 😊 If you have questions or it does not work and you don't understand why, please [contact the RDM Support Desk](rdm@vu.nl) and one of the editors will try to help you.
