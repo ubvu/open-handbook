@@ -3,7 +3,8 @@ title: Qualtrics Frequently Asked Questions
 categories: [Tools]
 ---
 
-## Login
+## Login and Account Status
+
 1.	I cannot login, I received an error message stating that my password is incorrect. I tried to request a password reset but it does not work. How do I access my account? 
 
 A: Other login method than [Vrije Universiteit SSO] is been used. Go to the login page at  [https://vuamsterdam.eu.qualtrics.com], choose: [Vrije Universiteit SSO] and  Log in with your VU account credentials (e-mail address and password).
@@ -26,6 +27,8 @@ Free Account Login Page. URL will look like this:
 
 A: Qualtrics free accounts do not support the automated transfer of data between brands. The account owner will have to execute a Manual Move. This means downloading data from the free account and uploading this data onto the branded account. The steps to process a Manual Move are outlined in this article: User Moves – Manual Move.   
 
+## Advanced Features
+
 6.	Does VU’s Qualtrics license supports Conjoint Analysis?
 
 Unfortunately, the current Qualtrics subscription does not support (templates) for conjoint surveys/projects (and analysis).
@@ -44,6 +47,7 @@ As a further reference, I am adding KB article Getting Started with Conjoint as 
 https://www.qualtrics.com/support/conjoint-project/getting-started-conjoints/getting-started-choice-based/getting-started-with-conjoint-projects/#Steps
 
 
+## Collaboration - Getting Started
 
 7.	What is Collaboration?
 
@@ -68,7 +72,10 @@ Lookup field in Collaboration:
 
 If you are inviting someone from outside your organization, you should type in their email address. Click [Add Selected] and then [Save]. 
 Collaboration settings, adding invitation and access rights: 
- 
+
+
+## Collaboration - Advaced Settings
+
 10.	How should I use Collaboration on VU’s Central Brand (Named Brand SSO)?
 
 A: Each Qualtrics Brand is seen as a separate Organization. When sharing surveys between brands, you will be collaborating between Organizations. You will likely also be sharing surveys between different brand types. 
@@ -81,7 +88,8 @@ A: Yes, individual user permission are configurable when using Collaboration fea
 
 Access rights can be set for Viewing, Editing, View Reports, Activation Copying and Distributing: 
   
-FAQ ANNEX I: Collaboration Between Different Brand Types
+
+## Collaboration Between Different Brand Types
 
 1.	If you are collaborating with someone with SSO from outside of your organization, then you can share with any email address that user has access to. They will receive a secure collaboration code, log into the Qualtrics account of their choice, and enter the code.
 
