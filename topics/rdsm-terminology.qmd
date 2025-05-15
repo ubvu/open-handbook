@@ -1,0 +1,119 @@
+---
+title: Research Data and Software Management Terminology
+---
+
+## What is RDSM Terminology?
+
+The VU maintains a list of terms (a.k.a. definitions) for words that are used regularly in Research Data and Software Management contexts. This terminology is important for insuring that everyone understands each other when discussing RDSM topics.
+
+This terminology list will grow and update over time. If you have a suggestion for a new term, click on the "Edit this page" button on the top right of the screen, or suggest your new term via the Contribution Portal (see the "Contributing" tab in the top menu).
+
+Another useful terminology list that incorporates many general RDSM and Open Science terms is the [Glossary of The Turing Way](https://the-turing-way.netlify.app/afterword/glossary){target="_blank"}. You can also consult this glossary if you come across a term that you don't know that is not found in the list below.
+
+### Availability statement
+
+Short description, usually included in a publication, of where data or software associated with a
+publication are available and under which conditions these materials can be accessed. Also known
+as (Data) Access Statement.
+
+### CARE principles for Indigenous Data Governance
+Principles for treating data about indigenous people in a responsible manner, addressing collective
+benefit (C), Authority to control (A), Responsibility (R) and Ethics (E).
+
+### Data storage concepts
+
+#### Data storage: 
+
+Safe and reliable storage of research data during the active research phase. Stored
+research data can be changed.
+
+#### Data archiving: 
+
+Creation of a secure and immutable copy of research data, associated metadata,
+accompanying documentation, and software code (where relevant) with the intention to ensure
+(conditional) access for a predetermined, minimum, period of time.
+
+#### Data publishing: 
+
+Making research data, associated metadata, accompanying documentation,
+and software code (where relevant) accessible in a repository in such a manner that they can be
+discovered on the Web and referred to in a unique and persistent way.
+
+### FAIR Principles
+
+Principles for making research data Findable (F), Accessible (A), Interoperable (I) and Reusable (R).
+
+### Metadata
+
+Data that describe characteristics of other data. In the research context this concerns data that
+provide further information and context about research data. Metadata describe the data and the
+context in which they have been collected or created. See also [Research data](#research-data).
+
+### Persistent identifier
+
+In short, and in the current context, a Persistent Identifier (PID) is essentially a URL that will never
+break. There are multiple PID systems, each with its own particular properties. Examples of widely
+used PIDs in the research domain include:
+
+#### DOI: 
+
+A Digital Object Identifier can be used to refer to research data and research software. DOIs can
+be assigned to datasets and software upon their deposit in a repository.
+
+#### ORCiD: 
+
+An Open Researcher and Contributor ID is used to create a researcher profile with a unique
+identification number. Researchers can request an ORCiD themselves, with which they can identify
+their research output as their work.
+
+#### ROR: 
+
+The Research Organization Registry is a global register with persistent identifiers for research
+institutes. Researchers can use the ROR for VU Amsterdam when filling metadata forms for their
+research output to show that their work has been created within their employment at VU Amsterdam.
+
+See the [Persistent Identifier guide of Netwerk Digitaal Erfgoed](https://www.pidwijzer.nl/en/){target="_blank"} 
+for a more elaborate overview. Apart
+from widely used domain-agnostic PIDs, there is a wide range of domain-specific unique identifiers
+that can be used.
+
+### Research data
+
+Information that is captured for the purpose of underpinning academic research. Depending on the
+discipline it may consist of, for example, text, images, sound, spreadsheets, databases, statistical
+data, geographic data, etc. When we refer to research data in this policy, we refer to the entirety of
+the data itself, this includes any associated metadata and documentation.
+
+### Research data management
+
+“Research data management is an explicit process covering the creation and stewardship of research
+materials to enable their use for as long as they retain value.” [^1]
+
+### Research life cycle
+
+The research life cycle outlines the various stages and activities of a research project, from
+preparation to disseminating the results.
+
+### Research software
+
+“Research Software includes source code files, algorithms, scripts, computational workflows and
+executables that were created during the research process or for a research purpose. Software
+components (e.g., operating systems, libraries, dependencies, packages, scripts, etc.) that are
+used for research but were not created during or with a clear research intent should be considered
+software in research and not Research Software.” [^2]
+
+### Research software management
+
+Research software management (RSM) is a structured and strategic approach to handling the
+creation, utilisation, and preservation of software in the research process.
+
+### Trusted repository
+“A trusted digital repository is one whose mission is to provide reliable, long-term access to managed
+digital resources to its designated community, now and in the future.” [^3]
+
+
+[^1]: From the [Digital Curation Center's Glossary](https://www.dcc.ac.uk/about/digital-curation/glossary#R){target="_blank"}
+
+[^2]: From the report [Defining Research Software: a controversial discussion](https://zenodo.org/records/5504016){target="_blank"}
+
+[^3]: From the report [Trusted Digital Repositories: Attributes and Responsibilities](https://www.oclc.org/content/dam/research/activities/trustedrep/repositories.pdf){target="_blank"}, p.5
