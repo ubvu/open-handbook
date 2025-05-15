@@ -2,11 +2,13 @@
 title: Research Data & Software Management Terminology
 ---
 
-## What is RDSM Terminology
+## What is RDSM Terminology?
 
 The VU maintains a list of terms (a.k.a. definitions) for words that are used regularly in Research Data & Software Management contexts. This terminology is important for insuring that everyone understands each other when discussing RDSM topics.
 
 This terminology list will grow and update over time. If you have a suggestion for a new term, click on the "Edit this page" button on the top right of the screen, or suggest your new term via the Contribution Portal (see the "Contributing" tab in the top menu).
+
+Another useful terminology list that incorporates many general RDSM and Open Science terms is the [Glossary of The Turing Way](https://the-turing-way.netlify.app/afterword/glossary){target="_blank"}. You can also consult this glossary if you come across a term that you don't know that is not found in the list below.
 
 ### Availability statement
 
@@ -45,7 +47,7 @@ Principles for making research data Findable (F), Accessible (A), Interoperable 
 
 Data that describe characteristics of other data. In the research context this concerns data that
 provide further information and context about research data. Metadata describe the data and the
-context in which they have been collected or created. See also Research data.
+context in which they have been collected or created. See also [Research data](#research-data).
 
 ### Persistent identifier
 
@@ -57,6 +59,7 @@ used PIDs in the research domain include:
 
 A Digital Object Identifier can be used to refer to research data and research software. DOIs can
 be assigned to datasets and software upon their deposit in a repository.
+
 #### ORCiD: 
 
 An Open Researcher and Contributor ID is used to create a researcher profile with a unique
@@ -69,7 +72,8 @@ The Research Organization Registry is a global register with persistent identifi
 institutes. Researchers can use the ROR for VU Amsterdam when filling metadata forms for their
 research output to show that their work has been created within their employment at VU Amsterdam.
 
-See the Persistent Identifier guide of Netwerk Digitaal Erfgoed for a more elaborate overview. Apart
+See the [Persistent Identifier guide of Netwerk Digitaal Erfgoed](https://www.pidwijzer.nl/en/){target="_blank"} 
+for a more elaborate overview. Apart
 from widely used domain-agnostic PIDs, there is a wide range of domain-specific unique identifiers
 that can be used.
 
@@ -83,7 +87,7 @@ the data itself, this includes any associated metadata and documentation.
 ### Research data management
 
 “Research data management is an explicit process covering the creation and stewardship of research
-materials to enable their use for as long as they retain value.”
+materials to enable their use for as long as they retain value.” [^1]
 
 ### Research life cycle
 
@@ -96,7 +100,7 @@ preparation to disseminating the results.
 executables that were created during the research process or for a research purpose. Software
 components (e.g., operating systems, libraries, dependencies, packages, scripts, etc.) that are
 used for research but were not created during or with a clear research intent should be considered
-software in research and not Research Software.”
+software in research and not Research Software.” [^2]
 
 ### Research software management
 
@@ -105,4 +109,12 @@ creation, utilisation, and preservation of software in the research process.
 
 ### Trusted repository
 “A trusted digital repository is one whose mission is to provide reliable, long-term access to managed
-digital resources to its designated community, now and in the future.”
+digital resources to its designated community, now and in the future.” [^3]
+
+
+[^1]: From the [Digital Curation Center's Glossary](https://www.dcc.ac.uk/about/digital-curation/glossary#R){target="_blank"}
+
+[^2]: From the report [Defining Research Software: a controversial discussion](https://zenodo.org/records/5504016){target="_blank"}
+
+[^3]: From the report [Trusted Digital Repositories: Attributes and Responsibilities]
+(https://www.oclc.org/content/dam/research/activities/trustedrep/repositories.pdf){target="_blank"}, p.5
