@@ -126,3 +126,10 @@ During:
 After:
 
 * Finish up the speed blog for the hackathon within one week of the hackathon. It does not have to be perfect and is primarily to document that the hackathon happened and some of the things that were done.
+
+## Troubleshooting
+
+There are some common mistakes that can happen. We keep track of some of the quirks we observed to help you troubleshoot independently:
+
+* Is the filename `.qmd` exactly?
+* Is the relative path from topic -> topic `../topics/name.qmd`?
