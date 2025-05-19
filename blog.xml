@@ -10,7 +10,111 @@
 <atom:link href="https://ubvu.github.io/open-handbook/blog.xml" rel="self" type="application/rss+xml"/>
 <description>A place for all things open research at VU Amsterdam.</description>
 <generator>quarto-1.7.31</generator>
-<lastBuildDate>Thu, 28 Nov 2024 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 19 May 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>How to embed handbook pages using iframes</title>
+  <link>https://ubvu.github.io/open-handbook/blog/2025-05-15embed-iframe.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>If you want to reuse content from the Research Support Handbook, you can do so using an HTML <code>iframe</code>. This post will help you through the steps to successfully embed a handbook page on a website you administer.</p>
+<section id="selecting-what-to-embed" class="level2">
+<h2 class="anchored" data-anchor-id="selecting-what-to-embed">Selecting what to embed</h2>
+<p>Before we can embed a page, we need to select what to embed.</p>
+<p>Each page in the Research Support Handbook has sections, which can be used as anchors for embedding the content. This ensures that the right page shows up displaying the right content.</p>
+<p>For example, if you are interested in the <a href="../topics/dataversenl.html">DataverseNL</a> page, you can select any of the headings as an anchor. Here are the steps involved:</p>
+<ol type="1">
+<li>Identify the specific anchor to embed at (for example, “How to request access”)</li>
+<li>Click the link icon next to the anchor</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://ubvu.github.io/open-handbook/public/Screenshot 2025-05-08 at 10.49.51.png" class="img-fluid figure-img"></p>
+<figcaption>Screenshot of the anchor and the link icon highlighted</figcaption>
+</figure>
+</div>
+<ol start="3" type="1">
+<li>Go to your browser’s navigation bar and copy the new link (<code>https://rdm.vu.nl/topics/dataversenl.html#how-to-request-access</code>)</li>
+</ol>
+<p>This link is all you need to anchor the embedding itself, which we explain in the section How to embed.</p>
+</section>
+<section id="how-to-embed" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-embed">How to embed</h2>
+<p>After you identified the page and possible anchor to embed, we can now move on to actually embedding it. Embedding the pages themselves is supported by all major browsers using the HTML element <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/iframe"><code>iframe</code></a>.</p>
+<p>Concretely, you can use the following example code for the link we found in Selecting what to embed.</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb1-1"><span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">&lt;</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">iframe</span></span>
+<span id="cb1-2"><span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">    src</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://rdm.vu.nl/topics/dataversenl.html#how-to-request-access"</span></span>
+<span id="cb1-3"><span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">    title</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"How to request access to DataverseNL"</span></span>
+<span id="cb1-4"><span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">    width</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"100%"</span></span>
+<span id="cb1-5"><span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">    height</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"300px"</span></span>
+<span id="cb1-6"><span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">    loading</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">lazy</span></span>
+<span id="cb1-7"><span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">    style</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"border: solid 1px #0080c9"</span><span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">&gt;</span></span>
+<span id="cb1-8"><span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">&lt;/</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">iframe</span><span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">&gt;</span></span></code></pre></div>
+<p>You can switch out the link, title, and other attributes to your liking – we include some styling options here to get started. You can copy-paste this into any handbook page directly or into any HTML editor:</p>
+<iframe src="https://rdm.vu.nl/topics/dataversenl.html#how-to-request-access" title="How to request access to DataverseNL" width="100%" height="300px" loading="lazy" style="border: solid 1px #0080c9; overflow: hidden;">
+</iframe>
+<p>You can find the <a href="https://github.com/ubvu/open-handbook/blob/main/blog/2025-05-15embed-iframe.qmd#L43">detailed code on how this page embeds the content, on GitHub</a>, from line 43.</p>
+<p>Thanks for reading and good luck creating your own embeds of the Research Support Handbook across VU Amsterdam pages 😊 If you have questions or it does not work and you don’t understand why, please <a href="rdm@vu.nl">contact the RDM Support Desk</a> and one of the editors will try to help you.</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://ubvu.github.io/open-handbook/blog/2025-05-15embed-iframe.html</guid>
+  <pubDate>Mon, 19 May 2025 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Fifth Handbook Hackathon</title>
   <dc:creator>Lena Karvovskaya</dc:creator>

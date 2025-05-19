@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-05-19">
 
-<title>Blog – Research Support Handbook</title>
+<title>How to embed handbook pages using iframes – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,29 +21,62 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./public/favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-1318a7c668a3637e9a4dabe7ac3717b7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../public/favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-1318a7c668a3637e9a4dabe7ac3717b7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,67 +104,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="alternate" type="application/rss+xml" title="{{< var title >}}" href="blog.xml" data-external="1"></head>
+</head>
 
 <body class="nav-fixed quarto-light">
 
@@ -139,8 +115,8 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -155,25 +131,25 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-topics">    
         <li>
-    <a class="dropdown-item" href="./topics.html">
+    <a class="dropdown-item" href="../topics.html">
  <span class="dropdown-text">All</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./topics.html#category=Tools">
+    <a class="dropdown-item" href="../topics.html#category=Tools">
  <span class="dropdown-text">Tools</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./guides.html"> 
+    <a class="nav-link" href="../guides.html"> 
 <span class="menu-text">Guides</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./contributing.html"> 
+    <a class="nav-link" href="../contributing.html"> 
 <span class="menu-text">Contributing</span></a>
   </li>  
 </ul>
@@ -188,22 +164,43 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#selecting-what-to-embed" id="toc-selecting-what-to-embed" class="nav-link active" data-scroll-target="#selecting-what-to-embed">Selecting what to embed</a></li>
+  <li><a href="#how-to-embed" id="toc-how-to-embed" class="nav-link" data-scroll-target="#how-to-embed">How to embed</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/blog/2025-05-15embed-iframe.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog</h1>
+<h1 class="title">How to embed handbook pages using iframes</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-contents">
+             <p>Chris Hartgerink </p>
+             <p>Elisa Rodenburg </p>
+             <p>Jessica Hrudey </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">May 19, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -213,210 +210,49 @@ window.Quarto = {
 </header>
 
 
-<p>Subscribe to the blog via <a href="./blog.xml">RSS</a>.</p>
+<p>If you want to reuse content from the Research Support Handbook, you can do so using an HTML <code>iframe</code>. This post will help you through the steps to successfully embed a handbook page on a website you administer.</p>
+<section id="selecting-what-to-embed" class="level2">
+<h2 class="anchored" data-anchor-id="selecting-what-to-embed">Selecting what to embed</h2>
+<p>Before we can embed a page, we need to select what to embed.</p>
+<p>Each page in the Research Support Handbook has sections, which can be used as anchors for embedding the content. This ensures that the right page shows up displaying the right content.</p>
+<p>For example, if you are interested in the <a href="../topics/dataversenl.html">DataverseNL</a> page, you can select any of the headings as an anchor. Here are the steps involved:</p>
+<ol type="1">
+<li>Identify the specific anchor to embed at (for example, “How to request access”)</li>
+<li>Click the link icon next to the anchor</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../public/Screenshot 2025-05-08 at 10.49.51.png" class="img-fluid figure-img"></p>
+<figcaption>Screenshot of the anchor and the link icon highlighted</figcaption>
+</figure>
+</div>
+<ol start="3" type="1">
+<li>Go to your browser’s navigation bar and copy the new link (<code>https://rdm.vu.nl/topics/dataversenl.html#how-to-request-access</code>)</li>
+</ol>
+<p>This link is all you need to anchor the embedding itself, which we explain in the section <a href="#how-to-embed">How to embed</a>.</p>
+</section>
+<section id="how-to-embed" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-embed">How to embed</h2>
+<p>After you identified the page and possible anchor to embed, we can now move on to actually embedding it. Embedding the pages themselves is supported by all major browsers using the HTML element <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/iframe"><code>iframe</code></a>.</p>
+<p>Concretely, you can use the following example code for the link we found in <a href="#selecting-what-to-embed">Selecting what to embed</a>.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">iframe</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ot">    src</span><span class="op">=</span><span class="st">"https://rdm.vu.nl/topics/dataversenl.html#how-to-request-access"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ot">    title</span><span class="op">=</span><span class="st">"How to request access to DataverseNL"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ot">    width</span><span class="op">=</span><span class="st">"100%"</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ot">    height</span><span class="op">=</span><span class="st">"300px"</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ot">    loading</span><span class="op">=</span><span class="st">lazy</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="ot">    style</span><span class="op">=</span><span class="st">"border: solid 1px #0080c9"</span><span class="dt">&gt;</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">iframe</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>You can switch out the link, title, and other attributes to your liking – we include some styling options here to get started. You can copy-paste this into any handbook page directly or into any HTML editor:</p>
+<iframe src="https://rdm.vu.nl/topics/dataversenl.html#how-to-request-access" title="How to request access to DataverseNL" width="100%" height="300px" loading="lazy" style="border: solid 1px #0080c9; overflow: hidden;">
+</iframe>
+<p>You can find the <a href="https://github.com/ubvu/open-handbook/blob/main/blog/2025-05-15embed-iframe.qmd#L43">detailed code on how this page embeds the content, on GitHub</a>, from line 43.</p>
+<p>Thanks for reading and good luck creating your own embeds of the Research Support Handbook across VU Amsterdam pages 😊 If you have questions or it does not work and you don’t understand why, please <a href="rdm@vu.nl">contact the RDM Support Desk</a> and one of the editors will try to help you.</p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1747612800000" data-listing-file-modified-sort="1747654399654" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="391">
-<div class="thumbnail"><a href="./blog/2025-05-15embed-iframe.html" class="no-external">
-
-<p class="card-img-top"><img src="public/Screenshot 2025-05-08 at 10.49.51.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2025-05-15embed-iframe.html" class="no-external">How to embed handbook pages using iframes</a>
-</h3>
-<div class="delink listing-description"><a href="./blog/2025-05-15embed-iframe.html" class="no-external">
-If you want to reuse content from the Research Support Handbook, you can do so using an HTML <code>iframe</code>. This post will help you through the steps to successfully embed a…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/2025-05-15embed-iframe.html" class="no-external">
-<div class="listing-date">
-May 19, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="aGFja2F0aG9u" data-listing-date-sort="1732752000000" data-listing-file-modified-sort="1747654399654" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="206">
-<div class="thumbnail"><a href="./blog/2024-11-28hackathon.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-11-28hackathon.html" class="no-external">Fifth Handbook Hackathon</a>
-</h3>
-<div class="delink listing-description"><a href="./blog/2024-11-28hackathon.html" class="no-external">
-On November 28, 2024, all authors participated in the fifth hackathon for the Research Support Handbook. For this hackathon, we focused on adding new content and…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-11-28hackathon.html" class="no-external">
-<div class="listing-date">
-Nov 28, 2024
-</div>
-<div class="listing-author">
-Lena Karvovskaya, Jolien Scholten, Kostas Vilkelis, Tycho Hofstra, Irene Martorelli, Peter Vos
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="aGFja2F0aG9u" data-listing-date-sort="1730419200000" data-listing-file-modified-sort="1747654399654" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="242">
-<div class="thumbnail"><a href="./blog/2024-11-01hackathon.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-11-01hackathon.html" class="no-external">Fourth Handbook Hackathon</a>
-</h3>
-<div class="delink listing-description"><a href="./blog/2024-11-01hackathon.html" class="no-external">
-On October 30th, 2024, all authors participated in the fourth hackathon for the Research Support Handbook. Since the third hackathon, we migrated to <code>rdm.vu.nl</code>, which is a…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-11-01hackathon.html" class="no-external">
-<div class="listing-date">
-Nov 1, 2024
-</div>
-<div class="listing-author">
-Chris Hartgerink, Lena Karvovskaya, Jolien Scholten, Tycho Hofstra, Elisa Rodenburg, Stephanie van de Sandt
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="ZG93bnRpbWU=" data-listing-date-sort="1729555200000" data-listing-file-modified-sort="1747654399654" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="496">
-<div class="thumbnail"><a href="./blog/2024-10-22post-mortem.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-10-22post-mortem.html" class="no-external">Why was rdm.vu.nl down for ten hours?</a>
-</h3>
-<div class="delink listing-description"><a href="./blog/2024-10-22post-mortem.html" class="no-external">
-On Friday October 18th 2024, we experienced around ten hours of downtime on the <code>rdm.vu.nl</code> website. The downtime started around 10AM after merging changes to the handbook and…<sup></sup>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-10-22post-mortem.html" class="no-external">
-<div class="listing-date">
-Oct 22, 2024
-</div>
-<div class="listing-author">
-Chris Hartgerink, Lena Karvovskaya
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1727654400000" data-listing-file-modified-sort="1747654399654" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="240">
-<div class="thumbnail"><a href="./blog/2024-09-30hackathon.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-09-30hackathon.html" class="no-external">Third Handbook Hackathon</a>
-</h3>
-<div class="delink listing-description"><a href="./blog/2024-09-30hackathon.html" class="no-external">
-In the third hackathon for the Research Support Handbook, held on September 25th, 2024, contributors gathered to make significant progress towards migrating the handbook to…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-09-30hackathon.html" class="no-external">
-<div class="listing-date">
-Sep 30, 2024
-</div>
-<div class="listing-author">
-Alex van der Jagt, FGB, sec.&nbsp;KNOP, Chris Hartgerink (host), Diogenes Cruz de Arcelino, Elisa Rodenburg, UBVU, Jessica Hrudey, FGB, Jolien Scholten, UB, Lena Karvovskaya, UBVU, Stephanie van de Sandt, UBVU, Tycho Hofstra, UBVU
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1725494400000" data-listing-file-modified-sort="1747654399654" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="306">
-<div class="thumbnail"><a href="./blog/2024-09-05hackathon.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-09-05hackathon.html" class="no-external">Second Handbook Hackathon</a>
-</h3>
-<div class="delink listing-description"><a href="./blog/2024-09-05hackathon.html" class="no-external">
-On September 5th, 2024, all authors participated in the second hackathon for the Research Support Handbook. For this hackathon, we focused on quality assurance. Quality…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-09-05hackathon.html" class="no-external">
-<div class="listing-date">
-Sep 5, 2024
-</div>
-<div class="listing-author">
-Alex van der Jagt, Chris Hartgerink, Elisa Rodenburg, Jens de Bruijn, Jolien Scholten, Joy Jiayi Cheng, Lena Karvovskaya, Meron Vermaas, Peter Vos, Stephanie van de Sandt, Tycho Hofstra
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-listing-date-sort="1719446400000" data-listing-file-modified-sort="1747654399654" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="504">
-<div class="thumbnail"><a href="./blog/2024-06-27hackathon.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-06-27hackathon.html" class="no-external">First Handbook Hackathon</a>
-</h3>
-<div class="delink listing-description"><a href="./blog/2024-06-27hackathon.html" class="no-external">
-On June 27th, 2024, the first hackathon for the Research Support Handbook took place with all the post authors. For this hackathon, we focused on non-GitHub based…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-06-27hackathon.html" class="no-external">
-<div class="listing-date">
-Jun 27, 2024
-</div>
-<div class="listing-author">
-Alex van der Jagt, Chris Hartgerink, Dimitri Unger, Elisa Rodenburg, Jessica Hrudey, Jolien Scholten, Lena Karvovskaya, Lucy O’ Shea, Mar Barrantes-Cepas, Meron Vermaas, Peter Vos, Stephanie van de Sandt
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-listing-date-sort="1716422400000" data-listing-file-modified-sort="1747654399654" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="36">
-<div class="thumbnail"><a href="./blog/2024-05-23welcome.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-05-23welcome.html" class="no-external">Hello world!</a>
-</h3>
-<div class="delink listing-description"><a href="./blog/2024-05-23welcome.html" class="no-external">
-This is the first blog entry on the Research Support Handbook. We will be posting more at a later time, and are looking forward to your contributions as well.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-05-23welcome.html" class="no-external">
-<div class="listing-date">
-May 23, 2024
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -831,12 +667,12 @@ May 23, 2024
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="./about.html">
+    <a class="nav-link" href="../about.html">
 <p>About</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="./editors-guide.html">
+    <a class="nav-link" href="../editors-guide.html">
 <p>Editor’s guide</p>
 </a>
   </li>  
@@ -846,7 +682,7 @@ May 23, 2024
 </a>
   </li>  
 </ul>
-    <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/blog.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/blog/2025-05-15embed-iframe.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
