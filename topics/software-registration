@@ -2,25 +2,9 @@
 title: Software Registration in PURE 
 ---
 
-## Registration & Findability
-
-When you have finished finalizing research software and are ready to archive it, there are many options available. Depending on the research and choices made earlier the archive provides the option to fill in descriptive fields for a dataset. The descriptions in the archives often are automatically created using metadata standards like DataCite or Dublin Core, or some other type of standard. See also section [Metadata](../topics/metadata.qmd)
-
-When registering research software in an archive it is important to use unique identifiers to allow for increased findability and easy attribution & citation. Examples of this are:
-
-* **Personal names**: try to consistently use the same notation for all researchers and contributors that are included as authors
-* **ORCID**: using a unique identifier like this for all authors is recommended. More information is [available here](https://libguides.vu.nl/orcid).
-* **Institutional names**: avoid using different versions (or language versions) of participating Institutes/organisations and departments. In the case of VU Amsterdam the official written name is: Vrije Universiteit Amsterdam. For each organisation or Institute that is included: try to make sure that the official name is used each time. [Search here](https://ror.org/search).
-* **ROR**: using a unique identifier like this for all institutes and organisations is recommended. In the case of VU Amsterdam the ROR is [https://ror.org/008xxew50](https://ror.org/008xxew50). For other institutes and organisations [search here](https://ror.org/search).
-
-Some archives also allow you to preregister your research software. Examples are:
-
-* [Open Science Framework](https://help.osf.io/hc/en-us/sections/360003624093-Create-Registrations) (OSF) Registration
-* [Zenodo & registration](https://zenodo.org/deposit)
-
 ## Register Software in PURE
 
-Just like your publications, research sofware that you have developed for your research constitutes research output, too. Therefore you are required to record your research software in PURE. Your research software can be of interest to others, which can in turn lead to new collaboration opportunities. Research software recorded in PURE also appear in reports that are used for research evaluations. Even if access to your research software is closed, you are required to register your research software in PURE. It is a record of the work that you have carried out.
+Just like your publications, research sofware that you have developed for your research constitutes research output, too. Therefore you are required to record your research software in PURE.[^1] Your research software can be of interest to others, which can in turn lead to new collaboration opportunities. Research software recorded in PURE also appear in reports that are used for research evaluations. Even if access to your research software is closed, you are required to register your research software in PURE. It is a record of the work that you have carried out.
 
 ### Benefits of recording your software in PURE
 
@@ -38,3 +22,5 @@ Just like your publications, research sofware that you have developed for your r
 3. You can fill in the form using the following manual and read more about the various metadata in use (generic and subject specific):
     * [software manual (EN)](../public/Register_Software_in_Pure.pdf)
 4. Click on "Save" to store the registration
+
+[^1]: “Researchers are responsible for ensuring that a description of archived and published data and software is included in the ‘Current Research Information System’ (CRIS) of VU Amsterdam. In most cases, this is done automatically. Researchers should be able to provide information about data and software in an Availability statement.” [Responsibility number 8 from the Research Data and Software Management Policy](https://rdm.vu.nl/public/policies-regulations/RDSM-policy-VU-EN-v3.0.pdf)
