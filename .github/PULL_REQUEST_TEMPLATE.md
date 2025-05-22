@@ -5,6 +5,7 @@
 ### Voice and Clarity
 - [ ] Text is primarily written in active voice
 - [ ] Acronyms are written in full at least once on the page where they are used
+- [ ] We refer to Handbook topics where possible (e.g. to the Handbook page about Yoda instead of some other information page about Yoda)
 
 ### Links and Referencing
 - [ ] All links use `https://` protocol
@@ -24,10 +25,12 @@
 - [ ] Topics are title capitalized
 - [ ] No `include` statements in topics
 - [ ] Only use regular markdown (no special Quarto code)
+- [ ] Topics are assigned at least one suitable category
 
 ## Guide-Specific Standards
 
 - [ ] Guides are phrased as questions the reader will find answers to
+- [ ] Where relevant, guides are assigned a suitable category
 
 ## Checklist Usage
 - Fill out this checklist when submitting a pull request
