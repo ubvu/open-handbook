@@ -25,7 +25,7 @@
 - [ ] Topics are title capitalized
 - [ ] No `include` statements in topics
 - [ ] Only use regular markdown (no special Quarto code)
-- [ ] Topics are assigned at least one suitable category
+- [ ] Where relevant, assign a suitable category
 
 ## Guide-Specific Standards
 
