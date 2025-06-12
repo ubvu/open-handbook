@@ -26,7 +26,16 @@ We will assess blogs on a case by case basis before including them. Please mind 
 
 ## Contributors
 
+There are many kinds of contributions. We see the following contribution ladder for the Research Support Handbook. 
 
+```mermaid
+flowchart LR
+    A[Reader] --> B[Contributor]
+    B --> C[Reviewer]
+    C --> D[Editor]
+```
+
+Contributions can be anything, from reporting typo's to opening up an issue, or drafting new pages. Reviewers help check new content for accuracy before it gets published. Editors take care of the entire handbook, ensure general consistency, and progress the handbook.
 
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
