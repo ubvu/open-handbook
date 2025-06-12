@@ -21,7 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -41,7 +61,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-122fe94fcf624de1be43613f8a809e32.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-e03f75832ce1b1966fdf122de628feb6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -134,14 +154,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#selecting-data-for-archiving" id="toc-selecting-data-for-archiving" class="nav-link active" data-scroll-target="#selecting-data-for-archiving">Selecting Data for Archiving</a></li>
-  <li><a href="#data-set-packaging-which-files-should-be-part-of-my-dataset" id="toc-data-set-packaging-which-files-should-be-part-of-my-dataset" class="nav-link" data-scroll-target="#data-set-packaging-which-files-should-be-part-of-my-dataset">Data Set Packaging: Which Files should be Part of my Dataset?</a></li>
-  <li><a href="#fair-data-principles" id="toc-fair-data-principles" class="nav-link" data-scroll-target="#fair-data-principles">FAIR data principles</a></li>
-  <li><a href="#unstructured-metadata" id="toc-unstructured-metadata" class="nav-link" data-scroll-target="#unstructured-metadata">Unstructured metadata</a></li>
-  <li><a href="#metadata-standards" id="toc-metadata-standards" class="nav-link" data-scroll-target="#metadata-standards">Metadata standards</a></li>
-  <li><a href="#controlled-vocabularies-classifications" id="toc-controlled-vocabularies-classifications" class="nav-link" data-scroll-target="#controlled-vocabularies-classifications">Controlled Vocabularies &amp; Classifications</a></li>
-  <li><a href="#metadata-levels" id="toc-metadata-levels" class="nav-link" data-scroll-target="#metadata-levels">Metadata levels</a></li>
-  <li><a href="#dataset-registration" id="toc-dataset-registration" class="nav-link" data-scroll-target="#dataset-registration">Dataset registration</a></li>
+  <li><a href="#fair-principles" id="toc-fair-principles" class="nav-link active" data-scroll-target="#fair-principles">FAIR Principles</a></li>
+  <li><a href="#storing-vs.-archiving-data" id="toc-storing-vs.-archiving-data" class="nav-link" data-scroll-target="#storing-vs.-archiving-data">Storing vs.&nbsp;Archiving Data</a></li>
+  <li><a href="#persistent-identifier" id="toc-persistent-identifier" class="nav-link" data-scroll-target="#persistent-identifier">Persistent Identifier</a></li>
+  <li><a href="#data-documentation" id="toc-data-documentation" class="nav-link" data-scroll-target="#data-documentation">Data Documentation</a></li>
+  <li><a href="#metadata" id="toc-metadata" class="nav-link" data-scroll-target="#metadata">Metadata</a></li>
+  <li><a href="#data-licensing" id="toc-data-licensing" class="nav-link" data-scroll-target="#data-licensing">Data Licensing</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/guides/document-and-preserve.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -175,6 +193,61 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="fair-principles" class="level2">
+<h2 class="anchored" data-anchor-id="fair-principles">FAIR Principles</h2>
+<p>This page discusses what the FAIR principles <span class="citation" data-cites="Wilkinson2016-lh">(<a href="#ref-Wilkinson2016-lh" role="doc-biblioref">Wilkinson et al. 2016</a>)</span> are, why they are important and how you can work in line with these principles at VU.</p>
+<section id="what-are-the-fair-principles" class="level4">
+<h4 class="anchored" data-anchor-id="what-are-the-fair-principles">What are the FAIR principles?</h4>
+<p>The FAIR principles were formulated in 2016 to guide researchers in increasing the <strong>F</strong>indability, <strong>A</strong>ccessibility, <strong>I</strong>nteroperability and <strong>R</strong>eusability of their data (see the <a href="https://doi.org/10.1038/sdata.2016.18">publication</a> in the journal Scientific Data and the <a href="https://force11.org/info/the-fair-data-principles/">summary</a> of the principles). The goal is to ensure that scholarly data can be used as widely as possible – accelerating scientific discoveries and benefiting society in the process.</p>
+<p>A lot of good resources exist already that explain the FAIR principles very well:</p>
+<ul>
+<li><a href="https://www.go-fair.org/fair-principles/">GO FAIR</a> provides a clear overview of the FAIR principles</li>
+<li><a href="https://the-turing-way.netlify.app/reproducible-research/rdm/rdm-fair">The Turing Way</a> has a great information page about FAIR, containing a lot of references to other useful sources</li>
+<li>The story <a href="https://zenodo.org/records/2248200">A FAIRy tale</a> explains all principles in an understable way</li>
+</ul>
+<p>The FAIR principles were rapidly adopted by Dutch and European funding agencies. If you receive a research grant from <a href="https://www.nwo.nl/en/research-data-management">NWO</a>, <a href="https://www.zonmw.nl/en/everything-about-fair-data-management">ZonMw</a>, or the <a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/programme-guide_horizon_en.pdf">European Commission</a>, you will be asked to make your data FAIR.</p>
+</section>
+<section id="how-can-you-benefit-from-working-in-line-with-the-fair-principles" class="level4">
+<h4 class="anchored" data-anchor-id="how-can-you-benefit-from-working-in-line-with-the-fair-principles">How can you benefit from working in line with the FAIR principles?</h4>
+<p>You do not need to apply all FAIR principles at once to start benefiting from making your data FAIR. Applying even just some of the principles will increase the visibility and impact of your data, leading to:</p>
+<ul>
+<li>Increased citations of the datasets themselves and your research</li>
+<li>Improved reproducibility of your research</li>
+<li>Compliance with funder and publisher requirements</li>
+</ul>
+<p>Making your data FAIR will also make it possible for you to easily find, access and reuse your own data in the future. You may be the first and most important beneficiary of making your own data FAIR.</p>
+</section>
+<section id="making-data-fair-how-to-get-started-in-three-easy-steps" class="level4">
+<h4 class="anchored" data-anchor-id="making-data-fair-how-to-get-started-in-three-easy-steps">Making data FAIR – how to get started in three easy steps?</h4>
+<section id="start-with-a-data-management-plan" class="level5">
+<h5 class="anchored" data-anchor-id="start-with-a-data-management-plan">Start with a data management plan</h5>
+<p>A DMP is a living document in which you specify what kinds of data you will use in your project, and how you will process, store and archive them. Preparing a data management plan should be your first step in the process to make data FAIR. The DMP template will ask questions that enable you to systematically address the things that need to be done to make your data FAIR. Writing a <a href="data-management-plan.qmd">DMP</a> is also a requirement from funding agencies and some faculties at VU Amsterdam. At VU Amsterdam, you can use <a href="https://dmponline.vu.nl/?perform_check=false">DMPonline</a> to create and share DMPs.</p>
+</section>
+<section id="describe-and-document-your-data" class="level5">
+<h5 class="anchored" data-anchor-id="describe-and-document-your-data">Describe and document your data</h5>
+<p>To be findable, data need to be described with appropriate metadata. Metadata can include keywords, references to related papers, the researchers’ <a href="https://libguides.vu.nl/orcid">ORCID identifiers</a>, and the codes for the grants that supported the research. You will need to provide such metadata when you are uploading data to a repository (see below). You increase findability by filling out as many metadata fields as possible and by providing rich descriptions in terminology that is common in your field.</p>
+<p>To be reusable, data need to be accompanied by documentation describing how the data was created, structured, processed, and so on. It is good practice to integrate writing documentation during the research process. It will be easier and take less time compared to when you try to do this at the end. Having documentation on the research process will also help you to redo parts of your data cleaning actions or data analysis if necessary.</p>
+<p>If you have questions about metadata and documentation, contact the <a href="mailto:rdm@vu.nl">RDM Support Desk</a> and we will be happy to help you and to provide advice.</p>
+</section>
+<section id="make-your-data-available-through-a-trustworthy-repository" class="level5">
+<h5 class="anchored" data-anchor-id="make-your-data-available-through-a-trustworthy-repository">Make your data available through a trustworthy repository</h5>
+<p>If you choose a repository that: assigns a persistent identifier to both the data and the metadata; attaches metadata to the data according to standard metadata schemas; releases data with a license; and provides access to the data and metadata via an open and standard communication protocol (such as http) – then your data will meet many, if not most, of the FAIR principles.</p>
+<p>VU Amsterdam provides three repositories which meets all of these conditions:</p>
+<ul>
+<li><a href="https://dataverse.nl/dataverse/vuamsterdam">DataverseNL</a></li>
+<li>Yoda - <a href="https://yoda.vu.nl/site/">Yoda information page</a> and <a href="https://commons.datacite.org/doi.org?query=client.uid:delft.vudata">Yoda publication platform</a></li>
+<li><a href="https://osf.io/institutions/vua">Open Science Framework</a> (OSF)</li>
+</ul>
+<p>Costs for using these repositories for datasets up to 500 GB are covered by the faculty. There are costs involved for you department or project if a datasets is larger than 500 GB. See the <a href="https://vu.nl/en/employee/research-data-support/research-archiving-storage-cost-model">storage cost model</a> for details.</p>
+</section>
+</section>
+<section id="what-if-i-cannot-share-my-data" class="level4">
+<h4 class="anchored" data-anchor-id="what-if-i-cannot-share-my-data">What if I cannot share my data?</h4>
+<p>Data do not need to be open to be FAIR. The FAIR principles allow for controlled access, which can be important for certain types of data, such as personal data, medical data, competitive company data. The guiding principle is always that data should be as “as open as possible, as closed as necessary”. If data cannot be openly shared, because they are too sensitive, then “<a href="https://www.nature.com/nature-index/news/what-scientists-need-to-know-about-fair-data">the FAIR approach would be to make the metadata publicly available and provide information about the conditions for accessing the data itself.</a>”</p>
+</section>
+</section>
+<section id="storing-vs.-archiving-data" class="level2">
+<h2 class="anchored" data-anchor-id="storing-vs.-archiving-data">Storing vs.&nbsp;Archiving Data</h2>
 <p>There is a difference between storing and archiving data. Storing refers to putting the data in a safe location while the research is ongoing. Because you are still working on the data, the data still change from time to time: they are cleaned, and analysed, and this analysis generates output. As the image below illustrates, storing could be like cooking a dish: you are cleaning and combining ingredients.</p>
 <p>Archiving, on the other hand, refers to putting the data in a safe place after the research is finished. The data are in a fixed state, they don’t change anymore. Archiving is done for verification purposes: so others can check that your research is sound. Or: it is done so that others can reuse the resulting dataset. There is also a <a href="../guides/publish-and-share.html#archiving-vs.-publishing-data">difference between archiving and publishing</a>, but in essence, archiving and publishing happen at a similar moment and for both, data do not change anymore.</p>
 <div class="quarto-figure quarto-figure-center">
@@ -184,15 +257,15 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <p><em>This illustration is created by Scriberia with The Turing Way community. Used under a CC-BY 4.0 licence. DOI: <a href="https://doi.org/10.5281/zenodo.3332807">10.5281/zenodo.3332807</a></em></p>
-<section id="selecting-data-for-archiving" class="level3">
-<h3 class="anchored" data-anchor-id="selecting-data-for-archiving">Selecting Data for Archiving</h3>
+<section id="selecting-data-for-archiving" class="level4">
+<h4 class="anchored" data-anchor-id="selecting-data-for-archiving">Selecting Data for Archiving</h4>
 <p>There are various reasons to <a href="../guides/publish-and-share.html#selecting-an-archive">archive your data</a>: replication, longitudinal research, data being unique or expensive to collect, re-usability and acceleration of research inside or outside your own discipline. It is VU policy to archive your data for (at least) 10 years after the last publication based on the dataset. Part of preparing your dataset for archiving is appraising and selecting your data.</p>
-<section id="make-a-selection-before-archiving-your-data" class="level4">
-<h4 class="anchored" data-anchor-id="make-a-selection-before-archiving-your-data">Make a selection before archiving your data</h4>
+<section id="make-a-selection-before-archiving-your-data" class="level5">
+<h5 class="anchored" data-anchor-id="make-a-selection-before-archiving-your-data">Make a selection before archiving your data</h5>
 <p>During your research you may accumulate a lot of data, some of which will be eligible for archiving. It is impossible to preserve all data infinitely. Archiving all digital data leads to high costs for storage itself and for maintaining and managing this ever-growing volume of data and their metadata; it may also lead to decline in discoverability (see the website of the <a href="https://www.dcc.ac.uk/resources/how-guides/appraise-select-data">Digital Curation Centre</a>). For those reasons, it is crucial that you make a selection.</p>
 </section>
-<section id="remove-redundant-and-sensitive-data" class="level4">
-<h4 class="anchored" data-anchor-id="remove-redundant-and-sensitive-data">Remove redundant and sensitive data</h4>
+<section id="remove-redundant-and-sensitive-data" class="level5">
+<h5 class="anchored" data-anchor-id="remove-redundant-and-sensitive-data">Remove redundant and sensitive data</h5>
 <p>Selecting data means making choices about what to keep for the long term, and what data to <a href="../guides/publish-and-share.html#selecting-an-archive">archive securely and what data to publish openly</a>. This means that you have to decide whether your dataset contains data that need to be removed or separated. Reasons to exclude data from publishing include (but are not limited to):</p>
 <ul>
 <li>data are redundant</li>
@@ -202,8 +275,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>In preparing your dataset for archiving, the first step is to determine which parts of your data are sensitive, which can then be separated from the other data. Redundant data can be removed altogether.</p>
 </section>
-<section id="different-forms-of-datasets-for-different-purposes" class="level4">
-<h4 class="anchored" data-anchor-id="different-forms-of-datasets-for-different-purposes">Different forms of datasets for different purposes</h4>
+<section id="different-forms-of-datasets-for-different-purposes" class="level5">
+<h5 class="anchored" data-anchor-id="different-forms-of-datasets-for-different-purposes">Different forms of datasets for different purposes</h5>
 <p>Once you have separated the sensitive data from the rest of your dataset, you have to think about what to do with these sensitive materials. In some cases they may be destroyed, but you may also opt for archiving multiple datasets. For example, you may want to archive your dataset in more than one form depending on the purpose. For example:</p>
 <ol type="1">
 <li>One for reusability to share</li>
@@ -211,8 +284,8 @@ ul.task-list li input[type="checkbox"] {
 </ol>
 <p>For the first, the non-sensitive data can be stored in an archive under restricted or open access conditions, so that you can share it and link it to publications. For the second, you need to make a separate selection, so the sensitive part can be stored safely in a secure archive (a so-called offline or dark archive). In the metadata of both archives you can create stable links between the two datasets using <a href="../topics/persistent-identifier.html">persistent identifiers</a>.</p>
 </section>
-<section id="what-to-appraise-for-archiving" class="level4">
-<h4 class="anchored" data-anchor-id="what-to-appraise-for-archiving">What to appraise for archiving</h4>
+<section id="what-to-appraise-for-archiving" class="level5">
+<h5 class="anchored" data-anchor-id="what-to-appraise-for-archiving">What to appraise for archiving</h5>
 <p>There are several factors that determine what data to select for archiving. For example, whether data are unique, expensive to reproduce, or if your funder requires that you make your data publicly available. This might also help you or your department to think about a standard policy or procedures for what needs to be kept, what is vital for reproducing research or reuse in future research projects.</p>
 <p>More information on selecting data:</p>
 <ul>
@@ -222,8 +295,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 </section>
-<section id="data-set-packaging-which-files-should-be-part-of-my-dataset" class="level3">
-<h3 class="anchored" data-anchor-id="data-set-packaging-which-files-should-be-part-of-my-dataset">Data Set Packaging: Which Files should be Part of my Dataset?</h3>
+<section id="data-set-packaging-which-files-should-be-part-of-my-dataset" class="level4">
+<h4 class="anchored" data-anchor-id="data-set-packaging-which-files-should-be-part-of-my-dataset">Data Set Packaging: Which Files should be Part of my Dataset?</h4>
 <p>A dataset consists of the following documents:</p>
 <ul>
 <li>Raw or cleaned data (if the cleaned data has been archived, the <a href="../guides/process-and-analyse.html#data-provenance">provenance</a> documentation is also required)</li>
@@ -234,6 +307,38 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>See the topic <a href="../topics/metadata.html">Metadata</a> for more information about documenting your data.</p>
 <p>Depending on the research project it may be that more than one dataset is stored in more than one repository. Make sure that each consortium partner that collects data also stores all necessary data that is required for transparency and verification. A <a href="../guides/plan-and-design.html#collaboration">Consortium Agreement</a> and <a href="../guides/plan-and-design.html#data-management-plan">Data Management Plan</a> will include information on who is responsible for archiving the data.</p>
+</section>
+</section>
+<section id="persistent-identifier" class="level2">
+<h2 class="anchored" data-anchor-id="persistent-identifier">Persistent Identifier</h2>
+<p>A Persistent Identifier (PID) is a durable reference to a digital dataset, document, website or other object. In the context of research data and software, it is essentially a URL that will never break. By using a Persistent Identifier, you make sure that your dataset will be findable well into the future when it is registered online (for example at <a href="https://datacite.org/">DataCite</a>. Another advantage is that it makes a digital object citable.</p>
+<section id="multiple-pid-systems" class="level4">
+<h4 class="anchored" data-anchor-id="multiple-pid-systems">Multiple PID systems</h4>
+<p>There are multiple PID systems, each with its own particular properties. Examples of widely used PIDs in the research domain include the following.</p>
+<ul>
+<li><strong>DOI</strong>: A <a href="https://www.doi.org/">Digital Object Identifier</a> can be used to refer to research data, research software and publications.</li>
+<li><strong>ORCiD</strong>: An <a href="https://info.orcid.org/researchers/">Open Researcher and Contributor ID</a> is used to create a researcher profile with a unique identification number.</li>
+<li><strong>ROR</strong>: The <a href="https://ror.org/">Research Organization Registry</a> is a global register with persistent identifiers for research institutes.</li>
+</ul>
+<p>See the <a href="https://www.pidwijzer.nl/en/">Persistent Identifier guide</a> of Netwerk Digitaal Erfgoed for a more elaborate overview. Apart from widely used domain-agnostic PIDs, there is a wide range of domain-specific unique identifiers that can be used. If you are interested in domain-specific identifiers, it is useful to ask colleagues in your department or discipline.</p>
+</section>
+<section id="persistent-identifiers-for-data-and-software-in-repositories" class="level4">
+<h4 class="anchored" data-anchor-id="persistent-identifiers-for-data-and-software-in-repositories">Persistent Identifiers for data and software in repositories</h4>
+<p>Persistent Identifiers can be assigned to datasets and software upon their deposit in a repository. In many repositories, this is a DOI. Data repositories are entitled to generate Persistent Identifiers for data and software. This is one of the reasons why <a href="../topics/data-archiving.html">archiving</a> and <a href="topics/data-publication.qmd">publishing</a> data and software has to be done in a repository. After the process of uploading data or software to a repository, a Persistent Identifier will be generated. Upon publishing the data or software, the DOI is registered online (usually at <a href="https://datacite.org/">DataCite</a> when it concerns a dataset).</p>
+<p>Some repositories enable their users to reserve a Persistent Identifier before the publishing process has finished, so that you can include the Persistent Identifier in a publication before the data will be actually published, or to include the Persistent Identifier in a readme file. This is for example possible in <a href="https://zenodo.org/">Zenodo</a>.</p>
+<p>The repositories offered by VU Amsterdam, <a href="https://publication.yoda.vu.nl/">Yoda</a> and <a href="https://dataverse.nl/dataverse/vuamsterdam">DataverseNL</a> provide DOIs for deposited datasets and software.</p>
+</section>
+<section id="creating-and-using-an-orcid" class="level4">
+<h4 class="anchored" data-anchor-id="creating-and-using-an-orcid">Creating and using an ORCiD</h4>
+<p>Researchers can use an <a href="https://info.orcid.org/researchers/">ORCiD</a> to identify their research output as their work. You can request an ORCiD yourself. Instructions for setting up an ORCiD and connecting it to your VU research profile in PURE are available in this <a href="https://libguides.vu.nl/orcid">ORCiD LibGuide</a>. An ORCiD is often asked for when you submit a publication or upload data or software to a repository. You can use your ORCiD record to create a research profile as well.</p>
+</section>
+<section id="using-a-ror" class="level4">
+<h4 class="anchored" data-anchor-id="using-a-ror">Using a ROR</h4>
+<p>Researchers can use the <a href="https://ror.org/">ROR</a> for <a href="https://ror.org/008xxew50">VU Amsterdam</a> when filling metadata forms for their research output to show that their work has been created within their employment at VU Amsterdam.</p>
+</section>
+</section>
+<section id="data-documentation" class="level2">
+<h2 class="anchored" data-anchor-id="data-documentation">Data Documentation</h2>
 <p>By creating documentation about your research data you can make it easier for yourself or for others to manage, find, assess and use your data. The process of documenting means to describe your data and the methods by which they were collected, processed and analysed. The documentation or descriptions are also referred to as metadata, i.e.&nbsp;data about data. These metadata can take various forms and can describe data on different levels.</p>
 <p>An example that is frequently used to illustrate the importance of metadata is the use of the label on a can of soup. The label tells you what kind of soup the can contains, what ingredients are used, who made it, when it expires and how you should prepare the soup for consumption.</p>
 <p>When you are documenting data, you should take into account that there are different kinds of metadata and that these metadata are governed by various standards. These include, but are not limited to:</p>
@@ -249,17 +354,16 @@ ul.task-list li input[type="checkbox"] {
 <figcaption>A layered diagram with the FAIR principles as the outermost layer, followed by an inner layer for Metadata. Within Metadata there are two separate cores, one for unstructured and one for structured metadata. Unstructured metadata contains README and codebook; Structured metadata contains Generic and Specific.</figcaption>
 </figure>
 </div>
-</section>
-<section id="fair-data-principles" class="level3">
-<h3 class="anchored" data-anchor-id="fair-data-principles">FAIR data principles</h3>
+<section id="fair-data-principles" class="level4">
+<h4 class="anchored" data-anchor-id="fair-data-principles">FAIR data principles</h4>
 <p>The FAIR data principles provide guidelines to improve the Findability, Accessibility, Interoperability, and Reuse of digital assets. The principles emphasise machine-actionability, i.e., the capacity of computational systems to find, access, interoperate, and reuse data with none or minimal human intervention.</p>
 <p>More information can be found in the section about the <a href="../topics/fair-principles.html">FAIR data principles</a>.</p>
 </section>
-<section id="unstructured-metadata" class="level3">
-<h3 class="anchored" data-anchor-id="unstructured-metadata">Unstructured metadata</h3>
+<section id="unstructured-metadata" class="level4">
+<h4 class="anchored" data-anchor-id="unstructured-metadata">Unstructured metadata</h4>
 <p>Most data documentation is an example of unstructured metadata. Unstructured metadata are mainly intended to provide more detailed information about the data and is primarily readable for humans. The type of research and the nature of the data influence what kind of unstructured metadata is necessary. Unstructured metadata are attached to the data in a file. The format of the file is chosen by the researcher. More explanation about structured metadata can be found on the <a href="../topics/metadata.html">metadata page</a>.</p>
-<section id="readme" class="level4">
-<h4 class="anchored" data-anchor-id="readme">README</h4>
+<section id="readme" class="level5">
+<h5 class="anchored" data-anchor-id="readme">README</h5>
 <p>A README file provides information about data and is intended to ensure that data can be correctly interpreted, by yourself or by others. A README file is required whenever you are archiving or publishing data.</p>
 <p>Example of READMEs</p>
 <ul>
@@ -268,8 +372,8 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="https://fgb-rdm.nl/rdm/archiving/ArchivingGuidelinesFull.html#subsection9">Guidelines for researchers of VU Amsterdam Faculty of Behavioural and Movement Sciences on what a README file should contain</a></li>
 </ul>
 </section>
-<section id="codebook" class="level4">
-<h4 class="anchored" data-anchor-id="codebook">Codebook</h4>
+<section id="codebook" class="level5">
+<h5 class="anchored" data-anchor-id="codebook">Codebook</h5>
 <p>A Codebook is another way to describe the contents, structure and layout of the data. A well documented codebook is intended to be complete and self-explanatory and contains information about each variable in a data file. A codebook must be submitted along with the data.</p>
 <p>There are several guides for creating a codebook available:</p>
 <ul>
@@ -278,6 +382,11 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="https://aph-qualityhandbook.org/set-up-conduct/methods-data-collection/2-2-quantitative-research/2-2-1-preparation/codebook/">Codebook - Amsterdam Public Health</a></li>
 <li><a href="https://ddialliance.org/ddi-codebook">DDI-Codebook - Data Documentation Initiative Alliance</a></li>
 </ul>
+</section>
+</section>
+</section>
+<section id="metadata" class="level2">
+<h2 class="anchored" data-anchor-id="metadata">Metadata</h2>
 <p>Metadata provide information about your data. Structured metadata are intended to provide this information in a standardised way. The structured metadata are readable for both humans and machines. It can be used by data catalogues, for example DataCite Commons.</p>
 <p>The standardisation of metadata involves the following aspects:</p>
 <ol type="1">
@@ -285,10 +394,8 @@ ul.task-list li input[type="checkbox"] {
 <li>Values: rules about the values that must be used within specific elements. Controlled vocabularies, classifications and Persistent Identifiers are used to reduce ambiguity and ensure consistency, for example by using a term from a controlled vocabulary like the Medical Subject HEadings (MeSH) as a <code>subject</code> and an Persistent Identifier such as an ORCID to identify a <code>person</code>.</li>
 <li>Formats: rules about the formats used to exchange metadata, for example JSON or XML.</li>
 </ol>
-</section>
-</section>
-<section id="metadata-standards" class="level3">
-<h3 class="anchored" data-anchor-id="metadata-standards">Metadata standards</h3>
+<section id="metadata-standards" class="level4">
+<h4 class="anchored" data-anchor-id="metadata-standards">Metadata standards</h4>
 <p>Metadata standards allow for easier exchange of metadata and harvesting of the metadata by search engines. Many certified archives use a metadata standard for the descriptions. If you choose a data repository or registry, you should find out which metadata standard they use. At VU Amsterdam the following standards are used:</p>
 <ul>
 <li>Yoda uses the <a href="https://schema.datacite.org">DataCite metadata standard</a></li>
@@ -297,8 +404,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>Many archives implement or make use of specific metadata standards. The UK Digital Curation Centre (DCC) provides an <a href="https://www.dcc.ac.uk/guidance/standards/metadata">overview of metadata standards for different disciplines</a>. The list is a great and useful resource in establishing and carrying out your research methodology.</p>
 </section>
-<section id="controlled-vocabularies-classifications" class="level3">
-<h3 class="anchored" data-anchor-id="controlled-vocabularies-classifications">Controlled Vocabularies &amp; Classifications</h3>
+<section id="controlled-vocabularies-classifications" class="level4">
+<h4 class="anchored" data-anchor-id="controlled-vocabularies-classifications">Controlled Vocabularies &amp; Classifications</h4>
 <p>Controlled vocabularies are lists of terms created by domain experts to refer to a specific phenomenon or event. Controlled vocabularies are intended to reduce ambiguity that is inherent in normal human languages where the same concept can be given different names and to ensure consistency. <a href="https://en.wikipedia.org/wiki/Controlled_vocabulary">Controlled vocabularies</a> are used in subject indexing schemes, subject headings, thesauri, taxonomies and other knowledge organisation systems. Some vocabularies are very internationally accepted and standardised and may even become an <a href="https://www.iso.org/standards.html">ISO standard</a> or a regional standard/classification. Controlled vocabularies can be broad in scope or very limited to a specific field. When a Data Management Plan template includes a question on the used ontology (if any), what is usually meant is: is there a specific vocabulary or classification system used? The National Bioinformatics Infrastructure Sweden <a href="https://nbisweden.github.io/module-metadata-dm-practices/02-ontologies/index.html">gives some more explanation about controlled vocabularies and ontologies</a>. In short, an ontology does not only describe terms, but also indicates relationships between these terms.</p>
 <p>Examples of controlled vocabularies are:</p>
 <ul>
@@ -310,8 +417,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>Many examples of vocabularies and classification systems can be found at the <a href="https://fairsharing.org/">FAIRsharing.org website</a>. It has a large list for multiple disciplines. If you are working on new concepts or new ideas and are using or creating your own ontology/terminology, be sure to include them as part of the metadata documentation in your dataset (for example as part of your <a href="../topics/data-documentation.html#codebook">codebook</a>).</p>
 </section>
-<section id="metadata-levels" class="level3">
-<h3 class="anchored" data-anchor-id="metadata-levels">Metadata levels</h3>
+<section id="metadata-levels" class="level4">
+<h4 class="anchored" data-anchor-id="metadata-levels">Metadata levels</h4>
 <p>Finally a distinction can be made on the level of description. Metadata can be about the data as a whole or about part of the data. It can depend on the research domain and the tools that are used on how many levels the data can be described. In repositories like Yoda and DataverseNL it is common practice to only create structured metadata on the level of the data as a whole. The Consortium of European Social Science Data Archives (CESSDA) explains this distinction for several types of data in their <a href="https://dmeg.cessda.eu/Data-Management-Expert-Guide/2.-Organise-Document/Documentation-and-metadata">Data Management Expert Guide</a>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -320,19 +427,93 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 </section>
-<section id="dataset-registration" class="level3">
-<h3 class="anchored" data-anchor-id="dataset-registration">Dataset registration</h3>
+<section id="dataset-registration" class="level4">
+<h4 class="anchored" data-anchor-id="dataset-registration">Dataset registration</h4>
 <p>When you want to make sure that your dataset is findable it is recommended that the elements of the description of your dataset are made according to a certain metadata standard that allows for easier exchange of metadata and harvesting of the metadata by search engines. Many certified archives use a metadata standard for the descriptions. If you choose a data repository or registry, you should find out which metadata standard they use. At VU Amsterdam the following standards are used:</p>
 <ul>
 <li><a href="../guides/publish-and-share.html#deposit-your-data">DataverseNL</a> and <a href="https://easy.dans.knaw.nl/ui/home">DANS</a> use the <a href="https://dublincore.org/specifications/dublin-core/">Dublin Core</a> metadata standard</li>
 <li>VU Amsterdam Research Portal <a href="../guides/publish-and-share.html#register-your-dataset-in-pure">PURE</a> uses the <a href="https://eurocris.org/services/main-features-cerif">CERIF</a> metadata standard</li>
 </ul>
 <p>Many archives implement or make use of specific metadata standards. The UK Digital Curation Centre (DCC) provides an overview of metadata standards for different disciplines. The list is a great and useful resource in establishing and carrying out your research methodology. Go to the <a href="https://www.dcc.ac.uk/guidance/standards/metadata">overview of metadata standards</a>. More important tips are available at <a href="../guides/publish-and-share.html#dataset-registration">Dataset &amp; Publication</a>.</p>
+</section>
+</section>
+<section id="data-licensing" class="level2">
+<h2 class="anchored" data-anchor-id="data-licensing">Data Licensing</h2>
+<section id="introduction" class="level4">
+<h4 class="anchored" data-anchor-id="introduction">Introduction</h4>
+<p>A data licence agreement is a legal instrument that lets others know what they can and cannot do with a particular dataset (and any documentation, scripts and metadata that are published with the data - information about software licensing can be found on the <a href="../topics/software-licensing.html">software licensing</a> page). It is important to consider what kind of limitations are relevant. Usually, at least the following questions are considered:</p>
+<ul>
+<li>Can people make copies or even distribute copies?</li>
+<li>Do others (and you) reusing the dataset need to acknowledge you as the author of the original dataset? (This is called Attribution.)</li>
+<li>Do others (and you) who reuse the dataset and/or make derivatives of the dataset need to share their work under a similar licence? (This is called Share-Alike.)</li>
+<li>Can others (and you) use your dataset commercially? (A restriction on commercial use is called Non-Commercial.)</li>
+<li>Can others (and you) create a new work based on the dataset? (This is called a Derivative.)</li>
+</ul>
+<p>The considerations above are the ‘building blocks’ that <a href="https://creativecommons.org/share-your-work/cclicenses/">Creative Commons licences</a> use. There are also other considerations, and also other licences.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../topics/../public/Open_Data_CC0_Wikidata.gif" class="img-fluid figure-img"></p>
+<figcaption>An image of open data, made up of public domain icons</figcaption>
+</figure>
+</div>
+</section>
+<section id="reusing-existing-data" class="level4">
+<h4 class="anchored" data-anchor-id="reusing-existing-data">Reusing existing data</h4>
+<p>If you wish to reuse data collected by others (this could be data you received from for example Statistics Netherlands or from a company, a dataset you have found in an online repository, commonly used databases for which VU Amsterdam has a licence, etc.), make sure that you read the licence or terms of use. Also make sure that you work with the data according to the licence or terms of use. This can mean different things depending on the licence, but common things to consider are for example:</p>
+<ul>
+<li>cite the data in an appropriate manner;</li>
+<li>do not share the data beyond the project/purpose for which you received them;</li>
+<li>share the outcome of your research based on the data under a similar licence;</li>
+<li>only use them for scientific purposes (and not for commercial purposes, for example).</li>
+</ul>
+<p>If you have questions about the legal context of using an existing dataset, you can contact the <a href="mailto:rdm@vu.nl">RDM Support Desk</a> or the legal experts at <a href="mailto:ixa@vu.nl">IXA VU</a>.</p>
+</section>
+<section id="licensing-data" class="level4">
+<h4 class="anchored" data-anchor-id="licensing-data">Licensing data</h4>
+<p>If you want to make <strong>your data</strong> available for other (research) purposes, it is important to apply a licence to it. Without a licence, it is impossible for others to reuse your data without your explicit approval. When you deposit your data in a repository, the repository will usually ask you to select a standard licence, or to create and add a custom licence yourself. If you need help with drawing up licence agreements, you can contact the <a href="https://vu.nl/en/research/portal/research-impact-support-portal/check-legal-support">VU’s legal office</a>.</p>
+<section id="dataversenl" class="level5">
+<h5 class="anchored" data-anchor-id="dataversenl">DataverseNL</h5>
+<p>In <a href="./dataversenl.qmd">DataverseNL</a> you can choose your terms of use when uploading data to the repository. The <a href="https://guides.dataverse.org/en/latest/user/dataset-management.html#terms">DataverseNL user guide</a> explains how licensing works in the repository.</p>
+</section>
+<section id="yoda" class="level5">
+<h5 class="anchored" data-anchor-id="yoda">Yoda</h5>
+<p>If you publish your data in Yoda, there is <a href="https://yoda.vu.nl/site/getting-started/selecting-license.html">guidance</a> available on how to choose a licence and how to customise licences.</p>
+</section>
+<section id="open-science-framework-osf" class="level5">
+<h5 class="anchored" data-anchor-id="open-science-framework-osf">Open Science Framework (OSF)</h5>
+<p>In OSF, you can apply a standard licence to your materials or upload your own custom licence. The <a href="https://help.osf.io/article/288-license-your-project#Upload-your-own-license">OSF user guide</a> explains both options.</p>
+</section>
+<section id="external-repositories" class="level5">
+<h5 class="anchored" data-anchor-id="external-repositories">External repositories</h5>
+<p>Some data repositories require you to use a certain licence if you want to deposit your data with them. At <a href="https://datadryad.org/">Dryad</a>, for example, all datasets are published under the terms of <a href="https://creativecommons.org/share-your-work/public-domain/cc0/">Creative Commons Zero</a> to minimise legal barriers and to maximise the impact for research and education. Some funders may also require that you publish the data as open data. <strong>Open data</strong> are data that can be freely used, re-used and redistributed by anyone - subject only, at most, to the requirement to attribute and share alike (<a href="https://opendatahandbook.org/guide/en/what-is-open-data/">Open Knowledge International definition)</a>.</p>
+</section>
+</section>
+<section id="additional-websites-and-tools" class="level4">
+<h4 class="anchored" data-anchor-id="additional-websites-and-tools">Additional websites and tools:</h4>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=_J26POpb-rQ&amp;feature=youtu.be">Explanation about copyrights and licences</a> by a professor from Leiden University (English subtitles available)</li>
+<li>The <a href="https://zenodo.org/record/4090923#.X6ugz1DvJPY">Guide to Creative Commons for Scholarly Publishing and Educational Resources</a> by NWO, VSNU and the University and Royal Libraries</li>
+<li><a href="https://www.dcc.ac.uk/guidance/how-guides/license-research-data">DCC how-to guide on licensing research data</a>, a guide that links to the Creative Commons website, where many terms are explained</li>
+<li><a href="https://opendatacommons.org/licenses/pddl/">Open Data Commons Public Domain Dedication and License (PDDL)</a></li>
+<li><a href="https://ufal.github.io/public-license-selector/">EUDAT B2SHARE licence selection wizard</a>, which Pawel Kamocki (et al.) released under an open source licence.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li>
+</ul>
+
 
 
 </section>
+</section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Wilkinson2016-lh" class="csl-entry" role="listitem">
+Wilkinson, Mark D, Michel Dumontier, Ijsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, et al. 2016. <span>“The <span>FAIR</span> Guiding Principles for Scientific Data Management and Stewardship.”</span> <em>Sci. Data</em> 3 (1): 160018.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>For the source code, see <a href="https://github.com/ufal/public-license-selector/" class="uri">https://github.com/ufal/public-license-selector/</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
