@@ -1,0 +1,21 @@
+---
+title: Technical details
+---
+
+This handbook is created with a variety of technical resources. This document outlines what technical resources are used to achieve different goals.
+
+## How is the website built?
+
+We use GitHub Actions to build the Quarto website. This automation runs every time something changes for the website – [the automation itself can be found on GitHub](https://github.com/ubvu/open-handbook/blob/main/.github/workflows/publish.yml).
+
+We use GitHub to subsequently make the website available on `https://rdm.vu.nl`.
+
+## Preview deployments
+
+We use Netlify to automatically build previews of pull requests on GitHub. This is provided by Liberate Science GmbH, and is not critical to the operation of `https://rdm.vu.nl`. It does, however, help the editors manage changes to the handbook.
+
+If this integration ever breaks, it can be fixed by one of the maintainers of [the handbook repository]({{< var repo-url >}}). To fix this, link your GitHub repository through Netlify directly and it will automatically deploy any pull requests - https://app.netlify.com/start.
+
+## Easy GitHub contributor
+
+The easy GitHub contributor is a small integration to make it easier to start contributing to the handbook. This service is provided by Liberate Science GmbH through Netlify. It is supported until September 1st, 2024 – after which it is no longer maintained.
