@@ -236,7 +236,7 @@ Sometimes you may want to preview the changes you are making to the handbook. Th
 
 ```sh
 # Clone the git repository
-git clone https://github.com/ubvu/open-handbook
+git clone https://github.com/ubvu/open-handbook open-handbook
 # Go into the right folder
 cd open-handbook
 # Render the handbook
