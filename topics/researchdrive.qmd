@@ -48,7 +48,7 @@ The costs of storing data in Research Drive are detailed on the 🔒 [VU website
 
 For transferring large amounts of data rclone is good option. The [SURF User Knowledge Base explains how](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/102827686/Access+Research+Drive+via+Rclone). 
 
-Rclone can also be used to [mount](https://rclone.org/commands/rclone_mount/) (make accessible via a drive letter in Windows) a Research Drive folder. This means you can directly access the data from tools such as R, without downloading the entire dataset first. This method has some limitations, but should work fine with smaller datasets (a few GB),
+Rclone can also be used to [mount](https://rclone.org/commands/rclone_mount/) (make accessible via a drive letter in Windows) a Research Drive folder. This means you can directly access the data from tools such as R, without downloading the entire dataset first. This method has some limitations, but should work fine with smaller datasets (a few GB).
 
 The SURF User Knowledge Base contains more [Tutorials](https://servicedesk.surf.nl/wiki/display/WIKI/Tutorials) on working with Research Drive.
 
