@@ -16,34 +16,34 @@ Typical use cases are:
 
 - Hosting a licensed server application for your research group, such as software for analysis, software needed to run lab equipment or elab journal software.
 
-- The Virtual Server can also be connected to [SciStor](./scistor.qmd) for environments that need fast access to large amounts of data. 
+- The Virtual Server can also be connected to [SciStor](../topics/scistor.qmd) for environments that need fast access to large amounts of data.
 
-Note that the SciCloud environment has no GPU, so it is not suitable for running graphical environments and machine learning. 
+Note that the SciCloud environment has no GPU, so it is not suitable for running graphical environments and machine learning.
 
 ## How to request access
 Via a form on 🔒[ServiceNow](https://services.vu.nl/esc), go to: IT > My work field > Research > SciCloud > Order SciCloud capacity
 
-After you have requested a SciCloud virtual server, IT for Research will schedule an interview to discuss your wishes. 
+After you have requested a SciCloud virtual server, IT for Research will schedule an interview to discuss your wishes.
 
 ## Are there costs involved?
-Configurations of a virtual server are based on standard "Building Blocks", combinations of the following two options can be purchased: 
+Configurations of a virtual server are based on standard "Building Blocks", combinations of the following two options can be purchased:
 
-• Building Block 1: 1 CPU core with 2 GB RAM 
+• Building Block 1: 1 CPU core with 2 GB RAM
 
-• Building Block 2: 1 CPU core with 4 GB RAM 
+• Building Block 2: 1 CPU core with 4 GB RAM
 
 Costs are calculated as: €1 per CPU per month, €1 per GB memory per month, €0.40 per GB storage per year (minimum 20GB)
 
 ## Getting started
 The IT for Research Team will set up the server(s) with the OS of your choice (Windows or Linux) and will set up a root account for you:
 
-- For access to a Linux server you will need to provide a personal SSH key protected with a passphrase. You will be able to access SSH from home. 
+- For access to a Linux server you will need to provide a personal SSH key protected with a passphrase. You will be able to access SSH from home.
 
 - For access to Windows servers use Remote Desktop Protocol (RDP), only via 🔒[eduVPN institute access](https://vu.eduvpn.nl).
 
 Root access to the server allows you to install all the software you need. Note that IT for Research can help you getting started and will automatically install OS security updates, but you are responsible for installing and maintaining software yourself.
 
-It is possible to take _snapshots_ or _clones_ of the virtual server yourself. This allows you to go back to a previously created configuration, if necessary. In addition, ITvO makes daily backups with which a virtual machine can be restored for up to 30 days on request. 
+It is possible to take _snapshots_ or _clones_ of the virtual server yourself. This allows you to go back to a previously created configuration, if necessary. In addition, ITvO makes daily backups with which a virtual machine can be restored for up to 30 days on request.
 
 ## Contact
 Wondering if SciCloud fits your research needs? Please contact [IT for Research](mailto:itvo.it@vu.nl)

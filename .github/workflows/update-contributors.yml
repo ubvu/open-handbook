@@ -25,7 +25,7 @@ jobs:
                     gh
                     allcontributors
             - name: Collect contributor data
-              run: Rscript -e 'allcontributors::add_contributors(files = c("about.qmd", "README.md"), num_sections = 1, alphabetical = TRUE)'
+              run: Rscript -e 'allcontributors::add_contributors(repo = ".", files = c("about.qmd", "README.md"), num_sections = 1)'
             - name: Create Pull Request
               uses: peter-evans/create-pull-request@v5
               with:
