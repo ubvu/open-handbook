@@ -24,6 +24,18 @@ Our requirements for blogs:
 
 We will assess blogs on a case by case basis before including them. Please mind that we may not immediately post your blog and submitting one does not entitle you to it being posted.
 
+## GitHub training sessions
+
+From time to time, we hold GitHub training sessions to familiarise colleagues with the contribution process. Get in touch with the [RDM Support Desk](mailto:rdm@vu.nl) to find out when they are held. 
+
+Write your name below if you are taking part in the session on 2 July 2025:
+
+* ...
+*
+*
+*
+*
+ 
 ## Contributors
 
 There are many kinds of contributions. We see the following contribution ladder for the Research Support Handbook. 
