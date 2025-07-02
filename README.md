@@ -47,6 +47,8 @@ Contributions can be anything, from reporting typo's to opening up an issue, or 
 
 All contributions to this project are gratefully acknowledged using the [`allcontributors` package](https://github.com/ropensci/allcontributors) following the [all-contributors](https://allcontributors.org) specification. Contributions of any kind are welcome!
 
+name: philipp, fav dessert: cheese platter
+
 <table>
 
 <tr>
