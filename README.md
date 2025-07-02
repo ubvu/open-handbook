@@ -1,3 +1,5 @@
+Icecream!
+
 # VU Research Support Handbook
 
 Welcome to the source code for VU Amsterdam Research Support Handbook! If you want to report a problem or suggest a new page, [you can do so using our contribution portal](https://ez-github-contributor.netlify.app/).
