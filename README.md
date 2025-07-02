@@ -2,6 +2,9 @@
 
 Welcome to the source code for VU Amsterdam Research Support Handbook! If you want to report a problem or suggest a new page, [you can do so using our contribution portal](https://ez-github-contributor.netlify.app/).
 
+## Mark's favourite desert
+I guess that would be chocolate
+
 ## What is this?
 
 This is a community led handbook for all things related to research at VU. The handbook is split into **topics** and **guides**.
