@@ -24,6 +24,10 @@ Our requirements for blogs:
 
 We will assess blogs on a case by case basis before including them. Please mind that we may not immediately post your blog and submitting one does not entitle you to it being posted.
 
+### Workshop 
+* Lucy O'Shea
+* Chessecake :) 
+
 ## Contributors
 
 There are many kinds of contributions. We see the following contribution ladder for the Research Support Handbook. 
