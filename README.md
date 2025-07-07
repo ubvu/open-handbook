@@ -41,13 +41,12 @@ flowchart LR
 Contributions can be anything, from reporting typo's to opening up an issue, or drafting new pages. Reviewers help check new content for accuracy before it gets published. Editors take care of the entire handbook, ensure general consistency, and progress the handbook.
 
 
+
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 
 All contributions to this project are gratefully acknowledged using the [`allcontributors` package](https://github.com/ropensci/allcontributors) following the [all-contributors](https://allcontributors.org) specification. Contributions of any kind are welcome!
-
-name: philipp, fav dessert: cheese platter
 
 <table>
 
@@ -99,6 +98,12 @@ name: philipp, fav dessert: cheese platter
 
 <tr>
 <td align="center">
+<a href="https://github.com/timveken">
+<img src="https://avatars.githubusercontent.com/u/127443807?v=4" width="100px;" alt=""/>
+</a><br>
+<a href="https://github.com/ubvu/open-handbook/commits?author=timveken">timveken</a>
+</td>
+<td align="center">
 <a href="https://github.com/jhrudey">
 <img src="https://avatars.githubusercontent.com/u/35424147?v=4" width="100px;" alt=""/>
 </a><br>
@@ -115,12 +120,6 @@ name: philipp, fav dessert: cheese platter
 <img src="https://avatars.githubusercontent.com/u/133665021?v=4" width="100px;" alt=""/>
 </a><br>
 <a href="https://github.com/ubvu/open-handbook/commits?author=Dimitri-Unger">Dimitri-Unger</a>
-</td>
-<td align="center">
-<a href="https://github.com/timveken">
-<img src="https://avatars.githubusercontent.com/u/127443807?v=4" width="100px;" alt=""/>
-</a><br>
-<a href="https://github.com/ubvu/open-handbook/commits?author=timveken">timveken</a>
 </td>
 <td align="center">
 <a href="https://github.com/Sergi095">
@@ -145,16 +144,34 @@ name: philipp, fav dessert: cheese platter
 
 <tr>
 <td align="center">
+<a href="https://github.com/CMOGUZ">
+<img src="https://avatars.githubusercontent.com/u/183478816?v=4" width="100px;" alt=""/>
+</a><br>
+<a href="https://github.com/ubvu/open-handbook/commits?author=CMOGUZ">CMOGUZ</a>
+</td>
+<td align="center">
 <a href="https://github.com/KirianneG">
 <img src="https://avatars.githubusercontent.com/u/188169814?v=4" width="100px;" alt=""/>
 </a><br>
 <a href="https://github.com/ubvu/open-handbook/commits?author=KirianneG">KirianneG</a>
 </td>
 <td align="center">
+<a href="https://github.com/MarkBruyneel">
+<img src="https://avatars.githubusercontent.com/u/18597279?v=4" width="100px;" alt=""/>
+</a><br>
+<a href="https://github.com/ubvu/open-handbook/commits?author=MarkBruyneel">MarkBruyneel</a>
+</td>
+<td align="center">
 <a href="https://github.com/olindensen77">
 <img src="https://avatars.githubusercontent.com/u/188169248?v=4" width="100px;" alt=""/>
 </a><br>
 <a href="https://github.com/ubvu/open-handbook/commits?author=olindensen77">olindensen77</a>
+</td>
+<td align="center">
+<a href="https://github.com/zesloth">
+<img src="https://avatars.githubusercontent.com/u/22980759?v=4" width="100px;" alt=""/>
+</a><br>
+<a href="https://github.com/ubvu/open-handbook/commits?author=zesloth">zesloth</a>
 </td>
 <td align="center">
 <a href="https://github.com/vansteph">
@@ -168,6 +185,10 @@ name: philipp, fav dessert: cheese platter
 </a><br>
 <a href="https://github.com/ubvu/open-handbook/commits?author=ELNijland">ELNijland</a>
 </td>
+</tr>
+
+
+<tr>
 <td align="center">
 <a href="https://github.com/gus-mxx">
 <img src="https://avatars.githubusercontent.com/u/143746708?u=b6552cd8b1dcd92976cd30bccbdc3283908e7e5b&v=4" width="100px;" alt=""/>
@@ -186,21 +207,11 @@ name: philipp, fav dessert: cheese platter
 </a><br>
 <a href="https://github.com/ubvu/open-handbook/commits?author=reinout538">reinout538</a>
 </td>
-</tr>
-
-
-<tr>
 <td align="center">
 <a href="https://github.com/MarcelRas-391">
 <img src="https://avatars.githubusercontent.com/u/188169871?v=4" width="100px;" alt=""/>
 </a><br>
 <a href="https://github.com/ubvu/open-handbook/commits?author=MarcelRas-391">MarcelRas-391</a>
-</td>
-<td align="center">
-<a href="https://github.com/CMOGUZ">
-<img src="https://avatars.githubusercontent.com/u/183478816?v=4" width="100px;" alt=""/>
-</a><br>
-<a href="https://github.com/ubvu/open-handbook/commits?author=CMOGUZ">CMOGUZ</a>
 </td>
 <td align="center">
 <a href="https://github.com/D-Unger">
@@ -216,10 +227,14 @@ name: philipp, fav dessert: cheese platter
 </td>
 <td align="center">
 <a href="https://github.com/davor-cc">
-<img src="https://avatars.githubusercontent.com/u/211969122?v=4" width="100px;" alt=""/>
+<img src="https://avatars.githubusercontent.com/u/211969122?u=1f0d6121e73aa762cfa63b576f1197569053966d&v=4" width="100px;" alt=""/>
 </a><br>
 <a href="https://github.com/ubvu/open-handbook/commits?author=davor-cc">davor-cc</a>
 </td>
+</tr>
+
+
+<tr>
 <td align="center">
 <a href="https://github.com/tmunker">
 <img src="https://avatars.githubusercontent.com/u/110609206?v=4" width="100px;" alt=""/>
@@ -232,6 +247,12 @@ name: philipp, fav dessert: cheese platter
 </a><br>
 <a href="https://github.com/ubvu/open-handbook/commits?author=Kostusas">Kostusas</a>
 </td>
+<td align="center">
+<a href="https://github.com/dtk-10">
+<img src="https://avatars.githubusercontent.com/u/218951954?v=4" width="100px;" alt=""/>
+</a><br>
+<a href="https://github.com/ubvu/open-handbook/commits?author=dtk-10">dtk-10</a>
+</td>
 </tr>
 
 </table>
@@ -239,6 +260,7 @@ name: philipp, fav dessert: cheese platter
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
 
 
 
