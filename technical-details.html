@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Research Support Handbook</title>
+<title>Technical details – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -41,10 +76,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-e03f75832ce1b1966fdf122de628feb6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="site_libs/quarto-contrib/react-17.0.2/react.min.js"></script>
-<script src="site_libs/quarto-contrib/react-dom-17.0.2/react-dom.min.js"></script>
-<script src="site_libs/quarto-contrib/babel-6.26.0/babel.min.js"></script>
-<script src="site_libs/quarto-contrib/babel-presets-1.0.0/babel-presets.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,20 +103,11 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-    tailwind.config = {
-        corePlugins: {
-            preflight: false,
-        },
-        prefix: 'tw-',
-    }
-</script>
 
 
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -161,23 +183,168 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#how-is-the-website-built" id="toc-how-is-the-website-built" class="nav-link active" data-scroll-target="#how-is-the-website-built">How is the website built?</a></li>
+  <li><a href="#preview-deployments" id="toc-preview-deployments" class="nav-link" data-scroll-target="#preview-deployments">Preview deployments</a></li>
+  <li><a href="#easy-github-contributor" id="toc-easy-github-contributor" class="nav-link" data-scroll-target="#easy-github-contributor">Easy GitHub contributor</a></li>
+  <li><a href="#repository-structure-overview" id="toc-repository-structure-overview" class="nav-link" data-scroll-target="#repository-structure-overview">Repository structure overview</a>
+  <ul class="collapse">
+  <li><a href="#key-files-and-directories" id="toc-key-files-and-directories" class="nav-link" data-scroll-target="#key-files-and-directories">Key files and directories</a></li>
+  <li><a href="#content-organization" id="toc-content-organization" class="nav-link" data-scroll-target="#content-organization">Content organization</a></li>
+  <li><a href="#technical-files" id="toc-technical-files" class="nav-link" data-scroll-target="#technical-files">Technical files</a></li>
+  </ul></li>
+  <li><a href="#about-quarto" id="toc-about-quarto" class="nav-link" data-scroll-target="#about-quarto">About Quarto</a>
+  <ul class="collapse">
+  <li><a href="#key-concepts" id="toc-key-concepts" class="nav-link" data-scroll-target="#key-concepts">Key concepts</a></li>
+  <li><a href="#useful-resources" id="toc-useful-resources" class="nav-link" data-scroll-target="#useful-resources">Useful resources</a></li>
+  </ul></li>
+  <li><a href="#common-errors-and-troubleshooting" id="toc-common-errors-and-troubleshooting" class="nav-link" data-scroll-target="#common-errors-and-troubleshooting">Common errors and troubleshooting</a>
+  <ul class="collapse">
+  <li><a href="#build-errors" id="toc-build-errors" class="nav-link" data-scroll-target="#build-errors">Build errors</a></li>
+  <li><a href="#style-issues" id="toc-style-issues" class="nav-link" data-scroll-target="#style-issues">Style issues</a></li>
+  <li><a href="#markdownlint-errors" id="toc-markdownlint-errors" class="nav-link" data-scroll-target="#markdownlint-errors">Markdownlint errors</a></li>
+  <li><a href="#how-to-disable-markdownlint-rules" id="toc-how-to-disable-markdownlint-rules" class="nav-link" data-scroll-target="#how-to-disable-markdownlint-rules">How to disable Markdownlint rules</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/technical-details.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Technical details</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<p></p><div id="react-Hero-i5aWaf9m"></div><p></p>
-<p></p><div id="react-Lifecycle-AgC0WsYC"></div><p></p>
-<p></p><div id="react-Features-IFrxVnP8"></div><p></p>
-<p></p><div id="react-Cta-aguMGinh"></div><p></p>
-<section id="upcoming-events" class="level2">
-<h2 class="anchored" data-anchor-id="upcoming-events">Upcoming events</h2>
-<iframe src="https://api3-eu.libcal.com/embed_mini_calendar.php?mode=month&amp;iid=4019&amp;cal_id=7052&amp;l=5&amp;tar=0&amp;h=350&amp;audience=&amp;c=&amp;z=32116" style="border-width:0;margin: 0px auto 0px auto; width: 100%" width="270" height="225" frameborder="0" scrolling="no">
-</iframe>
+    
+  
+    
+  </div>
+  
 
 
+</header>
+
+
+<p>This handbook is created with a variety of technical resources. This document outlines what technical resources are used to achieve different goals.</p>
+<section id="how-is-the-website-built" class="level2">
+<h2 class="anchored" data-anchor-id="how-is-the-website-built">How is the website built?</h2>
+<p>We use GitHub Actions to build the Quarto website. This automation runs every time something changes for the website – <a href="https://github.com/ubvu/open-handbook/blob/main/.github/workflows/publish.yml">the automation itself can be found on GitHub</a>.</p>
+<p>We use GitHub to subsequently make the website available on <code>https://rdm.vu.nl</code>.</p>
+</section>
+<section id="preview-deployments" class="level2">
+<h2 class="anchored" data-anchor-id="preview-deployments">Preview deployments</h2>
+<p>We use Netlify to automatically build previews of pull requests on GitHub. This is provided by Liberate Science GmbH, and is not critical to the operation of <code>https://rdm.vu.nl</code>. It does, however, help the editors manage changes to the handbook.</p>
+<p>If this integration ever breaks, it can be fixed by one of the maintainers of <a href="https://github.com/ubvu/open-handbook">the handbook repository</a>. To fix this, link your GitHub repository through Netlify directly and it will automatically deploy any pull requests - https://app.netlify.com/start.</p>
+</section>
+<section id="easy-github-contributor" class="level2">
+<h2 class="anchored" data-anchor-id="easy-github-contributor">Easy GitHub contributor</h2>
+<p>The easy GitHub contributor is a small integration to make it easier to start contributing to the handbook. This service is provided by Liberate Science GmbH through Netlify. It is supported until September 1st, 2024 – after which it is no longer maintained.</p>
+</section>
+<section id="repository-structure-overview" class="level2">
+<h2 class="anchored" data-anchor-id="repository-structure-overview">Repository structure overview</h2>
+<p>Understanding the repository structure helps you locate and modify the right files:</p>
+<section id="key-files-and-directories" class="level3">
+<h3 class="anchored" data-anchor-id="key-files-and-directories">Key files and directories</h3>
+<ul>
+<li><strong><code>index.qmd</code></strong> - Homepage content</li>
+<li><strong><code>_quarto.yml</code></strong> - Main Quarto configuration file</li>
+<li><strong><code>_variables.yml</code></strong> - Site-wide variables and settings</li>
+<li><strong><code>custom.scss</code></strong> - Custom styling</li>
+<li><strong><code>contributing.qmd</code></strong> - Contributing guidelines</li>
+<li><strong><code>editors-guide.qmd</code></strong> - Editor documentation</li>
+</ul>
+</section>
+<section id="content-organization" class="level3">
+<h3 class="anchored" data-anchor-id="content-organization">Content organization</h3>
+<ul>
+<li><strong><code>topics/</code></strong> - Individual topic pages (e.g., <code>data-management-plan.qmd</code>, <code>gdpr.qmd</code>)</li>
+<li><strong><code>guides/</code></strong> - Step-by-step guides organized by research lifecycle</li>
+<li><strong><code>blog/</code></strong> - Blog posts and announcements</li>
+<li><strong><code>public/</code></strong> - Static assets (images, PDFs, etc.)</li>
+</ul>
+</section>
+<section id="technical-files" class="level3">
+<h3 class="anchored" data-anchor-id="technical-files">Technical files</h3>
+<ul>
+<li><strong><code>_components/</code></strong> - React components for interactive elements</li>
+<li><strong><code>_extensions/</code></strong> - Quarto extensions (e.g., qreacto for React integration)</li>
+<li><strong><code>.github/workflows/</code></strong> - GitHub Actions for automated building and deployment</li>
+<li><strong><code>_site/</code></strong> - Generated website files (auto-generated, don’t edit directly)</li>
+</ul>
+</section>
+</section>
+<section id="about-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="about-quarto">About Quarto</h2>
+<p>This handbook is built using <a href="https://quarto.org/">Quarto</a>, a scientific and technical publishing system. Quarto allows you to create documents that combine text, code, and data. It supports multiple formats including websites, PDFs, and presentations.</p>
+<section id="key-concepts" class="level3">
+<h3 class="anchored" data-anchor-id="key-concepts">Key concepts</h3>
+<ul>
+<li><strong><code>.qmd</code> files</strong> - Quarto markdown files that combine markdown text with executable code</li>
+<li><strong>YAML front matter</strong> - Configuration at the top of files between <code>---</code> markers</li>
+<li><strong>Shortcodes</strong> - Special syntax for advanced features (e.g., <code>https://github.com/ubvu/open-handbook</code>)</li>
+</ul>
+</section>
+<section id="useful-resources" class="level3">
+<h3 class="anchored" data-anchor-id="useful-resources">Useful resources</h3>
+<ul>
+<li><a href="https://quarto.org/docs/">Quarto documentation</a></li>
+<li><a href="https://quarto.org/docs/websites/">Quarto guide for websites</a></li>
+<li><a href="https://quarto.org/docs/authoring/markdown-basics.html">Markdown basics</a></li>
+</ul>
+</section>
+</section>
+<section id="common-errors-and-troubleshooting" class="level2">
+<h2 class="anchored" data-anchor-id="common-errors-and-troubleshooting">Common errors and troubleshooting</h2>
+<section id="build-errors" class="level3">
+<h3 class="anchored" data-anchor-id="build-errors">Build errors</h3>
+<p><strong>Error: “File not found”</strong> - <strong>Cause</strong>: Missing file reference or incorrect path - <strong>Solution</strong>: Check file paths in links and references - <strong>Can ignore in PR?</strong> No, this will break the build</p>
+<p><strong>Error: “YAML parsing error”</strong> - <strong>Cause</strong>: Invalid YAML syntax in front matter or <code>_quarto.yml</code> - <strong>Solution</strong>: Check YAML indentation and syntax - <strong>Can ignore in PR?</strong> No, this will prevent building</p>
+<p><strong>Error: “Duplicate anchor”</strong> - <strong>Cause</strong>: Multiple headings with the same text create duplicate IDs - <strong>Solution</strong>: Make heading text unique or use custom IDs - <strong>Can ignore in PR?</strong> Yes, but should be fixed for better navigation</p>
+</section>
+<section id="style-issues" class="level3">
+<h3 class="anchored" data-anchor-id="style-issues">Style issues</h3>
+<p><strong>Info: “Missing alt text”</strong> - <strong>Cause</strong>: Images without alt text - <strong>Solution</strong>: Add descriptive alt text for accessibility - <strong>Can ignore in PR?</strong> Should be addressed for accessibility, but won’t break the build</p>
+</section>
+<section id="markdownlint-errors" class="level3">
+<h3 class="anchored" data-anchor-id="markdownlint-errors">Markdownlint errors</h3>
+<p>Markdownlint checks for consistent markdown formatting. This only runs if topics or guides are changed.</p>
+<p>Common errors include:</p>
+<p><strong>MD001: Heading levels should only increment by one level at a time</strong> - <strong>Cause</strong>: Skipping heading levels (e.g., H1 directly to H3) - <strong>Solution</strong>: Use proper heading hierarchy - <strong>Escape</strong>: Add <code>&lt;!-- markdownlint-disable MD001 --&gt;</code> before the heading</p>
+<p><strong>MD033: Inline HTML</strong> - <strong>Cause</strong>: Using HTML tags in markdown - <strong>Solution</strong>: Use markdown syntax instead, or use HTML when necessary - <strong>Escape</strong>: Add <code>&lt;!-- markdownlint-disable MD033 --&gt;</code> around HTML sections - <strong>Can ignore in PR?</strong> Usually yes, HTML is sometimes needed for advanced formatting</p>
+<p><strong>MD041: First line in file should be a top level heading</strong> - <strong>Cause</strong>: File doesn’t start with H1 heading - <strong>Solution</strong>: Add H1 heading or use YAML front matter - <strong>Escape</strong>: Add <code>&lt;!-- markdownlint-disable MD041 --&gt;</code> at the top - <strong>Can ignore in PR?</strong> Yes, especially for files with YAML front matter</p>
+<p>The full set of rules can be found in the <a href="https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md">markdownlint documentation</a>.</p>
+</section>
+<section id="how-to-disable-markdownlint-rules" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-disable-markdownlint-rules">How to disable Markdownlint rules</h3>
+<p>You can disable specific rules in a document in several ways:</p>
+<p><strong>For a single line:</strong></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- markdownlint-disable-next-line MD033 --&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="dt">&gt;</span>Some HTML content<span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>For a section:</strong></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- markdownlint-disable MD033 --&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="dt">&gt;</span>HTML content<span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">span</span><span class="dt">&gt;</span>More HTML<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- markdownlint-enable MD033 --&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>For an entire file:</strong></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- markdownlint-disable MD013 MD033 --&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>In a .markdownlint.json config file:</strong></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"MD013"</span><span class="fu">:</span> <span class="kw">false</span><span class="fu">,</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"MD033"</span><span class="fu">:</span> <span class="kw">false</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Please edit the existing <a href="./markdownlint.json"><code>.markdownlint.json</code> file</a> in case you want to ignore certain rules project-wide.</p>
+
+
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -610,7 +777,7 @@ ul.task-list li input[type="checkbox"] {
 </a>
   </li>  
 </ul>
-    <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/technical-details.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
@@ -620,360 +787,6 @@ ul.task-list li input[type="checkbox"] {
     </div>
   </div>
 </footer>
-<script type="text/babel" data-type="module" data-presets="env-plus,react,typescript">function Hero() {
-  return (
-    <>
-      <div className="tw-mx-auto tw-max-w-2xl tw-py-16">
-        <div className="tw-hidden sm:tw-mb-8 sm:tw-flex sm:tw-justify-center">
-          <div className="tw-relative tw-rounded-full tw-px-3 tw-py-1 tw-text-sm tw-leading-6 tw-text-gray-600 tw-ring-1 tw-ring-gray-900/10 hover:tw-ring-gray-900/20">
-            This is a new project. Missing something?{" "}
-            <a href="https://ez-github-contributor.netlify.app/" className="tw-font-semibold tw-text-sky-600">
-              <span className="tw-absolute tw-inset-0" aria-tw-hidden="true" />
-              Let us know <span aria-tw-hidden="true">&rarr;</span>
-            </a>
-          </div>
-        </div>
-        <div className="tw-text-center">
-          <h1 className="tw-text-4xl tw-font-bold tw-tracking-tight tw-text-gray-900 sm:tw-text-6xl">
-            Find quality information on research practices at VU Amsterdam
-          </h1>
-          <p className="tw-mt-6 tw-text-base tw-leading-8 tw-text-gray-600">
-            The Research Support Handbook helps you learn about topics relevant to your research. It also guides you through specific issues you might encounter in your modern day research. All of the information on these pages is curated by VU staff, for VU staff. The handbook is updated on a daily basis.
-          </p>
-          <div className="tw-mt-10 tw-flex tw-items-center tw-justify-center tw-gap-x-6">
-            <a
-              href="./topics.html"
-              className="tw-rounded-md tw-bg-sky-600 tw-px-3.5 tw-py-2.5 tw-text-sm tw-font-semibold tw-text-white tw-shadow-sm hover:tw-bg-sky-500 focus-visible:tw-outline focus-visible:tw-outline-2 focus-visible:tw-outline-offset-2 focus-visible:tw-outline-sky-600"
-            >
-              View topics
-            </a>
-            <a
-              href="./guides.html"
-              className="tw-text-sm tw-font-semibold tw-leading-6 tw-text-gray-900"
-            >
-              View guides
-            </a>
-          </div>
-        </div>
-      </div>
-    </>
-  );
-}
-ReactDOM.render( <React.StrictMode>    <Hero/>  </React.StrictMode>,  document.getElementById("react-Hero-i5aWaf9m") );</script>
-<script type="text/babel" data-type="module" data-presets="env-plus,react,typescript">// import { CheckIcon } from '@heroicons/react/24/solid'
-
-const CheckIcon = () => {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke-width="1.5"
-      stroke="currentColor"
-      class="tw-size-6 tw-text-white"
-    >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="m4.5 12.75 6 6 9-13.5"
-      />
-    </svg>
-  );
-};
-
-// complete, current, upcoming
-const steps = [
-  { id: "01", name: "Discover & Initiate", href: "./guides.html#category=Discover%20%26%20Initiate", status: "upcoming" },
-  { id: "02", name: "Plan & Design", href: "./guides.html#category=Plan%20%26%20Design", status: "upcoming" },
-  { id: "03", name: "Collect & Store", href: "./guides.html#category=Collect%20%26%20Store", status: "upcoming" },
-  { id: "04", name: "Process & Analyse", href: "./guides.html#category=Process%20%26%20Analyse", status: "upcoming" },
-  { id: "05", name: "Document & Preserve", href: "./guides.html#category=Document%20%26%20Preserve", status: "upcoming" },
-  { id: "06", name: "Publish & Share", href: "./guides.html#category=Publish%20%26%20Share", status: "upcoming" },
-];
-
-// Adapted from
-// https://tailwindui.com/components/application-ui/navigation/progress-bars#component-ebd95eb76948b1f97351bc44b63203aa
-function Lifecycle() {
-  return (
-    <>
-      <div className="tw-mx-auto tw-max-w-7xl tw-px-6 lg:tw-px-8">
-        <div className="tw-mx-auto tw-max-w-2xl sm:tw-text-center">
-          <h2 className="tw-mt-2 tw-text-3xl tw-font-bold tw-tracking-tight tw-text-sky-900 sm:tw-text-4xl">
-            Research Life Cycle
-          </h2>
-          <p className="tw-m-6 tw-text-lg tw-leading-8 tw-text-gray-600">
-            Find the relevant guides for the stage of your research.
-          </p>
-        </div>
-      </div>
-      <ol
-        role="list"
-        className="lg:-tw-ml-32 tw-divide-y tw-divide-gray-300 tw-rounded-md tw-border tw-border-gray-300 lg:tw-flex lg:tw-divide-y-0 tw-list-none"
-      >
-        {steps.map((step, stepIdx) => (
-          <li key={step.name} className="tw-relative md:tw-flex md:tw-flex-1">
-            {step.status === "complete" ? (
-              <a
-                href={step.href}
-                className="tw-group tw-flex tw-w-full tw-items-center"
-              >
-                <span className="tw-flex tw-items-center tw-px-6 tw-py-4 tw-text-sm tw-font-medium">
-                  <span className="tw-flex tw-size-10 tw-min-w-10 tw-items-center tw-justify-center tw-rounded-full tw-bg-sky-600 group-hover:tw-bg-sky-800">
-                    <CheckIcon
-                      aria-hidden="true"
-                      className="tw-size-6 tw-text-white"
-                    />
-                  </span>
-                  <span className="tw-ml-4 tw-text-sm tw-font-medium tw-text-gray-900">
-                    {step.name}
-                  </span>
-                </span>
-              </a>
-            ) : step.status === "current" ? (
-              <a
-                href={step.href}
-                aria-current="step"
-                className="tw-flex tw-items-center tw-px-6 tw-py-4 tw-text-sm tw-font-medium"
-              >
-                {/* <span className="tw-flex tw-size-10 tw-w-0 tw-items-center tw-justify-center tw-rounded-full tw-border-2 tw-border-sky-600">
-                  <span className="tw-text-sky-600">{step.id}</span>
-                </span> */}
-                <span className="tw-ml-4 tw-text-sm tw-font-medium tw-text-sky-600">
-                  {step.name}
-                </span>
-              </a>
-            ) : (
-              <a href={step.href} className="tw-group tw-flex tw-items-center">
-                <span className="tw-flex tw-items-center tw-px-6 tw-py-4 tw-text-sm tw-font-medium">
-                  <span className="tw-flex tw-size-10 tw-0 tw-items-center tw-justify-center tw-rounded-full tw-border-2 tw-border-gray-300 group-hover:tw-border-gray-400">
-                    <span className="tw-text-gray-500 group-hover:tw-text-gray-900">
-                      {step.id}
-                    </span>
-                  </span>
-                  <span className="tw-ml-4 tw-text-sm tw-font-medium tw-text-gray-500 group-hover:tw-text-gray-900">
-                    {step.name}
-                  </span>
-                </span>
-              </a>
-            )}
-
-            {stepIdx !== steps.length - 1 ? (
-              <>
-                {/* Arrow separator for lg screens and up */}
-                <div
-                  aria-hidden="true"
-                  className="tw-absolute tw-top-0 tw-right-0 tw-hidden tw-h-full tw-w-5 lg:tw-block"
-                >
-                  <svg
-                    fill="none"
-                    viewBox="0 0 22 80"
-                    preserveAspectRatio="none"
-                    className="tw-size-full tw-text-gray-300"
-                  >
-                    <path
-                      d="M0 -2L20 40L0 82"
-                      stroke="currentcolor"
-                      vectorEffect="non-scaling-stroke"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
-              </>
-            ) : null}
-          </li>
-        ))}
-      </ol>
-    </>
-  );
-}
-ReactDOM.render( <React.StrictMode>    <Lifecycle/>  </React.StrictMode>,  document.getElementById("react-Lifecycle-AgC0WsYC") );</script>
-<script type="text/babel" data-type="module" data-presets="env-plus,react,typescript">const features = [
-  {
-    name: <p className="tw-inline"><a href="https://rdm.vu.nl/contributing.html">Quality control</a></p>,
-    description: "We learn each other's best practices.",
-    icon: () => (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        className="tw-w-6 tw-h-6 tw-stroke-sky-600 tw-mr-1"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
-        />
-      </svg>
-    ),
-  },
-  {
-    name: <p className="tw-inline"><a href="https://rdm.vu.nl/blog.html">Responsive</a></p>,
-    description: "With your help, we can respond to changes on a daily basis.",
-    icon: () => (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        className="tw-w-6 tw-h-6 tw-stroke-sky-600 tw-mr-1"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10"
-        />
-      </svg>
-    ),
-  },
-  {
-    name: <p className="tw-inline"><a href="https://github.com/ubvu/open-handbook">Open source</a></p>,
-    description: "Share and copy without permission. Join the discussions.",
-    icon: () => (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        className="tw-w-6 tw-h-6 tw-stroke-sky-600 tw-mr-1"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z"
-        />
-      </svg>
-    ),
-  },
-  {
-    name: <p className="tw-inline"><a href="https://rdm.vu.nl/editors-guide.html">Quality control</a></p>,
-    description: "All content is reviewed periodically by VU specialists.",
-    icon: () => (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        className="tw-w-6 tw-h-6 tw-stroke-sky-600 tw-mr-1"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"
-        />
-      </svg>
-    ),
-  },
-  {
-    name: "Flexible",
-    description: "Shape the content to your needs. Find topics or guides.",
-    icon: () => (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        className="tw-w-6 tw-h-6 tw-stroke-sky-600 tw-mr-1"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 0 1-.657.643 48.39 48.39 0 0 1-4.163-.3c.186 1.613.293 3.25.315 4.907a.656.656 0 0 1-.658.663v0c-.355 0-.676-.186-.959-.401a1.647 1.647 0 0 0-1.003-.349c-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401v0c.31 0 .555.26.532.57a48.039 48.039 0 0 1-.642 5.056c1.518.19 3.058.309 4.616.354a.64.64 0 0 0 .657-.643v0c0-.355-.186-.676-.401-.959a1.647 1.647 0 0 1-.349-1.003c0-1.035 1.008-1.875 2.25-1.875 1.243 0 2.25.84 2.25 1.875 0 .369-.128.713-.349 1.003-.215.283-.4.604-.4.959v0c0 .333.277.599.61.58a48.1 48.1 0 0 0 5.427-.63 48.05 48.05 0 0 0 .582-4.717.532.532 0 0 0-.533-.57v0c-.355 0-.676.186-.959.401-.29.221-.634.349-1.003.349-1.035 0-1.875-1.007-1.875-2.25s.84-2.25 1.875-2.25c.37 0 .713.128 1.003.349.283.215.604.401.96.401v0a.656.656 0 0 0 .658-.663 48.422 48.422 0 0 0-.37-5.36c-1.886.342-3.81.574-5.766.689a.578.578 0 0 1-.61-.58v0Z"
-        />
-      </svg>
-    ),
-  },
-  {
-    name: "One stop shop",
-    description: "Find all the information you need in one place.",
-    icon: () => (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="tw-w-6 tw-h-6 tw-stroke-sky-600 tw-mr-1"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z"
-        />
-      </svg>
-    ),
-  },
-];
-
-function Features() {
-  return (
-    <>
-      <div className="tw-bg-white tw-py-12 sm:tw-py-16">
-        <div className="tw-mx-auto tw-max-w-7xl tw-px-6 lg:tw-px-8">
-          <div className="tw-mx-auto tw-max-w-2xl sm:tw-text-center">
-            <h2 className="tw-mt-2 tw-text-3xl tw-font-bold tw-tracking-tight tw-text-sky-900 sm:tw-text-4xl">
-              Benefits
-            </h2>
-            <p className="tw-mt-6 tw-text-lg tw-leading-8 tw-text-gray-600">
-              Why use the Research Support Handbook?
-            </p>
-          </div>
-        </div>
-        <div className="tw-mx-auto tw-mt-16 tw-max-w-7xl tw-px-6 sm:tw-mt-20 md:tw-mt-24 lg:tw-px-8">
-          <dl className="tw-mx-auto tw-grid tw-max-w-2xl tw-grid-cols-1 tw-gap-x-6 tw-gap-y-10 tw-text-base tw-leading-7 tw-text-gray-600 sm:tw-grid-cols-2 lg:tw-mx-0 lg:tw-max-w-none lg:tw-grid-cols-3 lg:tw-gap-x-8 lg:tw-gap-y-16">
-            {features.map((feature) => {
-              const Component = feature.icon;
-              return (
-                <div key={feature.name} className="tw-flex tw-flex-col">
-                  <dt className="tw-inline tw-font-semibold tw-text-gray-900">
-                    <Component aria-hidden="true" />
-                    {feature.name}
-                  </dt>{" "}
-                  <dd className="tw-inline">{feature.description}</dd>
-                </div>
-              );
-            })}
-          </dl>
-        </div>
-      </div>
-    </>
-  );
-}ReactDOM.render( <React.StrictMode>    <Features/>  </React.StrictMode>,  document.getElementById("react-Features-IFrxVnP8") );</script>
-<script type="text/babel" data-type="module" data-presets="env-plus,react,typescript">function Cta() {
-  return (
-    <>
-      <div className="tw-bg-sky-700 tw-rounded-xl tw-mb-8">
-        <div className="tw-px-6 tw-py-24 sm:tw-px-6 sm:tw-py-32 lg:tw-px-8">
-          <div className="tw-mx-auto tw-max-w-2xl tw-text-center">
-            <h2 className="tw-text-3xl tw-font-bold tw-tracking-tight tw-text-white sm:tw-text-4xl">
-              Learn practices.
-              <br />
-              Share practices.
-            </h2>
-            <p className="tw-mx-auto tw-mt-6 tw-max-w-xl tw-text-lg tw-leading-8 tw-text-sky-200">
-              Contribute by exploring. The rest will follow.
-            </p>
-            <div className="tw-mt-10 tw-flex tw-items-center tw-justify-center tw-gap-x-6">
-              <a
-                href="./topics.html"
-                className="tw-rounded-md tw-bg-white tw-px-3.5 tw-py-2.5 tw-text-sm tw-font-semibold tw-text-sky-600 tw-shadow-sm hover:tw-bg-sky-50 focus-visible:tw-outline focus-visible:tw-outline-2 focus-visible:tw-outline-offset-2 focus-visible:tw-outline-white"
-              >
-                View topics
-              </a>
-              <a
-                href="./guides.html"
-                className="tw-text-sm tw-font-semibold tw-leading-6 tw-text-white"
-              >
-                View guides
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
-  );
-}
-ReactDOM.render( <React.StrictMode>    <Cta/>  </React.StrictMode>,  document.getElementById("react-Cta-aguMGinh") );</script>
 
 
 
