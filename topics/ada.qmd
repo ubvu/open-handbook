@@ -11,7 +11,7 @@ ADA is a high performance compute (HPC) cluster for research at the Vrije Univer
 
 ADA is a heterogenious cluster composed of partitions and servers financed by various VU research departments and the VU IT department. The cluster is particularly useful for executing multi-node computations that are not possible on the general VU compute servers but do not require the scale of the National Supercomputer, Snellius.
 
-ADA users are granted access to a set of compute partitions based on the resources owned by their research department. Users not affiliated with a research department that owns cluster hardware can get access to the general (IT) partition.
+ADA users are granted access to a set of compute partitions based on the resources owned by their research department. Users not affiliated with a research department that owns cluster hardware can get access to the community partition.
 
 A large collection of tools, compilers and libraries is available for your analysis, and your data on [SciStor](../topics/SciStor.qmd) are directly accessible from ADA.
 
@@ -28,7 +28,7 @@ Be aware that it is generally not possible to run graphical desktop applications
 CLI and scripting skills are very useful to have for every researcher, but  if you feel you do not have the time to learn these skills there might be other options available such as [the VU Compute Hub](https://hub.compute.vu.nl) or [SURF Research Cloud](../topics/researchcloud.qmd) where you can run some graphical tools.
 
 ### GPUs in ADA
-Some workloads, such as Machine Learning, require a GPU. At the moment the compute nodes in the ADA general (IT) partition do not have GPUs. If your department also has no dedicated compute nodes with GPUs, you can apply for access to the national HPC infrastructure [Snellius](../topics/snellius.qmd) or consider [buying ADA compute nodes](#buying-dedicated-compute-nodes) with GPU nodes for your department.
+Some workloads, such as Machine Learning, require a GPU. At the moment only some of the compute nodes in the ADA community partition have GPUs, the availability is not sufficient for everyone at any given time. If your workload requires more extensive use of GPUs and your department has no dedicated compute nodes with GPUs, you can apply for access to the national HPC infrastructure [Snellius](../topics/snellius.qmd) or consider [buying ADA compute nodes](#buying-dedicated-compute-nodes) with GPUs for your department. 
 
 ## How to request access
 
