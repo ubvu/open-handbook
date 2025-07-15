@@ -11,6 +11,17 @@ website:
   repo-actions: [edit, issue]
   page-navigation: true
   bread-crumbs: true
+  sidebar:
+    - id: sb-yoda # will show up automatically on pages referenced in contents. 
+      style: floating
+      search: true
+      contents: 
+        - manuals/yoda/index.qmd
+        - section: Yoda Portal
+          contents: manuals/yoda/yoda_portal/*.qmd # Note the sorting is by filename
+        - section: Data Transfer
+          contents: manuals/yoda/yoda_data_transfer/*.qmd
+
   navbar:
     background: "#0080c9"
     logo: public/VU-logo-Dia-positief.png
@@ -29,6 +40,8 @@ website:
         file: guides.qmd
       - text: Blog
         file: blog.qmd
+      - text: Manuals
+        file: manuals.qmd
       - contributing.qmd
     tools:
       - icon: github
@@ -68,3 +81,5 @@ filters:
   - utils/include-files.lua
 execute:
   freeze: auto
+
+date: last-modified

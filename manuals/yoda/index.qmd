@@ -1,0 +1,24 @@
+---
+title: Yoda Manuals
+categories: [yoda]
+listing:
+  contents: 
+    - ./*.qmd
+    - yoda_portal/*.qmd
+    - yoda_data_transfer/*.qmd
+  filter-ui: [title]
+  type: grid
+  fields: [title,description]
+  sort: false
+---
+
+::: {.callout-tip}
+
+Here you can find information on how to get started with Yoda. 
+
+:::
+
+You can find more information on using Yoda on the [SURF User Knowledge base](https://servicedesk.surf.nl/wiki/display/WIKI/Yoda+Hosting) and the [Yoda site of Utrecht University](https://www.uu.nl/en/research/Yoda).
+
+The [Yoda Topic page](/topics/yoda.qmd) contains information on requesting storage space for your Yoda project.
+<!-- Actually, it does not, https://yoda.vu.nl/site/getting-started/requesting-space.html needs to be moved there. -->
