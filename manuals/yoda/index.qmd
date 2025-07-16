@@ -6,7 +6,7 @@ listing:
     - ./*.qmd
     - yoda_portal/*.qmd
     - yoda_data_transfer/*.qmd
-  filter-ui: [title]
+  filter-ui: true
   type: grid
   fields: [title,description]
   sort: false
