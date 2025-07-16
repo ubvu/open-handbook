@@ -3,9 +3,11 @@ title: Data access on Linux
 categories: [yoda]
 ---
 
-# Connecting to the Yoda Network Disk using GNOME files
+This page explains how to access your Yoda data via the WebDAV interface on Linux.
 
-GNOME users can connect to the Yoda Network Disk with GNOME Files (also known as Nautilus in older versions of GNOME).
+# Connecting to the Yoda WebDAV interface using GNOME files
+
+GNOME users can connect to the Yoda WebDAV interface with GNOME Files (also known as Nautilus in older versions of GNOME).
 
 ![alt text](/public/manuals/yoda/linux-connect-to-server.png "GNOME Files screenshot")
 
@@ -19,9 +21,9 @@ Then click on the Connect button.
 You will be prompted for a name and password.
 Username is your email. Set a [Data Access Password](./yoda_dap.qmd) and copy it to the Password field.
 
-# Connecting to the Yoda Network Disk using davfs2
+# Connecting to the Yoda WebDAV interface using davfs2
 
-This page describes how to connect to the Yoda Network Disk on a Linux system using davfs2. It assumes familiarity
+This page describes how to connect to the Yoda WebDAV interface on a Linux system using davfs2. It assumes familiarity
 with using commandline tools. The instructions are suitable for RedHat-based distributions (e.g. Fedora or CentOS) and for
 Debian-based distributions (e.g. Ubuntu).
 
@@ -57,18 +59,18 @@ parameter *delay_upload* is set to 0 (zero). This limits the risk of data loss f
 large file transfers.
 
 Open the /etc/fstab file in a text editor (e.g. `sudo vi /etc/fstab`) and add a configuration
-line for the Yoda Network Disk:
+line for Yoda:
 
 `https://data.yoda.vu.nl  /mnt davfs user,auto,uid=1000,gid=1000 0 0`
 
 And adjust the parameters as needed:
-- If you'd like to mount the Yoda Network Disk in a different location, replace `/mnt` with a different local directory.
+- If you'd like to mount the Yoda in a different location, replace `/mnt` with a different local directory.
 - Replace the `uid` and `gid` parameters with your uid and gid, as shown by the `id` command.
-- If you don't want the Yoda Network Disk to be mounted automatically after your system starts, remove "auto," from the options.
+- If you don't want Yoda to be mounted automatically after your system starts, remove "auto," from the options.
 
 First set a [Data Access Password](./yoda_dap.qmd).
 
-Now use a text editor to create a secrets file, which contains your Yoda Network Disk URL, Yoda user name and password, separated by spaces.
+Now use a text editor to create a secrets file, which contains your Yoda WebDAV URL, Yoda user name and password, separated by spaces.
 If you are an employee or student at Vrije Universiteit, your user name is your VU email address (in lowercase) and your password
 is your [Data Access Password](./yoda_dap.qmd). External users have usually received their user name via email, along with a link to set their password. 
 Example of a secrets file: 
@@ -83,11 +85,11 @@ sudo install -m 0600 -o root -g root secrets /etc/davfs2/secrets
 rm secrets
 ```
 
-## Mounting the Yoda Network Disk
+## Mounting the Yoda WebDAV interface
 
 The disk should be mounted automatically after a reboot if you have configured the `auto` option in `/etc/fstab`.
 
-To manually mount the Yoda Network Disk:
+To manually mount the Yoda WebDAV interface:
 - On Debian/Ubuntu: `mount /mnt`
 - On RedHat/CentOS/Fedora: `sudo mount /mnt` (you can ignore any warnings about writing to the mtab file)
 
