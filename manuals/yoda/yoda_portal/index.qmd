@@ -19,35 +19,23 @@ See: [Managing groups, users and access rights](./yoda_group_manager.qmd)
 ### Your data in the Yoda Portal
 Each group in Yoda has access to two main data folders:
 
-#### Research
+#### Research (active data)
 The main folder ("research-...") contains current research data that researchers
 collaborate on. Data is kept in subfolders. The subfolders can be organized according
 to the needs of the research Group.
 
 You can also drag-and-drop files to your research folder or download individual files.
 
-![img.png](screenshots/research-drag-drop.png)
+You can [Add metadata](./yoda_workflow_metadata.qmd) to a folder at any time to describe the dataset contained in that folder and its subfolders.
 
-#### Archiving
-When you know a (subset of) your data must be [archived](/topics/data-archiving.qmd) for the long term, the data in a subfolder can be deposited so that it is
-kept for 10 years or longer. 
+When you know a (subset of) your data must be [archived](/topics/data-archiving.qmd) for the long term, the data in a subfolder can be [submitted to the Yoda Vault](./yoda_workflow_vault_archiving.qmd) so that it is kept for 10 years or longer. 
 
-Use the "Submit" button to deposit the subfolder containing your dataset. This will
-copy the contents of the subfolder to the Vault folder as a new data package.
+#### Vault (archived data)
+The folder named "vault-..." contains these deposited data packages. Data in the Vault cannot be deleted and the research Group has read access.
 
-Before doing so, the subfolder must be described with metadata, which can be entered via a form. 
-
-For more information on metadata in Yoda see: [Adding metadata](./yoda_workflow_metadata.qmd).
-
-#### Vault
-The folder named "vault-..." contains these deposited data packages. The research Group has read access to datasets in the Vault folder.
-
-Once deposited, data cannot be removed. Therefore the vault can be used to account for data
-in a research project to comply with FAIR principles.
-
-#### Publishing
-Researchers can opt to (but do not have to) [publish](/topics/data-publishing.qmd) any of the vault deposited data packages
-to make the metadata description of a data package known to the research community at large.
+#### Publishing archived data
+Researchers can opt to (but do not have to) [publish](./yoda_workflow_vault_publish.qmd) any of the vault deposited data packages
+to make the metadata of a data package known to the research community at large. 
 
 Yoda adds a DOI persistent identifier to published data so that the data package can be cited
 and found in catalogs such as Datacite, Narcis, B2Find etcetera.
