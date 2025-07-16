@@ -1,5 +1,5 @@
 ---
-title: Archiving
+title: Archiving data
 categories: []
 ---
 
@@ -34,7 +34,7 @@ You can check in Yoda if you are in compliance with either the DANS Preferred fo
 
 Choose a preferred fomat and the system will show you a list of filetypes in your data folder which are not compliant.
 
-![CheckforCompliance2](/public/manuals/yoda/arch-compliance-dans.png)
+![Check for DANS compliance](/public/manuals/yoda/arch-compliance-dans.png)
 
 ## Submitting a data package to the Vault
 
@@ -69,3 +69,5 @@ The vault of your group becomes visible in the Yoda portal once it contains at l
 ![Go to Vault button](/public/manuals/yoda/arch-gotovault.png)
 
 If the research folder has been deleted, you can request access to the archived data package via the data manager. If the data package has been published as Open Data it can be retrieved via data catalogs such as [DataCite](https://commons.datacite.org/).
+
+Yoda ensures there is always a datamanager assigned to a Vault who can access datasets even if the creators no longer have an account.
