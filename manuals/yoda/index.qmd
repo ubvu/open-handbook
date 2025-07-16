@@ -6,6 +6,7 @@ listing:
     - ./*.qmd
     - yoda_portal/*.qmd
     - yoda_data_transfer/*.qmd
+  page-size: 40
   filter-ui: true
   type: grid
   fields: [title,description]
