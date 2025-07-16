@@ -3,35 +3,40 @@ title: Managing Groups, Users and Access Rights
 categories: [yoda]
 ---
 
-All data in Yoda is stored in data compartments. Each data compartment has a top-level folder for research data.
-The name of such a research folder, also known as a research group, always starts with &ldquo;research-&rdquo;.
+This page explains how to use the [Yoda Group Manager](https://portal.yoda.vu.nl/group_manager/) to manage the users who have access to the Group's data. 
+
+All data in a Yoda Project is stored in 2 main data folders associated with a single access Group. 
+
+The name of such an access Group, also known as a research group, always starts with &ldquo;research-&rdquo;.
 Files in a research group are only visible and accessible to users who have been granted access to that group.
 
 Users can have three different roles in a group:
 
-- Member with read-only access: is able to view or download files in the group.
+- Member with read-only access: is able to view and download files in the group.
 - Regular member: can view, download, upload, modify or delete files and folders in the group.
 - Group manager: is able to grant and revoke access rights for the group. Can also view, download, upload, modify
   or delete files and folders in the group.
+
+These access rights are applied to the top-level and all subfolders and files of the Research Folder.
 
 ## Granting access to a group
 
 If you are the group manager of a group, you will be able to add users to the group in the following way:
 
-- Navigate to the [Yoda portal](../getting-started/getting-started-portal.html).
-- Log in
+- Navigate to the [Yoda portal](https://portal.yoda.vu.nl).
+- Log in with your email address
 - Click on the button on the top-right with your username.
 
-![group manager](../getting-started/screenshots/group-manager.jpg)
+![Group manager](/public/manuals/yoda/gm-menu.png)
 
 - In the left pane of the Group Manager, select the group
 - Click on the link &ldquo;Click here to add a new user to the group&rdquo;.
 - Enter the email address of the user. The address must be entered entirely in lower case.
 - If the email address is new for Yoda you will have the option to create the user otherwise you add the existing user to this group. 
 
-![Adding user](../functions/Adding-user.jpg)
+![Adding user](/public/manuals/yoda/gm-adduser.png)
 
-The added user will receive an invitation to join the connected SRAM collaboration. Most users will be able to log in with their own institutional account, if their institute is not connected to SRAM they can create an **eduID (NL)** account, see [this page](getting-started-portal#invitation-to-yoda-collaboration).
+The added user will receive an [invitation](./yoda_access.qmd) to join the connected SRAM collaboration. Most users will be able to log in with their own institutional account, if their institute is not connected to SRAM they can create an **eduID (NL)** account.
 
 By default, a new user will be a regular member of the group. If you want the user to be a member with read-only access or
 a group manager, see below for how to change users' roles.
@@ -49,22 +54,19 @@ Users can have three different roles in a group:
 
 In order to change the role of a group member:
 
-- Navigate to the [Yoda portal](../getting-started/getting-started-portal.html).
+- Navigate to the [Yoda portal](https://portal.yoda.vu.nl).
 - Log in
 - Click on the button on the top-right with your username.
 
-![group manager](../getting-started/screenshots/group-manager.jpg)
+![Group manager](/public/manuals/yoda/gm-menu.png)
 
 - In the left pane of the Group Manager, select the group.
 - In the right pane of the Group Manager, select the user.
 - Press one of the buttons next to the &ldquo;Change role&rdquo; label to change the user's role.
-  The button with the upward pointing arrow will grant a role with more rights, whereas the button
-  with the downward pointing arrow will grant a role with fewer rights. The meaning of the icons is:
-   * <i class="fa fa-user-circle-o" aria-hidden="true"></i> group manager
-   * <i class="fa fa-user" aria-hidden="true"></i> regular member
-   * <i class="fa fa-eye" aria-hidden="true"></i> member with read-only access
 
-![Setting user rights](../functions/Setting-user-rights.jpg)
+![Setting user rights](/public/manuals/yoda/gm-role.png)
+
+_Note that you can only change the role of the user after they have accepted the [SRAM invitation](./yoda_access.qmd)._
 
 ## Revoking access to a group
 If you are the group manager of a group, you will be able to revoke access to a group in the following way:
@@ -73,10 +75,12 @@ If you are the group manager of a group, you will be able to revoke access to a 
 - Log in
 - Click on the button on the top-right with your username.
 
-![group manager](../getting-started/screenshots/group-manager.jpg)
+![Group manager][Yoda portal](https://portal.yoda.vu.nl)
 
 - In the left pane of the Group Manager, select the group.
 - In the right pane of the Group Manager, select the user.
 - Click on the red &ldquo;Remove user&rdquo; button.
 
-![Removing user](../functions/removing-user.jpg)
+![Removing user](/public/manuals/yoda/gm-removeuser.png)
+
+_Note that you can only remove a user after they have accepted the [SRAM invitation](./yoda_access.qmd)._
