@@ -9,14 +9,14 @@ This page explains how to access your Yoda data via the WebDAV interface on Linu
 
 GNOME users can connect to the Yoda WebDAV interface with GNOME Files (also known as Nautilus in older versions of GNOME).
 
-![alt text](/public/manuals/yoda/linux-connect-to-server.png "GNOME Files screenshot")
+![GNOME Files screenshot](/public/manuals/yoda/linux-connect-to-server.png)
 
 Click on "+Other Locations" and enter the server address in the "Connect to Server" bar. The server address is
 `davs://data.yoda.vu.nl/`
 
 Then click on the Connect button.
 
-![alt text](/public/manuals/yoda/linux-enter-password.png "GNOME Files password dialog screenshot")
+![GNOME Files password dialog screenshot](/public/manuals/yoda/linux-enter-password.png)
 
 You will be prompted for a name and password.
 Username is your email. Set a [Data Access Password](./yoda_dap.qmd) and copy it to the Password field.
@@ -36,7 +36,7 @@ For Debian/Ubuntu:
 sudo apt -y install davfs2
 ```
 - Confirm that unprivileged users should be able to mount davfs2 volumes (&ldquo;Yes&rdquo;).
-![alt text](/public/manuals/yoda/linux-davfs2-dialog-unprivileged.png "GNOME Files password dialog screenshot")
+![GNOME Files password dialog screenshot](/public/manuals/yoda/linux-davfs2-dialog-unprivileged.png)
 
 For RedHat/CentOS/Fedora:
 ```bash
@@ -96,5 +96,3 @@ To manually mount the Yoda WebDAV interface:
 ## Acknowledgements
 
 Thanks to [Joost de Graaf](https://www.uu.nl/medewerkers/JdeGraaf) for his contributions to this guide.
-
-_Last updated: {{< meta date >}}_
