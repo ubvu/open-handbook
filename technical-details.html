@@ -239,6 +239,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="how-is-the-website-built">How is the website built?</h2>
 <p>We use GitHub Actions to build the Quarto website. This automation runs every time something changes for the website – <a href="https://github.com/ubvu/open-handbook/blob/main/.github/workflows/publish.yml">the automation itself can be found on GitHub</a>.</p>
 <p>We use GitHub to subsequently make the website available on <code>https://rdm.vu.nl</code>.</p>
+<p>Please <a href="https://quarto.org/docs/websites/">refer to the Quarto documentation for detailed instructions</a> on how to use Quarto.</p>
 </section>
 <section id="preview-deployments" class="level2">
 <h2 class="anchored" data-anchor-id="preview-deployments">Preview deployments</h2>
@@ -262,6 +263,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><strong><code>contributing.qmd</code></strong> - Contributing guidelines</li>
 <li><strong><code>editors-guide.qmd</code></strong> - Editor documentation</li>
 </ul>
+<section id="quarto.yml" class="level4">
+<h4 class="anchored" data-anchor-id="quarto.yml"><code>_quarto.yml</code></h4>
+<p>The <code>_quarto.yml</code> file is especially important, as it contains the metadata and information to structure the handbook. You can use this to find and update the navigation bar. The specifics of <a href="https://quarto.org/docs/websites/website-tools.html">using <code>_quarto.yml</code> is documented very well by Quarto</a>.</p>
+</section>
 </section>
 <section id="content-organization" class="level3">
 <h3 class="anchored" data-anchor-id="content-organization">Content organization</h3>

@@ -423,7 +423,7 @@ Note
 <p>Relative links link to the <code>.qmd</code> files, never to the <code>.html</code> pages. These only exist when the pages are rendered!</p>
 </div>
 </div>
-<p>If we were editing a topic, and we wanted to link out to a guide, we would need to use <code>../guides/example-guide.qmd</code>. This because we would be in the topic folder for that file, and need to navigate one level up (<code>../</code>) and then down into the guides folder.</p>
+<p>If we were editing a topic, and we wanted to link out to a guide, we would need to use <code>../guides/example-guide.qmd</code>. This because we would be in the topic folder for that file, and need to navigate one level up (<code>../</code>) and then down into the guides folder. For topic to topic references, we do the same (<code>../topics/example-topic.qmd</code>). This ensures that the links work also when a topic is embedded into a guide directly.</p>
 <section id="section-links" class="level5">
 <h5 class="anchored" data-anchor-id="section-links">Section links</h5>
 <p>Whenever we link to a specific guide or topic, you can also link to a specific section. This helps you point readers to what you want them to read, and helps them find the information they need.</p>
