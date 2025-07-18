@@ -10,6 +10,8 @@ We use GitHub Actions to build the Quarto website. This automation runs every ti
 
 We use GitHub to subsequently make the website available on `https://rdm.vu.nl`.
 
+Please [refer to the Quarto documentation for detailed instructions](https://quarto.org/docs/websites/) on how to use Quarto.
+
 ## Preview deployments
 
 We use Netlify to automatically build previews of pull requests on GitHub. This is provided by Liberate Science GmbH, and is not critical to the operation of `https://rdm.vu.nl`. It does, however, help the editors manage changes to the handbook.
@@ -32,6 +34,10 @@ Understanding the repository structure helps you locate and modify the right fil
 - **`custom.scss`** - Custom styling
 - **`contributing.qmd`** - Contributing guidelines
 - **`editors-guide.qmd`** - Editor documentation
+
+#### `_quarto.yml`
+
+The `_quarto.yml` file is especially important, as it contains the metadata and information to structure the handbook. You can use this to find and update the navigation bar. The specifics of [using `_quarto.yml` is documented very well by Quarto](https://quarto.org/docs/websites/website-tools.html).
 
 ### Content organization
 
