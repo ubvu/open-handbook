@@ -7,7 +7,7 @@ format:
     toc-expand: 4
 ---
 
-You can contribute to the {{< var title >}} by making small edits, writing entirely new topics, or writing guides. All contributions are welcome and appreciated, small and large. There are two ways to contribute: [via GitHub](#contributing-via-github) or by using the [contribution portal](#contributing-portal). If you are in need of specific information, you can skip ahead using the table of contents. 
+You can contribute to the {{< var title >}} by making small edits, writing entirely new topics, or writing guides. All contributions are welcome and appreciated, small and large. There are two ways to contribute: [via GitHub](#contributing-via-github) or by using the [contribution portal](#contributing-portal). If you are in need of specific information, you can skip ahead using the table of contents.
 
 ## Contributing portal
 
@@ -163,7 +163,7 @@ This Contributing guide is located in the "root" directory, and there is no uppe
 Relative links link to the `.qmd` files, never to the `.html` pages. These only exist when the pages are rendered!
 :::
 
-If we were editing a topic, and we wanted to link out to a guide, we would need to use `../guides/example-guide.qmd`. This because we would be in the topic folder for that file, and need to navigate one level up (`../`) and then down into the guides folder.
+If we were editing a topic, and we wanted to link out to a guide, we would need to use `../guides/example-guide.qmd`. This because we would be in the topic folder for that file, and need to navigate one level up (`../`) and then down into the guides folder. For topic to topic references, we do the same (`../topics/example-topic.qmd`). This ensures that the links work also when a topic is embedded into a guide directly.
 
 ##### Section links
 
