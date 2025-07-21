@@ -1,0 +1,150 @@
+---
+title: Pseudonymisation
+categories: [Research Data]
+---
+
+## What is Pseudonymisation?
+
+Pseudonymisation is the process of replacing direct identifiers in personal data with pseudonyms (artificial identifiers) while maintaining the ability to re-identify individuals when necessary through additional information kept separately. Under GDPR, pseudonymisation is considered a technical and organizational measure that can reduce privacy risks while allowing data to remain useful for research purposes. Unlike anonymisation, pseudonymisation is reversible - the original identities can be recovered when the pseudonym key is available.
+
+Pseudonymisation provides a middle ground between using identifiable data and complete anonymisation. It allows researchers to protect participant privacy during routine data handling while maintaining the possibility of re-identification for specific purposes such as linking additional data, contacting participants for follow-up studies, or handling data correction requests. This makes pseudonymisation particularly valuable for longitudinal research and studies requiring future participant contact.
+
+## Examples
+
+Pseudonymisation involves various techniques for replacing identifying information:
+
+### Direct Identifier Replacement
+- **Name pseudonyms**: Replacing real names with study IDs, participant codes, or generated pseudonyms
+- **Address codes**: Substituting addresses with geographic codes or area identifiers
+- **Contact information**: Replacing email addresses and phone numbers with study contact codes
+- **Account identifiers**: Substituting usernames and account numbers with research identifiers
+- **Document references**: Replacing personal document numbers with study reference codes
+
+### Systematic Pseudonym Generation
+- **Sequential numbering**: Assigning participants sequential study numbers (P001, P002, etc.)
+- **Random identifiers**: Using randomly generated alphanumeric codes for each participant
+- **Coded systems**: Developing systematic coding schemes based on study design requirements
+- **Hash functions**: Using cryptographic hash functions to generate consistent pseudonyms
+- **Database keys**: Using database-generated unique identifiers as pseudonyms
+
+### Key Management Approaches
+- **Separate key files**: Maintaining pseudonym-to-identity mapping in separately secured files
+- **Split custody**: Dividing pseudonym keys between multiple trusted parties
+- **Encrypted storage**: Storing pseudonym keys in encrypted form with controlled access
+- **Time-limited keys**: Creating pseudonym systems with planned key destruction dates
+- **Multi-layer pseudonymisation**: Using nested pseudonym systems for additional security
+
+### Contextual Pseudonymisation
+- **Temporal pseudonyms**: Using different pseudonyms for different time periods or study phases
+- **Role-based pseudonyms**: Different pseudonyms for different aspects of participant involvement
+- **Cross-study linkage**: Pseudonym systems that enable linking data across multiple studies
+- **Hierarchical schemes**: Pseudonym systems reflecting organizational or family relationships
+- **Domain-specific codes**: Pseudonyms tailored to specific research domains or data types
+
+### Quasi-identifier Treatment
+- **Date shifting**: Moving dates by random but consistent amounts for each participant
+- **Geographic generalization**: Reducing geographic precision while maintaining pseudonym consistency
+- **Demographic clustering**: Grouping similar demographic characteristics under shared codes
+- **Categorical recoding**: Replacing specific values with broader category codes
+- **Range substitution**: Using ranges instead of exact values while maintaining individual linkability
+
+## Tools/services/resources related to concept provided by VU
+
+VU Amsterdam provides guidance and support for implementing pseudonymisation in research:
+
+### Policy and Legal Framework
+- **Privacy Champions**: Faculty-level expertise on pseudonymisation techniques and GDPR compliance
+- **Legal guidance**: Institutional support for understanding pseudonymisation requirements under data protection law
+- **Ethics review**: Ethics committee evaluation of pseudonymisation procedures in research protocols
+- **Processing agreements**: Template agreements addressing pseudonymisation in collaborative research
+
+### Technical Resources and Tools
+- **Research Data Management (RDM) Support**: Consultation on pseudonymisation strategies and implementation via [rdm@vu.nl](mailto:rdm@vu.nl)
+- **Secure storage systems**: [Yoda](yoda.qmd) and other platforms supporting secure pseudonymisation workflows
+- **Key management**: Guidance on secure storage and management of pseudonymisation keys
+- **Technical implementation**: Support for developing and implementing pseudonymisation systems
+
+### Training and Documentation
+- **LCRDM resources**: Access to Dutch national guidance including [Basic Steps Pseudonymization](https://lcrdm.nl/wp-content/uploads/2023/03/LCRDM-Basic-Steps-Pseudonymization-2019.pdf) and [Anonymisation reference card](https://lcrdm.nl/wp-content/uploads/2023/03/Anonymization-reference-card-for-researchers.pdf)
+- **Best practice workshops**: Training on pseudonymisation techniques for different research contexts
+- **Risk assessment tools**: Guidance on evaluating pseudonymisation effectiveness and residual risks
+- **Documentation templates**: Templates for documenting pseudonymisation procedures and policies
+
+### Data Management Integration
+- **[DMPonline](dmponline.qmd)**: Data management planning incorporating pseudonymisation considerations
+- **GDPR registration**: Integration of pseudonymisation procedures with institutional data processing registration
+- **Quality assurance**: Procedures for validating pseudonymisation implementation and effectiveness
+- **Audit support**: Documentation and procedures supporting compliance audits and reviews
+
+### Collaboration and Support
+- **Cross-institutional guidance**: Coordination with other research institutions on pseudonymisation standards
+- **Expert consultation**: Access to specialists in privacy protection and data security
+- **Peer networks**: Connecting researchers with others implementing similar pseudonymisation approaches
+- **International frameworks**: Access to European and international pseudonymisation guidelines
+
+## How does this help you in your research?
+
+### Privacy Protection with Research Utility
+- **Balanced protection**: Reduces privacy risks while maintaining data utility for research purposes
+- **Controlled access**: Enables controlled re-identification when necessary for legitimate research purposes
+- **Participant safety**: Protects participant identities during routine data handling and analysis
+- **Risk reduction**: Minimizes privacy risks from data breaches while preserving research functionality
+- **Proportionate measures**: Provides appropriate privacy protection proportional to data sensitivity
+
+### Longitudinal and Follow-up Research
+- **Participant tracking**: Enables linking data across multiple time points and study phases
+- **Follow-up studies**: Maintains ability to contact participants for additional research
+- **Data linking**: Allows connection of data from different sources or study components
+- **Cohort management**: Supports management of long-term cohort studies and registries
+- **Evolution tracking**: Enables tracking of changes and developments over time
+
+### Collaborative Research Support
+- **Multi-site studies**: Facilitates collaboration across multiple research sites and institutions
+- **Data sharing**: Enables controlled data sharing with specific research partners
+- **Cross-study integration**: Allows linking data across related research projects
+- **International collaboration**: Supports international research collaborations with appropriate privacy protection
+- **Team coordination**: Enables multiple researchers to work with the same dataset safely
+
+### Legal and Regulatory Compliance
+- **GDPR compliance**: Meets GDPR requirements for technical and organizational privacy protection measures
+- **Reduced obligations**: Pseudonymised data has fewer regulatory restrictions than identifiable data
+- **Processing justification**: Provides legal basis for continued data processing in research
+- **Rights management**: Maintains ability to respond to participant rights requests when necessary
+- **Audit readiness**: Demonstrates implementation of appropriate privacy protection measures
+
+### Data Management Efficiency
+- **Simplified handling**: Reduces complexity of data protection requirements during routine analysis
+- **Storage flexibility**: Enables storage in less restrictive environments while maintaining security
+- **Access management**: Allows broader research team access to pseudonymised data
+- **Processing efficiency**: Reduces administrative burden while maintaining participant protection
+- **Workflow optimization**: Streamlines research workflows while preserving privacy safeguards
+
+### Quality Assurance and Validation
+- **Data validation**: Enables quality checking and validation procedures using pseudonymised identifiers
+- **Error correction**: Maintains ability to correct data errors when participants are identified
+- **Consistency checking**: Allows verification of data consistency across time points and sources
+- **Duplicate detection**: Enables identification and management of duplicate records
+- **Data integrity**: Supports maintaining data integrity while protecting privacy
+
+### Ethical Research Practice
+- **Participant trust**: Demonstrates commitment to protecting participant privacy appropriately
+- **Proportionate protection**: Provides privacy protection proportional to actual risks and research needs
+- **Transparency**: Enables clear communication with participants about data protection measures
+- **Informed consent**: Supports informed consent by clearly describing data protection procedures
+- **Community engagement**: Shows respect for research communities through responsible data handling
+
+### Research Impact and Sustainability
+- **Data sharing potential**: Pseudonymised data can be shared more readily than identifiable data
+- **Long-term value**: Enables ongoing research value while maintaining participant protection
+- **Collaborative potential**: Facilitates collaboration and data sharing with appropriate safeguards
+- **Policy influence**: Enables research findings to influence policy while protecting participants
+- **Scientific contribution**: Supports contribution to scientific knowledge with appropriate privacy protection
+
+### Professional and Career Benefits
+- **Privacy expertise**: Develops valuable expertise in privacy-preserving research methods
+- **Technical competence**: Builds skills in data protection and security implementation
+- **Ethical leadership**: Demonstrates leadership in responsible research practices
+- **Grant competitiveness**: Privacy protection expertise strengthens funding applications
+- **Professional recognition**: Establishes reputation for ethical and responsible research conduct
+
+Pseudonymisation enables researchers to protect participant privacy while preserving the research utility needed for longitudinal studies, collaborative research, and quality assurance, providing a practical balance between privacy protection and research effectiveness.
