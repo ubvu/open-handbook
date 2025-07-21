@@ -1,0 +1,127 @@
+---
+title: Software Management Plan (SMP)
+categories: [Research Software]
+---
+
+## What is a Software Management Plan?
+
+A Software Management Plan (SMP) is a document that outlines how research software will be developed, maintained, shared, and preserved throughout and after a research project. Similar to a Data Management Plan (DMP) for research data, an SMP provides a structured approach to managing research software as a valuable research output. It addresses key aspects of software development including documentation, version control, testing, licensing, sustainability, and long-term preservation.
+
+A Software Management Plan helps researchers think systematically about software development practices and ensures that research software is developed using best practices that promote reproducibility, reusability, and collaboration.
+
+## Examples
+
+Software Management Plans typically address:
+
+### Development and Documentation
+- **Development methodology**: Agile, waterfall, or other approaches
+- **Programming languages and frameworks**: Choice and justification of technologies
+- **Code documentation**: Inline comments, API documentation, user manuals
+- **README files**: Clear installation and usage instructions
+- **Architecture documentation**: System design and component relationships
+
+### Version Control and Collaboration  
+- **Version control system**: Git, SVN, or other systems
+- **Repository hosting**: GitHub, GitLab, Bitbucket, or institutional repositories
+- **Branching strategy**: How development branches are managed
+- **Collaboration workflows**: How team members contribute code
+- **Issue tracking**: Bug reports, feature requests, and project management
+
+### Quality Assurance
+- **Testing strategy**: Unit tests, integration tests, user acceptance testing
+- **Continuous integration**: Automated testing and deployment pipelines  
+- **Code review processes**: Peer review requirements and standards
+- **Quality metrics**: Code coverage, performance benchmarks
+- **Dependency management**: Handling of external libraries and dependencies
+
+### Licensing and Legal
+- **Software licensing**: Open source (MIT, GPL, Apache) or proprietary licenses
+- **Contributor agreements**: Legal frameworks for external contributions
+- **Intellectual property**: Ownership and usage rights
+- **Third-party components**: Licensing compliance for dependencies
+- **Export control**: Restrictions on software distribution
+
+### Sharing and Publication
+- **Release strategy**: When and how software versions are published
+- **Distribution channels**: Software repositories, package managers, websites
+- **Citation guidelines**: How others should cite the software
+- **User support**: Documentation, forums, help systems
+- **Community building**: Encouraging adoption and contributions
+
+### Preservation and Sustainability
+- **Long-term maintenance**: Plans for ongoing support and updates
+- **Funding sustainability**: Resources for continued development
+- **Code preservation**: Archival in long-term repositories like Zenodo
+- **Legacy planning**: Migration paths and end-of-life procedures
+- **Knowledge transfer**: Documentation for future maintainers
+
+## Tools/services/resources related to concept provided by VU
+
+VU Amsterdam provides several tools and services to support software management planning:
+
+### Development and Version Control
+- **GitHub**: VU researchers can use GitHub for code hosting and collaboration
+- **Pure**: Required registration of research software per [VU policy](software-registration.qmd)
+- **ADA HPC Cluster**: Development and testing environment for computational software
+- **VU Compute Hub**: Jupyter environments for prototyping and development
+
+### Documentation and Training
+- **Research Data Management (RDM) Support**: Guidance on software management best practices via [rdm@vu.nl](mailto:rdm@vu.nl)
+- **Software Carpentry**: Training in version control, testing, and development practices
+- **FAIR Software recommendations**: Guidelines for making software Findable, Accessible, Interoperable, and Reusable
+
+### Licensing and Legal Support  
+- **Privacy Champions**: Faculty-level support for intellectual property and licensing questions
+- **Legal advice**: Institutional support for software licensing and contributor agreements
+- **Processing agreements**: For software that processes personal or sensitive data
+
+### Preservation and Archiving
+- **Zenodo integration**: For long-term preservation of software releases with DOIs
+- **Pure registration**: Institutional requirement for software output registration
+- **GitHub archiving**: Connection to preservation services for published code
+
+### Quality Assurance Tools
+- **Continuous Integration**: Support for automated testing pipelines
+- **Code review tools**: Available through GitHub and other platforms  
+- **Testing frameworks**: Access to testing tools across multiple programming languages
+- **Documentation platforms**: Support for software documentation websites
+
+## How does this help you in your research?
+
+### Improved Software Quality
+- **Reduces bugs and errors**: Systematic testing and review processes catch problems early
+- **Enhances reliability**: Proper documentation and version control ensure consistent software behavior
+- **Increases maintainability**: Well-planned software is easier to update and extend
+- **Better performance**: Planning helps identify and address performance bottlenecks
+
+### Enhanced Collaboration
+- **Team coordination**: Clear processes enable effective teamwork on software projects
+- **External contributions**: Well-managed projects attract contributions from other researchers
+- **Code sharing**: Proper licensing and documentation make software reusable by others
+- **Reproducible research**: Version-controlled, documented software supports reproducible results
+
+### Research Impact and Recognition
+- **Citable software**: Published software with DOIs can be cited like other research outputs
+- **Professional reputation**: High-quality software demonstrates technical expertise
+- **Career advancement**: Software development skills and published tools support career progression
+- **Grant applications**: Well-managed software projects strengthen funding proposals
+
+### Compliance and Risk Management
+- **Policy compliance**: Meets VU requirements for research software management
+- **Legal protection**: Proper licensing protects intellectual property rights
+- **Data security**: Planning addresses security requirements for sensitive data processing
+- **Audit readiness**: Documentation supports compliance with research integrity requirements
+
+### Long-term Sustainability
+- **Knowledge preservation**: Documentation ensures software can be maintained after personnel changes
+- **Legacy planning**: Structured approach to software lifecycle management
+- **Funding efficiency**: Better planning reduces development costs and rework
+- **Technology evolution**: Planning helps adapt to changing technical requirements
+
+### Research Reproducibility
+- **Transparent methods**: Open, documented software enables others to verify and extend your research
+- **Version tracking**: Clear versioning connects software states to research outputs
+- **Environment documentation**: Specifications enable reproduction of computational environments
+- **Automated workflows**: Scripted processes reduce manual errors and improve consistency
+
+A Software Management Plan transforms ad hoc software development into a systematic, professional practice that enhances the quality, impact, and sustainability of your research software while supporting broader goals of open science and research reproducibility.
