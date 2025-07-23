@@ -298,3 +298,121 @@ This procedure requires some background knowledge on working (with git) in the c
 We do not guarantee this will work immediately, but should cover most instances. If you are looking to contribute and want to render things locally, try this first, and if you run into any issues, [let us know in an issue report](https://github.com/ubvu/open-handbook/issues/new). We're happy to try our best if you share your error messages 😊
 
 [^1]: For Linux and Mac, this is usually called the terminal. For Windows machines, you would have to use [the Git Bash](https://swcarpentry.github.io/git-novice/08-collab.html)
+
+## Using VSCode to contribute
+If you are planning to make multiple contributions to the Handbook working in the GitHub web interface can get cumbersome. In that case we suggest you use an IDE (Integrated Development Environment) to create and edit pages. An IDE is a text editor that has lots of extra functionalities for developers, such as integration with Git. [VSCode](https://code.visualstudio.com) is a widely used, free, IDE, it is very well suited to edit Markdown files and has integrated Git & GitHub support. This allows you to work on your edits on your laptop whenever you want, preview them using the Quarto client and _Push_ your changes to GitHub. No special knowledge of the Git Commandline is necessary.
+
+VSCode is available for Windows, Mac and Linux. Install it from https://code.visualstudio.com/Download.
+
+Not that VSCode is a Microsoft product, but the source code of VSCode is open source. The VSCode version you download from the above link is not and it contains telemetry/tracking. A completely open source version without telemetry is available from [https://vscodium.com](https://vscodium.com), the functionality is the same.
+
+### Install the Quarto extension for VSCode
+[Quarto Extension](https://marketplace.visualstudio.com/items?itemName=quarto.quarto), follow the instructions on that page to install it.
+
+Note that unfortunately the Preview functionality does not work very well with a project as large as the Handbook.
+
+### Make sure Git is installed
+Open VSCode and click on the Git icon on the left. If you do not have Git installed you can do so from here, the download button will lead you to [https://git-scm.com/downloads](https://git-scm.com/downloads), you do not need the GUI client.
+
+![Download Git](/public/vscode/contr-vscode-download.png)
+
+![Default Editor](/public/vscode/contr-vscode-installeditor.png)
+During the install you can set VSCode as default editor
+
+![Recommended PATH option](/public/vscode/contr-vscode-installpath.png)
+
+Keep defaults for the rest.
+
+Open a command prompt to set your username and email address.
+
+![Set git username and email](/public/vscode/contr-vscode-gituser.png)
+
+### Create a root folder
+Create a folder where your handbook copy and other code projects will be stored. For example on Windows `C:\users\<username>\vscode`. 
+
+Note that it is not advisable to store code projects in a folder which is synced with OneDrive (such as the "Documents' folder), OneDrive will have problems syncing the many small files that git uses. The same applies to SURFdrive and Research Drive.
+You will push changes to your code projects to github so there is no need to make extra backups. 
+
+### Clone your Fork
+
+Go to the Git Tab (or click File > New window), there you will see the option to "Clone Repository".
+
+![Clone Repository](/public/vscode/contr-vscode-clone.png)
+
+![Clone from GitHub](/public/vscode/contr-vscode-clonegithub.png)
+You see the option "Clone from GitHub"
+
+#### Sign in to GitHub
+![Allow GitHub sign in](/public/vscode/contr-vscode-cloneallow.png)
+If you have never signed in with Git before you will be asked to do so. Click Allow.
+
+The GitHub Sign In page will be opened in the Browser. Login as usual.
+
+#### Select the Fork you created earlier
+Once you are signed in you can select from a list of repositories.
+
+![Select Forked repository](/public/vscode/contr-vscode-cloneselect.png)
+Select the Fork you created earlier.
+
+![Clone to code folder](/public/vscode/contr-vscode-clonefolder.png)
+Select your code folder. 
+
+A folder called `open-handbook` will be created there and you can open it. 
+
+### Editing
+Now you have a full copy of the Handbook on your laptop. Of course you are not working on the Handbook directly, but on your _Fork_.
+
+You can make changes to the actual Handbook by making changes to your _Fork_ and creating a _Pull Request_. The _Pull Request_ will be opened in the ubvu open-handbook repository. The editors can then approve your request, perhaps after suggesting some changes, and your changes will be _merged_ to [rdm.vu.nl](https://rdm.vu.nl.).
+
+The handbook is a collaborative effort, multiple people will be making changes to multiple files at the same time. To prevent 2 or more contributors making changes to the same file you should keep your _Pull requests_ small, preferrably one page at once. The best way to do this is to start by creating a _branch_ for the changes you want to make.
+
+#### Create a branch
+![Create Branch](/public/vscode/contr-vscode-branchcreate.png)
+
+![Provide a name](/public/vscode/contr-vscode-branchcreate2.png)
+Provide a name for the branch. Keep it short and descriptive, this is mainly for yourself so you can easily remember what you created the branch for.
+
+VSCode will automatically switch to the branch. You can always see the branch you are working on in the bottom left of the Window.
+![Branch name](/public/vscode/contr-vscode-viewbranch.png)
+
+You can click on the name there to switch the branch you are working on.
+
+Remember your changes are tied to the branch. If you would switch from the `zenodo_topic` branch to the `main` branch you will no longer see the changes you made. But if you have committed your changes they will be visible again once you switch back. 
+
+#### Editing the page
+VSCode is basically just a text editor. Open the file you want to work on by double clicking or right click to create a new one in the "Explorer". 
+
+Work on your page and save your changes (Click File > Save or use CTRL-S).
+
+![Changes](/public/vscode/contr-vscode-chnages.png)
+VSCode will show you the changes with respect to the branch. Now you can _commit_
+
+#### Commit changes
+Click on the Git icon on the left. 
+
+![Commit message](/public/vscode/contr-vscode-commit.png)
+Set a short descriptive _commit message_, click the plus sign next to the files you want in your commit, and click commit.
+
+![View changes](/public/vscode/contr-vscode-viewchanges.png)
+By double-clicking on a _Modified_ file you will see a visual representation of your changes.
+
+#### Publish Branch
+Now you have committed your changes to the local git repository on your laptop. You will also need to _publish the branch_ to github, so it gets updated as well.
+
+![Publish Branch](/public/vscode/contr-vscode-branchpublish.png)
+
+![Branch Published](/public/vscode/contr-vscode-branchpublish2.png)
+You will be able to view the branch on github.
+
+VSCode will now allow you to _Sync_ (_Push_ and _Pull_) your commits to the branch on GitHub.
+
+#### Create a Pull request
+Once you are happy with the changes you made you can open a Pull request on GitHub to 
+
+#### More information
+The VSCode documentation has a nice [introduction to Git section](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git) with more useful tips.
+
+The [Quarto tutorial](https://quarto.org/docs/get-started/hello/vscode.html) has more tips on using VSCode to edit Quarto pages.
+
+
+
