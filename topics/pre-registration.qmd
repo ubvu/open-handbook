@@ -1,0 +1,134 @@
+---
+title: Pre-registration
+categories: [Research Data]
+---
+
+## What is Pre-registration?
+
+Pre-registration is the practice of publicly documenting study design, hypotheses, and analysis plans before collecting or analyzing data. This involves creating a time-stamped, unalterable record of research plans that is submitted to a registry before the research is conducted. Pre-registration helps distinguish between confirmatory research (testing pre-specified hypotheses) and exploratory research (generating new hypotheses from data), thereby reducing research bias and improving the credibility of scientific findings.
+
+Pre-registration can apply to various types of studies including experiments, observational studies, systematic reviews, and meta-analyses. The level of detail in pre-registration can vary from basic study outlines to comprehensive analysis plans that specify every statistical test to be performed.
+
+## Examples
+
+Pre-registration typically includes:
+
+### Study Design Elements
+- **Research questions and hypotheses**: Clear statement of what the study aims to test or investigate
+- **Study design**: Experimental, observational, cross-sectional, longitudinal, etc.
+- **Sampling plan**: Target population, sample size calculations, recruitment methods
+- **Inclusion and exclusion criteria**: Who will and will not be included in the study
+- **Randomization procedures**: How participants will be assigned to conditions (if applicable)
+
+### Data Collection Procedures
+- **Variables and measures**: All variables to be collected and how they will be measured
+- **Data collection timeline**: When and how data will be collected
+- **Quality control measures**: Steps to ensure data quality and reliability
+- **Stopping rules**: Conditions under which data collection might be terminated early
+- **Missing data handling**: How missing or incomplete data will be addressed
+
+### Analysis Plans
+- **Primary outcomes**: Main variables of interest and how they will be analyzed
+- **Secondary outcomes**: Additional analyses that will be conducted
+- **Statistical methods**: Specific tests, models, and procedures to be used
+- **Multiple comparisons**: How multiple testing will be handled
+- **Subgroup analyses**: Any planned analyses of specific subgroups
+- **Sensitivity analyses**: Alternative analyses to test robustness of findings
+
+### Registration Platforms
+- **OSF Registrations**: Comprehensive platform with multiple templates
+- **ClinicalTrials.gov**: Required for clinical trials in many jurisdictions
+- **AsPredicted**: Simple, straightforward pre-registration platform
+- **PROSPERO**: Systematic reviews and meta-analyses
+- **AEA RCT Registry**: Economic research, particularly randomized controlled trials
+
+## Tools/services/resources related to concept provided by VU
+
+VU Amsterdam supports pre-registration through various platforms and services:
+
+### Pre-registration Platforms
+- **[Open Science Framework (OSF)](osf.qmd)**: Free platform with comprehensive pre-registration templates and integration with project management tools
+- **AsPredicted**: Simple pre-registration platform for straightforward study designs
+- **ClinicalTrials.gov**: For clinical research requiring formal trial registration
+- **PROSPERO**: For systematic reviews and meta-analyses
+
+### Planning and Design Support
+- **[DMPonline](dmponline.qmd)**: Data management planning that can complement pre-registration with data handling procedures
+- **Research Design Consultation**: Statistical and methodological consultation through VU support services
+- **Power Analysis Tools**: Software and guidance for sample size calculations
+
+### Training and Guidance
+- **Research Data Management (RDM) Support**: Guidance on pre-registration best practices via [rdm@vu.nl](mailto:rdm@vu.nl)
+- **Open Science workshops**: Training on pre-registration and other open science practices
+- **Statistical consultation**: Support for developing appropriate analysis plans
+- **Ethics committee guidance**: Integration of pre-registration with ethical review processes
+
+### Documentation and Templates
+- **Pre-registration templates**: Access to various templates for different study types
+- **Example pre-registrations**: Models of well-executed pre-registrations in various fields
+- **Checklist resources**: Tools to ensure comprehensive pre-registration
+
+### Integration with Research Workflow
+- **Version control**: GitHub integration for maintaining analysis code versions
+- **[Pure](pure.qmd) integration**: Recording pre-registered studies in institutional research information systems
+- **Publication support**: Guidance on reporting pre-registered vs. exploratory analyses in publications
+
+## How does this help you in your research?
+
+### Research Credibility and Transparency
+- **Bias reduction**: Pre-registration prevents HARKing (Hypothesizing After Results are Known) and p-hacking
+- **Transparent reporting**: Clear distinction between confirmatory and exploratory findings
+- **Scientific integrity**: Demonstrates commitment to rigorous, unbiased research practices
+- **Reproducibility**: Detailed plans enable others to reproduce your study design and analysis approach
+- **Audit trail**: Complete record of research decisions made before seeing the data
+
+### Methodological Benefits
+- **Improved planning**: Forces careful consideration of study design and analysis before data collection
+- **Statistical rigor**: Prevents data-driven analysis decisions that can inflate Type I error rates
+- **Power optimization**: Sample size planning ensures adequate power to detect meaningful effects
+- **Efficiency**: Reduces time spent on ad-hoc analysis decisions during the research process
+- **Quality control**: Systematic planning improves overall study quality
+
+### Publication and Career Advantages
+- **Journal preferences**: Many journals now favor or require pre-registered studies
+- **Registered reports**: Access to publication format where methods are peer-reviewed before data collection
+- **Citation benefits**: Pre-registered studies may receive more citations due to higher perceived credibility
+- **Grant competitiveness**: Funding agencies increasingly value pre-registered research approaches
+- **Professional reputation**: Demonstrates methodological sophistication and commitment to best practices
+
+### Collaboration and Team Benefits
+- **Team alignment**: Ensures all collaborators agree on study design and analysis approach
+- **Communication clarity**: Provides clear documentation of research plans for team members
+- **Supervisor-student relations**: Helps supervisors and students agree on thesis research approaches
+- **Multi-site coordination**: Enables consistent implementation across multiple research sites
+- **Conflict prevention**: Reduces disagreements about analysis approaches after data collection
+
+### Learning and Skill Development
+- **Methodological thinking**: Develops systematic approach to research design and analysis planning
+- **Statistical literacy**: Improves understanding of appropriate statistical methods and their assumptions
+- **Research planning**: Builds skills in comprehensive research planning and project management
+- **Scientific reasoning**: Encourages hypothesis-driven rather than data-driven research approaches
+- **Meta-science awareness**: Develops understanding of factors that influence research quality and credibility
+
+### Risk Management
+- **Null result protection**: Pre-registration makes null results publishable and valuable
+- **Scope creep prevention**: Helps maintain focus on original research questions
+- **Resource optimization**: Better planning reduces wasted time and resources
+- **Ethical compliance**: Supports ethical research by preventing selective reporting
+- **Legal protection**: Provides documentation of research intentions for compliance purposes
+
+### Open Science Contribution
+- **Research transparency**: Contributes to broader open science movement
+- **Knowledge synthesis**: Facilitates meta-analyses by providing complete information about studies
+- **Research efficiency**: Prevents duplication of research efforts across the scientific community
+- **Method sharing**: Enables others to build on and improve your methodological approaches
+- **Scientific progress**: Contributes to more reliable and cumulative scientific knowledge
+
+### Long-term Research Benefits
+- **Research program coherence**: Helps develop systematic, programmatic research approaches
+- **Method refinement**: Enables iterative improvement of research methods across studies
+- **Theoretical development**: Supports theory-driven research and theoretical advancement
+- **Research impact**: Pre-registered findings may have greater influence on policy and practice
+- **Scientific legacy**: Contributes to lasting, reliable contributions to scientific knowledge
+
+Pre-registration transforms research from exploratory data mining into rigorous hypothesis testing, improving both the quality of individual studies and the cumulative reliability of scientific knowledge while supporting career advancement and scientific integrity.
