@@ -1,0 +1,160 @@
+---
+title: Repositories
+categories: [Research Data]
+---
+
+## What is a Repository?
+
+A repository in research data management is a digital platform or service that provides secure, organized storage and access to research outputs including data, software, publications, and other scholarly materials. Repositories serve as centralized locations where researchers can deposit, preserve, share, and discover research outputs while ensuring long-term accessibility, proper attribution, and compliance with data management policies.
+
+Research repositories range from general-purpose platforms that accept any type of research output to specialized repositories focused on specific disciplines, data types, or research communities. They typically provide features such as metadata management, version control, access controls, persistent identifiers, and integration with other research infrastructure.
+
+## Examples
+
+Repositories come in various types serving different needs:
+
+### Institutional Repositories
+- **VU Pure**: VU Amsterdam's research information system for all research outputs including publications, datasets, and software
+- **University libraries**: Digital collections managed by academic libraries for institutional research outputs
+- **Faculty repositories**: Department-specific collections for specialized research materials
+- **Research group repositories**: Lab-specific storage and sharing platforms for ongoing research
+
+### General-Purpose Research Repositories
+- **Zenodo**: Open-access repository accepting all research outputs with DOI assignment and long-term preservation
+- **Figshare**: Platform for sharing research outputs including datasets, figures, presentations, and negative results
+- **Dryad**: Repository focused on data underlying scientific publications
+- **OSF (Open Science Framework)**: Platform combining project management, collaboration, and repository functions
+
+### Disciplinary Repositories
+- **GenBank**: DNA and protein sequence databases for life sciences
+- **PDB (Protein Data Bank)**: 3D structural data for biological macromolecules
+- **Pangaea**: Earth and environmental sciences data repository
+- **ICPSR**: Social science data archive and repository
+- **arXiv**: Preprint repository for physics, mathematics, computer science, and related fields
+
+### Data Type-Specific Repositories
+- **4TU.ResearchData**: Technical data repository for engineering and applied sciences
+- **DataverseNL**: Repository network for research data with rich metadata support
+- **GitHub**: Code repositories with version control and collaboration features
+- **ArrayExpress**: Gene expression data repository for functional genomics
+
+### National and Regional Repositories
+- **DANS**: Dutch national repository for humanities and social sciences data
+- **SURFsara**: High-performance computing and data storage infrastructure
+- **European Nucleotide Archive (ENA)**: European repository for nucleotide sequence information
+- **ORCID**: International registry of researcher identifiers
+
+### Commercial and Hybrid Repositories
+- **Mendeley Data**: Research data repository integrated with reference management
+- **ResearchGate**: Academic social network with publication and data sharing features
+- **Academia.edu**: Platform for sharing academic papers and research materials
+- **Nature Scientific Data**: Journal and repository for scientific datasets
+
+### Repository Features and Services
+- **Persistent identifiers**: DOIs, ARKs, and other permanent URLs for long-term access
+- **Metadata standards**: Structured descriptions using discipline-specific schemas
+- **Version control**: Tracking changes and updates to deposited materials
+- **Access controls**: Public, embargoed, restricted, and private access levels
+- **Search and discovery**: Advanced search functionality and API access
+- **Integration**: Connections with other research tools and workflows
+- **Preservation services**: Long-term storage with format migration and integrity checking
+- **Usage analytics**: Download statistics and impact metrics
+
+## Tools/services/resources related to concept provided by VU
+
+VU Amsterdam provides access to various repository services and supports researchers in choosing appropriate repositories:
+
+### VU-Managed Repositories
+- **[Pure](pure.qmd)**: VU's institutional research information system for all research outputs; mandatory registration for datasets and software per university policy
+- **VU Research Portal**: Public interface of Pure showcasing VU research outputs
+- **Faculty collections**: Specialized collections within Pure for faculty-specific research outputs
+
+### VU-Supported External Repositories
+- **[DataverseNL](dataversenl.qmd)**: Open access data repository with VU institutional collection; covered by university policy for qualifying projects
+- **Zenodo**: Long-term preservation with DOI assignment; integrated with VU GitHub workflows
+- **4TU.ResearchData**: Technical data repository with VU processing agreements
+- **[OSF (Open Science Framework)](osf.qmd)**: Free platform for project management and data sharing
+
+### Repository Selection and Guidance Services
+- **Research Data Management (RDM) Support**: Consultation on appropriate repository selection via [rdm@vu.nl](mailto:rdm@vu.nl)
+- **Subject librarians**: Discipline-specific guidance on specialized repositories
+- **Data stewards**: Faculty-level support for data management and repository selection
+- **Repository evaluation**: Assessment of repository trustworthiness and suitability
+
+### Integration and Workflow Support
+- **GitHub integration**: Automatic archiving from GitHub to Zenodo with DOI assignment
+- **ORCID integration**: Connection of repository deposits to researcher profiles
+- **Pure synchronization**: Automatic import of publications and datasets from external repositories
+- **Metadata support**: Assistance with creating rich, discoverable metadata
+
+### Legal and Compliance Support
+- **Processing agreements**: GDPR-compliant agreements with major repositories
+- **Licensing guidance**: Support for choosing appropriate Creative Commons and other licenses
+- **Privacy assessment**: Evaluation of repositories for personal and sensitive data
+- **Policy compliance**: Ensuring repository choices meet VU and funder requirements
+
+### Training and Capacity Building
+- **Repository workshops**: Training on using specific repository platforms
+- **Data management planning**: Including repository selection in DMP development
+- **Best practices**: Guidance on metadata creation, file organization, and documentation
+- **FAIR principles**: Training on making repository deposits Findable, Accessible, Interoperable, and Reusable
+
+## How does this help you in your research?
+
+### Research Discoverability and Impact
+- **Global visibility**: Repositories make your research discoverable to worldwide audiences through search engines and academic databases
+- **Persistent access**: DOIs and other persistent identifiers ensure your research remains accessible even if hosting institutions change
+- **Citation tracking**: Repository deposits can be cited like publications, generating measurable research impact
+- **SEO optimization**: Repository metadata improves search engine visibility of your research
+- **Cross-reference linking**: Repositories connect your outputs to related publications, data, and software
+
+### Collaboration and Reuse
+- **Data sharing**: Repositories enable secure, controlled sharing of research data with collaborators and the broader community
+- **Reproducible research**: Others can access your data and code to reproduce and validate your findings
+- **Building on previous work**: Repositories help you discover relevant existing data and methods for your research
+- **Cross-disciplinary discovery**: Repositories enable researchers from other fields to discover and reuse your work
+- **Community building**: Shared repositories foster research communities around common data and methods
+
+### Preservation and Sustainability
+- **Long-term storage**: Professional repositories provide robust, long-term preservation with multiple backups and format migration
+- **Institutional continuity**: Repository preservation protects research outputs from loss due to personnel changes or institutional transitions
+- **Technology evolution**: Repositories handle format obsolescence and technological changes
+- **Metadata preservation**: Rich metadata ensures future researchers can understand and use your work
+- **Version control**: Repositories maintain complete histories of research output evolution
+
+### Compliance and Policy Requirements
+- **Funder mandates**: Most funding agencies require deposit in appropriate repositories for data and publications
+- **Institutional policies**: VU requires registration of research outputs in Pure and appropriate external repositories
+- **FAIR principles**: Repositories support making research outputs Findable, Accessible, Interoperable, and Reusable
+- **Open access requirements**: Repositories facilitate compliance with open access publication mandates
+- **Data protection**: Repositories provide GDPR-compliant handling of research data
+
+### Quality Assurance and Credibility
+- **Peer validation**: Repository deposits may undergo review processes that improve quality
+- **Professional curation**: Many repositories provide professional curatorial services and quality control
+- **Standardized metadata**: Repository metadata standards improve consistency and interoperability
+- **Integrity checking**: Repositories monitor and verify the integrity of deposited materials over time
+- **Trusted preservation**: Established repositories provide confidence in long-term accessibility
+
+### Career Development and Recognition
+- **Professional profile**: Repository deposits contribute to comprehensive research profiles and CVs
+- **Research evaluation**: Repository outputs count toward research assessments and performance evaluations
+- **Grant applications**: Previous repository deposits demonstrate research productivity and data management competence
+- **Networking opportunities**: Repository communities facilitate professional connections and collaborations
+- **Technical skills**: Using repositories develops valuable data management and digital literacy skills
+
+### Research Efficiency and Organization
+- **Centralized access**: Repositories provide single points of access to related research materials
+- **Workflow integration**: Many repositories integrate with other research tools and workflows
+- **Automated processes**: Repository APIs and integrations can automate routine research tasks
+- **Search and filtering**: Advanced repository search capabilities help you efficiently find relevant materials
+- **Organization tools**: Repository features help organize and categorize your research outputs
+
+### Economic and Resource Benefits
+- **Cost sharing**: Repository infrastructure costs are shared across research communities
+- **Avoided duplication**: Repositories prevent redundant data collection and analysis efforts
+- **Resource optimization**: Shared repositories maximize the value of research investments
+- **Grant advantages**: Proper repository use strengthens funding proposals and demonstrates good stewardship
+- **Infrastructure access**: Repositories provide access to professional-grade storage and preservation infrastructure
+
+Repositories serve as essential infrastructure for modern research, transforming individual research outputs into durable, discoverable, and reusable resources that benefit both individual researchers and the broader scientific community while ensuring compliance with institutional and funder requirements.
