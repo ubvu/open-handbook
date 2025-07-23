@@ -1,0 +1,143 @@
+---
+title: Anonymisation
+categories: [Research Data]
+---
+
+## What is Anonymisation?
+
+Anonymisation is the process of removing or modifying personal data in such a way that individuals can no longer be identified directly or indirectly, either by the data controller alone or in collaboration with any other party. In the context of GDPR, truly anonymised data is no longer considered personal data and therefore falls outside the scope of data protection regulations. Anonymisation is irreversible - once data is properly anonymised, it should be impossible to re-identify individuals even with additional information or computational resources.
+
+Anonymisation differs from pseudonymisation in that it permanently removes the possibility of re-identification. While pseudonymisation replaces identifying information with pseudonyms but maintains the ability to re-identify individuals when necessary, anonymisation eliminates this possibility entirely. This makes anonymisation particularly valuable for research data sharing and long-term preservation, as anonymised data can be shared more freely without ongoing privacy concerns.
+
+## Examples
+
+Anonymisation techniques vary depending on data type and re-identification risks:
+
+### Direct Identifier Removal
+- **Names and addresses**: Complete removal of names, home addresses, and contact information
+- **Identity numbers**: Removal of social security numbers, employee IDs, and student numbers
+- **Account identifiers**: Deletion of usernames, email addresses, and account numbers
+- **Biometric data**: Removal of fingerprints, facial recognition data, and DNA identifiers
+- **Unique characteristics**: Elimination of rare or unique personal characteristics
+
+### Quasi-identifier Treatment
+- **Demographic generalization**: Age ranges instead of exact ages, postal code areas instead of specific addresses
+- **Geographic aggregation**: City or region level instead of specific locations
+- **Temporal generalization**: Month/year instead of specific dates, time ranges instead of exact times
+- **Categorical grouping**: Professional sectors instead of specific job titles
+- **Range specifications**: Income brackets instead of exact salaries
+
+### Data Transformation Techniques
+- **Statistical disclosure control**: Adding noise, data swapping, or micro-aggregation to prevent re-identification
+- **k-anonymity**: Ensuring each individual is indistinguishable from at least k-1 other individuals
+- **l-diversity**: Ensuring diversity in sensitive attributes within each equivalence class
+- **t-closeness**: Maintaining similar distribution of sensitive attributes across the dataset
+- **Differential privacy**: Mathematical framework for providing privacy guarantees through controlled noise addition
+
+### Contextual Information Removal
+- **Free-text sanitization**: Removal of identifying information from narrative text and comments
+- **Metadata scrubbing**: Elimination of file metadata that might reveal identifying information
+- **Timestamp modification**: Removing or generalizing precise timestamps that might enable re-identification
+- **Network information**: Removal of IP addresses, device identifiers, and network traces
+- **Behavioral patterns**: Modification of unique behavioral signatures that might enable re-identification
+
+### Special Category Data Handling
+- **Medical data**: Removal of rare diagnoses, specific treatment dates, and unique medical characteristics
+- **Genetic information**: Elimination of genetic markers that could enable re-identification
+- **Biometric measurements**: Removal or modification of unique physical measurements
+- **Location traces**: Elimination of detailed location histories and movement patterns
+- **Communication patterns**: Anonymisation of unique communication behaviors and preferences
+
+## Tools/services/resources related to concept provided by VU
+
+VU Amsterdam provides guidance and resources for implementing anonymisation in research:
+
+### Policy and Legal Framework
+- **Privacy Champions**: Faculty-level expertise on anonymisation requirements and techniques
+- **GDPR compliance**: Institutional guidance on anonymisation in the context of European data protection law
+- **Research ethics**: Ethics committee review of anonymisation procedures in research protocols
+- **Legal consultation**: Institutional support for understanding anonymisation obligations and standards
+
+### Technical Resources and Training
+- **Research Data Management (RDM) Support**: Consultation on anonymisation techniques and best practices via [rdm@vu.nl](mailto:rdm@vu.nl)
+- **Anonymisation tools**: Access to software tools for statistical disclosure control and data anonymisation
+- **Risk assessment**: Guidance on evaluating re-identification risks and anonymisation effectiveness
+- **Technical workshops**: Training on anonymisation techniques for different data types
+
+### Reference Materials and Guidelines
+- **LCRDM resources**: Access to Dutch national guidance including the [Anonymisation reference card](https://lcrdm.nl/wp-content/uploads/2023/03/Anonymization-reference-card-for-researchers.pdf) and [Risk management guide](https://lcrdm.nl/wp-content/uploads/2023/03/LCRDM-Risk-management-for-research-data-about-people.pdf)
+- **Best practice documentation**: Institutional guidelines for anonymisation in different research contexts
+- **Case studies**: Examples of successful anonymisation in various research disciplines
+- **Decision trees**: Tools for determining appropriate anonymisation techniques
+
+### Data Management Integration
+- **[DMPonline](dmponline.qmd)**: Data management planning that incorporates anonymisation considerations
+- **Storage solutions**: Secure environments like [Yoda](yoda.qmd) for handling sensitive data during anonymisation
+- **Quality assurance**: Procedures for validating anonymisation effectiveness before data sharing
+- **Documentation support**: Guidance on documenting anonymisation procedures for transparency and reproducibility
+
+### Collaboration and Review
+- **Peer consultation**: Connecting researchers with others who have experience in similar anonymisation challenges
+- **Expert review**: Access to experts who can evaluate anonymisation procedures and effectiveness
+- **Multi-institutional guidance**: Coordination with other research institutions on anonymisation standards
+- **International resources**: Access to European and international anonymisation frameworks and tools
+
+## How does this help you in your research?
+
+### Legal Compliance and Risk Reduction
+- **GDPR compliance**: Properly anonymised data is no longer subject to data protection regulations, reducing legal obligations
+- **Privacy protection**: Anonymisation eliminates privacy risks for research participants
+- **Institutional liability**: Reduces institutional legal and reputational risks associated with personal data handling
+- **Cross-border sharing**: Anonymised data can be shared internationally without additional legal restrictions
+- **Long-term security**: Eliminates ongoing privacy risks from data breaches or unauthorized access
+
+### Research Data Sharing and Collaboration
+- **Open data sharing**: Anonymised data can be shared openly without privacy concerns
+- **Collaborative research**: Enables data sharing with external researchers and institutions
+- **Repository deposit**: Anonymised data can be deposited in public repositories for broader access
+- **Cross-disciplinary research**: Facilitates sharing data across different research domains
+- **International collaboration**: Removes barriers to sharing data with international research partners
+
+### Scientific Reproducibility and Transparency
+- **Method verification**: Others can verify research methods using anonymised datasets
+- **Replication studies**: Anonymised data enables independent replication of research findings
+- **Meta-analyses**: Contributes to systematic reviews and meta-analyses through data sharing
+- **Transparent research**: Supports open science principles while protecting participant privacy
+- **Scientific integrity**: Enables peer review of analytical methods and statistical procedures
+
+### Research Impact and Dissemination
+- **Broader data utility**: Anonymised data can continue generating scientific value through secondary analysis
+- **Citation opportunities**: Shared anonymised datasets can be cited as research contributions
+- **Research visibility**: Open data sharing increases research discoverability and impact
+- **Community benefit**: Anonymised data contributes to broader scientific knowledge and public benefit
+- **Policy influence**: Anonymised research data can inform policy decisions without privacy concerns
+
+### Practical Research Benefits
+- **Simplified data management**: Reduces ongoing data protection obligations and administrative burden
+- **Storage flexibility**: Anonymised data can be stored in less restrictive environments
+- **Analysis freedom**: Removes restrictions on analytical approaches that might compromise privacy
+- **Team collaboration**: Enables broader team access to research data without privacy training requirements
+- **Archival preparation**: Prepares data for long-term preservation and historical research value
+
+### Ethical Research Practice
+- **Participant protection**: Ensures research participants' privacy is permanently protected
+- **Trust building**: Demonstrates commitment to protecting participant confidentiality
+- **Ethical sustainability**: Enables ongoing research value while maintaining ethical standards
+- **Community engagement**: Shows respect for research communities through responsible data handling
+- **Research integrity**: Supports high ethical standards in research conduct and data management
+
+### Innovation and Methodology Development
+- **Method advancement**: Anonymisation research contributes to methodological innovation in privacy protection
+- **Technical skills**: Develops expertise in privacy-preserving data analysis techniques
+- **Cross-disciplinary learning**: Anonymisation challenges encourage collaboration between domains
+- **Tool development**: May lead to creation of new anonymisation tools and techniques
+- **Best practice development**: Contributes to establishing field-wide standards for privacy protection
+
+### Career and Professional Development
+- **Ethical expertise**: Develops valuable expertise in research ethics and privacy protection
+- **Technical competence**: Builds skills in data protection and statistical disclosure control
+- **Professional recognition**: Demonstrates commitment to responsible research practices
+- **Grant competitiveness**: Privacy protection expertise strengthens funding proposals
+- **International opportunities**: Privacy expertise enables participation in global research initiatives
+
+Anonymisation enables researchers to maximize the scientific and social value of research data while permanently protecting participant privacy, supporting both ethical research conduct and open science principles that advance knowledge for the benefit of society.
