@@ -1,0 +1,140 @@
+---
+title: Open Science Framework (OSF)
+categories: [Tools]
+---
+
+## What is it?
+
+The Open Science Framework (OSF) is a free, open-source platform developed by the Center for Open Science that supports the entire research lifecycle. OSF provides tools for project management, collaboration, data storage, pre-registration, and sharing of research materials. It serves as a central hub where researchers can manage their projects, store files, connect external services, and make their work openly accessible to the research community.
+
+## What can it be used for?
+
+OSF can be used for:
+
+- **Project management**: Organize research projects with hierarchical folder structures and component organization
+- **Collaboration**: Share projects and files with team members, assign different permission levels
+- **File storage**: Store research files with version control and backup functionality (up to 50GB per private project)
+- **Pre-registration**: Create time-stamped pre-registrations of study protocols and analysis plans
+- **Data and code sharing**: Make research materials openly accessible with permanent DOIs
+- **Integration**: Connect external services like GitHub, Google Drive, Dropbox, Zotero, and Mendeley
+- **Preprint sharing**: Upload and share preprints through affiliated preprint servers
+- **Wiki documentation**: Create project documentation and protocols using the built-in wiki
+- **Research transparency**: Implement open science practices throughout the research workflow
+
+## How to request access
+
+OSF is freely available to all researchers worldwide. No institutional access request is needed:
+
+1. **Create account**: Go to [https://osf.io](https://osf.io) and sign up with your email address
+2. **VU affiliation**: When creating your account, you can indicate your VU Amsterdam affiliation
+3. **Institutional login**: You may also be able to log in using your institutional credentials through ORCID or other identity providers
+
+## Are there costs involved?
+
+OSF is completely free to use for all researchers. There are no costs for:
+
+- Account creation and maintenance
+- File storage (up to 50GB per private project, unlimited for public projects)
+- Collaboration features
+- Pre-registration services
+- DOI assignment for public projects
+- Integration with external services
+
+## Getting started
+
+### Creating your first project
+
+1. **Sign up**: Create your OSF account at [osf.io](https://osf.io)
+2. **Create project**: Click "Create new project" from your dashboard
+3. **Project details**: Add a title and description for your research project
+4. **Privacy settings**: Choose whether to make your project public or keep it private
+5. **Add collaborators**: Invite team members and assign appropriate permissions (read, write, admin)
+
+### Organizing your project
+
+#### Project structure
+- **Components**: Create sub-projects for different aspects of your research (e.g., Data, Analysis, Materials)
+- **Folders**: Organize files within each component using folder structures
+- **Tags**: Add tags to make your project more discoverable
+
+#### File management
+- **Upload files**: Drag and drop files directly into your project
+- **Version control**: OSF automatically tracks file versions when you upload updates
+- **File linking**: Link to files stored in connected external services
+
+### Pre-registration
+
+OSF provides robust pre-registration capabilities:
+
+1. **Choose template**: Select from various pre-registration templates (PSA, AsPredicted, etc.)
+2. **Complete registration**: Fill out your study protocol, hypotheses, and analysis plan
+3. **Submit**: Create a time-stamped, unchangeable registration before data collection
+4. **Share**: Make your pre-registration public immediately or after a specified embargo period
+
+## How does it work/more detailed instructions
+
+### Project management features
+
+#### Collaboration tools
+- **User permissions**: Assign read, write, or admin access to different collaborators
+- **Activity tracking**: Monitor all project activities through the project log
+- **Comments**: Add comments to files and project components for team communication
+
+#### External integrations
+Connect your OSF project to external services:
+- **GitHub**: Link code repositories and sync commits
+- **Google Drive, Dropbox, Box**: Connect cloud storage accounts
+- **Zotero, Mendeley**: Link reference management libraries
+- **Figshare, Dataverse**: Connect to external data repositories
+
+#### Version control and backup
+- **File versions**: Access previous versions of any uploaded file
+- **Change tracking**: See what was changed, when, and by whom
+- **Backup**: All files are backed up and stored on multiple servers
+
+### Making research public
+
+#### Publishing workflow
+1. **Prepare materials**: Organize all research files, data, and documentation
+2. **Add metadata**: Include comprehensive descriptions, tags, and contributor information
+3. **Choose license**: Select appropriate licensing for your materials (CC0, CC BY, etc.)
+4. **Make public**: Change project visibility from private to public
+5. **Get DOI**: Public projects automatically receive a permanent DOI
+
+#### FAIR principles compliance
+OSF supports FAIR (Findable, Accessible, Interoperable, Reusable) data principles:
+- **Findable**: Projects are indexed and searchable, with permanent DOIs
+- **Accessible**: Public projects remain permanently accessible
+- **Interoperable**: Supports multiple file formats and metadata standards
+- **Reusable**: Clear licensing and detailed documentation support reuse
+
+### Best practices
+
+#### Project organization
+- Use clear, descriptive project and component names
+- Create a logical folder structure that others can understand
+- Include a README file explaining your project structure
+- Use consistent file naming conventions
+
+#### Documentation
+- Add detailed descriptions to projects, components, and files
+- Use the wiki feature to document protocols and procedures
+- Include information about software versions and analysis environments
+- Document data collection procedures and variable definitions
+
+#### Collaboration
+- Set up appropriate permission levels for different team members
+- Use the comment system for file-specific discussions
+- Maintain an active project log by using descriptive commit messages
+- Regular team check-ins to ensure everyone understands the project structure
+
+## Contact
+
+For questions about using OSF:
+
+- **OSF Support**: Contact OSF support directly through their help system at [help.osf.io](https://help.osf.io)
+- **VU RDM Support**: For questions about integrating OSF into your VU research workflow, contact [rdm@vu.nl](mailto:rdm@vu.nl)
+- **Training resources**: OSF provides extensive documentation and tutorials at [help.osf.io](https://help.osf.io)
+- **Community**: Join the OSF community forums for peer support and best practices sharing
+
+OSF also offers regular webinars and training sessions that can help researchers get the most out of the platform's features.
