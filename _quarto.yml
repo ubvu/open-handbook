@@ -11,6 +11,17 @@ website:
   repo-actions: [edit, issue]
   page-navigation: true
   bread-crumbs: true
+  sidebar:
+    - id: sb-yoda # will show up automatically on pages referenced in contents. 
+      style: floating
+      search: true
+      contents: 
+        - manuals/yoda/index.qmd
+        - section: Yoda Portal
+          contents: manuals/yoda/yoda_portal/*.qmd # Note the sorting is by filename
+        - section: Data Transfer
+          contents: manuals/yoda/yoda_data_transfer/*.qmd
+
   navbar:
     background: "#0080c9"
     logo: public/VU-logo-Dia-positief.png
@@ -37,6 +48,8 @@ website:
             href: /topics.html#category=Trainings%20and%20Knowledge%20Items
       - text: Guides
         file: guides.qmd
+      - text: Manuals
+        file: manuals.qmd
       - text: Blog
         menu: 
           - text: All
