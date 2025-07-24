@@ -5,130 +5,47 @@ categories: [Research Software]
 
 ## What is Software Archiving?
 
-Software archiving is the process of preserving research software in a stable, long-term repository to ensure it remains accessible and functional for future use, verification, and reuse. Unlike regular backup or version control, software archiving specifically focuses on long-term preservation with appropriate metadata, documentation, and technical measures to combat software decay and technological obsolescence.
+When we mention **data archiving** at VU Amsterdam, we mean the following:
 
-Software archiving involves capturing not just the source code, but also the complete software environment, dependencies, documentation, and metadata necessary to understand, execute, and maintain the software over time. This includes preserving information about the runtime environment, operating system requirements, library dependencies, and usage instructions.
+> Creation of a secure and immutable copy of research data, associated metadata, accompanying documentation, and software code (where relevant) with the intention to ensure (conditional) access for a predetermined, minimum, period of time.
 
-## Examples
+In the case of software archiving the software code takes the place of research data in the above quote. The two main differences are the inclusion of a version number in the metadata and the distinction of **user** and **developer** documentation.
 
-Software archiving typically includes:
+As stated in the [Research Data and Software Management Policy](../topics/research-data-and-software-management-policy.qmd), researchers are responsible for archiving all research software and data that leads to a published result (either in an article or other narrative form) in a trusted repository for a period of at least ten years after this publication, unless legal requirements, discipline-specific guidelines or contractual arrangements dictate otherwise.
 
-### Core Software Components
-- **Source code**: Complete codebase including all modules and components
-- **Executable versions**: Compiled binaries for different platforms where applicable
-- **Configuration files**: Settings, parameter files, and environment configurations
-- **Build scripts**: Instructions and tools for compiling the software
-- **Installation instructions**: Step-by-step setup and deployment guides
+## Purpose
 
-### Documentation and Metadata
-- **Technical documentation**: API documentation, code comments, architecture descriptions
-- **User manuals**: Instructions for using the software and interpreting outputs
-- **Scientific documentation**: Publications, papers, and reports describing the software's purpose and validation
-- **Version history**: Complete change logs and version control history
-- **Licensing information**: Clear licensing terms and usage permissions
+Software archiving is a vital to allow research to be verified and reproduced. Verification is important for a transparent research practice, a value VU Amsterdam is strongly committed to. Software is typically used to clean and analyse datasets gathered or recorded by researchers meaning it is a fundamental part of the research process. Archiving your software ensures that software will be preserved for the long term and can be accessed, even when the Principal Investigator or other members of the research team are no longer available at VU Amsterdam.
 
-### Environment and Dependencies
-- **Dependency specifications**: Lists of required libraries, frameworks, and tools
-- **Container images**: Docker or similar containers preserving the complete runtime environment
-- **Virtual machine images**: Complete operating system environments where necessary
-- **Environment files**: Conda environments, requirements.txt files, package manifests
-- **System requirements**: Hardware specifications and operating system requirements
+Proper software archiving transforms research software from temporary project tools into lasting scientific contributions that continue to generate value long after the original project concludes, supporting both individual career development and broader scientific progress.
 
-### Preservation Metadata
-- **Descriptive metadata**: Purpose, scope, and functionality of the software
-- **Technical metadata**: File formats, system requirements, and technical specifications
-- **Provenance metadata**: Development history, authorship, and institutional affiliations
-- **Access metadata**: Usage rights, contact information, and support availability
-- **Preservation metadata**: Archival dates, integrity checks, and preservation actions
+## Requirements 
 
-### Testing and Validation Materials
-- **Test suites**: Unit tests, integration tests, and validation datasets  
-- **Test results**: Documentation of testing outcomes and performance benchmarks
-- **Example datasets**: Sample input and output data for software validation
-- **Regression tests**: Tests to ensure software continues functioning correctly
-- **Performance benchmarks**: Metrics for evaluating software performance over time
+At VU Amsterdam, we strive to make our research software [FAIR](../topics/fair-principles.qmd). When research software is archived in a repository provided by VU Amsterdam ([Yoda](https://publication.yoda.vu.nl/) or [DataverseNL](https://dataverse.nl/dataverse/vuamsterdam), the following requirements apply:
 
-## Tools/services/resources related to concept provided by VU
+- The software must be provided with associated Metadata using the [VU Minimal metadata guide](https://github.com/vu-rdm-tech/metadata/blob/main/minimal_metadata_guide.md);
+- The software must have a [Persistent identifier](../topics/persistent-identifier.qmd) (or Identifiers) to increase findability;
+- A licence must be applied to the data and software in order to indicate if it can be reused by others and if so, under which conditions. Without a license the software cannot be used in future research as easily;
+-  The software must be accompanied by documentation, both user and developer. User documentation should cover installation and basic use, whereas developer documentation should cover how it works and why certain design decisions were made
 
-VU Amsterdam provides several resources to support software archiving:
+If you use an external repository, these requirements are useful to keep in mind as well, because they make the software FAIR to a large extent, but in that case you will have to rely on the properties of the repository.
 
-### Primary Archival Repositories
-- **Zenodo**: Long-term preservation with permanent DOIs, integrated with GitHub for automatic archiving
-- **Pure**: [Required registration](software-registration.qmd) of research software per VU policy, provides institutional record
-- **4TU.ResearchData**: Specialized repository for engineering and technical software
-- **DataverseNL**: For software associated with published datasets and research outputs
+Since code can be written in any number of ways to solve a problem the absolute minimum that should be archived to ensure verification is a (working) copy of the code (or workflow) that takes the raw data to the end result and a list of the dependencies and their versions.
 
-### Development and Preparation Tools
-- **GitHub**: Version control with integrated Zenodo archiving for releases
-- **ADA HPC Cluster**: Environment for testing and preparing software for archival
-- **VU Compute Hub**: Jupyter environments for documenting and packaging software
-- **Docker/Singularity**: Container technologies for preserving complete software environments
+## How does software archiving work in practice?
 
-### Documentation and Metadata Support
-- **Research Data Management (RDM) Support**: Guidance on software archiving best practices via [rdm@vu.nl](mailto:rdm@vu.nl)
-- **Pure registration support**: Assistance with institutional software registration requirements
-- **CITATION.cff files**: Support for creating software citation files
-- **Metadata standards**: Guidance on appropriate metadata schemas and documentation
+Data archiving must happen in a repository. This means that data storage solutions for during research, like Research Drive, are not suitable for software archiving. They don’t generate a Persistent Identifier and do not ask for metadata or a licence. Code repositories like GitHub and GitLab fall under the label of development environments, they have the possibility to include a DOI and metadata, but do not require it. As a result, the VU recommends using the following services for archiving research software:
 
-### Legal and Licensing Support
-- **Privacy Champions**: Faculty-level support for licensing and intellectual property questions
-- **Legal advice**: Institutional guidance on software licensing for long-term preservation
-- **Processing agreements**: For software handling personal or sensitive data during archival
+- **[Zenodo](https://zenodo.org/)**: Long-term preservation with permanent DOIs, integrated with GitHub for automatic archiving
+- **[Pure](https://research.vu.nl/admin)**: [Required registration](software-registration.qmd) of research software per VU policy, provides institutional record
+- **[DataverseNL](https://dataverse.nl/)**: For software associated with published datasets and research outputs
+- **[Yoda](https://yoda.vu.nl/site/)**: For data and software associated with research, note that this is not by default publicly accessible.
 
-### Quality Assurance and Validation
-- **Code review processes**: Ensuring software quality before archival
-- **Testing frameworks**: Tools for validating software functionality pre-archival
-- **Documentation review**: Support for ensuring complete documentation
-- **Metadata validation**: Verification of archival metadata completeness and quality
+A more complete form of software archiving involves capturing not just the source code, but also the complete software environment, dependencies, documentation, and metadata necessary to understand, execute, and maintain the software over time. This includes preserving information about the runtime environment, operating system requirements, library dependencies, and usage instructions. As a result, unlike regular backup or version control, software archiving specifically focuses on long-term preservation to combat software decay and technological obsolescence.
 
 ## How does this help you in your research?
 
-### Long-term Research Integrity
-- **Reproducible results**: Archived software enables others to reproduce your computational research
-- **Method verification**: Researchers can examine and validate your computational methods
-- **Research continuity**: Software remains available even after project completion or personnel changes
-- **Audit trail**: Complete record of computational tools used in research for compliance and transparency
+Archiving is a form of preservation and preserving your work means it remains accessible and usable for the rest of the research community for longer. This will allow greater levels of research continuity and help to avoid duplication of code reducing research time and costs in your field. Correctly archiving will include a DOI, license, documentation, and metadata allowing you to receive more citations and professional recognition, avoid legal disputes on sharing your work, open you up to global collaboration, meet needed for additional funding and publications, and makes knowledge transfer easier. 
 
-### Enhanced Research Impact
-- **Increased citations**: Properly archived and citable software receives more recognition and citations
-- **Broader adoption**: Well-preserved software is more likely to be discovered and reused by others
-- **Research legacy**: Your computational contributions remain available for future researchers
-- **Professional recognition**: Archived software demonstrates technical expertise and contributes to career advancement
 
-### Collaboration and Knowledge Transfer
-- **Team continuity**: New team members can access and understand previous software development
-- **Cross-institutional collaboration**: Partners can access and work with your archived software
-- **Educational use**: Archived software can serve as teaching materials and examples for students
-- **Community building**: Open archived software fosters research communities around shared tools
-
-### Compliance and Policy Requirements
-- **VU policy compliance**: Meets institutional requirements for research software management
-- **Funder mandates**: Satisfies funding agency requirements for software preservation and sharing
-- **Research integrity**: Supports transparent and verifiable research practices
-- **Legal protection**: Proper archiving with clear licensing protects intellectual property rights
-
-### Risk Management and Continuity
-- **Technology obsolescence**: Proper archiving includes measures to combat software decay
-- **Personnel changes**: Software remains accessible when original developers leave projects
-- **Hardware failures**: Multiple preservation copies protect against data loss
-- **Institutional changes**: External archives ensure software survives institutional changes
-
-### Economic and Efficiency Benefits
-- **Avoided duplication**: Other researchers can build on your work rather than recreating software
-- **Reduced development costs**: Future projects can leverage archived software components
-- **Grant advantages**: Well-archived previous software strengthens future funding applications
-- **Resource optimization**: Institutional investment in software is preserved and maximized
-
-### Scientific and Technical Advancement
-- **Method evolution**: Archived software provides foundation for methodological improvements
-- **Comparative studies**: Enables comparison of different computational approaches
-- **Historical analysis**: Supports studies of how computational methods have evolved
-- **Error detection**: Archived software allows identification and correction of computational errors
-
-### Open Science and Transparency
-- **Public accessibility**: Archived software contributes to open science initiatives
-- **Peer review**: Enables thorough peer review of computational methods
-- **Transparency**: Open access to computational tools supports research transparency
-- **Global collaboration**: International researchers can access and contribute to your software
-
-Proper software archiving transforms research software from temporary project tools into lasting scientific contributions that continue to generate value long after the original project concludes, supporting both individual career development and broader scientific progress.
+[Read more here](<page-about-services>.qmd) on the services the VU provide to help with archiving.
