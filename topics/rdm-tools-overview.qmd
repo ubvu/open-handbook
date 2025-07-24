@@ -3,23 +3,59 @@ title: RDM Tools Overview - VU Amsterdam Research Data Management Services
 categories: [Research Data]
 ---
 
-VU Amsterdam provides a comprehensive suite of research data management (RDM) tools and services to support researchers throughout the entire research lifecycle. This overview organizes available tools by research phase to help you identify the most appropriate solutions for your project needs.
+VU Amsterdam provides a comprehensive array of research data management (RDM) tools and services to support researchers throughout the entire research lifecycle. This overview organizes available tools by research phase to help you identify the most appropriate solutions for your project needs.
 
 ## Planning & Design Phase
 
 ### Data Management Planning
-- **[DMPonline](dmponline.qmd)** - VU's institutional platform for creating Data Management Plans with templates certified for major funders (NWO, ZonMw, ERC). Free access with VU credentials.
+- **[DMPonline](dmponline.qmd)** - 
 
-### Research Information Management  
-- **[Pure](pure.qmd)** - VU's research information system for registering research outputs, managing profiles, and institutional compliance. Automatic access for all VU staff and PhD students.
+VU's institutional platform for creating Data Management Plans with templates certified for major funders (NWO, ZonMw, ERC). Free access with VU credentials.
+
+Tool selection guidance: DMPonline is the only VU supported service for creating DMPs
+Cost transparency: DMPonline is provided free of charge to all VU Amsterdam researchers as part of the university's research infrastructure and support services.
+Integration pathways: DMPonline uses Single-Sign-On to login with your VUnetID, but there are no other integrations with VU services.
+Support structure: [Contact](https://services.vu.nl/esc?id=sc_cat_item&sys_id=c84148af47992510bfa46d72e36d4396) the RDM Support desk for questions.
+
 
 ## Collection & Generation Phase
 
 ### Survey & Data Collection
-- **[Qualtrics](qualtrics.qmd)** - Advanced cloud-based survey platform with file upload capabilities and API integration. Free access for VU researchers with institutional license.
+- **[Qualtrics](qualtrics.qmd)** - 
+
+Advanced cloud-based survey platform with file upload capabilities and API integration. 
+
+Tool selection guidance: Qualtrics is the most elaborate VU supported service for creating research surveys. The only other supported tool is [MSforms](https://www.microsoft.com/en-us/microsoft-365/online-surveys-polls-quizzes), which can also be used for non-research related surveys.
+Cost transparency: Qualtrics is provided free of charge to all VU researchers and students as part of the university's research infrastructure and support services.
+Integration pathways: Qualtrics uses Single-Sign-On to login with your VUnetID, but there are no other integrations with VU services.
+Support structure: [Contact](https://services.vu.nl/esc?id=sc_cat_item&sys_id=c84148af47992510bfa46d72e36d4396) the RDM Support desk for questions.
 
 ### Transcription Services
-- **[AmberScript & Transcript Online](transcription-services.qmd)** - Automated and professional transcription services with VU processing agreements for GDPR compliance. Pay-per-use pricing.
+
+- **[Transcript Online](transcription-services.qmd)** - 
+
+Professional transcription service with VU processing agreements for GDPR compliance. Pay-per-use pricing.
+
+Tool selection guidance: ??? do we provide tool selection for unsupported tools???.
+Cost transparency: The cost of Transcript Online .
+Integration pathways: Transcript Online has no integration with VU services.
+Support structure: [Contact](https://transcriptonline.nl/contact) the Transcript Online support for questions.
+
+- **[AmberScript](transcription-services.qmd)** - 
+
+Automated and professional transcription services with VU processing agreements for GDPR compliance. Pay-per-use pricing.
+
+Tool selection guidance: ??? do we provide tool selection for unsupported tools???.
+Cost transparency: The cost of AmberScript .
+Integration pathways: AmberScript has no integration with VU services.
+Support structure: [Contact](https://www.amberscript.com/en/contact-us/?_gl=1*ts0jjl*_up*MQ..*_ga*Njg3MDIzOTA1LjE3NTMzNjk3NjE.*_ga_FR5QG4NGRG*czE3NTMzNjk3NjEkbzEkZzEkdDE3NTMzNjk4NjQkajYwJGwwJGgxNTc1NjMwNzA2) the AmberScript support for questions.
+
+- **[Atlas.ti](transcription-services.qmd)** - 
+
+Tool selection guidance: Atlas.ti is the most elaborate VU supported service for creating research surveys. The only other supported tool is MSforms, which can be used for non-research related surveys.
+Cost transparency: Qualtrics is provided free of charge to all VU researchers and students as part of the university's research infrastructure and support services.
+Integration pathways: Qualtrics uses Single-Sign-On to login with your VUnetID, but there are no other integrations with VU services.
+Support structure: [Contact](https://services.vu.nl/esc?id=sc_cat_item&sys_id=c84148af47992510bfa46d72e36d4396) the RDM Support desk for questions.
 
 ## Processing & Analysis Phase
 
@@ -69,6 +105,9 @@ VU Amsterdam provides a comprehensive suite of research data management (RDM) to
 ### Research Output Registration
 - **[Pure](pure.qmd)** - Required registration of all research datasets and software per VU policy. Public visibility and institutional compliance.
 - **DataverseNL** - Open access publishing with comprehensive metadata and DOI generation
+
+### Research Information Management  
+- **[Pure](pure.qmd)** - VU's research information system for registering research outputs, managing profiles, and institutional compliance. Automatic access for all VU staff and PhD students.
 
 ## Getting Started - Tool Selection Guide
 
