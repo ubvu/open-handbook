@@ -300,6 +300,7 @@ We do not guarantee this will work immediately, but should cover most instances.
 
 If you are planning to make multiple contributions to the Handbook, working in the GitHub web interface can get cumbersome. In that case we suggest you use an IDE (Integrated Development Environment) to create and edit pages. An IDE is a text editor that has lots of extra functionalities for developers, such as integration with Git. [VS Code](https://code.visualstudio.com) is a widely used, free, IDE and it is very well suited to edit Markdown files and has integrated Git & GitHub support. This allows you to work on your edits on your laptop whenever you want, preview them using the Quarto client and *Push* your changes to GitHub. No special knowledge of the Git Commandline is necessary.
 
+### Install VS Code
 VS Code is available for Windows, Mac and Linux. Install it from <https://code.visualstudio.com/Download>.
 
 Note that VS Code is a Microsoft product, but the source code of VS Code is open source. The VS Code version you download from the above link is not, and it contains telemetry/tracking. A completely open source version without telemetry is available from <https://vscodium.com>, the functionality is the same.
