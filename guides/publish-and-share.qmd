@@ -45,7 +45,7 @@ Specifications:
 * Generates a link (persistent identifier), e.g. for data citations in publications
 * Retention period is at least 10 years
 
-2. [Yoda](https://yoda.vu.nl/site/) - besides [active storage](../topics/data-storage.qmd), Yoda also has an archive function: the vault. You can use the vault in two ways:
+2. [Yoda](../topics/yoda.qmd) - besides [active storage](../topics/data-storage.qmd), Yoda also has an archive function: the vault. You can use the vault in two ways:
 
 * For archiving data securely; data are only available for verification purposes and may be access only by special request. A special procedure will be followed if anyone requests access to the data in order to verify them.
 * For publishing data; data can be available for anyone, or on request. The data will get a persistent identifier as well.
