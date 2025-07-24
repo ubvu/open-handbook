@@ -15,6 +15,7 @@ permissions:
 jobs:
   merge_schedule:
     runs-on: ubuntu-latest
+    if: github.event.pull_request.head.repo.fork == false
     steps:
       - uses: gr2m/merge-schedule-action@v2
         with:

@@ -7,7 +7,7 @@ format:
     toc-expand: 4
 ---
 
-You can contribute to the {{< var title >}} by making small edits, writing entirely new topics, or writing guides. All contributions are welcome and appreciated, small and large. If you are in need of specific information, you can skip ahead using the table of contents.
+You can contribute to the {{< var title >}} by making small edits, writing entirely new topics, or writing guides. All contributions are welcome and appreciated, small and large. There are two ways to contribute: [via GitHub](#contributing-via-github) or by using the [contribution portal](#contributing-portal). If you are in need of specific information, you can skip ahead using the table of contents.
 
 ## Contributing portal
 
@@ -27,7 +27,7 @@ The portal does not save your work. Use the portal when you are ready to submit 
 
 ![Screenshot of the contributor portal](public/Screenshot%202024-05-27%20at%2013.43.25.png)
 
-If you want to be credited with contributing, please share your name. If you'd like to hear back about what was done with your feedback or proposal, please also provide a direct way to contact you.
+If you want to be credited with contributing, please share your name. If you'd like to hear back about what was done with your feedback or proposal, please also provide a direct way to contact you. Once you have submitted the contribution, the editors will decide how to add your contribution to the handbook. Take a look at the [Editor's guide](./editors-guide.qmd) to learn more about what criteria they consider.
 
 ## Contributing via GitHub
 
@@ -107,6 +107,16 @@ You need to count the heading level in your guide to identify your shift number.
 
 After that, you are ready to [submit your pull request](#submit-a-pull-request)!
 
+### Editing multiple files
+
+There are situations in which you need to edit multiple files. If you carry out all edits in separate [pull requests](#submit-a-pull-request), this may be a long and repetitive task. Instead, you can change multiple files at once in a single pull request.
+
+:::{.callout-note}
+In case you want to edit multiple files in one go, here's a video to help you along the way!
+
+![Video describing the steps to use the GitHub editor to edit multiple files](./CleanShot 2025-06-13 at 14.30.36(2).mp4)
+:::
+
 ### Submit a pull request
 
 Once you have made suggested changes, a pull request is the way for you to ask for your changes to be incorporated into the {{< var title >}}. The handbook editors will review what you wrote, ask some questions, and accept or decline your contributions.
@@ -115,7 +125,7 @@ We recommend keeping your suggested changes small or limited in scope, and expla
 
 If you are adding a **new** topic or guide, it is definitely recommended to [open an issue first]({{< var issue-url >}}) to see whether there is a need for it (and maybe you'll find collaborators!).
 
-During the review process you may be asked to update your changes, or revisions may be added by the people maintaining the handbook. It is helpful if you keep an eye on your GitHub account to ensure timely responses to help the process along. By contributing, you become part of the process :blush:
+During the review process you may be asked to update your changes, or revisions may be added by the people maintaining the handbook. It is helpful if you keep an eye on your GitHub account to ensure timely responses to help the process along. By contributing, you become part of the process :blush:. Once you have submitted the contribution, the editors will decide how to add your contribution to the handbook. Take a look at the [Editor's guide](./editors-guide.qmd) to learn more about what criteria they consider.
 
 ### Writing text
 
@@ -131,7 +141,7 @@ You simply write text as you are used to. To make something *italic*, **bold**, 
 > this is how you add quotes
 
 - or lists
-- that can go on 
+- that can go on
 - and on
 ```
 
@@ -153,7 +163,7 @@ This Contributing guide is located in the "root" directory, and there is no uppe
 Relative links link to the `.qmd` files, never to the `.html` pages. These only exist when the pages are rendered!
 :::
 
-If we were editing a topic, and we wanted to link out to a guide, we would need to use `../guides/example-guide.qmd`. This because we would be in the topic folder for that file, and need to navigate one level up (`../`) and then down into the guides folder.
+If we were editing a topic, and we wanted to link out to a guide, we would need to use `../guides/example-guide.qmd`. This because we would be in the topic folder for that file, and need to navigate one level up (`../`) and then down into the guides folder. For topic to topic references, we do the same (`../topics/example-topic.qmd`). This ensures that the links work also when a topic is embedded into a guide directly.
 
 ##### Section links
 
@@ -232,15 +242,59 @@ For more details on citations, [see also the Quarto help page on citations](http
 
 ## Rendering handbook locally
 
-Sometimes you may want to preview the changes you are making to the handbook. That is possible in most cases, but requires you to install some software. [You need to install Quarto](https://quarto.org/docs/download/) and assuming a successful installation, you then need to run the following code in your terminal:
+Sometimes you may want to preview the changes you are making to the handbook. That is possible in most cases, but requires you to install some software. [You need to install Quarto](https://quarto.org/docs/download/) and assuming a successful installation, you then need to run the following code in your terminal[^1]:
 
 ```sh
 # Clone the git repository
-git repo clone https://github.com/ubvu/open-handbook
+git clone https://github.com/ubvu/open-handbook
 # Go into the right folder
-cd open-handbook
+cd  open-handbook
 # Render the handbook
 quarto render .
 ```
 
-We do not guarantee this will work immediately, but should cover most instances. If you are looking to contribute and want to render things locally, try this first, and if you run into any issues, [let us know in an issue report](https://github.com/ubvu/open-handbook/issues/new). We're happy to try our best if you share your error messages :blush:
+This will create a file called _site/index.html. You can now open the rendered website in your browser by running:
+
+```sh
+# For Windows machines, use
+start <browser-name> _site/index.html
+# For Mac machines, use
+open _site/index.html
+# For Linux, it could depend on the exact Linux operating system, but you could try first
+xdg-open _site/index.html
+```
+
+Note that you should not copy the < and >, they are written here to indicate where the browser name should come.
+
+Alternatively, you could also `preview` the website rather than rendering it. For this you can simply run the command `quarto preview`. This command will open a localhost window in your browser, and you can navigate through the handbook as normal. Your terminal will keep track of any pages you open.
+When you want to continue working in your terminal, you can use Control + C to quit the command; this will also terminate the connection with the localhost window in your browser.
+
+You can also make changes locally and push them to the github repo to open a new branch. The procedure for this in your terminal is as follows:
+
+```sh
+# Navigate to the folder where the file you want to edit is located
+cd <foldername>
+# Open the file to edit
+nano <filename>
+# Edit the file and save by using `Control + O`. Exit nano by `Control + X`
+# Add the file to the staging area
+git add <filename>
+# Commit the edits
+git commit -m "<commit message>"
+# Push the edits to the remote (online) repository. You can only push to a new branch: the main branch is protected.
+# If you do not have editing rights to the handbook repository, you would be pushing to your fork.
+git push origin main:<new-branch-name>
+# You may have to authenticate using your SSH key.
+```
+
+Note that you should not copy the < and >, they are written here to indicate where file and folder names should be written.
+After doing this, your new branch is opened in the repository on GitHub and you can create a pull request.
+
+This procedure requires some background knowledge on working (with git) in the command line. The resources below give more explanation:
+
+ * [Navigating Files and Directories](https://swcarpentry.github.io/shell-novice/02-filedir.html) and [Create a text file](https://swcarpentry.github.io/shell-novice/02-filedir.html) from the Carpentries' Unix Shell lesson.
+ * [Collaborating](https://swcarpentry.github.io/git-novice/08-collab.html) and [Push local branches to a remote](https://swcarpentry.github.io/git-novice/08-collab.html) from the Carpentries' Version Control with Git lesson.
+
+We do not guarantee this will work immediately, but should cover most instances. If you are looking to contribute and want to render things locally, try this first, and if you run into any issues, [let us know in an issue report](https://github.com/ubvu/open-handbook/issues/new). We're happy to try our best if you share your error messages 😊
+
+[^1]: For Linux and Mac, this is usually called the terminal. For Windows machines, you would have to use [the Git Bash](https://swcarpentry.github.io/git-novice/08-collab.html)

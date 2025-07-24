@@ -1,5 +1,6 @@
 ---
 title: Finding Existing Research Software
+categories: [Research Software]
 ---
 
 ## Re-using Existing Software
@@ -26,7 +27,7 @@ The following scheme provides an overview of compatibility of commonly used [sof
 |                | GPL, AGPL, LGPL  | YES  | YES  | YES  | NO       | YES              | NO                 |
 |                | Proprietary      | YES  | YES  | YES  | Claused  | NO               | Depends on licence |
 
-A more complete list of open source licences with terms and conditions is available [here](https://choosealicense.com/appendix/).
+A more complete list of open source licences with terms and conditions is available [on Choose A License](https://choosealicense.com/appendix/).
 
 [IXA](https://www.ixa.nl/for-researchers/) can provide legal help with the re-use of software.
 
@@ -35,4 +36,4 @@ A more complete list of open source licences with terms and conditions is availa
 There is a large growth in the number of available open source research software.
 Many registries (also known as catalogues or “yellow pages”) are available to find existing research software. For example, [PyPI](https://pypi.org/) (for python), [CRAN](https://cran.r-project.org/) (for R), [Research Software Directory](https://research-software-directory.org/) (generic).
 
-An extensive list of research software registries is maintained by the eScience Center [here](https://github.com/NLeSC/awesome-research-software-registries).
+An extensive list of research software registries is [maintained by the eScience Center](https://github.com/NLeSC/awesome-research-software-registries).

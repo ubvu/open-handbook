@@ -11,9 +11,9 @@ ADA is a high performance compute (HPC) cluster for research at the Vrije Univer
 
 ADA is a heterogenious cluster composed of partitions and servers financed by various VU research departments and the VU IT department. The cluster is particularly useful for executing multi-node computations that are not possible on the general VU compute servers but do not require the scale of the National Supercomputer, Snellius.
 
-ADA users are granted access to a set of compute partitions based on the resources owned by their research department. Users not affiliated with a research department that owns cluster hardware can get access to the general (IT) partition.
+ADA users are granted access to a set of compute partitions based on the resources owned by their research department. Users not affiliated with a research department that owns cluster hardware can get access to the community partition.
 
-A large collection of tools, compilers and libraries is available for your analysis, and your data on [SciStor](./SciStor.qmd) are directly accessible from ADA.
+A large collection of tools, compilers and libraries is available for your analysis, and your data on [SciStor](../topics/SciStor.qmd) are directly accessible from ADA.
 
 ## What can it be used for?
 
@@ -25,10 +25,10 @@ The point where your laptop or even a workstation becomes unusable for your anal
 
 Be aware that it is generally not possible to run graphical desktop applications (such as RStudio, SPSS or ArcGIS) on an HPC cluster. Your analysis needs to be able to run as a script that can be started from a Linux command line. This means there is a learning curve to use HPC, especially if you are not used to a Command-line Interface (CLI) and scripting.
 
-CLI and scripting skills are very useful to have for every researcher, but  if you feel you do not have the time to learn these skills there might be other options available such as [the VU Compute Hub](https://hub.compute.vu.nl) or [SURF Research Cloud](./researchcloud.qmd) where you can run some graphical tools.
+CLI and scripting skills are very useful to have for every researcher, but  if you feel you do not have the time to learn these skills there might be other options available such as [the VU Compute Hub](https://hub.compute.vu.nl) or [SURF Research Cloud](../topics/researchcloud.qmd) where you can run some graphical tools.
 
 ### GPUs in ADA
-Some workloads, such as Machine Learning, require a GPU. At the moment the compute nodes in the ADA general (IT) partition do not have GPUs. If your department also has no dedicated compute nodes with GPUs, you can apply for access to the national HPC infrastructure [Snellius](./snellius.qmd) or consider [buying ADA compute nodes](#buying-dedicated-compute-nodes) with GPU nodes for your department. 
+Some workloads, such as Machine Learning, require a GPU. At the moment only some of the compute nodes in the ADA community partition have GPUs, the availability is not sufficient for everyone at any given time. If your workload requires more extensive use of GPUs and your department has no dedicated compute nodes with GPUs, you can apply for access to the national HPC infrastructure [Snellius](../topics/snellius.qmd) or consider [buying ADA compute nodes](#buying-dedicated-compute-nodes) with GPUs for your department. 
 
 ## How to request access
 
@@ -36,7 +36,7 @@ A form to request an account on ADA can be found on 🔒 [VU Service Portal](htt
 
 ## Are there costs involved?
 
-The ADA cluster community nodes are free to use for VU researchers, although resources are limited. 
+The ADA cluster community nodes are free to use for VU researchers, although resources are limited.
 
 ### Buying dedicated compute nodes
 
@@ -48,7 +48,7 @@ You can find information on how to use ADA on [ada-hpc.readthedocs.io](https://a
 
 Also take a look at the [SURF wiki Snellius pages](https://servicedesk.surf.nl/wiki/display/WIKI/Snellius), they contain a lot of information that applies to ADA as well.
 
-SURF organises regular "Introduction to Supercomputing" training sessions, these are free to attend for VU researchers. The course is aimed at using [Snellius](./snellius.qmd), but what you learn is applicable to ADA as well. Please consult the [SURF Agenda](https://www.surf.nl/en/agenda) for dates and registration.
+SURF organises regular "Introduction to Supercomputing" training sessions, these are free to attend for VU researchers. The course is aimed at using [Snellius](../topics/snellius.qmd), but what you learn is applicable to ADA as well. Please consult the [SURF Agenda](https://www.surf.nl/en/agenda) for dates and registration.
 
 ## Contact
 Wondering if ADA fits your research needs? Please contact [IT for Research](mailto:itvo.it@vu.nl)
