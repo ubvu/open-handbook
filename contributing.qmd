@@ -298,7 +298,7 @@ We do not guarantee this will work immediately, but should cover most instances.
 
 ## Using VS Code to contribute
 
-If you are planning to make multiple contributions to the Handbook working in the GitHub web interface can get cumbersome. In that case we suggest you use an IDE (Integrated Development Environment) to create and edit pages. An IDE is a text editor that has lots of extra functionalities for developers, such as integration with Git. [VS Code](https://code.visualstudio.com) is a widely used, free, IDE and it is very well suited to edit Markdown files and has integrated Git & GitHub support. This allows you to work on your edits on your laptop whenever you want, preview them using the Quarto client and *Push* your changes to GitHub. No special knowledge of the Git Commandline is necessary.
+If you are planning to make multiple contributions to the Handbook, working in the GitHub web interface can get cumbersome. In that case we suggest you use an IDE (Integrated Development Environment) to create and edit pages. An IDE is a text editor that has lots of extra functionalities for developers, such as integration with Git. [VS Code](https://code.visualstudio.com) is a widely used, free, IDE and it is very well suited to edit Markdown files and has integrated Git & GitHub support. This allows you to work on your edits on your laptop whenever you want, preview them using the Quarto client and *Push* your changes to GitHub. No special knowledge of the Git Commandline is necessary.
 
 VS Code is available for Windows, Mac and Linux. Install it from <https://code.visualstudio.com/Download>.
 
@@ -350,7 +350,9 @@ Note that it is not advisable to store code projects in a folder which is synced
 
 #### Sign in to GitHub
 
-![Allow GitHub sign in](/public/vscode/contr-vscode-cloneallow.png) - If you have never signed in with Git before you will be asked to do so. Click Allow.
+![Allow GitHub sign in](/public/vscode/contr-vscode-cloneallow.png) 
+
+- If you have never signed in with Git before you will be asked to do so. Click Allow.
 
 -   The GitHub Sign In page will be opened in the Browser. Login as usual.
 
@@ -378,7 +380,9 @@ The handbook is a collaborative effort, multiple people will be making changes t
 
 ![Provide a name](/public/vscode/contr-vscode-branchcreate2.png) - Provide a name for the branch. Keep it short and descriptive, this is mainly for yourself so you can easily remember what you created the branch for.
 
-VS Code will automatically switch to the branch. You can always see the branch you are working on in the bottom left of the Window. ![Branch name](/public/vscode/contr-vscode-viewbranch.png)
+VS Code will automatically switch to the branch. You can always see the branch you are working on in the bottom left of the Window. 
+
+![Branch name](/public/vscode/contr-vscode-viewbranch.png)
 
 You can click on the name there to switch the branch you are working on.
 
@@ -392,7 +396,7 @@ VS Code is basically just a text editor. Open the file you want to work on by do
 Tip: The [Quarto Extension](#install-the-quarto-extension-for-vs-code) includes a [Visual Editor](#using-the-visual-editor) with which you can format Quarto pages without typing Markdown code.
 :::
 
--   Work on your page and save your changes (Click File \> Save or use `CTRL-S`).
+-   Work on your page and save your changes (Click File \> Save or use `CTRL+S`).
 
 ![Changes](/public/vscode/contr-vscode-changes.png)
 
@@ -417,8 +421,7 @@ Now you have committed your changes to the local git repository on your laptop. 
 VS Code will now allow you to *Sync* (*Push* and *Pull*) your commits to the branch on GitHub.
 
 #### Create a Pull request
-
-Once you are happy with the changes you made you can open a Pull request on GitHub to
+Once you are happy with the changes you made you can [submit a Pull request](#submit-a-pull-request) on GitHub. 
 
 #### More information
 
