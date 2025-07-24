@@ -1,0 +1,59 @@
+---
+title: How to embed handbook pages using iframes
+date: "2025-05-19"
+authors:
+  - Chris Hartgerink
+  - Elisa Rodenburg
+  - Jessica Hrudey
+---
+
+If you want to reuse content from the {{< var title >}}, you can do so using an HTML `iframe`. This post will help you through the steps to successfully embed a handbook page on a website you administer.
+
+## Selecting what to embed
+
+Before we can embed a page, we need to select what to embed.
+
+Each page in the {{< var title >}} has sections, which can be used as anchors for embedding the content. This ensures that the right page shows up displaying the right content.
+
+For example, if you are interested in the [DataverseNL](../topics/dataversenl.qmd) page, you can select any of the headings as an anchor. Here are the steps involved:
+
+1. Identify the specific anchor to embed at (for example, "How to request access")
+2. Click the link icon next to the anchor
+
+![Screenshot of the anchor and the link icon highlighted](/public/Screenshot 2025-05-08 at 10.49.51.png)
+
+3. Go to your browser's navigation bar and copy the new link (`https://rdm.vu.nl/topics/dataversenl.html#how-to-request-access`)
+
+This link is all you need to anchor the embedding itself, which we explain in the section [How to embed](#how-to-embed).
+
+## How to embed
+
+After you identified the page and possible anchor to embed, we can now move on to actually embedding it. Embedding the pages themselves is supported by all major browsers using the HTML element [`iframe`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/iframe).
+
+Concretely, you can use the following example code for the link we found in [Selecting what to embed](#selecting-what-to-embed).
+
+```html
+<iframe
+    src="https://rdm.vu.nl/topics/dataversenl.html#how-to-request-access"
+    title="How to request access to DataverseNL"
+    width="100%"
+    height="300px"
+    loading=lazy
+    style="border: solid 1px #0080c9">
+</iframe>
+```
+
+You can switch out the link, title, and other attributes to your liking – we include some styling options here to get started. You can copy-paste this into any handbook page directly or into any HTML editor:
+
+<iframe
+    src="https://rdm.vu.nl/topics/dataversenl.html#how-to-request-access"
+    title="How to request access to DataverseNL"
+    width="100%"
+    height="300px"
+    loading=lazy
+    style="border: solid 1px #0080c9; overflow: hidden;">
+</iframe>
+
+You can find the [detailed code on how this page embeds the content, on GitHub](https://github.com/ubvu/open-handbook/blob/main/blog/2025-05-15embed-iframe.qmd#L43), from line 43.
+
+Thanks for reading and good luck creating your own embeds of the {{< var title >}} across VU Amsterdam pages 😊 If you have questions or it does not work and you don't understand why, please [contact the RDM Support Desk](rdm@vu.nl) and one of the editors will try to help you.

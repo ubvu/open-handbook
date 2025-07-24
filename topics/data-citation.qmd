@@ -1,5 +1,6 @@
 ---
 title: Data Citation
+categories: [Research Data]
 ---
 
 ## Citation Elements
@@ -21,7 +22,7 @@ Optional elements that may be included in the reference are:
 * Creation Date
 * Date of Consultation (last)
 
-If you (re)used another, openly accessible dataset *to create your own*, it is also important to (first check that the original dataset's licence permits this and to) cite that dataset correctly. If you want to make clear in a journal article that another dataset was reused, you can add this information, including a citation to the original dataset, to the data availability statement, besides the reference list. In your own dataset, you can use the [README file](./data-documentation.qmd#readme) to cite the original dataset and explain how it was reused. You should also add documentation about what processing you did to the original dataset to create your own, and refer to this documentation in the README file. Many repositories prescribe a standard way to cite datasets for several citation styles, and one can very often simply copy and paste that. For example, Zenodo has a citation box on the bottom right of the page, and there one can choose a citation style and simply copy that or export the citation to a citation file (which is useful if you are using EndNote or Zotero). The same can be done in Datacite ([example](https://commons.datacite.org/doi.org/10.5281/zenodo.6949511)).
+If you (re)used another, openly accessible dataset *to create your own*, it is also important to (first check that the original dataset's licence permits this and to) cite that dataset correctly. If you want to make clear in a journal article that another dataset was reused, you can add this information, including a citation to the original dataset, to the data availability statement, besides the reference list. In your own dataset, you can use the [README file](../topics/data-documentation.qmd#readme) to cite the original dataset and explain how it was reused. You should also add documentation about what processing you did to the original dataset to create your own, and refer to this documentation in the README file. Many repositories prescribe a standard way to cite datasets for several citation styles, and one can very often simply copy and paste that. For example, Zenodo has a citation box on the bottom right of the page, and there one can choose a citation style and simply copy that or export the citation to a citation file (which is useful if you are using EndNote or Zotero). The same can be done in Datacite ([example](https://commons.datacite.org/doi.org/10.5281/zenodo.6949511)).
 
 ### Example data citation
 
