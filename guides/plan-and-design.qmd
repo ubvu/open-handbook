@@ -7,28 +7,24 @@ categories: ["Plan & Design"]
 
 ## Research Proposal
 
-### Research Proposal / Grant Office
-
 Grant programmes from organisations like NWO, ZonMw and ERC require you to think about the method of data collection, the journey of the data in your research project and how to protect or share data during and after the research project. It is important to bear in mind the specific laws and regulations that apply to the kind of data that is collected. If a project involves data on individuals and organisations this impacts the design of the necessary IT infrastructure. A more detailed description of this will later be captured in the data management plan.
 
 When writing your research proposal the following items are important:
 
 * Fill in the [Data Management Section](#data-management-section) if your funder requires this
-* Planning: One of the early deliverables will be a detailed [Data Management Plan](../topics/data-management-plan.qmd)
+* Planning: One of the early deliverables will be a detailed [Data Management Plan](../topics/data-management-plan.qmd). Instructions for writing a DMP are available in the [DMP section](#data-management-plan) below. You can find more information about aspects to be addressed in a DMP in [RDM requirements](#rdm-requirements), [Collaboration](#collaboration), [Data Security](#data-security), [GDPR & Privacy](#gdpr-privacy) and [Policies & Regulations](#policies-regulations).
 * Budget: Take into account the [costs](#rdm-costs) (labour and material) for data storage during and data archiving after your project.
-* Writing: Funders that distribute grants like to maximise the effectiveness of this investment. It is therefore highly recommended that the data will be made Findable, Accessible, Interoperable and Re-usable ([FAIR Principles](../topics/fair-principles.qmd)). This does not mean that the data have to be open: Laws, licenses and contracts regarding personal and sensitive data may limit the possibility to share the data publicly.
+* Writing: Funders that distribute grants like to maximise the effectiveness of this investment. It is therefore highly recommended that the data will be made Findable, Accessible, Interoperable and Re-usable ([FAIR Principles](../topics/fair-principles.qmd)). For that reason, it is useful to make explicit in your proposal how you will aim to make your data FAIR. This does not mean that the data have to be open: Laws, licenses and contracts regarding personal and sensitive data may limit the possibility to share the data publicly.
 
 The [RDM Support Desk](https://vu.nl/en/about-vu/more-about/rdm-support-desk) provides advice and help when writing a [Data Management Section](#data-management-section) as part of the research proposal. Also make sure to reach out to VU Amsterdam [Grants Office](https://vu.nl/en/about-vu/more-about/vu-grants-office) (IXA-GO) for advice and practical aid for your grant in general as early as possible.
 
-#### Data Management Section
+### Data Management Section
 
-```{.include shift-heading-level-by=4}
+```{.include shift-heading-level-by=3}
 ../topics/data-management-section.qmd
 ```
 
-## RDM Costs
-
-### Costs & Data Management
+### RDM Costs
 
 Many research funders encourage applicants to include data management and sharing costs in research proposals. Some funders will provide advice on costs related to data management. Some remarks on costs are provided here:
 
@@ -55,6 +51,56 @@ Examples to put in a data management plan:
 | Analysed data  | Regression graphic          | Photoshop files | Software costs                                                    |
 |                | Project Website             | HTML, Java      | Hosting fee                                                       |
 |                |                             |                 | Personnel to build initial website                                |
+
+## Data Management Plan
+
+If you receive funding from a funder, one of the early deliverables will be a [Data Management Plan](../topics/data-management-plan.qmd). In general, every research benefits from writing a data management plan. It will help you to address data management aspects in a systematic way, so that you can set up useful RDM practices for your research and identify potential things for which you need to arrange something, like sufficient storage space, a particular data collection methodology, etc.
+
+```{.include shift-heading-level-by=3}
+../topics/data-management-plan.qmd
+```
+
+### Choosing the right template
+
+Various templates exist in which you can set up your DMP. We strongly recommend that you use the VU template, which is called `VU DMP template 2021 (NWO & ZonMw certified) v1.4`. Below you'll find an explanation of how to access this template. If you need to write a DMP for funding agencies NWO, ZonMw or ERC, you can use the VU template as well.
+
+#### VU template
+
+You can find the VU DMP template in [DMPonline](https://dmponline.vu.nl/). It includes concise guidance on how to complete your DMP.
+
+You can select the VU template by taking the following steps (see also the picture below).
+
+1. On your dashboard, click on `Create plan`.
+2. Enter the title of your research project (you don't have to select the check box for mock testing).
+3. Select `Vrije Universiteit Amsterdam` as your primary research organisation.
+4. For the question on primary funding organisation, select the check box on the right, saying that no funder is associated with your plan.
+
+Note: Follow these steps as well if you receive funding from NWO or ZonMw (see also below).
+
+![Screenshot of a form for creating a data management plan, asking for the research project, where it is being done, who is funding it and what template you would like to use.](../public/dmp-001.png)
+
+If you're aiming to write a full DMP based on VU Amsterdam DMP template, please make sure you don't select the GDPR registration form.
+
+![A screenshot highlighting to not use VU Amsterdam GDPR Registration form](../public/dmp-002.png)
+
+#### Funder template
+
+We recommend researchers to use VU Amsterdam DMP template whenever possible, especially for researchers who work with personal data. The VU DMP template includes questions that serve as input for the GDPR record of processing activities. This means that when you write a DMP based on the VU DMP template, you simultaneousely comply with the VU requirement to register the personal data you use in your research.
+
+However, it is also possible to use other templates in DMPonline. If your funder or partner organization requires you to use a certain template, it is possible to select that template in DMPonline. Please follow the steps below to select a funder's template.
+
+1. On your dashboard, click on `Create plan`.
+2. Enter the title of your research project (you don't have to select the check box for mock testing).
+3. Select `Vrije Universiteit Amsterdam` as your primary research organisation.
+4. In the field under `Select the primary funding organisation`, start typing the name of your funder and select their template.
+
+![Screenshot of a filled out form for creating a data management plan, with example data included.](../public/dmp-003.png)
+
+Researchers who don't work with personal data and who wish to use another DMP template than the VU template, can also follow the steps above.
+
+#### GDPR registration form
+
+If you work with personal data, you need to [register your processing activities](https://rdm.vu.nl/guides/comply-with-gdpr.html#register-your-processing-activities). If you don't need to write a (new) DMP, you can use the `VU GDPR registration form for research v1.1`. Your faculty's 🔒 [Privacy Champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information) can help you with your registration.
 
 ## RDM Requirements
 
@@ -233,4 +279,4 @@ NWO aims to ensure that all the research it funds is openly accessible to everyo
 
 The guiding principle here is 'as open as possible, as closed as necessary.' Due consideration is given to aspects such as privacy, public security, ethical limitations, property rights and commercial interests. In relation to research data, NWO recognizes that software (algorithms, scripts and code developed by researchers in the course of their work) may be necessary to access and interpret data. In such cases, the data management plan will be expected to address how information about such items will be made available alongside the data.
 
-More information on Data Management is also available on the [NWO website](https://www.nwo.nl/en/research-data-management) where a NWO Data Management Template is made available. The [VU Data Management template in DMP Online](../topics/data-management-plan.qmd#vu-template) is certified by both NWO and ZonMW and can also be used by VU researchers for projects funded by both organizations.
+More information on Data Management is also available on the [NWO website](https://www.nwo.nl/en/research-data-management) where a NWO Data Management Template is made available. The [VU Data Management template in DMP Online](../topics/data-management-plan.qmd#vu-template) is certified by both NWO and ZonMW and can also be used by VU researchers for projects funded by both organisations.
