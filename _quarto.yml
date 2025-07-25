@@ -51,7 +51,13 @@ website:
       - text: Manuals
         file: manuals.qmd
       - text: Blog
-        file: blog.qmd
+        menu: 
+          - text: All
+            file: blogs.qmd
+          - text: VU RDM Blog
+            href: /blog.html#category=VU%20RDM%20Blog
+          - text: IT for Research Blog
+            href: /blog.html#category=IT%20for%20Research
       - contributing.qmd
     tools:
       - icon: github

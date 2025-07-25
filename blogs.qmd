@@ -1,0 +1,19 @@
+---
+title: "Blogs"
+listing:
+  contents: blog
+  type: grid # type options: default, table, grid, custom
+  table-striped: true
+  table-hover: true
+  fields: [title, reading-time, image, description, date]
+  categories: true
+---
+
+::: {.callout-note}
+<!-- Other types of callouts: .callout-note, .callout-warning, .callout-important, .callout-caution -->
+
+## What is a blog?
+
+A blog is a website or web page that features regularly updated posts, which can include news, insights, or opinions on specific topics. The goal of a blog is to inform, educate.
+
+:::
