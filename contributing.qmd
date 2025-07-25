@@ -281,6 +281,13 @@ nano <filename>
 git add <filename>
 # Commit the edits
 git commit -m "<commit message>"
+```
+
+Once you are done editing, you can also render the page to check that all is well. If you have already used `quarto render .` once, you can simply re-render the page you were working on, using `quarto render <path/filename.qmd>`, e.g. `quarto render ./topics/yoda.qmd`, which is a lot quicker. Note that you should not copy the < and >, they are used here to indicate where to add file and folder names, or a suitable commit message.
+
+Once you are happy with the result, you can push the new version back to the github repository online:
+
+```sh
 # Push the edits to the remote (online) repository. You can only push to a new branch: the main branch is protected.
 # If you do not have editing rights to the handbook repository, you would be pushing to your fork.
 git push origin main:<new-branch-name>
