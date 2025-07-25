@@ -217,6 +217,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#add-the-citation" id="toc-add-the-citation" class="nav-link" data-scroll-target="#add-the-citation">Add the citation</a></li>
   </ul></li>
   <li><a href="#rendering-handbook-locally" id="toc-rendering-handbook-locally" class="nav-link" data-scroll-target="#rendering-handbook-locally">Rendering handbook locally</a></li>
+  <li><a href="#using-vs-code-to-contribute" id="toc-using-vs-code-to-contribute" class="nav-link" data-scroll-target="#using-vs-code-to-contribute">Using VS Code to contribute</a>
+  <ul>
+  <li><a href="#install-vs-code" id="toc-install-vs-code" class="nav-link" data-scroll-target="#install-vs-code">Install VS Code</a></li>
+  <li><a href="#install-the-quarto-extension-for-vs-code" id="toc-install-the-quarto-extension-for-vs-code" class="nav-link" data-scroll-target="#install-the-quarto-extension-for-vs-code">Install the Quarto extension for VS Code</a></li>
+  <li><a href="#make-sure-git-is-installed" id="toc-make-sure-git-is-installed" class="nav-link" data-scroll-target="#make-sure-git-is-installed">Make sure Git is installed</a></li>
+  <li><a href="#create-a-root-folder" id="toc-create-a-root-folder" class="nav-link" data-scroll-target="#create-a-root-folder">Create a root folder</a></li>
+  <li><a href="#create-a-fork-of-the-handbook" id="toc-create-a-fork-of-the-handbook" class="nav-link" data-scroll-target="#create-a-fork-of-the-handbook">Create a Fork of the Handbook</a></li>
+  <li><a href="#clone-your-fork" id="toc-clone-your-fork" class="nav-link" data-scroll-target="#clone-your-fork">Clone your Fork</a>
+  <ul class="collapse">
+  <li><a href="#sign-in-to-github" id="toc-sign-in-to-github" class="nav-link" data-scroll-target="#sign-in-to-github">Sign in to GitHub</a></li>
+  <li><a href="#select-the-fork-you-created-earlier" id="toc-select-the-fork-you-created-earlier" class="nav-link" data-scroll-target="#select-the-fork-you-created-earlier">Select the Fork you created earlier</a></li>
+  </ul></li>
+  <li><a href="#editing" id="toc-editing" class="nav-link" data-scroll-target="#editing">Editing</a>
+  <ul class="collapse">
+  <li><a href="#create-a-branch" id="toc-create-a-branch" class="nav-link" data-scroll-target="#create-a-branch">Create a branch</a></li>
+  <li><a href="#editing-the-page" id="toc-editing-the-page" class="nav-link" data-scroll-target="#editing-the-page">Editing the page</a></li>
+  <li><a href="#commit-changes" id="toc-commit-changes" class="nav-link" data-scroll-target="#commit-changes">Commit changes</a></li>
+  <li><a href="#publish-branch" id="toc-publish-branch" class="nav-link" data-scroll-target="#publish-branch">Publish Branch</a></li>
+  <li><a href="#create-a-pull-request" id="toc-create-a-pull-request" class="nav-link" data-scroll-target="#create-a-pull-request">Create a Pull request</a></li>
+  <li><a href="#more-information" id="toc-more-information" class="nav-link" data-scroll-target="#more-information">More information</a></li>
+  <li><a href="#using-the-visual-editor" id="toc-using-the-visual-editor" class="nav-link" data-scroll-target="#using-the-visual-editor">Using the Visual editor</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/contributing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -533,8 +556,205 @@ Note
 <li><a href="https://swcarpentry.github.io/git-novice/08-collab.html">Collaborating</a> and <a href="https://swcarpentry.github.io/git-novice/08-collab.html">Push local branches to a remote</a> from the Carpentries’ Version Control with Git lesson.</li>
 </ul>
 <p>We do not guarantee this will work immediately, but should cover most instances. If you are looking to contribute and want to render things locally, try this first, and if you run into any issues, <a href="https://github.com/ubvu/open-handbook/issues/new">let us know in an issue report</a>. We’re happy to try our best if you share your error messages 😊</p>
+</section>
+<section id="using-vs-code-to-contribute" class="level2">
+<h2 class="anchored" data-anchor-id="using-vs-code-to-contribute">Using VS Code to contribute</h2>
+<p>If you are planning to make multiple contributions to the Handbook, working in the GitHub web interface can get cumbersome. In that case we suggest you use an IDE (Integrated Development Environment) to create and edit pages. An IDE is a text editor that has lots of extra functionalities for developers, such as integration with Git. <a href="https://code.visualstudio.com">VS Code</a> is a widely used, free, IDE and it is very well suited to edit Markdown files and has integrated Git &amp; GitHub support. This allows you to work on your edits on your laptop whenever you want, preview them using the Quarto client and <em>Push</em> your changes to GitHub. No special knowledge of the Git Commandline is necessary.</p>
+<section id="install-vs-code" class="level3">
+<h3 class="anchored" data-anchor-id="install-vs-code">Install VS Code</h3>
+<p>VS Code is available for Windows, Mac and Linux. Install it from <a href="https://code.visualstudio.com/Download" class="uri">https://code.visualstudio.com/Download</a>.</p>
+<p>Note that VS Code is a Microsoft product, but the source code of VS Code is open source. The VS Code version you download from the above link is not, and it contains telemetry/tracking. A completely open source version without telemetry is available from <a href="https://vscodium.com" class="uri">https://vscodium.com</a>, the functionality is the same.</p>
+</section>
+<section id="install-the-quarto-extension-for-vs-code" class="level3">
+<h3 class="anchored" data-anchor-id="install-the-quarto-extension-for-vs-code">Install the Quarto extension for VS Code</h3>
+<p>Install the <a href="https://marketplace.visualstudio.com/items?itemName=quarto.quarto">Quarto Extension</a> to make sure VS Code understands the Quarto format.</p>
+<p>Note that unfortunately the Preview functionality does not work very well with a project as large as the Handbook.</p>
+</section>
+<section id="make-sure-git-is-installed" class="level3">
+<h3 class="anchored" data-anchor-id="make-sure-git-is-installed">Make sure Git is installed</h3>
+<ul>
+<li>Open VS Code and click on the Git icon on the left. If you do not have Git installed you can do so from here, the download button will lead you to <a href="https://git-scm.com/downloads" class="uri">https://git-scm.com/downloads</a>, you do not need the GUI client.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./public/vscode/contr-vscode-download.png" class="img-fluid figure-img"></p>
+<figcaption>Download Git</figcaption>
+</figure>
+</div>
+<p><img src="./public/vscode/contr-vscode-installeditor.png" class="img-fluid" alt="Default Editor"> - During the install you can set VS Code as default editor</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./public/vscode/contr-vscode-installpath.png" class="img-fluid figure-img"></p>
+<figcaption>Recommended PATH option</figcaption>
+</figure>
+</div>
+<ul>
+<li><p>Keep defaults for the rest.</p></li>
+<li><p>Open a command prompt to set your username and email address, without this you cannot <em>push</em> your changes to GitHub.</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./public/vscode/contr-vscode-gituser.png" class="img-fluid figure-img"></p>
+<figcaption>Set git username and email</figcaption>
+</figure>
+</div>
+</section>
+<section id="create-a-root-folder" class="level3">
+<h3 class="anchored" data-anchor-id="create-a-root-folder">Create a root folder</h3>
+<p>Create a folder where your handbook copy and other code projects will be stored. For example on Windows <code>C:\users\&lt;username&gt;\VS Code</code>.</p>
+<p>Note that it is not advisable to store code projects in a folder which is synced with OneDrive (such as the “Documents’ folder), OneDrive will have problems syncing the many small files that git uses. The same applies to SURFdrive and Research Drive. You will push changes to your code projects to github so there is no need to make extra backups.</p>
+</section>
+<section id="create-a-fork-of-the-handbook" class="level3">
+<h3 class="anchored" data-anchor-id="create-a-fork-of-the-handbook">Create a Fork of the Handbook</h3>
+<ul>
+<li>Go to the <a href="https://github.com/ubvu/open-handbook">Handbook repository on GitHub</a>.</li>
+</ul>
+<p><img src="./public/vscode/contr-vscode-githubfork.png" class="img-fluid" alt="Fork button"> - Click Fork button at the top right.</p>
+<p><img src="./public/vscode/contr-vscode-githubfork2.png" class="img-fluid" alt="Your new Fork"> - You end up with all the code in your personal account.</p>
+</section>
+<section id="clone-your-fork" class="level3">
+<h3 class="anchored" data-anchor-id="clone-your-fork">Clone your Fork</h3>
+<ul>
+<li>Go to the Git Tab (or click File &gt; New window), there you will see the option to “Clone Repository”.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./public/vscode/contr-vscode-clone.png" class="img-fluid figure-img"></p>
+<figcaption>Clone Repository</figcaption>
+</figure>
+</div>
+<p><img src="./public/vscode/contr-vscode-clonegithub.png" class="img-fluid" alt="Clone from GitHub"> - You see the option “Clone from GitHub”.</p>
+<section id="sign-in-to-github" class="level4">
+<h4 class="anchored" data-anchor-id="sign-in-to-github">Sign in to GitHub</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./public/vscode/contr-vscode-cloneallow.png" class="img-fluid figure-img"></p>
+<figcaption>Allow GitHub sign in</figcaption>
+</figure>
+</div>
+<ul>
+<li><p>If you have never signed in with Git before you will be asked to do so. Click Allow.</p></li>
+<li><p>The GitHub Sign In page will be opened in the Browser. Login as usual.</p></li>
+</ul>
+</section>
+<section id="select-the-fork-you-created-earlier" class="level4">
+<h4 class="anchored" data-anchor-id="select-the-fork-you-created-earlier">Select the Fork you created earlier</h4>
+<ul>
+<li>Once you are signed in you can select from a list of repositories.</li>
+</ul>
+<p><img src="./public/vscode/contr-vscode-cloneselect.png" class="img-fluid" alt="Select Forked repository"> - Select the Fork you created earlier.</p>
+<p><img src="./public/vscode/contr-vscode-clonefolder.png" class="img-fluid" alt="Clone to code folder"> - Select your <a href="#create-a-root-folder">code root folder</a>.</p>
+<ul>
+<li>A folder called <code>open-handbook</code> will be created in that folder and you can open it in VS Code.</li>
+</ul>
+</section>
+</section>
+<section id="editing" class="level3">
+<h3 class="anchored" data-anchor-id="editing">Editing</h3>
+<p>Now you have a full copy of the Handbook on your laptop. Of course you are not working on the Handbook directly, but on your <em>Fork</em>.</p>
+<p>You can make changes to the actual Handbook by making changes to your <em>Fork</em> and creating a <em>Pull Request</em>. The <em>Pull Request</em> will be opened in the ubvu open-handbook repository. The editors can then approve your request, perhaps after suggesting some changes, and your changes will be <em>merged</em> to <a href="https://rdm.vu.nl.">rdm.vu.nl</a>.</p>
+<p>The handbook is a collaborative effort, multiple people will be making changes to multiple files at the same time. To prevent 2 or more contributors making changes to the same file you should keep the number of files you change in your <em>Pull requests</em> small, preferrably just one page at a time. The best way to do this is to start by creating a <em>branch</em> for the changes you want to make.</p>
+<section id="create-a-branch" class="level4">
+<h4 class="anchored" data-anchor-id="create-a-branch">Create a branch</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./public/vscode/contr-vscode-branchcreate.png" class="img-fluid figure-img"></p>
+<figcaption>Create Branch</figcaption>
+</figure>
+</div>
+<p><img src="./public/vscode/contr-vscode-branchcreate2.png" class="img-fluid" alt="Provide a name"> - Provide a name for the branch. Keep it short and descriptive, this is mainly for yourself so you can easily remember what you created the branch for.</p>
+<p>VS Code will automatically switch to the branch. You can always see the branch you are working on in the bottom left of the Window.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./public/vscode/contr-vscode-viewbranch.png" class="img-fluid figure-img"></p>
+<figcaption>Branch name</figcaption>
+</figure>
+</div>
+<p>You can click on the name there to switch the branch you are working on.</p>
+<p>Remember your changes are tied to the branch. If you would switch from the <code>zenodo_topic</code> branch to the <code>main</code> branch you will no longer see the changes you made to the Zenodo topic page. But if you have committed your changes they will be visible again once you switch back.</p>
+</section>
+<section id="editing-the-page" class="level4">
+<h4 class="anchored" data-anchor-id="editing-the-page">Editing the page</h4>
+<p>VS Code is basically just a text editor. Open the file you want to work on by double clicking or right click to create a new one in the “Explorer”.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The <a href="#install-the-quarto-extension-for-vs-code">Quarto Extension</a> includes a <a href="#using-the-visual-editor">Visual Editor</a> with which you can format Quarto pages without typing Markdown code.</p>
+</div>
+</div>
+<ul>
+<li>Work on your page and save your changes (Click File &gt; Save or use <code>CTRL+S</code>).</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./public/vscode/contr-vscode-changes.png" class="img-fluid figure-img"></p>
+<figcaption>Changes</figcaption>
+</figure>
+</div>
+<ul>
+<li>VS Code will show you the changes with respect to the branch. Now you can <em>commit</em></li>
+</ul>
+</section>
+<section id="commit-changes" class="level4">
+<h4 class="anchored" data-anchor-id="commit-changes">Commit changes</h4>
+<ul>
+<li>Click on the Git icon on the left.</li>
+</ul>
+<p><img src="./public/vscode/contr-vscode-commit.png" class="img-fluid" alt="Commit message">- Set a short descriptive <em>commit message</em>, click the plus sign next to the files you want in your commit, and click commit.</p>
+<p><img src="./public/vscode/contr-vscode-viewchanges.png" class="img-fluid" alt="View changes"> By double-clicking on a <em>Modified</em> file you will see a visual representation of your changes.</p>
+</section>
+<section id="publish-branch" class="level4">
+<h4 class="anchored" data-anchor-id="publish-branch">Publish Branch</h4>
+<p>Now you have committed your changes to the local git repository on your laptop. You will also need to <em>publish the branch</em> to github, so it gets updated as well.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./public/vscode/contr-vscode-branchpublish.png" class="img-fluid figure-img"></p>
+<figcaption>Publish Branch</figcaption>
+</figure>
+</div>
+<p><img src="./public/vscode/contr-vscode-branchpublish2.png" class="img-fluid" alt="Branch Published"> You will be able to view the branch on github.</p>
+<p>VS Code will now allow you to <em>Sync</em> (<em>Push</em> and <em>Pull</em>) your commits to the branch on GitHub.</p>
+</section>
+<section id="create-a-pull-request" class="level4">
+<h4 class="anchored" data-anchor-id="create-a-pull-request">Create a Pull request</h4>
+<p>Once you are happy with the changes you made you can <a href="#submit-a-pull-request">submit a Pull request</a> on GitHub.</p>
+</section>
+<section id="more-information" class="level4">
+<h4 class="anchored" data-anchor-id="more-information">More information</h4>
+<p>The VS Code documentation has a nice <a href="https://code.visualstudio.com/docs/sourcecontrol/intro-to-git">introduction to Git section</a> with more useful tips.</p>
+<p>The <a href="https://quarto.org/docs/get-started/hello/VS%20Code.html">Quarto tutorial</a> has more tips on using VS Code to edit Quarto pages.</p>
+</section>
+<section id="using-the-visual-editor" class="level4">
+<h4 class="anchored" data-anchor-id="using-the-visual-editor">Using the Visual editor</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./public/vscode/contr-vscode-quartopreview.png" class="img-fluid figure-img"></p>
+<figcaption>Visual editor</figcaption>
+</figure>
+</div>
+<ul>
+<li>To use the visual editor right-click anywhere in the document you are working on, or use <code>CTRL+SHIFT+F4</code></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./public/vscode/contr-vscode-visualmenu.png" class="img-fluid figure-img"></p>
+<figcaption>Formatting menu</figcaption>
+</figure>
+</div>
+<ul>
+<li>You can now format text using a simple menu bar, instead of typing Markdown code.</li>
+</ul>
 
 
+</section>
+</section>
 </section>
 
 
