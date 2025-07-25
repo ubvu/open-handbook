@@ -3,150 +3,38 @@ title: Software Publishing
 categories: [Research Software]
 ---
 
-## What is Software Publishing?
+## What is software publishing?
 
-Software publishing is the process of making research software publicly available and discoverable to the broader scientific community, typically through formal publication channels that provide permanent identifiers, peer review, and institutional recognition. Unlike simply sharing code on platforms like GitHub, software publishing involves formal documentation, quality assurance, and integration with scholarly publication systems that treat software as a legitimate research output deserving of academic credit and citation.
+When we mention **software publishing** at VU Amsterdam, we mean the following:
 
-Software publishing encompasses both standalone software publications (dedicated software papers or repository deposits) and software components published alongside traditional research articles. It involves creating comprehensive documentation, ensuring software quality and usability, providing proper licensing, and making the software discoverable through appropriate metadata and indexing systems.
+> Making research data, associated metadata, accompanying documentation, and software code (where relevant) accessible in a repository in such a manner that **they can be discovered on the Web** and **referred to in a unique and persistent way** (Inspired by the definition in the [CODATA Research Data Management Terminology](http://vocabs.ardc.edu.au/repository/api/lda/codata/codata-research-data-management-terminology/v001/resource?uri=https%3A%2F%2Fterms.codata.org%2Frdmt%2Fdata-publication)).
 
-## Examples
+As stated in the [Research Data and Software Management Policy](../topics/research-data-and-software-management-policy.qmd), researchers are responsible for publishing all research software that leads to a published result (either in an article or other narrative form) for scientific reuse, meaning that these materials can be discovered on the Web and referred to in a unique and persistent way. This means that the existence of software is announced and that basic information about this software (like title, creator, moment of publication, version, etc.) can be found online, but it doesn't necessarily mean that others will be able to access and download the actual software. If software contains (or will reveal) confidential information, information to which intellectual properties apply, and/or personal data, an assessment must take place to determine whether the software can be made available for reuse and if so, under which conditions. A custom licence ('restricted' or 'closed') will indicate if conditional access can be granted, and if so, what the conditions are. 
 
-Software publishing can take various forms:
+## Purpose
 
-### Standalone Software Publications
-- **Software papers**: Dedicated articles describing software functionality, validation, and impact (e.g., Journal of Open Source Software, SoftwareX)
-- **Repository deposits**: Direct deposit of software packages in specialized repositories with full documentation
-- **Package registries**: Publication through language-specific package managers (PyPI, CRAN, npm) with proper documentation
-- **Platform publications**: Release through platforms like GitHub/Zenodo integration with DOI assignment
-- **Institutional repositories**: Publication through university or research institution software repositories
+Publishing software is crucial for the accessibility of research output. It helps to make VU Amsterdam's research visible, verifiable and, where possible, reusable. These are important goals for VU Amsterdam, as they contribute to a transparent reseach practice and enable other researchers to build on work that has been done by VU researchers. Publishing software means that researchers make their software known to the world, even if they cannot be accessed by others directly, but only after granting conditional access. This enables other researchers to reuse the software, leading to more impact of research that is carried out at VU Amsterdam. It may also result in new collaborations and citations. Another advantage is that it makes the work of a researcher more visible, going beyond the visibility of a publication alone.
 
-### Integrated Software Publications
-- **Supplementary software**: Software accompanying journal articles as supplementary materials
-- **Reproducible research packages**: Combined data, code, and analysis workflows published together
-- **Interactive publications**: Executable papers where software is embedded in the publication itself
-- **Protocol publications**: Detailed software protocols published in methods journals
-- **Benchmark suites**: Published software for comparing and evaluating other tools
+Publication of research is not complete without the data used and the code written to clean and analyse it. Publishing data and software allows other researchers to use and build upon your work.
 
-### Documentation and Metadata Requirements
-- **Software description**: Clear explanation of purpose, functionality, and target users
-- **Installation instructions**: Step-by-step setup and configuration guidance
-- **Usage examples**: Tutorials, code examples, and sample datasets
-- **API documentation**: Comprehensive function/method documentation for developers
-- **Performance metrics**: Benchmarks, validation results, and comparison with alternatives
-- **Licensing information**: Clear terms of use and distribution rights
-- **Citation guidelines**: Instructions for proper academic citation
-- **Contribution guidelines**: Processes for others to contribute improvements
+## Requirements
 
-### Quality Assurance Elements
-- **Peer review**: Formal evaluation by domain experts and software engineering specialists
-- **Testing documentation**: Evidence of comprehensive testing including unit, integration, and acceptance tests
-- **Validation studies**: Scientific validation demonstrating software correctness and reliability
-- **Usability evaluation**: Evidence that software is usable by intended audiences
-- **Sustainability plan**: Strategy for long-term maintenance and community development
+At VU Amsterdam, we strive to make our research software [FAIR](../topics/fair-principles.qmd). Publishing software is a crucial step in making it findable. As explained in the definition above, publishing means that you make software discoverable on the internet. As a result, other researchers can find out about the existence of your code and consider whether it may be useful for them in their own research.
 
-### Publication Metadata
-- **Persistent identifiers**: DOIs, ORCIDs, and other permanent identification systems
-- **Version control**: Clear versioning scheme linking published versions to development history
-- **Dependencies**: Comprehensive documentation of software and hardware requirements
-- **Contributors**: Complete attribution of all contributors with appropriate credit
-- **Funding acknowledgments**: Recognition of financial support for software development
+A [persistent identifier](../topics/persistent-identifier.qmd) helps in making software findable, because it ensures that the persistent identifier always resolves to the correct digital object. Rich [metadata](../topics/metadata.qmd) also contribute to the findability of software. The more information you provide, the more likely it is that others will be able to find your software. It is beneficial to use terminology that is common in your discipline when filling out the metadata fields in a repository as well as key words in a key words or notes section of the metadata. Rich information about your software will also help other researchers determine whether your software is potentially relevant for them and is faster to assess than reading through the code itself.
 
-## Tools/services/resources related to concept provided by VU
+Repositories provided by VU Amsterdam ([Yoda](https://publication.yoda.vu.nl/) and [DataverseNL](https://dataverse.nl/dataverse/vuamsterdam)) will generate a [Persistent Identifier](../topics/persistent-identifier.qmd) for your software and they will ask you to fill out [metadata](../topics/metadata.qmd) fields. In this way, they contribute to making your software findable. This will also be the case for external trusted repositories (such as [Zenodo](https://zenodo.org/)).
 
-VU Amsterdam provides comprehensive support for software publishing:
+When you publish your software, it is important to apply a [licence](../topics/software-licensing.qmd) to it. If you don't do that, others will not be allowed to reuse your software. A licence is a legal instrument that tells others what they can and cannot do with your software and is therefore an important aspect of making software reusable.
 
-### Primary Publication Platforms
-- **Pure**: [Required registration](software-registration.qmd) of research software per VU policy, provides institutional recognition and DOI assignment
-- **Zenodo**: Long-term preservation with DOI assignment, integrated with GitHub for automatic publishing
-- **4TU.ResearchData**: Specialized repository for engineering and technical software with peer review options
-- **Journal of Open Source Software (JOSS)**: VU supports publication in this leading software journal
+Since code can be written in any number of ways to solve a problem the absolute minimum that should be published to ensure verification is a (working) copy of the code/workflow that uses the raw data to produce the end result you have presented in your research and a list of the dependencies and their versions.
 
-### Documentation and Preparation Tools
-- **GitHub**: Version control with integrated publishing workflows, issue tracking, and project management
-- **GitLab**: Alternative platform with continuous integration and automated documentation generation
-- **VU Compute Hub**: Jupyter environments for creating interactive documentation and tutorials
-- **Docker/Singularity**: Container technologies for packaging software with complete environments
+## How does software publishing work in practice?
 
-### Writing and Documentation Support
-- **Research Data Management (RDM) Support**: Guidance on software publication best practices via [rdm@vu.nl](mailto:rdm@vu.nl)
-- **VU Writing Center**: Support for technical writing and software documentation
-- **LaTeX/Markdown tools**: Institutional support for documentation preparation
-- **Citation management**: Integration with reference management systems for proper software citation
+As mentioned above, software publishing must happen through a repository. These can be provided by the VU Amsterdam such as ([Yoda](https://publication.yoda.vu.nl/), [GitLab](https://git.vu.nl/), and [DataverseNL](https://dataverse.nl/dataverse/vuamsterdam)) or third parties like [Zenodo](https://zenodo.org/), [OSF](https://osf.io/), [Codeberg](https://codeberg.org/), and [Github](https://github.com). Some of these provide an integrated option to get a DOI for your software or have documentation on how to include one within their recommended workflow.
 
-### Quality Assurance and Review
-- **Code review processes**: Institutional support for peer review of software before publication
-- **Testing frameworks**: Tools and guidance for comprehensive software testing
-- **Continuous integration**: Automated testing and quality assurance pipelines
-- **Performance benchmarking**: Resources for validating software performance and correctness
-
-### Legal and Licensing Support
-- **Privacy Champions**: Faculty-level guidance on software licensing and intellectual property
-- **Legal consultation**: Institutional support for choosing appropriate open source licenses
-- **Contributor agreements**: Templates and guidance for managing external contributions
-- **Export control**: Guidance on legal restrictions for international software distribution
-
-### Institutional Recognition and Career Support
-- **Academic credit**: Software publications count toward research evaluations and career advancement
-- **Grant support**: Published software strengthens future funding applications
-- **Collaboration facilitation**: Published software attracts collaborators and users
-- **Professional development**: Support for building software engineering and publication skills
+Detailed workflows addressing publishing software can be found in the guide about [making your software FAIR](../guides/publishing-fair-software.qmd) and the topic about [archiving software](../topics/software-archiving.qmd).
 
 ## How does this help you in your research?
 
-### Academic Recognition and Career Advancement
-- **Formal credit**: Published software receives academic recognition equivalent to other research outputs
-- **Citation impact**: Citable software generates citations and demonstrates research impact
-- **Professional reputation**: High-quality software publications enhance technical credibility
-- **Career progression**: Software publications support promotion and tenure evaluations
-- **Grant competitiveness**: Published software strengthens funding proposals and demonstrates productivity
-
-### Research Impact and Reach
-- **Broader adoption**: Formally published software reaches wider audiences than informal sharing
-- **Scientific advancement**: Published software accelerates research by providing validated tools to the community
-- **Reproducible science**: Published software enables other researchers to reproduce and extend your work
-- **Cross-disciplinary impact**: Well-published software may find applications in unexpected fields
-- **Educational value**: Published software serves as teaching materials and exemplars
-
-### Quality and Sustainability Improvements
-- **Peer review benefits**: Publication review process improves software quality and documentation
-- **Community development**: Published software attracts contributors and builds user communities
-- **Long-term maintenance**: Publication creates incentives for ongoing software maintenance
-- **Error detection**: Public scrutiny helps identify and fix software bugs and limitations
-- **Best practices adoption**: Publication process encourages adoption of software engineering best practices
-
-### Collaboration and Networking
-- **Research partnerships**: Published software attracts collaborators and research partnerships
-- **Community building**: Software publications foster research communities around shared tools
-- **Knowledge exchange**: Publication facilitates knowledge transfer and methodological discussions
-- **International visibility**: Published software reaches global research communities
-- **Interdisciplinary connections**: Software may bridge different research domains
-
-### Research Integrity and Transparency
-- **Method transparency**: Published software makes computational methods fully transparent and verifiable
-- **Reproducibility support**: Others can exactly reproduce your computational analyses
-- **Error correction**: Open publication allows identification and correction of methodological errors
-- **Scientific validation**: Peer review validates the correctness and appropriateness of computational approaches
-- **Audit trail**: Published software provides permanent record of computational methods used
-
-### Economic and Efficiency Benefits
-- **Resource optimization**: Published software prevents duplication of development effort across research community
-- **Cost effectiveness**: Investment in software development generates returns through citations and recognition
-- **Funding leverage**: Published software can attract additional funding and resources
-- **Commercial opportunities**: Some published research software may lead to commercial applications
-- **Institutional benefits**: Published software enhances institutional research profile and rankings
-
-### Technical and Methodological Impact
-- **Method standardization**: Published software can become standard tools in research fields
-- **Benchmarking**: Published software provides reference implementations for comparing new methods
-- **Method evolution**: Published software provides foundation for methodological improvements
-- **Technical innovation**: Software publication encourages technical innovation and advancement
-- **Knowledge preservation**: Published software preserves valuable technical knowledge and expertise
-
-### Open Science and Social Impact
-- **Public benefit**: Published software makes research tools available to broader society
-- **Educational access**: Published software provides learning resources for students and early-career researchers
-- **Global equity**: Open publication reduces barriers to accessing advanced research tools
-- **Innovation acceleration**: Published software accelerates innovation by building on shared foundations
-- **Science communication**: Software publication makes research methods more accessible and understandable
-
-Software publishing transforms research code from internal project tools into recognized scholarly contributions that advance both individual careers and collective scientific knowledge, creating lasting impact that extends far beyond the original research project.
+Formally published software is not always expected from research, but it can have many benefits. Publishing your software will not only allow for more citations, but it will also help you to reach broader audiences and provide more opportunities for collaboration both outside your field and institution. Although not always needed, publishing your software can help with grant applications and foster a community norm of sharing code in your field speeding up research by avoiding duplication.
