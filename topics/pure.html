@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Blog – Research Support Handbook</title>
+<title>Pure (VU Research Information System) – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./public/favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4cd2ff38e2bb91ea8f446b9c6a091531.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../public/favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-4cd2ff38e2bb91ea8f446b9c6a091531.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,67 +68,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="alternate" type="application/rss+xml" title="{{< var title >}}" href="blog.xml" data-external="1"></head>
+</head>
 
 <body class="nav-fixed quarto-light">
 
@@ -139,8 +79,8 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -155,49 +95,49 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-topics">    
         <li>
-    <a class="dropdown-item" href="./topics.html">
+    <a class="dropdown-item" href="../topics.html">
  <span class="dropdown-text">All</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./topics.html#category=Policies and Legislation">
+    <a class="dropdown-item" href="../topics.html#category=Policies and Legislation">
  <span class="dropdown-text">Policies and Legislation</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./topics.html#category=Research Data">
+    <a class="dropdown-item" href="../topics.html#category=Research Data">
  <span class="dropdown-text">Research Data</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./topics.html#category=Research Software">
+    <a class="dropdown-item" href="../topics.html#category=Research Software">
  <span class="dropdown-text">Research Software</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./topics.html#category=Responsible Scholarship">
+    <a class="dropdown-item" href="../topics.html#category=Responsible Scholarship">
  <span class="dropdown-text">Responsible Scholarship</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./topics.html#category=Tools">
+    <a class="dropdown-item" href="../topics.html#category=Tools">
  <span class="dropdown-text">Tools</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./topics.html#category=Trainings and Knowledge Items">
+    <a class="dropdown-item" href="../topics.html#category=Trainings and Knowledge Items">
  <span class="dropdown-text">Trainings and Knowledge Items</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./guides.html"> 
+    <a class="nav-link" href="../guides.html"> 
 <span class="menu-text">Guides</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./manuals.html"> 
+    <a class="nav-link" href="../manuals.html"> 
 <span class="menu-text">Manuals</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./contributing.html"> 
+    <a class="nav-link" href="../contributing.html"> 
 <span class="menu-text">Contributing</span></a>
   </li>  
 </ul>
@@ -212,16 +152,45 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#what-is-it" id="toc-what-is-it" class="nav-link active" data-scroll-target="#what-is-it">What is it?</a></li>
+  <li><a href="#what-can-it-be-used-for" id="toc-what-can-it-be-used-for" class="nav-link" data-scroll-target="#what-can-it-be-used-for">What can it be used for?</a>
+  <ul class="collapse">
+  <li><a href="#research-output-registration" id="toc-research-output-registration" class="nav-link" data-scroll-target="#research-output-registration">Research output registration</a></li>
+  <li><a href="#researcher-profiles" id="toc-researcher-profiles" class="nav-link" data-scroll-target="#researcher-profiles">Researcher profiles</a></li>
+  <li><a href="#reporting" id="toc-reporting" class="nav-link" data-scroll-target="#reporting">Reporting</a></li>
+  <li><a href="#cv-generation" id="toc-cv-generation" class="nav-link" data-scroll-target="#cv-generation">CV generation:</a></li>
+  </ul></li>
+  <li><a href="#how-to-request-access" id="toc-how-to-request-access" class="nav-link" data-scroll-target="#how-to-request-access">How to request access</a></li>
+  <li><a href="#are-there-costs-involved" id="toc-are-there-costs-involved" class="nav-link" data-scroll-target="#are-there-costs-involved">Are there costs involved?</a></li>
+  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting started</a>
+  <ul class="collapse">
+  <li><a href="#accessing-pure" id="toc-accessing-pure" class="nav-link" data-scroll-target="#accessing-pure">Accessing Pure</a></li>
+  <li><a href="#setting-up-your-profile" id="toc-setting-up-your-profile" class="nav-link" data-scroll-target="#setting-up-your-profile">Setting up your profile</a></li>
+  <li><a href="#adding-research-outputs" id="toc-adding-research-outputs" class="nav-link" data-scroll-target="#adding-research-outputs">Adding research outputs</a></li>
+  </ul></li>
+  <li><a href="#contact" id="toc-contact" class="nav-link" data-scroll-target="#contact">Contact</a>
+  <ul class="collapse">
+  <li><a href="#training-and-technical-support" id="toc-training-and-technical-support" class="nav-link" data-scroll-target="#training-and-technical-support">Training and technical support</a></li>
+  <li><a href="#policy-and-compliance-questions" id="toc-policy-and-compliance-questions" class="nav-link" data-scroll-target="#policy-and-compliance-questions">Policy and compliance questions</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/pure.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog</h1>
-</div>
+<h1 class="title">Pure (VU Research Information System)</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Tools</div>
+  </div>
+  </div>
 
 
 
@@ -237,210 +206,156 @@ window.Quarto = {
 </header>
 
 
-<p>Subscribe to the blog via <a href="./blog.xml">RSS</a>.</p>
+<section id="what-is-it" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-it">What is it?</h2>
+<p>Pure is VU Amsterdam’s Current Research Information System (CRIS) that serves as the central repository for recording all research activities and outputs. All VU researchers can administer their research activities in <a href="https://research.vu.nl/admin/">the admin environment</a>. Additionally the content and VU researchers are profiled on the VU research portal accessible on <a href="https://research.vu.nl">the public website</a>. Pure serves both as an internal management tool and as a public-facing platform that increases the visibility and discoverability of VU research.</p>
+</section>
+<section id="what-can-it-be-used-for" class="level2">
+<h2 class="anchored" data-anchor-id="what-can-it-be-used-for">What can it be used for?</h2>
+<section id="research-output-registration" class="level3">
+<h3 class="anchored" data-anchor-id="research-output-registration">Research output registration</h3>
+<p>The following record types can be registered in Pure:</p>
+<ul>
+<li>Publications: This can be (journal) articles, books, conference contributions, working papers, preprints, PhD theses<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, patents, case notes and web publications.</li>
+<li>Activities: peer review, editorial work, participating in or organising an event, lectures, presentations, consultancy, PhD examinations, visiting external institutions, hosting external visitors and memberships of institutions based on academic expertise.</li>
+<li>Datasets: This can be raw research data or (curated) datasets related to publications or projects.</li>
+<li>Software: This can be scripts or fully-fledged software programmes.</li>
+<li>Prizes/Grants: This can be prizes given for research output or grants awarded for research proposals.</li>
+<li>Press/Media: This can be the participations in various media forms as an expert or public engagement activities to promote (future) research.</li>
+<li>Projects: This can be all forms of projects in scope and size<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> with the ability to link all related research activities and output.</li>
+<li>Courses<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>: This can be the development of courses or the presentation of these courses.</li>
+</ul>
+</section>
+<section id="researcher-profiles" class="level3">
+<h3 class="anchored" data-anchor-id="researcher-profiles">Researcher profiles</h3>
+<p>VU Researchers can create and maintain comprehensive academic profiles by providing personal information, academic background and research focus and interests.</p>
+</section>
+<section id="reporting" class="level3">
+<h3 class="anchored" data-anchor-id="reporting">Reporting</h3>
+<p>Pure can be used to report on all the content registered. Pure reports are also used for the annual VU report, visitations and the Open Access monitor.</p>
+</section>
+<section id="cv-generation" class="level3">
+<h3 class="anchored" data-anchor-id="cv-generation">CV generation:</h3>
+<p>Pure contains a tool to combine all the research activities and personal information into a CV document.</p>
+</section>
+</section>
+<section id="how-to-request-access" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-request-access">How to request access</h2>
+<p>Access to Pure is automatically provided to all VU Amsterdam researchers and PhD candidates<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>.</p>
+</section>
+<section id="are-there-costs-involved" class="level2">
+<h2 class="anchored" data-anchor-id="are-there-costs-involved">Are there costs involved?</h2>
+<p>No, there are no additional costs for VU Amsterdam researchers to use Pure.</p>
+</section>
+<section id="getting-started" class="level2">
+<h2 class="anchored" data-anchor-id="getting-started">Getting started</h2>
+<section id="accessing-pure" class="level3">
+<h3 class="anchored" data-anchor-id="accessing-pure">Accessing Pure</h3>
+<p>To work within Pure go to <a href="https://research.vu.nl/admin/workspace.xhtml">the login page</a>. You can log in using your VUnetID and password.</p>
+</section>
+<section id="setting-up-your-profile" class="level3">
+<h3 class="anchored" data-anchor-id="setting-up-your-profile">Setting up your profile</h3>
+<p>The VU has created an <a href="https://libguides.vu.nl/manage-pure-profile">online manual</a> to set up your own profile in Pure. You can also <a href="https://libguides.vu.nl/orcid/register">link your ORCID profile to your PURE profile</a>, which has as a benefit that publications registered in PURE are automatically added to your ORCID profile.</p>
+</section>
+<section id="adding-research-outputs" class="level3">
+<h3 class="anchored" data-anchor-id="adding-research-outputs">Adding research outputs</h3>
+<p>The VU has created an <a href="https://libguides.vu.nl/pure-managing-publications">online manual</a> to register research publication in Pure.</p>
+<section id="datasets-and-software" class="level4">
+<h4 class="anchored" data-anchor-id="datasets-and-software">Datasets and software</h4>
+<p>The <a href="https://rdm.vu.nl/guides/plan-and-design.html#policies-regulations">RDSM policy</a> states that it is a requirement to register datasets and software when a research project has ended.</p>
+</section>
+<section id="register-your-data-in-pure" class="level4">
+<h4 class="anchored" data-anchor-id="register-your-data-in-pure">Register your Data in PURE</h4>
+<p>Just like your publications, data that you have collected for your research constitutes research output, too. Therefore you are required to record your data in PURE.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> Your data can be of interest to others, which can in turn lead to new collaboration opportunities. Data recorded in PURE also appear in reports that are used for research evaluations. Even if access to your data is closed, you are required to register your data in PURE. It is a record of the research, data collection and analysis that you have carried out.</p>
+<section id="benefits-of-recording-your-data-in-pure" class="level5">
+<h5 class="anchored" data-anchor-id="benefits-of-recording-your-data-in-pure">Benefits of recording your data in PURE</h5>
+<ul>
+<li>It increases the visibility and findability of your data</li>
+<li>It contributes to re-use and transparency</li>
+<li>It boosts your collaboration opportunities</li>
+<li>It counts towards research evaluations and assessments</li>
+</ul>
+</section>
+<section id="how-to-register-your-data-in-pure" class="level5">
+<h5 class="anchored" data-anchor-id="how-to-register-your-data-in-pure">How to register your data in PURE?</h5>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../topics/../public/PURE-AddDataset.png" class="img-fluid figure-img"></p>
+<figcaption>An image of PURE, indicating where to add a new dataset</figcaption>
+</figure>
+</div>
+<ol type="1">
+<li>Log into the <a href="https://research.vu.nl/admin/workspace.xhtml">VU PURE</a> using your VU credentials</li>
+<li>Click on the “+” (plus) icon next to selecting “Datasets/Software” in the overview</li>
+<li>You can fill in the form using the following manuals and read more about the various metadata in use (generic and subject specific):
+<ul>
+<li><a href="../public/Registreer_Datasets_in_Pure.pdf">dataset manual (NL)</a></li>
+</ul></li>
+<li>Click on “Save” to store the registration</li>
+</ol>
+</section>
+</section>
+<section id="register-software-in-pure" class="level4">
+<h4 class="anchored" data-anchor-id="register-software-in-pure">Register Software in PURE</h4>
+<p>Just like your publications, research sofware that you have developed for your research constitutes research output, too. Therefore you are required to record your research software in PURE.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> Your research software can be of interest to others, which can in turn lead to new collaboration opportunities. Research software recorded in PURE also appears in reports that are used for research evaluations. Even if access to your research software is closed, you are required to register your research software in PURE. It is a record of the work that you have carried out.</p>
+<section id="benefits-of-recording-your-software-in-pure" class="level5">
+<h5 class="anchored" data-anchor-id="benefits-of-recording-your-software-in-pure">Benefits of recording your software in PURE</h5>
+<ul>
+<li>It increases the visibility and findability of your research software</li>
+<li>It contributes to re-use and transparency</li>
+<li>It boosts your collaboration opportunities</li>
+<li>It counts towards research evaluations and assessments</li>
+</ul>
+</section>
+<section id="how-to-register-your-software-in-pure" class="level5">
+<h5 class="anchored" data-anchor-id="how-to-register-your-software-in-pure">How to register your software in PURE?</h5>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../topics/../public/PURE-AddDataset.png" class="img-fluid figure-img"></p>
+<figcaption>An image of PURE, indicating where to add new software</figcaption>
+</figure>
+</div>
+<ol type="1">
+<li>Log into the <a href="https://research.vu.nl/admin/workspace.xhtml">VU PURE</a> using your VU credentials</li>
+<li>Click on the “+” (plus) icon next to selecting “Datasets/Software” in the overview</li>
+<li>You can fill in the form using the following manual and read more about the various metadata in use (generic and subject specific):
+<ul>
+<li><a href="../public/Register_Software_in_Pure.pdf">software manual (EN)</a></li>
+</ul></li>
+<li>Click on “Save” to store the registration</li>
+</ol>
+</section>
+</section>
+</section>
+</section>
+<section id="contact" class="level2">
+<h2 class="anchored" data-anchor-id="contact">Contact</h2>
+<p>For support with Pure:</p>
+<section id="training-and-technical-support" class="level3">
+<h3 class="anchored" data-anchor-id="training-and-technical-support">Training and technical support</h3>
+<p>The VU Library’s Pure support team provides training and demonstrations on <a href="https://services.vu.nl/esc?id=sc_cat_item&amp;sys_id=59e89aab9746a910e553359fe153af1e">request</a>.</p>
+<p>For questions or personal support contact the VU Library’s <a href="https://services.vu.nl/esc?id=sc_cat_item&amp;sys_id=b000b90f478aa110bfa46d72e36d4303">Pure support team</a>.</p>
+</section>
+<section id="policy-and-compliance-questions" class="level3">
+<h3 class="anchored" data-anchor-id="policy-and-compliance-questions">Policy and compliance questions</h3>
+<p>Contact your own department secretariat to learn about required research activity registration besides publications, datasets and software.</p>
 
 
+</section>
+</section>
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1747612800000" data-listing-file-modified-sort="1753706795570" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="391">
-<div class="thumbnail"><a href="./blog/2025-05-15embed-iframe.html" class="no-external">
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
-<p class="card-img-top"><img src="public/Screenshot 2025-05-08 at 10.49.51.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2025-05-15embed-iframe.html" class="no-external">How to embed handbook pages using iframes</a>
-</h3>
-<div class="delink listing-description"><a href="./blog/2025-05-15embed-iframe.html" class="no-external">
-If you want to reuse content from the Research Support Handbook, you can do so using an HTML <code>iframe</code>. This post will help you through the steps to successfully embed a…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/2025-05-15embed-iframe.html" class="no-external">
-<div class="listing-date">
-May 19, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="aGFja2F0aG9u" data-listing-date-sort="1732752000000" data-listing-file-modified-sort="1753706795570" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="206">
-<div class="thumbnail"><a href="./blog/2024-11-28hackathon.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-11-28hackathon.html" class="no-external">Fifth Handbook Hackathon</a>
-</h3>
-<div class="delink listing-description"><a href="./blog/2024-11-28hackathon.html" class="no-external">
-On November 28, 2024, all authors participated in the fifth hackathon for the Research Support Handbook. For this hackathon, we focused on adding new content and…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-11-28hackathon.html" class="no-external">
-<div class="listing-date">
-Nov 28, 2024
-</div>
-<div class="listing-author">
-Lena Karvovskaya, Jolien Scholten, Kostas Vilkelis, Tycho Hofstra, Irene Martorelli, Peter Vos
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="aGFja2F0aG9u" data-listing-date-sort="1730419200000" data-listing-file-modified-sort="1753706795570" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="242">
-<div class="thumbnail"><a href="./blog/2024-11-01hackathon.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-11-01hackathon.html" class="no-external">Fourth Handbook Hackathon</a>
-</h3>
-<div class="delink listing-description"><a href="./blog/2024-11-01hackathon.html" class="no-external">
-On October 30th, 2024, all authors participated in the fourth hackathon for the Research Support Handbook. Since the third hackathon, we migrated to <code>rdm.vu.nl</code>, which is a…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-11-01hackathon.html" class="no-external">
-<div class="listing-date">
-Nov 1, 2024
-</div>
-<div class="listing-author">
-Chris Hartgerink, Lena Karvovskaya, Jolien Scholten, Tycho Hofstra, Elisa Rodenburg, Stephanie van de Sandt
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="ZG93bnRpbWU=" data-listing-date-sort="1729555200000" data-listing-file-modified-sort="1753706795570" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="496">
-<div class="thumbnail"><a href="./blog/2024-10-22post-mortem.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-10-22post-mortem.html" class="no-external">Why was rdm.vu.nl down for ten hours?</a>
-</h3>
-<div class="delink listing-description"><a href="./blog/2024-10-22post-mortem.html" class="no-external">
-On Friday October 18th 2024, we experienced around ten hours of downtime on the <code>rdm.vu.nl</code> website. The downtime started around 10AM after merging changes to the handbook and…<sup></sup>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-10-22post-mortem.html" class="no-external">
-<div class="listing-date">
-Oct 22, 2024
-</div>
-<div class="listing-author">
-Chris Hartgerink, Lena Karvovskaya
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1727654400000" data-listing-file-modified-sort="1753706795570" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="240">
-<div class="thumbnail"><a href="./blog/2024-09-30hackathon.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-09-30hackathon.html" class="no-external">Third Handbook Hackathon</a>
-</h3>
-<div class="delink listing-description"><a href="./blog/2024-09-30hackathon.html" class="no-external">
-In the third hackathon for the Research Support Handbook, held on September 25th, 2024, contributors gathered to make significant progress towards migrating the handbook to…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-09-30hackathon.html" class="no-external">
-<div class="listing-date">
-Sep 30, 2024
-</div>
-<div class="listing-author">
-Alex van der Jagt, FGB, sec.&nbsp;KNOP, Chris Hartgerink (host), Diogenes Cruz de Arcelino, Elisa Rodenburg, UBVU, Jessica Hrudey, FGB, Jolien Scholten, UB, Lena Karvovskaya, UBVU, Stephanie van de Sandt, UBVU, Tycho Hofstra, UBVU
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1725494400000" data-listing-file-modified-sort="1753706795570" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="306">
-<div class="thumbnail"><a href="./blog/2024-09-05hackathon.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-09-05hackathon.html" class="no-external">Second Handbook Hackathon</a>
-</h3>
-<div class="delink listing-description"><a href="./blog/2024-09-05hackathon.html" class="no-external">
-On September 5th, 2024, all authors participated in the second hackathon for the Research Support Handbook. For this hackathon, we focused on quality assurance. Quality…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-09-05hackathon.html" class="no-external">
-<div class="listing-date">
-Sep 5, 2024
-</div>
-<div class="listing-author">
-Alex van der Jagt, Chris Hartgerink, Elisa Rodenburg, Jens de Bruijn, Jolien Scholten, Joy Jiayi Cheng, Lena Karvovskaya, Meron Vermaas, Peter Vos, Stephanie van de Sandt, Tycho Hofstra
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-listing-date-sort="1719446400000" data-listing-file-modified-sort="1753706795570" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="504">
-<div class="thumbnail"><a href="./blog/2024-06-27hackathon.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-06-27hackathon.html" class="no-external">First Handbook Hackathon</a>
-</h3>
-<div class="delink listing-description"><a href="./blog/2024-06-27hackathon.html" class="no-external">
-On June 27th, 2024, the first hackathon for the Research Support Handbook took place with all the post authors. For this hackathon, we focused on non-GitHub based…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-06-27hackathon.html" class="no-external">
-<div class="listing-date">
-Jun 27, 2024
-</div>
-<div class="listing-author">
-Alex van der Jagt, Chris Hartgerink, Dimitri Unger, Elisa Rodenburg, Jessica Hrudey, Jolien Scholten, Lena Karvovskaya, Lucy O’ Shea, Mar Barrantes-Cepas, Meron Vermaas, Peter Vos, Stephanie van de Sandt
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-listing-date-sort="1716422400000" data-listing-file-modified-sort="1753706795570" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="36">
-<div class="thumbnail"><a href="./blog/2024-05-23welcome.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-05-23welcome.html" class="no-external">Hello world!</a>
-</h3>
-<div class="delink listing-description"><a href="./blog/2024-05-23welcome.html" class="no-external">
-This is the first blog entry on the Research Support Handbook. We will be posting more at a later time, and are looking forward to your contributions as well.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-05-23welcome.html" class="no-external">
-<div class="listing-date">
-May 23, 2024
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+<ol>
+<li id="fn1"><p>VU-related PhD theses are registered in Hora Finita and when approved are automatically imported into Pure.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Projects registered in the VU financial systems are automatically imported into Pure.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>All the current courses are automatically imported into Pure.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Certain VU functions can have a research component to their workload, but if this is not a standard requirement, a Pure account is not automatically created. Department heads can <a href="https://services.vu.nl/esc?id=sc_cat_item&amp;sys_id=b000b90f478aa110bfa46d72e36d4303">request</a> a Pure account and profile to be created for specific VU employees who create research output.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>“Researchers are responsible for ensuring that a description of archived and published data and software is included in the ‘Current Research Information System’ (CRIS) of VU Amsterdam. In most cases, this is done automatically. Researchers should be able to provide information about data and software in an Availability statement.” <a href="https://rdm.vu.nl/public/policies-regulations/RDSM-policy-VU-EN-v3.0.pdf">Responsibility number 8 from the Research Data and Software Management Policy</a><a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>“Researchers are responsible for ensuring that a description of archived and published data and software is included in the ‘Current Research Information System’ (CRIS) of VU Amsterdam. In most cases, this is done automatically. Researchers should be able to provide information about data and software in an Availability statement.” <a href="https://rdm.vu.nl/public/policies-regulations/RDSM-policy-VU-EN-v3.0.pdf">Responsibility number 8 from the Research Data and Software Management Policy</a><a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -855,12 +770,12 @@ May 23, 2024
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="./about.html">
+    <a class="nav-link" href="../about.html">
 <p>About</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="./editors-guide.html">
+    <a class="nav-link" href="../editors-guide.html">
 <p>Editor’s guide</p>
 </a>
   </li>  
@@ -870,7 +785,7 @@ May 23, 2024
 </a>
   </li>  
 </ul>
-    <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/blog.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/pure.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
