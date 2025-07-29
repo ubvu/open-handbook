@@ -267,8 +267,6 @@ xdg-open _site/index.html
 
 Note that you should not copy the \< and \>, they are written here to indicate where the browser name should come.
 
-Alternatively, you could also `preview` the website rather than rendering it. For this you can simply run the command `quarto preview`. This command will open a localhost window in your browser, and you can navigate through the handbook as normal. Your terminal will keep track of any pages you open. When you want to continue working in your terminal, you can use Control + C to quit the command; this will also terminate the connection with the localhost window in your browser.
-
 You can also make changes locally and push them to the github repo to open a new branch. The procedure for this in your terminal is as follows:
 
 ``` sh
