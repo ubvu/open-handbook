@@ -6,12 +6,12 @@ authors:
 categories: ["Handbook","Yoda"]
 ---
 
-Last week we added a new section to the Handbook: [Manuals](../manuals.qmd). Manuals are short pages describing how to accomplish specific tasks in a [Tool](../topics.qmd#category=Tools).
+Last week we added a new section to the {{< var title >}}: [Manuals](../manuals.qmd). Manuals are short pages describing how to accomplish specific tasks in a [Tool](../topics.qmd#category=Tools).
 
 We have started by migrating the [manuals on using Yoda](/manuals/yoda/index.qmd), from their old spot on yoda.vu.nl. Next step will be migrating the [ADA HPC](../topics/ada.qmd) manuals from [readthedocs](https://ada-hpc.readthedocs.io/en/latest/).
 
-By consolidating all user manuals on the Handbook we hope to increase the findabiliy of both the manuals and the rest of the Handbook. 
+By consolidating all user manuals on the {{< var title >}} we hope to increase the findability of both the manuals and the rest of the {{< var title >}}. 
 
 ## Maintaining the manuals
-Even more than Topic and Guide pages, Manuals have a short shelf-life, they must be checked regularly. Each manual will have one or two support staff responsible for keeping it up to date. To make sure enough time is set aside to work on the manuals we plan to have two update moments per year, perhaps in the form of a Hackathon.
+Even more than Topic and Guide pages, Manuals have a short shelf life. Hence, they must be checked regularly. Each manual will have one or two support staff responsible for keeping it up to date. To make sure enough time is set aside to work on the manuals we plan to have two update moments per year, perhaps in the form of a Hackathon.
 
