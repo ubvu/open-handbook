@@ -10,7 +10,31 @@
 <atom:link href="https://ubvu.github.io/open-handbook/blog.xml" rel="self" type="application/rss+xml"/>
 <description>A place for all things open research at VU Amsterdam.</description>
 <generator>quarto-1.7.32</generator>
-<lastBuildDate>Mon, 19 May 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 28 Jul 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>New Manuals section in the Handbook</title>
+  <link>https://ubvu.github.io/open-handbook/blog/2025-07-28manuals.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Last week we added a new section to the Research Support Handbook: <a href="../manuals.html">Manuals</a>. Manuals are short pages describing how to accomplish specific tasks in a <a href="../topics.html#category=Tools">Tool</a> and should be easily understood by individuals with varying levels of technical knowledge. Manuals on the handbook will be written in the form of a how-to. The aim is to provide guidance for specific tasks “How do I?”. From the basic: “How do I log in” to the more in-depth “How do I use CUDA on ADA”.</p>
+<p>We have started by migrating the <a href="../manuals/yoda/index.html">manuals on using Yoda</a>, from their old spot on yoda.vu.nl. Next step will be migrating the <a href="../topics/ada.html">ADA HPC</a> manuals from <a href="https://ada-hpc.readthedocs.io/en/latest/">readthedocs</a>.</p>
+<p>By consolidating all user manuals on the Research Support Handbook we hope to increase the findability of both the manuals and the rest of the Research Support Handbook.</p>
+<section id="maintaining-the-manuals" class="level2">
+<h2 class="anchored" data-anchor-id="maintaining-the-manuals">Maintaining the manuals</h2>
+<p>Even more than Topic and Guide pages, Manuals have a short shelf life. Hence, they must be checked regularly. Each manual will have one or two support staff responsible for keeping it up to date. To make sure enough time is set aside to work on the manuals we plan to have two update moments per year, perhaps in the form of a Hackathon.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>Handbook</category>
+  <category>Yoda</category>
+  <guid>https://ubvu.github.io/open-handbook/blog/2025-07-28manuals.html</guid>
+  <pubDate>Mon, 28 Jul 2025 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>How to embed handbook pages using iframes</title>
   <link>https://ubvu.github.io/open-handbook/blog/2025-05-15embed-iframe.html</link>
