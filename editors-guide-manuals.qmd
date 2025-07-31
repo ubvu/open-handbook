@@ -1,0 +1,144 @@
+---
+title: "Editor's guide for the Manuals section"
+---
+
+How to use the top-level category _manuals_ in the handbook. 
+
+## Definition and scope
+The manuals we want to add, are usually called "user manuals". A user manual provides guidance and instructions to users of a tool. User manuals are created to be easily understood by individuals with varying levels of technical knowledge.
+
+It can be assumed that most of the tools will already have their own manuals on the suppliers website. We will link to those as much as possible, we don't want to duplicate information. 
+
+Manuals on the handbook will be written in the form of a _how-to_, the aim is to provide guidance for specific tasks "How do I?". From the basic: "How do I log in" to the more in-depth "How do I use CUDA on ADA".
+
+As with the rest of the handbook we will only add manuals for tools or services which are used by a broad community of researchers. We want to avoid adding manuals for very discipline-specific tools, or manuals for tools researchers built for themselves. In general every tool that has a topic page on the handbook could have one or more user manuals on the handbook. Note that some of the "tools" are really a platform (like Snellius, ADA, SciCloud, Research Cloud), in that case we can have manuals for frequently used software on the platform (iRODS icommands on Yoda, SLURM on HPC, Docker on SciCloud, etc.)
+
+### Manuals vs guides
+In general a manual will have more technical, in-depth information about a specific feature of a tool. A guide could link to one or more manuals for more in-depth information. For example a guide on transferring large amounts of data would refer to multiple manuals (and topics) that detail how to do the task (e.g. copying data from SciStor to Research Drive would refer to rsync manuals detailing how to connect).
+
+### Manuals vs topics
+A topic page describes a tool and its functionalities, what it is used _for_, not _how_ it is used. Current topic pages do include a _getting started_ section. If short we can include "how to login/connect" steps there and include links to the manuals on the handbook or elsewhere. 
+
+### Manuals vs blog
+A blog page could be used to write a quick _tips and tricks_. With a blog it is understood that the information is only relevant for the period it was written. Older blog pages can still be used for inspiration but it is clear details might have changed in the mean time. If it is very relevant and useful a technical blog post could be "promoted" to a manual.
+
+## Keeping manuals up-to-date
+Manuals have an even shorter shelf-life than Guides and Topics and need to be kept up-to-date as tools are updated. Even worse, the handbook editors will in most cases lack the specific expertise 
+to write and maintain manuals. This means this task needs to be delegated to specialists, most notably ITvO and the functional admins of the Library. We recommend the following steps to be taken to assure long-term maintenance:
+
+- Write down the responsibilities and have management formally accept them.
+- Make sure the specialists accept the responsibilities and are allocated time by management.
+- Create a master list of manuals to keep track.
+- Organize 2 hackathons a year to work on updating the manuals. 
+- Assign a coordinator who can prompt the specialists to write and update content. This person should be able to escalate to management in case not enough time is allocated to the specialist.
+
+::: {.callout-note}
+Only add a new manual if there is commitment to maintain it. If not, consider adding it as a blog page.  
+:::
+
+## Setting up a structure for a new tool
+_These steps are best done by an editor. Set up a meeting with the admin(s) to talk about the basic structure of the manuals._ 
+
+#### Create folder
+- Create a top-level directory under `/manuals` e.g. `/manuals/yoda` 
+
+#### Create an index page for the tool's manuals
+- Create `/manuals/yoda/index.qmd`
+```yaml
+---
+title: Yoda Manuals
+categories: []
+listing:
+  contents:
+    - ./*.qmd
+  page-size: 40
+  filter-ui: true
+  type: grid
+  fields: [title,description]
+  sort: false
+image: '/public/yoda-logo.png'
+description: 'This section explains how to get started with Yoda.'
+---
+::: {.callout-tip}
+
+The [Yoda Topic page](/topics/yoda.qmd#how-to-request-access) explains how to request storage space in Yoda for your project.
+
+:::
+```
+`title`, `description` and `image` will show up in the grid om `https://rdm.vu.nl/manuals.html`
+
+- Since the main contents of this tool's "Manuals landing page" is to show a grid of available manuals. It should not contain much text. A callout to refer to the topic page should be sufficient.
+
+#### Setting up the left sidebar
+
+- In `/_quarto.yml` under the `sidebar` section add an entry
+
+```yaml
+...
+website:
+	...
+	sidebar:
+		- id: sb-ada
+	      style: floating
+	      search: true
+	      contents:
+	        - manuals/ada/*.qmd 
+		- id: sb-yoda
+	      style: floating
+	      search: true
+	      contents:
+	        - manuals/yoda/*.qmd
+...
+```
+- The section must have an id (suggestion: `sb-<tool name>`). This ensures the sidebar only shows up on pages that are part of its `contents`
+
+In principle the tool admin can now start to add `.qmd` files for the manuals to the `/manuals/<tool name>/` folder. 
+
+### Setting up sections
+
+Sometimes it makes sense to divide manuals in specific sections to refer to separate parts of a particular tool. For example Yoda's Web Portal and Yoda's Data transfer options. In that case you can add subfolders for each section.
+
+```
+\manuals
+	\yoda
+		\portal
+		\data-transfer
+	\ada
+		\slurm
+		\cuda
+```
+
+- An editor must add these subfolders to the `_quarto.yml_` file
+```yaml
+website:
+	...
+	sidebar:
+		- id: sb-ada
+	      style: floating
+	      search: true
+	      contents:
+	        - manuals/ada/*.qmd
+	        - section: Using SLURM
+	          contents: manuals/ada/slurm/*.qmd
+	        - section: Working with CUDA
+		      contents: manuals/ada/cuda/*.qmd
+		- id: sb-yoda
+	      style: floating
+	      search: true
+	      contents:
+	        - manuals/yoda/*.qmd
+	        - section: Yoda Portal
+	          contents: manuals/yoda/portal/*.qmd
+	        - section: Data Transfer 
+		      contents: manuals/yoda/data_transfer/*.qmd
+
+```
+- If you the section itself needs to have a page you can add an index file: `/manuals/ada/slurm/index.qmd`, but you can also leave it out.
+
+::: {.callout-tip}
+Because we create the sidebar in `_quarto.yml` using wildcards, the pages will be sorted by file name. It is unfortunately not possible to have other sorting options. 
+
+If a specific order is necessary make sure to name the files accordingly. 
+:::
+### Manuals pertaining to 2 or more tools
+TBD
