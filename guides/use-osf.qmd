@@ -1,0 +1,193 @@
+---
+title: How can you use Open Science Framework (OSF) in your research project?
+image: '/public/osf_logo_dark.png'
+description: "OSF supports an open research life cycle."
+categories: ["Collect & Store", "Process & Analyse", "Publish & Share"]
+---
+
+In the **introduction video** below, you can see how Open Science Framework (OSF) supports the Open Research Lifecycle.
+
+{{< video https://youtu.be/9YuNGB3vNOw >}}
+
+## OSF information for new users
+
+Many manuals are available for using OSF. They are listed below for the different types of functionality that OSF provides.
+
+### Best Practices
+
+#### File Management and Licensing
+
+* [File naming (OSF Projects) - OSF Support](https://help.osf.io/article/146-file-naming)
+* [Organising files (OSF Projects) - OSF Support](https://help.osf.io/article/147-organizing-files) 
+* [Licensing - OSF Support](https://help.osf.io/article/148-licensing) 
+* Version Control [Version Control - OSF Support](https://help.osf.io/article/149-version-control)
+
+#### Research Design
+
+* Preregistration [Preregistration - OSF Support](https://help.osf.io/article/145-preregistration)
+* Creating a data management plan (DMP) [Creating a data management plan (DMP) document - OSF Support](https://help.osf.io/article/144-creating-a-data-management-plan-dmp-document)
+
+#### Handling Data
+
+* How to Make a Data Dictionary [How to Make a Data Dictionary - OSF Support](https://help.osf.io/article/217-how-to-make-a-data-dictionary)
+* Sharing Research Outputs [Sharing Research Outputs - OSF Support](https://help.osf.io/article/219-sharing-research-outputs)
+* Sharing data [Data Management - OSF Support](https://help.osf.io/article/392-data-management)
+
+#### Preprints
+
+* [Welcome to OSF Preprints (Video) - OSF> Support](https://help.osf.io/article/376-preprints-home-page)
+
+#### Creating and Managing OSF Projects
+
+* [Managing projects (OSF Projects) - OSF> Support](https://help.osf.io/article/384-managing-projects)
+
+### The Open Scholarship Knowledgebase (OSKB)
+
+Resource guides on reproducibility: [oercommons.org/curated-collections/1038](http://oercommons.org/curated-collections/1038)
+
+### Curated Reading List of Metascience
+
+The Center for Open Science (COS) has compiled a list of papers related to the need for more transparent research and the effectiveness of such research practices. You can find the list on their [Open Science Literature page](https://osf.io/kgnva/wiki/Open%20Science%20Literature/). The list includes literature on the following aspects:
+
+* Beneﬁts of transparency
+* Data sharing policies and practices
+* Reporting Standards, Guidelines, and Checklists
+* Effects of preregistration or Registered Reports
+* Questionable research practices
+* The Reproducibility Crisis
+* Evaluating Journals Policies
+* Recommendations for Increasing Reproducibility
+* Attitudes about open science
+
+### Overcoming the Knowledge Barrier
+
+On their page [Overcoming the Knowledge Barrier](osf.io/bk6r7/wiki](https://osf.io/bk6r7/wiki/home/), the Center for Open Science provides a lot of information to get started with an open and reproducible research practice. This page lists a lot of resources to get you up to speed with open science practices:
+
+* Primers on implementing open science practices
+* Tutorials and online curricula for coded statistical analysis
+* Links to open science communities
+
+### Center for Open Science content
+
+* [Blog series](https://www.cos.io/blog)
+* [Webinars](https://www.cos.io/events)
+* [Resources for researchers](https://www.cos.io/communities/scientists-and-researchers)
+
+### Preregistration
+
+#### What is preregistration?
+
+* It is the act of specifying in advance how data will be collected and analysed.
+* Preregistrations are time-stamped, immutable documents.
+* Preregistrations make the distinction between hypothesis testing, conﬁrmatory research and hypothesis generating, exploratory research more clear.
+* Presenting exploratory results as conﬁrmatory increases the publish ability of results at the expense of credibility of results.
+
+#### How to preregister?
+
+The [Preregistration Challenge](https://www.cos.io/initiatives/prereg-more-information) was an education campaign designed to introduce preregistration as a regular habit. It includes a guided workﬂow to help you create a preregistration.
+
+See the [COS Preregistration page](https://www.cos.io/initiatives/prereg) for more information about preregistration and start working on your own preregistration in [OSF Registries](https://osf.io/registries).
+
+### Resources and Further Readings
+
+* *Can you preregister if you are using existing data?* Yes, see template available at [osf.io/registries](https://osf.io/registries)
+* ["The Preregistration Revolution"](https://doi.org/10.1073/pnas.1708274114), which covers nine challenging situations in which preregistration is beneﬁcial
+* [A blog series about preregistration](https://www.cos.io/blog/tag/preregistration)
+* The Guardian: [Trust in science would be improved by study pre-registration](https://www.theguardian.com/science/blog/2013/jun/05/trust-in-science-study-pre-registration)
+* Nature: [A manifesto for reproducible science](https://doi.org/10.1038/s41562-016-0021)
+* A [presentation](https://osf.io/dh62a/) from a community member introducing OSF
+* A helpful [OSF presentation](https://osf.io/zxmkf/) on how to create your first works
+
+## Connecting storage and apps
+
+OSF allows you to connect to other storage platforms and services via Add-ons, see the [OSF Add-ons and integrations Guide](https://help.osf.io/article/395-storage-add-ons) for more information. Storage Add-ons are particularly well suited for data sharing in a project. However, please consider the following when adding them to your project: 
+
+* what data (folders) is being shared; 
+* who this resource is being shared with and; 
+* who manages the Add-on (e.g. how long will it be available).
+
+Recommended connected storage options are [Research Drive](https://services.vu.nl/esc?id=sc_cat_item&sys_id=39d345f097066990e553359fe153af01) ([how-to guide](https://osf.io/4ewgx/)) and [SURFdrive](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=fb4eda9f978f09d0e553359fe153afa5) ([how-to guide](https://osf.io/e9a5v/)). The VU discourages using Dropbox and Google Drive for storing research data.
+
+For projects with a Code component creating connections to GitHub repos is a good idea, see the [OSF Guide](https://help.osf.io/hc/en-us/articles/360019929813-Connect-GitHub-to-a-Project). If you just want to publish a GitHub repo itself consider using Zenodo, see [this guide](https://guides.github.com/activities/citable-code/).
+
+You can also connect a dataset in [DataverseNL](../topics/dataversenl.qmd) to your project, so published datasets can be viewed in OSF. You can even upload to and delete files from datasets in Draft ([how-to guide](https://osf.io/w2sme/)).
+
+Remember, everyone who has access to your project will be able to see the files in the storage folder you connect, even if you have not explicitly shared the files on the source location!
+
+## Metadata recommendation
+
+VU Amsterdam has a [minimal metadata guide](https://github.com/vu-rdm-tech/metadata?tab=readme-ov-file) that describes which mandatory, recommended and optional properties VU researchers should use if they publish their data in any repository. These properties and their explanation are given below for OSF. See also the [OSF \| VU OSF Documentation Wiki](https://osf.io/abwzm/wiki/Metadata%20recommendation/).
+
+Properties and their explanation
+
+M Considered mandatory for findability of your dataset and correct
+registration in Pure\
+R Recommended for optimal findability\
+O Optional
+
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **Property**       **Obligation**   **Explanation**       **Remarks**
+  ------------------ ---------------- --------------------- ----------------------------------------------------------------------------------------------------------
+  DOI                R                                      [OSF Guide](https://help.osf.io/hc/en-us/articles/360019931013-Create-DOIs)\
+                                                            If you want to be able to cite your project it is best to create a DOI for it.
+
+  Title              M                A descriptive title 
+                                      for your dataset,     
+                                      should not be longer  
+                                      than about 200        
+                                      characters          
+
+  Contributors       M                The main              [OSF
+                                      researchers involved  Guide](https://help.osf.io/hc/en-us/articles/360019930193-Add-Contributors-to-Projects-and-Components).\
+                                      in producing the      Make sure to check \"Bibliographic Contributor\". You can adjust the order of the contributors.\
+                                      data, in priority     Please ask Contributors to fill in their employment status in their user profile to set their affiliation.
+                                      order.                Users logging in with their VUnetID will automatically be affiliated with the VU.\
+                                                            Adding ORCID or other researcher identifiers to contributor profiles is also highly recommended.
+
+  Tags               M                Provide a list of     [OSF Guide](https://help.osf.io/hc/en-us/articles/360019738974-Tag-Your-Project)
+                                      keywords describing   
+                                      your dataset. This    
+                                      will make it easier   
+                                      to find your dataset  
+                                      on the internet.\     
+                                      Some repositories     
+                                      will have controlled  
+                                      term lists to choose  
+                                      from.               
+
+  Category           M                Choose the most     
+                                      appropriate category  
+                                      for your project    
+
+  License            M                Choose the most       [OSF Guide](https://help.osf.io/hc/en-us/articles/360019737854-License-Your-Project)\
+                                      appropriate license   For most content and data \"CC-By 4.0 International\" is a good choice, but especially in the case of code
+                                      for your project.     you might look into a more appropriate license.
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Based on [VU minimal metadata guidelines](https://github.com/vu-rdm-tech/metadata/blob/main/minimal_metadata_guide.md) version rc2 2022-07-20
+
+## Working with sensitive data
+
+Actively choose \"Germany - Frankfurt\" in the account settings as default storage location when you start a new project. Your research data will be stored in the EU jurisdiction.
+
+Multi-Factor Authentication (MFA) via de SURFsecureID (with the tiqr app or a YubiKey) is enabled for all users who log in with VUnetID credentials for improved security and protection of your research data.
+
+OSF has implemented several measures (e.g. OSF storage encryption, regular backups, Standard Contractual Clauses) to increase security of your stored research data as well as guarantee GDPR compliance.
+
+The OSF is developed to facilitate Open Science and sharing of digital research objects. Medium-level sensitive data (e.g. research data that score 'medium' at confidentiality in a [data classification](https://rdm.vu.nl/topics/data-classification.html), research proposals) can be stored, provided it is available only to a specific group of users. VU Amsterdam does not recommend you to store privacy-sensitive data in OSF. For this type of data, please use a more suitable platform such as [Research Drive](../topics/researchdrive.qmd) or [Yoda](topics/yoda.qmd). If there is no other suitable way to share a file with privacy-sensitive data, make sure you encrypt the file(s) before you upload them to the OSF. A good way to do this is by adding the files to a password-protected zip file ([how-to guide](https://osf.io/fn9tx/)). Storing data that score 'high' or 'very high' on confidentiality in a [data classification](https://rdm.vu.nl/topics/data-classification.html) (e.g. directly identifying information, all [special category personal data](https://www.autoriteitpersoonsgegevens.nl/themas/basis-avg/privacy-en-persoonsgegevens/wat-zijn-persoonsgegevens), classified information, data about vulnerable people, key files) is prohibited. Please contact the [RDM Support Desk](mailto:rdm@vu.nl).
+
+In case of a security incident or data leak, the [data breach response plan](https://help.osf.io/hc/en-us/articles/1500011430761-COS-Data-Breach-Response-Plan) is available. Please report possible incidents at [OSF Support](mailto:support@osf.io) and always at the VU IT Servicedesk via [email](mailto:servicedesk@vu.nl) or phone: 020 598 0000.
+
+More information on the OSF security policy and implemented measures can be found on [OSF Guide](https://help.osf.io/hc/en-us/articles/360019930993-FAQs-Security).
+
+## Retaining access to your data when leaving VU Amsterdam
+
+If you want to retain access to your OSF Projects, you could create a new account with a personal email address. Then merge this account with your institutional account, see the [OSF Guide](https://help.osf.io/hc/en-us/articles/360019738014-Merge-Your-Accounts). Do this while your VUnetID is still active!
+
+If your VUnetID has already expired, you can still create a new OSF account and ask a Project Admin to re-add you to the Projects.
+
+If your VUnetID has expired and you are the only Project Admin please contact [OSF Support](https://help.osf.io/hc/en-us/requests/new).
+
+### Deleting your account
+
+You're always welcome to deactivate or delete your account. If you would like to delete your OSF account and personal data, please email [OSF Support](mailto:support@osf.io).
