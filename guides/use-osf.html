@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="OSF supports an open research life cycle.">
+
+<title>How can you use Open Science Framework (OSF) in your research project? – Research Support Handbook</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../public/favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-f35007b26025041599a655b9b1103c8f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-topics" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Topics</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-topics">    
+        <li>
+    <a class="dropdown-item" href="../topics.html">
+ <span class="dropdown-text">All</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../topics.html#category=Policies and Legislation">
+ <span class="dropdown-text">Policies and Legislation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../topics.html#category=Research Data">
+ <span class="dropdown-text">Research Data</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../topics.html#category=Research Software">
+ <span class="dropdown-text">Research Software</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../topics.html#category=Responsible Scholarship">
+ <span class="dropdown-text">Responsible Scholarship</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../topics.html#category=Tools">
+ <span class="dropdown-text">Tools</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../topics.html#category=Trainings and Knowledge Items">
+ <span class="dropdown-text">Trainings and Knowledge Items</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../guides.html"> 
+<span class="menu-text">Guides</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../manuals.html"> 
+<span class="menu-text">Manuals</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../blog.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../contributing.html"> 
+<span class="menu-text">Contributing</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="https://github.com/ubvu/open-handbook" title="GitHub VU Open Handbook" class="quarto-navigation-tool px-1" aria-label="GitHub VU Open Handbook"><i class="bi bi-github"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#osf-information-for-new-users" id="toc-osf-information-for-new-users" class="nav-link active" data-scroll-target="#osf-information-for-new-users">OSF information for new users</a>
+  <ul class="collapse">
+  <li><a href="#best-practices" id="toc-best-practices" class="nav-link" data-scroll-target="#best-practices">Best Practices</a></li>
+  <li><a href="#the-open-scholarship-knowledgebase-oskb" id="toc-the-open-scholarship-knowledgebase-oskb" class="nav-link" data-scroll-target="#the-open-scholarship-knowledgebase-oskb">The Open Scholarship Knowledgebase (OSKB)</a></li>
+  <li><a href="#curated-reading-list-of-metascience" id="toc-curated-reading-list-of-metascience" class="nav-link" data-scroll-target="#curated-reading-list-of-metascience">Curated Reading List of Metascience</a></li>
+  <li><a href="#overcoming-the-knowledge-barrier" id="toc-overcoming-the-knowledge-barrier" class="nav-link" data-scroll-target="#overcoming-the-knowledge-barrier">Overcoming the Knowledge Barrier</a></li>
+  <li><a href="#center-for-open-science-content" id="toc-center-for-open-science-content" class="nav-link" data-scroll-target="#center-for-open-science-content">Center for Open Science content</a></li>
+  <li><a href="#preregistration" id="toc-preregistration" class="nav-link" data-scroll-target="#preregistration">Preregistration</a></li>
+  <li><a href="#resources-and-further-readings" id="toc-resources-and-further-readings" class="nav-link" data-scroll-target="#resources-and-further-readings">Resources and Further Readings</a></li>
+  </ul></li>
+  <li><a href="#connecting-storage-and-apps" id="toc-connecting-storage-and-apps" class="nav-link" data-scroll-target="#connecting-storage-and-apps">Connecting storage and apps</a></li>
+  <li><a href="#metadata-recommendation" id="toc-metadata-recommendation" class="nav-link" data-scroll-target="#metadata-recommendation">Metadata recommendation</a></li>
+  <li><a href="#working-with-sensitive-data" id="toc-working-with-sensitive-data" class="nav-link" data-scroll-target="#working-with-sensitive-data">Working with sensitive data</a></li>
+  <li><a href="#retaining-access-to-your-data-when-leaving-vu-amsterdam" id="toc-retaining-access-to-your-data-when-leaving-vu-amsterdam" class="nav-link" data-scroll-target="#retaining-access-to-your-data-when-leaving-vu-amsterdam">Retaining access to your data when leaving VU Amsterdam</a>
+  <ul class="collapse">
+  <li><a href="#deleting-your-account" id="toc-deleting-your-account" class="nav-link" data-scroll-target="#deleting-your-account">Deleting your account</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/guides/use-osf.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">How can you use Open Science Framework (OSF) in your research project?</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Collect &amp; Store</div>
+    <div class="quarto-category">Process &amp; Analyse</div>
+    <div class="quarto-category">Publish &amp; Share</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    OSF supports an open research life cycle.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>In the <strong>introduction video</strong> below, you can see how Open Science Framework (OSF) supports the Open Research Lifecycle.</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/9YuNGB3vNOw" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="osf-information-for-new-users" class="level2">
+<h2 class="anchored" data-anchor-id="osf-information-for-new-users">OSF information for new users</h2>
+<p>Many manuals are available for using OSF. They are listed below for the different types of functionality that OSF provides.</p>
+<section id="best-practices" class="level3">
+<h3 class="anchored" data-anchor-id="best-practices">Best Practices</h3>
+<section id="file-management-and-licensing" class="level4">
+<h4 class="anchored" data-anchor-id="file-management-and-licensing">File Management and Licensing</h4>
+<ul>
+<li><a href="https://help.osf.io/article/146-file-naming">File naming (OSF Projects) - OSF Support</a></li>
+<li><a href="https://help.osf.io/article/147-organizing-files">Organising files (OSF Projects) - OSF Support</a>&nbsp;</li>
+<li><a href="https://help.osf.io/article/148-licensing">Licensing - OSF Support</a>&nbsp;</li>
+<li>Version Control <a href="https://help.osf.io/article/149-version-control">Version Control - OSF Support</a></li>
+</ul>
+</section>
+<section id="research-design" class="level4">
+<h4 class="anchored" data-anchor-id="research-design">Research Design</h4>
+<ul>
+<li>Preregistration&nbsp;<a href="https://help.osf.io/article/145-preregistration">Preregistration - OSF Support</a></li>
+<li>Creating a data management plan (DMP)&nbsp;<a href="https://help.osf.io/article/144-creating-a-data-management-plan-dmp-document">Creating a data management plan (DMP) document - OSF Support</a></li>
+</ul>
+</section>
+<section id="handling-data" class="level4">
+<h4 class="anchored" data-anchor-id="handling-data">Handling Data</h4>
+<ul>
+<li>How to Make a Data Dictionary&nbsp;<a href="https://help.osf.io/article/217-how-to-make-a-data-dictionary">How to Make a Data Dictionary - OSF Support</a></li>
+<li>Sharing Research Outputs&nbsp;<a href="https://help.osf.io/article/219-sharing-research-outputs">Sharing Research Outputs - OSF Support</a></li>
+<li>Sharing data <a href="https://help.osf.io/article/392-data-management">Data Management - OSF Support</a></li>
+</ul>
+</section>
+<section id="preprints" class="level4">
+<h4 class="anchored" data-anchor-id="preprints">Preprints</h4>
+<ul>
+<li><a href="https://help.osf.io/article/376-preprints-home-page">Welcome to OSF Preprints (Video) - OSF&gt; Support</a></li>
+</ul>
+</section>
+<section id="creating-and-managing-osf-projects" class="level4">
+<h4 class="anchored" data-anchor-id="creating-and-managing-osf-projects">Creating and Managing OSF Projects</h4>
+<ul>
+<li><a href="https://help.osf.io/article/384-managing-projects">Managing projects (OSF Projects) - OSF&gt; Support</a></li>
+</ul>
+</section>
+</section>
+<section id="the-open-scholarship-knowledgebase-oskb" class="level3">
+<h3 class="anchored" data-anchor-id="the-open-scholarship-knowledgebase-oskb">The Open Scholarship Knowledgebase (OSKB)</h3>
+<p>Resource guides on reproducibility:&nbsp;<a href="http://oercommons.org/curated-collections/1038">oercommons.org/curated-collections/1038</a></p>
+</section>
+<section id="curated-reading-list-of-metascience" class="level3">
+<h3 class="anchored" data-anchor-id="curated-reading-list-of-metascience">Curated Reading List of Metascience</h3>
+<p>The Center for Open Science (COS) has compiled a list of papers related to the need for more transparent research and the effectiveness of such research practices. You can find the list on their <a href="https://osf.io/kgnva/wiki/Open%20Science%20Literature/">Open Science Literature page</a>. The list includes literature on the following aspects:</p>
+<ul>
+<li>Beneﬁts of transparency</li>
+<li>Data sharing policies and practices</li>
+<li>Reporting Standards, Guidelines, and Checklists</li>
+<li>Effects of preregistration or Registered Reports</li>
+<li>Questionable research practices</li>
+<li>The Reproducibility Crisis</li>
+<li>Evaluating Journals Policies</li>
+<li>Recommendations for Increasing Reproducibility</li>
+<li>Attitudes about open science</li>
+</ul>
+</section>
+<section id="overcoming-the-knowledge-barrier" class="level3">
+<h3 class="anchored" data-anchor-id="overcoming-the-knowledge-barrier">Overcoming the Knowledge Barrier</h3>
+<p>On their page <a href="#overcoming-the-knowledge-barrier">Overcoming the Knowledge Barrier</a>(osf.io/bk6r7/wiki](https://osf.io/bk6r7/wiki/home/), the Center for Open Science provides a lot of information to get started with an open and reproducible research practice. This page lists a lot of resources to get you up to speed with open science practices:</p>
+<ul>
+<li>Primers on implementing open science practices</li>
+<li>Tutorials and online curricula for coded statistical analysis</li>
+<li>Links to open science communities</li>
+</ul>
+</section>
+<section id="center-for-open-science-content" class="level3">
+<h3 class="anchored" data-anchor-id="center-for-open-science-content">Center for Open Science content</h3>
+<ul>
+<li><a href="https://www.cos.io/blog">Blog series</a></li>
+<li><a href="https://www.cos.io/events">Webinars</a></li>
+<li><a href="https://www.cos.io/communities/scientists-and-researchers">Resources for researchers</a></li>
+</ul>
+</section>
+<section id="preregistration" class="level3">
+<h3 class="anchored" data-anchor-id="preregistration">Preregistration</h3>
+<section id="what-is-preregistration" class="level4">
+<h4 class="anchored" data-anchor-id="what-is-preregistration">What is preregistration?</h4>
+<ul>
+<li>It is the act of specifying in advance how data will be collected and analysed.</li>
+<li>Preregistrations are time-stamped, immutable documents.</li>
+<li>Preregistrations make the distinction between hypothesis testing, conﬁrmatory research and hypothesis generating, exploratory research more clear.</li>
+<li>Presenting exploratory results as conﬁrmatory increases the publish ability of results at the expense of credibility of results.</li>
+</ul>
+</section>
+<section id="how-to-preregister" class="level4">
+<h4 class="anchored" data-anchor-id="how-to-preregister">How to preregister?</h4>
+<p>The <a href="https://www.cos.io/initiatives/prereg-more-information">Preregistration Challenge</a> was an education campaign designed to introduce preregistration as a regular habit. It includes a guided workﬂow to help you create a preregistration.</p>
+<p>See the <a href="https://www.cos.io/initiatives/prereg">COS Preregistration page</a> for more information about preregistration and start working on your own preregistration in <a href="https://osf.io/registries">OSF Registries</a>.</p>
+</section>
+</section>
+<section id="resources-and-further-readings" class="level3">
+<h3 class="anchored" data-anchor-id="resources-and-further-readings">Resources and Further Readings</h3>
+<ul>
+<li><em>Can you preregister if you are using existing data?</em>&nbsp;Yes, see template available at&nbsp;<a href="https://osf.io/registries">osf.io/registries</a></li>
+<li><a href="https://doi.org/10.1073/pnas.1708274114">“The Preregistration Revolution”</a>, which covers nine challenging situations in which preregistration is beneﬁcial</li>
+<li><a href="https://www.cos.io/blog/tag/preregistration">A blog series about preregistration</a></li>
+<li>The Guardian: <a href="https://www.theguardian.com/science/blog/2013/jun/05/trust-in-science-study-pre-registration">Trust in science would be improved by study pre-registration</a></li>
+<li>Nature: <a href="https://doi.org/10.1038/s41562-016-0021">A manifesto for reproducible science</a></li>
+<li>A <a href="https://osf.io/dh62a/">presentation</a> from a community member introducing OSF</li>
+<li>A helpful <a href="https://osf.io/zxmkf/">OSF presentation</a> on how to create your first works</li>
+</ul>
+</section>
+</section>
+<section id="connecting-storage-and-apps" class="level2">
+<h2 class="anchored" data-anchor-id="connecting-storage-and-apps">Connecting storage and apps</h2>
+<p>OSF allows you to connect to other storage platforms and services via Add-ons, see the&nbsp;<a href="https://help.osf.io/article/395-storage-add-ons">OSF Add-ons and integrations Guide</a>&nbsp;for more information. Storage Add-ons are particularly well suited for data sharing in a project. However, please consider the following when adding them to your project:</p>
+<ul>
+<li>what data (folders) is being shared;</li>
+<li>who this resource is being shared with and;</li>
+<li>who manages the Add-on (e.g.&nbsp;how long will it be available).</li>
+</ul>
+<p>Recommended connected storage options are <a href="https://services.vu.nl/esc?id=sc_cat_item&amp;sys_id=39d345f097066990e553359fe153af01">Research Drive</a>&nbsp;(<a href="https://osf.io/4ewgx/">how-to guide</a>) and&nbsp;<a href="https://services.vu.nl/esc?id=emp_taxonomy_topic&amp;topic_id=fb4eda9f978f09d0e553359fe153afa5">SURFdrive</a>&nbsp;(<a href="https://osf.io/e9a5v/">how-to guide</a>). The VU discourages using Dropbox and Google Drive for storing research data.</p>
+<p>For projects with a Code component creating connections to GitHub repos is a good idea, see the&nbsp;<a href="https://help.osf.io/hc/en-us/articles/360019929813-Connect-GitHub-to-a-Project">OSF Guide</a>. If you just want to publish a GitHub repo itself consider using Zenodo, see&nbsp;<a href="https://guides.github.com/activities/citable-code/">this guide</a>.</p>
+<p>You can also connect a dataset in&nbsp;<a href="../topics/dataversenl.html">DataverseNL</a>&nbsp;to your project, so published datasets can be viewed in OSF. You can even upload to and delete files from datasets in Draft (<a href="https://osf.io/w2sme/">how-to guide</a>).</p>
+<p>Remember, everyone who has access to your project will be able to see the files in the storage folder you connect, even if you have not explicitly shared the files on the source location!</p>
+</section>
+<section id="metadata-recommendation" class="level2">
+<h2 class="anchored" data-anchor-id="metadata-recommendation">Metadata recommendation</h2>
+<p>VU Amsterdam has a <a href="https://github.com/vu-rdm-tech/metadata?tab=readme-ov-file">minimal metadata guide</a> that describes which mandatory, recommended and optional properties VU researchers should use if they publish their data in any repository. These properties and their explanation are given below for OSF. See also the <a href="https://osf.io/abwzm/wiki/Metadata%20recommendation/">OSF | VU OSF Documentation Wiki</a>.</p>
+<p>Properties and their explanation</p>
+<p>M&nbsp;Considered mandatory for findability of your dataset and correct registration in Pure<br>
+R&nbsp;Recommended for optimal findability<br>
+O&nbsp;Optional</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Property</strong></th>
+<th style="text-align: left;"><strong>Obligation</strong></th>
+<th style="text-align: left;"><strong>Explanation</strong></th>
+<th style="text-align: left;"><strong>Remarks</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">DOI</td>
+<td style="text-align: left;">R</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><a href="https://help.osf.io/hc/en-us/articles/360019931013-Create-DOIs">OSF Guide</a><br>
+If you want to be able to cite your project it is best to create a DOI for it.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Title</td>
+<td style="text-align: left;">M</td>
+<td style="text-align: left;">A descriptive title for your dataset, should not be longer than about 200 characters</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Contributors</td>
+<td style="text-align: left;">M</td>
+<td style="text-align: left;">The main researchers involved in producing the data, in priority order.</td>
+<td style="text-align: left;"><a href="https://help.osf.io/hc/en-us/articles/360019930193-Add-Contributors-to-Projects-and-Components">OSF Guide</a>.<br>
+Make sure to check "Bibliographic Contributor". You can adjust the order of the contributors.<br>
+Please ask Contributors to fill in their employment status in their user profile to set their affiliation. Users logging in with their VUnetID will automatically be affiliated with the VU.<br>
+Adding ORCID or other researcher identifiers to contributor profiles is also highly recommended.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Tags</td>
+<td style="text-align: left;">M</td>
+<td style="text-align: left;">Provide a list of keywords describing your dataset. This will make it easier to find your dataset on the internet.<br>
+Some repositories will have controlled term lists to choose from.</td>
+<td style="text-align: left;"><a href="https://help.osf.io/hc/en-us/articles/360019738974-Tag-Your-Project">OSF Guide</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Category</td>
+<td style="text-align: left;">M</td>
+<td style="text-align: left;">Choose the most appropriate category for your project</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">License</td>
+<td style="text-align: left;">M</td>
+<td style="text-align: left;">Choose the most appropriate license for your project.</td>
+<td style="text-align: left;"><a href="https://help.osf.io/hc/en-us/articles/360019737854-License-Your-Project">OSF Guide</a><br>
+For most content and data "CC-By 4.0 International" is a good choice, but especially in the case of code you might look into a more appropriate license.</td>
+</tr>
+</tbody>
+</table>
+<p>Based on&nbsp;<a href="https://github.com/vu-rdm-tech/metadata/blob/main/minimal_metadata_guide.md">VU minimal metadata guidelines</a>&nbsp;version rc2 2022-07-20</p>
+</section>
+<section id="working-with-sensitive-data" class="level2">
+<h2 class="anchored" data-anchor-id="working-with-sensitive-data">Working with sensitive data</h2>
+<p>Actively choose "Germany - Frankfurt" in the account settings as default storage location when you start a new project. Your research data will be stored in the EU jurisdiction.</p>
+<p>Multi-Factor Authentication (MFA) via de SURFsecureID (with the tiqr app or a YubiKey) is enabled for all users who log in with VUnetID credentials for improved security and protection of your research data.</p>
+<p>OSF has implemented several measures (e.g.&nbsp;OSF storage encryption, regular backups, Standard Contractual Clauses) to increase security of your stored research data as well as guarantee GDPR compliance.</p>
+<p>The OSF is developed to facilitate Open Science and sharing of digital research objects. Medium-level sensitive data (e.g.&nbsp;research data that score ‘medium’ at confidentiality in a <a href="https://rdm.vu.nl/topics/data-classification.html">data classification</a>, research proposals) can be stored, provided it is available only to a specific group of users. VU Amsterdam does not recommend you to store privacy-sensitive data in OSF. For this type of data, please use a more suitable platform such as&nbsp;<a href="../topics/researchdrive.html">Research Drive</a> or <a href="topics/yoda.qmd">Yoda</a>. If there is no other suitable way to share a file with privacy-sensitive data, make sure you encrypt the file(s) before you upload them to the OSF. A good way to do this is by adding the files to a password-protected zip file (<a href="https://osf.io/fn9tx/">how-to guide</a>). Storing data that score ‘high’ or ‘very high’ on confidentiality in a <a href="https://rdm.vu.nl/topics/data-classification.html">data classification</a> (e.g.&nbsp;directly identifying information, all <a href="https://www.autoriteitpersoonsgegevens.nl/themas/basis-avg/privacy-en-persoonsgegevens/wat-zijn-persoonsgegevens">special category personal data</a>, classified information, data about vulnerable people, key files) is prohibited. Please contact the&nbsp;<a href="mailto:rdm@vu.nl">RDM Support Desk</a>.</p>
+<p>In case of a security incident or data leak, the <a href="https://help.osf.io/hc/en-us/articles/1500011430761-COS-Data-Breach-Response-Plan">data breach response&nbsp;plan</a>&nbsp;is available. Please report possible incidents at&nbsp;<a href="mailto:support@osf.io">OSF Support</a>&nbsp;and always at the VU IT Servicedesk via <a href="mailto:servicedesk@vu.nl">email</a>&nbsp;or phone: 020 598 0000.</p>
+<p>More information on the OSF security policy and implemented measures can be found on&nbsp;<a href="https://help.osf.io/hc/en-us/articles/360019930993-FAQs-Security">OSF Guide</a>.</p>
+</section>
+<section id="retaining-access-to-your-data-when-leaving-vu-amsterdam" class="level2">
+<h2 class="anchored" data-anchor-id="retaining-access-to-your-data-when-leaving-vu-amsterdam">Retaining access to your data when leaving VU Amsterdam</h2>
+<p>If you want to retain access to your OSF Projects, you could create a new account with a personal email address. Then merge this account with your institutional account, see the&nbsp;<a href="https://help.osf.io/hc/en-us/articles/360019738014-Merge-Your-Accounts">OSF Guide</a>. Do this while your VUnetID is still active!</p>
+<p>If your VUnetID has already expired, you can still create a new OSF account and ask a Project Admin to re-add you to the Projects.</p>
+<p>If your VUnetID has expired and you are the only Project Admin please contact&nbsp;<a href="https://help.osf.io/hc/en-us/requests/new">OSF Support</a>.</p>
+<section id="deleting-your-account" class="level3">
+<h3 class="anchored" data-anchor-id="deleting-your-account">Deleting your account</h3>
+<p>You’re always welcome to deactivate or delete your account. If you would like to delete your OSF account and personal data, please email&nbsp;<a href="mailto:support@osf.io">OSF Support</a>.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/ubvu\.github\.io\/open-handbook");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://creativecommons.org/publicdomain/zero/1.0/legalcode">
+<p>CC0 Public Domain Dedication</p>
+</a>
+  </li>  
+</ul>
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../about.html">
+<p>About</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../editors-guide.html">
+<p>Editor’s guide</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://ghostcollective.github.io/games.html">
+<p>GHOST Collective</p>
+</a>
+  </li>  
+</ul>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/guides/use-osf.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ By VU &amp; Liberate Science GmbH
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
