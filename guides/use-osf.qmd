@@ -88,40 +88,35 @@ The [Preregistration Challenge](https://www.cos.io/initiatives/prereg-more-infor
 
 See the [COS Preregistration page](https://www.cos.io/initiatives/prereg) for more information about preregistration and start working on your own preregistration in [OSF Registries](https://osf.io/registries).
 
-**Resources and Further Readings**
+### Resources and Further Readings
 
-* *Can you preregister if you are using existing data?* Yes, see
-  template available at [osf.io/registries](http://osf.io/registries)
-
-* "The Preregistration Revolution"
-  (<https://www.pnas.org/content/115/11/2600>), which covers nine
-  challenging situations in which preregistration is beneﬁcial.
-
-* A blog series about preregistration: <https://cos.io/blog/tag/preregistration/>
-
-* The Guardian, Trust in science would be improved by study pre-registration, [goo.gl/P8RYSt](http://goo.gl/P8RYSt)
-
-* Nature, A manifesto for reproducible science, [goo.gl/fKEHkL](http://goo.gl/fKEHkL)
-
-A presentation from a community member introducing OSF: <https://osf.io/dh62a/>
-
-A helpful OSF presentation on how to create your first works: <https://osf.io/zxmkf/>
+* *Can you preregister if you are using existing data?* Yes, see template available at [osf.io/registries](https://osf.io/registries)
+* ["The Preregistration Revolution"](https://doi.org/10.1073/pnas.1708274114), which covers nine challenging situations in which preregistration is beneﬁcial.
+* [A blog series about preregistration](https://www.cos.io/blog/tag/preregistration)
+* The Guardian, [Trust in science would be improved by study pre-registration](https://www.theguardian.com/science/blog/2013/jun/05/trust-in-science-study-pre-registration)
+* Nature, [A manifesto for reproducible science](https://doi.org/10.1038/s41562-016-0021)
+* A [presentation](https://osf.io/dh62a/) from a community member introducing OSF
+* A helpful [OSF presentation](https://osf.io/zxmkf/) on how to create your first works
 
 ## Connecting storage and apps
 
-OSF allows you to connect to other storage platforms and services via Add-ons, see the [OSF Add-ons and integrations Guide](https://help.osf.io/article/395-storage-add-ons) for more information. Storage add-ons are particularly well suited for data sharing in a project. However, please consider the following when adding them to your project: what data (folders) is being shared, who this resource is being shared with and who manages the add-on (e.g. how long will it be available).
+OSF allows you to connect to other storage platforms and services via Add-ons, see the [OSF Add-ons and integrations Guide](https://help.osf.io/article/395-storage-add-ons) for more information. Storage Add-ons are particularly well suited for data sharing in a project. However, please consider the following when adding them to your project: 
+
+* what data (folders) is being shared; 
+* who this resource is being shared with and; 
+* who manages the Add-on (e.g. how long will it be available).
 
 Recommended connected storage options are [Research Drive](https://services.vu.nl/esc?id=sc_cat_item&sys_id=39d345f097066990e553359fe153af01) ([how-to guide](https://osf.io/4ewgx/)) and [SURFdrive](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=fb4eda9f978f09d0e553359fe153afa5) ([how-to guide](https://osf.io/e9a5v/)). The VU discourages using Dropbox and Google Drive for storing research data.
 
-For projects with a Code component creating connections to Github repos is a good idea, see the [OSF Guide](https://help.osf.io/hc/en-us/articles/360019929813-Connect-GitHub-to-a-Project). If you just want to publish a Github repo itself consider using Zenodo, see [this guide](https://guides.github.com/activities/citable-code/).
+For projects with a Code component creating connections to GitHub repos is a good idea, see the [OSF Guide](https://help.osf.io/hc/en-us/articles/360019929813-Connect-GitHub-to-a-Project). If you just want to publish a GitHub repo itself consider using Zenodo, see [this guide](https://guides.github.com/activities/citable-code/).
 
-You can also connect a dataset in [DataverseNL](https://dataverse.nl/) to your project, so published datasets can be viewed in OSF. You can even upload a delete file in Draft dataset ([how-to guide](https://osf.io/w2sme/)).
+You can also connect a dataset in [DataverseNL](../topics/dataversenl.qmd) to your project, so published datasets can be viewed in OSF. You can even upload to and delete files from datasets in Draft ([how-to guide](https://osf.io/w2sme/)).
 
 Remember, everyone who has access to your project will be able to see the files in the storage folder you connect, even if you have not explicitly shared the files on the source location!
 
 ## Metadata recommendation
 
-[OSF \| VU OSF Documentation Wiki](https://osf.io/abwzm/wiki/Metadata%20recommendation/)
+VU Amsterdam has a [minimal metadata guide](https://github.com/vu-rdm-tech/metadata?tab=readme-ov-file) that describes which mandatory, recommended and optional properties VU researchers should use if they publish their data in any repository. These properties and their explanation are given below for OSF. See also the [OSF \| VU OSF Documentation Wiki](https://osf.io/abwzm/wiki/Metadata%20recommendation/).
 
 Properties and their explanation
 
@@ -179,14 +174,13 @@ Multi-Factor Authentication (MFA) via de SURFsecureID (with the tiqr app or a Yu
 
 OSF has implemented several measures (e.g. OSF storage encryption, regular backups, Standard Contractual Clauses) to increase security of your stored research data as well as guarantee GDPR compliance.
 
-The OSF is developed to facilitate Open Science and sharing of digital research objects. Medium-level sensitive data (e.g. unpublished research data, research proposals) can be stored provided it is available only to a specific group of users. VU does not advice to store privacy sensitive data. For this type of data please use a more suitable platform such as [ResearchDrive](https://services.vu.nl/esc?id=sc_cat_item&sys_id=39d345f097066990e553359fe153af01).
-If there is no other suitable way to share a file with privacy sensitive data make sure you encrypt the file(s) before you upload them to the OSF, a good way to do this is by adding the files to a password protected zip file ([how-to guide](https://osf.io/fn9tx/)). Storing the highest (secret) level data (e.g. criminal records, classified information) is prohibited. Please contact the [RDM Support Desk](https://services.vu.nl/esc?id=vu_research_dashboard_l1).
+The OSF is developed to facilitate Open Science and sharing of digital research objects. Medium-level sensitive data (e.g. research data that score 'medium' at confidentiality in a [data classification](https://rdm.vu.nl/topics/data-classification.html), research proposals) can be stored, provided it is available only to a specific group of users. VU Amsterdam does not recommend you to store privacy-sensitive data in OSF. For this type of data, please use a more suitable platform such as [Research Drive](../topics/researchdrive.qmd) or [Yoda](topics/yoda.qmd). If there is no other suitable way to share a file with privacy-sensitive data, make sure you encrypt the file(s) before you upload them to the OSF. A good way to do this is by adding the files to a password-protected zip file ([how-to guide](https://osf.io/fn9tx/)). Storing data that score 'high' or 'very high' on confidentiality in a [data classification](https://rdm.vu.nl/topics/data-classification.html) (e.g. directly identifying information, all [special category personal data](https://www.autoriteitpersoonsgegevens.nl/themas/basis-avg/privacy-en-persoonsgegevens/wat-zijn-persoonsgegevens), classified information, data about vulnerable people, key files) is prohibited. Please contact the [RDM Support Desk](mailto:rdm@vu.nl).
 
-In case of a security incident or data leak, the data breach response [plan](https://help.osf.io/hc/en-us/articles/1500011430761-COS-Data-Breach-Response-Plan) is available. Please report possible incidents via <support@osf.io> and always via IT Servicedesk: <servicedesk@vu.nl> or 020 598 0000.
+In case of a security incident or data leak, the [data breach response plan](https://help.osf.io/hc/en-us/articles/1500011430761-COS-Data-Breach-Response-Plan) is available. Please report possible incidents at [OSF Support](mailto:support@osf.io) and always at the VU IT Servicedesk via [email](mailto:servicedesk@vu.nl) or phone: 020 598 0000.
 
-More information on the OSF security policy and implemented measures can be found on [OSF Guide](https://help.osf.io/hc/en-us/articles/360019930993-FAQs-Security)
+More information on the OSF security policy and implemented measures can be found on [OSF Guide](https://help.osf.io/hc/en-us/articles/360019930993-FAQs-Security).
 
-## Retaining access to your data when leaving the VU
+## Retaining access to your data when leaving VU Amsterdam
 
 If you want to retain access to your OSF Projects, you could create a new account with a personal email address. Then merge this account with your institutional account, see the [OSF Guide](https://help.osf.io/hc/en-us/articles/360019738014-Merge-Your-Accounts). Do this while your VUnetID is still active!
 
@@ -196,4 +190,4 @@ If your VUnetID has expired and you are the only Project Admin please contact [
 
 ### Deleting your account
 
-You're always welcome to deactivate or delete your account. If you would like to delete your OSF account and personal data, please email <support@osf.io>.
+You're always welcome to deactivate or delete your account. If you would like to delete your OSF account and personal data, please email [OSF Support](support@osf.io).
