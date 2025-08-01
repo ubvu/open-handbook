@@ -1,7 +1,7 @@
 ---
 title: How can you use Open Science Framework (OSF) in your research project?
 image: '/public/osf_logo_dark.png'
-description: "OSF facilitates collaboration, connects services across the research life cycle, and hosts data, preregistrations, preprints and other research objects for private use or public sharing."
+description: "OSF supports an open research life cycle."
 categories: ["Collect & Store", "Process & Analyse", "Publish & Share"]
 ---
 
@@ -91,10 +91,10 @@ See the [COS Preregistration page](https://www.cos.io/initiatives/prereg) for mo
 ### Resources and Further Readings
 
 * *Can you preregister if you are using existing data?* Yes, see template available at [osf.io/registries](https://osf.io/registries)
-* ["The Preregistration Revolution"](https://doi.org/10.1073/pnas.1708274114), which covers nine challenging situations in which preregistration is beneﬁcial.
+* ["The Preregistration Revolution"](https://doi.org/10.1073/pnas.1708274114), which covers nine challenging situations in which preregistration is beneﬁcial
 * [A blog series about preregistration](https://www.cos.io/blog/tag/preregistration)
-* The Guardian, [Trust in science would be improved by study pre-registration](https://www.theguardian.com/science/blog/2013/jun/05/trust-in-science-study-pre-registration)
-* Nature, [A manifesto for reproducible science](https://doi.org/10.1038/s41562-016-0021)
+* The Guardian: [Trust in science would be improved by study pre-registration](https://www.theguardian.com/science/blog/2013/jun/05/trust-in-science-study-pre-registration)
+* Nature: [A manifesto for reproducible science](https://doi.org/10.1038/s41562-016-0021)
 * A [presentation](https://osf.io/dh62a/) from a community member introducing OSF
 * A helpful [OSF presentation](https://osf.io/zxmkf/) on how to create your first works
 
@@ -128,23 +128,23 @@ O Optional
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------
   **Property**       **Obligation**   **Explanation**       **Remarks**
   ------------------ ---------------- --------------------- ----------------------------------------------------------------------------------------------------------
-  **DOI**            **R**                                  **[OSF Guide](https://help.osf.io/hc/en-us/articles/360019931013-Create-DOIs)\
-                                                            If you want to be able to cite your project it is best to create a DOI for it.**
+  DOI                R                                      [OSF Guide](https://help.osf.io/hc/en-us/articles/360019931013-Create-DOIs)\
+                                                            If you want to be able to cite your project it is best to create a DOI for it.
 
-  **Title**          **M**            **A descriptive title 
+  Title              M                A descriptive title 
                                       for your dataset,     
                                       should not be longer  
                                       than about 200        
-                                      characters**          
+                                      characters          
 
-  **Contributors**   **M**            **The main            **[OSF
+  Contributors       M                The main              [OSF
                                       researchers involved  Guide](https://help.osf.io/hc/en-us/articles/360019930193-Add-Contributors-to-Projects-and-Components).\
                                       in producing the      Make sure to check \"Bibliographic Contributor\". You can adjust the order of the contributors.\
                                       data, in priority     Please ask Contributors to fill in their employment status in their user profile to set their affiliation.
-                                      order.**              Users logging in with their VUnetID will automatically be affiliated with the VU.\
-                                                            Adding ORCID or other researcher identifiers to contributor profiles is also highly recommended.**
+                                      order.                Users logging in with their VUnetID will automatically be affiliated with the VU.\
+                                                            Adding ORCID or other researcher identifiers to contributor profiles is also highly recommended.
 
-  **Tags**           **M**            **Provide a list of   [**OSF Guide**](https://help.osf.io/hc/en-us/articles/360019738974-Tag-Your-Project)
+  Tags               M                Provide a list of     [OSF Guide](https://help.osf.io/hc/en-us/articles/360019738974-Tag-Your-Project)
                                       keywords describing   
                                       your dataset. This    
                                       will make it easier   
@@ -153,15 +153,15 @@ O Optional
                                       Some repositories     
                                       will have controlled  
                                       term lists to choose  
-                                      from.**               
+                                      from.               
 
-  **Category**       **M**            **Choose the most     
+  Category           M                Choose the most     
                                       appropriate category  
-                                      for your project**    
+                                      for your project    
 
-  **License**        **M**            **Choose the most     **[OSF Guide](https://help.osf.io/hc/en-us/articles/360019737854-License-Your-Project)\
+  License            M                Choose the most       [OSF Guide](https://help.osf.io/hc/en-us/articles/360019737854-License-Your-Project)\
                                       appropriate license   For most content and data \"CC-By 4.0 International\" is a good choice, but especially in the case of code
-                                      for your project.**   you might look into a more appropriate license.**
+                                      for your project.     you might look into a more appropriate license.
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Based on [VU minimal metadata guidelines](https://github.com/vu-rdm-tech/metadata/blob/main/minimal_metadata_guide.md) version rc2 2022-07-20
