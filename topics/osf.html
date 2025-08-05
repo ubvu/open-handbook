@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Guides – Research Support Handbook</title>
+<title>Open Science Framework (OSF) – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./public/favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f35007b26025041599a655b9b1103c8f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../public/favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-f35007b26025041599a655b9b1103c8f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,70 +68,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-<style type="text/css">
-.quarto-grid-item .listing-item-img-placeholder {
-  background-color: #0080c9;
-}
-</style>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -144,8 +79,8 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -160,49 +95,49 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-topics">    
         <li>
-    <a class="dropdown-item" href="./topics.html">
+    <a class="dropdown-item" href="../topics.html">
  <span class="dropdown-text">All</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./topics.html#category=Policies and Legislation">
+    <a class="dropdown-item" href="../topics.html#category=Policies and Legislation">
  <span class="dropdown-text">Policies and Legislation</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./topics.html#category=Research Data">
+    <a class="dropdown-item" href="../topics.html#category=Research Data">
  <span class="dropdown-text">Research Data</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./topics.html#category=Research Software">
+    <a class="dropdown-item" href="../topics.html#category=Research Software">
  <span class="dropdown-text">Research Software</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./topics.html#category=Responsible Scholarship">
+    <a class="dropdown-item" href="../topics.html#category=Responsible Scholarship">
  <span class="dropdown-text">Responsible Scholarship</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./topics.html#category=Tools">
+    <a class="dropdown-item" href="../topics.html#category=Tools">
  <span class="dropdown-text">Tools</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./topics.html#category=Trainings and Knowledge Items">
+    <a class="dropdown-item" href="../topics.html#category=Trainings and Knowledge Items">
  <span class="dropdown-text">Trainings and Knowledge Items</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="./guides.html" aria-current="page"> 
+    <a class="nav-link" href="../guides.html"> 
 <span class="menu-text">Guides</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./manuals.html"> 
+    <a class="nav-link" href="../manuals.html"> 
 <span class="menu-text">Manuals</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html"> 
+    <a class="nav-link" href="../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./contributing.html"> 
+    <a class="nav-link" href="../contributing.html"> 
 <span class="menu-text">Contributing</span></a>
   </li>  
 </ul>
@@ -218,15 +153,32 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(11)</span></div><div class="category" data-category="Q29sbGVjdCUyMCUyNiUyMFN0b3Jl">Collect &amp; Store <span class="quarto-category-count">(2)</span></div><div class="category" data-category="RGlzY292ZXIlMjAlMjYlMjBJbml0aWF0ZQ==">Discover &amp; Initiate <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RG9jdW1lbnQlMjAlMjYlMjBQcmVzZXJ2ZQ==">Document &amp; Preserve <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGxhbiUyMCUyNiUyMERlc2lnbg==">Plan &amp; Design <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UHJvY2VzcyUyMCUyNiUyMEFuYWx5c2U=">Process &amp; Analyse <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UHVibGlzaCUyMCUyNiUyMFNoYXJl">Publish &amp; Share <span class="quarto-category-count">(3)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#what-is-it" id="toc-what-is-it" class="nav-link active" data-scroll-target="#what-is-it">What is it?</a></li>
+  <li><a href="#what-can-it-be-used-for" id="toc-what-can-it-be-used-for" class="nav-link" data-scroll-target="#what-can-it-be-used-for">What can it be used for?</a></li>
+  <li><a href="#how-to-request-access" id="toc-how-to-request-access" class="nav-link" data-scroll-target="#how-to-request-access">How to request access?</a>
+  <ul class="collapse">
+  <li><a href="#access-for-students" id="toc-access-for-students" class="nav-link" data-scroll-target="#access-for-students">Access for students</a></li>
+  </ul></li>
+  <li><a href="#are-there-costs-involved" id="toc-are-there-costs-involved" class="nav-link" data-scroll-target="#are-there-costs-involved">Are there costs involved?</a></li>
+  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting started</a></li>
+  <li><a href="#contact---support-options-for-vu-researchers" id="toc-contact---support-options-for-vu-researchers" class="nav-link" data-scroll-target="#contact---support-options-for-vu-researchers">Contact - Support options for VU researchers</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/osf.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Guides</h1>
-</div>
+<h1 class="title">Open Science Framework (OSF)</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Tools</div>
+  </div>
+  </div>
 
 
 
@@ -242,309 +194,61 @@ window.Quarto = {
 </header>
 
 
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-What is a guide?
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>These guides help you find answers to questions that come up while doing research. They help guide you through various topics at once.</p>
-<p>Missing a guide? You can <a href="https://ez-github-contributor.netlify.app/">submit questions you are dealing with using the Contribution portal</a>.</p>
-</div>
-</div>
+<section id="what-is-it" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-it">What is it?</h2>
+<p>The <a href="https://osf.io/">Open Science Framework</a> (OSF) is a cloud-based open-source research project management tool that supports researchers throughout the active research stage. It facilitates collaboration, connects services across the research life cycle, materials, and other research objects for private use or public sharing. The OSF is developed by the&nbsp;<a href="http://cos.io/">Center of Open Science (COS)</a>&nbsp;that strives to increase openness, integrity, and reproducibility of research. This is in line with the <a href="https://vu.nl/en/about-vu/organisations/open-science">VU open science commitment</a> where the aim is to make the process of creating and sharing scientific knowledge more transparent, inclusive and equitable.</p>
+<ul>
+<li>As a <strong>collaboration tool</strong>, OSF helps research teams work on projects privately or make them publicly accessible for broad dissemination.</li>
+<li>As a <strong>workflow system</strong>, OSF enables connections to the many products researchers already use, streamlining their process and increasing efficiency.</li>
+<li>Researchers can manage files, data, code, and protocols in one centralised location and easily build custom organisation for their unique needs.</li>
+<li>Integrated metadata support on project level improves findability and reuse of research materials. Soon content on OSF will support FAIR metadata for all files, which will even further enhance responsible preservation and discovery.</li>
+</ul>
+<p>Read more about OSF best practices for new OSF users in <a href="#getting-started">OSF Getting started</a> below.</p>
+</section>
+<section id="what-can-it-be-used-for" class="level2">
+<h2 class="anchored" data-anchor-id="what-can-it-be-used-for">What can it be used for?</h2>
+<p>OSF can be used during the active research stage. It can be used for preregistration, projects or preprints:</p>
+<ol type="1">
+<li><p><a href="https://help.osf.io/article/145-preregistration">Preregistration of your research ideas - OSF Support</a>.</p></li>
+<li><p>Projects: See the <a href="https://help.osf.io/article/353-welcome-to-projects">video Welcome to OSF Projects - OSF Support</a>.</p>
+<p>Whitin an OSF project you can store, share and collaborate with your colleagues. You can invite both internal and external collaborators to different components within your project. You can choose to have your project open, for everyone to read, or you can choose to have it closed for up to four years of embargo. It is possible to create a DOI for your research project, see the manual <a href="https://help.osf.io/article/220-create-dois">Create DOIs (OSF Projects) - OSF Support</a>.</p></li>
+<li><p>Preprints: OSF can also be used to publish your preprints. See the manual <a href="https://help.osf.io/article/399-creating-a-preprint">Creating a Preprint - OSF Support</a>, which describes in seven steps how you can publish a preprint.</p></li>
+</ol>
+</section>
+<section id="how-to-request-access" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-request-access">How to request access?</h2>
+<p>If you like to start with OSF please go to: <a href="https://osf.io/">OSF</a>.</p>
+<p>You can either create a new OSF account and choose "Sign up using Institution" and select Vrije Universiteit Amsterdam&nbsp;<a href="https://help.osf.io/article/271-create-an-osf-account">(OSF Guide)</a>. VU researchers can make use of OSF by logging in with their VUnetID credentials (SSO). The OSF account will be automatically created.&nbsp;Or you can add your VUnetID login to your existing OSF account&nbsp;<a href="https://help.osf.io/article/238-add-a-new-email-address-to-your-account">(OSF Guide)</a>. If you already have an OSF account and would like to affiliate this to VU Amsterdam, please visit: <a href="https://help.osf.io/article/192-affiliate-an-osf-project-with-an-institution">Affiliate an OSF Project with an Institution - OSF Support</a> and registrations with the VU (<a href="https://help.osf.io/hc/en-us/articles/360019738394-Affiliate-a-Registration-with-an-Institution">OSF Guide</a>).</p>
+<p>When the OSF account is created, you can start directly with using OSF to create a project, registering your preregistration or publishing using the preprints options at OSF (see the section <a href="#what-can-it-be-used-for">What it can be used for?</a>).</p>
+<section id="access-for-students" class="level3">
+<h3 class="anchored" data-anchor-id="access-for-students">Access for students</h3>
+<p>Students are also welcome to use OSF. Note that logging in with VUnetID requires MFA via de SURFsecureID (with the tiqr app or a YubiKey).&nbsp;<a href="https://services.vu.nl/esc?id=kb_article&amp;table=kb_knowledge&amp;sys_id=648865b4874bc15010be65b40cbb3592&amp;recordUrl=%2Fkb_view.do%3Fsys_kb_id%3D648865b4874bc15010be65b40cbb3592">Secure sign on - MS Authenticator activation for SURF Secure ID</a> has more information on how to register for MFA if you have not already done so.</p>
+</section>
+</section>
+<section id="are-there-costs-involved" class="level2">
+<h2 class="anchored" data-anchor-id="are-there-costs-involved">Are there costs involved?</h2>
+<p>The costs for storing data in OSF are detailed on the&nbsp;<a href="https://vu.nl/en/employee/research-data-support/research-archiving-storage-cost-model">VU website</a>.</p>
+<p>OSF storage has a limit of 5GB for a private project and 50GB for a public project. Note that it is possible to request additional (paid) OSF storage via the&nbsp;<a href="https://docs.google.com/forms/d/1CImattWD9KdefK-vFmMbB1I0pfl4FkKj0e1fNgz0AG4/viewform?edit_requested=true">Request form</a>. More information on available storage tiers can be found&nbsp;on the <a href="https://www.cos.io/osf-usage">Supporting OSF Usage page</a>. Another way to acquire more storage is connecting an alternative storage provider via Add-ons as described in <a href="https://rdm.vu.nl/guides/use-osf.html#connecting-storage-and-apps">Connecting storage and apps</a>. The&nbsp;<a href="https://help.osf.io/hc/en-us/articles/360054528874-OSF-Storage-Caps">OSF storage caps page</a>&nbsp;has more information on extending storage capacity.</p>
+</section>
+<section id="getting-started" class="level2">
+<h2 class="anchored" data-anchor-id="getting-started">Getting started</h2>
+<p>To get started with OSF please visit the <a href="https://help.osf.io/article/342-getting-started-on-the-osf">Getting started on the OSF (Video) - OSF Support</a>. You can also subscribe to the onboarding webinars <a href="https://www.cos.io/osf-onboarding?utm_source=osf_onboarding&amp;utm_medium=email&amp;utm_campaign=welcome">OSF | Trainings and Webinars</a>.</p>
+<p>Once a year, there will be an OSF workshop organised by VU application managers, where you learn how you can use OSF. See the <a href="https://rdm.vu.nl/topics/trainings.html#open-science-framework-osf-workshop">Trainings page</a> for training materials and scheduled workshops.</p>
+<p>More in-depth information is available in the guide <a href="../guides/use-osf.html">How can you use Open Science Framework (OSF) in your research project?</a>. See the <a href="https://rdm.vu.nl/guides/use-osf.html#osf-information-for-new-users">Information for new users guide</a> in that guide for more information for new users.</p>
+</section>
+<section id="contact---support-options-for-vu-researchers" class="level2">
+<h2 class="anchored" data-anchor-id="contact---support-options-for-vu-researchers">Contact - Support options for VU researchers</h2>
+<p>The following hierarchy of support options is available if you run into problems or have questions about using the OSF.</p>
+<ol type="1">
+<li><p>Try the&nbsp;<a href="https://help.osf.io/">OSF Guides</a>&nbsp;first, they are quite extensive. Quick start up guide for VU OSF users is available&nbsp;in the section <a href="#getting-started">Getting started</a>.</p></li>
+<li><p>If the answer to your question is not in the OSF Guides or if you run into a technical problem, you can contact OSF support directly via&nbsp;<a href="https://help.osf.io/hc/en-us/requests/new">the contact form</a>. As a member of OSF institutions, VU users receive priority support.</p></li>
+<li><p>Contact the&nbsp;application managers through <a href="https://services.vu.nl/esc?id=sc_cat_item&amp;sys_id=c84148af47992510bfa46d72e36d4396">Contact Research Data Support - VU Service Portal</a> (category; RDM tools and subcategory: OSF)&nbsp;if you have questions with regard to the operation of VU OSF or more general questions about Research Data Management.</p></li>
+</ol>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="UHVibGlzaCUyMCUyNiUyMFNoYXJl" data-listing-file-modified-sort="1754378952442" data-listing-reading-time-sort="8" data-listing-word-count-sort="1466">
-<a href="./guides/publish-and-share.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/cover-images/DALLE_sharing-research-data.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How can you archive and publish your data?
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHVibGlzaCUyMCUyNiUyMFNoYXJl'); return false;">Publish &amp; Share</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>All data and software leading to a published result, must be archived and published.</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="UGxhbiUyMCUyNiUyMERlc2lnbg==" data-listing-file-modified-sort="1754378952441" data-listing-reading-time-sort="7" data-listing-word-count-sort="1245">
-<a href="./guides/comply-with-gdpr.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/gdpr-europe-united-lock-74673f-1024.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How can you comply with the GDPR?
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UGxhbiUyMCUyNiUyMERlc2lnbg=='); return false;">Plan &amp; Design</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Personal data must be protected.</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="RGlzY292ZXIlMjAlMjYlMjBJbml0aWF0ZQ==" data-listing-file-modified-sort="1754378952442" data-listing-reading-time-sort="1" data-listing-word-count-sort="22">
-<a href="./guides/discover-and-initiate.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/cover-images/DALLE_LEGO-scientist-discovering-metadata.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How can you discover and reuse existing research data?
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RGlzY292ZXIlMjAlMjYlMjBJbml0aWF0ZQ=='); return false;">Discover &amp; Initiate</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>There is so much data out there, that we want to help you find your way more easily.</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="Q29sbGVjdCUyMCUyNiUyMFN0b3Jl" data-listing-file-modified-sort="1754378952441" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
-<a href="./guides/collect-and-store.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/cover-images/DALLE_research-data-storage-2.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How can you ensure data protection and security during collection, storage, and transfer?
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q29sbGVjdCUyMCUyNiUyMFN0b3Jl'); return false;">Collect &amp; Store</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Learn about how to secure research data at any stage.</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="UHJvY2VzcyUyMCUyNiUyMEFuYWx5c2U=" data-listing-file-modified-sort="1754378952442" data-listing-reading-time-sort="11" data-listing-word-count-sort="2007">
-<a href="./guides/process-and-analyse.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/cover-images/DALLE_LEGO-figures-swimming-in-sea-of-notes.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How can you ensure data provenance and accurate data analysis?
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHJvY2VzcyUyMCUyNiUyMEFuYWx5c2U='); return false;">Process &amp; Analyse</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Where data and results come from matters.</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="RG9jdW1lbnQlMjAlMjYlMjBQcmVzZXJ2ZQ==" data-listing-file-modified-sort="1754378952442" data-listing-reading-time-sort="1" data-listing-word-count-sort="18">
-<a href="./guides/document-and-preserve.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/cover-images/DALLE_LEGO-egyptologist-evaluating-folder-structure.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How can you ensure research data is FAIR?
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RG9jdW1lbnQlMjAlMjYlMjBQcmVzZXJ2ZQ=='); return false;">Document &amp; Preserve</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Making your data Findable, Accessible, Interopable, Reusable is more doable than you might think.</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="6" data-categories="UHVibGlzaCUyMCUyNiUyMFNoYXJl" data-listing-file-modified-sort="1754378952442" data-listing-reading-time-sort="14" data-listing-word-count-sort="2625">
-<a href="./guides/publishing-fair-software.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/RSM_sticker_3x2.PNG" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How can you publish FAIR software
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHVibGlzaCUyMCUyNiUyMFNoYXJl'); return false;">Publish &amp; Share</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>A step-wise guide to make your software Findable, Accesible, Interoperable and Reusable.</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="7" data-categories="UGxhbiUyMCUyNiUyMERlc2lnbg==" data-listing-file-modified-sort="1754378952442" data-listing-reading-time-sort="23" data-listing-word-count-sort="4471">
-<a href="./guides/plan-and-design.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/cover-images/DALLE_LEGO-scientists-discussing-metadata.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How can you set up research data management from the start?
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UGxhbiUyMCUyNiUyMERlc2lnbg=='); return false;">Plan &amp; Design</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>A good plan is half the work.</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="8" data-categories="Q29sbGVjdCUyMCUyNiUyMFN0b3JlJTJDUHJvY2VzcyUyMCUyNiUyMEFuYWx5c2UlMkNQdWJsaXNoJTIwJTI2JTIwU2hhcmU=" data-listing-file-modified-sort="1754378952442" data-listing-reading-time-sort="13" data-listing-word-count-sort="2590">
-<a href="./guides/use-osf.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/osf_logo_dark.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How can you use Open Science Framework (OSF) in your research project?
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q29sbGVjdCUyMCUyNiUyMFN0b3Jl'); return false;">Collect &amp; Store</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHJvY2VzcyUyMCUyNiUyMEFuYWx5c2U='); return false;">Process &amp; Analyse</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHVibGlzaCUyMCUyNiUyMFNoYXJl'); return false;">Publish &amp; Share</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>OSF supports an open research life cycle.</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="9" data-listing-file-modified-sort="1754378952442" data-listing-reading-time-sort="5" data-listing-word-count-sort="829">
-<a href="./guides/policies-supporting-vision-open-science.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/VU_social_avatar_blauw-rectangle.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-What policies and regulations support VU’s vision on Open Science?
-</h5>
-<div class="card-text listing-description delink">
-<p>As open as possible, as closed as necessary.</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="10" data-listing-file-modified-sort="1754378952442" data-listing-reading-time-sort="7" data-listing-word-count-sort="1389">
-<a href="./guides/data-lifecycle.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/cover-images/DALLE_DMP.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-What research data services and support are available for VU researchers?
-</h5>
-<div class="card-text listing-description delink">
-<p>Who is who and resources that can help you along your research journey.</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -959,12 +663,12 @@ What research data services and support are available for VU researchers?
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="./about.html">
+    <a class="nav-link" href="../about.html">
 <p>About</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="./editors-guide.html">
+    <a class="nav-link" href="../editors-guide.html">
 <p>Editor’s guide</p>
 </a>
   </li>  
@@ -974,7 +678,7 @@ What research data services and support are available for VU researchers?
 </a>
   </li>  
 </ul>
-    <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/guides.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/osf.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
