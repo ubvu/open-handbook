@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Blog – Research Support Handbook</title>
+<title>Software Publishing – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./public/favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f35007b26025041599a655b9b1103c8f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../public/favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-f35007b26025041599a655b9b1103c8f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,67 +68,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="alternate" type="application/rss+xml" title="Research Support Handbook" href="blog.xml" data-external="1"></head>
+</head>
 
 <body class="nav-fixed quarto-light">
 
@@ -139,8 +79,8 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -155,49 +95,49 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-topics">    
         <li>
-    <a class="dropdown-item" href="./topics.html">
+    <a class="dropdown-item" href="../topics.html">
  <span class="dropdown-text">All</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./topics.html#category=Policies and Legislation">
+    <a class="dropdown-item" href="../topics.html#category=Policies and Legislation">
  <span class="dropdown-text">Policies and Legislation</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./topics.html#category=Research Data">
+    <a class="dropdown-item" href="../topics.html#category=Research Data">
  <span class="dropdown-text">Research Data</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./topics.html#category=Research Software">
+    <a class="dropdown-item" href="../topics.html#category=Research Software">
  <span class="dropdown-text">Research Software</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./topics.html#category=Responsible Scholarship">
+    <a class="dropdown-item" href="../topics.html#category=Responsible Scholarship">
  <span class="dropdown-text">Responsible Scholarship</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./topics.html#category=Tools">
+    <a class="dropdown-item" href="../topics.html#category=Tools">
  <span class="dropdown-text">Tools</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./topics.html#category=Trainings and Knowledge Items">
+    <a class="dropdown-item" href="../topics.html#category=Trainings and Knowledge Items">
  <span class="dropdown-text">Trainings and Knowledge Items</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./guides.html"> 
+    <a class="nav-link" href="../guides.html"> 
 <span class="menu-text">Guides</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./manuals.html"> 
+    <a class="nav-link" href="../manuals.html"> 
 <span class="menu-text">Manuals</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./contributing.html"> 
+    <a class="nav-link" href="../contributing.html"> 
 <span class="menu-text">Contributing</span></a>
   </li>  
 </ul>
@@ -213,15 +153,28 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(10)</span></div><div class="category" data-category="SGFja2F0aG9u">Hackathon <span class="quarto-category-count">(5)</span></div><div class="category" data-category="SGFuZGJvb2s=">Handbook <span class="quarto-category-count">(9)</span></div><div class="category" data-category="SVQlMjBmb3IlMjBSZXNlYXJjaA==">IT for Research <span class="quarto-category-count">(1)</span></div><div class="category" data-category="WW9kYQ==">Yoda <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#what-is-software-publishing" id="toc-what-is-software-publishing" class="nav-link active" data-scroll-target="#what-is-software-publishing">What is software publishing?</a></li>
+  <li><a href="#purpose" id="toc-purpose" class="nav-link" data-scroll-target="#purpose">Purpose</a></li>
+  <li><a href="#requirements" id="toc-requirements" class="nav-link" data-scroll-target="#requirements">Requirements</a></li>
+  <li><a href="#how-does-software-publishing-work-in-practice" id="toc-how-does-software-publishing-work-in-practice" class="nav-link" data-scroll-target="#how-does-software-publishing-work-in-practice">How does software publishing work in practice?</a></li>
+  <li><a href="#how-does-this-help-you-in-your-research" id="toc-how-does-this-help-you-in-your-research" class="nav-link" data-scroll-target="#how-does-this-help-you-in-your-research">How does this help you in your research?</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/software-publishing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog</h1>
-</div>
+<h1 class="title">Software Publishing</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Research Software</div>
+  </div>
+  </div>
 
 
 
@@ -237,322 +190,65 @@ window.Quarto = {
 </header>
 
 
-<p>Subscribe to the blog via <a href="./blog.xml">RSS</a>.</p>
+<section id="what-is-software-publishing" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-software-publishing">What is software publishing?</h2>
+<p>When we mention <strong>software publishing</strong> at VU Amsterdam, we mean the following:</p>
+<blockquote class="blockquote">
+<p>Making research data, associated metadata, accompanying documentation, and software code (where relevant) accessible in a repository in such a manner that <strong>they can be discovered on the Web</strong> and <strong>referred to in a unique and persistent way</strong> (Inspired by the definition in the <a href="http://vocabs.ardc.edu.au/repository/api/lda/codata/codata-research-data-management-terminology/v001/resource?uri=https%3A%2F%2Fterms.codata.org%2Frdmt%2Fdata-publication">CODATA Research Data Management Terminology</a>).</p>
+</blockquote>
+<p>As stated in the <a href="../topics/research-data-and-software-management-policy.html">Research Data and Software Management Policy</a>, researchers are responsible for publishing all research software that leads to a published result (either in an article or other narrative form) for scientific reuse, meaning that these materials can be discovered on the Web and referred to in a unique and persistent way. This means that the existence of software is announced and that basic information about this software (like title, creator, moment of publication, version, etc.) can be found online, but it doesn’t necessarily mean that others will be able to access and download the actual software. If software contains (or will reveal) confidential information, information to which intellectual properties apply, and/or personal data, an assessment must take place to determine whether the software can be made available for reuse and if so, under which conditions. A custom licence (‘restricted’ or ‘closed’) will indicate if conditional access can be granted, and if so, what the conditions are.</p>
+</section>
+<section id="purpose" class="level2">
+<h2 class="anchored" data-anchor-id="purpose">Purpose</h2>
+<p>Publishing software is crucial for the accessibility of research output. It helps to make VU Amsterdam’s research visible, verifiable and, where possible, reusable. These are important goals for VU Amsterdam, as they contribute to a transparent reseach practice and enable other researchers to build on work that has been done by VU researchers. Publishing software means that researchers make their software known to the world, even if they cannot be accessed by others directly, but only after granting conditional access. This enables other researchers to reuse the software, leading to more impact of research that is carried out at VU Amsterdam. It may also result in new collaborations and citations. Another advantage is that it makes the work of a researcher more visible, going beyond the visibility of a publication alone.</p>
+<p>Publication of research is not complete without the data used and the code written to clean and analyse it. Publishing data and software allows other researchers to use and build upon your work.</p>
+</section>
+<section id="requirements" class="level2">
+<h2 class="anchored" data-anchor-id="requirements">Requirements</h2>
+<p>At VU Amsterdam, we strive to make our research software <a href="../topics/fair-principles.html">FAIR</a>. Publishing software is a crucial step in making it findable. As explained in the definition above, publishing means that you make software discoverable on the internet. As a result, other researchers can find out about the existence of your code and consider whether it may be useful for them in their own research.</p>
+<p>A <a href="../topics/persistent-identifier.html">persistent identifier</a> helps in making software findable, because it ensures that the persistent identifier always resolves to the correct digital object. Rich <a href="../topics/metadata.html">metadata</a> also contribute to the findability of software. The more information you provide, the more likely it is that others will be able to find your software. It is beneficial to use terminology that is common in your discipline when filling out the metadata fields in a repository as well as key words in a key words or notes section of the metadata. Rich information about your software will also help other researchers determine whether your software is potentially relevant for them and is faster to assess than reading through the code itself.</p>
+<p>Repositories provided by VU Amsterdam (<a href="../topics/yoda.html">Yoda</a> and <a href="../topics/dataversenl.html">DataverseNL</a>) will generate a <a href="../topics/persistent-identifier.html">Persistent Identifier</a> for your software and they will ask you to fill out <a href="../topics/metadata.html">metadata</a> fields. In this way, they contribute to making your software findable. This will also be the case for external trusted repositories (such as <a href="https://zenodo.org/">Zenodo</a>).</p>
+<p>When you publish your software, it is important to apply a <a href="../topics/software-licensing.html">licence</a> to it. If you don’t do that, others will not be allowed to reuse your software. A licence is a legal instrument that tells others what they can and cannot do with your software and is therefore an important aspect of making software reusable.</p>
+<p>Since code can be written in any number of ways to solve a problem, the absolute minimum that should be published to ensure verification is a (working) copy of the code/workflow that uses the raw data to produce the end result you have presented in your research and a list of the dependencies and their versions.</p>
+</section>
+<section id="how-does-software-publishing-work-in-practice" class="level2">
+<h2 class="anchored" data-anchor-id="how-does-software-publishing-work-in-practice">How does software publishing work in practice?</h2>
+<p>As mentioned above, software publishing must happen through a repository. These can be provided by VU Amsterdam or third parties.</p>
+<ul>
+<li>VU Amsterdam:
+<ul>
+<li><a href="../topics/yoda.html">Yoda</a></li>
+<li><a href="../topics/dataversenl.html">DataverseNL</a></li>
+</ul></li>
+<li>External:
+<ul>
+<li><a href="https://zenodo.org/">Zenodo</a></li>
+</ul></li>
+</ul>
+<p>Often, code can also be published through software developing platforms.</p>
+<ul>
+<li>VU Amsterdam:
+<ul>
+<li><a href="https://git.vu.nl/">GitLab</a></li>
+</ul></li>
+<li>External:
+<ul>
+<li><a href="https://codeberg.org/">Codeberg</a></li>
+<li><a href="https://github.com">Github</a></li>
+</ul></li>
+</ul>
+<p>Some of these provide an integrated option to get a DOI for your software or have documentation on how to include one within their recommended workflow.</p>
+<p>Note that <a href="../topics/osf.html">OSF</a> can be used to publish code as well, but that you cannot assign a DOI to your software files specifically. You can assign a DOI at project level, but currently it is not possible in OSF to create an immutable copy of a file with its own DOI. For that reason, OSF is not the most suitable option for publishing software. If you do prefer to make your research output visible through OSF, you can consider having an additional copy of your code in the <a href="../manuals/yoda/yoda_portal/yoda_workflow_vault_archiving.html">Yoda vault</a> or <a href="https://osf.io/w2sme">connecting published software in DataverseNL to your OSF project</a>, so that it can be viewed in OSF.</p>
+<p>Detailed workflows addressing publishing software can be found in the guide about <a href="../guides/publishing-fair-software.html">making your software FAIR</a> and the topic about <a href="../topics/software-archiving.html">archiving software</a>.</p>
+</section>
+<section id="how-does-this-help-you-in-your-research" class="level2">
+<h2 class="anchored" data-anchor-id="how-does-this-help-you-in-your-research">How does this help you in your research?</h2>
+<p>Formally published software is not always expected from research, but it can have many benefits. Publishing your software will not only allow for more citations, but it will also help you to reach broader audiences and provide more opportunities for collaboration both outside your field and institution. Although not always needed, publishing your software can help with grant applications and foster a community norm of sharing code in your field speeding up research by avoiding duplication.</p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="SGFuZGJvb2slMkNZb2Rh" data-listing-date-sort="1753660800000" data-listing-file-modified-sort="1754471245318" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="203">
-<div class="thumbnail"><a href="./blog/2025-07-28manuals.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2025-07-28manuals.html" class="no-external">New Manuals section in the Handbook</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('SGFuZGJvb2s='); return false;">Handbook</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('WW9kYQ=='); return false;">Yoda</div>
-
-</div>
-<div class="delink listing-description"><a href="./blog/2025-07-28manuals.html" class="no-external">
-Last week we added a new section to the Research Support Handbook: Manuals. Manuals are short pages describing how to accomplish specific tasks in a Tool and should be…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/2025-07-28manuals.html" class="no-external">
-<div class="listing-date">
-Jul 28, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="SVQlMjBmb3IlMjBSZXNlYXJjaA==" data-listing-date-sort="1753315200000" data-listing-file-modified-sort="1754471245318" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="58">
-<div class="thumbnail"><a href="./blog/2025-07-29itvoblog.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2025-07-29itvoblog.html" class="no-external">ITvO blog</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('SVQlMjBmb3IlMjBSZXNlYXJjaA=='); return false;">IT for Research</div>
-
-</div>
-<div class="delink listing-description"><a href="./blog/2025-07-29itvoblog.html" class="no-external">
-From now on the ITvO (IT for Research) team will be using the Handbook Blog for sharing news, updates, and important announcements related to SciCloud, ADA HPC, SciStor, and…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/2025-07-29itvoblog.html" class="no-external">
-<div class="listing-date">
-Jul 24, 2025
-</div>
-<div class="listing-author">
-Sergio Gutierrez, Peter Vos
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="SGFuZGJvb2s=" data-listing-date-sort="1747612800000" data-listing-file-modified-sort="1754471245318" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="391">
-<div class="thumbnail"><a href="./blog/2025-05-15embed-iframe.html" class="no-external">
-
-<p class="card-img-top"><img src="public/Screenshot 2025-05-08 at 10.49.51.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2025-05-15embed-iframe.html" class="no-external">How to embed handbook pages using iframes</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('SGFuZGJvb2s='); return false;">Handbook</div>
-
-</div>
-<div class="delink listing-description"><a href="./blog/2025-05-15embed-iframe.html" class="no-external">
-If you want to reuse content from the Research Support Handbook, you can do so using an HTML <code>iframe</code>. This post will help you through the steps to successfully embed a…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/2025-05-15embed-iframe.html" class="no-external">
-<div class="listing-date">
-May 19, 2025
-</div>
-<div class="listing-author">
-Chris Hartgerink, Elisa Rodenburg, Jessica Hrudey
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="SGFuZGJvb2slMkNIYWNrYXRob24=" data-listing-date-sort="1732752000000" data-listing-file-modified-sort="1754471245318" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="206">
-<div class="thumbnail"><a href="./blog/2024-11-28hackathon.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-11-28hackathon.html" class="no-external">Fifth Handbook Hackathon</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('SGFuZGJvb2s='); return false;">Handbook</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('SGFja2F0aG9u'); return false;">Hackathon</div>
-
-</div>
-<div class="delink listing-description"><a href="./blog/2024-11-28hackathon.html" class="no-external">
-On November 28, 2024, all authors participated in the fifth hackathon for the Research Support Handbook. For this hackathon, we focused on adding new content and…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-11-28hackathon.html" class="no-external">
-<div class="listing-date">
-Nov 28, 2024
-</div>
-<div class="listing-author">
-Lena Karvovskaya, Jolien Scholten, Kostas Vilkelis, Tycho Hofstra, Irene Martorelli, Peter Vos
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="SGFuZGJvb2slMkNIYWNrYXRob24=" data-listing-date-sort="1730419200000" data-listing-file-modified-sort="1754471245318" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="242">
-<div class="thumbnail"><a href="./blog/2024-11-01hackathon.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-11-01hackathon.html" class="no-external">Fourth Handbook Hackathon</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('SGFuZGJvb2s='); return false;">Handbook</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('SGFja2F0aG9u'); return false;">Hackathon</div>
-
-</div>
-<div class="delink listing-description"><a href="./blog/2024-11-01hackathon.html" class="no-external">
-On October 30th, 2024, all authors participated in the fourth hackathon for the Research Support Handbook. Since the third hackathon, we migrated to <code>rdm.vu.nl</code>, which is a…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-11-01hackathon.html" class="no-external">
-<div class="listing-date">
-Nov 1, 2024
-</div>
-<div class="listing-author">
-Chris Hartgerink, Lena Karvovskaya, Jolien Scholten, Tycho Hofstra, Elisa Rodenburg, Stephanie van de Sandt
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="SGFuZGJvb2s=" data-listing-date-sort="1729555200000" data-listing-file-modified-sort="1754471245317" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="496">
-<div class="thumbnail"><a href="./blog/2024-10-22post-mortem.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-10-22post-mortem.html" class="no-external">Why was rdm.vu.nl down for ten hours?</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('SGFuZGJvb2s='); return false;">Handbook</div>
-
-</div>
-<div class="delink listing-description"><a href="./blog/2024-10-22post-mortem.html" class="no-external">
-On Friday October 18th 2024, we experienced around ten hours of downtime on the <code>rdm.vu.nl</code> website. The downtime started around 10AM after merging changes to the handbook and…<sup></sup>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-10-22post-mortem.html" class="no-external">
-<div class="listing-date">
-Oct 22, 2024
-</div>
-<div class="listing-author">
-Chris Hartgerink, Lena Karvovskaya
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-categories="SGFuZGJvb2slMkNIYWNrYXRob24=" data-listing-date-sort="1727654400000" data-listing-file-modified-sort="1754471245317" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="240">
-<div class="thumbnail"><a href="./blog/2024-09-30hackathon.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-09-30hackathon.html" class="no-external">Third Handbook Hackathon</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('SGFuZGJvb2s='); return false;">Handbook</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('SGFja2F0aG9u'); return false;">Hackathon</div>
-
-</div>
-<div class="delink listing-description"><a href="./blog/2024-09-30hackathon.html" class="no-external">
-In the third hackathon for the Research Support Handbook, held on September 25th, 2024, contributors gathered to make significant progress towards migrating the handbook to…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-09-30hackathon.html" class="no-external">
-<div class="listing-date">
-Sep 30, 2024
-</div>
-<div class="listing-author">
-Alex van der Jagt, FGB, sec.&nbsp;KNOP, Chris Hartgerink (host), Diogenes Cruz de Arcelino, Elisa Rodenburg, UBVU, Jessica Hrudey, FGB, Jolien Scholten, UB, Lena Karvovskaya, UBVU, Stephanie van de Sandt, UBVU, Tycho Hofstra, UBVU
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-categories="SGFuZGJvb2slMkNIYWNrYXRob24=" data-listing-date-sort="1725494400000" data-listing-file-modified-sort="1754471245317" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="306">
-<div class="thumbnail"><a href="./blog/2024-09-05hackathon.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-09-05hackathon.html" class="no-external">Second Handbook Hackathon</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('SGFuZGJvb2s='); return false;">Handbook</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('SGFja2F0aG9u'); return false;">Hackathon</div>
-
-</div>
-<div class="delink listing-description"><a href="./blog/2024-09-05hackathon.html" class="no-external">
-On September 5th, 2024, all authors participated in the second hackathon for the Research Support Handbook. For this hackathon, we focused on quality assurance. Quality…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-09-05hackathon.html" class="no-external">
-<div class="listing-date">
-Sep 5, 2024
-</div>
-<div class="listing-author">
-Alex van der Jagt, Chris Hartgerink, Elisa Rodenburg, Jens de Bruijn, Jolien Scholten, Joy Jiayi Cheng, Lena Karvovskaya, Meron Vermaas, Peter Vos, Stephanie van de Sandt, Tycho Hofstra
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="8" data-categories="SGFuZGJvb2slMkNIYWNrYXRob24=" data-listing-date-sort="1719446400000" data-listing-file-modified-sort="1754471245317" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="504">
-<div class="thumbnail"><a href="./blog/2024-06-27hackathon.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-06-27hackathon.html" class="no-external">First Handbook Hackathon</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('SGFuZGJvb2s='); return false;">Handbook</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('SGFja2F0aG9u'); return false;">Hackathon</div>
-
-</div>
-<div class="delink listing-description"><a href="./blog/2024-06-27hackathon.html" class="no-external">
-On June 27th, 2024, the first hackathon for the Research Support Handbook took place with all the post authors. For this hackathon, we focused on non-GitHub based…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-06-27hackathon.html" class="no-external">
-<div class="listing-date">
-Jun 27, 2024
-</div>
-<div class="listing-author">
-Alex van der Jagt, Chris Hartgerink, Dimitri Unger, Elisa Rodenburg, Jessica Hrudey, Jolien Scholten, Lena Karvovskaya, Lucy O’ Shea, Mar Barrantes-Cepas, Meron Vermaas, Peter Vos, Stephanie van de Sandt
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="9" data-categories="SGFuZGJvb2s=" data-listing-date-sort="1716422400000" data-listing-file-modified-sort="1754471245317" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="36">
-<div class="thumbnail"><a href="./blog/2024-05-23welcome.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-05-23welcome.html" class="no-external">Hello world!</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('SGFuZGJvb2s='); return false;">Handbook</div>
-
-</div>
-<div class="delink listing-description"><a href="./blog/2024-05-23welcome.html" class="no-external">
-This is the first blog entry on the Research Support Handbook. We will be posting more at a later time, and are looking forward to your contributions as well.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-05-23welcome.html" class="no-external">
-<div class="listing-date">
-May 23, 2024
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -967,12 +663,12 @@ May 23, 2024
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="./about.html">
+    <a class="nav-link" href="../about.html">
 <p>About</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="./editors-guide.html">
+    <a class="nav-link" href="../editors-guide.html">
 <p>Editor’s guide</p>
 </a>
   </li>  
@@ -982,7 +678,7 @@ May 23, 2024
 </a>
   </li>  
 </ul>
-    <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/blog.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/software-publishing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
