@@ -21,7 +21,7 @@ Proper software archiving transforms research software from temporary project to
 
 ## Requirements 
 
-At VU Amsterdam, we strive to make our research software [FAIR](../topics/fair-principles.qmd). When research software is archived in a repository provided by VU Amsterdam ([Yoda](https://publication.yoda.vu.nl/) or [DataverseNL](https://dataverse.nl/dataverse/vuamsterdam), the following requirements apply:
+At VU Amsterdam, we strive to make our research software [FAIR](../topics/fair-principles.qmd). When research software is archived in a repository provided by VU Amsterdam ([Yoda](../topics/yoda.qmd) or [DataverseNL](../topics/dataversenl.qmd)), the following requirements apply:
 
 - The software must be provided with associated Metadata using the [VU Minimal metadata guide](https://github.com/vu-rdm-tech/metadata/blob/main/minimal_metadata_guide.md);
 - The software must have a [Persistent identifier](../topics/persistent-identifier.qmd) (or Identifiers) to increase findability;
@@ -37,8 +37,8 @@ Since code can be written in any number of ways to solve a problem, the absolute
 Data archiving must happen in a repository. This means that data storage solutions for during research, like Research Drive, are not suitable for software archiving. They don’t generate a Persistent Identifier and do not ask for metadata or a licence. Code repositories like GitHub and GitLab fall under the label of development environments: They have the possibility to include a DOI and metadata, but do not require it. As a result, VU Amsterdam recommends using the following services for archiving research software:
 
 - **[Zenodo](https://zenodo.org/)**: Long-term preservation with permanent DOIs, integrated with GitHub for automatic archiving
-- **[DataverseNL](https://dataverse.nl/)**: For software associated with published datasets and research outputs
-- **[Yoda](https://yoda.vu.nl/site/)**: For data and software associated with research; note that this is not by default publicly accessible.
+- **[DataverseNL](../topics/dataversenl.qmd)**: For software associated with published datasets and research outputs
+- **[Yoda](../topics/yoda.qmd)**: For data and software associated with research; note that this is not by default publicly accessible.
 
 A more complete form of software archiving involves capturing not just the source code, but also the complete software environment, dependencies, documentation, and metadata necessary to understand, execute, and maintain the software over time. This includes preserving information about the runtime environment, operating system requirements, library dependencies, and usage instructions. As a result, unlike regular backup or version control, software archiving specifically focuses on long-term preservation to combat software decay and technological obsolescence.
 
