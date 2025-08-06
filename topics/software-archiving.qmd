@@ -1,0 +1,50 @@
+---
+title: Software Archiving
+categories: [Research Software]
+---
+
+## What is Software Archiving?
+
+When we mention **data archiving** at VU Amsterdam, we mean the following:
+
+> Creation of a secure and immutable copy of research data, associated metadata, accompanying documentation, and software code (where relevant) with the intention to ensure (conditional) access for a predetermined, minimum, period of time.
+
+In the case of **software archiving** the software code takes the place of research data in the above quote. The two main differences are the inclusion of a version number in the metadata and the distinction of **user** and **developer** documentation.
+
+As stated in the [Research Data and Software Management Policy](../topics/research-data-and-software-management-policy.qmd), researchers are responsible for archiving all research software and data that leads to a published result (either in an article or other narrative form) in a trusted repository for a period of at least ten years after this publication, unless legal requirements, discipline-specific guidelines or contractual arrangements dictate otherwise.
+
+## Purpose
+
+Software archiving is a vital approach to allow research to be verified and reproduced. Verification is important for a transparent research practice, a value VU Amsterdam is strongly committed to. Software is typically used to clean and analyse datasets gathered or recorded by researchers, meaning it is a fundamental part of the research process. Archiving your software ensures that software will be preserved for the long term and can be accessed, even when the Principal Investigator or other members of the research team are no longer available at VU Amsterdam.
+
+Proper software archiving transforms research software from temporary project tools into lasting scientific contributions that continue to generate value long after the original project concludes, supporting both individual career development and broader scientific progress.
+
+## Requirements 
+
+At VU Amsterdam, we strive to make our research software [FAIR](../topics/fair-principles.qmd). When research software is archived in a repository provided by VU Amsterdam ([Yoda](../topics/yoda.qmd) or [DataverseNL](../topics/dataversenl.qmd)), the following requirements apply:
+
+- The software must be provided with associated Metadata using the [VU Minimal metadata guide](https://github.com/vu-rdm-tech/metadata/blob/main/minimal_metadata_guide.md);
+- The software must have a [Persistent identifier](../topics/persistent-identifier.qmd) (or Identifiers) to increase findability;
+- A licence must be applied to the data and software in order to indicate if it can be reused by others and if so, under which conditions. Without a license the software cannot be used in future research as easily;
+-  The software must be accompanied by documentation, both user and developer. User documentation should cover installation and basic use, whereas developer documentation should cover how it works and why certain design decisions were made.
+
+If you use an external repository, these requirements are useful to keep in mind as well, because they make the software FAIR to a large extent, but in that case you will have to rely on the properties of the repository.
+
+Since code can be written in any number of ways to solve a problem, the absolute minimum that should be archived to ensure verification is a (working) copy of the code (or workflow) that takes the raw data to the end result and a list of the dependencies and their versions.
+
+## How does software archiving work in practice?
+
+Data archiving must happen in a repository. This means that data storage solutions for during research, like Research Drive, are not suitable for software archiving. They don’t generate a Persistent Identifier and do not ask for metadata or a licence. Code repositories like GitHub and GitLab fall under the label of development environments: They have the possibility to include a DOI and metadata, but do not require it. As a result, VU Amsterdam recommends using the following services for archiving research software:
+
+- **[Zenodo](https://zenodo.org/)**: Long-term preservation with permanent DOIs, integrated with GitHub for automatic archiving
+- **[DataverseNL](../topics/dataversenl.qmd)**: For software associated with published datasets and research outputs
+- **[Yoda](../topics/yoda.qmd)**: For data and software associated with research; note that this is not by default publicly accessible.
+
+A more complete form of software archiving involves capturing not just the source code, but also the complete software environment, dependencies, documentation, and metadata necessary to understand, execute, and maintain the software over time. This includes preserving information about the runtime environment, operating system requirements, library dependencies, and usage instructions. As a result, unlike regular backup or version control, software archiving specifically focuses on long-term preservation to combat software decay and technological obsolescence.
+
+## How does this help you in your research?
+
+Archiving is a form of preservation and preserving your work means it remains accessible and usable for the rest of the research community for longer. This will allow greater levels of research continuity and help to avoid duplication of code reducing research time and costs in your field. Correctly archiving will include a DOI, licence, documentation, and metadata allowing you to receive more citations and professional recognition, avoid legal disputes on sharing your work, open you up to global collaboration, meet requirements needed for additional funding and publications, and makes knowledge transfer easier. 
+
+
+A detailed workflow for archiving is available in the guide about [archiving and publishing data](https://rdm.vu.nl/guides/publish-and-share.html).
