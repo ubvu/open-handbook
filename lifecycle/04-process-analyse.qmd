@@ -1,0 +1,27 @@
+---
+title: Process & Analyse
+listing:
+  - id: topics
+    contents: "../topics/*.qmd"
+    type: table
+    table-striped: true
+    table-hover: true
+    fields: [title, reading-time]
+    include:
+      categories: "Process & Analyse"
+  - id: guides
+    contents: "../guides/*.qmd"
+    type: grid
+    include:
+      categories: "Process & Analyse"
+---
+
+## Topics
+
+:::{#topics}
+:::
+
+## Guides
+
+:::{#guides}
+:::
