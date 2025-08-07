@@ -1,0 +1,74 @@
+---
+title: Sixth Handbook Hackathon
+date: "2025-07-24"
+author:
+  - Emily Barabas
+  - Diógenes Cruz de Arcelino
+  - Kirianne Goossen
+  - Charlie Greene
+  - Sergio Gutierrez Maury
+  - Sam Heijnen
+  - Marcel Ras
+  - Elisa Rodenburg
+  - Jolien Scholten
+  - Dimitri Unger
+  - Peter Vos
+categories: ["Handbook","Hackathon"]
+---
+
+On July 24, 2025, all authors participated in the sixth hackathon for the Research Support Handbook. For this hackathon, we focused on **adding and updating topics**.
+
+## Overview of results
+
+New topics that we have added during or in the days after the Hackathon:
+
+* ITvO
+* Pure
+* CARE Principles
+* Software Archiving 
+* Software Publishing
+* OSF
+
+We have started on the following topics, but these still need some work before they can be published:
+
+* RDM tools overview (to replace the [current one on the VU website](https://vu.nl/en/about-vu/divisions/university-library/more-about/rdm-tools))
+* De-identifying data: Pseudonymisation and Anonymisation
+* Informed consent forms (content will be discussed with the privacy experts)
+
+The following topics have been updated:
+
+* DMP: we moved the instructions for selecting the VU DMP template to the guide [How can you set up research data management from the start?](../guides/plan-and-design.qmd)
+
+We worked on some guides as well:
+
+* We updated the guide [What research data services and support are available for VU researchers?](../guides/data-lifecycle.qmd)
+* We transferred all information related to OSF from the VU OSF Wiki to the Handbook, resulting in a topic (see above) and a guide [How can you use Open Science Framework (OSF) in your research project?](../guides/use-osf.qmd)
+* We updated the guide [How can you set up research data management from the start?](../guides/plan-and-design.qmd), where we included the instructions for selecting the VU DMP template
+
+In addition, we introduced a new type of page: Manuals (a big thanks to Peter, who put a lot of effort in preparing this 🙏). A user manual provides guidance and instructions to users of a tool. User manuals are created to be easily understood by individuals with varying levels of technical knowledge. It can be assumed that most of the tools will already have their own manuals on the suppliers website. We will link to those as much as possible, we don't want to duplicate information. If you're interested, you can read more in [Issue #416](https://github.com/ubvu/open-handbook/issues/416). The Yoda manuals have now been included in the Handbook (the website yoda.vu.nl will be phased out). Manuals on the handbook will be written in the form of a how-to, the aim is to provide guidance for specific tasks "How do I?". From the basic: "How do I log in" to the more in-depth "How do I use CUDA on ADA".
+
+Finally, we also worked on contributing guidelines and categorised the blog posts, introducing a new type of blog post by ITvO:
+
+* Instructions for using VSCode to contribute
+* Updated instructions for rendering the {{< var title >}} locally
+* Introduced Blog categories and ITvO Blog
+
+## Hackathon Issues and Pull Requests
+
+* (Yoda) manuals: [Issue #416](https://github.com/ubvu/open-handbook/issues/416) and [PR #484](https://github.com/ubvu/open-handbook/pull/484)
+* Information about ITvO: [Issue #344](https://github.com/ubvu/open-handbook/issues/344) and [PR #516](https://github.com/ubvu/open-handbook/pull/516)
+* Software Archiving: [Issue #354](https://github.com/ubvu/open-handbook/issues/354) and [PR #500](https://github.com/ubvu/open-handbook/pull/500)
+* Software Publishing: [Issue #354](https://github.com/ubvu/open-handbook/issues/354) and [PR #501](https://github.com/ubvu/open-handbook/pull/501)
+* OSF: [Issue #100](https://github.com/ubvu/open-handbook/issues/100) and [PR #538](https://github.com/ubvu/open-handbook/pull/538) (topic) and [PR #541](https://github.com/ubvu/open-handbook/pull/541) (guide)
+* CARE Principles: [Issue #448](https://github.com/ubvu/open-handbook/issues/448) and [PR #503](https://github.com/ubvu/open-handbook/pull/503)
+* What research data services and support are available for VU researchers? [PR #530](https://github.com/ubvu/open-handbook/pull/530)
+* Pure: [Issue #482](https://github.com/ubvu/open-handbook/issues/482) and [PR #497](https://github.com/ubvu/open-handbook/pull/497) and [#PR 537](https://github.com/ubvu/open-handbook/pull/537)
+* How can you set up research data management from the start?: [PR #524](https://github.com/ubvu/open-handbook/pull/524)
+* DMP: [PR #525](https://github.com/ubvu/open-handbook/pull/525)
+* Using VSCode to contribute: [PR #509](https://github.com/ubvu/open-handbook/pull/525)
+* Rendering Handbook locally: [PR #463](https://github.com/ubvu/open-handbook/pull/463)
+* Introducing Blog categories and ITvO Blog [PR #533](https://github.com/ubvu/open-handbook/pull/533)
+
+## AI-generated texts
+
+In preparation for this hackathon, we had some texts for new topics drafted by Claude LLM, as part of a trial to explore AI-assisted content creation for the handbook. The idea was that it is easier for people to review existing content than creating something from scratch. During the hackathon, most people seemed to have a preference for writing text themselves. It is more fun, and part of the content created by Claude LLM was not useful. So for now, we think we will keep writing our own texts.
