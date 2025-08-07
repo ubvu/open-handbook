@@ -1,0 +1,27 @@
+---
+title: Plan & Design
+listing:
+  - id: topics
+    contents: "../topics/*.qmd"
+    type: table
+    table-striped: true
+    table-hover: true
+    fields: [title, reading-time]
+    include:
+      categories: "Plan & Design"
+  - id: guides
+    contents: "../guides/*.qmd"
+    type: grid
+    include:
+      categories: "Plan & Design"
+---
+
+## Topics
+
+:::{#topics}
+:::
+
+## Guides
+
+:::{#guides}
+:::

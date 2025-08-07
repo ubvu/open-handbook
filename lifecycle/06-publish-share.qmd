@@ -1,0 +1,27 @@
+---
+title: Publish & Share
+listing:
+  - id: topics
+    contents: "../topics/*.qmd"
+    type: table
+    table-striped: true
+    table-hover: true
+    fields: [title, reading-time]
+    include:
+      categories: "Publish & Share"
+  - id: guides
+    contents: "../guides/*.qmd"
+    type: grid
+    include:
+      categories: "Publish & Share"
+---
+
+## Topics
+
+:::{#topics}
+:::
+
+## Guides
+
+:::{#guides}
+:::

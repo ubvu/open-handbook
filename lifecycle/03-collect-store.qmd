@@ -1,0 +1,27 @@
+---
+title: Collect & Store
+listing:
+  - id: topics
+    contents: "../topics/*.qmd"
+    type: table
+    table-striped: true
+    table-hover: true
+    fields: [title, reading-time]
+    include:
+      categories: "Collect & Store"
+  - id: guides
+    contents: "../guides/*.qmd"
+    type: grid
+    include:
+      categories: "Collect & Store"
+---
+
+## Topics
+
+:::{#topics}
+:::
+
+## Guides
+
+:::{#guides}
+:::
