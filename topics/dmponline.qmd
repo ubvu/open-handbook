@@ -1,0 +1,114 @@
+---
+title: DMPonline
+categories: [Tools]
+---
+
+## What is it?
+
+DMPonline is an online platform that enables researchers to create, manage, and share Data Management Plans (DMPs). VU Amsterdam offers [DMPonline](https://dmponline.vu.nl/) as the institutional tool for writing Data Management Plans. The platform provides structured templates to help researchers address data collection, organization, storage, sharing, and preservation requirements throughout the research lifecycle.
+
+## What can it be used for?
+
+DMPonline can be used for:
+
+- **Writing Data Management Plans**: Create comprehensive DMPs using various templates that meet funder and institutional requirements
+- **Collaborative planning**: Work together with colleagues, advisors, and stakeholders on DMP development
+- **GDPR compliance**: Register personal data processing activities to comply with VU Amsterdam's GDPR requirements
+- **Funder compliance**: Use specific templates for different funding agencies (NWO, ZonMw, ERC)
+- **Feedback and review**: Request feedback from faculty data stewards or RDM Support Desk colleagues
+- **Template selection**: Choose from various templates including the VU template and funder-specific templates
+
+## How to request access
+
+VU Amsterdam researchers can access DMPonline directly at [https://dmponline.vu.nl/](https://dmponline.vu.nl/). No separate access request is required - you can log in using your VU credentials.
+
+## Are there costs involved?
+
+No, DMPonline is provided free of charge to all VU Amsterdam researchers as part of the university's research data management services.
+
+## Getting started
+
+### Creating your first DMP
+
+1. **Access the platform**: Go to [DMPonline](https://dmponline.vu.nl/) and log in with your VU credentials
+2. **Start a new plan**: On your dashboard, click on `Create plan`
+3. **Enter project details**: Add the title of your research project
+4. **Select organization**: Choose `Vrije Universiteit Amsterdam` as your primary research organisation
+5. **Choose template**: Select the appropriate template (see template selection guide below)
+
+![Screenshot of a form for creating a data management plan, asking for the research project, where it is being done, who is funding it and what template you would like to use.](../public/dmp-001.png)
+
+### Selecting the right template
+
+#### VU Template (Recommended)
+
+For most research projects, we strongly recommend using the `VU DMP template 2021 (NWO & ZonMw certified) v1.4`. To select this template:
+
+1. For the question on primary funding organisation, select the check box saying that no funder is associated with your plan
+2. **Important**: Make sure you don't select the GDPR registration form if you're writing a full DMP
+
+![A screenshot highlighting to not use VU Amsterdam GDPR Registration form](../public/dmp-002.png)
+
+**Note**: Use the VU template even if you receive funding from NWO or ZonMw, as it is certified for these funders.
+
+#### Funder-specific templates
+
+If your funder requires a specific template:
+
+1. In the field under `Select the primary funding organisation`, start typing the name of your funder
+2. Select their specific template from the dropdown
+
+![Screenshot of a filled out form for creating a data management plan, with example data included.](../public/dmp-003.png)
+
+### GDPR Registration
+
+If your research involves personal data, you can use DMPonline to register your data processing activities:
+
+- **Full DMP needed**: Use the `VU DMP template 2021 v1.4` - the information will automatically serve as your GDPR registration
+- **Registration only**: Use the separate `VU GDPR registration form for research v1.1`
+
+**Important**: Register before you start data collection if you use personal data in your research.
+
+## How does it work/more detailed instructions
+
+### Template Features
+
+The VU DMP template consists of seven main sections:
+
+1. **Legal and ethical requirements**
+2. **Data collection and generation**
+3. **Data documentation and metadata**
+4. **Storage and backup during research**
+5. **Data selection and preservation**
+6. **Data sharing and access**
+7. **Data archiving and publishing**
+
+### Collaboration Features
+
+- **Shared editing**: Multiple team members can work on the same DMP
+- **Permission management**: Control who can view, edit, or comment on your DMP
+- **Feedback requests**: Use the `request feedback` function to get your DMP reviewed by faculty data stewards
+- **Version control**: Track changes and maintain version history
+
+### Guidance and Support
+
+- **Built-in guidance**: Each template section includes detailed explanations and example answers
+- **Real-time help**: Context-sensitive guidance appears as you complete each section
+- **Template flexibility**: Customize sections based on your research needs
+
+### Export Options
+
+Once completed, you can export your DMP in various formats:
+- PDF for submission to funders
+- Word document for further editing
+- Text formats for integration with other systems
+
+## Contact
+
+If you have questions about DMPonline or encounter problems when using the tool:
+
+- **Email**: [rdm@vu.nl](mailto:rdm@vu.nl)
+- **Faculty support**: Contact your faculty's [Privacy Champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information) for GDPR-related questions
+- **Technical issues**: Contact the RDM Support Desk via [rdm@vu.nl](mailto:rdm@vu.nl)
+
+For questions specifically related to GDPR registration and personal data processing, reach out to your faculty's Privacy Champion who can provide specialized guidance for your research context.
