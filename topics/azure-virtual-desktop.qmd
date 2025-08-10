@@ -1,0 +1,174 @@
+---
+title: Azure Virtual Desktop (AVD)
+categories: [Tools]
+---
+
+## What is it?
+
+Azure Virtual Desktop (AVD) is a cloud-based desktop and application virtualization service provided by Microsoft Azure. At VU Amsterdam, AVD provides researchers with access to a virtual Windows environment that can be accessed from any device with an internet connection. This service enables researchers to access specialized software, computing resources, and secure environments for data processing without requiring physical installation on their personal devices.
+
+## What can it be used for?
+
+Azure Virtual Desktop can be used for:
+
+- **Access to specialized software**: Use licensed software that may be expensive or unavailable for personal installation
+- **Secure data processing**: Work with sensitive or confidential data in a controlled, institutional environment
+- **Cross-platform access**: Access Windows applications and environments from Mac, Linux, or mobile devices
+- **Remote collaboration**: Share virtual desktop sessions with team members for collaborative work
+- **High-performance computing**: Access virtual machines with enhanced computational capabilities
+- **Standardized environments**: Work in consistent, pre-configured research environments
+- **Compliance requirements**: Meet data security and privacy requirements for certain types of research
+- **Software testing**: Test applications and workflows in isolated virtual environments
+- **Teaching and training**: Provide students with consistent access to required software and resources
+
+## How to request access
+
+To request access to Azure Virtual Desktop at VU Amsterdam:
+
+1. **Check eligibility**: Ensure your research project meets the criteria for AVD access
+2. **Contact IT Services**: Submit a request through the IT Services portal or contact IT support
+3. **Provide project details**: Include information about:
+   - Research project requirements
+   - Required software applications
+   - Data sensitivity level
+   - Expected usage duration
+   - Number of users requiring access
+4. **Security clearance**: Complete any required security assessments or approvals
+5. **Account setup**: IT Services will provision your AVD environment and provide access credentials
+
+For specific request procedures, contact [IT Services](https://vu.nl/en/employee/it-workplace-and-support) or your faculty's IT support team.
+
+## Are there costs involved?
+
+Yes, there may be costs associated with Azure Virtual Desktop usage:
+
+- **Compute costs**: Based on the virtual machine specifications and usage time
+- **Storage costs**: For data storage within the virtual environment
+- **Software licensing**: Additional costs for specialized software licenses
+- **Network usage**: Data transfer costs for large datasets
+
+Cost structures may vary depending on:
+- Project funding arrangements
+- Faculty budget allocations
+- Research agreement terms
+- Duration and intensity of usage
+
+Contact your faculty's research administration or IT Services for specific cost information related to your project.
+
+## Getting started
+
+### Initial setup
+
+1. **Receive credentials**: After approval, you'll receive login credentials and access instructions
+2. **Install client**: Download the appropriate Remote Desktop client for your device:
+   - **Windows**: Use the built-in Remote Desktop Connection or download the modern Remote Desktop client
+   - **macOS**: Download Microsoft Remote Desktop from the Mac App Store
+   - **iOS/Android**: Download Microsoft Remote Desktop app from respective app stores
+   - **Web browser**: Access through the web client at [https://rdweb.wvd.microsoft.com/arm/webclient](https://rdweb.wvd.microsoft.com/arm/webclient)
+
+### First connection
+
+1. **Launch client**: Open your Remote Desktop client
+2. **Add workspace**: Enter the workspace URL provided by IT Services
+3. **Authenticate**: Log in using your VU credentials and any additional authentication methods
+4. **Select desktop**: Choose your assigned virtual desktop from the available options
+5. **Connect**: Establish connection to your virtual desktop environment
+
+### Environment configuration
+
+Once connected, you can:
+- **Install additional software**: Install approved applications within your virtual environment
+- **Configure settings**: Customize your virtual desktop preferences and settings
+- **Access network resources**: Connect to VU network drives and shared resources
+- **Set up data workflows**: Configure your research data processing workflows
+
+## How does it work/more detailed instructions
+
+### Virtual desktop features
+
+#### Resource allocation
+- **CPU and RAM**: Virtual machines are allocated specific computational resources
+- **Storage**: Local storage within the virtual environment for temporary files
+- **Network access**: Secure connection to VU network resources and internet
+
+#### Data management
+- **Local storage**: Files saved within the virtual desktop environment
+- **Network drives**: Access to institutional shared drives and storage systems
+- **Data transfer**: Secure methods for moving data in and out of the virtual environment
+- **Backup**: Understanding backup and data retention policies
+
+### Security and compliance
+
+#### Access control
+- **Multi-factor authentication**: Additional security layers for accessing virtual desktops
+- **Session management**: Control over session duration and concurrent access
+- **Audit logging**: All activities within the virtual environment are logged for security purposes
+
+#### Data protection
+- **Encryption**: Data transmission and storage encryption protocols
+- **Network isolation**: Virtual environments are isolated from public networks
+- **Compliance**: Adherence to VU data protection and privacy policies
+
+### Performance optimization
+
+#### Connection quality
+- **Network requirements**: Stable internet connection with adequate bandwidth
+- **Local device specs**: Minimum requirements for running the Remote Desktop client
+- **Display settings**: Optimize screen resolution and color depth for performance
+
+#### Usage best practices
+- **Session management**: Properly disconnect when finished to free up resources
+- **Resource monitoring**: Monitor CPU and memory usage to avoid performance issues
+- **File management**: Regularly clean up temporary files and manage storage usage
+
+### Troubleshooting common issues
+
+#### Connection problems
+- **Authentication failures**: Verify credentials and multi-factor authentication setup
+- **Network connectivity**: Check internet connection and firewall settings
+- **Client compatibility**: Ensure you're using a supported Remote Desktop client version
+
+#### Performance issues
+- **Slow response**: Check network bandwidth and reduce display quality if needed
+- **Application crashes**: Report software issues to IT Services
+- **Storage limitations**: Monitor disk space usage and clean up unnecessary files
+
+### Software and applications
+
+#### Pre-installed software
+Virtual desktop environments typically include:
+- Standard Microsoft Office applications
+- Common research software packages
+- Statistical analysis tools
+- Web browsers and connectivity tools
+
+#### Additional software installation
+- **Request process**: Submit requests for additional software through IT Services
+- **Licensing requirements**: Ensure proper licensing for specialized research software
+- **Approval workflow**: Some software may require security or compliance review
+
+## Contact
+
+For support with Azure Virtual Desktop:
+
+- **IT Services**: Primary contact for technical issues and access requests
+  - **Service portal**: Access through the VU IT Services portal
+  - **Phone support**: Check the IT Services website for current support numbers
+  - **Email support**: Submit tickets through the designated IT support channels
+
+- **Faculty IT support**: Contact your faculty's local IT support team for:
+  - Research-specific software requirements
+  - Faculty-funded AVD resources
+  - Integration with existing research workflows
+
+- **RDM Support**: For questions about data management within virtual environments:
+  - **Email**: [rdm@vu.nl](mailto:rdm@vu.nl)
+  - **Consultation**: Schedule consultations for data-intensive research projects
+
+- **Emergency support**: For urgent technical issues affecting ongoing research, contact IT Services emergency support lines
+
+When contacting support, provide:
+- Your VU username and employee/student number
+- Description of the issue or request
+- Details about your research project and requirements
+- Error messages or screenshots if applicable
