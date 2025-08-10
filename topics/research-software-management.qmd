@@ -1,0 +1,162 @@
+---
+title: Research Software Management
+categories: [Research Software]
+---
+
+## What is Research Software Management?
+
+Research Software Management (RSM) encompasses the systematic planning, development, maintenance, sharing, and preservation of software created or used for research purposes. RSM involves applying professional software development practices to research contexts, ensuring that research software is reliable, reproducible, sustainable, and contributes effectively to scientific knowledge. This includes managing the entire lifecycle of research software from initial conception through development, deployment, maintenance, and eventual archiving or retirement.
+
+Research Software Management extends beyond basic coding practices to include project planning, quality assurance, documentation, version control, collaboration workflows, legal considerations, and long-term sustainability planning. It recognizes research software as a valuable research output that requires deliberate management to maximize its scientific impact and ensure its continued availability for future research.
+
+## Examples
+
+Research Software Management involves multiple interconnected activities:
+
+### Planning and Design
+- **[Software Management Plans](software-management-plan.qmd)**: Systematic planning documents outlining software development, maintenance, and sharing strategies
+- **Requirements analysis**: Defining software functionality, performance, and usability requirements
+- **Architecture design**: Planning software structure, components, and integration approaches
+- **Technology selection**: Choosing appropriate programming languages, frameworks, and tools
+- **Resource planning**: Estimating development time, personnel needs, and infrastructure requirements
+
+### Development and Quality Assurance
+- **Version control**: Using Git and other systems for tracking code changes and collaboration
+- **Code review**: Peer review processes to ensure code quality and knowledge sharing
+- **Testing strategies**: Unit testing, integration testing, and validation procedures
+- **Documentation**: Creating user manuals, API documentation, and developer guides
+- **Continuous integration**: Automated testing and deployment workflows
+
+### Collaboration and Community
+- **Team coordination**: Managing multi-developer projects and establishing coding standards
+- **Open source development**: Creating and maintaining public software repositories
+- **Community building**: Fostering user and contributor communities around research software
+- **Contributor management**: Coordinating external contributions and maintaining project governance
+- **Communication**: Regular updates, issue tracking, and user support
+
+### Legal and Ethical Considerations
+- **Licensing**: Choosing appropriate open source or proprietary licenses
+- **Intellectual property**: Managing software ownership and commercialization rights
+- **Data protection**: Ensuring GDPR compliance for software handling personal data
+- **Security**: Implementing appropriate security measures for sensitive research software
+- **Export control**: Understanding legal restrictions on software distribution
+
+### Sustainability and Preservation
+- **Maintenance planning**: Strategies for ongoing software updates and bug fixes
+- **Funding sustainability**: Securing long-term resources for software development
+- **[Software archiving](software-archiving.qmd)**: Preserving software for long-term access and reproducibility
+- **Migration planning**: Preparing for technology changes and platform updates
+- **Succession planning**: Ensuring software continuity when personnel change
+
+### Publication and Dissemination
+- **[Software publishing](software-publishing.qmd)**: Formal publication of research software in journals and repositories
+- **Citation management**: Creating citable software releases with DOIs
+- **Impact tracking**: Monitoring software usage, citations, and community adoption
+- **Conference presentations**: Presenting software at academic conferences and workshops
+- **Training materials**: Developing tutorials and educational resources
+
+## Tools/services/resources related to concept provided by VU
+
+VU Amsterdam provides comprehensive infrastructure and support for research software management:
+
+### Development Infrastructure
+- **GitHub**: Institutional GitHub organization for version control and collaboration
+- **[ADA HPC Cluster](ada.qmd)**: Development and testing environment for computational software
+- **[VU Compute Hub](vu-compute-hub.qmd)**: Jupyter environments for prototyping and development
+- **[Azure Virtual Desktop](azure-virtual-desktop.qmd)**: Cloud-based development environments
+
+### Quality Assurance and Testing
+- **Continuous Integration**: GitHub Actions and other CI/CD tools for automated testing
+- **Code review tools**: Collaborative development platforms with peer review capabilities
+- **Testing frameworks**: Support for various testing approaches across programming languages
+- **Static analysis**: Tools for code quality assessment and vulnerability scanning
+
+### Documentation and Communication
+- **Documentation platforms**: Support for creating and hosting software documentation
+- **Wiki systems**: Collaborative documentation and knowledge sharing platforms
+- **Issue tracking**: Tools for managing bug reports, feature requests, and user support
+- **Communication channels**: Institutional Slack, Teams, and other collaboration tools
+
+### Legal and Compliance Support
+- **Privacy Champions**: Faculty-level guidance on software licensing and data protection
+- **Legal consultation**: Institutional support for intellectual property and licensing questions
+- **Processing agreements**: GDPR-compliant frameworks for software handling personal data
+- **Export control guidance**: Support for understanding legal restrictions on software distribution
+
+### Publication and Preservation
+- **[Pure](pure.qmd)**: Required registration of research software per institutional policy
+- **Zenodo integration**: Automatic archiving and DOI assignment for software releases
+- **[Software archiving](software-archiving.qmd)**: Best practices for long-term software preservation
+- **Publication support**: Guidance on software publication in academic journals and repositories
+
+### Training and Community
+- **Research Data Management (RDM) Support**: Consultation on software management practices via [rdm@vu.nl](mailto:rdm@vu.nl)
+- **Software Carpentry**: Training in version control, testing, and reproducible research practices
+- **Code clinics**: Regular support sessions for programming and software development
+- **Research software communities**: Connection to local and international software development networks
+
+### Funding and Sustainability Support
+- **Grant writing support**: Assistance including software development in research proposals
+- **Commercialization support**: Guidance on software commercialization and technology transfer
+- **Partnership facilitation**: Connecting software developers with potential collaborators and users
+- **Infrastructure funding**: Institutional support for software development infrastructure
+
+## How does this help you in your research?
+
+### Research Quality and Reproducibility
+- **Reliable results**: Well-managed software produces consistent, trustworthy research outcomes
+- **Reproducible science**: Systematic software management enables others to reproduce your computational research
+- **Error prevention**: Professional development practices reduce bugs and computational errors
+- **Method validation**: Proper testing and documentation support validation of computational methods
+- **Transparent research**: Open, well-documented software makes research methods fully transparent
+
+### Collaboration and Knowledge Sharing
+- **Team productivity**: Systematic software management enables effective collaboration on computational projects
+- **Community building**: Well-managed software attracts users and contributors, building research communities
+- **Knowledge transfer**: Professional documentation and code organization facilitate knowledge sharing
+- **Cross-disciplinary impact**: Well-managed software can find applications beyond the original research domain
+- **International collaboration**: Professional software development practices enable global research partnerships
+
+### Career Development and Recognition
+- **Technical expertise**: Software management skills are increasingly valuable in research careers
+- **Professional recognition**: Published, well-managed software receives academic recognition and citations
+- **Industry connections**: Professional software development skills are highly valued in industry collaborations
+- **Leadership opportunities**: Software management expertise positions researchers as leaders in computational research
+- **Grant competitiveness**: Strong software development capabilities strengthen funding proposals
+
+### Research Efficiency and Impact
+- **Development efficiency**: Systematic approaches reduce time spent on software maintenance and debugging
+- **Reusability**: Well-managed software can be reused across multiple research projects
+- **Scalability**: Professional development practices enable software to handle larger problems and datasets
+- **Sustainability**: Proper planning ensures software remains useful and accessible over time
+- **Impact amplification**: Professional software management increases software adoption and citation
+
+### Innovation and Advancement
+- **Methodological innovation**: Systematic software development encourages creation of novel computational methods
+- **Research frontiers**: Professional software capabilities enable research at the cutting edge of computational science
+- **Technology transfer**: Well-managed research software can transition to practical applications
+- **Open science**: Professional software management supports open science initiatives and practices
+- **Scientific infrastructure**: Research software becomes part of the shared infrastructure supporting scientific progress
+
+### Risk Management and Sustainability
+- **Technical debt management**: Systematic approaches prevent accumulation of unmaintainable code
+- **Security protection**: Professional practices protect against security vulnerabilities and data breaches
+- **Legal compliance**: Proper licensing and IP management reduce legal risks
+- **Continuity planning**: Systematic management ensures software survives personnel changes and project transitions
+- **Resource optimization**: Efficient development practices maximize return on software development investments
+
+### Quality Assurance and Standards
+- **Professional standards**: Research software management promotes adoption of industry best practices
+- **Peer validation**: Code review and collaborative development improve software quality
+- **Documentation excellence**: Systematic documentation ensures software usability and maintainability
+- **Testing rigor**: Comprehensive testing strategies improve software reliability and trustworthiness
+- **Community standards**: Well-managed software contributes to establishing field-wide quality standards
+
+### Long-term Scientific Value
+- **Preservation**: Systematic management ensures research software remains accessible for future researchers
+- **Evolution**: Professional development practices enable software to adapt to changing research needs
+- **Educational value**: Well-managed software serves as teaching materials and best practice examples
+- **Cumulative science**: Sustainable software contributes to cumulative scientific knowledge and progress
+- **Research legacy**: Professional software management creates lasting contributions to scientific infrastructure
+
+Research Software Management transforms ad-hoc coding into professional software development that creates reliable, sustainable, and impactful tools for scientific discovery. By applying systematic management approaches, researchers create software that not only serves immediate research needs but contributes to long-term scientific advancement and reproducibility.
