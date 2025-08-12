@@ -24,10 +24,14 @@ website:
     - id: sb-ada
       style: floating
       search: true
-      contents: 
-        - manuals/ada/index.qmd
+      contents:
+        - manuals/ada/index.qmd 
+        # - auto: manuals/ada/**/*.qmd # works, but is in the wrong order
         - section: Getting Started
-          contents: manuals/ada/getting-started/*.qmd
+          contents: manuals/ada/getting-started/**/*.qmd
+        - section: Code Examples
+          contents: manuals/ada/code-examples/**/*.qmd
+
 
   navbar:
     background: "#0080c9"
