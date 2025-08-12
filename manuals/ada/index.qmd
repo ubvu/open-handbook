@@ -1,0 +1,19 @@
+---
+title: ADA Manuals
+categories: []
+listing:
+  contents: 
+    - ./*.qmd
+    - ./getting-started/*.qmd
+  page-size: 40
+  filter-ui: true
+  type: grid
+  fields: [title,description]
+  sort: false
+image: '/public/manuals/ada/ada1.jpg'
+description: 'This section explains how to get started with ADA HPC.'
+---
+
+::: {.callout-tip}
+The [ADA Topic page](/topics/ada.qmd#how-to-request-access) explains how to request an ADA account.
+:::
