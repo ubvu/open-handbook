@@ -4,7 +4,8 @@ categories: []
 listing:
   contents: 
     - ./*.qmd
-    - ./getting-started/*.qmd
+    - ./getting-started/**/*.qmd
+    - ./code-examples/**/*.qmd
   page-size: 40
   filter-ui: true
   type: grid
