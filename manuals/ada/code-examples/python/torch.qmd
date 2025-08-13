@@ -22,7 +22,7 @@ This script can be run interactively
 python amp_recipe.py
 ```
 
-But we will create a slurm script Torch-AMP-ex.sh to run on a compute node in batch mode. In this example 1 Node, 2 cores and 1 GPU are requested for 10 minutes. 
+But we will create a slurm script `Torch-AMP-ex.sh` to run on a compute node in batch mode. In this example 1 Node, 2 cores and 1 GPU are requested for 10 minutes. 
 ```sh
 #!/bin/bash -l
 #SBATCH -J Torch-AMP-example
@@ -52,7 +52,7 @@ Submit and run the script with Slurm
 sbatch Torch-AMP-ex.sh
 ```
 
-You can monitor the status of the job with squeue -u $USER. Once the job runs, you'll have a slurm-xxxxx.out file in the directory. This log file contains both PyTorch and Slurm output.
+You can monitor the status of the job with `squeue -u $USER`. Once the job runs, you'll have a `slurm-xxxxx.out` file in the directory. This log file contains both PyTorch and Slurm output.
 
 ## Performance and Results
 
