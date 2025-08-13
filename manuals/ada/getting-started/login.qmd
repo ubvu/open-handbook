@@ -17,9 +17,9 @@ ssh <VUNETID>@ada.labs.vu.nl
 ```
 For `ssh.data.vu.nl` you use your VUnetID and VUnetID password. For `ada.labs.vu.nl`, you use your VUnetID and cluster password (initially provided to you by email, and changed by you after your first login). 
 
-Direct access to the cluster is only possible from the VU Campus or from a SURF network location. From other network locations, first connect to the stepstone `<VUNETID>@ssh.data.vu.nl`, or use [eduVPN Institutional Access](https://www.eduvpn.org/client-apps/).
+Direct access to the cluster is only possible from the VU Campus or from a SURF network location. From other network locations, first connect to the stepstone `<VUNETID>@ssh.data.vu.nl`, or use [eduVPN Institutional Access](https://vu.eduvpn.nl/).
 
-You can use any SSH client to login at `<VUNETID>@ada.labs.vu.nl`. Example clients are [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/) (Windows), [MobaXterm](https://mobaxterm.mobatek.net/) (Windows) and [iTerm2](https://iterm2.com/) (macOS).
+You can use any SSH client to login at `<VUNETID>@ada.labs.vu.nl`. SSH has native support in Windows, you can use either the standard Command Prompt or Powershell, or a richer client like [MobaXterm](https://mobaxterm.mobatek.net/) on Windows and [iTerm2](https://iterm2.com/) on macOS.
 
 ## ADA terms of use
 - Do not use the login nodes for computation! Login nodes are the access servers for many users. Always allocate resources through slurm. 
