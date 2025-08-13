@@ -11,7 +11,7 @@ Since Yoda is based on iRODS technology, it is possible to transfer data to and 
 To use iCommands, a [configuration file](/manuals/yoda/yoda_data_transfer/yoda_using_icommands.qmd#configuration) is required in your home directory. This file contains the necessary connection settings for accessing Yoda.
 
 ## Basic iCommands
-First use the `iinit` command to connect. You will need to a Yoda [Data Access Password](/manuals/yoda/yoda_data_transfer/yoda_dap.qmd). 
+First use the `iinit` command to connect. You will need a Yoda [Data Access Password](/manuals/yoda/yoda_data_transfer/yoda_dap.qmd). 
 
 These are the basic commands for navigation and data transfer:
     `ipwd` – Show current iRODS directory
