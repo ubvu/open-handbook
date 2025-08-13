@@ -58,12 +58,10 @@ You can monitor the status of the job with squeue -u $USER. Once the job runs, y
 
 Depending on the type of GPU you may find different performance.
 
-GPU                 | NVIDIA RTX 2070 super  | NVIDIA A30       
---------------------|------------------------|--------------
+GPU                 | NVIDIA RTX 2070 super  | NVIDIA A30   
+---                 | ---                    | ---    
 Default precision:  |  6.835 sec             | 4.444 sec
---------------------|------------------------|--------------
 Mixed precision:    |  4.747 sec             | 0.858 sec
---------------------|------------------------|--------------
 
 ## References
 * [PyTorch tutorials site](https://pytorch.org/tutorials/recipes/recipes/amp_recipe.html)
