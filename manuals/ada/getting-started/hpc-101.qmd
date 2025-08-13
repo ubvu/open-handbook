@@ -38,7 +38,7 @@ Amdahls law is formula that shows how much faster a task can be completed when m
 
 Below example illustrates that the serial portion of a program has a big impact on the overall speedup:
 
-![Amdahls Law](img/Amdahls.png)
+![Amdahls Law](/public/manuals/ada/Amdahls.webp)
 
 When using ADA, take Amdahls Law into consideration: parallelize your code as much as possible before scaling up your requested processors. 
 
