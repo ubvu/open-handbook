@@ -11,6 +11,10 @@ authors:
   - name: VU Network Research Data Support
     location: Amsterdam
     alias: Vrije Universiteit Amsterdam
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.16986187
+    description: Zenodo
 repository-code: 'https://github.com/ubvu/open-handbook'
 url: 'https://rdm.vu.nl'
 abstract: >-
@@ -25,3 +29,6 @@ abstract: >-
   development and decision-making process. If you have
   questions about this release, please contact rdm@vu.nl.
 license: CC0-1.0
+commit: 957d0d074f2323139f795699e86b2348c8f140aa
+version: v0.0.1
+date-released: '2025-08-28'

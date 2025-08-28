@@ -1,5 +1,8 @@
 # VU Research Support Handbook
 
+[![DOI](https://zenodo.org/badge/733455013.svg)](https://doi.org/10.5281/zenodo.16986187)
+
+
 Welcome to the source code for VU Amsterdam Research Support Handbook! If you want to report a problem or suggest a new page, [you can do so using our contribution portal](https://ez-github-contributor.netlify.app/).
 
 ## What is this?
@@ -26,7 +29,7 @@ We will assess blogs on a case by case basis before including them. Please mind 
 
 ## Contributors
 
-There are many kinds of contributions. We see the following contribution ladder for the Research Support Handbook. 
+There are many kinds of contributions. We see the following contribution ladder for the Research Support Handbook.
 
 ```mermaid
 flowchart LR
@@ -264,8 +267,3 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-
-
-
-
-
