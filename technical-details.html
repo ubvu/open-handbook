@@ -289,6 +289,55 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><strong><code>.github/workflows/</code></strong> - GitHub Actions for automated building and deployment</li>
 <li><strong><code>_site/</code></strong> - Generated website files (auto-generated, don’t edit directly)</li>
 </ul>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Extra-detailed overview
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<pre><code>.
+├── .git/ - If present, contains the raw git history
+├── .github/ - GitHub files, including automations and templates
+├── .gitignore - Which files to ignore in git commits
+├── .markdownlint.json - Markdownlint rules and exceptions
+├── CITATION.cff - Citation File Format
+├── CNAME - GitHub Pages domain name
+├── LICENSE - CC0 information
+├── README.md - General readme
+├── _components/ - React components for `/`
+├── _extensions/ - Quarto extensions
+├── _quarto.yml - Quarto metadata
+├── _site/ - If present, the rendered version of the website
+├── _variables.yml - Quarto variables, available in all .qmd files
+├── about.qmd - About page
+├── blog/ - Blog posts, one per .qmd file
+├── blog.qmd - Blog overview page
+├── contributing.qmd - Contributor guide page
+├── custom.scss - Custom styling for VU Amsterdam
+├── editors-guide.qmd - Editor guide page
+├── guides/ - Individual guides, one per `.qmd` file
+├── guides.qmd - General guides page
+├── index.qmd - Homepage `/`
+├── manuals/ - Folder containing all manuals and subpages
+├── manuals.qmd - Manual overview page
+├── netlify.toml - Netlify (preview) deployment instructions
+├── package.json - Netlify plugin information
+├── public/ - Folder containing public assets (keep files small)
+├── references.bib - Reference library for use in the handbook
+├── technical-details.qmd - Technical details page
+├── topics/ - Each `.qmd` file is one topic
+├── topics.qmd - Topic overview page
+└── utils/ - Custom utilities for the website (generally do not touch)
+    └── include-files.lua - Utility to shift headings from included files</code></pre>
+</div>
+</div>
+</div>
 </section>
 </section>
 <section id="about-quarto" class="level2">
@@ -336,20 +385,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="how-to-disable-markdownlint-rules">How to disable Markdownlint rules</h3>
 <p>You can disable specific rules in a document in several ways:</p>
 <p><strong>For a single line:</strong></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- markdownlint-disable-next-line MD033 --&gt;</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="dt">&gt;</span>Some HTML content<span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- markdownlint-disable-next-line MD033 --&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="dt">&gt;</span>Some HTML content<span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>For a section:</strong></p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- markdownlint-disable MD033 --&gt;</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="dt">&gt;</span>HTML content<span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">span</span><span class="dt">&gt;</span>More HTML<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- markdownlint-enable MD033 --&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- markdownlint-disable MD033 --&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="dt">&gt;</span>HTML content<span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">span</span><span class="dt">&gt;</span>More HTML<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- markdownlint-enable MD033 --&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>For an entire file:</strong></p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- markdownlint-disable MD013 MD033 --&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- markdownlint-disable MD013 MD033 --&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>In a .markdownlint.json config file:</strong></p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"MD013"</span><span class="fu">:</span> <span class="kw">false</span><span class="fu">,</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"MD033"</span><span class="fu">:</span> <span class="kw">false</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"MD013"</span><span class="fu">:</span> <span class="kw">false</span><span class="fu">,</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"MD033"</span><span class="fu">:</span> <span class="kw">false</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Please edit the existing <a href="./markdownlint.json"><code>.markdownlint.json</code> file</a> in case you want to ignore certain rules project-wide.</p>
 
 
@@ -773,6 +822,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <li class="nav-item">
     <a class="nav-link" href="./about.html">
 <p>About</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link active" href="./technical-details.html" aria-current="page">
+<p>Technical details</p>
 </a>
   </li>  
     <li class="nav-item">
