@@ -25,6 +25,12 @@ function Cta() {
               >
                 View guides
               </a>
+              <a
+                href="./manuals.html"
+                className="tw-text-sm tw-font-semibold tw-leading-6 tw-text-white"
+              >
+                View manuals
+              </a>
             </div>
           </div>
         </div>

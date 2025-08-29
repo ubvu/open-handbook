@@ -4,7 +4,7 @@ function Hero() {
       <div className="tw-mx-auto tw-max-w-2xl tw-py-16">
         <div className="tw-hidden sm:tw-mb-8 sm:tw-flex sm:tw-justify-center">
           <div className="tw-relative tw-rounded-full tw-px-3 tw-py-1 tw-text-sm tw-leading-6 tw-text-gray-600 tw-ring-1 tw-ring-gray-900/10 hover:tw-ring-gray-900/20">
-            This is a new project. Missing something?{" "}
+            We update this website regularly. Missing something?{" "}
             <a href="https://ez-github-contributor.netlify.app/" className="tw-font-semibold tw-text-sky-600">
               <span className="tw-absolute tw-inset-0" aria-tw-hidden="true" />
               Let us know <span aria-tw-hidden="true">&rarr;</span>
@@ -16,7 +16,7 @@ function Hero() {
             Find quality information on research practices at VU Amsterdam
           </h1>
           <p className="tw-mt-6 tw-text-base tw-leading-8 tw-text-gray-600">
-            The Research Support Handbook helps you learn about topics relevant to your research. It also guides you through specific issues you might encounter in your modern day research. All of the information on these pages is curated by VU staff, for VU staff. The handbook is updated on a daily basis.
+            The Research Support Handbook helps you learn about topics relevant to your research. It also guides you through specific issues you might encounter in your modern day research. There are tool-specific how-to manuals as well. All of the information on these pages is curated by VU staff, for VU staff. The handbook is updated on a daily basis.
           </p>
           <div className="tw-mt-10 tw-flex tw-items-center tw-justify-center tw-gap-x-6">
             <a
@@ -30,6 +30,12 @@ function Hero() {
               className="tw-text-sm tw-font-semibold tw-leading-6 tw-text-gray-900"
             >
               View guides
+            </a>
+            <a
+              href="./manuals.html"
+              className="tw-text-sm tw-font-semibold tw-leading-6 tw-text-gray-900"
+            >
+              View manuals
             </a>
           </div>
         </div>
