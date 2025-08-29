@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Blog – Research Support Handbook</title>
+<title>Plan &amp; Design – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +23,26 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./public/favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-1e339df562af8a815922d8935af03622.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../public/favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-1e339df562af8a815922d8935af03622.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,20 +73,48 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-topics .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-topics'] = new List('listing-topics', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-guides .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-guides'] = new List('listing-guides', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -130,7 +158,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="alternate" type="application/rss+xml" title="Research Support Handbook" href="blog.xml" data-external="1"></head>
+</head>
 
 <body class="nav-fixed quarto-light">
 
@@ -139,8 +167,8 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -155,49 +183,49 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-topics">    
         <li>
-    <a class="dropdown-item" href="./topics.html">
+    <a class="dropdown-item" href="../topics.html">
  <span class="dropdown-text">All</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./topics.html#category=Policies and Legislation">
+    <a class="dropdown-item" href="../topics.html#category=Policies and Legislation">
  <span class="dropdown-text">Policies and Legislation</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./topics.html#category=Research Data">
+    <a class="dropdown-item" href="../topics.html#category=Research Data">
  <span class="dropdown-text">Research Data</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./topics.html#category=Research Software">
+    <a class="dropdown-item" href="../topics.html#category=Research Software">
  <span class="dropdown-text">Research Software</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./topics.html#category=Responsible Scholarship">
+    <a class="dropdown-item" href="../topics.html#category=Responsible Scholarship">
  <span class="dropdown-text">Responsible Scholarship</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./topics.html#category=Tools">
+    <a class="dropdown-item" href="../topics.html#category=Tools">
  <span class="dropdown-text">Tools</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./topics.html#category=Trainings and Knowledge Items">
+    <a class="dropdown-item" href="../topics.html#category=Trainings and Knowledge Items">
  <span class="dropdown-text">Trainings and Knowledge Items</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./guides.html"> 
+    <a class="nav-link" href="../guides.html"> 
 <span class="menu-text">Guides</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./manuals.html"> 
+    <a class="nav-link" href="../manuals.html"> 
 <span class="menu-text">Manuals</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./contributing.html"> 
+    <a class="nav-link" href="../contributing.html"> 
 <span class="menu-text">Contributing</span></a>
   </li>  
 </ul>
@@ -213,14 +241,21 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(11)</span></div><div class="category" data-category="SGFja2F0aG9u">Hackathon <span class="quarto-category-count">(6)</span></div><div class="category" data-category="SGFuZGJvb2s=">Handbook <span class="quarto-category-count">(10)</span></div><div class="category" data-category="SVQlMjBmb3IlMjBSZXNlYXJjaA==">IT for Research <span class="quarto-category-count">(1)</span></div><div class="category" data-category="WW9kYQ==">Yoda <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#topics" id="toc-topics" class="nav-link active" data-scroll-target="#topics">Topics</a></li>
+  <li><a href="#guides" id="toc-guides" class="nav-link" data-scroll-target="#guides">Guides</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/lifecycle/02-plan-design.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog</h1>
+<h1 class="title">Plan &amp; Design</h1>
 </div>
 
 
@@ -237,354 +272,167 @@ window.Quarto = {
 </header>
 
 
-<p>Subscribe to the blog via <a href="./blog.xml">RSS</a>.</p>
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="SGFuZGJvb2slMkNZb2Rh" data-listing-date-sort="1753660800000" data-listing-file-modified-sort="1756478110284" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="203">
-<div class="thumbnail"><a href="./blog/2025-07-28manuals.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2025-07-28manuals.html" class="no-external">New Manuals section in the Handbook</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('SGFuZGJvb2s='); return false;">Handbook</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('WW9kYQ=='); return false;">Yoda</div>
-
+<section id="topics" class="level2">
+<h2 class="anchored" data-anchor-id="topics">Topics</h2>
+<div id="listing-topics" class="quarto-listing quarto-listing-container-table">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-topics-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-topics'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">Order By</option>
+      <option value="index" data-direction="asc">Default</option>
+      <option value="listing-title-sort" data-direction="asc">
+        Title
+      </option>
+    </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
 </div>
-<div class="delink listing-description"><a href="./blog/2025-07-28manuals.html" class="no-external">
-Last week we added a new section to the Research Support Handbook: Manuals. Manuals are short pages describing how to accomplish specific tasks in a Tool and should be…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/2025-07-28manuals.html" class="no-external">
-<div class="listing-date">
-Jul 28, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="SVQlMjBmb3IlMjBSZXNlYXJjaA==" data-listing-date-sort="1753315200000" data-listing-file-modified-sort="1756478110284" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="58">
-<div class="thumbnail"><a href="./blog/2025-07-29itvoblog.html" class="no-external">
+<table class="quarto-listing-table table table-striped table-hover">
+<thead>
+<tr>
 
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
+</th>
 
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2025-07-29itvoblog.html" class="no-external">ITvO blog</a>
-</h3>
-<div class="listing-categories">
+<th>
+Reading Time
+</th>
 
-<div class="listing-category" onclick="window.quartoListingCategory('SVQlMjBmb3IlMjBSZXNlYXJjaA=='); return false;">IT for Research</div>
+</tr>
+</thead>
+<tbody class="list">
 
+<tr data-index="0" data-categories="UmVzZWFyY2glMjBEYXRhJTJDUG9saWNpZXMlMjBhbmQlMjBMZWdpc2xhdGlvbg==" data-listing-file-modified-sort="1756478110395" data-listing-reading-time-sort="4" data-listing-word-count-sort="678" data-listing-title-sort="Data Classification" data-listing-filename-sort="data-classification.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="../topics/data-classification.html" class="title listing-title">Data Classification</a>
+</td>
+<td>
+<span class="listing-reading-time">4 min</span>
+</td>
+
+</tr>
+
+<tr data-index="1" data-categories="UmVzZWFyY2glMjBEYXRh" data-listing-file-modified-sort="1756478110395" data-listing-reading-time-sort="6" data-listing-word-count-sort="1166" data-listing-title-sort="Data Management Plan (DMP)" data-listing-filename-sort="data-management-plan.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="../topics/data-management-plan.html" class="title listing-title">Data Management Plan (DMP)</a>
+</td>
+<td>
+<span class="listing-reading-time">6 min</span>
+</td>
+
+</tr>
+
+<tr data-index="2" data-categories="UmVzZWFyY2glMjBEYXRh" data-listing-file-modified-sort="1756478110395" data-listing-reading-time-sort="1" data-listing-word-count-sort="115" data-listing-title-sort="Data Management Section" data-listing-filename-sort="data-management-section.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="../topics/data-management-section.html" class="title listing-title">Data Management Section</a>
+</td>
+<td>
+<span class="listing-reading-time">1 min</span>
+</td>
+
+</tr>
+
+<tr data-index="3" data-categories="UmVzcG9uc2libGUlMjBTY2hvbGFyc2hpcA==" data-listing-file-modified-sort="1756478110396" data-listing-reading-time-sort="1" data-listing-word-count-sort="162" data-listing-title-sort="Ethical Review" data-listing-filename-sort="ethical-review.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="../topics/ethical-review.html" class="title listing-title">Ethical Review</a>
+</td>
+<td>
+<span class="listing-reading-time">1 min</span>
+</td>
+
+</tr>
+
+<tr data-index="4" data-categories="UG9saWNpZXMlMjBhbmQlMjBMZWdpc2xhdGlvbg==" data-listing-file-modified-sort="1756478110396" data-listing-reading-time-sort="3" data-listing-word-count-sort="564" data-listing-title-sort="General Data Protection Regulation" data-listing-filename-sort="gdpr.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="../topics/gdpr.html" class="title listing-title">General Data Protection Regulation</a>
+</td>
+<td>
+<span class="listing-reading-time">3 min</span>
+</td>
+
+</tr>
+
+<tr data-index="5" data-categories="UmVzZWFyY2glMjBEYXRhJTJDUmVzZWFyY2glMjBTb2Z0d2FyZSUyQ1BvbGljaWVzJTIwYW5kJTIwTGVnaXNsYXRpb24=" data-listing-file-modified-sort="1756478110396" data-listing-reading-time-sort="2" data-listing-word-count-sort="242" data-listing-title-sort="Research Data and Software Management Policy" data-listing-filename-sort="research-data-and-software-management-policy.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<a href="../topics/research-data-and-software-management-policy.html" class="title listing-title">Research Data and Software Management Policy</a>
+</td>
+<td>
+<span class="listing-reading-time">2 min</span>
+</td>
+
+</tr>
+
+</tbody>
+</table>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
-<div class="delink listing-description"><a href="./blog/2025-07-29itvoblog.html" class="no-external">
-From now on the ITvO (IT for Research) team will be using the Handbook Blog for sharing news, updates, and important announcements related to SciCloud, ADA HPC, SciStor, and…
-</a></div>
+</section>
+<section id="guides" class="level2">
+<h2 class="anchored" data-anchor-id="guides">Guides</h2>
+<div id="listing-guides" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="UGxhbiUyMCUyNiUyMERlc2lnbg==" data-listing-file-modified-sort="1756478110284" data-listing-reading-time-sort="7" data-listing-word-count-sort="1245">
+<a href="../guides/comply-with-gdpr.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../public/gdpr-europe-united-lock-74673f-1024.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+How can you comply with the GDPR?
+</h5>
+<div class="card-text listing-description delink">
+<p>Personal data must be protected.</p>
 </div>
-<div class="metadata">
-<a href="./blog/2025-07-29itvoblog.html" class="no-external">
-<div class="listing-date">
-Jul 24, 2025
-</div>
+<div class="card-attribution card-text-small start">
 <div class="listing-author">
-Sergio Gutierrez, Peter Vos
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="SGFuZGJvb2slMkNIYWNrYXRob24=" data-listing-date-sort="1753315200000" data-listing-file-modified-sort="1756478110284" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="605">
-<div class="thumbnail"><a href="./blog/2025-07-24hackathon.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2025-07-24hackathon.html" class="no-external">Sixth Handbook Hackathon</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('SGFuZGJvb2s='); return false;">Handbook</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('SGFja2F0aG9u'); return false;">Hackathon</div>
 
 </div>
-<div class="delink listing-description"><a href="./blog/2025-07-24hackathon.html" class="no-external">
-On July 24, 2025, all authors participated in the sixth hackathon for the Research Support Handbook. For this hackathon, we focused on <strong>adding and updating topics</strong>.
-</a></div>
 </div>
-<div class="metadata">
-<a href="./blog/2025-07-24hackathon.html" class="no-external">
-<div class="listing-date">
-Jul 24, 2025
 </div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="UGxhbiUyMCUyNiUyMERlc2lnbg==" data-listing-file-modified-sort="1756478110285" data-listing-reading-time-sort="23" data-listing-word-count-sort="4471">
+<a href="../guides/plan-and-design.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../public/cover-images/DALLE_LEGO-scientists-discussing-metadata.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+How can you set up research data management from the start?
+</h5>
+<div class="card-text listing-description delink">
+<p>A good plan is half the work.</p>
+</div>
+<div class="card-attribution card-text-small start">
 <div class="listing-author">
-Emily Barabas, Diógenes Cruz de Arcelino, Kirianne Goossen, Charlie Greene, Sergio Gutierrez Maury, Sam Heijnen, Marcel Ras, Elisa Rodenburg, Jolien Scholten, Dimitri Unger, Peter Vos
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="SGFuZGJvb2s=" data-listing-date-sort="1747612800000" data-listing-file-modified-sort="1756478110284" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="391">
-<div class="thumbnail"><a href="./blog/2025-05-15embed-iframe.html" class="no-external">
-
-<p class="card-img-top"><img src="public/Screenshot 2025-05-08 at 10.49.51.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2025-05-15embed-iframe.html" class="no-external">How to embed handbook pages using iframes</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('SGFuZGJvb2s='); return false;">Handbook</div>
 
 </div>
-<div class="delink listing-description"><a href="./blog/2025-05-15embed-iframe.html" class="no-external">
-If you want to reuse content from the Research Support Handbook, you can do so using an HTML <code>iframe</code>. This post will help you through the steps to successfully embed a…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/2025-05-15embed-iframe.html" class="no-external">
-<div class="listing-date">
-May 19, 2025
-</div>
-<div class="listing-author">
-Chris Hartgerink, Elisa Rodenburg, Jessica Hrudey
-</div>
-</a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="SGFuZGJvb2slMkNIYWNrYXRob24=" data-listing-date-sort="1732752000000" data-listing-file-modified-sort="1756478110284" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="206">
-<div class="thumbnail"><a href="./blog/2024-11-28hackathon.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-11-28hackathon.html" class="no-external">Fifth Handbook Hackathon</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('SGFuZGJvb2s='); return false;">Handbook</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('SGFja2F0aG9u'); return false;">Hackathon</div>
-
-</div>
-<div class="delink listing-description"><a href="./blog/2024-11-28hackathon.html" class="no-external">
-On November 28, 2024, all authors participated in the fifth hackathon for the Research Support Handbook. For this hackathon, we focused on adding new content and…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-11-28hackathon.html" class="no-external">
-<div class="listing-date">
-Nov 28, 2024
-</div>
-<div class="listing-author">
-Lena Karvovskaya, Jolien Scholten, Kostas Vilkelis, Tycho Hofstra, Irene Martorelli, Peter Vos
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="SGFuZGJvb2slMkNIYWNrYXRob24=" data-listing-date-sort="1730419200000" data-listing-file-modified-sort="1756478110284" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="242">
-<div class="thumbnail"><a href="./blog/2024-11-01hackathon.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-11-01hackathon.html" class="no-external">Fourth Handbook Hackathon</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('SGFuZGJvb2s='); return false;">Handbook</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('SGFja2F0aG9u'); return false;">Hackathon</div>
-
-</div>
-<div class="delink listing-description"><a href="./blog/2024-11-01hackathon.html" class="no-external">
-On October 30th, 2024, all authors participated in the fourth hackathon for the Research Support Handbook. Since the third hackathon, we migrated to <code>rdm.vu.nl</code>, which is a…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-11-01hackathon.html" class="no-external">
-<div class="listing-date">
-Nov 1, 2024
-</div>
-<div class="listing-author">
-Chris Hartgerink, Lena Karvovskaya, Jolien Scholten, Tycho Hofstra, Elisa Rodenburg, Stephanie van de Sandt
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-categories="SGFuZGJvb2s=" data-listing-date-sort="1729555200000" data-listing-file-modified-sort="1756478110283" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="496">
-<div class="thumbnail"><a href="./blog/2024-10-22post-mortem.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-10-22post-mortem.html" class="no-external">Why was rdm.vu.nl down for ten hours?</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('SGFuZGJvb2s='); return false;">Handbook</div>
-
-</div>
-<div class="delink listing-description"><a href="./blog/2024-10-22post-mortem.html" class="no-external">
-On Friday October 18th 2024, we experienced around ten hours of downtime on the <code>rdm.vu.nl</code> website. The downtime started around 10AM after merging changes to the handbook and…<sup></sup>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-10-22post-mortem.html" class="no-external">
-<div class="listing-date">
-Oct 22, 2024
-</div>
-<div class="listing-author">
-Chris Hartgerink, Lena Karvovskaya
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-categories="SGFuZGJvb2slMkNIYWNrYXRob24=" data-listing-date-sort="1727654400000" data-listing-file-modified-sort="1756478110283" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="240">
-<div class="thumbnail"><a href="./blog/2024-09-30hackathon.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-09-30hackathon.html" class="no-external">Third Handbook Hackathon</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('SGFuZGJvb2s='); return false;">Handbook</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('SGFja2F0aG9u'); return false;">Hackathon</div>
-
-</div>
-<div class="delink listing-description"><a href="./blog/2024-09-30hackathon.html" class="no-external">
-In the third hackathon for the Research Support Handbook, held on September 25th, 2024, contributors gathered to make significant progress towards migrating the handbook to…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-09-30hackathon.html" class="no-external">
-<div class="listing-date">
-Sep 30, 2024
-</div>
-<div class="listing-author">
-Alex van der Jagt, FGB, sec.&nbsp;KNOP, Chris Hartgerink (host), Diogenes Cruz de Arcelino, Elisa Rodenburg, UBVU, Jessica Hrudey, FGB, Jolien Scholten, UB, Lena Karvovskaya, UBVU, Stephanie van de Sandt, UBVU, Tycho Hofstra, UBVU
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="8" data-categories="SGFuZGJvb2slMkNIYWNrYXRob24=" data-listing-date-sort="1725494400000" data-listing-file-modified-sort="1756478110283" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="306">
-<div class="thumbnail"><a href="./blog/2024-09-05hackathon.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-09-05hackathon.html" class="no-external">Second Handbook Hackathon</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('SGFuZGJvb2s='); return false;">Handbook</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('SGFja2F0aG9u'); return false;">Hackathon</div>
-
-</div>
-<div class="delink listing-description"><a href="./blog/2024-09-05hackathon.html" class="no-external">
-On September 5th, 2024, all authors participated in the second hackathon for the Research Support Handbook. For this hackathon, we focused on quality assurance. Quality…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-09-05hackathon.html" class="no-external">
-<div class="listing-date">
-Sep 5, 2024
-</div>
-<div class="listing-author">
-Alex van der Jagt, Chris Hartgerink, Elisa Rodenburg, Jens de Bruijn, Jolien Scholten, Joy Jiayi Cheng, Lena Karvovskaya, Meron Vermaas, Peter Vos, Stephanie van de Sandt, Tycho Hofstra
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="9" data-categories="SGFuZGJvb2slMkNIYWNrYXRob24=" data-listing-date-sort="1719446400000" data-listing-file-modified-sort="1756478110283" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="504">
-<div class="thumbnail"><a href="./blog/2024-06-27hackathon.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-06-27hackathon.html" class="no-external">First Handbook Hackathon</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('SGFuZGJvb2s='); return false;">Handbook</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('SGFja2F0aG9u'); return false;">Hackathon</div>
-
-</div>
-<div class="delink listing-description"><a href="./blog/2024-06-27hackathon.html" class="no-external">
-On June 27th, 2024, the first hackathon for the Research Support Handbook took place with all the post authors. For this hackathon, we focused on non-GitHub based…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-06-27hackathon.html" class="no-external">
-<div class="listing-date">
-Jun 27, 2024
-</div>
-<div class="listing-author">
-Alex van der Jagt, Chris Hartgerink, Dimitri Unger, Elisa Rodenburg, Jessica Hrudey, Jolien Scholten, Lena Karvovskaya, Lucy O’ Shea, Mar Barrantes-Cepas, Meron Vermaas, Peter Vos, Stephanie van de Sandt
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="10" data-categories="SGFuZGJvb2s=" data-listing-date-sort="1716422400000" data-listing-file-modified-sort="1756478110283" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="36">
-<div class="thumbnail"><a href="./blog/2024-05-23welcome.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./blog/2024-05-23welcome.html" class="no-external">Hello world!</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('SGFuZGJvb2s='); return false;">Handbook</div>
-
-</div>
-<div class="delink listing-description"><a href="./blog/2024-05-23welcome.html" class="no-external">
-This is the first blog entry on the Research Support Handbook. We will be posting more at a later time, and are looking forward to your contributions as well.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./blog/2024-05-23welcome.html" class="no-external">
-<div class="listing-date">
-May 23, 2024
-</div>
-</a>
-</div>
+</div></a>
 </div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</div>
+
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -999,17 +847,17 @@ May 23, 2024
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="./about.html">
+    <a class="nav-link" href="../about.html">
 <p>About</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="./technical-details.html">
+    <a class="nav-link" href="../technical-details.html">
 <p>Technical details</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="./editors-guide.html">
+    <a class="nav-link" href="../editors-guide.html">
 <p>Editor’s guide</p>
 </a>
   </li>  
@@ -1019,7 +867,7 @@ May 23, 2024
 </a>
   </li>  
 </ul>
-    <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/blog.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/lifecycle/02-plan-design.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
