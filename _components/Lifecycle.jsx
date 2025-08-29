@@ -70,7 +70,7 @@ function Lifecycle() {
             Research Life Cycle
           </h2>
           <p className="tw-m-6 tw-text-lg tw-leading-8 tw-text-gray-600">
-            Find the relevant guides for the stage of your research.
+            Find the relevant information for the stage of your research.
           </p>
         </div>
       </div>
