@@ -1,0 +1,31 @@
+---
+title: Plan & Design
+listing:
+  - id: topics
+    contents:
+      - ../topics/data-classification.qmd
+      - ../topics/data-management-plan.qmd
+      - ../topics/data-management-section.qmd
+      - ../topics/ethical-review.qmd
+      - ../topics/gdpr.qmd
+      - ../topics/research-data-and-software-management-policy.qmd
+    type: table
+    table-striped: true
+    table-hover: true
+    fields: [title, reading-time]
+  - id: guides
+    contents: "../guides/*.qmd"
+    type: grid
+    include:
+      categories: "Plan & Design"
+---
+
+## Topics
+
+:::{#topics}
+:::
+
+## Guides
+
+:::{#guides}
+:::

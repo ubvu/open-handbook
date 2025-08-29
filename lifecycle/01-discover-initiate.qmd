@@ -1,0 +1,26 @@
+---
+title: Discover & Initiate
+listing:
+  - id: topics
+    contents:
+      - ../topics/finding-existing-data.qmd
+    type: table
+    table-striped: true
+    table-hover: true
+    fields: [title, reading-time]
+  - id: guides
+    contents: "../guides/*.qmd"
+    type: grid
+    include:
+      categories: "Discover & Initiate"
+---
+
+## Topics
+
+:::{#topics}
+:::
+
+## Guides
+
+:::{#guides}
+:::

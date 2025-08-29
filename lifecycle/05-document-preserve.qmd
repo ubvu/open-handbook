@@ -1,0 +1,34 @@
+---
+title: Document & Preserve
+listing:
+  - id: topics
+    contents:
+      - ../topics/data-archiving.qmd
+      - ../topics/data-documentation.qmd
+      - ../topics/fair-principles.qmd
+      - ../topics/metadata.qmd
+      - ../topics/persistent-identifier.qmd
+      - ../topics/selecting-data.qmd
+      - ../topics/software-archiving.qmd
+      - ../topics/dataversenl.qmd
+      - ../topics/yoda.qmd
+    type: table
+    table-striped: true
+    table-hover: true
+    fields: [title, reading-time]
+  - id: guides
+    contents: "../guides/*.qmd"
+    type: grid
+    include:
+      categories: "Document & Preserve"
+---
+
+## Topics
+
+:::{#topics}
+:::
+
+## Guides
+
+:::{#guides}
+:::
