@@ -12,10 +12,10 @@ website:
   page-navigation: true
   bread-crumbs: true
   sidebar:
-    - id: sb-yoda # will show up automatically on pages referenced in contents. 
+    - id: sb-yoda # will show up automatically on pages referenced in contents.
       style: floating
       search: true
-      contents: 
+      contents:
         - manuals/yoda/index.qmd
         - section: Yoda Portal
           contents: manuals/yoda/yoda_portal/*.qmd # Note the sorting is by filename
@@ -67,6 +67,7 @@ website:
     center:
       - text: "About"
         href: about.qmd
+      - href: technical-details.qmd
       - href: editors-guide.qmd
       - text: "GHOST Collective"
         href: https://ghostcollective.github.io/games.html

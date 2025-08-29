@@ -53,6 +53,47 @@ The `_quarto.yml` file is especially important, as it contains the metadata and 
 - **`.github/workflows/`** - GitHub Actions for automated building and deployment
 - **`_site/`** - Generated website files (auto-generated, don't edit directly)
 
+::: {.callout-caution collapse="true"}
+## Extra-detailed overview
+
+```
+.
+├── .git/ - If present, contains the raw git history
+├── .github/ - GitHub files, including automations and templates
+├── .gitignore - Which files to ignore in git commits
+├── .markdownlint.json - Markdownlint rules and exceptions
+├── CITATION.cff - Citation File Format
+├── CNAME - GitHub Pages domain name
+├── LICENSE - CC0 information
+├── README.md - General readme
+├── _components/ - React components for `/`
+├── _extensions/ - Quarto extensions
+├── _quarto.yml - Quarto metadata
+├── _site/ - If present, the rendered version of the website
+├── _variables.yml - Quarto variables, available in all .qmd files
+├── about.qmd - About page
+├── blog/ - Blog posts, one per .qmd file
+├── blog.qmd - Blog overview page
+├── contributing.qmd - Contributor guide page
+├── custom.scss - Custom styling for VU Amsterdam
+├── editors-guide.qmd - Editor guide page
+├── guides/ - Individual guides, one per `.qmd` file
+├── guides.qmd - General guides page
+├── index.qmd - Homepage `/`
+├── manuals/ - Folder containing all manuals and subpages
+├── manuals.qmd - Manual overview page
+├── netlify.toml - Netlify (preview) deployment instructions
+├── package.json - Netlify plugin information
+├── public/ - Folder containing public assets (keep files small)
+├── references.bib - Reference library for use in the handbook
+├── technical-details.qmd - Technical details page
+├── topics/ - Each `.qmd` file is one topic
+├── topics.qmd - Topic overview page
+└── utils/ - Custom utilities for the website (generally do not touch)
+    └── include-files.lua - Utility to shift headings from included files
+```
+:::
+
 ## About Quarto
 
 This handbook is built using [Quarto](https://quarto.org/), a scientific and technical publishing system. Quarto allows you to create documents that combine text, code, and data. It supports multiple formats including websites, PDFs, and presentations.
