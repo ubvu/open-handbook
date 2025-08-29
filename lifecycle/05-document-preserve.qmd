@@ -2,13 +2,12 @@
 title: Document & Preserve
 listing:
   - id: topics
-    contents: "../topics/*.qmd"
+    contents:
+      - ../topics/ada.qmd
     type: table
     table-striped: true
     table-hover: true
     fields: [title, reading-time]
-    include:
-      categories: "Document & Preserve"
   - id: guides
     contents: "../guides/*.qmd"
     type: grid
