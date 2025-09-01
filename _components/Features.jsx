@@ -1,6 +1,6 @@
 const features = [
   {
-    name: <p className="tw-inline"><a href="https://rdm.vu.nl/contributing.html">Quality control</a></p>,
+    name: <p className="tw-inline"><a href="https://rdm.vu.nl/contributing.html">Collaborative</a></p>,
     description: "We learn each other's best practices.",
     icon: () => (
       <svg
