@@ -14,12 +14,13 @@ To use iCommands, a [configuration file](/manuals/yoda/yoda_data_transfer/yoda_u
 First use the `iinit` command to connect. You will need a Yoda [Data Access Password](/manuals/yoda/yoda_data_transfer/yoda_dap.qmd). 
 
 These are the basic commands for navigation and data transfer:
-    `ipwd` – Show current iRODS directory
-    `ils` – List contents of a directory
-    `icd` – Change directory
-    `iput` – Upload files to Yoda
-    `iget` – Download files from Yoda
-    `irsync` – Synchronize local and remote directories
+
+- `ipwd` – Show current iRODS directory
+- `ils` – List contents of a directory
+- `icd` – Change directory
+- `iput` – Upload files to Yoda
+- `iget` – Download files from Yoda
+- `irsync` – Synchronize local and remote directories
 
 Your Yoda project folders are located under `/vu/home`.
 
