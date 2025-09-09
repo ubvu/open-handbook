@@ -1,0 +1,195 @@
+---
+title: Technical details
+---
+
+This handbook is created with a variety of technical resources. This document outlines what technical resources are used to achieve different goals.
+
+## How is the website built?
+
+We use GitHub Actions to build the Quarto website. This automation runs every time something changes for the website – [the automation itself can be found on GitHub](https://github.com/ubvu/open-handbook/blob/main/.github/workflows/publish.yml).
+
+We use GitHub to subsequently make the website available on `https://rdm.vu.nl`.
+
+Please [refer to the Quarto documentation for detailed instructions](https://quarto.org/docs/websites/) on how to use Quarto.
+
+## Preview deployments
+
+We use Netlify to automatically build previews of pull requests on GitHub. This is provided by Liberate Science GmbH, and is not critical to the operation of `https://rdm.vu.nl`. It does, however, help the editors manage changes to the handbook.
+
+If this integration ever breaks, it can be fixed by one of the maintainers of [the handbook repository]({{< var repo-url >}}). To fix this, link your GitHub repository through Netlify directly and it will automatically deploy any pull requests - https://app.netlify.com/start.
+
+## Easy GitHub contributor
+
+The easy GitHub contributor is a small integration to make it easier to start contributing to the handbook. This service is provided by Liberate Science GmbH through Netlify. It is supported until September 1st, 2024 – after which it is no longer maintained.
+
+## Repository structure overview
+
+Understanding the repository structure helps you locate and modify the right files:
+
+### Key files and directories
+
+- **`index.qmd`** - Homepage content
+- **`_quarto.yml`** - Main Quarto configuration file
+- **`_variables.yml`** - Site-wide variables and settings
+- **`custom.scss`** - Custom styling
+- **`contributing.qmd`** - Contributing guidelines
+- **`editors-guide.qmd`** - Editor documentation
+
+#### `_quarto.yml`
+
+The `_quarto.yml` file is especially important, as it contains the metadata and information to structure the handbook. You can use this to find and update the navigation bar. The specifics of [using `_quarto.yml` is documented very well by Quarto](https://quarto.org/docs/websites/website-tools.html).
+
+### Content organization
+
+- **`topics/`** - Individual topic pages (e.g., `data-management-plan.qmd`, `gdpr.qmd`)
+- **`guides/`** - Step-by-step guides organized by research lifecycle
+- **`blog/`** - Blog posts and announcements
+- **`public/`** - Static assets (images, PDFs, etc.)
+
+### Technical files
+
+- **`_components/`** - React components for interactive elements
+- **`_extensions/`** - Quarto extensions (e.g., qreacto for React integration)
+- **`.github/workflows/`** - GitHub Actions for automated building and deployment
+- **`_site/`** - Generated website files (auto-generated, don't edit directly)
+
+::: {.callout-caution collapse="true"}
+## Extra-detailed overview
+
+```
+.
+├── .git/ - If present, contains the raw git history
+├── .github/ - GitHub files, including automations and templates
+├── .gitignore - Which files to ignore in git commits
+├── .markdownlint.json - Markdownlint rules and exceptions
+├── CITATION.cff - Citation File Format
+├── CNAME - GitHub Pages domain name
+├── LICENSE - CC0 information
+├── README.md - General readme
+├── _components/ - React components for `/`
+├── _extensions/ - Quarto extensions
+├── _quarto.yml - Quarto metadata
+├── _site/ - If present, the rendered version of the website
+├── _variables.yml - Quarto variables, available in all .qmd files
+├── about.qmd - About page
+├── blog/ - Blog posts, one per .qmd file
+├── blog.qmd - Blog overview page
+├── contributing.qmd - Contributor guide page
+├── custom.scss - Custom styling for VU Amsterdam
+├── editors-guide.qmd - Editor guide page
+├── guides/ - Individual guides, one per `.qmd` file
+├── guides.qmd - General guides page
+├── index.qmd - Homepage `/`
+├── manuals/ - Folder containing all manuals and subpages
+├── manuals.qmd - Manual overview page
+├── netlify.toml - Netlify (preview) deployment instructions
+├── package.json - Netlify plugin information
+├── public/ - Folder containing public assets (keep files small)
+├── references.bib - Reference library for use in the handbook
+├── technical-details.qmd - Technical details page
+├── topics/ - Each `.qmd` file is one topic
+├── topics.qmd - Topic overview page
+└── utils/ - Custom utilities for the website (generally do not touch)
+    └── include-files.lua - Utility to shift headings from included files
+```
+:::
+
+## About Quarto
+
+This handbook is built using [Quarto](https://quarto.org/), a scientific and technical publishing system. Quarto allows you to create documents that combine text, code, and data. It supports multiple formats including websites, PDFs, and presentations.
+
+### Key concepts
+
+- **`.qmd` files** - Quarto markdown files that combine markdown text with executable code
+- **YAML front matter** - Configuration at the top of files between `---` markers
+- **Shortcodes** - Special syntax for advanced features (e.g., `{{< var repo-url >}}`)
+
+### Useful resources
+
+- [Quarto documentation](https://quarto.org/docs/)
+- [Quarto guide for websites](https://quarto.org/docs/websites/)
+- [Markdown basics](https://quarto.org/docs/authoring/markdown-basics.html)
+
+## Common errors and troubleshooting
+
+### Build errors
+
+**Error: "File not found"**
+- **Cause**: Missing file reference or incorrect path
+- **Solution**: Check file paths in links and references
+- **Can ignore in PR?** No, this will break the build
+
+**Error: "YAML parsing error"**
+- **Cause**: Invalid YAML syntax in front matter or `_quarto.yml`
+- **Solution**: Check YAML indentation and syntax
+- **Can ignore in PR?** No, this will prevent building
+
+**Error: "Duplicate anchor"**
+- **Cause**: Multiple headings with the same text create duplicate IDs
+- **Solution**: Make heading text unique or use custom IDs
+- **Can ignore in PR?** Yes, but should be fixed for better navigation
+
+### Style issues
+
+**Info: "Missing alt text"**
+- **Cause**: Images without alt text
+- **Solution**: Add descriptive alt text for accessibility
+- **Can ignore in PR?** Should be addressed for accessibility, but won't break the build
+
+### Markdownlint errors
+
+Markdownlint checks for consistent markdown formatting. This only runs if topics or guides are changed.
+
+Common errors include:
+
+**MD001: Heading levels should only increment by one level at a time**
+- **Cause**: Skipping heading levels (e.g., H1 directly to H3)
+- **Solution**: Use proper heading hierarchy
+- **Escape**: Add `<!-- markdownlint-disable MD001 -->` before the heading
+
+**MD033: Inline HTML**
+- **Cause**: Using HTML tags in markdown
+- **Solution**: Use markdown syntax instead, or use HTML when necessary
+- **Escape**: Add `<!-- markdownlint-disable MD033 -->` around HTML sections
+- **Can ignore in PR?** Usually yes, HTML is sometimes needed for advanced formatting
+
+**MD041: First line in file should be a top level heading**
+- **Cause**: File doesn't start with H1 heading
+- **Solution**: Add H1 heading or use YAML front matter
+- **Escape**: Add `<!-- markdownlint-disable MD041 -->` at the top
+- **Can ignore in PR?** Yes, especially for files with YAML front matter
+
+The full set of rules can be found in the [markdownlint documentation](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md).
+
+### How to disable Markdownlint rules
+
+You can disable specific rules in a document in several ways:
+
+**For a single line:**
+```markdown
+<!-- markdownlint-disable-next-line MD033 -->
+<div>Some HTML content</div>
+```
+
+**For a section:**
+```markdown
+<!-- markdownlint-disable MD033 -->
+<div>HTML content</div>
+<span>More HTML</span>
+<!-- markdownlint-enable MD033 -->
+```
+
+**For an entire file:**
+```markdown
+<!-- markdownlint-disable MD013 MD033 -->
+```
+
+**In a .markdownlint.json config file:**
+```json
+{
+  "MD013": false,
+  "MD033": false
+}
+```
+
+Please edit the existing [`.markdownlint.json` file](./markdownlint.json) in case you want to ignore certain rules project-wide.

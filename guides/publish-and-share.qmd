@@ -15,23 +15,23 @@ In the Data Management Plan the researcher describes if the data will be stored 
 
 #### Mid-term archive
 
-According to the [VU RDM Policy](../public/policies-regulations/RDM-policy-VU-2020-EN-v2.0.pdf), all publication-related data should be archived for at least **ten years** for verification and replication of research. For this purpose, VU Amsterdam offers researchers two options to archive their data in one of the organisational repositories (DataverseNL and Yoda). Other archival options may be used depending on the discipline as described in faculty data management policy documents.  
+According to the [VU Research Data and Software Management Policy](../topics/research-data-and-software-management-policy.qmd), all publication-related data should be archived for at least **ten years** for verification and replication of research. For this purpose, VU Amsterdam offers researchers two options to archive their data in one of the organisational repositories (DataverseNL and Yoda). Other archival options may be used depending on the discipline as described in faculty data management policy documents.  
 
 #### Long-term archive
 
 Data relevant for future research should be archived for the long term. A dataset is relevant for future research when at least one of the following general criteria applies:
 
-1. The data have a scientific or historical value  
-2. The data are unique  
-3. Others may want to reuse the data  
+1. The data have a scientific or historical value
+2. The data are unique
+3. Others may want to reuse the data
 4. The data cannot be reproduced
 
 Researchers should bear in mind that repositories can charge for archiving data. These costs can vary according to the data volume and the archive used. It is important that you consider in advance how you will budget for these costs. Whatever archiving option is used, proper descriptions of the dataset(s) and adding [metadata](../topics/metadata.qmd) are important.
 
 ### Deposit your data
 
-VU Amsterdam requests that researchers archive the data used in a publication in a repository for at least ten years after the release of the publication (see also [VU Policies & Regulations](../guides/plan-and-design.qmd#policies-regulations)). There are a lot of digital archives and many more keep appearing.  
-  
+VU Amsterdam requests that researchers archive the data used in a publication in a repository for at least ten years after the release of the publication (see also [VU Policies & Regulations](../guides/plan-and-design.qmd#policies-regulations)). There are a lot of digital archives and many more keep appearing.
+
 The right archival option depends on the nature of the data and the field of science as described in faculty or departmental data management policy documents. The university offers 2 different general repositories for data archiving. The RDM Support Desk and faculty data stewards can help researchers with the selection of a repository that meets all the relevant criteria of privacy (sensitivity), dataset size, etc.
 
 1. [DataverseNL](../topics/dataversenl.qmd) - an online platform for the publication of citable research data in a semi-open environment. DataverseNL allows users to link publications to datasets directly, and to share the data through online archives such as DANS.
@@ -45,7 +45,7 @@ Specifications:
 * Generates a link (persistent identifier), e.g. for data citations in publications
 * Retention period is at least 10 years
 
-2. [Yoda](https://yoda.vu.nl/site/) - besides [active storage](../topics/data-storage.qmd), Yoda also has an archive function: the vault. You can use the vault in two ways:
+2. [Yoda](../topics/yoda.qmd) - besides [active storage](../topics/data-storage.qmd), Yoda also has an archive function: the vault. You can use the vault in two ways:
 
 * For archiving data securely; data are only available for verification purposes and may be access only by special request. A special procedure will be followed if anyone requests access to the data in order to verify them.
 * For publishing data; data can be available for anyone, or on request. The data will get a persistent identifier as well.
@@ -82,7 +82,7 @@ If you would like advice about what would be a good place for you to archive you
 
 Instead of archiving research data in a data repository, you may choose to publish an article about your data collection. This is not necessarily common for all disciplines. Some examples of data journals where you can publish your data and dataset, are:
 
-* [Scientific Data - Nature](https://www.nature.com/sdata/about)
+* [Scientific Data - Nature](https://www.nature.com/sdata/aims-and-scope)
 * [Geoscience Data Journal](https://doi.org/10.1002/(ISSN)2049-6060)
 * [Gigascience](https://academic.oup.com/gigascience)
 * [Journal of Physical and Chemical Reference Data](https://scitation.aip.org/content/aip/journal/jpcrd/browse)
@@ -119,5 +119,5 @@ If you make your data available through a repository, you can link from your art
 ## Dataset Registration
 
 ```{.include shift-heading-level-by=2}
-../topics/dataset-and-software-registration.qmd
+../topics/data-registration.qmd
 ```

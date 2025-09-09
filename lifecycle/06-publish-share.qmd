@@ -1,0 +1,36 @@
+---
+title: Publish & Share
+listing:
+  - id: topics
+    contents:
+      - ../topics/fair-principles.qmd
+      - ../topics/persistent-identifier.qmd
+      - ../topics/data-publishing.qmd
+      - ../topics/software-publishing.qmd
+      - ../topics/data-licensing.qmd
+      - ../topics/software-licensing.qmd
+      - ../topics/data-registration.qmd
+      - ../topics/software-registration.qmd
+      - ../topics/dataversenl.qmd
+      - ../topics/osf.qmd
+      - ../topics/yoda.qmd
+    type: table
+    table-striped: true
+    table-hover: true
+    fields: [title, reading-time]
+  - id: guides
+    contents: "../guides/*.qmd"
+    type: grid
+    include:
+      categories: "Publish & Share"
+---
+
+## Topics
+
+:::{#topics}
+:::
+
+## Guides
+
+:::{#guides}
+:::

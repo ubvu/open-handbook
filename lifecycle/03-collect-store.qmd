@@ -1,0 +1,34 @@
+---
+title: Collect & Store
+listing:
+  - id: topics
+    contents:
+      - ../topics/data-collection.qmd
+      - ../topics/qualtrics.qmd
+      - ../topics/data-storage.qmd
+      - ../topics/data-backup.qmd
+      - ../topics/data-protection.qmd
+      - ../topics/safe-data-transfer.qmd
+      - ../topics/researchdrive.qmd
+      - ../topics/scistor.qmd
+      - ../topics/yoda.qmd
+    type: table
+    table-striped: true
+    table-hover: true
+    fields: [title, reading-time]
+  - id: guides
+    contents: "../guides/*.qmd"
+    type: grid
+    include:
+      categories: "Collect & Store"
+---
+
+## Topics
+
+:::{#topics}
+:::
+
+## Guides
+
+:::{#guides}
+:::

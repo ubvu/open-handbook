@@ -1,108 +1,80 @@
 ---
 title: What research data services and support are available for VU researchers?
 image: '/public/cover-images/DALLE_DMP.jpg'
-description: "Find some resources that can help you along your research journey."
+description: "Who is who and resources that can help you along your research journey."
 ---
+
+Vrije Universiteit Amsterdam is providing a range of data management solutions and support services, offered by various departments and support teams. An overview of these services is shown in the Research Data Management, Tools and services video below.
 
 {{< video https://www.youtube.com/embed/-AaSNZzL_KQ >}}
 
-## Support
+Research Data Management is supported by various departments at VU Amsterdam, all providing support on the topics shown in the overview above. Apart from that, all faculties have teams providing research data support for their own faculty members. In most cases this is the first line of support for researchers to start their inquiries.
 
-### Research Data Services
+![Image showing the relations among departments at VU Amsterdam involved in providing Research Data Management support, with faculty support at the center, accompanied by the grants support, RDM Support Desk, legal advice, security advice, IT for Research, and the Privacy Champions.](../public/rdm-support-vu.png)
 
-![Image showing the relations between VU Research Data Support Offices, at the center with grants, legal, library, security, IT for Research, and IXA around it.](../public/VU-research-data-service-offices.png)
+## VU Research Data support services and teams
 
-Research Data Management is supported by various departments at VU Amsterdam. These departments will help all VU researchers. There are also faculty specific support departments for research data support; they support their own faculty members.
+### Faculty support
 
-Here you find references to other organisational units and departments that can help you with matters related to collecting and managing data.
+A faculty or institute research data management professional is a primary point of contact for any questions related to research data management (RDM). This can be a Data Steward, Data Manager or RDM coordinator. The VU website provides a [list of all faculty support professionals](https://vu.nl/en/employee/research-data-support/contact-your-data-steward).
 
-**VU research data support (for all researchers)**
+### RDM Support Desk and library support professionals
 
-* [Grant office](https://vu.nl/en/about-vu/more-about/vu-grants-office)
-* [Library](https://vu.nl/en/employee/research-data-support/rdm-support-desk)
-* [Legal](https://vu.nl/en/employee/board-and-strategy/institutional-and-legal-affairs)
-* 🔒 [IT for Research](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=4cb138ee97fa0950e553359fe153afff)
-* [IXA](https://www.ixa.nl/)
+The RDM Support Desk provides practical assistance, help and advice with any RDM- and RDM tools related questions, for example about: writing a data management plan, making your research FAIR, grants and RDM costs, training and workshops, data storage, data and software archiving and publishing, GDPR and the use of RDM tools like Yoda and Research Drive. In case your faculty or institute does not have a designated support officer, the RDM Support Desk is the go-to place.
 
-Use this [detailed research process overview](../public/Research_process_overview_v1.5.2.1_2025_03_20.xlsx) to get more information about steps that may occur during the research process and the support offered at the VU for these steps. This overview is very detailed and starts at the earliest stages of identifying research and funding opportunities, and ends at the point of preparing communication about your research. We recommend to read the README and Instructions tabs first before you dive in. For questions, you can also reach the [RDM Support Desk](mailto:rdm@vu.nl)
+You can contact the RDM Support Desk via the [VU Research Data Support service portal](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=6fa0b56647c31150bfa46d72e36d4317) (only for VU employees) or via [rdm@vu.nl](mailto:rdm@vu.nl). You can also find a [list of professionals of the RDM Support Desk](https://vu.nl/en/employee/research-data-support/rdm-support-desk) on the VU website.
+
+### Privacy Champions
+
+Privacy Champions are colleagues who are the first point of contact for all questions regarding privacy and data protection related topics. They can help you with the most common privacy questions, for example: can we process this personal data without consent of the data subjects? Is this software application suitable for the processing of sensitive personal data? An overview of all faculty and department Privacy Champions is provided on the 🔒 [Privacy Champion who-is-who page](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information).
+
+### IT for Research (ITvO)
+
+The expertise center research IT is a primary point of contact for questions related to compute services, high performance computing and local storage of large data volumes. ITvO will help you to find a suitable technical solution or support for your research group or project. You can find more information about the [VU Compute Hub](../topics/compute-hub.qmd), the [ADA high performance compute cluster](../topics/ada.qmd), the VU local storage solution [SciStor](../topics/scistor.qmd) and server capacity on [SciCloud](../topics/scicloud.qmd) in other Handbook topics. You can read more about the services ITvO provides on the [ITvO topic page](../topics/itvo.qmd).
+
+### VU Grants Office
+
+The Grants Office provides advice on various types of national and international, individual and consortium grants: From complex multidisciplinary applications with multiple partners such as Horizon Europe, NWO Gravitation and NWA, to renowned individual grants such as NWO Veni, Vidi, Vici and ERC Starting, Consolidator and Advanced grants. The Grants Office gives advice throughout the grant application process and during the term of the subsidy. You can read more about the VU Grants Office on the 🔒 [VU Amsterdam Grants Office page](https://vu.nl/en/employee/board-and-strategy/writing-and-submitting-a-research-grant-proposal).
+
+### Legal advice
+
+If you need advice on legal and administrative matters, you can contact the team of Institutional and Legal Affairs. This is the VU legal enquiry centre. They can provide advice on a wide range of issues, for example: How do you arrange for personal data to be processed safely and carefully? How to set up contracts in collaborative research projects? What happens with the research results? Can each party use the other parties’ results? You can find out more about legal support at the [Institutional and Legal Affairs pages](https://vu.nl/en/employee/board-and-strategy/institutional-and-legal-affairs).
+
+### Information Security Officers (ISOs)
+
+Before the start of a new research project, it is necessary to assess the risks associated with the data that will be collected and/or used in the project. Classifying research data enables researchers to protect the data in an appropriate manner. What is relevant, is that the security level matches the identified risks. This enables the researcher to determine where the data may or may not be processed and under which conditions.
+
+The IT Information and Security Officers (ISO) can help you with these security matters related to data protection and the use of the right software solutions. The RDM Support Desk or a faculty Privacy Champion is the first point of contact on these matters. If necessary, they will contact the ISO Office for further advice.
+
+Other helping aids in data-classification and classification policies are the [Data Classification Tool](https://vu.nl/en/research/dataclassification) and the [Policy Classification of Research Data](https://rdm.vu.nl/public/policies-regulations/Dataclassificatiebeleid-VU-NL-v1.0.pdf).
+
+## Research process overview
+
+Use this [detailed research process overview](../public/Research_process_overview_v1.5.2.2_2025_06_12.xlsx) to get more information about steps that may occur during the research process and the support offered at VU Amsterdam for these steps. This overview is very detailed and starts at the earliest stages of identifying research and funding opportunities, and ends at the point of preparing communication about your research. We recommend to read the README and Instructions tabs first before you dive in. For questions, you can also reach the [RDM Support Desk](mailto:rdm@vu.nl)
 
 General Faculty research support and management guidelines are available in the section [Policies & Regulations](./plan-and-design.qmd#vu-general-policies-and-regulations).
 
-### This website
+## Decision support tools
 
-Questions regarding your data or the information on this website?
+There are multiple data storage options that can be used, each with its own functionality and purpose. The [Data Storage Finder](https://vu.nl/en/research/storagefinder) is a tool that will give you a number of storage options suitable for your research. For more individual guidance, please get in touch with the [RDM Support Desk](mailto:rdm@vu.nl)) for advice, particularly when you are working with commercial, personal or otherwise sensitive data, or when you have a complex IT setup.
 
-The [RDM Support](mailto:researchdatamanagement@vu.nl?subject=RDM%20website) team can help you with all your questions on data management plans, data storage, data archiving and publishing, and data protection.
+The [Data Classification Tool](https://vu.nl/en/research/dataclassification) helps in assessing the risks associated with research data and provides feedback on what measures need to be undertaken to protect the data.
 
-### VU IT for Research
+## Communities
 
-VU Amsterdam has an IT team specifically devoted to research: ITvO (from 'IT voor Onderzoek' in Dutch). They provide the following services:
+Researchers and research support staff who are interested in research data management and want to find out more about it are welcome to join the RDM Community of VU Amsterdam. The objective of the network is to exchange knowledge and inspire each other. You can find out more about the community and its activities on the [community pages](https://vu.nl/en/employee/research-data-support/rdm-community).
 
-* 🔒 [ADA HPC cluster computing](https://services.vu.nl/esc?id=kb_article&sysparm_article=KB0012830): access to your own linux computational cluster at VU Amsterdam
-* 🔒 [SciCloud](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=d80aee1f97cf09d0e553359fe153afd7): a service with which you lease virtual server capacity for research purposes
-* 🔒 [SciStor](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=86ad5a5f978f09d0e553359fe153afb3): inexpensively store large sets with research data
-* Advice/consultancy: ITvO will help you to find a suitable technical solution or support for your research group or project
-* Housing: rack space in the server room for (remotely managed) equipment of research groups
+If you want to meet other researchers, improve your programming skills, or ask questions related to programming, you can join the Monthly Programming cafe, Bytes & Bites. At Bytes & Bites anyone is welcome, whether you are a beginner or advanced programmer, whether you write in R or in C++. Find out more about this community on the [Bytes and Bites Github pages](https://ubvu.github.io/bytes-and-bites/).
 
-Read more about and get in touch with 🔒 [IT for Research](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=4cb138ee97fa0950e553359fe153afff)
+## Training
 
-### External sources
+On the [Training page](../topics/trainings.qmd) you will find a complete overview of trainings and workshops provided by VU support staff. The page also contains information about open science games that you can set up yourself.
 
-* ![Research Data Netherlands logo](../public/logo-rdnl.png) [Research Data Netherlands](https://www.researchdata.nl/)
-  * Research Data Netherlands is an alliance between 4TU.Centre for Research Data, Data Archiving and Networked Services (DANS) and SURFsara. With this coalition, which is also open to other parties, the three data archives join forces in the area of long-term data archiving.
-* ![Landelijk Coördinatiepunt Research Data Management logo](../public/lcrdm.gif) [Landelijk Coördinatiepunt Research Data Management](https://lcrdm.nl/?page_id=218)
-  * The foundation of co-operating Dutch universities (VSNU) pointed out a need for a co-ordinated and decisive approach to Research Data Management through a dedicated Centre at SURF. The SURF Foundation is an organisation that facilitates education and research in the Netherlands.  
-  * The LCRDM aims to support the preparation, development and monitoring of Research Data Management policies for scientific research in the Netherlands. Important elements of this central approach are close co-operation with researchers in the field and the exchange of knowledge and experience.
-* ![The Netherlands eScience Center logo](https://www.esciencecenter.nl/wp-content/themes/raadhuis/dist/assets/img/favicons/favicon-32x32.png) [The Netherlands eScience Center](https://www.esciencecenter.nl/)
-  * The eScience Center develops software for academic research specifically. Their software and tools enhance the use of digital methods in scientific research across all disciplines. Researchers - including those at VU Amsterdam - can choose to collaborate on projects funded by the NWO or, if they already have funding, ask the eScience Center to collaborate with them.
-* ![CESSDA logo](https://dmeg.cessda.eu/) [CESSDA](https://www.cessda.eu/Training/Training-Resources/Library/Data-Management-Expert-Guide)
-  * The Data Management Expert Guide of the Consortium of European Social Science Data Archives is a practical guide for researchers, addressing many issues they may have
+## Other information resources
 
-## SURFsara
+There are numerous useful information resources on research data management available. Some of them are general and discipline-agnostic, others are strongly focussing on specific research disciplines or research data types. Below we have listed a number of these resources which can help you to learn more on research data management and related topics.
 
-![SURFsara logo](../public/surf_sara.png)
-
-SURF is the collaborative organisation for ICT in Dutch education and research. SURF offers advanced ICT services specifically for researchers. You can start using some of these services right away with your VU credentials. For others you have to get in touch with SURF yourself. Please check [SURF's website](https://www.surf.nl/en) and the pages about the specific services below for more information.
-
-SURF's services are listed on this page.
-
-### Data services
-
-SURF offers a wide range of services for different phases in the life cycle of your research data. Everything for the secure storage, management, sharing and reuse of data.
-
-* [Research Drive](https://www.surf.nl/en/research-drive-securely-and-easily-store-and-share-research-data): securely and easily store and share research data.
-  * Does your research team need large storage quotas, a secure environment to store personal and/or sensitive data, and work collaboratively with other educational and governmental institutions or external private parties? Research Drive is a cloud-based shared-storage environment specifically designed for these requirements.
-* [SURFfilesender](https://www.surf.nl/en/surffilesender-send-large-files-securely-and-encrypted): send large files securely and encrypted.
-  * Want to send and receive files quickly, securely and easily? With SURFfilesender, you can send large files, such as research data. The files are stored in the Netherlands. Encryption provides added security.
-* Secure, long-term storage with [Data Archive](https://www.surf.nl/en/services-and-products/data-archive/index.html).
-  * The Data Archive is the centralised location for data archiving and (long-term) storage. You can securely store research data there, even in volumes running into the petabytes. The archive provides quick access to SURFsara's computing facilities.
-* [Data Persistent Identifier](https://www.surf.nl/en/services-and-products/data-persistent-identifier/index.html): data always findable by permanent references.
-  * Persistent identifiers (PIDs) ensure the findability of your data, now and always. PIDs are comparable to the ISBN numbers assigned to books. Even if the location or underlying infrastructure changes, the reference path remains intact. SURFsara offers the PID service in cooperation with the European Persistent Identifier Consortium (EPIC).
-
-### Data processing and analysis (see also 'Computing')
-
-* [Jupyter Notebook](https://www.surf.nl/en/jupyter-notebook-accessible-and-interactive-data-analysis-for-research-and-education): accessible and interactive data analysis for research and education.
-  * A Jupyter Notebook is an interactive web application that you can use to create documents, known as notebooks, that contain computer code, formatted text, comparisons and visualisations. The code can be executed in the environment and you can even create streaming applications and dashboards.
-
-### Computing
-
-Do you encounter limitations with your own systems? SURF offers researchers a wide range of services in the field of high performance computing (HPC): thousands of times faster than your PC.
-
-* [Snellius: National Super Computer](https://www.surf.nl/en/services/snellius-the-national-supercomputer).
-  * It is the most comprehensive system in the field of capability computing in the Netherlands. Snellius is especially in high demand for its combination of fast processors and internal network, large storage capacity and the ability to process large datasets.
-* [SURF Research Cloud](../topics/researchcloud.qmd): your flexible compute infrastructure.
-  * SURF Research Cloud gives you and your project team complete control over your computing infrastructure. The infrastructure ranges from a single work station to a complete cluster and can be expanded to suit your needs. You can use your own operating system and analysis software. HPC Cloud is housed in SURF's own data centre.
-* [Grid](https://www.surf.nl/en/services-and-products/grid/index.html): for processing and storing large datasets.
-  * Do you want to process and store large- amounts of data? The Grid may very well be suitable for your project. The grid infrastructure consists of a large number of clusters for computing and data storage, which are interconnected via a fast network.
-* [Visualisation](https://www.surf.nl/en/services-and-products/visualisation/index.html): more insight into your data.
-  * Do you want to analyse, process or visualise complex research data or big data? These services give you insight into your research data. SURF's Visualisation service allows you to visualise your own datasets on your desktop. This makes it easy to identify connections between data or gain other insight into your datasets. SURFsara offers a powerful remote visualisation service that combines high performance with ease of use.
-* [Collaboratorium](https://userinfo.surfsara.nl/systems/collaboratorium): a visualisation and presentation space for science and industry.
-
-### Expertise, advice and training
-
-SURF offers advice and training on their services. Their training sessions are announced in the [SURF Agenda](https://www.surf.nl/en/agenda/research-and-ict).
-
-* [SURF Training courses for research](https://www.surf.nl/en/training-courses-for-research).
-  * Want to get started with SURF systems but lack the necessary knowledge? SURF regularly organizes hands-on systems training courses at their offices in Utrecht and Amsterdam or at your education or research institution. You can also include the training courses in the educational programme of your institution.
-* [SURF Consultancy](https://www.surf.nl/en/services-and-products/consultancy/index.html) on ICT solutions for researchers.
-  * SURFsara possesses a wealth of experience in the field of ICT services for researchers. If you need help developing/improving your application or designing your infrastructure, then you've come to the right place. SURF experts will be happy to lend their expertise to support your research.
+* [The Turing way](https://book.the-turing-way.org/) is an open-source, community-driven handbook aimed at promoting best practices in reproducible, ethical and collaborative data science. It is a valuable resource for information on data management, data security and research projects in general.
+* The [CESSDA Data Management Expert Guide](https://dmeg.cessda.eu/Data-Management-Expert-Guide) is designed by European experts to help social science researchers make their research data Findable, Accessible, Interoperable and Reusable (FAIR). The guide is written for social science researchers who are in an early stage of practising research data management. The guide describes a lot of practical approaches to research data management which are useful for other domains as well.
+* [GO FAIR](https://www.go-fair.org/) is a stakeholder-driven and self-governed initiative that aims to implement the FAIR principles. It offers numerous resources about how to make research data FAIR and how to organise communities. 
+* The course [Essentials 4 Data Support](https://researchdata.nl/essentials-4-data-support/), developed by Research Data Netherlands, is an introductory program designed for professionals who want to assist researchers in storing, managing, archiving, and sharing their research data. Although the course is designed for data support professionals, it provides many online useful resources on various data management topics for researchers as well.

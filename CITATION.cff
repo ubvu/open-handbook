@@ -1,0 +1,34 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: VU Research Support Handbook
+message: >-
+  We appreciate references to the Research Support Handbook
+  to use this as a reference.
+type: software
+authors:
+  - name: VU Network Research Data Support
+    location: Amsterdam
+    alias: Vrije Universiteit Amsterdam
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.16986187
+    description: Zenodo
+repository-code: 'https://github.com/ubvu/open-handbook'
+url: 'https://rdm.vu.nl'
+abstract: >-
+  This release contains a zip file containing all documents
+  that are part of the VU Research Support Handbook. This
+  Handbook is an online resource about Research Data
+  Management (RDM) and Open Science (OS) at Vrije
+  Universiteit Amsterdam (VU). The Handbook is community
+  driven and developed and maintained in an open manner:
+  everyone can contribute to the content; it is in the
+  public domain (CC0); we have a transparent content
+  development and decision-making process. If you have
+  questions about this release, please contact rdm@vu.nl.
+license: CC0-1.0
+commit: 957d0d074f2323139f795699e86b2348c8f140aa
+version: v0.0.1
+date-released: '2025-08-28'

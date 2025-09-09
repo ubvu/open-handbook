@@ -1,0 +1,17 @@
+---
+title: New Manuals section in the Handbook
+date: "2025-07-28"
+authors:
+  - Peter Vos
+categories: ["Handbook","Yoda"]
+---
+
+Last week we added a new section to the {{< var title >}}: [Manuals](../manuals.qmd). Manuals are short pages describing how to accomplish specific tasks in a [Tool](../topics.qmd#category=Tools) and should be easily understood by individuals with varying levels of technical knowledge. Manuals on the handbook will be written in the form of a how-to. The aim is to provide guidance for specific tasks "How do I?". From the basic: "How do I log in" to the more in-depth "How do I use CUDA on ADA".
+
+We have started by migrating the [manuals on using Yoda](/manuals/yoda/index.qmd), from their old spot on yoda.vu.nl. Next step will be migrating the [ADA HPC](../topics/ada.qmd) manuals from [readthedocs](https://ada-hpc.readthedocs.io/en/latest/).
+
+By consolidating all user manuals on the {{< var title >}} we hope to increase the findability of both the manuals and the rest of the {{< var title >}}. 
+
+## Maintaining the manuals
+Even more than Topic and Guide pages, Manuals have a short shelf life. Hence, they must be checked regularly. Each manual will have one or two support staff responsible for keeping it up to date. To make sure enough time is set aside to work on the manuals we plan to have two update moments per year, perhaps in the form of a Hackathon.
+

@@ -1,5 +1,6 @@
 ---
 title: Data Management Plan (DMP)
+categories: [Research Data]
 ---
 
 ## What is a DMP
@@ -10,68 +11,9 @@ A Data Management Plan (DMP) is a document outlining how research data will be h
 
 VU Amsterdam offers the online tool [DMPonline](https://dmponline.vu.nl/) for writing Data Management Plans. DMPonline is a platform that offers a range of templates, ensuring that researchers can create DMPs to meet the standards of diverse funders and institutions associated with their projects. DMPonline makes it easy to work on a DMP together with colleagues, advisors, or other stakeholders. VU Amsterdam researchers can use the `request feedback` function of DMPonline to get their DMP reviewed by a faculty data steward or RDM Support Desk colleague.
 
+Instructions for selecting the right DMP template in DMPonline are available in the [guide How can you set up research data management from the start?](https://rdm.vu.nl/guides/plan-and-design.html).
+
 If you have questions about DMPonline, or encounter problems when using the tool, please get in touch with [rdm@vu.nl](mailto:rdm@vu.nl).
-
-## Choosing the right template
-
-Various templates exist in which you can set up your DMP. We strongly recommend that you use the VU template, which is called `VU DMP template 2021 (NWO & ZonMw certified) v1.4`. Below you'll find an explanation of how to access this template. If you need to write a DMP for funding agencies NWO, ZonMw or ERC, you can use the VU template as well.
-
-### VU template
-
-You can find the VU DMP template in [DMPonline](https://dmponline.vu.nl/). It includes concise guidance on how to complete your DMP.
-
-You can select the VU template by taking the following steps (see also the picture below).
-
-1. On your dashboard, click on `Create plan`.
-2. Enter the title of your research project (you don't have to select the check box for mock testing).
-3. Select `Vrije Universiteit Amsterdam` as your primary research organisation.
-4. For the question on primary funding organisation, select the check box on the right, saying that no funder is associated with your plan.
-
-Note: Follow these steps as well if you receive funding from NWO or ZonMw (see also below).
-
-![Screenshot of a form for creating a data management plan, asking for the research project, where it is being done, who is funding it and what template you would like to use.](../public/dmp-001.png)
-
-If you're aiming to write a full DMP based on VU Amsterdam DMP template, please make sure you don't select the GDPR registration form.
-
-![A screenshot highlighting to not use VU Amsterdam GDPR Registration form](../public/dmp-002.png)
-
-### Funder template
-
-We recommend researchers to use VU Amsterdam DMP template whenever possible, especially for researchers who work with personal data. The VU DMP template includes questions that serve as input for the GDPR record of processing activities. This means that when you write a DMP based on the VU DMP template, you simultaneousely comply with the VU requirement to register the personal data you use in your research.
-
-However, it is also possible to use other templates in DMPonline. If your funder or partner organization requires you to use a certain template, it is possible to select that template in DMPonline. Please follow the steps below to select a funder's template.
-
-1. On your dashboard, click on `Create plan`.
-2. Enter the title of your research project (you don't have to select the check box for mock testing).
-3. Select `Vrije Universiteit Amsterdam` as your primary research organisation.
-4. In the field under `Select the primary funding organisation`, start typing the name of your funder and select their template.
-
-![Screenshot of a filled out form for creating a data management plan, with example data included.](../public/dmp-003.png)
-
-Researchers who don't work with personal data and who wish to use another DMP template than the VU template, can also follow the steps above.
-
-## Register your processing activities
-
-### How does registration of personal data processing work in research?
-
-If your research is subject to the [GDPR](../guides/plan-and-design.qmd#gdpr-privacy), then you need to register information on your research in a central VU registry. This central registry lists all personal data processing activities carried out at VU Amsterdam. The registry indicates why and how personal data are processed, and with whom they are shared. The registry helps VU Amsterdam demonstrate compliance with the GDPR and in the case of a data breach, the registry helps with monitoring and acting swiftly to inform all relevant stakeholders.
-
-For research projects, VU Amsterdam registers data processing via [DMPonline](https://dmponline.vu.nl/). You can create your registration by logging into DMPonline and following the following instructions:
-
-1. On your dashboard, click on `Create plan`.
-2. Enter the title of your research project (you don't have to select the check box for mock testing).
-3. Select `Vrije Universiteit Amsterdam` as your primary research organisation.
-4. For the question on primary funding organisation, select the check box on the right, saying that no funder is associated with your plan.
-
-![Screenshot of a form for creating a data management plan, asking for the research project, where it is being done, who is funding it and what template you would like to use.](../public/dmp-001.png)
-
-Once you get to the two VU templates, you can fill in the `VU DMP template 2021 v1.4` if you need to write a DMP anyway; the information you include in this DMP template will be used for the registry. If you don't need to write a (new) DMP, you can use the separate `VU GDPR registration form for research v1.1`. Your faculty's 🔒 [Privacy Champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information) can help you with your registration.
-
-If your research is primarily led by Amsterdam UMC, location VUmc, your research will be registered using their own separate system.
-
-### Register before you start your data collection
-
-If you use personal data in your research, you should register your data processing activities before you start data collection. If you are not sure whether your research data are subject to the GDPR, contact your faculty's 🔒 [Privacy Champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information). Your privacy champion can also assist you if your research is already running, but has not yet been registered.
 
 ## What is data
 
@@ -103,7 +45,9 @@ Note that these data assets also change in the different phases of the research!
 
 VU Amsterdam DMP template consists of seven sections with questions. In DMPonline, there is guidance available for all sections, as well as example answers. When you are writing your DMP, you can consult this information directly in DMPonline. Below we provide  references to information and support available for various RDM-related aspects.
 
-### Legal and ethical requirements, codes of conduct
+### Legal and ethical requirements
+
+#### Working with personal data
 
 If you have questions about working with personal data in research, please get in touch with the Privacy Champion of your faculty. The 🔒 [overview of Privacy Champions](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information) can be found on VU Amsterdam website. Make sure to contact your Privacy Champion in the following situations:
 
@@ -115,15 +59,11 @@ If you have questions about working with personal data in research, please get i
 
 It is impossible to provide an overview of tasks to be carried out to ensure compliance with the GDPR that fits all research projects. For that reason, it is important to contact your Privacy Champion. They will be able to identify what needs to be arranged to adhere to the GDPR.  
 
-Ethical aspects of research should be addressed in the ethics procedure of your faculty. Each faculty has their own ethics committee. The webpages of all committees are listed below. Please go to the page of the ethics committee of your faculty to find instructions for ethical review procedures for your study.
+#### Ethical Review
 
-- ACTA: [ACTA Institutional Review Board](https://acta.nl/en/research/more-about/acta-institutional-review-board-irb) (IRB)
-- Beta: [Research ethics review committee Faculty of Science](https://vu.nl/en/about-vu/faculties/faculty-of-science/more-about/research-ethics-review-committee-beta) (BETHCIE)
-- FGB: 🔒 [Scientific and Ethical Review Board](https://vu.nl/en/employee/behavioural-and-movement-sciences-getting-started/the-scientific-and-ethical-review-board-vcwe) (VCWE)
-- FGW: [Ethische Toetsingscommissie Onderzoek](https://vu.nl/en/about-vu/faculties/faculty-of-humanities/more-about/research-ethics-and-integrity) (EtCO)
-- FSW: 🔒 [Research Ethics Review Committee](https://vu.nl/en/employee/social-sciences-getting-started/research-ethics-review-fss) (RERC)
-- RCH (Faculty of Law): [Ethics Committee](https://www.rechten.vu.nl/en/about-the-faculty/committees/ethics/index.aspx)
-- VUmc: [METc](https://www.vumc.nl/research/overzicht/medisch-ethische-toetsingscommissie.htm) (Medical Ethical Review Committee)
+```{.include shift-heading-level-by=4}
+../topics/ethical-review.qmd
+```
 
 ### Storage and backup during the research process
 

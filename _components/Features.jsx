@@ -1,6 +1,6 @@
 const features = [
   {
-    name: <p className="tw-inline"><a href="https://rdm.vu.nl/contributing.html">Quality control</a></p>,
+    name: <p className="tw-inline"><a href="https://rdm.vu.nl/contributing.html">Collaborative</a></p>,
     description: "We learn each other's best practices.",
     icon: () => (
       <svg
@@ -77,7 +77,7 @@ const features = [
   },
   {
     name: "Flexible",
-    description: "Shape the content to your needs. Find topics or guides.",
+    description: "Shape the content to your needs. Find topics, guides or manuals.",
     icon: () => (
       <svg
         xmlns="http://www.w3.org/2000/svg"

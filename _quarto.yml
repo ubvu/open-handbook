@@ -3,7 +3,7 @@ project:
 
 website:
   site-url: "https://ubvu.github.io/open-handbook"
-  title: "{{< var title >}}"
+  title: "Research Support Handbook"
   description: "A place for all things open research at VU Amsterdam."
   favicon: public/favicon.png
   repo-url: https://github.com/ubvu/open-handbook
@@ -11,6 +11,17 @@ website:
   repo-actions: [edit, issue]
   page-navigation: true
   bread-crumbs: true
+  sidebar:
+    - id: sb-yoda # will show up automatically on pages referenced in contents.
+      style: floating
+      search: true
+      contents:
+        - manuals/yoda/index.qmd
+        - section: Yoda Portal
+          contents: manuals/yoda/yoda_portal/*.qmd # Note the sorting is by filename
+        - section: Data Transfer
+          contents: manuals/yoda/yoda_data_transfer/*.qmd
+
   navbar:
     background: "#0080c9"
     logo: public/VU-logo-Dia-positief.png
@@ -23,10 +34,22 @@ website:
         menu:
           - text: All
             file: topics.qmd
+          - text: Policies and Legislation
+            href: /topics.html#category=Policies%20and%20Legislation
+          - text: Research Data
+            href: /topics.html#category=Research%20Data
+          - text: Research Software
+            href: /topics.html#category=Research%20Software
+          - text: Responsible Scholarship
+            href: /topics.html#category=Responsible%20Scholarship
           - text: Tools
             href: /topics.html#category=Tools
+          - text: Trainings and Knowledge Items
+            href: /topics.html#category=Trainings%20and%20Knowledge%20Items
       - text: Guides
         file: guides.qmd
+      - text: Manuals
+        file: manuals.qmd
       - text: Blog
         file: blog.qmd
       - contributing.qmd
@@ -44,6 +67,7 @@ website:
     center:
       - text: "About"
         href: about.qmd
+      - href: technical-details.qmd
       - href: editors-guide.qmd
       - text: "GHOST Collective"
         href: https://ghostcollective.github.io/games.html

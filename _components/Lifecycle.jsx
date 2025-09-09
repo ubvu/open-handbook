@@ -21,12 +21,42 @@ const CheckIcon = () => {
 
 // complete, current, upcoming
 const steps = [
-  { id: "01", name: "Discover & Initiate", href: "./guides.html#category=Discover%20%26%20Initiate", status: "upcoming" },
-  { id: "02", name: "Plan & Design", href: "./guides.html#category=Plan%20%26%20Design", status: "upcoming" },
-  { id: "03", name: "Collect & Store", href: "./guides.html#category=Collect%20%26%20Store", status: "upcoming" },
-  { id: "04", name: "Process & Analyse", href: "./guides.html#category=Process%20%26%20Analyse", status: "upcoming" },
-  { id: "05", name: "Document & Preserve", href: "./guides.html#category=Document%20%26%20Preserve", status: "upcoming" },
-  { id: "06", name: "Publish & Share", href: "./guides.html#category=Publish%20%26%20Share", status: "upcoming" },
+  {
+    id: "01",
+    name: "Discover & Initiate",
+    href: "./lifecycle/01-discover-initiate.html",
+    status: "upcoming",
+  },
+  {
+    id: "02",
+    name: "Plan & Design",
+    href: "./lifecycle/02-plan-design.html",
+    status: "upcoming",
+  },
+  {
+    id: "03",
+    name: "Collect & Store",
+    href: "./lifecycle/03-collect-store.html",
+    status: "upcoming",
+  },
+  {
+    id: "04",
+    name: "Process & Analyse",
+    href: "./lifecycle/04-process-analyse.html",
+    status: "upcoming",
+  },
+  {
+    id: "05",
+    name: "Document & Preserve",
+    href: "./lifecycle/05-document-preserve.html",
+    status: "upcoming",
+  },
+  {
+    id: "06",
+    name: "Publish & Share",
+    href: "./lifecycle/06-publish-share.html",
+    status: "upcoming",
+  },
 ];
 
 // Adapted from
@@ -40,7 +70,7 @@ function Lifecycle() {
             Research Life Cycle
           </h2>
           <p className="tw-m-6 tw-text-lg tw-leading-8 tw-text-gray-600">
-            Find the relevant guides for the stage of your research.
+            Find the relevant information for the stage of your research.
           </p>
         </div>
       </div>
