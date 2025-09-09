@@ -1,0 +1,22 @@
+---
+title: "Manuals"
+listing:
+  contents: 
+    - "manuals/yoda/index.qmd"
+    - "manuals/ada/index.qmd"
+    - "manuals/scicloud/index.qmd"
+    - "manuals/qualtrics/qualtrics-faq.qmd"
+  filter-ui: [title]
+  type: grid
+  categories: false
+---
+
+::: {.callout-tip}
+
+## What is a manual?
+
+A manual shows you how to accomplish a specific task in a tool. They are organized per tool. These pages are a quick way to get started with a tool.
+
+Missing a manual? You can [submit suggestion using the Contribution portal](https://ez-github-contributor.netlify.app/).
+:::
+ 
