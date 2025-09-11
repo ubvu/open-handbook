@@ -20,7 +20,7 @@ website:
         - section: Yoda Portal
           contents: manuals/yoda/yoda_portal/*.qmd # Note the sorting is by filename
         - section: Data Transfer
-          contents: manuals/yoda/yoda_data_transfer/*.qmd
+          contents: manuals/yoda/yoda_data_transfer/**/*.qmd
 
   navbar:
     background: "#0080c9"
