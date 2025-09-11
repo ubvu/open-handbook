@@ -1,0 +1,29 @@
+---
+title: Data transfer to and from Yoda
+date: last-modified
+---
+
+This page explains how to transfer data from the VU Yoda instance using iRODS.
+
+Since Yoda is based on iRODS technology, it is possible to transfer data to and from Yoda using the iRODS communication protocol. This protocol can be used to transfer large amounts of data in an efficient way. On the ADA system, the iCommands are available to allow direct command-line access to Yoda.
+
+## Configuration
+To use iCommands, a [configuration file](/manuals/yoda/yoda_data_transfer/yoda_using_icommands.qmd#configuration) is required in your home directory. This file contains the necessary connection settings for accessing Yoda.
+
+## Basic iCommands
+First use the `iinit` command to connect. You will need a Yoda [Data Access Password](/manuals/yoda/yoda_data_transfer/yoda_dap.qmd). 
+
+These are the basic commands for navigation and data transfer:
+
+- `ipwd` – Show current iRODS directory
+- `ils` – List contents of a directory
+- `icd` – Change directory
+- `iput` – Upload files to Yoda
+- `iget` – Download files from Yoda
+- `irsync` – Synchronize local and remote directories
+
+Your Yoda project folders are located under `/vu/home`.
+
+You can find a quick introduction of the iCommands on the [SURF wiki](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/19824798/Data+handling+in+Yoda+iRODS+using+iCommands#DatahandlinginYoda%2FiRODSusingiCommands-Createcollectionsandnavigate) or you can check out [this training manual](https://irods.org/uploads/2016/06/irods_beginner_training_2016.pdf).
+
+All icommands are documented in the [iRODS Docs](https://docs.irods.org/4.3.0/icommands/user/)
