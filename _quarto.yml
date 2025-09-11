@@ -90,5 +90,6 @@ format:
 # from: "markdown+emoji"
 filters:
   - utils/include-files.lua
+  - utils/linktarget.lua
 execute:
   freeze: auto
