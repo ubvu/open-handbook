@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.34">
+<meta name="generator" content="quarto-1.8.24">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,14 +35,15 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-1e339df562af8a815922d8935af03622.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-ee9e9e2df5de66c1e79f9186a7108765.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -119,7 +120,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -145,7 +146,8 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo">
+    <img src="./public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo light-content">
+    <img src="./public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -248,7 +250,7 @@ window.Quarto = {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-What is a guide?
+<span class="screen-reader-only">Tip</span>What is a guide?
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -262,7 +264,7 @@ What is a guide?
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="UHVibGlzaCUyMCUyNiUyMFNoYXJl" data-listing-file-modified-sort="1757658000977" data-listing-reading-time-sort="8" data-listing-word-count-sort="1466">
+<div class="g-col-1" data-index="0" data-categories="UHVibGlzaCUyMCUyNiUyMFNoYXJl" data-listing-file-modified-sort="1757744240041" data-listing-reading-time-sort="8" data-listing-word-count-sort="1466">
 <a href="./guides/publish-and-share.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -288,7 +290,7 @@ How can you archive and publish your data?
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="UGxhbiUyMCUyNiUyMERlc2lnbg==" data-listing-file-modified-sort="1757658000976" data-listing-reading-time-sort="7" data-listing-word-count-sort="1245">
+<div class="g-col-1" data-index="1" data-categories="UGxhbiUyMCUyNiUyMERlc2lnbg==" data-listing-file-modified-sort="1757744240041" data-listing-reading-time-sort="7" data-listing-word-count-sort="1245">
 <a href="./guides/comply-with-gdpr.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -314,7 +316,7 @@ How can you comply with the GDPR?
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="RGlzY292ZXIlMjAlMjYlMjBJbml0aWF0ZQ==" data-listing-file-modified-sort="1757658000976" data-listing-reading-time-sort="1" data-listing-word-count-sort="22">
+<div class="g-col-1" data-index="2" data-categories="RGlzY292ZXIlMjAlMjYlMjBJbml0aWF0ZQ==" data-listing-file-modified-sort="1757744240041" data-listing-reading-time-sort="1" data-listing-word-count-sort="22">
 <a href="./guides/discover-and-initiate.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -340,7 +342,7 @@ How can you discover and reuse existing research data?
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="Q29sbGVjdCUyMCUyNiUyMFN0b3Jl" data-listing-file-modified-sort="1757658000976" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="g-col-1" data-index="3" data-categories="Q29sbGVjdCUyMCUyNiUyMFN0b3Jl" data-listing-file-modified-sort="1757744240041" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
 <a href="./guides/collect-and-store.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -366,7 +368,7 @@ How can you ensure data protection and security during collection, storage, and 
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="UHJvY2VzcyUyMCUyNiUyMEFuYWx5c2U=" data-listing-file-modified-sort="1757658000977" data-listing-reading-time-sort="11" data-listing-word-count-sort="2007">
+<div class="g-col-1" data-index="4" data-categories="UHJvY2VzcyUyMCUyNiUyMEFuYWx5c2U=" data-listing-file-modified-sort="1757744240041" data-listing-reading-time-sort="11" data-listing-word-count-sort="2007">
 <a href="./guides/process-and-analyse.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -392,7 +394,7 @@ How can you ensure data provenance and accurate data analysis?
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="RG9jdW1lbnQlMjAlMjYlMjBQcmVzZXJ2ZQ==" data-listing-file-modified-sort="1757658000976" data-listing-reading-time-sort="1" data-listing-word-count-sort="18">
+<div class="g-col-1" data-index="5" data-categories="RG9jdW1lbnQlMjAlMjYlMjBQcmVzZXJ2ZQ==" data-listing-file-modified-sort="1757744240041" data-listing-reading-time-sort="1" data-listing-word-count-sort="18">
 <a href="./guides/document-and-preserve.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -418,7 +420,7 @@ How can you ensure research data is FAIR?
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="UHVibGlzaCUyMCUyNiUyMFNoYXJl" data-listing-file-modified-sort="1757658000977" data-listing-reading-time-sort="14" data-listing-word-count-sort="2625">
+<div class="g-col-1" data-index="6" data-categories="UHVibGlzaCUyMCUyNiUyMFNoYXJl" data-listing-file-modified-sort="1757744240041" data-listing-reading-time-sort="14" data-listing-word-count-sort="2625">
 <a href="./guides/publishing-fair-software.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -444,7 +446,7 @@ How can you publish FAIR software
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="UGxhbiUyMCUyNiUyMERlc2lnbg==" data-listing-file-modified-sort="1757658000976" data-listing-reading-time-sort="23" data-listing-word-count-sort="4471">
+<div class="g-col-1" data-index="7" data-categories="UGxhbiUyMCUyNiUyMERlc2lnbg==" data-listing-file-modified-sort="1757744240041" data-listing-reading-time-sort="23" data-listing-word-count-sort="4471">
 <a href="./guides/plan-and-design.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -470,7 +472,7 @@ How can you set up research data management from the start?
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="8" data-categories="Q29sbGVjdCUyMCUyNiUyMFN0b3JlJTJDUHJvY2VzcyUyMCUyNiUyMEFuYWx5c2UlMkNQdWJsaXNoJTIwJTI2JTIwU2hhcmU=" data-listing-file-modified-sort="1757658000977" data-listing-reading-time-sort="13" data-listing-word-count-sort="2590">
+<div class="g-col-1" data-index="8" data-categories="Q29sbGVjdCUyMCUyNiUyMFN0b3JlJTJDUHJvY2VzcyUyMCUyNiUyMEFuYWx5c2UlMkNQdWJsaXNoJTIwJTI2JTIwU2hhcmU=" data-listing-file-modified-sort="1757744240041" data-listing-reading-time-sort="13" data-listing-word-count-sort="2590">
 <a href="./guides/use-osf.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -500,7 +502,7 @@ How can you use Open Science Framework (OSF) in your research project?
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="9" data-listing-file-modified-sort="1757658000976" data-listing-reading-time-sort="5" data-listing-word-count-sort="829">
+<div class="g-col-1" data-index="9" data-listing-file-modified-sort="1757744240041" data-listing-reading-time-sort="5" data-listing-word-count-sort="829">
 <a href="./guides/policies-supporting-vision-open-science.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -521,7 +523,7 @@ What policies and regulations support VU’s vision on Open Science?
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="10" data-listing-file-modified-sort="1757658000976" data-listing-reading-time-sort="7" data-listing-word-count-sort="1389">
+<div class="g-col-1" data-index="10" data-listing-file-modified-sort="1757744240041" data-listing-reading-time-sort="7" data-listing-word-count-sort="1389">
 <a href="./guides/data-lifecycle.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -596,13 +598,14 @@ What research data services and support are available for VU researchers?
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

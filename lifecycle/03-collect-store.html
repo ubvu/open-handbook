@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.34">
+<meta name="generator" content="quarto-1.8.24">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,14 +35,15 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-1e339df562af8a815922d8935af03622.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-ee9e9e2df5de66c1e79f9186a7108765.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -142,7 +143,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -168,7 +169,8 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo">
+    <img src="../public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo light-content">
+    <img src="../public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -307,7 +309,7 @@ Reading Time
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-categories="UmVzZWFyY2glMjBEYXRh" data-listing-file-modified-sort="1757658001085" data-listing-reading-time-sort="3" data-listing-word-count-sort="590" data-listing-title-sort="Data Backup" data-listing-filename-sort="data-backup.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="0" data-categories="UmVzZWFyY2glMjBEYXRh" data-listing-file-modified-sort="1757744240149" data-listing-reading-time-sort="3" data-listing-word-count-sort="590" data-listing-title-sort="Data Backup" data-listing-filename-sort="data-backup.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="../topics/data-backup.html" class="title listing-title">Data Backup</a>
@@ -318,7 +320,7 @@ Reading Time
 
 </tr>
 
-<tr data-index="1" data-categories="UmVzZWFyY2glMjBEYXRh" data-listing-file-modified-sort="1757658001085" data-listing-reading-time-sort="6" data-listing-word-count-sort="1128" data-listing-title-sort="Data Collection" data-listing-filename-sort="data-collection.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="1" data-categories="UmVzZWFyY2glMjBEYXRh" data-listing-file-modified-sort="1757744240150" data-listing-reading-time-sort="6" data-listing-word-count-sort="1128" data-listing-title-sort="Data Collection" data-listing-filename-sort="data-collection.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="../topics/data-collection.html" class="title listing-title">Data Collection</a>
@@ -329,7 +331,7 @@ Reading Time
 
 </tr>
 
-<tr data-index="2" data-categories="UmVzZWFyY2glMjBEYXRh" data-listing-file-modified-sort="1757658001085" data-listing-reading-time-sort="5" data-listing-word-count-sort="876" data-listing-title-sort="Data Protection" data-listing-filename-sort="data-protection.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="2" data-categories="UmVzZWFyY2glMjBEYXRh" data-listing-file-modified-sort="1757744240150" data-listing-reading-time-sort="5" data-listing-word-count-sort="876" data-listing-title-sort="Data Protection" data-listing-filename-sort="data-protection.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="../topics/data-protection.html" class="title listing-title">Data Protection</a>
@@ -340,7 +342,7 @@ Reading Time
 
 </tr>
 
-<tr data-index="3" data-categories="UmVzZWFyY2glMjBEYXRh" data-listing-file-modified-sort="1757658001086" data-listing-reading-time-sort="5" data-listing-word-count-sort="921" data-listing-title-sort="Data Storage" data-listing-filename-sort="data-storage.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="3" data-categories="UmVzZWFyY2glMjBEYXRh" data-listing-file-modified-sort="1757744240150" data-listing-reading-time-sort="5" data-listing-word-count-sort="921" data-listing-title-sort="Data Storage" data-listing-filename-sort="data-storage.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="../topics/data-storage.html" class="title listing-title">Data Storage</a>
@@ -351,7 +353,7 @@ Reading Time
 
 </tr>
 
-<tr data-index="4" data-categories="VG9vbHM=" data-listing-file-modified-sort="1757658001086" data-listing-reading-time-sort="5" data-listing-word-count-sort="820" data-listing-title-sort="Qualtrics" data-listing-filename-sort="qualtrics.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="4" data-categories="VG9vbHM=" data-listing-file-modified-sort="1757744240151" data-listing-reading-time-sort="5" data-listing-word-count-sort="820" data-listing-title-sort="Qualtrics" data-listing-filename-sort="qualtrics.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="../topics/qualtrics.html" class="title listing-title">Qualtrics</a>
@@ -362,7 +364,7 @@ Reading Time
 
 </tr>
 
-<tr data-index="5" data-categories="VG9vbHM=" data-listing-file-modified-sort="1757658001087" data-listing-reading-time-sort="4" data-listing-word-count-sort="731" data-listing-title-sort="Research Drive" data-listing-filename-sort="researchdrive.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="5" data-categories="VG9vbHM=" data-listing-file-modified-sort="1757744240151" data-listing-reading-time-sort="4" data-listing-word-count-sort="731" data-listing-title-sort="Research Drive" data-listing-filename-sort="researchdrive.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="../topics/researchdrive.html" class="title listing-title">Research Drive</a>
@@ -373,7 +375,7 @@ Reading Time
 
 </tr>
 
-<tr data-index="6" data-categories="UmVzZWFyY2glMjBEYXRh" data-listing-file-modified-sort="1757658001087" data-listing-reading-time-sort="4" data-listing-word-count-sort="710" data-listing-title-sort="Safe Data Transportation and Transfer" data-listing-filename-sort="safe-data-transfer.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="6" data-categories="UmVzZWFyY2glMjBEYXRh" data-listing-file-modified-sort="1757744240151" data-listing-reading-time-sort="4" data-listing-word-count-sort="710" data-listing-title-sort="Safe Data Transportation and Transfer" data-listing-filename-sort="safe-data-transfer.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="../topics/safe-data-transfer.html" class="title listing-title">Safe Data Transportation and Transfer</a>
@@ -384,7 +386,7 @@ Reading Time
 
 </tr>
 
-<tr data-index="7" data-categories="VG9vbHM=" data-listing-file-modified-sort="1757658001087" data-listing-reading-time-sort="7" data-listing-word-count-sort="1301" data-listing-title-sort="SciStor" data-listing-filename-sort="scistor.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="7" data-categories="VG9vbHM=" data-listing-file-modified-sort="1757744240151" data-listing-reading-time-sort="7" data-listing-word-count-sort="1301" data-listing-title-sort="SciStor" data-listing-filename-sort="scistor.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="../topics/scistor.html" class="title listing-title">SciStor</a>
@@ -395,7 +397,7 @@ Reading Time
 
 </tr>
 
-<tr data-index="8" data-categories="VG9vbHM=" data-listing-file-modified-sort="1757658001087" data-listing-reading-time-sort="5" data-listing-word-count-sort="923" data-listing-title-sort="Yoda" data-listing-filename-sort="yoda.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="8" data-categories="VG9vbHM=" data-listing-file-modified-sort="1757744240152" data-listing-reading-time-sort="5" data-listing-word-count-sort="923" data-listing-title-sort="Yoda" data-listing-filename-sort="yoda.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="../topics/yoda.html" class="title listing-title">Yoda</a>
@@ -415,7 +417,7 @@ Reading Time
 <h2 class="anchored" data-anchor-id="guides">Guides</h2>
 <div id="listing-guides" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Q29sbGVjdCUyMCUyNiUyMFN0b3Jl" data-listing-file-modified-sort="1757658000976" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="g-col-1" data-index="0" data-categories="Q29sbGVjdCUyMCUyNiUyMFN0b3Jl" data-listing-file-modified-sort="1757744240041" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
 <a href="../guides/collect-and-store.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -436,7 +438,7 @@ How can you ensure data protection and security during collection, storage, and 
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="Q29sbGVjdCUyMCUyNiUyMFN0b3JlJTJDUHJvY2VzcyUyMCUyNiUyMEFuYWx5c2UlMkNQdWJsaXNoJTIwJTI2JTIwU2hhcmU=" data-listing-file-modified-sort="1757658000977" data-listing-reading-time-sort="13" data-listing-word-count-sort="2590">
+<div class="g-col-1" data-index="1" data-categories="Q29sbGVjdCUyMCUyNiUyMFN0b3JlJTJDUHJvY2VzcyUyMCUyNiUyMEFuYWx5c2UlMkNQdWJsaXNoJTIwJTI2JTIwU2hhcmU=" data-listing-file-modified-sort="1757744240041" data-listing-reading-time-sort="13" data-listing-word-count-sort="2590">
 <a href="../guides/use-osf.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -517,13 +519,14 @@ How can you use Open Science Framework (OSF) in your research project?
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
