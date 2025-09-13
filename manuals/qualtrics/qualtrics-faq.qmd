@@ -10,7 +10,7 @@ description: 'Frequently asked questions on using Qualtrics'
 **Question 01**</br> 
 I cannot login, I received an error message stating that my password is incorrect. I tried to request a password reset but it does not work. How do I access my account?
 
-Another login method than `Vrije Universiteit SSO` was used. Go to the [login page](https://vuamsterdam.eu.qualtrics.com), choose: `Vrije Universiteit SSO` and log in with your VU account credentials (e-mail address and password). See also [Creating and Accessing User Accounts](https://rdm.vu.nl/topics/qualtrics.html#creating-and-accessing-user-accounts)<br />
+Another login method than `Vrije Universiteit SSO` was used. Go to the [login page](https://vuamsterdam.eu.qualtrics.com), choose: `Vrije Universiteit SSO` and log in with your VU account credentials (email address and password). See also [Creating and Accessing User Accounts](https://rdm.vu.nl/topics/qualtrics.html#creating-and-accessing-user-accounts)<br />
 
 <br />
 **Question 02**</br> 
@@ -19,14 +19,12 @@ I cannot login, I received an error message “account is disabled”. How do I 
 Security settings are in place which set an user account to `Status: Disabled` when a certain inactivity threshold has been reached. A disabled account status does not affect its data. Please contact the RDM Support Desk at [rdm@vu.nl](mailto:rdm@vu.nl) to have your accounts re-enabled.
 
 <br />
-**Question 03**	
-I think I need an account upgrade, how should I do that?
+**Question 03**	</br> I think I need an account upgrade, how should I do that?
 
 Licensed functionality on the VU's Central Brand is made equally available to all users. Users should not engage in account upgrades with Qualtrics. This would be deemed an agreement between the user and Qualtrics directly, and falls outside VU’s licence and contract management responsibilities. (Very) high costs will likely be involved in account upgrade requests.
 
 <br />
-**Question 04**	
-A survey template was shared with me by my course supervisor, but I am missing features and functionalities. If I want to use these (additional) functions, I need to upgrade my account, how I can do that?
+**Question 04**	</br> A survey template was shared with me by my course supervisor, but I am missing features and functionalities. If I want to use these (additional) functions, I need to upgrade my account, how I can do that?
 
 A Qualtrics free account is likely been used instead of VU’s Central Brand account. Everyone can create a free account on the Qualtrics main site (The Qualtrics Brand). These free accounts have limited functionality and validity (See also Question 03). Verify the URL of the account you are logged in to. Proceed to create an account on VU’s Central Brand (See also Question 01)    
 
@@ -34,8 +32,7 @@ Free Account Login Page. URL will look like this:
 ![Free Account Login Page](/public/manuals/qualtrics/RDM_Handbook_Qualtrics_FAQ_Q04.png)
 
 <br /> 
-**Question 05**	
-I was using a Qualtrics free account and I have now created an account on VU’s Central Brand. How can I transfer any data I had on my free account to my VU account?
+**Question 05**	</br> I was using a Qualtrics free account and I have now created an account on VU’s Central Brand. How can I transfer any data I had on my free account to my VU account?
 
 Qualtrics free accounts do not support the automated transfer of data between brands. The account owner will have to execute a Manual Move. This means downloading data from the free account and uploading this data onto the branded account. The steps to process a Manual Move are outlined in this article: [User Moves – Manual Move](https://www.qualtrics.com/support/survey-platform/managing-your-account/user-moves/#ManualMove).   
 
@@ -47,18 +44,23 @@ Qualtrics free accounts do not support the automated transfer of data between br
 **Question 06**</br>	Does VU’s Qualtrics licence supports Conjoint Analysis?
 
 Unfortunately, the current Qualtrics subscription does not support (templates) for conjoint surveys/projects (and analysis).
+
 <br />
 However, there are a number of advanced features available on vuamsterdam.eu.qualtrics.com, which you may be able to use to reproduce a desired setup. 
+
 <br />
 Please refer to:
 Embedded Data, which includes options as branching, display logic and piped text.
 [Standard Elements, Embedded Data](https://www.qualtrics.com/support/survey-platform/survey-module/survey-flow/standard-elements/embedded-data/)  
+
 <br />
 API Support, which can be used on top of embedded data.
 [API Integration](https://www.qualtrics.com/support/integrations/api-integration/using-qualtrics-api-documentation/)
+
 <br />
 JavaScript. A JavaScript Editor add-on is also available on the Central Brand.
 [Question Options, Add Javascript](https://www.qualtrics.com/support/survey-platform/survey-module/question-options/add-javascript/)
+
 <br /> 
 Getting Started with Conjoint, a reference KB article as it might help to elaborate your own survey design within the current brand's limitations.        
 [Getting Started with Conjoint Projects](https://www.qualtrics.com/support/conjoint-project/getting-started-conjoints/getting-started-choice-based/getting-started-with-conjoint-projects/#Steps)
@@ -68,8 +70,7 @@ Getting Started with Conjoint, a reference KB article as it might help to elabor
 
 ## Collaboration - Getting Started
 <br />
-**Question 07** </br>	
-What is Collaboration?
+**Question 07** </br>	What is Collaboration?
 
 Collaboration features allow you to give other Qualtrics users access to your surveys when they log into their accounts. That way, you can work on the same project without giving out your account information. You can even choose to restrict what type of access other users have to your project. 
 
@@ -80,15 +81,15 @@ What is the main (technical) consideration regarding Collaboration via Qualtrics
 One should be aware that Qualtrics may offer different experiences depending on which brand type one is sharing from or been invited to join in using Collaboration features. Qualtrics recognizes three main brand types: Free Brand, Named Brand non-SSO and Named Brand SSO. VU’s Central Brand is a Named Brand SSO. 
 
 <br />
-**Question 09**</br>	
-What are the basic steps to invite someone to collaborate on a project?
+**Question 09**</br> What are the basic steps to invite someone to collaborate on a project?
 
 Go to your Projects page and click on settings (…) of the project you want to share. Choose Collaborate. 
 <br />
 Project Page View:
 ![Collaboration 01](/public/manuals/qualtrics/RDM_Handbook_Qualtrics_FAQ_Q09-01.png)
 
-<br />    
+<br />
+
 When collaborating within your organisation, you can look up the person you want to invite via the lookup field. Just start typing the name or email address of the user you want to find. Select the appropriate user.   
 
 <br />
@@ -107,8 +108,7 @@ Collaboration settings, adding invitation and access rights:
 ## Collaboration - Advanced Settings
 
 <br />
-**Question 10**</br>	
-How should I use Collaboration on VU’s Central Brand (Named Brand SSO)?
+**Question 10**</br>	How should I use Collaboration on VU’s Central Brand (Named Brand SSO)?
 
 Each Qualtrics Brand is seen as a separate Organisation. When sharing surveys between brands, you will be collaborating between Organisations. You will likely also be sharing surveys between different brand types. 
 
@@ -119,13 +119,12 @@ Please see [**Annex I: Collaboration Between Different Brand Types**](##Annex-I:
 Extended information is also available on [Collaborating with SSO Users](https://www.qualtrics.com/support/survey-platform/my-projects/sharing-a-project/#SSO) and [Accessing Shared Surveys](https://www.qualtrics.com/support/survey-platform/my-projects/sharing-a-project/#AccessingSharedSurveys) if you would like to know more about Collaboration between different brand types. 
 
 <br />
-**Question 11**</br>	
-What access rights are available through Collaboration and can I specify what level of access is granted to individual Collaborators?
+**Question 11**</br>	What access rights are available through Collaboration and can I specify what level of access is granted to individual Collaborators?
 
 Yes, individual user permission are configurable when using Collaboration features. Please refer to [Collaboration Permissions](https://www.qualtrics.com/support/survey-platform/my-projects/sharing-a-project/#SharingPermissions). Please be aware that by default all rights are granted when collaborating.       
 
 <br />
-Access rights can be set for Viewing, Editing, View Reports, Activation Copying and Distributing: 
+Access rights can be set for Viewing, Editing, View Reports, Activation, Copying and Distributing: 
 ![Collaboration Access Rights](/public/manuals/qualtrics/RDM_Handbook_Qualtrics_FAQ_Q11.png)
 
 
@@ -139,7 +138,7 @@ Main Knowledge Base item, [Collaborating on Survey Projects](https://www.qualtri
 <br />
 
 **Step 1**</br>	
-If you are collaborating with someone through an SSO brand **from outside of your organisation**, then you may use any email address that collaborator(s) has/have access to. They will receive a secure collaboration code, log in to the Qualtrics account of their choice, and enter the code.
+If you are collaborating with someone through a SSO brand **from outside of your organisation**, then you may use any email address that collaborator(s) has/have access to. They will receive a secure collaboration code, log in to the Qualtrics account of their choice, and enter the code.
 
 <br />
 **Step 2**</br> 
@@ -154,7 +153,7 @@ When someone invites you to collaborate on a survey, you will receive this invit
 
 <br />
 **Step 4**</br> 
-To access the survey you have been invited to collaborate on, log into your Qualtrics account as you normally would. Then follow the steps in Accessing Shared Surveys to gain access to your survey.
+To access the survey you have been invited to collaborate on, log into your Qualtrics account as you normally would. Then follow the steps in **Accessing Shared Surveys** to gain access to your survey.
 
 <br />
 **Step 5**</br>	
@@ -169,7 +168,7 @@ To Access This Folder > Navigate to the Projects page.
 
 <br />
 **Step 7**</br> 
-Select **Shared with Me**.
+Select **Shared with Me**.</br?
 ![Navigating to Folder 02](/public/manuals/qualtrics/RDM_Handbook_Qualtrics_FAQ_Annex_Point7.png)
  
 <br />
