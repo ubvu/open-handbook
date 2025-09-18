@@ -243,9 +243,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>This handbook is created with a variety of technical resources. This document outlines what technical resources are used to achieve different goals.</p>
 <section id="how-is-the-website-built" class="level2">
 <h2 class="anchored" data-anchor-id="how-is-the-website-built">How is the website built?</h2>
-<p>We use GitHub Actions to build the Quarto website. This automation runs every time something changes for the website – <a href="https://github.com/ubvu/open-handbook/blob/main/.github/workflows/publish.yml">the automation itself can be found on GitHub</a>.</p>
+<p>We use GitHub Actions to build the Quarto website. This automation runs every time something changes for the website – <a href="https://github.com/ubvu/open-handbook/blob/main/.github/workflows/publish.yml" target="_blank">the automation itself can be found on GitHub</a>.</p>
 <p>We use GitHub to subsequently make the website available on <code>https://rdm.vu.nl</code>.</p>
-<p>Please <a href="https://quarto.org/docs/websites/">refer to the Quarto documentation for detailed instructions</a> on how to use Quarto.</p>
+<p>Please <a href="https://quarto.org/docs/websites/" target="_blank">refer to the Quarto documentation for detailed instructions</a> on how to use Quarto.</p>
 </section>
 <section id="preview-deployments" class="level2">
 <h2 class="anchored" data-anchor-id="preview-deployments">Preview deployments</h2>
@@ -271,7 +271,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <section id="quarto.yml" class="level4">
 <h4 class="anchored" data-anchor-id="quarto.yml"><code>_quarto.yml</code></h4>
-<p>The <code>_quarto.yml</code> file is especially important, as it contains the metadata and information to structure the handbook. You can use this to find and update the navigation bar. The specifics of <a href="https://quarto.org/docs/websites/website-tools.html">using <code>_quarto.yml</code> is documented very well by Quarto</a>.</p>
+<p>The <code>_quarto.yml</code> file is especially important, as it contains the metadata and information to structure the handbook. You can use this to find and update the navigation bar. The specifics of <a href="https://quarto.org/docs/websites/website-tools.html" target="_blank">using <code>_quarto.yml</code> is documented very well by Quarto</a>.</p>
 </section>
 </section>
 <section id="content-organization" class="level3">
@@ -344,7 +344,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="about-quarto" class="level2">
 <h2 class="anchored" data-anchor-id="about-quarto">About Quarto</h2>
-<p>This handbook is built using <a href="https://quarto.org/">Quarto</a>, a scientific and technical publishing system. Quarto allows you to create documents that combine text, code, and data. It supports multiple formats including websites, PDFs, and presentations.</p>
+<p>This handbook is built using <a href="https://quarto.org/" target="_blank">Quarto</a>, a scientific and technical publishing system. Quarto allows you to create documents that combine text, code, and data. It supports multiple formats including websites, PDFs, and presentations.</p>
 <section id="key-concepts" class="level3">
 <h3 class="anchored" data-anchor-id="key-concepts">Key concepts</h3>
 <ul>
@@ -356,9 +356,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="useful-resources" class="level3">
 <h3 class="anchored" data-anchor-id="useful-resources">Useful resources</h3>
 <ul>
-<li><a href="https://quarto.org/docs/">Quarto documentation</a></li>
-<li><a href="https://quarto.org/docs/websites/">Quarto guide for websites</a></li>
-<li><a href="https://quarto.org/docs/authoring/markdown-basics.html">Markdown basics</a></li>
+<li><a href="https://quarto.org/docs/" target="_blank">Quarto documentation</a></li>
+<li><a href="https://quarto.org/docs/websites/" target="_blank">Quarto guide for websites</a></li>
+<li><a href="https://quarto.org/docs/authoring/markdown-basics.html" target="_blank">Markdown basics</a></li>
 </ul>
 </section>
 </section>
@@ -381,7 +381,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><strong>MD001: Heading levels should only increment by one level at a time</strong> - <strong>Cause</strong>: Skipping heading levels (e.g., H1 directly to H3) - <strong>Solution</strong>: Use proper heading hierarchy - <strong>Escape</strong>: Add <code>&lt;!-- markdownlint-disable MD001 --&gt;</code> before the heading</p>
 <p><strong>MD033: Inline HTML</strong> - <strong>Cause</strong>: Using HTML tags in markdown - <strong>Solution</strong>: Use markdown syntax instead, or use HTML when necessary - <strong>Escape</strong>: Add <code>&lt;!-- markdownlint-disable MD033 --&gt;</code> around HTML sections - <strong>Can ignore in PR?</strong> Usually yes, HTML is sometimes needed for advanced formatting</p>
 <p><strong>MD041: First line in file should be a top level heading</strong> - <strong>Cause</strong>: File doesn’t start with H1 heading - <strong>Solution</strong>: Add H1 heading or use YAML front matter - <strong>Escape</strong>: Add <code>&lt;!-- markdownlint-disable MD041 --&gt;</code> at the top - <strong>Can ignore in PR?</strong> Yes, especially for files with YAML front matter</p>
-<p>The full set of rules can be found in the <a href="https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md">markdownlint documentation</a>.</p>
+<p>The full set of rules can be found in the <a href="https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md" target="_blank">markdownlint documentation</a>.</p>
 </section>
 <section id="how-to-disable-markdownlint-rules" class="level3">
 <h3 class="anchored" data-anchor-id="how-to-disable-markdownlint-rules">How to disable Markdownlint rules</h3>

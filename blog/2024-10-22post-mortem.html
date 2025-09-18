@@ -215,8 +215,8 @@ ul.task-list li input[type="checkbox"] {
 <p>On Friday October 18th 2024, we experienced around ten hours of downtime on the <code>rdm.vu.nl</code> website. The downtime started around 10AM after merging changes to the handbook and was resolved the same day, by 8PM.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 <section id="root-cause" class="level2">
 <h2 class="anchored" data-anchor-id="root-cause">Root cause</h2>
-<p>The downtime started after merging changes to the handbook in commit <a href="https://github.com/ubvu/open-handbook/commit/669b06528731f95566d605d65b9c3a507f58bced">669b065</a>. These changes themselves, did not cause the downtime. The root cause was an incorrect configuration in the deployment of the webpage, which inadvertently removed the <code>rdm.vu.nl</code> domain name from the GitHub settings every time we made changes in the handbook and redeployed the website. This resulted in 404 errors that the page could not be found.</p>
-<p>We first observed this issue on Thursday, one day prior to the downtime, in commit <a href="https://github.com/ubvu/open-handbook/commit/678ff8843dc018f76661b24ee25c64bff5c459df">678ff88</a>. We proposed a fix for this issue in <a href="https://github.com/ubvu/open-handbook/pull/220">#220</a>, before the downtime started.</p>
+<p>The downtime started after merging changes to the handbook in commit <a href="https://github.com/ubvu/open-handbook/commit/669b06528731f95566d605d65b9c3a507f58bced" target="_blank">669b065</a>. These changes themselves, did not cause the downtime. The root cause was an incorrect configuration in the deployment of the webpage, which inadvertently removed the <code>rdm.vu.nl</code> domain name from the GitHub settings every time we made changes in the handbook and redeployed the website. This resulted in 404 errors that the page could not be found.</p>
+<p>We first observed this issue on Thursday, one day prior to the downtime, in commit <a href="https://github.com/ubvu/open-handbook/commit/678ff8843dc018f76661b24ee25c64bff5c459df" target="_blank">678ff88</a>. We proposed a fix for this issue in <a href="https://github.com/ubvu/open-handbook/pull/220" target="_blank">#220</a>, before the downtime started.</p>
 </section>
 <section id="how-could-the-downtime-happen-if-the-fix-was-clear" class="level2">
 <h2 class="anchored" data-anchor-id="how-could-the-downtime-happen-if-the-fix-was-clear">How could the downtime happen if the fix was clear?</h2>
@@ -242,10 +242,10 @@ ul.task-list li input[type="checkbox"] {
 <section id="references" class="level2">
 <h2 class="anchored" data-anchor-id="references">References</h2>
 <ul>
-<li>Root cause for the downtime first observed in commit <a href="https://github.com/ubvu/open-handbook/commit/678ff8843dc018f76661b24ee25c64bff5c459df">678ff88</a></li>
-<li>Proposed a fix for the root cause in <a href="https://github.com/ubvu/open-handbook/pull/220">pull Request #220</a></li>
-<li>Downtime started at <a href="https://github.com/ubvu/open-handbook/commit/669b06528731f95566d605d65b9c3a507f58bced">commit 669b065</a> is where the</li>
-<li>Resolved downtime in <a href="https://github.com/ubvu/open-handbook/commit/678ff8843dc018f76661b24ee25c64bff5c459df">commit 678ff88</a></li>
+<li>Root cause for the downtime first observed in commit <a href="https://github.com/ubvu/open-handbook/commit/678ff8843dc018f76661b24ee25c64bff5c459df" target="_blank">678ff88</a></li>
+<li>Proposed a fix for the root cause in <a href="https://github.com/ubvu/open-handbook/pull/220" target="_blank">pull Request #220</a></li>
+<li>Downtime started at <a href="https://github.com/ubvu/open-handbook/commit/669b06528731f95566d605d65b9c3a507f58bced" target="_blank">commit 669b065</a> is where the</li>
+<li>Resolved downtime in <a href="https://github.com/ubvu/open-handbook/commit/678ff8843dc018f76661b24ee25c64bff5c459df" target="_blank">commit 678ff88</a></li>
 </ul>
 
 

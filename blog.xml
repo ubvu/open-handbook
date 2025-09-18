@@ -20,7 +20,7 @@
 
 
 <p>Last week we added a new section to the Research Support Handbook: <a href="../manuals.html">Manuals</a>. Manuals are short pages describing how to accomplish specific tasks in a <a href="../topics.html#category=Tools">Tool</a> and should be easily understood by individuals with varying levels of technical knowledge. Manuals on the handbook will be written in the form of a how-to. The aim is to provide guidance for specific tasks “How do I?”. From the basic: “How do I log in” to the more in-depth “How do I use CUDA on ADA”.</p>
-<p>We have started by migrating the <a href="../manuals/yoda/index.html">manuals on using Yoda</a>, from their old spot on yoda.vu.nl. Next step will be migrating the <a href="../topics/ada.html">ADA HPC</a> manuals from <a href="https://ada-hpc.readthedocs.io/en/latest/">readthedocs</a>.</p>
+<p>We have started by migrating the <a href="../manuals/yoda/index.html">manuals on using Yoda</a>, from their old spot on yoda.vu.nl. Next step will be migrating the <a href="../topics/ada.html">ADA HPC</a> manuals from <a href="https://ada-hpc.readthedocs.io/en/latest/" target="_blank">readthedocs</a>.</p>
 <p>By consolidating all user manuals on the Research Support Handbook we hope to increase the findability of both the manuals and the rest of the Research Support Handbook.</p>
 <section id="maintaining-the-manuals" class="level2">
 <h2 class="anchored" data-anchor-id="maintaining-the-manuals">Maintaining the manuals</h2>
@@ -90,7 +90,7 @@
 </ul>
 <p>We have started on the following topics, but these still need some work before they can be published:</p>
 <ul>
-<li>RDM tools overview (to replace the <a href="https://vu.nl/en/about-vu/divisions/university-library/more-about/rdm-tools">current one on the VU website</a>)</li>
+<li>RDM tools overview (to replace the <a href="https://vu.nl/en/about-vu/divisions/university-library/more-about/rdm-tools" target="_blank">current one on the VU website</a>)</li>
 <li>De-identifying data: Pseudonymisation and Anonymisation</li>
 <li>Informed consent forms (content will be discussed with the privacy experts)</li>
 </ul>
@@ -104,7 +104,7 @@
 <li>We transferred all information related to OSF from the VU OSF Wiki to the Handbook, resulting in a topic (see above) and a guide <a href="../guides/use-osf.html">How can you use Open Science Framework (OSF) in your research project?</a></li>
 <li>We updated the guide <a href="../guides/plan-and-design.html">How can you set up research data management from the start?</a>, where we included the instructions for selecting the VU DMP template</li>
 </ul>
-<p>In addition, we introduced a new type of page: Manuals (a big thanks to Peter, who put a lot of effort in preparing this 🙏). A user manual provides guidance and instructions to users of a tool. User manuals are created to be easily understood by individuals with varying levels of technical knowledge. It can be assumed that most of the tools will already have their own manuals on the suppliers website. We will link to those as much as possible, we don’t want to duplicate information. If you’re interested, you can read more in <a href="https://github.com/ubvu/open-handbook/issues/416">Issue #416</a>. The Yoda manuals have now been included in the Handbook (the website yoda.vu.nl will be phased out). Manuals on the handbook will be written in the form of a how-to, the aim is to provide guidance for specific tasks “How do I?”. From the basic: “How do I log in” to the more in-depth “How do I use CUDA on ADA”.</p>
+<p>In addition, we introduced a new type of page: Manuals (a big thanks to Peter, who put a lot of effort in preparing this 🙏). A user manual provides guidance and instructions to users of a tool. User manuals are created to be easily understood by individuals with varying levels of technical knowledge. It can be assumed that most of the tools will already have their own manuals on the suppliers website. We will link to those as much as possible, we don’t want to duplicate information. If you’re interested, you can read more in <a href="https://github.com/ubvu/open-handbook/issues/416" target="_blank">Issue #416</a>. The Yoda manuals have now been included in the Handbook (the website yoda.vu.nl will be phased out). Manuals on the handbook will be written in the form of a how-to, the aim is to provide guidance for specific tasks “How do I?”. From the basic: “How do I log in” to the more in-depth “How do I use CUDA on ADA”.</p>
 <p>Finally, we also worked on contributing guidelines and categorised the blog posts, introducing a new type of blog post by ITvO:</p>
 <ul>
 <li>Instructions for using VSCode to contribute</li>
@@ -115,19 +115,19 @@
 <section id="hackathon-issues-and-pull-requests" class="level2">
 <h2 class="anchored" data-anchor-id="hackathon-issues-and-pull-requests">Hackathon Issues and Pull Requests</h2>
 <ul>
-<li>(Yoda) manuals: <a href="https://github.com/ubvu/open-handbook/issues/416">Issue #416</a> and <a href="https://github.com/ubvu/open-handbook/pull/484">PR #484</a></li>
-<li>Information about ITvO: <a href="https://github.com/ubvu/open-handbook/issues/344">Issue #344</a> and <a href="https://github.com/ubvu/open-handbook/pull/516">PR #516</a></li>
-<li>Software Archiving: <a href="https://github.com/ubvu/open-handbook/issues/354">Issue #354</a> and <a href="https://github.com/ubvu/open-handbook/pull/500">PR #500</a></li>
-<li>Software Publishing: <a href="https://github.com/ubvu/open-handbook/issues/354">Issue #354</a> and <a href="https://github.com/ubvu/open-handbook/pull/501">PR #501</a></li>
-<li>OSF: <a href="https://github.com/ubvu/open-handbook/issues/100">Issue #100</a> and <a href="https://github.com/ubvu/open-handbook/pull/538">PR #538</a> (topic) and <a href="https://github.com/ubvu/open-handbook/pull/541">PR #541</a> (guide)</li>
-<li>CARE Principles: <a href="https://github.com/ubvu/open-handbook/issues/448">Issue #448</a> and <a href="https://github.com/ubvu/open-handbook/pull/503">PR #503</a></li>
-<li>What research data services and support are available for VU researchers? <a href="https://github.com/ubvu/open-handbook/pull/530">PR #530</a></li>
-<li>Pure: <a href="https://github.com/ubvu/open-handbook/issues/482">Issue #482</a> and <a href="https://github.com/ubvu/open-handbook/pull/497">PR #497</a> and <a href="https://github.com/ubvu/open-handbook/pull/537">#PR 537</a></li>
-<li>How can you set up research data management from the start?: <a href="https://github.com/ubvu/open-handbook/pull/524">PR #524</a></li>
-<li>DMP: <a href="https://github.com/ubvu/open-handbook/pull/525">PR #525</a></li>
-<li>Using VSCode to contribute: <a href="https://github.com/ubvu/open-handbook/pull/525">PR #509</a></li>
-<li>Rendering Handbook locally: <a href="https://github.com/ubvu/open-handbook/pull/463">PR #463</a></li>
-<li>Introducing Blog categories and ITvO Blog <a href="https://github.com/ubvu/open-handbook/pull/533">PR #533</a></li>
+<li>(Yoda) manuals: <a href="https://github.com/ubvu/open-handbook/issues/416" target="_blank">Issue #416</a> and <a href="https://github.com/ubvu/open-handbook/pull/484" target="_blank">PR #484</a></li>
+<li>Information about ITvO: <a href="https://github.com/ubvu/open-handbook/issues/344" target="_blank">Issue #344</a> and <a href="https://github.com/ubvu/open-handbook/pull/516" target="_blank">PR #516</a></li>
+<li>Software Archiving: <a href="https://github.com/ubvu/open-handbook/issues/354" target="_blank">Issue #354</a> and <a href="https://github.com/ubvu/open-handbook/pull/500" target="_blank">PR #500</a></li>
+<li>Software Publishing: <a href="https://github.com/ubvu/open-handbook/issues/354" target="_blank">Issue #354</a> and <a href="https://github.com/ubvu/open-handbook/pull/501" target="_blank">PR #501</a></li>
+<li>OSF: <a href="https://github.com/ubvu/open-handbook/issues/100" target="_blank">Issue #100</a> and <a href="https://github.com/ubvu/open-handbook/pull/538" target="_blank">PR #538</a> (topic) and <a href="https://github.com/ubvu/open-handbook/pull/541" target="_blank">PR #541</a> (guide)</li>
+<li>CARE Principles: <a href="https://github.com/ubvu/open-handbook/issues/448" target="_blank">Issue #448</a> and <a href="https://github.com/ubvu/open-handbook/pull/503" target="_blank">PR #503</a></li>
+<li>What research data services and support are available for VU researchers? <a href="https://github.com/ubvu/open-handbook/pull/530" target="_blank">PR #530</a></li>
+<li>Pure: <a href="https://github.com/ubvu/open-handbook/issues/482" target="_blank">Issue #482</a> and <a href="https://github.com/ubvu/open-handbook/pull/497" target="_blank">PR #497</a> and <a href="https://github.com/ubvu/open-handbook/pull/537" target="_blank">#PR 537</a></li>
+<li>How can you set up research data management from the start?: <a href="https://github.com/ubvu/open-handbook/pull/524" target="_blank">PR #524</a></li>
+<li>DMP: <a href="https://github.com/ubvu/open-handbook/pull/525" target="_blank">PR #525</a></li>
+<li>Using VSCode to contribute: <a href="https://github.com/ubvu/open-handbook/pull/525" target="_blank">PR #509</a></li>
+<li>Rendering Handbook locally: <a href="https://github.com/ubvu/open-handbook/pull/463" target="_blank">PR #463</a></li>
+<li>Introducing Blog categories and ITvO Blog <a href="https://github.com/ubvu/open-handbook/pull/533" target="_blank">PR #533</a></li>
 </ul>
 </section>
 <section id="ai-generated-texts" class="level2">
@@ -177,7 +177,7 @@
 </section>
 <section id="how-to-embed" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-embed">How to embed</h2>
-<p>After you identified the page and possible anchor to embed, we can now move on to actually embedding it. Embedding the pages themselves is supported by all major browsers using the HTML element <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/iframe"><code>iframe</code></a>.</p>
+<p>After you identified the page and possible anchor to embed, we can now move on to actually embedding it. Embedding the pages themselves is supported by all major browsers using the HTML element <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/iframe" target="_blank"><code>iframe</code></a>.</p>
 <p>Concretely, you can use the following example code for the link we found in Selecting what to embed.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb1-1"><span class="dt" style="color: #AD0000;
 background-color: null;
@@ -240,7 +240,7 @@ font-style: inherit;">&gt;</span></span></code></pre></div></div>
 <p>You can switch out the link, title, and other attributes to your liking – we include some styling options here to get started. You can copy-paste this into any handbook page directly or into any HTML editor:</p>
 <iframe src="https://rdm.vu.nl/topics/dataversenl.html#how-to-request-access" title="How to request access to DataverseNL" width="100%" height="300px" loading="lazy" style="border: solid 1px #0080c9; overflow: hidden;">
 </iframe>
-<p>You can find the <a href="https://github.com/ubvu/open-handbook/blob/main/blog/2025-05-15embed-iframe.qmd#L43">detailed code on how this page embeds the content, on GitHub</a>, from line 43.</p>
+<p>You can find the <a href="https://github.com/ubvu/open-handbook/blob/main/blog/2025-05-15embed-iframe.qmd#L43" target="_blank">detailed code on how this page embeds the content, on GitHub</a>, from line 43.</p>
 <p>Thanks for reading and good luck creating your own embeds of the Research Support Handbook across VU Amsterdam pages 😊 If you have questions or it does not work and you don’t understand why, please <a href="rdm@vu.nl">contact the RDM Support Desk</a> and one of the editors will try to help you.</p>
 
 
@@ -270,20 +270,20 @@ font-style: inherit;">&gt;</span></span></code></pre></div></div>
 <p>Irene helped us to revise the metadata topic.</p>
 <p>Tycho is working on a page for ORCID, the <a href="vu.nl/orcid">ORCID Libguide page</a> will be adjusted to redirect to the handbook.</p>
 <p>Lena was working on a data backup topic, trying to make it generic and applicable to multiple tools.</p>
-<p>We had a discussion of an overview page. New colleagues also within support miss an overview of the services available. There are many pages that give some ideas: <a href="https://vu.nl/en/about-vu/divisions/university-library/more-about/rdm-tools">the RDS portal on Tools</a>, the <a href="https://deploy-preview-274--ubvu-open-handbook.netlify.app/guides/data-lifecycle">guide on available services</a> and <a href="https://vu.nl/en/research/portal/research-impact-support-portal">RISP</a> - but all these overviews have diverse struggles so we are still looking for a good way of doing it.</p>
+<p>We had a discussion of an overview page. New colleagues also within support miss an overview of the services available. There are many pages that give some ideas: <a href="https://vu.nl/en/about-vu/divisions/university-library/more-about/rdm-tools" target="_blank">the RDS portal on Tools</a>, the <a href="https://deploy-preview-274--ubvu-open-handbook.netlify.app/guides/data-lifecycle" target="_blank">guide on available services</a> and <a href="https://vu.nl/en/research/portal/research-impact-support-portal" target="_blank">RISP</a> - but all these overviews have diverse struggles so we are still looking for a good way of doing it.</p>
 <p>ITvO colleagues noticed that they miss an official VU page which gives a summary of what ITvO is and does.</p>
 <p>Question that came up: how to add new contributors? Do they need access rights? Do they work with forks or branches?</p>
 <section id="hackathon-issues" class="level2">
 <h2 class="anchored" data-anchor-id="hackathon-issues">Hackathon Issues</h2>
-<p><a href="https://github.com/ubvu/open-handbook/issues/275" class="uri">https://github.com/ubvu/open-handbook/issues/275</a></p>
+<p><a href="https://github.com/ubvu/open-handbook/issues/275" class="uri" target="_blank">https://github.com/ubvu/open-handbook/issues/275</a></p>
 </section>
 <section id="hackathon-pull-requests" class="level2">
 <h2 class="anchored" data-anchor-id="hackathon-pull-requests">Hackathon Pull Requests</h2>
-<p><a href="https://github.com/ubvu/open-handbook/pull/277" class="uri">https://github.com/ubvu/open-handbook/pull/277</a></p>
-<p><a href="https://github.com/ubvu/open-handbook/pull/276" class="uri">https://github.com/ubvu/open-handbook/pull/276</a></p>
-<p><a href="https://github.com/ubvu/open-handbook/pull/140" class="uri">https://github.com/ubvu/open-handbook/pull/140</a></p>
-<p><a href="https://github.com/ubvu/open-handbook/pull/273" class="uri">https://github.com/ubvu/open-handbook/pull/273</a></p>
-<p>Merged <a href="https://github.com/ubvu/open-handbook/pull/270#pullrequestreview-2467652120" class="uri">https://github.com/ubvu/open-handbook/pull/270#pullrequestreview-2467652120</a></p>
+<p><a href="https://github.com/ubvu/open-handbook/pull/277" class="uri" target="_blank">https://github.com/ubvu/open-handbook/pull/277</a></p>
+<p><a href="https://github.com/ubvu/open-handbook/pull/276" class="uri" target="_blank">https://github.com/ubvu/open-handbook/pull/276</a></p>
+<p><a href="https://github.com/ubvu/open-handbook/pull/140" class="uri" target="_blank">https://github.com/ubvu/open-handbook/pull/140</a></p>
+<p><a href="https://github.com/ubvu/open-handbook/pull/273" class="uri" target="_blank">https://github.com/ubvu/open-handbook/pull/273</a></p>
+<p>Merged <a href="https://github.com/ubvu/open-handbook/pull/270#pullrequestreview-2467652120" class="uri" target="_blank">https://github.com/ubvu/open-handbook/pull/270#pullrequestreview-2467652120</a></p>
 
 
 </section>
@@ -308,9 +308,9 @@ font-style: inherit;">&gt;</span></span></code></pre></div></div>
 
 
 
-<p>On October 30th, 2024, all authors participated in the fourth hackathon for the Research Support Handbook. Since the <a href="https://rdm.vu.nl/blog/2024-09-30hackathon.html">third hackathon</a>, we migrated to <code>rdm.vu.nl</code>, which is a huge milestone! 🎉</p>
+<p>On October 30th, 2024, all authors participated in the fourth hackathon for the Research Support Handbook. Since the <a href="https://rdm.vu.nl/blog/2024-09-30hackathon.html" target="_blank">third hackathon</a>, we migrated to <code>rdm.vu.nl</code>, which is a huge milestone! 🎉</p>
 <p>For the fourth hackathon, we focused on tying up loose ends that we accumulated. The migration means we are now in a stable state, yet there is always more work to be done. During this hackathon, we focused on picking up stale discussions, reviewing open pull requests, and generally closing issues that we took too long to revisit.</p>
-<p>We considered how (un)balanced the various <a href="https://rdm.vu.nl/topics.html">Topics</a> had gotten, because we want readers to be able to form consistent expectations. We observed that some topics are related to tools, others to concepts. Some topics are concise, whereas others are lengthy.</p>
+<p>We considered how (un)balanced the various <a href="https://rdm.vu.nl/topics.html" target="_blank">Topics</a> had gotten, because we want readers to be able to form consistent expectations. We observed that some topics are related to tools, others to concepts. Some topics are concise, whereas others are lengthy.</p>
 <p>One breakout group focused on creating templates for both kinds of topics, resulting in an initial structure that will make it easier to start new topics in the future. Specifically we propose the following template structure for tools (for example, Qualtrics, HPC, DMPonline):</p>
 <ul>
 <li>What is it?</li>
@@ -331,17 +331,17 @@ font-style: inherit;">&gt;</span></span></code></pre></div></div>
 <p>We will follow up with a new hackathon in late november.</p>
 <section id="issues-worked-on" class="level2">
 <h2 class="anchored" data-anchor-id="issues-worked-on">Issues worked on</h2>
-<p><a href="https://github.com/ubvu/open-handbook/issues/232" class="uri">https://github.com/ubvu/open-handbook/issues/232</a></p>
-<p><a href="https://github.com/ubvu/open-handbook/issues/233" class="uri">https://github.com/ubvu/open-handbook/issues/233</a></p>
+<p><a href="https://github.com/ubvu/open-handbook/issues/232" class="uri" target="_blank">https://github.com/ubvu/open-handbook/issues/232</a></p>
+<p><a href="https://github.com/ubvu/open-handbook/issues/233" class="uri" target="_blank">https://github.com/ubvu/open-handbook/issues/233</a></p>
 </section>
 <section id="pull-requests-worked-on" class="level2">
 <h2 class="anchored" data-anchor-id="pull-requests-worked-on">Pull Requests worked on</h2>
-<p><a href="https://github.com/ubvu/open-handbook/pull/229" class="uri">https://github.com/ubvu/open-handbook/pull/229</a></p>
-<p><a href="https://github.com/ubvu/open-handbook/pull/231" class="uri">https://github.com/ubvu/open-handbook/pull/231</a></p>
-<p><a href="https://github.com/ubvu/open-handbook/pull/234" class="uri">https://github.com/ubvu/open-handbook/pull/234</a></p>
-<p><a href="https://github.com/ubvu/open-handbook/pull/235" class="uri">https://github.com/ubvu/open-handbook/pull/235</a></p>
-<p><a href="https://github.com/ubvu/open-handbook/pull/236" class="uri">https://github.com/ubvu/open-handbook/pull/236</a></p>
-<p><a href="https://github.com/ubvu/open-handbook/pull/237" class="uri">https://github.com/ubvu/open-handbook/pull/237</a></p>
+<p><a href="https://github.com/ubvu/open-handbook/pull/229" class="uri" target="_blank">https://github.com/ubvu/open-handbook/pull/229</a></p>
+<p><a href="https://github.com/ubvu/open-handbook/pull/231" class="uri" target="_blank">https://github.com/ubvu/open-handbook/pull/231</a></p>
+<p><a href="https://github.com/ubvu/open-handbook/pull/234" class="uri" target="_blank">https://github.com/ubvu/open-handbook/pull/234</a></p>
+<p><a href="https://github.com/ubvu/open-handbook/pull/235" class="uri" target="_blank">https://github.com/ubvu/open-handbook/pull/235</a></p>
+<p><a href="https://github.com/ubvu/open-handbook/pull/236" class="uri" target="_blank">https://github.com/ubvu/open-handbook/pull/236</a></p>
+<p><a href="https://github.com/ubvu/open-handbook/pull/237" class="uri" target="_blank">https://github.com/ubvu/open-handbook/pull/237</a></p>
 
 
 </section>
@@ -365,8 +365,8 @@ font-style: inherit;">&gt;</span></span></code></pre></div></div>
 <p>On Friday October 18th 2024, we experienced around ten hours of downtime on the <code>rdm.vu.nl</code> website. The downtime started around 10AM after merging changes to the handbook and was resolved the same day, by 8PM.<sup>1</sup></p>
 <section id="root-cause" class="level2">
 <h2 class="anchored" data-anchor-id="root-cause">Root cause</h2>
-<p>The downtime started after merging changes to the handbook in commit <a href="https://github.com/ubvu/open-handbook/commit/669b06528731f95566d605d65b9c3a507f58bced">669b065</a>. These changes themselves, did not cause the downtime. The root cause was an incorrect configuration in the deployment of the webpage, which inadvertently removed the <code>rdm.vu.nl</code> domain name from the GitHub settings every time we made changes in the handbook and redeployed the website. This resulted in 404 errors that the page could not be found.</p>
-<p>We first observed this issue on Thursday, one day prior to the downtime, in commit <a href="https://github.com/ubvu/open-handbook/commit/678ff8843dc018f76661b24ee25c64bff5c459df">678ff88</a>. We proposed a fix for this issue in <a href="https://github.com/ubvu/open-handbook/pull/220">#220</a>, before the downtime started.</p>
+<p>The downtime started after merging changes to the handbook in commit <a href="https://github.com/ubvu/open-handbook/commit/669b06528731f95566d605d65b9c3a507f58bced" target="_blank">669b065</a>. These changes themselves, did not cause the downtime. The root cause was an incorrect configuration in the deployment of the webpage, which inadvertently removed the <code>rdm.vu.nl</code> domain name from the GitHub settings every time we made changes in the handbook and redeployed the website. This resulted in 404 errors that the page could not be found.</p>
+<p>We first observed this issue on Thursday, one day prior to the downtime, in commit <a href="https://github.com/ubvu/open-handbook/commit/678ff8843dc018f76661b24ee25c64bff5c459df" target="_blank">678ff88</a>. We proposed a fix for this issue in <a href="https://github.com/ubvu/open-handbook/pull/220" target="_blank">#220</a>, before the downtime started.</p>
 </section>
 <section id="how-could-the-downtime-happen-if-the-fix-was-clear" class="level2">
 <h2 class="anchored" data-anchor-id="how-could-the-downtime-happen-if-the-fix-was-clear">How could the downtime happen if the fix was clear?</h2>
@@ -392,10 +392,10 @@ font-style: inherit;">&gt;</span></span></code></pre></div></div>
 <section id="references" class="level2">
 <h2 class="anchored" data-anchor-id="references">References</h2>
 <ul>
-<li>Root cause for the downtime first observed in commit <a href="https://github.com/ubvu/open-handbook/commit/678ff8843dc018f76661b24ee25c64bff5c459df">678ff88</a></li>
-<li>Proposed a fix for the root cause in <a href="https://github.com/ubvu/open-handbook/pull/220">pull Request #220</a></li>
-<li>Downtime started at <a href="https://github.com/ubvu/open-handbook/commit/669b06528731f95566d605d65b9c3a507f58bced">commit 669b065</a> is where the</li>
-<li>Resolved downtime in <a href="https://github.com/ubvu/open-handbook/commit/678ff8843dc018f76661b24ee25c64bff5c459df">commit 678ff88</a></li>
+<li>Root cause for the downtime first observed in commit <a href="https://github.com/ubvu/open-handbook/commit/678ff8843dc018f76661b24ee25c64bff5c459df" target="_blank">678ff88</a></li>
+<li>Proposed a fix for the root cause in <a href="https://github.com/ubvu/open-handbook/pull/220" target="_blank">pull Request #220</a></li>
+<li>Downtime started at <a href="https://github.com/ubvu/open-handbook/commit/669b06528731f95566d605d65b9c3a507f58bced" target="_blank">commit 669b065</a> is where the</li>
+<li>Resolved downtime in <a href="https://github.com/ubvu/open-handbook/commit/678ff8843dc018f76661b24ee25c64bff5c459df" target="_blank">commit 678ff88</a></li>
 </ul>
 
 
@@ -435,16 +435,16 @@ font-style: inherit;">&gt;</span></span></code></pre></div></div>
 <li><p><strong>Proofreading and Topic Refinement</strong>: Participants reviewed existing topics to ensure clarity and focus. This led to the realization that some topics, like “Data Publication,” would benefit from being split into more specific subtopics, such as “Open Science” or “Software Licensing.”</p></li>
 <li><p><strong>Guide Titles Revision</strong>: We started normalizing guide titles into questions, making navigation easier and more value informed. We ideated options for guides now titled “Plan &amp; Design” to be converted into actionable questions like “How do I plan for managing my data?”</p></li>
 <li><p><strong>Alt Text Improvement</strong>: We reviewed existing alt texts for images and refined them to ensure accessibility. We also identified some remaining images that had no alt text, and added it.</p></li>
-<li><p><strong>Image Selection</strong>: Contributors identified and proposed openly licensed images to enhance the visual appeal of the guides, with some creative choices from <a href="https://doi.org/10.5281/zenodo.11147887">Zenodo’s RDM LEGO collection</a> <span class="citation" data-cites="bres_2024_11147887">(Bres and Bittner 2024)</span>.</p></li>
+<li><p><strong>Image Selection</strong>: Contributors identified and proposed openly licensed images to enhance the visual appeal of the guides, with some creative choices from <a href="https://doi.org/10.5281/zenodo.11147887" target="_blank">Zenodo’s RDM LEGO collection</a> <span class="citation" data-cites="bres_2024_11147887">(Bres and Bittner 2024)</span>.</p></li>
 </ol>
 <p>Overall, the hackathon was a productive session, and the handbook is now in its final stage, with the team preparing for the official launch on &lt;rdm.vu.nl&gt;. In next hackathons, we may focus on splitting existing topics and adding new ones, as our list of idea topics is growing rapidly.</p>
 <section id="hackathon-issues" class="level2">
 <h2 class="anchored" data-anchor-id="hackathon-issues">Hackathon Issues</h2>
-<p><a href="https://github.com/ubvu/open-handbook/issues/175" class="uri">https://github.com/ubvu/open-handbook/issues/175</a> <a href="https://github.com/ubvu/open-handbook/issues/178" class="uri">https://github.com/ubvu/open-handbook/issues/178</a></p>
+<p><a href="https://github.com/ubvu/open-handbook/issues/175" class="uri" target="_blank">https://github.com/ubvu/open-handbook/issues/175</a> <a href="https://github.com/ubvu/open-handbook/issues/178" class="uri" target="_blank">https://github.com/ubvu/open-handbook/issues/178</a></p>
 </section>
 <section id="hackathon-pull-requests" class="level2">
 <h2 class="anchored" data-anchor-id="hackathon-pull-requests">Hackathon Pull Requests</h2>
-<p><a href="https://github.com/ubvu/open-handbook/pull/118" class="uri">https://github.com/ubvu/open-handbook/pull/118</a> <a href="https://github.com/ubvu/open-handbook/pull/165" class="uri">https://github.com/ubvu/open-handbook/pull/165</a> <a href="https://github.com/ubvu/open-handbook/pull/176" class="uri">https://github.com/ubvu/open-handbook/pull/176</a> <a href="https://github.com/ubvu/open-handbook/pull/177" class="uri">https://github.com/ubvu/open-handbook/pull/177</a> <a href="https://github.com/ubvu/open-handbook/pull/179" class="uri">https://github.com/ubvu/open-handbook/pull/179</a> <a href="https://github.com/ubvu/open-handbook/pull/180" class="uri">https://github.com/ubvu/open-handbook/pull/180</a> <a href="https://github.com/ubvu/open-handbook/pull/181" class="uri">https://github.com/ubvu/open-handbook/pull/181</a> <a href="https://github.com/ubvu/open-handbook/pull/184" class="uri">https://github.com/ubvu/open-handbook/pull/184</a> <a href="https://github.com/ubvu/open-handbook/pull/186" class="uri">https://github.com/ubvu/open-handbook/pull/186</a> <a href="https://github.com/ubvu/open-handbook/pull/188" class="uri">https://github.com/ubvu/open-handbook/pull/188</a></p>
+<p><a href="https://github.com/ubvu/open-handbook/pull/118" class="uri" target="_blank">https://github.com/ubvu/open-handbook/pull/118</a> <a href="https://github.com/ubvu/open-handbook/pull/165" class="uri" target="_blank">https://github.com/ubvu/open-handbook/pull/165</a> <a href="https://github.com/ubvu/open-handbook/pull/176" class="uri" target="_blank">https://github.com/ubvu/open-handbook/pull/176</a> <a href="https://github.com/ubvu/open-handbook/pull/177" class="uri" target="_blank">https://github.com/ubvu/open-handbook/pull/177</a> <a href="https://github.com/ubvu/open-handbook/pull/179" class="uri" target="_blank">https://github.com/ubvu/open-handbook/pull/179</a> <a href="https://github.com/ubvu/open-handbook/pull/180" class="uri" target="_blank">https://github.com/ubvu/open-handbook/pull/180</a> <a href="https://github.com/ubvu/open-handbook/pull/181" class="uri" target="_blank">https://github.com/ubvu/open-handbook/pull/181</a> <a href="https://github.com/ubvu/open-handbook/pull/184" class="uri" target="_blank">https://github.com/ubvu/open-handbook/pull/184</a> <a href="https://github.com/ubvu/open-handbook/pull/186" class="uri" target="_blank">https://github.com/ubvu/open-handbook/pull/186</a> <a href="https://github.com/ubvu/open-handbook/pull/188" class="uri" target="_blank">https://github.com/ubvu/open-handbook/pull/188</a></p>
 
 
 
@@ -480,32 +480,32 @@ Bres, Ewa Elizabeth, and Christian Bittner. 2024. <span>“<span class="nocase">
 
 
 <p>On September 5th, 2024, all authors participated in the second hackathon for the Research Support Handbook. For this hackathon, we focused on quality assurance. Quality assurance is crucial in ensuring that all parties at VU Amsterdam feel confident adopting this evolving, community-led resource as an official university page. Our goal is to migrate the handbook to rdm.vu.nl in the near future, which requires us to everything is in tip-top shape.</p>
-<p>Collectively, we proofread the migrated LibGuide pages. The result of this are seven GitHub issues and nine pull requests for revisions. These include <a href="https://github.com/ubvu/open-handbook/issues/125">making sure all images are migrated into the handbook</a>, <a href="https://github.com/ubvu/open-handbook/issues/124">ensuring appropriate page titles</a>, and <a href="https://github.com/ubvu/open-handbook/issues/131">refining the contribution guide</a>.</p>
-<p>During the hackathon, we observed a lot of links in <a href="https://libguides.vu.nl/rdm">the old LibGuide resource</a>, are broken. We did some much needed maintenance work during the hackathon, given that the Research Support Handbook will replace the LibGuide resource. We identified broken links and replaced them where possible. There is a need to make this a less manual process in the future and will seek out automations to help us maintain the links moving forward. Additionally, there are many internal links that need updating, changing from LibGuide URLs to GitHub pages. We also discovered several links accessible only with university credentials, which we believe detract from the user experience; these links will require special labeling and contextualization.</p>
+<p>Collectively, we proofread the migrated LibGuide pages. The result of this are seven GitHub issues and nine pull requests for revisions. These include <a href="https://github.com/ubvu/open-handbook/issues/125" target="_blank">making sure all images are migrated into the handbook</a>, <a href="https://github.com/ubvu/open-handbook/issues/124" target="_blank">ensuring appropriate page titles</a>, and <a href="https://github.com/ubvu/open-handbook/issues/131" target="_blank">refining the contribution guide</a>.</p>
+<p>During the hackathon, we observed a lot of links in <a href="https://libguides.vu.nl/rdm" target="_blank">the old LibGuide resource</a>, are broken. We did some much needed maintenance work during the hackathon, given that the Research Support Handbook will replace the LibGuide resource. We identified broken links and replaced them where possible. There is a need to make this a less manual process in the future and will seek out automations to help us maintain the links moving forward. Additionally, there are many internal links that need updating, changing from LibGuide URLs to GitHub pages. We also discovered several links accessible only with university credentials, which we believe detract from the user experience; these links will require special labeling and contextualization.</p>
 <p>The general sentiment at the end of the hackathon is that there is still lots of work to do. The community standards are manifesting themselves, and it is clear that pathways need more work to be production ready. These discussions surfaced a wish to have more frequent hackathons at this time, until the standards are set and the included content is ready for rdm.vu.nl.</p>
 <section id="hackathon-issues" class="level2">
 <h2 class="anchored" data-anchor-id="hackathon-issues">Hackathon Issues</h2>
 <ul>
-<li><a href="https://github.com/ubvu/open-handbook/issues/123" class="uri">https://github.com/ubvu/open-handbook/issues/123</a></li>
-<li><a href="https://github.com/ubvu/open-handbook/issues/128" class="uri">https://github.com/ubvu/open-handbook/issues/128</a></li>
-<li><a href="https://github.com/ubvu/open-handbook/issues/125" class="uri">https://github.com/ubvu/open-handbook/issues/125</a></li>
-<li><a href="https://github.com/ubvu/open-handbook/issues/124" class="uri">https://github.com/ubvu/open-handbook/issues/124</a></li>
-<li><a href="https://github.com/ubvu/open-handbook/issues/123" class="uri">https://github.com/ubvu/open-handbook/issues/123</a></li>
-<li><a href="https://github.com/ubvu/open-handbook/issues/130" class="uri">https://github.com/ubvu/open-handbook/issues/130</a></li>
-<li><a href="https://github.com/ubvu/open-handbook/issues/131" class="uri">https://github.com/ubvu/open-handbook/issues/131</a></li>
+<li><a href="https://github.com/ubvu/open-handbook/issues/123" class="uri" target="_blank">https://github.com/ubvu/open-handbook/issues/123</a></li>
+<li><a href="https://github.com/ubvu/open-handbook/issues/128" class="uri" target="_blank">https://github.com/ubvu/open-handbook/issues/128</a></li>
+<li><a href="https://github.com/ubvu/open-handbook/issues/125" class="uri" target="_blank">https://github.com/ubvu/open-handbook/issues/125</a></li>
+<li><a href="https://github.com/ubvu/open-handbook/issues/124" class="uri" target="_blank">https://github.com/ubvu/open-handbook/issues/124</a></li>
+<li><a href="https://github.com/ubvu/open-handbook/issues/123" class="uri" target="_blank">https://github.com/ubvu/open-handbook/issues/123</a></li>
+<li><a href="https://github.com/ubvu/open-handbook/issues/130" class="uri" target="_blank">https://github.com/ubvu/open-handbook/issues/130</a></li>
+<li><a href="https://github.com/ubvu/open-handbook/issues/131" class="uri" target="_blank">https://github.com/ubvu/open-handbook/issues/131</a></li>
 </ul>
 </section>
 <section id="hackathon-pull-requests" class="level2">
 <h2 class="anchored" data-anchor-id="hackathon-pull-requests">Hackathon Pull Requests</h2>
 <ul>
-<li><a href="https://github.com/ubvu/open-handbook/pull/126" class="uri">https://github.com/ubvu/open-handbook/pull/126</a></li>
-<li><a href="https://github.com/ubvu/open-handbook/pull/110" class="uri">https://github.com/ubvu/open-handbook/pull/110</a></li>
-<li><a href="https://github.com/ubvu/open-handbook/pull/127" class="uri">https://github.com/ubvu/open-handbook/pull/127</a></li>
-<li><a href="https://github.com/ubvu/open-handbook/pull/129" class="uri">https://github.com/ubvu/open-handbook/pull/129</a></li>
-<li><a href="https://github.com/ubvu/open-handbook/pull/132" class="uri">https://github.com/ubvu/open-handbook/pull/132</a></li>
-<li><a href="https://github.com/ubvu/open-handbook/pull/133" class="uri">https://github.com/ubvu/open-handbook/pull/133</a></li>
-<li><a href="https://github.com/ubvu/open-handbook/pull/134" class="uri">https://github.com/ubvu/open-handbook/pull/134</a></li>
-<li><a href="https://github.com/ubvu/open-handbook/pull/135" class="uri">https://github.com/ubvu/open-handbook/pull/135</a></li>
+<li><a href="https://github.com/ubvu/open-handbook/pull/126" class="uri" target="_blank">https://github.com/ubvu/open-handbook/pull/126</a></li>
+<li><a href="https://github.com/ubvu/open-handbook/pull/110" class="uri" target="_blank">https://github.com/ubvu/open-handbook/pull/110</a></li>
+<li><a href="https://github.com/ubvu/open-handbook/pull/127" class="uri" target="_blank">https://github.com/ubvu/open-handbook/pull/127</a></li>
+<li><a href="https://github.com/ubvu/open-handbook/pull/129" class="uri" target="_blank">https://github.com/ubvu/open-handbook/pull/129</a></li>
+<li><a href="https://github.com/ubvu/open-handbook/pull/132" class="uri" target="_blank">https://github.com/ubvu/open-handbook/pull/132</a></li>
+<li><a href="https://github.com/ubvu/open-handbook/pull/133" class="uri" target="_blank">https://github.com/ubvu/open-handbook/pull/133</a></li>
+<li><a href="https://github.com/ubvu/open-handbook/pull/134" class="uri" target="_blank">https://github.com/ubvu/open-handbook/pull/134</a></li>
+<li><a href="https://github.com/ubvu/open-handbook/pull/135" class="uri" target="_blank">https://github.com/ubvu/open-handbook/pull/135</a></li>
 </ul>
 
 
@@ -537,7 +537,7 @@ Bres, Ewa Elizabeth, and Christian Bittner. 2024. <span>“<span class="nocase">
 
 
 
-<p>On June 27th, 2024, the first hackathon for the Research Support Handbook took place with all the post authors. For this hackathon, we focused on non-GitHub based contributions, to make it as easy as possible to contribute. To make getting started with contributing easier, <a href="https://ubvu.github.io/open-handbook/public/20240627hackathon.html">we created a choose your own adventure game</a>. We document some lessons and clarifications below, in addition to <a href="https://github.com/ubvu/open-handbook/issues?q=created%3A2024-06-27">the twelve reported problems and suggested changes</a>.</p>
+<p>On June 27th, 2024, the first hackathon for the Research Support Handbook took place with all the post authors. For this hackathon, we focused on non-GitHub based contributions, to make it as easy as possible to contribute. To make getting started with contributing easier, <a href="https://ubvu.github.io/open-handbook/public/20240627hackathon.html" target="_blank">we created a choose your own adventure game</a>. We document some lessons and clarifications below, in addition to <a href="https://github.com/ubvu/open-handbook/issues?q=created%3A2024-06-27" target="_blank">the twelve reported problems and suggested changes</a>.</p>
 <p>The workshop helped articulate the <strong>dynamic relation between topics and pathways</strong>. Topics are contained pages around a specific subject; pathways are a collection of topics. This means that pathways include the topics directly and that this content should be up to date at any given time. When topics are changed, pathways are dynamically updated, making sure there are no discrepancies. The only situation where this may not be the case, is when a pathway is still a work in progress and the topics are not yet properly linked.</p>
 <p>Pathways will become more efficient to create as we include more topics in the handbook. Given that pathways are primarily collections of topics, this means that there is barely any new content in there, if any at all. As we include more topics (eight at this time), pathways can focus more and more on the structuring of content, and focus less on creating the content itself.</p>
 <p>With new contributions, contributors surfaced the need to preview the changes to the handbook. We documented two ways to render the handbook for such previews: (1) creating a Pull Request automatically deploys a preview website and (2) running <code>quarto render</code> locally on the code. Option 1 requires no additional software to be installed, but requires some knowledge of GitHub. Option 2 does not require much knowledge of GitHub, but requires the Quarto software to be installed. There was also the note that deploying the handbook using GitHub pages required a change to the URL, which may cause issues when merging the changes back into the main handbook. This highlights that ensuring reliable previews of contributed content is of importance to some contributors to the handbook.</p>
