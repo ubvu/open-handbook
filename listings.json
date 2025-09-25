@@ -1,5 +1,94 @@
 [
   {
+    "listing": "/manuals.html",
+    "items": [
+      "/manuals/yoda/index.html"
+    ]
+  },
+  {
+    "listing": "/lifecycle/05-document-preserve.html",
+    "items": [
+      "/topics/data-archiving.html",
+      "/topics/data-documentation.html",
+      "/topics/dataversenl.html",
+      "/topics/fair-principles.html",
+      "/topics/metadata.html",
+      "/topics/persistent-identifier.html",
+      "/topics/software-archiving.html",
+      "/topics/selecting-data.html",
+      "/topics/yoda.html",
+      "/guides/document-and-preserve.html"
+    ]
+  },
+  {
+    "listing": "/lifecycle/06-publish-share.html",
+    "items": [
+      "/topics/data-licensing.html",
+      "/topics/data-publishing.html",
+      "/topics/data-registration.html",
+      "/topics/dataversenl.html",
+      "/topics/fair-principles.html",
+      "/topics/osf.html",
+      "/topics/persistent-identifier.html",
+      "/topics/software-licensing.html",
+      "/topics/software-publishing.html",
+      "/topics/software-registration.html",
+      "/topics/yoda.html",
+      "/guides/publish-and-share.html",
+      "/guides/publishing-fair-software.html",
+      "/guides/use-osf.html"
+    ]
+  },
+  {
+    "listing": "/lifecycle/01-discover-initiate.html",
+    "items": [
+      "/topics/finding-existing-data.html",
+      "/guides/discover-and-initiate.html"
+    ]
+  },
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/blog/2025-07-28manuals.html",
+      "/blog/2025-07-24hackathon.html",
+      "/blog/2025-07-29itvoblog.html",
+      "/blog/2025-05-15embed-iframe.html",
+      "/blog/2024-11-28hackathon.html",
+      "/blog/2024-11-01hackathon.html",
+      "/blog/2024-10-22post-mortem.html",
+      "/blog/2024-09-30hackathon.html",
+      "/blog/2024-09-05hackathon.html",
+      "/blog/2024-06-27hackathon.html",
+      "/blog/2024-05-23welcome.html"
+    ]
+  },
+  {
+    "listing": "/manuals/yoda/index.html",
+    "items": [
+      "/manuals/yoda/yoda_portal/index.html",
+      "/manuals/yoda/yoda_portal/yoda_access.html",
+      "/manuals/yoda/yoda_portal/yoda_finding_restoring.html",
+      "/manuals/yoda/yoda_portal/yoda_group_manager.html",
+      "/manuals/yoda/yoda_portal/yoda_notifications.html",
+      "/manuals/yoda/yoda_portal/yoda_workflow_metadata.html",
+      "/manuals/yoda/yoda_portal/yoda_workflow_metadata_license.html",
+      "/manuals/yoda/yoda_portal/yoda_workflow_vault_archiving.html",
+      "/manuals/yoda/yoda_portal/yoda_workflow_vault_publish.html",
+      "/manuals/yoda/yoda_data_transfer/index.html",
+      "/manuals/yoda/yoda_data_transfer/yoda_dap.html",
+      "/manuals/yoda/yoda_data_transfer/yoda_data_linux.html",
+      "/manuals/yoda/yoda_data_transfer/yoda_data_macos.html",
+      "/manuals/yoda/yoda_data_transfer/yoda_data_windows.html",
+      "/manuals/yoda/yoda_data_transfer/yoda_using_cyberduck.html",
+      "/manuals/yoda/yoda_data_transfer/yoda_using_cyberduck_cryptometer.html",
+      "/manuals/yoda/yoda_data_transfer/yoda_using_icommands.html",
+      "/manuals/yoda/yoda_data_transfer/yoda_using_rclone.html",
+      "/manuals/yoda/yoda_data_transfer/yoda_using_webdrive.html",
+      "/manuals/yoda/yoda_data_transfer/yoda_using_windowsexplorer.html",
+      "/manuals/yoda/yoda_data_transfer/yoda_using_winscp.html"
+    ]
+  },
+  {
     "listing": "/topics.html",
     "items": [
       "/topics/ada.html",
@@ -54,114 +143,16 @@
     ]
   },
   {
-    "listing": "/lifecycle/02-plan-design.html",
+    "listing": "/lifecycle/04-process-analyse.html",
     "items": [
-      "/topics/data-classification.html",
-      "/topics/data-management-plan.html",
-      "/topics/data-management-section.html",
-      "/topics/ethical-review.html",
-      "/topics/gdpr.html",
-      "/topics/research-data-and-software-management-policy.html",
-      "/guides/comply-with-gdpr.html",
-      "/guides/plan-and-design.html"
-    ]
-  },
-  {
-    "listing": "/lifecycle/05-document-preserve.html",
-    "items": [
-      "/topics/data-archiving.html",
-      "/topics/data-documentation.html",
-      "/topics/dataversenl.html",
-      "/topics/fair-principles.html",
-      "/topics/metadata.html",
-      "/topics/persistent-identifier.html",
-      "/topics/software-archiving.html",
-      "/topics/selecting-data.html",
-      "/topics/yoda.html",
-      "/guides/document-and-preserve.html"
-    ]
-  },
-  {
-    "listing": "/lifecycle/06-publish-share.html",
-    "items": [
-      "/topics/data-licensing.html",
-      "/topics/data-publishing.html",
-      "/topics/data-registration.html",
-      "/topics/dataversenl.html",
-      "/topics/fair-principles.html",
-      "/topics/osf.html",
-      "/topics/persistent-identifier.html",
-      "/topics/software-licensing.html",
-      "/topics/software-publishing.html",
-      "/topics/software-registration.html",
-      "/topics/yoda.html",
-      "/guides/publish-and-share.html",
-      "/guides/publishing-fair-software.html",
-      "/guides/use-osf.html"
-    ]
-  },
-  {
-    "listing": "/guides.html",
-    "items": [
-      "/guides/publish-and-share.html",
-      "/guides/comply-with-gdpr.html",
-      "/guides/discover-and-initiate.html",
-      "/guides/collect-and-store.html",
+      "/topics/ada.html",
+      "/topics/researchcloud.html",
+      "/topics/safe-data-transfer.html",
+      "/topics/scicloud.html",
+      "/topics/snellius.html",
+      "/topics/compute-hub.html",
       "/guides/process-and-analyse.html",
-      "/guides/document-and-preserve.html",
-      "/guides/publishing-fair-software.html",
-      "/guides/plan-and-design.html",
-      "/guides/use-osf.html",
-      "/guides/policies-supporting-vision-open-science.html",
-      "/guides/data-lifecycle.html"
-    ]
-  },
-  {
-    "listing": "/manuals.html",
-    "items": [
-      "/manuals/yoda/index.html"
-    ]
-  },
-  {
-    "listing": "/manuals/yoda/index.html",
-    "items": [
-      "/manuals/yoda/yoda_portal/index.html",
-      "/manuals/yoda/yoda_portal/yoda_access.html",
-      "/manuals/yoda/yoda_portal/yoda_finding_restoring.html",
-      "/manuals/yoda/yoda_portal/yoda_group_manager.html",
-      "/manuals/yoda/yoda_portal/yoda_notifications.html",
-      "/manuals/yoda/yoda_portal/yoda_workflow_metadata.html",
-      "/manuals/yoda/yoda_portal/yoda_workflow_metadata_license.html",
-      "/manuals/yoda/yoda_portal/yoda_workflow_vault_archiving.html",
-      "/manuals/yoda/yoda_portal/yoda_workflow_vault_publish.html",
-      "/manuals/yoda/yoda_data_transfer/index.html",
-      "/manuals/yoda/yoda_data_transfer/yoda_dap.html",
-      "/manuals/yoda/yoda_data_transfer/yoda_data_linux.html",
-      "/manuals/yoda/yoda_data_transfer/yoda_data_macos.html",
-      "/manuals/yoda/yoda_data_transfer/yoda_data_windows.html",
-      "/manuals/yoda/yoda_data_transfer/yoda_using_cyberduck.html",
-      "/manuals/yoda/yoda_data_transfer/yoda_using_cyberduck_cryptometer.html",
-      "/manuals/yoda/yoda_data_transfer/yoda_using_icommands.html",
-      "/manuals/yoda/yoda_data_transfer/yoda_using_rclone.html",
-      "/manuals/yoda/yoda_data_transfer/yoda_using_webdrive.html",
-      "/manuals/yoda/yoda_data_transfer/yoda_using_windowsexplorer.html",
-      "/manuals/yoda/yoda_data_transfer/yoda_using_winscp.html"
-    ]
-  },
-  {
-    "listing": "/blog.html",
-    "items": [
-      "/blog/2025-07-28manuals.html",
-      "/blog/2025-07-29itvoblog.html",
-      "/blog/2025-07-24hackathon.html",
-      "/blog/2025-05-15embed-iframe.html",
-      "/blog/2024-11-28hackathon.html",
-      "/blog/2024-11-01hackathon.html",
-      "/blog/2024-10-22post-mortem.html",
-      "/blog/2024-09-30hackathon.html",
-      "/blog/2024-09-05hackathon.html",
-      "/blog/2024-06-27hackathon.html",
-      "/blog/2024-05-23welcome.html"
+      "/guides/use-osf.html"
     ]
   },
   {
@@ -181,23 +172,32 @@
     ]
   },
   {
-    "listing": "/lifecycle/04-process-analyse.html",
+    "listing": "/lifecycle/02-plan-design.html",
     "items": [
-      "/topics/ada.html",
-      "/topics/researchcloud.html",
-      "/topics/safe-data-transfer.html",
-      "/topics/scicloud.html",
-      "/topics/snellius.html",
-      "/topics/compute-hub.html",
-      "/guides/process-and-analyse.html",
-      "/guides/use-osf.html"
+      "/topics/data-classification.html",
+      "/topics/data-management-plan.html",
+      "/topics/data-management-section.html",
+      "/topics/ethical-review.html",
+      "/topics/gdpr.html",
+      "/topics/research-data-and-software-management-policy.html",
+      "/guides/comply-with-gdpr.html",
+      "/guides/plan-and-design.html"
     ]
   },
   {
-    "listing": "/lifecycle/01-discover-initiate.html",
+    "listing": "/guides.html",
     "items": [
-      "/topics/finding-existing-data.html",
-      "/guides/discover-and-initiate.html"
+      "/guides/publish-and-share.html",
+      "/guides/comply-with-gdpr.html",
+      "/guides/discover-and-initiate.html",
+      "/guides/collect-and-store.html",
+      "/guides/process-and-analyse.html",
+      "/guides/document-and-preserve.html",
+      "/guides/publishing-fair-software.html",
+      "/guides/plan-and-design.html",
+      "/guides/use-osf.html",
+      "/guides/policies-supporting-vision-open-science.html",
+      "/guides/data-lifecycle.html"
     ]
   }
 ]
