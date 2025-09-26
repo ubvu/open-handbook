@@ -13,14 +13,12 @@ All VU students, employees and researchers are eligible to make use of a Qualtri
 
 Qualtrics should not be used for non-scientific purposes such as the creation of registration or attendance lists and course evaluation surveys for example; instead users should go to other available tools such as [MS Forms](https://www.microsoft.com/en-us/microsoft-365/online-surveys-polls-quizzes).
 
-
 VU Amsterdam holds an academic licence which includes non-standard, advanced features and functions, including but not limited to:
 
 * **FILE UPLOAD** – a non-standard question type that allows respondents to upload a file along with their survey response
 * **SIGNATURE QUESTION** – a non-standard question type that presents survey participants with an entry box where they can draw their signature.
 * **API INTEGRATION** – an advanced licence feature that can be used to automate repetitive processes inside of Qualtrics or to pass information in and out of Qualtrics.
 * **OFFLINE SURVEY APP** – an advanced licence feature that comprises a downloadable application available for iOS and Android that allows you to administer surveys on your mobile device or tablet without an internet connection.
-
 
 ## How to request access
 
@@ -30,7 +28,6 @@ VU Amsterdam Qualtrics Central Brand (hereafter VU's Central Brand) at [vuamster
 
 VU's Central Brand makes use of Single-Sign On (SSO). This means that users can log in to Qualtrics using VU's internal login system. Multi-Factor Authentication (MFA) is mandatory to all Qualtrics users utilising the vuamsterdam brand (i.e. employees and researchers – students will be informed of upcoming project for MFA implementation). MFA acts as an additional layer of security to prevent unauthorised users from accessing accounts and resources, even when the password has been stolen. Qualtrics will use multi-factor authentication to validate user identity and provide quick and convenient access to authorised users.
 
-
 **To create a user account and access the Qualtrics environment** at the Central Brand, please proceed as follows:
 
 1. Go to: [https://vuamsterdam.eu.qualtrics.com](https://vuamsterdam.eu.qualtrics.com)
@@ -39,27 +36,19 @@ VU's Central Brand makes use of Single-Sign On (SSO). This means that users can 
 
     ![VU's central brand login page](../public/qualtrics-vu-brand-login-page.png)
 
-
 4. Choose “No, I don’t have a preexisting account here” when it is your first time enrolling the central brand
 
     ![Qualtrics preexisting account](../public/qualtrics/qualtrics-preexisting-account.png)
-
 
 5. Click [Sign In]
 
     ![Qualtrics account created successfully](../public/qualtrics/qualtrics-account-created-successfully.png)
 
-
 6. Terms of Service or General Terms and Conditions for Qualtrics Services are presented for review and acceptance. 
 
     ![Qualtrics terms conditions](../public/qualtrics/qualtrics-terms-conditions.png)
 
-
-
-
 > It is recommended to save [VU's Central Brand](vuamsterdam.eu.qualtrics.com) as a Favourite or Bookmark link for future reference.
-
-
 
 ### Note to Existing Users
 
@@ -89,7 +78,7 @@ The following resources are available for you to get started with Qualtrics:
 
 Qualtrics offers access to an extensive library of knowledge base articles, including detailed instructions on how to use and configure (advance) features.
 
-Qualtrics Knowledge Base library can be accessed directly at [qualtrics.com/support](https://www.qualtrics.com/support/)
+Qualtrics Knowledge Base library can be accessed directly at [qualtrics.com/support](https://www.qualtrics.com/support/).
 
 ### Qualtrics Community
 
@@ -97,11 +86,10 @@ Ask questions to the [Qualtrics community](https://www.qualtrics.com/community/)
 
 When logging in choose "Sign in with SSO", when asked "Enter your company's Organization ID" fill in `vuamsterdam`.
 
-
 ## Contact
 
 The following support channels are available:
 
 * For general queries on how to use the tool, including the configuration of advanced features, please refer to the online documentation at the [Qualtrics website](https://www.qualtrics.com/support/).
-* For questions concerning survey design and faculty policies with regards to the usage of Qualtrics for your specific research area, please contact your faculty Data Steward/Privacy Champion (see Qualtrics Faculty Contact – Division Managers). Students should contact their course coordinator.    
-* If you cannot login or encounter an error, for example when using collaboration or email distribution functionalities, please contact the [RDM Support Desk](mailto:rdm@vu.nl) (an FAQ is not available at the moment, but we are working on it).
+* For questions concerning survey design and faculty policies with regards to the usage of Qualtrics for your specific research area, please contact your faculty Data Steward/Privacy Champion (see Qualtrics Faculty Contact – Division Managers). Students should contact their course coordinator.
+* If you cannot login or encounter an error, for example when using collaboration or email distribution functionalities, please refer to the [FAQ Page](/manuals/qualtrics/qualtrics-faq.qmd). If however, you do require further assistance, please contact the [RDM Support Desk](mailto:rdm@vu.nl).
