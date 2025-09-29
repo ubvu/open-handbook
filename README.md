@@ -43,6 +43,7 @@ Contributions can be anything, from reporting typo's to opening up an issue, or 
 
 
 
+
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
@@ -83,21 +84,27 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 <a href="https://github.com/ubvu/open-handbook/commits?author=Karvovskaya">Karvovskaya</a>
 </td>
 <td align="center">
+<a href="https://github.com/olindensen77">
+<img src="https://avatars.githubusercontent.com/u/188169248?v=4" width="100px;" alt=""/>
+</a><br>
+<a href="https://github.com/ubvu/open-handbook/commits?author=olindensen77">olindensen77</a>
+</td>
+<td align="center">
 <a href="https://github.com/meronvermaas">
 <img src="https://avatars.githubusercontent.com/u/37903632?v=4" width="100px;" alt=""/>
 </a><br>
 <a href="https://github.com/ubvu/open-handbook/commits?author=meronvermaas">meronvermaas</a>
 </td>
+</tr>
+
+
+<tr>
 <td align="center">
 <a href="https://github.com/jensdebruijn">
 <img src="https://avatars.githubusercontent.com/u/2176353?v=4" width="100px;" alt=""/>
 </a><br>
 <a href="https://github.com/ubvu/open-handbook/commits?author=jensdebruijn">jensdebruijn</a>
 </td>
-</tr>
-
-
-<tr>
 <td align="center">
 <a href="https://github.com/jhrudey">
 <img src="https://avatars.githubusercontent.com/u/35424147?v=4" width="100px;" alt=""/>
@@ -134,16 +141,16 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 </a><br>
 <a href="https://github.com/ubvu/open-handbook/commits?author=Sergi095">Sergi095</a>
 </td>
+</tr>
+
+
+<tr>
 <td align="center">
 <a href="https://github.com/TMHofstra">
 <img src="https://avatars.githubusercontent.com/u/171931947?v=4" width="100px;" alt=""/>
 </a><br>
 <a href="https://github.com/ubvu/open-handbook/commits?author=TMHofstra">TMHofstra</a>
 </td>
-</tr>
-
-
-<tr>
 <td align="center">
 <a href="https://github.com/imartorelli">
 <img src="https://avatars.githubusercontent.com/u/54712145?v=4" width="100px;" alt=""/>
@@ -169,10 +176,10 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 <a href="https://github.com/ubvu/open-handbook/commits?author=MarkBruyneel">MarkBruyneel</a>
 </td>
 <td align="center">
-<a href="https://github.com/olindensen77">
-<img src="https://avatars.githubusercontent.com/u/188169248?v=4" width="100px;" alt=""/>
+<a href="https://github.com/mtthsdzwn">
+<img src="https://avatars.githubusercontent.com/u/1580106?v=4" width="100px;" alt=""/>
 </a><br>
-<a href="https://github.com/ubvu/open-handbook/commits?author=olindensen77">olindensen77</a>
+<a href="https://github.com/ubvu/open-handbook/commits?author=mtthsdzwn">mtthsdzwn</a>
 </td>
 <td align="center">
 <a href="https://github.com/zesloth">
@@ -180,16 +187,16 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 </a><br>
 <a href="https://github.com/ubvu/open-handbook/commits?author=zesloth">zesloth</a>
 </td>
+</tr>
+
+
+<tr>
 <td align="center">
 <a href="https://github.com/vansteph">
 <img src="https://avatars.githubusercontent.com/u/102951422?u=01c1b894fd1d9c3d2a40bba6dad86a5475227693&v=4" width="100px;" alt=""/>
 </a><br>
 <a href="https://github.com/ubvu/open-handbook/commits?author=vansteph">vansteph</a>
 </td>
-</tr>
-
-
-<tr>
 <td align="center">
 <a href="https://github.com/ELNijland">
 <img src="https://avatars.githubusercontent.com/u/188165732?v=4" width="100px;" alt=""/>
@@ -226,16 +233,16 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 </a><br>
 <a href="https://github.com/ubvu/open-handbook/commits?author=D-Unger">D-Unger</a>
 </td>
+</tr>
+
+
+<tr>
 <td align="center">
 <a href="https://github.com/sarnoult">
 <img src="https://avatars.githubusercontent.com/u/31313050?v=4" width="100px;" alt=""/>
 </a><br>
 <a href="https://github.com/ubvu/open-handbook/commits?author=sarnoult">sarnoult</a>
 </td>
-</tr>
-
-
-<tr>
 <td align="center">
 <a href="https://github.com/davor-cc">
 <img src="https://avatars.githubusercontent.com/u/211969122?u=1f0d6121e73aa762cfa63b576f1197569053966d&v=4" width="100px;" alt=""/>
@@ -267,3 +274,4 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
