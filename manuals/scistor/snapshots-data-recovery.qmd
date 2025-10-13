@@ -1,0 +1,188 @@
+---
+title: SciStor Data Recovery
+categories: []
+# <!-- image: '/public/qxm_color.svg' -->
+description: 'How do I recover data from Snapshots?'
+---
+
+
+## Overview
+
+If you've lost or accidentally modified a file, SciStor Snapshots can help you restore it quickly and easily. This guide provides step-by-step instructions for restoring files on **Windows**, **macOS**, and **Linux**.
+
+**Need assistance?** If you're unable to recover the file yourself, contact the IT for Research (ITvO) team:  
+📧 [itvo.it@vu.nl](mailto:itvo.it@vu.nl)
+
+---
+
+## Windows (Difficulty: Easy)
+
+If you don't have access to a Windows machine, connect to [Azure Virtual Desktop (AVD)](https://windows.cloud.microsoft/spa-signin-oidc#/devices) and follow the instructions for mounting a share in Windows.
+
+### Steps to Restore a File
+
+1. **Locate the folder** where your deleted or modified file was stored.
+
+2. **Right-click** in the folder window and select **Properties**.
+   ![Windows Step 2](/public/manuals/scistor/win-2.png)
+
+3. In the Properties dialog, navigate to the **"Previous Versions"** tab.
+
+4. **Select the snapshot date** from which you want to retrieve the file.
+   ![Windows Step 3](/public/manuals/scistor/win-3.png)
+
+5. A new File Explorer window will open, showing the files from that point in time.
+   ![Windows Step 4](/public/manuals/scistor/win-4.png)
+
+6. **Copy or drag** the file back to your current folder.
+   ![Windows Step 5](/public/manuals/scistor/win-5.png)
+
+7. The file has been restored! You can now close the Previous Versions window.
+
+---
+
+## macOS (Difficulty: Intermediate)
+
+For macOS users, you'll need to use the command line (Terminal). If this seems too complicated, you can use [Azure Virtual Desktop (AVD)](https://windows.cloud.microsoft/spa-signin-oidc#/devices) and follow the Windows instructions instead.
+
+### Prerequisites
+
+Mount SciStor in Finder using **⌘+K**.
+
+The path depends on how you mounted SciStor:
+
+- If you mounted `smb://scistor.vu.nl/shares`, navigate to `/Volumes/shares/<share-name>`
+
+- If you mounted `smb://scistor.vu.nl/shares/<share-name>`, navigate to `/Volumes/<share-name>`
+
+
+### Steps to Restore a File
+
+1. **Open Terminal** and navigate to your mounted share:
+
+```bash
+cd /Volumes/IT-ITVO-Scistor-Demo
+```
+
+2. **Verify your deleted file** is missing:
+
+```bash
+ls
+# Output: 123.txt abc123 Archive.zip data_ro data_rw info rename shared_rw test.doc testme xyz456
+```
+
+3. **Navigate to the hidden `.snapshot` folder**:
+
+```bash
+cd .snapshot
+```
+
+> **Note:** This folder is protected and cannot be listed with `ls -la` or accessed through Finder, even with ⌘+G.
+
+4. **List available snapshots**:
+
+```bash
+ls
+# Output: auto.28851 auto.29982 auto.31962 auto.32805 auto.33083 auto.33361 auto.33638 auto.33918 auto.34198 auto.34479
+```
+
+5. **Navigate to the most recent snapshot** (the last one in the list):
+
+```bash
+cd auto.34479
+ls
+# Output shows your deleted file: file_demo.txt
+```
+
+6. **Restore the file using rsync**:
+
+```bash
+rsync -rtlHOi file_demo.txt ../../.
+# Output: >f+++++++ file_demo.txt
+```
+
+7. **Verify the restoration**:
+
+```bash
+cd ../../
+ls
+# Your file is now restored!
+```
+
+---
+
+## Linux (Difficulty: Intermediate)
+
+Linux works similarly to macOS, but the mount path depends on where you choose to mount your share. This example uses the Stepstone server (`sftp.data.vu.nl`).
+
+### Steps to Restore a File
+
+1. **Connect via SSH**:
+
+```bash
+ssh vunetId@sftp.data.vu.nl
+```
+
+2. **Navigate to your share**:
+
+```bash
+cd /research/IT-ITVO-SciStor-Demo
+```
+
+3. **Verify your file is missing**:
+
+```bash
+ls
+# Output: 123.txt abc123 Archive.zip data_ro data_rw info rename shared_rw test.doc testme xyz456
+```
+
+4. **Navigate to the `.snapshot` folder**:
+
+```bash
+cd .snapshot/
+```
+
+5. **View available snapshots** (you can use tab completion):
+
+```bash
+cd auto.
+# Tab completion shows: auto.28851/ auto.29982/ auto.31962/ auto.32805/ auto.33083/ auto.33361/ auto.33638/ auto.33918/ auto.34198/ auto.34479/
+```
+
+6. **Enter the most recent snapshot**:
+
+```bash
+cd auto.34479/
+```
+
+7. **Restore the file using rsync**:
+
+```bash
+rsync -rtlHOi file_demo.txt ../../.
+# Output: >f+++++++++ file_demo.txt
+```
+
+8. **Verify the restoration**:
+
+```bash
+cd ../../
+ls
+# Your file is now restored!
+```
+
+---
+
+## Tips & Best Practices
+
+- **Snapshots are read-only**: You cannot modify files within the `.snapshot` folder.
+- **Most recent snapshot**: The snapshot with the highest number is typically the most recent.
+- **Multiple snapshots**: You can browse different snapshots to find the version of your file you need.
+- **Entire folders**: You can restore entire directories using the same rsync method.
+
+---
+
+## Still Need Help?
+
+Contact IT for Research (ITvO) team:  
+📧 [itvo.it@vu.nl](mailto:itvo.it@vu.nl)
+
