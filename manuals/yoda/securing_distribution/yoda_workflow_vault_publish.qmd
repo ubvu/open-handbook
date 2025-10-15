@@ -3,8 +3,6 @@ title: Publishing data
 categories: []
 ---
 
-This page explains how to publish an archived dataset from the Yoda Vault.
-
 After a data package has been archived in the vault, it can optionally be submitted for publication.
 
 Publishing a data package has the following effects:
@@ -22,22 +20,22 @@ Publishing a data package has the following effects:
 
 The [VU Yoda repository page](https://commons.datacite.org/repositories/9z2c5d2)  on DataCite Commons shows statistics of datasets currently published in VU Yoda.
 
-## Submitting a dataset for publication
+## How to: Submitting a dataset for publication
 
-To submit a data package for publication, navigate to the data package in the vault and press the &ldquo;Submit for publication&rdquo; button.
+1. Navigate to the data package in the vault and press the &ldquo;Submit for publication&rdquo; button.
 
 ![Submit for publication](/public/manuals/yoda/pub-submit-publication.png)
 
-Once you’ve submitted a data package for publication, the data manager of your Yoda community will be notified. The Data Manager will check that the data package meets various criteria for publication.
+2. Once you’ve submitted a data package for publication, the data manager of your Yoda community will be notified. The Data Manager will check that the data package meets various criteria for publication.
 
-If the data manager encounters any issues, you will be contacted. Otherwise you'll receive a [notification](./yoda_notifications.qmd) that your data package has been published. This notification contains the DOI that has been assigned to your data package.
+3. If the data manager encounters any issues, you will be contacted. Otherwise you'll receive a [notification](./yoda_notifications.qmd) that your data package has been published. This notification contains the DOI that has been assigned to your data package.
 
 Note: If needed a data manager can update metadata of a dataset _after_ it has been published.
 
 ## Long term accessibility
 Yoda ensures there is always a datamanager assigned to a Vault who can access Restricted and Closed datasets even if the creators no longer have an account.
 
-## Searching for unpublished datassets
+## Searching for unpublished datasets
 
 You can search for datasets that are archived but not (yet) published using the &ldquo;Search by Status&rdquo; function in the Yoda Portal.
 The list of data packages will include only the data packages of project groups of which you are a member.
