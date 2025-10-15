@@ -3,8 +3,6 @@ title: Archiving data
 categories: []
 ---
 
-This page provides guidance on using the archiving functionality of Yoda.
-
 If you choose to archive a part of your data, Yoda will make a copy of the data to the archive (also known as &ldquo;Vault&rdquo;) of your project space,
 where it will be retained unchanged during its retention period (default 10 years).
 
@@ -36,16 +34,16 @@ Choose a preferred fomat and the system will show you a list of filetypes in you
 
 ![Check for DANS compliance](/public/manuals/yoda/arch-compliance-dans.png)
 
-## Submitting a data package to the Vault
+## How to: Submitting a data package to the Vault
 
 In order to submit a data package to the vault, you need to be either a group manager or a regular member of the
 group that contains the data.
 
-First, navigate to the folder you want to archive in the Yoda portal. Ensure that you are **in** the folder which
+1. First, navigate to the folder you want to archive in the Yoda portal. Ensure that you are **in** the folder which
 you want to submit to the vault. Check that all mandatory metadata has been entered in
 [the metadata form of the folder](./yoda_workflow_metadata.qmd).
 
-Now press the &ldquo;Actions (Submit)&rdquo; button. 
+2. Now press the &ldquo;Actions (Submit)&rdquo; button. 
 
 ![Submit](/public/manuals/yoda/arch-submit.png)
 
