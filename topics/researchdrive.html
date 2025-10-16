@@ -204,14 +204,14 @@ ul.task-list li input[type="checkbox"] {
 <section id="what-is-it" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-it">What is it?</h2>
 <p><a href="https://www.surf.nl/en/services/research-drive" target="_blank">SURF Research Drive</a> is an online storage and collaboration platform for research data. With Research Drive you can easily store and share files with other researchers, inside and outside VU Amsterdam. You can access your data via a web interface or tools, from anywhere in the world.</p>
-<p>Research Drive is based on the Open Source <a href="https://owncloud.com/" target="_blank">ownCloud</a> software and is hosted by SURF in their Amsterdam datacentre.</p>
+<p>Research Drive is based on the Open Source <a href="https://nextcloud.com/" target="_blank">Nextcloud</a> software and is hosted by SURF in their Amsterdam datacentre.</p>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/6QLzSHbq0Ks" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 </section>
 <section id="what-can-it-be-used-for" class="level2">
 <h2 class="anchored" data-anchor-id="what-can-it-be-used-for">What can it be used for?</h2>
 <section id="data-storage" class="level3">
 <h3 class="anchored" data-anchor-id="data-storage">Data storage</h3>
-<p>Research Drive is a Cloud storage solution that can be used for small (a few GBs) to larger (a few TBs) datasets. Because it is a cloud storage platform you will need to download data to your laptop to work with it. Research Drive makes this easy by using the ownCloud client, which allows you to automatically sync the folders you want to work with. Data is backed up daily.</p>
+<p>Research Drive is a Cloud storage solution that can be used for small (a few GBs) to larger (a few TBs) datasets. Because it is a cloud storage platform you will need to download data to your laptop to work with it. Research Drive makes this easy by using the Nextcloud client, which allows you to automatically sync the folders you want to work with. Data is backed up daily.</p>
 </section>
 <section id="data-sharing" class="level3">
 <h3 class="anchored" data-anchor-id="data-sharing">Data sharing</h3>
@@ -228,11 +228,11 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="collaborative-tools" class="level3">
 <h3 class="anchored" data-anchor-id="collaborative-tools">Collaborative tools</h3>
-<p>Within Research Drive, various apps and integrations are available to simplify the use and handling of research data, such as a tool to edit documents directly in the web interface. You can find a current list of app integrations on the <a href="https://servicedesk.surf.nl/wiki/pages/viewpage.action?pageId=102828080" target="_blank">SURF User Knowledge Base</a>.</p>
+<p>Within Research Drive, various apps and integrations are available to simplify the use and handling of research data, such as a tool to edit documents directly in the web interface. You can find a current list of app integrations on the <a href="https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/117178984/RD+Apps+and+integrations" target="_blank">SURF User Knowledge Base</a>.</p>
 </section>
 <section id="surfdrive-replacement" class="level3">
 <h3 class="anchored" data-anchor-id="surfdrive-replacement">SURFdrive replacement</h3>
-<p>Since both are based on ownCloud, Research Drive is very similar to SURFdrive, the main difference is that SURFdrive is personal storage while Research Drive is group based.</p>
+<p>Since both are based on Nextcloud, Research Drive is very similar to SURFdrive, the main difference is that SURFdrive is personal storage while Research Drive is group based.</p>
 <p>Researchers looking for a new home for research data currently on SURFdrive are encouraged to migrate to Research Drive. Manuals for migrating data to Research Drive are available in <a href="../public/Manual-migrating-data-SURFdrive-to-ResearchDrive_EN.pdf">English</a> and <a href="../public/Handleiding-Migreren-data-SURFdrive-naar-ResearchDrive_NL.pdf">Dutch</a>. Please contact the <a href="mailto:rdm@vu.nl">Research Support Desk</a> if you have any questions about migrating to Research Drive.</p>
 </section>
 </section>
@@ -248,12 +248,12 @@ ul.task-list li input[type="checkbox"] {
 <section id="getting-started" class="level2">
 <h2 class="anchored" data-anchor-id="getting-started">Getting started</h2>
 <ol type="1">
-<li><p>Log in to the Research Drive web application at <a href="https://vu.data.surfsara.nl" target="_blank">vu.data.surfsara.nl</a>. You are only able to log in after you have been invited to one or more project folders. The login process requires a Multi-Factor Authentication (MFA) account, which students do not have by default. If you do not yet have an MFA account, you can, as a VU student, researcher or employee, request an account at the IT Servicedesk in the main building with a legitimate ID.</p></li>
-<li><p>Install the ownCloud Client software, you can find installation instructions on the <a href="https://servicedesk.surf.nl/wiki/display/WIKI/ownCloud+desktop+client" target="_blank">SURF User Knowledge Base</a>. The Server Address is <code>https://vu.data.surfsara.nl</code>.</p></li>
+<li><p>Log in to the Research Drive web application at <a href="https://vu.data.surf.nl/" target="_blank">vu.data.surf.nl</a>. You are only able to log in after you have been invited to one or more project folders. The login process requires a Multi-Factor Authentication (MFA) account, which students do not have by default. If you do not yet have an MFA account, you can, as a VU student, researcher or employee, request an account at the IT Servicedesk in the main building with a legitimate ID.</p></li>
+<li><p>Install the Nextcloud Client software, you can find installation instructions on the <a href="https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/117178931/RD+Getting+the+Nextcloud+desktop+app" target="_blank">SURF User Knowledge Base</a>. The Server Address is <code>https://vu.data.surf.nl/</code>.</p></li>
 </ol>
-<p>For transferring large amounts of data Rclone is good option. The <a href="https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/102827686/Access+Research+Drive+via+Rclone" target="_blank">SURF User Knowledge Base explains how</a>.</p>
+<p>For transferring large amounts of data Rclone is good option. The <a href="https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/117179081/RD+How+to+use+Rclone+with+Research+Drive" target="_blank">SURF User Knowledge Base explains how</a>.</p>
 <p>Rclone can also be used to <a href="https://rclone.org/commands/rclone_mount/" target="_blank">mount</a> (make accessible via a drive letter in Windows) a Research Drive folder. This means you can directly access the data from tools such as R, without downloading the entire dataset first. This method has some limitations, but should work fine with smaller datasets (a few GB).</p>
-<p>The SURF User Knowledge Base contains more <a href="https://servicedesk.surf.nl/wiki/display/WIKI/Tutorials" target="_blank">Tutorials</a> on working with Research Drive.</p>
+<p>The SURF User Knowledge Base contains more <a href="https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/117178986/RD+User+tutorials" target="_blank">Tutorials</a> on working with Research Drive.</p>
 </section>
 <section id="contact" class="level2">
 <h2 class="anchored" data-anchor-id="contact">Contact</h2>
