@@ -21,6 +21,17 @@ website:
           contents: manuals/yoda/yoda_portal/*.qmd # Note the sorting is by filename
         - section: Data Transfer
           contents: manuals/yoda/yoda_data_transfer/*.qmd
+    - id: sb-ada
+      style: floating
+      search: true
+      contents:
+        - manuals/ada/index.qmd 
+        # - auto: manuals/ada/**/*.qmd # works, but is in the wrong order
+        - section: Getting Started
+          contents: manuals/ada/getting-started/**/*.qmd
+        - section: Code Examples
+          contents: manuals/ada/code-examples/**/*.qmd
+
 
   navbar:
     background: "#0080c9"

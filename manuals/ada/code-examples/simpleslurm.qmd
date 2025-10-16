@@ -1,0 +1,28 @@
+---
+title: Slurm job
+date: last-modified
+---
+
+A simple Slurm job example.
+
+```sh
+#!/bin/bash -l
+#SBATCH -J MyTestJob
+#SBATCH -N 1
+#SBATCH -p defq
+#SBATCH --output=MyTestJobResult.out
+#SBATCH --error=MyTestJobResult.err
+
+echo "== Starting run at $(date)"
+echo "== Job ID: ${SLURM_JOBID}"
+echo "== Node list: ${SLURM_NODELIST}"
+echo "== Submit dir: ${SLURM_SUBMIT_DIR}"
+echo "== Scratch dir: ${TMPDIR}"
+
+# Move to scratch space
+cd "$TMPDIR"
+
+# Run your application (example: print hostname)
+echo "== Running on: $(hostname)"
+echo "== Job completed at $(date)"
+```
