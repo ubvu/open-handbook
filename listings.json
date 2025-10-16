@@ -2,6 +2,7 @@
   {
     "listing": "/manuals.html",
     "items": [
+      "/manuals/ada/index.html",
       "/manuals/qualtrics/qualtrics-faq.html",
       "/manuals/yoda/index.html"
     ]
@@ -64,32 +65,6 @@
     ]
   },
   {
-    "listing": "/manuals/yoda/index.html",
-    "items": [
-      "/manuals/yoda/yoda_portal/index.html",
-      "/manuals/yoda/yoda_portal/yoda_access.html",
-      "/manuals/yoda/yoda_portal/yoda_finding_restoring.html",
-      "/manuals/yoda/yoda_portal/yoda_group_manager.html",
-      "/manuals/yoda/yoda_portal/yoda_notifications.html",
-      "/manuals/yoda/yoda_portal/yoda_workflow_metadata.html",
-      "/manuals/yoda/yoda_portal/yoda_workflow_metadata_license.html",
-      "/manuals/yoda/yoda_portal/yoda_workflow_vault_archiving.html",
-      "/manuals/yoda/yoda_portal/yoda_workflow_vault_publish.html",
-      "/manuals/yoda/yoda_data_transfer/index.html",
-      "/manuals/yoda/yoda_data_transfer/yoda_dap.html",
-      "/manuals/yoda/yoda_data_transfer/yoda_data_linux.html",
-      "/manuals/yoda/yoda_data_transfer/yoda_data_macos.html",
-      "/manuals/yoda/yoda_data_transfer/yoda_data_windows.html",
-      "/manuals/yoda/yoda_data_transfer/yoda_using_cyberduck.html",
-      "/manuals/yoda/yoda_data_transfer/yoda_using_cyberduck_cryptometer.html",
-      "/manuals/yoda/yoda_data_transfer/yoda_using_icommands.html",
-      "/manuals/yoda/yoda_data_transfer/yoda_using_rclone.html",
-      "/manuals/yoda/yoda_data_transfer/yoda_using_webdrive.html",
-      "/manuals/yoda/yoda_data_transfer/yoda_using_windowsexplorer.html",
-      "/manuals/yoda/yoda_data_transfer/yoda_using_winscp.html"
-    ]
-  },
-  {
     "listing": "/topics.html",
     "items": [
       "/topics/ada.html",
@@ -141,6 +116,47 @@
       "/topics/trainings.html",
       "/topics/compute-hub.html",
       "/topics/yoda.html"
+    ]
+  },
+  {
+    "listing": "/manuals/yoda/index.html",
+    "items": [
+      "/manuals/yoda/yoda_portal/index.html",
+      "/manuals/yoda/yoda_portal/yoda_access.html",
+      "/manuals/yoda/yoda_portal/yoda_finding_restoring.html",
+      "/manuals/yoda/yoda_portal/yoda_group_manager.html",
+      "/manuals/yoda/yoda_portal/yoda_notifications.html",
+      "/manuals/yoda/yoda_portal/yoda_workflow_metadata.html",
+      "/manuals/yoda/yoda_portal/yoda_workflow_metadata_license.html",
+      "/manuals/yoda/yoda_portal/yoda_workflow_vault_archiving.html",
+      "/manuals/yoda/yoda_portal/yoda_workflow_vault_publish.html",
+      "/manuals/yoda/yoda_data_transfer/index.html",
+      "/manuals/yoda/yoda_data_transfer/yoda_dap.html",
+      "/manuals/yoda/yoda_data_transfer/yoda_data_linux.html",
+      "/manuals/yoda/yoda_data_transfer/yoda_data_macos.html",
+      "/manuals/yoda/yoda_data_transfer/yoda_data_windows.html",
+      "/manuals/yoda/yoda_data_transfer/yoda_using_cyberduck.html",
+      "/manuals/yoda/yoda_data_transfer/yoda_using_cyberduck_cryptometer.html",
+      "/manuals/yoda/yoda_data_transfer/yoda_using_icommands.html",
+      "/manuals/yoda/yoda_data_transfer/yoda_using_rclone.html",
+      "/manuals/yoda/yoda_data_transfer/yoda_using_webdrive.html",
+      "/manuals/yoda/yoda_data_transfer/yoda_using_windowsexplorer.html",
+      "/manuals/yoda/yoda_data_transfer/yoda_using_winscp.html"
+    ]
+  },
+  {
+    "listing": "/manuals/ada/index.html",
+    "items": [
+      "/manuals/ada/getting-started/hardware.html",
+      "/manuals/ada/getting-started/hpc-101.html",
+      "/manuals/ada/getting-started/login.html",
+      "/manuals/ada/getting-started/slurm.html",
+      "/manuals/ada/getting-started/software.html",
+      "/manuals/ada/getting-started/yoda.html",
+      "/manuals/ada/code-examples/matlab.html",
+      "/manuals/ada/code-examples/python/python-multithreading.html",
+      "/manuals/ada/code-examples/python/torch.html",
+      "/manuals/ada/code-examples/simpleslurm.html"
     ]
   },
   {
