@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Using icommands – Research Support Handbook</title>
+<title>Using iCommands – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -156,7 +191,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../manuals/yoda/yoda_data_transfer/index.html">Data Transfer</a></li><li class="breadcrumb-item"><a href="../../../manuals/yoda/yoda_data_transfer/yoda_using_icommands.html">Using icommands</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../manuals/yoda/yoda_data_transfer/index.html">Data Transfer</a></li><li class="breadcrumb-item"><a href="../../../manuals/yoda/yoda_data_transfer/yoda_using_icommands.html">Using iCommands</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -293,7 +328,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../manuals/yoda/yoda_data_transfer/yoda_using_icommands.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Using icommands</span></a>
+ <span class="menu-text">Using iCommands</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -337,7 +372,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#installing-icommands-on-centos" id="toc-installing-icommands-on-centos" class="nav-link" data-scroll-target="#installing-icommands-on-centos">Installing iCommands on CentOS</a></li>
   <li><a href="#installing-icommands-on-ubuntu" id="toc-installing-icommands-on-ubuntu" class="nav-link" data-scroll-target="#installing-icommands-on-ubuntu">Installing iCommands on Ubuntu</a></li>
   </ul></li>
-  <li><a href="#configuration" id="toc-configuration" class="nav-link" data-scroll-target="#configuration">Configuration</a></li>
+  <li><a href="#environment-file" id="toc-environment-file" class="nav-link" data-scroll-target="#environment-file">Environment file</a></li>
   <li><a href="#getting-started-with-icommands" id="toc-getting-started-with-icommands" class="nav-link" data-scroll-target="#getting-started-with-icommands">Getting started with iCommands</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/yoda/yoda_data_transfer/yoda_using_icommands.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -345,9 +380,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../manuals/yoda/yoda_data_transfer/index.html">Data Transfer</a></li><li class="breadcrumb-item"><a href="../../../manuals/yoda/yoda_data_transfer/yoda_using_icommands.html">Using icommands</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../manuals/yoda/yoda_data_transfer/index.html">Data Transfer</a></li><li class="breadcrumb-item"><a href="../../../manuals/yoda/yoda_data_transfer/yoda_using_icommands.html">Using iCommands</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Using icommands</h1>
+<h1 class="title">Using iCommands</h1>
 </div>
 
 
@@ -364,54 +399,90 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This page explains how to install the iRODS icommands on a Linux OS (native and using WSL2 on Windows).</p>
-<p>Since Yoda is based on <a href="https://irods.org" target="_blank">iRODS technology</a>, it is possible to transfer data to and from Yoda using the iRODS communication protocol. This protocol can be used to transfer large amounts of data in an efficient way.</p>
-<p>You will need to install client software that supports the iRODS protocol on your PC. This page explains how to install and configure the iRODS iCommands. These <a href="https://en.wikipedia.org/wiki/Command-line_interface" target="_blank">command line tools</a> are the standard implementation of an iRODS protocol client.</p>
+<p>This page explains how to install the iRODS iCommands on a Linux OS (native and using WSL2 on Windows).</p>
+<p>Since Yoda is based on <a href="https://irods.org" target="_blank">iRODS technology</a>, it is possible to transfer data to and from Yoda using the iRODS communication protocol. This protocol can be used to transfer large amounts of data in an efficient way. The iCommands command-line tools are the official standard implementation of an iRODS protocol client.</p>
+<p>The iCommands are installed on the <a href="../../../topics/ada.html">ADA</a> and <a href="../../../topics/snellius.html">Snellius</a> HPC clusters and can be used to transfer data to and from Yoda. Make sure to create the <a href="#environment-file">irods environment file</a> first.</p>
 <section id="installing-irods-icommands" class="level2">
 <h2 class="anchored" data-anchor-id="installing-irods-icommands">Installing iRODS iCommands</h2>
 <p>Native iRODS iCommands packages are available for CentOS and Ubuntu.</p>
-<p>Windows 10/11 users can run the iCommands in <a href="https://docs.microsoft.com/en-us/windows/wsl/about" target="_blank">the Windows Subsystem for Linux</a>, we recommend WSL 2. There is no officially supported icommands installation for Mac OSX. You could try https://learning.cyverse.org/ds/icommands/#icommands-installation-for-mac-os-x or install the icommands inside a Linux VM.</p>
+<p>Windows 10/11 users can run the iCommands in <a href="https://docs.microsoft.com/en-us/windows/wsl/about" target="_blank">the Windows Subsystem for Linux</a>. There is no officially supported iCommands installation for Mac OSX, you could install the iCommands inside a Linux VM.</p>
 <section id="installing-icommands-on-centos" class="level3">
 <h3 class="anchored" data-anchor-id="installing-icommands-on-centos">Installing iCommands on CentOS</h3>
-<p>Only the newest version 4.3.0 is supported on CentOS 8, but this should not be a problem:</p>
-<pre><code>sudo yum -y install wget epel-release yum-plugin-versionlock
-sudo rpm --import https://packages.irods.org/irods-signing-key.asc
-wget -qO - https://packages.irods.org/renci-irods.yum.repo | sudo tee /etc/yum.repos.d/renci-irods.yum.repo
-sudo yum -y install irods-runtime-4.3.0 irods-icommands-4.3.0
-sudo yum versionlock irods-runtime irods-icommands</code></pre>
+<p>The following should work to install the iCommands on CentOS 8.</p>
+<p>First add the package source:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> yum <span class="at">-y</span> install wget epel-release yum-plugin-versionlock</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> rpm <span class="at">--import</span> https://packages.irods.org/irods-signing-key.asc</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> <span class="at">-qO</span> <span class="at">-</span> https://packages.irods.org/renci-irods.yum.repo <span class="kw">|</span> <span class="fu">sudo</span> tee /etc/yum.repos.d/renci-irods.yum.repo</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Note that the latest irods version is 5, this client is not compatible with the Yoda irods version.You can list the available versions with:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> yum <span class="at">--showduplicates</span> list irods-icommands</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Install the latest available 4.x.x version:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> yum <span class="at">-y</span> install irods-runtime-4.3.0 irods-icommands-4.3.0</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> yum versionlock irods-runtime irods-icommands</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="upgrading-from-an-earlier-version" class="level4">
+<h4 class="anchored" data-anchor-id="upgrading-from-an-earlier-version">Upgrading from an earlier version</h4>
+<p>If you have put packages irods-runtime and irods-icommands on hold, you should first release the hold. Otherwise, the instruction is the same as above.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Show applied locks, if any</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">yum</span> versionlock list</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="ex">yum</span> versionlock delete irods-runtime irods-icommands</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
 </section>
 <section id="installing-icommands-on-ubuntu" class="level3">
 <h3 class="anchored" data-anchor-id="installing-icommands-on-ubuntu">Installing iCommands on Ubuntu</h3>
-<p>The following should work to install the icommands 4.3.0 on Ubuntu 22 or 24.</p>
-<pre><code>wget -qO - https://packages.irods.org/irods-signing-key.asc | sudo apt-key add -
-echo "deb [arch=amd64] https://packages.irods.org/apt/ $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/renci-irods.list
-sudo apt-get update
-sudo apt install irods-runtime irods-icommands</code></pre>
+<p>The following should work to install the iCommands on Ubuntu 22 or 24.</p>
+<p>First add the irods package source.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> <span class="at">-qO</span> <span class="at">-</span> https://packages.irods.org/irods-signing-key.asc <span class="kw">|</span> <span class="fu">sudo</span> apt-key add <span class="at">-</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"deb [arch=amd64] https://packages.irods.org/apt/ </span><span class="va">$(</span><span class="ex">lsb_release</span> <span class="at">-sc</span><span class="va">)</span><span class="st"> main"</span> <span class="kw">|</span> <span class="fu">sudo</span> tee /etc/apt/sources.list.d/renci-irods.list</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt update</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Note that the latest irods version is 5, this client is not compatible with the Yoda irods version. You can check which versions are available with:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt show irods-icommands <span class="at">-a</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Take the latest 4.x version, at the time of writing:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt <span class="at">-y</span> install irods-runtime=4.3.4-0~noble irods-icommands=4.3.4-0~noble</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Make sure to hold the package to prevent inadvertently updating to version 5:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt-mark hold irods-runtime irods-icommands</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="upgrading-from-an-earlier-version-1" class="level4">
+<h4 class="anchored" data-anchor-id="upgrading-from-an-earlier-version-1">Upgrading from an earlier version</h4>
+<p>If you have put packages irods-runtime and irods-icommands on hold, you should first release the hold. Otherwise, the instruction is the same as above.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Show applied holds, if any</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="ex">apt-mark</span> showhold</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="ex">apt-mark</span> unhold irods-runtime irods-icommands</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 </section>
-<section id="configuration" class="level2">
-<h2 class="anchored" data-anchor-id="configuration">Configuration</h2>
+</section>
+<section id="environment-file" class="level2">
+<h2 class="anchored" data-anchor-id="environment-file">Environment file</h2>
 <p>The iCommands need to be configured to connect to the right Yoda environment.</p>
-<p>Please copy and paste this configuration into your <em>~/.irods/irods_environment.json</em> configuration file.</p>
+<p>Please copy and paste this configuration into your <code>~/.irods/irods_environment.json</code> configuration file.</p>
 <p>You will need to change the example user name to your Yoda user name.</p>
-<pre><code>{
-    "irods_host": "portal.yoda.vu.nl",
-    "irods_port": 1247,
-    "irods_home": "/vu/home",
-    "irods_user_name": "xxx@vu.nl",
-    "irods_zone_name": "vu",
-    "irods_authentication_scheme": "pam",
-    "irods_encryption_algorithm": "AES-256-CBC",
-    "irods_encryption_key_size": 32,
-    "irods_encryption_num_hash_rounds": 16,
-    "irods_encryption_salt_size": 8,
-    "irods_client_server_negotiation": "request_server_negotiation"
-}</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"irods_host"</span><span class="fu">:</span> <span class="st">"portal.yoda.vu.nl"</span><span class="fu">,</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"irods_port"</span><span class="fu">:</span> <span class="dv">1247</span><span class="fu">,</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"irods_home"</span><span class="fu">:</span> <span class="st">"/vu/home"</span><span class="fu">,</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"irods_user_name"</span><span class="fu">:</span> <span class="st">"xxx@vu.nl"</span><span class="fu">,</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"irods_zone_name"</span><span class="fu">:</span> <span class="st">"vu"</span><span class="fu">,</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"irods_authentication_scheme"</span><span class="fu">:</span> <span class="st">"pam"</span><span class="fu">,</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"irods_encryption_algorithm"</span><span class="fu">:</span> <span class="st">"AES-256-CBC"</span><span class="fu">,</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"irods_encryption_key_size"</span><span class="fu">:</span> <span class="dv">32</span><span class="fu">,</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"irods_encryption_num_hash_rounds"</span><span class="fu">:</span> <span class="dv">16</span><span class="fu">,</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"irods_encryption_salt_size"</span><span class="fu">:</span> <span class="dv">8</span><span class="fu">,</span></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"irods_client_server_negotiation"</span><span class="fu">:</span> <span class="st">"request_server_negotiation"</span></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Note that you can also copy this from <a href="https://portal.yoda.vu.nl/user/data_transfer" target="_blank">“Data Transfer” page</a> on the Yoda Portal: <img src="../../../public/manuals/yoda/portal-icommands.png" class="img-fluid" alt="Data Transfer"></p>
 </section>
 <section id="getting-started-with-icommands" class="level2">
 <h2 class="anchored" data-anchor-id="getting-started-with-icommands">Getting started with iCommands</h2>
-<p>After installing and configuring the iCommands, you should be able to log in on the Yoda environment using the <a href="https://docs.irods.org/4.2.12/icommands/user/#iinit" target="_blank">iinit command</a>. Note that VU users need to set a Data Access Password.</p>
-<p>Sections 5.3, 5.4 and 5.5 of the <a href="https://irods.org/uploads/2016/06/irods_beginner_training_2016.pdf" target="_blank">iRODS beginner training</a> contain some examples of how to use the iCommands to transfer and manage files. <a href="https://docs.irods.org/4.2.12/icommands/user/" target="_blank">The iCommands manual</a></p>
+<p>After installing and configuring the iCommands, you should be able to log in on the Yoda environment using the <a href="https://docs.irods.org/4.2.12/icommands/user/#iinit" target="_blank">iinit</a> command. Enter a <a href="../../../manuals/yoda/yoda_data_transfer/yoda_dap.html">Yoda Data Access Password</a> when prompted.</p>
+<p>These are the basic commands for navigation and data transfer:</p>
+<ul>
+<li><a href="https://docs.irods.org/4.2.12/icommands/user/#ipwd" target="_blank">ipwd</a> – Show current iRODS directory</li>
+<li><a href="https://docs.irods.org/4.2.12/icommands/user/#ils" target="_blank">ils</a> – List contents of a directory</li>
+<li><a href="https://docs.irods.org/4.2.12/icommands/user/#icd" target="_blank">icd</a> – Change directory</li>
+<li><a href="https://docs.irods.org/4.2.12/icommands/user/#iput" target="_blank">iput</a> – Upload files to Yoda</li>
+<li><a href="https://docs.irods.org/4.2.12/icommands/user/#iget" target="_blank">iget</a> – Download files from Yoda</li>
+<li><a href="https://docs.irods.org/4.2.12/icommands/user/#irsync" target="_blank">irsync</a> – Synchronize local and remote directories</li>
+</ul>
+<p>Your Yoda project folders are located under <code>/vu/home</code>.</p>
+<p>You can find a quick introduction of the iCommands on the <a href="https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/19824798/Data+handling+in+Yoda+iRODS+using+iCommands#DatahandlinginYoda%2FiRODSusingiCommands-Createcollectionsandnavigate" target="_blank">SURF wiki</a> or you can check out <a href="https://irods.org/uploads/2016/06/irods_beginner_training_2016.pdf" target="_blank">this training manual</a>.</p>
+<p>You can find a full list of available commands in the <a href="https://docs.irods.org/4.2.12/icommands/user/" target="_blank">iRODS Docs</a>.</p>
 
 
 </section>

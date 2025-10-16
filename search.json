@@ -894,46 +894,60 @@
   {
     "objectID": "manuals/yoda/yoda_data_transfer/yoda_using_icommands.html",
     "href": "manuals/yoda/yoda_data_transfer/yoda_using_icommands.html",
-    "title": "Using icommands",
+    "title": "Using iCommands",
     "section": "",
-    "text": "This page explains how to install the iRODS icommands on a Linux OS (native and using WSL2 on Windows).\nSince Yoda is based on iRODS technology, it is possible to transfer data to and from Yoda using the iRODS communication protocol. This protocol can be used to transfer large amounts of data in an efficient way.\nYou will need to install client software that supports the iRODS protocol on your PC. This page explains how to install and configure the iRODS iCommands. These command line tools are the standard implementation of an iRODS protocol client.",
+    "text": "This page explains how to install the iRODS iCommands on a Linux OS (native and using WSL2 on Windows).\nSince Yoda is based on iRODS technology, it is possible to transfer data to and from Yoda using the iRODS communication protocol. This protocol can be used to transfer large amounts of data in an efficient way. The iCommands command-line tools are the official standard implementation of an iRODS protocol client.\nThe iCommands are installed on the ADA and Snellius HPC clusters and can be used to transfer data to and from Yoda. Make sure to create the irods environment file first.",
     "crumbs": [
       "Data Transfer",
-      "Using icommands"
+      "Using iCommands"
     ]
   },
   {
     "objectID": "manuals/yoda/yoda_data_transfer/yoda_using_icommands.html#installing-irods-icommands",
     "href": "manuals/yoda/yoda_data_transfer/yoda_using_icommands.html#installing-irods-icommands",
-    "title": "Using icommands",
+    "title": "Using iCommands",
     "section": "Installing iRODS iCommands",
-    "text": "Installing iRODS iCommands\nNative iRODS iCommands packages are available for CentOS and Ubuntu.\nWindows 10/11 users can run the iCommands in the Windows Subsystem for Linux, we recommend WSL 2. There is no officially supported icommands installation for Mac OSX. You could try https://learning.cyverse.org/ds/icommands/#icommands-installation-for-mac-os-x or install the icommands inside a Linux VM.\n\nInstalling iCommands on CentOS\nOnly the newest version 4.3.0 is supported on CentOS 8, but this should not be a problem:\nsudo yum -y install wget epel-release yum-plugin-versionlock\nsudo rpm --import https://packages.irods.org/irods-signing-key.asc\nwget -qO - https://packages.irods.org/renci-irods.yum.repo | sudo tee /etc/yum.repos.d/renci-irods.yum.repo\nsudo yum -y install irods-runtime-4.3.0 irods-icommands-4.3.0\nsudo yum versionlock irods-runtime irods-icommands\n\n\nInstalling iCommands on Ubuntu\nThe following should work to install the icommands 4.3.0 on Ubuntu 22 or 24.\nwget -qO - https://packages.irods.org/irods-signing-key.asc | sudo apt-key add -\necho \"deb [arch=amd64] https://packages.irods.org/apt/ $(lsb_release -sc) main\" | sudo tee /etc/apt/sources.list.d/renci-irods.list\nsudo apt-get update\nsudo apt install irods-runtime irods-icommands",
+    "text": "Installing iRODS iCommands\nNative iRODS iCommands packages are available for CentOS and Ubuntu.\nWindows 10/11 users can run the iCommands in the Windows Subsystem for Linux. There is no officially supported iCommands installation for Mac OSX, you could install the iCommands inside a Linux VM.\n\nInstalling iCommands on CentOS\nThe following should work to install the iCommands on CentOS 8.\nFirst add the package source:\nsudo yum -y install wget epel-release yum-plugin-versionlock\nsudo rpm --import https://packages.irods.org/irods-signing-key.asc\nwget -qO - https://packages.irods.org/renci-irods.yum.repo | sudo tee /etc/yum.repos.d/renci-irods.yum.repo\nNote that the latest irods version is 5, this client is not compatible with the Yoda irods version.You can list the available versions with:\nsudo yum --showduplicates list irods-icommands\nInstall the latest available 4.x.x version:\nsudo yum -y install irods-runtime-4.3.0 irods-icommands-4.3.0\nsudo yum versionlock irods-runtime irods-icommands\n\nUpgrading from an earlier version\nIf you have put packages irods-runtime and irods-icommands on hold, you should first release the hold. Otherwise, the instruction is the same as above.\n# Show applied locks, if any\nyum versionlock list\nyum versionlock delete irods-runtime irods-icommands\n\n\n\nInstalling iCommands on Ubuntu\nThe following should work to install the iCommands on Ubuntu 22 or 24.\nFirst add the irods package source.\nwget -qO - https://packages.irods.org/irods-signing-key.asc | sudo apt-key add -\necho \"deb [arch=amd64] https://packages.irods.org/apt/ $(lsb_release -sc) main\" | sudo tee /etc/apt/sources.list.d/renci-irods.list\nsudo apt update\nNote that the latest irods version is 5, this client is not compatible with the Yoda irods version. You can check which versions are available with:\nsudo apt show irods-icommands -a\nTake the latest 4.x version, at the time of writing:\nsudo apt -y install irods-runtime=4.3.4-0~noble irods-icommands=4.3.4-0~noble\nMake sure to hold the package to prevent inadvertently updating to version 5:\nsudo apt-mark hold irods-runtime irods-icommands\n\nUpgrading from an earlier version\nIf you have put packages irods-runtime and irods-icommands on hold, you should first release the hold. Otherwise, the instruction is the same as above.\n# Show applied holds, if any\napt-mark showhold\napt-mark unhold irods-runtime irods-icommands",
     "crumbs": [
       "Data Transfer",
-      "Using icommands"
+      "Using iCommands"
     ]
   },
   {
-    "objectID": "manuals/yoda/yoda_data_transfer/yoda_using_icommands.html#configuration",
-    "href": "manuals/yoda/yoda_data_transfer/yoda_using_icommands.html#configuration",
-    "title": "Using icommands",
-    "section": "Configuration",
-    "text": "Configuration\nThe iCommands need to be configured to connect to the right Yoda environment.\nPlease copy and paste this configuration into your ~/.irods/irods_environment.json configuration file.\nYou will need to change the example user name to your Yoda user name.\n{\n    \"irods_host\": \"portal.yoda.vu.nl\",\n    \"irods_port\": 1247,\n    \"irods_home\": \"/vu/home\",\n    \"irods_user_name\": \"xxx@vu.nl\",\n    \"irods_zone_name\": \"vu\",\n    \"irods_authentication_scheme\": \"pam\",\n    \"irods_encryption_algorithm\": \"AES-256-CBC\",\n    \"irods_encryption_key_size\": 32,\n    \"irods_encryption_num_hash_rounds\": 16,\n    \"irods_encryption_salt_size\": 8,\n    \"irods_client_server_negotiation\": \"request_server_negotiation\"\n}",
+    "objectID": "manuals/yoda/yoda_data_transfer/yoda_using_icommands.html#environment-file",
+    "href": "manuals/yoda/yoda_data_transfer/yoda_using_icommands.html#environment-file",
+    "title": "Using iCommands",
+    "section": "Environment file",
+    "text": "Environment file\nThe iCommands need to be configured to connect to the right Yoda environment.\nPlease copy and paste this configuration into your ~/.irods/irods_environment.json configuration file.\nYou will need to change the example user name to your Yoda user name.\n{\n    \"irods_host\": \"portal.yoda.vu.nl\",\n    \"irods_port\": 1247,\n    \"irods_home\": \"/vu/home\",\n    \"irods_user_name\": \"xxx@vu.nl\",\n    \"irods_zone_name\": \"vu\",\n    \"irods_authentication_scheme\": \"pam\",\n    \"irods_encryption_algorithm\": \"AES-256-CBC\",\n    \"irods_encryption_key_size\": 32,\n    \"irods_encryption_num_hash_rounds\": 16,\n    \"irods_encryption_salt_size\": 8,\n    \"irods_client_server_negotiation\": \"request_server_negotiation\"\n}\nNote that you can also copy this from “Data Transfer” page on the Yoda Portal:",
     "crumbs": [
       "Data Transfer",
-      "Using icommands"
+      "Using iCommands"
     ]
   },
   {
     "objectID": "manuals/yoda/yoda_data_transfer/yoda_using_icommands.html#getting-started-with-icommands",
     "href": "manuals/yoda/yoda_data_transfer/yoda_using_icommands.html#getting-started-with-icommands",
-    "title": "Using icommands",
+    "title": "Using iCommands",
     "section": "Getting started with iCommands",
-    "text": "Getting started with iCommands\nAfter installing and configuring the iCommands, you should be able to log in on the Yoda environment using the iinit command. Note that VU users need to set a Data Access Password.\nSections 5.3, 5.4 and 5.5 of the iRODS beginner training contain some examples of how to use the iCommands to transfer and manage files. The iCommands manual",
+    "text": "Getting started with iCommands\nAfter installing and configuring the iCommands, you should be able to log in on the Yoda environment using the iinit command. Enter a Yoda Data Access Password when prompted.\nThese are the basic commands for navigation and data transfer:\n\nipwd – Show current iRODS directory\nils – List contents of a directory\nicd – Change directory\niput – Upload files to Yoda\niget – Download files from Yoda\nirsync – Synchronize local and remote directories\n\nYour Yoda project folders are located under /vu/home.\nYou can find a quick introduction of the iCommands on the SURF wiki or you can check out this training manual.\nYou can find a full list of available commands in the iRODS Docs.",
     "crumbs": [
       "Data Transfer",
-      "Using icommands"
+      "Using iCommands"
     ]
+  },
+  {
+    "objectID": "manuals/yoda/yoda_data_transfer/irods/using_python_irodsclient.html",
+    "href": "manuals/yoda/yoda_data_transfer/irods/using_python_irodsclient.html",
+    "title": "Using the Python iRODS client",
+    "section": "",
+    "text": "This page provides an introduction on how to use the Python iRODS client with Yoda."
+  },
+  {
+    "objectID": "manuals/yoda/yoda_data_transfer/irods/using_ibridges.html",
+    "href": "manuals/yoda/yoda_data_transfer/irods/using_ibridges.html",
+    "title": "Using iBridges",
+    "section": "",
+    "text": "This page explains how to install and use the iBridges command-line and GUI tools."
   },
   {
     "objectID": "manuals/yoda/yoda_data_transfer/yoda_dap.html",
@@ -984,7 +998,7 @@
     "href": "manuals/yoda/yoda_data_transfer/index.html",
     "title": "Data Transfer overview",
     "section": "",
-    "text": "This page provides an overview of the 3 main ways to transfder data to and from Yoda:\n\nVia the Yoda Portal, upload via Drag & Drop, download inviduals files.\n\nThis method works fine if you need to upload small amounts of data.\n\nFor transferring larger amounts of data (tens of GB) it is better to use the WebDAV interface.\n\nThere are several methods to access Yoda data via WebDAV, they depend on the Operating System you are using:\n\nAccessing Yoda data on Windows\nMacOS\nLinux\n\nNote that performance of WebDAV is limited, especially when transferring a large amount of files.\n\nFor transferring large amounts of date (&gt;100GB) consider using direct access to iRODS.\n\nA direct iRODS connection offers better performance by enabling multi-threaded transfers and the option to compare checksums.\nPower users who are comfortable with command line tools can use the iRODS icommands to interact with the iRODS backend of Yoda directly.\nLast updated: ?meta:date",
+    "text": "This page provides an overview of the 3 main ways to transfder data to and from Yoda:\n\nVia the Yoda Portal, upload via Drag & Drop, download inviduals files.\n\nThis method works fine if you need to upload small amounts of data.\n\nFor transferring larger amounts of data (tens of GB) it is better to use the WebDAV interface.\n\nThere are several methods to access Yoda data via WebDAV, they depend on the Operating System you are using:\n\nAccessing Yoda data on Windows\nMacOS\nLinux\n\nNote that performance of WebDAV is limited, especially when transferring a large amount of files.\n\nFor transferring large amounts of date (&gt;100GB) consider using direct access to iRODS.\n\nA direct iRODS connection offers better performance by enabling multi-threaded transfers and the option to compare checksums.\nPower users who are comfortable with command line tools can use the iRODS icommands to interact with the iRODS backend of Yoda directly.",
     "crumbs": [
       "Data Transfer"
     ]
@@ -2859,7 +2873,7 @@
     "href": "manuals/yoda/index.html",
     "title": "Yoda Manuals",
     "section": "",
-    "text": "Tip\n\n\n\nThe Yoda Topic page explains how to request storage space in Yoda for your project.\n\n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\nThe Yoda Web Portal\n\n\n\n\n\n\n\n\n\n\n\n\nInvitations and logging in\n\n\n\n\n\n\n\n\n\n\n\n\nFinding and restoring data\n\n\n\n\n\n\n\n\n\n\n\n\nManaging Groups, Users and Access Rights\n\n\n\n\n\n\n\n\n\n\n\n\nNotifications\n\n\n\n\n\n\n\n\n\n\n\n\nAdding Metadata\n\n\n\n\n\n\n\n\n\n\n\n\nSelecting a license for your dataset\n\n\n\n\n\n\n\n\n\n\n\n\nArchiving data\n\n\n\n\n\n\n\n\n\n\n\n\nPublishing data\n\n\n\n\n\n\n\n\n\n\n\n\nData Transfer overview\n\n\n\n\n\n\n\n\n\n\n\n\nCreating a Data Access Password\n\n\n\n\n\n\n\n\n\n\n\n\nData access on Linux\n\n\n\n\n\n\n\n\n\n\n\n\nData access on MacOS\n\n\n\n\n\n\n\n\n\n\n\n\nData access on Windows\n\n\n\n\n\n\n\n\n\n\n\n\nUsing Cyberduck\n\n\n\n\n\n\n\n\n\n\n\n\nEncrypting your data using Cryptomator and Cyberduck\n\n\n\n\n\n\n\n\n\n\n\n\nUsing icommands\n\n\n\n\n\n\n\n\n\n\n\n\nUsing Rclone\n\n\n\n\n\n\n\n\n\n\n\n\nUsing Webdrive\n\n\n\n\n\n\n\n\n\n\n\n\nUsing Windows Explorer\n\n\n\n\n\n\n\n\n\n\n\n\nUsing WinSCP\n\n\n\n\n\n\n\n\nNo matching items",
+    "text": "Tip\n\n\n\nThe Yoda Topic page explains how to request storage space in Yoda for your project.\n\n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\nThe Yoda Web Portal\n\n\n\n\n\n\n\n\n\n\n\n\nInvitations and logging in\n\n\n\n\n\n\n\n\n\n\n\n\nFinding and restoring data\n\n\n\n\n\n\n\n\n\n\n\n\nManaging Groups, Users and Access Rights\n\n\n\n\n\n\n\n\n\n\n\n\nNotifications\n\n\n\n\n\n\n\n\n\n\n\n\nAdding Metadata\n\n\n\n\n\n\n\n\n\n\n\n\nSelecting a license for your dataset\n\n\n\n\n\n\n\n\n\n\n\n\nArchiving data\n\n\n\n\n\n\n\n\n\n\n\n\nPublishing data\n\n\n\n\n\n\n\n\n\n\n\n\nData Transfer overview\n\n\n\n\n\n\n\n\n\n\n\n\nCreating a Data Access Password\n\n\n\n\n\n\n\n\n\n\n\n\nData access on Linux\n\n\n\n\n\n\n\n\n\n\n\n\nData access on MacOS\n\n\n\n\n\n\n\n\n\n\n\n\nData access on Windows\n\n\n\n\n\n\n\n\n\n\n\n\nUsing Cyberduck\n\n\n\n\n\n\n\n\n\n\n\n\nEncrypting your data using Cryptomator and Cyberduck\n\n\n\n\n\n\n\n\n\n\n\n\nUsing iCommands\n\n\n\n\n\n\n\n\n\n\n\n\nUsing Rclone\n\n\n\n\n\n\n\n\n\n\n\n\nUsing Webdrive\n\n\n\n\n\n\n\n\n\n\n\n\nUsing Windows Explorer\n\n\n\n\n\n\n\n\n\n\n\n\nUsing WinSCP\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Yoda Manuals"
     ]
@@ -2962,6 +2976,41 @@
       "Data Transfer",
       "Using Windows Explorer"
     ]
+  },
+  {
+    "objectID": "manuals/yoda/yoda_data_transfer/irods/using_gocommands.html",
+    "href": "manuals/yoda/yoda_data_transfer/irods/using_gocommands.html",
+    "title": "Using gocommands",
+    "section": "",
+    "text": "This manual explains how to install and use the gocommands, iRODS Command-line Tools written in the Go programming Language."
+  },
+  {
+    "objectID": "manuals/yoda/yoda_data_transfer/irods/yoda_using_icommands.html",
+    "href": "manuals/yoda/yoda_data_transfer/irods/yoda_using_icommands.html",
+    "title": "Using icommands",
+    "section": "",
+    "text": "This page explains how to install the iRODS icommands on a Linux OS (native and using WSL2 on Windows).\nSince Yoda is based on iRODS technology, it is possible to transfer data to and from Yoda using the iRODS communication protocol. This protocol can be used to transfer large amounts of data in an efficient way.\nYou will need to install client software that supports the iRODS protocol on your PC. This page explains how to install and configure the iRODS iCommands. These command line tools are the standard implementation of an iRODS protocol client."
+  },
+  {
+    "objectID": "manuals/yoda/yoda_data_transfer/irods/yoda_using_icommands.html#installing-irods-icommands",
+    "href": "manuals/yoda/yoda_data_transfer/irods/yoda_using_icommands.html#installing-irods-icommands",
+    "title": "Using icommands",
+    "section": "Installing iRODS iCommands",
+    "text": "Installing iRODS iCommands\nNative iRODS iCommands packages are available for CentOS and Ubuntu.\nWindows 10/11 users can run the iCommands in the Windows Subsystem for Linux, we recommend WSL 2. There is no officially supported icommands installation for Mac OSX. You could try https://learning.cyverse.org/ds/icommands/#icommands-installation-for-mac-os-x or install the icommands inside a Linux VM.\n\nInstalling iCommands on CentOS\nOnly the newest version 4.3.0 is supported on CentOS 8, but this should not be a problem:\nsudo yum -y install wget epel-release yum-plugin-versionlock\nsudo rpm --import https://packages.irods.org/irods-signing-key.asc\nwget -qO - https://packages.irods.org/renci-irods.yum.repo | sudo tee /etc/yum.repos.d/renci-irods.yum.repo\nsudo yum -y install irods-runtime-4.3.0 irods-icommands-4.3.0\nsudo yum versionlock irods-runtime irods-icommands\n\n\nInstalling iCommands on Ubuntu\nThe following should work to install the icommands 4.3.0 on Ubuntu 22 or 24.\nwget -qO - https://packages.irods.org/irods-signing-key.asc | sudo apt-key add -\necho \"deb [arch=amd64] https://packages.irods.org/apt/ $(lsb_release -sc) main\" | sudo tee /etc/apt/sources.list.d/renci-irods.list\nsudo apt-get update\nsudo apt install irods-runtime irods-icommands"
+  },
+  {
+    "objectID": "manuals/yoda/yoda_data_transfer/irods/yoda_using_icommands.html#configuration",
+    "href": "manuals/yoda/yoda_data_transfer/irods/yoda_using_icommands.html#configuration",
+    "title": "Using icommands",
+    "section": "Configuration",
+    "text": "Configuration\nThe iCommands need to be configured to connect to the right Yoda environment.\nPlease copy and paste this configuration into your ~/.irods/irods_environment.json configuration file.\nYou will need to change the example user name to your Yoda user name.\n{\n    \"irods_host\": \"portal.yoda.vu.nl\",\n    \"irods_port\": 1247,\n    \"irods_home\": \"/vu/home\",\n    \"irods_user_name\": \"xxx@vu.nl\",\n    \"irods_zone_name\": \"vu\",\n    \"irods_authentication_scheme\": \"pam\",\n    \"irods_encryption_algorithm\": \"AES-256-CBC\",\n    \"irods_encryption_key_size\": 32,\n    \"irods_encryption_num_hash_rounds\": 16,\n    \"irods_encryption_salt_size\": 8,\n    \"irods_client_server_negotiation\": \"request_server_negotiation\"\n}"
+  },
+  {
+    "objectID": "manuals/yoda/yoda_data_transfer/irods/yoda_using_icommands.html#getting-started-with-icommands",
+    "href": "manuals/yoda/yoda_data_transfer/irods/yoda_using_icommands.html#getting-started-with-icommands",
+    "title": "Using icommands",
+    "section": "Getting started with iCommands",
+    "text": "Getting started with iCommands\nAfter installing and configuring the iCommands, you should be able to log in on the Yoda environment using the iinit command. Note that VU users need to set a Data Access Password.\nSections 5.3, 5.4 and 5.5 of the iRODS beginner training contain some examples of how to use the iCommands to transfer and manage files. The iCommands manual"
   },
   {
     "objectID": "manuals/yoda/yoda_data_transfer/yoda_using_rclone.html",
