@@ -31,7 +31,12 @@ website:
           contents: manuals/ada/getting-started/**/*.qmd
         - section: Code Examples
           contents: manuals/ada/code-examples/**/*.qmd
-
+    - id: sb-qualtrics
+      style: floating
+      search: true
+      contents:
+        - manuals/qualtrics/index.qmd
+        - auto: manuals/qualtrics/*.qmd 
 
   navbar:
     background: "#0080c9"
