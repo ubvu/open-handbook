@@ -2,7 +2,7 @@
 title: Essential concepts for HPC users
 date: last-modified
 ---
-This page offers a short explanation of essential concept in High Performance Computing.
+This page offers a short explanation of essential concepts in High Performance Computing.
 
 ### Concurrent vs. Parallel
 
@@ -12,7 +12,7 @@ This page offers a short explanation of essential concept in High Performance Co
 
 When a program runs in parallel on multiple cores it is **always concurrent**.
 
-When a program is handled concurrently, it is **not necessarily a parallel program**. Instructions can also make use of time-sharing (sharing a single CPU core).
+When a program is handled concurrently, it is **not necessarily a parallel program**. Instructions can also make use of time-sharing (e.g. sharing a single CPU core).
 
 ### Multithreading vs. Multiprocessing
 

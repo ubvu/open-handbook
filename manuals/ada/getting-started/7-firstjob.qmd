@@ -1,9 +1,12 @@
 ---
-title: Slurm job
+title: Running your First Slurm Job
 date: last-modified
 ---
 
-A simple Slurm job example.
+This page shows a simple Slurm job example to get started on ADA.
+
+## Slurm script:
+`mytestjob.slurm`
 
 ```sh
 #!/bin/bash -l
@@ -25,4 +28,12 @@ cd "$TMPDIR"
 # Run your application (example: print hostname)
 echo "== Running on: $(hostname)"
 echo "== Job completed at $(date)"
+```
+
+## Running the script
+
+Assuming you are inside your slurm submission directory, run the following:
+
+```sh
+$ sbatch mytestjob.slurm
 ```

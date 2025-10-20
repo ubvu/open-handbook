@@ -1,5 +1,5 @@
 ---
-title: Software
+title: Using Software on ADA
 date: last-modified
 ---
 
@@ -178,7 +178,7 @@ If you also use BioConductor packages, also load in HDF5 before executing the R 
 
 ## Conda packages
 
-Before you create/run a conda environment on the cluster, its advisable to load in a conda version + python version (including toolchain) that is provided by the software stack. In this way, you are guaranteed that your setup will keep working, even if the operating system of the cluster nodes is upgraded. 
+Before you create/run a conda environment on the cluster, it is advisable to load in a conda version + python version (including toolchain) that is provided by the software stack. In this way, you are guaranteed that your setup will keep working, even if the operating system of the cluster nodes is upgraded. 
 
 ```sh
 [abc123@login1 ~]$ module load 2025

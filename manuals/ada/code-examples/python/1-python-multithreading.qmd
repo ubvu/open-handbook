@@ -5,7 +5,9 @@ date: last-modified
 
 This example applies multithreading in Python. 
 
-Be aware that the Python interpreter process is constrained by the Global Interpreter Lock (GIL) and therefore can only use the resources made available to that process (generally, 1 logical core). Therefore, this multithreading example is inherently concurrent because of the GIL constraint. Although code is not executed in parallel, multithreading in Python can still be beneficial when, for example: - you are waiting for I/O operations to complete and want to compute in the meantime - you wish to prioritize the order of execution within your python script -
+Be aware that the Python interpreter process is constrained by the Global Interpreter Lock (GIL) and therefore can only use the resources made available to that process (generally, 1 logical core). Therefore, this multithreading example is inherently concurrent because of the GIL constraint. Although code is not executed in parallel, multithreading in Python can still be beneficial when, for example: 
+- you are waiting for I/O operations to complete and want to compute in the meantime 
+- you wish to prioritize the order of execution within your python script
 
 ## Slurm batch submission script:
 
