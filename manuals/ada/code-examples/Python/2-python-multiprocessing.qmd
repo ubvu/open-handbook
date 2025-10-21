@@ -81,7 +81,7 @@ if __name__ == "__main__":
 Assuming you are inside your slurm submission directory, for example, running on 8 logical cores:
 
 ```sh
-$ sbatch -cpus-per-task=8 multiproc.slurm
+$ sbatch --cpus-per-task=8 multiproc.slurm
 ```
 
 Once you kicked your job off, its good practice to check if its really running on the amount of cores you specified. Check you current jobs and note on which node it is running:
