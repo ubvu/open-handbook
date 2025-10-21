@@ -10,7 +10,7 @@ listing:
   filter-ui: true
   type: grid
   fields: [title,description]
-  sort: file
+  sort: false
 image: '/public/yoda-logo.png'
 description: 'This section explains how to get started with Yoda.'
 ---
