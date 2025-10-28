@@ -3,33 +3,22 @@ title: Software
 date: last-modified
 ---
 
-This page explains how to load software modules and using a specific version of a software.
+## Overview
 
-To load in software, you first load in the yearly software stack followed by the software you wish to use (including dependencies) in the following order:
+There are multiple ways to access, install and manage software on ADA:
 
-```sh
-module load 2024
-module load <Software1>
-module load <Software2 (e.g. dependent on Software 1)>
-module load <Software3 (e.g. dependent of Software 2)>
-```
-
-For example loading in Python 3.12.3:
-```sh
-module load 2024
-module load Python/3.12.3-GCCcore-13.3.0
-```
-
-For example loading in R and the HDF5 data format library:
-```sh
-module load 2024
-module load R/4.4.1-gfbf-2023b
-module load HDF5/1.14.3-gompi-2023b
-```
+- Compiled software on the cluster through the module system
+- Containerized software through Apptainer
+- Pixi environments
+- Conda/mamba/virtualenv environments
 
 ## Software Modules
 
-Software on ADA is accessible through so-called 'modules' (also see https://lmod.readthedocs.io/en/latest/010_user.html). A module command tells the system which places to look for when accessing certain software. 
+### Quick start 
+
+First and foremost, ADA provides a wide variety of compiled scientific software that can be accessed through the module system.
+This page will explain only the ADA specific details on how modules work on ADA. 
+If you are new to using software modules, please consult the great carpentries material on [modules](https://carpentries-incubator.github.io/hpc-intro/15-modules/index.html).
 
 When you log in to the cluster, you can see which modules are loaded by default via:
 ```sh
@@ -39,9 +28,9 @@ Currently Loaded Modules:
 1) shared   2) DefaultModules   3) gcc/11.2.0   4) slurm/bazis/23.02.8
 ```
 
-For ADA, the software stack is managed through a yearly release module (e.g. 2023, 2024) and that release module is updated on-demand throughout the year. To load it in:
+For ADA, the software stack is managed through a yearly release module (e.g. 2025, 2024, 2023) and that release module is updated on-demand throughout the year. To load it in:
 ```sh
-[abc123@login1 ~]$ module load 2024
+[abc123@login1 ~]$ module load 2025
 [abc123@login1 ~]$ module list
 
 Currently Loaded Modules:
@@ -55,6 +44,7 @@ Once you have loaded the 2024 software stack module, you can check out its conte
 ...........  list of software ..............
 ```
 
+::: {.callout-note collapse="true" title="Looking for specific software"}
 Since this list can be quite large and cumbersome to navigate, it is also possible to look for a specific software module (e.g. Python) using module spider:
 ```sh
     [abc123@login1 ~]$ module spider Python
@@ -123,58 +113,43 @@ Python: Python/3.12.3-GCCcore-13.3.0
     flit_core-3.9.0, packaging-24.0, pip-24.0, setuptools-70.0.0,
     setuptools_scm-8.1.0, tomli-2.0.1, typing_extensions-4.11.0, wheel-0.43.0
 ```
+:::
 
-## Python packages
+As an example, to load in software, you first load in the yearly software stack followed by the software you wish to use (including dependencies) in the following order:
 
-To use standard python packages, you first load in the python version. Then you can check with the 'pip list' the currently installed packages for that version:
 ```sh
-[abc123@login1 ~]$ module load Python/3.12.3-GCCcore-13.3.0
-[abc123@login1 ~]$ pip list
-Package           Version
------------------ -----------
-click             8.1.8
-cloudpickle       3.1.1
-contourpy         1.3.1
-cycler            0.12.1
-dask              2025.2.0
-flit_core         3.9.0
-fonttools         4.56.0
-fsspec            2025.2.0
-joblib            1.4.2
-kiwisolver        1.4.8
-llvmlite          0.44.0
-locket            1.0.0
-matplotlib        3.10.0
-narwhals          1.27.1
-numba             0.61.0
-numpy             2.1.3
-packaging         24.0
-pandas            2.2.3
-.....             ......
-.....             ......
+module load 2025
+module load <Software1>
+module load <Software2 (e.g. dependent on Software 1)>
+module load <Software3 (e.g. dependent of Software 2)>
 ```
 
-If the package you wish to use is not listed, you can request its installation by sending an email to itvo.it@vu.nl. Make sure to specify the python version in your request. 
-A second option is to install the package yourself in your home directory `pip install <PACKAGE>`; pip will automatically resolve its location. Please be aware that if you share codespaces, it is best-practice to let ITvO install the software so that it is publicly available to all your colleagues. 
-
-## R packages
-
-To use standard R packages, you first load in the R version. Then you can launch a R shell session and check the available packages:
+For example loading in Python 3.13.1:
 ```sh
-[abc123@login1 ~]$ module load 2024
-[abc123@login1 ~]$ module load R/4.4.1-gfbf-2023b
-[abc123@login1 ~]$ R
+module load 2025
+module load Python/3.13.1-GCCcore-14.2.0
 ```
 
-In R shell:
-```R
-installed.packages()
-```
-
-If you also use BioConductor packages, also load in HDF5 before executing the R shell/program.
+For example loading in R and the HDF5 data format library:
 ```sh
-[abc123@login1 ~]$ module load HDF5/1.14.3-gompi-2023b=
+module load 2025
+module load R/4.5.1-gfbf-2024a
+module load HDF5/1.14.5-gompi-2024a
 ```
+
+### Should I use software modules?
+
+Software modules is the recommended "first choice" way of accessing software on ADA because its:
+- Easy to use and manage
+- No need to install software yourself as ITvO maintains the software stack
+- Software is optimized for the ADA cluster architecture
+
+However, there is a huge drawback of using software modules: you are limited to the software and versions provided by ITvO, because users are not allowed to make modules themselves.
+Sometimes, you can install software to your home directory as is the case for python via `pip install <PACKAGE>`, but this is not always possible or easy.
+In those cases, you can consider using Apptainer containers, Pixi environments or Conda environments as explained in the other sections of this manual.
+In cases where you believe the software you need is of general interest to all ADA users, you can also request ITvO to install the software and make a module for it by sending an email to itvo.it@vu.nl.
+However, please note that ITvO cannot guarantee that all requests will be fulfilled due to time and resource constraints.
+
 
 ## Conda packages
 
@@ -185,3 +160,162 @@ Before you create/run a conda environment on the cluster, its advisable to load 
 [abc123@login1 ~]$ module load Miniconda3
 [abc123@login1 ~]$ module load Python/3.12.3-GCCcore-13.3.0
 ```
+
+### Pixi environments
+
+## Quick start 
+The recommended way to manage project-specific software installations on ADA is through Pixi environments.
+Pixi is a lightweight environment manager that allows you to create isolated environments for your projects. 
+You can think of Pixi as similar to Conda, but it is much more than that: it is multi-language (Python, R, Julia, etc.) and is designed to be more lightweight and easier to use. 
+Please refer to the [Pixi documentation](https://pixi.dev/) for more information. 
+An excellent introduction to Pixi for python users can be found [here](https://pixi.dev/docs/python/getting-started/).
+
+To load in Pixi on ADA, first load in the yearly software stack module followed by the Pixi module:
+
+```sh
+[abc123@login1 ~]$ module load 2025
+[abc123@login1 ~]$ module load Pixi
+```
+
+Once that is done, you can create Pixi projects as simple as that:
+
+```sh
+[abc123@login1 ~]$ mkdir newproject
+[abc123@login1 ~]$ cd newproject
+[abc123@login1 ~/newproject]$ pixi init
+✔ Created /net/sys/pscst201/IT-ITVO-HPC@ada-nodes/guest/abc123/newproject/pixi.toml
+```
+This will create a new Pixi project in the `newproject` directory.
+To install packages in your Pixi environment, you can use the `pixi add` command.
+```sh
+[abc123@login1 ~/newproject]$ pixi add numpy pandas matplotlib
+✔ Added numpy >=2.3.4,<3
+✔ Added pandas >=2.3.3,<3
+✔ Added matplotlib >=3.10.7,<4
+```
+As you saw, we did not specify any language (e.g. python) when installing packages.
+Pixi will automatically perform dependency resolution and install the packages and the appropriate language.
+
+To run a command in your Pixi environment, you can use the `pixi run` command:
+
+```sh
+[abc123@login1 ~/newproject]$ pixi run which python 
+/net/sys/pscst201/IT-ITVO-HPC@ada-nodes/guest/abc123/newproject/.pixi/envs/default/bin/python
+[abc123@login1 ~/newproject]$ pixi run python -c "import numpy as np; print(np.__version__)"
+2.3.4
+```
+
+### Should I use Pixi?
+
+Pixi is the recommended choice for managing project-specific software installations on ADA because it is:
+- Allows installation of software via isolated environments for your projects and avoids dependency conflict
+- Allows you to easily share your environment with others via the `pixi.toml` file
+- Multi-language (Python, R, Julia, etc.)
+- Lightweight and fast
+- Designed for HPC environments
+
+Pixi retrieves packages from maintained repositories, including PyPI/conda-forge for Python packages, CRAN for R packages, and more.
+However, if you require something very specific that is not available via Pixi, you might need to consider building a container via Apptainer as will be explained in the upcoming sections.
+Additionally, Pixi is a relatively new tool and may not have all the features of more established tools like Conda.
+If you are already familiar with Conda and it meets your needs, you can continue using it.
+But if you are starting fresh or looking for a more lightweight and easy-to-use tool, Pixi is definitely worth considering.
+
+## Conda/Virtualenv environments
+
+### Quick start
+
+Conda is another popular way to manage project-specific software installations.
+To load in Conda on ADA, first load in the yearly software stack module followed by the Miniconda3 module:
+
+```
+[abc123@login1 ~]$ module load 2025
+[abc123@login1 ~]$ module load Miniconda3
+```
+
+For information on how to use Conda, please refer to the [Conda documentation](https://docs.conda.io/projects/conda/en/stable/user-guide/getting-started.html).
+
+Similarly, for virtualenv, you can load in Python first:
+
+```
+[abc123@login1 ~]$ module load 2025
+[abc123@login1 ~]$ module load virtualenv
+```
+
+Similarly, for information on how to use virtualenv, please refer to the [virtualenv documentation](https://virtualenv.pypa.io/en/latest/user_guide.html).
+
+### Should I use Conda/Virtualenv?
+
+Conda and virtualenv are both historically popular choices for managing project-specific software installations.
+
+- Conda is a more feature-rich package manager that can handle complex dependencies
+- Virtualenv is a lightweight tool that is easy to use and is suitable for simpler projects.
+
+However, both Conda and virtualenv are resource-intensive compared to Pixi, and they may not be as well-suited for HPC environments. 
+Therefore, unless you have a specific reason to use Conda or virtualenv, we recommend using Pixi for managing project-specific software installations on ADA.
+
+Also, similarly to Pixi, if you require something very specific that is not available via Conda or virtualenv, you might need to consider building a container via Apptainer as will be explained in the upcoming section.
+
+## Apptainer containers
+
+### Quick Start
+
+Apptainer (formerly Singularity) is a popular containerization technology for HPC environments.
+Containers allow you to package your application and its dependencies into a single unit that can be easily deployed on different systems.
+Think of it as a lightweight virtual machine that shares the host system's kernel but has its own filesystem, libraries, and dependencies.
+
+Please refer to the [Apptainer documentation](https://apptainer.org/docs/user/main/quick_start.html) for more information on how to use Apptainer.
+
+Differently from other software, Apptainer is installed and available only on ADA compute nodes rather than login nodes.
+Therefore, you can only use Apptainer within SLURM a job script or an interactive session on a compute node.
+Here we will provide a short example on using Apptainer within an interactive session. 
+To start an interactive session on a compute node, you can use the `srun` command:
+
+```sh
+srun --pty --time=00:30:00 --cpus-per-task=2 bash
+```
+
+This will request an interactive session on a compute node for 30 minutes with 2 CPUs.
+You don't need to load in any module to use Apptainer as it is already installed on the compute nodes:
+
+```sh
+[abc123@compute-node ~]$ apptainer --version
+apptainer version 1.4.2-1.el9
+```
+
+As an example of running Apptainer, let's pull a pre-built lightweight Alpine Linux container from Docker Hub:
+
+```sh
+[abc123@compute-node ~]$ apptainer pull docker://alpine:latest
+```
+
+This will create a file named `alpine_latest.sif` in your current directory which contains the Alpine Linux container.
+You can then run commands within the container using the `apptainer exec` command:
+```sh
+[abc123@compute-node ~]$ apptainer exec alpine_latest.sif cat /etc/os-release
+NAME="Alpine Linux"
+ID=alpine
+VERSION_ID=3.22.2
+PRETTY_NAME="Alpine Linux v3.22"
+HOME_URL="https://alpinelinux.org/"
+BUG_REPORT_URL="https://gitlab.alpinelinux.org/alpine/aports/-/issues"
+```
+#### Pulling and Building Containers
+
+There are a couple of ways to get Apptainer containers:
+* Pulling pre-built containers from repositories like Singularity Hub or Docker Hub
+* Building your own containers on ADA's compute nodes 
+* Transferring containers built on your local machine to ADA
+
+All of the steps are explained in the [Apptainer documentation](https://apptainer.org/docs/user/main/quick_start.html#).
+For the last step on transferring containers built on your local machine to ADA, you can use `scp` or `rsync` to copy the container file to your home directory on ADA.
+
+```bash
+scp /path/to/local/container.sif abc123@ada-login1:~/   
+```
+
+### Should I use Apptainer?
+
+Apptainer is the recommended choice for running complex applications with specific dependencies that are not available via software modules, Pixi, Conda, or virtualenv.
+Containers provide a consistent and reproducible environment that can be easily shared and deployed across different systems.
+However, building and managing containers can be more complex than using other software management tools.
+Therefore, we recommend using Apptainer only when necessary and when other options are not feasible for your use case.
