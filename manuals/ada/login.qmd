@@ -1,0 +1,108 @@
+---
+title: Login
+date: last-modified
+---
+
+## Expectations and Access
+
+::: {.callout-warning title="Prerequisites"}
+- You must be comfortable with Bash and basic HPC concepts. See: [Unix Shell](https://swcarpentry.github.io/shell-novice/) and [HPC Introduction](https://carpentries-incubator.github.io/hpc-intro/).
+:::
+
+Here we will set-up passwordless SSH access to ADA. 
+
+ADA endpoints (for example `ada.labs.vu.nl`, `inter01.labs.vu.nl`) are only reachable on campus or via the VU VPN. Therefore we will use the public stepstone server `ssh.data.vu.nl` as a jump host (ProxyJump), so you could connect from anywhere.
+
+::: {.callout-tip title="End state"}
+After setup you should be able to run:
+
+- `ssh ada-login` → `ada.labs.vu.nl`
+- `ssh inter01` → `inter01.labs.vu.nl`
+
+No passwords; the stepstone is used automatically.
+:::
+
+## Step 1 — Create an SSH key
+
+On your local linux machine, generate a modern key and load it into your agent:
+
+```sh
+ssh-keygen -t ed25519 -C "<your VU email>" -f ~/.ssh/ada_ed25519
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/ada_ed25519
+```
+
+## Step 2 — Configure SSH
+
+Create or edit `~/.ssh/config` and add:
+
+```sshconfig
+Host stepstone-vu
+    HostName ssh.data.vu.nl
+    User <VUNETID>
+    ServerAliveInterval 120
+
+Host ada-login
+    HostName ada.labs.vu.nl
+    User <VUNETID>
+    ProxyJump stepstone-vu
+    IdentityFile ~/.ssh/ada_ed25519
+    IdentitiesOnly yes
+    ServerAliveInterval 120
+
+# Interactive nodes (pattern covers inter01–inter04)
+Host inter0?
+    HostName %h.labs.vu.nl
+    User <VUNETID>
+    ProxyJump stepstone-vu
+    IdentityFile ~/.ssh/ada_ed25519
+    IdentitiesOnly yes
+    ServerAliveInterval 120
+
+# Optional direct paths when on campus/VPN (no ProxyJump)
+Host ada-login-direct inter0?-direct
+    HostName %n.labs.vu.nl
+    User <VUNETID>
+    IdentityFile ~/.ssh/ada_ed25519
+    IdentitiesOnly yes
+```
+
+## Step 3 — Install your key on ADA
+
+Copy your public key once; `$HOME` is shared across nodes.
+
+```sh
+ssh-copy-id ada-login   # prompts for your ADA password once
+```
+
+Test connections:
+
+```sh
+ssh ada-login
+ssh inter01
+```
+
+## Login node policy
+
+::: {.callout-danger title="Strict rule on login nodes"}
+Login nodes are only for light tasks: edit scripts, manage files, submit SLURM jobs. Do not run notebooks, VS Code Server, heavy compiles, or long‑running programs here.
+:::
+
+Use interactive nodes (`inter01`–`inter04`) for heavier interactive work, or see Open OnDemand in the Quick Start.
+
+## Optional tools
+
+- VS Code Remote‑SSH works with this config. Target `inter01` (not `ada-login`).
+- MobaXterm (Windows) and iTerm2 (macOS) are optional SSH clients.
+- Remote desktop (RDP) to interactive nodes is available when on campus/VPN.
+
+## Troubleshooting (short)
+
+- Ensure VPN/campus access for `*.labs.vu.nl`; stepstone is public.
+- List loaded keys: `ssh-add -l`; add your key if missing.
+- Increase verbosity: `ssh -vvv ada-login`.
+- If you mistyped passwords too often, wait 15 minutes and try again.
+- File permissions: `chmod 700 ~/.ssh; chmod 600 ~/.ssh/authorized_keys` (on ADA).
+
+Still stuck? Email itvo.it@vu.nl with OS, client, network location, and the verbose output of `ssh -vvv ada-login`.
+

@@ -17,8 +17,8 @@ Use modules whenever a supported version exists. Choose Pixi when you need custo
 :::
 
 ## Software Modules
-
-ADA ships a curated, architecture-optimized software stack via Lmod modules. The stack follows an annual release (for example `2025`) that bundles compilers, MPI, and libraries maintained by ITvO.
+ADA ships a curated, architecture-optimized software stack living under `/ada-software/` and exposed through Lmod modules.
+The stack follows an annual release (for example `2025`) that bundles compilers, MPI, and libraries maintained by ITvO.
 
 ::: {.callout-important title="Read: Modules primer"}
 New to Lmod? Start with the [Carpentries HPC modules lesson](https://carpentries-incubator.github.io/hpc-intro/15-modules/index.html) for a friendly walkthrough of the core concepts.
@@ -99,7 +99,7 @@ Request extra modules **only** when they will measurably help many researchers. 
 Pixi provides reproducible, multi-language environments that work well on shared HPC systems. It automatically resolves dependencies across Python, R, Julia, and more, and stores environments alongside your project. Therefore, Pixi is the recommended way to manage custom software stacks on ADA.
 
 ::: {.callout-tip title="Read: Pixi quick start"}
-Review the upstream [Pixi quick start guide](https://pixi.dev/docs/python/getting-started/) to see typical workflows and commands before building environments on ADA.
+Review the upstream [Pixi quick start guide](https://pixi.dev/docs/python/./) to see typical workflows and commands before building environments on ADA.
 :::
 
 ### Quick Start
@@ -128,7 +128,7 @@ Pixi retrieves packages from maintained channels (PyPI, conda-forge, CRAN, etc.)
 ### References
 
 - [Pixi documentation](https://pixi.dev/)
-- [Getting started with Pixi for Python](https://pixi.dev/docs/python/getting-started/)
+- [Getting started with Pixi for Python](https://pixi.dev/docs/python/./)
 
 ## Conda and virtualenv
 
@@ -201,11 +201,17 @@ The `alpine_latest.sif` file contains the immutably built image you can reuse in
 
 ### Obtaining images
 
+There exsits some more widely-used images under `/ada-software/containers/`.
+Likely however, they won't be enough and you'll need to obtain other images onto your `$HOME` directory. 
+There are several ways to do so:
+
 - `apptainer pull docker://<image>` to download from Docker Hub or other registries.
 - Build from a definition file with `apptainer build` (supported on compute nodes).
 - Transfer a local `.sif` file to ADA via `scp` or `rsync`.
 
 When running in SLURM scripts, invoke `apptainer exec` directly inside the job steps.
+ Note that ADA disables `setuid` and `fakeroot`, so plan on unprivileged builds.
+ If you need special privileges when building, then you need to first build on your local machine and then transfer the `.sif` image onto ADA.  
 
 ### When to choose Apptainer
 
@@ -214,6 +220,39 @@ When running in SLURM scripts, invoke `apptainer exec` directly inside the job s
 - You are packaging complex stacks for collaborators or for publication.
 
 Expect a steeper learning curve compared to modules or Pixi, but gain portability and reproducibility.
+
+::: {.callout-tip collapse="true" title="Parallel (MPI) and GPU with Apptainer"}
+Minimal patterns for running distributed and GPU workloads from SLURM through Apptainer. See the official docs for full guidance.
+
+- MPI (distributed across tasks):
+  ```bash
+  #SBATCH --partition=<cpu-partition>
+  #SBATCH --time=00:30:00
+  #SBATCH --ntasks=4
+  #SBATCH --cpus-per-task=1
+
+  module load 2025
+  # Launch ranks with the host scheduler; enter the container per rank
+  srun apptainer exec /path/to/image.sif \ 
+       /path/in/container/my_mpi_program --arg foo
+  ```
+  - Build containers against an MPI implementation compatible with ADA’s stack, or follow the Apptainer guidance on binding host MPI into the container.
+  - References: Apptainer MPI docs: https://apptainer.org/docs/user/main/mpi.html
+
+- GPUs (NVIDIA):
+  ```bash
+  #SBATCH --partition=<gpu-partition>
+  #SBATCH --gres=gpu:1
+  #SBATCH --time=00:20:00
+
+  module load 2025
+  # Expose NVIDIA devices and libraries to the container
+  apptainer exec --nv /path/to/image.sif nvidia-smi
+  ```
+  - Use `--nv` to enable NVIDIA GPU passthrough (or `--rocm` for AMD if applicable).
+  - For framework runs (PyTorch/TensorFlow), add `--nv` and run your normal command inside the container.
+  - References: Apptainer GPU docs: https://apptainer.org/docs/user/main/gpu.html
+:::
 
 ### References
 
