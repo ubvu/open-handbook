@@ -14,7 +14,7 @@ The easiest way is to install the app for [eduVPN institute access](https://vu.e
 
 ## Instructions
 
-#### MacOS
+### MacOS
 
 1. Open the Finder application
 2. In the "Go" menu, pick "Connect to Server..." or press  "⌘K"
@@ -26,7 +26,7 @@ The easiest way is to install the app for [eduVPN institute access](https://vu.e
 
 SciStor shares appear on the left after opening the SciStor location. You may open the desired SciStor share by double-clicking it.
 
-#### Windows
+### Windows
 
 1. Open Windows File Explorer
 2. Right-click on This PC and choose "Map network drive...""
@@ -34,11 +34,11 @@ SciStor shares appear on the left after opening the SciStor location. You may op
 4. Click "Finish"
 5. You will now be asked to log in. This is not possible with your PIN code. Choose the "More choices" option, and log in with your VU email address and password
 
-#### 'Green' Linux workspaces
+### 'Green' Linux workspaces
 
 Green Linux workplaces (supported by VU IT) have a connection to SciStor from home. All SciStor shares can be found under the path `/research`.
 
-#### Other Linux workstations
+### Other Linux workstations
 
 Other self-managed Linux workstations can also connect to SciStor.
 
@@ -104,5 +104,5 @@ Linux users outside campus can follow the previous SFTP explanation.
 
 <!-- > **Warning**  -->
 ::: {.callout-warning}
-Due to Vu policy, this method will be deprecated in the near future.
+Due to VU policy, this method will be deprecated in the near future.
 :::
