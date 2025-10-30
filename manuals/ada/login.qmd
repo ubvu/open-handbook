@@ -2,12 +2,11 @@
 title: Login
 date: last-modified
 ---
-
-## SSH Login Setup (Linux and macOS, recommended)
-
 ::: {.callout-warning title="Prerequisites"}
 - You must be comfortable with Bash and basic HPC concepts. See: [Unix Shell](https://swcarpentry.github.io/shell-novice/) and [HPC Introduction](https://carpentries-incubator.github.io/hpc-intro/).
 :::
+
+## SSH Login Setup (Linux and macOS, recommended)
 
 Here we will set-up passwordless SSH access to ADA. 
 
@@ -22,7 +21,7 @@ After setup you should be able to run:
 No passwords; the stepstone is used automatically.
 :::
 
-## Step 1 — Create an SSH key
+### Step 1 — Create an SSH key
 
 On your local linux machine, generate a modern key and load it into your agent:
 
@@ -32,7 +31,7 @@ eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/ada_ed25519
 ```
 
-## Step 2 — Configure SSH
+### Step 2 — Configure SSH
 
 Create or edit `~/.ssh/config` and add:
 
@@ -68,7 +67,7 @@ Host ada-login-direct inter0?-direct
     IdentitiesOnly yes
 ```
 
-## Step 3 — Install your key on ADA
+### Step 3 — Install your key on ADA
 
 First copy your public key to the stepstone:
 
