@@ -1,0 +1,100 @@
+---
+title: Multiprocessing
+date: last-modified
+---
+
+This example applies multiprocessing in Python on 1 compute node. 
+
+To apply this to your own work, insert your sequential program in this template as a task. Be aware of how you read/write data in your sequential program and prevent multiple processes from reading/writing to the same data location at the same time. Best practice is to either use separate result files on scratch for each process or use queues (`multiprocessing.Queue`) or pipes (`multiprocessing.Pipe`) for inter-process communication.
+
+## Slurm batch submission script:
+
+`multiproc.slurm`
+
+```sh
+#!/bin/bash
+#SBATCH --job-name=multiproc_1n_10c
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=10
+#SBATCH --time=00:20:00
+#SBATCH --output=%x_output.log   # Auto-generated log file name (x = job-name)
+#SBATCH --error=%x_error.log    # Auto-generated error file name (x = job-name)
+
+# Optional: allow passing cores as argument
+NUM_CORES=${SLURM_CPUS_PER_TASK:-10}  # Default to 10 if no argument is given
+
+echo "== Starting run at $(date)"
+echo "== Job ID: ${SLURM_JOBID}"
+echo "== Node list: ${SLURM_NODELIST}"
+echo "== Submit dir: ${SLURM_SUBMIT_DIR}"
+echo "== Using $NUM_CORES CPU cores for this job"
+
+# Move to scratch space and copy Python script to scratch directory
+cd "$TMPDIR"
+cp "$SLURM_SUBMIT_DIR/multiproc.py" .
+
+# Load Python module
+module load 2025
+module load Python/3.12.3-GCCcore-13.3.0
+
+# Run Python script with specified number of cores
+python3 multiproc.py $NUM_CORES
+
+echo "== Job completed at $(date)"
+
+```
+
+## Python script:
+
+`multiproc.py`
+
+```sh
+#!/usr/bin/env python3
+
+import sys
+import multiprocessing
+
+def task(core_id):
+    """Function to simulate a CPU-intensive task."""
+    print(f"Core {core_id} is working...")
+    result = sum(i * i for i in range(10**7))  # Example "heavy" computation
+    print(f"Core {core_id} finished with result: {result}")
+    return result
+
+def main():
+    num_cores = int(sys.argv[1]) if len(sys.argv) > 1 else 10
+    
+    with multiprocessing.Pool(processes=num_cores) as pool:
+        results = pool.map(task, range(num_cores))
+    
+    print("All tasks completed.")
+    print("Results:", results)
+
+if __name__ == "__main__":
+    main()
+
+```
+
+## Running the script
+
+Assuming you are inside your slurm submission directory, for example, running on 8 logical cores:
+
+```sh
+$ sbatch --cpus-per-task=8 multiproc.slurm
+```
+
+Once you kicked your job off, its good practice to check if its really running on the amount of cores you specified. Check you current jobs and note on which node it is running:
+
+```sh
+$ squeue -u <vunetid>
+JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+1122822        defq PythonMu   <VUNETID>  R       0:07      1 node010
+```
+
+Then, ssh into that allocated compute node and run htop to checkout your work in action:
+
+```sh
+    $ ssh node010
+    $ htop -u <VUNETID>
+```

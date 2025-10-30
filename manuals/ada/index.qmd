@@ -10,7 +10,7 @@ listing:
   filter-ui: true
   type: grid
   fields: [title,description]
-  sort: false
+  sort: file
 image: '/public/manuals/ada/ada1.jpg'
 description: 'In this section ADA users can find tutorials, useful tips and tricks, and essential documentation to help them make the most of the cluster.'
 ---

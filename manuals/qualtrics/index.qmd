@@ -1,0 +1,18 @@
+---
+title: Qualtrics Manuals
+categories: []
+listing:
+  contents: 
+    - ./*.qmd
+  page-size: 40
+  filter-ui: true
+  type: grid
+  fields: [title,description]
+  sort: false
+image: '/public/qxm_color.svg'
+description: 'This section has more in-depth information about Qualtrics.'
+---
+
+::: {.callout-tip}
+The [Qualtrics Topic page](/topics/qualtrics.qmd) explains what Qualtrics does and how you can set up an account.
+:::

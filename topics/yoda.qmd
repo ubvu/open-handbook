@@ -36,7 +36,7 @@ At any moment you can add descriptive metadata to a folder in Yoda via a web for
 At any moment you can submit a data folder with metadata for Archiving in the Yoda **Vault**. Data in the Vault is read-only and cannot be deleted. To help make sure the dataset is suitable for archiving a Yoda **datamanager** (usually a data manager from your department or a faculty data steward) will review your submission before final approval. Data in the Vault is directly accessible for your collaborators. Access for the Yoda datamanager role ensures the data remains accessible on the long term.
 
 ### Publishing metadata and data
-From the Yoda Vault you can submit the dataset for **publication**. A [DOI](https://www.doi.org/the-identifier/what-is-a-doi/) will be generated and registered with [DataCite](https://datacite.org/) together with the metadata. DataCite ensures your dataset becomes findable on the internet and citable.
+From the Yoda Vault you can submit the dataset for **publication**. A [DOI](https://www.doi.org/the-identifier/what-is-a-doi/) will be generated and registered with [DataCite](https://commons.datacite.org/doi.org?query=client.uid:delft.vudata) together with the metadata. DataCite ensures your dataset becomes findable on the internet and citable.
 
 The DOI link will lead to a **landing page** in Yoda showing the metadata. The dataset itself can be Open, allowing direct download, Restricted, meaning other researchers need to follow a data request procedure, or Closed, signalling the dataset is properly archived but not available for reuse. 
 

@@ -37,7 +37,12 @@ website:
       contents:
         - manuals/scistor/index.qmd 
         - auto: manuals/scistor/*.qmd
-
+    - id: sb-qualtrics
+      style: floating
+      search: true
+      contents:
+        - manuals/qualtrics/index.qmd
+        - auto: manuals/qualtrics/*.qmd 
 
   navbar:
     background: "#0080c9"
