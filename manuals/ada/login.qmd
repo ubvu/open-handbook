@@ -3,7 +3,7 @@ title: Login
 date: last-modified
 ---
 
-## Expectations and Access
+## SSH Login Setup (Linux and macOS, recommended)
 
 ::: {.callout-warning title="Prerequisites"}
 - You must be comfortable with Bash and basic HPC concepts. See: [Unix Shell](https://swcarpentry.github.io/shell-novice/) and [HPC Introduction](https://carpentries-incubator.github.io/hpc-intro/).
@@ -40,6 +40,7 @@ Create or edit `~/.ssh/config` and add:
 Host stepstone-vu
     HostName ssh.data.vu.nl
     User <VUNETID>
+    IdentityFile ~/.ssh/ada_ed25519
     ServerAliveInterval 120
 
 Host ada-login
@@ -69,7 +70,13 @@ Host ada-login-direct inter0?-direct
 
 ## Step 3 — Install your key on ADA
 
-Copy your public key once; `$HOME` is shared across nodes.
+First copy your public key to the stepstone:
+
+```sh
+ssh-copy-id stepstone-vu   # prompts for your VU password 
+```
+
+Then copy your public key to ADA:
 
 ```sh
 ssh-copy-id ada-login   # prompts for your ADA password once
@@ -79,8 +86,28 @@ Test connections:
 
 ```sh
 ssh ada-login
-ssh inter01
 ```
+
+You should be logged into ADA without being prompted for a password!
+
+## SSH Login with MobaXterm (Windows)
+Here we provide the steps to connect to the cluster using MobaXterm.
+
+1. Download and install MobaXTerm from [mobatek.net](https://mobaxterm.mobatek.net/download.html).
+2. Open MobaXTerm and click on Session
+3. Enter the Basic SSH settings as follows:
+   1. Remote host: `ada.labs.vu.nl`
+   2. Tick "specify username"
+   3. Enter your username (VUnetID)
+4. Go to "Network settings" and click SSH gateway (jump host)
+5. Enter the following details and click OK
+   1. Gateway host: `ssh.data.vu.nl`
+   2. Enter your username (VUnetID)
+6. Save the settings. When not connected automatically, you can click on User sessions, and double click "ada.labs.vu.nl (VUnetID)"
+7. You will be asked for a password for "ssh.data.vu.nl". This is your NORMAL VUNETID password, NOT the cluster password your received from ITVO.
+8. If not connected automatically, connect to the server again. Now you will see a terminal window which asks for another password. Here you should enter the CLUSTER password that you received from ITVO. Note that you will not see the cursor moving when typing. This is normal. When you finished typing your password hit ENTER.
+9. You will now see a terminal window, similar to this one. On connecting for the first time, you will be asked to change your CLUSTER password. Enter your CLUSTER password, then enter a new password (this can be identical to your VUNETID password).
+10. Congratulations, you are now connected to the cluster! 
 
 ## Login node policy
 
