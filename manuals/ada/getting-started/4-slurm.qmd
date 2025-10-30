@@ -3,11 +3,9 @@ title: Using Slurm
 date: last-modified
 ---
 
+This page explains the basics of using the Slurm scheduler.
+
 ADA uses the Slurm scheduler to allocate resources to users. This page explains how to get started with the Slurm scheduler. 
-
-To learn more read the [Slurm documentation](https://slurm.schedmd.com/quickstart.html). 
-
-------------
 
 ## Most used commands
 
@@ -44,7 +42,7 @@ scancel -u <VUNETID>
 
 Distributing your workload can be done in a lot of different ways. It is good practice to first determine your workflow in a single-threaded fashion (no distribution of compute), and then identify parts that can be distributed over multiple processors at the same time. More extensive tutorials on how to do this will follow soon. The most important points for now to get you started:
 
-- Determine your input, output and temporary data. Use the fast scratch directory ($TMPDIR, also see [Basic Slurm Job](../code-examples/simpleslurm.qmd)) on the compute nodes if you handle large datasets or if you have to perform intermediate I/O operations. Be aware that the scratch directory is not persistent, data will be removed from it after the job finishes.
+- Determine your input, output and temporary data. Use the fast scratch directory ($TMPDIR, also see [Basic Slurm Job](./7-firstjob.qmd)) on the compute nodes if you handle large datasets or if you have to perform intermediate I/O operations. Be aware that the scratch directory is not persistent, data will be removed from it after the job finishes.
 - Always specify the --output and --error flags in your Slurm script for debugging purposes.
 - The bigger your allocation requests, the longer you might have to wait to get those resources. Split your jobs in smaller chunks if possible (e.g. by using [job arrays](https://slurm.schedmd.com/job_array.html))
 - Check your code on style and execution. Do you clear memory when necessary? Are your I/O operations finished correctly before the end of your script?
@@ -76,4 +74,5 @@ To see which generic resources are available to you specifically:
 scontrol show nodes | grep -E "NodeName|Gres"
 ```
 
+To learn more read the [Slurm documentation](https://slurm.schedmd.com/quickstart.html). 
 

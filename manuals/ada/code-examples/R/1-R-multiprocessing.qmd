@@ -1,0 +1,102 @@
+---
+title: Multiprocessing
+date: last-modified
+---
+
+This example applies multiprocessing in R on 1 compute node. 
+
+For parrallel execution in R, there are several options such as:
+
+- library(parallel) - base R package for parallel execution.
+- library(foreach) and library(doParallel) - popular option to transform sequential for-loops in parallel for-loops quickly. 
+- library(furrr) - used to parallelize functions from the purrr package.
+- library(BiocParallel) - used to parallelize functions from Bioconductor packages.
+
+In this example, we make use of the base R package for parallel execution.
+
+## Slurm batch submission script:
+
+`multiproc-R.slurm`
+```sh
+#!/bin/bash
+#SBATCH --job-name=multiproc_R_1n_10c
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=10
+#SBATCH --time=00:20:00
+#SBATCH --output=%x_output.log
+#SBATCH --error=%x_error.log
+
+NUM_CORES=${SLURM_CPUS_PER_TASK:-10}
+
+echo "== Starting run at $(date)"
+echo "== Job ID: ${SLURM_JOBID}"
+echo "== Node list: ${SLURM_NODELIST}"
+echo "== Submit dir: ${SLURM_SUBMIT_DIR}"
+echo "== Using $NUM_CORES CPU cores"
+
+# Move to scratch space and copy R script to scratch directory
+cd "$TMPDIR"
+cp "$SLURM_SUBMIT_DIR/multiproc.R" .
+
+# Load R module
+module load 2025
+module load R
+
+# Run R script
+Rscript multiproc.R $NUM_CORES
+
+# Copy the results from scratch space back to the submission directory
+cp ./results.csv "$SLURM_SUBMIT_DIR/results.csv"
+
+echo "== Job completed at $(date)"
+```
+
+## R script:
+
+`multiproc.R`
+
+```sh
+#!/usr/bin/env Rscript
+
+# --- Parse command line arguments ---
+args <- commandArgs(trailingOnly = TRUE)
+n_cores <- as.numeric(args[1])
+if (is.na(n_cores)) n_cores <- 1  # default to 1 if not provided
+
+cat("== Starting parallel computation on", n_cores, "cores ==\n")
+
+# --- Load parallel library ---
+library(parallel)
+
+# --- CPU-intensive task ---
+heavy_compute <- function(core_id) {
+  cat(sprintf("Core %d is working...\n", core_id))
+  # Example CPU-intensive computation (sum of squares loop)
+  result <- sum((1:1e9)^2)
+  cat(sprintf("Core %d finished with result: %e\n", core_id, result))
+  return(result)
+}
+
+# --- Run in parallel ---
+start_time <- Sys.time()
+
+results <- mclapply(1:n_cores, heavy_compute, mc.cores = n_cores)
+
+end_time <- Sys.time()
+cat("== All tasks completed ==\n")
+cat("Elapsed time:", round(difftime(end_time, start_time, units = "secs"), 2), "seconds\n")
+
+# --- Save results to file ---
+write.csv(data.frame(core = 1:n_cores, result = unlist(results)), "results.csv", row.names = FALSE)
+cat("Results written to results.csv\n")
+```
+
+## Running the script
+
+Assuming you are inside your slurm submission directory, for example, running on 8 logical cores:
+
+```sh
+$ sbatch --cpus-per-task=8 multiproc-R.slurm
+```
+
