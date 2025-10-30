@@ -413,55 +413,59 @@
     "text": "Tip\n\n\n\nThe SciStor Topic page explains how to request a new SciStor share and how to access a share.\n\n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\nSciStor Data Recovery\n\n\nHow do I recover data from Snapshots?\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "manuals/ada/code-examples/matlab.html",
-    "href": "manuals/ada/code-examples/matlab.html",
-    "title": "MATLAB",
+    "objectID": "manuals/ada/code-examples/Python/2-python-multiprocessing.html",
+    "href": "manuals/ada/code-examples/Python/2-python-multiprocessing.html",
+    "title": "Multiprocessing",
     "section": "",
-    "text": "Examples of using MATLAB in interactive and batch modes.\nMatlab has several features to work in batch mode on a HPC cluster.\nAssuming you know how to create matlab scripts we start simply by executing matlab interactively on a compute node",
+    "text": "This example applies multiprocessing in Python on 1 compute node.\nTo apply this to your own work, insert your sequential program in this template as a task. Be aware of how you read/write data in your sequential program and prevent multiple processes from reading/writing to the same data location at the same time. Best practice is to either use separate result files on scratch for each process or use queues (multiprocessing.Queue) or pipes (multiprocessing.Pipe) for inter-process communication.",
     "crumbs": [
       "Code Examples",
-      "MATLAB"
+      "Python",
+      "Multiprocessing"
     ]
   },
   {
-    "objectID": "manuals/ada/code-examples/matlab.html#interactive",
-    "href": "manuals/ada/code-examples/matlab.html#interactive",
-    "title": "MATLAB",
-    "section": "Interactive",
-    "text": "Interactive\nRequest resources (1 node, 1 cpu) in a partition\nsrun -N 1 -p defq --pty /bin/bash\nmodule load matlab/R2023a\ncd your/data/\nHere is an example of a trivial MATLAB script (hello_world.m):\nfprintf('Hello world.\\n')\nRun with matlab using only one computational thread.\n$ matlab -nodisplay -singleCompThread -r hello_world\nHello world.\n&gt;&gt;\nMatlab waits at the end of the script if there is no exit. In an compute job this would keep the job running untill the wallclocklimit so we add an exit at the end. The convenient “-batch” option combines these options.\n-batch MATLAB_command   - Start MATLAB and execute the MATLAB command(s) with no desktop\n                              and certain interactive capabilities disabled. Terminates\n                              upon successful completion of the command and returns exit\n                              code 0. Upon failure, MATLAB terminates with a non-zero exit.\n                              Cannot be combined with -r.\nmatlab -batch hello_world",
+    "objectID": "manuals/ada/code-examples/Python/2-python-multiprocessing.html#slurm-batch-submission-script",
+    "href": "manuals/ada/code-examples/Python/2-python-multiprocessing.html#slurm-batch-submission-script",
+    "title": "Multiprocessing",
+    "section": "Slurm batch submission script:",
+    "text": "Slurm batch submission script:\nmultiproc.slurm\n#!/bin/bash\n#SBATCH --job-name=multiproc_1n_10c\n#SBATCH --nodes=1\n#SBATCH --ntasks=1\n#SBATCH --cpus-per-task=10\n#SBATCH --time=00:20:00\n#SBATCH --output=%x_output.log   # Auto-generated log file name (x = job-name)\n#SBATCH --error=%x_error.log    # Auto-generated error file name (x = job-name)\n\n# Optional: allow passing cores as argument\nNUM_CORES=${SLURM_CPUS_PER_TASK:-10}  # Default to 10 if no argument is given\n\necho \"== Starting run at $(date)\"\necho \"== Job ID: ${SLURM_JOBID}\"\necho \"== Node list: ${SLURM_NODELIST}\"\necho \"== Submit dir: ${SLURM_SUBMIT_DIR}\"\necho \"== Using $NUM_CORES CPU cores for this job\"\n\n# Move to scratch space and copy Python script to scratch directory\ncd \"$TMPDIR\"\ncp \"$SLURM_SUBMIT_DIR/multiproc.py\" .\n\n# Load Python module\nmodule load 2025\nmodule load Python/3.12.3-GCCcore-13.3.0\n\n# Run Python script with specified number of cores\npython3 multiproc.py $NUM_CORES\n\necho \"== Job completed at $(date)\"",
     "crumbs": [
       "Code Examples",
-      "MATLAB"
+      "Python",
+      "Multiprocessing"
     ]
   },
   {
-    "objectID": "manuals/ada/code-examples/matlab.html#batch-mode",
-    "href": "manuals/ada/code-examples/matlab.html#batch-mode",
-    "title": "MATLAB",
-    "section": "Batch mode",
-    "text": "Batch mode\nCombining this in a slurm script we can queue matlab workloads.\n#!/bin/bash -l\n#SBATCH -J MyMatlab\n#SBATCH -N 1\n#SBATCH --cpus-per-task=1\n#SBATCH -p defq   \n#SBATCH --output=%x_%j.out\n#SBATCH --error=%x_%j.err\n#SBATCH --mail-type=END,FAIL\n#SBATCH --mail-user=&lt;YOUR EMAIL&gt;\n\n# Note: for parallel operations increase cpus-per-task above\n# Note 2: output and error logs can be given absolute paths \n\necho \"== Starting run at $(date)\"\necho \"== Job ID: ${SLURM_JOBID}\"\necho \"== Node list: ${SLURM_NODELIST}\"\necho \"== Submit dir. : ${SLURM_SUBMIT_DIR}\"\necho \"== Scratch dir. : ${TMPDIR}\"\n\n# cd $TMPDIR\n# or change to a project folder with matlab file e.g. hello_World.m\n# cd your/data\n\n# Load matlab module\nmodule load 2022 matlab/R2023a\n\n# execute\nmatlab -batch hello_world",
+    "objectID": "manuals/ada/code-examples/Python/2-python-multiprocessing.html#python-script",
+    "href": "manuals/ada/code-examples/Python/2-python-multiprocessing.html#python-script",
+    "title": "Multiprocessing",
+    "section": "Python script:",
+    "text": "Python script:\nmultiproc.py\n#!/usr/bin/env python3\n\nimport sys\nimport multiprocessing\n\ndef task(core_id):\n    \"\"\"Function to simulate a CPU-intensive task.\"\"\"\n    print(f\"Core {core_id} is working...\")\n    result = sum(i * i for i in range(10**7))  # Example \"heavy\" computation\n    print(f\"Core {core_id} finished with result: {result}\")\n    return result\n\ndef main():\n    num_cores = int(sys.argv[1]) if len(sys.argv) &gt; 1 else 10\n    \n    with multiprocessing.Pool(processes=num_cores) as pool:\n        results = pool.map(task, range(num_cores))\n    \n    print(\"All tasks completed.\")\n    print(\"Results:\", results)\n\nif __name__ == \"__main__\":\n    main()",
     "crumbs": [
       "Code Examples",
-      "MATLAB"
+      "Python",
+      "Multiprocessing"
     ]
   },
   {
-    "objectID": "manuals/ada/code-examples/matlab.html#parpool",
-    "href": "manuals/ada/code-examples/matlab.html#parpool",
-    "title": "MATLAB",
-    "section": "Parpool",
-    "text": "Parpool\nmathworks-parpool",
+    "objectID": "manuals/ada/code-examples/Python/2-python-multiprocessing.html#running-the-script",
+    "href": "manuals/ada/code-examples/Python/2-python-multiprocessing.html#running-the-script",
+    "title": "Multiprocessing",
+    "section": "Running the script",
+    "text": "Running the script\nAssuming you are inside your slurm submission directory, for example, running on 8 logical cores:\n$ sbatch --cpus-per-task=8 multiproc.slurm\nOnce you kicked your job off, its good practice to check if its really running on the amount of cores you specified. Check you current jobs and note on which node it is running:\n$ squeue -u &lt;vunetid&gt;\nJOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)\n1122822        defq PythonMu   &lt;VUNETID&gt;  R       0:07      1 node010\nThen, ssh into that allocated compute node and run htop to checkout your work in action:\n    $ ssh node010\n    $ htop -u &lt;VUNETID&gt;",
     "crumbs": [
       "Code Examples",
-      "MATLAB"
+      "Python",
+      "Multiprocessing"
     ]
   },
   {
-    "objectID": "manuals/ada/code-examples/python/python-multithreading.html",
-    "href": "manuals/ada/code-examples/python/python-multithreading.html",
+    "objectID": "manuals/ada/code-examples/Python/1-python-multithreading.html",
+    "href": "manuals/ada/code-examples/Python/1-python-multithreading.html",
     "title": "Multithreading",
     "section": "",
-    "text": "This example applies multithreading in Python.\nBe aware that the Python interpreter process is constrained by the Global Interpreter Lock (GIL) and therefore can only use the resources made available to that process (generally, 1 logical core). Therefore, this multithreading example is inherently concurrent because of the GIL constraint. Although code is not executed in parallel, multithreading in Python can still be beneficial when, for example: - you are waiting for I/O operations to complete and want to compute in the meantime - you wish to prioritize the order of execution within your python script -",
+    "text": "This example applies multithreading in Python.\nBe aware that the Python interpreter process is constrained by the Global Interpreter Lock (GIL) and therefore can only use the resources made available to that process (generally, 1 logical core). Therefore, this multithreading example is inherently concurrent because of the GIL constraint. Although code is not executed in parallel, multithreading in Python can still be beneficial when, for example:",
     "crumbs": [
       "Code Examples",
       "Python",
@@ -469,8 +473,8 @@
     ]
   },
   {
-    "objectID": "manuals/ada/code-examples/python/python-multithreading.html#slurm-batch-submission-script",
-    "href": "manuals/ada/code-examples/python/python-multithreading.html#slurm-batch-submission-script",
+    "objectID": "manuals/ada/code-examples/Python/1-python-multithreading.html#slurm-batch-submission-script",
+    "href": "manuals/ada/code-examples/Python/1-python-multithreading.html#slurm-batch-submission-script",
     "title": "Multithreading",
     "section": "Slurm batch submission script:",
     "text": "Slurm batch submission script:\nmultithread.slurm\n#!/bin/bash\n#SBATCH --job-name=multithread_1n_8t\n#SBATCH --nodes=1\n#SBATCH --ntasks=1\n#SBATCH --cpus-per-task=1  \n#SBATCH --time=00:10:00\n#SBATCH --output=%x_output.log   # Auto-generated log file name (x = job-name)\n#SBATCH --error=%x_error.log    # Auto-generated error file name (x = job-name)\n\n# Load in Software\nmodule load 2024 \nmodule load Python/3.12.3-GCCcore-13.3.0\n\n# Move to scratch space and copy the submit directory to the scratch space\ncd \"$TMPDIR\"\ncp -r $SLURM_SUBMIT_DIR/* .\n\necho \"My scratch space directory: $TMPDIR\"\necho \"My slurm submission directory: $SLURM_SUBMIT_DIR\"\necho\n\n# Submit the program\npython -u multithread.py --threads 8 --message \"Running ...\"",
@@ -481,8 +485,8 @@
     ]
   },
   {
-    "objectID": "manuals/ada/code-examples/python/python-multithreading.html#python-script",
-    "href": "manuals/ada/code-examples/python/python-multithreading.html#python-script",
+    "objectID": "manuals/ada/code-examples/Python/1-python-multithreading.html#python-script",
+    "href": "manuals/ada/code-examples/Python/1-python-multithreading.html#python-script",
     "title": "Multithreading",
     "section": "Python script",
     "text": "Python script\nmultithread.py\nimport threading\nimport time\nimport argparse\n\ndef worker(thread_id, message):\n    \"\"\"Worker function that prints a message and simulates work\"\"\"\n    print(f\"Thread {thread_id} says: {message}\")\n    time.sleep(5)  # Simulate some work\n    print(f\"Thread {thread_id} is done\")\n\ndef main():\n    parser = argparse.ArgumentParser(description=\"Multithreading example in SLURM\")\n    parser.add_argument(\"--threads\", type=int, default=8, help=\"Number of threads to use\")\n    parser.add_argument(\"--message\", type=str, default=\"Hello from thread (default)\", help=\"Message for each thread\")\n    args = parser.parse_args()\n\n    threads = []\n    for i in range(args.threads):\n        t = threading.Thread(target=worker, args=(i, args.message))\n        threads.append(t)\n        t.start()\n\n    for t in threads:\n        t.join()\n\n    print(\"\\nAll threads finished execution\")\n\nif __name__ == \"__main__\":\n    main()",
@@ -493,8 +497,8 @@
     ]
   },
   {
-    "objectID": "manuals/ada/code-examples/python/python-multithreading.html#running-the-script",
-    "href": "manuals/ada/code-examples/python/python-multithreading.html#running-the-script",
+    "objectID": "manuals/ada/code-examples/Python/1-python-multithreading.html#running-the-script",
+    "href": "manuals/ada/code-examples/Python/1-python-multithreading.html#running-the-script",
     "title": "Multithreading",
     "section": "Running the script",
     "text": "Running the script\nAssuming you are inside your slurm submission directory:\nsbatch multithread.slurm",
@@ -505,146 +509,212 @@
     ]
   },
   {
-    "objectID": "manuals/ada/getting-started/hpc-101.html",
-    "href": "manuals/ada/getting-started/hpc-101.html",
-    "title": "Essential concepts for HPC users",
+    "objectID": "manuals/ada/getting-started/6-yoda.html",
+    "href": "manuals/ada/getting-started/6-yoda.html",
+    "title": "Data transfer with Yoda",
     "section": "",
-    "text": "This page offers a short explanation of essential concept in High Performance Computing.\n\nConcurrent vs. Parallel\nConcurrent programs handle multiple instruction sequences at the same time.\nParallel programs execute multiple instruction sequences at the same time.\nWhen a program runs in parallel on multiple cores it is always concurrent.\nWhen a program is handled concurrently, it is not necessarily a parallel program. Instructions can also make use of time-sharing (sharing a single CPU core).\n\n\nMultithreading vs. Multiprocessing\nMultithreaded programs use multiple threads and are all part of the same process. These threads share the same memory and resources.\nMultiprocessed programs use multiple processes. Each process has its own memory and resource allocation.\nBoth multithreaded and multiprocessed programs are concurrent programs, they are therefore also not necessarily parallel.\nMultiprocessed programs however enable true parallelism, by using multiple CPU cores simultanously where each CPU core is assigned one process.\n\n\nCompute Time vs. Communication Overhead\nIn HPC, program execution often focuses on designing multiprocessing programs that execute tasks in parallel across multiple compute nodes. A crucial consideration is balancing compute time against communication overhead.\nFor instance, when dealing with large datasets, distributing the workload by dividing the data into smaller chunks across multiple processors can significantly reduce computation time. However, excessively fine-grained data partitioning can lead to substantial communication overhead, where the time spent transferring data between nodes outweighs the computational gains.\n\n\nAmdahls Law\nAmdahls law is formula that shows how much faster a task can be completed when more resources are added to a system. In the context of P (fraction of the code that can be parallelized) and N (number of processors) the speedup is defined as follows:\n\nSpeedup = 1 / (1 - P + P / N)\n\nBelow example illustrates that the serial portion of a program has a big impact on the overall speedup:\n\n\n\nAmdahls Law\n\n\nWhen using ADA, take Amdahls Law into consideration: parallelize your code as much as possible before scaling up your requested processors.\n\n\nTerms\nCPU: a physical, central processing unit in compute hardware. Most modern day CPU’s are multi-core, containing multiple cores.\nvCPU: a virtual, central processing unit. A CPU can contain multiple vCPU’s.\nCore: a physical processing unit on a CPU chip.\nLogical core: a virtual processing unit. A core can have multiple logical cores.\nHyperthreading: a technology that allows a core to appear as two logical cores in an operating system. Most hardware in the ADA cluster uses this technology by default. Compute intensive workloads will benefit to disable hyperthreading.\nGPU: a physical, graphical processing unit in compute hardware.\nvGPU: a virtual, graphical processing unit. A GPU can contain multiple vGPU’s.\nRAM: Random Access Memory, the temporary storage for data that the CPU needs. RAM offers fast Read/Write speeds and is volatile (data is lost when power is turned off).\nHDD: Hard Disk Drive, persistent storage offering Read/Write operations.\nSSD: Solid State Drive, persistent storage that offers faster Read/Write speeds than HDD’s.\nScratch Space: When we refer to scratch space, we usually refer to the local SSD storage on the compute nodes. Use of scratch can significantly speed up your programs if it relies heavily on data operations.",
+    "text": "This page explains how to transfer data from the VU Yoda instance using iRODS.\nSince Yoda is based on iRODS technology, it is possible to transfer data to and from Yoda using the iRODS communication protocol. This protocol can be used to transfer large amounts of data in an efficient way. On the ADA system, the iCommands are available to allow direct command-line access to Yoda.",
     "crumbs": [
       "Getting Started",
-      "Essential concepts for HPC users"
+      "Data transfer with Yoda"
     ]
   },
   {
-    "objectID": "manuals/ada/getting-started/login.html",
-    "href": "manuals/ada/getting-started/login.html",
-    "title": "Login",
+    "objectID": "manuals/ada/getting-started/6-yoda.html#configuration",
+    "href": "manuals/ada/getting-started/6-yoda.html#configuration",
+    "title": "Data transfer with Yoda",
+    "section": "Configuration",
+    "text": "Configuration\nTo use iCommands, a configuration file is required in your home directory. This file contains the necessary connection settings for accessing Yoda.",
+    "crumbs": [
+      "Getting Started",
+      "Data transfer with Yoda"
+    ]
+  },
+  {
+    "objectID": "manuals/ada/getting-started/6-yoda.html#basic-icommands",
+    "href": "manuals/ada/getting-started/6-yoda.html#basic-icommands",
+    "title": "Data transfer with Yoda",
+    "section": "Basic iCommands",
+    "text": "Basic iCommands\nFirst use the iinit command to connect. You will need a Yoda Data Access Password.\nThese are the basic commands for navigation and data transfer:\n\nipwd – Show current iRODS directory\nils – List contents of a directory\nicd – Change directory\niput – Upload files to Yoda\niget – Download files from Yoda\nirsync – Synchronize local and remote directories\n\nYour Yoda project folders are located under /vu/home.\nYou can find a quick introduction of the iCommands on the SURF wiki or you can check out this training manual.\nAll icommands are documented in the iRODS Docs",
+    "crumbs": [
+      "Getting Started",
+      "Data transfer with Yoda"
+    ]
+  },
+  {
+    "objectID": "manuals/ada/getting-started/7-firstjob.html",
+    "href": "manuals/ada/getting-started/7-firstjob.html",
+    "title": "Running your First Slurm Job",
     "section": "",
-    "text": "This page explains how to log in.\nYou will receive a temporary password by email once your account is created, which you can use to connect to the cluster using the Secure Shell protocol (SSH). If you do not have an account yet, you can request one via this form.\nTo log in to the cluster, you first need to log in to the VU network:\nand from there login to the actual cluster:\nFor ssh.data.vu.nl you use your VUnetID and VUnetID password. For ada.labs.vu.nl, you use your VUnetID and cluster password (initially provided to you by email, and changed by you after your first login).\nDirect access to the cluster is only possible from the VU Campus or from a SURF network location. From other network locations, first connect to the stepstone &lt;VUNETID&gt;@ssh.data.vu.nl, or use eduVPN Institutional Access.\nYou can use any SSH client to login at &lt;VUNETID&gt;@ada.labs.vu.nl. SSH has native support in Windows, you can use either the standard Command Prompt or Powershell, or a richer client like MobaXterm on Windows and iTerm2 on macOS.",
+    "text": "This page shows a simple Slurm job example to get started on ADA.",
     "crumbs": [
       "Getting Started",
-      "Login"
+      "Running your First Slurm Job"
     ]
   },
   {
-    "objectID": "manuals/ada/getting-started/login.html#ada-terms-of-use",
-    "href": "manuals/ada/getting-started/login.html#ada-terms-of-use",
-    "title": "Login",
-    "section": "ADA terms of use",
-    "text": "ADA terms of use\n\nDo not use the login nodes for computation! Login nodes are the access servers for many users. Always allocate resources through slurm.\nDo not launch jupyter notebooks or vscode servers on the login nodes. For that, we have the interactive nodes. Processes using vs code or jupyter kernels are terminated automatically on the login node. You can navigate to the interactive nodes from the login nodes: ssh inter01, inter02 , or connect directly (see VS code instruction below).\nUse scratch space as much as possible for data-heavy computations.",
+    "objectID": "manuals/ada/getting-started/7-firstjob.html#slurm-script",
+    "href": "manuals/ada/getting-started/7-firstjob.html#slurm-script",
+    "title": "Running your First Slurm Job",
+    "section": "Slurm script:",
+    "text": "Slurm script:\nmytestjob.slurm\n#!/bin/bash -l\n#SBATCH -J MyTestJob\n#SBATCH -N 1\n#SBATCH -p defq\n#SBATCH --output=MyTestJobResult.out\n#SBATCH --error=MyTestJobResult.err\n\necho \"== Starting run at $(date)\"\necho \"== Job ID: ${SLURM_JOBID}\"\necho \"== Node list: ${SLURM_NODELIST}\"\necho \"== Submit dir: ${SLURM_SUBMIT_DIR}\"\necho \"== Scratch dir: ${TMPDIR}\"\n\n# Move to scratch space\ncd \"$TMPDIR\"\n\n# Run your application (example: print hostname)\necho \"== Running on: $(hostname)\"\necho \"== Job completed at $(date)\"",
     "crumbs": [
       "Getting Started",
-      "Login"
+      "Running your First Slurm Job"
     ]
   },
   {
-    "objectID": "manuals/ada/getting-started/login.html#connecting-with-ssh-mobaxterm",
-    "href": "manuals/ada/getting-started/login.html#connecting-with-ssh-mobaxterm",
-    "title": "Login",
-    "section": "Connecting with SSH (MOBAXTERM)",
-    "text": "Connecting with SSH (MOBAXTERM)\nHere we provide the steps to connect to the cluster using MobaXterm.\n\nDownload and install MobaXTerm from mobatek.net.\nOpen MobaXTerm and click on Session\nEnter the Basic SSH settings as follows:\n\nRemote host: ada.labs.vu.nl\nTick “specify username”\nEnter your username (VUnetID)\n\nGo to “Network settings” and click SSH gateway (jump host)\nEnter the following details and click OK\n\nGateway host: ssh.data.vu.nl\nEnter your username (VUnetID)\n\nSave the settings. When not connected automatically, you can click on User sessions, and double click “ada.labs.vu.nl (VUnetID)”\nYou will be asked for a password for “ssh.data.vu.nl”. This is your NORMAL VUNETID password, NOT the cluster password your received from ITVO.\nIf not connected automatically, connect to the server again. Now you will see a terminal window which asks for another password. Here you should enter the CLUSTER password that you received from ITVO. Note that you will not see the cursor moving when typing. This is normal. When you finished typing your password hit ENTER.\nYou will now see a terminal window, similar to this one. On connecting for the first time, you will be asked to change your CLUSTER password. Enter your CLUSTER password, then enter a new password (this can be identical to your VUNETID password).\nCongratulations, you are now connected to the cluster!",
+    "objectID": "manuals/ada/getting-started/7-firstjob.html#running-the-script",
+    "href": "manuals/ada/getting-started/7-firstjob.html#running-the-script",
+    "title": "Running your First Slurm Job",
+    "section": "Running the script",
+    "text": "Running the script\nAssuming you are inside your slurm submission directory, run the following:\n$ sbatch mytestjob.slurm",
     "crumbs": [
       "Getting Started",
-      "Login"
+      "Running your First Slurm Job"
     ]
   },
   {
-    "objectID": "manuals/ada/getting-started/login.html#connecting-with-ssh-vs-code-editor",
-    "href": "manuals/ada/getting-started/login.html#connecting-with-ssh-vs-code-editor",
-    "title": "Login",
-    "section": "Connecting with SSH (VS Code Editor)",
-    "text": "Connecting with SSH (VS Code Editor)\n\n\n\n\n\n\nNote\n\n\n\nPlease note that running VS Code on the login nodes is prohibited and vs code server instances will be automatically shut down by the HPC admin. For this purpose, interactive nodes are set in place. Use the below instruction to connect to the interactive nodes.\n\n\n\n\n\n\n\n\nNote\n\n\n\nAt the moment, 3 interactive nodes are available. Soon, another 2 interactive nodes will be added.\n\n\n\nDownload and install the VS Code editor. If you run Windows, also install Windows Subsystem for Linux.\nOpen VS Code and enter the shortcut: CTRL+SHIFT+P\nSearch and select ’Remote-SSH: Open SSH Configuration File..”\nCopy-paste the following host info in the config file, replace &lt;VUNETID&gt; with your own VUNETID:\n\n# For connections from any network location:\n\nHost stepstone-vu\n    HostName ssh.data.vu.nl\n    User &lt;VUNETID&gt;\n    PubkeyAuthentication no\n\n# VS code does not support wildcards, therefore explicitly stating:\nHost ada-interactive1\n    HostName inter01.labs.vu.nl\n    ProxyJump stepstone-vu\n    ServerAliveInterval 120\n    User &lt;VUNETID&gt;\n    ConnectTimeout 60\n\nHost ada-interactive2\n    HostName inter02.labs.vu.nl\n    ProxyJump stepstone-vu\n    ServerAliveInterval 120\n    User &lt;VUNETID&gt;\n    ConnectTimeout 60\n\nHost ada-interactive3\n    HostName inter03.labs.vu.nl\n    ProxyJump stepstone-vu\n    ServerAliveInterval 120\n    User &lt;VUNETID&gt;\n    ConnectTimeout 60\n\n\n# Or, if you are connected to eduVPN / VU Campus network, \n# you don't need a proxyjump:\n\nHost ada-interactive1-noproxy\n    HostName inter01.labs.vu.nl\n    ServerAliveInterval 120\n    User &lt;VUNETID&gt;\n    ConnectTimeout 60\n\nSave and close the file.\nNavigate to the “Remote explorer” icon in the left ribbon and select either “ada-direct-login” or “ada-direct-login-noproxy” based on your setup choice.\nYou will be prompted twice for a password, first for ssh.data.vu.nl , then for ada.labs.vu.nl.\nOnce connected, your files may not be visible right a way. If they are not, select the “explorer” icon in the left ribbon . Open a folder and select the path you wish to open in your editor.\nDone! You are now connected to the ada cluster and have visible access to your selected folder.\n\n\n\n\n\n\n\nNote\n\n\n\nPlease be aware that you will still need to use the command line interface to submit jobs to the cluster (also see VS-code faq page ref)\n\n\nIf you wish, you can also setup a password-less login.",
-    "crumbs": [
-      "Getting Started",
-      "Login"
-    ]
-  },
-  {
-    "objectID": "manuals/ada/getting-started/login.html#remote-desktop-connection-applications-requiring-visual-forwarding.",
-    "href": "manuals/ada/getting-started/login.html#remote-desktop-connection-applications-requiring-visual-forwarding.",
-    "title": "Login",
-    "section": "Remote Desktop Connection / Applications requiring visual forwarding.",
-    "text": "Remote Desktop Connection / Applications requiring visual forwarding.\nIt is possible to establish a remote desktop connection (RDP) to the interactive nodes. You can use any remote desktop client of your preference. Be aware that remote desktop connections only work if you are connected to EduVPN or the Azure Virtual Desktop (so not the ssh step-stone server!)\nUse either inter01.labs.vu.nl, inter02.labs.vu.nl or inter03.labs.vu.nl and your ADA credentials to start a RDP session.\n\n\n\n\n\n\nNote\n\n\n\nX11 forwarding is not available on ADA. If you require graphical access, please use an RDP connection instead.",
-    "crumbs": [
-      "Getting Started",
-      "Login"
-    ]
-  },
-  {
-    "objectID": "manuals/ada/getting-started/login.html#login-troubleshooting",
-    "href": "manuals/ada/getting-started/login.html#login-troubleshooting",
-    "title": "Login",
-    "section": "Login Troubleshooting",
-    "text": "Login Troubleshooting\nIf you can’t connect to the ADA cluster:\n\nMake sure your ssh-agent is running: eval $(ssh-agent -s). This should return: Agent pid &lt;number&gt;\nIs your password correct? Mix ups between the VUNETID password and ADA cluster password occur regularly.\nIf your authentication attempts are timed out: Wait 15 minutes and try again.\nIs your keyboard layout set correctly (e.g. US international)?\nIf you are connecting from outside the VU Campus: are you connected to eduVPN OR ssh.data.vu.nl?\nIf you connect using a ssh-key, is this key added to your agent? (ssh-add ~/.ssh/key)\n\nIf none of the above helped in resolving your issue:\n\nSend an email to IT for Research (itvo.it@vu.nl) or submit a ticket via the IT ServicePortal with the following information:\n\nYour operating system (windows, macos, linux)\nThe ssh client you are using (bash shell, mobaxterm, iterm, wsl)\nThe network location (country) you are trying to connect from\nA verbose report of your ssh attempt (run and copy: ssh -vvv &lt;VUNETID&gt;@ada.labs.vu.nl and/or ssh -vvv &lt;VUNETID&gt;@ssh.data.vu.nl)",
-    "crumbs": [
-      "Getting Started",
-      "Login"
-    ]
-  },
-  {
-    "objectID": "manuals/ada/getting-started/login.html#optional-password-less-login",
-    "href": "manuals/ada/getting-started/login.html#optional-password-less-login",
-    "title": "Login",
-    "section": "[Optional] Password-less login",
-    "text": "[Optional] Password-less login\nIf you frequently log in to the cluster, it might be usefull to set up a key-based login.\nFirst generate a key on your personal device:\nssh-keygen -t ed25519 -C \"&lt;Your VU Email&gt;\" -f ~/.ssh/ada_direct_login\nCopy the public key to both the ssh-stepstone (ssh.data.vu.nl) and ada (ada.labs.vu.nl). ssh-copy-id will copy and add your key to the authorized keys file on the target server.\n# Irregardless of your network location, you can execute the following. \n# You may be prompted once to provide your password.\nssh-copy-id -i ~/.ssh/ada_direct_login.pub &lt;VUNETID&gt;@ssh.data.vu.nl\n\n# When connected to a VU/SURF network location, execute the following:\nssh-copy-id -i ~/.ssh/ada_direct_login.pub &lt;VUNETID&gt;@ada.labs.vu.nl\nMake sure your private key is added to the ssh-agent on your personal device:\nssh-add ~/.ssh/ada_direct_login\nAdd the complete configuration in your ssh config file (~/.ssh/config):\nHost stepstone-vu\n    HostName ssh.data.vu.nl\n    User &lt;VUNETID&gt;\n    AddKeysToAgent yes\n    IdentityFile ~/.ssh/ada_direct_login\n    IdentitiesOnly yes\n\nHost ada-direct-login\n    HostName ada.labs.vu.nl\n    ProxyJump stepstone-vu\n    ServerAliveInterval 120\n    User &lt;VUNETID&gt; \n    AddKeysToAgent yes\n    IdentityFile ~/.ssh/ada_direct_login\n    IdentitiesOnly yes\n\n# Or, if you are connected to eduVPN / VU Campus network, \n# you don't need a proxyjump:\n\nHost ada-direct-login-noproxy\n    HostName ada.labs.vu.nl\n    ServerAliveInterval 120\n    User &lt;VUNETID&gt; \n    AddKeysToAgent yes\n    IdentityFile ~/.ssh/ada_direct_login\n    IdentitiesOnly yes\nDone! You can now connect directly to ADA, from any location, without being prompted for a password:\nssh ada-direct-login",
-    "crumbs": [
-      "Getting Started",
-      "Login"
-    ]
-  },
-  {
-    "objectID": "manuals/ada/getting-started/slurm.html",
-    "href": "manuals/ada/getting-started/slurm.html",
-    "title": "Using Slurm",
+    "objectID": "manuals/ada/getting-started/2-software.html",
+    "href": "manuals/ada/getting-started/2-software.html",
+    "title": "Using Software on ADA",
     "section": "",
-    "text": "ADA uses the Slurm scheduler to allocate resources to users. This page explains how to get started with the Slurm scheduler.\nTo learn more read the Slurm documentation.",
+    "text": "This page explains how to load software modules and using a specific version of a software.\nTo load in software, you first load in the yearly software stack followed by the software you wish to use (including dependencies) in the following order:\nFor example loading in Python 3.12.3:\nFor example loading in R and the HDF5 data format library:",
     "crumbs": [
       "Getting Started",
-      "Using Slurm"
+      "Using Software on ADA"
     ]
   },
   {
-    "objectID": "manuals/ada/getting-started/slurm.html#most-used-commands",
-    "href": "manuals/ada/getting-started/slurm.html#most-used-commands",
-    "title": "Using Slurm",
-    "section": "Most used commands",
-    "text": "Most used commands\nSee jobs in the queue for a given user:\nsqueue -u &lt;VUNETID&gt;\nShow available node features:\nsinfo -o \"%20N  %10c  %10m  %25f  %10G \"\nSubmit a job:\nsbatch script\nShow the status of a currently running job:\nsstat -j &lt;jobID&gt;\nShow the final status of a finished job:\nsacct -j &lt;jobID&gt;\nCancel a job:\nscancel &lt;jobID&gt;\nCancel all your current jobs:\nscancel -u &lt;VUNETID&gt;",
+    "objectID": "manuals/ada/getting-started/2-software.html#software-modules",
+    "href": "manuals/ada/getting-started/2-software.html#software-modules",
+    "title": "Using Software on ADA",
+    "section": "Software Modules",
+    "text": "Software Modules\nSoftware on ADA is accessible through so-called ‘modules’ (also see https://lmod.readthedocs.io/en/latest/010_user.html). A module command tells the system which places to look for when accessing certain software.\nWhen you log in to the cluster, you can see which modules are loaded by default via:\n[abc123@login1 ~]$ module list\n\nCurrently Loaded Modules:\n1) shared   2) DefaultModules   3) gcc/11.2.0   4) slurm/bazis/23.02.8\nFor ADA, the software stack is managed through a yearly release module (e.g. 2023, 2024) and that release module is updated on-demand throughout the year. To load it in:\n[abc123@login1 ~]$ module load 2024\n[abc123@login1 ~]$ module list\n\nCurrently Loaded Modules:\n1) shared   2) DefaultModules   3) slurm/bazis/23.02.8   4) 2024\nOnce you have loaded the 2024 software stack module, you can check out its content (and that of all other currently loaded modules):\n[abc123@login1 ~]$ module avail\n\n...........  list of software ..............\nSince this list can be quite large and cumbersome to navigate, it is also possible to look for a specific software module (e.g. Python) using module spider:\n    [abc123@login1 ~]$ module spider Python\n\n    -----------------------------------------------------------------------------------------------------------------------\n    Python:\n    -----------------------------------------------------------------------------------------------------------------------\n    Description:\n    Python is a programming language that lets you work more quickly and integrate your systems more effectively.\n\n    Versions:\n        Python/2.7.15-GCCcore-8.2.0\n        Python/2.7.16-GCCcore-8.3.0\n        Python/2.7.18-GCCcore-9.3.0\n        Python/2.7.18-GCCcore-10.2.0\n        Python/2.7.18-GCCcore-10.3.0-bare\n        Python/2.7.18-GCCcore-12.2.0-bare\n        Python/3.7.2-GCCcore-8.2.0\n        Python/3.7.4-GCCcore-8.3.0\n        Python/3.8.2-GCCcore-9.3.0\n        Python/3.8.6-GCCcore-10.2.0\n        Python/3.9.5-GCCcore-10.3.0-bare\n        Python/3.9.5-GCCcore-10.3.0\n        Python/3.9.6-GCCcore-11.2.0-bare\n        Python/3.9.6-GCCcore-11.2.0\n        Python/3.10.4-GCCcore-11.3.0-bare\n        Python/3.10.4-GCCcore-11.3.0\n        Python/3.10.8-GCCcore-12.2.0-bare\n        Python/3.10.8-GCCcore-12.2.0\n        Python/3.11.3-GCCcore-12.3.0\n        Python/3.11.5-GCCcore-13.2.0\n        Python/3.12.3-GCCcore-13.3.0\n    Other possible modules matches:\n        Biopython  GitPython  IPython  Python-bundle-PyPI  caffe/caffe2/python2.7/gpu  flatbuffers-python  keras/python2.7  ...\nOnce you located the Python version you wish to use, you can check which module dependencies (in this example ‘shared’ and ‘2024’) you need to load before loading this Python version:\n[abc123@login1 ~]$ module spider Python/3.12.3-GCCcore-13.3.0\n\n-----------------------------------------------------------------------------------------------------------------------\nPython: Python/3.12.3-GCCcore-13.3.0\n-----------------------------------------------------------------------------------------------------------------------\n    Description:\n    Python is a programming language that lets you work more quickly and integrate your systems more effectively.\n\n\n    You will need to load all module(s) on any one of the lines below before the \"Python/3.12.3-GCCcore-13.3.0\" module is available to load.\n\n    shared  2024\n\n    Help:\n    Description\n    ===========\n    Python is a programming language that lets you work more quickly and integrate your systems\n    more effectively.\n    \n    \n    More information\n    ================\n    - Homepage: https://python.org/\n    \n    \n    Included extensions\n    ===================\n    flit_core-3.9.0, packaging-24.0, pip-24.0, setuptools-70.0.0,\n    setuptools_scm-8.1.0, tomli-2.0.1, typing_extensions-4.11.0, wheel-0.43.0",
     "crumbs": [
       "Getting Started",
-      "Using Slurm"
+      "Using Software on ADA"
     ]
   },
   {
-    "objectID": "manuals/ada/getting-started/slurm.html#using-a-hpc-cluster-best-practices",
-    "href": "manuals/ada/getting-started/slurm.html#using-a-hpc-cluster-best-practices",
-    "title": "Using Slurm",
-    "section": "Using a HPC Cluster: Best practices",
-    "text": "Using a HPC Cluster: Best practices\nDistributing your workload can be done in a lot of different ways. It is good practice to first determine your workflow in a single-threaded fashion (no distribution of compute), and then identify parts that can be distributed over multiple processors at the same time. More extensive tutorials on how to do this will follow soon. The most important points for now to get you started:\n\nDetermine your input, output and temporary data. Use the fast scratch directory ($TMPDIR, also see Basic Slurm Job) on the compute nodes if you handle large datasets or if you have to perform intermediate I/O operations. Be aware that the scratch directory is not persistent, data will be removed from it after the job finishes.\nAlways specify the –output and –error flags in your Slurm script for debugging purposes.\nThe bigger your allocation requests, the longer you might have to wait to get those resources. Split your jobs in smaller chunks if possible (e.g. by using job arrays)\nCheck your code on style and execution. Do you clear memory when necessary? Are your I/O operations finished correctly before the end of your script?",
+    "objectID": "manuals/ada/getting-started/2-software.html#python-packages",
+    "href": "manuals/ada/getting-started/2-software.html#python-packages",
+    "title": "Using Software on ADA",
+    "section": "Python packages",
+    "text": "Python packages\nTo use standard python packages, you first load in the python version. Then you can check with the ‘pip list’ the currently installed packages for that version:\n[abc123@login1 ~]$ module load Python/3.12.3-GCCcore-13.3.0\n[abc123@login1 ~]$ pip list\nPackage           Version\n----------------- -----------\nclick             8.1.8\ncloudpickle       3.1.1\ncontourpy         1.3.1\ncycler            0.12.1\ndask              2025.2.0\nflit_core         3.9.0\nfonttools         4.56.0\nfsspec            2025.2.0\njoblib            1.4.2\nkiwisolver        1.4.8\nllvmlite          0.44.0\nlocket            1.0.0\nmatplotlib        3.10.0\nnarwhals          1.27.1\nnumba             0.61.0\nnumpy             2.1.3\npackaging         24.0\npandas            2.2.3\n.....             ......\n.....             ......\nIf the package you wish to use is not listed, you can request its installation by sending an email to itvo.it@vu.nl. Make sure to specify the python version in your request. A second option is to install the package yourself in your home directory pip install &lt;PACKAGE&gt;; pip will automatically resolve its location. Please be aware that if you share codespaces, it is best-practice to let ITvO install the software so that it is publicly available to all your colleagues.",
     "crumbs": [
       "Getting Started",
-      "Using Slurm"
+      "Using Software on ADA"
     ]
   },
   {
-    "objectID": "manuals/ada/getting-started/slurm.html#constraints-flag",
-    "href": "manuals/ada/getting-started/slurm.html#constraints-flag",
-    "title": "Using Slurm",
-    "section": "Constraints flag",
-    "text": "Constraints flag\nThe SLURM constraint option allows for further control over which nodes your job can be scheduled on in a particular partition/queue. You may require a specific processor family or memory bandwidth. The features that can be used with the sbatch constraint option are defined by the system administrator and thus vary among HPC sites.\nConstraints available on ADA are cpu architectures: Example single constraint:\n#SBATCH --constraint=zen2\nExample combining constraints:\n#SBATCH --constraint=\"zen2|haswell\"",
+    "objectID": "manuals/ada/getting-started/2-software.html#r-packages",
+    "href": "manuals/ada/getting-started/2-software.html#r-packages",
+    "title": "Using Software on ADA",
+    "section": "R packages",
+    "text": "R packages\nTo use standard R packages, you first load in the R version. Then you can launch a R shell session and check the available packages:\n[abc123@login1 ~]$ module load 2024\n[abc123@login1 ~]$ module load R/4.4.1-gfbf-2023b\n[abc123@login1 ~]$ R\nIn R shell:\ninstalled.packages()\nIf you also use BioConductor packages, also load in HDF5 before executing the R shell/program.\n[abc123@login1 ~]$ module load HDF5/1.14.3-gompi-2023b=",
     "crumbs": [
       "Getting Started",
-      "Using Slurm"
+      "Using Software on ADA"
     ]
   },
   {
-    "objectID": "manuals/ada/getting-started/slurm.html#generic-resources-flag",
-    "href": "manuals/ada/getting-started/slurm.html#generic-resources-flag",
-    "title": "Using Slurm",
-    "section": "Generic RESources flag",
-    "text": "Generic RESources flag\nAnother method to get specific resources is to use the gres flag\nExample requesting a gpu, specifically an Nvidia A30:\n#SBATCH --gres=gpu:A30:1\nTo see which generic resources are available to you specifically:\nscontrol show nodes | grep -E \"NodeName|Gres\"",
+    "objectID": "manuals/ada/getting-started/2-software.html#conda-packages",
+    "href": "manuals/ada/getting-started/2-software.html#conda-packages",
+    "title": "Using Software on ADA",
+    "section": "Conda packages",
+    "text": "Conda packages\nBefore you create/run a conda environment on the cluster, it is advisable to load in a conda version + python version (including toolchain) that is provided by the software stack. In this way, you are guaranteed that your setup will keep working, even if the operating system of the cluster nodes is upgraded.\n[abc123@login1 ~]$ module load 2025\n[abc123@login1 ~]$ module load Miniconda3\n[abc123@login1 ~]$ module load Python/3.12.3-GCCcore-13.3.0",
     "crumbs": [
       "Getting Started",
-      "Using Slurm"
+      "Using Software on ADA"
+    ]
+  },
+  {
+    "objectID": "manuals/ada/getting-started/8-askingforhelp.html",
+    "href": "manuals/ada/getting-started/8-askingforhelp.html",
+    "title": "Support Ticket Submission Guidelines",
+    "section": "",
+    "text": "This page provides instructions on how to submit a support ticket to the ITVO HPC team.\nA clear, complete ticket lets us diagnose and fix your problem much faster. Tickets that do not follow this guideline may be returned for more information.\nYou can submit a ticket through the VU IT Serviceportal ticket submit page. Please mention ADA in the subject, so our colleagues from the central IT department know where to transfer the ticket to.",
+    "crumbs": [
+      "Getting Started",
+      "Support Ticket Submission Guidelines"
+    ]
+  },
+  {
+    "objectID": "manuals/ada/getting-started/8-askingforhelp.html#quick-checklist-include-every-item",
+    "href": "manuals/ada/getting-started/8-askingforhelp.html#quick-checklist-include-every-item",
+    "title": "Support Ticket Submission Guidelines",
+    "section": "✅ Quick Checklist (include every item)",
+    "text": "✅ Quick Checklist (include every item)\n\nSymptom & context – one‑sentence summary + verbatim error text or screenshot\nMinimal Reproducible Example (MRE) – smallest script or command that still fails (include file in request or specify the scistor path!)\nExpected vs. actual behaviour – what you thought would happen and what did happen\nEnvironment & other details\nOther information relevant to the specific problem at hand, like:\n\nAccount name or Job ID(s)\nNode list / partition / queue\nLoaded modules (module list) or Conda env name\nCompiler / MPI / application versions\n\nLogs attached – stdout/stderr files (*.o&lt;JobID&gt;, *.e&lt;JobID&gt;), stack traces, application logs\nTroubleshooting already tried – e.g. different node type, smaller input, googled error\nLarge files compressed – gzip anything &gt; 1 MB\n\n\n\n\n\n\n\nTip\n\n\n\nA good ticket should allow a consultant to copy‑paste your example into the debug queue and reproduce the problem in &lt; 5 minutes.",
+    "crumbs": [
+      "Getting Started",
+      "Support Ticket Submission Guidelines"
+    ]
+  },
+  {
+    "objectID": "manuals/ada/getting-started/8-askingforhelp.html#detailed-instructions",
+    "href": "manuals/ada/getting-started/8-askingforhelp.html#detailed-instructions",
+    "title": "Support Ticket Submission Guidelines",
+    "section": "📋 Detailed Instructions",
+    "text": "📋 Detailed Instructions\n\n1. Describe the symptom\nExplain what you were doing and what went wrong. Paste the exact error message—even a missing colon can matter.\n\n\n2. Provide a Minimal Reproducible Example (MRE)\nStrip your script or code down to the fewest lines that still trigger the problem. Remove unrelated options, comments, or data files.\n\n\n3. Expected vs. actual behaviour\nState the outcome you expected (e.g. “allocate 64 GB on two GPUs”) and the outcome you observed (e.g. “job received only 32 GB and crashed”).\n\n\n4. Environment & other details\nOther information relevant to the specific problem at hand, like: - Scheduler info – Job ID, partition/queue, node list - Environment – full module list or conda info --envs, compiler and MPI versions - Hardware specifics – GPU type, high‑mem node, scratch file system if relevant - Application specifics – for example, software name and version\n\n\n5. Logs & output files\nAttach the raw *.o and *.e files or any application log. Compress large logs and never paste thousands of lines inline.\n\n\n6. What you have already tried\nList the diagnostics or work‑arounds you attempted. This prevents duplicated suggestions and speeds resolution.",
+    "crumbs": [
+      "Getting Started",
+      "Support Ticket Submission Guidelines"
+    ]
+  },
+  {
+    "objectID": "manuals/ada/getting-started/8-askingforhelp.html#ticket-template-markdown",
+    "href": "manuals/ada/getting-started/8-askingforhelp.html#ticket-template-markdown",
+    "title": "Support Ticket Submission Guidelines",
+    "section": "📝 Ticket Template (Markdown)",
+    "text": "📝 Ticket Template (Markdown)\nCopy the block below into your ticket and fill in every section.\n### Summary\nA concise description of the problem (1–3 sentences).\n\n### Steps to reproduce (MRE)\n1. Command or script snippet that triggers the issue\n2. Input files or parameters (links or small attachment)\n\n### Expected behaviour\nWhat **should** happen.\n\n### Actual behaviour / error output\nPaste **verbatim** error text or attach log file.\n\n### Environment & other details\nOther possible relevant details like:\n- Job ID(s)\n- Partition/queue\n- Node list\n- Loaded modules or Conda env\n- Compiler / MPI / application versions\n- Other...\n\n### Logs\n&lt;attach or paste&gt;\n\n### Troubleshooting already attempted\n- e.g. Scaled down input size → still fails\n\n### Additional context (optional)\nScreenshots, config files, links to docs you followed, etc.\n\n\n\n\n\n\nTip\n\n\n\nA detailed, reproducible ticket is the fastest path to a solution. Thanks for helping us help you!",
+    "crumbs": [
+      "Getting Started",
+      "Support Ticket Submission Guidelines"
+    ]
+  },
+  {
+    "objectID": "manuals/ada/getting-started/3-hardware.html",
+    "href": "manuals/ada/getting-started/3-hardware.html",
+    "title": "Available Cluster Hardware",
+    "section": "",
+    "text": "This page provides an overview of the hardware that is available on the ADA cluster.\nCurrently the following queues/partitions have been configuered in the SLURM queueing system, use your group’s partition first and jobs will flow over in the general partition:",
+    "crumbs": [
+      "Getting Started",
+      "Available Cluster Hardware"
+    ]
+  },
+  {
+    "objectID": "manuals/ada/getting-started/3-hardware.html#access-nodes",
+    "href": "manuals/ada/getting-started/3-hardware.html#access-nodes",
+    "title": "Available Cluster Hardware",
+    "section": "Access nodes",
+    "text": "Access nodes\n\n3 Login nodes, 16 Cores/Node, 32GB memory, AMD EPYC 9124@3.7GHz\n3 Interactive nodes, 32 Cores/Node, 256GB memory, AMD EPYC 9354P@3.8GHz\n1 Interactive node, 2 CPU, 16 Cores/Node, 256GB memory, AMD EPYC 7313@3.7GHz, 1 NVIDIA GeForce GTX 1080",
+    "crumbs": [
+      "Getting Started",
+      "Available Cluster Hardware"
+    ]
+  },
+  {
+    "objectID": "manuals/ada/getting-started/3-hardware.html#general-vu-partition",
+    "href": "manuals/ada/getting-started/3-hardware.html#general-vu-partition",
+    "title": "Available Cluster Hardware",
+    "section": "General VU partition",
+    "text": "General VU partition\n\ndefq (general use)\n\n7 Nodes, 32 Cores/Node, 256GB memory, Dual AMD 7302@3.0GHz, NVIDIA A30\n2 Nodes, 32 Cores/Node, 1TB memory, Dual AMD 7282@2.8GHz (highmem,zen2)",
+    "crumbs": [
+      "Getting Started",
+      "Available Cluster Hardware"
+    ]
+  },
+  {
+    "objectID": "manuals/ada/getting-started/3-hardware.html#research-group-partitions-features",
+    "href": "manuals/ada/getting-started/3-hardware.html#research-group-partitions-features",
+    "title": "Available Cluster Hardware",
+    "section": "Research group partitions (features)",
+    "text": "Research group partitions (features)\n\ntc\n\n4 Nodes, 32 Cores/Node, 768GB memory, AMD 9354P@3.8GHz (highmem,25G,zen2)\n20 Nodes, 32 Cores/Node, 256GB memory, AMD 9354P@3.8GHz (25G,zen2)\n28 Nodes, 32 Cores/Node, 256GB memory, Dual AMD EPYC 7313@3,0GHz (zen2)\n12 Nodes, 32 Cores/Node, 256GB memory, AMD 7502P@2,50GHz (zen2)\n8 Nodes, 16 Cores/Node, 128GB memory, Dual Xeon E5-2640v3@2.60GHz (haswell)\n\n\n\nfar\n\n4 Nodes, 16 Cores/Node, 32-64GB memory, Dual Xeon E5-2650v4@2.10GHz, 4x GTX1080\n\n\n\nmove\n\n3 Nodes, 40 Cores/Node, 64GB memory, Intel(R) Xeon(R) Gold 6148@2.40GHz (haswell)\n\n\n\nivm\n\n3 Nodes, 32 Cores/Node, 128GB memory, AMD 7452@2.3GHz (zen2)\n1 Node, 64 Cores/Node, 768GB memory, AMD Genoa 9554P UP 64C/128T 3.1GHz 256M (zen5 - zen2 compatible)\n1 Node, 32 Cores/Node, 128GB memory, AMD Genoa 9334 DP/UP 32C/64T 2.7G 128M, NVIDIA A30 (zen5 - zen2 compatible)\n\n\n\nbinf\n\n1 Nodes, 32 Cores/Node, 256GB memory, Dual AMD 7302@3.0GHz (zen2)\n\nShow available features with:\nsinfo -o \"%20N  %10c  %10m  %25G %28f \"\nA more detailed and up to date hardware overview will be provided soon.",
+    "crumbs": [
+      "Getting Started",
+      "Available Cluster Hardware"
     ]
   },
   {
@@ -3393,149 +3463,237 @@
     "href": "manuals/ada/index.html",
     "title": "ADA Manuals",
     "section": "",
-    "text": "Tip\n\n\n\nThe ADA Topic page explains how to request an ADA account.\n\n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\nAvailable cluster hardware\n\n\n\n\n\n\n\n\n\n\n\n\nEssential concepts for HPC users\n\n\n\n\n\n\n\n\n\n\n\n\nLogin\n\n\n\n\n\n\n\n\n\n\n\n\nUsing Slurm\n\n\n\n\n\n\n\n\n\n\n\n\nSoftware\n\n\n\n\n\n\n\n\n\n\n\n\nData transfer to and from Yoda\n\n\n\n\n\n\n\n\n\n\n\n\nMATLAB\n\n\n\n\n\n\n\n\n\n\n\n\nMultithreading\n\n\n\n\n\n\n\n\n\n\n\n\nPyTorch\n\n\n\n\n\n\n\n\n\n\n\n\nSlurm job\n\n\n\n\n\n\n\n\nNo matching items",
+    "text": "Tip\n\n\n\nThe ADA Topic page explains how to request an ADA account.\n\n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\nHow to Login\n\n\n\n\n\n\n\n\n\n\n\n\nUsing Software on ADA\n\n\n\n\n\n\n\n\n\n\n\n\nAvailable Cluster Hardware\n\n\n\n\n\n\n\n\n\n\n\n\nUsing Slurm\n\n\n\n\n\n\n\n\n\n\n\n\nEssential concepts for HPC users\n\n\n\n\n\n\n\n\n\n\n\n\nData transfer with Yoda\n\n\n\n\n\n\n\n\n\n\n\n\nRunning your First Slurm Job\n\n\n\n\n\n\n\n\n\n\n\n\nSupport Ticket Submission Guidelines\n\n\n\n\n\n\n\n\n\n\n\n\nRequest Software Installs on ADA\n\n\n\n\n\n\n\n\n\n\n\n\nMultithreading\n\n\n\n\n\n\n\n\n\n\n\n\nMultiprocessing\n\n\n\n\n\n\n\n\n\n\n\n\nPyTorch\n\n\n\n\n\n\n\n\n\n\n\n\nMultiprocessing\n\n\n\n\n\n\n\n\n\n\n\n\nMATLAB\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "ADA Manuals"
     ]
   },
   {
-    "objectID": "manuals/ada/getting-started/software.html",
-    "href": "manuals/ada/getting-started/software.html",
-    "title": "Software",
+    "objectID": "manuals/ada/getting-started/5-hpc-101.html",
+    "href": "manuals/ada/getting-started/5-hpc-101.html",
+    "title": "Essential concepts for HPC users",
     "section": "",
-    "text": "This page explains how to load software modules and using a specific version of a software.\nTo load in software, you first load in the yearly software stack followed by the software you wish to use (including dependencies) in the following order:\nFor example loading in Python 3.12.3:\nFor example loading in R and the HDF5 data format library:",
+    "text": "This page offers a short explanation of essential concepts in High Performance Computing.\n\nConcurrent vs. Parallel\nConcurrent programs handle multiple instruction sequences at the same time.\nParallel programs execute multiple instruction sequences at the same time.\nWhen a program runs in parallel on multiple cores it is always concurrent.\nWhen a program is handled concurrently, it is not necessarily a parallel program. Instructions can also make use of time-sharing (e.g. sharing a single CPU core).\n\n\nMultithreading vs. Multiprocessing\nMultithreaded programs use multiple threads and are all part of the same process. These threads share the same memory and resources.\nMultiprocessed programs use multiple processes. Each process has its own memory and resource allocation.\nBoth multithreaded and multiprocessed programs are concurrent programs, they are therefore also not necessarily parallel.\nMultiprocessed programs however enable true parallelism, by using multiple CPU cores simultanously where each CPU core is assigned one process.\n\n\nCompute Time vs. Communication Overhead\nIn HPC, program execution often focuses on designing multiprocessing programs that execute tasks in parallel across multiple compute nodes. A crucial consideration is balancing compute time against communication overhead.\nFor instance, when dealing with large datasets, distributing the workload by dividing the data into smaller chunks across multiple processors can significantly reduce computation time. However, excessively fine-grained data partitioning can lead to substantial communication overhead, where the time spent transferring data between nodes outweighs the computational gains.\n\n\nAmdahls Law\nAmdahls law is formula that shows how much faster a task can be completed when more resources are added to a system. In the context of P (fraction of the code that can be parallelized) and N (number of processors) the speedup is defined as follows:\n\nSpeedup = 1 / (1 - P + P / N)\n\nBelow example illustrates that the serial portion of a program has a big impact on the overall speedup:\n\n\n\nAmdahls Law\n\n\nWhen using ADA, take Amdahls Law into consideration: parallelize your code as much as possible before scaling up your requested processors.\n\n\nTerms\nCPU: a physical, central processing unit in compute hardware. Most modern day CPU’s are multi-core, containing multiple cores.\nvCPU: a virtual, central processing unit. A CPU can contain multiple vCPU’s.\nCore: a physical processing unit on a CPU chip.\nLogical core: a virtual processing unit. A core can have multiple logical cores.\nHyperthreading: a technology that allows a core to appear as two logical cores in an operating system. Most hardware in the ADA cluster uses this technology by default. Compute intensive workloads will benefit to disable hyperthreading.\nGPU: a physical, graphical processing unit in compute hardware.\nvGPU: a virtual, graphical processing unit. A GPU can contain multiple vGPU’s.\nRAM: Random Access Memory, the temporary storage for data that the CPU needs. RAM offers fast Read/Write speeds and is volatile (data is lost when power is turned off).\nHDD: Hard Disk Drive, persistent storage offering Read/Write operations.\nSSD: Solid State Drive, persistent storage that offers faster Read/Write speeds than HDD’s.\nScratch Space: When we refer to scratch space, we usually refer to the local SSD storage on the compute nodes. Use of scratch can significantly speed up your programs if it relies heavily on data operations.",
     "crumbs": [
       "Getting Started",
-      "Software"
+      "Essential concepts for HPC users"
     ]
   },
   {
-    "objectID": "manuals/ada/getting-started/software.html#software-modules",
-    "href": "manuals/ada/getting-started/software.html#software-modules",
-    "title": "Software",
-    "section": "Software Modules",
-    "text": "Software Modules\nSoftware on ADA is accessible through so-called ‘modules’ (also see https://lmod.readthedocs.io/en/latest/010_user.html). A module command tells the system which places to look for when accessing certain software.\nWhen you log in to the cluster, you can see which modules are loaded by default via:\n[abc123@login1 ~]$ module list\n\nCurrently Loaded Modules:\n1) shared   2) DefaultModules   3) gcc/11.2.0   4) slurm/bazis/23.02.8\nFor ADA, the software stack is managed through a yearly release module (e.g. 2023, 2024) and that release module is updated on-demand throughout the year. To load it in:\n[abc123@login1 ~]$ module load 2024\n[abc123@login1 ~]$ module list\n\nCurrently Loaded Modules:\n1) shared   2) DefaultModules   3) slurm/bazis/23.02.8   4) 2024\nOnce you have loaded the 2024 software stack module, you can check out its content (and that of all other currently loaded modules):\n[abc123@login1 ~]$ module avail\n\n...........  list of software ..............\nSince this list can be quite large and cumbersome to navigate, it is also possible to look for a specific software module (e.g. Python) using module spider:\n    [abc123@login1 ~]$ module spider Python\n\n    -----------------------------------------------------------------------------------------------------------------------\n    Python:\n    -----------------------------------------------------------------------------------------------------------------------\n    Description:\n    Python is a programming language that lets you work more quickly and integrate your systems more effectively.\n\n    Versions:\n        Python/2.7.15-GCCcore-8.2.0\n        Python/2.7.16-GCCcore-8.3.0\n        Python/2.7.18-GCCcore-9.3.0\n        Python/2.7.18-GCCcore-10.2.0\n        Python/2.7.18-GCCcore-10.3.0-bare\n        Python/2.7.18-GCCcore-12.2.0-bare\n        Python/3.7.2-GCCcore-8.2.0\n        Python/3.7.4-GCCcore-8.3.0\n        Python/3.8.2-GCCcore-9.3.0\n        Python/3.8.6-GCCcore-10.2.0\n        Python/3.9.5-GCCcore-10.3.0-bare\n        Python/3.9.5-GCCcore-10.3.0\n        Python/3.9.6-GCCcore-11.2.0-bare\n        Python/3.9.6-GCCcore-11.2.0\n        Python/3.10.4-GCCcore-11.3.0-bare\n        Python/3.10.4-GCCcore-11.3.0\n        Python/3.10.8-GCCcore-12.2.0-bare\n        Python/3.10.8-GCCcore-12.2.0\n        Python/3.11.3-GCCcore-12.3.0\n        Python/3.11.5-GCCcore-13.2.0\n        Python/3.12.3-GCCcore-13.3.0\n    Other possible modules matches:\n        Biopython  GitPython  IPython  Python-bundle-PyPI  caffe/caffe2/python2.7/gpu  flatbuffers-python  keras/python2.7  ...\nOnce you located the Python version you wish to use, you can check which module dependencies (in this example ‘shared’ and ‘2024’) you need to load before loading this Python version:\n[abc123@login1 ~]$ module spider Python/3.12.3-GCCcore-13.3.0\n\n-----------------------------------------------------------------------------------------------------------------------\nPython: Python/3.12.3-GCCcore-13.3.0\n-----------------------------------------------------------------------------------------------------------------------\n    Description:\n    Python is a programming language that lets you work more quickly and integrate your systems more effectively.\n\n\n    You will need to load all module(s) on any one of the lines below before the \"Python/3.12.3-GCCcore-13.3.0\" module is available to load.\n\n    shared  2024\n\n    Help:\n    Description\n    ===========\n    Python is a programming language that lets you work more quickly and integrate your systems\n    more effectively.\n    \n    \n    More information\n    ================\n    - Homepage: https://python.org/\n    \n    \n    Included extensions\n    ===================\n    flit_core-3.9.0, packaging-24.0, pip-24.0, setuptools-70.0.0,\n    setuptools_scm-8.1.0, tomli-2.0.1, typing_extensions-4.11.0, wheel-0.43.0",
-    "crumbs": [
-      "Getting Started",
-      "Software"
-    ]
-  },
-  {
-    "objectID": "manuals/ada/getting-started/software.html#python-packages",
-    "href": "manuals/ada/getting-started/software.html#python-packages",
-    "title": "Software",
-    "section": "Python packages",
-    "text": "Python packages\nTo use standard python packages, you first load in the python version. Then you can check with the ‘pip list’ the currently installed packages for that version:\n[abc123@login1 ~]$ module load Python/3.12.3-GCCcore-13.3.0\n[abc123@login1 ~]$ pip list\nPackage           Version\n----------------- -----------\nclick             8.1.8\ncloudpickle       3.1.1\ncontourpy         1.3.1\ncycler            0.12.1\ndask              2025.2.0\nflit_core         3.9.0\nfonttools         4.56.0\nfsspec            2025.2.0\njoblib            1.4.2\nkiwisolver        1.4.8\nllvmlite          0.44.0\nlocket            1.0.0\nmatplotlib        3.10.0\nnarwhals          1.27.1\nnumba             0.61.0\nnumpy             2.1.3\npackaging         24.0\npandas            2.2.3\n.....             ......\n.....             ......\nIf the package you wish to use is not listed, you can request its installation by sending an email to itvo.it@vu.nl. Make sure to specify the python version in your request. A second option is to install the package yourself in your home directory pip install &lt;PACKAGE&gt;; pip will automatically resolve its location. Please be aware that if you share codespaces, it is best-practice to let ITvO install the software so that it is publicly available to all your colleagues.",
-    "crumbs": [
-      "Getting Started",
-      "Software"
-    ]
-  },
-  {
-    "objectID": "manuals/ada/getting-started/software.html#r-packages",
-    "href": "manuals/ada/getting-started/software.html#r-packages",
-    "title": "Software",
-    "section": "R packages",
-    "text": "R packages\nTo use standard R packages, you first load in the R version. Then you can launch a R shell session and check the available packages:\n[abc123@login1 ~]$ module load 2024\n[abc123@login1 ~]$ module load R/4.4.1-gfbf-2023b\n[abc123@login1 ~]$ R\nIn R shell:\ninstalled.packages()\nIf you also use BioConductor packages, also load in HDF5 before executing the R shell/program.\n[abc123@login1 ~]$ module load HDF5/1.14.3-gompi-2023b=",
-    "crumbs": [
-      "Getting Started",
-      "Software"
-    ]
-  },
-  {
-    "objectID": "manuals/ada/getting-started/software.html#conda-packages",
-    "href": "manuals/ada/getting-started/software.html#conda-packages",
-    "title": "Software",
-    "section": "Conda packages",
-    "text": "Conda packages\nBefore you create/run a conda environment on the cluster, its advisable to load in a conda version + python version (including toolchain) that is provided by the software stack. In this way, you are guaranteed that your setup will keep working, even if the operating system of the cluster nodes is upgraded.\n[abc123@login1 ~]$ module load 2025\n[abc123@login1 ~]$ module load Miniconda3\n[abc123@login1 ~]$ module load Python/3.12.3-GCCcore-13.3.0",
-    "crumbs": [
-      "Getting Started",
-      "Software"
-    ]
-  },
-  {
-    "objectID": "manuals/ada/getting-started/hardware.html",
-    "href": "manuals/ada/getting-started/hardware.html",
-    "title": "Available cluster hardware",
+    "objectID": "manuals/ada/getting-started/4-slurm.html",
+    "href": "manuals/ada/getting-started/4-slurm.html",
+    "title": "Using Slurm",
     "section": "",
-    "text": "This page provides an overview of the hardware that is available on the ADA cluster.\nCurrently the following queues/partitions have been configuered in the SLURM queueing system, use your group’s partition first and jobs will flow over in the general partition:",
+    "text": "This page explains the basics of using the Slurm scheduler.\nADA uses the Slurm scheduler to allocate resources to users. This page explains how to get started with the Slurm scheduler.",
     "crumbs": [
       "Getting Started",
-      "Available cluster hardware"
+      "Using Slurm"
     ]
   },
   {
-    "objectID": "manuals/ada/getting-started/hardware.html#access-nodes",
-    "href": "manuals/ada/getting-started/hardware.html#access-nodes",
-    "title": "Available cluster hardware",
-    "section": "Access nodes",
-    "text": "Access nodes\n\n3 Login nodes, 16 Cores/Node, 32GB memory, AMD EPYC 9124@3.7GHz\n3 Interactive nodes, 32 Cores/Node, 256GB memory, AMD EPYC 9354P@3.8GHz\n1 Interactive node, 2 CPU, 16 Cores/Node, 256GB memory, AMD EPYC 7313@3.7GHz, 1 NVIDIA GeForce GTX 1080",
+    "objectID": "manuals/ada/getting-started/4-slurm.html#most-used-commands",
+    "href": "manuals/ada/getting-started/4-slurm.html#most-used-commands",
+    "title": "Using Slurm",
+    "section": "Most used commands",
+    "text": "Most used commands\nSee jobs in the queue for a given user:\nsqueue -u &lt;VUNETID&gt;\nShow available node features:\nsinfo -o \"%20N  %10c  %10m  %25f  %10G \"\nSubmit a job:\nsbatch script\nShow the status of a currently running job:\nsstat -j &lt;jobID&gt;\nShow the final status of a finished job:\nsacct -j &lt;jobID&gt;\nCancel a job:\nscancel &lt;jobID&gt;\nCancel all your current jobs:\nscancel -u &lt;VUNETID&gt;",
     "crumbs": [
       "Getting Started",
-      "Available cluster hardware"
+      "Using Slurm"
     ]
   },
   {
-    "objectID": "manuals/ada/getting-started/hardware.html#general-vu-partition",
-    "href": "manuals/ada/getting-started/hardware.html#general-vu-partition",
-    "title": "Available cluster hardware",
-    "section": "General VU partition",
-    "text": "General VU partition\n\ndefq (general use)\n\n7 Nodes, 32 Cores/Node, 256GB memory, Dual AMD 7302@3.0GHz, NVIDIA A30\n2 Nodes, 32 Cores/Node, 1TB memory, Dual AMD 7282@2.8GHz (highmem,zen2)",
+    "objectID": "manuals/ada/getting-started/4-slurm.html#using-a-hpc-cluster-best-practices",
+    "href": "manuals/ada/getting-started/4-slurm.html#using-a-hpc-cluster-best-practices",
+    "title": "Using Slurm",
+    "section": "Using a HPC Cluster: Best practices",
+    "text": "Using a HPC Cluster: Best practices\nDistributing your workload can be done in a lot of different ways. It is good practice to first determine your workflow in a single-threaded fashion (no distribution of compute), and then identify parts that can be distributed over multiple processors at the same time. More extensive tutorials on how to do this will follow soon. The most important points for now to get you started:\n\nDetermine your input, output and temporary data. Use the fast scratch directory ($TMPDIR, also see Basic Slurm Job) on the compute nodes if you handle large datasets or if you have to perform intermediate I/O operations. Be aware that the scratch directory is not persistent, data will be removed from it after the job finishes.\nAlways specify the –output and –error flags in your Slurm script for debugging purposes.\nThe bigger your allocation requests, the longer you might have to wait to get those resources. Split your jobs in smaller chunks if possible (e.g. by using job arrays)\nCheck your code on style and execution. Do you clear memory when necessary? Are your I/O operations finished correctly before the end of your script?",
     "crumbs": [
       "Getting Started",
-      "Available cluster hardware"
+      "Using Slurm"
     ]
   },
   {
-    "objectID": "manuals/ada/getting-started/hardware.html#research-group-partitions-features",
-    "href": "manuals/ada/getting-started/hardware.html#research-group-partitions-features",
-    "title": "Available cluster hardware",
-    "section": "Research group partitions (features)",
-    "text": "Research group partitions (features)\n\ntc\n\n4 Nodes, 32 Cores/Node, 768GB memory, AMD 9354P@3.8GHz (highmem,25G,zen2)\n20 Nodes, 32 Cores/Node, 256GB memory, AMD 9354P@3.8GHz (25G,zen2)\n28 Nodes, 32 Cores/Node, 256GB memory, Dual AMD EPYC 7313@3,0GHz (zen2)\n12 Nodes, 32 Cores/Node, 256GB memory, AMD 7502P@2,50GHz (zen2)\n8 Nodes, 16 Cores/Node, 128GB memory, Dual Xeon E5-2640v3@2.60GHz (haswell)\n\n\n\nfar\n\n4 Nodes, 16 Cores/Node, 32-64GB memory, Dual Xeon E5-2650v4@2.10GHz, 4x GTX1080\n\n\n\nmove\n\n3 Nodes, 40 Cores/Node, 64GB memory, Intel(R) Xeon(R) Gold 6148@2.40GHz (haswell)\n\n\n\nivm\n\n3 Nodes, 32 Cores/Node, 128GB memory, AMD 7452@2.3GHz (zen2)\n1 Node, 64 Cores/Node, 768GB memory, AMD Genoa 9554P UP 64C/128T 3.1GHz 256M (zen5 - zen2 compatible)\n1 Node, 32 Cores/Node, 128GB memory, AMD Genoa 9334 DP/UP 32C/64T 2.7G 128M, NVIDIA A30 (zen5 - zen2 compatible)\n\n\n\nbinf\n\n1 Nodes, 32 Cores/Node, 256GB memory, Dual AMD 7302@3.0GHz (zen2)\n\nShow available features with:\nsinfo -o \"%20N  %10c  %10m  %25G %28f \"\nA more detailed and up to date hardware overview will be updated soon.",
+    "objectID": "manuals/ada/getting-started/4-slurm.html#constraints-flag",
+    "href": "manuals/ada/getting-started/4-slurm.html#constraints-flag",
+    "title": "Using Slurm",
+    "section": "Constraints flag",
+    "text": "Constraints flag\nThe SLURM constraint option allows for further control over which nodes your job can be scheduled on in a particular partition/queue. You may require a specific processor family or memory bandwidth. The features that can be used with the sbatch constraint option are defined by the system administrator and thus vary among HPC sites.\nConstraints available on ADA are cpu architectures: Example single constraint:\n#SBATCH --constraint=zen2\nExample combining constraints:\n#SBATCH --constraint=\"zen2|haswell\"",
     "crumbs": [
       "Getting Started",
-      "Available cluster hardware"
+      "Using Slurm"
     ]
   },
   {
-    "objectID": "manuals/ada/getting-started/yoda.html",
-    "href": "manuals/ada/getting-started/yoda.html",
-    "title": "Data transfer to and from Yoda",
+    "objectID": "manuals/ada/getting-started/4-slurm.html#generic-resources-flag",
+    "href": "manuals/ada/getting-started/4-slurm.html#generic-resources-flag",
+    "title": "Using Slurm",
+    "section": "Generic RESources flag",
+    "text": "Generic RESources flag\nAnother method to get specific resources is to use the gres flag\nExample requesting a gpu, specifically an Nvidia A30:\n#SBATCH --gres=gpu:A30:1\nTo see which generic resources are available to you specifically:\nscontrol show nodes | grep -E \"NodeName|Gres\"\nTo learn more read the Slurm documentation.",
+    "crumbs": [
+      "Getting Started",
+      "Using Slurm"
+    ]
+  },
+  {
+    "objectID": "manuals/ada/getting-started/9-requestsoftware.html",
+    "href": "manuals/ada/getting-started/9-requestsoftware.html",
+    "title": "Request Software Installs on ADA",
     "section": "",
-    "text": "This page explains how to transfer data from the VU Yoda instance using iRODS.\nSince Yoda is based on iRODS technology, it is possible to transfer data to and from Yoda using the iRODS communication protocol. This protocol can be used to transfer large amounts of data in an efficient way. On the ADA system, the iCommands are available to allow direct command-line access to Yoda.",
+    "text": "This page provides instructions on how to request software installs for the ADA software stack.\nYou can request software installs through the VU IT Serviceportal ticket submit page. Please mention ADA in the subject, so our colleagues from the central IT department know where to transfer the ticket to.",
     "crumbs": [
       "Getting Started",
-      "Data transfer to and from Yoda"
+      "Request Software Installs on ADA"
     ]
   },
   {
-    "objectID": "manuals/ada/getting-started/yoda.html#configuration",
-    "href": "manuals/ada/getting-started/yoda.html#configuration",
-    "title": "Data transfer to and from Yoda",
-    "section": "Configuration",
-    "text": "Configuration\nTo use iCommands, a configuration file is required in your home directory. This file contains the necessary connection settings for accessing Yoda.",
+    "objectID": "manuals/ada/getting-started/9-requestsoftware.html#ticket-template-markdown",
+    "href": "manuals/ada/getting-started/9-requestsoftware.html#ticket-template-markdown",
+    "title": "Request Software Installs on ADA",
+    "section": "📝 Ticket Template (Markdown)",
+    "text": "📝 Ticket Template (Markdown)\nCopy the block below into your ticket and fill out all 3 sections.\n### 1. Software (Package) Name \nFull name and version. \n\n### 2. Usefull links\nE.g. PyPi link, Github link. Also check if your software is listed here: (https://docs.easybuild.io/version-specific/supported-software/). \n\n### 3. Dependencies\nIf your request involves Python or R packages, please specify the version you would like the package to be installed . \n(e.g. by mentioning 'latest' , Python 3.12.3 or R 4.4.1 etc. Also see 'module spider Python' to check all available versions on the cluster).\n\nIf your request involves a software build from source, we will build on a zen3 architecture by default. If that is not sufficient for your partition/nodes, please let us know if you wish to have it compiled on a specific architecture. \nAlso provide us with a list of dependencies if necessary (e.g. if that is not clear from the github repo). \n\nAs of 2025, we also support and encourage users to make use of containers to install software themselves by using apptainer.",
     "crumbs": [
       "Getting Started",
-      "Data transfer to and from Yoda"
+      "Request Software Installs on ADA"
     ]
   },
   {
-    "objectID": "manuals/ada/getting-started/yoda.html#basic-icommands",
-    "href": "manuals/ada/getting-started/yoda.html#basic-icommands",
-    "title": "Data transfer to and from Yoda",
-    "section": "Basic iCommands",
-    "text": "Basic iCommands\nFirst use the iinit command to connect. You will need a Yoda Data Access Password.\nThese are the basic commands for navigation and data transfer:\n\nipwd – Show current iRODS directory\nils – List contents of a directory\nicd – Change directory\niput – Upload files to Yoda\niget – Download files from Yoda\nirsync – Synchronize local and remote directories\n\nYour Yoda project folders are located under /vu/home.\nYou can find a quick introduction of the iCommands on the SURF wiki or you can check out this training manual.\nAll icommands are documented in the iRODS Docs",
+    "objectID": "manuals/ada/getting-started/1-login.html",
+    "href": "manuals/ada/getting-started/1-login.html",
+    "title": "How to Login",
+    "section": "",
+    "text": "This page explains how to log in.",
     "crumbs": [
       "Getting Started",
-      "Data transfer to and from Yoda"
+      "How to Login"
     ]
   },
   {
-    "objectID": "manuals/ada/code-examples/python/torch.html",
-    "href": "manuals/ada/code-examples/python/torch.html",
+    "objectID": "manuals/ada/getting-started/1-login.html#quick-start",
+    "href": "manuals/ada/getting-started/1-login.html#quick-start",
+    "title": "How to Login",
+    "section": "Quick start",
+    "text": "Quick start\nYou will receive a temporary password by email once your account is created, which you can use to connect to the cluster using the Secure Shell protocol (SSH). If you do not have an account yet, you can request one via this form.\nTo log in to the cluster, you first need to log in to the VU network:\nssh &lt;VUNETID&gt;@ssh.data.vu.nl\nand from there login to the actual cluster:\nssh &lt;VUNETID&gt;@ada.labs.vu.nl\nFor ssh.data.vu.nl you use your VUnetID and VUnetID password. For ada.labs.vu.nl, you use your VUnetID and cluster password (initially provided to you by email, and changed by you after your first login).\nDirect access to the cluster is only possible from the VU Campus or from a SURF network location. From other network locations, first connect to the stepstone &lt;VUNETID&gt;@ssh.data.vu.nl, or use eduVPN Institutional Access.\nYou can use any SSH client to login at &lt;VUNETID&gt;@ada.labs.vu.nl. SSH has native support in Windows, you can use either the standard Command Prompt or Powershell, or a richer client like MobaXterm on Windows and iTerm2 on macOS.",
+    "crumbs": [
+      "Getting Started",
+      "How to Login"
+    ]
+  },
+  {
+    "objectID": "manuals/ada/getting-started/1-login.html#ada-terms-of-use",
+    "href": "manuals/ada/getting-started/1-login.html#ada-terms-of-use",
+    "title": "How to Login",
+    "section": "ADA terms of use",
+    "text": "ADA terms of use\n\nDo not use the login nodes for computation! Login nodes are the access servers for many users. Always allocate resources through slurm.\nDo not launch jupyter notebooks or vscode servers on the login nodes. For that, we have the interactive nodes. Processes using vs code or jupyter kernels are terminated automatically on the login node. You can navigate to the interactive nodes from the login nodes: ssh inter01, inter02 , or connect directly (see VS code instruction below).\nUse scratch space as much as possible for data-heavy computations.",
+    "crumbs": [
+      "Getting Started",
+      "How to Login"
+    ]
+  },
+  {
+    "objectID": "manuals/ada/getting-started/1-login.html#connecting-with-ssh-mobaxterm",
+    "href": "manuals/ada/getting-started/1-login.html#connecting-with-ssh-mobaxterm",
+    "title": "How to Login",
+    "section": "Connecting with SSH (MOBAXTERM)",
+    "text": "Connecting with SSH (MOBAXTERM)\nHere we provide the steps to connect to the cluster using MobaXterm.\n\nDownload and install MobaXTerm from mobatek.net.\nOpen MobaXTerm and click on Session\nEnter the Basic SSH settings as follows:\n\nRemote host: ada.labs.vu.nl\nTick “specify username”\nEnter your username (VUnetID)\n\nGo to “Network settings” and click SSH gateway (jump host)\nEnter the following details and click OK\n\nGateway host: ssh.data.vu.nl\nEnter your username (VUnetID)\n\nSave the settings. When not connected automatically, you can click on User sessions, and double click “ada.labs.vu.nl (VUnetID)”\nYou will be asked for a password for “ssh.data.vu.nl”. This is your NORMAL VUNETID password, NOT the cluster password your received from ITVO.\nIf not connected automatically, connect to the server again. Now you will see a terminal window which asks for another password. Here you should enter the CLUSTER password that you received from ITVO. Note that you will not see the cursor moving when typing. This is normal. When you finished typing your password hit ENTER.\nYou will now see a terminal window, similar to this one. On connecting for the first time, you will be asked to change your CLUSTER password. Enter your CLUSTER password, then enter a new password (this can be identical to your VUNETID password).\nCongratulations, you are now connected to the cluster!",
+    "crumbs": [
+      "Getting Started",
+      "How to Login"
+    ]
+  },
+  {
+    "objectID": "manuals/ada/getting-started/1-login.html#connecting-with-ssh-vs-code-editor",
+    "href": "manuals/ada/getting-started/1-login.html#connecting-with-ssh-vs-code-editor",
+    "title": "How to Login",
+    "section": "Connecting with SSH (VS Code Editor)",
+    "text": "Connecting with SSH (VS Code Editor)\n\n\n\n\n\n\nNote\n\n\n\nPlease note that running VS Code on the login nodes is prohibited and vs code server instances will be automatically shut down by the HPC admin. For this purpose, interactive nodes are set in place. Use the below instruction to connect to the interactive nodes.\n\n\n\n\n\n\n\n\nNote\n\n\n\nAt the moment, 3 interactive nodes are available. Soon, another 2 interactive nodes will be added.\n\n\n\nDownload and install the VS Code editor. If you run Windows, also install Windows Subsystem for Linux.\nOpen VS Code and enter the shortcut: CTRL+SHIFT+P\nSearch and select ’Remote-SSH: Open SSH Configuration File..”\nCopy-paste the following host info in the config file, replace &lt;VUNETID&gt; with your own VUNETID:\n\n# For connections from any network location:\n\nHost stepstone-vu\n    HostName ssh.data.vu.nl\n    User &lt;VUNETID&gt;\n    PubkeyAuthentication no\n\n# VS code does not support wildcards, therefore explicitly stating:\nHost ada-interactive1\n    HostName inter01.labs.vu.nl\n    ProxyJump stepstone-vu\n    ServerAliveInterval 120\n    User &lt;VUNETID&gt;\n    ConnectTimeout 60\n\nHost ada-interactive2\n    HostName inter02.labs.vu.nl\n    ProxyJump stepstone-vu\n    ServerAliveInterval 120\n    User &lt;VUNETID&gt;\n    ConnectTimeout 60\n\nHost ada-interactive3\n    HostName inter03.labs.vu.nl\n    ProxyJump stepstone-vu\n    ServerAliveInterval 120\n    User &lt;VUNETID&gt;\n    ConnectTimeout 60\n\n\n# Or, if you are connected to eduVPN / VU Campus network, \n# you don't need a proxyjump:\n\nHost ada-interactive1-noproxy\n    HostName inter01.labs.vu.nl\n    ServerAliveInterval 120\n    User &lt;VUNETID&gt;\n    ConnectTimeout 60\n\nSave and close the file.\nNavigate to the “Remote explorer” icon in the left ribbon and select either “ada-direct-login” or “ada-direct-login-noproxy” based on your setup choice.\nYou will be prompted twice for a password, first for ssh.data.vu.nl , then for ada.labs.vu.nl.\nOnce connected, your files may not be visible right a way. If they are not, select the “explorer” icon in the left ribbon . Open a folder and select the path you wish to open in your editor.\nDone! You are now connected to the ada cluster and have visible access to your selected folder.\n\n\n\n\n\n\n\nNote\n\n\n\nPlease be aware that you will still need to use the command line interface to submit jobs to the cluster (also see VS-code faq page ref)\n\n\nIf you wish, you can also setup a password-less login.",
+    "crumbs": [
+      "Getting Started",
+      "How to Login"
+    ]
+  },
+  {
+    "objectID": "manuals/ada/getting-started/1-login.html#remote-desktop-connection-applications-requiring-visual-forwarding.",
+    "href": "manuals/ada/getting-started/1-login.html#remote-desktop-connection-applications-requiring-visual-forwarding.",
+    "title": "How to Login",
+    "section": "Remote Desktop Connection / Applications requiring visual forwarding.",
+    "text": "Remote Desktop Connection / Applications requiring visual forwarding.\nIt is possible to establish a remote desktop connection (RDP) to the interactive nodes. You can use any remote desktop client of your preference. Be aware that remote desktop connections only work if you are connected to EduVPN or the Azure Virtual Desktop (so not the ssh step-stone server!)\nUse either inter01.labs.vu.nl, inter02.labs.vu.nl or inter03.labs.vu.nl and your ADA credentials to start a RDP session.\n\n\n\n\n\n\nNote\n\n\n\nX11 forwarding is not available on ADA. If you require graphical access, please use an RDP connection instead.",
+    "crumbs": [
+      "Getting Started",
+      "How to Login"
+    ]
+  },
+  {
+    "objectID": "manuals/ada/getting-started/1-login.html#login-troubleshooting",
+    "href": "manuals/ada/getting-started/1-login.html#login-troubleshooting",
+    "title": "How to Login",
+    "section": "Login Troubleshooting",
+    "text": "Login Troubleshooting\nIf you can’t connect to the ADA cluster:\n\nMake sure your ssh-agent is running: eval $(ssh-agent -s). This should return: Agent pid &lt;number&gt;\nIs your password correct? Mix ups between the VUNETID password and ADA cluster password occur regularly.\nIf your authentication attempts are timed out: Wait 15 minutes and try again.\nIs your keyboard layout set correctly (e.g. US international)?\nIf you are connecting from outside the VU Campus: are you connected to eduVPN OR ssh.data.vu.nl?\nIf you connect using a ssh-key, is this key added to your agent? (ssh-add ~/.ssh/key)\n\nIf none of the above helped in resolving your issue:\n\nSend an email to IT for Research (itvo.it@vu.nl) or submit a ticket via the IT ServicePortal with the following information:\n\nYour operating system (windows, macos, linux)\nThe ssh client you are using (bash shell, mobaxterm, iterm, wsl)\nThe network location (country) you are trying to connect from\nA verbose report of your ssh attempt (run and copy: ssh -vvv &lt;VUNETID&gt;@ada.labs.vu.nl and/or ssh -vvv &lt;VUNETID&gt;@ssh.data.vu.nl)",
+    "crumbs": [
+      "Getting Started",
+      "How to Login"
+    ]
+  },
+  {
+    "objectID": "manuals/ada/getting-started/1-login.html#optional-password-less-login",
+    "href": "manuals/ada/getting-started/1-login.html#optional-password-less-login",
+    "title": "How to Login",
+    "section": "[Optional] Password-less login",
+    "text": "[Optional] Password-less login\nIf you frequently log in to the cluster, it might be usefull to set up a key-based login.\nFirst generate a key on your personal device:\nssh-keygen -t ed25519 -C \"&lt;Your VU Email&gt;\" -f ~/.ssh/ada_direct_login\nCopy the public key to both the ssh-stepstone (ssh.data.vu.nl) and ada (ada.labs.vu.nl). ssh-copy-id will copy and add your key to the authorized keys file on the target server.\n# Irregardless of your network location, you can execute the following. \n# You may be prompted once to provide your password.\nssh-copy-id -i ~/.ssh/ada_direct_login.pub &lt;VUNETID&gt;@ssh.data.vu.nl\n\n# When connected to a VU/SURF network location, execute the following:\nssh-copy-id -i ~/.ssh/ada_direct_login.pub &lt;VUNETID&gt;@ada.labs.vu.nl\nMake sure your private key is added to the ssh-agent on your personal device:\nssh-add ~/.ssh/ada_direct_login\nAdd the complete configuration in your ssh config file (~/.ssh/config):\nHost stepstone-vu\n    HostName ssh.data.vu.nl\n    User &lt;VUNETID&gt;\n    AddKeysToAgent yes\n    IdentityFile ~/.ssh/ada_direct_login\n    IdentitiesOnly yes\n\nHost ada-direct-login\n    HostName ada.labs.vu.nl\n    ProxyJump stepstone-vu\n    ServerAliveInterval 120\n    User &lt;VUNETID&gt; \n    AddKeysToAgent yes\n    IdentityFile ~/.ssh/ada_direct_login\n    IdentitiesOnly yes\n\n# Or, if you are connected to eduVPN / VU Campus network, \n# you don't need a proxyjump:\n\nHost ada-direct-login-noproxy\n    HostName ada.labs.vu.nl\n    ServerAliveInterval 120\n    User &lt;VUNETID&gt; \n    AddKeysToAgent yes\n    IdentityFile ~/.ssh/ada_direct_login\n    IdentitiesOnly yes\nDone! You can now connect directly to ADA, from any location, without being prompted for a password:\nssh ada-direct-login",
+    "crumbs": [
+      "Getting Started",
+      "How to Login"
+    ]
+  },
+  {
+    "objectID": "manuals/ada/code-examples/matlab.html",
+    "href": "manuals/ada/code-examples/matlab.html",
+    "title": "MATLAB",
+    "section": "",
+    "text": "This page shows examples of using MATLAB in interactive and batch modes.\nMatlab has several features to work in batch mode on a HPC cluster.\nAssuming you know how to create matlab scripts we start simply by executing matlab interactively on a compute node",
+    "crumbs": [
+      "Code Examples",
+      "MATLAB"
+    ]
+  },
+  {
+    "objectID": "manuals/ada/code-examples/matlab.html#interactive",
+    "href": "manuals/ada/code-examples/matlab.html#interactive",
+    "title": "MATLAB",
+    "section": "Interactive",
+    "text": "Interactive\nRequest resources (1 node, 1 cpu) in a partition\nsrun -N 1 -p defq --pty /bin/bash\nmodule load matlab/R2023a\ncd your/data/\nHere is an example of a trivial MATLAB script (hello_world.m):\nfprintf('Hello world.\\n')\nRun with matlab using only one computational thread.\n$ matlab -nodisplay -singleCompThread -r hello_world\nHello world.\n&gt;&gt;\nMatlab waits at the end of the script if there is no exit. In an compute job this would keep the job running untill the wallclocklimit so we add an exit at the end. The convenient “-batch” option combines these options.\n-batch MATLAB_command   - Start MATLAB and execute the MATLAB command(s) with no desktop\n                              and certain interactive capabilities disabled. Terminates\n                              upon successful completion of the command and returns exit\n                              code 0. Upon failure, MATLAB terminates with a non-zero exit.\n                              Cannot be combined with -r.\nmatlab -batch hello_world",
+    "crumbs": [
+      "Code Examples",
+      "MATLAB"
+    ]
+  },
+  {
+    "objectID": "manuals/ada/code-examples/matlab.html#batch-mode",
+    "href": "manuals/ada/code-examples/matlab.html#batch-mode",
+    "title": "MATLAB",
+    "section": "Batch mode",
+    "text": "Batch mode\nCombining this in a slurm script we can queue matlab workloads.\n#!/bin/bash -l\n#SBATCH -J MyMatlab\n#SBATCH -N 1\n#SBATCH --cpus-per-task=1\n#SBATCH -p defq   \n#SBATCH --output=%x_%j.out\n#SBATCH --error=%x_%j.err\n#SBATCH --mail-type=END,FAIL\n#SBATCH --mail-user=&lt;YOUR EMAIL&gt;\n\n# Note: for parallel operations increase cpus-per-task above\n# Note 2: output and error logs can be given absolute paths \n\necho \"== Starting run at $(date)\"\necho \"== Job ID: ${SLURM_JOBID}\"\necho \"== Node list: ${SLURM_NODELIST}\"\necho \"== Submit dir. : ${SLURM_SUBMIT_DIR}\"\necho \"== Scratch dir. : ${TMPDIR}\"\n\n# cd $TMPDIR\n# or change to a project folder with matlab file e.g. hello_World.m\n# cd your/data\n\n# Load matlab module\nmodule load 2022 matlab/R2023a\n\n# execute\nmatlab -batch hello_world",
+    "crumbs": [
+      "Code Examples",
+      "MATLAB"
+    ]
+  },
+  {
+    "objectID": "manuals/ada/code-examples/matlab.html#parpool",
+    "href": "manuals/ada/code-examples/matlab.html#parpool",
+    "title": "MATLAB",
+    "section": "Parpool",
+    "text": "Parpool\nmathworks-parpool",
+    "crumbs": [
+      "Code Examples",
+      "MATLAB"
+    ]
+  },
+  {
+    "objectID": "manuals/ada/code-examples/Python/3-torch.html",
+    "href": "manuals/ada/code-examples/Python/3-torch.html",
     "title": "PyTorch",
     "section": "",
-    "text": "PyTorch is a popular deep learning library for training artificial neural networks.\nIt can be installed in many ways. Optimized versions with Easybuild are available in the software stack on ADA. Search the module environment for the appropiate version.",
+    "text": "This page shows an example of using PyTorch.\nPyTorch is a popular deep learning library for training artificial neural networks.\nIt can be installed in many ways. Optimized versions with Easybuild are available in the software stack on ADA. Search the module environment for the appropiate version.",
     "crumbs": [
       "Code Examples",
       "Python",
@@ -3543,8 +3701,8 @@
     ]
   },
   {
-    "objectID": "manuals/ada/code-examples/python/torch.html#example-gpu-job",
-    "href": "manuals/ada/code-examples/python/torch.html#example-gpu-job",
+    "objectID": "manuals/ada/code-examples/Python/3-torch.html#example-gpu-job",
+    "href": "manuals/ada/code-examples/Python/3-torch.html#example-gpu-job",
     "title": "PyTorch",
     "section": "Example GPU job",
     "text": "Example GPU job\nThis example recipe from the PyTorch tutorials site measures the performance of a simple network in default precision, then walks through adding autocast and GradScaler to run the same network in mixed precision with improved performance.\nIt can be run as a standalone python script. Download the script:\nwget https://github.com/pytorch/tutorials/blob/main/recipes_source/recipes/amp_recipe.py\nThis script can be run interactively\npython amp_recipe.py\nBut we will create a slurm script Torch-AMP-ex.sh to run on a compute node in batch mode. In this example 1 Node, 2 cores and 1 GPU are requested for 10 minutes.\n#!/bin/bash -l\n#SBATCH -J Torch-AMP-example\n#SBATCH -N 1\n#SBATCH --ntasks-per-node=2\n#SBATCH --gpus=1\n#SBATCH --time=0-00:10:00\n#SBATCH --mail-type=end,fail\n#SBATCH --mail-user= &lt;your email address&gt;\n\necho \"== Starting run at $(date)\"\necho \"== Job ID: ${SLURM_JOBID}\"\necho \"== Node list: ${SLURM_NODELIST}\"\necho \"== Submit dir. : ${SLURM_SUBMIT_DIR}\"\necho \"== Scratch dir. : ${TMPDIR}\"\n\n# environment modules\nmodule load shared 2022\nmodule load PyTorch/1.12.1-foss-2021a-CUDA-11.3.1\n\n# https://github.com/pytorch/tutorials/blob/main/recipes_source/recipes/amp_recipe.py\n# Your more useful application can be started below!\npython amp_recipe.py\nSubmit and run the script with Slurm\nsbatch Torch-AMP-ex.sh\nYou can monitor the status of the job with squeue -u $USER. Once the job runs, you’ll have a slurm-xxxxx.out file in the directory. This log file contains both PyTorch and Slurm output.",
@@ -3555,8 +3713,8 @@
     ]
   },
   {
-    "objectID": "manuals/ada/code-examples/python/torch.html#performance-and-results",
-    "href": "manuals/ada/code-examples/python/torch.html#performance-and-results",
+    "objectID": "manuals/ada/code-examples/Python/3-torch.html#performance-and-results",
+    "href": "manuals/ada/code-examples/Python/3-torch.html#performance-and-results",
     "title": "PyTorch",
     "section": "Performance and Results",
     "text": "Performance and Results\nDepending on the type of GPU you may find different performance.\n\n\n\nGPU\nNVIDIA RTX 2070 super\nNVIDIA A30\n\n\n\n\nDefault precision:\n6.835 sec\n4.444 sec\n\n\nMixed precision:\n4.747 sec\n0.858 sec",
@@ -3567,8 +3725,8 @@
     ]
   },
   {
-    "objectID": "manuals/ada/code-examples/python/torch.html#references",
-    "href": "manuals/ada/code-examples/python/torch.html#references",
+    "objectID": "manuals/ada/code-examples/Python/3-torch.html#references",
+    "href": "manuals/ada/code-examples/Python/3-torch.html#references",
     "title": "PyTorch",
     "section": "References",
     "text": "References\n\nPyTorch tutorials site",
@@ -3579,14 +3737,51 @@
     ]
   },
   {
-    "objectID": "manuals/ada/code-examples/simpleslurm.html",
-    "href": "manuals/ada/code-examples/simpleslurm.html",
-    "title": "Slurm job",
+    "objectID": "manuals/ada/code-examples/R/1-R-multiprocessing.html",
+    "href": "manuals/ada/code-examples/R/1-R-multiprocessing.html",
+    "title": "Multiprocessing",
     "section": "",
-    "text": "A simple Slurm job example.\n#!/bin/bash -l\n#SBATCH -J MyTestJob\n#SBATCH -N 1\n#SBATCH -p defq\n#SBATCH --output=MyTestJobResult.out\n#SBATCH --error=MyTestJobResult.err\n\necho \"== Starting run at $(date)\"\necho \"== Job ID: ${SLURM_JOBID}\"\necho \"== Node list: ${SLURM_NODELIST}\"\necho \"== Submit dir: ${SLURM_SUBMIT_DIR}\"\necho \"== Scratch dir: ${TMPDIR}\"\n\n# Move to scratch space\ncd \"$TMPDIR\"\n\n# Run your application (example: print hostname)\necho \"== Running on: $(hostname)\"\necho \"== Job completed at $(date)\"",
+    "text": "This example applies multiprocessing in R on 1 compute node.\nFor parrallel execution in R, there are several options such as:\nIn this example, we make use of the base R package for parallel execution.",
     "crumbs": [
       "Code Examples",
-      "Slurm job"
+      "R",
+      "Multiprocessing"
+    ]
+  },
+  {
+    "objectID": "manuals/ada/code-examples/R/1-R-multiprocessing.html#slurm-batch-submission-script",
+    "href": "manuals/ada/code-examples/R/1-R-multiprocessing.html#slurm-batch-submission-script",
+    "title": "Multiprocessing",
+    "section": "Slurm batch submission script:",
+    "text": "Slurm batch submission script:\nmultiproc-R.slurm\n#!/bin/bash\n#SBATCH --job-name=multiproc_R_1n_10c\n#SBATCH --nodes=1\n#SBATCH --ntasks=1\n#SBATCH --cpus-per-task=10\n#SBATCH --time=00:20:00\n#SBATCH --output=%x_output.log\n#SBATCH --error=%x_error.log\n\nNUM_CORES=${SLURM_CPUS_PER_TASK:-10}\n\necho \"== Starting run at $(date)\"\necho \"== Job ID: ${SLURM_JOBID}\"\necho \"== Node list: ${SLURM_NODELIST}\"\necho \"== Submit dir: ${SLURM_SUBMIT_DIR}\"\necho \"== Using $NUM_CORES CPU cores\"\n\n# Move to scratch space and copy R script to scratch directory\ncd \"$TMPDIR\"\ncp \"$SLURM_SUBMIT_DIR/multiproc.R\" .\n\n# Load R module\nmodule load 2025\nmodule load R\n\n# Run R script\nRscript multiproc.R $NUM_CORES\n\n# Copy the results from scratch space back to the submission directory\ncp ./results.csv \"$SLURM_SUBMIT_DIR/results.csv\"\n\necho \"== Job completed at $(date)\"",
+    "crumbs": [
+      "Code Examples",
+      "R",
+      "Multiprocessing"
+    ]
+  },
+  {
+    "objectID": "manuals/ada/code-examples/R/1-R-multiprocessing.html#r-script",
+    "href": "manuals/ada/code-examples/R/1-R-multiprocessing.html#r-script",
+    "title": "Multiprocessing",
+    "section": "R script:",
+    "text": "R script:\nmultiproc.R\n#!/usr/bin/env Rscript\n\n# --- Parse command line arguments ---\nargs &lt;- commandArgs(trailingOnly = TRUE)\nn_cores &lt;- as.numeric(args[1])\nif (is.na(n_cores)) n_cores &lt;- 1  # default to 1 if not provided\n\ncat(\"== Starting parallel computation on\", n_cores, \"cores ==\\n\")\n\n# --- Load parallel library ---\nlibrary(parallel)\n\n# --- CPU-intensive task ---\nheavy_compute &lt;- function(core_id) {\n  cat(sprintf(\"Core %d is working...\\n\", core_id))\n  # Example CPU-intensive computation (sum of squares loop)\n  result &lt;- sum((1:1e9)^2)\n  cat(sprintf(\"Core %d finished with result: %e\\n\", core_id, result))\n  return(result)\n}\n\n# --- Run in parallel ---\nstart_time &lt;- Sys.time()\n\nresults &lt;- mclapply(1:n_cores, heavy_compute, mc.cores = n_cores)\n\nend_time &lt;- Sys.time()\ncat(\"== All tasks completed ==\\n\")\ncat(\"Elapsed time:\", round(difftime(end_time, start_time, units = \"secs\"), 2), \"seconds\\n\")\n\n# --- Save results to file ---\nwrite.csv(data.frame(core = 1:n_cores, result = unlist(results)), \"results.csv\", row.names = FALSE)\ncat(\"Results written to results.csv\\n\")",
+    "crumbs": [
+      "Code Examples",
+      "R",
+      "Multiprocessing"
+    ]
+  },
+  {
+    "objectID": "manuals/ada/code-examples/R/1-R-multiprocessing.html#running-the-script",
+    "href": "manuals/ada/code-examples/R/1-R-multiprocessing.html#running-the-script",
+    "title": "Multiprocessing",
+    "section": "Running the script",
+    "text": "Running the script\nAssuming you are inside your slurm submission directory, for example, running on 8 logical cores:\n$ sbatch --cpus-per-task=8 multiproc-R.slurm",
+    "crumbs": [
+      "Code Examples",
+      "R",
+      "Multiprocessing"
     ]
   },
   {

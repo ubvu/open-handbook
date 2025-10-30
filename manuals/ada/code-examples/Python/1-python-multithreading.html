@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2025-10-30">
 
-<title>PyTorch – Research Support Handbook</title>
+<title>Multithreading – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,7 +66,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../../">
-<link href="../../../../manuals/ada/code-examples/python/python-multithreading.html" rel="prev">
+<link href="../../../../manuals/ada/code-examples/Python/2-python-multiprocessing.html" rel="next">
+<link href="../../../../manuals/ada/code-examples/matlab.html" rel="prev">
 <link href="../../../../public/favicon.png" rel="icon" type="image/png">
 <script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -191,7 +192,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/matlab.html">Code Examples</a></li><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/python/python-multithreading.html">Python</a></li><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/python/torch.html">PyTorch</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/matlab.html">Code Examples</a></li><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/Python/1-python-multithreading.html">Python</a></li><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/Python/1-python-multithreading.html">Multithreading</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -232,38 +233,56 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../manuals/ada/getting-started/hardware.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Available cluster hardware</span></a>
+  <a href="../../../../manuals/ada/getting-started/1-login.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How to Login</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../manuals/ada/getting-started/hpc-101.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Essential concepts for HPC users</span></a>
+  <a href="../../../../manuals/ada/getting-started/2-software.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Using Software on ADA</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../manuals/ada/getting-started/login.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Login</span></a>
+  <a href="../../../../manuals/ada/getting-started/3-hardware.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Available Cluster Hardware</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../manuals/ada/getting-started/slurm.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../manuals/ada/getting-started/4-slurm.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Using Slurm</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../manuals/ada/getting-started/software.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Software</span></a>
+  <a href="../../../../manuals/ada/getting-started/5-hpc-101.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Essential concepts for HPC users</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../manuals/ada/getting-started/yoda.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data transfer to and from Yoda</span></a>
+  <a href="../../../../manuals/ada/getting-started/6-yoda.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data transfer with Yoda</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../manuals/ada/getting-started/7-firstjob.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Running your First Slurm Job</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../manuals/ada/getting-started/8-askingforhelp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Support Ticket Submission Guidelines</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../manuals/ada/getting-started/9-requestsoftware.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Request Software Installs on ADA</span></a>
   </div>
 </li>
       </ul>
@@ -283,12 +302,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">MATLAB</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../../manuals/ada/code-examples/simpleslurm.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Slurm job</span></a>
-  </div>
-</li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
@@ -300,14 +313,37 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../manuals/ada/code-examples/python/python-multithreading.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../manuals/ada/code-examples/Python/1-python-multithreading.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Multithreading</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../manuals/ada/code-examples/python/torch.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../../manuals/ada/code-examples/Python/2-python-multiprocessing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Multiprocessing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../manuals/ada/code-examples/Python/3-torch.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">PyTorch</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+ <span class="menu-text">R</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../manuals/ada/code-examples/R/1-R-multiprocessing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Multiprocessing</span></a>
   </div>
 </li>
       </ul>
@@ -324,18 +360,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#example-gpu-job" id="toc-example-gpu-job" class="nav-link active" data-scroll-target="#example-gpu-job">Example GPU job</a></li>
-  <li><a href="#performance-and-results" id="toc-performance-and-results" class="nav-link" data-scroll-target="#performance-and-results">Performance and Results</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  <li><a href="#slurm-batch-submission-script" id="toc-slurm-batch-submission-script" class="nav-link active" data-scroll-target="#slurm-batch-submission-script">Slurm batch submission script:</a></li>
+  <li><a href="#python-script" id="toc-python-script" class="nav-link" data-scroll-target="#python-script">Python script</a></li>
+  <li><a href="#running-the-script" id="toc-running-the-script" class="nav-link" data-scroll-target="#running-the-script">Running the script</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/code-examples/python/torch.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/code-examples/Python/1-python-multithreading.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/matlab.html">Code Examples</a></li><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/python/python-multithreading.html">Python</a></li><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/python/torch.html">PyTorch</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/matlab.html">Code Examples</a></li><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/Python/1-python-multithreading.html">Python</a></li><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/Python/1-python-multithreading.html">Multithreading</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">PyTorch</h1>
+<h1 class="title">Multithreading</h1>
 </div>
 
 
@@ -358,72 +394,76 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>PyTorch is a popular deep learning library for training artificial neural networks.</p>
-<p>It can be installed in many ways. Optimized versions with Easybuild are available in the software stack on ADA. Search the module environment for the appropiate version.</p>
-<section id="example-gpu-job" class="level2">
-<h2 class="anchored" data-anchor-id="example-gpu-job">Example GPU job</h2>
-<p>This example recipe from the <a href="https://pytorch.org/tutorials/recipes/recipes/amp_recipe.html" target="_blank">PyTorch tutorials site</a> measures the performance of a simple network in default precision, then walks through adding autocast and GradScaler to run the same network in mixed precision with improved performance.</p>
-<p>It can be run as a standalone python script. Download the script:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://github.com/pytorch/tutorials/blob/main/recipes_source/recipes/amp_recipe.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>This script can be run interactively</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> amp_recipe.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>But we will create a slurm script <code>Torch-AMP-ex.sh</code> to run on a compute node in batch mode. In this example 1 Node, 2 cores and 1 GPU are requested for 10 minutes.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash -l</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH -J Torch-AMP-example</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH -N 1</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --ntasks-per-node=2</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --gpus=1</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --time=0-00:10:00</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --mail-type=end,fail</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --mail-user= &lt;your email address&gt;</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Starting run at </span><span class="va">$(</span><span class="fu">date</span><span class="va">)</span><span class="st">"</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Job ID: </span><span class="va">${SLURM_JOBID}</span><span class="st">"</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Node list: </span><span class="va">${SLURM_NODELIST}</span><span class="st">"</span></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Submit dir. : </span><span class="va">${SLURM_SUBMIT_DIR}</span><span class="st">"</span></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Scratch dir. : </span><span class="va">${TMPDIR}</span><span class="st">"</span></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="co"># environment modules</span></span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load shared 2022</span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load PyTorch/1.12.1-foss-2021a-CUDA-11.3.1</span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="co"># https://github.com/pytorch/tutorials/blob/main/recipes_source/recipes/amp_recipe.py</span></span>
-<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Your more useful application can be started below!</span></span>
-<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> amp_recipe.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Submit and run the script with Slurm</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">sbatch</span> Torch-AMP-ex.sh</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>You can monitor the status of the job with <code>squeue -u $USER</code>. Once the job runs, you’ll have a <code>slurm-xxxxx.out</code> file in the directory. This log file contains both PyTorch and Slurm output.</p>
-</section>
-<section id="performance-and-results" class="level2">
-<h2 class="anchored" data-anchor-id="performance-and-results">Performance and Results</h2>
-<p>Depending on the type of GPU you may find different performance.</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>GPU</th>
-<th>NVIDIA RTX 2070 super</th>
-<th>NVIDIA A30</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Default precision:</td>
-<td>6.835 sec</td>
-<td>4.444 sec</td>
-</tr>
-<tr class="even">
-<td>Mixed precision:</td>
-<td>4.747 sec</td>
-<td>0.858 sec</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="references" class="level2">
-<h2 class="anchored" data-anchor-id="references">References</h2>
+<p>This example applies multithreading in Python.</p>
+<p>Be aware that the Python interpreter process is constrained by the Global Interpreter Lock (GIL) and therefore can only use the resources made available to that process (generally, 1 logical core). Therefore, this multithreading example is inherently concurrent because of the GIL constraint. Although code is not executed in parallel, multithreading in Python can still be beneficial when, for example:</p>
 <ul>
-<li><a href="https://pytorch.org/tutorials/recipes/recipes/amp_recipe.html" target="_blank">PyTorch tutorials site</a></li>
+<li>you are waiting for I/O operations to complete and want to compute in the meantime</li>
+<li>you wish to prioritize the order of execution within your python script</li>
 </ul>
+<section id="slurm-batch-submission-script" class="level2">
+<h2 class="anchored" data-anchor-id="slurm-batch-submission-script">Slurm batch submission script:</h2>
+<p><code>multithread.slurm</code></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --job-name=multithread_1n_8t</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --nodes=1</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --ntasks=1</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --cpus-per-task=1  </span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --time=00:10:00</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --output=%x_output.log   # Auto-generated log file name (x = job-name)</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --error=%x_error.log    # Auto-generated error file name (x = job-name)</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Load in Software</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load 2024 </span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load Python/3.12.3-GCCcore-13.3.0</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Move to scratch space and copy the submit directory to the scratch space</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> <span class="st">"</span><span class="va">$TMPDIR</span><span class="st">"</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> <span class="at">-r</span> <span class="va">$SLURM_SUBMIT_DIR</span>/<span class="pp">*</span> .</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"My scratch space directory: </span><span class="va">$TMPDIR</span><span class="st">"</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"My slurm submission directory: </span><span class="va">$SLURM_SUBMIT_DIR</span><span class="st">"</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Submit the program</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">-u</span> multithread.py <span class="at">--threads</span> 8 <span class="at">--message</span> <span class="st">"Running ..."</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="python-script" class="level2">
+<h2 class="anchored" data-anchor-id="python-script">Python script</h2>
+<p><code>multithread.py</code></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> threading</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> time</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> argparse</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> worker(thread_id, message):</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Worker function that prints a message and simulates work"""</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Thread </span><span class="sc">{</span>thread_id<span class="sc">}</span><span class="ss"> says: </span><span class="sc">{</span>message<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    time.sleep(<span class="dv">5</span>)  <span class="co"># Simulate some work</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Thread </span><span class="sc">{</span>thread_id<span class="sc">}</span><span class="ss"> is done"</span>)</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> main():</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    parser <span class="op">=</span> argparse.ArgumentParser(description<span class="op">=</span><span class="st">"Multithreading example in SLURM"</span>)</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    parser.add_argument(<span class="st">"--threads"</span>, <span class="bu">type</span><span class="op">=</span><span class="bu">int</span>, default<span class="op">=</span><span class="dv">8</span>, <span class="bu">help</span><span class="op">=</span><span class="st">"Number of threads to use"</span>)</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    parser.add_argument(<span class="st">"--message"</span>, <span class="bu">type</span><span class="op">=</span><span class="bu">str</span>, default<span class="op">=</span><span class="st">"Hello from thread (default)"</span>, <span class="bu">help</span><span class="op">=</span><span class="st">"Message for each thread"</span>)</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    args <span class="op">=</span> parser.parse_args()</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    threads <span class="op">=</span> []</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(args.threads):</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>        t <span class="op">=</span> threading.Thread(target<span class="op">=</span>worker, args<span class="op">=</span>(i, args.message))</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>        threads.append(t)</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>        t.start()</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> t <span class="kw">in</span> threads:</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>        t.join()</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">All threads finished execution"</span>)</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">"__main__"</span>:</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>    main()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="running-the-script" class="level2">
+<h2 class="anchored" data-anchor-id="running-the-script">Running the script</h2>
+<p>Assuming you are inside your slurm submission directory:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">sbatch</span> multithread.slurm</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 
 </section>
@@ -831,11 +871,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../../manuals/ada/code-examples/python/python-multithreading.html" class="pagination-link" aria-label="Multithreading">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Multithreading</span>
+      <a href="../../../../manuals/ada/code-examples/matlab.html" class="pagination-link" aria-label="MATLAB">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">MATLAB</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="../../../../manuals/ada/code-examples/Python/2-python-multiprocessing.html" class="pagination-link" aria-label="Multiprocessing">
+        <span class="nav-page-text">Multiprocessing</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -873,7 +916,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </a>
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/code-examples/python/torch.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/code-examples/Python/1-python-multithreading.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">

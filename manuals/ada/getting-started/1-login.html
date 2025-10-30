@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2025-10-30">
 
-<title>MATLAB – Research Support Handbook</title>
+<title>How to Login – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,8 +66,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../manuals/ada/code-examples/Python/1-python-multithreading.html" rel="next">
-<link href="../../../manuals/ada/getting-started/9-requestsoftware.html" rel="prev">
+<link href="../../../manuals/ada/getting-started/2-software.html" rel="next">
+<link href="../../../manuals/ada/index.html" rel="prev">
 <link href="../../../public/favicon.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -192,7 +192,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../manuals/ada/code-examples/matlab.html">Code Examples</a></li><li class="breadcrumb-item"><a href="../../../manuals/ada/code-examples/matlab.html">MATLAB</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../manuals/ada/getting-started/1-login.html">Getting Started</a></li><li class="breadcrumb-item"><a href="../../../manuals/ada/getting-started/1-login.html">How to Login</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -233,7 +233,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../manuals/ada/getting-started/1-login.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../manuals/ada/getting-started/1-login.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">How to Login</span></a>
   </div>
 </li>
@@ -298,7 +298,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../manuals/ada/code-examples/matlab.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../manuals/ada/code-examples/matlab.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">MATLAB</span></a>
   </div>
 </li>
@@ -360,18 +360,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#interactive" id="toc-interactive" class="nav-link active" data-scroll-target="#interactive">Interactive</a></li>
-  <li><a href="#batch-mode" id="toc-batch-mode" class="nav-link" data-scroll-target="#batch-mode">Batch mode</a></li>
-  <li><a href="#parpool" id="toc-parpool" class="nav-link" data-scroll-target="#parpool">Parpool</a></li>
+  <li><a href="#quick-start" id="toc-quick-start" class="nav-link active" data-scroll-target="#quick-start">Quick start</a></li>
+  <li><a href="#ada-terms-of-use" id="toc-ada-terms-of-use" class="nav-link" data-scroll-target="#ada-terms-of-use">ADA terms of use</a></li>
+  <li><a href="#connecting-with-ssh-mobaxterm" id="toc-connecting-with-ssh-mobaxterm" class="nav-link" data-scroll-target="#connecting-with-ssh-mobaxterm">Connecting with SSH (MOBAXTERM)</a></li>
+  <li><a href="#connecting-with-ssh-vs-code-editor" id="toc-connecting-with-ssh-vs-code-editor" class="nav-link" data-scroll-target="#connecting-with-ssh-vs-code-editor">Connecting with SSH (VS Code Editor)</a></li>
+  <li><a href="#remote-desktop-connection-applications-requiring-visual-forwarding." id="toc-remote-desktop-connection-applications-requiring-visual-forwarding." class="nav-link" data-scroll-target="#remote-desktop-connection-applications-requiring-visual-forwarding.">Remote Desktop Connection / Applications requiring visual forwarding.</a></li>
+  <li><a href="#login-troubleshooting" id="toc-login-troubleshooting" class="nav-link" data-scroll-target="#login-troubleshooting">Login Troubleshooting</a></li>
+  <li><a href="#optional-password-less-login" id="toc-optional-password-less-login" class="nav-link" data-scroll-target="#optional-password-less-login">[Optional] Password-less login</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/code-examples/matlab.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/getting-started/1-login.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../manuals/ada/code-examples/matlab.html">Code Examples</a></li><li class="breadcrumb-item"><a href="../../../manuals/ada/code-examples/matlab.html">MATLAB</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../manuals/ada/getting-started/1-login.html">Getting Started</a></li><li class="breadcrumb-item"><a href="../../../manuals/ada/getting-started/1-login.html">How to Login</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">MATLAB</h1>
+<h1 class="title">How to Login</h1>
 </div>
 
 
@@ -394,64 +398,228 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>This page shows examples of using MATLAB in interactive and batch modes.</p>
-<p>Matlab has several features to work in batch mode on a HPC cluster.</p>
-<p>Assuming you know how to create matlab scripts we start simply by executing matlab interactively on a compute node</p>
-<section id="interactive" class="level2">
-<h2 class="anchored" data-anchor-id="interactive">Interactive</h2>
-<p>Request resources (1 node, 1 cpu) in a partition</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">srun</span> <span class="at">-N</span> 1 <span class="at">-p</span> defq <span class="at">--pty</span> /bin/bash</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load matlab/R2023a</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> your/data/</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Here is an example of a trivial MATLAB script (hello_world.m):</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode m code-with-copy"><code class="sourceCode matlab"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="va">fprintf</span>(<span class="ss">'Hello world.\n'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Run with matlab using only one computational thread.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> matlab <span class="at">-nodisplay</span> <span class="at">-singleCompThread</span> <span class="at">-r</span> hello_world</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Hello</span> world.</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Matlab waits at the end of the script if there is no exit. In an compute job this would keep the job running untill the wallclocklimit so we add an exit at the end. The convenient “-batch” option combines these options.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">-batch</span> MATLAB_command   <span class="at">-</span> Start MATLAB and execute the MATLAB command<span class="er">(</span><span class="ex">s</span><span class="kw">)</span> <span class="ex">with</span> no desktop</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>                              <span class="ex">and</span> certain interactive capabilities disabled. Terminates</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>                              <span class="ex">upon</span> successful completion of the command and returns exit</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>                              <span class="ex">code</span> 0. Upon failure, MATLAB terminates with a non-zero exit.</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>                              <span class="ex">Cannot</span> be combined with <span class="at">-r.</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">matlab</span> <span class="at">-batch</span> hello_world</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This page explains how to log in.</p>
+<section id="quick-start" class="level2">
+<h2 class="anchored" data-anchor-id="quick-start">Quick start</h2>
+<p>You will receive a temporary password by email once your account is created, which you can use to connect to the cluster using the Secure Shell protocol (SSH). If you do not have an account yet, you can request one <a href="https://services.vu.nl/esc?id=sc_cat_item&amp;sys_id=83139c79473e8150bfa46d72e36d432e" target="_blank">via this form</a>.</p>
+<p>To log in to the cluster, you first need to log in to the VU network:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh</span> <span class="op">&lt;</span>VUNETID<span class="op">&gt;</span>@ssh.data.vu.nl</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>and from there login to the actual cluster:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh</span> <span class="op">&lt;</span>VUNETID<span class="op">&gt;</span>@ada.labs.vu.nl</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>For <code>ssh.data.vu.nl</code> you use your VUnetID and VUnetID password. For <code>ada.labs.vu.nl</code>, you use your VUnetID and cluster password (initially provided to you by email, and changed by you after your first login).</p>
+<p>Direct access to the cluster is only possible from the VU Campus or from a SURF network location. From other network locations, first connect to the stepstone <code>&lt;VUNETID&gt;@ssh.data.vu.nl</code>, or use <a href="https://vu.eduvpn.nl/" target="_blank">eduVPN Institutional Access</a>.</p>
+<p>You can use any SSH client to login at <code>&lt;VUNETID&gt;@ada.labs.vu.nl</code>. SSH has native support in Windows, you can use either the standard Command Prompt or Powershell, or a richer client like <a href="https://mobaxterm.mobatek.net/" target="_blank">MobaXterm</a> on Windows and <a href="https://iterm2.com/" target="_blank">iTerm2</a> on macOS.</p>
 </section>
-<section id="batch-mode" class="level2">
-<h2 class="anchored" data-anchor-id="batch-mode">Batch mode</h2>
-<p>Combining this in a slurm script we can queue matlab workloads.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash -l</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH -J MyMatlab</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH -N 1</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --cpus-per-task=1</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH -p defq   </span></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --output=%x_%j.out</span></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --error=%x_%j.err</span></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --mail-type=</span><span class="re">END</span><span class="co">,FAIL</span></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --mail-user=&lt;YOUR EMAIL&gt;</span></span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Note: for parallel operations increase cpus-per-task above</span></span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Note 2: output and error logs can be given absolute paths </span></span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Starting run at </span><span class="va">$(</span><span class="fu">date</span><span class="va">)</span><span class="st">"</span></span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Job ID: </span><span class="va">${SLURM_JOBID}</span><span class="st">"</span></span>
-<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Node list: </span><span class="va">${SLURM_NODELIST}</span><span class="st">"</span></span>
-<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Submit dir. : </span><span class="va">${SLURM_SUBMIT_DIR}</span><span class="st">"</span></span>
-<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Scratch dir. : </span><span class="va">${TMPDIR}</span><span class="st">"</span></span>
-<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a><span class="co"># cd $TMPDIR</span></span>
-<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a><span class="co"># or change to a project folder with matlab file e.g. hello_World.m</span></span>
-<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a><span class="co"># cd your/data</span></span>
-<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Load matlab module</span></span>
-<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load 2022 matlab/R2023a</span>
-<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a><span class="co"># execute</span></span>
-<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a><span class="ex">matlab</span> <span class="at">-batch</span> hello_world</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="ada-terms-of-use" class="level2">
+<h2 class="anchored" data-anchor-id="ada-terms-of-use">ADA terms of use</h2>
+<ul>
+<li>Do not use the login nodes for computation! Login nodes are the access servers for many users. Always allocate resources through slurm.</li>
+<li>Do not launch jupyter notebooks or vscode servers on the login nodes. For that, we have the interactive nodes. Processes using vs code or jupyter kernels are terminated automatically on the login node. You can navigate to the interactive nodes from the login nodes: <code>ssh inter01, inter02</code> , or connect directly (see VS code instruction below).</li>
+<li>Use scratch space as much as possible for data-heavy computations.</li>
+</ul>
 </section>
-<section id="parpool" class="level2">
-<h2 class="anchored" data-anchor-id="parpool">Parpool</h2>
-<p><a href="https://nl.mathworks.com/help/parallel-computing/parpool.html" target="_blank">mathworks-parpool</a></p>
+<section id="connecting-with-ssh-mobaxterm" class="level2">
+<h2 class="anchored" data-anchor-id="connecting-with-ssh-mobaxterm">Connecting with SSH (MOBAXTERM)</h2>
+<p>Here we provide the steps to connect to the cluster using MobaXterm.</p>
+<ol type="1">
+<li>Download and install MobaXTerm from <a href="https://mobaxterm.mobatek.net/download.html" target="_blank">mobatek.net</a>.</li>
+<li>Open MobaXTerm and click on Session</li>
+<li>Enter the Basic SSH settings as follows:
+<ol type="1">
+<li>Remote host: <code>ada.labs.vu.nl</code></li>
+<li>Tick “specify username”</li>
+<li>Enter your username (VUnetID)</li>
+</ol></li>
+<li>Go to “Network settings” and click SSH gateway (jump host)</li>
+<li>Enter the following details and click OK
+<ol type="1">
+<li>Gateway host: <code>ssh.data.vu.nl</code></li>
+<li>Enter your username (VUnetID)</li>
+</ol></li>
+<li>Save the settings. When not connected automatically, you can click on User sessions, and double click “ada.labs.vu.nl (VUnetID)”</li>
+<li>You will be asked for a password for “ssh.data.vu.nl”. This is your NORMAL VUNETID password, NOT the cluster password your received from ITVO.</li>
+<li>If not connected automatically, connect to the server again. Now you will see a terminal window which asks for another password. Here you should enter the CLUSTER password that you received from ITVO. Note that you will not see the cursor moving when typing. This is normal. When you finished typing your password hit ENTER.</li>
+<li>You will now see a terminal window, similar to this one. On connecting for the first time, you will be asked to change your CLUSTER password. Enter your CLUSTER password, then enter a new password (this can be identical to your VUNETID password).</li>
+<li>Congratulations, you are now connected to the cluster!</li>
+</ol>
+</section>
+<section id="connecting-with-ssh-vs-code-editor" class="level2">
+<h2 class="anchored" data-anchor-id="connecting-with-ssh-vs-code-editor">Connecting with SSH (VS Code Editor)</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Please note that running VS Code on the login nodes is prohibited and vs code server instances will be automatically shut down by the HPC admin. For this purpose, interactive nodes are set in place. Use the below instruction to connect to the interactive nodes.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>At the moment, 3 interactive nodes are available. Soon, another 2 interactive nodes will be added.</p>
+</div>
+</div>
+<ol type="1">
+<li>Download and install the <a href="https://code.visualstudio.com/" target="_blank">VS Code editor</a>. If you run Windows, also install <a href="https://learn.microsoft.com/en-us/windows/wsl/" target="_blank">Windows Subsystem for Linux</a>.</li>
+<li>Open VS Code and enter the shortcut: <code>CTRL+SHIFT+P</code></li>
+<li>Search and select ’Remote-SSH: Open SSH Configuration File..”</li>
+<li>Copy-paste the following host info in the config file, replace &lt;VUNETID&gt; with your own VUNETID:</li>
+</ol>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># For connections from any network location:</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>Host stepstone-vu</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    HostName ssh.data.vu.nl</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    User <span class="dt">&lt;</span><span class="kw">VUNETID</span><span class="dt">&gt;</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    PubkeyAuthentication no</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="fu"># VS code does not support wildcards, therefore explicitly stating:</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>Host ada-interactive1</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    HostName inter01.labs.vu.nl</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    ProxyJump stepstone-vu</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    ServerAliveInterval 120</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    User <span class="dt">&lt;</span><span class="kw">VUNETID</span><span class="dt">&gt;</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    ConnectTimeout 60</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>Host ada-interactive2</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>    HostName inter02.labs.vu.nl</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>    ProxyJump stepstone-vu</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>    ServerAliveInterval 120</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>    User <span class="dt">&lt;</span><span class="kw">VUNETID</span><span class="dt">&gt;</span></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>    ConnectTimeout 60</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>Host ada-interactive3</span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>    HostName inter03.labs.vu.nl</span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>    ProxyJump stepstone-vu</span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>    ServerAliveInterval 120</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>    User <span class="dt">&lt;</span><span class="kw">VUNETID</span><span class="dt">&gt;</span></span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>    ConnectTimeout 60</span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a><span class="fu"># Or, if you are connected to eduVPN / VU Campus network, </span></span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a><span class="fu"># you don't need a proxyjump:</span></span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>Host ada-interactive1-noproxy</span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>    HostName inter01.labs.vu.nl</span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>    ServerAliveInterval 120</span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a>    User <span class="dt">&lt;</span><span class="kw">VUNETID</span><span class="dt">&gt;</span></span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a>    ConnectTimeout 60</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ol type="1">
+<li>Save and close the file.</li>
+<li>Navigate to the “Remote explorer” icon in the left ribbon <img src="image-2.png" class="img-fluid">and select either “ada-direct-login” or “ada-direct-login-noproxy” based on your setup choice.</li>
+<li>You will be prompted twice for a password, first for <code>ssh.data.vu.nl</code> , then for <code>ada.labs.vu.nl</code>.</li>
+<li>Once connected, your files may not be visible right a way. If they are not, select the “explorer” icon in the left ribbon <img src="image-3.png" class="img-fluid" alt="alt text">. Open a folder and select the path you wish to open in your editor.</li>
+<li>Done! You are now connected to the ada cluster and have visible access to your selected folder.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Please be aware that you will still need to use the command line interface to submit jobs to the cluster (also see VS-code faq page ref)</p>
+</div>
+</div>
+<p>If you wish, you can also setup a <a href="#%5BTIP%5D-Password-less-login">password-less login</a>.</p>
+</section>
+<section id="remote-desktop-connection-applications-requiring-visual-forwarding." class="level2">
+<h2 class="anchored" data-anchor-id="remote-desktop-connection-applications-requiring-visual-forwarding.">Remote Desktop Connection / Applications requiring visual forwarding.</h2>
+<p>It is possible to establish a remote desktop connection (RDP) to the interactive nodes. You can use any remote desktop client of your preference. Be aware that remote desktop connections only work if you are connected to EduVPN or the Azure Virtual Desktop (so not the ssh step-stone server!)</p>
+<p>Use either inter01.labs.vu.nl, inter02.labs.vu.nl or inter03.labs.vu.nl and your ADA credentials to start a RDP session.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>X11 forwarding is not available on ADA. If you require graphical access, please use an RDP connection instead.</p>
+</div>
+</div>
+</section>
+<section id="login-troubleshooting" class="level2">
+<h2 class="anchored" data-anchor-id="login-troubleshooting">Login Troubleshooting</h2>
+<p>If you can’t connect to the ADA cluster:</p>
+<ul>
+<li>Make sure your ssh-agent is running: <code>eval $(ssh-agent -s)</code>. This should return: <code>Agent pid &lt;number&gt;</code></li>
+<li>Is your password correct? Mix ups between the VUNETID password and ADA cluster password occur regularly.</li>
+<li>If your authentication attempts are timed out: Wait 15 minutes and try again.</li>
+<li>Is your keyboard layout set correctly (e.g.&nbsp;US international)?</li>
+<li>If you are connecting from outside the VU Campus: are you connected to eduVPN OR <code>ssh.data.vu.nl</code>?</li>
+<li>If you connect using a ssh-key, is this key added to your agent? (<code>ssh-add ~/.ssh/key</code>)</li>
+</ul>
+<p>If none of the above helped in resolving your issue:</p>
+<ul>
+<li>Send an email to IT for Research (itvo.it@vu.nl) or submit a ticket via the <a href="'https://services.vu.nl/esc?id=sc_cat_item&amp;sys_id=3f1dd0320a0a0b99000a53f7604a2ef9'">IT ServicePortal</a> with the following information:
+<ul>
+<li>Your operating system (windows, macos, linux)</li>
+<li>The ssh client you are using (bash shell, mobaxterm, iterm, wsl)</li>
+<li>The network location (country) you are trying to connect from</li>
+<li>A verbose report of your ssh attempt (run and copy: <code>ssh -vvv &lt;VUNETID&gt;@ada.labs.vu.nl</code> and/or <code>ssh -vvv &lt;VUNETID&gt;@ssh.data.vu.nl</code>)</li>
+</ul></li>
+</ul>
+</section>
+<section id="optional-password-less-login" class="level2">
+<h2 class="anchored" data-anchor-id="optional-password-less-login">[Optional] Password-less login</h2>
+<p>If you frequently log in to the cluster, it might be usefull to set up a key-based login.</p>
+<p>First generate a key on your personal device:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh-keygen</span> <span class="at">-t</span> ed25519 <span class="at">-C</span> <span class="st">"&lt;Your VU Email&gt;"</span> <span class="at">-f</span> ~/.ssh/ada_direct_login</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Copy the public key to <strong>both</strong> the ssh-stepstone (<code>ssh.data.vu.nl</code>) and ada (<code>ada.labs.vu.nl</code>). ssh-copy-id will copy and add your key to the authorized keys file on the target server.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Irregardless of your network location, you can execute the following. </span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># You may be prompted once to provide your password.</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="ex">ssh-copy-id</span> <span class="at">-i</span> ~/.ssh/ada_direct_login.pub <span class="op">&lt;</span>VUNETID<span class="op">&gt;</span>@ssh.data.vu.nl</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co"># When connected to a VU/SURF network location, execute the following:</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="ex">ssh-copy-id</span> <span class="at">-i</span> ~/.ssh/ada_direct_login.pub <span class="op">&lt;</span>VUNETID<span class="op">&gt;</span>@ada.labs.vu.nl</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Make sure your private key is added to the ssh-agent on your personal device:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh-add</span> ~/.ssh/ada_direct_login</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Add the complete configuration in your ssh config file (<code>~/.ssh/config</code>):</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>Host stepstone-vu</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    HostName ssh.data.vu.nl</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    User <span class="dt">&lt;</span><span class="kw">VUNETID</span><span class="dt">&gt;</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    AddKeysToAgent yes</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    IdentityFile ~/.ssh/ada_direct_login</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    IdentitiesOnly yes</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>Host ada-direct-login</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    HostName ada.labs.vu.nl</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>    ProxyJump stepstone-vu</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>    ServerAliveInterval 120</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>    User <span class="dt">&lt;</span><span class="kw">VUNETID</span><span class="dt">&gt;</span> </span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>    AddKeysToAgent yes</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>    IdentityFile ~/.ssh/ada_direct_login</span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>    IdentitiesOnly yes</span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a><span class="fu"># Or, if you are connected to eduVPN / VU Campus network, </span></span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a><span class="fu"># you don't need a proxyjump:</span></span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>Host ada-direct-login-noproxy</span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>    HostName ada.labs.vu.nl</span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>    ServerAliveInterval 120</span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>    User <span class="dt">&lt;</span><span class="kw">VUNETID</span><span class="dt">&gt;</span> </span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>    AddKeysToAgent yes</span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>    IdentityFile ~/.ssh/ada_direct_login</span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>    IdentitiesOnly yes</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Done! You can now connect directly to ADA, from any location, without being prompted for a password:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh</span> ada-direct-login</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 
 </section>
@@ -859,13 +1027,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../manuals/ada/getting-started/9-requestsoftware.html" class="pagination-link" aria-label="Request Software Installs on ADA">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Request Software Installs on ADA</span>
+      <a href="../../../manuals/ada/index.html" class="pagination-link" aria-label="ADA Manuals">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">ADA Manuals</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../manuals/ada/code-examples/Python/1-python-multithreading.html" class="pagination-link" aria-label="Multithreading">
-        <span class="nav-page-text">Multithreading</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../manuals/ada/getting-started/2-software.html" class="pagination-link" aria-label="Using Software on ADA">
+        <span class="nav-page-text">Using Software on ADA</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -904,7 +1072,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </a>
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/code-examples/matlab.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/getting-started/1-login.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">

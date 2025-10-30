@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2025-10-30">
 
-<title>Data transfer to and from Yoda – Research Support Handbook</title>
+<title>Running your First Slurm Job – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +21,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -31,8 +66,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../manuals/ada/code-examples/matlab.html" rel="next">
-<link href="../../../manuals/ada/getting-started/software.html" rel="prev">
+<link href="../../../manuals/ada/getting-started/8-askingforhelp.html" rel="next">
+<link href="../../../manuals/ada/getting-started/6-yoda.html" rel="prev">
 <link href="../../../public/favicon.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -157,7 +192,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../manuals/ada/getting-started/hardware.html">Getting Started</a></li><li class="breadcrumb-item"><a href="../../../manuals/ada/getting-started/yoda.html">Data transfer to and from Yoda</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../manuals/ada/getting-started/1-login.html">Getting Started</a></li><li class="breadcrumb-item"><a href="../../../manuals/ada/getting-started/7-firstjob.html">Running your First Slurm Job</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -198,38 +233,56 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../manuals/ada/getting-started/hardware.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Available cluster hardware</span></a>
+  <a href="../../../manuals/ada/getting-started/1-login.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How to Login</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../manuals/ada/getting-started/hpc-101.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Essential concepts for HPC users</span></a>
+  <a href="../../../manuals/ada/getting-started/2-software.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Using Software on ADA</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../manuals/ada/getting-started/login.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Login</span></a>
+  <a href="../../../manuals/ada/getting-started/3-hardware.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Available Cluster Hardware</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../manuals/ada/getting-started/slurm.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../manuals/ada/getting-started/4-slurm.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Using Slurm</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../manuals/ada/getting-started/software.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Software</span></a>
+  <a href="../../../manuals/ada/getting-started/5-hpc-101.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Essential concepts for HPC users</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../manuals/ada/getting-started/yoda.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Data transfer to and from Yoda</span></a>
+  <a href="../../../manuals/ada/getting-started/6-yoda.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data transfer with Yoda</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../manuals/ada/getting-started/7-firstjob.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Running your First Slurm Job</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../manuals/ada/getting-started/8-askingforhelp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Support Ticket Submission Guidelines</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../manuals/ada/getting-started/9-requestsoftware.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Request Software Installs on ADA</span></a>
   </div>
 </li>
       </ul>
@@ -249,12 +302,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">MATLAB</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../manuals/ada/code-examples/simpleslurm.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Slurm job</span></a>
-  </div>
-</li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
@@ -266,14 +313,37 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../manuals/ada/code-examples/python/python-multithreading.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../manuals/ada/code-examples/Python/1-python-multithreading.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Multithreading</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../manuals/ada/code-examples/python/torch.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../manuals/ada/code-examples/Python/2-python-multiprocessing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Multiprocessing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../manuals/ada/code-examples/Python/3-torch.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">PyTorch</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+ <span class="menu-text">R</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../manuals/ada/code-examples/R/1-R-multiprocessing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Multiprocessing</span></a>
   </div>
 </li>
       </ul>
@@ -290,17 +360,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#configuration" id="toc-configuration" class="nav-link active" data-scroll-target="#configuration">Configuration</a></li>
-  <li><a href="#basic-icommands" id="toc-basic-icommands" class="nav-link" data-scroll-target="#basic-icommands">Basic iCommands</a></li>
+  <li><a href="#slurm-script" id="toc-slurm-script" class="nav-link active" data-scroll-target="#slurm-script">Slurm script:</a></li>
+  <li><a href="#running-the-script" id="toc-running-the-script" class="nav-link" data-scroll-target="#running-the-script">Running the script</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/getting-started/yoda.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/getting-started/7-firstjob.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../manuals/ada/getting-started/hardware.html">Getting Started</a></li><li class="breadcrumb-item"><a href="../../../manuals/ada/getting-started/yoda.html">Data transfer to and from Yoda</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../manuals/ada/getting-started/1-login.html">Getting Started</a></li><li class="breadcrumb-item"><a href="../../../manuals/ada/getting-started/7-firstjob.html">Running your First Slurm Job</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Data transfer to and from Yoda</h1>
+<h1 class="title">Running your First Slurm Job</h1>
 </div>
 
 
@@ -323,27 +393,34 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This page explains how to transfer data from the VU Yoda instance using iRODS.</p>
-<p>Since Yoda is based on iRODS technology, it is possible to transfer data to and from Yoda using the iRODS communication protocol. This protocol can be used to transfer large amounts of data in an efficient way. On the ADA system, the iCommands are available to allow direct command-line access to Yoda.</p>
-<section id="configuration" class="level2">
-<h2 class="anchored" data-anchor-id="configuration">Configuration</h2>
-<p>To use iCommands, a <a href="../../../manuals/yoda/yoda_data_transfer/yoda_using_icommands.html#configuration">configuration file</a> is required in your home directory. This file contains the necessary connection settings for accessing Yoda.</p>
+<p>This page shows a simple Slurm job example to get started on ADA.</p>
+<section id="slurm-script" class="level2">
+<h2 class="anchored" data-anchor-id="slurm-script">Slurm script:</h2>
+<p><code>mytestjob.slurm</code></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash -l</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH -J MyTestJob</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH -N 1</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH -p defq</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --output=MyTestJobResult.out</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --error=MyTestJobResult.err</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Starting run at </span><span class="va">$(</span><span class="fu">date</span><span class="va">)</span><span class="st">"</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Job ID: </span><span class="va">${SLURM_JOBID}</span><span class="st">"</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Node list: </span><span class="va">${SLURM_NODELIST}</span><span class="st">"</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Submit dir: </span><span class="va">${SLURM_SUBMIT_DIR}</span><span class="st">"</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Scratch dir: </span><span class="va">${TMPDIR}</span><span class="st">"</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Move to scratch space</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> <span class="st">"</span><span class="va">$TMPDIR</span><span class="st">"</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Run your application (example: print hostname)</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Running on: </span><span class="va">$(</span><span class="fu">hostname</span><span class="va">)</span><span class="st">"</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Job completed at </span><span class="va">$(</span><span class="fu">date</span><span class="va">)</span><span class="st">"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="basic-icommands" class="level2">
-<h2 class="anchored" data-anchor-id="basic-icommands">Basic iCommands</h2>
-<p>First use the <code>iinit</code> command to connect. You will need a Yoda <a href="../../../manuals/yoda/yoda_data_transfer/yoda_dap.html">Data Access Password</a>.</p>
-<p>These are the basic commands for navigation and data transfer:</p>
-<ul>
-<li><code>ipwd</code> – Show current iRODS directory</li>
-<li><code>ils</code> – List contents of a directory</li>
-<li><code>icd</code> – Change directory</li>
-<li><code>iput</code> – Upload files to Yoda</li>
-<li><code>iget</code> – Download files from Yoda</li>
-<li><code>irsync</code> – Synchronize local and remote directories</li>
-</ul>
-<p>Your Yoda project folders are located under <code>/vu/home</code>.</p>
-<p>You can find a quick introduction of the iCommands on the <a href="https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/19824798/Data+handling+in+Yoda+iRODS+using+iCommands#DatahandlinginYoda%2FiRODSusingiCommands-Createcollectionsandnavigate" target="_blank">SURF wiki</a> or you can check out <a href="https://irods.org/uploads/2016/06/irods_beginner_training_2016.pdf" target="_blank">this training manual</a>.</p>
-<p>All icommands are documented in the <a href="https://docs.irods.org/4.3.0/icommands/user/" target="_blank">iRODS Docs</a></p>
+<section id="running-the-script" class="level2">
+<h2 class="anchored" data-anchor-id="running-the-script">Running the script</h2>
+<p>Assuming you are inside your slurm submission directory, run the following:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> sbatch mytestjob.slurm</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 
 </section>
@@ -751,13 +828,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../manuals/ada/getting-started/software.html" class="pagination-link" aria-label="Software">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Software</span>
+      <a href="../../../manuals/ada/getting-started/6-yoda.html" class="pagination-link" aria-label="Data transfer with Yoda">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Data transfer with Yoda</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../manuals/ada/code-examples/matlab.html" class="pagination-link" aria-label="MATLAB">
-        <span class="nav-page-text">MATLAB</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../manuals/ada/getting-started/8-askingforhelp.html" class="pagination-link" aria-label="Support Ticket Submission Guidelines">
+        <span class="nav-page-text">Support Ticket Submission Guidelines</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -796,7 +873,7 @@ ul.task-list li input[type="checkbox"] {
 </a>
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/getting-started/yoda.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/getting-started/7-firstjob.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">

@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2025-10-30">
 
-<title>Slurm job – Research Support Handbook</title>
+<title>Multiprocessing – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -59,27 +59,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../../">
-<link href="../../../manuals/ada/code-examples/python/python-multithreading.html" rel="next">
-<link href="../../../manuals/ada/code-examples/matlab.html" rel="prev">
-<link href="../../../public/favicon.png" rel="icon" type="image/png">
-<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-e69c8a892bfebd52223cfedbd795a344.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<link href="../../../../manuals/ada/code-examples/Python/3-torch.html" rel="prev">
+<link href="../../../../public/favicon.png" rel="icon" type="image/png">
+<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap-e69c8a892bfebd52223cfedbd795a344.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -118,9 +117,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../../public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo light-content">
-    <img src="../../../public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo dark-content">
+    <a href="../../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../../public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo light-content">
+    <img src="../../../../public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -135,49 +134,49 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-topics">    
         <li>
-    <a class="dropdown-item" href="../../../topics.html">
+    <a class="dropdown-item" href="../../../../topics.html">
  <span class="dropdown-text">All</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../topics.html#category=Policies and Legislation">
+    <a class="dropdown-item" href="../../../../topics.html#category=Policies and Legislation">
  <span class="dropdown-text">Policies and Legislation</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../topics.html#category=Research Data">
+    <a class="dropdown-item" href="../../../../topics.html#category=Research Data">
  <span class="dropdown-text">Research Data</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../topics.html#category=Research Software">
+    <a class="dropdown-item" href="../../../../topics.html#category=Research Software">
  <span class="dropdown-text">Research Software</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../topics.html#category=Responsible Scholarship">
+    <a class="dropdown-item" href="../../../../topics.html#category=Responsible Scholarship">
  <span class="dropdown-text">Responsible Scholarship</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../topics.html#category=Tools">
+    <a class="dropdown-item" href="../../../../topics.html#category=Tools">
  <span class="dropdown-text">Tools</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../topics.html#category=Trainings and Knowledge Items">
+    <a class="dropdown-item" href="../../../../topics.html#category=Trainings and Knowledge Items">
  <span class="dropdown-text">Trainings and Knowledge Items</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../../guides.html"> 
+    <a class="nav-link" href="../../../../guides.html"> 
 <span class="menu-text">Guides</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../manuals.html"> 
+    <a class="nav-link" href="../../../../manuals.html"> 
 <span class="menu-text">Manuals</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../blog.html"> 
+    <a class="nav-link" href="../../../../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../contributing.html"> 
+    <a class="nav-link" href="../../../../contributing.html"> 
 <span class="menu-text">Contributing</span></a>
   </li>  
 </ul>
@@ -192,7 +191,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../manuals/ada/code-examples/matlab.html">Code Examples</a></li><li class="breadcrumb-item"><a href="../../../manuals/ada/code-examples/simpleslurm.html">Slurm job</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/matlab.html">Code Examples</a></li><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/R/1-R-multiprocessing.html">R</a></li><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/R/1-R-multiprocessing.html">Multiprocessing</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -206,7 +205,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
-      <a href="../../../index.html" class="sidebar-logo-link">
+      <a href="../../../../index.html" class="sidebar-logo-link">
       </a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -218,7 +217,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../manuals/ada/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../manuals/ada/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">ADA Manuals</span></a>
   </div>
 </li>
@@ -233,38 +232,56 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../manuals/ada/getting-started/hardware.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Available cluster hardware</span></a>
+  <a href="../../../../manuals/ada/getting-started/1-login.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How to Login</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../manuals/ada/getting-started/hpc-101.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Essential concepts for HPC users</span></a>
+  <a href="../../../../manuals/ada/getting-started/2-software.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Using Software on ADA</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../manuals/ada/getting-started/login.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Login</span></a>
+  <a href="../../../../manuals/ada/getting-started/3-hardware.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Available Cluster Hardware</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../manuals/ada/getting-started/slurm.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../manuals/ada/getting-started/4-slurm.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Using Slurm</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../manuals/ada/getting-started/software.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Software</span></a>
+  <a href="../../../../manuals/ada/getting-started/5-hpc-101.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Essential concepts for HPC users</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../manuals/ada/getting-started/yoda.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data transfer to and from Yoda</span></a>
+  <a href="../../../../manuals/ada/getting-started/6-yoda.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data transfer with Yoda</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../manuals/ada/getting-started/7-firstjob.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Running your First Slurm Job</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../manuals/ada/getting-started/8-askingforhelp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Support Ticket Submission Guidelines</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../manuals/ada/getting-started/9-requestsoftware.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Request Software Installs on ADA</span></a>
   </div>
 </li>
       </ul>
@@ -280,14 +297,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../manuals/ada/code-examples/matlab.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../manuals/ada/code-examples/matlab.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">MATLAB</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../manuals/ada/code-examples/simpleslurm.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Slurm job</span></a>
   </div>
 </li>
           <li class="sidebar-item sidebar-item-section">
@@ -301,14 +312,37 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../manuals/ada/code-examples/python/python-multithreading.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../manuals/ada/code-examples/Python/1-python-multithreading.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Multithreading</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../manuals/ada/code-examples/python/torch.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../manuals/ada/code-examples/Python/2-python-multiprocessing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Multiprocessing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../manuals/ada/code-examples/Python/3-torch.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">PyTorch</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">R</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../manuals/ada/code-examples/R/1-R-multiprocessing.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Multiprocessing</span></a>
   </div>
 </li>
       </ul>
@@ -320,15 +354,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#slurm-batch-submission-script" id="toc-slurm-batch-submission-script" class="nav-link active" data-scroll-target="#slurm-batch-submission-script">Slurm batch submission script:</a></li>
+  <li><a href="#r-script" id="toc-r-script" class="nav-link" data-scroll-target="#r-script">R script:</a></li>
+  <li><a href="#running-the-script" id="toc-running-the-script" class="nav-link" data-scroll-target="#running-the-script">Running the script</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/code-examples/R/1-R-multiprocessing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../manuals/ada/code-examples/matlab.html">Code Examples</a></li><li class="breadcrumb-item"><a href="../../../manuals/ada/code-examples/simpleslurm.html">Slurm job</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/matlab.html">Code Examples</a></li><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/R/1-R-multiprocessing.html">R</a></li><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/R/1-R-multiprocessing.html">Multiprocessing</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Slurm job</h1>
+<h1 class="title">Multiprocessing</h1>
 </div>
 
 
@@ -351,28 +393,95 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>A simple Slurm job example.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash -l</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH -J MyTestJob</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH -N 1</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH -p defq</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --output=MyTestJobResult.out</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --error=MyTestJobResult.err</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Starting run at </span><span class="va">$(</span><span class="fu">date</span><span class="va">)</span><span class="st">"</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Job ID: </span><span class="va">${SLURM_JOBID}</span><span class="st">"</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Node list: </span><span class="va">${SLURM_NODELIST}</span><span class="st">"</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Submit dir: </span><span class="va">${SLURM_SUBMIT_DIR}</span><span class="st">"</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Scratch dir: </span><span class="va">${TMPDIR}</span><span class="st">"</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Move to scratch space</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> <span class="st">"</span><span class="va">$TMPDIR</span><span class="st">"</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Run your application (example: print hostname)</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Running on: </span><span class="va">$(</span><span class="fu">hostname</span><span class="va">)</span><span class="st">"</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Job completed at </span><span class="va">$(</span><span class="fu">date</span><span class="va">)</span><span class="st">"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This example applies multiprocessing in R on 1 compute node.</p>
+<p>For parrallel execution in R, there are several options such as:</p>
+<ul>
+<li>library(parallel) - base R package for parallel execution.</li>
+<li>library(foreach) and library(doParallel) - popular option to transform sequential for-loops in parallel for-loops quickly.</li>
+<li>library(furrr) - used to parallelize functions from the purrr package.</li>
+<li>library(BiocParallel) - used to parallelize functions from Bioconductor packages.</li>
+</ul>
+<p>In this example, we make use of the base R package for parallel execution.</p>
+<section id="slurm-batch-submission-script" class="level2">
+<h2 class="anchored" data-anchor-id="slurm-batch-submission-script">Slurm batch submission script:</h2>
+<p><code>multiproc-R.slurm</code></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --job-name=multiproc_R_1n_10c</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --nodes=1</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --ntasks=1</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --cpus-per-task=10</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --time=00:20:00</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --output=%x_output.log</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --error=%x_error.log</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="va">NUM_CORES</span><span class="op">=</span><span class="va">${SLURM_CPUS_PER_TASK</span><span class="op">:-</span>10<span class="va">}</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Starting run at </span><span class="va">$(</span><span class="fu">date</span><span class="va">)</span><span class="st">"</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Job ID: </span><span class="va">${SLURM_JOBID}</span><span class="st">"</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Node list: </span><span class="va">${SLURM_NODELIST}</span><span class="st">"</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Submit dir: </span><span class="va">${SLURM_SUBMIT_DIR}</span><span class="st">"</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Using </span><span class="va">$NUM_CORES</span><span class="st"> CPU cores"</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Move to scratch space and copy R script to scratch directory</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> <span class="st">"</span><span class="va">$TMPDIR</span><span class="st">"</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> <span class="st">"</span><span class="va">$SLURM_SUBMIT_DIR</span><span class="st">/multiproc.R"</span> .</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Load R module</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load 2025</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load R</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Run R script</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="ex">Rscript</span> multiproc.R <span class="va">$NUM_CORES</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="co"># Copy the results from scratch space back to the submission directory</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> ./results.csv <span class="st">"</span><span class="va">$SLURM_SUBMIT_DIR</span><span class="st">/results.csv"</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Job completed at </span><span class="va">$(</span><span class="fu">date</span><span class="va">)</span><span class="st">"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="r-script" class="level2">
+<h2 class="anchored" data-anchor-id="r-script">R script:</h2>
+<p><code>multiproc.R</code></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/usr/bin/env Rscript</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Parse command line arguments ---</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="ex">args</span> <span class="op">&lt;</span>- commandArgs<span class="er">(</span><span class="ex">trailingOnly</span> = TRUE<span class="kw">)</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ex">n_cores</span> <span class="op">&lt;</span>- as.numeric<span class="er">(</span><span class="va">args</span><span class="op">[</span><span class="dv">1</span><span class="op">]</span><span class="kw">)</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="kw">(</span><span class="ex">is.na</span><span class="er">(</span><span class="ex">n_cores</span><span class="kw">))</span> <span class="ex">n_cores</span> <span class="op">&lt;</span>- 1  <span class="co"># default to 1 if not provided</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span><span class="er">(</span><span class="st">"== Starting parallel computation on"</span><span class="ex">,</span> n_cores, <span class="st">"cores ==\n"</span><span class="kw">)</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Load parallel library ---</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="ex">library</span><span class="er">(</span><span class="ex">parallel</span><span class="kw">)</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co"># --- CPU-intensive task ---</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="ex">heavy_compute</span> <span class="op">&lt;</span>- function<span class="er">(</span><span class="ex">core_id</span><span class="kw">)</span> <span class="kw">{</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span><span class="er">(</span><span class="ex">sprintf</span><span class="er">(</span><span class="st">"Core %d is working...\n"</span><span class="ex">,</span> core_id<span class="kw">))</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Example CPU-intensive computation (sum of squares loop)</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>  <span class="ex">result</span> <span class="op">&lt;</span>- sum<span class="er">(</span><span class="kw">(</span><span class="ex">1:1e9</span><span class="kw">)</span><span class="ex">^2</span><span class="kw">)</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span><span class="er">(</span><span class="ex">sprintf</span><span class="er">(</span><span class="st">"Core %d finished with result: %e\n"</span><span class="ex">,</span> core_id, result<span class="kw">))</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span><span class="kw">(</span><span class="ex">result</span><span class="kw">)</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Run in parallel ---</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="ex">start_time</span> <span class="op">&lt;</span>- Sys.time<span class="er">(</span><span class="kw">)</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="ex">results</span> <span class="op">&lt;</span>- mclapply<span class="er">(</span><span class="ex">1:n_cores,</span> heavy_compute, mc.cores = n_cores<span class="kw">)</span></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="ex">end_time</span> <span class="op">&lt;</span>- Sys.time<span class="er">(</span><span class="kw">)</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span><span class="er">(</span><span class="st">"== All tasks completed ==\n"</span><span class="kw">)</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span><span class="er">(</span><span class="st">"Elapsed time:"</span><span class="ex">,</span> round<span class="er">(</span><span class="ex">difftime</span><span class="er">(</span><span class="ex">end_time,</span> start_time, units = <span class="st">"secs"</span><span class="kw">)</span><span class="ex">,</span> 2<span class="kw">)</span><span class="ex">,</span> <span class="st">"seconds\n"</span><span class="kw">)</span></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Save results to file ---</span></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a><span class="ex">write.csv</span><span class="er">(</span><span class="ex">data.frame</span><span class="er">(</span><span class="ex">core</span> = 1:n_cores, result = unlist<span class="er">(</span><span class="ex">results</span><span class="kw">))</span><span class="ex">,</span> <span class="st">"results.csv"</span>, row.names = FALSE<span class="kw">)</span></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span><span class="er">(</span><span class="st">"Results written to results.csv\n"</span><span class="kw">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="running-the-script" class="level2">
+<h2 class="anchored" data-anchor-id="running-the-script">Running the script</h2>
+<p>Assuming you are inside your slurm submission directory, for example, running on 8 logical cores:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> sbatch <span class="at">--cpus-per-task</span><span class="op">=</span>8 multiproc-R.slurm</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -777,14 +886,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../manuals/ada/code-examples/matlab.html" class="pagination-link" aria-label="MATLAB">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">MATLAB</span>
+      <a href="../../../../manuals/ada/code-examples/Python/3-torch.html" class="pagination-link" aria-label="PyTorch">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">PyTorch</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../manuals/ada/code-examples/python/python-multithreading.html" class="pagination-link" aria-label="Multithreading">
-        <span class="nav-page-text">Multithreading</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -802,17 +908,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="../../../about.html">
+    <a class="nav-link" href="../../../../about.html">
 <p>About</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="../../../technical-details.html">
+    <a class="nav-link" href="../../../../technical-details.html">
 <p>Technical details</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="../../../editors-guide.html">
+    <a class="nav-link" href="../../../../editors-guide.html">
 <p>Editor’s guide</p>
 </a>
   </li>  
@@ -822,7 +928,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </a>
   </li>  
 </ul>
-    <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/code-examples/simpleslurm.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/code-examples/R/1-R-multiprocessing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
