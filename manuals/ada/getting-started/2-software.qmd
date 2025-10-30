@@ -1,0 +1,187 @@
+---
+title: Using Software on ADA
+date: last-modified
+---
+
+This page explains how to load software modules and using a specific version of a software.
+
+To load in software, you first load in the yearly software stack followed by the software you wish to use (including dependencies) in the following order:
+
+```sh
+module load 2024
+module load <Software1>
+module load <Software2 (e.g. dependent on Software 1)>
+module load <Software3 (e.g. dependent of Software 2)>
+```
+
+For example loading in Python 3.12.3:
+```sh
+module load 2024
+module load Python/3.12.3-GCCcore-13.3.0
+```
+
+For example loading in R and the HDF5 data format library:
+```sh
+module load 2024
+module load R/4.4.1-gfbf-2023b
+module load HDF5/1.14.3-gompi-2023b
+```
+
+## Software Modules
+
+Software on ADA is accessible through so-called 'modules' (also see https://lmod.readthedocs.io/en/latest/010_user.html). A module command tells the system which places to look for when accessing certain software. 
+
+When you log in to the cluster, you can see which modules are loaded by default via:
+```sh
+[abc123@login1 ~]$ module list
+
+Currently Loaded Modules:
+1) shared   2) DefaultModules   3) gcc/11.2.0   4) slurm/bazis/23.02.8
+```
+
+For ADA, the software stack is managed through a yearly release module (e.g. 2023, 2024) and that release module is updated on-demand throughout the year. To load it in:
+```sh
+[abc123@login1 ~]$ module load 2024
+[abc123@login1 ~]$ module list
+
+Currently Loaded Modules:
+1) shared   2) DefaultModules   3) slurm/bazis/23.02.8   4) 2024
+```
+
+Once you have loaded the 2024 software stack module, you can check out its content (and that of all other currently loaded modules):
+```sh
+[abc123@login1 ~]$ module avail
+
+...........  list of software ..............
+```
+
+Since this list can be quite large and cumbersome to navigate, it is also possible to look for a specific software module (e.g. Python) using module spider:
+```sh
+    [abc123@login1 ~]$ module spider Python
+
+    -----------------------------------------------------------------------------------------------------------------------
+    Python:
+    -----------------------------------------------------------------------------------------------------------------------
+    Description:
+    Python is a programming language that lets you work more quickly and integrate your systems more effectively.
+
+    Versions:
+        Python/2.7.15-GCCcore-8.2.0
+        Python/2.7.16-GCCcore-8.3.0
+        Python/2.7.18-GCCcore-9.3.0
+        Python/2.7.18-GCCcore-10.2.0
+        Python/2.7.18-GCCcore-10.3.0-bare
+        Python/2.7.18-GCCcore-12.2.0-bare
+        Python/3.7.2-GCCcore-8.2.0
+        Python/3.7.4-GCCcore-8.3.0
+        Python/3.8.2-GCCcore-9.3.0
+        Python/3.8.6-GCCcore-10.2.0
+        Python/3.9.5-GCCcore-10.3.0-bare
+        Python/3.9.5-GCCcore-10.3.0
+        Python/3.9.6-GCCcore-11.2.0-bare
+        Python/3.9.6-GCCcore-11.2.0
+        Python/3.10.4-GCCcore-11.3.0-bare
+        Python/3.10.4-GCCcore-11.3.0
+        Python/3.10.8-GCCcore-12.2.0-bare
+        Python/3.10.8-GCCcore-12.2.0
+        Python/3.11.3-GCCcore-12.3.0
+        Python/3.11.5-GCCcore-13.2.0
+        Python/3.12.3-GCCcore-13.3.0
+    Other possible modules matches:
+        Biopython  GitPython  IPython  Python-bundle-PyPI  caffe/caffe2/python2.7/gpu  flatbuffers-python  keras/python2.7  ...
+```
+
+Once you located the Python version you wish to use, you can check which module dependencies (in this example 'shared' and '2024') you need to load before loading this Python version:
+```sh
+[abc123@login1 ~]$ module spider Python/3.12.3-GCCcore-13.3.0
+
+-----------------------------------------------------------------------------------------------------------------------
+Python: Python/3.12.3-GCCcore-13.3.0
+-----------------------------------------------------------------------------------------------------------------------
+    Description:
+    Python is a programming language that lets you work more quickly and integrate your systems more effectively.
+
+
+    You will need to load all module(s) on any one of the lines below before the "Python/3.12.3-GCCcore-13.3.0" module is available to load.
+
+    shared  2024
+
+    Help:
+    Description
+    ===========
+    Python is a programming language that lets you work more quickly and integrate your systems
+    more effectively.
+    
+    
+    More information
+    ================
+    - Homepage: https://python.org/
+    
+    
+    Included extensions
+    ===================
+    flit_core-3.9.0, packaging-24.0, pip-24.0, setuptools-70.0.0,
+    setuptools_scm-8.1.0, tomli-2.0.1, typing_extensions-4.11.0, wheel-0.43.0
+```
+
+## Python packages
+
+To use standard python packages, you first load in the python version. Then you can check with the 'pip list' the currently installed packages for that version:
+```sh
+[abc123@login1 ~]$ module load Python/3.12.3-GCCcore-13.3.0
+[abc123@login1 ~]$ pip list
+Package           Version
+----------------- -----------
+click             8.1.8
+cloudpickle       3.1.1
+contourpy         1.3.1
+cycler            0.12.1
+dask              2025.2.0
+flit_core         3.9.0
+fonttools         4.56.0
+fsspec            2025.2.0
+joblib            1.4.2
+kiwisolver        1.4.8
+llvmlite          0.44.0
+locket            1.0.0
+matplotlib        3.10.0
+narwhals          1.27.1
+numba             0.61.0
+numpy             2.1.3
+packaging         24.0
+pandas            2.2.3
+.....             ......
+.....             ......
+```
+
+If the package you wish to use is not listed, you can request its installation by sending an email to itvo.it@vu.nl. Make sure to specify the python version in your request. 
+A second option is to install the package yourself in your home directory `pip install <PACKAGE>`; pip will automatically resolve its location. Please be aware that if you share codespaces, it is best-practice to let ITvO install the software so that it is publicly available to all your colleagues. 
+
+## R packages
+
+To use standard R packages, you first load in the R version. Then you can launch a R shell session and check the available packages:
+```sh
+[abc123@login1 ~]$ module load 2024
+[abc123@login1 ~]$ module load R/4.4.1-gfbf-2023b
+[abc123@login1 ~]$ R
+```
+
+In R shell:
+```R
+installed.packages()
+```
+
+If you also use BioConductor packages, also load in HDF5 before executing the R shell/program.
+```sh
+[abc123@login1 ~]$ module load HDF5/1.14.3-gompi-2023b=
+```
+
+## Conda packages
+
+Before you create/run a conda environment on the cluster, it is advisable to load in a conda version + python version (including toolchain) that is provided by the software stack. In this way, you are guaranteed that your setup will keep working, even if the operating system of the cluster nodes is upgraded. 
+
+```sh
+[abc123@login1 ~]$ module load 2025
+[abc123@login1 ~]$ module load Miniconda3
+[abc123@login1 ~]$ module load Python/3.12.3-GCCcore-13.3.0
+```

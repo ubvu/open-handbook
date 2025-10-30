@@ -1,0 +1,52 @@
+---
+title: Available Cluster Hardware
+date: last-modified
+---
+
+This page provides an overview of the hardware that is available on the ADA cluster.
+
+Currently the following queues/partitions have been configuered in the SLURM
+queueing system, use your group's partition first and jobs will flow over in the general partition:
+
+## Access nodes
+
+- 3 Login nodes, 16 Cores/Node, 32GB memory, AMD EPYC 9124@3.7GHz
+- 3 Interactive nodes, 32 Cores/Node, 256GB memory, AMD EPYC 9354P@3.8GHz
+- 1 Interactive node, 2 CPU, 16 Cores/Node, 256GB memory, AMD EPYC 7313@3.7GHz, 1 NVIDIA GeForce GTX 1080
+
+## General VU partition
+
+### defq (general use)
+
+  - 7 Nodes, 32 Cores/Node, 256GB memory, Dual AMD 7302@3.0GHz, NVIDIA A30
+  - 2 Nodes, 32 Cores/Node, 1TB memory, Dual AMD 7282@2.8GHz (highmem,zen2)
+
+## Research group partitions (features)
+
+### tc  
+  -  4 Nodes, 32 Cores/Node, 768GB memory, AMD 9354P@3.8GHz (highmem,25G,zen2)
+  - 20 Nodes, 32 Cores/Node, 256GB memory, AMD 9354P@3.8GHz (25G,zen2)
+  - 28 Nodes, 32 Cores/Node, 256GB memory, Dual AMD EPYC 7313@3,0GHz (zen2)
+  - 12 Nodes, 32 Cores/Node, 256GB memory, AMD 7502P@2,50GHz (zen2)
+  -  8 Nodes, 16 Cores/Node, 128GB memory, Dual Xeon E5-2640v3@2.60GHz (haswell)
+
+### far 
+  - 4 Nodes, 16 Cores/Node, 32-64GB memory, Dual Xeon E5-2650v4@2.10GHz, 4x GTX1080
+
+### move 
+  - 3 Nodes, 40 Cores/Node,  64GB memory, Intel(R) Xeon(R) Gold 6148@2.40GHz (haswell)
+
+### ivm  
+  - 3 Nodes, 32 Cores/Node, 128GB memory, AMD 7452@2.3GHz (zen2)
+  - 1 Node,  64 Cores/Node, 768GB memory, AMD Genoa 9554P UP 64C/128T 3.1GHz 256M (zen5 - zen2 compatible)
+  - 1 Node,  32 Cores/Node, 128GB memory, AMD Genoa 9334 DP/UP 32C/64T 2.7G 128M, NVIDIA A30 (zen5 - zen2 compatible)
+
+### binf
+  - 1 Nodes, 32 Cores/Node, 256GB memory, Dual AMD 7302@3.0GHz (zen2)
+
+Show available features with: 
+```sh
+sinfo -o "%20N  %10c  %10m  %25G %28f "
+```
+
+A more detailed and up to date hardware overview will be provided soon. 

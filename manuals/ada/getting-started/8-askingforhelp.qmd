@@ -1,0 +1,100 @@
+---
+title: Support Ticket Submission Guidelines
+date: last-modified
+---
+
+This page provides instructions on how to submit a support ticket to the ITVO HPC team.
+
+A clear, complete ticket lets us diagnose and fix your problem much faster. Tickets that do **not** follow this guideline may be returned for more information.
+
+You can submit a ticket through the [VU IT Serviceportal ticket submit page](https://services.vu.nl/esc?id=sc_cat_item&sys_id=3f1dd0320a0a0b99000a53f7604a2ef9). Please mention ADA in the subject, so our colleagues from the central IT department know where to transfer the ticket to.
+
+## ✅ Quick Checklist (include **every** item)
+
+- [ ] **Symptom & context** – one‑sentence summary + *verbatim* error text or screenshot
+- [ ] **Minimal Reproducible Example (MRE)** – smallest script or command that still fails (include file in request or specify the scistor path!)
+- [ ] **Expected vs. actual behaviour** – what you *thought* would happen and what *did* happen
+- [ ] **Environment & other details**  
+  Other information relevant to the specific problem at hand, like:
+  - Account name or Job ID(s)
+  - Node list / partition / queue
+  - Loaded modules (`module list`) **or** Conda env name
+  - Compiler / MPI / application versions
+- [ ] **Logs attached** – stdout/stderr files (`*.o<JobID>`, `*.e<JobID>`), stack traces, application logs
+- [ ] **Troubleshooting already tried** – e.g. different node type, smaller input, googled error
+- [ ] **Large files compressed** – gzip anything > 1 MB
+
+::: {.callout-tip}
+A good ticket should allow a consultant to copy‑paste your example into the debug queue and reproduce the problem in < 5 minutes.
+:::
+
+## 📋 Detailed Instructions
+
+### 1. Describe the symptom
+
+Explain *what you were doing* and *what went wrong*. Paste the **exact** error message—even a missing colon can matter.
+
+### 2. Provide a Minimal Reproducible Example (MRE)
+
+Strip your script or code down to the fewest lines that still trigger the problem. Remove unrelated options, comments, or data files.
+
+### 3. Expected vs. actual behaviour
+
+State the outcome you expected (e.g. “allocate 64 GB on two GPUs”) and the outcome you observed (e.g. “job received only 32 GB and crashed”).
+
+### 4. Environment & other details
+
+Other information relevant to the specific problem at hand, like:
+- **Scheduler info** – Job ID, partition/queue, node list
+- **Environment** – full `module list` or `conda info --envs`, compiler and MPI versions
+- **Hardware specifics** – GPU type, high‑mem node, scratch file system if relevant
+- **Application specifics** – for example, software name and version
+
+### 5. Logs & output files
+
+Attach the raw `*.o` and `*.e` files or any application log. Compress large logs and never paste thousands of lines inline.
+
+### 6. What you have already tried
+
+List the diagnostics or work‑arounds you attempted. This prevents duplicated suggestions and speeds resolution.
+
+## 📝 Ticket Template (Markdown)
+
+Copy the block below into your ticket and fill in every section.
+
+```markdown
+### Summary
+A concise description of the problem (1–3 sentences).
+
+### Steps to reproduce (MRE)
+1. Command or script snippet that triggers the issue
+2. Input files or parameters (links or small attachment)
+
+### Expected behaviour
+What **should** happen.
+
+### Actual behaviour / error output
+Paste **verbatim** error text or attach log file.
+
+### Environment & other details
+Other possible relevant details like:
+- Job ID(s)
+- Partition/queue
+- Node list
+- Loaded modules or Conda env
+- Compiler / MPI / application versions
+- Other...
+
+### Logs
+<attach or paste>
+
+### Troubleshooting already attempted
+- e.g. Scaled down input size → still fails
+
+### Additional context (optional)
+Screenshots, config files, links to docs you followed, etc.
+```
+
+::: {.callout-tip}
+A detailed, reproducible ticket is the fastest path to a solution.  Thanks for helping us help you!
+:::

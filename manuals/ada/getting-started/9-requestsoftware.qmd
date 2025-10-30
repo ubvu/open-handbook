@@ -1,0 +1,33 @@
+---
+title: Request Software Installs on ADA
+date: last-modified
+---
+
+This page provides instructions on how to request software installs for the ADA software stack.
+
+You can request software installs through the [VU IT Serviceportal ticket submit page](https://services.vu.nl/esc?id=sc_cat_item&sys_id=3f1dd0320a0a0b99000a53f7604a2ef9). Please mention ADA in the subject, 
+so our colleagues from the central IT department know where to transfer the ticket to. 
+
+## 📝 Ticket Template (Markdown)
+Copy the block below into your ticket and fill out all 3 sections. 
+
+
+```markdown
+### 1. Software (Package) Name 
+Full name and version. 
+
+### 2. Usefull links
+E.g. PyPi link, Github link. Also check if your software is listed here: (https://docs.easybuild.io/version-specific/supported-software/). 
+
+### 3. Dependencies
+If your request involves Python or R packages, please specify the version you would like the package to be installed . 
+(e.g. by mentioning 'latest' , Python 3.12.3 or R 4.4.1 etc. Also see 'module spider Python' to check all available versions on the cluster).
+
+If your request involves a software build from source, we will build on a zen3 architecture by default. If that is not sufficient for your partition/nodes, please let us know if you wish to have it compiled on a specific architecture. 
+Also provide us with a list of dependencies if necessary (e.g. if that is not clear from the github repo). 
+
+As of 2025, we also support and encourage users to make use of containers to install software themselves by using apptainer.
+
+```
+
+---

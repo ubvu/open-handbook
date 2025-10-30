@@ -1,0 +1,108 @@
+---
+title: Connect to SciStor
+categories: []
+description: 'How do I connect to SciStor?'
+---
+
+
+## Overview
+
+To connect to SciStor you need EduVPN installed with institute access.
+
+### eduVPN
+The easiest way is to install the app for [eduVPN institute access](https://vu.eduvpn.nl/portal/home). Once the VPN is active you can follow the "on-campus access" steps above. Note that performance over the internet is limited, you might run into problems when editing large files. If needed copy them to you local disk.
+
+## Instructions
+
+### MacOS
+
+1. Open the Finder application
+2. In the "Go" menu, pick "Connect to Server..." or press  "⌘K"
+3. Fill in: `smb://scistor.vu.nl/shares`
+4. Click "Connect"
+5. Select "Registered User" if this is not yet selected
+6. Fill in your VUnetID and password
+7. Press "Connect". Optionally, tick the "Remember this password in my keychain" checkbox. After doing this, macOS will no longer ask for credentials the next time this connection is used.
+
+SciStor shares appear on the left after opening the SciStor location. You may open the desired SciStor share by double-clicking it.
+
+### Windows
+
+1. Open Windows File Explorer
+2. Right-click on This PC and choose "Map network drive...""
+3. Select a desired drive letter, for example S. In the Folder field you can enter the following:  `\\scistor.vu.nl\shares\<the name of the share folder>`. Make sure the checkboxes are checked.
+4. Click "Finish"
+5. You will now be asked to log in. This is not possible with your PIN code. Choose the "More choices" option, and log in with your VU email address and password
+
+### 'Green' Linux workspaces
+
+Green Linux workplaces (supported by VU IT) have a connection to SciStor from home. All SciStor shares can be found under the path `/research`.
+
+### Other Linux workstations
+
+Other self-managed Linux workstations can also connect to SciStor.
+
+Via the SFTP protocol: SciStor with the SFTP protocol can be used via the server `sftp.data.vu.nl`. Find the shares under the path `/research`.
+
+You can do as follows:
+
+```bash
+$ ssh <vunetID>@sftp.data.vu.nl # this will ask your vunet password
+$ cd /research/<name-of-scitstor-share>
+```
+
+To to connect to SciStor using samba protocol, you can do as follows:
+
+```bash
+$ sudo apt install cifs-utils
+$ sudo nano /etc/credentials/<vunetID>
+    # nano
+username=<vumail@vu.nl>
+password=<your-vunet-password> # you can put you password for convinence, otherwise you have to type your password everytime.
+$ sudo mkdir -p /data/VU/shares/<name-of-your-share>
+$ sudo mount -t cifs //scistor.vu.nl/shares/<name-of-your-share> /data/VU/shares/<name-of-your-share> -o credentials=/etc/credentials/<vunetID>
+```
+
+
+The scistor share will be mounted at location: `/data/VU/shares`. To unmount it, simply do:
+
+```bash
+$ sudo umount /data/VU/shares/<name-of-your-share>
+```
+::: {.callout-note}
+the path `/data/VU/shares` is  just a suggestion, you can choose any mount path that suits your setup.
+:::
+
+
+<!--    Via the NFS protocol
+PV: KB artikel is verdwenen en ik kan geen andere vinden, nog navragen
+It is also possible to use SciStor shares via the NFS protocol. The knowledge item [KB0012101](https://vu.service-now.com/kb?id=kb_article_view&sysparm_article=KB0012101) describes how you can access home and groups from a Linux workplace via NFS. This manual can also be used to realise a link with SciStor. Use the path /research for this.
+-->
+
+## Off-campus access
+
+### SFTP
+
+On windows you can use a free tool like [WinSCP](https://winscp.net/eng/download.php) or [CyberDuck](https://cyberduck.io/download/) to access your data via the SFTP protocol. The server URL is `sftp.data.vu.nl`, find the shares under the path `/research`.
+
+On a Mac you can connect via the IT supported 🔒 [Expandrive](https://vu.service-now.com/kb_view.do?sysparm_article=KB0011846) (follow the SFTP instructions).
+
+
+The configuration is as follows:
+
+
+| Item      | Value                        |
+|-----------|------------------------------|
+| Host      | `ssh.data.vu.nl` OR `sftp.data.vu.nl` |
+| Protocol  | SFTP                         |
+| Port      | 22                           |
+| Username  | Your VUnetID                 |
+| Password  | Your VUnet password          |
+
+Linux users outside campus can follow the previous SFTP explanation.
+
+
+<!-- > **Warning**  -->
+::: {.callout-warning}
+Due to VU policy, this method will be deprecated in the near future.
+:::

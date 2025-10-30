@@ -1,0 +1,78 @@
+---
+title: Using Slurm
+date: last-modified
+---
+
+This page explains the basics of using the Slurm scheduler.
+
+ADA uses the Slurm scheduler to allocate resources to users. This page explains how to get started with the Slurm scheduler. 
+
+## Most used commands
+
+See jobs in the queue for a given user:
+```sh
+squeue -u <VUNETID>
+```
+Show available node features:
+```sh
+sinfo -o "%20N  %10c  %10m  %25f  %10G "
+```
+Submit a job:
+```sh
+sbatch script
+```
+Show the status of a currently running job:
+```sh
+sstat -j <jobID>
+```
+Show the final status of a finished job:
+```sh
+sacct -j <jobID>
+```
+Cancel a job:
+```sh
+scancel <jobID>
+```
+Cancel all your current jobs:
+```sh
+scancel -u <VUNETID>
+```
+
+## Using a HPC Cluster: Best practices
+
+Distributing your workload can be done in a lot of different ways. It is good practice to first determine your workflow in a single-threaded fashion (no distribution of compute), and then identify parts that can be distributed over multiple processors at the same time. More extensive tutorials on how to do this will follow soon. The most important points for now to get you started:
+
+- Determine your input, output and temporary data. Use the fast scratch directory ($TMPDIR, also see [Basic Slurm Job](./7-firstjob.qmd)) on the compute nodes if you handle large datasets or if you have to perform intermediate I/O operations. Be aware that the scratch directory is not persistent, data will be removed from it after the job finishes.
+- Always specify the --output and --error flags in your Slurm script for debugging purposes.
+- The bigger your allocation requests, the longer you might have to wait to get those resources. Split your jobs in smaller chunks if possible (e.g. by using [job arrays](https://slurm.schedmd.com/job_array.html))
+- Check your code on style and execution. Do you clear memory when necessary? Are your I/O operations finished correctly before the end of your script?
+
+## Constraints flag
+
+The SLURM constraint option allows for further control over which nodes your job can be scheduled on in a particular partition/queue. You may require a specific processor family or memory bandwidth. The features that can be used with the sbatch constraint option are defined by the system administrator and thus vary among HPC sites.
+
+Constraints available on ADA are cpu architectures:
+Example single constraint:
+```sh
+#SBATCH --constraint=zen2
+```
+Example combining constraints:
+```sh
+#SBATCH --constraint="zen2|haswell"
+```
+
+## Generic RESources flag
+Another method to get specific resources is to use the gres flag
+
+Example requesting a gpu, specifically an Nvidia A30:
+```sh
+#SBATCH --gres=gpu:A30:1
+```
+
+To see which generic resources are available to you specifically:
+```sh
+scontrol show nodes | grep -E "NodeName|Gres"
+```
+
+To learn more read the [Slurm documentation](https://slurm.schedmd.com/quickstart.html). 
+
