@@ -31,6 +31,12 @@ website:
           contents: manuals/ada/getting-started/**/*.qmd
         - section: Code Examples
           contents: manuals/ada/code-examples/**/*.qmd
+    - id: sb-scistor
+      style: floating
+      search: true
+      contents:
+        - manuals/scistor/index.qmd 
+        - auto: manuals/scistor/*.qmd
     - id: sb-qualtrics
       style: floating
       search: true

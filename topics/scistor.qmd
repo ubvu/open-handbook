@@ -10,14 +10,17 @@ SciStor is hosted by IT for Research (ITvO) on the VU campus enabling a high-spe
 
 Your data is stored in a **share**, basically a folder with group-based access rights (read/write or read-only). Access rights can be set one level deep, so one share could be used to host data from different projects.
 
-If desired, automatic [backups](#backups) can be made of the data.
 
 ## What can it be used for?
 ### Networked Drive
 Because SciStor is connected to the VU on-campus network you can directly mount (map a network drive) SciStor shares on your laptop and work as if the data is on a local disk.
 
 ### Access off-campus
-Although SciStor is most useful on campus you can also [access your shares off-campus](#off-campus-access).
+Although SciStor is most useful on campus you can also [access your shares off-campus](/manuals/scistor/sicstor-connection.qmd#off-campus-access).
+
+::: {.callout-warning}
+Due to Vu policy, this method will be deprecated in the near future.
+:::
 
 ### Lab instruments
 In many cases lab equipment can write data directly to SciStor. [IT for Research](mailto:itvo.it@vu.nl) can help you setup an automated and secure connection.
@@ -48,111 +51,28 @@ Most SciStor configurations can be delivered within one or two days. More comple
 The owner of a SciStor share can request to add or remove access to the share via 🔒 [ServiceNow](https://services.vu.nl/esc), go to: IT > My work field > Research > SciStor > Change SciStor access rights
 
 ## Are there costs involved?
-You pay for the amount of space reserved for your share: €0,10 per GB per year without backup or €0,20 per GB per year with backup. Note that without backup data will be lost in case of accidental deletion or major problems with the SciStor infrastructure.
-
-
+You pay for the amount of space reserved for your share: €0,16 per GB per year.
 The owner of the SciStor share receives monthly usage reports. The report provides insight on used and available space.
 
-### Backups
+### Data Recovery
 
-There are two type of flavours when it comes to data protection within SciStor.
+SciStor offers a snapshot-based data protection mechanism. There are several types of snapshot policies available:
 
-| Snapshots | Backups |
-|-----------|---------|
-| "Photo moments" of your data stored within the same location storage | Complete copy stored in a different physical location |
-| Default Policies within ITvO:    a) Daily snapshots kept for 1 week (1d:1w)    b) Weekly snapshots kept for 4 weeks (1w:4w) | Automatic daily backups around midnight |
-| Custom policies available upon request | Invisible to users - runs in the background |
-| No additional storage costs | Additional Costs: Doubles the storage costs |
+| **Snapshot Type**     | **Description** |
+|------------------------|-----------------|
+| **Daily Snapshots**    | Automatically taken every day and retained for 1 week (1d:1w) |
+| **Weekly Snapshots**   | Taken once a week and retained for 4 weeks (1w:4w) |
+| **Custom Policies**    | Available upon request via ITvO |
+| **Storage Location**   | Snapshots are stored within the same scistor share, allowing quick recovery |
 
-The ITvO team recommend having both ways activated for complete data protection.
+::: {.callout-caution}
+Snapshots take space within the share, if you delete large amount of data, be mindful that snapshots will occupy the space of the deleted data until they are expired.
+:::
+
+Snapshots act like “photo moments” of your data, enabling you to restore previous versions. Users can recover their own data by following this [instructions.](/manuals/scistor/snapshots-data-recovery.qmd#overview)
 
 ## Getting started
-### On-campus access
-#### MacOS
-
-1. Open the Finder application
-2. In the "Go" menu, pick "Connect to Server..." or press  "⌘K"
-3. Fill in: `smb://scistor.vu.nl/shares`
-4. Click "Connect"
-5. Select "Registered User" if this is not yet selected
-6. Fill in your VUnetID and password
-7. Press "Connect". Optionally, tick the "Remember this password in my keychain" checkbox. After doing this, macOS will no longer ask for credentials the next time this connection is used.
-
-SciStor shares appear on the left after opening the SciStor location. You may open the desired SciStor share by double-clicking it.
-
-#### Windows
-
-1. Open Windows File Explorer
-2. Right-click on This PC and choose "Map network drive...""
-3. Select a desired drive letter, for example S. In the Folder field you can enter the following:  `\\scistor.vu.nl\shares\<the name of the share folder>`. Make sure the checkboxes are checked.
-4. Click "Finish"
-5. You will now be asked to log in. This is not possible with your PIN code. Choose the "More choices" option, and log in with your VU email address and password
-
-#### 'Green' Linux workspaces
-
-Green Linux workplaces (supported by VU IT) have a connection to SciStor from home. All SciStor shares can be found under the path `/research`.
-
-#### Other Linux workstations
-
-Other self-managed Linux workstations can also connect to SciStor.
-
-Via the SFTP protocol: SciStor with the SFTP protocol can be used via the server `sftp.data.vu.nl`. Find the shares under the path `/research`.
-
-You can do as follows:
-
-```bash
-$ ssh <vunetID>@sftp.data.vu.nl # this will ask your vunet password
-$ cd /research/<name-of-scitstor-share>
-```
-
-To to connect to SciStor using samba protocol, you can do as follows:
-
-```bash
-$ sudo apt install cifs-utils
-$ sudo nano /etc/credentials/<vunetID>
-    # nano
-username=<vumail@vu.nl>
-password=<your-vunet-password>
-$ sudo mkdir /data/VU/shares/<name-of-your-share>
-$ sudo mount -t cifs //scistor.vu.nl/shares/<name-of-your-share> /data/VU/shares/<name-of-your-share> -o credentials=/etc/credentials/<vunetID>
-```
-
-
-The scistor share will be mounted at location: `/data/VU/shares`. To unmount it, simply do:
-
-```bash
-$ sudo umount /data/VU/shares/<name-of-your-share>
-```
-
-<!--    Via the NFS protocol
-PV: KB artikel is verdwenen en ik kan geen andere vinden, nog navragen
-It is also possible to use SciStor shares via the NFS protocol. The knowledge item [KB0012101](https://vu.service-now.com/kb?id=kb_article_view&sysparm_article=KB0012101) describes how you can access home and groups from a Linux workplace via NFS. This manual can also be used to realise a link with SciStor. Use the path /research for this.
--->
-
-### Off-campus access
-#### eduVPN
-
-The easiest way is to install the app for [eduVPN institute access](https://vu.eduvpn.nl/portal/home). Once the VPN is active you can follow the "on-campus access" steps above. Note that performance over the internet is limited, you might run into problems when editing large files. If needed copy them to you local disk.
-
-#### SFTP
-
-On windows you can use a free tool like [WinSCP](https://winscp.net/eng/download.php) or [CyberDuck](https://cyberduck.io/download/) to access your data via the SFTP protocol. The server URL is `sftp.data.vu.nl`, find the shares under the path `/research`.
-
-On a Mac you can connect via the IT supported 🔒 [Expandrive](https://vu.service-now.com/kb_view.do?sysparm_article=KB0011846) (follow the SFTP instructions).
-
-
-The configuration is as follows:
-
-
-| Item      | Value                        |
-|-----------|------------------------------|
-| Host      | `ssh.data.vu.nl` OR `sftp.data.vu.nl` |
-| Protocol  | SFTP                         |
-| Port      | 22                           |
-| Username  | Your VUnetID                 |
-| Password  | Your VUnet password          |
-
-Linux users outside campus can follow the previous SFTP explanation.
+The RDM Handbook has practical [manuals](/manuals/scistor/index.qmd) for users starting with SciStor.
 
 ## Contact
 Wondering if SciStor fits your research needs? Please contact [IT for Research](mailto:itvo.it@vu.nl)
