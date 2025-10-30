@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-10-30">
 
-<title>ADA documentation – Research Support Handbook</title>
+<title>Slurm – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +21,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,10 +66,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../manuals/ada/login.html" rel="next">
+<link href="../../manuals/ada/hardware.html" rel="next">
+<link href="../../manuals/ada/software.html" rel="prev">
 <link href="../../public/favicon.png" rel="icon" type="image/png">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -72,65 +107,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -215,7 +192,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../manuals/ada/index.html">ADA documentation</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../manuals/ada/slurm.html">Slurm</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -241,7 +218,7 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../manuals/ada/index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../manuals/ada/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">ADA documentation</span></a>
   </div>
 </li>
@@ -265,7 +242,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../manuals/ada/slurm.html" class="sidebar-item-text sidebar-link">
+  <a href="../../manuals/ada/slurm.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Slurm</span></a>
   </div>
 </li>
@@ -366,24 +343,22 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome</a></li>
-  <li><a href="#ada-at-a-glance" id="toc-ada-at-a-glance" class="nav-link" data-scroll-target="#ada-at-a-glance">ADA at a Glance</a></li>
-  <li><a href="#access-policies-and-costs" id="toc-access-policies-and-costs" class="nav-link" data-scroll-target="#access-policies-and-costs">Access, Policies, and Costs</a></li>
-  <li><a href="#when-ada-fits-your-work" id="toc-when-ada-fits-your-work" class="nav-link" data-scroll-target="#when-ada-fits-your-work">When ADA Fits Your Work</a></li>
-  <li><a href="#training-and-external-resources" id="toc-training-and-external-resources" class="nav-link" data-scroll-target="#training-and-external-resources">Training and External Resources</a></li>
-  <li><a href="#support" id="toc-support" class="nav-link" data-scroll-target="#support">Support</a></li>
-  <li><a href="#documentation-feedback" id="toc-documentation-feedback" class="nav-link" data-scroll-target="#documentation-feedback">Documentation Feedback</a></li>
-  <li><a href="#maintainers" id="toc-maintainers" class="nav-link" data-scroll-target="#maintainers">Maintainers</a></li>
-  <li><a href="#browse-the-manuals" id="toc-browse-the-manuals" class="nav-link" data-scroll-target="#browse-the-manuals">Browse the Manuals</a></li>
+  <li><a href="#anatomy-of-a-job-script" id="toc-anatomy-of-a-job-script" class="nav-link active" data-scroll-target="#anatomy-of-a-job-script">Anatomy of a Job Script</a></li>
+  <li><a href="#monitoring-and-control" id="toc-monitoring-and-control" class="nav-link" data-scroll-target="#monitoring-and-control">Monitoring and Control</a></li>
+  <li><a href="#gpus-and-specialized-resources" id="toc-gpus-and-specialized-resources" class="nav-link" data-scroll-target="#gpus-and-specialized-resources">GPUs and Specialized Resources</a></li>
+  <li><a href="#interactive-runs-compute-nodes" id="toc-interactive-runs-compute-nodes" class="nav-link" data-scroll-target="#interactive-runs-compute-nodes">Interactive Runs (compute nodes)</a></li>
+  <li><a href="#arrays-and-dependencies" id="toc-arrays-and-dependencies" class="nav-link" data-scroll-target="#arrays-and-dependencies">Arrays and Dependencies</a></li>
+  <li><a href="#storage-and-io-tips" id="toc-storage-and-io-tips" class="nav-link" data-scroll-target="#storage-and-io-tips">Storage and I/O Tips</a></li>
+  <li><a href="#quick-reference" id="toc-quick-reference" class="nav-link" data-scroll-target="#quick-reference">Quick Reference</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/slurm.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">ADA documentation</h1>
+<h1 class="title">Slurm</h1>
 </div>
 
 
@@ -391,6 +366,12 @@ window.Quarto = {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 30, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -400,236 +381,127 @@ window.Quarto = {
 </header>
 
 
-<section id="welcome" class="level2">
-<h2 class="anchored" data-anchor-id="welcome">Welcome</h2>
-<p>ADA is the high-performance computing (HPC) cluster for researchers at Vrije Universiteit Amsterdam. Named after <a href="https://en.wikipedia.org/wiki/Ada_Lovelace" target="_blank">Ada Lovelace</a>, it serves as the successor to the BAZIS cluster and is managed by the IT for Research team.</p>
-<div class="callout callout-style-default callout-note callout-titled" title="New here? Start with these first.">
+<p>SLURM is the heartbeat of ADA. It determines where and when your jobs run, what resources they can use (CPUs, memory, GPUs), and how you interact with those jobs. Mastering a few core commands and script options will unlock most of your workflow.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Read this first">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>New here? Start with these first.
+<span class="screen-reader-only">Tip</span>Read this first
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>Request an account via the 🔒 <a href="https://services.vu.nl/esc?id=sc_cat_item&amp;sys_id=83139c79473e8150bfa46d72e36d432e" target="_blank">VU Service Portal</a>.</li>
-<li>New to bash and the command line? Get familiar with Linux basics first through <a href="https://swcarpentry.github.io/shell-novice/" target="_blank">Carpentries lessons</a>.</li>
-<li>Set-up your SSH access by following the <a href="../../manuals/ada/login.html">login instructions</a>.</li>
-<li>New to HPC? Get familiar with HPC concepts through <a href="https://carpentries-incubator.github.io/hpc-intro/" target="_blank">HPC Carpentries lessons</a>.</li>
-<li>Run your first job with the <a href="../../manuals/ada/quick-start.html">Quick Start</a>.</li>
+<li>Carpentries HPC lessons on scheduling: https://carpentries-incubator.github.io/hpc-intro/</li>
+<li>SLURM quick start: https://slurm.schedmd.com/quickstart.html</li>
+<li>sbatch reference: https://slurm.schedmd.com/sbatch.html</li>
+<li>srun reference: https://slurm.schedmd.com/srun.html</li>
 </ul>
 </div>
 </div>
-</section>
-<section id="ada-at-a-glance" class="level2">
-<h2 class="anchored" data-anchor-id="ada-at-a-glance">ADA at a Glance</h2>
+<section id="anatomy-of-a-job-script" class="level2">
+<h2 class="anchored" data-anchor-id="anatomy-of-a-job-script">Anatomy of a Job Script</h2>
+<p>A typical SLURM batch script that requests resources and runs a Python program might look a bit like this:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --job-name=example</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --time=00:10:00</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --partition=defq</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --cpus-per-task=2</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --mem=4G</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --output=logs/%x-%j.out</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --error=logs/%x-%j.err</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load 2025</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load Python/3.12.3-GCCcore-13.3.0</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> myscript.py <span class="at">--input</span> data/input.csv <span class="at">--out</span> results/out.csv</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout callout-style-default callout-important callout-titled" title="Always include these">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Always include these
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
-<li><a href="../../manuals/ada/hardware.html">Heterogeneous cluster</a> with CPU and GPU partitions financed by VU departments and central IT.</li>
-<li>Access to partitions depends on departmental ownership; community partitions are available to all approved users.</li>
-<li><a href="../../manuals/ada/software.html">Software stack</a> combines centrally maintained modules with self-service tools (Pixi, Conda, Apptainer).</li>
-<li>Data on <a href="../../topics/scistor.html">SciStor</a> is mounted directly on ADA.</li>
-<li>For workloads demanding large GPU quotas, explore <a href="../../topics/snellius.html">Snellius</a> or work with your department on dedicated nodes.</li>
+<li><code>--time</code> – wall-clock limit for the job.</li>
+<li><code>--partition</code> – the queue to target (use your department partition where possible).</li>
+<li><code>--cpus-per-task</code> – threads your program uses.</li>
+<li><code>--mem</code> (or <code>--mem-per-cpu</code>) – memory request appropriate for your workload. If not set, might get killed for exceeding default memory limits.</li>
+</ul>
+</div>
+</div>
+<p>Other options are also useful:</p>
+<ul>
+<li><code>--job-name</code> for easy ID in queues.</li>
+<li><code>--output</code>/<code>--error</code> files for logs; include <code>%j</code> (jobid) to keep them unique.</li>
+</ul>
+<p>Submit the job with:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">sbatch</span> job.sbatch</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="monitoring-and-control" class="level2">
+<h2 class="anchored" data-anchor-id="monitoring-and-control">Monitoring and Control</h2>
+<ul>
+<li><p>View your queued/running jobs:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">squeue</span> <span class="at">-u</span> <span class="va">$USER</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>Inspect finished jobs and usage:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">sacct</span> <span class="at">-j</span> <span class="op">&lt;</span>jobid<span class="op">&gt;</span> --format=JobID,State,Elapsed,MaxRSS,CPUTime</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>Cancel a job or all your jobs:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">scancel</span> <span class="op">&lt;</span>jobid<span class="op">&gt;</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ex">scancel</span> <span class="at">-u</span> <span class="va">$USER</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>Stream logs while a job runs:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span> <span class="at">-f</span> slurm-<span class="op">&lt;</span>jobid<span class="op">&gt;</span>.out</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
 </ul>
 </section>
-<section id="access-policies-and-costs" class="level2">
-<h2 class="anchored" data-anchor-id="access-policies-and-costs">Access, Policies, and Costs</h2>
+<section id="gpus-and-specialized-resources" class="level2">
+<h2 class="anchored" data-anchor-id="gpus-and-specialized-resources">GPUs and Specialized Resources</h2>
+<p>Request GPUs with the Generic RESources (GRES) flag and the appropriate partition:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --gpus=&lt;count&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>or if you want a specific GPU type:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --gres=gpu:&lt;type&gt;:&lt;count&gt;   # e.g. gpu:A30:1</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>If your workflow requires specific hardware features, use constraints:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --constraint=zen2           # exact</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --constraint="zen2|haswell" # any of the listed</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>To see what resources (GPU or otherwise) are available on ADA at any time, use the helper command below. For deeper exploration with SLURM’s native tools, consult the official <code>sinfo</code>/<code>scontrol</code> documentation.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">/ada-software/ada-info.sh</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>That prints a live view of partitions, nodes, CPU/MEM, GPU models, and features to guide your requests.</p>
+</section>
+<section id="interactive-runs-compute-nodes" class="level2">
+<h2 class="anchored" data-anchor-id="interactive-runs-compute-nodes">Interactive Runs (compute nodes)</h2>
+<p>For quick debugging on compute nodes, request an interactive shell via SLURM:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">srun</span> <span class="at">--pty</span> <span class="at">--partition</span><span class="op">=&lt;</span>partition<span class="op">&gt;</span> --time=01:00:00 <span class="at">--cpus-per-task</span><span class="op">=</span>2 bash</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Use this for short tests only. For heavier interactive development and remote editors, use ADA’s dedicated interactive nodes (<code>inter01</code>–<code>inter04</code>) as described in the Quick Start.</p>
+</section>
+<section id="arrays-and-dependencies" class="level2">
+<h2 class="anchored" data-anchor-id="arrays-and-dependencies">Arrays and Dependencies</h2>
+<p>Submit many similar tasks efficiently with arrays:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --array=0-99</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> train.py <span class="at">--fold</span> <span class="va">${SLURM_ARRAY_TASK_ID}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Chain jobs so one starts after another completes:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="va">jid1</span><span class="op">=</span><span class="va">$(</span><span class="ex">sbatch</span> step1.sbatch <span class="kw">|</span> <span class="fu">awk</span> <span class="st">'{print $4}'</span><span class="va">)</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="ex">sbatch</span> <span class="at">--dependency</span><span class="op">=</span>afterok:<span class="va">${jid1}</span> step2.sbatch</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>See the SLURM docs for <a href="https://slurm.schedmd.com/job_array.html" target="_blank">job arrays</a> and <a href="https://slurm.schedmd.com/sbatch.html#OPT_dependency" target="_blank">dependencies</a>.</p>
+</section>
+<section id="storage-and-io-tips" class="level2">
+<h2 class="anchored" data-anchor-id="storage-and-io-tips">Storage and I/O Tips</h2>
+<p>Keep <code>$HOME</code> for configuration and small files; use <code>/scratch/&lt;VUNETID&gt;/</code> for working data on the nodes themselves.</p>
+</section>
+<section id="quick-reference" class="level2">
+<h2 class="anchored" data-anchor-id="quick-reference">Quick Reference</h2>
 <ul>
-<li><strong>Eligibility</strong>: VU researchers and collaborators whose departments sponsor ADA hardware or are approved for community access.</li>
-<li><strong>Requesting access</strong>: follow the <a href="../../topics/ada.html#how-to-request-access">account request instructions</a>; requests must include your supervisor’s approval.</li>
-<li><strong>Usage costs</strong>: Community partitions are free to use but shared; heavy or specialised workloads may require investing in departmental nodes.</li>
-<li><strong>Dedicated hardware</strong>: Contact <a href="mailto:itvo.it@vu.nl">IT for Research</a> to scope dedicated purchases or long-term resource planning.</li>
+<li>Submit: <code>sbatch job.sbatch</code></li>
+<li>Queue: <code>squeue -u $USER</code></li>
+<li>Account: <code>sacct -j &lt;jobid&gt; --format=JobID,State,Elapsed,MaxRSS,CPUTime</code></li>
+<li>Cancel: <code>scancel &lt;jobid&gt;</code> (or all: <code>scancel -u $USER</code>)</li>
+<li>Interactive: <code>srun --pty --partition=&lt;p&gt; --time=01:00:00 bash</code></li>
 </ul>
-</section>
-<section id="when-ada-fits-your-work" class="level2">
-<h2 class="anchored" data-anchor-id="when-ada-fits-your-work">When ADA Fits Your Work</h2>
-<p>Use ADA when you need more resources than a laptop or workstation: multi-core CPUs, large memory nodes, or batch GPU capacity. Jobs must run from the Linux command line in non-interactive mode—graphical tools require alternatives such as the <a href="https://hub.compute.vu.nl/" target="_blank">VU Compute Hub</a> or <a href="../../topics/researchcloud.html">SURF Research Cloud</a>.</p>
-</section>
-<section id="training-and-external-resources" class="level2">
-<h2 class="anchored" data-anchor-id="training-and-external-resources">Training and External Resources</h2>
-<ul>
-<li><strong>SURF Snellius wiki</strong>: <a href="https://servicedesk.surf.nl/wiki/display/WIKI/Snellius" target="_blank">Snellius knowledge base</a> – much of it applies to ADA.</li>
-<li><strong>Workshops</strong>: SURF’s free <a href="https://www.surf.nl/en/agenda" target="_blank">Introduction to Supercomputing</a> courses provides transferable skills for ADA users.</li>
-</ul>
-</section>
-<section id="support" class="level2">
-<h2 class="anchored" data-anchor-id="support">Support</h2>
-<ul>
-<li>Technical questions, quota requests, or procurement discussions: <a href="mailto:itvo.it@vu.nl">IT for Research</a></li>
-<li>Issues using the cluster? See <a href="../../manuals/ada/help.html">Help</a> to see how to ask for assistance effectively.</li>
-</ul>
-</section>
-<section id="documentation-feedback" class="level2">
-<h2 class="anchored" data-anchor-id="documentation-feedback">Documentation Feedback</h2>
-<ul>
-<li>Found a typo, missing page, or confusing section? Please open an issue in the handbook’s issue tracker with:
-<ul>
-<li>Page path (for example <code>manuals/ada/software.qmd</code>) and what needs to change</li>
-<li>A suggested fix or the exact text that confused you</li>
-<li>Optional: a PR if you already made the change</li>
-</ul></li>
-</ul>
-<p>If you prefer, you can also email [itvo.it@vu.nl] with the same details and we will triage it.</p>
-</section>
-<section id="maintainers" class="level2">
-<h2 class="anchored" data-anchor-id="maintainers">Maintainers</h2>
-<p>The cluster has been built and is maintained by:</p>
-<ul>
-<li>Davor Cvikic</li>
-<li>Kostas Vilkelis</li>
-<li>Wiebe J.R. Timmers</li>
-</ul>
-</section>
-<section id="browse-the-manuals" class="level2">
-<h2 class="anchored" data-anchor-id="browse-the-manuals">Browse the Manuals</h2>
-<p>The sections below surface all available ADA guides. Use the filters or search bar to jump directly to the topic you need.</p>
 
 
-
 </section>
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="listing-actions-group">
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-date-sort="1761834240000" data-listing-file-modified-sort="1761834240189" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="679">
-<a href="../../manuals/ada/login.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Login
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="1761834240000" data-listing-file-modified-sort="1761834240190" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="655">
-<a href="../../manuals/ada/quick-start.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Quick start on ADA
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-date-sort="1761834240000" data-listing-file-modified-sort="1761834240190" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1354">
-<a href="../../manuals/ada/software.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Software
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-listing-date-sort="1761834240000" data-listing-file-modified-sort="1761834240190" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="462">
-<a href="../../manuals/ada/slurm.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Slurm
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-listing-date-sort="1761834240000" data-listing-file-modified-sort="1761834240189" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="96">
-<a href="../../manuals/ada/hardware.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Hardware and resources
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="5" data-listing-date-sort="1761834240000" data-listing-file-modified-sort="1761834240189" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="423">
-<a href="../../manuals/ada/open-ondemand.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Open OnDemand
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="6" data-listing-date-sort="1761834240000" data-listing-file-modified-sort="1761834240190" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="182">
-<a href="../../manuals/ada/yoda.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Data transfer to and from Yoda
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="7" data-listing-date-sort="1761834240000" data-listing-file-modified-sort="1761834240189" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="392">
-<a href="../../manuals/ada/help.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Getting help
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="8" data-listing-date-sort="1761834240000" data-listing-file-modified-sort="1761834240189" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="334">
-<a href="../../manuals/ada/code-examples/Python/1-python-multithreading.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Multithreading
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="9" data-listing-date-sort="1761834240000" data-listing-file-modified-sort="1761834240189" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="426">
-<a href="../../manuals/ada/code-examples/Python/2-python-multiprocessing.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Multiprocessing
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="10" data-listing-date-sort="1761834240000" data-listing-file-modified-sort="1761834240189" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="358">
-<a href="../../manuals/ada/code-examples/Python/3-torch.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-PyTorch
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="11" data-listing-date-sort="1761834240000" data-listing-file-modified-sort="1761834240189" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="290">
-<a href="../../manuals/ada/code-examples/R/1-R-multiprocessing.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Multiprocessing
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="12" data-listing-date-sort="1761834240000" data-listing-file-modified-sort="1761834240189" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="382">
-<a href="../../manuals/ada/code-examples/matlab.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-MATLAB
-</h5>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -1032,10 +904,13 @@ MATLAB
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../../manuals/ada/software.html" class="pagination-link" aria-label="Software">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Software</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../manuals/ada/login.html" class="pagination-link" aria-label="Login">
-        <span class="nav-page-text">Login</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../manuals/ada/hardware.html" class="pagination-link" aria-label="Hardware and resources">
+        <span class="nav-page-text">Hardware and resources</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1074,7 +949,7 @@ MATLAB
 </a>
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/slurm.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">

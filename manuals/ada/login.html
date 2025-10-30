@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-10-30">
 
-<title>ADA documentation – Research Support Handbook</title>
+<title>Login – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +21,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,10 +66,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../manuals/ada/login.html" rel="next">
+<link href="../../manuals/ada/quick-start.html" rel="next">
+<link href="../../manuals/ada/index.html" rel="prev">
 <link href="../../public/favicon.png" rel="icon" type="image/png">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -72,65 +107,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -215,7 +192,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../manuals/ada/index.html">ADA documentation</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../manuals/ada/login.html">Login</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -241,13 +218,13 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../manuals/ada/index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../manuals/ada/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">ADA documentation</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../manuals/ada/login.html" class="sidebar-item-text sidebar-link">
+  <a href="../../manuals/ada/login.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Login</span></a>
   </div>
 </li>
@@ -366,24 +343,25 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome</a></li>
-  <li><a href="#ada-at-a-glance" id="toc-ada-at-a-glance" class="nav-link" data-scroll-target="#ada-at-a-glance">ADA at a Glance</a></li>
-  <li><a href="#access-policies-and-costs" id="toc-access-policies-and-costs" class="nav-link" data-scroll-target="#access-policies-and-costs">Access, Policies, and Costs</a></li>
-  <li><a href="#when-ada-fits-your-work" id="toc-when-ada-fits-your-work" class="nav-link" data-scroll-target="#when-ada-fits-your-work">When ADA Fits Your Work</a></li>
-  <li><a href="#training-and-external-resources" id="toc-training-and-external-resources" class="nav-link" data-scroll-target="#training-and-external-resources">Training and External Resources</a></li>
-  <li><a href="#support" id="toc-support" class="nav-link" data-scroll-target="#support">Support</a></li>
-  <li><a href="#documentation-feedback" id="toc-documentation-feedback" class="nav-link" data-scroll-target="#documentation-feedback">Documentation Feedback</a></li>
-  <li><a href="#maintainers" id="toc-maintainers" class="nav-link" data-scroll-target="#maintainers">Maintainers</a></li>
-  <li><a href="#browse-the-manuals" id="toc-browse-the-manuals" class="nav-link" data-scroll-target="#browse-the-manuals">Browse the Manuals</a></li>
+  <li><a href="#ssh-login-setup-linux-and-macos-recommended" id="toc-ssh-login-setup-linux-and-macos-recommended" class="nav-link active" data-scroll-target="#ssh-login-setup-linux-and-macos-recommended">SSH Login Setup (Linux and macOS, recommended)</a>
+  <ul class="collapse">
+  <li><a href="#step-1-create-an-ssh-key" id="toc-step-1-create-an-ssh-key" class="nav-link" data-scroll-target="#step-1-create-an-ssh-key">Step 1 — Create an SSH key</a></li>
+  <li><a href="#step-2-configure-ssh" id="toc-step-2-configure-ssh" class="nav-link" data-scroll-target="#step-2-configure-ssh">Step 2 — Configure SSH</a></li>
+  <li><a href="#step-3-install-your-key-on-ada" id="toc-step-3-install-your-key-on-ada" class="nav-link" data-scroll-target="#step-3-install-your-key-on-ada">Step 3 — Install your key on ADA</a></li>
+  </ul></li>
+  <li><a href="#ssh-login-with-mobaxterm-windows" id="toc-ssh-login-with-mobaxterm-windows" class="nav-link" data-scroll-target="#ssh-login-with-mobaxterm-windows">SSH Login with MobaXterm (Windows)</a></li>
+  <li><a href="#login-node-policy" id="toc-login-node-policy" class="nav-link" data-scroll-target="#login-node-policy">Login node policy</a></li>
+  <li><a href="#optional-tools" id="toc-optional-tools" class="nav-link" data-scroll-target="#optional-tools">Optional tools</a></li>
+  <li><a href="#troubleshooting-short" id="toc-troubleshooting-short" class="nav-link" data-scroll-target="#troubleshooting-short">Troubleshooting (short)</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/login.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">ADA documentation</h1>
+<h1 class="title">Login</h1>
 </div>
 
 
@@ -391,6 +369,12 @@ window.Quarto = {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 30, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -400,236 +384,149 @@ window.Quarto = {
 </header>
 
 
-<section id="welcome" class="level2">
-<h2 class="anchored" data-anchor-id="welcome">Welcome</h2>
-<p>ADA is the high-performance computing (HPC) cluster for researchers at Vrije Universiteit Amsterdam. Named after <a href="https://en.wikipedia.org/wiki/Ada_Lovelace" target="_blank">Ada Lovelace</a>, it serves as the successor to the BAZIS cluster and is managed by the IT for Research team.</p>
-<div class="callout callout-style-default callout-note callout-titled" title="New here? Start with these first.">
+<div class="callout callout-style-default callout-warning callout-titled" title="Prerequisites">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>New here? Start with these first.
+<span class="screen-reader-only">Warning</span>Prerequisites
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>Request an account via the 🔒 <a href="https://services.vu.nl/esc?id=sc_cat_item&amp;sys_id=83139c79473e8150bfa46d72e36d432e" target="_blank">VU Service Portal</a>.</li>
-<li>New to bash and the command line? Get familiar with Linux basics first through <a href="https://swcarpentry.github.io/shell-novice/" target="_blank">Carpentries lessons</a>.</li>
-<li>Set-up your SSH access by following the <a href="../../manuals/ada/login.html">login instructions</a>.</li>
-<li>New to HPC? Get familiar with HPC concepts through <a href="https://carpentries-incubator.github.io/hpc-intro/" target="_blank">HPC Carpentries lessons</a>.</li>
-<li>Run your first job with the <a href="../../manuals/ada/quick-start.html">Quick Start</a>.</li>
+<li>You must be comfortable with Bash and basic HPC concepts. See: <a href="https://swcarpentry.github.io/shell-novice/" target="_blank">Unix Shell</a> and <a href="https://carpentries-incubator.github.io/hpc-intro/" target="_blank">HPC Introduction</a>.</li>
 </ul>
 </div>
 </div>
-</section>
-<section id="ada-at-a-glance" class="level2">
-<h2 class="anchored" data-anchor-id="ada-at-a-glance">ADA at a Glance</h2>
+<section id="ssh-login-setup-linux-and-macos-recommended" class="level2">
+<h2 class="anchored" data-anchor-id="ssh-login-setup-linux-and-macos-recommended">SSH Login Setup (Linux and macOS, recommended)</h2>
+<p>Here we will set-up passwordless SSH access to ADA.</p>
+<p>ADA endpoints (for example <code>ada.labs.vu.nl</code>, <code>inter01.labs.vu.nl</code>) are only reachable on campus or via the VU VPN. Therefore we will use the public stepstone server <code>ssh.data.vu.nl</code> as a jump host (ProxyJump), so you could connect from anywhere.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="End state">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>End state
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>After setup you should be able to run:</p>
 <ul>
-<li><a href="../../manuals/ada/hardware.html">Heterogeneous cluster</a> with CPU and GPU partitions financed by VU departments and central IT.</li>
-<li>Access to partitions depends on departmental ownership; community partitions are available to all approved users.</li>
-<li><a href="../../manuals/ada/software.html">Software stack</a> combines centrally maintained modules with self-service tools (Pixi, Conda, Apptainer).</li>
-<li>Data on <a href="../../topics/scistor.html">SciStor</a> is mounted directly on ADA.</li>
-<li>For workloads demanding large GPU quotas, explore <a href="../../topics/snellius.html">Snellius</a> or work with your department on dedicated nodes.</li>
+<li><code>ssh ada-login</code> → <code>ada.labs.vu.nl</code></li>
+<li><code>ssh inter01</code> → <code>inter01.labs.vu.nl</code></li>
+</ul>
+<p>No passwords; the stepstone is used automatically.</p>
+</div>
+</div>
+<section id="step-1-create-an-ssh-key" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-create-an-ssh-key">Step 1 — Create an SSH key</h3>
+<p>On your local linux machine, generate a modern key and load it into your agent:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh-keygen</span> <span class="at">-t</span> ed25519 <span class="at">-C</span> <span class="st">"&lt;your VU email&gt;"</span> <span class="at">-f</span> ~/.ssh/ada_ed25519</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">eval</span> <span class="st">"</span><span class="va">$(</span><span class="fu">ssh-agent</span> <span class="at">-s</span><span class="va">)</span><span class="st">"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh-add</span> ~/.ssh/ada_ed25519</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="step-2-configure-ssh" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-configure-ssh">Step 2 — Configure SSH</h3>
+<p>Create or edit <code>~/.ssh/config</code> and add:</p>
+<pre class="sshconfig"><code>Host stepstone-vu
+    HostName ssh.data.vu.nl
+    User &lt;VUNETID&gt;
+    IdentityFile ~/.ssh/ada_ed25519
+    ServerAliveInterval 120
+
+Host ada-login
+    HostName ada.labs.vu.nl
+    User &lt;VUNETID&gt;
+    ProxyJump stepstone-vu
+    IdentityFile ~/.ssh/ada_ed25519
+    IdentitiesOnly yes
+    ServerAliveInterval 120
+
+# Interactive nodes (pattern covers inter01–inter04)
+Host inter0?
+    HostName %h.labs.vu.nl
+    User &lt;VUNETID&gt;
+    ProxyJump stepstone-vu
+    IdentityFile ~/.ssh/ada_ed25519
+    IdentitiesOnly yes
+    ServerAliveInterval 120
+
+# Optional direct paths when on campus/VPN (no ProxyJump)
+Host ada-login-direct inter0?-direct
+    HostName %n.labs.vu.nl
+    User &lt;VUNETID&gt;
+    IdentityFile ~/.ssh/ada_ed25519
+    IdentitiesOnly yes</code></pre>
+</section>
+<section id="step-3-install-your-key-on-ada" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-install-your-key-on-ada">Step 3 — Install your key on ADA</h3>
+<p>First copy your public key to the stepstone:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">ssh-copy-id</span> stepstone-vu   <span class="co"># prompts for your VU password </span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Then copy your public key to ADA:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">ssh-copy-id</span> ada-login   <span class="co"># prompts for your ADA password once</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Test connections:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh</span> ada-login</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>You should be logged into ADA without being prompted for a password!</p>
+</section>
+</section>
+<section id="ssh-login-with-mobaxterm-windows" class="level2">
+<h2 class="anchored" data-anchor-id="ssh-login-with-mobaxterm-windows">SSH Login with MobaXterm (Windows)</h2>
+<p>Here we provide the steps to connect to the cluster using MobaXterm.</p>
+<ol type="1">
+<li>Download and install MobaXTerm from <a href="https://mobaxterm.mobatek.net/download.html" target="_blank">mobatek.net</a>.</li>
+<li>Open MobaXTerm and click on Session</li>
+<li>Enter the Basic SSH settings as follows:
+<ol type="1">
+<li>Remote host: <code>ada.labs.vu.nl</code></li>
+<li>Tick “specify username”</li>
+<li>Enter your username (VUnetID)</li>
+</ol></li>
+<li>Go to “Network settings” and click SSH gateway (jump host)</li>
+<li>Enter the following details and click OK
+<ol type="1">
+<li>Gateway host: <code>ssh.data.vu.nl</code></li>
+<li>Enter your username (VUnetID)</li>
+</ol></li>
+<li>Save the settings. When not connected automatically, you can click on User sessions, and double click “ada.labs.vu.nl (VUnetID)”</li>
+<li>You will be asked for a password for “ssh.data.vu.nl”. This is your NORMAL VUNETID password, NOT the cluster password your received from ITVO.</li>
+<li>If not connected automatically, connect to the server again. Now you will see a terminal window which asks for another password. Here you should enter the CLUSTER password that you received from ITVO. Note that you will not see the cursor moving when typing. This is normal. When you finished typing your password hit ENTER.</li>
+<li>You will now see a terminal window, similar to this one. On connecting for the first time, you will be asked to change your CLUSTER password. Enter your CLUSTER password, then enter a new password (this can be identical to your VUNETID password).</li>
+<li>Congratulations, you are now connected to the cluster!</li>
+</ol>
+</section>
+<section id="login-node-policy" class="level2">
+<h2 class="anchored" data-anchor-id="login-node-policy">Login node policy</h2>
+<div class="callout-danger" title="Strict rule on login nodes">
+<p>Login nodes are only for light tasks: edit scripts, manage files, submit SLURM jobs. Do not run notebooks, VS Code Server, heavy compiles, or long‑running programs here.</p>
+</div>
+<p>Use interactive nodes (<code>inter01</code>–<code>inter04</code>) for heavier interactive work, or see Open OnDemand in the Quick Start.</p>
+</section>
+<section id="optional-tools" class="level2">
+<h2 class="anchored" data-anchor-id="optional-tools">Optional tools</h2>
+<ul>
+<li>VS Code Remote‑SSH works with this config. Target <code>inter01</code> (not <code>ada-login</code>).</li>
+<li>MobaXterm (Windows) and iTerm2 (macOS) are optional SSH clients.</li>
+<li>Remote desktop (RDP) to interactive nodes is available when on campus/VPN.</li>
 </ul>
 </section>
-<section id="access-policies-and-costs" class="level2">
-<h2 class="anchored" data-anchor-id="access-policies-and-costs">Access, Policies, and Costs</h2>
+<section id="troubleshooting-short" class="level2">
+<h2 class="anchored" data-anchor-id="troubleshooting-short">Troubleshooting (short)</h2>
 <ul>
-<li><strong>Eligibility</strong>: VU researchers and collaborators whose departments sponsor ADA hardware or are approved for community access.</li>
-<li><strong>Requesting access</strong>: follow the <a href="../../topics/ada.html#how-to-request-access">account request instructions</a>; requests must include your supervisor’s approval.</li>
-<li><strong>Usage costs</strong>: Community partitions are free to use but shared; heavy or specialised workloads may require investing in departmental nodes.</li>
-<li><strong>Dedicated hardware</strong>: Contact <a href="mailto:itvo.it@vu.nl">IT for Research</a> to scope dedicated purchases or long-term resource planning.</li>
+<li>Ensure VPN/campus access for <code>*.labs.vu.nl</code>; stepstone is public.</li>
+<li>List loaded keys: <code>ssh-add -l</code>; add your key if missing.</li>
+<li>Increase verbosity: <code>ssh -vvv ada-login</code>.</li>
+<li>If you mistyped passwords too often, wait 15 minutes and try again.</li>
+<li>File permissions: <code>chmod 700 ~/.ssh; chmod 600 ~/.ssh/authorized_keys</code> (on ADA).</li>
 </ul>
-</section>
-<section id="when-ada-fits-your-work" class="level2">
-<h2 class="anchored" data-anchor-id="when-ada-fits-your-work">When ADA Fits Your Work</h2>
-<p>Use ADA when you need more resources than a laptop or workstation: multi-core CPUs, large memory nodes, or batch GPU capacity. Jobs must run from the Linux command line in non-interactive mode—graphical tools require alternatives such as the <a href="https://hub.compute.vu.nl/" target="_blank">VU Compute Hub</a> or <a href="../../topics/researchcloud.html">SURF Research Cloud</a>.</p>
-</section>
-<section id="training-and-external-resources" class="level2">
-<h2 class="anchored" data-anchor-id="training-and-external-resources">Training and External Resources</h2>
-<ul>
-<li><strong>SURF Snellius wiki</strong>: <a href="https://servicedesk.surf.nl/wiki/display/WIKI/Snellius" target="_blank">Snellius knowledge base</a> – much of it applies to ADA.</li>
-<li><strong>Workshops</strong>: SURF’s free <a href="https://www.surf.nl/en/agenda" target="_blank">Introduction to Supercomputing</a> courses provides transferable skills for ADA users.</li>
-</ul>
-</section>
-<section id="support" class="level2">
-<h2 class="anchored" data-anchor-id="support">Support</h2>
-<ul>
-<li>Technical questions, quota requests, or procurement discussions: <a href="mailto:itvo.it@vu.nl">IT for Research</a></li>
-<li>Issues using the cluster? See <a href="../../manuals/ada/help.html">Help</a> to see how to ask for assistance effectively.</li>
-</ul>
-</section>
-<section id="documentation-feedback" class="level2">
-<h2 class="anchored" data-anchor-id="documentation-feedback">Documentation Feedback</h2>
-<ul>
-<li>Found a typo, missing page, or confusing section? Please open an issue in the handbook’s issue tracker with:
-<ul>
-<li>Page path (for example <code>manuals/ada/software.qmd</code>) and what needs to change</li>
-<li>A suggested fix or the exact text that confused you</li>
-<li>Optional: a PR if you already made the change</li>
-</ul></li>
-</ul>
-<p>If you prefer, you can also email [itvo.it@vu.nl] with the same details and we will triage it.</p>
-</section>
-<section id="maintainers" class="level2">
-<h2 class="anchored" data-anchor-id="maintainers">Maintainers</h2>
-<p>The cluster has been built and is maintained by:</p>
-<ul>
-<li>Davor Cvikic</li>
-<li>Kostas Vilkelis</li>
-<li>Wiebe J.R. Timmers</li>
-</ul>
-</section>
-<section id="browse-the-manuals" class="level2">
-<h2 class="anchored" data-anchor-id="browse-the-manuals">Browse the Manuals</h2>
-<p>The sections below surface all available ADA guides. Use the filters or search bar to jump directly to the topic you need.</p>
+<p>Still stuck? Email itvo.it@vu.nl with OS, client, network location, and the verbose output of <code>ssh -vvv ada-login</code>.</p>
 
 
-
 </section>
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="listing-actions-group">
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-date-sort="1761834240000" data-listing-file-modified-sort="1761834240189" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="679">
-<a href="../../manuals/ada/login.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Login
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="1761834240000" data-listing-file-modified-sort="1761834240190" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="655">
-<a href="../../manuals/ada/quick-start.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Quick start on ADA
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-date-sort="1761834240000" data-listing-file-modified-sort="1761834240190" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1354">
-<a href="../../manuals/ada/software.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Software
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-listing-date-sort="1761834240000" data-listing-file-modified-sort="1761834240190" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="462">
-<a href="../../manuals/ada/slurm.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Slurm
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-listing-date-sort="1761834240000" data-listing-file-modified-sort="1761834240189" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="96">
-<a href="../../manuals/ada/hardware.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Hardware and resources
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="5" data-listing-date-sort="1761834240000" data-listing-file-modified-sort="1761834240189" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="423">
-<a href="../../manuals/ada/open-ondemand.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Open OnDemand
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="6" data-listing-date-sort="1761834240000" data-listing-file-modified-sort="1761834240190" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="182">
-<a href="../../manuals/ada/yoda.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Data transfer to and from Yoda
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="7" data-listing-date-sort="1761834240000" data-listing-file-modified-sort="1761834240189" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="392">
-<a href="../../manuals/ada/help.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Getting help
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="8" data-listing-date-sort="1761834240000" data-listing-file-modified-sort="1761834240189" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="334">
-<a href="../../manuals/ada/code-examples/Python/1-python-multithreading.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Multithreading
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="9" data-listing-date-sort="1761834240000" data-listing-file-modified-sort="1761834240189" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="426">
-<a href="../../manuals/ada/code-examples/Python/2-python-multiprocessing.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Multiprocessing
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="10" data-listing-date-sort="1761834240000" data-listing-file-modified-sort="1761834240189" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="358">
-<a href="../../manuals/ada/code-examples/Python/3-torch.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-PyTorch
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="11" data-listing-date-sort="1761834240000" data-listing-file-modified-sort="1761834240189" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="290">
-<a href="../../manuals/ada/code-examples/R/1-R-multiprocessing.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Multiprocessing
-</h5>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="12" data-listing-date-sort="1761834240000" data-listing-file-modified-sort="1761834240189" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="382">
-<a href="../../manuals/ada/code-examples/matlab.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-MATLAB
-</h5>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -1032,10 +929,13 @@ MATLAB
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../../manuals/ada/index.html" class="pagination-link" aria-label="ADA documentation">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">ADA documentation</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../manuals/ada/login.html" class="pagination-link" aria-label="Login">
-        <span class="nav-page-text">Login</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../manuals/ada/quick-start.html" class="pagination-link" aria-label="Quick start on ADA">
+        <span class="nav-page-text">Quick start on ADA</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1074,7 +974,7 @@ MATLAB
 </a>
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/login.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
