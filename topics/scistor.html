@@ -20,41 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -212,13 +177,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   <li><a href="#are-there-costs-involved" id="toc-are-there-costs-involved" class="nav-link" data-scroll-target="#are-there-costs-involved">Are there costs involved?</a>
   <ul class="collapse">
-  <li><a href="#backups" id="toc-backups" class="nav-link" data-scroll-target="#backups">Backups</a></li>
+  <li><a href="#data-recovery" id="toc-data-recovery" class="nav-link" data-scroll-target="#data-recovery">Data Recovery</a></li>
   </ul></li>
-  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting started</a>
-  <ul class="collapse">
-  <li><a href="#on-campus-access" id="toc-on-campus-access" class="nav-link" data-scroll-target="#on-campus-access">On-campus access</a></li>
-  <li><a href="#off-campus-access" id="toc-off-campus-access" class="nav-link" data-scroll-target="#off-campus-access">Off-campus access</a></li>
-  </ul></li>
+  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting started</a></li>
   <li><a href="#contact" id="toc-contact" class="nav-link" data-scroll-target="#contact">Contact</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/scistor.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -253,7 +214,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The storage service SciStor is intended for cheaply storing large amounts of research data.</p>
 <p>SciStor is hosted by IT for Research (ITvO) on the VU campus enabling a high-speed connection to lab equipment, laptops and workstations, the <a href="../topics/ada.html">ADA HPC cluster</a> and <a href="../topics/scicloud.html">SciCloud</a>. It can also be accessed off-campus.</p>
 <p>Your data is stored in a <strong>share</strong>, basically a folder with group-based access rights (read/write or read-only). Access rights can be set one level deep, so one share could be used to host data from different projects.</p>
-<p>If desired, automatic <a href="#backups">backups</a> can be made of the data.</p>
 </section>
 <section id="what-can-it-be-used-for" class="level2">
 <h2 class="anchored" data-anchor-id="what-can-it-be-used-for">What can it be used for?</h2>
@@ -263,7 +223,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="access-off-campus" class="level3">
 <h3 class="anchored" data-anchor-id="access-off-campus">Access off-campus</h3>
-<p>Although SciStor is most useful on campus you can also <a href="#off-campus-access">access your shares off-campus</a>.</p>
+<p>Although SciStor is most useful on campus you can also <a href="../manuals/scistor/sicstor-connection.qmd#off-campus-access">access your shares off-campus</a>.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Due to Vu policy, this method will be deprecated in the near future.</p>
+</div>
+</div>
 </section>
 <section id="lab-instruments" class="level3">
 <h3 class="anchored" data-anchor-id="lab-instruments">Lab instruments</h3>
@@ -302,142 +275,59 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="are-there-costs-involved" class="level2">
 <h2 class="anchored" data-anchor-id="are-there-costs-involved">Are there costs involved?</h2>
-<p>You pay for the amount of space reserved for your share: €0,10 per GB per year without backup or €0,20 per GB per year with backup. Note that without backup data will be lost in case of accidental deletion or major problems with the SciStor infrastructure.</p>
-<p>The owner of the SciStor share receives monthly usage reports. The report provides insight on used and available space.</p>
-<section id="backups" class="level3">
-<h3 class="anchored" data-anchor-id="backups">Backups</h3>
-<p>There are two type of flavours when it comes to data protection within SciStor.</p>
+<p>You pay for the amount of space reserved for your share: €0,16 per GB per year. The owner of the SciStor share receives monthly usage reports. The report provides insight on used and available space.</p>
+<section id="data-recovery" class="level3">
+<h3 class="anchored" data-anchor-id="data-recovery">Data Recovery</h3>
+<p>SciStor offers a snapshot-based data protection mechanism. There are several types of snapshot policies available:</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 55%">
-<col style="width: 45%">
+<col style="width: 58%">
+<col style="width: 41%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Snapshots</th>
-<th>Backups</th>
+<th><strong>Snapshot Type</strong></th>
+<th><strong>Description</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>“Photo moments” of your data stored within the same location storage</td>
-<td>Complete copy stored in a different physical location</td>
+<td><strong>Daily Snapshots</strong></td>
+<td>Automatically taken every day and retained for 1 week (1d:1w)</td>
 </tr>
 <tr class="even">
-<td>Default Policies within ITvO: a) Daily snapshots kept for 1 week (1d:1w) b) Weekly snapshots kept for 4 weeks (1w:4w)</td>
-<td>Automatic daily backups around midnight</td>
+<td><strong>Weekly Snapshots</strong></td>
+<td>Taken once a week and retained for 4 weeks (1w:4w)</td>
 </tr>
 <tr class="odd">
-<td>Custom policies available upon request</td>
-<td>Invisible to users - runs in the background</td>
+<td><strong>Custom Policies</strong></td>
+<td>Available upon request via ITvO</td>
 </tr>
 <tr class="even">
-<td>No additional storage costs</td>
-<td>Additional Costs: Doubles the storage costs</td>
+<td><strong>Storage Location</strong></td>
+<td>Snapshots are stored within the same scistor share, allowing quick recovery</td>
 </tr>
 </tbody>
 </table>
-<p>The ITvO team recommend having both ways activated for complete data protection.</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Snapshots take space within the share, if you delete large amount of data, be mindful that snapshots will occupy the space of the deleted data until they are expired.</p>
+</div>
+</div>
+<p>Snapshots act like “photo moments” of your data, enabling you to restore previous versions. Users can recover their own data by following this <a href="../manuals/scistor/snapshots-data-recovery.html#overview">instructions.</a></p>
 </section>
 </section>
 <section id="getting-started" class="level2">
 <h2 class="anchored" data-anchor-id="getting-started">Getting started</h2>
-<section id="on-campus-access" class="level3">
-<h3 class="anchored" data-anchor-id="on-campus-access">On-campus access</h3>
-<section id="macos" class="level4">
-<h4 class="anchored" data-anchor-id="macos">MacOS</h4>
-<ol type="1">
-<li>Open the Finder application</li>
-<li>In the “Go” menu, pick “Connect to Server…” or press “⌘K”</li>
-<li>Fill in: <code>smb://scistor.vu.nl/shares</code></li>
-<li>Click “Connect”</li>
-<li>Select “Registered User” if this is not yet selected</li>
-<li>Fill in your VUnetID and password</li>
-<li>Press “Connect”. Optionally, tick the “Remember this password in my keychain” checkbox. After doing this, macOS will no longer ask for credentials the next time this connection is used.</li>
-</ol>
-<p>SciStor shares appear on the left after opening the SciStor location. You may open the desired SciStor share by double-clicking it.</p>
-</section>
-<section id="windows" class="level4">
-<h4 class="anchored" data-anchor-id="windows">Windows</h4>
-<ol type="1">
-<li>Open Windows File Explorer</li>
-<li>Right-click on This PC and choose “Map network drive…””</li>
-<li>Select a desired drive letter, for example S. In the Folder field you can enter the following: <code>\\scistor.vu.nl\shares\&lt;the name of the share folder&gt;</code>. Make sure the checkboxes are checked.</li>
-<li>Click “Finish”</li>
-<li>You will now be asked to log in. This is not possible with your PIN code. Choose the “More choices” option, and log in with your VU email address and password</li>
-</ol>
-</section>
-<section id="green-linux-workspaces" class="level4">
-<h4 class="anchored" data-anchor-id="green-linux-workspaces">‘Green’ Linux workspaces</h4>
-<p>Green Linux workplaces (supported by VU IT) have a connection to SciStor from home. All SciStor shares can be found under the path <code>/research</code>.</p>
-</section>
-<section id="other-linux-workstations" class="level4">
-<h4 class="anchored" data-anchor-id="other-linux-workstations">Other Linux workstations</h4>
-<p>Other self-managed Linux workstations can also connect to SciStor.</p>
-<p>Via the SFTP protocol: SciStor with the SFTP protocol can be used via the server <code>sftp.data.vu.nl</code>. Find the shares under the path <code>/research</code>.</p>
-<p>You can do as follows:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ssh <span class="op">&lt;</span>vunetID<span class="op">&gt;</span>@sftp.data.vu.nl <span class="co"># this will ask your vunet password</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> cd /research/<span class="op">&lt;</span>name-of-scitstor-share<span class="op">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>To to connect to SciStor using samba protocol, you can do as follows:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> sudo apt install cifs-utils</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> sudo nano /etc/credentials/<span class="op">&lt;</span>vunetID<span class="op">&gt;</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># nano</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="va">username</span><span class="op">=&lt;</span>vumail@vu.nl<span class="op">&gt;</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="va">password</span><span class="op">=&lt;</span>your-vunet-password<span class="op">&gt;</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> sudo mkdir /data/VU/shares/<span class="op">&lt;</span>name-of-your-share<span class="op">&gt;</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> sudo mount <span class="at">-t</span> cifs //scistor.vu.nl/shares/<span class="op">&lt;</span>name-of-your-share<span class="op">&gt;</span> /data/VU/shares/<span class="op">&lt;</span>name-of-your-share<span class="op">&gt;</span> -o credentials=/etc/credentials/<span class="op">&lt;</span>vunetID<span class="op">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>The scistor share will be mounted at location: <code>/data/VU/shares</code>. To unmount it, simply do:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> sudo umount /data/VU/shares/<span class="op">&lt;</span>name-of-your-share<span class="op">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<!--    Via the NFS protocol
-PV: KB artikel is verdwenen en ik kan geen andere vinden, nog navragen
-It is also possible to use SciStor shares via the NFS protocol. The knowledge item [KB0012101](https://vu.service-now.com/kb?id=kb_article_view&sysparm_article=KB0012101) describes how you can access home and groups from a Linux workplace via NFS. This manual can also be used to realise a link with SciStor. Use the path /research for this.
--->
-</section>
-</section>
-<section id="off-campus-access" class="level3">
-<h3 class="anchored" data-anchor-id="off-campus-access">Off-campus access</h3>
-<section id="eduvpn" class="level4">
-<h4 class="anchored" data-anchor-id="eduvpn">eduVPN</h4>
-<p>The easiest way is to install the app for <a href="https://vu.eduvpn.nl/portal/home" target="_blank">eduVPN institute access</a>. Once the VPN is active you can follow the “on-campus access” steps above. Note that performance over the internet is limited, you might run into problems when editing large files. If needed copy them to you local disk.</p>
-</section>
-<section id="sftp" class="level4">
-<h4 class="anchored" data-anchor-id="sftp">SFTP</h4>
-<p>On windows you can use a free tool like <a href="https://winscp.net/eng/download.php" target="_blank">WinSCP</a> or <a href="https://cyberduck.io/download/" target="_blank">CyberDuck</a> to access your data via the SFTP protocol. The server URL is <code>sftp.data.vu.nl</code>, find the shares under the path <code>/research</code>.</p>
-<p>On a Mac you can connect via the IT supported 🔒 <a href="https://vu.service-now.com/kb_view.do?sysparm_article=KB0011846" target="_blank">Expandrive</a> (follow the SFTP instructions).</p>
-<p>The configuration is as follows:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Item</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Host</td>
-<td><code>ssh.data.vu.nl</code> OR <code>sftp.data.vu.nl</code></td>
-</tr>
-<tr class="even">
-<td>Protocol</td>
-<td>SFTP</td>
-</tr>
-<tr class="odd">
-<td>Port</td>
-<td>22</td>
-</tr>
-<tr class="even">
-<td>Username</td>
-<td>Your VUnetID</td>
-</tr>
-<tr class="odd">
-<td>Password</td>
-<td>Your VUnet password</td>
-</tr>
-</tbody>
-</table>
-<p>Linux users outside campus can follow the previous SFTP explanation.</p>
-</section>
-</section>
+<p>The RDM Handbook has practical <a href="../manuals/scistor/index.html">manuals</a> for users starting with SciStor.</p>
 </section>
 <section id="contact" class="level2">
 <h2 class="anchored" data-anchor-id="contact">Contact</h2>
