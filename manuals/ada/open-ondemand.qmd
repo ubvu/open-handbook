@@ -1,0 +1,66 @@
+---
+title: Open OnDemand
+date: last-modified
+---
+
+## What it is
+
+Open OnDemand (OOD) is a browser-based portal for launching interactive sessions on ADA without local SSH setup. It provides web terminals, a file browser, and ready-made apps such as RStudio, JupyterLab, and VS Code.
+
+- Portal: https://ondemand.labs.vu.nl
+- Access: available on campus or via the VU VPN.
+- Scheduler: all sessions run as SLURM jobs on compute nodes.
+
+## Resources and persistence
+
+::: {.callout-important title="Choose resources explicitly"}
+For every session you must request resources: partition, CPUs, memory, and walltime. The scheduler will start your app when suitable nodes are available.
+:::
+
+- Sessions keep running until the requested walltime expires, even if you close the browser tab or switch computers. Reconnect from “My Interactive Sessions”.
+- Please stop sessions when finished to free resources for others.
+
+## System apps (RStudio, JupyterLab, VS Code)
+
+1. Open the OOD portal and click the app icon (for example RStudio, JupyterLab, or VS Code).
+2. Fill in the resource form: partition/queue, CPUs, memory, walltime (and any optional parameters).
+3. Click “Launch”. OOD submits a job; when it starts, click “Connect”.
+4. Return later via “My Interactive Sessions” to reconnect, or “Stop” to end early.
+
+Notes:
+
+- File access mirrors your cluster home and project storage.
+- If a session stays queued, reduce resources or select another partition; consult the SLURM page for tips.
+
+## Custom software via Apptainer (optional)
+
+If you need a custom RStudio Server or JupyterLab environment, package it as an Apptainer (`.sif`) image and point the app to your image at launch.
+
+- Build the image locally or on ADA (compute nodes) following the Apptainer docs and our container guidance: see [Apptainer Containers](software.qmd#apptainer-containers).
+- In the OOD app form, select the Apptainer image" option and browse to your `.sif` in your home directory.
+- Test the image on a compute node before using it in OOD:
+  ```sh
+  apptainer exec /path/to/your.sif jupyter-lab --version
+  ```
+
+References:
+- Apptainer quick start: https://apptainer.org/docs/user/main/quick_start.html
+
+## Develop your own OOD apps (advanced)
+
+User app development is enabled. You can create and publish your own interactive apps for your projects.
+
+- Follow the official guide: https://osc.github.io/ood-documentation/latest/
+- For inspiration, inspect the definitions of the system apps installed on ADA. These are located on the `inter04` node under `/var/www/ood/apps/sys/` path (`jupyter` and `rstudio_server` folders).
+
+
+::: {.callout-warning title="No app requests"}
+We do not build or maintain user-specific OOD apps. You are responsible for your app definitions and containers.
+:::
+
+## Troubleshooting
+
+- Session stuck in “Queued/Pending”: your request doesn’t fit current availability. Try a different partition or smaller CPU/memory/walltime; see [SLURM](slurm.qmd).
+- Session reports errors: open the job output/logs from the session card, and include those when requesting help.
+- Need to reconnect: go to “My Interactive Sessions” and click “Connect”. Sessions persist until walltime.
+
