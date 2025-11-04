@@ -16,6 +16,11 @@ website:
         - section: Archiving and Publishing
           contents: manuals/yoda/securing_distribution/*.qmd
         - section: Using Yoda
-          contents: manuals/yoda/using_yoda/*.qmd
+          contents:
+            - manuals/yoda/using_yoda/finding_restoring.qmd
+            - manuals/yoda/using_yoda/metadata.qmd
+            - manuals/yoda/using_yoda/workflow_metadata.qmd
+            - manuals/yoda/using_yoda/properties_and_explanation.qmd
+            - manuals/yoda/using_yoda/workflow_metadata_license.qmd
         - section: Yoda Portal
           contents: manuals/yoda/yoda_portal/*.qmd 
