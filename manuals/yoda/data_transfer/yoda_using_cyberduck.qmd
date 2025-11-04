@@ -3,8 +3,6 @@ title: Using Cyberduck
 categories: []
 ---
 
-This page explains how to connect to the Yoda WebDAV interface using Cyberduck.
-
 Cyberduck is desktop software for Microsoft Windows and Apple macOS that can be used to transfer files between your computer and Yoda. In this guide we will explain how to install Cyberduck, create a new connection (bookmark) to Yoda and end with some frequently asked questions and tips on using Cyberduck
 
 ## Getting Cyberduck
@@ -61,7 +59,7 @@ and you will see the WebDAV (HTTPS) connection page.
 
 Fill in the following information in the appropriate blocks
 
-First generate a [Data Access Password](./yoda_dap.qmd). 
+First generate a [Data Access Password](/manuals/yoda/data_access_password/yoda_dap.qmd). 
 
 - Server: **data.yoda.vu.nl**
 - Username: your email address
@@ -83,7 +81,7 @@ If you did not fill in your password in the bookmark you will be asked to do so 
 
 ![](/public/manuals/yoda/cbd-login-screen.png)
 
-If your login unexpectedly fails, please check if your [data access password](./yoda_dap.qmd) is still valid.
+If your login unexpectedly fails, please check if your [data access password](/manuals/yoda/data_access_password/yoda_dap.qmd) is still valid.
 
 You should now see your project directory in an explorer like window:
 

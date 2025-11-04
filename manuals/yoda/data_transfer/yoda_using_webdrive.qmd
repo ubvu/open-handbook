@@ -3,8 +3,6 @@ title: Using Webdrive
 categories: []
 ---
 
-This page explains how to use WebDrive software, on Windows, to access your data via the Yoda WebDAV interface. 
-
 Windows users can use [WebDrive](https://webdrive.com/) to access their data,
 as an alternative to the [native WebDAV client](./yoda_using_windowsexplorer.qmd). 
 With WebDrive the Yoda WebDAV interface can be connected via as a drive in 
@@ -30,7 +28,7 @@ Choose Secure WebDAV and click Next.
 
 Enter `https://data.yoda.vu.nl/` in the Url/Address field.
 
-Enter the Username (an emailaddress). Create a [data access password](./yoda_dap.qmd) and copy it to the Password field.
+Enter the Username (an emailaddress). Create a [data access password](/manuals/yoda/data_access_password/yoda_dap.qmd) and copy it to the Password field.
 
 You can click Test Connection to see if the credentials are correct. 
 

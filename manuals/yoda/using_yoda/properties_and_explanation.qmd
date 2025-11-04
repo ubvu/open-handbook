@@ -1,76 +1,7 @@
 ---
-title: Adding Metadata
+title: Properties and explanation
 categories: []
 ---
-
-This page provides guidance on how to add metadata to your datasets in Yoda.
-
-## Metadata in Yoda
-
-Metadata is &ldquo;data about data&rdquo;. Metadata serves multiple purposes in Yoda, the most important being:
-
-- To describe the contents of a dataset for a broad audience.
-- To inform the audience whether the data can be reused and if so, under what conditions.
-- To prescribe how the data should be cited and whom to acknowledge.
-- To inform digital archivists and IT staff about how long the data should be retained.
-- To facilitate finding the dataset in data catalogues.
-
-We distinguish two types of metadata:
-
-**Structured metadata** consists of information that is standardized globally and used by data catalogs.
-Examples are the title of the data package, its creator, the retention period of the package, etc.
-
-When a data package is published, Yoda makes the structured metadata available for harvesting by data catalogs, such as [DataCite](https://search.datacite.org/).
-
-**Unstructured metadata** is intended to provide more detailed information about the data. This information can be in a 
-README.TXT or other file that is included as part of the data package. The format of this file is chosen by the
-researcher. Users will need to open and inspect the data package to find this metadata. Unstructured metadata can 
-include information about (for example) the experimental design, data transformation, sampling method, etc.
-
-## Adding metadata in Yoda
-
-Yoda facilitates adding both structured and unstructured metadata to your research data. Entering structured metadata 
-is a prerequisite for archiving a data package. If a folder is published, its structured metadata will be published as well
-and can be harvested by data catalogs such as [DataCite](https://search.datacite.org/). Your published 
-datasets can also be registered in [Pure](https://research.vu.nl).
-
-In order to add structured metadata to a folder, navigate to the folder in the Yoda portal and press the 
-&ldquo;Metadata&rdquo; button.
-
-![Add-metadata](/public/manuals/yoda/add-metadata.png)
-
-Once you have added metadata and clicked on the &ldquo;Save&rdquo; button, the metadata will be stored in a specific 
-format in the folder. Yoda uses files named &ldquo;yoda-metadata.json&rdquo; for this purpose.
-
-Unstructured metadata can be added as a file to the dataset, for example in a &ldquo;Readme.txt&rdquo; or 
-&ldquo;Codebook.pdf&rdquo; file.
-
-## The metadata form
-
-By default, the Yoda metadata form consists of approximately 30 fields. 
-Please consult the metadata element list below for a detailed description of the elements.
-
-All mandatory fields are marked with an asterisk.
-
-![Mandatory metadata](/public/manuals/yoda/mandatory-metadata.png)
-
-Some metadata elements consist of multiple fields. For example, if you enter a person identifier, you should also 
-specify the type of identifier.
-![Compound metadata](/public/manuals/yoda/compound-metadata.png)
-
-Some fields can have multiple values. In order to add a value, press the &ldquo;+&rdquo; sign next to the field.
-
-## Reusing metadata
-
-Structured metadata is reusable. The metadata form includes a button &ldquo;Clone from parent folder&rdquo;. One way to 
-use this feature is to create a project-level folder with several subfolders for data. Common metadata elements for the 
-project can be entered in the project-level folder. This metadata can then be copied to the data folders and filled in further.
-
-You can also copy the &ldquo;yoda-metadata.json&rdquo; file of a folder to another folder in order to copy its metadata.
-
-When you publish a folder, only the metadata on the level of that folder is published in data catalogs. 
-
-![FolderStructureMetadata](/public/manuals/yoda/FolderStructureMetadata.png)
 
 ## Properties and explanations
 **M** Mandatory  
@@ -114,5 +45,5 @@ When you publish a folder, only the metadata on the level of that folder is publ
 | 20d | Contributor to Data Package - Affiliation identifier| R | The organizational or institutional   identifier of the contributor. | It is recommended to use the resolvable URL from the [Research Organization Registry (ROR)](https://ror.org/search). Example:&ldquo;[https://ror.org/008xxew50](https://ror.org/008xxew50)&rdquo; for &ldquo;Vrije Universiteit Amsterdam&rdquo;.
 | 20e | Contributor to Data Package - Persistent Identifier: Type | M if 20f | Please indicate the type of persistent person identifier.    | Each contributor can have multiple persistent identifiers &mdash; use the plus sign to add more values. Maximum length: 255 characters. |
 | 20f | Contributor to Data Package - Persistent Identifier: Identifier | R | An unique person identifier.                                 | Each contributor can have multiple identifiers &mdash; use the plus sign to add more values. Maximum length: 255 characters. Please fill in a resolvable URL. The pattern of an ORCID, ResearchID and ISNI is validated. There is no check if the name and identifier match. |
-| 21  | License | M | The license under which you offer the data package for use by third   parties. The preferred value for open data is [CC By 4.0](https://creativecommons.org/licenses/by/4.0/). | Every package needs to be archived with a license &mdash; even when you’re not   planning to publish the data or have it reused in any form.       We offer a number of possible licenses in a drop-down list. If you do not   know which license to choose, contact the data manager.   At the moment of publishing a data package the relevant license text will   be copied into the data package. If you opt for a custom license, you will need to store the custom   license text in a file titled *License.txt*   in the root folder. If the *Data Package Access (22)* is *Restricted Access* or *Closed Access*, you can only opt for a custom license, the VU has created [custom templates for the License.txt file](./yoda_workflow_metadata_license.qmd).
+| 21  | License | M | The license under which you offer the data package for use by third   parties. The preferred value for open data is [CC By 4.0](https://creativecommons.org/licenses/by/4.0/). | Every package needs to be archived with a license &mdash; even when you’re not   planning to publish the data or have it reused in any form.       We offer a number of possible licenses in a drop-down list. If you do not   know which license to choose, contact the data manager.   At the moment of publishing a data package the relevant license text will   be copied into the data package. If you opt for a custom license, you will need to store the custom   license text in a file titled *License.txt*   in the root folder. If the *Data Package Access (22)* is *Restricted Access* or *Closed Access*, you can only opt for a custom license, the VU has created [custom templates for the License.txt file](./workflow_metadata_license.qmd).
 | 22  | Data Package Access | M | Once archived, should your dataset be  accessible to third parties? | *Open Access* means that the dataset is accessible to everyone.  *Restricted Access* means that the dataset can only be obtained on request. *Closed Access* means that the dataset cannot be shared, in principle.

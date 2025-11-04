@@ -1,0 +1,27 @@
+---
+title: What is Metadata?
+categories: []
+---
+
+## Metadata in Yoda
+
+Metadata is &ldquo;data about data&rdquo;. Metadata serves multiple purposes in Yoda, the most important being:
+
+- To describe the contents of a dataset for a broad audience.
+- To inform the audience whether the data can be reused and if so, under what conditions.
+- To prescribe how the data should be cited and whom to acknowledge.
+- To inform digital archivists and IT staff about how long the data should be retained.
+- To facilitate finding the dataset in data catalogues.
+
+We distinguish two types of metadata:
+
+**Structured metadata** consists of information that is standardized globally and used by data catalogs.
+Examples are the title of the data package, its creator, the retention period of the package, etc.
+
+When a data package is published, Yoda makes the structured metadata available for harvesting by data catalogs, such as [DataCite](https://search.datacite.org/).
+
+**Unstructured metadata** is intended to provide more detailed information about the data. This information can be in a 
+README.TXT or other file that is included as part of the data package. The format of this file is chosen by the
+researcher. Users will need to open and inspect the data package to find this metadata. Unstructured metadata can 
+include information about (for example) the experimental design, data transformation, sampling method, etc.
+

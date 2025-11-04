@@ -3,8 +3,6 @@ title: Using Rclone
 categories: []
 ---
 
-This page explains how to use Rclone software, on Windows, MacOS or Linux, to access your data via the Yoda WebDAV interface. 
-
 [Rclone](https://rclone.org/) is a command-line program to manage files on cloud storage. 
 It is a feature-rich alternative to cloud vendors' web storage interfaces. 
 Over 40 cloud storage products support rclone including S3 object stores, business & consumer file storage services, 
@@ -95,7 +93,7 @@ password:
 Confirm the password:
 password:
 ```
-Password is a [Data Access Password](./yoda_dap.qmd) generated in Yoda.
+Password is a [Data Access Password](/manuals/yoda/data_access_password/yoda_dap.qmd) generated in Yoda.
 ```
 Option bearer_token.
 Bearer token instead of user/pass (e.g. a Macaroon).
@@ -135,7 +133,7 @@ e/n/d/r/c/s/q> q
 ```
 
 ## Updating the Data Access Password
-A Yoda [Data Access Password](./yoda_dap.qmd) is only valid for a set amount of time. Once it has expired you should generate a new one. Run `rclone config`, choose `e) Edit existing remote` and enter the new DAP in the password section:
+A Yoda [Data Access Password](/manuals/yoda/data_access_password/yoda_dap.qmd) is only valid for a set amount of time. Once it has expired you should generate a new one. Run `rclone config`, choose `e) Edit existing remote` and enter the new DAP in the password section:
 ```
 ...
 
