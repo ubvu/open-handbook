@@ -3,9 +3,7 @@ title: Yoda Manuals
 categories: []
 listing:
   contents: 
-    - ./*.qmd
-    - yoda_portal/*.qmd
-    - yoda_data_transfer/*.qmd
+    - ./**/*.qmd
   page-size: 40
   filter-ui: true
   type: grid

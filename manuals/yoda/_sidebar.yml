@@ -1,0 +1,21 @@
+website:
+  sidebar:
+    - id: sb-yoda # will show up automatically on pages referenced in contents.
+      style: floating
+      search: true
+      contents:
+        - manuals/yoda/index.qmd
+        - section: Data Access
+          contents: manuals/yoda/data_access/*.qmd # Note the sorting is by filename if you use wildcards
+        - section: Data access password
+          contents: manuals/yoda/data_access_password/*.qmd
+        - section: Data Transfer
+          contents: manuals/yoda/data_transfer/*.qmd
+        - section: FAQ
+          contents: manuals/yoda/faq/*.qmd        
+        - section: Archiving and Publishing
+          contents: manuals/yoda/securing_distribution/*.qmd
+        - section: Using Yoda
+          contents: manuals/yoda/using_yoda/*.qmd
+        - section: Yoda Portal
+          contents: manuals/yoda/yoda_portal/*.qmd 
