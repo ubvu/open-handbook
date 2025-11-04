@@ -34,7 +34,7 @@ If you are the group manager of a group, you will be able to add users to the gr
 
 ![Adding user](/public/manuals/yoda/gm-adduser.png)
 
-The added user will receive an [invitation](./yoda_access.qmd) to join the connected SRAM collaboration. Most users will be able to log in with their own institutional account, if their institute is not connected to SRAM they need to create an **eduID (NL)** account.
+The added user will receive an [invitation](./sram_invitations_eduid_activation.qmd) to join the connected SRAM collaboration. Most users will be able to log in with their own institutional account, if their institute is not connected to SRAM they need to create an **eduID (NL)** account.
 
 By default, a new user will be a regular member of the group. If you want the user to be a member with read-only access or
 a group manager, see below for how to change users' roles.
@@ -64,7 +64,7 @@ In order to change the role of a group member:
 
 ![Setting user rights](/public/manuals/yoda/gm-role.png)
 
-_Note that you can only change the role of the user after they have accepted the [SRAM invitation](./yoda_access.qmd)._
+_Note that you can only change the role of the user after they have accepted the [SRAM invitation](./sram_invitations_eduid_activation.qmd)._
 
 ## How to: Revoking access to a group
 If you are the group manager of a group, you will be able to revoke access to a group in the following way:
@@ -81,4 +81,4 @@ If you are the group manager of a group, you will be able to revoke access to a 
 
 ![Removing user](/public/manuals/yoda/gm-removeuser.png)
 
-_Note that you can only remove a user after they have accepted the [SRAM invitation](./yoda_access.qmd)._
+_Note that you can only remove a user after they have accepted the [SRAM invitation](./sram_invitations_eduid_activation.qmd)._

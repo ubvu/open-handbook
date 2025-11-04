@@ -6,7 +6,7 @@ categories: []
 If you choose to archive a part of your data, Yoda will make a copy of the data to the archive (also known as &ldquo;Vault&rdquo;) of your project space,
 where it will be retained unchanged during its retention period (default 10 years).
 
-After archiving your data, you can optionally [publish it](./yoda_workflow_vault_publish.qmd), making your dataset findable on the internet. If you classify your data as **open - freely retrievable**, then the data itself can be downloaded anonymously by any third party.
+After archiving your data, you can optionally [publish it](/manuals/yoda/securing_distribution/yoda_workflow_vault_publish.qmd), making your dataset findable on the internet. If you classify your data as **open - freely retrievable**, then the data itself can be downloaded anonymously by any third party.
 
 This page contains information about how to create a data package, how to submit a data package to the vault,
 how the data package will be evaluated after submission, and how to manage archived data packages.
@@ -41,7 +41,7 @@ group that contains the data.
 
 1. First, navigate to the folder you want to archive in the Yoda portal. Ensure that you are **in** the folder which
 you want to submit to the vault. Check that all mandatory metadata has been entered in
-[the metadata form of the folder](./yoda_workflow_metadata.qmd).
+[the metadata form of the folder](/manuals/yoda/using_yoda/workflow_metadata.qmd).
 
 2. Now press the &ldquo;Actions (Submit)&rdquo; button. 
 
@@ -58,7 +58,7 @@ will check for compliance with privacy rules and regulations.
 
 The data manager can either approve the data package for archiving or suggest improvements.
 
-If the status of your data package changes you will receive a notification in the portal. You can also choose to get [notifications via email](./yoda_notifications.qmd).
+If the status of your data package changes you will receive a notification in the portal. You can also choose to get [notifications via email](/manuals/yoda/yoda_portal/notifications.qmd).
 
 ## Managing archived data packages
 

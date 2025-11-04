@@ -93,7 +93,7 @@ password:
 Confirm the password:
 password:
 ```
-Password is a [Data Access Password](./yoda_dap.qmd) generated in Yoda.
+Password is a [Data Access Password](/manuals/yoda/data_access_password/yoda_dap.qmd) generated in Yoda.
 ```
 Option bearer_token.
 Bearer token instead of user/pass (e.g. a Macaroon).
@@ -133,7 +133,7 @@ e/n/d/r/c/s/q> q
 ```
 
 ## Updating the Data Access Password
-A Yoda [Data Access Password](./yoda_dap.qmd) is only valid for a set amount of time. Once it has expired you should generate a new one. Run `rclone config`, choose `e) Edit existing remote` and enter the new DAP in the password section:
+A Yoda [Data Access Password](/manuals/yoda/data_access_password/yoda_dap.qmd) is only valid for a set amount of time. Once it has expired you should generate a new one. Run `rclone config`, choose `e) Edit existing remote` and enter the new DAP in the password section:
 ```
 ...
 
