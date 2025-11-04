@@ -23,4 +23,10 @@ website:
             - manuals/yoda/using_yoda/properties_and_explanation.qmd
             - manuals/yoda/using_yoda/workflow_metadata_license.qmd
         - section: Yoda Portal
-          contents: manuals/yoda/yoda_portal/*.qmd 
+          contents: 
+            - manuals/yoda/yoda_portal/introduction.qmd
+            - manuals/yoda/yoda_portal/notifications.qmd
+            - manuals/yoda/yoda_portal/sram_invitations_eduid_activation.qmd
+            - manuals/yoda/yoda_portal/logging_in.qmd
+            - manuals/yoda/yoda_portal/group_manager.qmd
+            - manuals/yoda/yoda_portal/index.qmd
