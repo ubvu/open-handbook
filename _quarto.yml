@@ -39,7 +39,8 @@ website:
       search: true
       contents:
         - manuals/qualtrics/index.qmd
-        - auto: manuals/qualtrics/*.qmd
+        - auto: manuals/qualtrics/*.qmd 
+
   navbar:
     background: "#0080c9"
     logo: public/VU-logo-Dia-positief.png
@@ -108,9 +109,9 @@ format:
 # from: "markdown+emoji"
 filters:
   - utils/include-files.lua
+  - utils/linktarget.lua
 execute:
   freeze: auto
 
-
 metadata-files:
-  - manuals/yoda/_sidebar.yml
+    - manuals/yoda/_sidebar.yml
