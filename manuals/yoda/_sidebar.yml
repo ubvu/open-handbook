@@ -21,8 +21,24 @@ website:
             - manuals/yoda/using_yoda/properties_and_explanation.qmd
             - manuals/yoda/using_yoda/workflow_metadata_license.qmd
         - section: Securing and Distributing Data
-          contents: manuals/yoda/securing_distribution/*.qmd
+          contents: 
+            - manuals/yoda/securing_distribution/vault_archive.qmd
+            - manuals/yoda/securing_distribution/vault_publish.qmd
         - section: Data Access and Transfer
-          contents: manuals/yoda/data_access/*.qmd # Note the sorting is by filename if you use wildcards
+          contents:
+            - manuals\yoda\data_access\data_access_linux.qmd
+            - manuals\yoda\data_access\data_access_macos.qmd
+            - manuals\yoda\data_access\data_access_windows.qmd
+            - manuals\yoda\data_access\introduction.qmd
+            - manuals\yoda\data_access\yoda_dap.qmd
+            - manuals\yoda\data_access\yoda_using_cyberduck.qmd
+            - manuals\yoda\data_access\yoda_using_cyberduck_cryptometer.qmd
+            - manuals\yoda\data_access\yoda_using_icommands.qmd
+            - manuals\yoda\data_access\yoda_using_rclone.qmd
+            - manuals\yoda\data_access\yoda_using_webdrive.qmd
+            - manuals\yoda\data_access\yoda_using_windowsexplorer.qmd
+            - manuals\yoda\data_access\yoda_using_winscp.qmd
         - section: FAQ
-          contents: manuals/yoda/faq/*.qmd
+          contents: 
+            - manuals/yoda/faq/faq.qmd
+            - manuals/yoda/known_issues.qmd

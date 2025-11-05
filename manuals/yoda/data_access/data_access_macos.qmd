@@ -3,7 +3,7 @@ title: Data access on MacOS
 categories: []
 ---
 
-There are 2 basic ways to access Yoda data from a Mac: [Mounting the Yoda WebDAV interface in finder](#mounting-the-yoda-network-disk-in-finder) or via file transfer tools, in which case we recommend [Cyberduck](/manuals/yoda/data_transfer/yoda_using_cyberduck.qmd). Which one works best depends on your workflow.
+There are 2 basic ways to access Yoda data from a Mac: [Mounting the Yoda WebDAV interface in finder](#mounting-the-yoda-network-disk-in-finder) or via file transfer tools, in which case we recommend [Cyberduck](/manuals/yoda/data_access/yoda_using_cyberduck.qmd). Which one works best depends on your workflow.
 
 For more information on how to configure Cyberduck consider reading the Cyberduck page. 
 
@@ -32,7 +32,7 @@ The Finder app will show a confirmation dialog, similar to the one below. The ad
 You should now see a credentials dialog. The "Connect as" setting should be set to "Registered user".
 "Name" should be your email address. 
 
-4. Create a [Data Access Password](/manuals/yoda/data_access_password/yoda_dap.qmd) and copy it to the Password field. Tick the checkbox &ldquo;Remember this password
+4. Create a [Data Access Password](/manuals/yoda/data_access/yoda_dap.qmd) and copy it to the Password field. Tick the checkbox &ldquo;Remember this password
 in my keychain&rdquo;.  Click on the connect button.
 
 You should now have a new Yoda location in Finder. Its name is the network address you entered before. You may have to scroll down in finder in order to see it.

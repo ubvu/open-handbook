@@ -6,7 +6,7 @@ categories: []
 If you choose to archive a part of your data, Yoda will make a copy of the data to the archive (also known as &ldquo;Vault&rdquo;) of your project space,
 where it will be retained unchanged during its retention period (default 10 years).
 
-After archiving your data, you can optionally [publish it](/manuals/yoda/securing_distribution/yoda_workflow_vault_publish.qmd), making your dataset findable on the internet. If you classify your data as **open - freely retrievable**, then the data itself can be downloaded anonymously by any third party.
+After archiving your data, you can optionally [publish it](/manuals/yoda/securing_distribution/vault_publish.qmd), making your dataset findable on the internet. If you classify your data as **open - freely retrievable**, then the data itself can be downloaded anonymously by any third party.
 
 This page contains information about how to create a data package, how to submit a data package to the vault,
 how the data package will be evaluated after submission, and how to manage archived data packages.

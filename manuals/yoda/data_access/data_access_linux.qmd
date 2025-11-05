@@ -18,7 +18,7 @@ GNOME users can connect to the Yoda WebDAV interface with GNOME Files (also know
 
 ![GNOME Files password dialog screenshot](/public/manuals/yoda/linux-enter-password.png)
 
-3. You will be prompted for a name and password. Username is your email. Set a [Data Access Password](/manuals/yoda/data_access_password/yoda_dap.qmd) and copy it to the Password field.
+3. You will be prompted for a name and password. Username is your email. Set a [Data Access Password](/manuals/yoda/data_access/yoda_dap.qmd) and copy it to the Password field.
 
 # How to: Connecting to the Yoda WebDAV interface using davfs2
 
@@ -67,11 +67,11 @@ line for Yoda:
 - Replace the `uid` and `gid` parameters with your uid and gid, as shown by the `id` command.
 - If you don't want Yoda to be mounted automatically after your system starts, remove "auto," from the options.
 
-4. First set a [Data Access Password](/manuals/yoda/data_access_password/yoda_dap.qmd).
+4. First set a [Data Access Password](/manuals/yoda/data_access/yoda_dap.qmd).
 
 5. Now use a text editor to create a secrets file, which contains your Yoda WebDAV URL, Yoda user name and password, separated by spaces.
 If you are an employee or student at Vrije Universiteit, your user name is your VU email address (in lowercase) and your password
-is your [Data Access Password](/manuals/yoda/data_access_password/yoda_dap.qmd). External users have usually received their user name via email, along with a link to set their password. 
+is your [Data Access Password](/manuals/yoda/data_access/yoda_dap.qmd). External users have usually received their user name via email, along with a link to set their password. 
 Example of a secrets file: 
 ```
 https://data.yoda.vu.nl xxx@vu.nl  myDataAccessPassword
