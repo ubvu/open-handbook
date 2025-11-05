@@ -5,23 +5,6 @@ website:
       search: true
       contents:
         - manuals/yoda/index.qmd
-        - section: Data Access
-          contents: manuals/yoda/data_access/*.qmd # Note the sorting is by filename if you use wildcards
-        - section: Data access password
-          contents: manuals/yoda/data_access_password/*.qmd
-        - section: Data Transfer
-          contents: manuals/yoda/data_transfer/*.qmd
-        - section: FAQ
-          contents: manuals/yoda/faq/*.qmd        
-        - section: Archiving and Publishing
-          contents: manuals/yoda/securing_distribution/*.qmd
-        - section: Using Yoda
-          contents:
-            - manuals/yoda/using_yoda/finding_restoring.qmd
-            - manuals/yoda/using_yoda/metadata.qmd
-            - manuals/yoda/using_yoda/workflow_metadata.qmd
-            - manuals/yoda/using_yoda/properties_and_explanation.qmd
-            - manuals/yoda/using_yoda/workflow_metadata_license.qmd
         - section: Yoda Portal
           contents: 
             - manuals/yoda/yoda_portal/introduction.qmd
@@ -30,3 +13,16 @@ website:
             - manuals/yoda/yoda_portal/logging_in.qmd
             - manuals/yoda/yoda_portal/group_manager.qmd
             - manuals/yoda/yoda_portal/index.qmd
+        - section: Using Yoda
+          contents:
+            - manuals/yoda/using_yoda/finding_restoring.qmd
+            - manuals/yoda/using_yoda/metadata.qmd
+            - manuals/yoda/using_yoda/workflow_metadata.qmd
+            - manuals/yoda/using_yoda/properties_and_explanation.qmd
+            - manuals/yoda/using_yoda/workflow_metadata_license.qmd
+        - section: Securing and Distributing Data
+          contents: manuals/yoda/securing_distribution/*.qmd
+        - section: Data Access and Transfer
+          contents: manuals/yoda/data_access/*.qmd # Note the sorting is by filename if you use wildcards
+        - section: FAQ
+          contents: manuals/yoda/faq/*.qmd
