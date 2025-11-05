@@ -26,11 +26,11 @@ website:
             - manuals/yoda/securing_distribution/vault_publish.qmd
         - section: Data Access and Transfer
           contents:
+            - manuals\yoda\data_access\introduction.qmd
+            - manuals\yoda\data_access\yoda_dap.qmd
             - manuals\yoda\data_access\data_access_linux.qmd
             - manuals\yoda\data_access\data_access_macos.qmd
             - manuals\yoda\data_access\data_access_windows.qmd
-            - manuals\yoda\data_access\introduction.qmd
-            - manuals\yoda\data_access\yoda_dap.qmd
             - manuals\yoda\data_access\yoda_using_cyberduck.qmd
             - manuals\yoda\data_access\yoda_using_cyberduck_cryptometer.qmd
             - manuals\yoda\data_access\yoda_using_icommands.qmd
