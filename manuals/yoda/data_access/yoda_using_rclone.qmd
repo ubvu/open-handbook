@@ -16,11 +16,11 @@ Note: if you are on Linux and comfortable with commandline tools, the [iRODS ico
 
 ## Create a config
 Rclone always expects you to create a config first:
-```
+```sh
 rclone config
 ```
 You will be led through a number of questions
-```
+```sh
 Current remotes:
 
 Name                 Type
@@ -38,7 +38,7 @@ e/n/d/r/c/s/q> n
 Enter name for new remote.
 name> yoda
 ```
-```
+```sh
 Option Storage.
 Type of storage to configure.
 Choose a number from below, or type in your own value.
@@ -49,14 +49,14 @@ Choose a number from below, or type in your own value.
 ...
 Storage> 46
 ```
-```
+```sh
 Option url.
 URL of http host to connect to.
 E.g. https://example.com.
 Enter a value.
 url> https://data.yoda.vu.nl
 ```
-```
+```sh
 Option vendor.
 Name of the WebDAV site/service/software you are using.
 Choose a number from below, or type in your own value.
@@ -73,14 +73,14 @@ Press Enter to leave empty.
 \ (other)
 vendor> 5
 ```
-```
+```sh
 Option user.
 User name.
 In case NTLM authentication is used, the username should be in the format 'Domain\User'.
 Enter a value. Press Enter to leave empty.
 user> e.m.ployee@vu.nl
 ```
-```
+```sh
 Option pass.
 Password.
 Choose an alternative below. Press Enter for the default (n).
@@ -94,7 +94,7 @@ Confirm the password:
 password:
 ```
 Password is a [Data Access Password](/manuals/yoda/data_access/yoda_dap.qmd) generated in Yoda.
-```
+```sh
 Option bearer_token.
 Bearer token instead of user/pass (e.g. a Macaroon).
 Enter a value. Press Enter to leave empty.
@@ -105,7 +105,7 @@ y) Yes
 n) No (default)
 y/n> n
 ```
-```
+```sh
 Options:
 - type: webdav
 - url: https://data.yoda.vu.nl
@@ -134,7 +134,7 @@ e/n/d/r/c/s/q> q
 
 ## Updating the Data Access Password
 A Yoda [Data Access Password](/manuals/yoda/data_access/yoda_dap.qmd) is only valid for a set amount of time. Once it has expired you should generate a new one. Run `rclone config`, choose `e) Edit existing remote` and enter the new DAP in the password section:
-```
+```sh
 ...
 
 Option pass.
@@ -149,7 +149,7 @@ y/g/n> y
 ## Mounting on Windows
 Please make sure to use `--vfs-cache-mode`, see (rlone docs)[https://rclone.org/commands/rclone_mount/#vfs-file-caching]
 
-```
+```sh
 .\rclone --vfs-cache-mode full mount yoda:research-staff-ubvu-geoplaza/ y:
 ```
 Will mount the `yoda` config as drive Y.
