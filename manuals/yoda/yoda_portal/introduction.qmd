@@ -1,0 +1,42 @@
+---
+title: Introduction 
+categories: []
+---
+
+The Welcome Screen of Yoda provides access to three main sections. 
+
+### Group Manager
+Yoda allows you to store your valuable research data in a secure way.  The data is kept in data folders,
+which can only be accessed by members of the associated research Group.
+
+The Group Manager can be used to view a list of research Groups and their members. People with a "group manager" role
+can add members to a research Group, remove them, and change their roles.
+
+See: [Managing groups, users and access rights](./group_manager.qmd)
+
+
+### Research (active data)
+The main folder ("research-...") contains current research data that researchers
+collaborate on. Data is kept in subfolders. The subfolders can be organized according
+to the needs of the research Group.
+
+You can also drag-and-drop files to your research folder or download individual files.
+
+You can [Add metadata](/manuals/yoda/using_yoda/metadata.qmd) to a folder at any time to describe the dataset contained in that folder and its subfolders.
+
+When you know a (subset of) your data must be [archived](/topics/data-archiving.qmd) for the long term, the data in a subfolder can be [submitted to the Yoda Vault](/manuals/yoda/securing_distribution/vault_archive.qmd) so that it is kept for 10 years or longer. 
+
+### Vault (archived data)
+The folder named "vault-..." contains these deposited data packages. Data in the Vault cannot be deleted and the research Group has read access.
+
+Researchers can opt to (but do not have to) [publish](/manuals/yoda/securing_distribution/vault_publish.qmd) any of the vault deposited data packages
+to make the metadata of a data package known to the research community at large. 
+
+Yoda adds a DOI persistent identifier to published data so that the data package can be cited
+and found in catalogs such as Datacite, Narcis, B2Find etcetera.
+
+If (and only if) the data has been classified as "open" then the content itself can be downloaded
+by anyone from the internet. Otherwise, only the metadata description can be viewed.
+
+![Yoda Portal](/public/manuals/yoda/portalstart.png)
+

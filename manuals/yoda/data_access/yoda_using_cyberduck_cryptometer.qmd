@@ -1,0 +1,43 @@
+---
+title: Encrypting your data using Cryptomator and Cyberduck
+categories: []
+---
+
+To work with privacy sensitive data you might be required to encrypt the data you store on Yoda. 
+An easy way to do this is to use Cyberduck (or MountainDuck) together with the free tool Cryptomator. 
+
+Cryptomator is available for Windows, MacOS and Linux.
+
+![Cryptomator workflow](/public/manuals/yoda/cry-overview.png)
+
+Note this workflow means local copies of the files on your laptop are not in the encrypted vault. 
+To make sure local files are also safely encrypted you should enable Bitlocker, this should be the case on all VU laptops. 
+
+## Using Cryptomator
+First connect to the Yoda WebDAV interface using [Cyberduck](./yoda_using_cyberduck.qmd).
+
+## Install Cryptomator
+Download and install from the [Cryptomator](https://cryptomator.org/) site.
+
+## Create a new Cryptomator vault
+Right click in Cyberduck and choose "New Encrypted Vault"
+![Create Cryptomator Vault](/public/manuals/yoda/cry-create.png)
+Give the folder a name and set a passphrase.
+
+![Set passphrase](/public/manuals/yoda/cry-passphrase.png)
+The vault will look like a normal folder in Cyberduck
+
+![Cryptomator folder](/public/manuals/yoda/cry-folder.png)
+
+When you doubleclick the new folder you will be asked for the passphrase.
+![Enter passphrase](/public/manuals/yoda/cry-passphrase.png)
+
+Enter the correct passphrase and the folder will be opened as normal. You can now work with the vault as with a normal folder.
+
+If you cancel the passphrase prompt you will only see the Cryptomator files in the folder. Adding or deleting files could corrupt your data!
+
+If you are not prompted for the passphrase click refresh first.
+![Cyberduck refresh](/public/manuals/yoda/cry-cyberduck-refresh.png)
+
+
+

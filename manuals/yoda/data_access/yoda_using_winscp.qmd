@@ -1,0 +1,30 @@
+---
+title: Using WinSCP
+categories: []
+---
+
+Windows users can use [WinSCP](https://winscp.net) to access their data via the Yoda WebDAV interface,
+as an alternative to the [native WebDAV client](./yoda_using_windowsexplorer.qmd). 
+
+WinSCP is an easy-to-use filetransfer tool. It will show your local disk and the remote Yoda folders next to eachother so you can easily drag and drop files from one to the other.
+
+## Installing WinSCP 
+
+The [WinSCP install guide](https://winscp.net/eng/docs/guide_install) explains how to install WinSCP.
+
+## Using WinSCP
+
+Start WinSCP from the Desktop icon or the Start menu.
+
+In the login window, ensure that the file protocol is set to "WebDAV" and encryption is set to "TLS/SSL implicit encryption".
+
+![](/public/manuals/yoda/screenshot-winscp-login-encsettings.png "Screenshot WinSCP: file protocol and encryption settings")
+
+Enter `https://data.yoda.vu.nl/` in the Host name field. The port number should have its default value: 443.
+
+![](/public/manuals/yoda/screenshot-winscp-login-host.png "Screenshot WinSCP: host name setting")
+
+You will be prompted for a name and password.
+User name is your email.  Create a [data access password](/manuals/yoda/data_access/yoda_dap.qmd) and copy it to the Password field.
+
+![](/public/manuals/yoda/screenshot-winscp-login-credentials.png "Screenshot WinSCP: host name setting")

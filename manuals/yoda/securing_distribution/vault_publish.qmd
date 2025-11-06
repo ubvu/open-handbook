@@ -1,0 +1,46 @@
+---
+title: Publishing data
+categories: []
+---
+
+After a data package has been archived in the vault, it can optionally be submitted for publication.
+
+Publishing a data package has the following effects:
+
+- A [DOI](https://www.doi.org/) will be assigned to the data package by Yoda. This persistent identifier can be used to refer to the data package, e.g. in a scientific publication.
+- The metadata of the data package will be registered and published in [DataCite](https://commons.datacite.org/). 
+    - DataCite itself is harvested by numerous other websites such as Scopus, Google Scholar, Web of Science, etc.
+- The dataset itself will stay in the Yoda Vault.
+- Clicking on the DOI link will lead the visitor to a "landing page" on [https://publications.yoda.vu.nl](https://publications.yoda.vu.nl) which shows the metadata.
+    - If the Access Type metadata field is set to &ldquo;Open - Freely retrievable&rdquo;, the data in the data package is downloadable from the landing page. 
+    - If the Access Type metadata field is set to &ldquo;Restricted&rdquo; or &ldquo;Closed&rdquo;, only the metadata will be shown.
+    - By setting the Access Type to &ldquo;Restricted&rdquo; you indicate a visitor can use the Contact link on the landing page to request access to the data. 
+    - By setting the Access Type to &ldquo;Closed&rdquo; you indicate the data is in Yoda, but cannot be requested.
+- For all cases you need to supply a suitable license which details the terms and conditions under which your data can or cannot be used. See [this page for more information on suitable licenses](/manuals/yoda/using_yoda/workflow_metadata_license.qmd). 
+
+The [VU Yoda repository page](https://commons.datacite.org/repositories/9z2c5d2)  on DataCite Commons shows statistics of datasets currently published in VU Yoda.
+
+## How to: Submitting a dataset for publication
+
+1. Navigate to the data package in the vault and press the &ldquo;Submit for publication&rdquo; button.
+
+![Submit for publication](/public/manuals/yoda/pub-submit-publication.png)
+
+2. Once you’ve submitted a data package for publication, the data manager of your Yoda community will be notified. The Data Manager will check that the data package meets various criteria for publication.
+
+3. If the data manager encounters any issues, you will be contacted. Otherwise you'll receive a [notification](/manuals/yoda/yoda_portal/notifications.qmd) that your data package has been published. This notification contains the DOI that has been assigned to your data package.
+
+Note: If needed a data manager can update metadata of a dataset _after_ it has been published.
+
+## Long term accessibility
+Yoda ensures there is always a datamanager assigned to a Vault who can access Restricted and Closed datasets even if the creators no longer have an account.
+
+## Searching for unpublished datasets
+
+You can search for datasets that are archived but not (yet) published using the &ldquo;Search by Status&rdquo; function in the Yoda Portal.
+The list of data packages will include only the data packages of project groups of which you are a member.
+Click on a data package in the results list in order to view it.
+
+![Unpublished data packages](/public/manuals/yoda/pub-search-unpublished.png)
+
+<!-- TODO add information on versioning -->

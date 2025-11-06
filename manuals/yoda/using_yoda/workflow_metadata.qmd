@@ -1,0 +1,52 @@
+---
+title: Adding Metadata
+categories: []
+---
+
+## How to: Adding metadata in Yoda
+
+Yoda facilitates adding both structured and unstructured metadata to your research data. Entering structured metadata 
+is a prerequisite for archiving a data package. If a folder is published, its structured metadata will be published as well
+and can be harvested by data catalogs such as [DataCite](https://search.datacite.org/). Your published 
+datasets can also be registered in [Pure](https://research.vu.nl).
+
+In order to add structured metadata to a folder:
+1. navigate to the folder in the Yoda portal and press the 
+&ldquo;Metadata&rdquo; button.
+
+![Add-metadata](/public/manuals/yoda/add-metadata.png)
+
+2. Once you have added metadata and clicked on the &ldquo;Save&rdquo; button, the metadata will be stored in a specific 
+format in the folder. Yoda uses files named &ldquo;yoda-metadata.json&rdquo; for this purpose.
+
+3. Unstructured metadata can be added as a file to the dataset, for example in a &ldquo;Readme.txt&rdquo; or 
+&ldquo;Codebook.pdf&rdquo; file.
+
+## The metadata form
+
+By default, the Yoda metadata form consists of approximately 30 fields. 
+Please consult the metadata element list below for a detailed description of the elements.
+
+All mandatory fields are marked with an asterisk.
+
+![Mandatory metadata](/public/manuals/yoda/mandatory-metadata.png)
+
+Some metadata elements consist of multiple fields. For example, if you enter a person identifier, you should also 
+specify the type of identifier.
+![Compound metadata](/public/manuals/yoda/compound-metadata.png)
+
+Some fields can have multiple values. In order to add a value, press the &ldquo;+&rdquo; sign next to the field.
+
+## Reusing metadata
+
+Structured metadata is reusable. The metadata form includes a button &ldquo;Clone from parent folder&rdquo;. One way to 
+use this feature is to create a project-level folder with several subfolders for data. Common metadata elements for the 
+project can be entered in the project-level folder. This metadata can then be copied to the data folders and filled in further.
+
+You can also copy the &ldquo;yoda-metadata.json&rdquo; file of a folder to another folder in order to copy its metadata.
+
+When you publish a folder, only the metadata on the level of that folder is published in data catalogs. 
+
+![FolderStructureMetadata](/public/manuals/yoda/FolderStructureMetadata.png)
+
+

@@ -1,0 +1,128 @@
+---
+title: Using iCommands
+categories: []
+description: "This page explains how to install the iRODS iCommands on a Linux OS (native and using WSL2 on Windows)."
+---
+
+Since Yoda is based on [iRODS technology](https://irods.org), it is possible to transfer
+data to and from Yoda using the iRODS communication protocol. This protocol can be used
+to transfer large amounts of data in an efficient way. The iCommands command-line tools are the official standard implementation of an iRODS protocol client.
+
+The iCommands are installed on the [ADA](/topics/ada.qmd) and [Snellius](/topics/snellius.qmd) HPC clusters and can be used to transfer data to and from Yoda. Make sure to create the [irods environment file](#environment-file) first. 
+
+## Installing iRODS iCommands
+
+Native iRODS iCommands packages are available for CentOS and Ubuntu.
+
+Windows 10/11 users can run the iCommands in [the Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/about).
+There is no officially supported iCommands installation for Mac OSX, you could install the iCommands inside a Linux VM.
+
+### Installing iCommands on CentOS
+The following should work to install the iCommands on CentOS 8.
+
+First add the package source:
+```sh
+sudo yum -y install wget epel-release yum-plugin-versionlock
+sudo rpm --import https://packages.irods.org/irods-signing-key.asc
+wget -qO - https://packages.irods.org/renci-irods.yum.repo | sudo tee /etc/yum.repos.d/renci-irods.yum.repo
+```
+
+Note that the latest irods version is 5, this client is not compatible with the Yoda irods version.You can list the available versions with:
+```sh
+sudo yum --showduplicates list irods-icommands
+```
+
+Install the latest available 4.x.x  version:
+```sh
+sudo yum -y install irods-runtime-4.3.0 irods-icommands-4.3.0
+sudo yum versionlock irods-runtime irods-icommands
+```
+
+#### Upgrading from an earlier version
+If you have put packages irods-runtime and irods-icommands on hold, you should first release the hold. Otherwise, the instruction is the same as above.
+```sh
+# Show applied locks, if any
+yum versionlock list
+yum versionlock delete irods-runtime irods-icommands
+```
+
+### Installing iCommands on Ubuntu
+The following should work to install the iCommands on Ubuntu 22 or 24. 
+
+First add the irods package source.
+```sh
+wget -qO - https://packages.irods.org/irods-signing-key.asc | sudo apt-key add -
+echo "deb [arch=amd64] https://packages.irods.org/apt/ $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/renci-irods.list
+sudo apt update
+```
+
+Note that the latest irods version is 5, this client is not compatible with the Yoda irods version. You can check which versions are available with:
+```sh
+sudo apt show irods-icommands -a
+``` 
+
+Take the latest 4.x version, at the time of writing:
+```sh
+sudo apt -y install irods-runtime=4.3.4-0~noble irods-icommands=4.3.4-0~noble
+```
+
+Make sure to hold the package to prevent inadvertently updating to version 5:
+```sh
+sudo apt-mark hold irods-runtime irods-icommands
+```
+
+#### Upgrading from an earlier version
+If you have put packages irods-runtime and irods-icommands on hold, you should first release the hold. Otherwise, the instruction is the same as above.
+```sh
+# Show applied holds, if any
+apt-mark showhold
+apt-mark unhold irods-runtime irods-icommands
+```
+
+## Environment file
+
+The iCommands need to be configured to connect to the right Yoda environment.
+
+Please copy and paste this configuration into your
+`~/.irods/irods_environment.json` configuration file.
+
+You will need to change the example user name to your Yoda user name.
+
+```json
+{
+    "irods_host": "portal.yoda.vu.nl",
+    "irods_port": 1247,
+    "irods_home": "/vu/home",
+    "irods_user_name": "xxx@vu.nl",
+    "irods_zone_name": "vu",
+    "irods_authentication_scheme": "pam",
+    "irods_encryption_algorithm": "AES-256-CBC",
+    "irods_encryption_key_size": 32,
+    "irods_encryption_num_hash_rounds": 16,
+    "irods_encryption_salt_size": 8,
+    "irods_client_server_negotiation": "request_server_negotiation"
+}
+```
+
+Note that you can also copy this from ["Data Transfer" page](https://portal.yoda.vu.nl/user/data_transfer) on the Yoda Portal:
+![Data Transfer](/public/manuals/yoda/portal-icommands.png)
+
+## Getting started with iCommands
+
+After installing and configuring the iCommands, you should be able to log in
+on the Yoda environment using the [iinit](https://docs.irods.org/4.2.12/icommands/user/#iinit) command. Enter a [Yoda Data Access Password](yoda_dap.qmd) when prompted.
+
+These are the basic commands for navigation and data transfer:
+
+- [ipwd](https://docs.irods.org/4.2.12/icommands/user/#ipwd) – Show current iRODS directory
+- [ils](https://docs.irods.org/4.2.12/icommands/user/#ils) – List contents of a directory
+- [icd](https://docs.irods.org/4.2.12/icommands/user/#icd) – Change directory
+- [iput](https://docs.irods.org/4.2.12/icommands/user/#iput) – Upload files to Yoda
+- [iget](https://docs.irods.org/4.2.12/icommands/user/#iget) – Download files from Yoda
+- [irsync](https://docs.irods.org/4.2.12/icommands/user/#irsync) – Synchronize local and remote directories
+
+Your Yoda project folders are located under `/vu/home`.
+
+You can find a quick introduction of the iCommands on the [SURF wiki](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/19824798/Data+handling+in+Yoda+iRODS+using+iCommands#DatahandlinginYoda%2FiRODSusingiCommands-Createcollectionsandnavigate) or you can check out [this training manual](https://irods.org/uploads/2016/06/irods_beginner_training_2016.pdf).
+
+You can find a full list of available commands in the [iRODS Docs](https://docs.irods.org/4.2.12/icommands/user/). 
