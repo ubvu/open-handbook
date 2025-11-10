@@ -45,6 +45,7 @@ Contributions can be anything, from reporting typo's to opening up an issue, or 
 
 
 
+
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
@@ -137,20 +138,26 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 <a href="https://github.com/ubvu/open-handbook/commits?author=Dimitri-Unger">Dimitri-Unger</a>
 </td>
 <td align="center">
-<a href="https://github.com/charliegreene9">
-<img src="https://avatars.githubusercontent.com/u/45947804?v=4" width="100px;" alt=""/>
+<a href="https://github.com/DukmakD">
+<img src="https://avatars.githubusercontent.com/u/230178802?v=4" width="100px;" alt=""/>
 </a><br>
-<a href="https://github.com/ubvu/open-handbook/commits?author=charliegreene9">charliegreene9</a>
+<a href="https://github.com/ubvu/open-handbook/commits?author=DukmakD">DukmakD</a>
 </td>
 </tr>
 
 
 <tr>
 <td align="center">
-<a href="https://github.com/Sergi095">
-<img src="https://avatars.githubusercontent.com/u/90449301?v=4" width="100px;" alt=""/>
+<a href="https://github.com/charliegreene9">
+<img src="https://avatars.githubusercontent.com/u/45947804?v=4" width="100px;" alt=""/>
 </a><br>
-<a href="https://github.com/ubvu/open-handbook/commits?author=Sergi095">Sergi095</a>
+<a href="https://github.com/ubvu/open-handbook/commits?author=charliegreene9">charliegreene9</a>
+</td>
+<td align="center">
+<a href="https://github.com/wjr-timmers">
+<img src="https://avatars.githubusercontent.com/u/67547499?v=4" width="100px;" alt=""/>
+</a><br>
+<a href="https://github.com/ubvu/open-handbook/commits?author=wjr-timmers">wjr-timmers</a>
 </td>
 <td align="center">
 <a href="https://github.com/TMHofstra">
@@ -159,10 +166,10 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 <a href="https://github.com/ubvu/open-handbook/commits?author=TMHofstra">TMHofstra</a>
 </td>
 <td align="center">
-<a href="https://github.com/wjr-timmers">
-<img src="https://avatars.githubusercontent.com/u/67547499?v=4" width="100px;" alt=""/>
+<a href="https://github.com/Sergi095">
+<img src="https://avatars.githubusercontent.com/u/90449301?v=4" width="100px;" alt=""/>
 </a><br>
-<a href="https://github.com/ubvu/open-handbook/commits?author=wjr-timmers">wjr-timmers</a>
+<a href="https://github.com/ubvu/open-handbook/commits?author=Sergi095">Sergi095</a>
 </td>
 <td align="center">
 <a href="https://github.com/imartorelli">
@@ -182,16 +189,16 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 </a><br>
 <a href="https://github.com/ubvu/open-handbook/commits?author=KirianneG">KirianneG</a>
 </td>
+</tr>
+
+
+<tr>
 <td align="center">
 <a href="https://github.com/MarkBruyneel">
 <img src="https://avatars.githubusercontent.com/u/18597279?v=4" width="100px;" alt=""/>
 </a><br>
 <a href="https://github.com/ubvu/open-handbook/commits?author=MarkBruyneel">MarkBruyneel</a>
 </td>
-</tr>
-
-
-<tr>
 <td align="center">
 <a href="https://github.com/mtthsdzwn">
 <img src="https://avatars.githubusercontent.com/u/1580106?v=4" width="100px;" alt=""/>
@@ -228,16 +235,16 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 </a><br>
 <a href="https://github.com/ubvu/open-handbook/commits?author=emilybarabas-vu">emilybarabas-vu</a>
 </td>
+</tr>
+
+
+<tr>
 <td align="center">
 <a href="https://github.com/reinout538">
 <img src="https://avatars.githubusercontent.com/u/78550421?v=4" width="100px;" alt=""/>
 </a><br>
 <a href="https://github.com/ubvu/open-handbook/commits?author=reinout538">reinout538</a>
 </td>
-</tr>
-
-
-<tr>
 <td align="center">
 <a href="https://github.com/MarcelRas-391">
 <img src="https://avatars.githubusercontent.com/u/188169871?v=4" width="100px;" alt=""/>
@@ -281,5 +288,6 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
 
 
