@@ -1,0 +1,715 @@
+{
+  "introText": "<p><strong><em>\ufeff</em></strong>This tool should help you to find the appropriate VU storage solution for your <strong>research</strong> data. By using the filters on the left, you can see what storage solution(s) would be suitable to store your research data. The tiles will become grey when they do not match your requirements. This tool only presents options for <strong>active</strong> storage, that is, data storage that happens while the research is ongoing and data are still modified. For options to preserve data after the research is finished, please refer to the overview on the Research Data Support Handbook of data repositories at the VU and elsewhere: <a href=\"https://rdm.vu.nl/guides/publish-and-share.html#deposit-your-data\" rel=\"noopener noreferrer nofollow\" target=\"_blank\"><u>https://rdm.vu.nl/guides/publish-and-share.html#deposit-your-data</u></a><u>.</u></p><p>The options presented below are all supported by the VU. Other services exist but are not supported by the VU.</p><p>Please note that this tool is only a tool and not an oracle. Feel free to contact the Research Data Management Support Desk via <a href=\"mailto:rdm@vu.nl\" rel=\"\" target=\"_self\"><u>rdm@vu.nl</u></a> if you have any questions or requests.</p>",
+  "panels": [
+    {
+      "title": "Research Drive",
+      "description": "<p>Research Drive enables you to easily store and share files with other users, inside and outside the VU.</p><p>Please note: storing data with a 'high' classification in Research Drive is permissible, but may require taking extra security measures. Please get in touch with the Research Data Management Support Desk via <a href=\"mailto:rdm@vu.nl\" rel=\"\" target=\"_self\">rdm@vu.nl</a> if you want to store high-classification data in Research Drive.</p>",
+      "intro": "<p>Storage and sharing service with a specific focus on&nbsp;research data.</p>",
+      "link": "https://services.vu.nl/esc?id=sc_cat_item&sys_id=39d345f097066990e553359fe153af01",
+      "properties": [
+        {
+          "key": "Max. storage size",
+          "value": "Terabytes of data"
+        },
+        {
+          "key": "Costs",
+          "value": "<500 GB: free of charge \r\n<BR>500 GB - 2 TB: \u20ac200 per year\r\n<BR> >2 TB: \u20ac200 + \u20ac250 for every TB above 2 TB"
+        },
+        {
+          "key": "Sharing and collaboration",
+          "value": "With anyone"
+        },
+        {
+          "key": "Location",
+          "value": "SURFsara (NL)"
+        },
+        {
+          "key": "File recovery",
+          "value": "Via versioning, Deleted files or file restore request"
+        },
+        {
+          "key": "Data classification",
+          "value": "Medium, but with additional steps: High"
+        },
+        {
+          "key": "Additional information",
+          "value": "-"
+        }
+      ],
+      "filterOptions": [
+        {
+          "filterCode": "classification",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        {
+          "filterCode": "sharing",
+          "values": [
+            "nn",
+            "vu",
+            "all"
+          ]
+        },
+        {
+          "filterCode": "volume",
+          "values": [
+            "small",
+            "large"
+          ]
+        },
+        {
+          "filterCode": "features",
+          "values": [
+            "colab",
+            "basic",
+            "fgaccess"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "SciStor",
+      "description": "<p>Besides basic storage, SciStor is best suited for over-the-network use with lab instruments and high-performance computing (HPC/BAZIS), either via SMB or NFS.</p>",
+      "intro": "<p>On-campus storage for research data.</p>",
+      "link": "https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=86ad5a5f978f09d0e553359fe153afb3",
+      "properties": [
+        {
+          "key": "Max. storage size",
+          "value": "Terabytes of data"
+        },
+        {
+          "key": "Costs",
+          "value": "\u20ac0,10 per GB per year for reserved space, without file recovery<BR>\r\n\u20ac0,20 per GB per year for reserved space, with file recovery"
+        },
+        {
+          "key": "Sharing and collaboration",
+          "value": "VU employees and students"
+        },
+        {
+          "key": "Location",
+          "value": "VU Campus (NL)"
+        },
+        {
+          "key": "File recovery",
+          "value": "Via file restore request or versioning"
+        },
+        {
+          "key": "Data classification",
+          "value": "Medium"
+        },
+        {
+          "key": "Additional information",
+          "value": "-"
+        }
+      ],
+      "filterOptions": [
+        {
+          "filterCode": "classification",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        {
+          "filterCode": "sharing",
+          "values": [
+            "nn",
+            "vu"
+          ]
+        },
+        {
+          "filterCode": "volume",
+          "values": [
+            "small",
+            "large"
+          ]
+        },
+        {
+          "filterCode": "features",
+          "values": [
+            "hpc",
+            "basic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Yoda",
+      "description": "<p>YODA is a platform that supports research data management throughout the entire research cycle: from safe and easy storage and sharing of data during the research process, to sharing of data within research groups and projects and, ultimately, to research data archiving and publication.</p>",
+      "intro": "<p>Securely deposit, share, publish and preserve research data during all stages of a research project.</p>",
+      "link": "https://yoda.vu.nl",
+      "properties": [
+        {
+          "key": "Max. storage size",
+          "value": "Terabytes of data"
+        },
+        {
+          "key": "Costs basic storage",
+          "value": "<500 GB: free of charge\r\n<BR> 500 GB - 2 TB: \u20ac200 per year\r\n<BR> >2TB: \u20ac200 + 250 for every TB above 2 TB"
+        },
+        {
+          "key": "Costs archiving",
+          "value": "<500 GB: free of charge\r\n<BR> 500 GB - 2TB: \u20ac25 per year\r\n<BR> >2TB: \u20ac25 + \u20ac25 for every TB above 2 TB\r\n<BR> Archiving will be billed for a 10-year period"
+        },
+        {
+          "key": "Sharing and collaboration",
+          "value": "With anyone"
+        },
+        {
+          "key": "Location",
+          "value": "SURFsara (NL)"
+        },
+        {
+          "key": "File recovery",
+          "value": "Via versioning or file restore request"
+        },
+        {
+          "key": "Data classification",
+          "value": "High"
+        },
+        {
+          "key": "Additional information",
+          "value": "-"
+        }
+      ],
+      "filterOptions": [
+        {
+          "filterCode": "classification",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        {
+          "filterCode": "sharing",
+          "values": [
+            "nn",
+            "vu",
+            "all"
+          ]
+        },
+        {
+          "filterCode": "volume",
+          "values": [
+            "small",
+            "large"
+          ]
+        },
+        {
+          "filterCode": "features",
+          "values": [
+            "basic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "OneDrive",
+      "description": "<p>OneDrive for Business is part of VU Microsoft 365 cloud and is available for employees and students. Please note that this is personal storage that is linked to the existence of your account at the VU. If you leave, your data in OneDrive also disappear.</p><p>Therefore, OneDrive is <strong>not</strong> a good solution to store your research data.</p>",
+      "intro": "<p>Personal cloud storage, securely store and share files with anyone, access from anywhere.</p><p>Because this is personal storage, this is usually <strong>not</strong> the preferred storage for research data.</p>",
+      "link": "https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=eed3d23e9785d950e553359fe153affc",
+      "properties": [
+        {
+          "key": "Max. storage size",
+          "value": "1TB"
+        },
+        {
+          "key": "Costs",
+          "value": "None"
+        },
+        {
+          "key": "Sharing and collaboration",
+          "value": "With anyone"
+        },
+        {
+          "key": "Location",
+          "value": "Microsoft Cloud (EU)"
+        },
+        {
+          "key": "File recovery",
+          "value": "Via versioning or Recycle Bin"
+        },
+        {
+          "key": "Data classification",
+          "value": "Medium"
+        },
+        {
+          "key": "Additional information",
+          "value": "-"
+        }
+      ],
+      "filterOptions": [
+        {
+          "filterCode": "classification",
+          "values": [
+            "low",
+            "medium"
+          ]
+        },
+        {
+          "filterCode": "sharing",
+          "values": [
+            "nn",
+            "vu",
+            "all"
+          ]
+        },
+        {
+          "filterCode": "volume",
+          "values": [
+            "small",
+            "large"
+          ]
+        },
+        {
+          "filterCode": "features",
+          "values": [
+            "colab",
+            "basic",
+            "fgaccess"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Microsoft Sharepoint (Teams)",
+      "description": "<p>Microsoft 365 cloud storage and collaboration.</p><p><br></p><p>Although the classification for Sharepoint is High, this is not always the best location to store your data, as this application was not designed for research data.</p>",
+      "intro": "<p>File storage, sharing and collaboration in the VU Microsoft 365 cloud. This is not always the best solution to store research data.</p>",
+      "link": "https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=4d4956d7978f09d0e553359fe153afb3",
+      "properties": [
+        {
+          "key": "Max. storage size",
+          "value": "1TB, up to 25TB"
+        },
+        {
+          "key": "Costs",
+          "value": "None"
+        },
+        {
+          "key": "Sharing and collaboration",
+          "value": "With anyone\r\n(A Microsoft account may be required.)"
+        },
+        {
+          "key": "Location",
+          "value": "Microsoft Cloud (EU)"
+        },
+        {
+          "key": "File recovery",
+          "value": "Via versioning or Recycle Bin"
+        },
+        {
+          "key": "Data classification",
+          "value": "Medium"
+        },
+        {
+          "key": "Additional information",
+          "value": "-"
+        }
+      ],
+      "filterOptions": [
+        {
+          "filterCode": "classification",
+          "values": [
+            "low",
+            "medium"
+          ]
+        },
+        {
+          "filterCode": "sharing",
+          "values": [
+            "nn",
+            "vu"
+          ]
+        },
+        {
+          "filterCode": "volume",
+          "values": [
+            "small",
+            "large"
+          ]
+        },
+        {
+          "filterCode": "features",
+          "values": [
+            "colab",
+            "basic",
+            "fgaccess"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "SURFdrive",
+      "description": "<p>SURFdrive is a personal cloud storage service for the Dutch education and research community, offering staff and researchers an easy way to store, synchronise and share files in the secure and reliable SURF community cloud. Be aware that SURFdrive is personal storage and not project storage - data are only in your account and you are the sole owner. For that reason, we do not usually recommend using SURFdrive for research data except in cases where it cannot be avoided. SURFdrive can however be a good place to store personal documents.</p><p>Please note that in principle, SURFdrive is classified to store documents for which the sensitivity is Medium, but with additional measures, can be used to store documents with High sensitivity. Please get in touch with rdm@vu.nl to receive advise about such measures.</p><p>Please note that SURFdrive is not available for students. However, it is possible to share files with students and others.</p>",
+      "intro": "<p>Personal cloud storage service for the Dutch education and research community.</p><p>Because this is personal storage, this is usually <strong>not</strong> the preferred storage for research data.</p>",
+      "link": "https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=fb4eda9f978f09d0e553359fe153afa5",
+      "properties": [
+        {
+          "key": "Max. storage size",
+          "value": "500GB"
+        },
+        {
+          "key": "Costs",
+          "value": "None"
+        },
+        {
+          "key": "Sharing and collaboration",
+          "value": "With anyone"
+        },
+        {
+          "key": "Location",
+          "value": "SURFsara (NL)"
+        },
+        {
+          "key": "File recovery",
+          "value": "Via versioning or Deleted files"
+        },
+        {
+          "key": "Data classification",
+          "value": "Medium, but with additional risk mitigation steps: High"
+        },
+        {
+          "key": "Additional information",
+          "value": "-"
+        }
+      ],
+      "filterOptions": [
+        {
+          "filterCode": "classification",
+          "values": [
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        {
+          "filterCode": "sharing",
+          "values": [
+            "nn",
+            "vu",
+            "all"
+          ]
+        },
+        {
+          "filterCode": "volume",
+          "values": [
+            "small"
+          ]
+        },
+        {
+          "filterCode": "features",
+          "values": [
+            "colab",
+            "basic",
+            "fgaccess"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Google Drive VU",
+      "description": "<p>Besides Google Drive, most applications within the Google Workspace environment, such as Google Docs, Google Sheets and Google Slides, are also available and accessible on any device.</p>",
+      "intro": "<p>Google Drive VU is part of Google Workspace collaborative environment for education and research.</p><p><br></p>",
+      "link": "https://services.vu.nl/esc?id=kb_article&table=kb_knowledge&sys_kb_id=f8b0485a87b285508b3b631c8bbb35ca",
+      "properties": [
+        {
+          "key": "Max. storage size",
+          "value": "Terabytes of data"
+        },
+        {
+          "key": "Costs",
+          "value": "None"
+        },
+        {
+          "key": "Sharing and collaboration",
+          "value": "With anyone"
+        },
+        {
+          "key": "Location",
+          "value": "Google (WORLD)"
+        },
+        {
+          "key": "File recovery",
+          "value": "Deleted items are retained for 30 days, versioning is available for all files"
+        },
+        {
+          "key": "Data classification",
+          "value": "Low"
+        },
+        {
+          "key": "Additional information",
+          "value": "-"
+        }
+      ],
+      "filterOptions": [
+        {
+          "filterCode": "classification",
+          "values": [
+            "low"
+          ]
+        },
+        {
+          "filterCode": "sharing",
+          "values": [
+            "nn",
+            "vu",
+            "all"
+          ]
+        },
+        {
+          "filterCode": "volume",
+          "values": [
+            "small",
+            "large"
+          ]
+        },
+        {
+          "filterCode": "features",
+          "values": [
+            "colab",
+            "basic",
+            "fgaccess"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Encrypted portable storage ",
+      "description": "<p>Encrypted USB drive/disk or USB flash drive (USB stick).</p><p>You can order a drive or disk via the Order accessories<em> </em>form<em> </em>found in the service portal (link below).</p><p>Please note that it is highly recommended to always use encryption with portable storage, even if your data is classified as low.</p>",
+      "intro": "<p>USB drive/disk or USB flash drive (USB stick) - with encryption.</p>",
+      "link": "https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=868f521397cf09d0e553359fe153af5b",
+      "properties": [
+        {
+          "key": "Max. storage size",
+          "value": "Depends on the device chosen"
+        },
+        {
+          "key": "Costs",
+          "value": "Depends on the device chosen"
+        },
+        {
+          "key": "Sharing and collaboration",
+          "value": "Not applicable"
+        },
+        {
+          "key": "Location",
+          "value": "Not applicable"
+        },
+        {
+          "key": "File recovery",
+          "value": "Can be configured"
+        },
+        {
+          "key": "Data classification",
+          "value": "Medium (with encryption)<BR>\r\nLow (w/o encryption)"
+        },
+        {
+          "key": "Additional information",
+          "value": "-"
+        }
+      ],
+      "filterOptions": [
+        {
+          "filterCode": "classification",
+          "values": [
+            "low",
+            "medium"
+          ]
+        },
+        {
+          "filterCode": "sharing",
+          "values": [
+            "nn"
+          ]
+        },
+        {
+          "filterCode": "volume",
+          "values": [
+            "small",
+            "large"
+          ]
+        },
+        {
+          "filterCode": "features",
+          "values": [
+            "basic"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Custom solutions",
+      "description": "<p>If none of the options satisfy your requirements, a custom setup or configuration may be possible.</p><p>Contact the RDM Support Desk via the link below to explore the options.</p>",
+      "intro": "<p>When your project requires a very specific setup.</p>",
+      "link": "mailto:rdm@vu.nl",
+      "properties": [],
+      "filterOptions": []
+    },
+    {
+      "title": "Open Science Framework",
+      "description": "<p>The OSF is an open-source collaboration tool geared towards Open Science.</p><p>Although not primarily a storage tool, OSF can be a very useful and easy to use way to share and publish your data, project documentation, or pre-registrations. It is possible to connect Research Drive, <a href=\"https://libguides.vu.nl/rdm/selecting-archive?#s-lg-box-wrapper-15125672\" rel=\"noopener noreferrer nofollow\" target=\"_blank\">Dataverse</a> or SURFdrive to OSF if your data volume is larger than what OSF offers.</p><p>The OSF is developed by the Center for Open Science (COS) that strives to increase openness, integrity, and reproducibility of research.</p>",
+      "intro": "<p>OSF is an open platform to support your research and enable collaboration.</p>",
+      "link": "https://osf.io/abwzm/",
+      "properties": [
+        {
+          "key": "Max. storage size",
+          "value": "Private project: 5 GB<BR>\r\nPublic project: 50GB\r\n(Extra storage possible on request)"
+        },
+        {
+          "key": "Costs",
+          "value": "None"
+        },
+        {
+          "key": "Sharing and collaboration",
+          "value": "With anyone"
+        },
+        {
+          "key": "Location",
+          "value": "Google (EU)"
+        },
+        {
+          "key": "File recovery",
+          "value": "NOT possible"
+        },
+        {
+          "key": "Data classification",
+          "value": "Low"
+        },
+        {
+          "key": "Additional information",
+          "value": "-"
+        }
+      ],
+      "filterOptions": [
+        {
+          "filterCode": "classification",
+          "values": [
+            "low"
+          ]
+        },
+        {
+          "filterCode": "sharing",
+          "values": [
+            "nn",
+            "vu",
+            "all"
+          ]
+        },
+        {
+          "filterCode": "volume",
+          "values": [
+            "small"
+          ]
+        },
+        {
+          "filterCode": "features",
+          "values": [
+            "colab",
+            "fgaccess"
+          ]
+        }
+      ]
+    }
+  ],
+  "labels": {
+    "noResults": "No Results",
+    "introText": "<p><strong><em>\ufeff</em></strong>This tool should help you to find the appropriate VU storage solution for your <strong>research</strong> data. By using the filters on the left, you can see what storage solution(s) would be suitable to store your research data. The tiles will become grey when they do not match your requirements. This tool only presents options for <strong>active</strong> storage, that is, data storage that happens while the research is ongoing and data are still modified. For options to preserve data after the research is finished, please refer to the overview on the Research Data Support Handbook of data repositories at the VU and elsewhere: <a href=\"https://rdm.vu.nl/guides/publish-and-share.html#deposit-your-data\" rel=\"noopener noreferrer nofollow\" target=\"_blank\"><u>https://rdm.vu.nl/guides/publish-and-share.html#deposit-your-data</u></a><u>.</u></p><p>The options presented below are all supported by the VU. Other services exist but are not supported by the VU.</p><p>Please note that this tool is only a tool and not an oracle. Feel free to contact the Research Data Management Support Desk via <a href=\"mailto:rdm@vu.nl\" rel=\"\" target=\"_self\"><u>rdm@vu.nl</u></a> if you have any questions or requests.</p>",
+    "numberOfResults": " {0} results shown",
+    "moreInformation": "More info",
+    "filtersButton": "Filter",
+    "exportResultButton": "Export result"
+  },
+  "filters": [
+    {
+      "code": "classification",
+      "title": "Data classification",
+      "information": "<p>Data classification <strong>here</strong> refers to the type of data regarding privacy and confidentiality. It is meant to provide guidelines for storing, accessing, and processing data in a secure and responsible manner.</p><p>The <a href=\"https://vu.nl/en/research/dataclassification\" rel=\"\" target=\"_self\">data classification tool</a> can help you to determine the classification for Availability, Integrity and Confidentiality.</p><p>The data steward for the Faculty of Behavioural and Movement Sciences (FGB) has also created a <a href=\"https://fgb-rdm.nl/Security/PrivacyRisks.html\" rel=\"noopener noreferrer nofollow\" target=\"_blank\">guide about privacy and confidentiality risks</a> that could help you to determine a classification for your data. The information on that page is geared towards FGB researchers but can also be helpful for other researchers.</p><p>If, using the information above, you are not sure which category fits your data or would like to know more about matters related to data classification, please contact us at the Research Data Management Support Desk: <a href=\"mailto:rdm@vu.nl\" rel=\"\" target=\"_self\">rdm@vu.nl</a>.</p>",
+      "filterType": "Single",
+      "options": [
+        {
+          "code": "low",
+          "title": "Low"
+        },
+        {
+          "code": "medium",
+          "title": "Medium"
+        },
+        {
+          "code": "high",
+          "title": "High"
+        },
+        {
+          "code": "vhigh",
+          "title": "Very high"
+        }
+      ]
+    },
+    {
+      "code": "sharing",
+      "title": "Data sharing",
+      "information": "<p>Indicate here whether you need to share your data and with whom. Note: this refers to data sharing <strong>during</strong> the research process and not to publishing data after the research is finished.</p>",
+      "filterType": "Single",
+      "options": [
+        {
+          "code": "nn",
+          "title": "Not needed"
+        },
+        {
+          "code": "vu",
+          "title": "With VU colleagues"
+        },
+        {
+          "code": "all",
+          "title": "With anyone"
+        }
+      ]
+    },
+    {
+      "code": "volume",
+      "title": "Data volume",
+      "information": "<p>Indicate the (estimated) size of your dataset here.</p>",
+      "filterType": "Single",
+      "options": [
+        {
+          "code": "small",
+          "title": "< 500 GB"
+        },
+        {
+          "code": "large",
+          "title": "> 500 GB"
+        }
+      ]
+    },
+    {
+      "code": "features",
+      "title": "Features",
+      "information": "<p>A number of the storage options have additional features and/or functionality.</p><p>Select Basic storage if you have no specific needs and just want to store and access your files.</p><p>Select Compute/HPC if you plan to process your data using the high-performance computing facilities offered by the VU.</p><p>Select Collaboration tools to highlight solutions that facilitate collaboration via integrated tools and interfaces (OnlyOffice, Jupyter Notebooks). Note: not all collaboration tools will be available for each highlighted storage option</p><p>Select Fine-grained access rights if you need to give collaborators access to only certain folders, and not the entire project. Note: some tools may not offer fine-grained access rights but still offer the possibility to invite collaborators (this is, for example, the case for Yoda).</p>",
+      "filterType": "Multiple",
+      "options": [
+        {
+          "code": "basic",
+          "title": "Basic storage"
+        },
+        {
+          "code": "hpc",
+          "title": "Compute/HPC"
+        },
+        {
+          "code": "colab",
+          "title": "Collaboration tools"
+        },
+        {
+          "code": "fgaccess",
+          "title": "Fine-grained access rights"
+        }
+      ]
+    }
+  ],
+  "codeName": "storagefinder",
+  "title": "Data Storage Finder"
+}
