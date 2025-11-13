@@ -95,7 +95,6 @@ function FilterSidebar({ filters, setFilters, options }) {
 
   return (
     <div className='sidebar'>
-      <h2>Filters</h2>
       {options.map(filter => (
         <div key={filter.code}>
           <h4>{filter.title}</h4>

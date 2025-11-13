@@ -2,6 +2,10 @@
 title: "Storagefinder"
 ---
 
-Blablabla
+This tool should help you to find the appropriate VU storage solution for your research data. By using the filters on the left, you can see what storage solution(s) would be suitable to store your research data. The tiles will become grey when they do not match your requirements. This tool only presents options for active storage, that is, data storage that happens while the research is ongoing and data are still modified. For options to preserve data after the research is finished, please refer to this [overview](./guides/publish-and-share.qmd#deposit-your-data).
+
+The options presented below are all supported by the VU. Other services exist but are not supported by the VU.
+
+Please note that this tool is only a tool and not an oracle. Feel free to contact the Research Data Management Support Desk via rdm@vu.nl if you have any questions or requests.
 
 {{< react Storagefinder >}}
