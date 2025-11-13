@@ -5,7 +5,7 @@
       "title": "Research Drive",
       "description": "<p>Research Drive enables you to easily store and share files with other users, inside and outside the VU.</p><p>Please note: storing data with a 'high' classification in Research Drive is permissible, but may require taking extra security measures. Please get in touch with the Research Data Management Support Desk via <a href=\"mailto:rdm@vu.nl\" rel=\"\" target=\"_self\">rdm@vu.nl</a> if you want to store high-classification data in Research Drive.</p>",
       "intro": "<p>Storage and sharing service with a specific focus on&nbsp;research data.</p>",
-      "link": "https://services.vu.nl/esc?id=sc_cat_item&sys_id=39d345f097066990e553359fe153af01",
+      "link": "https://rdm.vu.nl/topics/researchdrive.html",
       "properties": [
         {
           "key": "Max. storage size",
@@ -13,7 +13,7 @@
         },
         {
           "key": "Costs",
-          "value": "<500 GB: free of charge \r\n<BR>500 GB - 2 TB: \u20ac200 per year\r\n<BR> >2 TB: \u20ac200 + \u20ac250 for every TB above 2 TB"
+          "value": "<500 GB: free of charge; 500 GB - 2 TB: \u20ac200 per year; >2 TB: \u20ac200 + \u20ac250 for every TB above 2 TB"
         },
         {
           "key": "Sharing and collaboration",
@@ -74,7 +74,7 @@
       "title": "SciStor",
       "description": "<p>Besides basic storage, SciStor is best suited for over-the-network use with lab instruments and high-performance computing (HPC/BAZIS), either via SMB or NFS.</p>",
       "intro": "<p>On-campus storage for research data.</p>",
-      "link": "https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=86ad5a5f978f09d0e553359fe153afb3",
+      "link": "https://rdm.vu.nl/topics/scistor.html",
       "properties": [
         {
           "key": "Max. storage size",
@@ -82,7 +82,7 @@
         },
         {
           "key": "Costs",
-          "value": "\u20ac0,10 per GB per year for reserved space, without file recovery<BR>\r\n\u20ac0,20 per GB per year for reserved space, with file recovery"
+          "value": "\u20ac0,10 per GB per year for reserved space, without file recovery; \u20ac0,20 per GB per year for reserved space, with file recovery"
         },
         {
           "key": "Sharing and collaboration",
@@ -141,7 +141,7 @@
       "title": "Yoda",
       "description": "<p>YODA is a platform that supports research data management throughout the entire research cycle: from safe and easy storage and sharing of data during the research process, to sharing of data within research groups and projects and, ultimately, to research data archiving and publication.</p>",
       "intro": "<p>Securely deposit, share, publish and preserve research data during all stages of a research project.</p>",
-      "link": "https://yoda.vu.nl",
+      "link": "https://rdm.vu.nl/topics/yoda.html",
       "properties": [
         {
           "key": "Max. storage size",
@@ -149,11 +149,11 @@
         },
         {
           "key": "Costs basic storage",
-          "value": "<500 GB: free of charge\r\n<BR> 500 GB - 2 TB: \u20ac200 per year\r\n<BR> >2TB: \u20ac200 + 250 for every TB above 2 TB"
+          "value": "<500 GB: free of charge; 500 GB - 2 TB: \u20ac200 per year; >2TB: \u20ac200 + 250 for every TB above 2 TB"
         },
         {
           "key": "Costs archiving",
-          "value": "<500 GB: free of charge\r\n<BR> 500 GB - 2TB: \u20ac25 per year\r\n<BR> >2TB: \u20ac25 + \u20ac25 for every TB above 2 TB\r\n<BR> Archiving will be billed for a 10-year period"
+          "value": "No costs for archiving will be charged to your project."
         },
         {
           "key": "Sharing and collaboration",
@@ -211,7 +211,7 @@
     {
       "title": "OneDrive",
       "description": "<p>OneDrive for Business is part of VU Microsoft 365 cloud and is available for employees and students. Please note that this is personal storage that is linked to the existence of your account at the VU. If you leave, your data in OneDrive also disappear.</p><p>Therefore, OneDrive is <strong>not</strong> a good solution to store your research data.</p>",
-      "intro": "<p>Personal cloud storage, securely store and share files with anyone, access from anywhere.</p><p>Because this is personal storage, this is usually <strong>not</strong> the preferred storage for research data.</p>",
+      "intro": "<p>Personal cloud storage, securely store and share files with anyone, access from anywhere.</p>",
       "link": "https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=eed3d23e9785d950e553359fe153affc",
       "properties": [
         {
@@ -262,8 +262,7 @@
         {
           "filterCode": "volume",
           "values": [
-            "small",
-            "large"
+            "small"
           ]
         },
         {
@@ -278,8 +277,8 @@
     },
     {
       "title": "Microsoft Sharepoint (Teams)",
-      "description": "<p>Microsoft 365 cloud storage and collaboration.</p><p><br></p><p>Although the classification for Sharepoint is High, this is not always the best location to store your data, as this application was not designed for research data.</p>",
-      "intro": "<p>File storage, sharing and collaboration in the VU Microsoft 365 cloud. This is not always the best solution to store research data.</p>",
+      "description": "<p>Microsoft 365 cloud storage and collaboration.</p><p>Although the classification for Sharepoint is High, this is not always the best location to store your data, as this application was not designed for research data.</p>",
+      "intro": "<p>File storage, sharing and collaboration in the VU Microsoft 365 cloud.</p>",
       "link": "https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=4d4956d7978f09d0e553359fe153afb3",
       "properties": [
         {
@@ -329,8 +328,7 @@
         {
           "filterCode": "volume",
           "values": [
-            "small",
-            "large"
+            "small"
           ]
         },
         {
@@ -346,7 +344,7 @@
     {
       "title": "SURFdrive",
       "description": "<p>SURFdrive is a personal cloud storage service for the Dutch education and research community, offering staff and researchers an easy way to store, synchronise and share files in the secure and reliable SURF community cloud. Be aware that SURFdrive is personal storage and not project storage - data are only in your account and you are the sole owner. For that reason, we do not usually recommend using SURFdrive for research data except in cases where it cannot be avoided. SURFdrive can however be a good place to store personal documents.</p><p>Please note that in principle, SURFdrive is classified to store documents for which the sensitivity is Medium, but with additional measures, can be used to store documents with High sensitivity. Please get in touch with rdm@vu.nl to receive advise about such measures.</p><p>Please note that SURFdrive is not available for students. However, it is possible to share files with students and others.</p>",
-      "intro": "<p>Personal cloud storage service for the Dutch education and research community.</p><p>Because this is personal storage, this is usually <strong>not</strong> the preferred storage for research data.</p>",
+      "intro": "<p>Personal cloud storage service for the Dutch education and research community.</p>",
       "link": "https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=fb4eda9f978f09d0e553359fe153afa5",
       "properties": [
         {
@@ -414,7 +412,7 @@
     {
       "title": "Google Drive VU",
       "description": "<p>Besides Google Drive, most applications within the Google Workspace environment, such as Google Docs, Google Sheets and Google Slides, are also available and accessible on any device.</p>",
-      "intro": "<p>Google Drive VU is part of Google Workspace collaborative environment for education and research.</p><p><br></p>",
+      "intro": "<p>Google Drive VU is part of Google Workspace collaborative environment for education and research.</p>",
       "link": "https://services.vu.nl/esc?id=kb_article&table=kb_knowledge&sys_kb_id=f8b0485a87b285508b3b631c8bbb35ca",
       "properties": [
         {
@@ -464,8 +462,7 @@
         {
           "filterCode": "volume",
           "values": [
-            "small",
-            "large"
+            "small"
           ]
         },
         {
@@ -554,7 +551,7 @@
       "title": "Open Science Framework",
       "description": "<p>The OSF is an open-source collaboration tool geared towards Open Science.</p><p>Although not primarily a storage tool, OSF can be a very useful and easy to use way to share and publish your data, project documentation, or pre-registrations. It is possible to connect Research Drive, <a href=\"https://libguides.vu.nl/rdm/selecting-archive?#s-lg-box-wrapper-15125672\" rel=\"noopener noreferrer nofollow\" target=\"_blank\">Dataverse</a> or SURFdrive to OSF if your data volume is larger than what OSF offers.</p><p>The OSF is developed by the Center for Open Science (COS) that strives to increase openness, integrity, and reproducibility of research.</p>",
       "intro": "<p>OSF is an open platform to support your research and enable collaboration.</p>",
-      "link": "https://osf.io/abwzm/",
+      "link": "https://rdm.vu.nl/topics/osf.html",
       "properties": [
         {
           "key": "Max. storage size",
