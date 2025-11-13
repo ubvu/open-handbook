@@ -1,19 +1,20 @@
 .container {
     display: flex;
-    font-family: Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
 }
 
 .sidebar {
-    width: 250px;
-    padding: 10px;
+    width: 200px;
+    padding-right: 5px;
     border-right: 1px solid #ccc;
 }
 
 .grid {
     flex: 1;
-    padding: 10px;
+    padding-left: 10px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 10px;
 }
 

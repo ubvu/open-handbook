@@ -8,6 +8,41 @@ The options presented below are all supported by the VU. Other services exist bu
 
 Please note that this tool is only a tool and not an oracle. Feel free to contact the Research Data Management Support Desk via [rdm@vu.nl](mailto:rdm@vu.nl) if you have any questions or requests.
 
----
+## Finder tool
+_Select options on the left._
 
 {{< react Storagefinder >}}
+
+## Explanation
+### Data classification
+Data classification here refers to the type of data regarding privacy and confidentiality. It is meant to provide guidelines for storing, accessing, and processing data in a secure and responsible manner.
+
+The data classification tool can help you to determine the classification for Availability, Integrity and Confidentiality.
+
+The data steward for the Faculty of Behavioural and Movement Sciences (FGB) has also created a guide about privacy and confidentiality risks that could help you to determine a classification for your data. The information on that page is geared towards FGB researchers but can also be helpful for other researchers.
+
+If, using the information above, you are not sure which category fits your data or would like to know more about matters related to data classification, please contact us at the [Research Data Management Support Desk](mailto:rdm@vu.nl).
+
+### Data sharing
+Indicate here whether you need to share your data and with whom. Note: this refers to data sharing during the research process and not to publishing data after the research is finished.
+
+### Data volume
+Indicate the amount of data that you want to store. Note that transferring large datasets in one go can be a challenge. [SciStor](/topics/scistor.qmd) allows the fastest en easiest data transfer if you are on campus. Yoda has robust tools allowing you to transfer large amounts of ata as well, although this will be slower. 
+
+### Features
+A number of the storage options have additional features and/or functionality.
+
+#### Basic storage
+Select Basic storage if you have no specific needs and just want to store and access your files.
+
+#### Compute/HPC
+Select Compute/HPC if you plan to process your data using the high-performance computing facilities offered by the VU.
+
+#### Collaboration tools
+Select Collaboration tools to highlight solutions that facilitate collaboration via integrated tools and interfaces (OnlyOffice, Jupyter Notebooks). Note: not all collaboration tools will be available for each highlighted storage option/
+
+#### Fine-grained access rights
+Select Fine-grained access rights if you need to give collaborators access to only certain folders, and not the entire project. Note: some tools may not offer fine-grained access rights but still offer the possibility to invite collaborators (this is, for example, the case for Yoda).
+
+#### Easy archiving and publishing
+Select this for tools with integrated archiving and publishing data that allow you to manage your data with one tool.
