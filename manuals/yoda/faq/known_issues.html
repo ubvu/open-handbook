@@ -404,14 +404,8 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#recently-fixed" id="toc-recently-fixed" class="nav-link active" data-scroll-target="#recently-fixed">Recently fixed</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/yoda/faq/known_issues.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -440,25 +434,43 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><em>Updated 2025-11-05, Yoda version 1.9.5</em></p>
-<section id="dataset-can-be-archived-and-published-with-a-missing-orcid-field" class="level4">
-<h4 class="anchored" data-anchor-id="dataset-can-be-archived-and-published-with-a-missing-orcid-field">- Dataset can be archived and published with a missing ORCID field</h4>
-<ul>
-<li>A user can add a creator or contributor, select ORCID as “Person identifier”, but leave the “Identifier” field blank. The “required for Vault” bar will show the form is incomplete, but you can still submit it to the Vault. When you publish the dataset the person will be missing from the DataCite metadata. Expected to be fixed om Yoda 2.0</li>
-</ul>
-</section>
-<section id="group-manager-cannot-delete-or-change-role-of-new-user-with-an-open-sram-invitation.-this-status-is-only-updated-1-hour-after-the-invitation-has-been-accepted" class="level4">
-<h4 class="anchored" data-anchor-id="group-manager-cannot-delete-or-change-role-of-new-user-with-an-open-sram-invitation.-this-status-is-only-updated-1-hour-after-the-invitation-has-been-accepted">- Group manager cannot delete or change role of new user with an open SRAM invitation. This status is only updated 1 hour after the invitation has been accepted</h4>
-<ul>
-<li>New users are also added with Read/Write rights, a new user intended as read-only will have temporary write access. Expected to be fixed om Yoda 2.0</li>
-</ul>
-</section>
-<section id="recently-fixed" class="level3">
-<h3 class="anchored" data-anchor-id="recently-fixed">Recently fixed</h3>
-<section id="datasets-can-be-submitted-without-mandatory-creator-affiliation-name" class="level4">
-<h4 class="anchored" data-anchor-id="datasets-can-be-submitted-without-mandatory-creator-affiliation-name">- Datasets can be submitted without mandatory Creator Affiliation name</h4>
-<p><em>Fixed 2025-06-04</em> When leaving the [Creator] [Affiliation Name] field empty, the system will indicate clearly that the metadata form is not complete by marking the field with a red border and showing the green “Required for the vault” bar as incomplete. On clicking “submit” the system should show an error “Metadata is not valid, please open metadata form for more information”, but it does not and the dataset is allowed to be further processed and can be secured in the Vault normally. If the dataset is later submitted and approved for publication the publication process fails and no resolvable DOI is generated.</p>
-<p>Make sure Affiliation names are added for each Creator. Note that if the institute is not in the dropdown list you can just type the Name and leave the identifier field empty.</p>
+<p><em>Updated 2025-11-20, Yoda version 2.0</em></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Issue</th>
+<th>Description</th>
+<th>Workaround</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Securing datasets in the Vault fails with folders containing special characters</td>
+<td>When a datamanager accepts a Vault submission it is copied to the Vault folder. This process sometimes fails if a foldername in the dataset contains special characters (this includes the diaeresis sign, e.g.&nbsp;<code>ö</code>).</td>
+<td>Ensure folder names do not contain special characters before submitting.</td>
+<td>Expected to be fixed in Yoda 2.1</td>
+</tr>
+<tr class="even">
+<td>Connecting using icommands fails due to changes in <code>irods_environment.json</code></td>
+<td>Following the Yoda 2.0 upgrade the contents of <code>irods_environment.json</code> need to be updated, see <a href="../../../manuals/yoda/data_access/yoda_using_icommands.html#environment-file">the manual</a>. This is due to an upgrade to the underlying irods system.</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Icon of new user does not reflect role</td>
+<td>When a Group Manager changes the role of a recently added user, the icon is not changed. The correct icon will be visible after the user has accepted the SRAM invitation.</td>
+<td>Try to change the role of the user again, the system will show a notification stating the user already has this role.</td>
+<td>Expected to be fixed in Yoda 2.1</td>
+</tr>
+<tr class="even">
+<td><em>Dataset can be archived and published with a missing ORCID field</em></td>
+<td></td>
+<td></td>
+<td><em>Fixed in Yoda 2.0</em></td>
+</tr>
+</tbody>
+</table>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -469,13 +481,11 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The <a href="https://utrechtuniversity.github.io/yoda/release-notes/" target="_blank">Yoda release notes</a> mentions irods bugs relevant to Yoda.</p>
+<p>The <a href="https://utrechtuniversity.github.io/yoda/release-notes/" target="_blank">Yoda release notes</a> mention irods bugs relevant to Yoda.</p>
 </div>
 </div>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -922,7 +932,7 @@ Tip
 </a>
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/yoda/faq/known_issues.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/yoda/faq/known_issues.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
