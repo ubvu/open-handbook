@@ -95,7 +95,7 @@ You will need to change the example user name to your Yoda user name.
     "irods_home": "/vu/home",
     "irods_user_name": "xxx@vu.nl",
     "irods_zone_name": "vu",
-    "irods_authentication_scheme": "pam",
+    "irods_authentication_scheme": "pam_password",
     "irods_encryption_algorithm": "AES-256-CBC",
     "irods_encryption_key_size": 32,
     "irods_encryption_num_hash_rounds": 16,
@@ -103,8 +103,11 @@ You will need to change the example user name to your Yoda user name.
     "irods_client_server_negotiation": "request_server_negotiation"
 }
 ```
+::: {.callout-important}
+Please note that `irods_authentication_scheme` has changed from `pam` to `pam_password` in Yoda 2.0.
+:::
 
-Note that you can also copy this from ["Data Transfer" page](https://portal.yoda.vu.nl/user/data_transfer) on the Yoda Portal:
+You can also copy the contents from the ["Data Transfer" page](https://portal.yoda.vu.nl/user/data_transfer) on the Yoda Portal:
 ![Data Transfer](/public/manuals/yoda/portal-icommands.png)
 
 ## Getting started with iCommands
