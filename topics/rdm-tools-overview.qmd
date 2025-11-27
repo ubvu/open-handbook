@@ -1,140 +1,57 @@
 ---
-title: RDM Tools Overview - VU Amsterdam Research Data Management Services
-categories: [Research Data]
+title: RDM Tools
+categories: [Research Data, Tools]
 ---
 
-VU Amsterdam provides a comprehensive suite of research data management (RDM) tools and services to support researchers throughout the entire research lifecycle. This overview organizes available tools by research phase to help you identify the most appropriate solutions for your project needs.
+VU Amsterdam provides a [comprehensive array](https://www.youtube.com/watch?v=-AaSNZzL_KQ) of Research Data Management (RDM) tools and services to support researchers throughout the entire research lifecycle. The overview below categorises the available tools by their application.
 
-## Planning & Design Phase
+## Research data management tools
 
-### Data Management Planning
-- **[DMPonline](dmponline.qmd)** - VU's institutional platform for creating Data Management Plans with templates certified for major funders (NWO, ZonMw, ERC). Free access with VU credentials.
+- **[DMPonline](/topics/dmponline.qmd)**: VU's institutional platform for creating Data Management Plans with templates certified or provided by major funders (NWO, ZonMw, ERC). Free access with VU credentials.
+- **[Qualtrics](/topics/qualtrics.qmd)**: survey tool for research projects. Log in using Single Sign-on
+- **[Transcript Online & Amberscript](https://vu.nl/en/about-vu/divisions/university-library/more-about/transcription-at-vu-for-audio-and-video-files)**: speech-to-text transcription services. The VU has a processing agreement, but not a licence, with both.
+- **[Atlas.TI](https://services.vu.nl/esc?id=search&spa=1&q=atlas.ti)**: a tool for qualitative data analysis, often used for the qualitative analysis of texts.
 
-### Research Information Management  
-- **[Pure](pure.qmd)** - VU's research information system for registering research outputs, managing profiles, and institutional compliance. Automatic access for all VU staff and PhD students.
+## Compute tools
 
-## Collection & Generation Phase
-
-### Survey & Data Collection
-- **[Qualtrics](qualtrics.qmd)** - Advanced cloud-based survey platform with file upload capabilities and API integration. Free access for VU researchers with institutional license.
-
-### Transcription Services
-- **[AmberScript & Transcript Online](transcription-services.qmd)** - Automated and professional transcription services with VU processing agreements for GDPR compliance. Pay-per-use pricing.
-
-## Processing & Analysis Phase
-
-### High Performance Computing
-- **[ADA HPC Cluster](ada.qmd)** - VU's on-campus computing cluster for multi-node computations. Community partition free for VU researchers, with options for dedicated hardware.
-- **VU Compute Hub** - JupyterHub instance with analysis tools (Jupyter, MATLAB, STATA, R Studio, QGIS). Free access with low barrier to entry.
-- **Snellius** - National supercomputer with VU contract allowing up to 1M SBUs for smaller projects.
+### High-Performance Computing
+- **[ADA HPC Cluster](/topics/ada.qmd)**: VU's on-campus computing cluster for multi-node computations. Community partition free for VU researchers, with options for dedicated hardware.
+- **[VU Compute Hub](/topics/compute-hub.qmd)**: VU's local JupyterHub instance with analysis tools (Jupyter, MATLAB, STATA, R Studio, QGIS). Free access with low barrier to entry.
+- **[Snellius](/topics/snellius.qmd)**: National supercomputer with VU contract allowing up to 1M SBUs for smaller projects.
 
 ### Cloud Computing & Virtual Environments  
-- **SURF Research Cloud** - Portal for building virtual research environments with GPU access. Requires collaboration credentials and computing credits.
-- **[Azure Virtual Desktop](azure-virtual-desktop.qmd)** - Microsoft cloud-based virtual Windows environments for specialized software access and secure processing.
-- **SciCloud** - VU's Infrastructure-as-a-Service for virtual Linux/Windows servers. Good for web applications and 24/7 services.
+- **[SURF Research Cloud](/topics/researchcloud.qmd)**: Portal for building virtual research environments with GPU access. Requires collaboration credentials and computing credits.
+- **[Azure Virtual Desktop](https://vunl.sharepoint.com/sites/CollaborationServices/SitePages/Azure-Virtual-Desktop-(AVD).aspx)**: Microsoft cloud-based virtual Windows environments for specialised software access and secure processing.
+- **[SciCloud](/topics/scicloud.qmd)**: VU's Infrastructure-as-a-Service for virtual Linux/Windows servers. Good for web applications and 24/7 services.
 
-## Storage & Backup Phase
+## Data storage and transfer tools
 
 ### Active Research Storage
-- **[Research Drive](research-drive.qmd)** - SURF cloud storage for collaboration with internal/external partners. Suitable for medium confidentiality data with folder-level access control.
-- **[Yoda](yoda.qmd)** - All-in-one data management solution for entire research lifecycle. Suitable for high confidentiality data with built-in backup and archiving.
-- **SciStor** - High-speed networked storage for large datasets. VU campus-hosted with direct connection to compute resources.
-
-### Standard VU Storage
-- **OneDrive** - Personal Microsoft 365 storage (not recommended for research data)
-- **Teams** - Shared Microsoft documents with collaboration features (limited for research use)
-
-## Sharing & Collaboration Phase
-
-### Project Management & Collaboration
-- **[Open Science Framework (OSF)](osf.qmd)** - Free platform for project management, collaboration, file storage, and pre-registration. 50GB per private project, unlimited for public projects.
-- **GitHub** - Version control and code sharing with integration to other research tools.
+- **[Research Drive](/topics/researchdrive.qmd)**: SURF cloud storage for collaboration with internal/external partners. Fine-grained folder access is possible.
+- **[Yoda](/topics/yoda.qmd)**: Repository for active data storage and data archiving and publishing
+- **[SciStor](/topics/scistor.qmd)**: Storage for large datasets maintained by IT for Research. Connecting to high-performance computers is possible.
+- **[SURFdrive](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=fb4eda9f978f09d0e553359fe153afa5)**: Cloud storage offered by SURF for VU employees. As of December 2025, use of SURFdrive is restricted to those who request an account and cannot make use of the alternatives mentioned above.
 
 ### Secure File Transfer
-- **SURF Filesender** - Send files up to 1TB to external partners with cloud-based secure transfer
-- **Zivver** - Encrypted email and file transfer with attachments up to 5TB. Available to all VU employees.
+- **[SURF Filesender](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=da7a9e1b978f09d0e553359fe153af98)**: Send files up to 1TB to internal and external partners with cloud-based secure transfer.
+- **[Zivver](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=01d4a69797cf09d0e553359fe153afdd)** - Encrypted email and file transfer with attachments up to 5TB. Available to all VU employees.
 
-## Archiving & Preservation Phase
+## Data archiving and publishing
 
 ### Research Data Repositories
-- **[Yoda](yoda.qmd)** - Long-term archiving via Yoda Vault with permanent DOIs and multiple access levels
-- **[DataverseNL](dataversenl.qmd)** - Open access dataset publishing with rich metadata support. Suitable only for non-personal data.
-
-### Software & Code Repositories
-- **GitHub** - Public code repositories with version control and collaboration features
-- **Zenodo** - Research output publishing with permanent DOIs for software and data
-
-## Publishing & Documentation Phase
+- **[Yoda](/topics/yoda.qmd)**: Long-term archiving via Yoda Vault with permanent DOIs and multiple access levels
+- **[DataverseNL](/topics/dataversenl.qmd)**: Open and restricted dataset publishing with rich metadata support. Suitable only for non-personal data.
+- **[Open Science Framework (OSF)](/topics/osf.qmd)**: Platform for project management, collaboration, file storage, and pre-registration. Not strictly speaking a data repository, but data can be shared on OSF.
 
 ### Research Output Registration
-- **[Pure](pure.qmd)** - Required registration of all research datasets and software per VU policy. Public visibility and institutional compliance.
-- **DataverseNL** - Open access publishing with comprehensive metadata and DOI generation
+- **[Pure](/topics/pure.qmd)**: Registration of all research output, including datasets and software per VU policy. Public visibility.
 
-## Getting Started - Tool Selection Guide
+## Tools for managing software:
+- **[GitLab](https://gitlab.vu.nl)**: a code repository for **research use**; features include version control and the possibility to collaborate. Maintained by the University Library. There is also a [gitlab server for general use](https://git.vu.nl).
 
-### For projects with personal/sensitive data:
-- **Storage**: Yoda or SciStor with backup
-- **Computing**: ADA, SciCloud, or Azure Virtual Desktop  
-- **Collaboration**: Yoda (with SRAM for external partners)
-- **Archiving**: Yoda Vault
-
-### For projects with open/public data:
-- **Storage**: Research Drive or OSF
-- **Computing**: VU Compute Hub, SURF Research Cloud, or Snellius
-- **Collaboration**: OSF, GitHub, or Research Drive
-- **Archiving**: DataverseNL, Zenodo, or OSF
-
-### For projects requiring high-performance computing:
-- **Small-scale**: VU Compute Hub or ADA community partition
-- **Large-scale**: ADA dedicated nodes or Snellius
-- **GPU computing**: SURF Research Cloud or dedicated ADA nodes
-
-### For collaborative projects:
-- **Internal VU**: Teams, Research Drive, or Yoda
-- **External partners**: OSF, Research Drive, or Yoda with SRAM
-- **International**: OSF or Research Drive with appropriate agreements
-
-## Cost Considerations
-
-### Free Services
-- DMPonline, Pure, Qualtrics, VU Compute Hub
-- ADA community partition, OSF, GitHub public repositories  
-- Basic OneDrive/Teams, SURF Filesender
-
-### Usage-based Pricing
-- Transcription services (AmberScript, Transcript Online)
-- Azure Virtual Desktop (compute time and resources)
-- High-performance computing credits (Snellius, SURF Research Cloud)
-
-### Subscription/Storage Pricing
-- Yoda, Research Drive, SciStor (per GB/year)
-- ADA dedicated hardware, SciCloud virtual servers
-- DataverseNL (covered by VU policy for qualifying projects)
-
-## Need Help Choosing Tools?
-
-**If you're unsure which tools best fit your project:**
-
-1. **Complete a Data Management Plan** using [DMPonline](dmponline.qmd) to clarify your requirements
-2. **Contact RDM Support** at [rdm@vu.nl](mailto:rdm@vu.nl) for personalized consultation
-3. **Consult your faculty's Privacy Champion** for projects involving personal data
-4. **Contact IT for Research** for high-performance computing and infrastructure questions
+## Choosing a tool
+Which tool is most suitable for your research can vary, depending on what sort of data you're dealing with, or whether you need to share data with external partners. Use the [data storage finder](https://vu.nl/en/research/storagefinder) to find some guidance on choosing a storage tool. When you have questions, about data storage or any other topic, do not hesitate to [contact the RDM Support Desk](mailto:rdm@vu.nl).
 
 ## Tool Not Listed?
 
-If you need research tools that aren't provided by VU Amsterdam:
-
-1. **Contact the RDM Support Desk** at [rdm@vu.nl](mailto:rdm@vu.nl) to discuss your requirements
-2. **We coordinate with procurement** and other stakeholders to evaluate new tools
-3. **Consider alternatives** from our existing toolkit that might meet your needs
-4. **Processing agreements** may be needed for external tools handling VU research data
-
-## Support Contacts
-
-- **General RDM questions**: [rdm@vu.nl](mailto:rdm@vu.nl)  
-- **Compute & infrastructure**: [IT for Research](https://services.vu.nl/esc?id=sc_cat_item&sys_id=4e079166978d5950e553359fe153afc5)
-- **Data protection & privacy**: Your faculty's [Privacy Champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information)
-- **Pure registration**: Your faculty's research administration
-- **Tool-specific support**: See individual tool pages for specialized contact information
-
-*This overview is regularly updated. For the most current information about specific tools, costs, and availability, contact the relevant support teams or check the individual tool pages linked throughout this document.*
+If you need a research tool that isn't provided by VU Amsterdam, you can contact the RDM Support Desk** at [rdm@vu.nl](mailto:rdm@vu.nl) to discuss your requirements. We can suggest an alternative or forward your question to the IT or the procurement team.
