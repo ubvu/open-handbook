@@ -108,6 +108,10 @@ cd ../../
 ls
 # Your file is now restored!
 ```
+::: {.callout-note}
+Be aware that `IT-ITVO-Scistor-Demo` is a share used to write this documentation,
+please replace this with your own share.
+:::
 
 ---
 
@@ -169,7 +173,10 @@ cd ../../
 ls
 # Your file is now restored!
 ```
-
+::: {.callout-note}
+Be aware that `IT-ITVO-Scistor-Demo` is a share used to write this documentation,
+please replace this with your own share.
+:::
 ---
 
 ## Tips & Best Practices
@@ -178,6 +185,7 @@ ls
 - **Most recent snapshot**: The snapshot with the highest number is typically the most recent.
 - **Multiple snapshots**: You can browse different snapshots to find the version of your file you need.
 - **Entire folders**: You can restore entire directories using the same rsync method.
+- **Location of Snapshots**: Snapshots are always in the top level share, subshares contain empty snapshots.
 
 ---
 
