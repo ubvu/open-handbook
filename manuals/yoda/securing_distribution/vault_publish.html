@@ -410,7 +410,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#how-to-submitting-a-dataset-for-publication" id="toc-how-to-submitting-a-dataset-for-publication" class="nav-link active" data-scroll-target="#how-to-submitting-a-dataset-for-publication">How to: Submitting a dataset for publication</a></li>
-  <li><a href="#long-term-accessibility" id="toc-long-term-accessibility" class="nav-link" data-scroll-target="#long-term-accessibility">Long term accessibility</a></li>
+  <li><a href="#long-term-accessibility" id="toc-long-term-accessibility" class="nav-link" data-scroll-target="#long-term-accessibility">Long-term accessibility</a></li>
   <li><a href="#searching-for-unpublished-datasets" id="toc-searching-for-unpublished-datasets" class="nav-link" data-scroll-target="#searching-for-unpublished-datasets">Searching for unpublished datasets</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/yoda/securing_distribution/vault_publish.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -440,26 +440,26 @@ ul.task-list li input[type="checkbox"] {
 <p>After a data package has been archived in the vault, it can optionally be submitted for publication.</p>
 <p>Publishing a data package has the following effects:</p>
 <ul>
-<li>A <a href="https://www.doi.org/" target="_blank">DOI</a> will be assigned to the data package by Yoda. This persistent identifier can be used to refer to the data package, e.g.&nbsp;in a scientific publication.</li>
+<li>A <a href="../../../topics/persistent-identifier.html">DOI</a> will be assigned to the data package by Yoda. This persistent identifier can be used to refer to the data package, e.g.&nbsp;in a scientific publication.</li>
 <li>The metadata of the data package will be registered and published in <a href="https://commons.datacite.org/" target="_blank">DataCite</a>.
 <ul>
 <li>DataCite itself is harvested by numerous other websites such as Scopus, Google Scholar, Web of Science, etc.</li>
 </ul></li>
 <li>The dataset itself will stay in the Yoda Vault.</li>
-<li>Clicking on the DOI link will lead the visitor to a “landing page” on <a href="https://publications.yoda.vu.nl" target="_blank">https://publications.yoda.vu.nl</a> which shows the metadata.
+<li>Clicking on the DOI link will lead the visitor to a “landing page” on <a href="https://publication.yoda.vu.nl/full/VU01/2LT5V4.html" target="_blank">https://publications.yoda.vu.nl</a> which shows the metadata for a particular dataset.
 <ul>
-<li>If the Access Type metadata field is set to “Open - Freely retrievable”, the data in the data package is downloadable from the landing page.</li>
-<li>If the Access Type metadata field is set to “Restricted” or “Closed”, only the metadata will be shown.</li>
-<li>By setting the Access Type to “Restricted” you indicate a visitor can use the Contact link on the landing page to request access to the data.</li>
-<li>By setting the Access Type to “Closed” you indicate the data is in Yoda, but cannot be requested.</li>
+<li>If the Access Type metadata field is set to <code>Open - Freely retrievable</code>, the data in the data package is downloadable from the landing page.</li>
+<li>If the Access Type metadata field is set to <code>Restricted</code> or <code>Closed</code>, only the metadata will be shown.</li>
+<li>By setting the Access Type to <code>Restricted</code> you indicate a visitor can use the Contact link on the landing page to request access to the data.</li>
+<li>By setting the Access Type to <code>Closed</code> you indicate the data are deposited in Yoda, but cannot be requested.</li>
 </ul></li>
-<li>For all cases you need to supply a suitable license which details the terms and conditions under which your data can or cannot be used. See <a href="../../../manuals/yoda/using_yoda/workflow_metadata_license.html">this page for more information on suitable licenses</a>.</li>
+<li>For all cases you need to supply a suitable licence that details the terms and conditions under which your data can or cannot be used. See <a href="../../../manuals/yoda/using_yoda/workflow_metadata_license.html">this page for more information on suitable licences</a>.</li>
 </ul>
 <p>The <a href="https://commons.datacite.org/repositories/9z2c5d2" target="_blank">VU Yoda repository page</a> on DataCite Commons shows statistics of datasets currently published in VU Yoda.</p>
 <section id="how-to-submitting-a-dataset-for-publication" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-submitting-a-dataset-for-publication">How to: Submitting a dataset for publication</h2>
 <ol type="1">
-<li>Navigate to the data package in the vault and press the “Submit for publication” button.</li>
+<li>Navigate to the data package in the vault and press the <code>Submit for publication</code> button.</li>
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -468,18 +468,18 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <ol start="2" type="1">
-<li><p>Once you’ve submitted a data package for publication, the data manager of your Yoda community will be notified. The Data Manager will check that the data package meets various criteria for publication.</p></li>
+<li><p>Once you’ve submitted a data package for publication, the data manager of your Yoda community will be notified. The data manager will check that the data package meets various criteria for publication.</p></li>
 <li><p>If the data manager encounters any issues, you will be contacted. Otherwise you’ll receive a <a href="../../../manuals/yoda/yoda_portal/notifications.html">notification</a> that your data package has been published. This notification contains the DOI that has been assigned to your data package.</p></li>
 </ol>
 <p>Note: If needed a data manager can update metadata of a dataset <em>after</em> it has been published.</p>
 </section>
 <section id="long-term-accessibility" class="level2">
-<h2 class="anchored" data-anchor-id="long-term-accessibility">Long term accessibility</h2>
-<p>Yoda ensures there is always a datamanager assigned to a Vault who can access Restricted and Closed datasets even if the creators no longer have an account.</p>
+<h2 class="anchored" data-anchor-id="long-term-accessibility">Long-term accessibility</h2>
+<p>Yoda ensures there is always a data manager assigned to a Vault who can access Restricted and Closed datasets even if the creators no longer have an account.</p>
 </section>
 <section id="searching-for-unpublished-datasets" class="level2">
 <h2 class="anchored" data-anchor-id="searching-for-unpublished-datasets">Searching for unpublished datasets</h2>
-<p>You can search for datasets that are archived but not (yet) published using the “Search by Status” function in the Yoda Portal. The list of data packages will include only the data packages of project groups of which you are a member. Click on a data package in the results list in order to view it.</p>
+<p>You can search for datasets that are archived but not (yet) published using the <code>Search by Status</code> function in the Yoda Portal. The list of data packages will include only the data packages of project groups of which you are a member. Click on a data package in the results list in order to view it.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../../../public/manuals/yoda/pub-search-unpublished.png" class="img-fluid figure-img"></p>
