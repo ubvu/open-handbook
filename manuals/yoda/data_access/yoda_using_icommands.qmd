@@ -17,6 +17,12 @@ Native iRODS iCommands packages are available for CentOS and Ubuntu.
 Windows 10/11 users can run the iCommands in [the Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/about).
 There is no officially supported iCommands installation for Mac OSX, you could install the iCommands inside a Linux VM.
 
+::: { .callout-tip }
+**gocommands** is an alternative command-line client you could try if your OS does not support iCommands. 
+
+The `readme.md` on the [github repository](https://github.com/cyverse/gocommands) has installation instructions. Once installed you can use the common iCommands as `gocmd <command>`, e.g. `gocmd ls`, `gocmd get`, `gocmd put`, `gocmd rsync`
+:::
+
 ### Installing iCommands on CentOS
 The following should work to install the iCommands on CentOS 8.
 
