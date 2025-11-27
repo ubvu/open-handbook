@@ -1,0 +1,23 @@
+---
+title: Creating a Data Access Password
+categories: []
+---
+
+# How to: Creating a Data Access Password
+
+1. Click on your username in the top right and click Data Access Password or go to [https://portal.yoda.vu.nl/user/data_access](https://portal.yoda.vu.nl/user/data_access):
+
+![Data Access Password menu](/public/manuals/yoda/dap-menu.png)
+
+![Generate Data Access Password](/public/manuals/yoda/dap-generate.png)
+
+2. Enter a suitable label and click on "Generate new data access password"
+
+![](/public/manuals/yoda/dap-generate2.png)
+
+3. The password is shown. Click Copy to copy it to the clipboard. After this you can use CTRL-v to paste it.
+
+Data access passwords expire in 90 days, you can view the expiration time in the list.
+![](/public/manuals/yoda/dap-list.png)
+
+If a password has expired, simply create a new one. Don't forget to update the password in the WebDAV client.

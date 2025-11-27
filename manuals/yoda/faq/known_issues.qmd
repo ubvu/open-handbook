@@ -1,0 +1,18 @@
+---
+title: Known issues
+categories: []
+description: Known bugs and issues in the current Yoda version.
+---
+_Updated 2025-11-20, Yoda version 2.0_
+
+| Issue | Description | Workaround | Status |
+| --- | --- | --- | --- |
+| Securing datasets in the Vault fails with folders containing special characters | When a datamanager accepts a Vault submission it is copied to the Vault folder. This process sometimes fails if a foldername in the dataset contains special characters (this includes the diaeresis sign, e.g. `ö`). | Ensure folder names do not contain special characters before submitting. | Expected to be fixed in Yoda 2.1 |
+| Connecting using icommands fails due to changes in `irods_environment.json` | Following the Yoda 2.0 upgrade the contents of `irods_environment.json` need to be updated, see [the manual](/manuals/yoda/data_access/yoda_using_icommands.qmd#environment-file). This is due to an upgrade to the underlying irods system. |  |  |
+| Icon of new user does not reflect role | When a Group Manager changes the role of a recently added user, the icon is not changed. The correct icon will be visible after the user has accepted the SRAM invitation. | Try to change the role of the user again, the system will show a notification stating the user already has this role. | Expected to be fixed in Yoda 2.1 | 
+| _Dataset can be archived and published with a missing ORCID field_ | | | _Fixed in Yoda 2.0_ |
+
+
+::: {.callout-tip}
+The [Yoda release notes](https://utrechtuniversity.github.io/yoda/release-notes/) mention irods bugs relevant to Yoda.
+:::

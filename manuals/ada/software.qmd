@@ -1,0 +1,259 @@
+---
+title: Software
+date: last-modified
+---
+
+## Overview
+
+ADA offers several supported ways to access software depending on how much control you need. Start with the pre-installed module stack and only move to self-managed environments when necessary.
+
+- [`Software modules`](#software-modules) – centrally maintained applications optimized for ADA.
+- [`Pixi`](#pixi-environments) – lightweight multi-language environments for reproducible projects.
+- [`Conda`/`virtualenv`](#conda-and-virtualenv) – established Python-first tooling for legacy workflows.
+- [`Apptainer`](#apptainer-containers) – container images for bespoke stacks or portable workflows.
+
+::: {.callout-note title="Need a quick recommendation?"}
+Use modules whenever a supported version exists. Choose Pixi when you need custom packages or multi-language environments, fall back to Conda or virtualenv if you already rely on them, and build an Apptainer container when you must control the full user-space stack.
+:::
+
+## Software Modules
+ADA ships a curated, architecture-optimized software stack living under `/ada-software/` and exposed through Lmod modules.
+The stack follows an annual release (for example `2025`) that bundles compilers, MPI, and libraries maintained by ITvO.
+
+::: {.callout-important title="Read: Modules primer"}
+New to Lmod? Start with the [Carpentries HPC modules lesson](https://carpentries-incubator.github.io/hpc-intro/15-modules/index.html) for a friendly walkthrough of the core concepts.
+:::
+
+### Quick Start
+
+1. Check which modules load by default:
+   ```sh
+   [abc123@login1 ~]$ module list
+
+   Currently Loaded Modules:
+   1) shared   2) DefaultModules   3) gcc/11.2.0   4) slurm/bazis/23.02.8
+   ```
+2. Load the yearly release to unlock the supported applications:
+   ```sh
+   [abc123@login1 ~]$ module load 2025
+   [abc123@login1 ~]$ module list
+
+   Currently Loaded Modules:
+   1) shared   2) DefaultModules   3) slurm/bazis/23.02.8   4) 2025
+   ```
+3. Load the software you need. Dependencies are resolved automatically in the order you request them:
+   ```sh
+   module load Python/3.13.1-GCCcore-14.2.0
+   module load HDF5/1.14.5-gompi-2024a
+   ```
+
+When you are done, use `module unload <name>` to remove a single module or `module purge` to reset the session.
+
+::: {.callout-tip collapse="true" title="Find modules quickly"}
+List all the available modules with `module avail`. 
+However, that is usually very slow, so for a more efficient search and targeted search use `module spider`:
+```sh
+[abc123@login1 ~]$ module spider Python
+
+---------------------------------------------------------------------
+Python:
+---------------------------------------------------------------------
+    Description:
+    Python is a programming language that lets you work more quickly
+    and integrate your systems more effectively.
+
+    Versions:
+      Python/3.11.5-GCCcore-13.2.0
+      Python/3.12.3-GCCcore-13.3.0
+      Python/3.13.1-GCCcore-14.2.0
+
+    Other possible module matches:
+      Biopython  GitPython  IPython  ...
+```
+
+Follow up with the full version to view prerequisites and optional extensions:
+```sh
+[abc123@login1 ~]$ module spider Python/3.12.3-GCCcore-13.3.0
+```
+:::
+
+### When to choose modules
+
+- You want the simplest, most supported path on ADA.
+- The required package and version already exist in the release.
+- You prefer not to manage your own builds or dependency stacks.
+
+If you identify software that would benefit a broad cross-section of ADA users, contact ITvO at `itvo.it@vu.nl` with your request. Users cannot publish custom modules on ADA.
+
+::: {.callout-warning title="Requesting new modules"}
+Request extra modules **only** when they will measurably help many researchers. For niche or project-specific tools, use Pixi, Conda, or Apptainer so cluster admins can focus limited time on maintaining the shared stack.
+:::
+
+### References
+
+- [Lmod user guide](https://lmod.readthedocs.io/en/latest/)
+- [Carpentries HPC modules lesson](https://carpentries-incubator.github.io/hpc-intro/15-modules/index.html)
+
+## Pixi Environments
+
+Pixi provides reproducible, multi-language environments that work well on shared HPC systems. It automatically resolves dependencies across Python, R, Julia, and more, and stores environments alongside your project. Therefore, Pixi is the recommended way to manage custom software stacks on ADA.
+
+::: {.callout-tip title="Read: Pixi quick start"}
+Review the upstream [Pixi quick start guide](https://pixi.dev/docs/python/./) to see typical workflows and commands before building environments on ADA.
+:::
+
+### Quick Start
+
+```sh
+[abc123@login1 ~]$ module load 2025
+[abc123@login1 ~]$ module load Pixi
+[abc123@login1 ~]$ mkdir newproject
+[abc123@login1 ~]$ cd newproject
+[abc123@login1 ~/newproject]$ pixi init
+[abc123@login1 ~/newproject]$ pixi add numpy pandas matplotlib
+[abc123@login1 ~/newproject]$ pixi run python -c "import pandas as pd; print(pd.__version__)"
+```
+
+The project directory now contains `pixi.toml` and `.pixi/` with the resolved environment. Share the `pixi.toml` file with collaborators so they can recreate the exact environment.
+
+### When to choose Pixi
+
+- You need packages beyond what the module stack supplies.
+- Your project mixes languages (for example Python + R).
+- You want fast environment solves with minimal manual tuning.
+- You prefer keeping environment configuration under version control.
+
+Pixi retrieves packages from maintained channels (PyPI, conda-forge, CRAN, etc.). If something is unavailable, consider Apptainer for a custom build.
+
+### References
+
+- [Pixi documentation](https://pixi.dev/)
+- [Getting started with Pixi for Python](https://pixi.dev/docs/python/./)
+
+## Conda and virtualenv
+
+Conda and virtualenv remain popular for Python-centric workflows. On ADA you should start from the modules provided versions to ensure compatibility with the cluster toolchain.
+
+::: {.callout-tip title="Read: Conda essentials"}
+Skim the official [Conda getting-started guide](https://docs.conda.io/projects/conda/en/stable/user-guide/getting-started.html) to refresh fundamentals like channel management and environment activation.
+:::
+
+### Quick Start
+
+```sh
+[abc123@login1 ~]$ module load 2025
+[abc123@login1 ~]$ module load Miniconda3
+[abc123@login1 ~]$ conda create -n analysis python=3.12 numpy scipy
+[abc123@login1 ~]$ conda activate analysis
+```
+
+For virtualenv:
+
+```sh
+[abc123@login1 ~]$ module load 2025
+[abc123@login1 ~]$ module load Python/3.12.3-GCCcore-13.3.0
+[abc123@login1 ~]$ python -m venv ~/envs/my-project
+[abc123@login1 ~]$ source ~/envs/my-project/bin/activate
+```
+
+Remember to deactivate environments before logging out to avoid polluting future sessions.
+
+::: {.callout-tip title="Read: virtualenv essentials"}
+Skim the official [virtualenv documentation](https://virtualenv.pypa.io/en/latest/user_guide.html) for tips on creating and managing virtual environments.
+:::
+
+### When to choose Conda or virtualenv
+
+- Existing workflows already rely on Conda environments or `environment.yml`.
+- You require packages that Pixi cannot currently install.
+- You need per-user env management with conda-forge or custom channels.
+
+Be mindful that Conda solves can be slower and more resource-heavy on shared filesystems. Pixi usually offers faster resolution on ADA and therefore we recommend it over Conda. 
+
+### References
+
+- [Conda user guide](https://docs.conda.io/projects/conda/en/stable/user-guide/)
+- [virtualenv documentation](https://virtualenv.pypa.io/en/latest/user_guide.html)
+
+## Apptainer Containers
+
+Apptainer (formerly Singularity) runs full container images on ADA compute nodes. Use it to bundle complex stacks, legacy software, or reproducible workflows that must match another system exactly.
+
+::: {.callout-note title="Read: Apptainer quick start"}
+Read the upstream [Apptainer quick start](https://apptainer.org/docs/user/main/quick_start.html) for the full lifecycle—pull, build, execute—before running containers on ADA.
+:::
+
+::: {.callout-warning title="Run Apptainer on compute nodes"}
+Apptainer is only available on compute nodes. Start an interactive session or submit a SLURM job before running container commands.
+:::
+
+### Quick Start
+
+```sh
+[abc123@login1 ~]$ srun --pty --time=00:30:00 --cpus-per-task=2 bash
+[abc123@compute-node ~]$ apptainer --version
+apptainer version 1.4.2-1.el9
+[abc123@compute-node ~]$ apptainer pull docker://alpine:latest
+[abc123@compute-node ~]$ apptainer exec alpine_latest.sif cat /etc/os-release
+```
+
+The `alpine_latest.sif` file contains the immutably built image you can reuse in batch jobs.
+
+### Obtaining images
+
+There exsits some more widely-used images under `/ada-software/containers/`.
+Likely however, they won't be enough and you'll need to obtain other images onto your `$HOME` directory. 
+There are several ways to do so:
+
+- `apptainer pull docker://<image>` to download from Docker Hub or other registries.
+- Build from a definition file with `apptainer build` (supported on compute nodes).
+- Transfer a local `.sif` file to ADA via `scp` or `rsync`.
+
+When running in SLURM scripts, invoke `apptainer exec` directly inside the job steps.
+ Note that ADA disables `setuid` and `fakeroot`, so plan on unprivileged builds.
+ If you need special privileges when building, then you need to first build on your local machine and then transfer the `.sif` image onto ADA.  
+
+### When to choose Apptainer
+
+- Your workflow depends on exact system libraries not offered on ADA.
+- You need to reproduce an environment built elsewhere.
+- You are packaging complex stacks for collaborators or for publication.
+
+Expect a steeper learning curve compared to modules or Pixi, but gain portability and reproducibility.
+
+::: {.callout-tip collapse="true" title="Parallel (MPI) and GPU with Apptainer"}
+Minimal patterns for running distributed and GPU workloads from SLURM through Apptainer. See the official docs for full guidance.
+
+- MPI (distributed across tasks):
+  ```bash
+  #SBATCH --partition=<cpu-partition>
+  #SBATCH --time=00:30:00
+  #SBATCH --ntasks=4
+  #SBATCH --cpus-per-task=1
+
+  module load 2025
+  # Launch ranks with the host scheduler; enter the container per rank
+  srun apptainer exec /path/to/image.sif \ 
+       /path/in/container/my_mpi_program --arg foo
+  ```
+  - Build containers against an MPI implementation compatible with ADA’s stack, or follow the Apptainer guidance on binding host MPI into the container.
+  - References: Apptainer MPI docs: https://apptainer.org/docs/user/main/mpi.html
+
+- GPUs (NVIDIA):
+  ```bash
+  #SBATCH --partition=<gpu-partition>
+  #SBATCH --gres=gpu:1
+  #SBATCH --time=00:20:00
+
+  module load 2025
+  # Expose NVIDIA devices and libraries to the container
+  apptainer exec --nv /path/to/image.sif nvidia-smi
+  ```
+  - Use `--nv` to enable NVIDIA GPU passthrough (or `--rocm` for AMD if applicable).
+  - For framework runs (PyTorch/TensorFlow), add `--nv` and run your normal command inside the container.
+  - References: Apptainer GPU docs: https://apptainer.org/docs/user/main/gpu.html
+:::
+
+### References
+
+- [Apptainer user guide](https://apptainer.org/docs/user/main/quick_start.html)

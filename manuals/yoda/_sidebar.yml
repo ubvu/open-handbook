@@ -1,0 +1,44 @@
+website:
+  sidebar:
+    - id: sb-yoda # will show up automatically on pages referenced in contents.
+      style: floating
+      search: true
+      contents:
+        - manuals/yoda/index.qmd
+        - section: Yoda Portal
+          contents: 
+            - manuals/yoda/yoda_portal/introduction.qmd
+            - manuals/yoda/yoda_portal/notifications.qmd
+            - manuals/yoda/yoda_portal/sram_invitations_eduid_activation.qmd
+            - manuals/yoda/yoda_portal/logging_in.qmd
+            - manuals/yoda/yoda_portal/group_manager.qmd
+            - manuals/yoda/yoda_portal/index.qmd
+        - section: Using Yoda
+          contents:
+            - manuals/yoda/using_yoda/finding_restoring.qmd
+            - manuals/yoda/using_yoda/metadata.qmd
+            - manuals/yoda/using_yoda/workflow_metadata.qmd
+            - manuals/yoda/using_yoda/properties_and_explanation.qmd
+            - manuals/yoda/using_yoda/workflow_metadata_license.qmd
+        - section: Securing and Distributing Data
+          contents: 
+            - manuals/yoda/securing_distribution/vault_archive.qmd
+            - manuals/yoda/securing_distribution/vault_publish.qmd
+        - section: Data Access and Transfer
+          contents:
+            - manuals/yoda/data_access/introduction.qmd
+            - manuals/yoda/data_access/yoda_dap.qmd
+            - manuals/yoda/data_access/data_access_linux.qmd
+            - manuals/yoda/data_access/data_access_macos.qmd
+            - manuals/yoda/data_access/data_access_windows.qmd
+            - manuals/yoda/data_access/yoda_using_cyberduck.qmd
+            - manuals/yoda/data_access/yoda_using_cyberduck_cryptometer.qmd
+            - manuals/yoda/data_access/yoda_using_icommands.qmd
+            - manuals/yoda/data_access/yoda_using_rclone.qmd
+            - manuals/yoda/data_access/yoda_using_webdrive.qmd
+            - manuals/yoda/data_access/yoda_using_windowsexplorer.qmd
+            - manuals/yoda/data_access/yoda_using_winscp.qmd
+        - section: FAQ
+          contents: 
+            - manuals/yoda/faq/faq.qmd
+            - manuals/yoda/faq/known_issues.qmd

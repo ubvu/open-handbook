@@ -1,0 +1,139 @@
+---
+title: Slurm
+date: last-modified
+---
+
+SLURM is the heartbeat of ADA. It determines where and when your jobs run, what resources they can use (CPUs, memory, GPUs), and how you interact with those jobs. Mastering a few core commands and script options will unlock most of your workflow.
+
+::: {.callout-tip title="Read this first"}
+- Carpentries HPC lessons on scheduling: https://carpentries-incubator.github.io/hpc-intro/
+- SLURM quick start: https://slurm.schedmd.com/quickstart.html
+- sbatch reference: https://slurm.schedmd.com/sbatch.html
+- srun reference: https://slurm.schedmd.com/srun.html
+:::
+
+## Anatomy of a Job Script
+
+A typical SLURM batch script that requests resources and runs a Python program might look a bit like this:
+
+```bash
+#!/bin/bash
+#SBATCH --job-name=example
+#SBATCH --time=00:10:00
+#SBATCH --partition=defq
+#SBATCH --cpus-per-task=2
+#SBATCH --mem=4G
+#SBATCH --output=logs/%x-%j.out
+#SBATCH --error=logs/%x-%j.err
+
+module load 2025
+module load Python/3.12.3-GCCcore-13.3.0
+python myscript.py --input data/input.csv --out results/out.csv
+```
+
+::: {.callout-important title="Always include these"}
+- `--time` – wall-clock limit for the job.
+- `--partition` – the queue to target (use your department partition where possible).
+- `--cpus-per-task` – threads your program uses.
+- `--mem` (or `--mem-per-cpu`) – memory request appropriate for your workload. If not set, might get killed for exceeding default memory limits.
+:::
+
+Other options are also useful:
+
+- `--job-name` for easy ID in queues.
+- `--output`/`--error` files for logs; include `%j` (jobid) to keep them unique.
+
+Submit the job with:
+
+```sh
+sbatch job.sbatch
+```
+
+## Monitoring and Control
+
+- View your queued/running jobs:
+  ```sh
+  squeue -u $USER
+  ```
+- Inspect finished jobs and usage:
+  ```sh
+  sacct -j <jobid> --format=JobID,State,Elapsed,MaxRSS,CPUTime
+  ```
+- Cancel a job or all your jobs:
+  ```sh
+  scancel <jobid>
+  scancel -u $USER
+  ```
+- Stream logs while a job runs:
+  ```sh
+  tail -f slurm-<jobid>.out
+  ```
+
+## GPUs and Specialized Resources
+
+Request GPUs with the Generic RESources (GRES) flag and the appropriate partition:
+
+```bash
+#SBATCH --gpus=<count>
+```
+
+or if you want a specific GPU type:
+
+```bash
+#SBATCH --gres=gpu:<type>:<count>   # e.g. gpu:A30:1
+```
+
+If your workflow requires specific hardware features, use constraints:
+
+```bash
+#SBATCH --constraint=zen2           # exact
+#SBATCH --constraint="zen2|haswell" # any of the listed
+```
+
+To see what resources (GPU or otherwise) are available on ADA at any time, use the helper command below. For deeper exploration with SLURM’s native tools, consult the official `sinfo`/`scontrol` documentation.
+
+```sh
+/ada-software/ada-info.sh
+```
+
+That prints a live view of partitions, nodes, CPU/MEM, GPU models, and features to guide your requests.
+
+## Interactive Runs (compute nodes)
+
+For quick debugging on compute nodes, request an interactive shell via SLURM:
+
+```sh
+srun --pty --partition=<partition> --time=01:00:00 --cpus-per-task=2 bash
+```
+
+Use this for short tests only. For heavier interactive development and remote editors, use ADA’s dedicated interactive nodes (`inter01`–`inter04`) as described in the Quick Start.
+
+## Arrays and Dependencies
+
+Submit many similar tasks efficiently with arrays:
+
+```bash
+#SBATCH --array=0-99
+python train.py --fold ${SLURM_ARRAY_TASK_ID}
+```
+
+Chain jobs so one starts after another completes:
+
+```sh
+jid1=$(sbatch step1.sbatch | awk '{print $4}')
+sbatch --dependency=afterok:${jid1} step2.sbatch
+```
+
+See the SLURM docs for [job arrays](https://slurm.schedmd.com/job_array.html) and [dependencies](https://slurm.schedmd.com/sbatch.html#OPT_dependency).
+
+## Storage and I/O Tips
+
+Keep `$HOME` for configuration and small files; use `/scratch/<VUNETID>/` for working data on the nodes themselves. 
+
+## Quick Reference
+
+- Submit: `sbatch job.sbatch`
+- Queue: `squeue -u $USER`
+- Account: `sacct -j <jobid> --format=JobID,State,Elapsed,MaxRSS,CPUTime`
+- Cancel: `scancel <jobid>` (or all: `scancel -u $USER`)
+- Interactive: `srun --pty --partition=<p> --time=01:00:00 bash`

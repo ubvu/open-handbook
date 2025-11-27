@@ -1,0 +1,44 @@
+---
+title: Data access on MacOS
+categories: []
+---
+
+There are 2 basic ways to access Yoda data from a Mac: [Mounting the Yoda WebDAV interface in finder](#mounting-the-yoda-network-disk-in-finder) or via file transfer tools, in which case we recommend [Cyberduck](/manuals/yoda/data_access/yoda_using_cyberduck.qmd). Which one works best depends on your workflow.
+
+For more information on how to configure Cyberduck consider reading the Cyberduck page. 
+
+## Mounting the Yoda WebDAV in Finder
+
+1. You can open the Yoda WebDAV interface using the Finder app. By default, the Finder icon is shown in the bottom left corner of your screen, in the Dock. Click on this icon. 
+
+![Finder icon](/public/manuals/yoda/macos-finder.jpg)
+
+If you don't see the Finder icon, you can alternatively start Finder by pressing the command key and the space bar, then typing "finder" and pressing enter.
+
+2. Now press the command key and the "K" key to connect to the Yoda server. You should now see this dialog:
+
+![Connect to server dialog](/public/manuals/yoda/macos-connect-server.png)
+
+3. Enter https://data.yoda.vu.nl/ as server address.
+
+The Finder app will show a confirmation dialog, similar to the one below. The address shown in the dialog should be the address you entered in the previous dialog.
+
+![Connect to server confirmation dialog](/public/manuals/yoda/macos-connect-continue.jpg)
+
+4. Press the Connect button. 
+
+![Connect to server confirmation dialog](/public/manuals/yoda/macos-connect-credentials.jpg)
+
+You should now see a credentials dialog. The "Connect as" setting should be set to "Registered user".
+"Name" should be your email address. 
+
+4. Create a [Data Access Password](/manuals/yoda/data_access/yoda_dap.qmd) and copy it to the Password field. Tick the checkbox &ldquo;Remember this password
+in my keychain&rdquo;.  Click on the connect button.
+
+You should now have a new Yoda location in Finder. Its name is the network address you entered before. You may have to scroll down in finder in order to see it.
+
+![Connect to server credentials dialog](/public/manuals/yoda/macos-finder-screen.png)
+
+## Using Rclone
+
+Rclone is a command-line program to manage files on cloud storage. It is a feature-rich alternative to cloud vendors’ web storage interfaces. Over 40 cloud storage products support rclone including S3 object stores, business & consumer file storage services, as well as standard transfer protocols.

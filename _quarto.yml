@@ -12,23 +12,20 @@ website:
   page-navigation: true
   bread-crumbs: true
   sidebar:
-    - id: sb-yoda # will show up automatically on pages referenced in contents.
-      style: floating
-      search: true
-      contents:
-        - manuals/yoda/index.qmd
-        - section: Yoda Portal
-          contents: manuals/yoda/yoda_portal/*.qmd # Note the sorting is by filename
-        - section: Data Transfer
-          contents: manuals/yoda/yoda_data_transfer/*.qmd
     - id: sb-ada
       style: floating
       search: true
       contents:
         - manuals/ada/index.qmd 
         # - auto: manuals/ada/**/*.qmd # works, but is in the wrong order
-        - section: Getting Started
-          contents: manuals/ada/getting-started/**/*.qmd
+        - manuals/ada/login.qmd
+        - manuals/ada/quick-start.qmd
+        - manuals/ada/software.qmd
+        - manuals/ada/slurm.qmd
+        - manuals/ada/hardware.qmd
+        - manuals/ada/open-ondemand.qmd
+        - manuals/ada/yoda.qmd
+        - manuals/ada/help.qmd
         - section: Code Examples
           contents: manuals/ada/code-examples/**/*.qmd
     - id: sb-scistor
@@ -115,3 +112,6 @@ filters:
   - utils/linktarget.lua
 execute:
   freeze: auto
+
+metadata-files: 
+  - manuals/yoda/_sidebar.yml

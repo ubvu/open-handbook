@@ -1,0 +1,39 @@
+---
+title: Data access on Windows
+categories: []
+---
+
+There are 2 basic ways to access the Yoda WebDAV interfacek from Windows. 
+Using a tool to mount the Yoda Disk as a drive letter or file transfer tools. Which one works best
+ depends on your workflow.
+ 
+### File transfer
+There are numerous free file transfer tools. Using these tools you must download the files you want to work on to 
+your computer and upload the changes. This way of working is more stable and robust. 
+
+- [Cyberduck](/manuals/yoda/data_access/yoda_using_cyberduck.qmd) is a free file transfer tool for Mac and Windows. Cyberduck is the preferred
+way to access the Yoda Disk. There is also a paid addon "Mountainduck" which adds functionality to access via a drive 
+letter.
+
+- [WinSCP](/manuals/yoda/data_access//yoda_using_winscp.qmd) is an alternative free file transfer tool.
+
+### Drive letter
+Using these tools you can access the Yoda Disk via a drive letter.
+
+- [WebDrive](/manuals/yoda/data_access/yoda_using_webdrive) is a VU-supported method to remotely access files and can also be used on "green"
+pc's.
+
+- Directly in [Windows Explorer](/manuals/yoda/data_access/yoda_using_windowsexplorer.qmd). However, this has restrictions: a maximum
+file size of 4GB on Windows 11 and 50MB(!) on Windows 10 and a maximum of 1000 files per folder (Windows 10&11). Take care if you expect your dataset to exceed these limitations.
+
+### Commandline and Rclone
+If you are familiar with commandline tools [rclone](/manuals/yoda/data_access/yoda_using_rclone.qmd) is also a good option to access the Yoda via Webdav. It also provides the option to use a drive letter.
+
+### Webdrive
+Windows users can use WebDrive to access their data, as an alternative to the native WebDAV client. With WebDrive the Yoda WebDAV interface can be connected via as a drive in Windows Explorer.
+
+### Windows Explorer
+Windows users can also access their data directly via Windows Explorer. This option is only suitable for smaller datasets.
+
+### WinSCP
+WinSCP provides a reliable file transfer solution. It allows users to securely download and upload files to Yoda. This option is suitable for large and complex datasets.

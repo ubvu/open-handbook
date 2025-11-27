@@ -1,0 +1,73 @@
+---
+title: Getting help
+date: last-modified
+---
+
+## Before You Ask
+
+::: {.callout-warning title="Start here"}
+- Read the ADA manual sections relevant to your issue first.
+- You are expected to know basic Bash and HPC concepts. See: [Unix Shell](https://swcarpentry.github.io/shell-novice/) and [HPC Introduction](https://carpentries-incubator.github.io/hpc-intro/).
+- For software management options, consult [Software on ADA](./software.qmd).
+:::
+
+## Scope and Expectations
+
+What we support:
+
+- ADA‑specific issues (login/access problems, scheduler anomalies on ADA, storage mount issues, module stack problems, etc), and suggestions that improve ADA for many users.
+
+What we do not support:
+
+- Software installs: we do not take one‑off install requests unless they benefit the broader ADA user base. Use modules, Pixi, Conda, or Apptainer for project‑specific stacks.
+- Out of scope: teaching programming, Bash, or SLURM basics; debugging your research code; building bespoke environments for a single project. Use the linked learning resources and upstream documentation.
+
+## How to Submit a Good Ticket
+
+Submit via the 🔒 VU Service Portal or email [itvo.it@vu.nl]. Include a clear subject and the details below.
+
+::: {.callout-tip title="Copy‑paste template"}
+```
+Summary
+  Short description of the problem.
+
+What I tried
+  Exact commands run (copy/paste), scripts used, and any changes recently made.
+
+Expected vs. actual
+  What you expected to happen, and what happened instead.
+
+Reproduction steps (minimal)
+  Smallest example that fails, with steps someone else can run.
+
+Context
+  - Login or node hostnames involved
+  - Partition/QoS used
+  - Job IDs: <jobid1>, <jobid2>
+  - Software method: modules / Pixi / Conda / Apptainer
+  - Relevant versions (e.g., `module list`, `pixi --version`, `conda --version`, `apptainer --version`)
+
+Artifacts (attach as files or paste snippets)
+  - SLURM script (`.sbatch`) and job output (slurm-<jobid>.out)
+  - Command output and full error messages
+  - `module list` output inside the job
+  - If using containers: image name, how it was built, and the `apptainer exec ...` command
+```
+:::
+
+## Helpful Diagnostics
+
+Include small, relevant command output instead of screenshots where possible:
+
+- Queue/accounting excerpts for the affected jobs (`squeue`, `sacct`).
+- The exact `sbatch` script and `slurm-<jobid>.out` content.
+- `module list` inside the job environment, or your Pixi/Conda environment details.
+
+## Documentation Feedback
+
+- Found a typo, missing page, or confusing section? Please open an issue in the handbook’s issue tracker with:
+  - Page path (for example `manuals/ada/software.qmd`) and what needs to change
+  - A suggested fix or the exact text that confused you
+  - Optional: a PR if you already made the change
+
+If you prefer, you can also email [itvo.it@vu.nl] with the same details and we will triage it.

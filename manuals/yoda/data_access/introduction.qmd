@@ -1,0 +1,30 @@
+---
+title: Before getting started
+description: This page provides an overview of the 3 main ways to transfer data to and from Yoda.
+categories: []
+---
+
+Note that creating a [data access password](./yoda_dap.qmd) is necessary to transfer data from and to Yoda.
+You can transfer files to and from Yoda dependent on the size of the file: 
+
+- Via the Yoda Portal, upload via Drag & Drop, download inviduals files.
+
+This method works fine if you need to upload small amounts of data. 
+
+- For transferring larger amounts of data (tens of GB) it is better to use the WebDAV interface.
+
+There are several methods to access Yoda data via WebDAV, they depend on the Operating System you are using:
+
+  * [Accessing Yoda data on Windows](/manuals/yoda/data_access/data_access_windows.qmd)
+  * [MacOS](/manuals/yoda/data_access/data_access_macos.qmd)
+  * [Linux](/manuals/yoda/data_access/data_access_linux.qmd)
+
+Note that performance of WebDAV is limited, especially when transferring a large amount of files. 
+
+- For transferring large amounts of date (>100GB) consider using direct access to iRODS. 
+
+A direct iRODS connection offers better performance by enabling multi-threaded transfers and the option to compare checksums.
+
+Power users who are comfortable with command line tools can use the [iRODS icommands](/manuals/yoda/data_access/yoda_using_icommands.qmd) to
+interact with the iRODS backend of Yoda directly.
+

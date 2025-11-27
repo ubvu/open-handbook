@@ -1,0 +1,20 @@
+---
+title: Hardware and resources
+date: last-modified
+---
+
+This page is intentionally minimal. Cluster hardware changes over time and any static list becomes stale. For an up‑to‑date view of resources and features available to you, use the live helper below.
+
+::: {.callout-warning title="Live resource view"}
+Run on ADA to see nodes, partitions, states, CPU/MEM, GPU models, and features available to you:
+
+```sh
+/ada-software/ada-info.sh
+```
+:::
+
+Tips
+
+- Prefer your departmental partition first; use `defq` only when necessary.
+- For GPU needs, check the GPU column in the helper output and request matching types via SLURM `--gres` (see the SLURM page).
+- For constraints, match the `FEATURES` column (for example `zen2`, `highmem`) with `#SBATCH --constraint=...`.

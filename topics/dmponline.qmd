@@ -1,0 +1,91 @@
+---
+title: DMPonline
+categories: [Tools]
+---
+
+## What is it?
+
+DMPonline is an online platform that enables researchers to create, manage, and share [Data Management Plans](../topics/data-management-plan.qmd) (DMPs). VU Amsterdam offers [DMPonline](https://dmponline.vu.nl/) as the institutional online tool for writing Data Management Plans. The platform provides structured templates to help researchers address data collection, legal and ethical requirements, storage, preservation, documentation, and responsibilities and resources throughout the research lifecycle.
+
+## What can it be used for?
+
+DMPonline can be used for:
+
+- **Writing Data Management Plans**: Create comprehensive DMPs that meet funder and institutional requirements, using guidance in the tool that supports the writing process.
+- **Collaborative planning**: Work together with colleagues, data stewards, and other stakeholders on DMP development.
+- **Feedback and review**: Request feedback from faculty data stewards or RDM Support Desk colleagues.
+- **VU DMP template**: Use the VU DMP template to write a comprehensive DMP (accepted by NWO, ZonMw and ERC).
+- **Export function**: Export DMPs in different formats that can be submitted to funders or other stakeholders.
+- **GDPR registration**: Register personal data processing activities to comply with VU Amsterdam's GDPR requirements. You can read how to do this in the guide [How can you comply with the GDPR?](https://rdm.vu.nl/guides/comply-with-gdpr.html#register-your-processing-activities).
+
+## How to request access
+
+VU Amsterdam researchers can access DMPonline at [https://dmponline.vu.nl/](https://dmponline.vu.nl/). If you have a VUnetID, you can log in with your VU credentials. You can also create an account yourself.
+
+## Are there costs involved?
+
+DMPonline is provided free of charge to all VU Amsterdam researchers as part of the university's research data management services.
+
+## Getting started
+
+To be able to work in DMPonline, you need an account.
+
+### Logging in with VU credentials
+
+If you have VU credentials, you can use Single Sign-on (SSO) to log in to DMPonline. If you opt for this possibility, you can log in with your VU email address and password. Follow the steps below.
+
+1. On the welcome page, click on `Sign in with your institutional credentials`
+
+    ![Screenshot of welcome page of DMPonline, pointing to option to sign in with institutional credentials](../public/dmponline/sign-in-vu-credentials.png)
+
+2. If you visist DMPonline for the first time, you have to enter `vrije universiteit amsterdam`, select the entry that appears and click `Continue`
+
+    ![Screenshot of sign in page of DMPonline in which you can enter and select Vrije Universiteit Amsterdam as organisation](../public/dmponline/sso-select-vu.png)
+
+    If have have logged in via SSO before, you will see the VU logo and you can click that to access your DMPonline account.
+
+    ![Screenshot of sign in page of DMPonline in which you can select Vrije Universiteit Amsterdam as organisation by clicking the logo](../public/dmponline/sso-select-vu-logo.png)
+
+3. If you are not logged in in other VU systems through your browser, you will be prompted to the VU login page, where you can enter your VUnetID and password. If you are logged in in other VU systems in your browser, DMPonline will recognise your credentials and you will be led to your DMPonline dashboard immediately.
+
+### Creating an account
+
+Instead of using SSO to log in, you can also create an account yourself. This is possible both with a VU email address and other email addresses.
+
+#### Creating an account with VU or ACTA email address
+
+If you want to use your VU email address for DMPonline, but for some reason don't want to use SSO, you can also create an account yourself based on your VU email address. You can follow the steps below.
+
+1. On the welcome page, click `Create account` at the right top of the screen.
+
+    ![Screenshot of welcome page of DMPonline, pointing to Create account](../public/dmponline/create-account.png)
+
+2. Enter your **VU or ACTA email address**, add the other details, and **make sure to select `Vrije Universiteit Amsterdam` as organisation**. This will enable you to select the VU templates.
+
+    ![Screenshot of DMPonline page for creating an account based on a VU email address](../public/dmponline/create-account-select-vu.png)
+
+#### Creating an account with a non-VU email address
+
+If you don't have a VU email address, you can create an account with another email address. You can follow the steps below. Note that, currently, the VU templates are not available when you create an account like this. If you need the VU template, reach out to the [RDM Support Desk](mailto:rdm@vu.nl).
+
+1. On the welcome page, click `Create account` at the top right of the screen.
+
+    ![Screenshot of welcome page of DMPonline, pointing to Create account](../public/dmponline/create-account.png)
+
+2. Enter your email address and add the other details. In this situation, you can only select `Other` for organisation.
+
+    ![Screenshot of DMPonline page for creating an account based on a non-VU email address](../public/dmponline/create-account-select-other-organisation.png)
+
+### More detailed instructions
+
+DMPonline has built-in guidance and example answers for the questions in the VU DMP template. You can use this guidance when writing your DMP.
+
+The guide [How can you set up research data management from the start?](https://rdm.vu.nl/guides/plan-and-design.html#data-management-plan) contains more specific instructions on selecting the right template for your DMP or GDPR registration.
+
+The [Help page in DMPonline](https://dmponline.vu.nl/help) explains the functionality of the tool, including how to share and download DMPs and how to request feedback.
+
+## Contact
+
+If you have questions about DMPonline or encounter problems when using the tool, send an email to [rdm@vu.nl](mailto:rdm@vu.nl).
+
+For questions specifically related to GDPR registration, reach out to your faculty's 🔒[Privacy Champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information), who can provide specialised guidance for your research context.

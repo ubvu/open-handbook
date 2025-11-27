@@ -1,0 +1,136 @@
+---
+title: Quick start on ADA
+date: last-modified
+---
+
+## Prerequisites
+
+::: {.callout-warning title="Do this first"}
+
+- Complete the Carpentries [Unix Shell](https://swcarpentry.github.io/shell-novice/) and [HPC Introduction](https://carpentries-incubator.github.io/hpc-intro/) lessons (or have equivalent command-line and scheduler experience).
+- Make sure you configured your SSH access as documented in [Login & Access](./login.qmd) so you can connect to ADA with a single `ssh ada-login`.
+
+:::
+
+## Overview
+
+This quick-start guide covers three ways to work on ADA:
+
+- Login Nodes — lightweight access for job submission and management.
+- Interactive Nodes — more resources for heavier interactive work and remote development.
+- Open OnDemand — browser-based terminal, file management, and interactive apps.
+
+## Login Nodes: Launchpad for Batch Work
+
+### Connect
+
+With your SSH configuration in place, open a session on a login node:
+
+```sh
+ssh ada-login
+```
+
+You will land within your home directory (`$HOME`) on SciStor. This is your persistent storage area for configuration files, datasets, etc. This folder is shared across all ADA nodes.
+
+Login nodes are for lightweight tasks only—editing scripts, managing files, preparing SLURM submissions. Do **not** run VS Code Server, Jupyter, container builds, or heavy computations here. Use interactive nodes or Open OnDemand for those workloads.
+
+::: {.callout-danger title="Strict rule on login nodes"}
+No notebooks, VS Code Server, heavy compiles, or long-running jobs on login nodes.
+:::
+
+See the [software overview](./software.qmd) for managing applications and environments.
+
+### Submit a Batch Job
+
+To actually run your computations, you need to submit jobs to the SLURM scheduler.
+For SLURM jobs, you need to specify resources (memory, CPU, walltime), partition and additional devices (GPUs) you require. 
+SLURM will then allocate resources and run your job on appropriate compute nodes once they are free. 
+Please see the [SLURM essentials](./slurm.qmd) page for ADA-specific options and best practices.
+
+Here we will create and submit a simple SLURM script from the login node:
+
+```sh
+cat > hello.sbatch <<'EOF'
+#!/bin/bash
+#SBATCH --job-name=hello
+#SBATCH --time=00:02:00
+#SBATCH --partition=defq
+#SBATCH --cpus-per-task=1
+
+module load 2025
+module load Python/3.12.3-GCCcore-13.3.0
+python - <<'PYCODE'
+print("Hello from ADA!")
+PYCODE
+EOF
+
+sbatch hello.sbatch
+```
+where we requested a single CPU and requested to run on the general use `defq` partition. 
+If you have access to department specific partitions, please use those instead as `defq` resources are pitifully limited.
+
+You can monitor progress with `squeue -u <VUNETID>` and inspect the output in `slurm-<jobid>.out`. More SLURM patterns and best practices are in [SLURM essentials](./slurm.qmd).
+
+### Track and Inspect Jobs
+
+- Live queue view:
+  ```sh
+  squeue -u <VUNETID>
+  ```
+- Finished job summary:
+  ```sh
+  sacct -j <jobid> --format=JobID,State,Elapsed,MaxRSS,CPUTime
+  ```
+- Stream output while a job runs:
+  ```sh
+  tail -f slurm-<jobid>.out
+  ```
+
+### Move Data
+
+There are times when you will need to transfer data from your local machine/some server onto ADA.
+For that, you can use the the same SSH proxy configuration for secure copy `scp`. 
+
+For example, copying a `results.txt` onto the ADA cluster is:
+```sh
+scp results.txt ada-login:~/project/
+```
+
+And likewise copying files from the cluster onto your local machine is: 
+```sh
+scp ada-login:~/project/output.dat .
+```
+
+Prefer `rsync` for larger transfers or frequent syncs.
+
+## Interactive Nodes: Development Sandbox
+
+ADA provides dedicated interactive nodes (`inter01`–`inter04`) for heavier interactive workloads, prototyping, and remote development.
+
+### Connect
+
+```sh
+ssh inter01
+```
+
+You’ll land on a node with more generous CPU/RAM allocations and relaxed limits for tools such as VS Code Server, Jupyter, or data preparation workflows. These nodes share the same file systems and SLURM access as the login nodes.
+
+### Usage Guidelines
+
+- Always remain considerate: terminate idle services, keep resource usage aligned with your allocation, and fall back to batch jobs for long-running production workloads.
+- Submit SLURM jobs from interactive nodes exactly as you would from a login node if you prefer to keep your development environment and job submission together.
+- Use SSH tunnels to expose VS Code, Jupyter, or other services securely back to your workstation.
+
+## Open OnDemand: Browser-Based Access
+
+Open OnDemand offers a web portal with terminal access, file management, and launchers for interactive applications. Use it when you prefer a graphical interactive workflow or cannot configure SSH locally.
+
+Access it at [ondemand.labs.vu.nl](https://ondemand.labs.vu.nl).
+
+::: {.callout-warning title="Access requirement"}
+Open OnDemand is only reachable on campus or via the VU VPN.
+:::
+
+- Supports launching desktop-style sessions, JupyterLab, and VS Code directly from your browser.
+- Respects the same quotas and scheduling policies as SSH sessions.
+- More documentation and ADA-specific features are described in [Open OnDemand](./open-ondemand.qmd).
