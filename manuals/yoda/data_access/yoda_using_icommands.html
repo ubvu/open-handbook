@@ -488,6 +488,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="installing-irods-icommands">Installing iRODS iCommands</h2>
 <p>Native iRODS iCommands packages are available for CentOS and Ubuntu.</p>
 <p>Windows 10/11 users can run the iCommands in <a href="https://docs.microsoft.com/en-us/windows/wsl/about" target="_blank">the Windows Subsystem for Linux</a>. There is no officially supported iCommands installation for Mac OSX, you could install the iCommands inside a Linux VM.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>gocommands</strong> is an alternative command-line client you could try if your OS does not support iCommands.</p>
+<p>The <code>readme.md</code> on the <a href="https://github.com/cyverse/gocommands" target="_blank">github repository</a> has installation instructions. You can find the details of creating the irods environment file <a href="#environment-file">below</a>. Once installed you can execute common iCommands as <code>gocmd &lt;command&gt;</code>, e.g.&nbsp;<code>gocmd init</code>, <code>gocmd ls</code>, <code>gocmd get</code>, <code>gocmd put</code>, <code>gocmd rsync</code>.</p>
+</div>
+</div>
 <section id="installing-icommands-on-centos" class="level3">
 <h3 class="anchored" data-anchor-id="installing-icommands-on-centos">Installing iCommands on CentOS</h3>
 <p>The following should work to install the iCommands on CentOS 8.</p>
