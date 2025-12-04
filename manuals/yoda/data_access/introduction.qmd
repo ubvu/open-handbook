@@ -16,12 +16,12 @@ This method works fine if you need to upload small amounts of data.
 There are several methods to access Yoda data via WebDAV, they depend on the Operating System you are using:
 
   * [Accessing Yoda data on Windows](/manuals/yoda/data_access/data_access_windows.qmd)
-  * [MacOS](/manuals/yoda/data_access/data_access_macos.qmd)
-  * [Linux](/manuals/yoda/data_access/data_access_linux.qmd)
+  * [Accessing Yoda data on MacOS](/manuals/yoda/data_access/data_access_macos.qmd)
+  * [Accessing Yoda data on Linux](/manuals/yoda/data_access/data_access_linux.qmd)
 
 Note that performance of WebDAV is limited, especially when transferring a large amount of files. 
 
-- For transferring large amounts of date (>100GB) consider using direct access to iRODS. 
+- For transferring large amounts of data (>100GB) consider using direct access to iRODS. 
 
 A direct iRODS connection offers better performance by enabling multi-threaded transfers and the option to compare checksums.
 
