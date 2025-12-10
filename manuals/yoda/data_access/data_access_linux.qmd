@@ -42,7 +42,6 @@ sudo yum -y install davfs2
 ```
 
 ### Configuring group membership
-
 1. Look up your user name, uid and gid using the `id` command.
 
 2. Add your user account to the davfs2 group: `sudo usermod -aG davfs2 user` (replace &ldquo;user&rdquo; with your user name).
@@ -50,7 +49,6 @@ sudo yum -y install davfs2
 3. Close the terminal window and open a new one to activate the group change.
 
 ### Configuring Davfs2
-
 1. Open the davfs2 configfile in a text editor (e.g. `sudo vi /etc/davfs2/davfs2.conf`). Ensure
 parameter *delay_upload* is set to 0 (zero). This limits the risk of data loss from a failure to flush data after
 large file transfers.
@@ -87,11 +85,12 @@ rm secrets
 The disk should be mounted automatically after a reboot if you have configured the `auto` option in `/etc/fstab`.
 
 To manually mount the Yoda WebDAV interface:
+
 - On Debian/Ubuntu: `mount /mnt`
 - On RedHat/CentOS/Fedora: `sudo mount /mnt` (you can ignore any warnings about writing to the mtab file)
 
 ## Using Rclone
 As an alternative you could use [rclone](./yoda_using_rclone.qmd), it offers some useful functionalities to transfer larger ammounts of files via the WebDAV protocol.
 
-## using irods CLI tools
-Since Yoda is based on iRODS technology, it is possible to transfer data to and from Yoda using the iRODS communication protocol. This protocol can be used to transfer large amounts of data in an efficient way. [CLI tools](./yoda_using_icommands.qmd) are available for Linux.
+## Using irods command-line tools
+Since Yoda is based on iRODS technology, it is possible to transfer data to and from Yoda using the iRODS communication protocol. This protocol can be used to transfer large amounts of data in an efficient way. [Command-line tools](./yoda_using_icommands.qmd) are available for Linux.
