@@ -17,7 +17,7 @@ Cyberduck is desktop software for Microsoft Windows and Apple macOS that can be 
 
 ![](/public/manuals/yoda/cbd-startmenu.png)
 
-## Configuring Cyberduck
+## How To: Configuring Cyberduck
 
 <!--
 ### Accessing Cyberduck's settings
@@ -41,23 +41,21 @@ Close the settings by clicking the x on the top right of the window.
 
 ### Create a new secure WebDAV (HTTPS) connection to Yoda (bookmark)
 
-First create a new bookmark by pressing the + button on the lower left side of the screen.
+1. First create a new bookmark by pressing the + button on the lower left side of the screen.
 
 ![](/public/manuals/yoda/cbd-add-bookmark.png)
 
-You will now see a new connection page:
+2. You will now see a new connection page:
 
 ![](/public/manuals/yoda/cbd-new-connection.png)
 
-Click on the "FTP (File Transfer Protocol)" dropdown list and select a **WebDAV (HTTPS)** connection
+3. Click on the "FTP (File Transfer Protocol)" dropdown list and select a **WebDAV (HTTPS)** connection and you will see the WebDAV (HTTPS) connection page.
 
 ![](/public/manuals/yoda/cbd-new-connection-webdav.png)
 
-and you will see the WebDAV (HTTPS) connection page.
-
 ![](/public/manuals/yoda/cbd-new-webdav.png)
 
-Fill in the following information in the appropriate blocks
+4. Fill in the following information in the appropriate blocks
 
 First generate a [Data Access Password](/manuals/yoda/data_access/yoda_dap.qmd). 
 
@@ -65,51 +63,53 @@ First generate a [Data Access Password](/manuals/yoda/data_access/yoda_dap.qmd).
 - Username: your email address
 - Password: paste (CTRL-v) the data access password you created in the portal. 
 
-Cyberduck uses your home folder as a default directory to download files. This can be changed by clicking on "More Options" and choosing a new folder
+5. Cyberduck uses your home folder as a default directory to download files. This can be changed by clicking on "More Options" and choosing a new folder
 
 ![](/public/manuals/yoda/cbd-new-webdav-options.png)
 
-You have successfully created a bookmark, close the editing window by clicking on the R X button on the top right of the edit window to return to the main Cyberduck screen.
+6. You have successfully created a bookmark, close the editing window by clicking on the R X button on the top right of the edit window to return to the main Cyberduck screen.
 
-### Connecting to Yoda
+### How To: Connecting to Yoda
 
-The main screen shows all the connections (bookmarks) you have defined. To connect, double click on the bookmark (in this case "data.yoda.vu.nl - WebDAV (HTTPS)") and you will be connected.
+The main screen shows all the connections (bookmarks) you have defined. 
+
+1. To connect, double click on the bookmark (in this case "data.yoda.vu.nl - WebDAV (HTTPS)") and you will be connected.
 
 ![](/public/manuals/yoda/cbd-main-bookmark.png)
 
-If you did not fill in your password in the bookmark you will be asked to do so now. Please note, "Save password" is automatically selected by Cyberduck, you may decide to (un)check this option. Fill in your vunet-id password and click " **Login**" to connect.
+2. If you did not fill in your password in the bookmark you will be asked to do so now. Please note, "Save password" is automatically selected by Cyberduck, you may decide to (un)check this option. Fill in your vunet-id password and click " **Login**" to connect.
 
 ![](/public/manuals/yoda/cbd-login-screen.png)
 
-If your login unexpectedly fails, please check if your [data access password](/manuals/yoda/data_access/yoda_dap.qmd) is still valid.
+- If your login unexpectedly fails, please check if your [data access password](/manuals/yoda/data_access/yoda_dap.qmd) is still valid.
 
 You should now see your project directory in an explorer like window:
 
 ![](/public/manuals/yoda/cbd-project-folders.png)
 
-## Working with Yoda folders and uploading/downloading files
+## How To: Working with Yoda folders and uploading/downloading files
 
-Click on a \> to open a folder,
+1. Click on a \> to open a folder,
 
 ![](/public/manuals/yoda/cbd-folder-navigate-1.png)
 
-or double click to open in the main window.
+- or double click to open in the main window.
 
 ![](/public/manuals/yoda/cbd-folder-navigate-2.png)
 
-Use the left, right and up arrows to navigate the directory tree and right click on the main window to create a new folder:
+2. Use the left, right and up arrows to navigate the directory tree and right click on the main window to create a new folder:
 
 ![](/public/manuals/yoda/cbd-folder-create.png)
 
-Alternatively, drag-and-drop folders and files from Windows Explorer to your Yoda project folders:
+- Alternatively, drag-and-drop folders and files from Windows Explorer to your Yoda project folders:
 
 ![](/public/manuals/yoda/cbd-folder-drag-and-drop.png)
 
-In either case, once copying has started you should see the transfer window. Keep this open until the transfer is complete. 
+3. In either case, once copying has started you should see the transfer window. Keep this open until the transfer is complete. 
 
 ![](/public/manuals/yoda/cbd-file-file-transfer.png)
 
-Alternatively, the context menu (activate by right clicking on a Yoda project file/directory) has a number of options for uploading, downloading and synchronizing files and folders:
+- Alternatively, the context menu (activate by right clicking on a Yoda project file/directory) has a number of options for uploading, downloading and synchronizing files and folders:
 
 ![](/public/manuals/yoda/cbd-file-right-click.png)
 
