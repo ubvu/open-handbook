@@ -69,11 +69,14 @@ https://data.yoda.vu.nl  /mnt davfs user,auto,uid=1000,gid=1000 0 0
 
 5. Now use a text editor to create a secrets file, which contains your Yoda WebDAV URL, Yoda user name and password, separated by spaces.
 If you are an employee or student at Vrije Universiteit, your user name is your VU email address (in lowercase) and your password
-is your [Data Access Password](/manuals/yoda/data_access/yoda_dap.qmd). External users have usually received their user name via email, along with a link to set their password. 
+is your [Data Access Password](/manuals/yoda/data_access/yoda_dap.qmd).
+
 Example of a secrets file: 
 ```conf
 https://data.yoda.vu.nl xxx@vu.nl  myDataAccessPassword
 ```
+Remember that you will need to replace the password when it expires.
+
 6. You need to escape any backslashes and double quotes in your password with a backslash (e.g. use `\\` instead of `\`).
 
 7. Install this secrets file as the global davfs2 secrets file:
@@ -89,7 +92,7 @@ To manually mount the Yoda WebDAV interface:
 - On Debian/Ubuntu: `mount /mnt`
 - On RedHat/CentOS/Fedora: `sudo mount /mnt` (you can ignore any warnings about writing to the mtab file)
 
-## Using Rclone
+## Using rclone
 As an alternative you could use [rclone](./yoda_using_rclone.qmd), it offers some useful functionalities to transfer larger ammounts of files via the WebDAV protocol.
 
 ## Using irods command-line tools
