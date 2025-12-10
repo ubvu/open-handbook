@@ -58,7 +58,9 @@ large file transfers.
 2. Open the /etc/fstab file in a text editor (e.g. `sudo vi /etc/fstab`) and add a configuration
 line for Yoda:
 
-`https://data.yoda.vu.nl  /mnt davfs user,auto,uid=1000,gid=1000 0 0`
+```conf
+https://data.yoda.vu.nl  /mnt davfs user,auto,uid=1000,gid=1000 0 0
+```
 
 3. And adjust the parameters as needed:
 - If you'd like to mount the Yoda in a different location, replace `/mnt` with a different local directory.
@@ -71,7 +73,7 @@ line for Yoda:
 If you are an employee or student at Vrije Universiteit, your user name is your VU email address (in lowercase) and your password
 is your [Data Access Password](/manuals/yoda/data_access/yoda_dap.qmd). External users have usually received their user name via email, along with a link to set their password. 
 Example of a secrets file: 
-```
+```conf
 https://data.yoda.vu.nl xxx@vu.nl  myDataAccessPassword
 ```
 6. You need to escape any backslashes and double quotes in your password with a backslash (e.g. use `\\` instead of `\`).
