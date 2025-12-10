@@ -3,9 +3,9 @@ title: Data access on Linux
 categories: []
 ---
 
-You can connect to the Yoda WebDav interface by either using GNOME or davfs2.
+This page explains how to connect to the Yoda WebDav interface by either using GNOME Files or davfs2.
 
-## How to: Connecting to the Yoda WebDAV interface using GNOME files
+## Connecting to the Yoda WebDAV interface using GNOME files
 GNOME users can connect to the Yoda WebDAV interface with GNOME Files (also known as Nautilus in older versions of GNOME).
 
 ![GNOME Files address bar](/public/manuals/yoda/gnome-files-address.png)
@@ -18,11 +18,8 @@ GNOME users can connect to the Yoda WebDAV interface with GNOME Files (also know
 
 3. Click on the Connect button.
 
-
-## How to: Connecting to the Yoda WebDAV interface using davfs2
-This page describes how to connect to the Yoda WebDAV interface on a Linux system using davfs2. It assumes familiarity
-with using commandline tools. The instructions are suitable for RedHat-based distributions (e.g. Fedora or CentOS) and for
-Debian-based distributions (e.g. Ubuntu).
+## Connecting to the Yoda WebDAV interface using davfs2
+This section describes how to connect to the Yoda WebDAV interface on a Linux system using davfs2. It assumes familiarity with command-line tools. The instructions are suitable for RedHat-based distributions (e.g. Fedora or CentOS) and for Debian-based distributions (e.g. Ubuntu).
 
 ### Installing the package
 1. Install the davfs2 package.
