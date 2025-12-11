@@ -505,13 +505,19 @@ Tip
 <section id="installing-icommands-on-centos" class="level3">
 <h3 class="anchored" data-anchor-id="installing-icommands-on-centos">Installing iCommands on CentOS</h3>
 <p>The following should work to install the iCommands on CentOS 8.</p>
-<p>First add the package source:</p>
+<ol type="1">
+<li>First add the package source:</li>
+</ol>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> yum <span class="at">-y</span> install wget epel-release yum-plugin-versionlock</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> rpm <span class="at">--import</span> https://packages.irods.org/irods-signing-key.asc</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> <span class="at">-qO</span> <span class="at">-</span> https://packages.irods.org/renci-irods.yum.repo <span class="kw">|</span> <span class="fu">sudo</span> tee /etc/yum.repos.d/renci-irods.yum.repo</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Note that the latest irods version is 5, this client is not compatible with the Yoda irods version.You can list the available versions with:</p>
+<ul>
+<li>Note that the latest irods version is 5, this client is not compatible with the Yoda irods version.You can list the available versions with:</li>
+</ul>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> yum <span class="at">--showduplicates</span> list irods-icommands</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Install the latest available 4.x.x version:</p>
+<ol start="2" type="1">
+<li>Install the latest available 4.x.x version:</li>
+</ol>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> yum <span class="at">-y</span> install irods-runtime-4.3.0 irods-icommands-4.3.0</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> yum versionlock irods-runtime irods-icommands</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <section id="upgrading-from-an-earlier-version" class="level4">
@@ -525,15 +531,23 @@ Tip
 <section id="installing-icommands-on-ubuntu" class="level3">
 <h3 class="anchored" data-anchor-id="installing-icommands-on-ubuntu">Installing iCommands on Ubuntu</h3>
 <p>The following should work to install the iCommands on Ubuntu 22 or 24.</p>
-<p>First add the irods package source.</p>
+<ol type="1">
+<li>First add the irods package source.</li>
+</ol>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> <span class="at">-qO</span> <span class="at">-</span> https://packages.irods.org/irods-signing-key.asc <span class="kw">|</span> <span class="fu">sudo</span> apt-key add <span class="at">-</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"deb [arch=amd64] https://packages.irods.org/apt/ </span><span class="va">$(</span><span class="ex">lsb_release</span> <span class="at">-sc</span><span class="va">)</span><span class="st"> main"</span> <span class="kw">|</span> <span class="fu">sudo</span> tee /etc/apt/sources.list.d/renci-irods.list</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt update</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Note that the latest irods version is 5, this client is not compatible with the Yoda irods version. You can check which versions are available with:</p>
+<ul>
+<li>Note that the latest irods version is 5, this client is not compatible with the Yoda irods version. You can check which versions are available with:</li>
+</ul>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt show irods-icommands <span class="at">-a</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Take the latest 4.x version, at the time of writing:</p>
+<ol start="2" type="1">
+<li>Take the latest 4.x version, at the time of writing:</li>
+</ol>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt <span class="at">-y</span> install irods-runtime=4.3.4-0~noble irods-icommands=4.3.4-0~noble</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Make sure to hold the package to prevent inadvertently updating to version 5:</p>
+<ul>
+<li>Make sure to hold the package to prevent inadvertently updating to version 5:</li>
+</ul>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt-mark hold irods-runtime irods-icommands</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <section id="upgrading-from-an-earlier-version-1" class="level4">
 <h4 class="anchored" data-anchor-id="upgrading-from-an-earlier-version-1">Upgrading from an earlier version</h4>

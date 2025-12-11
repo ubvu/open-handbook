@@ -410,12 +410,12 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#getting-cyberduck" id="toc-getting-cyberduck" class="nav-link active" data-scroll-target="#getting-cyberduck">Getting Cyberduck</a></li>
-  <li><a href="#configuring-cyberduck" id="toc-configuring-cyberduck" class="nav-link" data-scroll-target="#configuring-cyberduck">Configuring Cyberduck</a>
+  <li><a href="#how-to-configuring-cyberduck" id="toc-how-to-configuring-cyberduck" class="nav-link" data-scroll-target="#how-to-configuring-cyberduck">How To: Configuring Cyberduck</a>
   <ul class="collapse">
   <li><a href="#create-a-new-secure-webdav-https-connection-to-yoda-bookmark" id="toc-create-a-new-secure-webdav-https-connection-to-yoda-bookmark" class="nav-link" data-scroll-target="#create-a-new-secure-webdav-https-connection-to-yoda-bookmark">Create a new secure WebDAV (HTTPS) connection to Yoda (bookmark)</a></li>
-  <li><a href="#connecting-to-yoda" id="toc-connecting-to-yoda" class="nav-link" data-scroll-target="#connecting-to-yoda">Connecting to Yoda</a></li>
+  <li><a href="#how-to-connecting-to-yoda" id="toc-how-to-connecting-to-yoda" class="nav-link" data-scroll-target="#how-to-connecting-to-yoda">How To: Connecting to Yoda</a></li>
   </ul></li>
-  <li><a href="#working-with-yoda-folders-and-uploadingdownloading-files" id="toc-working-with-yoda-folders-and-uploadingdownloading-files" class="nav-link" data-scroll-target="#working-with-yoda-folders-and-uploadingdownloading-files">Working with Yoda folders and uploading/downloading files</a></li>
+  <li><a href="#how-to-working-with-yoda-folders-and-uploadingdownloading-files" id="toc-how-to-working-with-yoda-folders-and-uploadingdownloading-files" class="nav-link" data-scroll-target="#how-to-working-with-yoda-folders-and-uploadingdownloading-files">How To: Working with Yoda folders and uploading/downloading files</a></li>
   <li><a href="#some-things-to-consider-when-using-cyberduckwebdav" id="toc-some-things-to-consider-when-using-cyberduckwebdav" class="nav-link" data-scroll-target="#some-things-to-consider-when-using-cyberduckwebdav">Some things to consider when using Cyberduck/webDAV</a>
   <ul class="collapse">
   <li><a href="#total-path-and-file-length" id="toc-total-path-and-file-length" class="nav-link" data-scroll-target="#total-path-and-file-length">Total path and file length</a></li>
@@ -454,14 +454,18 @@ ul.task-list li input[type="checkbox"] {
 <p>Cyberduck is desktop software for Microsoft Windows and Apple macOS that can be used to transfer files between your computer and Yoda. In this guide we will explain how to install Cyberduck, create a new connection (bookmark) to Yoda and end with some frequently asked questions and tips on using Cyberduck</p>
 <section id="getting-cyberduck" class="level2">
 <h2 class="anchored" data-anchor-id="getting-cyberduck">Getting Cyberduck</h2>
-<p><strong>macOS</strong> : Cyberduck can be installed from the VU software center or downloaded from the internet.</p>
-<p><strong>Microsoft Windows 10/11</strong> : Download Cyberduck from <a href="https://cyberduck.io/download/" target="_blank">https://cyberduck.io/download/</a> it is free and you <strong>do not</strong> need to register.</p>
+<ul>
+<li><p><strong>macOS</strong> : Cyberduck can be installed from the VU software center or downloaded from the internet.</p></li>
+<li><p><strong>Microsoft Windows 10/11</strong> : Download Cyberduck from <a href="https://cyberduck.io/download/" target="_blank">https://cyberduck.io/download/</a> it is free and you <strong>do not</strong> need to register.</p></li>
+</ul>
 <p><img src="../../../public/manuals/yoda/cbd-download.png" class="img-fluid"></p>
-<p>Run the downloaded installer by double clicking on “Cyberduck-installer.exe” which you will find in your Download folder in explorer. Install Cyberduck with the default options, and once that is done launch Cyberduck from the start menu.</p>
+<ol type="1">
+<li>Run the downloaded installer by double clicking on “Cyberduck-installer.exe” which you will find in your Download folder in explorer. Install Cyberduck with the default options, and once that is done launch Cyberduck from the start menu.</li>
+</ol>
 <p><img src="../../../public/manuals/yoda/cbd-startmenu.png" class="img-fluid"></p>
 </section>
-<section id="configuring-cyberduck" class="level2">
-<h2 class="anchored" data-anchor-id="configuring-cyberduck">Configuring Cyberduck</h2>
+<section id="how-to-configuring-cyberduck" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-configuring-cyberduck">How To: Configuring Cyberduck</h2>
 <!--
 ### Accessing Cyberduck's settings
 
@@ -483,49 +487,79 @@ Close the settings by clicking the x on the top right of the window.
 -->
 <section id="create-a-new-secure-webdav-https-connection-to-yoda-bookmark" class="level3">
 <h3 class="anchored" data-anchor-id="create-a-new-secure-webdav-https-connection-to-yoda-bookmark">Create a new secure WebDAV (HTTPS) connection to Yoda (bookmark)</h3>
-<p>First create a new bookmark by pressing the + button on the lower left side of the screen.</p>
+<ol type="1">
+<li>First create a new bookmark by pressing the + button on the lower left side of the screen.</li>
+</ol>
 <p><img src="../../../public/manuals/yoda/cbd-add-bookmark.png" class="img-fluid"></p>
-<p>You will now see a new connection page:</p>
+<ol start="2" type="1">
+<li>You will now see a new connection page:</li>
+</ol>
 <p><img src="../../../public/manuals/yoda/cbd-new-connection.png" class="img-fluid"></p>
-<p>Click on the “FTP (File Transfer Protocol)” dropdown list and select a <strong>WebDAV (HTTPS)</strong> connection</p>
+<ol start="3" type="1">
+<li>Click on the “FTP (File Transfer Protocol)” dropdown list and select a <strong>WebDAV (HTTPS)</strong> connection and you will see the WebDAV (HTTPS) connection page.</li>
+</ol>
 <p><img src="../../../public/manuals/yoda/cbd-new-connection-webdav.png" class="img-fluid"></p>
-<p>and you will see the WebDAV (HTTPS) connection page.</p>
 <p><img src="../../../public/manuals/yoda/cbd-new-webdav.png" class="img-fluid"></p>
-<p>Fill in the following information in the appropriate blocks</p>
+<ol start="4" type="1">
+<li>Fill in the following information in the appropriate blocks</li>
+</ol>
 <p>First generate a <a href="../../../manuals/yoda/data_access/yoda_dap.html">Data Access Password</a>.</p>
 <ul>
 <li>Server: <strong>data.yoda.vu.nl</strong></li>
 <li>Username: your email address</li>
 <li>Password: paste (CTRL-v) the data access password you created in the portal.</li>
 </ul>
-<p>Cyberduck uses your home folder as a default directory to download files. This can be changed by clicking on “More Options” and choosing a new folder</p>
+<ol start="5" type="1">
+<li>Cyberduck uses your home folder as a default directory to download files. This can be changed by clicking on “More Options” and choosing a new folder</li>
+</ol>
 <p><img src="../../../public/manuals/yoda/cbd-new-webdav-options.png" class="img-fluid"></p>
-<p>You have successfully created a bookmark, close the editing window by clicking on the R X button on the top right of the edit window to return to the main Cyberduck screen.</p>
+<ol start="6" type="1">
+<li>You have successfully created a bookmark, close the editing window by clicking on the R X button on the top right of the edit window to return to the main Cyberduck screen.</li>
+</ol>
 </section>
-<section id="connecting-to-yoda" class="level3">
-<h3 class="anchored" data-anchor-id="connecting-to-yoda">Connecting to Yoda</h3>
-<p>The main screen shows all the connections (bookmarks) you have defined. To connect, double click on the bookmark (in this case “data.yoda.vu.nl - WebDAV (HTTPS)”) and you will be connected.</p>
+<section id="how-to-connecting-to-yoda" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-connecting-to-yoda">How To: Connecting to Yoda</h3>
+<p>The main screen shows all the connections (bookmarks) you have defined.</p>
+<ol type="1">
+<li>To connect, double click on the bookmark (in this case “data.yoda.vu.nl - WebDAV (HTTPS)”) and you will be connected.</li>
+</ol>
 <p><img src="../../../public/manuals/yoda/cbd-main-bookmark.png" class="img-fluid"></p>
-<p>If you did not fill in your password in the bookmark you will be asked to do so now. Please note, “Save password” is automatically selected by Cyberduck, you may decide to (un)check this option. Fill in your vunet-id password and click ” <strong>Login</strong>” to connect.</p>
+<ol start="2" type="1">
+<li>If you did not fill in your password in the bookmark you will be asked to do so now. Please note, “Save password” is automatically selected by Cyberduck, you may decide to (un)check this option. Fill in your vunet-id password and click ” <strong>Login</strong>” to connect.</li>
+</ol>
 <p><img src="../../../public/manuals/yoda/cbd-login-screen.png" class="img-fluid"></p>
-<p>If your login unexpectedly fails, please check if your <a href="../../../manuals/yoda/data_access/yoda_dap.html">data access password</a> is still valid.</p>
+<ul>
+<li>If your login unexpectedly fails, please check if your <a href="../../../manuals/yoda/data_access/yoda_dap.html">data access password</a> is still valid.</li>
+</ul>
 <p>You should now see your project directory in an explorer like window:</p>
 <p><img src="../../../public/manuals/yoda/cbd-project-folders.png" class="img-fluid"></p>
 </section>
 </section>
-<section id="working-with-yoda-folders-and-uploadingdownloading-files" class="level2">
-<h2 class="anchored" data-anchor-id="working-with-yoda-folders-and-uploadingdownloading-files">Working with Yoda folders and uploading/downloading files</h2>
-<p>Click on a &gt; to open a folder,</p>
+<section id="how-to-working-with-yoda-folders-and-uploadingdownloading-files" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-working-with-yoda-folders-and-uploadingdownloading-files">How To: Working with Yoda folders and uploading/downloading files</h2>
+<ol type="1">
+<li>Click on a &gt; to open a folder,</li>
+</ol>
 <p><img src="../../../public/manuals/yoda/cbd-folder-navigate-1.png" class="img-fluid"></p>
-<p>or double click to open in the main window.</p>
+<ul>
+<li>or double click to open in the main window.</li>
+</ul>
 <p><img src="../../../public/manuals/yoda/cbd-folder-navigate-2.png" class="img-fluid"></p>
-<p>Use the left, right and up arrows to navigate the directory tree and right click on the main window to create a new folder:</p>
+<ol start="2" type="1">
+<li>Use the left, right and up arrows to navigate the directory tree and right click on the main window to create a new folder:</li>
+</ol>
 <p><img src="../../../public/manuals/yoda/cbd-folder-create.png" class="img-fluid"></p>
-<p>Alternatively, drag-and-drop folders and files from Windows Explorer to your Yoda project folders:</p>
+<ul>
+<li>Alternatively, drag-and-drop folders and files from Windows Explorer to your Yoda project folders:</li>
+</ul>
 <p><img src="../../../public/manuals/yoda/cbd-folder-drag-and-drop.png" class="img-fluid"></p>
-<p>In either case, once copying has started you should see the transfer window. Keep this open until the transfer is complete.</p>
+<ol start="3" type="1">
+<li>In either case, once copying has started you should see the transfer window. Keep this open until the transfer is complete.</li>
+</ol>
 <p><img src="../../../public/manuals/yoda/cbd-file-file-transfer.png" class="img-fluid"></p>
-<p>Alternatively, the context menu (activate by right clicking on a Yoda project file/directory) has a number of options for uploading, downloading and synchronizing files and folders:</p>
+<ul>
+<li>Alternatively, the context menu (activate by right clicking on a Yoda project file/directory) has a number of options for uploading, downloading and synchronizing files and folders:</li>
+</ul>
 <p><img src="../../../public/manuals/yoda/cbd-file-right-click.png" class="img-fluid"></p>
 </section>
 <section id="some-things-to-consider-when-using-cyberduckwebdav" class="level2">

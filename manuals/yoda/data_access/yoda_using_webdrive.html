@@ -409,8 +409,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#using-webdrive" id="toc-using-webdrive" class="nav-link active" data-scroll-target="#using-webdrive">Using WebDrive</a></li>
-  <li><a href="#disable-the-cache" id="toc-disable-the-cache" class="nav-link" data-scroll-target="#disable-the-cache">Disable the cache</a></li>
+  <li><a href="#how-to-using-webdrive" id="toc-how-to-using-webdrive" class="nav-link active" data-scroll-target="#how-to-using-webdrive">How to: Using WebDrive</a></li>
+  <li><a href="#how-to-disable-the-cache" id="toc-how-to-disable-the-cache" class="nav-link" data-scroll-target="#how-to-disable-the-cache">How To: Disable the cache</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/yoda/data_access/yoda_using_webdrive.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -439,35 +439,51 @@ ul.task-list li input[type="checkbox"] {
 <p>Windows users can use <a href="https://webdrive.com/" target="_blank">WebDrive</a> to access their data, as an alternative to the <a href="../../../manuals/yoda/data_access/yoda_using_windowsexplorer.html">native WebDAV client</a>. With WebDrive the Yoda WebDAV interface can be connected via as a drive in Windows Explorer.</p>
 <p>As a VU user you can download a licensed version of WebDrive from <a href="https://download.vu.nl" target="_blank">download.vu.nl</a>.</p>
 <p>Note that you should always <a href="#disable-the-cache">disable caching</a> in WebDrive!</p>
-<section id="using-webdrive" class="level2">
-<h2 class="anchored" data-anchor-id="using-webdrive">Using WebDrive</h2>
-<p>Start Webdrive from the Desktop icon or the Start menu.</p>
+<section id="how-to-using-webdrive" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-using-webdrive">How to: Using WebDrive</h2>
+<ol type="1">
+<li>Start Webdrive from the Desktop icon or the Start menu.</li>
+</ol>
 <p><img src="../../../public/manuals/yoda/screenshot-webdrive-start.png" title="Screenshot WebDrive: start" class="img-fluid"></p>
-<p>In the initial Window click new.</p>
+<ol start="2" type="1">
+<li>In the initial Window click new.</li>
+</ol>
 <p><img src="../../../public/manuals/yoda/screenshot-webdrive-choose.png" title="Screenshot WebDrive: choose connection" class="img-fluid"></p>
-<p>Choose Secure WebDAV and click Next.</p>
+<ol start="3" type="1">
+<li>Choose Secure WebDAV and click Next.</li>
+</ol>
 <p><img src="../../../public/manuals/yoda/screenshot-webdrive-account.png" title="Screenshot WebDrive: account information" class="img-fluid"></p>
-<p>Enter <code>https://data.yoda.vu.nl/</code> in the Url/Address field.</p>
-<p>Enter the Username (an emailaddress). Create a <a href="../../../manuals/yoda/data_access/yoda_dap.html">data access password</a> and copy it to the Password field.</p>
-<p>You can click Test Connection to see if the credentials are correct.</p>
-<p>Click Next</p>
+<ol start="4" type="1">
+<li><p>Enter <code>https://data.yoda.vu.nl/</code> in the Url/Address field.</p></li>
+<li><p>Enter the Username (an emailaddress). Create a <a href="../../../manuals/yoda/data_access/yoda_dap.html">data access password</a> and copy it to the Password field.</p></li>
+</ol>
+<ul>
+<li>You can click Test Connection to see if the credentials are correct.</li>
+</ul>
+<ol start="6" type="1">
+<li>Click Next</li>
+</ol>
 <p><img src="../../../public/manuals/yoda/screenshot-webdrive-ready.png" title="Screenshot WebDrive: ready" class="img-fluid"></p>
-<p>Choose a Drive letter and Connect Now.</p>
+<ol start="7" type="1">
+<li>Choose a Drive letter and Connect Now.</li>
+</ol>
 <p><img src="../../../public/manuals/yoda/screenshot-webdrive-explorer.png" title="Screenshot WebDrive: explorer" class="img-fluid"></p>
-<p>You should now see the Yoda Disk in your Windows Explorer.</p>
+<ul>
+<li>You should now see the Yoda Disk in your Windows Explorer.</li>
+</ul>
 </section>
-<section id="disable-the-cache" class="level2">
-<h2 class="anchored" data-anchor-id="disable-the-cache">Disable the cache</h2>
+<section id="how-to-disable-the-cache" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-disable-the-cache">How To: Disable the cache</h2>
 <p>By default WebDrive enables a caching mechanism and suggests this as a way to enable syncing and working offline.<br>
 This functionality is not implemented very well and you should <strong>always disable</strong> this to prevent data loss.</p>
 <p><img src="../../../public/manuals/yoda/screenshot-webdrive-properties.png" class="img-fluid"></p>
-<ul>
+<ol type="1">
 <li>Right click on “data.yoda.vu.nl” in the server list</li>
-</ul>
+</ol>
 <p><img src="../../../public/manuals/yoda/screenshot-webdrive-cache.png" class="img-fluid"></p>
-<ul>
+<ol start="2" type="1">
 <li>Set Cache Mode to None and Cache Limit to 0.</li>
-</ul>
+</ol>
 
 
 </section>

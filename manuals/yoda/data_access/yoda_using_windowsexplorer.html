@@ -409,10 +409,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#mapping-network-drive" id="toc-mapping-network-drive" class="nav-link active" data-scroll-target="#mapping-network-drive">Mapping network drive</a></li>
-  <li><a href="#increasing-maximum-file-size" id="toc-increasing-maximum-file-size" class="nav-link" data-scroll-target="#increasing-maximum-file-size">Increasing maximum file size</a></li>
-  <li><a href="#increasing-the-number-of-files-shown-in-a-folder" id="toc-increasing-the-number-of-files-shown-in-a-folder" class="nav-link" data-scroll-target="#increasing-the-number-of-files-shown-in-a-folder">Increasing the number of files shown in a folder</a></li>
-  <li><a href="#updating-your-password-for-a-mapped-network-drive-on-windows" id="toc-updating-your-password-for-a-mapped-network-drive-on-windows" class="nav-link" data-scroll-target="#updating-your-password-for-a-mapped-network-drive-on-windows">Updating your password for a mapped network drive on Windows</a></li>
+  <li><a href="#how-to-mapping-network-drive" id="toc-how-to-mapping-network-drive" class="nav-link active" data-scroll-target="#how-to-mapping-network-drive">How To: Mapping network drive</a></li>
+  <li><a href="#how-to-increasing-maximum-file-size" id="toc-how-to-increasing-maximum-file-size" class="nav-link" data-scroll-target="#how-to-increasing-maximum-file-size">How To: Increasing maximum file size</a></li>
+  <li><a href="#how-to-increasing-the-number-of-files-shown-in-a-folder" id="toc-how-to-increasing-the-number-of-files-shown-in-a-folder" class="nav-link" data-scroll-target="#how-to-increasing-the-number-of-files-shown-in-a-folder">How To: Increasing the number of files shown in a folder</a></li>
+  <li><a href="#how-to-updating-your-password-for-a-mapped-network-drive-on-windows" id="toc-how-to-updating-your-password-for-a-mapped-network-drive-on-windows" class="nav-link" data-scroll-target="#how-to-updating-your-password-for-a-mapped-network-drive-on-windows">How To: Updating your password for a mapped network drive on Windows</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/yoda/data_access/yoda_using_windowsexplorer.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -439,99 +439,130 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>For most users, <a href="../../../manuals/yoda/data_access/yoda_using_cyberduck.html">Cyberduck</a> is a better alternative. However, the Yoda team recommends using the native WebDAV client if you can’t install Cyberduck, for example if the security settings of your laptop prevent you from installing any new applications.</p>
-<section id="mapping-network-drive" class="level2">
-<h2 class="anchored" data-anchor-id="mapping-network-drive">Mapping network drive</h2>
-<p>Open “This PC” from the Start menu</p>
+<section id="how-to-mapping-network-drive" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-mapping-network-drive">How To: Mapping network drive</h2>
+<ol type="1">
+<li>Open “This PC” from the Start menu</li>
+</ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../../../public/manuals/yoda/screenshot-windows-thispc.png" class="img-fluid figure-img"></p>
 <figcaption>This PC</figcaption>
 </figure>
 </div>
-<p>Open the Computer menu item and select “Map network drive”.</p>
+<ol start="2" type="1">
+<li>Open the Computer menu item and select “Map network drive”.</li>
+</ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../../../public/manuals/yoda/screenshot-windows-mapnwdrive.png" class="img-fluid figure-img"></p>
 <figcaption>Map network drive icon in This PC</figcaption>
 </figure>
 </div>
-<p>Select a drive letter — any free letter is okay. Now enter <code>https://data.yoda.vu.nl/</code> in the Folder field (see table below).</p>
+<ol start="3" type="1">
+<li>Select a drive letter — any free letter is okay. Now enter <code>https://data.yoda.vu.nl/</code> in the Folder field (see table below).</li>
+</ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../../../public/manuals/yoda/screenshot-windows-connectfolder.png" class="img-fluid figure-img"></p>
 <figcaption>folder input field when mapping network drive</figcaption>
 </figure>
 </div>
-<p>Ensure the box “Connect using different credentials” is checked and click on the Finish button.</p>
-<p>You will be prompted for a name and password. Name is your email address. Create a <a href="../../../manuals/yoda/data_access/yoda_dap.html">data access password</a> and copy it to the Password field If you are working on your personal PC or laptop, tick the checkbox “Remember my credentials”.</p>
+<ol start="4" type="1">
+<li><p>Ensure the box “Connect using different credentials” is checked and click on the Finish button.</p></li>
+<li><p>You will be prompted for a name and password. Name is your email address. Create a <a href="../../../manuals/yoda/data_access/yoda_dap.html">data access password</a> and copy it to the Password field</p></li>
+</ol>
+<ul>
+<li>If you are working on your personal PC or laptop, tick the checkbox “Remember my credentials”.</li>
+</ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../../../public/manuals/yoda/screenshot-windows-credentials.png" class="img-fluid figure-img"></p>
 <figcaption>dialog for entering credentials when mapping network drive</figcaption>
 </figure>
 </div>
-<p>The Explorer screen will show the folders you have access rights to. You can now drag and drop your files to upload or download them.</p>
+<ol start="6" type="1">
+<li>The Explorer screen will show the folders you have access rights to. You can now drag and drop your files to upload or download them.</li>
+</ol>
 </section>
-<section id="increasing-maximum-file-size" class="level2">
-<h2 class="anchored" data-anchor-id="increasing-maximum-file-size">Increasing maximum file size</h2>
+<section id="how-to-increasing-maximum-file-size" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-increasing-maximum-file-size">How To: Increasing maximum file size</h2>
 <p>By default, the native WebDAV client on Windows 10 only works with files smaller than 50 MB.</p>
 <p>On Windows 11 the limit is set to the maximum 4GB by default.</p>
-<p>You can increase the limit on Windows 10 to 4 GB if you have a local administrator account: - Open the registry editor by pressing the start button, entering “regedit” and pressing the enter key. - If you are asked whether the registry editor should be allowed to change the system settings, confirm. - Navigate to key <code>HKEY\_LOCAL\_MACHINE\SYSTEM\CurrentControlSet\Services\WebClient\Parameters</code> - Open the FileSizeLimitInBytes key</p>
+<p>You can increase the limit on Windows 10 to 4 GB if you have a local administrator account:</p>
+<ol type="1">
+<li>Open the registry editor by pressing the start button, entering “regedit” and pressing the enter key.</li>
+</ol>
+<ul>
+<li>If you are asked whether the registry editor should be allowed to change the system settings, confirm.</li>
+</ul>
+<ol start="2" type="1">
+<li><p>Navigate to key <code>HKEY\_LOCAL\_MACHINE\SYSTEM\CurrentControlSet\Services\WebClient\Parameters</code></p></li>
+<li><p>Open the FileSizeLimitInBytes key</p></li>
+</ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../../../public/manuals/yoda/windows-native-registry-key.jpg" class="img-fluid figure-img"></p>
 <figcaption>FileSizeLimitInBytes registry key</figcaption>
 </figure>
 </div>
-<ul>
+<ol start="4" type="1">
 <li>Set it to FFFFFFFF (hexadecimal)</li>
-</ul>
+</ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../../../public/manuals/yoda/windows-native-registry-set.jpg" class="img-fluid figure-img"></p>
 <figcaption>increasing the file size limit</figcaption>
 </figure>
 </div>
-<ul>
-<li>Click on the “OK” button and close the registry editor</li>
-<li>Restart your computer</li>
-</ul>
+<ol start="5" type="1">
+<li><p>Click on the “OK” button and close the registry editor</p></li>
+<li><p>Restart your computer</p></li>
+</ol>
 </section>
-<section id="increasing-the-number-of-files-shown-in-a-folder" class="level2">
-<h2 class="anchored" data-anchor-id="increasing-the-number-of-files-shown-in-a-folder">Increasing the number of files shown in a folder</h2>
+<section id="how-to-increasing-the-number-of-files-shown-in-a-folder" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-increasing-the-number-of-files-shown-in-a-folder">How To: Increasing the number of files shown in a folder</h2>
 <p>By default the native WebDAV client on Windows 10 &amp; 11 will show a folder containing more than 1000 files as empty. If you need to work with larger folders you can increase this limit if you have a local administrator account:</p>
-<ul>
-<li>Open the registry editor by pressing the start button, entering “regedit” and pressing the - enter key.</li>
-<li>If you are asked whether the registry editor should be allowed to change the system settings, confirm.</li>
-<li>Navigate to key <code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WebClient\Parameters</code></li>
-<li>Open the <code>FileAttributesLimitInBytes</code> key: <img src="../../../public/manuals/yoda/screenshot-windows-fileattributeslimit.png" class="img-fluid" alt="increasing the file size limit"></li>
-<li>In the Value data box, type the value that you want to use, and then click OK. For example, if the Web folder contains 20,000 files, type 20000000 in the Value data box. <img src="../../../public/manuals/yoda/screenshot-windows-fileattributeslimit2.png" class="img-fluid" alt="increasing the file size limit"></li>
-</ul>
+<ol type="1">
+<li><p>Open the registry editor by pressing the start button, entering “regedit” and pressing the - enter key.</p></li>
+<li><p>If you are asked whether the registry editor should be allowed to change the system settings, confirm.</p></li>
+<li><p>Navigate to key <code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WebClient\Parameters</code></p></li>
+<li><p>Open the <code>FileAttributesLimitInBytes</code> key: <img src="../../../public/manuals/yoda/screenshot-windows-fileattributeslimit.png" class="img-fluid" alt="increasing the file size limit"></p></li>
+<li><p>In the Value data box, type the value that you want to use, and then click OK. For example, if the Web folder contains 20,000 files, type 20000000 in the Value data box. <img src="../../../public/manuals/yoda/screenshot-windows-fileattributeslimit2.png" class="img-fluid" alt="increasing the file size limit"></p></li>
+</ol>
 </section>
-<section id="updating-your-password-for-a-mapped-network-drive-on-windows" class="level2">
-<h2 class="anchored" data-anchor-id="updating-your-password-for-a-mapped-network-drive-on-windows">Updating your password for a mapped network drive on Windows</h2>
-<p>First open the credential manager by clicking on the start button and typing “Manage Windows Credentials”.</p>
+<section id="how-to-updating-your-password-for-a-mapped-network-drive-on-windows" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-updating-your-password-for-a-mapped-network-drive-on-windows">How To: Updating your password for a mapped network drive on Windows</h2>
+<ol type="1">
+<li>First open the credential manager by clicking on the start button and typing “Manage Windows Credentials”.</li>
+</ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../../../public/manuals/yoda/windowsnative-managewincredentials.png" class="img-fluid figure-img"></p>
 <figcaption>starting the Windows credential manager.</figcaption>
 </figure>
 </div>
-<p>Select the address of your Yoda WebDAV interface in the list of generic credentials.</p>
+<ol start="2" type="1">
+<li>Select the address of your Yoda WebDAV interface in the list of generic credentials.</li>
+</ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../../../public/manuals/yoda/windowsnative-managewincredentials-select.png" class="img-fluid figure-img"></p>
 <figcaption>selecting the credentials of the Yoda WebDAV interface in the credential manager</figcaption>
 </figure>
 </div>
-<p>Choose “Edit”. Edit your credentials and click on the “Save” button.</p>
+<ol start="3" type="1">
+<li>Choose “Edit”. Edit your credentials and click on the “Save” button.</li>
+</ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../../../public/manuals/yoda/windowsnative-managewincredentials-edit.png" class="img-fluid figure-img"></p>
 <figcaption>editing the Yoda credentials in the credential manager</figcaption>
 </figure>
 </div>
-<p>Restart your computer and open the mapped network drive in “This PC”. You may have to reenter your username and new password once more.</p>
+<ol start="4" type="1">
+<li>Restart your computer and open the mapped network drive in “This PC”. You may have to re-enter your username and new password once more.</li>
+</ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../../../public/manuals/yoda/screenshot-windows-credentials.png" class="img-fluid figure-img"></p>

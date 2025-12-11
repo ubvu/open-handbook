@@ -444,7 +444,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#create-a-config" id="toc-create-a-config" class="nav-link active" data-scroll-target="#create-a-config">Create a config</a></li>
+  <li><a href="#how-to-create-a-config" id="toc-how-to-create-a-config" class="nav-link active" data-scroll-target="#how-to-create-a-config">How to: Create a config</a></li>
   <li><a href="#updating-the-data-access-password" id="toc-updating-the-data-access-password" class="nav-link" data-scroll-target="#updating-the-data-access-password">Updating the Data Access Password</a></li>
   <li><a href="#mounting-on-windows" id="toc-mounting-on-windows" class="nav-link" data-scroll-target="#mounting-on-windows">Mounting on Windows</a></li>
   </ul>
@@ -476,11 +476,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Rclone is available for Linux, Mac and Windows, see <a href="https://rclone.org/downloads/" target="_blank">https://rclone.org/downloads/</a></p>
 <p>You can use rclone to access the Yoda drive using WebDAV.</p>
 <p>Note: if you are on Linux and comfortable with commandline tools, the <a href="../../../manuals/yoda/data_access/yoda_using_icommands.html">iRODS icommands</a> provide better performance.</p>
-<section id="create-a-config" class="level2">
-<h2 class="anchored" data-anchor-id="create-a-config">Create a config</h2>
-<p>Rclone always expects you to create a config first:</p>
+<section id="how-to-create-a-config" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-create-a-config">How to: Create a config</h2>
+<ol type="1">
+<li>Rclone always expects you to create a config first:</li>
+</ol>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">rclone</span> config</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>You will be led through a number of questions</p>
+<ol start="2" type="1">
+<li>You will be led through a number of questions</li>
+</ol>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Current</span> remotes:</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">Name</span>                 Type</span>
@@ -542,7 +546,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="ex">password:</span></span>
 <span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="ex">Confirm</span> the password:</span>
 <span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="ex">password:</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Password is a <a href="../../../manuals/yoda/data_access/yoda_dap.html">Data Access Password</a> generated in Yoda.</p>
+<ol start="3" type="1">
+<li>Password is a <a href="../../../manuals/yoda/data_access/yoda_dap.html">Data Access Password</a> generated in Yoda.</li>
+</ol>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Option</span> bearer_token.</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Bearer</span> token instead of user/pass <span class="er">(</span><span class="ex">e.g.</span> a Macaroon<span class="kw">)</span><span class="bu">.</span></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="ex">Enter</span> a value. Press Enter to leave empty.</span>
