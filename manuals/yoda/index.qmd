@@ -32,6 +32,7 @@ listing:
     - faq/known_issues.qmd
   page-size: 40
   filter-ui: true
+  sort-ui: [title]
   type: grid
   fields: [title,description]
   sort: false
