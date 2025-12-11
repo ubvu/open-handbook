@@ -1,0 +1,56 @@
+---
+title: Nebula
+categories: [Tools]
+---
+
+## What is it?
+
+**Nebula** is a new [Network Institute](https://networkinstitute.org/) initiative that aims to provide researchers from all departments with safe, seamless access to open-source large language models (LLMs). 
+
+Nebula, along with the LLMs are fully hosted on the VU premises, so no data leaves our campus.
+
+## What can it be used for?
+
+Nebula is developed to support researchers at VU Amsterdam who want to use AI models in their work. These are the main features: 
+
+* **Familiar Interface**: The Nebula interface (Open WebUI) is inspired by the ChatGPT interface, allowing for an easy transition to the Nebula system.
+* **1500+ Models**: With Ollama and vLLM as the backbone of Nebula, you can choose from over 1500 open-source models that are available across [Ollama](https://ollama.com/search) and [HuggingFace](https://huggingface.co/models).
+* **Ease of Access**: All you need to access Nebula is an account and a web browser on your computer, tablet or smartphone.
+* **OpenAI API Compatibility**: Nebula allows for API access following the OpenAI API standard, so you can send your prompts from a programming language.
+* **Custom Models**: You can attach knowledge to models on Nebula to create your own models.
+* **Open-Source**: You can find all the code on the [Nebula GitHub page](https://github.com/networkinstitutevu/Nebula) (the repository is a fork of the [Open WebUI GitHub page](https://github.com/open-webui/open-webui)).
+
+### Nebula in NWO and Horizon Europe proposals
+
+Are you preparing a Horizon Europe or NWO proposal? You can strengthen it by including Nebula, the VU Network Institute’s dedicated computational facility for research with generative AI and large language models (LLMs).
+
+Nebula offers secure access to 1,500+ open-source LLMs, dedicated APIs, and many other features for ensuring reproducibility, [FAIR principles](../topics/fair-principles.qmd), data sovereignty, and ethical AI research. Including Nebula under the typical “_Key Research Facilities, Infrastructure and Equipment_” section can enhance your proposal’s competitiveness. For your convenience, below you can find a ready-to-use piece of text to be included in your proposals:
+
+“VU researchers have full access to Nebula, a dedicated computational facility for advancing research involving generative AI and large language models (LLMs), with dedicated technical support. Nebula provides secure access to 1,500+ open-source LLMs, APIs, and multimodal tools, ensuring reproducibility, FAIR principles, data sovereignty, and ethical AI research for open science and societal impact.”
+
+If you could allocate €10–20k for computational costs related to Nebula in your project proposal, you can support the future developments of Nebula. This will give you stable, systematic access to the platform.
+
+## How to request access
+
+You can request access by sending an email to [Radu Apsan](mailto:r.apsan@vu.nl) and [Marco Otte](mailto:m.otte@vu.nl).
+
+## Are there costs involved?
+
+Currently, Nebula offers a free-to-use pilot environment. However, Nebula is developing a paid production environment. The details are not fully crystallised yet. Contact [Radu Apsan](mailto:r.apsan@vu.nl) and [Marco Otte](mailto:m.otte@vu.nl) for more information. 
+
+Note that there is an option to financially support the initiative for future developments (see above). If you need support for implementing something that requires substantial involvement from the team, costs will be invoiced.
+
+## Getting started
+
+The team can show you around on the platform. If you need help getting started on the platform, if you need advice about what LLMs to use for your project, or need help running your experiment, the team can help. You can send an email to [Radu Apsan](mailto:r.apsan@vu.nl) and [Marco Otte](mailto:m.otte@vu.nl).
+
+## Contact
+
+If you would like to find out more about Nebula, visit the [information page](https://networkinstitute.org/nebula-main/).
+
+If you have any questions, send an email to [Radu Apsan](mailto:r.apsan@vu.nl) and [Marco Otte](mailto:m.otte@vu.nl). 
+
+The Nebula team can also help with the following:
+
+* **Advice and Support**: Not sure about what LLMs to use for your project, or need help running the experiment? The Nebula team can help. You can also read more about some of [our projects](https://networkinstitute.org/nebula-main/nebulaindepth/nebula-use-cases/).
+* **Highly Sensitive Project Support**: If your project requires the use of AI and highly sensitive data, contact the Nebula team. They can set up an instance that only you can access.
