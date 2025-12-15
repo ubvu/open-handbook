@@ -8,13 +8,13 @@ Yoda is a data management solution and not explicitly meant for analysing data. 
 
 ## Where to run your analysis
 
-Before you decide on the best workflow for your use case, you should ask yourself:
+Before you decide on the best workflow for your use case, you should ask yourself:  
 
--   Which type of analysis will I run?
+-   Which type of analysis will I run? Will you use a desktop application or scripting?
 
 -   Is this task suitable to run on a personal computer (PC)?
 
-If your analysis cannot be run on your PC, for example because your dataset is too large and you do not have enough storage, or your computing requirements are too heavy and the processing capacity of your machine is not big enough, you should think about using other analysis platforms: a VRE (Virtual Research Environment) such as [SciCloud](/topics/scicloud.qmd) or [Research Cloud](/topics/researchcloud.qmd); or a high-performance computing facility (HPC), such as [ADA](/topics/ada.qmd) or [Snellius](/topics/snellius.qmd).
+If your analysis cannot be run on your PC, for example because your dataset is too large and you do not have enough storage, or your computing requirements are too heavy and the processing capacity of your machine is not big enough, you should think about using other analysis platforms: a VRE (Virtual Research Environment) such as [SciCloud](/topics/scicloud.qmd) or [Research Cloud](/topics/researchcloud.qmd); The [VU compute hub](/topics/compute-hub.qmd); or a high-performance computing facility (HPC), such as [ADA](/topics/ada.qmd) or [Snellius](/topics/snellius.qmd).
 
 Below we discuss three possible workflows to work with data stored in Yoda:
 
@@ -24,44 +24,11 @@ Below we discuss three possible workflows to work with data stored in Yoda:
 
 3.   Streaming data in memory, without having to download the data from Yoda.
 
-## Workflow: downloading files and folders
-
-> Suitable for:
->
-> -   Analysis system: PC, VRE, HPC
->
-> -   Data: All file and folder sizes, assuming there is enough storage on the analysis system
-
-In this workflow, you download the files and folders that you want to analyse from Yoda to the system where you plan to run the analysis, i.e. you create a working copy of your data. You run the analysis on the system, and afterwards upload the data and/or results back to Yoda. You can also safely remove your working copy again, since the source data stays untouched in Yoda. In this way you can save storage space on the analysis system.
-
-The main reason for choosing this method is that it is relatively straightforward, and it will give you good performance when reading your file in your analysis script.
-
-There are several ways in which you can download and upload the files:
-
--   Via the Yoda web portal This can be done if you have an internet browser available (e.g., your PC and some VREs). You could choose this option when you are already familiar with the web portal, or when you do not want to install additional tools on your system. However, this method is not very reliable when transferring large files. Also, the web portal will not give you clear feedback on whether a download was completed correctly.
-
--   Via a WebDAV client This method is more suitable for a larger amount of files (up to several thounands files and a 100GB of data). The [data access introduction page](../data_access/introduction.qmd) lists the options on different operating systems.
-
--   Using [iCommands or GoCommands](../data_access/yoda_using_icommands.qmd).
- These command line tools provide slightly better performance for data transfer compared to iBridges, and also offer many features for working with metadata. It is also possible to check the integrity of uploaded and downloaded files, see the [ichksum command](https://docs.irods.org/4.3.4/icommands/user/).
-
--   Using [iBridges or the Python iRODS Client](../data_access/yoda_using_python.qmd). If you use Python for your analysis, you could include transfer of the source data and results in your scripts. This way you can automate data management and avoid duplicates or temporary data. For some workflows it is also possible to access a file directly by streaming, [see below](#workflow-streaming).
-
-::: callout-tip
-## Tips
-
-- Make sure you have a good internet connection when you download (large) files to your PC and when you upload your results to Yoda. Regardless of the method you choose, this will be the biggest determinant of download speed. On HPC and VRE systems, the connections should be very good.
-
-- Treat the downloaded files as a temporary working copy and make sure to remove them whenever they are not needed anymore. In this way, you make sure the version of the file on Yoda is the ‘ground truth’ version of your data and prevents the creation of copies of copies that might go out of sync. Automate the downloading of files, removal of temporary copies, and uploading of output as much as possible. This improves the reproducibility of results and reduces the potential of human error.
-
-- Use iBridges or iCommands to (automatically) add file-level metadata to your files on Yoda when you upload them (e.g. file version, experimental condition, etc.). This way, you can keep your project organised. Note that metadata to describe the to-be-archived data package as a whole should be added via the web portal.
-:::
-
 ## Workflow: mount with Network Disk
 
 > Suitable for:
 >
-> - Analysis system: PC, VRE and some HPC systems
+> - Analysis system: PC, VRE with graphical interface
 >
 > - Data: small operations on small files only
 
@@ -83,7 +50,38 @@ However, we only recommend working with this method if you are working with a sm
 -   Make sure only one person at a time is working on the data to prevent conflicts.
 :::
 
-## Workflow: streaming {#workflow-streaming}
+## Workflow: downloading files and folders
+
+> Suitable for:
+>
+> -   Analysis system: PC, VRE, HPC
+>
+> -   Data: All file and folder sizes, assuming there is enough storage on the analysis system
+
+In this workflow, you download the files and folders that you want to analyse from Yoda to the system where you plan to run the analysis, i.e. you create a working copy of your data. You run the analysis on the system, and afterwards upload the data and/or results back to Yoda. You can also safely remove your working copy again, since the source data stays untouched in Yoda. In this way you can save storage space on the analysis system.
+
+The main reason for choosing this method is that it is relatively straightforward, and it will give you good performance when reading your file in your analysis script.
+
+There are several ways in which you can download and upload the files:
+
+| Tool | Typical dataset | Platform | Explanation | 
+| --- | --- | --- | --- |
+| **Yoda web portal** | 10GB, 100 files or less | PC, VRE | This can be done if you have an internet browser available (e.g., your PC and some VREs). You could choose this option when you do not want to install additional tools on your system. However, this method is not very reliable when transferring large files. Also, the web portal will not give you clear feedback on whether a download was completed correctly. | 
+| **WebDAV client**<br>[manual](../data_access/introduction.qmd) | 100GB, 1000 files or less | PC, VRE | This method is more suitable for a larger amount of files (up to several thounands files and a 100GB of data). WebDAV can be slow when transferring a large amount of small files. It is possible to automate the transfer files using WebDAV with Python, but it would be better to use the iRODS interface, see below. |
+| **iCommands or GoCommands**<br>[manual](../data_access/yoda_using_icommands.qmd)  | Small to very large | PC, VRE, HPC | These command line tools can handle very large datasets and also offer many features for working with file-level metadata. It is also possible to check the integrity of uploaded and downloaded files, see the [ichksum command](https://docs.irods.org/4.3.4/icommands/user/). |
+| **iBridges or the Python iRODS Client**<br>[manual](../data_access/yoda_using_python.qmd) | Small to very large | PC, VRE, HPC | If you use Python for your analysis, you could include transfer of the source data and results in your scripts. This way you can automate data management and avoid duplicates or temporary data. For some workflows it is also possible to access a file directly by streaming, [see below](#workflow-streaming). | 
+
+::: callout-tip
+## Tips
+
+- Make sure you have a good internet connection when you download (large) files to your PC and when you upload your results to Yoda. Regardless of the method you choose, this will be the biggest determinant of download speed. On HPC and VRE systems, the connections should be very good.
+
+- Treat the downloaded files as a temporary working copy and make sure to remove them whenever they are not needed anymore. In this way, you make sure the version of the file on Yoda is the ‘ground truth’ version of your data and prevents the creation of copies of copies that might go out of sync. Automate the downloading of files, removal of temporary copies, and uploading of output as much as possible. This improves the reproducibility of results and reduces the potential of human error.
+
+- Use iBridges or iCommands to (automatically) add file-level metadata to your files on Yoda when you upload them (e.g. file version, experimental condition, etc.). This way, you can keep your project organised. Note that metadata to describe the to-be-archived data package as a whole should be added via the web portal.
+:::
+
+## Workflow: streaming
 
 > Suitable for:
 >
