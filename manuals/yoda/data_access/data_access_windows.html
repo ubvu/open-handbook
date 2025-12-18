@@ -411,10 +411,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#file-transfer" id="toc-file-transfer" class="nav-link active" data-scroll-target="#file-transfer">File transfer</a></li>
   <li><a href="#drive-letter" id="toc-drive-letter" class="nav-link" data-scroll-target="#drive-letter">Drive letter</a></li>
-  <li><a href="#commandline-and-rclone" id="toc-commandline-and-rclone" class="nav-link" data-scroll-target="#commandline-and-rclone">Commandline and Rclone</a></li>
-  <li><a href="#webdrive" id="toc-webdrive" class="nav-link" data-scroll-target="#webdrive">Webdrive</a></li>
-  <li><a href="#windows-explorer" id="toc-windows-explorer" class="nav-link" data-scroll-target="#windows-explorer">Windows Explorer</a></li>
-  <li><a href="#winscp" id="toc-winscp" class="nav-link" data-scroll-target="#winscp">WinSCP</a></li>
+  <li><a href="#command-line-and-rclone" id="toc-command-line-and-rclone" class="nav-link" data-scroll-target="#command-line-and-rclone">Command line and Rclone</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/yoda/data_access/data_access_windows.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -440,38 +437,26 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>There are 2 basic ways to access the Yoda WebDAV interfacek from Windows. Using a tool to mount the Yoda Disk as a drive letter or file transfer tools. Which one works best depends on your workflow.</p>
-<section id="file-transfer" class="level3">
-<h3 class="anchored" data-anchor-id="file-transfer">File transfer</h3>
+<p>There are 2 basic ways to access the Yoda WebDAV interface from Windows. Using a tool to mount the Yoda Disk as a drive letter or file transfer tools. Which one works best depends on your workflow.</p>
+<section id="file-transfer" class="level2">
+<h2 class="anchored" data-anchor-id="file-transfer">File transfer</h2>
 <p>There are numerous free file transfer tools. Using these tools you must download the files you want to work on to your computer and upload the changes. This way of working is more stable and robust.</p>
 <ul>
 <li><p><a href="../../../manuals/yoda/data_access/yoda_using_cyberduck.html">Cyberduck</a> is a free file transfer tool for Mac and Windows. Cyberduck is the preferred way to access the Yoda Disk. There is also a paid addon “Mountainduck” which adds functionality to access via a drive letter.</p></li>
-<li><p><a href="../../../manuals/yoda/data_access/yoda_using_winscp.html">WinSCP</a> is an alternative free file transfer tool.</p></li>
+<li><p><a href="../../../manuals/yoda/data_access/yoda_using_winscp.html">WinSCP</a> is an alternative free file transfer tool. WinSCP provides a reliable file transfer solution. It allows users to securely download and upload files to Yoda. This option is suitable for large and complex datasets.</p></li>
 </ul>
 </section>
-<section id="drive-letter" class="level3">
-<h3 class="anchored" data-anchor-id="drive-letter">Drive letter</h3>
+<section id="drive-letter" class="level2">
+<h2 class="anchored" data-anchor-id="drive-letter">Drive letter</h2>
 <p>Using these tools you can access the Yoda Disk via a drive letter.</p>
 <ul>
-<li><p><a href="../../../manuals/yoda/data_access/yoda_using_webdrive">WebDrive</a> is a VU-supported method to remotely access files and can also be used on “green” pc’s.</p></li>
+<li><p><a href="../../../manuals/yoda/data_access/yoda_using_webdrive">WebDrive</a> is a VU-supported method to remotely access files and can also be used on “green” pc’s. With WebDrive the Yoda WebDAV interface can be connected as a drive in Windows Explorer.</p></li>
 <li><p>Directly in <a href="../../../manuals/yoda/data_access/yoda_using_windowsexplorer.html">Windows Explorer</a>. However, this has restrictions: a maximum file size of 4GB on Windows 11 and 50MB(!) on Windows 10 and a maximum of 1000 files per folder (Windows 10&amp;11). Take care if you expect your dataset to exceed these limitations.</p></li>
 </ul>
 </section>
-<section id="commandline-and-rclone" class="level3">
-<h3 class="anchored" data-anchor-id="commandline-and-rclone">Commandline and Rclone</h3>
-<p>If you are familiar with commandline tools <a href="../../../manuals/yoda/data_access/yoda_using_rclone.html">rclone</a> is also a good option to access the Yoda via Webdav. It also provides the option to use a drive letter.</p>
-</section>
-<section id="webdrive" class="level3">
-<h3 class="anchored" data-anchor-id="webdrive">Webdrive</h3>
-<p>Windows users can use WebDrive to access their data, as an alternative to the native WebDAV client. With WebDrive the Yoda WebDAV interface can be connected via as a drive in Windows Explorer.</p>
-</section>
-<section id="windows-explorer" class="level3">
-<h3 class="anchored" data-anchor-id="windows-explorer">Windows Explorer</h3>
-<p>Windows users can also access their data directly via Windows Explorer. This option is only suitable for smaller datasets.</p>
-</section>
-<section id="winscp" class="level3">
-<h3 class="anchored" data-anchor-id="winscp">WinSCP</h3>
-<p>WinSCP provides a reliable file transfer solution. It allows users to securely download and upload files to Yoda. This option is suitable for large and complex datasets.</p>
+<section id="command-line-and-rclone" class="level2">
+<h2 class="anchored" data-anchor-id="command-line-and-rclone">Command line and Rclone</h2>
+<p>If you are familiar with command line tools <a href="../../../manuals/yoda/data_access/yoda_using_rclone.html">rclone</a> is also a good option to access the Yoda via Webdav. It also provides the option to use a drive letter.</p>
 
 
 </section>
