@@ -14,12 +14,12 @@ You can use rclone to access the Yoda drive using WebDAV.
 
 Note: if you are on Linux and comfortable with commandline tools, the [iRODS icommands](./yoda_using_icommands.qmd) provide better performance.
 
-## Create a config
-Rclone always expects you to create a config first:
+## How to: Create a config
+1. Rclone always expects you to create a config first:
 ```sh
 rclone config
 ```
-You will be led through a number of questions
+2. You will be led through a number of questions
 ```sh
 Current remotes:
 
@@ -93,7 +93,7 @@ password:
 Confirm the password:
 password:
 ```
-Password is a [Data Access Password](/manuals/yoda/data_access/yoda_dap.qmd) generated in Yoda.
+3. Password is a [Data Access Password](/manuals/yoda/data_access/yoda_dap.qmd) generated in Yoda.
 ```sh
 Option bearer_token.
 Bearer token instead of user/pass (e.g. a Macaroon).
