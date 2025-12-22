@@ -26,19 +26,19 @@ The `readme.md` on the [github repository](https://github.com/cyverse/gocommands
 ### Installing iCommands on CentOS
 The following should work to install the iCommands on CentOS 8.
 
-First add the package source:
+1. First add the package source:
 ```sh
 sudo yum -y install wget epel-release yum-plugin-versionlock
 sudo rpm --import https://packages.irods.org/irods-signing-key.asc
 wget -qO - https://packages.irods.org/renci-irods.yum.repo | sudo tee /etc/yum.repos.d/renci-irods.yum.repo
 ```
 
-Note that the latest irods version is 5, this client is not compatible with the Yoda irods version.You can list the available versions with:
+- Note that the latest irods version is 5, this client is not compatible with the Yoda irods version.You can list the available versions with:
 ```sh
 sudo yum --showduplicates list irods-icommands
 ```
 
-Install the latest available 4.x.x  version:
+2. Install the latest available 4.x.x  version:
 ```sh
 sudo yum -y install irods-runtime-4.3.0 irods-icommands-4.3.0
 sudo yum versionlock irods-runtime irods-icommands
@@ -55,24 +55,24 @@ yum versionlock delete irods-runtime irods-icommands
 ### Installing iCommands on Ubuntu
 The following should work to install the iCommands on Ubuntu 22 or 24. 
 
-First add the irods package source.
+1. First add the irods package source.
 ```sh
 wget -qO - https://packages.irods.org/irods-signing-key.asc | sudo apt-key add -
 echo "deb [arch=amd64] https://packages.irods.org/apt/ $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/renci-irods.list
 sudo apt update
 ```
 
-Note that the latest irods version is 5, this client is not compatible with the Yoda irods version. You can check which versions are available with:
+- Note that the latest irods version is 5, this client is not compatible with the Yoda irods version. You can check which versions are available with:
 ```sh
 sudo apt show irods-icommands -a
 ``` 
 
-Take the latest 4.x version, at the time of writing:
+2. Take the latest 4.x version, at the time of writing:
 ```sh
 sudo apt -y install irods-runtime=4.3.4-0~noble irods-icommands=4.3.4-0~noble
 ```
 
-Make sure to hold the package to prevent inadvertently updating to version 5:
+- Make sure to hold the package to prevent inadvertently updating to version 5:
 ```sh
 sudo apt-mark hold irods-runtime irods-icommands
 ```
