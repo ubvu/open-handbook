@@ -6,13 +6,13 @@ website:
       contents:
         - manuals/yoda/index.qmd
         - section: Yoda Portal
-          contents: 
+          contents:
+            - manuals/yoda/yoda_portal/index.qmd
             - manuals/yoda/yoda_portal/introduction.qmd
             - manuals/yoda/yoda_portal/notifications.qmd
             - manuals/yoda/yoda_portal/sram_invitations_eduid_activation.qmd
             - manuals/yoda/yoda_portal/logging_in.qmd
             - manuals/yoda/yoda_portal/group_manager.qmd
-            - manuals/yoda/yoda_portal/index.qmd
         - section: Using Yoda
           contents:
             - manuals/yoda/using_yoda/finding_restoring.qmd
