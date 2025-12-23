@@ -42,12 +42,12 @@ When in doubt about what type of data you’re dealing with, please consult your
 
 ### What else can I do on Yoda besides Data Storage?
 
-It supports the entire research process from data acquisition to publication. It offers flexible metadata schemes to optimise findability of your data sets. It enables data publication and the associated minting of persistent identifiers (DOIs). It offers support for standardised workflows for the storage and archiving of research data. You can find more information in the [Yoda Topic Page] (https://rdm.vu.nl/topics/yoda.html). 
+It supports the entire research process from data acquisition to publication. It enables data publication and the associated minting of persistent identifiers (DOIs). It offers support for standardised workflows for the storage and archiving of research data. You can find more information in the [Yoda Topic Page] (https://rdm.vu.nl/topics/yoda.html). 
 
 ### What is Metadata? And why is it Important when Using Yoda?
 
 Metadata is “data about data”. Metadata serves multiple purposes in Yoda. 
-Yoda facilitates adding both structured and unstructured metadata to your research data. Entering structured metadata is a prerequisite for archiving a data package. If a folder is published, its structured metadata will be published as well and can be harvested by data catalogs such as DANS NARCIS and DataCite. Your published datasets can also be automatically registered in Pure. You can find more information about Metadata [here] (https://rdm.vu.nl/manuals/yoda/using_yoda/metadata.html).
+Yoda facilitates adding both structured and unstructured metadata to your research data. Entering structured metadata is a prerequisite for archiving a data package. If a folder is published, its structured metadata will be published as well and can be harvested by data catalogs such as DANS NARCIS and DataCite. You can find more information about Metadata [here] (https://rdm.vu.nl/manuals/yoda/using_yoda/metadata.html).
 
 ### What is a Data Package?
 
@@ -55,12 +55,13 @@ The data in your research data compartment is a set of files and folders. If par
 
 ### How does Archiving works in Yoda?
 
-If you choose to archive a part of your data, Yoda will make a copy of the data to the archive (also known as “Vault”) of your project space, where it will be retained unchanged during its retention period. You can visit the [Vault Page] (https://rdm.vu.nl/manuals/yoda/securing_distribution/vault_archive.html) for more information aout archiving data.
+If you choose to archive a part of your data, Yoda will make a copy of the data to the archive (also known as “Vault”) of your project space, where it will be retained unchanged during its retention period. You can visit the [Vault Page] (https://rdm.vu.nl/manuals/yoda/securing_distribution/vault_archive.html) for more information about archiving data.
 
 ### How Do I Submit a Data Package to The Vault?
 
 Only Group Manager or regular group members may submit data packages to the Vault.
-Navigate to the folder you want to archive in the Yoda portal. Ensure that you are in the folder which you want to submit to the vault. Check that all mandatory metadata has been entered in the metadata form of the folder. Now press the “Actions (Submit)” button.
+Navigate to the folder you want to archive in the Yoda portal. Ensure that you are in the folder which you want to submit to the vault. Check that all mandatory metadata has been entered in the metadata form of the folder. Now press the “Actions (Submit)” button. You can visit the [Vault Page] (https://rdm.vu.nl/manuals/yoda/securing_distribution/vault_archive.html) for more information about archiving data.
+
 
 ### What is the Role of the Data Manager?
 
@@ -72,17 +73,19 @@ The vault of your group becomes visible in the Yoda portal once it contains at l
 
 ### How does Publishing works in Yoda?
 
-After archiving your data, you can optionally publish it, thus making your data findable. If you classify your data as open - freely retrievable, then the data itself can be downloaded anonymously by any third party.
+After archiving your data, you can optionally publish it, thus making your data findable. If you classify your data as open - freely retrievable, then the data itself can be downloaded anonymously by any third party. 
 
 ### How Do I Make My Data Package Ready for Publication?
 
-If needed, you can update the metadata by clicking the “Metadata” button. To submit a data package for publication, navigate to the data package in the vault and press the “Submit for publication” button. 
-What is the Process of Data Review for Publication?
+If needed, you can update the metadata by clicking the “Metadata” button. To submit a data package for publication, navigate to the data package in the vault and press the “Submit for publication” button. For more information on submitting a dataset for publication you can visit [Publishing Data] (https://rdm.vu.nl/manuals/yoda/securing_distribution/vault_publish.html).
+
+### What is the Process of Data Review for Publication?
+
 Once you’ve submitted a data package for publication, the data manager of your Yoda community will be notified. The Data Manager will check that the data package meets various criteria for publication. If the data manager encounters any issues, you will be contacted. 
 
 ### How do I receive the DOI number of my publication?
 
-Once the Data Manager has approved your data package, you’ll receive an email notification that your data package has been published. This notification contains the DOI that has been assigned to your data package. 
+Once the Data Manager has approved your data package, you’ll receive an email notification that your data package has been published. This notification contains the DOI that has been assigned to your data package. You can also find the DOI by going to the Vault dataset in the Yoda webportal.
 
 ### Do I always need to make my Data Package freely available to 3rd parties?
 
