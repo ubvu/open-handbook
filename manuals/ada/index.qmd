@@ -8,6 +8,7 @@ listing:
     - ./software.qmd
     - ./slurm.qmd
     - ./hardware.qmd
+    - ./hpc-101.qmd
     - ./open-ondemand.qmd
     - ./yoda.qmd
     - ./help.qmd
@@ -22,7 +23,7 @@ image: '/public/manuals/ada/ada1.jpg'
 
 ## Welcome
 
-ADA is the high-performance computing (HPC) cluster for researchers at Vrije Universiteit Amsterdam. Named after [Ada Lovelace](https://en.wikipedia.org/wiki/Ada_Lovelace), it serves as the successor to the BAZIS cluster and is managed by the IT for Research team.
+ADA is named in honour of [Ada Lovelace](https://en.wikipedia.org/wiki/Ada_Lovelace), the pioneering mathematician and writer known for her work on Charles Babbage's Analytical Engine. She was the first to recognise that the machine had applications beyond pure calculation. ADA is the rebranded name of our previous cluster, BAZIS, and is maintained by the IT for Research team.
 
 ::: {.callout-note title="New here? Start with these first."}
 - Request an account via the 🔒 [VU Service Portal](https://services.vu.nl/esc?id=sc_cat_item&sys_id=83139c79473e8150bfa46d72e36d432e). 
@@ -51,10 +52,12 @@ ADA is the high-performance computing (HPC) cluster for researchers at Vrije Uni
 
 Use ADA when you need more resources than a laptop or workstation: multi-core CPUs, large memory nodes, or batch GPU capacity. Jobs must run from the Linux command line in non-interactive mode—graphical tools require alternatives such as the [VU Compute Hub](https://hub.compute.vu.nl/) or [SURF Research Cloud](../../topics/researchcloud.qmd).
 
+
 ## Training and External Resources
 
 - **SURF Snellius wiki**: [Snellius knowledge base](https://servicedesk.surf.nl/wiki/display/WIKI/Snellius) – much of it applies to ADA.
 - **Workshops**: SURF’s free [Introduction to Supercomputing](https://www.surf.nl/en/agenda) courses provides transferable skills for ADA users.
+- **HPC Course VU**: Once a year, the VU organizes the [HPC Course](https://vu.nl/en/education/phd-courses/hpc-course). All ADA users will be notified when registration opens. 
 
 ## Support
 
@@ -76,7 +79,7 @@ The cluster has been built and is maintained by:
 
 * Davor Cvikic
 * Kostas Vilkelis
-* Wiebe J.R. Timmers
+* Wiebe Timmers
 
 ## Browse the Manuals
 
