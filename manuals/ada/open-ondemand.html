@@ -232,20 +232,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../manuals/ada/software.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Software</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../manuals/ada/slurm.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Slurm</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../manuals/ada/software.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Software</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../manuals/ada/hardware.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Hardware and resources</span></a>
+ <span class="menu-text">Hardware</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -304,7 +304,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../manuals/ada/code-examples/Python/3-torch.html" class="sidebar-item-text sidebar-link">
+  <a href="../../manuals/ada/code-examples/Python/3-python-pytorch.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">PyTorch</span></a>
   </div>
 </li>
@@ -329,6 +329,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
       </ul>
   </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../manuals/ada/hpc-101.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HPC 101</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -341,7 +347,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#what-it-is" id="toc-what-it-is" class="nav-link active" data-scroll-target="#what-it-is">What it is</a></li>
   <li><a href="#resources-and-persistence" id="toc-resources-and-persistence" class="nav-link" data-scroll-target="#resources-and-persistence">Resources and persistence</a></li>
-  <li><a href="#system-apps-rstudio-jupyterlab-vs-code" id="toc-system-apps-rstudio-jupyterlab-vs-code" class="nav-link" data-scroll-target="#system-apps-rstudio-jupyterlab-vs-code">System apps (RStudio, JupyterLab, VS Code)</a></li>
+  <li><a href="#system-apps-rstudio-jupyterlab-vs-code-etc." id="toc-system-apps-rstudio-jupyterlab-vs-code-etc." class="nav-link" data-scroll-target="#system-apps-rstudio-jupyterlab-vs-code-etc.">System apps (RStudio, JupyterLab, VS Code etc.)</a></li>
   <li><a href="#custom-software-via-apptainer-optional" id="toc-custom-software-via-apptainer-optional" class="nav-link" data-scroll-target="#custom-software-via-apptainer-optional">Custom software via Apptainer (optional)</a></li>
   <li><a href="#develop-your-own-ood-apps-advanced" id="toc-develop-your-own-ood-apps-advanced" class="nav-link" data-scroll-target="#develop-your-own-ood-apps-advanced">Develop your own OOD apps (advanced)</a></li>
   <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a></li>
@@ -380,8 +386,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="what-it-is">What it is</h2>
 <p>Open OnDemand (OOD) is a browser-based portal for launching interactive sessions on ADA without local SSH setup. It provides web terminals, a file browser, and ready-made apps such as RStudio, JupyterLab, and VS Code.</p>
 <ul>
-<li>Portal: https://ondemand.labs.vu.nl</li>
-<li>Access: available on campus or via the VU VPN.</li>
+<li>Portal: <a href="https://ondemand.labs.vu.nl" target="_blank">https://ondemand.labs.vu.nl</a></li>
+<li>Access: available on campus or via the eduVPN.</li>
 <li>Scheduler: all sessions run as SLURM jobs on compute nodes.</li>
 </ul>
 </section>
@@ -405,11 +411,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Please stop sessions when finished to free resources for others.</li>
 </ul>
 </section>
-<section id="system-apps-rstudio-jupyterlab-vs-code" class="level2">
-<h2 class="anchored" data-anchor-id="system-apps-rstudio-jupyterlab-vs-code">System apps (RStudio, JupyterLab, VS Code)</h2>
+<section id="system-apps-rstudio-jupyterlab-vs-code-etc." class="level2">
+<h2 class="anchored" data-anchor-id="system-apps-rstudio-jupyterlab-vs-code-etc.">System apps (RStudio, JupyterLab, VS Code etc.)</h2>
 <ol type="1">
 <li>Open the OOD portal and click the app icon (for example RStudio, JupyterLab, or VS Code).</li>
-<li>Fill in the resource form: partition/queue, CPUs, memory, walltime (and any optional parameters).</li>
+<li>Fill in the resource form: partition, CPUs, memory, walltime (and any optional parameters).</li>
 <li>Click “Launch”. OOD submits a job; when it starts, click “Connect”.</li>
 <li>Return later via “My Interactive Sessions” to reconnect, or “Stop” to end early.</li>
 </ol>
@@ -428,7 +434,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>Test the image on a compute node before using it in OOD:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apptainer</span> exec /path/to/your.sif jupyter-lab <span class="at">--version</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
 </ul>
-<p>References: - Apptainer quick start: https://apptainer.org/docs/user/main/quick_start.html</p>
+<p>Also see the apptainer quick start: <a href="https://apptainer.org/docs/user/main/quick_start.html" target="_blank">https://apptainer.org/docs/user/main/quick_start.html</a></p>
 </section>
 <section id="develop-your-own-ood-apps-advanced" class="level2">
 <h2 class="anchored" data-anchor-id="develop-your-own-ood-apps-advanced">Develop your own OOD apps (advanced)</h2>
@@ -865,8 +871,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../manuals/ada/hardware.html" class="pagination-link" aria-label="Hardware and resources">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Hardware and resources</span>
+      <a href="../../manuals/ada/hardware.html" class="pagination-link" aria-label="Hardware">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Hardware</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

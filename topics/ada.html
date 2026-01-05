@@ -160,10 +160,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#what-is-it" id="toc-what-is-it" class="nav-link active" data-scroll-target="#what-is-it">What is it?</a></li>
-  <li><a href="#what-can-it-be-used-for" id="toc-what-can-it-be-used-for" class="nav-link" data-scroll-target="#what-can-it-be-used-for">What can it be used for?</a>
-  <ul class="collapse">
-  <li><a href="#gpus-in-ada" id="toc-gpus-in-ada" class="nav-link" data-scroll-target="#gpus-in-ada">GPUs in ADA</a></li>
-  </ul></li>
+  <li><a href="#what-can-it-be-used-for" id="toc-what-can-it-be-used-for" class="nav-link" data-scroll-target="#what-can-it-be-used-for">What can it be used for?</a></li>
   <li><a href="#how-to-request-access" id="toc-how-to-request-access" class="nav-link" data-scroll-target="#how-to-request-access">How to request access</a></li>
   <li><a href="#are-there-costs-involved" id="toc-are-there-costs-involved" class="nav-link" data-scroll-target="#are-there-costs-involved">Are there costs involved?</a>
   <ul class="collapse">
@@ -201,26 +198,21 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="what-is-it" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-it">What is it?</h2>
-<p>ADA is a high performance compute (HPC) cluster for research at the Vrije Universiteit Amsterdam. ADA is named in honour of <a href="https://en.wikipedia.org/wiki/Ada_Lovelace" target="_blank">Ada Lovelace</a>, the pioneering mathematician and writer known for her work on Charles Babbage’s Analytical Engine. She was the first to recognise that the machine had applications beyond pure calculation. ADA is the rebranded name of our previous cluster, BAZIS, and is maintained by the IT for Research team.</p>
+<p>ADA is a high performance compute (HPC) cluster for research at the Vrije Universiteit Amsterdam. Named after <a href="https://en.wikipedia.org/wiki/Ada_Lovelace" target="_blank">Ada Lovelace</a>, it serves as the successor to the BAZIS cluster and is managed by the IT for Research team.</p>
 <p>ADA is a heterogenious cluster composed of partitions and servers financed by various VU research departments and the VU IT department. The cluster is particularly useful for executing multi-node computations that are not possible on the general VU compute servers but do not require the scale of the National Supercomputer, Snellius.</p>
 <p>ADA users are granted access to a set of compute partitions based on the resources owned by their research department. Users not affiliated with a research department that owns cluster hardware can get access to the community partition.</p>
-<p>A large collection of tools, compilers and libraries is available for your analysis, and your data on <a href="../topics/SciStor.qmd">SciStor</a> are directly accessible from ADA.</p>
+<p>A large collection of tools, compilers and libraries is available for your analysis, and your data on <a href="../topics/SciStor.qmd">SciStor</a> is directly accessible from ADA.</p>
+<p>ADA is also available through <a href="[https://ondemand.labs.vu.nl/]">OpenOndemand</a>, a user-friendly GUI that provides access to ADA.</p>
 </section>
 <section id="what-can-it-be-used-for" class="level2">
 <h2 class="anchored" data-anchor-id="what-can-it-be-used-for">What can it be used for?</h2>
-<p>Most researchers start out by running their analysis tools on their laptop. The performance of a laptop is limited however. You might find your analysis takes up so many resources that your laptop becomes unusable for other tasks, or tasks take so long that you have to find a way to keep your laptop running overnight. For example a lot of AI tasks, such as running Large Language Models (LLMs), require a dedicated GPU, which most laptops don’t have. These tasks will run very slowly, or not at all.</p>
-<p>A next step might be purchasing a Workstation with more performance and maybe a GPU. You can run the same applications as your laptop and leave it running overnight and during weekends. The modern VU offices are not geared for workstations, however, so that might not be possible.</p>
-<p>The point where your laptop or even a workstation becomes unusable for your analysis workflow is when you should consider HPC. HPC nodes have a large amount of RAM, many processor cores and often multiple GPUs. HPC clusters work with a queueing system, meaning the system will wait until enough resources are available to run your job and it will run multiple jobs simultaneously so its resources are used optimally.</p>
-<p>Be aware that it is generally not possible to run graphical desktop applications (such as RStudio, SPSS or ArcGIS) on an HPC cluster. Your analysis needs to be able to run as a script that can be started from a Linux command line. This means there is a learning curve to use HPC, especially if you are not used to a Command-line Interface (CLI) and scripting.</p>
-<p>CLI and scripting skills are very useful to have for every researcher, but if you feel you do not have the time to learn these skills there might be other options available such as <a href="https://hub.compute.vu.nl" target="_blank">the VU Compute Hub</a> or <a href="../topics/researchcloud.html">SURF Research Cloud</a> where you can run some graphical tools.</p>
-<section id="gpus-in-ada" class="level3">
-<h3 class="anchored" data-anchor-id="gpus-in-ada">GPUs in ADA</h3>
-<p>Some workloads, such as Machine Learning, require a GPU. At the moment only some of the compute nodes in the ADA community partition have GPUs, the availability is not sufficient for everyone at any given time. If your workload requires more extensive use of GPUs and your department has no dedicated compute nodes with GPUs, you can apply for access to the national HPC infrastructure <a href="../topics/snellius.html">Snellius</a> or consider <a href="#buying-dedicated-compute-nodes">buying ADA compute nodes</a> with GPUs for your department.</p>
-</section>
+<p>ADA is particularly usefull for HPC workloads that require one or several compute nodes to complete within a feasible timeframe. The compute nodes in ADA are equipped with high-cpu, high-RAM and GPU functionality such that they will provide significant speedups in comparison to using a standard desktop.</p>
+<p>Please note that GPU functionality on ADA is however limited to several NVIDIA A30 / RTX 2070 cards, if you require more GPU performance (e.g.&nbsp;for training LLMs) you can apply for access to the national HPC infrastructure <a href="../topics/snellius.html">Snellius</a> or consider <a href="#buying-dedicated-compute-nodes">buying ADA compute nodes</a> with GPUs for your department.</p>
 </section>
 <section id="how-to-request-access" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-request-access">How to request access</h2>
 <p>A form to request an account on ADA can be found on 🔒 <a href="https://services.vu.nl/esc" target="_blank">VU Service Portal</a> under IT &gt; My work field &gt; Research &gt; HPC Cluster Computing &gt; New ADA HPC Cluster Computing.</p>
+<p>It is recommended that new users of ADA have some experience in using the command line interface as it is crucial for knowing how to interact with the cluster.</p>
 </section>
 <section id="are-there-costs-involved" class="level2">
 <h2 class="anchored" data-anchor-id="are-there-costs-involved">Are there costs involved?</h2>
@@ -232,9 +224,8 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="getting-started" class="level2">
 <h2 class="anchored" data-anchor-id="getting-started">Getting started</h2>
-<p>You can find information on how to use ADA on <a href="https://ada-hpc.readthedocs.io" target="_blank">ada-hpc.readthedocs.io</a>.</p>
-<p>Also take a look at the <a href="https://servicedesk.surf.nl/wiki/display/WIKI/Snellius" target="_blank">SURF wiki Snellius pages</a>, they contain a lot of information that applies to ADA as well.</p>
-<p>SURF organises regular “Introduction to Supercomputing” training sessions, these are free to attend for VU researchers. The course is aimed at using <a href="../topics/snellius.html">Snellius</a>, but what you learn is applicable to ADA as well. Please consult the <a href="https://www.surf.nl/en/agenda" target="_blank">SURF Agenda</a> for dates and registration.</p>
+<p>You can find information on how to use ADA on the <a href="[https://rdm.vu.nl/manuals/ada/index.html]">ADA MANUAL page</a>. Also take a look at the <a href="https://servicedesk.surf.nl/wiki/display/WIKI/Snellius" target="_blank">SURF wiki Snellius pages</a>, which contains a lot of information that applies to ADA as well.</p>
+<p>Once a year, the VU organizes the <a href="https://vu.nl/en/education/phd-courses/hpc-course" target="_blank">HPC Course</a>. All ADA users will be notified when registration opens. Additionally, it is often also possible to attend HPC Courses through SURF at other locations, please consult the <a href="https://www.surf.nl/en/agenda" target="_blank">SURF Agenda</a> for dates and registration.</p>
 </section>
 <section id="contact" class="level2">
 <h2 class="anchored" data-anchor-id="contact">Contact</h2>

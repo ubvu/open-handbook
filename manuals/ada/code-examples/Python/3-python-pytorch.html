@@ -192,7 +192,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/matlab.html">Code Examples</a></li><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/Python/1-python-multithreading.html">Python</a></li><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/Python/3-torch.html">PyTorch</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/matlab.html">Code Examples</a></li><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/Python/1-python-multithreading.html">Python</a></li><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/Python/3-python-pytorch.html">PyTorch</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -232,20 +232,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../manuals/ada/software.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Software</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../../../manuals/ada/slurm.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Slurm</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../../../manuals/ada/software.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Software</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../../../manuals/ada/hardware.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Hardware and resources</span></a>
+ <span class="menu-text">Hardware</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -304,7 +304,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../manuals/ada/code-examples/Python/3-torch.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../../manuals/ada/code-examples/Python/3-python-pytorch.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">PyTorch</span></a>
   </div>
 </li>
@@ -329,6 +329,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
       </ul>
   </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../../manuals/ada/hpc-101.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HPC 101</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -341,14 +347,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#example-gpu-job" id="toc-example-gpu-job" class="nav-link active" data-scroll-target="#example-gpu-job">Example GPU job</a></li>
   <li><a href="#performance-and-results" id="toc-performance-and-results" class="nav-link" data-scroll-target="#performance-and-results">Performance and Results</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/code-examples/Python/3-torch.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/code-examples/Python/3-python-pytorch.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/matlab.html">Code Examples</a></li><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/Python/1-python-multithreading.html">Python</a></li><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/Python/3-torch.html">PyTorch</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/matlab.html">Code Examples</a></li><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/Python/1-python-multithreading.html">Python</a></li><li class="breadcrumb-item"><a href="../../../../manuals/ada/code-examples/Python/3-python-pytorch.html">PyTorch</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">PyTorch</h1>
 </div>
@@ -373,16 +378,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>This page shows an example of using PyTorch.</p>
-<p>PyTorch is a popular deep learning library for training artificial neural networks.</p>
+<p>This page shows an example of using PyTorch. PyTorch is a popular deep learning library for training artificial neural networks.</p>
 <p>It can be installed in many ways. Optimized versions with Easybuild are available in the software stack on ADA. Search the module environment for the appropiate version.</p>
 <section id="example-gpu-job" class="level2">
 <h2 class="anchored" data-anchor-id="example-gpu-job">Example GPU job</h2>
 <p>This example recipe from the <a href="https://pytorch.org/tutorials/recipes/recipes/amp_recipe.html" target="_blank">PyTorch tutorials site</a> measures the performance of a simple network in default precision, then walks through adding autocast and GradScaler to run the same network in mixed precision with improved performance.</p>
 <p>It can be run as a standalone python script. Download the script:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://github.com/pytorch/tutorials/blob/main/recipes_source/recipes/amp_recipe.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://raw.githubusercontent.com/pytorch/tutorials/refs/heads/main/recipes_source/recipes/amp_recipe.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>This script can be run interactively</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> amp_recipe.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> amp_recipe.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>But we will create a slurm script <code>Torch-AMP-ex.sh</code> to run on a compute node in batch mode. In this example 1 Node, 2 cores and 1 GPU are requested for 10 minutes.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash -l</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH -J Torch-AMP-example</span></span>
@@ -391,28 +395,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --gpus=1</span></span>
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --time=0-00:10:00</span></span>
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --mail-type=end,fail</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --mail-user= &lt;your email address&gt;</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Starting run at </span><span class="va">$(</span><span class="fu">date</span><span class="va">)</span><span class="st">"</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Job ID: </span><span class="va">${SLURM_JOBID}</span><span class="st">"</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Node list: </span><span class="va">${SLURM_NODELIST}</span><span class="st">"</span></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Submit dir. : </span><span class="va">${SLURM_SUBMIT_DIR}</span><span class="st">"</span></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Scratch dir. : </span><span class="va">${TMPDIR}</span><span class="st">"</span></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="co"># environment modules</span></span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load shared 2022</span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load PyTorch/1.12.1-foss-2021a-CUDA-11.3.1</span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="co"># https://github.com/pytorch/tutorials/blob/main/recipes_source/recipes/amp_recipe.py</span></span>
-<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Your more useful application can be started below!</span></span>
-<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> amp_recipe.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Submit and run the script with Slurm</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">sbatch</span> Torch-AMP-ex.sh</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Starting run at </span><span class="va">$(</span><span class="fu">date</span><span class="va">)</span><span class="st">"</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Job ID: </span><span class="va">${SLURM_JOBID}</span><span class="st">"</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Node list: </span><span class="va">${SLURM_NODELIST}</span><span class="st">"</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Submit dir. : </span><span class="va">${SLURM_SUBMIT_DIR}</span><span class="st">"</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Scratch dir. : </span><span class="va">${TMPDIR}</span><span class="st">"</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Load the environment</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load 2024</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load PyTorch/2.1.2-foss-2023a-CUDA-12.1.1</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. (Optional) Install missing dependency seen in logs</span></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">--user</span> tqdm <span class="op">&gt;</span> /dev/null <span class="dv">2</span><span class="op">&gt;&amp;</span><span class="dv">1</span> <span class="kw">||</span> <span class="fu">true</span></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Copy the python script to scratch so we don't modify the original</span></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="fu">cp</span> amp_recipe.py <span class="va">${TMPDIR}</span>/amp_recipe_patched.py</span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. Patch the script compatibility issues using sed</span></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a><span class="fu">sed</span> <span class="at">-i</span> <span class="st">'s/torch\.amp\.GradScaler("cuda")/torch.cuda.amp.GradScaler()/g'</span> <span class="va">${TMPDIR}</span>/amp_recipe_patched.py</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a><span class="fu">sed</span> <span class="at">-i</span> <span class="st">'s/torch\.amp\.GradScaler("cuda"\s*,/torch.cuda.amp.GradScaler(/g'</span> <span class="va">${TMPDIR}</span>/amp_recipe_patched.py</span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a><span class="co"># 5. Run the patched script from scratch</span></span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Running patched script..."</span></span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> <span class="va">${TMPDIR}</span>/amp_recipe_patched.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>You can monitor the status of the job with <code>squeue -u $USER</code>. Once the job runs, you’ll have a <code>slurm-xxxxx.out</code> file in the directory. This log file contains both PyTorch and Slurm output.</p>
 </section>
 <section id="performance-and-results" class="level2">
 <h2 class="anchored" data-anchor-id="performance-and-results">Performance and Results</h2>
-<p>Depending on the type of GPU you may find different performance.</p>
+<p>Depending on the type of GPU you may find different performance.For example:</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -434,12 +445,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 </tbody>
 </table>
-</section>
-<section id="references" class="level2">
-<h2 class="anchored" data-anchor-id="references">References</h2>
-<ul>
-<li><a href="https://pytorch.org/tutorials/recipes/recipes/amp_recipe.html" target="_blank">PyTorch tutorials site</a></li>
-</ul>
 
 
 </section>
@@ -892,7 +897,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </a>
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/code-examples/Python/3-torch.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ada/code-examples/Python/3-python-pytorch.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
