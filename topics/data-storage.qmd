@@ -3,7 +3,7 @@ title: Data Storage
 categories: [Research Data]
 ---
 
-VU Amsterdam offers several options to store your digital research data. The choice for a specific option may depend on factors such as:
+VU Amsterdam offers several options to store your digital research data. The choice for a specific option depends on factors such as:
 
 * Does a project involve multiple organisations or departments?
 * The sensitivity of the data: does it involve personal data or copyrighted / commercial data?
@@ -25,7 +25,7 @@ These offer the fastest access, you can run analysis tools directly on the data.
 This is storage directly attached to the local network. Less performant than local storage, but still fast enough to run analysis tools directly on the data.
 
 * **Cloud storage**  
-This storage is accessible over the internet from all over the world. Speed is limited by your and the supplier's internet connections. In general it is not possible to run analysis tools directly on the data, you need to download data to ypur PC or server first. Some cloud services offer functionality to automatically sync data, for others you have to download and upload manually or script it.  
+This storage is accessible over the internet from all over the world. Speed is limited by your and the supplier's internet connections. In general it is not possible to run analysis tools directly on the data, you need to download data to your PC or a server first. Some cloud services offer functionality to automatically sync data, for others you have to download and upload manually or script it.  
 
 ## Storage services offered by VU Amsterdam
 The VU offers a few storage services that can be used by every VU researcher. The [Storage finder](https://vu.nl/en/research/storagefinder) is a tool that will help you select storage platforms suitable for your project. For more individual guidance, please get in touch with the [Research Data Management Support Desk](mailto:rdm@vu.nl) for advice, particularly when you are working with commercial, personal or otherwise sensitive data, or when you have a complex IT setup.
@@ -35,18 +35,18 @@ VU IT offers 2 cloud services to store data:
 
 * 🔒 **[OneDrive](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=eed3d23e9785d950e553359fe153affc)**: personal cloud storage for all VU employees and part of the Microsoft 365 platform. OneDrive allows you to store files locally and in the Microsoft cloud, and share folders and documents with colleagues. Since this is personal storage, tied to someone's personal VU account, we don't usually recommend storing research data in OneDrive: if the account holder leaves VU Amsterdam, the account and all the data on it, disappear.
 
-* 🔒 **[Teams](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=e7d2b062973e0950e553359fe153afc1)**. Faculties, divisions and departments have their own Team - part of the Microsoft 365 platform - where they store shared documents and where they can interact and chat. Projects may also request a project team. But note that Teams is not always the best location to store your **research** data and has several limitations, especially when it comes to working with non-Microsoft file formats, large volumes of data, interacting with data, and collaborating with partners outside of VU Amsterdam. Contact the [RDM Support Desk](mailto:rdm@vu.nl) to find out more about the suitability of Teams for your project.
+* 🔒 **[Teams](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=e7d2b062973e0950e553359fe153afc1)**. Faculties, divisions and departments have their own Team - part of the Microsoft 365 platform - where they store shared documents and where they can interact and chat. Projects may also request a project Team, but note that Teams is not always the best location to store your **research** data and has several limitations, especially when it comes to working with non-Microsoft file formats, large volumes of data, interacting with data, and collaborating with partners outside of VU Amsterdam. Contact the [RDM Support Desk](mailto:rdm@vu.nl) to find out more about the suitability of Teams for your project.
 
 ### Research data-specific storage options
-The options above are standard data storage options at VU Amsterdam to which all employees have access. But VU Amsterdam also offers storage specifically for research data:
+VU Amsterdam also offers storage specifically for research data:
 
-* **[SciStor](./scistor.qmd)** is **networked** storage hosted by IT for Research (ITvO) suitable for large volumes of data. With SciStor you have fast access to your data on campus, the [ADA high performance compute cluster](./ada.qmd) and [SciCloud servers](./scicloud.qmd), but it can't be used for external collaboration.
+* **[SciStor](./scistor.qmd)** is **networked** storage hosted by IT for Research (ITvO) suitable for large volumes of (sensitive) data. With SciStor you have fast access to your data on campus, the [ADA high performance compute cluster](./ada.qmd) and [SciCloud servers](./scicloud.qmd), but it can't be used for external collaboration.
 
-* **[Yoda](./yoda.qmd)** is a cloud storage at SURF and is suitable for storing large-scale and sensitive datasets. Yoda also supports collaborating on projects in and outside VU Amsterdam and adding contextual information ([metadata](../guides/document-and-preserve.html#metadata)) about your dataset as you go. It has an integrated archiving and publishing facility, making it a one-stop platform. 
+* **[Yoda](./yoda.qmd)** is a **cloud** storage platform at SURF and is suitable for storing small to very large volumes of (sensitive) data. Yoda supports external collaboration. It has an integrated archiving and publishing facility, making it a one-stop platform. 
 
-* **[Research Drive](./researchdrive.qmd)** is a cloud storage at SURF for research projects and is suitable for collaboration in and outside VU Amsterdam, for storing sensitive data and larger-scale research projects. 
+* **[SURF Research Drive](./researchdrive.qmd)** is a **cloud** storage platform at SURF for research projects suitable for storing small to medium (~10TB) volumes of (sensitive) data. Research Drive supports external collaboration. It offers a sync client for easier up- and downloading of data.
 
-* **[OSF](./osf.qmd)** is an online platform especially suitable for data that you want to share with the public during the research project.
+* **[OSF](./osf.qmd)** is an online platform especially suitable for small data volumes that you want to share with the public during the research project.
 
 ## Using other (cloud) storage solutions
 When selecting a cloud-based service it is important to remember to check **where** the data will be hosted. If the research project involves sensitive data it may be necessary to choose cloud-based options that guarantee that the data will stay in the EEA or on servers based in the EEA. make sure access to the data is not tied to just one account to avoid getting locked out of important data.
