@@ -444,17 +444,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#how-to-connecting-to-the-yoda-webdav-interface-using-gnome-files" id="toc-how-to-connecting-to-the-yoda-webdav-interface-using-gnome-files" class="nav-link active" data-scroll-target="#how-to-connecting-to-the-yoda-webdav-interface-using-gnome-files">How to: Connecting to the Yoda WebDAV interface using GNOME files</a></li>
-  <li><a href="#how-to-connecting-to-the-yoda-webdav-interface-using-davfs2" id="toc-how-to-connecting-to-the-yoda-webdav-interface-using-davfs2" class="nav-link" data-scroll-target="#how-to-connecting-to-the-yoda-webdav-interface-using-davfs2">How to: Connecting to the Yoda WebDAV interface using davfs2</a>
+  <li><a href="#connecting-to-the-yoda-webdav-interface-using-gnome-files" id="toc-connecting-to-the-yoda-webdav-interface-using-gnome-files" class="nav-link active" data-scroll-target="#connecting-to-the-yoda-webdav-interface-using-gnome-files">Connecting to the Yoda WebDAV interface using GNOME files</a></li>
+  <li><a href="#connecting-to-the-yoda-webdav-interface-using-davfs2" id="toc-connecting-to-the-yoda-webdav-interface-using-davfs2" class="nav-link" data-scroll-target="#connecting-to-the-yoda-webdav-interface-using-davfs2">Connecting to the Yoda WebDAV interface using davfs2</a>
   <ul class="collapse">
   <li><a href="#installing-the-package" id="toc-installing-the-package" class="nav-link" data-scroll-target="#installing-the-package">Installing the package</a></li>
   <li><a href="#configuring-group-membership" id="toc-configuring-group-membership" class="nav-link" data-scroll-target="#configuring-group-membership">Configuring group membership</a></li>
   <li><a href="#configuring-davfs2" id="toc-configuring-davfs2" class="nav-link" data-scroll-target="#configuring-davfs2">Configuring Davfs2</a></li>
-  <li><a href="#using-icommands" id="toc-using-icommands" class="nav-link" data-scroll-target="#using-icommands">Using Icommands</a></li>
-  <li><a href="#using-rclone" id="toc-using-rclone" class="nav-link" data-scroll-target="#using-rclone">Using Rclone</a></li>
-  <li><a href="#mounting-the-yoda-webdav-interface" id="toc-mounting-the-yoda-webdav-interface" class="nav-link" data-scroll-target="#mounting-the-yoda-webdav-interface">Mounting the Yoda WebDAV interface</a></li>
-  <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements">Acknowledgements</a></li>
   </ul></li>
+  <li><a href="#using-rclone" id="toc-using-rclone" class="nav-link" data-scroll-target="#using-rclone">Using rclone</a></li>
+  <li><a href="#using-irods-command-line-tools" id="toc-using-irods-command-line-tools" class="nav-link" data-scroll-target="#using-irods-command-line-tools">Using irods command-line tools</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/yoda/data_access/data_access_linux.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -480,62 +478,63 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>You can connect to the Yoda WebDav interface by either using GNOME or davfs2.</p>
-<section id="how-to-connecting-to-the-yoda-webdav-interface-using-gnome-files" class="level1">
-<h1>How to: Connecting to the Yoda WebDAV interface using GNOME files</h1>
+<p>This page explains how to connect to the Yoda WebDav interface by either using GNOME Files or davfs2.</p>
+<section id="connecting-to-the-yoda-webdav-interface-using-gnome-files" class="level2">
+<h2 class="anchored" data-anchor-id="connecting-to-the-yoda-webdav-interface-using-gnome-files">Connecting to the Yoda WebDAV interface using GNOME files</h2>
 <p>GNOME users can connect to the Yoda WebDAV interface with GNOME Files (also known as Nautilus in older versions of GNOME).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../../../public/manuals/yoda/linux-connect-to-server.png" class="img-fluid figure-img"></p>
-<figcaption>GNOME Files screenshot</figcaption>
+<p><img src="../../../public/manuals/yoda/gnome-files-address.png" class="img-fluid figure-img"></p>
+<figcaption>GNOME Files address bar</figcaption>
 </figure>
 </div>
 <ol type="1">
-<li><p>Click on “+Other Locations” and enter the server address in the “Connect to Server” bar. The server address is <code>davs://data.yoda.vu.nl/</code></p></li>
-<li><p>Click on the Connect button.</p></li>
+<li>Type <code>davs://data.yoda.vu.nl/</code> in the address bar.</li>
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../../../public/manuals/yoda/linux-enter-password.png" class="img-fluid figure-img"></p>
-<figcaption>GNOME Files password dialog screenshot</figcaption>
+<p><img src="../../../public/manuals/yoda/gnome-files-login.png" class="img-fluid figure-img" width="300"></p>
+<figcaption>GNOME Files password dialog</figcaption>
 </figure>
 </div>
-<ol start="3" type="1">
-<li>You will be prompted for a name and password. Username is your email. Set a <a href="../../../manuals/yoda/data_access/yoda_dap.html">Data Access Password</a> and copy it to the Password field.</li>
+<ol start="2" type="1">
+<li><p>You will be prompted for a name and password. Username is your email. Set a <a href="../../../manuals/yoda/data_access/yoda_dap.html">Data Access Password</a> and copy it to the Password field.</p></li>
+<li><p>Click on the Connect button.</p></li>
 </ol>
 </section>
-<section id="how-to-connecting-to-the-yoda-webdav-interface-using-davfs2" class="level1">
-<h1>How to: Connecting to the Yoda WebDAV interface using davfs2</h1>
-<p>This page describes how to connect to the Yoda WebDAV interface on a Linux system using davfs2. It assumes familiarity with using commandline tools. The instructions are suitable for RedHat-based distributions (e.g.&nbsp;Fedora or CentOS) and for Debian-based distributions (e.g.&nbsp;Ubuntu).</p>
-<section id="installing-the-package" class="level2">
-<h2 class="anchored" data-anchor-id="installing-the-package">Installing the package</h2>
+<section id="connecting-to-the-yoda-webdav-interface-using-davfs2" class="level2">
+<h2 class="anchored" data-anchor-id="connecting-to-the-yoda-webdav-interface-using-davfs2">Connecting to the Yoda WebDAV interface using davfs2</h2>
+<p>This section describes how to connect to the Yoda WebDAV interface on a Linux system using davfs2. It assumes familiarity with command-line tools. The instructions are suitable for RedHat-based distributions (e.g.&nbsp;Fedora or CentOS) and for Debian-based distributions (e.g.&nbsp;Ubuntu).</p>
+<section id="installing-the-package" class="level3">
+<h3 class="anchored" data-anchor-id="installing-the-package">Installing the package</h3>
 <ol type="1">
 <li>Install the davfs2 package.</li>
 </ol>
 <p>For Debian/Ubuntu:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt <span class="at">-y</span> install davfs2</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt update</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt <span class="at">-y</span> install davfs2</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ol start="2" type="1">
-<li>Confirm that unprivileged users should be able to mount davfs2 volumes (“Yes”). <img src="../../../public/manuals/yoda/linux-davfs2-dialog-unprivileged.png" class="img-fluid" alt="GNOME Files password dialog screenshot"></li>
+<li>Confirm that unprivileged users should be able to mount davfs2 volumes (“Yes”). <img src="../../../public/manuals/yoda/linux-davfs-warning.png" class="img-fluid" alt="Ubuntu davfs warning"></li>
 </ol>
 <p>For RedHat/CentOS/Fedora:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> yum <span class="at">-y</span> install epel-release</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> yum <span class="at">-y</span> install davfs2</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="configuring-group-membership" class="level2">
-<h2 class="anchored" data-anchor-id="configuring-group-membership">Configuring group membership</h2>
+<section id="configuring-group-membership" class="level3">
+<h3 class="anchored" data-anchor-id="configuring-group-membership">Configuring group membership</h3>
 <ol type="1">
 <li><p>Look up your user name, uid and gid using the <code>id</code> command.</p></li>
 <li><p>Add your user account to the davfs2 group: <code>sudo usermod -aG davfs2 user</code> (replace “user” with your user name).</p></li>
 <li><p>Close the terminal window and open a new one to activate the group change.</p></li>
 </ol>
 </section>
-<section id="configuring-davfs2" class="level2">
-<h2 class="anchored" data-anchor-id="configuring-davfs2">Configuring Davfs2</h2>
+<section id="configuring-davfs2" class="level3">
+<h3 class="anchored" data-anchor-id="configuring-davfs2">Configuring Davfs2</h3>
 <ol type="1">
 <li><p>Open the davfs2 configfile in a text editor (e.g.&nbsp;<code>sudo vi /etc/davfs2/davfs2.conf</code>). Ensure parameter <em>delay_upload</em> is set to 0 (zero). This limits the risk of data loss from a failure to flush data after large file transfers.</p></li>
 <li><p>Open the /etc/fstab file in a text editor (e.g.&nbsp;<code>sudo vi /etc/fstab</code>) and add a configuration line for Yoda:</p></li>
 </ol>
-<p><code>https://data.yoda.vu.nl  /mnt davfs user,auto,uid=1000,gid=1000 0 0</code></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode conf code-with-copy"><code class="sourceCode toml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dt">https</span><span class="er">://</span><span class="dt">data.yoda.vu.nl</span>  <span class="er">/</span><span class="dt">mnt</span> <span class="dt">davfs</span> <span class="dt">user</span><span class="er">,</span><span class="dt">auto</span><span class="er">,</span><span class="dt">uid</span><span class="op">=</span><span class="dv">1000</span><span class="er">,</span><span class="dt">gid</span><span class="op">=</span><span class="dv">1000</span> <span class="dt">0</span> <span class="dt">0</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ol start="3" type="1">
 <li>And adjust the parameters as needed:</li>
 </ol>
@@ -546,35 +545,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <ol start="4" type="1">
 <li><p>First set a <a href="../../../manuals/yoda/data_access/yoda_dap.html">Data Access Password</a>.</p></li>
-<li><p>Now use a text editor to create a secrets file, which contains your Yoda WebDAV URL, Yoda user name and password, separated by spaces. If you are an employee or student at Vrije Universiteit, your user name is your VU email address (in lowercase) and your password is your <a href="../../../manuals/yoda/data_access/yoda_dap.html">Data Access Password</a>. External users have usually received their user name via email, along with a link to set their password. Example of a secrets file:</p></li>
+<li><p>Now use a text editor to create a secrets file, which contains your Yoda WebDAV URL, Yoda user name and password, separated by spaces. If you are an employee or student at Vrije Universiteit, your user name is your VU email address (in lowercase) and your password is your <a href="../../../manuals/yoda/data_access/yoda_dap.html">Data Access Password</a>.</p></li>
 </ol>
-<pre><code>https://data.yoda.vu.nl xxx@vu.nl  myDataAccessPassword</code></pre>
+<p>Example of a secrets file:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode conf code-with-copy"><code class="sourceCode toml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="dt">https</span><span class="er">://</span><span class="dt">data.yoda.vu.nl</span> <span class="dt">xxx</span><span class="er">@</span><span class="dt">vu.nl</span>  <span class="dt">myDataAccessPassword</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Remember that you will need to replace the password when it expires.</p>
 <ol start="6" type="1">
 <li><p>You need to escape any backslashes and double quotes in your password with a backslash (e.g.&nbsp;use <code>\\</code> instead of <code>\</code>).</p></li>
 <li><p>Install this secrets file as the global davfs2 secrets file:</p></li>
 </ol>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> install <span class="at">-m</span> 0600 <span class="at">-o</span> root <span class="at">-g</span> root secrets /etc/davfs2/secrets</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> secrets</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> install <span class="at">-m</span> 0600 <span class="at">-o</span> root <span class="at">-g</span> root secrets /etc/davfs2/secrets</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> secrets</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The disk should be mounted automatically after a reboot if you have configured the <code>auto</code> option in <code>/etc/fstab</code>.</p>
+<p>To manually mount the Yoda WebDAV interface:</p>
+<ul>
+<li>On Debian/Ubuntu: <code>mount /mnt</code></li>
+<li>On RedHat/CentOS/Fedora: <code>sudo mount /mnt</code> (you can ignore any warnings about writing to the mtab file)</li>
+</ul>
 </section>
-<section id="using-icommands" class="level2">
-<h2 class="anchored" data-anchor-id="using-icommands">Using Icommands</h2>
-<p>Since Yoda is based on iRODS technology, it is possible to transfer data to and from Yoda using the iRODS communication protocol. This protocol can be used to transfer large amounts of data in an efficient way.</p>
 </section>
 <section id="using-rclone" class="level2">
-<h2 class="anchored" data-anchor-id="using-rclone">Using Rclone</h2>
-<p>Rclone is a command-line program to manage files on cloud storage. It is a feature-rich alternative to cloud vendors’ web storage interfaces. Over 40 cloud storage products support rclone including S3 object stores, business &amp; consumer file storage services, as well as standard transfer protocols.</p>
+<h2 class="anchored" data-anchor-id="using-rclone">Using rclone</h2>
+<p>As an alternative you could use <a href="../../../manuals/yoda/data_access/yoda_using_rclone.html">rclone</a>, it offers some useful functionalities to transfer larger ammounts of files via the WebDAV protocol.</p>
 </section>
-<section id="mounting-the-yoda-webdav-interface" class="level2">
-<h2 class="anchored" data-anchor-id="mounting-the-yoda-webdav-interface">Mounting the Yoda WebDAV interface</h2>
-<p>The disk should be mounted automatically after a reboot if you have configured the <code>auto</code> option in <code>/etc/fstab</code>.</p>
-<p>To manually mount the Yoda WebDAV interface: - On Debian/Ubuntu: <code>mount /mnt</code> - On RedHat/CentOS/Fedora: <code>sudo mount /mnt</code> (you can ignore any warnings about writing to the mtab file)</p>
-</section>
-<section id="acknowledgements" class="level2">
-<h2 class="anchored" data-anchor-id="acknowledgements">Acknowledgements</h2>
-<p>Thanks to <a href="https://www.uu.nl/medewerkers/JdeGraaf" target="_blank">Joost de Graaf</a> for his contributions to this guide.</p>
+<section id="using-irods-command-line-tools" class="level2">
+<h2 class="anchored" data-anchor-id="using-irods-command-line-tools">Using irods command-line tools</h2>
+<p>Since Yoda is based on iRODS technology, it is possible to transfer data to and from Yoda using the iRODS communication protocol. This protocol can be used to transfer large amounts of data in an efficient way. <a href="../../../manuals/yoda/data_access/yoda_using_icommands.html">Command-line tools</a> are available for Linux.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
