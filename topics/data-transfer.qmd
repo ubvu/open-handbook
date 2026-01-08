@@ -5,27 +5,27 @@ aliases:
   - safe-data-transfer.html
 ---
 
-It is important to protect your data during the entire data life cycle. To find out whether your data are secure during all stages of your research, think about your data flow: where do your data originate and where do they go to? If data need to be transported from one physical place to the other, from one storage platform to another, or  from one device to another, these actions should happen in a secure way.
+It is important to protect your data during the entire data life cycle. To find out whether your data are secure during all stages of your research, think about your data flow: where do your data originate and where do they go to? If data need to be transported from one physical place to the other, from one storage platform to another, or from one device to another, these actions should happen in a secure way.
 
-Even if a formal [Data Management Plan (DMP)](./data-management-plan.qmd) is not strictly required, it is still good practice to have a plan on how to handle your research project's data from start to end. Always ensure you are informed on any [legal and ethical requirements](./data-management-plan.html#legal-and-ethical-requirements) for your research data.
+Even if a formal [Data Management Plan (DMP)](../topics/data-management-plan.qmd) is not strictly required, it is still good practice to have a plan on how to handle your research project's data from start to end. Always ensure you are informed on any [legal and ethical requirements](../topics/data-management-plan.html#legal-and-ethical-requirements) for your research data.
 
 ## Transferring digital data
 
 ### Data collection on campus
 
-If data collection takes place through a certain measurement device (e.g. MRI scanner, EEG scanner, eye tracker), the data need to be transferred from the measurement device to the storage location that you will use during your research project. The best way to do this is to write the data directly to [SciStor](./scistor.qmd). Please contact [IT for Research](./itvo.qmd) for advice. 
+If data collection takes place through a certain measurement device (e.g. MRI scanner, EEG scanner, eye tracker), the data need to be transferred from the measurement device to the storage location that you will use during your research project. The best way to do this is to write the data directly to [SciStor](../topics/scistor.qmd). Please contact [IT for Research](../topics/itvo.qmd) for advice. 
 
 Sometimes it is not possible to write the data directly to a storage platform, for example if there is no way to connect the device to the campus network (e.g. a portable audio or video recording device). Make sure that transfer takes place in a secure way, especially when the data is sensitive, for example by using an encrypted USB drive to transport the data or by copying the data off the device in the lab itself. 
 
 Make a plan for managing data on the measurement device. Make sure a copy and backup are made before deleting data from the device itself.   
 
 ### Data collection outside campus (online)
-If you are doing fieldwork outside the campus and you have reliable and secure internet access, it is a good idea to upload the data to a storage location that is regularly backed up and secure, in order to prevent data loss. All the VU-supported [storage solutions](./data-storage.qmd) are backed up, some of them also allow access for external collaborators. 
+If you are doing fieldwork outside the campus and you have reliable and secure internet access, it is a good idea to upload the data to a storage location that is regularly backed up and secure, in order to prevent data loss. All the VU-supported [storage solutions](../topics/data-storage.qmd) are backed up, some of them also allow access for external collaborators. 
 
 It is always good practice to use [eduVPN Institutional Access](https://vu.eduvpn.nl/) on untrusted (wireless) networks.
 
 ### Data collection outside campus (offline)
-If you are doing fieldwork in an area with limited internet access, you might use a portable device to initially store your data, such as your laptop, USB drive or SD card. Make sure to keep at least 2 copies of the data (for example your laptop + a USB drive or on 2 USB drives). As soon as you are in a place with an internet connection you can upload the data to a secure [storage space](./data-storage.qmd).
+If you are doing fieldwork in an area with limited internet access, you might use a portable device to initially store your data, such as your laptop, USB drive or SD card. Make sure to keep at least 2 copies of the data (for example your laptop + a USB drive or on 2 USB drives). As soon as you are in a place with an internet connection you can upload the data to a secure [storage space](../topics/data-storage.qmd).
 
 Please make sure that the data on portable devices is secured, by using encryption (and by transporting them safely by using a lockable briefcase or backpack). You can 🔒[request encrypted USB drives from IT]((https://services.vu.nl/esc?id=sc_cat_item&sys_id=73eaf6e147264150bfa46d72e36d43d6)), your VU laptop is always encrypted.
 
@@ -38,7 +38,7 @@ Sometimes you need to transfer a large amount of data (tens of Terabytes and/or 
 
 - If your storage platform and sync tool support calculating checksums you can ensure all files are copied completely. This is especially important if you plan to remove the data from the source location.
 
-Which tools work best is highly dependent on the source and target storage platforms. Contact [IT for Research](./itvo.qmd) for advice, they can also help setup a temporary server for the transfer.
+Which tools work best is highly dependent on the source and target storage platforms. Contact [IT for Research](../topics/itvo.qmd) for advice, they can also help setup a temporary server for the transfer.
 
 ## Transporting physical data
 
@@ -53,6 +53,6 @@ A storage platform that allows collaboration is the easiest way to share data, b
 
 - **[Zivver](https://www.zivver.com/products/email-encryption-software)** offers a secure way to send (large) files. You can find information on how to use Zivver in 🔒 [the VU service portal](https://services.vu.nl/esc?id=kb_article&sysparm_article=KB0012157). 
 
-- **[SURFfilesender](https://filesender.surf.nl/?s=home)**  is a web based application that allows authenticated users to securely and easily send arbitrarily large files to other users. Users without an account can be sent a guest upload voucher by an authenticated user. FileSender is developed to the requirements of the higher education and research community.
+- **[SURFfilesender](https://filesender.surf.nl/?s=home)**  is a web based application that allows authenticated users to securely and easily send arbitrarily large files to other users. Users without an account can be sent a guest upload voucher by an authenticated user. SURFfilesender is developed to the requirements of the higher education and research community.
 
 Please contact the [IT Service Desk](mailto:servicedesk.it@vu.nl) if you need help in using these tools.
