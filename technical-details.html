@@ -279,6 +279,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li><strong><code>topics/</code></strong> - Individual topic pages (e.g., <code>data-management-plan.qmd</code>, <code>gdpr.qmd</code>)</li>
 <li><strong><code>guides/</code></strong> - Step-by-step guides organized by research lifecycle</li>
+<li><strong><code>manuals/</code></strong> - Manuals to help researchers use specific tools</li>
 <li><strong><code>blog/</code></strong> - Blog posts and announcements</li>
 <li><strong><code>public/</code></strong> - Static assets (images, PDFs, etc.)</li>
 </ul>
@@ -290,6 +291,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><strong><code>_extensions/</code></strong> - Quarto extensions (e.g., qreacto for React integration)</li>
 <li><strong><code>.github/workflows/</code></strong> - GitHub Actions for automated building and deployment</li>
 <li><strong><code>_site/</code></strong> - Generated website files (auto-generated, don’t edit directly)</li>
+<li><strong><code>manuals/&lt;tool&gt;/_sidebar.yml</code></strong> - Specifies the order of the left sidebar of a specific tool manual</li>
 </ul>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
@@ -328,15 +330,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 ├── index.qmd - Homepage `/`
 ├── manuals/ - Folder containing all manuals and subpages
 ├── manuals.qmd - Manual overview page
+├── manuals/&lt;tool&gt;/ - &lt;tool&gt; manuals
+├── manuals/&lt;tool&gt;/index.qmd - Manual start page
+├── manuals/&lt;tool&gt;/_sidebar.yml - Manual sidebar definition
 ├── netlify.toml - Netlify (preview) deployment instructions
 ├── package.json - Netlify plugin information
-├── public/ - Folder containing public assets (keep files small)
+├── public/ - Folder containing public assets such as screenshot images (keep files small)
 ├── references.bib - Reference library for use in the handbook
 ├── technical-details.qmd - Technical details page
 ├── topics/ - Each `.qmd` file is one topic
 ├── topics.qmd - Topic overview page
 └── utils/ - Custom utilities for the website (generally do not touch)
-    └── include-files.lua - Utility to shift headings from included files</code></pre>
+    └── include-files.lua - Utility to shift headings from included files
+    └── linktarget.lua - Utility to open external links in a new tab</code></pre>
 </div>
 </div>
 </div>
