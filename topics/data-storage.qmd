@@ -40,13 +40,13 @@ VU IT offers 2 cloud services to store data:
 ### Research data-specific storage options
 VU Amsterdam also offers storage specifically for research data:
 
-* **[SciStor](./scistor.qmd)** is **networked** storage hosted by IT for Research (ITvO) suitable for large volumes of (sensitive) data. With SciStor you have fast access to your data on campus, the [ADA high performance compute cluster](./ada.qmd) and [SciCloud servers](./scicloud.qmd), but it can't be used for external collaboration.
+* **[SciStor](../topics/scistor.qmd)** is **networked** storage hosted by IT for Research (ITvO) suitable for large volumes of (sensitive) data. With SciStor you have fast access to your data on campus, the [ADA high performance compute cluster](../topics/ada.qmd) and [SciCloud servers](../topics/scicloud.qmd), but it can't be used for external collaboration.
 
-* **[Yoda](./yoda.qmd)** is a **cloud** storage platform at SURF and is suitable for storing small to very large volumes of (sensitive) data. Yoda supports external collaboration. It has an integrated archiving and publishing facility, making it a one-stop platform. 
+* **[Yoda](../topics/yoda.qmd)** is a **cloud** storage platform at SURF (Dutch IT cooperative of education and research) and is suitable for storing small to very large volumes of (sensitive) data. Yoda supports external collaboration. It has an integrated archiving and publishing facility, making it a one-stop platform. 
 
-* **[SURF Research Drive](./researchdrive.qmd)** is a **cloud** storage platform at SURF for research projects suitable for storing small to medium (~10TB) volumes of (sensitive) data. Research Drive supports external collaboration. It offers a sync client for easier up- and downloading of data.
+* **[SURF Research Drive](../topics/researchdrive.qmd)** is a **cloud** storage platform at SURF for research projects suitable for storing small to medium (~10TB) volumes of (sensitive) data. Research Drive supports external collaboration. It offers a sync client for easier up- and downloading of data.
 
-* **[OSF](./osf.qmd)** is an online platform especially suitable for small data volumes that you want to share with the public during the research project.
+* **[OSF](../topics/osf.qmd)** is an online platform especially suitable for small data volumes that you want to share with the public during the research project.
 
 ## Using other (cloud) storage solutions
 When selecting a cloud-based service it is important to remember to check **where** the data will be hosted. If the research project involves sensitive data it may be necessary to choose cloud-based options that guarantee that the data will stay in the EEA or on servers based in the EEA. make sure access to the data is not tied to just one account to avoid getting locked out of important data.
@@ -57,4 +57,4 @@ Keep in mind the usual (free) commercial cloud offerings such as Google Drive or
 When in doubt about the suitability of a cloud storage solution please contact the [RDM Support Desk](mailto:rdm@vu.nl).
 
 ## Data transfer
-The [Data Transfer topic page](./data-transfer.qmd) provides tips on collecting and moving data. 
+The [Data Transfer topic page](../topics/data-transfer.qmd) provides tips on collecting and moving data. 
