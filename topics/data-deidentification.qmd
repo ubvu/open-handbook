@@ -1,32 +1,32 @@
 ---
 title: De-identifying data
-categories:[Policies and Legislation, Research Data]
+categories: [Policies and Legislation, Research Data]
 ---
 
-Within the [GDPR definitions](../topics/gdpr.html#definitions) several terms are used: pseudonymization, anonymization, direct identification and indirect identification. All of these terms are related to processes that make personal data less easily linkable to individual data subjects or research participants. In other words, they are methods to de-identify personal data. If the data undergo enough de-identified that it is no longer possible to re-identify a data subject, they are considered anonymized.
+Within the [GDPR definitions](../topics/gdpr.qmd#definitions) several terms are used: pseudonymisation, anonymisation, direct identification and indirect identification. All of these terms are related to which extent it is possible to identify an individual. Pseudonymisation and anonymisation are processes that make personal data less easily linkable to individual data subjects or research participants. In other words, they are methods to de-identify personal data. If the data undergo enough de-identification that it is no longer possible to re-identify a data subject, they are considered anonymised (see also @data-privacy-handbook-uu).
 
 ## Why is de-identification useful
 
-Full anonymization is not always achievable or the steps involved may render the data less useful for analysis. The extent to which you will de-identify your data depends on:
+Full anonymisation is not always achievable or the steps involved may render the data less useful for analysis. The extent to which you will de-identify your data depends on:
 
 * Characteristics of the dataset
 * The context in which it was obtained
 * What the researcher plans to do with the data
 * The resources available for de-identifying the data
 
-Regardless of whether you fully anonymize the data or not, even a basic level of data de-identification, such as removing names and contact information from a dataset, has important advantages. De-identification helps you:
+Regardless of whether you fully anonymise the data or not, even a basic level of data de-identification, such as removing names and contact information from a dataset, has important advantages. De-identification helps you:
 
 * Safeguard the privacy of research subjects, which helps maintain public trust
 * You meet data protection obligations
 * Decrease the privacy risks posed by your data which:
-    + Increases your [data storage options](../topics/data-storage.html)
+    + Increases your [data storage options](../topics/data-storage.qmd)
     + Allows you to more securely share data with appropriate parties
 
 ## How do I de-identify my data
 
 In very general terms de-identification involves the following steps:
 
-1. Write a [data management plan](../topics/data-management-plan.html) so that you know exactly which data you need for which purposes, as well as how these data will be processed to achieve your research goals
+1. Write a [data management plan](../topics/data-management-plan.qmd) so that you know exactly which data you need for which purposes, as well as how these data will be processed to achieve your research goals
 2. Identify any **potentially directly identifying information** in your data
 3. Assess whether you need to collect this **directly identifying information**. For example:
     a. Do you really need IP addresses in your survey data?
@@ -38,18 +38,20 @@ In very general terms de-identification involves the following steps:
     c. Create a keyfile to link the pseudonyms to the names.
     d. Store the directly identifiable information and the keyfile in a separate location from the research data and/or in encrypted form.
 5. Consider which types of information may lead to indirect identification, such as demographic information (age, education, occupation, etc.), geolocation, specific dates, medical conditions, unique personal characteristics, open text responses, etc.
-6. Carry out de-identifying the directly and indirectly identifiable data. Methods for this are described in the the [FGB De-identification Guide](https://fgb-rdm.nl/Security/Deidentification.html#how-is-it-done){target="_blank"} particularly under [step 5](https://fgb-rdm.nl/Security/Deidentification.html#step5){target="_blank"}
+6. Carry out de-identifying the directly and indirectly identifiable data. Methods for this are described in the the [FGB De-identification Guide](https://fgb-rdm.nl/Security/Deidentification.html#how-is-it-done) particularly under [step 5](https://fgb-rdm.nl/Security/Deidentification.html#step5)
 7. Go as far as you can in the de-identification process and once you’ve reached the endpoint that is feasible for your research, reassess the privacy risks posed by your data.
 
 ### De-identification tools and software
 
-There are also various "anonymization" tools available online, such as [OpenAire's Amnesia](https://amnesia.openaire.eu/){target="_blank"}. These tools can assist with the de-identification process and in some cases achieve anonymized data, however they do require knowledge of statistical anonymization techniques. These tools also cannot tell you when the data are anonymous so it can be difficult to tell if you've done enough to meet the GDPR's definition of anonymized. If you wish to use such tools, it is a good idea to speak with your [data steward](https://vu.nl/en/about-vu/divisions/university-library/teams/contact-research-data-support){target="_blank"} for support.
+There are also various "anonymisation" tools available online, such as [OpenAire's Amnesia](https://amnesia.openaire.eu/) for quantitative data. These tools can assist with the de-identification process and in some cases achieve anonymised data, however they do require knowledge of statistical anonymisation techniques. These tools also cannot tell you when the data are anonymous so it can be difficult to tell if you've done enough to meet the GDPR's definition of anonymised. If you wish to use such tools, it is a good idea to speak with your [data steward](https://vu.nl/en/about-vu/divisions/university-library/teams/contact-research-data-support) for support.
 
 ## Additional support
 
-You can find a detailed guide on how to plan for and carry out de-identification on the [FGB De-identification Guide](https://fgb-rdm.nl/Security/Deidentification.html#how-is-it-done){target="_blank"}. This guide is focused on life sciences and social sciences data, so it may not be generalizeable to your situation.
+You can find a detailed guide on how to plan for and carry out de-identification on the [FGB De-identification Guide](https://fgb-rdm.nl/Security/Deidentification.html#how-is-it-done). This guide is focused on life sciences and social sciences data, so it may not be generaliseable to your situation.
 
-In addition to the FGB guide, the University of Groningen has an [excellent generalized overview](https://www.rug.nl/digital-competence-centre/privacy-and-data-protection/data-protection/guide-on-data-minimization-and-de-identification-v0-2.pdf){target="_blank"} on de-identification. 
+In addition to the FGB guide, the University of Groningen has an [excellent generalised overview](https://www.rug.nl/digital-competence-centre/privacy-and-data-protection/data-protection/guide-on-data-minimization-and-de-identification-v0-2.pdf) on de-identification. 
 
-Lastly, it's also a good idea to discuss your de-identification plans with your your [data steward](https://vu.nl/en/about-vu/divisions/university-library/teams/contact-research-data-support){target="_blank"} and [privacy champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information){target="_blank"}, *especially* before making any assumptions that the data are anonymous!
+Lastly, it's also a good idea to discuss your de-identification plans with your your [data steward](https://vu.nl/en/about-vu/divisions/university-library/teams/contact-research-data-support) and 🔒 [privacy champion](https://vu.nl/en/employee/privacy-and-information-security/privacy-champions-information), *especially* before making any assumptions that the data are anonymous!
+
+Acknowledgement: This text is based on the Data Privacy Handbook of Utrecht University [@data-privacy-handbook-uu] and the [FGB (VU Faculty of Behavioral and Movement Sciences) Security Tips](https://fgb-rdm.nl/Security/Deidentification.html). We thank our colleagues for creating and sharing their work.
 
