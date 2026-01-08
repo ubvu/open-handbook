@@ -83,7 +83,7 @@ for col in coll.subcollections:
 You can find more information on using the iRODS client in the [README on github](https://github.com/irods/python-irodsclient/blob/main/README.md).
 
 ## iBridges
-The PRC can be hard to use because it requires some prior knowledge on the structure and terminology used in iRODS. For this reason developers at Utrecht University create [iBridges](https://github.com/iBridges-for-iRODS/iBridges), which makes it easier to do basic file and metadata manipulation in iRODS. 
+The PRC can be hard to use, because it requires some prior knowledge on the structure and terminology used in iRODS. For this reason, developers at Utrecht University created [iBridges](https://github.com/iBridges-for-iRODS/iBridges), which makes it easier to do basic file and metadata manipulation in iRODS. 
 
 ### Installation
 Installation is again as simple as:
