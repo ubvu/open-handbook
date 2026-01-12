@@ -1,0 +1,331 @@
+---
+title: "RDM Onboarding"
+output: html_document
+date: "2026-01-07"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+------------------------------------------------------------------------
+
+The following guide will walk you through you research data management needs from before the research project has begun to once your research project is over or you have left the VU. You can explore the information using the powerpoint here: or by reading through each of the sections on this page. Overall this information is meant to be a jumping off point so please be sure to check your faculty specific policies and guidelines.\
+
+## Explore funding & data
+
+------------------------------------------------------------------------
+
+### Funding
+
+VU IXA-GO [🔗](https://vunl.sharepoint.com/sites/ResearchFundingValorisation)
+
+-   Identify and secure **external funding**
+
+-   Provides **workshops** and **trainings**
+
+-   Personalised **funding scans** from VU grants office
+
+-   **CV scan** to increase competetiveness in securing related grants
+
+Research Connect [🔗](https://myresearchconnect.com/)
+
+-   Broad platform to find **external funding**
+
+-   Offers complementary services to **customise funding search**
+
+Centre for Internation Cooperation (CIS) [🔗](https://vu.nl/en/about-vu/research-institutes/centre-for-international-cooperation/more-about/grant-and-project-management-services-for-vu-staff)
+
+-   **Specialised grant advising** for projects with an international focus in:
+
+-   Food and Nutrition and Sustainable Land Management
+
+-   ICT for Development
+
+-   Conflict Resolution and Mediation and Governance for Society (incl. Security & Rule of Law)\
+
+### Pre-existing datasets
+
+See [Find Existing Data](https://rdm.vu.nl/topics/finding-existing-data.html)\
+
+## Investigate your legal responsibilities
+
+------------------------------------------------------------------------
+
+### Knowledge Security
+
+**What is it**
+
+The undesirable transfer of sensitive information impacting Netherlands’ national security.
+
+Covert influencing of education andresearch by dangerous state actors
+
+Collaboration with individuals and institutions from countries that do not respect fundamental rights
+
+**How does it impact you\***
+
+Primary responsible researcher answers 6 framework questions​
+
+One yes = risk assessment needed (contact [faculty knowledge security officer](https://vu.nl/en/employee/onderwijs-en-onderzoeksbeleid/knowledge-security-for-vu-amsterdam-employees#:~:text=Faculty%20contact%20persons)for assistance)
+
+If needed, they contact the [VU knowledge security advisory group](mailto:kennisveiligheid@vu.nl)for advice\
+
+*\*If you’re conducting international collaborations (formal, informal, hiring, visitors)*
+
+*See [Knowledge Security](https://vu.nl/en/about-vu/more-about/knowledge-security) for more information*\
+
+### VU Knowledge Security Framework
+
+**Legal framework – what is not permitted, or under conditions**
+
+1\. Does the collaboration concern a sanctioned person, entity or body? Or is the combination of the technology and country sanctioned? - See [EU sanctions list](https://www.sanctionsmap.eu/#/main).
+
+2\. Is the Dual Use regime applicable to the research? - Contact the [KS advisory team](mailto:kennisveiligheid@vu.nl)for advice.
+
+**Risk management – what else should be considered**
+
+3.  Is, or has the partner been affiliated to a military organization outside the EU?- collaboration with military organisations outside EU is undesirable.
+
+4\. Does the collaboration involve sensitive research?
+
+5\. Do ethical dilemmas play a role? - check if the partner is based in county which scores 0.4 or less on the [Academic Freedom Index](https://academic-freedom-index.net/).
+
+6\. Does unilateral external funding occur in the cooperation? - Check [AFI](https://academic-freedom-index.net/)
+
+**No limitations – cooperation can take place**
+
+7\. There are no obstacles for the collaboration from a knowledge security perspective\
+
+### Legal Requirements
+
+**Valorisation & Impact**
+
+Contact IXA
+
+-   Helps with intellectual property by setting up [patents and copyrights](https://vu.nl/en/employee/research-support/protecting-your-research)
+
+-   Assists in setting up [contracts](https://vu.nl/en/research/portal/research-impact-support-portal/check-legal-support#Contracts) with third parties (e.g. consortium agreements)
+
+**Medical Research**
+
+If conducting medical research, determine:​
+
+-   How your research is defined by [Dutch law](https://english.ccmo.nl/investigators/legal-framework-for-medical-scientific-research/your-research-is-it-subject-to-the-wmo-or-not)​
+
+-   Whether any additional [medical research laws](https://english.ccmo.nl/investigators/legal-framework-for-medical-scientific-research/laws)apply\
+
+## Register & prepare
+
+------------------------------------------------------------------------
+
+### Pre-register
+
+See [How to use OSF in your research project](https://rdm.vu.nl/guides/use-osf.html#osf-information-for-new-users)\
+
+### Data classification
+
+See [Data Classification](https://rdm.vu.nl/topics/data-classification.html)\
+
+### Personal data
+
+**Read up on policies**
+
+-   Consult the [Privacy Five Step Plan](https://assets-us-01.kc-usercontent.com/d8b6f1f5-816c-005b-1dc1-e363dd7ce9a5/ad3de0e7-b935-471a-8d31-51c06ba47c88/Privacy%20five-step%20plan.pdf)
+
+-   Read up on the GDPR, beginning with this [GDPR primer](https://rdm.vu.nl/topics/gdpr.html)
+
+**Assess your data’sprivacy risk level**
+
+-   Use the [Data Classification Tool](https://vu.nl/en/research/dataclassification) and follow the necessary measures for risk level
+
+**Learn about de-identification**
+
+-   Do your best to de-identify your participants' data.
+
+-   (See this helpful [guide](https://www.rug.nl/digital-competence-centre/privacy-and-data-protection/data-protection/guide-on-data-minimization-and-de-identification-v0-2.pdf) from University of Groningen)
+
+**Write your ICF appropriately**
+
+-   Use the [ICF generator tool](https://icf.rshiny.labs.vu.nl/) to create a faculty approved form
+
+-   Or check your [faculty ethics page](https://rdm.vu.nl/topics/ethical-review.html) for ICF templates\
+
+*Contact your [faculty privacy champion](https://vu.nl/en/employee/information-security/privacy-champions-information) for more information*\
+
+### Forms you may need
+
+**Assessments**
+
+-   [Data Protection Impact Assessment (DPIA)](https://rdm.vu.nl/guides/comply-with-gdpr.html#complete-a-data-protection-impact-assessment-dpia)
+
+-   Pre-DPIA
+
+-   BIV
+
+**Legal Requirements**
+
+-   [Privacy Statement](https://rdm.vu.nl/guides/comply-with-gdpr.html#privacy-statement)
+
+-   [GDPR registration](https://rdm.vu.nl/guides/comply-with-gdpr.html#register-your-processing-activities)
+
+-   Informed Consent Form
+
+**External Agreements**
+
+-   Joint Controllers Agreement
+
+-   Data Processing Agreement (DPA)
+
+-   Data Transfer Agreement (DTA)
+
+-   Confidentiality agreement
+
+*Contact your [faculty privacy champion](https://vu.nl/en/employee/information-security/privacy-champions-information) for more information*\
+
+## Determine technical & storage solutions
+
+------------------------------------------------------------------------
+
+### Storage Solutions
+
+See [Collect & Store](https://rdm.vu.nl/guides/collect-and-store.html)\
+
+### IT for Research
+
+See [IT for Research](https://rdm.vu.nl/topics/itvo.html)\
+
+## Write a DMP
+
+------------------------------------------------------------------------
+
+See [Data Management Plan (DMP)](https://rdm.vu.nl/topics/data-management-plan.html)\
+
+## Determine your ethical requirements
+
+------------------------------------------------------------------------
+
+### Ethical requirements
+
+**Investigate**
+
+-   Faculty requirements
+
+-   NETHICS
+
+-   WMO/METc
+
+**Prepare**
+
+-   The necessary documents as required by your faculty
+
+    *e.g. DMP, GDPR registration, Privacy Statement*
+
+**Submit**
+
+-   The required documents andethics form as per your faculty procedure
+
+    *e.g. Informed Consent Form, Participant Information Sheet*
+
+*See [Ethical Review](https://vu.nl/en/research/portal/research-impact-support-portal/ethical-responsibilities#Ethical%20review) to find your faculty specific review boards*.\
+
+### WMO/METc
+
+**Research falls under the WMO if the following two conditions are met:**
+
+-   it concerns medical-scientific research; and
+
+-   people are subjected to procedures or are required to follow rules of behaviour\
+
+**Some research may require a non-WMO declaration:**
+
+-   You need a non-WMO statement/approval from a recognised METC, for example for publication.
+
+-   Non-WMO statement is not ethical approval, check with your faculty ethics committee if you need to undergo a full ethical review\
+
+*Resource: [WMO research – METC](https://metc.amsterdamumc.org/wmo/wmo-onderzoek/)*\
+
+## Conduct your research
+
+------------------------------------------------------------------------
+
+### Data Collection
+
+See [Data Collection](https://rdm.vu.nl/topics/data-collection.html)\
+
+### Collaboration
+
+**Roles & Responsibilities**
+
+-   Define the roles & responsibilities **early and clearly.**
+
+-   Which data does the recipient have access to? What can they do with the data?\
+
+**Agreements**
+
+-   Based of the role of the recipient, draw upthe necessary agreements:​
+
+-   See the **Forms you may need** to find the kind of external agreements you may need.\
+
+**Security Measures**
+
+-   Determine the necessary security measures given the [**privacy risk**](https://vu.nl/en/research/dataclassification)of the data.
+
+-   Does the recipient need MFA? Full-disk encryption?\
+
+*Contact your [faculty privacy champion](https://vu.nl/en/employee/information-security/privacy-champions-information) before drawing up any contracts*\
+
+## Offboard your data
+
+------------------------------------------------------------------------
+
+### Archiving & Publishing
+
+See [Data Archiving and Publishing](https://rdm.vu.nl/guides/publish-and-share.html)\
+
+### Provide with your research data
+
+-   **Standard metadata:** see [YODA metadata](https://rdm.vu.nl/manuals/yoda/using_yoda/workflow_metadata.html)
+
+-   **Contact information for data access requests**: include long term information such as who should be contacted for data deletion after 10 years
+
+**Is the project continuing at the VU but you are leaving? Then provide:**
+
+-   **Project location data**: i.e., where to find your data
+
+-   **Access to yourdata repositories**\
+
+### Deleting your data
+
+**Delete your data from all non-archival repositories and software, including:**
+
+-   Castor
+
+-   ResearchDrive
+
+-   Qualtrics
+
+-   Your local computer
+
+-   Any other software/tool/repository which the data can be stored and and is not where you will be archiving\
+
+**For most of these tools, contact [rdm\@vu.nl](mailto:rdm@vu.nl) to be put in contact with the functional manager for deletion**
+
+**Prior to deletion ensure all data you plan to delete has been exported and archived to the proper repository**\
+
+## Contact information
+
+------------------------------------------------------------------------
+
+**General RDM support:**
+
+[rdm\@vu.nl](mailto:rdm@vu.nl)\
+
+**Faculty specific data stewards:**
+
+[Contact your data steward](https://vu.nl/en/employee/research-data-support/contact-your-data-steward)\
+
+**Faculty specific privacy champions:**
+
+[Privacy champions](https://vu.nl/en/employee/policy-and-organisation/privacy-champions-information)
