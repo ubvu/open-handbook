@@ -3,3 +3,95 @@ title: FAQ
 categories: []
 description: "Frequently asked questions about Yoda."
 ---
+### Wat is Yoda?
+
+YODA is an application for institutions that supports RDM throughout the entire research cycle: from the safe and easy storage and sharing of data during the research process, to the sharing of data within research groups and projects and ultimately to research data archiving and publication
+
+### How do I Request Project Space on Yoda?
+
+Every VU researcher can request storage space for their projects in Yoda. Requesting space is done via a request form. Please note that because there can be costs involved, you need to supply a budget code. You can find more about the costs involved in the [Cost Model](https://vu.nl/en/employee/research-data-support/research-archiving-storage-cost-model).
+
+### How do I Access Yoda?
+
+The Yoda administrator will create a new Yoda Group and folder for you in the system and invite you to this Group. You can then access Yoda via the Yoda Portal at https://portal.yoda.vu.nl/
+
+### Do I need special credentials to access Yoda? 
+
+As a VU researcher, once your project space on Yoda is confirmed, you will be able to login using your (primary) e-mail address (no aliases or VUnetId) and password. You can further access your project folder through network drive in your file manager or client software. You can find more information about logging in to the Yoda portal [here](https://rdm.vu.nl/manuals/yoda/yoda_portal/logging_in.html).
+
+### Can I Invite others to Collaborate on my Research Projects?  
+
+Yes, you can. Once your Project Space is confirmed by the Yoda Administrator, you can invite others to have access to it as well. As project owner, you are automatically designated Group Manager. You can find more information about managing access [here](https://rdm.vu.nl/manuals/yoda/yoda_portal/group_manager.html).
+
+### What is a Group Manager?
+
+Within a Yoda project space, a Group manager is able to grant and revoke access rights for other users to the group. Can also view, download, upload, modify or delete files and folders in the group. A Group Manager will be a Project owner or a Delegate. More information about managing groups, users and access rights can be found [here](https://rdm.vu.nl/manuals/yoda/yoda_portal/group_manager.html).
+
+### What rights can I grant to those collaborating with me on Yoda Projects?
+
+Project members with read-only access: are able to view or download files in the group. Regular project members: can view, download, upload, modify or delete files and folders in the project space. More information about managing groups, users and access rights can be found [here](https://rdm.vu.nl/manuals/yoda/yoda_portal/group_manager.html).
+
+### If I revoke rights access from a user, will the data uploaded by that user be deleted?
+
+No, the data will not be deleted by revoking a user’s access rights.  
+
+### What Type of data may I store on Yoda? 
+
+It is suitable for sensitive data. Yoda cannot be used for research projects that involve extremely sensitive datasets, such as state secrets or medical information of vulnerable individuals.
+When in doubt about what type of data you’re dealing with, please consult your Faculty Data Steward and/or Privacy Champion. 
+
+### What else can I do on Yoda besides Data Storage?
+
+It supports the entire research process from data acquisition to publication. It enables data publication and the associated minting of persistent identifiers (DOIs). It offers support for standardised workflows for the storage and archiving of research data. You can find more information in the [Yoda Topic Page](https://rdm.vu.nl/topics/yoda.html). 
+
+### What is Metadata? And why is it Important when Using Yoda?
+
+Metadata is “data about data”. Metadata serves multiple purposes in Yoda. 
+Yoda facilitates adding both structured and unstructured metadata to your research data. Entering structured metadata is a prerequisite for archiving a data package. If a folder is published, its structured metadata will be published as well and can be harvested by data catalogs such as DANS NARCIS and DataCite. You can find more information about Metadata [here](https://rdm.vu.nl/manuals/yoda/using_yoda/metadata.html).
+
+### What is a Data Package?
+
+The data in your research data compartment is a set of files and folders. If part of this data is to be archived, the collection of this data, including its folder structure, appropriate metadata, documentation which describes the data in more detail (such as a readme.txt file or codebook files), are collectively referred to as Data Package. 
+
+### How does Archiving works in Yoda?
+
+If you choose to archive a part of your data, Yoda will make a copy of the data to the archive (also known as “Vault”) of your project space, where it will be retained unchanged during its retention period. You can visit the [Vault Page](https://rdm.vu.nl/manuals/yoda/securing_distribution/vault_archive.html) for more information about archiving data.
+
+### How Do I Submit a Data Package to The Vault?
+
+Only Group Manager or regular group members may submit data packages to the Vault.
+Navigate to the folder you want to archive in the Yoda portal. Ensure that you are in the folder which you want to submit to the vault. Check that all mandatory metadata has been entered in the metadata form of the folder. Now press the “Actions (Submit)” button. You can visit the [Vault Page](https://rdm.vu.nl/manuals/yoda/securing_distribution/vault_archive.html) for more information about archiving data.
+
+
+### What is the Role of the Data Manager?
+
+The data manager will check that the data package is self-evident for other researchers, and will check for compliance with privacy rules and regulations. The data manager can either approve the data package for archiving or suggest improvements.
+
+### How Do I Access my Archived Data?
+
+The vault of your group becomes visible in the Yoda portal once it contains at least one data package. Everyone with access to your group research folder also has read-only access to the vault of your group.
+
+### How does Publishing works in Yoda?
+
+After archiving your data, you can optionally publish it, thus making your data findable. If you classify your data as open - freely retrievable, then the data itself can be downloaded anonymously by any third party. 
+
+### How Do I Make My Data Package Ready for Publication?
+
+If needed, you can update the metadata by clicking the “Metadata” button. To submit a data package for publication, navigate to the data package in the vault and press the “Submit for publication” button. For more information on submitting a dataset for publication you can visit [Publishing Data](https://rdm.vu.nl/manuals/yoda/securing_distribution/vault_publish.html).
+
+### What is the Process of Data Review for Publication?
+
+Once you’ve submitted a data package for publication, the data manager of your Yoda community will be notified. The Data Manager will check that the data package meets various criteria for publication. If the data manager encounters any issues, you will be contacted. 
+
+### How do I receive the DOI number of my publication?
+
+Once the Data Manager has approved your data package, you’ll receive an email notification that your data package has been published. This notification contains the DOI that has been assigned to your data package. You can also find the DOI by going to the Vault dataset in the Yoda webportal.
+
+### Do I always need to make my Data Package freely available to 3rd parties?
+
+You may choose what level of access you assign to your data package. If the [Access Type] metadata field is set to “Open - Freely retrievable”, the data in the data package will be published as well. If the [Access Type] metadata field is set to “Restricted” or “Closed”, the data in the data package won’t be published.
+
+### I am a VU-student, and I have been invited to join a collaboration in Yoda but I can't seem to be able to log in
+
+It is important to ensure that you have SurfSecure MFA enabled. This is not a standard option for students and requires an appointment with IT Service Desk. Once this is in place you should be able to log into Yoda.
+For more information about MFA SurfSecure you can visit: [MS Authenticator activation for SURF Secure ID](http://services.vu.nl/esc?id=kb_article&sysparm_article=KB0011809&table=kb_knowledge&searchTerm=surf%20secure).

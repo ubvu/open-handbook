@@ -43,6 +43,7 @@ The `_quarto.yml` file is especially important, as it contains the metadata and 
 
 - **`topics/`** - Individual topic pages (e.g., `data-management-plan.qmd`, `gdpr.qmd`)
 - **`guides/`** - Step-by-step guides organized by research lifecycle
+- **`manuals/`** - Manuals to help researchers use specific tools 
 - **`blog/`** - Blog posts and announcements
 - **`public/`** - Static assets (images, PDFs, etc.)
 
@@ -52,6 +53,7 @@ The `_quarto.yml` file is especially important, as it contains the metadata and 
 - **`_extensions/`** - Quarto extensions (e.g., qreacto for React integration)
 - **`.github/workflows/`** - GitHub Actions for automated building and deployment
 - **`_site/`** - Generated website files (auto-generated, don't edit directly)
+- **`manuals/<tool>/_sidebar.yml`** - Specifies the order of the left sidebar of a specific tool manual 
 
 ::: {.callout-caution collapse="true"}
 ## Extra-detailed overview
@@ -82,15 +84,19 @@ The `_quarto.yml` file is especially important, as it contains the metadata and 
 ├── index.qmd - Homepage `/`
 ├── manuals/ - Folder containing all manuals and subpages
 ├── manuals.qmd - Manual overview page
+├── manuals/<tool>/ - <tool> manuals
+├── manuals/<tool>/index.qmd - Manual start page
+├── manuals/<tool>/_sidebar.yml - Manual sidebar definition
 ├── netlify.toml - Netlify (preview) deployment instructions
 ├── package.json - Netlify plugin information
-├── public/ - Folder containing public assets (keep files small)
+├── public/ - Folder containing public assets such as screenshot images (keep files small)
 ├── references.bib - Reference library for use in the handbook
 ├── technical-details.qmd - Technical details page
 ├── topics/ - Each `.qmd` file is one topic
 ├── topics.qmd - Topic overview page
 └── utils/ - Custom utilities for the website (generally do not touch)
     └── include-files.lua - Utility to shift headings from included files
+    └── linktarget.lua - Utility to open external links in a new tab
 ```
 :::
 
