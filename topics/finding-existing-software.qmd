@@ -17,14 +17,14 @@ Practically, you will need to be [compatible](https://book.the-turing-way.org/re
 
 The following scheme provides an overview of compatibility of commonly used [software licences](../topics/software-licensing.qmd):
 
-| **Original Licence** | **CC0** | **MIT** | **BSD** | **Apache** | **GPL / AGPL / LGPL** | **Proprietary** |
-| ------------------- | ------- | ------- | ------- | ---------- | --------------------- | --------------- |
-| CC0                 | YES     | YES     | YES     | YES        | NO                    | NO              |
-| MIT                 | YES     | YES     | YES     | YES        | NO                    | NO              |
-| BSD                 | YES     | YES     | YES     | YES        | NO                    | NO              |
-| Apache              | YES     | YES     | YES     | YES        | NO                    | NO              |
-| GPL / AGPL / LGPL   | YES     | YES     | YES     | NO         | YES                   | NO              |
-| Proprietary         | YES     | YES     | YES     | Conditional | NO                    | Depends on licence |
+|**Original Licence**|**CC0**|**MIT**|**BSD**|**Apache**|**GPL / AGPL / LGPL**|**Proprietary**|
+|---|---|---|---|---|---|---|
+|CC0|YES|YES|YES|YES|NO|NO|
+|MIT|YES|YES|YES|YES|NO|NO|
+|BSD|YES|YES|YES|YES|NO|NO|
+|Apache|YES|YES|YES|YES|NO|NO|
+|GPL / AGPL / LGPL|YES|YES|YES|NO|YES|NO|
+|Proprietary|YES|YES|YES|Conditional|NO|Depends on licence|
 
 **Licence compatibility when combining software.**
 Rows indicate the original licence; columns indicate the licence of the combined work.
