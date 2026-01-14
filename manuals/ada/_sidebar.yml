@@ -3,9 +3,9 @@ website:
     - id: sb-ada
       style: floating
       search: true
-      contents:
-        - manuals/ada/index.qmd 
-        # - auto: manuals/ada/**/*.qmd # works, but is in the wrong order
+      contents: # this file is merged into ./_quarto.yml, use paths relative to site root.
+        - manuals/ada/index.qmd
+        - manuals/ada/overview.qmd 
         - manuals/ada/login.qmd
         - manuals/ada/quick-start.qmd
         - manuals/ada/slurm.qmd

@@ -1,8 +1,9 @@
 ---
-title: ADA documentation
+title: ADA Manuals
 categories: []
 listing:
   contents: 
+    - ./overview.qmd
     - ./login.qmd
     - ./quick-start.qmd
     - ./software.qmd
@@ -21,12 +22,11 @@ listing:
 image: '/public/manuals/ada/ada1.jpg'
 ---
 
-## Welcome
+This section contains documentation and how-to's for the ADA HPC cluster. 
 
-ADA is named in honour of [Ada Lovelace](https://en.wikipedia.org/wiki/Ada_Lovelace), the pioneering mathematician and writer known for her work on Charles Babbage's Analytical Engine. She was the first to recognise that the machine had applications beyond pure calculation. ADA is the rebranded name of our previous cluster, BAZIS, and is maintained by the IT for Research team.
+[Overview of the cluster](./overview.qmd).
 
 ::: {.callout-note title="New here? Start with these first."}
-- [ADA at a Glance](./at-a-glance.qmd)
 - Request an account via the 🔒 [VU Service Portal](https://services.vu.nl/esc?id=sc_cat_item&sys_id=83139c79473e8150bfa46d72e36d432e). 
 - New to bash and the command line? Get familiar with Linux basics first through [Carpentries lessons](https://swcarpentry.github.io/shell-novice/).
 - Set-up your SSH access by following the [login instructions](./login.qmd).
