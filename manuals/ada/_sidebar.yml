@@ -1,0 +1,19 @@
+website:
+  sidebar:
+    - id: sb-ada
+      style: floating
+      search: true
+      contents:
+        - manuals/ada/index.qmd 
+        # - auto: manuals/ada/**/*.qmd # works, but is in the wrong order
+        - manuals/ada/login.qmd
+        - manuals/ada/quick-start.qmd
+        - manuals/ada/slurm.qmd
+        - manuals/ada/software.qmd
+        - manuals/ada/hardware.qmd
+        - manuals/ada/open-ondemand.qmd
+        - manuals/ada/yoda.qmd
+        - manuals/ada/help.qmd
+        - section: Code Examples
+          contents: manuals/ada/code-examples/**/*.qmd
+        - manuals/ada/hpc-101.qmd
