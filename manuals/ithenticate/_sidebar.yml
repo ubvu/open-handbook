@@ -1,10 +1,6 @@
-website:
-  sidebar:
-    - id: sb-ithenticate # will show up automatically on pages referenced in contents.
-      style: floating
-      search: true
-      contents:
-        - manuals/ithenticate/index.qmd
-        - manuals/ithenticate/log_in.qmd
-        - manuals/ithenticate/first_scan.qmd
-        - manuals/ithenticate/exporting_results.qmd
+---
+title: Getting Started
+categories: []
+description: "This guide will help you get started with using iThenticate. You can only request an iThenticate account via the Key-user within your faculty. You can find a list of key-users here: https://libguides.vu.nl/c.php?g=714180&p=5167373.
+New users will receive an email with a username and a one-time password."
+---
