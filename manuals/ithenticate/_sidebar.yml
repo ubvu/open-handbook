@@ -1,18 +1,10 @@
----
-title: iThenticate Manuals
-categories: []
-listing:
-  contents: 
-    - ./*.qmd
-  page-size: 40
-  filter-ui: true
-  type: grid
-  fields: [title,description]
-  sort: false
-image: '/public/logo-ithenticate.png'
-description: 'This section has more in-depth information about iThenticate.'
----
-
-::: {.callout-tip}
-The [Ithenticate Topic page](/topics/ithenticate.qmd) explains what iThenticate does and how you can set up an account.
-:::
+website:
+  sidebar:
+    - id: sb-ithenticate # will show up automatically on pages referenced in contents.
+      style: floating
+      search: true
+      contents:
+        - manuals/ithenticate/index.qmd
+        - manuals/ithenticate/log_in.qmd
+        - manuals/ithenticate/first_scan.qmd
+        - manuals/ithenticate/exporting_results.qmd
