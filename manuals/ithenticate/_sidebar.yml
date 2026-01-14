@@ -4,7 +4,11 @@ website:
       style: floating
       search: true
       contents:
-        - manuals/ithenticate/index.qmd
-        - manuals/ithenticate/log_in.qmd
-        - manuals/ithenticate/first_scan.qmd
-        - manuals/ithenticate/exporting_results.qmd
+      - manuals/ithenticate/index.qmd
+      - section: Getting Started
+        contents:
+          - manuals/ithenticate/getting_started/getting_started.qmd
+          - manuals/ithenticate/getting_started/log_in.qmd
+          - manuals/ithenticate/getting_started/first_scan.qmd
+          - manuals/ithenticate/getting_started/exporting_results.qmd
+          
