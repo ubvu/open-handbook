@@ -1,0 +1,14 @@
+website:
+  sidebar:
+    - id: sb-ithenticate # will show up automatically on pages referenced in contents.
+      style: floating
+      search: true
+      contents:
+      - manuals/ithenticate/index.qmd
+      - section: Getting Started
+        contents:
+          - manuals/ithenticate/getting_started/getting_started.qmd
+          - manuals/ithenticate/getting_started/log_in.qmd
+          - manuals/ithenticate/getting_started/first_scan.qmd
+          - manuals/ithenticate/getting_started/exporting_results.qmd
+          
