@@ -2,10 +2,37 @@
 title: Yoda Manuals
 categories: []
 listing:
-  contents: 
-    - ./**/*.qmd
+  contents:
+    - yoda_portal/index.qmd
+    - yoda_portal/introduction.qmd
+    - yoda_portal/notifications.qmd
+    - yoda_portal/sram_invitations_eduid_activation.qmd
+    - yoda_portal/logging_in.qmd
+    - yoda_portal/group_manager.qmd
+    - using_yoda/finding_restoring.qmd
+    - using_yoda/metadata.qmd
+    - using_yoda/workflow_metadata.qmd
+    - using_yoda/properties_and_explanation.qmd
+    - using_yoda/workflow_metadata_license.qmd
+    - securing_distribution/vault_archive.qmd
+    - securing_distribution/vault_publish.qmd
+    - data_access/introduction.qmd
+    - data_access/yoda_dap.qmd
+    - data_access/data_access_linux.qmd
+    - data_access/data_access_macos.qmd
+    - data_access/data_access_windows.qmd
+    - data_access/yoda_using_cyberduck.qmd
+    - data_access/yoda_using_cyberduck_cryptometer.qmd
+    - data_access/yoda_using_icommands.qmd
+    - data_access/yoda_using_rclone.qmd
+    - data_access/yoda_using_webdrive.qmd
+    - data_access/yoda_using_windowsexplorer.qmd
+    - data_access/yoda_using_winscp.qmd
+    - faq/faq.qmd
+    - faq/known_issues.qmd
   page-size: 40
   filter-ui: true
+  sort-ui: [title]
   type: grid
   fields: [title,description]
   sort: false
