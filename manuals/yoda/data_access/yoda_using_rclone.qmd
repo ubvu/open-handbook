@@ -5,21 +5,20 @@ categories: []
 
 [Rclone](https://rclone.org/) is a command-line program to manage files on cloud storage. 
 It is a feature-rich alternative to cloud vendors' web storage interfaces. 
-Over 40 cloud storage products support rclone including S3 object stores, business & consumer file storage services, 
-as well as standard transfer protocols.
+Over 40 cloud storage products support rclone including S3 object stores, business & consumer file storage services, as well as standard transfer protocols.
 
 Rclone is available for Linux, Mac and Windows, see [https://rclone.org/downloads/](https://rclone.org/downloads/) 
 
 You can use rclone to access the Yoda drive using WebDAV.
 
-Note: if you are on Linux and comfortable with commandline tools, the [iRODS icommands](./yoda_using_icommands.qmd) provide better performance.
+Note: if you are on Linux and comfortable with command line tools, the [iRODS icommands](./yoda_using_icommands.qmd) provide better performance.
 
-## Create a config
-Rclone always expects you to create a config first:
+## How to: Create a config
+1. Rclone always expects you to create a config first:
 ```sh
 rclone config
 ```
-You will be led through a number of questions
+2. You will be led through a number of questions
 ```sh
 Current remotes:
 
@@ -93,7 +92,7 @@ password:
 Confirm the password:
 password:
 ```
-Password is a [Data Access Password](/manuals/yoda/data_access/yoda_dap.qmd) generated in Yoda.
+3. Password is a [Data Access Password](/manuals/yoda/data_access/yoda_dap.qmd) generated in Yoda.
 ```sh
 Option bearer_token.
 Bearer token instead of user/pass (e.g. a Macaroon).
@@ -147,11 +146,11 @@ y/g/n> y
 ```
 
 ## Mounting on Windows
-Please make sure to use `--vfs-cache-mode`, see (rlone docs)[https://rclone.org/commands/rclone_mount/#vfs-file-caching]
+Please make sure to use `--vfs-cache-mode`, see [rclone docs](https://rclone.org/commands/rclone_mount/#vfs-file-caching).
 
 ```sh
 .\rclone --vfs-cache-mode full mount yoda:research-staff-ubvu-geoplaza/ y:
 ```
 Will mount the `yoda` config as drive Y.
 
-The rclone documentation provides information on how to (automatically starting rclone)[https://rclone.org/install/#autostart-on-windows].
+The rclone documentation provides information on how to [automatically start rclone](https://rclone.org/install/#autostart-on-windows).
