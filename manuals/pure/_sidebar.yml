@@ -1,0 +1,11 @@
+website:
+  sidebar:
+    - id: sb-pure # will show up automatically on pages referenced in contents.
+      style: floating
+      search: true
+      contents:
+        - manuals/pure/index.qmd
+        - section: Research Output Registration
+          contents:
+            - manuals/pure/registration/data-registration.qmd
+            - manuals/pure/registration/software-registration.qmd
