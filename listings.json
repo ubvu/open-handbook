@@ -3,6 +3,7 @@
     "listing": "/manuals.html",
     "items": [
       "/manuals/ada/index.html",
+      "/manuals/ithenticate/index.html",
       "/manuals/qualtrics/index.html",
       "/manuals/scistor/index.html",
       "/manuals/yoda/index.html"
@@ -57,22 +58,41 @@
     ]
   },
   {
-    "listing": "/manuals/ada/index.html",
+    "listing": "/manuals/yoda/index.html",
     "items": [
-      "/manuals/ada/login.html",
-      "/manuals/ada/quick-start.html",
-      "/manuals/ada/software.html",
-      "/manuals/ada/slurm.html",
-      "/manuals/ada/hardware.html",
-      "/manuals/ada/hpc-101.html",
-      "/manuals/ada/open-ondemand.html",
-      "/manuals/ada/yoda.html",
-      "/manuals/ada/help.html",
-      "/manuals/ada/code-examples/Python/1-python-multithreading.html",
-      "/manuals/ada/code-examples/Python/2-python-multiprocessing.html",
-      "/manuals/ada/code-examples/Python/3-python-pytorch.html",
-      "/manuals/ada/code-examples/R/1-R-multiprocessing.html",
-      "/manuals/ada/code-examples/matlab.html"
+      "/manuals/yoda/data_access/data_access_linux.html",
+      "/manuals/yoda/data_access/data_access_macos.html",
+      "/manuals/yoda/data_access/data_access_windows.html",
+      "/manuals/yoda/data_access/introduction.html",
+      "/manuals/yoda/data_access/yoda_dap.html",
+      "/manuals/yoda/data_access/yoda_using_cyberduck.html",
+      "/manuals/yoda/data_access/yoda_using_cyberduck_cryptometer.html",
+      "/manuals/yoda/data_access/yoda_using_icommands.html",
+      "/manuals/yoda/data_access/yoda_using_rclone.html",
+      "/manuals/yoda/data_access/yoda_using_webdrive.html",
+      "/manuals/yoda/data_access/yoda_using_windowsexplorer.html",
+      "/manuals/yoda/data_access/yoda_using_winscp.html",
+      "/manuals/yoda/faq/faq.html",
+      "/manuals/yoda/faq/known_issues.html",
+      "/manuals/yoda/securing_distribution/vault_archive.html",
+      "/manuals/yoda/securing_distribution/vault_publish.html",
+      "/manuals/yoda/using_yoda/finding_restoring.html",
+      "/manuals/yoda/using_yoda/metadata.html",
+      "/manuals/yoda/using_yoda/properties_and_explanation.html",
+      "/manuals/yoda/using_yoda/workflow_metadata.html",
+      "/manuals/yoda/using_yoda/workflow_metadata_license.html",
+      "/manuals/yoda/yoda_portal/group_manager.html",
+      "/manuals/yoda/yoda_portal/index.html",
+      "/manuals/yoda/yoda_portal/introduction.html",
+      "/manuals/yoda/yoda_portal/logging_in.html",
+      "/manuals/yoda/yoda_portal/notifications.html",
+      "/manuals/yoda/yoda_portal/sram_invitations_eduid_activation.html"
+    ]
+  },
+  {
+    "listing": "/manuals/qualtrics/index.html",
+    "items": [
+      "/manuals/qualtrics/qualtrics-faq.html"
     ]
   },
   {
@@ -135,41 +155,31 @@
     ]
   },
   {
-    "listing": "/manuals/qualtrics/index.html",
+    "listing": "/manuals/ada/index.html",
     "items": [
-      "/manuals/qualtrics/qualtrics-faq.html"
+      "/manuals/ada/login.html",
+      "/manuals/ada/quick-start.html",
+      "/manuals/ada/software.html",
+      "/manuals/ada/slurm.html",
+      "/manuals/ada/hardware.html",
+      "/manuals/ada/hpc-101.html",
+      "/manuals/ada/open-ondemand.html",
+      "/manuals/ada/yoda.html",
+      "/manuals/ada/help.html",
+      "/manuals/ada/code-examples/Python/1-python-multithreading.html",
+      "/manuals/ada/code-examples/Python/2-python-multiprocessing.html",
+      "/manuals/ada/code-examples/Python/3-python-pytorch.html",
+      "/manuals/ada/code-examples/R/1-R-multiprocessing.html",
+      "/manuals/ada/code-examples/matlab.html"
     ]
   },
   {
-    "listing": "/manuals/yoda/index.html",
+    "listing": "/manuals/ithenticate/index.html",
     "items": [
-      "/manuals/yoda/data_access/data_access_linux.html",
-      "/manuals/yoda/data_access/data_access_macos.html",
-      "/manuals/yoda/data_access/data_access_windows.html",
-      "/manuals/yoda/data_access/introduction.html",
-      "/manuals/yoda/data_access/yoda_dap.html",
-      "/manuals/yoda/data_access/yoda_using_cyberduck.html",
-      "/manuals/yoda/data_access/yoda_using_cyberduck_cryptometer.html",
-      "/manuals/yoda/data_access/yoda_using_icommands.html",
-      "/manuals/yoda/data_access/yoda_using_rclone.html",
-      "/manuals/yoda/data_access/yoda_using_webdrive.html",
-      "/manuals/yoda/data_access/yoda_using_windowsexplorer.html",
-      "/manuals/yoda/data_access/yoda_using_winscp.html",
-      "/manuals/yoda/faq/faq.html",
-      "/manuals/yoda/faq/known_issues.html",
-      "/manuals/yoda/securing_distribution/vault_archive.html",
-      "/manuals/yoda/securing_distribution/vault_publish.html",
-      "/manuals/yoda/using_yoda/finding_restoring.html",
-      "/manuals/yoda/using_yoda/metadata.html",
-      "/manuals/yoda/using_yoda/properties_and_explanation.html",
-      "/manuals/yoda/using_yoda/workflow_metadata.html",
-      "/manuals/yoda/using_yoda/workflow_metadata_license.html",
-      "/manuals/yoda/yoda_portal/group_manager.html",
-      "/manuals/yoda/yoda_portal/index.html",
-      "/manuals/yoda/yoda_portal/introduction.html",
-      "/manuals/yoda/yoda_portal/logging_in.html",
-      "/manuals/yoda/yoda_portal/notifications.html",
-      "/manuals/yoda/yoda_portal/sram_invitations_eduid_activation.html"
+      "/manuals/ithenticate/getting_started/exporting_results.html",
+      "/manuals/ithenticate/getting_started/first_scan.html",
+      "/manuals/ithenticate/getting_started/getting_started.html",
+      "/manuals/ithenticate/getting_started/log_in.html"
     ]
   },
   {
