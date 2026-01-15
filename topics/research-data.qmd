@@ -9,11 +9,11 @@ When we talk about Research Data at VU Amsterdam, it is defined as the following
 
 > "Information that is collected, observed, generated, or reused for the purpose of underpinning academic research. Depending on the discipline, research data may consist of, for example, text, images, audio recordings, video, spreadsheets, databases, statistical data, geographic data, or sensor measurements."
 
-When we refer to research data in the [Research Data and Software Management Policy](https://rdm.vu.nl/public/policies-regulations/RDSM-policy-VU-EN-v3.0.pdf), we mean the entirety of the data itself, including any associated metadata, documentation, and contextual information necessary to understand, interpret, and reuse the data.
+In the context of the [Research Data and Software Management Policy](https://rdm.vu.nl/public/policies-regulations/RDSM-policy-VU-EN-v3.0.pdf), research data refers to the **entirety of the data**, including associated metadata, documentation, and contextual information required to understand, interpret, and reuse the data.
 
-A widely used definition of research data is provided by the Organisation for Economic Co-operation and Development [OECD](https://www.oecd.org/en/publications/oecd-principles-and-guidelines-for-access-to-research-data-from-public-funding_9789264034020-en-fr.html):
+This understanding aligns with widely accepted international definitions. For example, the Organisation for Economic Co-operation and Development (OECD) defines research data as:
 
-> “Research data are factual records (numerical scores, textual records, images, and sounds) used as primary sources for scientific research, and that are commonly accepted in the scientific community as necessary to validate research findings.”
+> “Factual records (numerical scores, textual records, images, and sounds) used as primary sources for scientific research, and that are commonly accepted in the scientific community as necessary to validate research findings.”
 
 ---
 
@@ -23,27 +23,27 @@ Research data can be created in many formats and through a wide range of researc
 
 Some examples of research data include:
 
-Text-based files such as documents, spreadsheets, and presentation slides
-Images, photographs, films, and other visual materials
-Survey data, interview transcripts, and codebooks
-Physical samples and genomic or sequence data
-Laboratory and field notebooks
-Audio and video recordings
-Computer code, algorithms, models, and scripts
-Research methodologies, protocols, and workflows
-Bibliographies and reference datasets
+- Text-based files such as documents, spreadsheets, and presentation slides  
+- Images, photographs, films, and other visual materials  
+- Survey data, interview transcripts, and codebooks  
+- Physical samples and genomic or sequence data  
+- Laboratory and field notebooks  
+- Audio and video recordings  
+- Computer code, algorithms, models, and scripts  
+- Research methodologies, protocols, and workflows  
+- Bibliographies and curated reference datasets  
 
-Because research data takes on many forms, it can be difficult to clearly identify them. The pyramid below, developed by Andoefer (2015) and provided by the [University of Geneva] (https://www.unige.ch/researchdata/generate-collect/identifier-donnees-de-recherche), provides a useful framework for understanding how research data function within the research process, especially in social sciences and humanities. 
+Because research data can take many forms, it is not always easy to identify what qualifies as research data. The pyramid below, developed by Andorfer (2015) and provided by the [University of Geneva](https://www.unige.ch/researchdata/generate-collect/identifier-donnees-de-recherche), offers a useful framework for understanding how different types of research data function within the research process, particularly in the social sciences and humanities.
 
 Insert image here.... 
 
 ---
 
-## What is *not* Research Data?
+## What Is *Not* Research Data?
 
-It is important to note that not all data used in research qualifies as research data.
+Not all data used in a research context qualifies as research data.
 
-For example, administrative data such as HR records, email correspondence, or generic software logs are typically **not** considered research data unless they are explicitly collected or repurposed to answer a research question.
+Administrative or operational data—such as HR records, routine email correspondence, or generic software logs—are generally **not** considered research data unless they are explicitly collected or repurposed to answer a research question.
 
 Similarly, publicly available datasets that are reused without modification are not newly created research data. However, their use may still require appropriate documentation, citation, and ethical or legal consideration.
 
@@ -51,15 +51,15 @@ Similarly, publicly available datasets that are reused without modification are 
 
 ## Research Data Across the Research Lifecycle
 
-Research data can be produced at different stages of the research lifecycle, including data collection, processing and analysis, and validation of results. Multiple versions of data may exist at each stage, such as raw data, processed data, and derived or aggregated datasets. Managing these different forms of research data appropriately is essential for transparency, reproducibility, and long-term reuse, in line with the FAIR data principles (Wilkinson et al., 2016).
+Research data can be generated at multiple stages of the research lifecycle, including data collection, processing and analysis, and validation of results. At each stage, multiple versions of data may exist, such as raw data, cleaned or processed data, and derived or aggregated datasets.
 
-Managing these different forms of research data appropriately is essential for transparency, reproducibility, and long-term reuse.
+Appropriate management of these different forms of research data is essential for ensuring transparency, reproducibility, and long-term reuse, in line with the [FAIR data principles](https://rdm.vu.nl/topics/fair-principles.html) (Wilkinson et al., 2016).
 
 ---
 
 ## References
 
-- Andorfer, P. (2015). Forschen und Forschungsdaten in den Geisteswissenschaften: Zwischenbericht einer Interviewreihe. Niedersächsische Staats- und Universitätsbibliothek Göttingen. 
+- Andorfer, P. (2015). *Forschen und Forschungsdaten in den Geisteswissenschaften: Zwischenbericht einer Interviewreihe*. Niedersächsische Staats- und Universitätsbibliothek Göttingen.
 
 - Organisation for Economic Co-operation and Development (OECD). *Principles and Guidelines for Access to Research Data from Public Funding*.  
   Definition widely referenced via the [University of Geneva Research Data Management guide](https://www.unige.ch/researchdata/generate-collect/identifier-donnees-de-recherche/).
