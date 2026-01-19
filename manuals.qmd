@@ -2,12 +2,14 @@
 title: "Manuals"
 listing:
   contents: 
-    - "manuals/yoda/index.qmd"
     - "manuals/ada/index.qmd"
-    - "manuals/scicloud/index.qmd"
+    - "manuals/ithenticate/index.qmd"
+    - "manual/pure/index.qmd"
     - "manuals/qualtrics/index.qmd"
+    - "manuals/scicloud/index.qmd"
     - "manuals/scistor/index.qmd"
-    - "manuals/pure/index.qmd"
+    - "manuals/yoda/index.qmd"
+  sort: false # sort as defined above
   filter-ui: [title]
   type: grid
   categories: false
