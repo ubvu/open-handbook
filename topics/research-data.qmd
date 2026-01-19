@@ -11,7 +11,7 @@ When we talk about Research Data at VU Amsterdam, it is defined as the following
 
 In the context of the [Research Data and Software Management Policy](https://rdm.vu.nl/public/policies-regulations/RDSM-policy-VU-EN-v3.0.pdf), research data refers to the **entirety of the data**, including associated metadata, documentation, and contextual information required to understand, interpret, and reuse the data.
 
-This understanding aligns with widely accepted international definitions. For example, the Organisation for Economic Co-operation and Development (OECD) defines research data as:
+This understanding aligns with widely accepted international definitions. For example, the Organisation for Economic Co-operation and Development [OECD](https://www.oecd.org/en/publications/oecd-principles-and-guidelines-for-access-to-research-data-from-public-funding_9789264034020-en-fr.html) defines research data as:
 
 > “Factual records (numerical scores, textual records, images, and sounds) used as primary sources for scientific research, and that are commonly accepted in the scientific community as necessary to validate research findings.”
 
@@ -31,11 +31,21 @@ Some examples of research data include:
 - Audio and video recordings  
 - Computer code, algorithms, models, and scripts  
 - Research methodologies, protocols, and workflows  
-- Bibliographies and curated reference datasets  
+- Bibliographies and reference datasets  
 
 Because research data can take many forms, it is not always easy to identify what qualifies as research data. The pyramid below, developed by Andorfer (2015) and provided by the [University of Geneva](https://www.unige.ch/researchdata/generate-collect/identifier-donnees-de-recherche), offers a useful framework for understanding how different types of research data function within the research process, particularly in the social sciences and humanities.
 
 Insert image here.... 
+
+### Five Categories of Research Data
+
+The [University of Bristol](https://data.blogs.bristol.ac.uk/bootcamp/data/) identifies five main catergories of research data based on how they are produced and whether they can be reproduced:
+
+- Observational: Data collected in real time within a specific context; typically unique and irreplaceable (e.g. neuroimaging, surveys, field recordings).
+- Experimental: Data generated using laboratory instruments or standardized methods; potentially reproducible but often costly and time-consuming (e.g. gene sequences, animal experiments).
+- Simulation / models: Data produced by computational or experimental models, where the model itself is often the primary research output (e.g. climate or economic models).
+- Derived / compiled: Data created by processing, aggregating, or combining raw data (e.g. data mining outputs, compiled databases such as the UNSCdeb8 database).
+- Reference: Curated corpora or collections that serve as authoritative resources in a field (e.g. gene databases, archival collections, historical image databases).
 
 ---
 
@@ -53,19 +63,16 @@ Similarly, publicly available datasets that are reused without modification are 
 
 Research data can be generated at multiple stages of the research lifecycle, including data collection, processing and analysis, and validation of results. At each stage, multiple versions of data may exist, such as raw data, cleaned or processed data, and derived or aggregated datasets.
 
-Appropriate management of these different forms of research data is essential for ensuring transparency, reproducibility, and long-term reuse, in line with the [FAIR data principles](https://rdm.vu.nl/topics/fair-principles.html) (Wilkinson et al., 2016).
+Appropriate management of these different forms of research data is essential for ensuring transparency, reproducibility, and long-term reuse, in line with [FAIR data principles](https://rdm.vu.nl/topics/fair-principles.html) (Wilkinson et al., 2016).
 
 ---
 
 ## References
 
 - Andorfer, P. (2015). *Forschen und Forschungsdaten in den Geisteswissenschaften: Zwischenbericht einer Interviewreihe*. Niedersächsische Staats- und Universitätsbibliothek Göttingen.
-
-- Organisation for Economic Co-operation and Development (OECD). *Principles and Guidelines for Access to Research Data from Public Funding*.  
-  Definition widely referenced via the [University of Geneva Research Data Management guide](https://www.unige.ch/researchdata/generate-collect/identifier-donnees-de-recherche/).
-
+- Organisation for Economic Co-operation and Development. (2007). OECD principles and guidelines for access to research data from public funding. OECD Publishing. https://doi.org/10.1787/9789264034020-en-fr
 - Vrije Universiteit Amsterdam. *Research Data and Software Management (RDSM) Policy, version 3.0*.  
   https://rdm.vu.nl/public/policies-regulations/RDSM-policy-VU-EN-v3.0.pdf
-
+- University of Geneva. (n.d.). Identify research data. Researchdata. https://www.unige.ch/researchdata/generate-collect/identifier-donnees-de-recherche 
 - Wilkinson, M. D., et al. (2016). *The FAIR Guiding Principles for scientific data management and stewardship*. Scientific Data, 3, 160018.  
   https://doi.org/10.1038/sdata.2016.18
