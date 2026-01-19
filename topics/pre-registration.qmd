@@ -22,7 +22,7 @@ Importantly, preregistration does **not** prevent you from adapting your researc
 - “Contrary to expectations, we found that…”  
 - “In addition to the analyses we pre-registered, we also explored…”
 
-*insert preregistration cycle here*
+insert preregistration cycle image here
 
 ---
 
@@ -38,10 +38,35 @@ There are two main forms of preregistration:
 
 ---
 
+## What to Include in a Study’s Preregistration
+
+A preregistration should clearly document key decisions made before data collection or analysis to promote transparency and reduce questionable research practices (Krypotos et al., 2022).
+
+### Research hypotheses
+For confirmatory research, hypotheses should be stated clearly and specifically in advance to prevent flexible interpretation of results. Exploratory research does not require predefined hypotheses.
+
+### Methodology
+The preregistration should describe how the study will be conducted, including materials, procedures, data sources, and data collection methods. For studies using existing data, researchers should explain how the data were obtained and disclose any prior knowledge that could influence analyses. Whenever possible, study materials should be shared in a repository to support transparency and replication.
+
+### Sample
+Researchers should specify the intended sample characteristics and justify the planned sample size (e.g. through power analysis or other decision rules). Any stopping rules, adaptive sampling procedures, or use of pre-existing datasets should be clearly documented in advance, including how training and validation datasets will be defined where applicable.
+
+### Data preprocessing
+All planned data transformations, exclusions, and aggregation procedures should be specified in advance. If exact procedures cannot be fully predefined, researchers should describe planned sensitivity analyses to demonstrate the robustness of results.
+
+### Statistical analysis
+The preregistration should outline the planned statistical models, variables, and inferential framework (e.g. NHST or Bayesian analysis). Clear documentation of analytic decisions helps prevent bias and increases the credibility of findings. Preregistrations may be updated when necessary, but changes should be made transparently and documented.
+
+### Templates and study-specific elements
+Different study types require different preregistration elements. Researchers are encouraged to consult existing preregistration templates and select one appropriate to their field and research design (Krypotos et al., 2022).
+
+---
+
 ## References
 
 - [Center for Open Science: Preregistration](https://www.cos.io/prereg)  
 - Claesen, A., et al. (2020). *How preregistration affects the research workflow: Better science but more work.* PLoS ONE, 15(10), e0238823. https://doi.org/10.1371/journal.pone.0238823  
+- Krypotos, A. M., et al. (2022). *Preregistration: Definition, advantages, disadvantages, and how it can help against questionable research practices.* In W. O’Donohue, A. Masuda, & S. Lilienfeld (Eds.), **Avoiding Questionable Research Practices in Applied Psychology**. Springer, Cham. https://doi.org/10.1007/978-3-031-04968-2_15
 - [Leiden University: Pre-registering your research – extra effort, but what’s the pay-off?](https://www.universiteitleiden.nl/en/news/2025/09/pre-registering-your-research-extra-effort-but-whats-the-pay-off)
 - [Maastricht University Library: Preregistration in academia – Making research more findable and reliable.](https://library.maastrichtuniversity.nl/news/preregistration-in-academia-making-research-more-findable-and-reliable/)
 - Morling, Beth & Calin-Jageman, Robert. (2020). *What Psychology Teachers Should Know About Open Science and the New Statistics*. Teaching of Psychology. 47. 169-179. 10.1177/0098628320901372. 
