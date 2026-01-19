@@ -9,8 +9,6 @@ listing:
       - ../topics/software-publishing.qmd
       - ../topics/data-licensing.qmd
       - ../topics/software-licensing.qmd
-      - ../manuals/pure/registration/data-registration.qmd
-      - ../manuals/pure/registration/software-registration.qmd
       - ../topics/dataversenl.qmd
       - ../topics/osf.qmd
       - ../topics/yoda.qmd
@@ -23,6 +21,14 @@ listing:
     type: grid
     include:
       categories: "Publish & Share"
+  - id: manuals
+    contents:
+      - ../manuals/pure/registration/data-registration.qmd
+      - ../manuals/pure/registration/software-registration.qmd
+    type: table
+    table-striped: true
+    table-hover: true
+    fields: [title, reading-time]
 ---
 
 ## Topics
