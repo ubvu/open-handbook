@@ -16,19 +16,19 @@ listing:
     table-striped: true
     table-hover: true
     fields: [title, reading-time]
-  - id: guides
-    contents: "../guides/*.qmd"
-    type: grid
-    include:
-      categories: "Publish & Share"
-  - id: manuals
+ - id: manuals
     contents:
       - ../manuals/pure/registration/data-registration.qmd
       - ../manuals/pure/registration/software-registration.qmd
     type: table
     table-striped: true
     table-hover: true
-    fields: [title, reading-time]
+    fields: [title, reading-time] 
+- id: guides
+    contents: "../guides/*.qmd"
+    type: grid
+    include:
+      categories: "Publish & Share"
 ---
 
 ## Topics
