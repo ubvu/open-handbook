@@ -16,7 +16,7 @@ listing:
     table-striped: true
     table-hover: true
     fields: [title, reading-time]
- - id: manuals
+  - id: manuals
     contents:
       - ../manuals/pure/registration/data-registration.qmd
       - ../manuals/pure/registration/software-registration.qmd
@@ -24,7 +24,7 @@ listing:
     table-striped: true
     table-hover: true
     fields: [title, reading-time] 
-- id: guides
+  - id: guides
     contents: "../guides/*.qmd"
     type: grid
     include:
