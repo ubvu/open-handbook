@@ -91,7 +91,7 @@ There are several ways in which you can download and upload the files:
 >
 > -   Data analysis: When you use Python for your analysis
 
-Streaming is a more advanced method to analyse data in Yoda. Using iBridges in Python or the Python iRODS client, it is possible to directly load data into memory without having to download it to the analysis system ([manual](../data_access/yoda_using_python.qmd#advanced-streaming)). The main advantage of this method is that you do not create new copies of the data that you later have to remove, and your workflow becomes a lot cleaner. Streaming is especially useful when your data is organised in larger files and you only need extracts, i.e. you do not need all the content. Another use case for streaming is when you need to combine/append the content of many small files for your analysis.
+Streaming is a more advanced method to analyse data in Yoda. Using iBridges in Python or the Python iRODS client, it is possible to directly load data into memory without having to download it to the analysis system ([manual](../data_access/yoda_using_python.qmd#streaming)). The main advantage of this method is that you do not create new copies of the data that you later have to remove, and your workflow becomes a lot cleaner. Streaming is especially useful when your data is organised in larger files and you only need extracts, i.e. you do not need all the content. Another use case for streaming is when you need to combine/append the content of many small files for your analysis.
 
 Output of your scripts can also be streamed directly to Yoda along with metadata. That means you do not need to first create a local file which contains the output, but you can directly create a file on Yoda and “stream” the output into that file.
 
