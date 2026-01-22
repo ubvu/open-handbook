@@ -707,6 +707,34 @@
     ]
   },
   {
+    "objectID": "manuals/ithenticate/similarity_report/faq.html",
+    "href": "manuals/ithenticate/similarity_report/faq.html",
+    "title": "Report FAQ",
+    "section": "",
+    "text": "The Similarity Index remains consistent across various report modes. It is determined by creating a digital fingerprint of the submitted document, searching it against selected repositories, and then calculating the percentage of matching words divided by the total word count. If exclusion options are used, the system recalculates the Similarity Index by removing excluded matches from the report."
+  },
+  {
+    "objectID": "manuals/ithenticate/similarity_report/faq.html#how-is-the-similarity-indexreport-calculated-for-each-of-the-reports",
+    "href": "manuals/ithenticate/similarity_report/faq.html#how-is-the-similarity-indexreport-calculated-for-each-of-the-reports",
+    "title": "Report FAQ",
+    "section": "",
+    "text": "The Similarity Index remains consistent across various report modes. It is determined by creating a digital fingerprint of the submitted document, searching it against selected repositories, and then calculating the percentage of matching words divided by the total word count. If exclusion options are used, the system recalculates the Similarity Index by removing excluded matches from the report."
+  },
+  {
+    "objectID": "manuals/ithenticate/similarity_report/faq.html#how-is-the-similarity-report-constructed-what-matches-get-hidden-by-other-matches",
+    "href": "manuals/ithenticate/similarity_report/faq.html#how-is-the-similarity-report-constructed-what-matches-get-hidden-by-other-matches",
+    "title": "Report FAQ",
+    "section": "How is the Similarity Report constructed? What matches get hidden by other matches?",
+    "text": "How is the Similarity Report constructed? What matches get hidden by other matches?\nThe system highlights text sections that match sources in our repositories and lists what it considers the best matches in the report sidebar. While the best matches are displayed, numerous additional sources that match the document’s text can be found in the Content Tracking mode."
+  },
+  {
+    "objectID": "manuals/ithenticate/similarity_report/faq.html#what-if-two-sources-have-the-exact-same-amount-of-matching-text-which-source-would-be-displayed-in-the-similarity-report-as-a-best-match",
+    "href": "manuals/ithenticate/similarity_report/faq.html#what-if-two-sources-have-the-exact-same-amount-of-matching-text-which-source-would-be-displayed-in-the-similarity-report-as-a-best-match",
+    "title": "Report FAQ",
+    "section": "What if two sources have the exact same amount of matching text; which source would be displayed in the Similarity Report as a best match?",
+    "text": "What if two sources have the exact same amount of matching text; which source would be displayed in the Similarity Report as a best match?\nThe chosen source depends on the repository that’s been matched. Between two internet sources, the best match is generally the most recently crawled internet source; between an internet source and a publication source, the publication source is presented."
+  },
+  {
     "objectID": "manuals/ithenticate/advanced_settings/url_phrase_exclusion.html",
     "href": "manuals/ithenticate/advanced_settings/url_phrase_exclusion.html",
     "title": "URL filter & phrase exclusion",
@@ -722,7 +750,7 @@
     "href": "manuals/ithenticate/index.html",
     "title": "iThenticate Manuals",
     "section": "",
-    "text": "Tip\n\n\n\nThe iThenticate topic page explains what iThenticate does and how you can set up an account.\n\n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\nDoc-to-doc comparison\n\n\n\n\n\n\n\n\n\n\n\n\nFolder Options\n\n\n\n\n\n\n\n\n\n\n\n\nURL filter & phrase exclusion\n\n\n\n\n\n\n\n\n\n\n\n\nSaving, sharing and exporting results\n\n\n\n\n\n\n\n\n\n\n\n\nYour first scan\n\n\n\n\n\n\n\n\n\n\n\n\nGetting started\n\n\nThe mnauals in this section will help you to get started with using iThenticate. You can only request an iThenticate account via the key user within your faculty. You can…\n\n\n\n\n\n\n\n\n\nLogging in\n\n\n\n\n\n\n\n\nNo matching items",
+    "text": "Tip\n\n\n\nThe iThenticate topic page explains what iThenticate does and how you can set up an account.\n\n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\nDoc-to-doc comparison\n\n\n\n\n\n\n\n\n\n\n\n\nFolder Options\n\n\n\n\n\n\n\n\n\n\n\n\nURL filter & phrase exclusion\n\n\n\n\n\n\n\n\n\n\n\n\nSaving, sharing and exporting results\n\n\n\n\n\n\n\n\n\n\n\n\nYour first scan\n\n\n\n\n\n\n\n\n\n\n\n\nGetting started\n\n\nThe mnauals in this section will help you to get started with using iThenticate. You can only request an iThenticate account via the key user within your faculty. You can…\n\n\n\n\n\n\n\n\n\nLogging in\n\n\n\n\n\n\n\n\n\n\n\n\nReport FAQ\n\n\n\n\n\n\n\n\n\n\n\n\nsimilarity Report\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "iThenticate Manuals"
     ]
@@ -4851,6 +4879,61 @@
     "crumbs": [
       "Advanced Settings",
       "Folder Options"
+    ]
+  },
+  {
+    "objectID": "manuals/ithenticate/similarity_report/similarity_report.html",
+    "href": "manuals/ithenticate/similarity_report/similarity_report.html",
+    "title": "similarity Report",
+    "section": "",
+    "text": "To access the Similarity Report of a submitted document, go to the folder where the submission is located. In the Folder’s tab, you will find the submitted document.\nTo view the Similarity Report, click on the similarity index icon corresponding to that document. This icon displays the percentage in the “Report” column, which is known as the Similarity Score. The Similarity Score provides a quick assessment of the document’s performance. It’s essential to discuss a comprehensive analysis. When you click on the icon, the report will open in the document viewer for your review.\n\n\n\nSimilarity report",
+    "crumbs": [
+      "Similarity Report",
+      "similarity Report"
+    ]
+  },
+  {
+    "objectID": "manuals/ithenticate/similarity_report/similarity_report.html#accessing-the-similarity-report",
+    "href": "manuals/ithenticate/similarity_report/similarity_report.html#accessing-the-similarity-report",
+    "title": "similarity Report",
+    "section": "",
+    "text": "To access the Similarity Report of a submitted document, go to the folder where the submission is located. In the Folder’s tab, you will find the submitted document.\nTo view the Similarity Report, click on the similarity index icon corresponding to that document. This icon displays the percentage in the “Report” column, which is known as the Similarity Score. The Similarity Score provides a quick assessment of the document’s performance. It’s essential to discuss a comprehensive analysis. When you click on the icon, the report will open in the document viewer for your review.\n\n\n\nSimilarity report",
+    "crumbs": [
+      "Similarity Report",
+      "similarity Report"
+    ]
+  },
+  {
+    "objectID": "manuals/ithenticate/similarity_report/similarity_report.html#the-document-viewer",
+    "href": "manuals/ithenticate/similarity_report/similarity_report.html#the-document-viewer",
+    "title": "similarity Report",
+    "section": "The Document Viewer",
+    "text": "The Document Viewer\nMatching sources are listed in the right panel. The similarities are highlighted in a color that corresponds to the matching source. There are four different report modes that allow you to view the desired information. The four modes are:\n\nMatch overview shows the matches with the highest to lowest percentage of matching words.\nAll sources shows matches between the primary document and specifically selected sources.\nMatch breakdown reveals underlying sources of a top source.\nSide by side comparison shows matches compared side by side with the original source content.",
+    "crumbs": [
+      "Similarity Report",
+      "similarity Report"
+    ]
+  },
+  {
+    "objectID": "manuals/ithenticate/similarity_report/similarity_report.html#filters-and-exclusions",
+    "href": "manuals/ithenticate/similarity_report/similarity_report.html#filters-and-exclusions",
+    "title": "similarity Report",
+    "section": "Filters and Exclusions",
+    "text": "Filters and Exclusions\nTo apply filters and exclusions, select the filters icon at the bottom of the Document Viewer sidebar. You can exclude quoted or bibliographic material, small sources, small matches, sections and matches.\n\n\n\nFilter",
+    "crumbs": [
+      "Similarity Report",
+      "similarity Report"
+    ]
+  },
+  {
+    "objectID": "manuals/ithenticate/similarity_report/similarity_report.html#ai-detection-tool",
+    "href": "manuals/ithenticate/similarity_report/similarity_report.html#ai-detection-tool",
+    "title": "similarity Report",
+    "section": "AI-Detection tool",
+    "text": "AI-Detection tool\niThenticate provides an AI-detection feature to identify potential AI-generated content to support content integrity.\nPlease note that this functionality is not enabled by default in iThenticate. If you would like to use the AI-detection tool, please contact your faculty’s Key User to request access.",
+    "crumbs": [
+      "Similarity Report",
+      "similarity Report"
     ]
   },
   {
