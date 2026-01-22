@@ -1,0 +1,16 @@
+---
+title: Report FAQ
+categories: []
+---
+
+## How is the similarity Index/report calculated for each of the reports?
+
+The Similarity Index remains consistent across various report modes. It is determined by creating a digital fingerprint of the submitted document, searching it against selected repositories, and then calculating the percentage of matching words divided by the total word count. If exclusion options are used, the system recalculates the Similarity Index by removing excluded matches from the report.
+
+## How is the Similarity Report constructed? What matches get hidden by other matches?
+
+The system highlights text sections that match sources in our repositories and lists what it considers the best matches in the report sidebar. While the best matches are displayed, numerous additional sources that match the document's text can be found in the Content Tracking mode.
+
+## What if two sources have the exact same amount of matching text; which source would be displayed in the Similarity Report as a best match?
+
+The chosen source depends on the repository that’s been matched. Between two internet sources, the best match is generally the most recently crawled internet source; between an internet source and a publication source, the publication source is presented.
