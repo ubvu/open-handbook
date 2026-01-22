@@ -1,0 +1,19 @@
+---
+title: Pure Manuals
+categories: []
+listing:
+  contents: 
+    - ./**/*.qmd
+  page-size: 40
+  filter-ui: true
+  type: grid
+  fields: [title,description]
+  sort: false
+image: '/public/pure-logo.png'
+description: 'This section explains how to register datasets and software in Pure.'
+---
+
+::: {.callout-tip}
+The [Pure Topic page](/topics/pure.qmd#how-to-request-access) explains how to request storage space in Yoda for your project.
+:::
+

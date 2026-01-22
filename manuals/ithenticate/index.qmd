@@ -1,0 +1,18 @@
+---
+title: iThenticate Manuals
+categories: []
+listing:
+  contents: 
+    - ./**/*.qmd
+  page-size: 40
+  filter-ui: true
+  type: grid
+  fields: [title,description]
+  sort: false
+image: '/public/logo-ithenticate.png'
+description: 'This section has more in-depth information about iThenticate.'
+---
+
+::: {.callout-tip}
+The [iThenticate topic page](/topics/ithenticate.qmd) explains what iThenticate does and how you can set up an account.
+:::

@@ -9,8 +9,6 @@ listing:
       - ../topics/software-publishing.qmd
       - ../topics/data-licensing.qmd
       - ../topics/software-licensing.qmd
-      - ../topics/data-registration.qmd
-      - ../topics/software-registration.qmd
       - ../topics/dataversenl.qmd
       - ../topics/osf.qmd
       - ../topics/yoda.qmd
@@ -18,6 +16,14 @@ listing:
     table-striped: true
     table-hover: true
     fields: [title, reading-time]
+  - id: manuals
+    contents:
+      - ../manuals/pure/registration/data-registration.qmd
+      - ../manuals/pure/registration/software-registration.qmd
+    type: table
+    table-striped: true
+    table-hover: true
+    fields: [title, reading-time] 
   - id: guides
     contents: "../guides/*.qmd"
     type: grid
