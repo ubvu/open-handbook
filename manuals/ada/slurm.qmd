@@ -26,6 +26,15 @@ A typical SLURM batch script that requests resources and runs a Python program m
 #SBATCH --output=logs/%x-%j.out
 #SBATCH --error=logs/%x-%j.err
 
+# Always use your scratch space:
+cd $TMPDIR
+
+echo "== Starting run at $(date)"
+echo "== Job ID: ${SLURM_JOBID}"
+echo "== Node list: ${SLURM_NODELIST}"
+echo "== Submit dir: ${SLURM_SUBMIT_DIR}"
+echo "== Scratch dir: ${TMPDIR}"
+
 module load 2025
 module load Python/3.12.3-GCCcore-13.3.0
 python myscript.py --input data/input.csv --out results/out.csv
