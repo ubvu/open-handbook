@@ -14,6 +14,9 @@ website:
       - section: Similarity Report
         contents:
           -  manuals/ithenticate/similarity_report/similarity_report.qmd
+      - section: Similarity Scores
+        contents:
+          - manuals/ithenticate/interpreting_sim_scores/similarity_scores.qmd
       - section: Advanced Settings
         contents:
           - manuals/ithenticate/advanced_settings/folder_options.qmd
