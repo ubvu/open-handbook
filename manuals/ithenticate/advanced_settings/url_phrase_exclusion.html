@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="This section explains how to register datasets and software in Pure.">
 
-<title>Pure Manuals – Research Support Handbook</title>
+<title>URL filter &amp; phrase exclusion – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,28 +23,27 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<link href="../../manuals/pure/registration/data-registration.html" rel="next">
-<link href="../../public/favicon.png" rel="icon" type="image/png">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-e69c8a892bfebd52223cfedbd795a344.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../manuals/ithenticate/advanced_settings/doc_to_doc_comparison.html" rel="next">
+<link href="../../../manuals/ithenticate/advanced_settings/folder_options.html" rel="prev">
+<link href="../../../public/favicon.png" rel="icon" type="image/png">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-e69c8a892bfebd52223cfedbd795a344.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,65 +71,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -142,9 +82,9 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo light-content">
-    <img src="../../public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo dark-content">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo light-content">
+    <img src="../../../public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -159,49 +99,49 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-topics">    
         <li>
-    <a class="dropdown-item" href="../../topics.html">
+    <a class="dropdown-item" href="../../../topics.html">
  <span class="dropdown-text">All</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../topics.html#category=Policies and Legislation">
+    <a class="dropdown-item" href="../../../topics.html#category=Policies and Legislation">
  <span class="dropdown-text">Policies and Legislation</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../topics.html#category=Research Data">
+    <a class="dropdown-item" href="../../../topics.html#category=Research Data">
  <span class="dropdown-text">Research Data</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../topics.html#category=Research Software">
+    <a class="dropdown-item" href="../../../topics.html#category=Research Software">
  <span class="dropdown-text">Research Software</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../topics.html#category=Responsible Scholarship">
+    <a class="dropdown-item" href="../../../topics.html#category=Responsible Scholarship">
  <span class="dropdown-text">Responsible Scholarship</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../topics.html#category=Tools">
+    <a class="dropdown-item" href="../../../topics.html#category=Tools">
  <span class="dropdown-text">Tools</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../topics.html#category=Trainings and Knowledge Items">
+    <a class="dropdown-item" href="../../../topics.html#category=Trainings and Knowledge Items">
  <span class="dropdown-text">Trainings and Knowledge Items</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../guides.html"> 
+    <a class="nav-link" href="../../../guides.html"> 
 <span class="menu-text">Guides</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../manuals.html"> 
+    <a class="nav-link" href="../../../manuals.html"> 
 <span class="menu-text">Manuals</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../blog.html"> 
+    <a class="nav-link" href="../../../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../contributing.html"> 
+    <a class="nav-link" href="../../../contributing.html"> 
 <span class="menu-text">Contributing</span></a>
   </li>  
 </ul>
@@ -216,7 +156,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../manuals/pure/index.html">Pure Manuals</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../manuals/ithenticate/advanced_settings/folder_options.html">Advanced Settings</a></li><li class="breadcrumb-item"><a href="../../../manuals/ithenticate/advanced_settings/url_phrase_exclusion.html">URL filter &amp; phrase exclusion</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -238,14 +178,14 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../manuals/pure/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Pure Manuals</span></a>
+  <a href="../../../manuals/ithenticate/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">iThenticate Manuals</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Research Output Registration</span></a>
+ <span class="menu-text">Getting Started</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -253,14 +193,55 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../manuals/pure/registration/data-registration.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Registration</span></a>
+  <a href="../../../manuals/ithenticate/getting_started/getting_started.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Getting started</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../manuals/pure/registration/software-registration.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Software Registration</span></a>
+  <a href="../../../manuals/ithenticate/getting_started/log_in.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Logging in</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../manuals/ithenticate/getting_started/first_scan.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Your first scan</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../manuals/ithenticate/getting_started/exporting_results.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Saving, sharing and exporting results</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Advanced Settings</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../manuals/ithenticate/advanced_settings/folder_options.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Folder Options</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../manuals/ithenticate/advanced_settings/url_phrase_exclusion.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">URL filter &amp; phrase exclusion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../manuals/ithenticate/advanced_settings/doc_to_doc_comparison.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Doc-to-doc comparison</span></a>
   </div>
 </li>
       </ul>
@@ -276,16 +257,11 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../manuals/ithenticate/advanced_settings/folder_options.html">Advanced Settings</a></li><li class="breadcrumb-item"><a href="../../../manuals/ithenticate/advanced_settings/url_phrase_exclusion.html">URL filter &amp; phrase exclusion</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Pure Manuals</h1>
+<h1 class="title">URL filter &amp; phrase exclusion</h1>
 </div>
 
-<div>
-  <div class="description">
-    This section explains how to register datasets and software in Pure.
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
@@ -300,60 +276,24 @@ window.Quarto = {
 </header>
 
 
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<p>The Report Filters tab provides you with the ability to control a list of URLs that are excluded from the content search when generating a report for the folder. To exclude a URL simply click on the ‘exclude source’ button.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../../public/manuals/ithenticate/ithen_url_exclusion.png" class="img-fluid figure-img"></p>
+<figcaption>URL Exclusion</figcaption>
+</figure>
 </div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The <a href="../../topics/pure.html#how-to-request-access">Pure Topic page</a> explains how to request storage space in Yoda for your project.</p>
-</div>
+<p>To inlcude a source again you can simply go to ‘Exclusions’ and include sources back.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../../public/manuals/ithenticate/ithen_exclusions.png" class="img-fluid figure-img"></p>
+<figcaption>Exclusions</figcaption>
+</figure>
 </div>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="listing-actions-group">
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="UmVzZWFyY2glMjBEYXRh" data-listing-file-modified-sort="1769079052223" data-listing-reading-time-sort="2" data-listing-word-count-sort="250">
-<a href="../../manuals/pure/registration/data-registration.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Data Registration
-</h5>
-<div class="card-text listing-description delink">
-<p>This page explains how to register Research Data in Pure.</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="UmVzZWFyY2glMjBTb2Z0d2FyZQ==" data-listing-file-modified-sort="1769079052223" data-listing-reading-time-sort="2" data-listing-word-count-sort="252">
-<a href="../../manuals/pure/registration/software-registration.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Software Registration
-</h5>
-<div class="card-text listing-description delink">
-<p>This page explains how to register Research Software in Pure.</p>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -756,10 +696,13 @@ Software Registration
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../../../manuals/ithenticate/advanced_settings/folder_options.html" class="pagination-link" aria-label="Folder Options">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Folder Options</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../manuals/pure/registration/data-registration.html" class="pagination-link" aria-label="Data Registration">
-        <span class="nav-page-text">Data Registration</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../manuals/ithenticate/advanced_settings/doc_to_doc_comparison.html" class="pagination-link" aria-label="Doc-to-doc comparison">
+        <span class="nav-page-text">Doc-to-doc comparison</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -778,17 +721,17 @@ Software Registration
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="../../about.html">
+    <a class="nav-link" href="../../../about.html">
 <p>About</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="../../technical-details.html">
+    <a class="nav-link" href="../../../technical-details.html">
 <p>Technical details</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="../../editors-guide.html">
+    <a class="nav-link" href="../../../editors-guide.html">
 <p>Editor’s guide</p>
 </a>
   </li>  
@@ -798,7 +741,7 @@ Software Registration
 </a>
   </li>  
 </ul>
-    <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/pure/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/ithenticate/advanced_settings/url_phrase_exclusion.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
