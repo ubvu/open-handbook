@@ -11,6 +11,9 @@ website:
           - manuals/ithenticate/getting_started/log_in.qmd
           - manuals/ithenticate/getting_started/first_scan.qmd
           - manuals/ithenticate/getting_started/exporting_results.qmd
+      - section: Similarity Report
+        contents:
+          -  manuals/ithenticate/similarity_report/similarity_report.qmd
       - section: Advanced Settings
         contents:
           - manuals/ithenticate/advanced_settings/folder_options.qmd
