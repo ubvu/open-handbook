@@ -1275,234 +1275,289 @@
     ]
   },
   {
-    "objectID": "manuals/yoda/using_yoda/workflow_metadata.html",
-    "href": "manuals/yoda/using_yoda/workflow_metadata.html",
-    "title": "Adding Metadata",
+    "objectID": "manuals/yoda/using_yoda/workflow_metadata_license.html",
+    "href": "manuals/yoda/using_yoda/workflow_metadata_license.html",
+    "title": "Selecting a license for your dataset",
     "section": "",
-    "text": "Yoda facilitates adding both structured and unstructured metadata to your research data. Entering structured metadata is a prerequisite for archiving a data package. If a folder is published, its structured metadata will be published as well and can be harvested by data catalogs such as DataCite. Your published datasets can also be registered in Pure.\nIn order to add structured metadata to a folder:\n\nnavigate to the folder in the Yoda portal and press the “Metadata” button.\n\n\n\n\nAdd-metadata\n\n\n\nOnce you have added metadata and clicked on the “Save” button, the metadata will be stored in a specific format in the folder. Yoda uses files named “yoda-metadata.json” for this purpose.\nUnstructured metadata can be added as a file to the dataset, for example in a “Readme.txt” or “Codebook.pdf” file.",
+    "text": "When you archive your data, you can indicate the terms and conditions on how your data can be accessed and for what purposes it can be reused, or whether it can be reused at all. Here is some useful information on selecting and writing a license. We also offer options to get advice about selecting and creating your license, but you remain responsible for your eventual choice.\nMake sure the data does not contain sensitive information before making it publicly available through a CC-BY or other open license. You can check this through the Data Classification Tool and when uncertain by contacting the Privacy Champion of your faculty (in case of personal data) or Legal (Add ‘advice license ’ as the subject header in your mail).\nThere are several different licenses that can be selected for your dataset. These can be separated into three categories: Open, Restricted & Closed.",
     "crumbs": [
       "Using Yoda",
-      "Adding Metadata"
+      "Selecting a license for your dataset"
     ]
   },
   {
-    "objectID": "manuals/yoda/using_yoda/workflow_metadata.html#how-to-adding-metadata-in-yoda",
-    "href": "manuals/yoda/using_yoda/workflow_metadata.html#how-to-adding-metadata-in-yoda",
-    "title": "Adding Metadata",
-    "section": "",
-    "text": "Yoda facilitates adding both structured and unstructured metadata to your research data. Entering structured metadata is a prerequisite for archiving a data package. If a folder is published, its structured metadata will be published as well and can be harvested by data catalogs such as DataCite. Your published datasets can also be registered in Pure.\nIn order to add structured metadata to a folder:\n\nnavigate to the folder in the Yoda portal and press the “Metadata” button.\n\n\n\n\nAdd-metadata\n\n\n\nOnce you have added metadata and clicked on the “Save” button, the metadata will be stored in a specific format in the folder. Yoda uses files named “yoda-metadata.json” for this purpose.\nUnstructured metadata can be added as a file to the dataset, for example in a “Readme.txt” or “Codebook.pdf” file.",
+    "objectID": "manuals/yoda/using_yoda/workflow_metadata_license.html#open",
+    "href": "manuals/yoda/using_yoda/workflow_metadata_license.html#open",
+    "title": "Selecting a license for your dataset",
+    "section": "Open",
+    "text": "Open\nThis information applies when your data can be published openly, so that anyone can access them.\nThere are several standard Creative Commons licenses available to make your dataset directly accessible for other users. In general, these licenses are preferred as they allow easy re-use by others. Moreover, they are well known, which ensures that others quickly grasp how they may use your data. The variations of these licenses indicate the following aspects: author attribution requirement, commercial use, modification of the dataset and changing the license of any modified dataset. A useful decision tree can be found on the Creative Commons website.\nAnother open license is the Open Data Commons Open Database License (ODbL), which can be used specifically for databases.",
     "crumbs": [
       "Using Yoda",
-      "Adding Metadata"
+      "Selecting a license for your dataset"
     ]
   },
   {
-    "objectID": "manuals/yoda/using_yoda/workflow_metadata.html#the-metadata-form",
-    "href": "manuals/yoda/using_yoda/workflow_metadata.html#the-metadata-form",
-    "title": "Adding Metadata",
-    "section": "The metadata form",
-    "text": "The metadata form\nBy default, the Yoda metadata form consists of approximately 30 fields. Please consult the metadata element list below for a detailed description of the elements.\nAll mandatory fields are marked with an asterisk.\n\n\n\nMandatory metadata\n\n\nSome metadata elements consist of multiple fields. For example, if you enter a person identifier, you should also specify the type of identifier.\n\n\n\nMetadata fields\n\n\nSome fields can have multiple values. In order to add a value, press the “+” sign next to the field.",
+    "objectID": "manuals/yoda/using_yoda/workflow_metadata_license.html#restricted",
+    "href": "manuals/yoda/using_yoda/workflow_metadata_license.html#restricted",
+    "title": "Selecting a license for your dataset",
+    "section": "Restricted",
+    "text": "Restricted\nWhen your data can be reused for new research, but not through an open license, it is important to state with whom the data can be shared and under which conditions and for what purposes the data can be used. The reasons for choosing a restricted license may vary from field to field but often apply to human subject data and data that was provided by a company but only under specific conditions. Another reason for choosing a restricted license is a personal preference.\n\nHow to: Using the VU Restricted license\n\nDownload the VU Restricted license template.\nCheck which conditions and requirements apply to the reuse of the data based on VU RDM guidelines, laws regarding use of data (GDPR, Intellectual Property legislation, etc.), requirements from funders or collaboration parties and conditions mentioned in the informed consent form signed by participants.\nAlter the template by indicating the potential usage purposes of the data and/or any regional restrictions. If you wish to receive advice on creating your license you can contact the Privacy Champion of your faculty (in case of personal data) or Legal (Add ‘advice custom license data management ’ as the subject header in your mail).\n\n\n\n\nEdit restricted license text\n\n\n\nSave the document as txt file: License.txt.\nUpload the file to your root data folder in Yoda.\nWhen creating a data package for archiving select Data Package Access “Restricted” and set License to “Custom” in the Metadata form and make sure the license is included.",
     "crumbs": [
       "Using Yoda",
-      "Adding Metadata"
+      "Selecting a license for your dataset"
     ]
   },
   {
-    "objectID": "manuals/yoda/using_yoda/workflow_metadata.html#reusing-metadata",
-    "href": "manuals/yoda/using_yoda/workflow_metadata.html#reusing-metadata",
-    "title": "Adding Metadata",
-    "section": "Reusing metadata",
-    "text": "Reusing metadata\nStructured metadata is reusable. The metadata form includes a button “Clone from parent folder”. One way to use this feature is to create a project-level folder with several subfolders for data. Common metadata elements for the project can be entered in the project-level folder. This metadata can then be copied to the data folders and filled in further.\nYou can also copy the “yoda-metadata.json” file of a folder to another folder in order to copy its metadata.\nWhen you publish a folder, only the metadata on the level of that folder is published in data catalogs.\n\n\n\nFolderStructureMetadata",
+    "objectID": "manuals/yoda/using_yoda/workflow_metadata_license.html#closed",
+    "href": "manuals/yoda/using_yoda/workflow_metadata_license.html#closed",
+    "title": "Selecting a license for your dataset",
+    "section": "Closed",
+    "text": "Closed\nUnder certain circumstances, it becomes undesirable, inadvisable or even illegal to reuse your data new research. The provider of the data may prohibit sharing the data or the signed informed consent form may forbid sharing the data with third parties. In this situation you can use the VU Closed license template. The VU always retains the right to access the dataset for verification purposes.\n\nHow to: Using the VU Closed license\n\nDownload the VU Closed license template template.\nAlter the template to include the reason for not being accessible by third parties.\n\n\n\n\nEdit closed license text\n\n\n\nSave the document as txt file: License.txt.\nUpload the file to your root data folder in Yoda.\nWhen creating a data package for archiving select Data Package Access “Closed” and set License to “Custom” in the Metadata form and make sure the license is included.",
     "crumbs": [
       "Using Yoda",
-      "Adding Metadata"
+      "Selecting a license for your dataset"
     ]
   },
   {
-    "objectID": "manuals/yoda/using_yoda/metadata.html",
-    "href": "manuals/yoda/using_yoda/metadata.html",
-    "title": "What is Metadata?",
+    "objectID": "manuals/yoda/using_yoda/properties_and_explanation.html",
+    "href": "manuals/yoda/using_yoda/properties_and_explanation.html",
+    "title": "Properties and explanation",
     "section": "",
-    "text": "Metadata is “data about data”. Metadata serves multiple purposes in Yoda, the most important being:\n\nTo describe the contents of a dataset for a broad audience.\nTo inform the audience whether the data can be reused and if so, under what conditions.\nTo prescribe how the data should be cited and whom to acknowledge.\nTo inform digital archivists and IT staff about how long the data should be retained.\nTo facilitate finding the dataset in data catalogues.\n\nWe distinguish two types of metadata:\nStructured metadata consists of information that is standardized globally and used by data catalogs. Examples are the title of the data package, its creator, the retention period of the package, etc.\nWhen a data package is published, Yoda makes the structured metadata available for harvesting by data catalogs, such as DataCite.\nUnstructured metadata is intended to provide more detailed information about the data. This information can be in a README.TXT or other file that is included as part of the data package. The format of this file is chosen by the researcher. Users will need to open and inspect the data package to find this metadata. Unstructured metadata can include information about (for example) the experimental design, data transformation, sampling method, etc.\nYou can read more in-depth information about metadata on the dedicated page",
+    "text": "M Mandatory\nR Recommended for optimal findability\nO Optional\n\n\n\nNo\nProperty\nObligation\nExplanation\nRemarks\n\n\n\n\n1\nTitle\nM\nA descriptive title for your data package, should not be longer than about 200 characters.\n\n\n\n2\nDescription\nM\nDescribe your data package, e.g. the subject, the sample size, methodology, etc. It is best to keep this description concise. More elaborate documentation should be added in a text file called README.\nThe text should be substantial and relevant to interpreting the content of the data package\n\n\n3\nDiscipline\nM\nThe (sub)discipline of the study.\nThe list contains a combination of research disciplines and subdisciplines. The standard used is the OECD FOS 2007. This field can have multiple values — use the plus sign to add more values.\n\n\n4\nVersion\nO\nVersion number of your data package. Useful if you need to publish an updated version of your data package later.\nYoda does not automatically assign version numbers to data packages. If you create multiple versions, you can register the version number yourself, according to your own versioning scheme.\n\n\n5\nLanguage of the data\nM\nThe primary language of your data package.\nThis element is thought of as a possible aid to assess the usability of a data package for a specific person. The standard used is ISO 639/1.\n\n\n6a\nCollection Process - Start Date\nR\nIndicate when you’ve started collecting the data for this data package.\nClicking on the field reveals a calendar you can use to pick the date.\n\n\n6b\nCollection Process - End Date\nM if 6a\nIndicate when you’ve finished collecting the data for this data package.\nClicking on the field reveals a calendar you can use to pick the date.\n\n\n7\nLocation(s) covered\nR\nIf your data is linked to particular locations provide place names.\nEnglish naming convention preferred. It is recommended to use the preferred spelling from the Getty Thesaurus of Geographic Names whenever possible. One location per line. This field can have multiple values — use the plus sign to add more values. Maximum length: 255 characters.\n\n\n8a\nPeriod Covered - Start period\nO\nAn indication of the start date of the period covered by your data package.\nClicking on the field reveals a calendar you can use to pick the date.\n\n\n8b\nPeriod Covered - End Period\nM if 8a\nAn indication of the end date of the period covered by your data package.\nClicking on the field reveals a calendar you can use to pick the date.\n\n\n9\nKeywords\nM\nFree text field for adding (searchable) keywords to your data package.\nYou can choose the keywords freely. It is best to add only one keyword per line. This field can have multiple values — use the plus sign to add more values. Maximum length: 255 characters.\n\n\n10a\nRelated Data package - Relation type\nR\nThe way in which the present data package (A) is related to another data package (B).\nIn this section you can enter a ‘related’ data package and the nature of that relation. For instance, you can indicate that the current data package (A) contains the raw data upon which the related data package (B) is based by selecting IsSourceOf in this field and entering the information of the other data package in the fields below. You can have multiple Related data packages — use the plus sign to add more values.\n\n\n10b\nRelated Data package - Title\nR If 10a\nTitle of the data package related to the present data package.\nThere is no automatic check whether title and persistent identifier match. Maximum length: 255 characters.\n\n\n10c\nRelated Data package – Identifier type\nM If 10d\nThe type of the persistent identifier of the related data package.\nExample: “DOI”.\n\n\n10d\nRelated Data package – Identifier\nR If 10a\nThe persistent identifier of the related data package.\nPlease fill in a resolvable URL. Example: “https://doi.org/10.48338/VU01-2LT5V4”.\n\n\n11\nRetention Period\nM\nThe minimal number of years the data will be kept in the archive. The default value is 10 years.\nIn this field you can only enter integers.\n\n\n12\nRetention Information\nO\nTo be used for remarks about the retention period.\nPlease provide a reason if you deviate from the default value of ten years. If you want to ensure that data is retained longer, then data management might request extra care for choosing sustainable file formats.\n\n\n13\nEmbargo enddate\nO\nIf the dataset has an embargo, on what date does the embargo end?\nThis functionality is not yet fully implemented. Please contact the data manager if you intend to publish a data package with an embargo.\n\n\n14\nData type\nM\nPlease indicate the type of the data.\nIf no type is selected Yoda will assume “Datapackage”.\n\n\n15\nData Classification\nM\nPlease indicate the classification of the data. Translation to VU Classifications: Public=Low, Basic=Medium, Sensitive=High, Critical=Very High.\nYou can find more information about data classification in the Research Support Handbook.\n\n\n16\nName of Collection\nO\nIf this data package is part of a larger (conceptual) collection of data packages, you can enter the collection name here.\nThe research group should ensure that all other data packages in the collection are archived with the same collection name. Maximum length: 255 characters.\n\n\n17a\nFunding information - Funder\nO\nThe name(s) of the organization(s) funding the research. If using this property also add the Award Number.\nExample: “Dutch Research Council”. It is recommended to use the preferred spelling from the Research Organization Registry (ROR). This field can have multiple values — use the plus sign to add more values. Maximum length: 255 characters.\n\n\n17b\nFunding information - Award number\nR if 17a\nThe grant number issued by the funding organization\n\n\n\n18\nRemarks\nO\nRemarks from the datamanager.\nRemarks serve only an administrative purpose and are not shown outside of the back-end of Yoda.\n\n\n19a\nCreator of Data package - Name\nM\nThe main researchers involved in producing the data, in priority order.\nA creator is explicitely listed as an author when the data package is cited. A creator is equivalent to a manuscript author. This field can have multiple values — use the plus sign to add more values. Maximum length: 255 characters.\n\n\n19b\nCreator of Data package – Affiliation name\nM\nThe organizational or institutional affiliation of the creator.\nExample: “Vrije Universiteit Amsterdam”. It is recommended to use the preferred spelling from the Research Organization Registry (ROR). The affiliation of the creator of a data package could be of importance when it is unclear who owns the data. In general the organization to which the creator was affiliated is regarded as the owner. Each creator can have multiple affiliations — use the plus sign to add more values. Most research institutes should be in the list and the ROR identifier will automatically filled. If the institution is not in the list, use the Find button, you can leave the ROR field empty in case the institute does not have a ROR. Maximum length: 255 characters.\n\n\n19c\nCreator of Data package – Affiliation identifier\nR\nThe organizational or institutional identifier of the creator.\nIt is recommended to use the resolvable URL from the Research Organization Registry (ROR). Example: “https://ror.org/008xxew50” for “Vrije Universiteit Amsterdam”.\n\n\n19d\nCreator of Data package – Persistent Identifier: Type\nM if 19e\nPlease indicate the type of persistent person identifier.\nE.g. Scopus Author ID, ORCID or ResearcherID. Multiple values are possible. If available, enter at least an ORCID.\n\n\n19e\nCreator of Data package – Persistent Identifier: Identifier\nR\nThe Persistent Identifier.\nIf you are not sure whether someone has a persistent identifier, you can check with the big three providers: Scopus Author ID, ORCID,ResearcherID. Each creator can have multiple persistent identifier — use the plus sign to add more values. Maximum length: 255 characters. Please fill in a resolvable URL. The pattern of an ORCID, ResearchID and ISNI is validated. There is no check if the name and identifier match.\n\n\n20a\nContributor to Data Package - Name\nR\nThe institution or person responsible for collecting, managing, distributing, or otherwise contributing to the development of the resource.For software, if there is an alternate entity that “holds, archives, publishes, prints, distributes, releases, issues, or produces” the code, use the contributor Type “hostingInstitution” for the code repository.\nContributors are not listed as creators when the data package is cited. Contributors are analogous to co-creators that would appear in the Acknowledgements-section of a manuscript. Multiple values possible — use the plus sign to add more values. Maximum length: 255 characters.\n\n\n20b\nContributor to Data Package - Type\nR if 20a\nEnter what type of contribution the registered person has had to this data package.\nSee the datacite documentation for explanation.\n\n\n20c\nContributor to Data Package - Affiliation name\nM if 20a\nThe organizational or institutional affiliation of the contributor.\nExample: “Vrije Universiteit Amsterdam”. The affiliation of the creator of a data package could be of importance when it is unclear who owns the data. In general the organization to which the creator was affiliated is regarded as the owner. Each creator can have multiple affiliations — use the plus sign to add more values. Most research institutes should be in the list and the ROR identifier will automatically filled. If the institution is not in the list, use the Find button, you can leave the ROR field empty in case the institute does not have a ROR. Maximum length: 255 characters.\n\n\n20d\nContributor to Data Package - Affiliation identifier\nR\nThe organizational or institutional identifier of the contributor.\nIt is recommended to use the resolvable URL from the Research Organization Registry (ROR). Example:“https://ror.org/008xxew50” for “Vrije Universiteit Amsterdam”.\n\n\n20e\nContributor to Data Package - Persistent Identifier: Type\nM if 20f\nPlease indicate the type of persistent person identifier.\nEach contributor can have multiple persistent identifiers — use the plus sign to add more values. Maximum length: 255 characters.\n\n\n20f\nContributor to Data Package - Persistent Identifier: Identifier\nR\nAn unique person identifier.\nEach contributor can have multiple identifiers — use the plus sign to add more values. Maximum length: 255 characters. Please fill in a resolvable URL. The pattern of an ORCID, ResearchID and ISNI is validated. There is no check if the name and identifier match.\n\n\n21\nLicense\nM\nThe license under which you offer the data package for use by third parties. The preferred value for open data is CC By 4.0.\nEvery package needs to be archived with a license — even when you’re not planning to publish the data or have it reused in any form. We offer a number of possible licenses in a drop-down list. If you do not know which license to choose, contact the data manager. At the moment of publishing a data package the relevant license text will be copied into the data package. If you opt for a custom license, you will need to store the custom license text in a file titled License.txt in the root folder. If the Data Package Access (22) is Restricted Access or Closed Access, you can only opt for a custom license, the VU has created custom templates for the License.txt file.\n\n\n22\nData Package Access\nM\nOnce archived, should your dataset be accessible to third parties?\nOpen Access means that the dataset is accessible to everyone. Restricted Access means that the dataset can only be obtained on request. Closed Access means that the dataset cannot be shared, in principle.",
     "crumbs": [
       "Using Yoda",
-      "What is Metadata?"
+      "Properties and explanation"
     ]
   },
   {
-    "objectID": "manuals/yoda/data_access/data_access_macos.html",
-    "href": "manuals/yoda/data_access/data_access_macos.html",
-    "title": "Data access on MacOS",
+    "objectID": "manuals/yoda/using_yoda/properties_and_explanation.html#properties-and-explanations",
+    "href": "manuals/yoda/using_yoda/properties_and_explanation.html#properties-and-explanations",
+    "title": "Properties and explanation",
     "section": "",
-    "text": "There are 2 basic ways to access Yoda data from a Mac: mounting the Yoda WebDAV interface in finder or via file transfer tools, in which case we recommend Cyberduck. Which one works best depends on your workflow.\nFor more information on how to configure Cyberduck consider reading the Cyberduck page.",
+    "text": "M Mandatory\nR Recommended for optimal findability\nO Optional\n\n\n\nNo\nProperty\nObligation\nExplanation\nRemarks\n\n\n\n\n1\nTitle\nM\nA descriptive title for your data package, should not be longer than about 200 characters.\n\n\n\n2\nDescription\nM\nDescribe your data package, e.g. the subject, the sample size, methodology, etc. It is best to keep this description concise. More elaborate documentation should be added in a text file called README.\nThe text should be substantial and relevant to interpreting the content of the data package\n\n\n3\nDiscipline\nM\nThe (sub)discipline of the study.\nThe list contains a combination of research disciplines and subdisciplines. The standard used is the OECD FOS 2007. This field can have multiple values — use the plus sign to add more values.\n\n\n4\nVersion\nO\nVersion number of your data package. Useful if you need to publish an updated version of your data package later.\nYoda does not automatically assign version numbers to data packages. If you create multiple versions, you can register the version number yourself, according to your own versioning scheme.\n\n\n5\nLanguage of the data\nM\nThe primary language of your data package.\nThis element is thought of as a possible aid to assess the usability of a data package for a specific person. The standard used is ISO 639/1.\n\n\n6a\nCollection Process - Start Date\nR\nIndicate when you’ve started collecting the data for this data package.\nClicking on the field reveals a calendar you can use to pick the date.\n\n\n6b\nCollection Process - End Date\nM if 6a\nIndicate when you’ve finished collecting the data for this data package.\nClicking on the field reveals a calendar you can use to pick the date.\n\n\n7\nLocation(s) covered\nR\nIf your data is linked to particular locations provide place names.\nEnglish naming convention preferred. It is recommended to use the preferred spelling from the Getty Thesaurus of Geographic Names whenever possible. One location per line. This field can have multiple values — use the plus sign to add more values. Maximum length: 255 characters.\n\n\n8a\nPeriod Covered - Start period\nO\nAn indication of the start date of the period covered by your data package.\nClicking on the field reveals a calendar you can use to pick the date.\n\n\n8b\nPeriod Covered - End Period\nM if 8a\nAn indication of the end date of the period covered by your data package.\nClicking on the field reveals a calendar you can use to pick the date.\n\n\n9\nKeywords\nM\nFree text field for adding (searchable) keywords to your data package.\nYou can choose the keywords freely. It is best to add only one keyword per line. This field can have multiple values — use the plus sign to add more values. Maximum length: 255 characters.\n\n\n10a\nRelated Data package - Relation type\nR\nThe way in which the present data package (A) is related to another data package (B).\nIn this section you can enter a ‘related’ data package and the nature of that relation. For instance, you can indicate that the current data package (A) contains the raw data upon which the related data package (B) is based by selecting IsSourceOf in this field and entering the information of the other data package in the fields below. You can have multiple Related data packages — use the plus sign to add more values.\n\n\n10b\nRelated Data package - Title\nR If 10a\nTitle of the data package related to the present data package.\nThere is no automatic check whether title and persistent identifier match. Maximum length: 255 characters.\n\n\n10c\nRelated Data package – Identifier type\nM If 10d\nThe type of the persistent identifier of the related data package.\nExample: “DOI”.\n\n\n10d\nRelated Data package – Identifier\nR If 10a\nThe persistent identifier of the related data package.\nPlease fill in a resolvable URL. Example: “https://doi.org/10.48338/VU01-2LT5V4”.\n\n\n11\nRetention Period\nM\nThe minimal number of years the data will be kept in the archive. The default value is 10 years.\nIn this field you can only enter integers.\n\n\n12\nRetention Information\nO\nTo be used for remarks about the retention period.\nPlease provide a reason if you deviate from the default value of ten years. If you want to ensure that data is retained longer, then data management might request extra care for choosing sustainable file formats.\n\n\n13\nEmbargo enddate\nO\nIf the dataset has an embargo, on what date does the embargo end?\nThis functionality is not yet fully implemented. Please contact the data manager if you intend to publish a data package with an embargo.\n\n\n14\nData type\nM\nPlease indicate the type of the data.\nIf no type is selected Yoda will assume “Datapackage”.\n\n\n15\nData Classification\nM\nPlease indicate the classification of the data. Translation to VU Classifications: Public=Low, Basic=Medium, Sensitive=High, Critical=Very High.\nYou can find more information about data classification in the Research Support Handbook.\n\n\n16\nName of Collection\nO\nIf this data package is part of a larger (conceptual) collection of data packages, you can enter the collection name here.\nThe research group should ensure that all other data packages in the collection are archived with the same collection name. Maximum length: 255 characters.\n\n\n17a\nFunding information - Funder\nO\nThe name(s) of the organization(s) funding the research. If using this property also add the Award Number.\nExample: “Dutch Research Council”. It is recommended to use the preferred spelling from the Research Organization Registry (ROR). This field can have multiple values — use the plus sign to add more values. Maximum length: 255 characters.\n\n\n17b\nFunding information - Award number\nR if 17a\nThe grant number issued by the funding organization\n\n\n\n18\nRemarks\nO\nRemarks from the datamanager.\nRemarks serve only an administrative purpose and are not shown outside of the back-end of Yoda.\n\n\n19a\nCreator of Data package - Name\nM\nThe main researchers involved in producing the data, in priority order.\nA creator is explicitely listed as an author when the data package is cited. A creator is equivalent to a manuscript author. This field can have multiple values — use the plus sign to add more values. Maximum length: 255 characters.\n\n\n19b\nCreator of Data package – Affiliation name\nM\nThe organizational or institutional affiliation of the creator.\nExample: “Vrije Universiteit Amsterdam”. It is recommended to use the preferred spelling from the Research Organization Registry (ROR). The affiliation of the creator of a data package could be of importance when it is unclear who owns the data. In general the organization to which the creator was affiliated is regarded as the owner. Each creator can have multiple affiliations — use the plus sign to add more values. Most research institutes should be in the list and the ROR identifier will automatically filled. If the institution is not in the list, use the Find button, you can leave the ROR field empty in case the institute does not have a ROR. Maximum length: 255 characters.\n\n\n19c\nCreator of Data package – Affiliation identifier\nR\nThe organizational or institutional identifier of the creator.\nIt is recommended to use the resolvable URL from the Research Organization Registry (ROR). Example: “https://ror.org/008xxew50” for “Vrije Universiteit Amsterdam”.\n\n\n19d\nCreator of Data package – Persistent Identifier: Type\nM if 19e\nPlease indicate the type of persistent person identifier.\nE.g. Scopus Author ID, ORCID or ResearcherID. Multiple values are possible. If available, enter at least an ORCID.\n\n\n19e\nCreator of Data package – Persistent Identifier: Identifier\nR\nThe Persistent Identifier.\nIf you are not sure whether someone has a persistent identifier, you can check with the big three providers: Scopus Author ID, ORCID,ResearcherID. Each creator can have multiple persistent identifier — use the plus sign to add more values. Maximum length: 255 characters. Please fill in a resolvable URL. The pattern of an ORCID, ResearchID and ISNI is validated. There is no check if the name and identifier match.\n\n\n20a\nContributor to Data Package - Name\nR\nThe institution or person responsible for collecting, managing, distributing, or otherwise contributing to the development of the resource.For software, if there is an alternate entity that “holds, archives, publishes, prints, distributes, releases, issues, or produces” the code, use the contributor Type “hostingInstitution” for the code repository.\nContributors are not listed as creators when the data package is cited. Contributors are analogous to co-creators that would appear in the Acknowledgements-section of a manuscript. Multiple values possible — use the plus sign to add more values. Maximum length: 255 characters.\n\n\n20b\nContributor to Data Package - Type\nR if 20a\nEnter what type of contribution the registered person has had to this data package.\nSee the datacite documentation for explanation.\n\n\n20c\nContributor to Data Package - Affiliation name\nM if 20a\nThe organizational or institutional affiliation of the contributor.\nExample: “Vrije Universiteit Amsterdam”. The affiliation of the creator of a data package could be of importance when it is unclear who owns the data. In general the organization to which the creator was affiliated is regarded as the owner. Each creator can have multiple affiliations — use the plus sign to add more values. Most research institutes should be in the list and the ROR identifier will automatically filled. If the institution is not in the list, use the Find button, you can leave the ROR field empty in case the institute does not have a ROR. Maximum length: 255 characters.\n\n\n20d\nContributor to Data Package - Affiliation identifier\nR\nThe organizational or institutional identifier of the contributor.\nIt is recommended to use the resolvable URL from the Research Organization Registry (ROR). Example:“https://ror.org/008xxew50” for “Vrije Universiteit Amsterdam”.\n\n\n20e\nContributor to Data Package - Persistent Identifier: Type\nM if 20f\nPlease indicate the type of persistent person identifier.\nEach contributor can have multiple persistent identifiers — use the plus sign to add more values. Maximum length: 255 characters.\n\n\n20f\nContributor to Data Package - Persistent Identifier: Identifier\nR\nAn unique person identifier.\nEach contributor can have multiple identifiers — use the plus sign to add more values. Maximum length: 255 characters. Please fill in a resolvable URL. The pattern of an ORCID, ResearchID and ISNI is validated. There is no check if the name and identifier match.\n\n\n21\nLicense\nM\nThe license under which you offer the data package for use by third parties. The preferred value for open data is CC By 4.0.\nEvery package needs to be archived with a license — even when you’re not planning to publish the data or have it reused in any form. We offer a number of possible licenses in a drop-down list. If you do not know which license to choose, contact the data manager. At the moment of publishing a data package the relevant license text will be copied into the data package. If you opt for a custom license, you will need to store the custom license text in a file titled License.txt in the root folder. If the Data Package Access (22) is Restricted Access or Closed Access, you can only opt for a custom license, the VU has created custom templates for the License.txt file.\n\n\n22\nData Package Access\nM\nOnce archived, should your dataset be accessible to third parties?\nOpen Access means that the dataset is accessible to everyone. Restricted Access means that the dataset can only be obtained on request. Closed Access means that the dataset cannot be shared, in principle.",
     "crumbs": [
-      "Data Access and Transfer",
-      "Data access on MacOS"
+      "Using Yoda",
+      "Properties and explanation"
     ]
   },
   {
-    "objectID": "manuals/yoda/data_access/data_access_macos.html#mounting-the-yoda-webdav-in-finder",
-    "href": "manuals/yoda/data_access/data_access_macos.html#mounting-the-yoda-webdav-in-finder",
-    "title": "Data access on MacOS",
-    "section": "Mounting the Yoda WebDAV in Finder",
-    "text": "Mounting the Yoda WebDAV in Finder\n\nYou can open the Yoda WebDAV interface using the Finder app. By default, the Finder icon is shown in the bottom left corner of your screen, in the Dock. Click on this icon.\n\n\n\n\nFinder icon\n\n\nIf you don’t see the Finder icon, you can alternatively start Finder by pressing the command key and the space bar, then typing “finder” and pressing enter.\n\nNow press the command key and the “K” key to connect to the Yoda server. You should now see this dialogue box:\n\n\n\n\nConnect to server dialogue box\n\n\n\nEnter https://data.yoda.vu.nl/ as server address.\n\nThe Finder app will show a confirmation dialogue box, similar to the one below. The address shown in the dialogue box should be the address you entered in the previous dialogue box.\n\n\n\nConnect to server confirmation dialogue box\n\n\n\nPress the Connect button.\n\n\n\n\nConnect to server confirmation dialogue box\n\n\nYou should now see a credentials dialogue box. The “Connect as” setting should be set to “Registered user”. “Name” should be your email address.\n\nCreate a Data Access Password and copy it to the Password field. Tick the checkbox Remember this password in my keychain. Click on the connect button.\n\nYou should now have a new Yoda location in Finder. Its name is the network address you entered before. You may have to scroll down in finder in order to see it.\n\n\n\nConnect to server credentials dialogue box",
-    "crumbs": [
-      "Data Access and Transfer",
-      "Data access on MacOS"
-    ]
-  },
-  {
-    "objectID": "manuals/yoda/data_access/data_access_macos.html#using-rclone",
-    "href": "manuals/yoda/data_access/data_access_macos.html#using-rclone",
-    "title": "Data access on MacOS",
-    "section": "Using Rclone",
-    "text": "Using Rclone\nRclone is a command-line program to manage files on cloud storage. It is a feature-rich alternative to cloud vendors’ web storage interfaces. Over 40 cloud storage products support rclone including S3 object stores, business & consumer file storage services, as well as standard transfer protocols. You can find more instructions for using rclone on the dedicated page.",
-    "crumbs": [
-      "Data Access and Transfer",
-      "Data access on MacOS"
-    ]
-  },
-  {
-    "objectID": "manuals/yoda/data_access/introduction.html",
-    "href": "manuals/yoda/data_access/introduction.html",
-    "title": "Before getting started",
+    "objectID": "manuals/yoda/data_access/yoda_using_cyberduck_cryptometer.html",
+    "href": "manuals/yoda/data_access/yoda_using_cyberduck_cryptometer.html",
+    "title": "Encrypting your data using Cryptomator and Cyberduck",
     "section": "",
-    "text": "Note that creating a data access password is necessary to transfer data from and to Yoda. You can transfer files to and from Yoda dependent on the size of the file:\n\nVia the Yoda Portal, upload via Drag & Drop, download inviduals files.\n\nThis method works fine if you need to upload small amounts of data.\n\nFor transferring larger amounts of data (tens of GB) it is better to use the WebDAV interface.\n\nThere are several methods to access Yoda data via WebDAV, they depend on the Operating System you are using:\n\nAccessing Yoda data on Windows\nAccessing Yoda data on MacOS\nAccessing Yoda data on Linux\n\nNote that performance of WebDAV is limited, especially when transferring a large amount of files.\n\nFor transferring large amounts of data (&gt;100GB) consider using direct access to iRODS.\n\nA direct iRODS connection offers better performance by enabling multi-threaded transfers and the option to compare checksums.\nPower users who are comfortable with command line tools can use the iRODS icommands to interact with the iRODS backend of Yoda directly.",
+    "text": "To work with privacy sensitive data you might be required to encrypt the data you store on Yoda. An easy way to do this is to use Cyberduck (or MountainDuck) together with the free tool Cryptomator.\nCryptomator is available for Windows, MacOS and Linux.\nNote this workflow means local copies of the files on your laptop are not in the encrypted vault. To make sure local files are also safely encrypted you should enable Bitlocker, this should be the case on all VU laptops.",
     "crumbs": [
       "Data Access and Transfer",
-      "Before getting started"
+      "Encrypting your data using Cryptomator and Cyberduck"
     ]
   },
   {
-    "objectID": "manuals/yoda/data_access/yoda_using_rclone.html",
-    "href": "manuals/yoda/data_access/yoda_using_rclone.html",
-    "title": "Using Rclone",
+    "objectID": "manuals/yoda/data_access/yoda_using_cyberduck_cryptometer.html#using-cryptomator",
+    "href": "manuals/yoda/data_access/yoda_using_cyberduck_cryptometer.html#using-cryptomator",
+    "title": "Encrypting your data using Cryptomator and Cyberduck",
+    "section": "Using Cryptomator",
+    "text": "Using Cryptomator\nFirst connect to the Yoda WebDAV interface using Cyberduck.",
+    "crumbs": [
+      "Data Access and Transfer",
+      "Encrypting your data using Cryptomator and Cyberduck"
+    ]
+  },
+  {
+    "objectID": "manuals/yoda/data_access/yoda_using_cyberduck_cryptometer.html#install-cryptomator",
+    "href": "manuals/yoda/data_access/yoda_using_cyberduck_cryptometer.html#install-cryptomator",
+    "title": "Encrypting your data using Cryptomator and Cyberduck",
+    "section": "Install Cryptomator",
+    "text": "Install Cryptomator\nDownload and install from the Cryptomator site.",
+    "crumbs": [
+      "Data Access and Transfer",
+      "Encrypting your data using Cryptomator and Cyberduck"
+    ]
+  },
+  {
+    "objectID": "manuals/yoda/data_access/yoda_using_cyberduck_cryptometer.html#create-a-new-cryptomator-vault",
+    "href": "manuals/yoda/data_access/yoda_using_cyberduck_cryptometer.html#create-a-new-cryptomator-vault",
+    "title": "Encrypting your data using Cryptomator and Cyberduck",
+    "section": "Create a new Cryptomator vault",
+    "text": "Create a new Cryptomator vault\nRight click in Cyberduck and choose “New Encrypted Vault”  Give the folder a name and set a passphrase.\n The vault will look like a normal folder in Cyberduck\n\n\n\nCryptomator folder\n\n\nWhen you doubleclick the new folder you will be asked for the passphrase. \nEnter the correct passphrase and the folder will be opened as normal. You can now work with the vault as with a normal folder.\nIf you cancel the passphrase prompt you will only see the Cryptomator files in the folder. Adding or deleting files could corrupt your data!\nIf you are not prompted for the passphrase click refresh first.",
+    "crumbs": [
+      "Data Access and Transfer",
+      "Encrypting your data using Cryptomator and Cyberduck"
+    ]
+  },
+  {
+    "objectID": "manuals/yoda/data_access/data_access_windows.html",
+    "href": "manuals/yoda/data_access/data_access_windows.html",
+    "title": "Data access on Windows",
     "section": "",
-    "text": "Rclone is a command-line program to manage files on cloud storage. It is a feature-rich alternative to cloud vendors’ web storage interfaces. Over 40 cloud storage products support rclone including S3 object stores, business & consumer file storage services, as well as standard transfer protocols.\nRclone is available for Linux, Mac and Windows, see https://rclone.org/downloads/\nYou can use rclone to access the Yoda drive using WebDAV.\nNote: if you are on Linux and comfortable with command line tools, the iRODS icommands provide better performance.",
+    "text": "There are 2 basic ways to access the Yoda WebDAV interface from Windows. Using a tool to mount the Yoda Disk as a drive letter or file transfer tools. Which one works best depends on your workflow.",
     "crumbs": [
       "Data Access and Transfer",
-      "Using Rclone"
+      "Data access on Windows"
     ]
   },
   {
-    "objectID": "manuals/yoda/data_access/yoda_using_rclone.html#how-to-create-a-config",
-    "href": "manuals/yoda/data_access/yoda_using_rclone.html#how-to-create-a-config",
-    "title": "Using Rclone",
-    "section": "How to: Create a config",
-    "text": "How to: Create a config\n\nRclone always expects you to create a config first:\n\nrclone config\n\nYou will be led through a number of questions\n\nCurrent remotes:\n\nName                 Type\n====                 ====\n\ne) Edit existing remote\nn) New remote\nd) Delete remote\nr) Rename remote\nc) Copy remote\ns) Set configuration password\nq) Quit config\ne/n/d/r/c/s/q&gt; n\n\nEnter name for new remote.\nname&gt; yoda\nOption Storage.\nType of storage to configure.\nChoose a number from below, or type in your own value.\n\n...\n46 / WebDAV\n\\ (webdav)\n...\nStorage&gt; 46\nOption url.\nURL of http host to connect to.\nE.g. https://example.com.\nEnter a value.\nurl&gt; https://data.yoda.vu.nl\nOption vendor.\nName of the WebDAV site/service/software you are using.\nChoose a number from below, or type in your own value.\nPress Enter to leave empty.\n1 / Nextcloud\n\\ (nextcloud)\n2 / Owncloud\n\\ (owncloud)\n3 / Sharepoint Online, authenticated by Microsoft account\n\\ (sharepoint)\n4 / Sharepoint with NTLM authentication, usually self-hosted or on-premises\n\\ (sharepoint-ntlm)\n5 / Other site/service or software\n\\ (other)\nvendor&gt; 5\nOption user.\nUser name.\nIn case NTLM authentication is used, the username should be in the format 'Domain\\User'.\nEnter a value. Press Enter to leave empty.\nuser&gt; e.m.ployee@vu.nl\nOption pass.\nPassword.\nChoose an alternative below. Press Enter for the default (n).\ny) Yes, type in my own password\ng) Generate random password\nn) No, leave this optional password blank (default)\ny/g/n&gt; y\nEnter the password:\npassword:\nConfirm the password:\npassword:\n\nPassword is a Data Access Password generated in Yoda.\n\nOption bearer_token.\nBearer token instead of user/pass (e.g. a Macaroon).\nEnter a value. Press Enter to leave empty.\nbearer_token&gt;\n\nEdit advanced config?\ny) Yes\nn) No (default)\ny/n&gt; n\nOptions:\n- type: webdav\n- url: https://data.yoda.vu.nl\n- vendor: other\n- user: e.m.ployee@vu.nl\n- pass: *** ENCRYPTED ***\n  Keep this \"yoda\" remote?\n  y) Yes this is OK (default)\n  e) Edit this remote\n  d) Delete this remote\n  y/e/d&gt; y\n\n\nName                 Type\n====                 ====\nyoda                 webdav\n\ne) Edit existing remote\nn) New remote\nd) Delete remote\nr) Rename remote\ns) Set configuration password\nq) Quit config\ne/n/d/r/c/s/q&gt; q",
+    "objectID": "manuals/yoda/data_access/data_access_windows.html#file-transfer",
+    "href": "manuals/yoda/data_access/data_access_windows.html#file-transfer",
+    "title": "Data access on Windows",
+    "section": "File transfer",
+    "text": "File transfer\nThere are numerous free file transfer tools. Using these tools you must download the files you want to work on to your computer and upload the changes. This way of working is more stable and robust.\n\nCyberduck is a free file transfer tool for Mac and Windows. Cyberduck is the preferred way to access the Yoda Disk. There is also a paid addon “Mountainduck” which adds functionality to access via a drive letter.\nWinSCP is an alternative free file transfer tool. WinSCP provides a reliable file transfer solution. It allows users to securely download and upload files to Yoda. This option is suitable for large and complex datasets.",
     "crumbs": [
       "Data Access and Transfer",
-      "Using Rclone"
+      "Data access on Windows"
     ]
   },
   {
-    "objectID": "manuals/yoda/data_access/yoda_using_rclone.html#updating-the-data-access-password",
-    "href": "manuals/yoda/data_access/yoda_using_rclone.html#updating-the-data-access-password",
-    "title": "Using Rclone",
-    "section": "Updating the Data Access Password",
-    "text": "Updating the Data Access Password\nA Yoda Data Access Password is only valid for a set amount of time. Once it has expired you should generate a new one. Run rclone config, choose e) Edit existing remote and enter the new DAP in the password section:\n...\n\nOption pass.\nPassword.\nChoose an alternative below. Press Enter for the default (n).\ny) Yes, type in my own password\ng) Generate random password\nn) No, keep existing (default)\ny/g/n&gt; y",
+    "objectID": "manuals/yoda/data_access/data_access_windows.html#drive-letter",
+    "href": "manuals/yoda/data_access/data_access_windows.html#drive-letter",
+    "title": "Data access on Windows",
+    "section": "Drive letter",
+    "text": "Drive letter\nUsing these tools you can access the Yoda Disk via a drive letter.\n\nWebDrive is a VU-supported method to remotely access files and can also be used on “green” pc’s. With WebDrive the Yoda WebDAV interface can be connected as a drive in Windows Explorer.\nDirectly in Windows Explorer. However, this has restrictions: a maximum file size of 4GB on Windows 11 and 50MB(!) on Windows 10 and a maximum of 1000 files per folder (Windows 10&11). Take care if you expect your dataset to exceed these limitations.",
     "crumbs": [
       "Data Access and Transfer",
-      "Using Rclone"
+      "Data access on Windows"
     ]
   },
   {
-    "objectID": "manuals/yoda/data_access/yoda_using_rclone.html#mounting-on-windows",
-    "href": "manuals/yoda/data_access/yoda_using_rclone.html#mounting-on-windows",
-    "title": "Using Rclone",
-    "section": "Mounting on Windows",
-    "text": "Mounting on Windows\nPlease make sure to use --vfs-cache-mode, see rclone docs.\n.\\rclone --vfs-cache-mode full mount yoda:research-staff-ubvu-geoplaza/ y:\nWill mount the yoda config as drive Y.\nThe rclone documentation provides information on how to automatically start rclone.",
+    "objectID": "manuals/yoda/data_access/data_access_windows.html#command-line-and-rclone",
+    "href": "manuals/yoda/data_access/data_access_windows.html#command-line-and-rclone",
+    "title": "Data access on Windows",
+    "section": "Command line and Rclone",
+    "text": "Command line and Rclone\nIf you are familiar with command line tools rclone is also a good option to access the Yoda via Webdav. It also provides the option to use a drive letter.",
     "crumbs": [
       "Data Access and Transfer",
-      "Using Rclone"
+      "Data access on Windows"
     ]
   },
   {
-    "objectID": "manuals/yoda/data_access/yoda_using_windowsexplorer.html",
-    "href": "manuals/yoda/data_access/yoda_using_windowsexplorer.html",
-    "title": "Using Windows Explorer",
+    "objectID": "manuals/yoda/data_access/yoda_using_icommands.html",
+    "href": "manuals/yoda/data_access/yoda_using_icommands.html",
+    "title": "Using iCommands",
     "section": "",
-    "text": "For most users, Cyberduck is a better alternative. However, the Yoda team recommends using the native WebDAV client if you can’t install Cyberduck, for example if the security settings of your laptop prevent you from installing any new applications.",
+    "text": "Since Yoda is based on iRODS technology, it is possible to transfer data to and from Yoda using the iRODS communication protocol. This protocol can be used to transfer large amounts of data in an efficient way. The iCommands command-line tools are the official standard implementation of an iRODS protocol client.\nThe iCommands are installed on the ADA and Snellius HPC clusters and can be used to transfer data to and from Yoda. Make sure to create the irods environment file first.",
     "crumbs": [
       "Data Access and Transfer",
-      "Using Windows Explorer"
+      "Using iCommands"
     ]
   },
   {
-    "objectID": "manuals/yoda/data_access/yoda_using_windowsexplorer.html#how-to-mapping-network-drive",
-    "href": "manuals/yoda/data_access/yoda_using_windowsexplorer.html#how-to-mapping-network-drive",
-    "title": "Using Windows Explorer",
-    "section": "How To: Mapping network drive",
-    "text": "How To: Mapping network drive\n\nOpen “This PC” from the Start menu\n\n\n\n\nThis PC\n\n\n\nOpen the Computer menu item and select “Map network drive”.\n\n\n\n\nMap network drive icon in This PC\n\n\n\nSelect a drive letter — any free letter is okay. Now enter https://data.yoda.vu.nl/ in the Folder field (see table below).\n\n\n\n\nfolder input field when mapping network drive\n\n\n\nEnsure the box “Connect using different credentials” is checked and click on the Finish button.\nYou will be prompted for a name and password. Name is your email address. Create a data access password and copy it to the Password field\n\n\nIf you are working on your personal PC or laptop, tick the checkbox “Remember my credentials”.\n\n\n\n\ndialog for entering credentials when mapping network drive\n\n\n\nThe Explorer screen will show the folders you have access rights to. You can now drag and drop your files to upload or download them.",
+    "objectID": "manuals/yoda/data_access/yoda_using_icommands.html#installing-irods-icommands",
+    "href": "manuals/yoda/data_access/yoda_using_icommands.html#installing-irods-icommands",
+    "title": "Using iCommands",
+    "section": "Installing iRODS iCommands",
+    "text": "Installing iRODS iCommands\nNative iRODS iCommands packages are available for CentOS and Ubuntu.\nWindows 10/11 users can run the iCommands in the Windows Subsystem for Linux. There is no officially supported iCommands installation for Mac OSX, you could install the iCommands inside a Linux VM.\n\n\n\n\n\n\nTip\n\n\n\ngocommands is an alternative command-line client you could try if your OS does not support iCommands.\nThe readme.md on the github repository has installation instructions. You can find the details of creating the irods environment file below. Once installed you can execute common iCommands as gocmd &lt;command&gt;, e.g. gocmd init, gocmd ls, gocmd get, gocmd put, gocmd rsync.\n\n\n\nInstalling iCommands on CentOS\nThe following should work to install the iCommands on CentOS 8.\n\nFirst add the package source:\n\nsudo yum -y install wget epel-release yum-plugin-versionlock\nsudo rpm --import https://packages.irods.org/irods-signing-key.asc\nwget -qO - https://packages.irods.org/renci-irods.yum.repo | sudo tee /etc/yum.repos.d/renci-irods.yum.repo\n\nNote that the latest irods version is 5, this client is not compatible with the Yoda irods version.You can list the available versions with:\n\nsudo yum --showduplicates list irods-icommands\n\nInstall the latest available 4.x.x version:\n\nsudo yum -y install irods-runtime-4.3.0 irods-icommands-4.3.0\nsudo yum versionlock irods-runtime irods-icommands\n\nUpgrading from an earlier version\nIf you have put packages irods-runtime and irods-icommands on hold, you should first release the hold. Otherwise, the instruction is the same as above.\n# Show applied locks, if any\nyum versionlock list\nyum versionlock delete irods-runtime irods-icommands\n\n\n\nInstalling iCommands on Ubuntu\nThe following should work to install the iCommands on Ubuntu 22 or 24.\n\nFirst add the irods package source.\n\nwget -qO - https://packages.irods.org/irods-signing-key.asc | sudo apt-key add -\necho \"deb [arch=amd64] https://packages.irods.org/apt/ $(lsb_release -sc) main\" | sudo tee /etc/apt/sources.list.d/renci-irods.list\nsudo apt update\n\nNote that the latest irods version is 5, this client is not compatible with the Yoda irods version. You can check which versions are available with:\n\nsudo apt show irods-icommands -a\n\nTake the latest 4.x version, at the time of writing:\n\nsudo apt -y install irods-runtime=4.3.4-0~noble irods-icommands=4.3.4-0~noble\n\nMake sure to hold the package to prevent inadvertently updating to version 5:\n\nsudo apt-mark hold irods-runtime irods-icommands\n\nUpgrading from an earlier version\nIf you have put packages irods-runtime and irods-icommands on hold, you should first release the hold. Otherwise, the instruction is the same as above.\n# Show applied holds, if any\napt-mark showhold\napt-mark unhold irods-runtime irods-icommands",
     "crumbs": [
       "Data Access and Transfer",
-      "Using Windows Explorer"
+      "Using iCommands"
     ]
   },
   {
-    "objectID": "manuals/yoda/data_access/yoda_using_windowsexplorer.html#how-to-increasing-maximum-file-size",
-    "href": "manuals/yoda/data_access/yoda_using_windowsexplorer.html#how-to-increasing-maximum-file-size",
-    "title": "Using Windows Explorer",
-    "section": "How To: Increasing maximum file size",
-    "text": "How To: Increasing maximum file size\nBy default, the native WebDAV client on Windows 10 only works with files smaller than 50 MB.\nOn Windows 11 the limit is set to the maximum 4GB by default.\nYou can increase the limit on Windows 10 to 4 GB if you have a local administrator account:\n\nOpen the registry editor by pressing the start button, entering “regedit” and pressing the enter key.\n\n\nIf you are asked whether the registry editor should be allowed to change the system settings, confirm.\n\n\nNavigate to key HKEY\\_LOCAL\\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\WebClient\\Parameters\nOpen the FileSizeLimitInBytes key\n\n\n\n\nFileSizeLimitInBytes registry key\n\n\n\nSet it to FFFFFFFF (hexadecimal)\n\n\n\n\nincreasing the file size limit\n\n\n\nClick on the “OK” button and close the registry editor\nRestart your computer",
+    "objectID": "manuals/yoda/data_access/yoda_using_icommands.html#environment-file",
+    "href": "manuals/yoda/data_access/yoda_using_icommands.html#environment-file",
+    "title": "Using iCommands",
+    "section": "Environment file",
+    "text": "Environment file\nThe iCommands need to be configured to connect to the right Yoda environment.\nPlease copy and paste this configuration into your ~/.irods/irods_environment.json configuration file.\nYou will need to change the example user name to your Yoda user name.\n{\n    \"irods_host\": \"portal.yoda.vu.nl\",\n    \"irods_port\": 1247,\n    \"irods_home\": \"/vu/home\",\n    \"irods_user_name\": \"xxx@vu.nl\",\n    \"irods_zone_name\": \"vu\",\n    \"irods_authentication_scheme\": \"pam_password\",\n    \"irods_encryption_algorithm\": \"AES-256-CBC\",\n    \"irods_encryption_key_size\": 32,\n    \"irods_encryption_num_hash_rounds\": 16,\n    \"irods_encryption_salt_size\": 8,\n    \"irods_client_server_negotiation\": \"request_server_negotiation\"\n}\n\n\n\n\n\n\nImportant\n\n\n\nPlease note that irods_authentication_scheme has changed from pam to pam_password in Yoda 2.0.\n\n\nYou can also copy the contents from the “Data Transfer” page on the Yoda Portal:",
     "crumbs": [
       "Data Access and Transfer",
-      "Using Windows Explorer"
+      "Using iCommands"
     ]
   },
   {
-    "objectID": "manuals/yoda/data_access/yoda_using_windowsexplorer.html#how-to-increasing-the-number-of-files-shown-in-a-folder",
-    "href": "manuals/yoda/data_access/yoda_using_windowsexplorer.html#how-to-increasing-the-number-of-files-shown-in-a-folder",
-    "title": "Using Windows Explorer",
-    "section": "How To: Increasing the number of files shown in a folder",
-    "text": "How To: Increasing the number of files shown in a folder\nBy default the native WebDAV client on Windows 10 & 11 will show a folder containing more than 1000 files as empty. If you need to work with larger folders you can increase this limit if you have a local administrator account:\n\nOpen the registry editor by pressing the start button, entering “regedit” and pressing the - enter key.\nIf you are asked whether the registry editor should be allowed to change the system settings, confirm.\nNavigate to key HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\WebClient\\Parameters\nOpen the FileAttributesLimitInBytes key: \nIn the Value data box, type the value that you want to use, and then click OK. For example, if the Web folder contains 20,000 files, type 20000000 in the Value data box.",
+    "objectID": "manuals/yoda/data_access/yoda_using_icommands.html#getting-started-with-icommands",
+    "href": "manuals/yoda/data_access/yoda_using_icommands.html#getting-started-with-icommands",
+    "title": "Using iCommands",
+    "section": "Getting started with iCommands",
+    "text": "Getting started with iCommands\nAfter installing and configuring the iCommands, you should be able to log in on the Yoda environment using the iinit command. Enter a Yoda Data Access Password when prompted.\nThese are the basic commands for navigation and data transfer:\n\nipwd – Show current iRODS directory\nils – List contents of a directory\nicd – Change directory\niput – Upload files to Yoda\niget – Download files from Yoda\nirsync – Synchronize local and remote directories\n\nYour Yoda project folders are located under /vu/home.\nYou can find a quick introduction of the iCommands on the SURF wiki or you can check out this training manual.\nYou can find a full list of available commands in the iRODS Docs.",
     "crumbs": [
       "Data Access and Transfer",
-      "Using Windows Explorer"
+      "Using iCommands"
     ]
   },
   {
-    "objectID": "manuals/yoda/data_access/yoda_using_windowsexplorer.html#how-to-updating-your-password-for-a-mapped-network-drive-on-windows",
-    "href": "manuals/yoda/data_access/yoda_using_windowsexplorer.html#how-to-updating-your-password-for-a-mapped-network-drive-on-windows",
-    "title": "Using Windows Explorer",
-    "section": "How To: Updating your password for a mapped network drive on Windows",
-    "text": "How To: Updating your password for a mapped network drive on Windows\n\nFirst open the credential manager by clicking on the start button and typing “Manage Windows Credentials”.\n\n\n\n\nstarting the Windows credential manager.\n\n\n\nSelect the address of your Yoda WebDAV interface in the list of generic credentials.\n\n\n\n\nselecting the credentials of the Yoda WebDAV interface in the credential manager\n\n\n\nChoose “Edit”. Edit your credentials and click on the “Save” button.\n\n\n\n\nediting the Yoda credentials in the credential manager\n\n\n\nRestart your computer and open the mapped network drive in “This PC”. You may have to re-enter your username and new password once more.\n\n\n\n\ndialog for entering credentials when mapping network drive",
-    "crumbs": [
-      "Data Access and Transfer",
-      "Using Windows Explorer"
-    ]
-  },
-  {
-    "objectID": "manuals/yoda/data_access/yoda_using_webdrive.html",
-    "href": "manuals/yoda/data_access/yoda_using_webdrive.html",
-    "title": "Using Webdrive",
+    "objectID": "manuals/yoda/data_access/yoda_dap.html",
+    "href": "manuals/yoda/data_access/yoda_dap.html",
+    "title": "Creating a Data Access Password",
     "section": "",
-    "text": "Windows users can use WebDrive to access their data, as an alternative to the native WebDAV client. With WebDrive the Yoda WebDAV interface can be connected via as a drive in Windows Explorer.\nAs a VU user you can download a licensed version of WebDrive from download.vu.nl.\nNote that you should always disable caching in WebDrive!",
+    "text": "How to: Creating a Data Access Password\n\nClick on your username in the top right and click Data Access Password or go to https://portal.yoda.vu.nl/user/data_access:\n\n\n\n\nData Access Password menu\n\n\n\n\n\nGenerate Data Access Password\n\n\n\nEnter a suitable label and click on “Generate new data access password”.\n\n\n\nThe password is shown. Click Copy to copy it to the clipboard. After this you can use CTRL-v to paste it.\n\n\nData access passwords expire in 90 days, you can view the expiration time in the list. \nIf a password has expired, simply create a new one. Don’t forget to update the password in the WebDAV client.",
     "crumbs": [
       "Data Access and Transfer",
-      "Using Webdrive"
+      "Creating a Data Access Password"
     ]
   },
   {
-    "objectID": "manuals/yoda/data_access/yoda_using_webdrive.html#how-to-using-webdrive",
-    "href": "manuals/yoda/data_access/yoda_using_webdrive.html#how-to-using-webdrive",
-    "title": "Using Webdrive",
-    "section": "How to: Using WebDrive",
-    "text": "How to: Using WebDrive\n\nStart Webdrive from the Desktop icon or the Start menu.\n\n\n\nIn the initial Window click new.\n\n\n\nChoose Secure WebDAV and click Next.\n\n\n\nEnter https://data.yoda.vu.nl/ in the Url/Address field.\nEnter the Username (an emailaddress). Create a data access password and copy it to the Password field.\n\n\nYou can click Test Connection to see if the credentials are correct.\n\n\nClick Next\n\n\n\nChoose a Drive letter and Connect Now.\n\n\n\nYou should now see the Yoda Disk in your Windows Explorer.",
+    "objectID": "manuals/yoda/data_access/yoda_using_winscp.html",
+    "href": "manuals/yoda/data_access/yoda_using_winscp.html",
+    "title": "Using WinSCP",
+    "section": "",
+    "text": "Windows users can use WinSCP to access their data via the Yoda WebDAV interface, as an alternative to the native WebDAV client.\nWinSCP is an easy-to-use filetransfer tool. It will show your local disk and the remote Yoda folders next to eachother so you can easily drag and drop files from one to the other.",
     "crumbs": [
       "Data Access and Transfer",
-      "Using Webdrive"
+      "Using WinSCP"
     ]
   },
   {
-    "objectID": "manuals/yoda/data_access/yoda_using_webdrive.html#how-to-disable-the-cache",
-    "href": "manuals/yoda/data_access/yoda_using_webdrive.html#how-to-disable-the-cache",
-    "title": "Using Webdrive",
-    "section": "How To: Disable the cache",
-    "text": "How To: Disable the cache\nBy default WebDrive enables a caching mechanism and suggests this as a way to enable syncing and working offline.\nThis functionality is not implemented very well and you should always disable this to prevent data loss.\n\n\nRight click on “data.yoda.vu.nl” in the server list\n\n\n\nSet Cache Mode to None and Cache Limit to 0.",
+    "objectID": "manuals/yoda/data_access/yoda_using_winscp.html#installing-winscp",
+    "href": "manuals/yoda/data_access/yoda_using_winscp.html#installing-winscp",
+    "title": "Using WinSCP",
+    "section": "Installing WinSCP",
+    "text": "Installing WinSCP\nThe WinSCP install guide explains how to install WinSCP.",
     "crumbs": [
       "Data Access and Transfer",
-      "Using Webdrive"
+      "Using WinSCP"
+    ]
+  },
+  {
+    "objectID": "manuals/yoda/data_access/yoda_using_winscp.html#how-to-using-winscp",
+    "href": "manuals/yoda/data_access/yoda_using_winscp.html#how-to-using-winscp",
+    "title": "Using WinSCP",
+    "section": "How To: Using WinSCP",
+    "text": "How To: Using WinSCP\n\nStart WinSCP from the Desktop icon or the Start menu.\nIn the login window, ensure that the file protocol is set to “WebDAV” and encryption is set to “TLS/SSL implicit encryption”.\n\n\n\nEnter https://data.yoda.vu.nl/ in the Host name field. The port number should have its default value: 443.\n\n\n\nYou will be prompted for a name and password. User name is your email. Create a data access password and copy it to the Password field.",
+    "crumbs": [
+      "Data Access and Transfer",
+      "Using WinSCP"
+    ]
+  },
+  {
+    "objectID": "manuals/yoda/data_access/yoda_using_python.html",
+    "href": "manuals/yoda/data_access/yoda_using_python.html",
+    "title": "Using Python",
+    "section": "",
+    "text": "Data in Yoda is not directly accessible, you have to download data to the machine that contains your analysis software first. If you do your analysis with Python scripts anyway, for example on Snellius or Ada, it can be useful to script the data access and transfer as well.",
+    "crumbs": [
+      "Data Access and Transfer",
+      "Using Python"
+    ]
+  },
+  {
+    "objectID": "manuals/yoda/data_access/yoda_using_python.html#python-irods-client",
+    "href": "manuals/yoda/data_access/yoda_using_python.html#python-irods-client",
+    "title": "Using Python",
+    "section": "Python iRODS Client",
+    "text": "Python iRODS Client\nThe Python iRODS Client (PRC) is the default way to access data in iRODS programatically.\n\nInstall\npip install python-irodsclient\n\n\nSetting up a session to access Yoda\nThe easiest way to setup a session to Yoda is by using the information in the irods environment file.\nThe code below sets up a session using all the correct settings for Yoda:\nimport json\nfrom irods.session import iRODSSession\nfrom pathlib import Path\nfrom getpass import getpass\nimport ssl\n\ndef get_irods_environment(irods_environment_file):\n    \"\"\"Reads the irods_environment.json file, which contains the environment configuration.\"\"\"\n\n    print(\n        f\"Trying to retrieve connection settings from: {irods_environment_file}\"\n    )\n\n    try:\n        with open(irods_environment_file, \"r\") as f:\n            return json.load(f)\n    except:\n        print(f'Could not open {irods_environment_file}')\n        exit()\n\ndef setup_session(ca_file='/etc/ssl/certs/ca-certificates.crt'):\n    \"\"\"Use irods environment files to configure a iRODSSession. User is prompted for the password\"\"\"\n\n    irods_env = get_irods_environment(f\"{Path.home()}/.irods/irods_environment.json\")\n\n    password = getpass(f\"Enter valid DAP for user {irods_env['irods_user_name']}: \")\n\n    ssl_context = ssl.create_default_context(\n        purpose=ssl.Purpose.SERVER_AUTH, cafile=ca_file, capath=None, cadata=None\n    )\n\n    ssl_settings = {\n        \"client_server_negotiation\": \"request_server_negotiation\",\n        \"client_server_policy\": \"CS_NEG_REQUIRE\",\n        \"encryption_algorithm\": \"AES-256-CBC\",\n        \"encryption_key_size\": 32,\n        \"encryption_num_hash_rounds\": 16,\n        \"encryption_salt_size\": 8,\n        \"ssl_context\": ssl_context,\n    }\n\n    session = iRODSSession(\n        host=irods_env[\"irods_host\"],\n        port=irods_env[\"irods_port\"],\n        user=irods_env[\"irods_user_name\"],\n        password=password,\n        zone=irods_env[\"irods_zone_name\"],\n        authentication_scheme=\"pam_password\",\n        **ssl_settings,\n    )\n\n    return session\n\nsession=setup_session()\n\n# workload\ncoll=session.collections.get(f\"/{session.zone}/home\")\nfor col in coll.subcollections:\n    print(col.name)\n\n\nMore information\nYou can find more information on using the iRODS client in the README on github.",
+    "crumbs": [
+      "Data Access and Transfer",
+      "Using Python"
+    ]
+  },
+  {
+    "objectID": "manuals/yoda/data_access/yoda_using_python.html#ibridges",
+    "href": "manuals/yoda/data_access/yoda_using_python.html#ibridges",
+    "title": "Using Python",
+    "section": "iBridges",
+    "text": "iBridges\nThe PRC can be hard to use, because it requires some prior knowledge on the structure and terminology used in iRODS. For this reason, developers at Utrecht University created iBridges, which makes it easier to do basic file and metadata manipulation in iRODS.\n\nInstallation\nInstallation is again as simple as:\npip install ibridges\n\n\nConnecting\nTo connect you will need the irods environment file. iBridges expects the file to be in ~/.irods/irods_environment.json but you can point it to a different location.\nfrom ibridges import Session\nfrom pathlib import Path\nfrom getpass import getpass\n\npassword = getpass(f\"Enter valid DAP: \")\nsession = Session(irods_env_path=Path.home() / \".irods\" / \"irods_environment.json\", password=password)\n\n\nUpload data\nYou can easily upload your data with the previously created session:\nfrom ibridges import upload\n\nupload(session, \"/your/local/path\", \"/irods/path\")\nThis upload function can upload both directories (collections in iRODS) and files (data objects in iRODS).\n\n\nAdd iRODS metadata\nOne of the powerful features of iRODS is its ability to store metadata with your data in a consistent manner. Let’s add some metadata to a collection or data object:\nfrom ibridges import IrodsPath\n\nipath = IrodsPath(session, \"/irods/path\")\nipath.meta.add(\"some_key\", \"some_value\", \"some_units\")\nWe have used the IrodsPath class here, which is another central class to the iBridges API. From here we have access to the metadata as shown above, but additionally there are many more convenient features directly accessible such as getting the size of a collection or data object. A detailed description of the features is present in another part of the documentation.\n\n\nDownload data\nNaturally, we also want to download the data back to our local machine. This is done with the download function:\nfrom ibridges import download\n\ndownload(session, \"/irods/path\", \"/other/local/path\")\n\n\nClosing the session\nWhen you are done with your session, you should generally close it:\nsession.close()\n\n\nMore information\nMore information on using iBridges can be found in the online documentation.",
+    "crumbs": [
+      "Data Access and Transfer",
+      "Using Python"
+    ]
+  },
+  {
+    "objectID": "manuals/yoda/data_access/yoda_using_python.html#streaming",
+    "href": "manuals/yoda/data_access/yoda_using_python.html#streaming",
+    "title": "Using Python",
+    "section": "Streaming",
+    "text": "Streaming\nWith the python-irodsclient which iBridges is built on, we can open the file inside of a data object as a stream and process the content without downloading the data. This is especially useful if you need to access data stored in large files. That works without any problems for textual data.\nfrom ibridges import IrodsPath\n\nobj_path = IrodsPath(session, \"path\", \"to\", \"object\")\nwith obj_path.open('r') as stream:\n    content = stream.read().decode()\nSome python libraries allow to be instantiated directly from such a stream. This is supported by e.g. pandas and polars for datafiles or whisper for transcription and translation of audio files.\nimport pandas as pd\n\nwith obj_path.open('r') as stream:\n    df = pd.read_csv(stream)\n\nprint(df)",
+    "crumbs": [
+      "Data Access and Transfer",
+      "Using Python"
     ]
   },
   {
@@ -3693,7 +3748,7 @@
     "href": "manuals/yoda/index.html",
     "title": "Yoda Manuals",
     "section": "",
-    "text": "Tip\n\n\n\nThe Yoda Topic page explains how to request storage space in Yoda for your project.\n\n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\nData access on Linux\n\n\n\n\n\n\n\n\n\n\n\n\nData access on MacOS\n\n\n\n\n\n\n\n\n\n\n\n\nData access on Windows\n\n\n\n\n\n\n\n\n\n\n\n\nBefore getting started\n\n\nThis page provides an overview of the 3 main ways to transfer data to and from Yoda.\n\n\n\n\n\n\n\n\n\nCreating a Data Access Password\n\n\n\n\n\n\n\n\n\n\n\n\nUsing Cyberduck\n\n\n\n\n\n\n\n\n\n\n\n\nEncrypting your data using Cryptomator and Cyberduck\n\n\n\n\n\n\n\n\n\n\n\n\nUsing iCommands\n\n\nThis page explains how to install the iRODS iCommands on a Linux OS (native and using WSL2 on Windows).\n\n\n\n\n\n\n\n\n\nUsing Rclone\n\n\n\n\n\n\n\n\n\n\n\n\nUsing Webdrive\n\n\n\n\n\n\n\n\n\n\n\n\nUsing Windows Explorer\n\n\n\n\n\n\n\n\n\n\n\n\nUsing WinSCP\n\n\n\n\n\n\n\n\n\n\n\n\nFAQ\n\n\nFrequently asked questions about Yoda.\n\n\n\n\n\n\n\n\n\nKnown issues\n\n\nKnown bugs and issues in the current Yoda version.\n\n\n\n\n\n\n\n\n\nArchiving data\n\n\n\n\n\n\n\n\n\n\n\n\nPublishing data\n\n\n\n\n\n\n\n\n\n\n\n\nFinding and restoring data\n\n\n\n\n\n\n\n\n\n\n\n\nWhat is Metadata?\n\n\n\n\n\n\n\n\n\n\n\n\nProperties and explanation\n\n\n\n\n\n\n\n\n\n\n\n\nAdding Metadata\n\n\n\n\n\n\n\n\n\n\n\n\nSelecting a license for your dataset\n\n\n\n\n\n\n\n\n\n\n\n\nManaging Groups, Users and Access Rights\n\n\n\n\n\n\n\n\n\n\n\n\nGetting started: Yoda Portal\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction\n\n\n\n\n\n\n\n\n\n\n\n\nLogging in\n\n\n\n\n\n\n\n\n\n\n\n\nNotifications\n\n\n\n\n\n\n\n\n\n\n\n\nHow to: Invitation to Yoda collaboration\n\n\n\n\n\n\n\n\nNo matching items",
+    "text": "Tip\n\n\n\nThe Yoda Topic page explains how to request storage space in Yoda for your project.\n\n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\nData access on Linux\n\n\n\n\n\n\n\n\n\n\n\n\nData access on MacOS\n\n\n\n\n\n\n\n\n\n\n\n\nData access on Windows\n\n\n\n\n\n\n\n\n\n\n\n\nBefore getting started\n\n\nThis page provides an overview of the 3 main ways to transfer data to and from Yoda.\n\n\n\n\n\n\n\n\n\nCreating a Data Access Password\n\n\n\n\n\n\n\n\n\n\n\n\nUsing Cyberduck\n\n\n\n\n\n\n\n\n\n\n\n\nEncrypting your data using Cryptomator and Cyberduck\n\n\n\n\n\n\n\n\n\n\n\n\nUsing iCommands\n\n\nThis page explains how to install the iRODS iCommands on a Linux OS (native and using WSL2 on Windows).\n\n\n\n\n\n\n\n\n\nUsing Python\n\n\nThis page explains how to transfer data using Python scripting.\n\n\n\n\n\n\n\n\n\nUsing Rclone\n\n\n\n\n\n\n\n\n\n\n\n\nUsing Webdrive\n\n\n\n\n\n\n\n\n\n\n\n\nUsing Windows Explorer\n\n\n\n\n\n\n\n\n\n\n\n\nUsing WinSCP\n\n\n\n\n\n\n\n\n\n\n\n\nFAQ\n\n\nFrequently asked questions about Yoda.\n\n\n\n\n\n\n\n\n\nKnown issues\n\n\nKnown bugs and issues in the current Yoda version.\n\n\n\n\n\n\n\n\n\nArchiving data\n\n\n\n\n\n\n\n\n\n\n\n\nPublishing data\n\n\n\n\n\n\n\n\n\n\n\n\nAnalysing Data\n\n\nThis page explains how to run analysis software on your data in Yoda.\n\n\n\n\n\n\n\n\n\nFinding and restoring data\n\n\n\n\n\n\n\n\n\n\n\n\nWhat is Metadata?\n\n\n\n\n\n\n\n\n\n\n\n\nProperties and explanation\n\n\n\n\n\n\n\n\n\n\n\n\nAdding Metadata\n\n\n\n\n\n\n\n\n\n\n\n\nSelecting a license for your dataset\n\n\n\n\n\n\n\n\n\n\n\n\nManaging Groups, Users and Access Rights\n\n\n\n\n\n\n\n\n\n\n\n\nGetting started: Yoda Portal\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction\n\n\n\n\n\n\n\n\n\n\n\n\nLogging in\n\n\n\n\n\n\n\n\n\n\n\n\nNotifications\n\n\n\n\n\n\n\n\n\n\n\n\nHow to: Invitation to Yoda collaboration\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Yoda Manuals"
     ]
@@ -3809,245 +3864,289 @@
     ]
   },
   {
-    "objectID": "manuals/yoda/data_access/yoda_using_winscp.html",
-    "href": "manuals/yoda/data_access/yoda_using_winscp.html",
-    "title": "Using WinSCP",
+    "objectID": "manuals/yoda/data_access/yoda_using_webdrive.html",
+    "href": "manuals/yoda/data_access/yoda_using_webdrive.html",
+    "title": "Using Webdrive",
     "section": "",
-    "text": "Windows users can use WinSCP to access their data via the Yoda WebDAV interface, as an alternative to the native WebDAV client.\nWinSCP is an easy-to-use filetransfer tool. It will show your local disk and the remote Yoda folders next to eachother so you can easily drag and drop files from one to the other.",
+    "text": "Windows users can use WebDrive to access their data, as an alternative to the native WebDAV client. With WebDrive the Yoda WebDAV interface can be connected via as a drive in Windows Explorer.\nAs a VU user you can download a licensed version of WebDrive from download.vu.nl.\nNote that you should always disable caching in WebDrive!",
     "crumbs": [
       "Data Access and Transfer",
-      "Using WinSCP"
+      "Using Webdrive"
     ]
   },
   {
-    "objectID": "manuals/yoda/data_access/yoda_using_winscp.html#installing-winscp",
-    "href": "manuals/yoda/data_access/yoda_using_winscp.html#installing-winscp",
-    "title": "Using WinSCP",
-    "section": "Installing WinSCP",
-    "text": "Installing WinSCP\nThe WinSCP install guide explains how to install WinSCP.",
+    "objectID": "manuals/yoda/data_access/yoda_using_webdrive.html#how-to-using-webdrive",
+    "href": "manuals/yoda/data_access/yoda_using_webdrive.html#how-to-using-webdrive",
+    "title": "Using Webdrive",
+    "section": "How to: Using WebDrive",
+    "text": "How to: Using WebDrive\n\nStart Webdrive from the Desktop icon or the Start menu.\n\n\n\nIn the initial Window click new.\n\n\n\nChoose Secure WebDAV and click Next.\n\n\n\nEnter https://data.yoda.vu.nl/ in the Url/Address field.\nEnter the Username (an emailaddress). Create a data access password and copy it to the Password field.\n\n\nYou can click Test Connection to see if the credentials are correct.\n\n\nClick Next\n\n\n\nChoose a Drive letter and Connect Now.\n\n\n\nYou should now see the Yoda Disk in your Windows Explorer.",
     "crumbs": [
       "Data Access and Transfer",
-      "Using WinSCP"
+      "Using Webdrive"
     ]
   },
   {
-    "objectID": "manuals/yoda/data_access/yoda_using_winscp.html#how-to-using-winscp",
-    "href": "manuals/yoda/data_access/yoda_using_winscp.html#how-to-using-winscp",
-    "title": "Using WinSCP",
-    "section": "How To: Using WinSCP",
-    "text": "How To: Using WinSCP\n\nStart WinSCP from the Desktop icon or the Start menu.\nIn the login window, ensure that the file protocol is set to “WebDAV” and encryption is set to “TLS/SSL implicit encryption”.\n\n\n\nEnter https://data.yoda.vu.nl/ in the Host name field. The port number should have its default value: 443.\n\n\n\nYou will be prompted for a name and password. User name is your email. Create a data access password and copy it to the Password field.",
+    "objectID": "manuals/yoda/data_access/yoda_using_webdrive.html#how-to-disable-the-cache",
+    "href": "manuals/yoda/data_access/yoda_using_webdrive.html#how-to-disable-the-cache",
+    "title": "Using Webdrive",
+    "section": "How To: Disable the cache",
+    "text": "How To: Disable the cache\nBy default WebDrive enables a caching mechanism and suggests this as a way to enable syncing and working offline.\nThis functionality is not implemented very well and you should always disable this to prevent data loss.\n\n\nRight click on “data.yoda.vu.nl” in the server list\n\n\n\nSet Cache Mode to None and Cache Limit to 0.",
     "crumbs": [
       "Data Access and Transfer",
-      "Using WinSCP"
+      "Using Webdrive"
     ]
   },
   {
-    "objectID": "manuals/yoda/data_access/yoda_dap.html",
-    "href": "manuals/yoda/data_access/yoda_dap.html",
-    "title": "Creating a Data Access Password",
+    "objectID": "manuals/yoda/data_access/yoda_using_windowsexplorer.html",
+    "href": "manuals/yoda/data_access/yoda_using_windowsexplorer.html",
+    "title": "Using Windows Explorer",
     "section": "",
-    "text": "How to: Creating a Data Access Password\n\nClick on your username in the top right and click Data Access Password or go to https://portal.yoda.vu.nl/user/data_access:\n\n\n\n\nData Access Password menu\n\n\n\n\n\nGenerate Data Access Password\n\n\n\nEnter a suitable label and click on “Generate new data access password”.\n\n\n\nThe password is shown. Click Copy to copy it to the clipboard. After this you can use CTRL-v to paste it.\n\n\nData access passwords expire in 90 days, you can view the expiration time in the list. \nIf a password has expired, simply create a new one. Don’t forget to update the password in the WebDAV client.",
+    "text": "For most users, Cyberduck is a better alternative. However, the Yoda team recommends using the native WebDAV client if you can’t install Cyberduck, for example if the security settings of your laptop prevent you from installing any new applications.",
     "crumbs": [
       "Data Access and Transfer",
-      "Creating a Data Access Password"
+      "Using Windows Explorer"
     ]
   },
   {
-    "objectID": "manuals/yoda/data_access/yoda_using_icommands.html",
-    "href": "manuals/yoda/data_access/yoda_using_icommands.html",
-    "title": "Using iCommands",
+    "objectID": "manuals/yoda/data_access/yoda_using_windowsexplorer.html#how-to-mapping-network-drive",
+    "href": "manuals/yoda/data_access/yoda_using_windowsexplorer.html#how-to-mapping-network-drive",
+    "title": "Using Windows Explorer",
+    "section": "How To: Mapping network drive",
+    "text": "How To: Mapping network drive\n\nOpen “This PC” from the Start menu\n\n\n\n\nThis PC\n\n\n\nOpen the Computer menu item and select “Map network drive”.\n\n\n\n\nMap network drive icon in This PC\n\n\n\nSelect a drive letter — any free letter is okay. Now enter https://data.yoda.vu.nl/ in the Folder field (see table below).\n\n\n\n\nfolder input field when mapping network drive\n\n\n\nEnsure the box “Connect using different credentials” is checked and click on the Finish button.\nYou will be prompted for a name and password. Name is your email address. Create a data access password and copy it to the Password field\n\n\nIf you are working on your personal PC or laptop, tick the checkbox “Remember my credentials”.\n\n\n\n\ndialog for entering credentials when mapping network drive\n\n\n\nThe Explorer screen will show the folders you have access rights to. You can now drag and drop your files to upload or download them.",
+    "crumbs": [
+      "Data Access and Transfer",
+      "Using Windows Explorer"
+    ]
+  },
+  {
+    "objectID": "manuals/yoda/data_access/yoda_using_windowsexplorer.html#how-to-increasing-maximum-file-size",
+    "href": "manuals/yoda/data_access/yoda_using_windowsexplorer.html#how-to-increasing-maximum-file-size",
+    "title": "Using Windows Explorer",
+    "section": "How To: Increasing maximum file size",
+    "text": "How To: Increasing maximum file size\nBy default, the native WebDAV client on Windows 10 only works with files smaller than 50 MB.\nOn Windows 11 the limit is set to the maximum 4GB by default.\nYou can increase the limit on Windows 10 to 4 GB if you have a local administrator account:\n\nOpen the registry editor by pressing the start button, entering “regedit” and pressing the enter key.\n\n\nIf you are asked whether the registry editor should be allowed to change the system settings, confirm.\n\n\nNavigate to key HKEY\\_LOCAL\\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\WebClient\\Parameters\nOpen the FileSizeLimitInBytes key\n\n\n\n\nFileSizeLimitInBytes registry key\n\n\n\nSet it to FFFFFFFF (hexadecimal)\n\n\n\n\nincreasing the file size limit\n\n\n\nClick on the “OK” button and close the registry editor\nRestart your computer",
+    "crumbs": [
+      "Data Access and Transfer",
+      "Using Windows Explorer"
+    ]
+  },
+  {
+    "objectID": "manuals/yoda/data_access/yoda_using_windowsexplorer.html#how-to-increasing-the-number-of-files-shown-in-a-folder",
+    "href": "manuals/yoda/data_access/yoda_using_windowsexplorer.html#how-to-increasing-the-number-of-files-shown-in-a-folder",
+    "title": "Using Windows Explorer",
+    "section": "How To: Increasing the number of files shown in a folder",
+    "text": "How To: Increasing the number of files shown in a folder\nBy default the native WebDAV client on Windows 10 & 11 will show a folder containing more than 1000 files as empty. If you need to work with larger folders you can increase this limit if you have a local administrator account:\n\nOpen the registry editor by pressing the start button, entering “regedit” and pressing the - enter key.\nIf you are asked whether the registry editor should be allowed to change the system settings, confirm.\nNavigate to key HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\WebClient\\Parameters\nOpen the FileAttributesLimitInBytes key: \nIn the Value data box, type the value that you want to use, and then click OK. For example, if the Web folder contains 20,000 files, type 20000000 in the Value data box.",
+    "crumbs": [
+      "Data Access and Transfer",
+      "Using Windows Explorer"
+    ]
+  },
+  {
+    "objectID": "manuals/yoda/data_access/yoda_using_windowsexplorer.html#how-to-updating-your-password-for-a-mapped-network-drive-on-windows",
+    "href": "manuals/yoda/data_access/yoda_using_windowsexplorer.html#how-to-updating-your-password-for-a-mapped-network-drive-on-windows",
+    "title": "Using Windows Explorer",
+    "section": "How To: Updating your password for a mapped network drive on Windows",
+    "text": "How To: Updating your password for a mapped network drive on Windows\n\nFirst open the credential manager by clicking on the start button and typing “Manage Windows Credentials”.\n\n\n\n\nstarting the Windows credential manager.\n\n\n\nSelect the address of your Yoda WebDAV interface in the list of generic credentials.\n\n\n\n\nselecting the credentials of the Yoda WebDAV interface in the credential manager\n\n\n\nChoose “Edit”. Edit your credentials and click on the “Save” button.\n\n\n\n\nediting the Yoda credentials in the credential manager\n\n\n\nRestart your computer and open the mapped network drive in “This PC”. You may have to re-enter your username and new password once more.\n\n\n\n\ndialog for entering credentials when mapping network drive",
+    "crumbs": [
+      "Data Access and Transfer",
+      "Using Windows Explorer"
+    ]
+  },
+  {
+    "objectID": "manuals/yoda/data_access/yoda_using_rclone.html",
+    "href": "manuals/yoda/data_access/yoda_using_rclone.html",
+    "title": "Using Rclone",
     "section": "",
-    "text": "Since Yoda is based on iRODS technology, it is possible to transfer data to and from Yoda using the iRODS communication protocol. This protocol can be used to transfer large amounts of data in an efficient way. The iCommands command-line tools are the official standard implementation of an iRODS protocol client.\nThe iCommands are installed on the ADA and Snellius HPC clusters and can be used to transfer data to and from Yoda. Make sure to create the irods environment file first.",
+    "text": "Rclone is a command-line program to manage files on cloud storage. It is a feature-rich alternative to cloud vendors’ web storage interfaces. Over 40 cloud storage products support rclone including S3 object stores, business & consumer file storage services, as well as standard transfer protocols.\nRclone is available for Linux, Mac and Windows, see https://rclone.org/downloads/\nYou can use rclone to access the Yoda drive using WebDAV.\nNote: if you are on Linux and comfortable with command line tools, the iRODS icommands provide better performance.",
     "crumbs": [
       "Data Access and Transfer",
-      "Using iCommands"
+      "Using Rclone"
     ]
   },
   {
-    "objectID": "manuals/yoda/data_access/yoda_using_icommands.html#installing-irods-icommands",
-    "href": "manuals/yoda/data_access/yoda_using_icommands.html#installing-irods-icommands",
-    "title": "Using iCommands",
-    "section": "Installing iRODS iCommands",
-    "text": "Installing iRODS iCommands\nNative iRODS iCommands packages are available for CentOS and Ubuntu.\nWindows 10/11 users can run the iCommands in the Windows Subsystem for Linux. There is no officially supported iCommands installation for Mac OSX, you could install the iCommands inside a Linux VM.\n\n\n\n\n\n\nTip\n\n\n\ngocommands is an alternative command-line client you could try if your OS does not support iCommands.\nThe readme.md on the github repository has installation instructions. You can find the details of creating the irods environment file below. Once installed you can execute common iCommands as gocmd &lt;command&gt;, e.g. gocmd init, gocmd ls, gocmd get, gocmd put, gocmd rsync.\n\n\n\nInstalling iCommands on CentOS\nThe following should work to install the iCommands on CentOS 8.\n\nFirst add the package source:\n\nsudo yum -y install wget epel-release yum-plugin-versionlock\nsudo rpm --import https://packages.irods.org/irods-signing-key.asc\nwget -qO - https://packages.irods.org/renci-irods.yum.repo | sudo tee /etc/yum.repos.d/renci-irods.yum.repo\n\nNote that the latest irods version is 5, this client is not compatible with the Yoda irods version.You can list the available versions with:\n\nsudo yum --showduplicates list irods-icommands\n\nInstall the latest available 4.x.x version:\n\nsudo yum -y install irods-runtime-4.3.0 irods-icommands-4.3.0\nsudo yum versionlock irods-runtime irods-icommands\n\nUpgrading from an earlier version\nIf you have put packages irods-runtime and irods-icommands on hold, you should first release the hold. Otherwise, the instruction is the same as above.\n# Show applied locks, if any\nyum versionlock list\nyum versionlock delete irods-runtime irods-icommands\n\n\n\nInstalling iCommands on Ubuntu\nThe following should work to install the iCommands on Ubuntu 22 or 24.\n\nFirst add the irods package source.\n\nwget -qO - https://packages.irods.org/irods-signing-key.asc | sudo apt-key add -\necho \"deb [arch=amd64] https://packages.irods.org/apt/ $(lsb_release -sc) main\" | sudo tee /etc/apt/sources.list.d/renci-irods.list\nsudo apt update\n\nNote that the latest irods version is 5, this client is not compatible with the Yoda irods version. You can check which versions are available with:\n\nsudo apt show irods-icommands -a\n\nTake the latest 4.x version, at the time of writing:\n\nsudo apt -y install irods-runtime=4.3.4-0~noble irods-icommands=4.3.4-0~noble\n\nMake sure to hold the package to prevent inadvertently updating to version 5:\n\nsudo apt-mark hold irods-runtime irods-icommands\n\nUpgrading from an earlier version\nIf you have put packages irods-runtime and irods-icommands on hold, you should first release the hold. Otherwise, the instruction is the same as above.\n# Show applied holds, if any\napt-mark showhold\napt-mark unhold irods-runtime irods-icommands",
+    "objectID": "manuals/yoda/data_access/yoda_using_rclone.html#how-to-create-a-config",
+    "href": "manuals/yoda/data_access/yoda_using_rclone.html#how-to-create-a-config",
+    "title": "Using Rclone",
+    "section": "How to: Create a config",
+    "text": "How to: Create a config\n\nRclone always expects you to create a config first:\n\nrclone config\n\nYou will be led through a number of questions\n\nCurrent remotes:\n\nName                 Type\n====                 ====\n\ne) Edit existing remote\nn) New remote\nd) Delete remote\nr) Rename remote\nc) Copy remote\ns) Set configuration password\nq) Quit config\ne/n/d/r/c/s/q&gt; n\n\nEnter name for new remote.\nname&gt; yoda\nOption Storage.\nType of storage to configure.\nChoose a number from below, or type in your own value.\n\n...\n46 / WebDAV\n\\ (webdav)\n...\nStorage&gt; 46\nOption url.\nURL of http host to connect to.\nE.g. https://example.com.\nEnter a value.\nurl&gt; https://data.yoda.vu.nl\nOption vendor.\nName of the WebDAV site/service/software you are using.\nChoose a number from below, or type in your own value.\nPress Enter to leave empty.\n1 / Nextcloud\n\\ (nextcloud)\n2 / Owncloud\n\\ (owncloud)\n3 / Sharepoint Online, authenticated by Microsoft account\n\\ (sharepoint)\n4 / Sharepoint with NTLM authentication, usually self-hosted or on-premises\n\\ (sharepoint-ntlm)\n5 / Other site/service or software\n\\ (other)\nvendor&gt; 5\nOption user.\nUser name.\nIn case NTLM authentication is used, the username should be in the format 'Domain\\User'.\nEnter a value. Press Enter to leave empty.\nuser&gt; e.m.ployee@vu.nl\nOption pass.\nPassword.\nChoose an alternative below. Press Enter for the default (n).\ny) Yes, type in my own password\ng) Generate random password\nn) No, leave this optional password blank (default)\ny/g/n&gt; y\nEnter the password:\npassword:\nConfirm the password:\npassword:\n\nPassword is a Data Access Password generated in Yoda.\n\nOption bearer_token.\nBearer token instead of user/pass (e.g. a Macaroon).\nEnter a value. Press Enter to leave empty.\nbearer_token&gt;\n\nEdit advanced config?\ny) Yes\nn) No (default)\ny/n&gt; n\nOptions:\n- type: webdav\n- url: https://data.yoda.vu.nl\n- vendor: other\n- user: e.m.ployee@vu.nl\n- pass: *** ENCRYPTED ***\n  Keep this \"yoda\" remote?\n  y) Yes this is OK (default)\n  e) Edit this remote\n  d) Delete this remote\n  y/e/d&gt; y\n\n\nName                 Type\n====                 ====\nyoda                 webdav\n\ne) Edit existing remote\nn) New remote\nd) Delete remote\nr) Rename remote\ns) Set configuration password\nq) Quit config\ne/n/d/r/c/s/q&gt; q",
     "crumbs": [
       "Data Access and Transfer",
-      "Using iCommands"
+      "Using Rclone"
     ]
   },
   {
-    "objectID": "manuals/yoda/data_access/yoda_using_icommands.html#environment-file",
-    "href": "manuals/yoda/data_access/yoda_using_icommands.html#environment-file",
-    "title": "Using iCommands",
-    "section": "Environment file",
-    "text": "Environment file\nThe iCommands need to be configured to connect to the right Yoda environment.\nPlease copy and paste this configuration into your ~/.irods/irods_environment.json configuration file.\nYou will need to change the example user name to your Yoda user name.\n{\n    \"irods_host\": \"portal.yoda.vu.nl\",\n    \"irods_port\": 1247,\n    \"irods_home\": \"/vu/home\",\n    \"irods_user_name\": \"xxx@vu.nl\",\n    \"irods_zone_name\": \"vu\",\n    \"irods_authentication_scheme\": \"pam_password\",\n    \"irods_encryption_algorithm\": \"AES-256-CBC\",\n    \"irods_encryption_key_size\": 32,\n    \"irods_encryption_num_hash_rounds\": 16,\n    \"irods_encryption_salt_size\": 8,\n    \"irods_client_server_negotiation\": \"request_server_negotiation\"\n}\n\n\n\n\n\n\nImportant\n\n\n\nPlease note that irods_authentication_scheme has changed from pam to pam_password in Yoda 2.0.\n\n\nYou can also copy the contents from the “Data Transfer” page on the Yoda Portal:",
+    "objectID": "manuals/yoda/data_access/yoda_using_rclone.html#updating-the-data-access-password",
+    "href": "manuals/yoda/data_access/yoda_using_rclone.html#updating-the-data-access-password",
+    "title": "Using Rclone",
+    "section": "Updating the Data Access Password",
+    "text": "Updating the Data Access Password\nA Yoda Data Access Password is only valid for a set amount of time. Once it has expired you should generate a new one. Run rclone config, choose e) Edit existing remote and enter the new DAP in the password section:\n...\n\nOption pass.\nPassword.\nChoose an alternative below. Press Enter for the default (n).\ny) Yes, type in my own password\ng) Generate random password\nn) No, keep existing (default)\ny/g/n&gt; y",
     "crumbs": [
       "Data Access and Transfer",
-      "Using iCommands"
+      "Using Rclone"
     ]
   },
   {
-    "objectID": "manuals/yoda/data_access/yoda_using_icommands.html#getting-started-with-icommands",
-    "href": "manuals/yoda/data_access/yoda_using_icommands.html#getting-started-with-icommands",
-    "title": "Using iCommands",
-    "section": "Getting started with iCommands",
-    "text": "Getting started with iCommands\nAfter installing and configuring the iCommands, you should be able to log in on the Yoda environment using the iinit command. Enter a Yoda Data Access Password when prompted.\nThese are the basic commands for navigation and data transfer:\n\nipwd – Show current iRODS directory\nils – List contents of a directory\nicd – Change directory\niput – Upload files to Yoda\niget – Download files from Yoda\nirsync – Synchronize local and remote directories\n\nYour Yoda project folders are located under /vu/home.\nYou can find a quick introduction of the iCommands on the SURF wiki or you can check out this training manual.\nYou can find a full list of available commands in the iRODS Docs.",
+    "objectID": "manuals/yoda/data_access/yoda_using_rclone.html#mounting-on-windows",
+    "href": "manuals/yoda/data_access/yoda_using_rclone.html#mounting-on-windows",
+    "title": "Using Rclone",
+    "section": "Mounting on Windows",
+    "text": "Mounting on Windows\nPlease make sure to use --vfs-cache-mode, see rclone docs.\n.\\rclone --vfs-cache-mode full mount yoda:research-staff-ubvu-geoplaza/ y:\nWill mount the yoda config as drive Y.\nThe rclone documentation provides information on how to automatically start rclone.",
     "crumbs": [
       "Data Access and Transfer",
-      "Using iCommands"
+      "Using Rclone"
     ]
   },
   {
-    "objectID": "manuals/yoda/data_access/data_access_windows.html",
-    "href": "manuals/yoda/data_access/data_access_windows.html",
-    "title": "Data access on Windows",
+    "objectID": "manuals/yoda/data_access/introduction.html",
+    "href": "manuals/yoda/data_access/introduction.html",
+    "title": "Before getting started",
     "section": "",
-    "text": "There are 2 basic ways to access the Yoda WebDAV interface from Windows. Using a tool to mount the Yoda Disk as a drive letter or file transfer tools. Which one works best depends on your workflow.",
+    "text": "Note that creating a data access password is necessary to transfer data from and to Yoda. You can transfer files to and from Yoda dependent on the size of the file:\n\nVia the Yoda Portal, upload via Drag & Drop, download inviduals files.\n\nThis method works fine if you need to upload small amounts of data.\n\nFor transferring larger amounts of data (tens of GB) it is better to use the WebDAV interface.\n\nThere are several methods to access Yoda data via WebDAV, they depend on the Operating System you are using:\n\nAccessing Yoda data on Windows\nAccessing Yoda data on MacOS\nAccessing Yoda data on Linux\n\nNote that performance of WebDAV is limited, especially when transferring a large amount of files.\n\nFor transferring large amounts of data (&gt;100GB) consider using direct access to iRODS.\n\nA direct iRODS connection offers better performance by enabling multi-threaded transfers and the option to compare checksums.\nPower users who are comfortable with command line tools can use the iRODS icommands to interact with the iRODS backend of Yoda directly.",
     "crumbs": [
       "Data Access and Transfer",
-      "Data access on Windows"
+      "Before getting started"
     ]
   },
   {
-    "objectID": "manuals/yoda/data_access/data_access_windows.html#file-transfer",
-    "href": "manuals/yoda/data_access/data_access_windows.html#file-transfer",
-    "title": "Data access on Windows",
-    "section": "File transfer",
-    "text": "File transfer\nThere are numerous free file transfer tools. Using these tools you must download the files you want to work on to your computer and upload the changes. This way of working is more stable and robust.\n\nCyberduck is a free file transfer tool for Mac and Windows. Cyberduck is the preferred way to access the Yoda Disk. There is also a paid addon “Mountainduck” which adds functionality to access via a drive letter.\nWinSCP is an alternative free file transfer tool. WinSCP provides a reliable file transfer solution. It allows users to securely download and upload files to Yoda. This option is suitable for large and complex datasets.",
-    "crumbs": [
-      "Data Access and Transfer",
-      "Data access on Windows"
-    ]
-  },
-  {
-    "objectID": "manuals/yoda/data_access/data_access_windows.html#drive-letter",
-    "href": "manuals/yoda/data_access/data_access_windows.html#drive-letter",
-    "title": "Data access on Windows",
-    "section": "Drive letter",
-    "text": "Drive letter\nUsing these tools you can access the Yoda Disk via a drive letter.\n\nWebDrive is a VU-supported method to remotely access files and can also be used on “green” pc’s. With WebDrive the Yoda WebDAV interface can be connected as a drive in Windows Explorer.\nDirectly in Windows Explorer. However, this has restrictions: a maximum file size of 4GB on Windows 11 and 50MB(!) on Windows 10 and a maximum of 1000 files per folder (Windows 10&11). Take care if you expect your dataset to exceed these limitations.",
-    "crumbs": [
-      "Data Access and Transfer",
-      "Data access on Windows"
-    ]
-  },
-  {
-    "objectID": "manuals/yoda/data_access/data_access_windows.html#command-line-and-rclone",
-    "href": "manuals/yoda/data_access/data_access_windows.html#command-line-and-rclone",
-    "title": "Data access on Windows",
-    "section": "Command line and Rclone",
-    "text": "Command line and Rclone\nIf you are familiar with command line tools rclone is also a good option to access the Yoda via Webdav. It also provides the option to use a drive letter.",
-    "crumbs": [
-      "Data Access and Transfer",
-      "Data access on Windows"
-    ]
-  },
-  {
-    "objectID": "manuals/yoda/data_access/yoda_using_cyberduck_cryptometer.html",
-    "href": "manuals/yoda/data_access/yoda_using_cyberduck_cryptometer.html",
-    "title": "Encrypting your data using Cryptomator and Cyberduck",
+    "objectID": "manuals/yoda/data_access/data_access_macos.html",
+    "href": "manuals/yoda/data_access/data_access_macos.html",
+    "title": "Data access on MacOS",
     "section": "",
-    "text": "To work with privacy sensitive data you might be required to encrypt the data you store on Yoda. An easy way to do this is to use Cyberduck (or MountainDuck) together with the free tool Cryptomator.\nCryptomator is available for Windows, MacOS and Linux.\nNote this workflow means local copies of the files on your laptop are not in the encrypted vault. To make sure local files are also safely encrypted you should enable Bitlocker, this should be the case on all VU laptops.",
+    "text": "There are 2 basic ways to access Yoda data from a Mac: mounting the Yoda WebDAV interface in finder or via file transfer tools, in which case we recommend Cyberduck. Which one works best depends on your workflow.\nFor more information on how to configure Cyberduck consider reading the Cyberduck page.",
     "crumbs": [
       "Data Access and Transfer",
-      "Encrypting your data using Cryptomator and Cyberduck"
+      "Data access on MacOS"
     ]
   },
   {
-    "objectID": "manuals/yoda/data_access/yoda_using_cyberduck_cryptometer.html#using-cryptomator",
-    "href": "manuals/yoda/data_access/yoda_using_cyberduck_cryptometer.html#using-cryptomator",
-    "title": "Encrypting your data using Cryptomator and Cyberduck",
-    "section": "Using Cryptomator",
-    "text": "Using Cryptomator\nFirst connect to the Yoda WebDAV interface using Cyberduck.",
+    "objectID": "manuals/yoda/data_access/data_access_macos.html#mounting-the-yoda-webdav-in-finder",
+    "href": "manuals/yoda/data_access/data_access_macos.html#mounting-the-yoda-webdav-in-finder",
+    "title": "Data access on MacOS",
+    "section": "Mounting the Yoda WebDAV in Finder",
+    "text": "Mounting the Yoda WebDAV in Finder\n\nYou can open the Yoda WebDAV interface using the Finder app. By default, the Finder icon is shown in the bottom left corner of your screen, in the Dock. Click on this icon.\n\n\n\n\nFinder icon\n\n\nIf you don’t see the Finder icon, you can alternatively start Finder by pressing the command key and the space bar, then typing “finder” and pressing enter.\n\nNow press the command key and the “K” key to connect to the Yoda server. You should now see this dialogue box:\n\n\n\n\nConnect to server dialogue box\n\n\n\nEnter https://data.yoda.vu.nl/ as server address.\n\nThe Finder app will show a confirmation dialogue box, similar to the one below. The address shown in the dialogue box should be the address you entered in the previous dialogue box.\n\n\n\nConnect to server confirmation dialogue box\n\n\n\nPress the Connect button.\n\n\n\n\nConnect to server confirmation dialogue box\n\n\nYou should now see a credentials dialogue box. The “Connect as” setting should be set to “Registered user”. “Name” should be your email address.\n\nCreate a Data Access Password and copy it to the Password field. Tick the checkbox Remember this password in my keychain. Click on the connect button.\n\nYou should now have a new Yoda location in Finder. Its name is the network address you entered before. You may have to scroll down in finder in order to see it.\n\n\n\nConnect to server credentials dialogue box",
     "crumbs": [
       "Data Access and Transfer",
-      "Encrypting your data using Cryptomator and Cyberduck"
+      "Data access on MacOS"
     ]
   },
   {
-    "objectID": "manuals/yoda/data_access/yoda_using_cyberduck_cryptometer.html#install-cryptomator",
-    "href": "manuals/yoda/data_access/yoda_using_cyberduck_cryptometer.html#install-cryptomator",
-    "title": "Encrypting your data using Cryptomator and Cyberduck",
-    "section": "Install Cryptomator",
-    "text": "Install Cryptomator\nDownload and install from the Cryptomator site.",
+    "objectID": "manuals/yoda/data_access/data_access_macos.html#using-rclone",
+    "href": "manuals/yoda/data_access/data_access_macos.html#using-rclone",
+    "title": "Data access on MacOS",
+    "section": "Using Rclone",
+    "text": "Using Rclone\nRclone is a command-line program to manage files on cloud storage. It is a feature-rich alternative to cloud vendors’ web storage interfaces. Over 40 cloud storage products support rclone including S3 object stores, business & consumer file storage services, as well as standard transfer protocols. You can find more instructions for using rclone on the dedicated page.",
     "crumbs": [
       "Data Access and Transfer",
-      "Encrypting your data using Cryptomator and Cyberduck"
+      "Data access on MacOS"
     ]
   },
   {
-    "objectID": "manuals/yoda/data_access/yoda_using_cyberduck_cryptometer.html#create-a-new-cryptomator-vault",
-    "href": "manuals/yoda/data_access/yoda_using_cyberduck_cryptometer.html#create-a-new-cryptomator-vault",
-    "title": "Encrypting your data using Cryptomator and Cyberduck",
-    "section": "Create a new Cryptomator vault",
-    "text": "Create a new Cryptomator vault\nRight click in Cyberduck and choose “New Encrypted Vault”  Give the folder a name and set a passphrase.\n The vault will look like a normal folder in Cyberduck\n\n\n\nCryptomator folder\n\n\nWhen you doubleclick the new folder you will be asked for the passphrase. \nEnter the correct passphrase and the folder will be opened as normal. You can now work with the vault as with a normal folder.\nIf you cancel the passphrase prompt you will only see the Cryptomator files in the folder. Adding or deleting files could corrupt your data!\nIf you are not prompted for the passphrase click refresh first.",
-    "crumbs": [
-      "Data Access and Transfer",
-      "Encrypting your data using Cryptomator and Cyberduck"
-    ]
-  },
-  {
-    "objectID": "manuals/yoda/using_yoda/properties_and_explanation.html",
-    "href": "manuals/yoda/using_yoda/properties_and_explanation.html",
-    "title": "Properties and explanation",
+    "objectID": "manuals/yoda/using_yoda/metadata.html",
+    "href": "manuals/yoda/using_yoda/metadata.html",
+    "title": "What is Metadata?",
     "section": "",
-    "text": "M Mandatory\nR Recommended for optimal findability\nO Optional\n\n\n\nNo\nProperty\nObligation\nExplanation\nRemarks\n\n\n\n\n1\nTitle\nM\nA descriptive title for your data package, should not be longer than about 200 characters.\n\n\n\n2\nDescription\nM\nDescribe your data package, e.g. the subject, the sample size, methodology, etc. It is best to keep this description concise. More elaborate documentation should be added in a text file called README.\nThe text should be substantial and relevant to interpreting the content of the data package\n\n\n3\nDiscipline\nM\nThe (sub)discipline of the study.\nThe list contains a combination of research disciplines and subdisciplines. The standard used is the OECD FOS 2007. This field can have multiple values — use the plus sign to add more values.\n\n\n4\nVersion\nO\nVersion number of your data package. Useful if you need to publish an updated version of your data package later.\nYoda does not automatically assign version numbers to data packages. If you create multiple versions, you can register the version number yourself, according to your own versioning scheme.\n\n\n5\nLanguage of the data\nM\nThe primary language of your data package.\nThis element is thought of as a possible aid to assess the usability of a data package for a specific person. The standard used is ISO 639/1.\n\n\n6a\nCollection Process - Start Date\nR\nIndicate when you’ve started collecting the data for this data package.\nClicking on the field reveals a calendar you can use to pick the date.\n\n\n6b\nCollection Process - End Date\nM if 6a\nIndicate when you’ve finished collecting the data for this data package.\nClicking on the field reveals a calendar you can use to pick the date.\n\n\n7\nLocation(s) covered\nR\nIf your data is linked to particular locations provide place names.\nEnglish naming convention preferred. It is recommended to use the preferred spelling from the Getty Thesaurus of Geographic Names whenever possible. One location per line. This field can have multiple values — use the plus sign to add more values. Maximum length: 255 characters.\n\n\n8a\nPeriod Covered - Start period\nO\nAn indication of the start date of the period covered by your data package.\nClicking on the field reveals a calendar you can use to pick the date.\n\n\n8b\nPeriod Covered - End Period\nM if 8a\nAn indication of the end date of the period covered by your data package.\nClicking on the field reveals a calendar you can use to pick the date.\n\n\n9\nKeywords\nM\nFree text field for adding (searchable) keywords to your data package.\nYou can choose the keywords freely. It is best to add only one keyword per line. This field can have multiple values — use the plus sign to add more values. Maximum length: 255 characters.\n\n\n10a\nRelated Data package - Relation type\nR\nThe way in which the present data package (A) is related to another data package (B).\nIn this section you can enter a ‘related’ data package and the nature of that relation. For instance, you can indicate that the current data package (A) contains the raw data upon which the related data package (B) is based by selecting IsSourceOf in this field and entering the information of the other data package in the fields below. You can have multiple Related data packages — use the plus sign to add more values.\n\n\n10b\nRelated Data package - Title\nR If 10a\nTitle of the data package related to the present data package.\nThere is no automatic check whether title and persistent identifier match. Maximum length: 255 characters.\n\n\n10c\nRelated Data package – Identifier type\nM If 10d\nThe type of the persistent identifier of the related data package.\nExample: “DOI”.\n\n\n10d\nRelated Data package – Identifier\nR If 10a\nThe persistent identifier of the related data package.\nPlease fill in a resolvable URL. Example: “https://doi.org/10.48338/VU01-2LT5V4”.\n\n\n11\nRetention Period\nM\nThe minimal number of years the data will be kept in the archive. The default value is 10 years.\nIn this field you can only enter integers.\n\n\n12\nRetention Information\nO\nTo be used for remarks about the retention period.\nPlease provide a reason if you deviate from the default value of ten years. If you want to ensure that data is retained longer, then data management might request extra care for choosing sustainable file formats.\n\n\n13\nEmbargo enddate\nO\nIf the dataset has an embargo, on what date does the embargo end?\nThis functionality is not yet fully implemented. Please contact the data manager if you intend to publish a data package with an embargo.\n\n\n14\nData type\nM\nPlease indicate the type of the data.\nIf no type is selected Yoda will assume “Datapackage”.\n\n\n15\nData Classification\nM\nPlease indicate the classification of the data. Translation to VU Classifications: Public=Low, Basic=Medium, Sensitive=High, Critical=Very High.\nYou can find more information about data classification in the Research Support Handbook.\n\n\n16\nName of Collection\nO\nIf this data package is part of a larger (conceptual) collection of data packages, you can enter the collection name here.\nThe research group should ensure that all other data packages in the collection are archived with the same collection name. Maximum length: 255 characters.\n\n\n17a\nFunding information - Funder\nO\nThe name(s) of the organization(s) funding the research. If using this property also add the Award Number.\nExample: “Dutch Research Council”. It is recommended to use the preferred spelling from the Research Organization Registry (ROR). This field can have multiple values — use the plus sign to add more values. Maximum length: 255 characters.\n\n\n17b\nFunding information - Award number\nR if 17a\nThe grant number issued by the funding organization\n\n\n\n18\nRemarks\nO\nRemarks from the datamanager.\nRemarks serve only an administrative purpose and are not shown outside of the back-end of Yoda.\n\n\n19a\nCreator of Data package - Name\nM\nThe main researchers involved in producing the data, in priority order.\nA creator is explicitely listed as an author when the data package is cited. A creator is equivalent to a manuscript author. This field can have multiple values — use the plus sign to add more values. Maximum length: 255 characters.\n\n\n19b\nCreator of Data package – Affiliation name\nM\nThe organizational or institutional affiliation of the creator.\nExample: “Vrije Universiteit Amsterdam”. It is recommended to use the preferred spelling from the Research Organization Registry (ROR). The affiliation of the creator of a data package could be of importance when it is unclear who owns the data. In general the organization to which the creator was affiliated is regarded as the owner. Each creator can have multiple affiliations — use the plus sign to add more values. Most research institutes should be in the list and the ROR identifier will automatically filled. If the institution is not in the list, use the Find button, you can leave the ROR field empty in case the institute does not have a ROR. Maximum length: 255 characters.\n\n\n19c\nCreator of Data package – Affiliation identifier\nR\nThe organizational or institutional identifier of the creator.\nIt is recommended to use the resolvable URL from the Research Organization Registry (ROR). Example: “https://ror.org/008xxew50” for “Vrije Universiteit Amsterdam”.\n\n\n19d\nCreator of Data package – Persistent Identifier: Type\nM if 19e\nPlease indicate the type of persistent person identifier.\nE.g. Scopus Author ID, ORCID or ResearcherID. Multiple values are possible. If available, enter at least an ORCID.\n\n\n19e\nCreator of Data package – Persistent Identifier: Identifier\nR\nThe Persistent Identifier.\nIf you are not sure whether someone has a persistent identifier, you can check with the big three providers: Scopus Author ID, ORCID,ResearcherID. Each creator can have multiple persistent identifier — use the plus sign to add more values. Maximum length: 255 characters. Please fill in a resolvable URL. The pattern of an ORCID, ResearchID and ISNI is validated. There is no check if the name and identifier match.\n\n\n20a\nContributor to Data Package - Name\nR\nThe institution or person responsible for collecting, managing, distributing, or otherwise contributing to the development of the resource.For software, if there is an alternate entity that “holds, archives, publishes, prints, distributes, releases, issues, or produces” the code, use the contributor Type “hostingInstitution” for the code repository.\nContributors are not listed as creators when the data package is cited. Contributors are analogous to co-creators that would appear in the Acknowledgements-section of a manuscript. Multiple values possible — use the plus sign to add more values. Maximum length: 255 characters.\n\n\n20b\nContributor to Data Package - Type\nR if 20a\nEnter what type of contribution the registered person has had to this data package.\nSee the datacite documentation for explanation.\n\n\n20c\nContributor to Data Package - Affiliation name\nM if 20a\nThe organizational or institutional affiliation of the contributor.\nExample: “Vrije Universiteit Amsterdam”. The affiliation of the creator of a data package could be of importance when it is unclear who owns the data. In general the organization to which the creator was affiliated is regarded as the owner. Each creator can have multiple affiliations — use the plus sign to add more values. Most research institutes should be in the list and the ROR identifier will automatically filled. If the institution is not in the list, use the Find button, you can leave the ROR field empty in case the institute does not have a ROR. Maximum length: 255 characters.\n\n\n20d\nContributor to Data Package - Affiliation identifier\nR\nThe organizational or institutional identifier of the contributor.\nIt is recommended to use the resolvable URL from the Research Organization Registry (ROR). Example:“https://ror.org/008xxew50” for “Vrije Universiteit Amsterdam”.\n\n\n20e\nContributor to Data Package - Persistent Identifier: Type\nM if 20f\nPlease indicate the type of persistent person identifier.\nEach contributor can have multiple persistent identifiers — use the plus sign to add more values. Maximum length: 255 characters.\n\n\n20f\nContributor to Data Package - Persistent Identifier: Identifier\nR\nAn unique person identifier.\nEach contributor can have multiple identifiers — use the plus sign to add more values. Maximum length: 255 characters. Please fill in a resolvable URL. The pattern of an ORCID, ResearchID and ISNI is validated. There is no check if the name and identifier match.\n\n\n21\nLicense\nM\nThe license under which you offer the data package for use by third parties. The preferred value for open data is CC By 4.0.\nEvery package needs to be archived with a license — even when you’re not planning to publish the data or have it reused in any form. We offer a number of possible licenses in a drop-down list. If you do not know which license to choose, contact the data manager. At the moment of publishing a data package the relevant license text will be copied into the data package. If you opt for a custom license, you will need to store the custom license text in a file titled License.txt in the root folder. If the Data Package Access (22) is Restricted Access or Closed Access, you can only opt for a custom license, the VU has created custom templates for the License.txt file.\n\n\n22\nData Package Access\nM\nOnce archived, should your dataset be accessible to third parties?\nOpen Access means that the dataset is accessible to everyone. Restricted Access means that the dataset can only be obtained on request. Closed Access means that the dataset cannot be shared, in principle.",
+    "text": "Metadata is “data about data”. Metadata serves multiple purposes in Yoda, the most important being:\n\nTo describe the contents of a dataset for a broad audience.\nTo inform the audience whether the data can be reused and if so, under what conditions.\nTo prescribe how the data should be cited and whom to acknowledge.\nTo inform digital archivists and IT staff about how long the data should be retained.\nTo facilitate finding the dataset in data catalogues.\n\nWe distinguish two types of metadata:\nStructured metadata consists of information that is standardized globally and used by data catalogs. Examples are the title of the data package, its creator, the retention period of the package, etc.\nWhen a data package is published, Yoda makes the structured metadata available for harvesting by data catalogs, such as DataCite.\nUnstructured metadata is intended to provide more detailed information about the data. This information can be in a README.TXT or other file that is included as part of the data package. The format of this file is chosen by the researcher. Users will need to open and inspect the data package to find this metadata. Unstructured metadata can include information about (for example) the experimental design, data transformation, sampling method, etc.\nYou can read more in-depth information about metadata on the dedicated page",
     "crumbs": [
       "Using Yoda",
-      "Properties and explanation"
+      "What is Metadata?"
     ]
   },
   {
-    "objectID": "manuals/yoda/using_yoda/properties_and_explanation.html#properties-and-explanations",
-    "href": "manuals/yoda/using_yoda/properties_and_explanation.html#properties-and-explanations",
-    "title": "Properties and explanation",
+    "objectID": "manuals/yoda/using_yoda/workflow_metadata.html",
+    "href": "manuals/yoda/using_yoda/workflow_metadata.html",
+    "title": "Adding Metadata",
     "section": "",
-    "text": "M Mandatory\nR Recommended for optimal findability\nO Optional\n\n\n\nNo\nProperty\nObligation\nExplanation\nRemarks\n\n\n\n\n1\nTitle\nM\nA descriptive title for your data package, should not be longer than about 200 characters.\n\n\n\n2\nDescription\nM\nDescribe your data package, e.g. the subject, the sample size, methodology, etc. It is best to keep this description concise. More elaborate documentation should be added in a text file called README.\nThe text should be substantial and relevant to interpreting the content of the data package\n\n\n3\nDiscipline\nM\nThe (sub)discipline of the study.\nThe list contains a combination of research disciplines and subdisciplines. The standard used is the OECD FOS 2007. This field can have multiple values — use the plus sign to add more values.\n\n\n4\nVersion\nO\nVersion number of your data package. Useful if you need to publish an updated version of your data package later.\nYoda does not automatically assign version numbers to data packages. If you create multiple versions, you can register the version number yourself, according to your own versioning scheme.\n\n\n5\nLanguage of the data\nM\nThe primary language of your data package.\nThis element is thought of as a possible aid to assess the usability of a data package for a specific person. The standard used is ISO 639/1.\n\n\n6a\nCollection Process - Start Date\nR\nIndicate when you’ve started collecting the data for this data package.\nClicking on the field reveals a calendar you can use to pick the date.\n\n\n6b\nCollection Process - End Date\nM if 6a\nIndicate when you’ve finished collecting the data for this data package.\nClicking on the field reveals a calendar you can use to pick the date.\n\n\n7\nLocation(s) covered\nR\nIf your data is linked to particular locations provide place names.\nEnglish naming convention preferred. It is recommended to use the preferred spelling from the Getty Thesaurus of Geographic Names whenever possible. One location per line. This field can have multiple values — use the plus sign to add more values. Maximum length: 255 characters.\n\n\n8a\nPeriod Covered - Start period\nO\nAn indication of the start date of the period covered by your data package.\nClicking on the field reveals a calendar you can use to pick the date.\n\n\n8b\nPeriod Covered - End Period\nM if 8a\nAn indication of the end date of the period covered by your data package.\nClicking on the field reveals a calendar you can use to pick the date.\n\n\n9\nKeywords\nM\nFree text field for adding (searchable) keywords to your data package.\nYou can choose the keywords freely. It is best to add only one keyword per line. This field can have multiple values — use the plus sign to add more values. Maximum length: 255 characters.\n\n\n10a\nRelated Data package - Relation type\nR\nThe way in which the present data package (A) is related to another data package (B).\nIn this section you can enter a ‘related’ data package and the nature of that relation. For instance, you can indicate that the current data package (A) contains the raw data upon which the related data package (B) is based by selecting IsSourceOf in this field and entering the information of the other data package in the fields below. You can have multiple Related data packages — use the plus sign to add more values.\n\n\n10b\nRelated Data package - Title\nR If 10a\nTitle of the data package related to the present data package.\nThere is no automatic check whether title and persistent identifier match. Maximum length: 255 characters.\n\n\n10c\nRelated Data package – Identifier type\nM If 10d\nThe type of the persistent identifier of the related data package.\nExample: “DOI”.\n\n\n10d\nRelated Data package – Identifier\nR If 10a\nThe persistent identifier of the related data package.\nPlease fill in a resolvable URL. Example: “https://doi.org/10.48338/VU01-2LT5V4”.\n\n\n11\nRetention Period\nM\nThe minimal number of years the data will be kept in the archive. The default value is 10 years.\nIn this field you can only enter integers.\n\n\n12\nRetention Information\nO\nTo be used for remarks about the retention period.\nPlease provide a reason if you deviate from the default value of ten years. If you want to ensure that data is retained longer, then data management might request extra care for choosing sustainable file formats.\n\n\n13\nEmbargo enddate\nO\nIf the dataset has an embargo, on what date does the embargo end?\nThis functionality is not yet fully implemented. Please contact the data manager if you intend to publish a data package with an embargo.\n\n\n14\nData type\nM\nPlease indicate the type of the data.\nIf no type is selected Yoda will assume “Datapackage”.\n\n\n15\nData Classification\nM\nPlease indicate the classification of the data. Translation to VU Classifications: Public=Low, Basic=Medium, Sensitive=High, Critical=Very High.\nYou can find more information about data classification in the Research Support Handbook.\n\n\n16\nName of Collection\nO\nIf this data package is part of a larger (conceptual) collection of data packages, you can enter the collection name here.\nThe research group should ensure that all other data packages in the collection are archived with the same collection name. Maximum length: 255 characters.\n\n\n17a\nFunding information - Funder\nO\nThe name(s) of the organization(s) funding the research. If using this property also add the Award Number.\nExample: “Dutch Research Council”. It is recommended to use the preferred spelling from the Research Organization Registry (ROR). This field can have multiple values — use the plus sign to add more values. Maximum length: 255 characters.\n\n\n17b\nFunding information - Award number\nR if 17a\nThe grant number issued by the funding organization\n\n\n\n18\nRemarks\nO\nRemarks from the datamanager.\nRemarks serve only an administrative purpose and are not shown outside of the back-end of Yoda.\n\n\n19a\nCreator of Data package - Name\nM\nThe main researchers involved in producing the data, in priority order.\nA creator is explicitely listed as an author when the data package is cited. A creator is equivalent to a manuscript author. This field can have multiple values — use the plus sign to add more values. Maximum length: 255 characters.\n\n\n19b\nCreator of Data package – Affiliation name\nM\nThe organizational or institutional affiliation of the creator.\nExample: “Vrije Universiteit Amsterdam”. It is recommended to use the preferred spelling from the Research Organization Registry (ROR). The affiliation of the creator of a data package could be of importance when it is unclear who owns the data. In general the organization to which the creator was affiliated is regarded as the owner. Each creator can have multiple affiliations — use the plus sign to add more values. Most research institutes should be in the list and the ROR identifier will automatically filled. If the institution is not in the list, use the Find button, you can leave the ROR field empty in case the institute does not have a ROR. Maximum length: 255 characters.\n\n\n19c\nCreator of Data package – Affiliation identifier\nR\nThe organizational or institutional identifier of the creator.\nIt is recommended to use the resolvable URL from the Research Organization Registry (ROR). Example: “https://ror.org/008xxew50” for “Vrije Universiteit Amsterdam”.\n\n\n19d\nCreator of Data package – Persistent Identifier: Type\nM if 19e\nPlease indicate the type of persistent person identifier.\nE.g. Scopus Author ID, ORCID or ResearcherID. Multiple values are possible. If available, enter at least an ORCID.\n\n\n19e\nCreator of Data package – Persistent Identifier: Identifier\nR\nThe Persistent Identifier.\nIf you are not sure whether someone has a persistent identifier, you can check with the big three providers: Scopus Author ID, ORCID,ResearcherID. Each creator can have multiple persistent identifier — use the plus sign to add more values. Maximum length: 255 characters. Please fill in a resolvable URL. The pattern of an ORCID, ResearchID and ISNI is validated. There is no check if the name and identifier match.\n\n\n20a\nContributor to Data Package - Name\nR\nThe institution or person responsible for collecting, managing, distributing, or otherwise contributing to the development of the resource.For software, if there is an alternate entity that “holds, archives, publishes, prints, distributes, releases, issues, or produces” the code, use the contributor Type “hostingInstitution” for the code repository.\nContributors are not listed as creators when the data package is cited. Contributors are analogous to co-creators that would appear in the Acknowledgements-section of a manuscript. Multiple values possible — use the plus sign to add more values. Maximum length: 255 characters.\n\n\n20b\nContributor to Data Package - Type\nR if 20a\nEnter what type of contribution the registered person has had to this data package.\nSee the datacite documentation for explanation.\n\n\n20c\nContributor to Data Package - Affiliation name\nM if 20a\nThe organizational or institutional affiliation of the contributor.\nExample: “Vrije Universiteit Amsterdam”. The affiliation of the creator of a data package could be of importance when it is unclear who owns the data. In general the organization to which the creator was affiliated is regarded as the owner. Each creator can have multiple affiliations — use the plus sign to add more values. Most research institutes should be in the list and the ROR identifier will automatically filled. If the institution is not in the list, use the Find button, you can leave the ROR field empty in case the institute does not have a ROR. Maximum length: 255 characters.\n\n\n20d\nContributor to Data Package - Affiliation identifier\nR\nThe organizational or institutional identifier of the contributor.\nIt is recommended to use the resolvable URL from the Research Organization Registry (ROR). Example:“https://ror.org/008xxew50” for “Vrije Universiteit Amsterdam”.\n\n\n20e\nContributor to Data Package - Persistent Identifier: Type\nM if 20f\nPlease indicate the type of persistent person identifier.\nEach contributor can have multiple persistent identifiers — use the plus sign to add more values. Maximum length: 255 characters.\n\n\n20f\nContributor to Data Package - Persistent Identifier: Identifier\nR\nAn unique person identifier.\nEach contributor can have multiple identifiers — use the plus sign to add more values. Maximum length: 255 characters. Please fill in a resolvable URL. The pattern of an ORCID, ResearchID and ISNI is validated. There is no check if the name and identifier match.\n\n\n21\nLicense\nM\nThe license under which you offer the data package for use by third parties. The preferred value for open data is CC By 4.0.\nEvery package needs to be archived with a license — even when you’re not planning to publish the data or have it reused in any form. We offer a number of possible licenses in a drop-down list. If you do not know which license to choose, contact the data manager. At the moment of publishing a data package the relevant license text will be copied into the data package. If you opt for a custom license, you will need to store the custom license text in a file titled License.txt in the root folder. If the Data Package Access (22) is Restricted Access or Closed Access, you can only opt for a custom license, the VU has created custom templates for the License.txt file.\n\n\n22\nData Package Access\nM\nOnce archived, should your dataset be accessible to third parties?\nOpen Access means that the dataset is accessible to everyone. Restricted Access means that the dataset can only be obtained on request. Closed Access means that the dataset cannot be shared, in principle.",
+    "text": "Yoda facilitates adding both structured and unstructured metadata to your research data. Entering structured metadata is a prerequisite for archiving a data package. If a folder is published, its structured metadata will be published as well and can be harvested by data catalogs such as DataCite. Your published datasets can also be registered in Pure.\nIn order to add structured metadata to a folder:\n\nnavigate to the folder in the Yoda portal and press the “Metadata” button.\n\n\n\n\nAdd-metadata\n\n\n\nOnce you have added metadata and clicked on the “Save” button, the metadata will be stored in a specific format in the folder. Yoda uses files named “yoda-metadata.json” for this purpose.\nUnstructured metadata can be added as a file to the dataset, for example in a “Readme.txt” or “Codebook.pdf” file.",
     "crumbs": [
       "Using Yoda",
-      "Properties and explanation"
+      "Adding Metadata"
     ]
   },
   {
-    "objectID": "manuals/yoda/using_yoda/workflow_metadata_license.html",
-    "href": "manuals/yoda/using_yoda/workflow_metadata_license.html",
-    "title": "Selecting a license for your dataset",
+    "objectID": "manuals/yoda/using_yoda/workflow_metadata.html#how-to-adding-metadata-in-yoda",
+    "href": "manuals/yoda/using_yoda/workflow_metadata.html#how-to-adding-metadata-in-yoda",
+    "title": "Adding Metadata",
     "section": "",
-    "text": "When you archive your data, you can indicate the terms and conditions on how your data can be accessed and for what purposes it can be reused, or whether it can be reused at all. Here is some useful information on selecting and writing a license. We also offer options to get advice about selecting and creating your license, but you remain responsible for your eventual choice.\nMake sure the data does not contain sensitive information before making it publicly available through a CC-BY or other open license. You can check this through the Data Classification Tool and when uncertain by contacting the Privacy Champion of your faculty (in case of personal data) or Legal (Add ‘advice license ’ as the subject header in your mail).\nThere are several different licenses that can be selected for your dataset. These can be separated into three categories: Open, Restricted & Closed.",
+    "text": "Yoda facilitates adding both structured and unstructured metadata to your research data. Entering structured metadata is a prerequisite for archiving a data package. If a folder is published, its structured metadata will be published as well and can be harvested by data catalogs such as DataCite. Your published datasets can also be registered in Pure.\nIn order to add structured metadata to a folder:\n\nnavigate to the folder in the Yoda portal and press the “Metadata” button.\n\n\n\n\nAdd-metadata\n\n\n\nOnce you have added metadata and clicked on the “Save” button, the metadata will be stored in a specific format in the folder. Yoda uses files named “yoda-metadata.json” for this purpose.\nUnstructured metadata can be added as a file to the dataset, for example in a “Readme.txt” or “Codebook.pdf” file.",
     "crumbs": [
       "Using Yoda",
-      "Selecting a license for your dataset"
+      "Adding Metadata"
     ]
   },
   {
-    "objectID": "manuals/yoda/using_yoda/workflow_metadata_license.html#open",
-    "href": "manuals/yoda/using_yoda/workflow_metadata_license.html#open",
-    "title": "Selecting a license for your dataset",
-    "section": "Open",
-    "text": "Open\nThis information applies when your data can be published openly, so that anyone can access them.\nThere are several standard Creative Commons licenses available to make your dataset directly accessible for other users. In general, these licenses are preferred as they allow easy re-use by others. Moreover, they are well known, which ensures that others quickly grasp how they may use your data. The variations of these licenses indicate the following aspects: author attribution requirement, commercial use, modification of the dataset and changing the license of any modified dataset. A useful decision tree can be found on the Creative Commons website.\nAnother open license is the Open Data Commons Open Database License (ODbL), which can be used specifically for databases.",
+    "objectID": "manuals/yoda/using_yoda/workflow_metadata.html#the-metadata-form",
+    "href": "manuals/yoda/using_yoda/workflow_metadata.html#the-metadata-form",
+    "title": "Adding Metadata",
+    "section": "The metadata form",
+    "text": "The metadata form\nBy default, the Yoda metadata form consists of approximately 30 fields. Please consult the metadata element list below for a detailed description of the elements.\nAll mandatory fields are marked with an asterisk.\n\n\n\nMandatory metadata\n\n\nSome metadata elements consist of multiple fields. For example, if you enter a person identifier, you should also specify the type of identifier.\n\n\n\nMetadata fields\n\n\nSome fields can have multiple values. In order to add a value, press the “+” sign next to the field.",
     "crumbs": [
       "Using Yoda",
-      "Selecting a license for your dataset"
+      "Adding Metadata"
     ]
   },
   {
-    "objectID": "manuals/yoda/using_yoda/workflow_metadata_license.html#restricted",
-    "href": "manuals/yoda/using_yoda/workflow_metadata_license.html#restricted",
-    "title": "Selecting a license for your dataset",
-    "section": "Restricted",
-    "text": "Restricted\nWhen your data can be reused for new research, but not through an open license, it is important to state with whom the data can be shared and under which conditions and for what purposes the data can be used. The reasons for choosing a restricted license may vary from field to field but often apply to human subject data and data that was provided by a company but only under specific conditions. Another reason for choosing a restricted license is a personal preference.\n\nHow to: Using the VU Restricted license\n\nDownload the VU Restricted license template.\nCheck which conditions and requirements apply to the reuse of the data based on VU RDM guidelines, laws regarding use of data (GDPR, Intellectual Property legislation, etc.), requirements from funders or collaboration parties and conditions mentioned in the informed consent form signed by participants.\nAlter the template by indicating the potential usage purposes of the data and/or any regional restrictions. If you wish to receive advice on creating your license you can contact the Privacy Champion of your faculty (in case of personal data) or Legal (Add ‘advice custom license data management ’ as the subject header in your mail).\n\n\n\n\nEdit restricted license text\n\n\n\nSave the document as txt file: License.txt.\nUpload the file to your root data folder in Yoda.\nWhen creating a data package for archiving select Data Package Access “Restricted” and set License to “Custom” in the Metadata form and make sure the license is included.",
+    "objectID": "manuals/yoda/using_yoda/workflow_metadata.html#reusing-metadata",
+    "href": "manuals/yoda/using_yoda/workflow_metadata.html#reusing-metadata",
+    "title": "Adding Metadata",
+    "section": "Reusing metadata",
+    "text": "Reusing metadata\nStructured metadata is reusable. The metadata form includes a button “Clone from parent folder”. One way to use this feature is to create a project-level folder with several subfolders for data. Common metadata elements for the project can be entered in the project-level folder. This metadata can then be copied to the data folders and filled in further.\nYou can also copy the “yoda-metadata.json” file of a folder to another folder in order to copy its metadata.\nWhen you publish a folder, only the metadata on the level of that folder is published in data catalogs.\n\n\n\nFolderStructureMetadata",
     "crumbs": [
       "Using Yoda",
-      "Selecting a license for your dataset"
+      "Adding Metadata"
     ]
   },
   {
-    "objectID": "manuals/yoda/using_yoda/workflow_metadata_license.html#closed",
-    "href": "manuals/yoda/using_yoda/workflow_metadata_license.html#closed",
-    "title": "Selecting a license for your dataset",
-    "section": "Closed",
-    "text": "Closed\nUnder certain circumstances, it becomes undesirable, inadvisable or even illegal to reuse your data new research. The provider of the data may prohibit sharing the data or the signed informed consent form may forbid sharing the data with third parties. In this situation you can use the VU Closed license template. The VU always retains the right to access the dataset for verification purposes.\n\nHow to: Using the VU Closed license\n\nDownload the VU Closed license template template.\nAlter the template to include the reason for not being accessible by third parties.\n\n\n\n\nEdit closed license text\n\n\n\nSave the document as txt file: License.txt.\nUpload the file to your root data folder in Yoda.\nWhen creating a data package for archiving select Data Package Access “Closed” and set License to “Custom” in the Metadata form and make sure the license is included.",
+    "objectID": "manuals/yoda/using_yoda/analysing_data.html",
+    "href": "manuals/yoda/using_yoda/analysing_data.html",
+    "title": "Analysing Data",
+    "section": "",
+    "text": "Yoda is a data management solution and not explicitly meant for analysing data. However, this does not mean that you cannot analyse data that is stored in Yoda. On this page, we highlight example workflows for analysing data that is stored in Yoda.",
     "crumbs": [
       "Using Yoda",
-      "Selecting a license for your dataset"
+      "Analysing Data"
+    ]
+  },
+  {
+    "objectID": "manuals/yoda/using_yoda/analysing_data.html#where-to-run-your-analysis",
+    "href": "manuals/yoda/using_yoda/analysing_data.html#where-to-run-your-analysis",
+    "title": "Analysing Data",
+    "section": "Where to run your analysis",
+    "text": "Where to run your analysis\nBefore you decide on the best workflow for your use case, you should ask yourself:\n\nWhich type of analysis will I run? Will you use a desktop application or scripting?\nIs this task suitable to run on a personal computer (PC)?\n\nIf your analysis cannot be run on your PC, for example because your dataset is too large and you do not have enough storage, or your computing requirements are too heavy and the processing capacity of your machine is not big enough, you should think about using other analysis platforms: a VRE (Virtual Research Environment) such as SciCloud or Research Cloud; The VU compute hub; or a high-performance computing facility (HPC), such as ADA or Snellius.\nBelow we discuss three possible workflows to work with data stored in Yoda:\n\nMounting the Network Drive and performing the analysis on the device on which the Network Drive is mounted.\nDownloading files from Yoda, performing the analysis, and uploading the results to Yoda again.\nStreaming data in memory, without having to download the data from Yoda.",
+    "crumbs": [
+      "Using Yoda",
+      "Analysing Data"
+    ]
+  },
+  {
+    "objectID": "manuals/yoda/using_yoda/analysing_data.html#workflow-mount-with-network-disk",
+    "href": "manuals/yoda/using_yoda/analysing_data.html#workflow-mount-with-network-disk",
+    "title": "Analysing Data",
+    "section": "Workflow: mount with Network Disk",
+    "text": "Workflow: mount with Network Disk\n\nSuitable for:\n\nAnalysis system: PC, VRE with graphical interface\nData: small operations on small files only\n\n\nYoda can be mounted as a Network Disk on your system via the WebDAV protocol. The main advantage is that this method allows you to see the files in your file explorer as if they are on your computer. You can then perform your analysis on the analysis system as if the files were stored locally.\n\nOn Windows using Windows Explorer or WebDrive\nOn MacOS using Finder\nOn Linux using Gnome Files or similar.\n\nWe only recommend working with this method if you are working with a small number of small files (few MBs), or if you just want to browse files and folders. This is because when working with larger files, performance of operations like reading and writing files will be slow and can greatly increase the runtime of your analysis. In certain cases, you might run into errors because of this. When you make changes to a file or create a new file on Yoda, this method does not provide clear feedback about the ‘upload’ of those changes. If you interrupt the upload (e.g. by shutting down your PC), the changes might be lost. Since the files can be easily opened by an editor you also risk that you might change files on Yoda by accident.\n\n\n\n\n\n\nTipTips\n\n\n\n\nOnly use this method for small file sizes and small folders.\nBe careful when you create new files or make changes to files: wait long enough and double-check the integrity of the files and whether the data has been stored properly on Yoda (e.g. via the Yoda portal).\nMake sure only one person at a time is working on the data to prevent conflicts.",
+    "crumbs": [
+      "Using Yoda",
+      "Analysing Data"
+    ]
+  },
+  {
+    "objectID": "manuals/yoda/using_yoda/analysing_data.html#workflow-downloading-files-and-folders",
+    "href": "manuals/yoda/using_yoda/analysing_data.html#workflow-downloading-files-and-folders",
+    "title": "Analysing Data",
+    "section": "Workflow: downloading files and folders",
+    "text": "Workflow: downloading files and folders\n\nSuitable for:\n\nAnalysis system: PC, VRE, HPC\nData: All file and folder sizes, assuming there is enough storage on the analysis system\n\n\nIn this workflow, you download the files and folders that you want to analyse from Yoda to the system where you plan to run the analysis, i.e. you create a working copy of your data. You run the analysis on the system, and afterwards upload the data and/or results back to Yoda. You can also safely remove your working copy again, since the source data stays untouched in Yoda. In this way you can save storage space on the analysis system.\nThe main reason for choosing this method is that it is relatively straightforward, and it will give you good performance when reading your file in your analysis script.\nThere are several ways in which you can download and upload the files:\n\n\n\nTool\nTypical dataset\nPlatform\nExplanation\n\n\n\n\nYoda web portal\nup to 10GB, up to 100 files\nPC, some VRE\nThis can be done if you have an internet browser available (e.g., your PC and some VREs). You could choose this option when you do not want to install additional tools on your system. However, this method is not very reliable when transferring large files. Also, the web portal will not give you clear feedback on whether a download was completed correctly.\n\n\nWebDAV clientmanual\nup to 100GB, up to 1000 files\nPC, VRE\nWebDAV can be slow when transferring a large amount of small files. It is possible to automate the transfer files using WebDAV with Python, but it would be better to use the iRODS interface, see below.\n\n\niCommands or GoCommandsmanual\nSmall to very large\nPC, VRE, HPC\nThese command line tools can handle very large datasets and also offer many features for working with file-level metadata. It is also possible to check the integrity of uploaded and downloaded files, see the ichksum command.\n\n\niBridges or the Python iRODS Clientmanual\nSmall to very large\nPC, VRE, HPC\nIf you use Python for your analysis, you could include transfer of the source data and results in your scripts. This way you can automate data management and avoid duplicates or temporary data. For some workflows it is also possible to access a file directly by streaming, see below.\n\n\n\n\n\n\n\n\n\nTipTips\n\n\n\n\nMake sure you have a good internet connection when you download (large) files to your PC and when you upload your results to Yoda. Regardless of the method you choose, this will be the biggest determinant of download speed. On HPC and VRE systems, the connections should be ok.\nTreat the downloaded files as a temporary working copy and make sure to remove them whenever they are not needed anymore. In this way, you make sure the version of the file on Yoda is the ‘ground truth’ version of your data and prevents the creation of copies of copies that might go out of sync. Automate the downloading of files, removal of temporary copies, and uploading of output as much as possible. This improves the reproducibility of results and reduces the potential of human error.\nUse iBridges or iCommands to (automatically) add file-level metadata to your files on Yoda when you upload them (e.g. file version, experimental condition, etc.). This way, you can keep your project organised. Note that metadata to describe the to-be-archived data package as a whole should be added via the web portal.\nIf you consistently work with large datasets on campus, e.g. on your PC, SciCloud or Ada, consider storing data you are actively working with on SciStor. You can store the bulk of your source data in Yoda to keep costs down and upload your results to Yoda to organize, share with external collaborators, archive and publish.",
+    "crumbs": [
+      "Using Yoda",
+      "Analysing Data"
+    ]
+  },
+  {
+    "objectID": "manuals/yoda/using_yoda/analysing_data.html#workflow-streaming",
+    "href": "manuals/yoda/using_yoda/analysing_data.html#workflow-streaming",
+    "title": "Analysing Data",
+    "section": "Workflow: streaming",
+    "text": "Workflow: streaming\n\nSuitable for:\n\nAnalysis system: PC, VRE, HPC\nData analysis: When you use Python for your analysis\n\n\nStreaming is a more advanced method to analyse data in Yoda. Using iBridges in Python or the Python iRODS client, it is possible to directly load data into memory without having to download it to the analysis system (manual). The main advantage of this method is that you do not create new copies of the data that you later have to remove, and your workflow becomes a lot cleaner. Streaming is especially useful when your data is organised in larger files and you only need extracts, i.e. you do not need all the content. Another use case for streaming is when you need to combine/append the content of many small files for your analysis.\nOutput of your scripts can also be streamed directly to Yoda along with metadata. That means you do not need to first create a local file which contains the output, but you can directly create a file on Yoda and “stream” the output into that file.\n\n\n\n\n\n\nTipTips\n\n\n\n\nThis workflow is mainly intended for researchers who work programmatically with their data.\nMake sure you have a stable internet connection when streaming data in or out of Yoda. The amount of data that can be streamed depends on the working memory of the system you are streaming into/from.\nAdd file- and folder-level iRODS metadata (e.g., file version, experimental condition) to your files on Yoda after you created and streamed the content into the new files. This way, you can keep your project organised. Note that metadata to describe the to-be-archived data package as a whole should be added via the web portal.\nThe streaming option in iBridges or the iCommands does not verify that the content of the data is correct. Inspect the received or sent data by checking its size or content.\nFor certain data like audio, video or spreadsheets, specific python libraries exist with which you can navigate to the part of the data stream you want to analyse.",
+    "crumbs": [
+      "Using Yoda",
+      "Analysing Data"
     ]
   },
   {

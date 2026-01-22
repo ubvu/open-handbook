@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="This page explains how to run analysis software on your data in Yoda.">
 
-<title>Publishing data – Research Support Handbook</title>
+<title>Analysing Data – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../manuals/yoda/data_access/introduction.html" rel="next">
-<link href="../../../manuals/yoda/securing_distribution/vault_archive.html" rel="prev">
+<link href="../../../manuals/yoda/securing_distribution/vault_archive.html" rel="next">
+<link href="../../../manuals/yoda/using_yoda/workflow_metadata_license.html" rel="prev">
 <link href="../../../public/favicon.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -156,7 +157,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../manuals/yoda/securing_distribution/vault_archive.html">Securing and Distributing Data</a></li><li class="breadcrumb-item"><a href="../../../manuals/yoda/securing_distribution/vault_publish.html">Publishing data</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../manuals/yoda/using_yoda/finding_restoring.html">Using Yoda</a></li><li class="breadcrumb-item"><a href="../../../manuals/yoda/using_yoda/analysing_data.html">Analysing Data</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -270,7 +271,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../manuals/yoda/using_yoda/analysing_data.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../manuals/yoda/using_yoda/analysing_data.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Analysing Data</span></a>
   </div>
 </li>
@@ -293,7 +294,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../manuals/yoda/securing_distribution/vault_publish.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../manuals/yoda/securing_distribution/vault_publish.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Publishing data</span></a>
   </div>
 </li>
@@ -421,20 +422,26 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#how-to-submitting-a-dataset-for-publication" id="toc-how-to-submitting-a-dataset-for-publication" class="nav-link active" data-scroll-target="#how-to-submitting-a-dataset-for-publication">How to: Submitting a dataset for publication</a></li>
-  <li><a href="#long-term-accessibility" id="toc-long-term-accessibility" class="nav-link" data-scroll-target="#long-term-accessibility">Long-term accessibility</a></li>
-  <li><a href="#searching-for-unpublished-datasets" id="toc-searching-for-unpublished-datasets" class="nav-link" data-scroll-target="#searching-for-unpublished-datasets">Searching for unpublished datasets</a></li>
+  <li><a href="#where-to-run-your-analysis" id="toc-where-to-run-your-analysis" class="nav-link active" data-scroll-target="#where-to-run-your-analysis">Where to run your analysis</a></li>
+  <li><a href="#workflow-mount-with-network-disk" id="toc-workflow-mount-with-network-disk" class="nav-link" data-scroll-target="#workflow-mount-with-network-disk">Workflow: mount with Network Disk</a></li>
+  <li><a href="#workflow-downloading-files-and-folders" id="toc-workflow-downloading-files-and-folders" class="nav-link" data-scroll-target="#workflow-downloading-files-and-folders">Workflow: downloading files and folders</a></li>
+  <li><a href="#workflow-streaming" id="toc-workflow-streaming" class="nav-link" data-scroll-target="#workflow-streaming">Workflow: streaming</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/yoda/securing_distribution/vault_publish.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/yoda/using_yoda/analysing_data.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../manuals/yoda/securing_distribution/vault_archive.html">Securing and Distributing Data</a></li><li class="breadcrumb-item"><a href="../../../manuals/yoda/securing_distribution/vault_publish.html">Publishing data</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../manuals/yoda/using_yoda/finding_restoring.html">Using Yoda</a></li><li class="breadcrumb-item"><a href="../../../manuals/yoda/using_yoda/analysing_data.html">Analysing Data</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Publishing data</h1>
+<h1 class="title">Analysing Data</h1>
 </div>
 
+<div>
+  <div class="description">
+    This page explains how to run analysis software on your data in Yoda.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -449,56 +456,153 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>After a data package has been archived in the vault, it can optionally be submitted for publication.</p>
-<p>Publishing a data package has the following effects:</p>
+<p>Yoda is a data management solution and not explicitly meant for analysing data. However, this does not mean that you cannot analyse data that is stored in Yoda. On this page, we highlight example workflows for analysing data that is stored in Yoda.</p>
+<section id="where-to-run-your-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="where-to-run-your-analysis">Where to run your analysis</h2>
+<p>Before you decide on the best workflow for your use case, you should ask yourself:</p>
 <ul>
-<li>A <a href="../../../topics/persistent-identifier.html">DOI</a> will be assigned to the data package by Yoda. This persistent identifier can be used to refer to the data package, e.g.&nbsp;in a scientific publication.</li>
-<li>The metadata of the data package will be registered and published in <a href="https://commons.datacite.org/" target="_blank">DataCite</a>.
-<ul>
-<li>DataCite itself is harvested by numerous other websites such as Scopus, Google Scholar, Web of Science, etc.</li>
-</ul></li>
-<li>The dataset itself will stay in the Yoda Vault.</li>
-<li>Clicking on the DOI link will lead the visitor to a “landing page” on <a href="https://publication.yoda.vu.nl/full/VU01/2LT5V4.html" target="_blank">https://publications.yoda.vu.nl</a> which shows the metadata for a particular dataset.
-<ul>
-<li>If the Access Type metadata field is set to <code>Open - Freely retrievable</code>, the data in the data package is downloadable from the landing page.</li>
-<li>If the Access Type metadata field is set to <code>Restricted</code> or <code>Closed</code>, only the metadata will be shown.</li>
-<li>By setting the Access Type to <code>Restricted</code> you indicate a visitor can use the Contact link on the landing page to request access to the data.</li>
-<li>By setting the Access Type to <code>Closed</code> you indicate the data are deposited in Yoda, but cannot be requested.</li>
-</ul></li>
-<li>For all cases you need to supply a suitable licence that details the terms and conditions under which your data can or cannot be used. See <a href="../../../manuals/yoda/using_yoda/workflow_metadata_license.html">this page for more information on suitable licences</a>.</li>
+<li><p>Which type of analysis will I run? Will you use a desktop application or scripting?</p></li>
+<li><p>Is this task suitable to run on a personal computer (PC)?</p></li>
 </ul>
-<p>The <a href="https://commons.datacite.org/repositories/9z2c5d2" target="_blank">VU Yoda repository page</a> on DataCite Commons shows statistics of datasets currently published in VU Yoda.</p>
-<section id="how-to-submitting-a-dataset-for-publication" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-submitting-a-dataset-for-publication">How to: Submitting a dataset for publication</h2>
+<p>If your analysis cannot be run on your PC, for example because your dataset is too large and you do not have enough storage, or your computing requirements are too heavy and the processing capacity of your machine is not big enough, you should think about using other analysis platforms: a VRE (Virtual Research Environment) such as <a href="../../../topics/scicloud.html">SciCloud</a> or <a href="../../../topics/researchcloud.html">Research Cloud</a>; The <a href="../../../topics/compute-hub.html">VU compute hub</a>; or a high-performance computing facility (HPC), such as <a href="../../../topics/ada.html">ADA</a> or <a href="../../../topics/snellius.html">Snellius</a>.</p>
+<p>Below we discuss three possible workflows to work with data stored in Yoda:</p>
 <ol type="1">
-<li>Navigate to the data package in the vault and press the <code>Submit for publication</code> button.</li>
+<li><p>Mounting the Network Drive and performing the analysis on the device on which the Network Drive is mounted.</p></li>
+<li><p>Downloading files from Yoda, performing the analysis, and uploading the results to Yoda again.</p></li>
+<li><p>Streaming data in memory, without having to download the data from Yoda.</p></li>
 </ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../../public/manuals/yoda/pub-submit-publication.png" class="img-fluid figure-img"></p>
-<figcaption>Submit for publication</figcaption>
-</figure>
-</div>
-<ol start="2" type="1">
-<li><p>Once you’ve submitted a data package for publication, the data manager of your Yoda community will be notified. The data manager will check that the data package meets various criteria for publication.</p></li>
-<li><p>If the data manager encounters any issues, you will be contacted. Otherwise you’ll receive a <a href="../../../manuals/yoda/yoda_portal/notifications.html">notification</a> that your data package has been published. This notification contains the DOI that has been assigned to your data package.</p></li>
-</ol>
-<p>Note: If needed a data manager can update metadata of a dataset <em>after</em> it has been published.</p>
 </section>
-<section id="long-term-accessibility" class="level2">
-<h2 class="anchored" data-anchor-id="long-term-accessibility">Long-term accessibility</h2>
-<p>Yoda ensures there is always a data manager assigned to a Vault who can access Restricted and Closed datasets even if the creators no longer have an account.</p>
-</section>
-<section id="searching-for-unpublished-datasets" class="level2">
-<h2 class="anchored" data-anchor-id="searching-for-unpublished-datasets">Searching for unpublished datasets</h2>
-<p>You can search for datasets that are archived but not (yet) published using the <code>Search by Status</code> function in the Yoda Portal. The list of data packages will include only the data packages of project groups of which you are a member. Click on a data package in the results list in order to view it.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../../public/manuals/yoda/pub-search-unpublished.png" class="img-fluid figure-img"></p>
-<figcaption>Unpublished data packages</figcaption>
-</figure>
+<section id="workflow-mount-with-network-disk" class="level2">
+<h2 class="anchored" data-anchor-id="workflow-mount-with-network-disk">Workflow: mount with Network Disk</h2>
+<blockquote class="blockquote">
+<p>Suitable for:</p>
+<ul>
+<li><p>Analysis system: PC, VRE with graphical interface</p></li>
+<li><p>Data: small operations on small files only</p></li>
+</ul>
+</blockquote>
+<p>Yoda can be mounted as a Network Disk on your system via the WebDAV protocol. The main advantage is that this method allows you to see the files in your file explorer as if they are on your computer. You can then perform your analysis on the analysis system as if the files were stored locally.</p>
+<ul>
+<li>On Windows using <a href="../../../manuals/yoda/data_access/yoda_using_windowsexplorer.html">Windows Explorer</a> or <a href="../../../manuals/yoda/data_access/yoda_using_webdrive.html">WebDrive</a></li>
+<li>On MacOS using <a href="../../../manuals/yoda/data_access/data_access_macos.html#mounting-the-yoda-webdav-in-finder">Finder</a></li>
+<li>On Linux using <a href="../../../manuals/yoda/data_access/data_access_linux.html#gnome-files">Gnome Files</a> or similar.</li>
+</ul>
+<p>We only recommend working with this method if you are working with a small number of small files (few MBs), or if you just want to browse files and folders. This is because when working with larger files, performance of operations like reading and writing files will be slow and can greatly increase the runtime of your analysis. In certain cases, you might run into errors because of this. When you make changes to a file or create a new file on Yoda, this method does not provide clear feedback about the ‘upload’ of those changes. If you interrupt the upload (e.g.&nbsp;by shutting down your PC), the changes might be lost. Since the files can be easily opened by an editor you also risk that you might change files on Yoda by accident.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<!-- TODO add information on versioning -->
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Tips
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>Only use this method for small file sizes and small folders.</p></li>
+<li><p>Be careful when you create new files or make changes to files: wait long enough and double-check the integrity of the files and whether the data has been stored properly on Yoda (e.g.&nbsp;via the Yoda portal).</p></li>
+<li><p>Make sure only one person at a time is working on the data to prevent conflicts.</p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="workflow-downloading-files-and-folders" class="level2">
+<h2 class="anchored" data-anchor-id="workflow-downloading-files-and-folders">Workflow: downloading files and folders</h2>
+<blockquote class="blockquote">
+<p>Suitable for:</p>
+<ul>
+<li><p>Analysis system: PC, VRE, HPC</p></li>
+<li><p>Data: All file and folder sizes, assuming there is enough storage on the analysis system</p></li>
+</ul>
+</blockquote>
+<p>In this workflow, you download the files and folders that you want to analyse from Yoda to the system where you plan to run the analysis, i.e.&nbsp;you create a working copy of your data. You run the analysis on the system, and afterwards upload the data and/or results back to Yoda. You can also safely remove your working copy again, since the source data stays untouched in Yoda. In this way you can save storage space on the analysis system.</p>
+<p>The main reason for choosing this method is that it is relatively straightforward, and it will give you good performance when reading your file in your analysis script.</p>
+<p>There are several ways in which you can download and upload the files:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Tool</th>
+<th>Typical dataset</th>
+<th>Platform</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Yoda web portal</strong></td>
+<td>up to 10GB, up to 100 files</td>
+<td>PC, some VRE</td>
+<td>This can be done if you have an internet browser available (e.g., your PC and some VREs). You could choose this option when you do not want to install additional tools on your system. However, this method is not very reliable when transferring large files. Also, the web portal will not give you clear feedback on whether a download was completed correctly.</td>
+</tr>
+<tr class="even">
+<td><strong>WebDAV client</strong><br><a href="../../../manuals/yoda/data_access/introduction.html">manual</a></td>
+<td>up to 100GB, up to 1000 files</td>
+<td>PC, VRE</td>
+<td>WebDAV can be slow when transferring a large amount of small files. It is possible to automate the transfer files using WebDAV with Python, but it would be better to use the iRODS interface, see below.</td>
+</tr>
+<tr class="odd">
+<td><strong>iCommands or GoCommands</strong><br><a href="../../../manuals/yoda/data_access/yoda_using_icommands.html">manual</a></td>
+<td>Small to very large</td>
+<td>PC, VRE, HPC</td>
+<td>These command line tools can handle very large datasets and also offer many features for working with file-level metadata. It is also possible to check the integrity of uploaded and downloaded files, see the <a href="https://docs.irods.org/4.3.4/icommands/user/" target="_blank">ichksum command</a>.</td>
+</tr>
+<tr class="even">
+<td><strong>iBridges or the Python iRODS Client</strong><br><a href="../../../manuals/yoda/data_access/yoda_using_python.html">manual</a></td>
+<td>Small to very large</td>
+<td>PC, VRE, HPC</td>
+<td>If you use Python for your analysis, you could include transfer of the source data and results in your scripts. This way you can automate data management and avoid duplicates or temporary data. For some workflows it is also possible to access a file directly by streaming, <a href="#workflow-streaming">see below</a>.</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Tips
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>Make sure you have a good internet connection when you download (large) files to your PC and when you upload your results to Yoda. Regardless of the method you choose, this will be the biggest determinant of download speed. On HPC and VRE systems, the connections should be ok.</p></li>
+<li><p>Treat the downloaded files as a temporary working copy and make sure to remove them whenever they are not needed anymore. In this way, you make sure the version of the file on Yoda is the ‘ground truth’ version of your data and prevents the creation of copies of copies that might go out of sync. Automate the downloading of files, removal of temporary copies, and uploading of output as much as possible. This improves the reproducibility of results and reduces the potential of human error.</p></li>
+<li><p>Use iBridges or iCommands to (automatically) add file-level metadata to your files on Yoda when you upload them (e.g.&nbsp;file version, experimental condition, etc.). This way, you can keep your project organised. Note that metadata to describe the to-be-archived data package as a whole should be added via the web portal.</p></li>
+<li><p>If you consistently work with large datasets on campus, e.g.&nbsp;on your PC, SciCloud or Ada, consider storing data you are actively working with on <a href="../../../topics/scistor.html">SciStor</a>. You can store the bulk of your source data in Yoda to keep costs down and upload your results to Yoda to organize, share with external collaborators, archive and publish.</p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="workflow-streaming" class="level2">
+<h2 class="anchored" data-anchor-id="workflow-streaming">Workflow: streaming</h2>
+<blockquote class="blockquote">
+<p>Suitable for:</p>
+<ul>
+<li><p>Analysis system: PC, VRE, HPC</p></li>
+<li><p>Data analysis: When you use Python for your analysis</p></li>
+</ul>
+</blockquote>
+<p>Streaming is a more advanced method to analyse data in Yoda. Using iBridges in Python or the Python iRODS client, it is possible to directly load data into memory without having to download it to the analysis system (<a href="../../../manuals/yoda/data_access/yoda_using_python.html#streaming">manual</a>). The main advantage of this method is that you do not create new copies of the data that you later have to remove, and your workflow becomes a lot cleaner. Streaming is especially useful when your data is organised in larger files and you only need extracts, i.e.&nbsp;you do not need all the content. Another use case for streaming is when you need to combine/append the content of many small files for your analysis.</p>
+<p>Output of your scripts can also be streamed directly to Yoda along with metadata. That means you do not need to first create a local file which contains the output, but you can directly create a file on Yoda and “stream” the output into that file.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Tips
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>This workflow is mainly intended for researchers who work programmatically with their data.</p></li>
+<li><p>Make sure you have a stable internet connection when streaming data in or out of Yoda. The amount of data that can be streamed depends on the working memory of the system you are streaming into/from.</p></li>
+<li><p>Add file- and folder-level <a href="https://docs.irods.org/4.3.4/icommands/metadata/" target="_blank">iRODS metadata</a> (e.g., file version, experimental condition) to your files on Yoda after you created and streamed the content into the new files. This way, you can keep your project organised. Note that metadata to describe the to-be-archived data package as a whole should be added via the web portal.</p></li>
+<li><p>The streaming option in iBridges or the iCommands does not verify that the content of the data is correct. Inspect the received or sent data by checking its size or content.</p></li>
+<li><p>For certain data like audio, video or spreadsheets, specific python libraries exist with which you can navigate to the part of the data stream you want to analyse.</p></li>
+</ul>
+</div>
+</div>
 
 
 </section>
@@ -906,13 +1010,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../manuals/yoda/securing_distribution/vault_archive.html" class="pagination-link" aria-label="Archiving data">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Archiving data</span>
+      <a href="../../../manuals/yoda/using_yoda/workflow_metadata_license.html" class="pagination-link" aria-label="Selecting a license for your dataset">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Selecting a license for your dataset</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../manuals/yoda/data_access/introduction.html" class="pagination-link" aria-label="Before getting started">
-        <span class="nav-page-text">Before getting started</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../manuals/yoda/securing_distribution/vault_archive.html" class="pagination-link" aria-label="Archiving data">
+        <span class="nav-page-text">Archiving data</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -951,7 +1055,7 @@ ul.task-list li input[type="checkbox"] {
 </a>
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/yoda/securing_distribution/vault_publish.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/yoda/using_yoda/analysing_data.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">

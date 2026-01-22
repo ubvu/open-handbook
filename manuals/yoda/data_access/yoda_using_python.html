@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="This page explains how to transfer data using Python scripting.">
 
-<title>Publishing data – Research Support Handbook</title>
+<title>Using Python – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +21,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,8 +66,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../manuals/yoda/data_access/introduction.html" rel="next">
-<link href="../../../manuals/yoda/securing_distribution/vault_archive.html" rel="prev">
+<link href="../../../manuals/yoda/data_access/yoda_using_rclone.html" rel="next">
+<link href="../../../manuals/yoda/data_access/yoda_using_icommands.html" rel="prev">
 <link href="../../../public/favicon.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -156,7 +192,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../manuals/yoda/securing_distribution/vault_archive.html">Securing and Distributing Data</a></li><li class="breadcrumb-item"><a href="../../../manuals/yoda/securing_distribution/vault_publish.html">Publishing data</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../manuals/yoda/data_access/introduction.html">Data Access and Transfer</a></li><li class="breadcrumb-item"><a href="../../../manuals/yoda/data_access/yoda_using_python.html">Using Python</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -293,7 +329,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../manuals/yoda/securing_distribution/vault_publish.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../../manuals/yoda/securing_distribution/vault_publish.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Publishing data</span></a>
   </div>
 </li>
@@ -358,7 +394,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../manuals/yoda/data_access/yoda_using_python.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../manuals/yoda/data_access/yoda_using_python.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Using Python</span></a>
   </div>
 </li>
@@ -421,20 +457,39 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#how-to-submitting-a-dataset-for-publication" id="toc-how-to-submitting-a-dataset-for-publication" class="nav-link active" data-scroll-target="#how-to-submitting-a-dataset-for-publication">How to: Submitting a dataset for publication</a></li>
-  <li><a href="#long-term-accessibility" id="toc-long-term-accessibility" class="nav-link" data-scroll-target="#long-term-accessibility">Long-term accessibility</a></li>
-  <li><a href="#searching-for-unpublished-datasets" id="toc-searching-for-unpublished-datasets" class="nav-link" data-scroll-target="#searching-for-unpublished-datasets">Searching for unpublished datasets</a></li>
+  <li><a href="#python-irods-client" id="toc-python-irods-client" class="nav-link active" data-scroll-target="#python-irods-client">Python iRODS Client</a>
+  <ul class="collapse">
+  <li><a href="#install" id="toc-install" class="nav-link" data-scroll-target="#install">Install</a></li>
+  <li><a href="#setting-up-a-session-to-access-yoda" id="toc-setting-up-a-session-to-access-yoda" class="nav-link" data-scroll-target="#setting-up-a-session-to-access-yoda">Setting up a session to access Yoda</a></li>
+  <li><a href="#more-information" id="toc-more-information" class="nav-link" data-scroll-target="#more-information">More information</a></li>
+  </ul></li>
+  <li><a href="#ibridges" id="toc-ibridges" class="nav-link" data-scroll-target="#ibridges">iBridges</a>
+  <ul class="collapse">
+  <li><a href="#installation" id="toc-installation" class="nav-link" data-scroll-target="#installation">Installation</a></li>
+  <li><a href="#connecting" id="toc-connecting" class="nav-link" data-scroll-target="#connecting">Connecting</a></li>
+  <li><a href="#upload-data" id="toc-upload-data" class="nav-link" data-scroll-target="#upload-data">Upload data</a></li>
+  <li><a href="#add-irods-metadata" id="toc-add-irods-metadata" class="nav-link" data-scroll-target="#add-irods-metadata">Add iRODS metadata</a></li>
+  <li><a href="#download-data" id="toc-download-data" class="nav-link" data-scroll-target="#download-data">Download data</a></li>
+  <li><a href="#closing-the-session" id="toc-closing-the-session" class="nav-link" data-scroll-target="#closing-the-session">Closing the session</a></li>
+  <li><a href="#more-information-1" id="toc-more-information-1" class="nav-link" data-scroll-target="#more-information-1">More information</a></li>
+  </ul></li>
+  <li><a href="#streaming" id="toc-streaming" class="nav-link" data-scroll-target="#streaming">Streaming</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/yoda/securing_distribution/vault_publish.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/yoda/data_access/yoda_using_python.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../manuals/yoda/securing_distribution/vault_archive.html">Securing and Distributing Data</a></li><li class="breadcrumb-item"><a href="../../../manuals/yoda/securing_distribution/vault_publish.html">Publishing data</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../manuals/yoda/data_access/introduction.html">Data Access and Transfer</a></li><li class="breadcrumb-item"><a href="../../../manuals/yoda/data_access/yoda_using_python.html">Using Python</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Publishing data</h1>
+<h1 class="title">Using Python</h1>
 </div>
 
+<div>
+  <div class="description">
+    This page explains how to transfer data using Python scripting.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -449,56 +504,150 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>After a data package has been archived in the vault, it can optionally be submitted for publication.</p>
-<p>Publishing a data package has the following effects:</p>
-<ul>
-<li>A <a href="../../../topics/persistent-identifier.html">DOI</a> will be assigned to the data package by Yoda. This persistent identifier can be used to refer to the data package, e.g.&nbsp;in a scientific publication.</li>
-<li>The metadata of the data package will be registered and published in <a href="https://commons.datacite.org/" target="_blank">DataCite</a>.
-<ul>
-<li>DataCite itself is harvested by numerous other websites such as Scopus, Google Scholar, Web of Science, etc.</li>
-</ul></li>
-<li>The dataset itself will stay in the Yoda Vault.</li>
-<li>Clicking on the DOI link will lead the visitor to a “landing page” on <a href="https://publication.yoda.vu.nl/full/VU01/2LT5V4.html" target="_blank">https://publications.yoda.vu.nl</a> which shows the metadata for a particular dataset.
-<ul>
-<li>If the Access Type metadata field is set to <code>Open - Freely retrievable</code>, the data in the data package is downloadable from the landing page.</li>
-<li>If the Access Type metadata field is set to <code>Restricted</code> or <code>Closed</code>, only the metadata will be shown.</li>
-<li>By setting the Access Type to <code>Restricted</code> you indicate a visitor can use the Contact link on the landing page to request access to the data.</li>
-<li>By setting the Access Type to <code>Closed</code> you indicate the data are deposited in Yoda, but cannot be requested.</li>
-</ul></li>
-<li>For all cases you need to supply a suitable licence that details the terms and conditions under which your data can or cannot be used. See <a href="../../../manuals/yoda/using_yoda/workflow_metadata_license.html">this page for more information on suitable licences</a>.</li>
-</ul>
-<p>The <a href="https://commons.datacite.org/repositories/9z2c5d2" target="_blank">VU Yoda repository page</a> on DataCite Commons shows statistics of datasets currently published in VU Yoda.</p>
-<section id="how-to-submitting-a-dataset-for-publication" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-submitting-a-dataset-for-publication">How to: Submitting a dataset for publication</h2>
-<ol type="1">
-<li>Navigate to the data package in the vault and press the <code>Submit for publication</code> button.</li>
-</ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../../public/manuals/yoda/pub-submit-publication.png" class="img-fluid figure-img"></p>
-<figcaption>Submit for publication</figcaption>
-</figure>
-</div>
-<ol start="2" type="1">
-<li><p>Once you’ve submitted a data package for publication, the data manager of your Yoda community will be notified. The data manager will check that the data package meets various criteria for publication.</p></li>
-<li><p>If the data manager encounters any issues, you will be contacted. Otherwise you’ll receive a <a href="../../../manuals/yoda/yoda_portal/notifications.html">notification</a> that your data package has been published. This notification contains the DOI that has been assigned to your data package.</p></li>
-</ol>
-<p>Note: If needed a data manager can update metadata of a dataset <em>after</em> it has been published.</p>
+<p>Data in Yoda is not directly accessible, you have to download data to the machine that contains your analysis software first. If you do your analysis with Python scripts anyway, for example on <a href="../../../topics/snellius.html">Snellius</a> or <a href="../../../topics/ada.html">Ada</a>, it can be useful to script the data access and transfer as well.</p>
+<section id="python-irods-client" class="level2">
+<h2 class="anchored" data-anchor-id="python-irods-client">Python iRODS Client</h2>
+<p>The Python iRODS Client (PRC) is the default way to access data in iRODS programatically.</p>
+<section id="install" class="level3">
+<h3 class="anchored" data-anchor-id="install">Install</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install python-irodsclient</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="long-term-accessibility" class="level2">
-<h2 class="anchored" data-anchor-id="long-term-accessibility">Long-term accessibility</h2>
-<p>Yoda ensures there is always a data manager assigned to a Vault who can access Restricted and Closed datasets even if the creators no longer have an account.</p>
+<section id="setting-up-a-session-to-access-yoda" class="level3">
+<h3 class="anchored" data-anchor-id="setting-up-a-session-to-access-yoda">Setting up a session to access Yoda</h3>
+<p>The easiest way to setup a session to Yoda is by using the information in the <a href="../../../manuals/yoda/data_access/yoda_using_icommands.html#environment-file">irods environment file</a>.</p>
+<p>The code below sets up a session using all the correct settings for Yoda:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> irods.session <span class="im">import</span> iRODSSession</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> getpass <span class="im">import</span> getpass</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> ssl</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_irods_environment(irods_environment_file):</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Reads the irods_environment.json file, which contains the environment configuration."""</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>        <span class="ss">f"Trying to retrieve connection settings from: </span><span class="sc">{</span>irods_environment_file<span class="sc">}</span><span class="ss">"</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">try</span>:</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>        <span class="cf">with</span> <span class="bu">open</span>(irods_environment_file, <span class="st">"r"</span>) <span class="im">as</span> f:</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> json.load(f)</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span>:</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f'Could not open </span><span class="sc">{</span>irods_environment_file<span class="sc">}</span><span class="ss">'</span>)</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>        exit()</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> setup_session(ca_file<span class="op">=</span><span class="st">'/etc/ssl/certs/ca-certificates.crt'</span>):</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Use irods environment files to configure a iRODSSession. User is prompted for the password"""</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    irods_env <span class="op">=</span> get_irods_environment(<span class="ss">f"</span><span class="sc">{</span>Path<span class="sc">.</span>home()<span class="sc">}</span><span class="ss">/.irods/irods_environment.json"</span>)</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>    password <span class="op">=</span> getpass(<span class="ss">f"Enter valid DAP for user </span><span class="sc">{</span>irods_env[<span class="st">'irods_user_name'</span>]<span class="sc">}</span><span class="ss">: "</span>)</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>    ssl_context <span class="op">=</span> ssl.create_default_context(</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>        purpose<span class="op">=</span>ssl.Purpose.SERVER_AUTH, cafile<span class="op">=</span>ca_file, capath<span class="op">=</span><span class="va">None</span>, cadata<span class="op">=</span><span class="va">None</span></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>    ssl_settings <span class="op">=</span> {</span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>        <span class="st">"client_server_negotiation"</span>: <span class="st">"request_server_negotiation"</span>,</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>        <span class="st">"client_server_policy"</span>: <span class="st">"CS_NEG_REQUIRE"</span>,</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>        <span class="st">"encryption_algorithm"</span>: <span class="st">"AES-256-CBC"</span>,</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>        <span class="st">"encryption_key_size"</span>: <span class="dv">32</span>,</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>        <span class="st">"encryption_num_hash_rounds"</span>: <span class="dv">16</span>,</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>        <span class="st">"encryption_salt_size"</span>: <span class="dv">8</span>,</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>        <span class="st">"ssl_context"</span>: ssl_context,</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>    session <span class="op">=</span> iRODSSession(</span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>        host<span class="op">=</span>irods_env[<span class="st">"irods_host"</span>],</span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>        port<span class="op">=</span>irods_env[<span class="st">"irods_port"</span>],</span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>        user<span class="op">=</span>irods_env[<span class="st">"irods_user_name"</span>],</span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>        password<span class="op">=</span>password,</span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>        zone<span class="op">=</span>irods_env[<span class="st">"irods_zone_name"</span>],</span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>        authentication_scheme<span class="op">=</span><span class="st">"pam_password"</span>,</span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>        <span class="op">**</span>ssl_settings,</span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> session</span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a>session<span class="op">=</span>setup_session()</span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a><span class="co"># workload</span></span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a>coll<span class="op">=</span>session.collections.get(<span class="ss">f"/</span><span class="sc">{</span>session<span class="sc">.</span>zone<span class="sc">}</span><span class="ss">/home"</span>)</span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> col <span class="kw">in</span> coll.subcollections:</span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(col.name)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="searching-for-unpublished-datasets" class="level2">
-<h2 class="anchored" data-anchor-id="searching-for-unpublished-datasets">Searching for unpublished datasets</h2>
-<p>You can search for datasets that are archived but not (yet) published using the <code>Search by Status</code> function in the Yoda Portal. The list of data packages will include only the data packages of project groups of which you are a member. Click on a data package in the results list in order to view it.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../../public/manuals/yoda/pub-search-unpublished.png" class="img-fluid figure-img"></p>
-<figcaption>Unpublished data packages</figcaption>
-</figure>
-</div>
-<!-- TODO add information on versioning -->
+<section id="more-information" class="level3">
+<h3 class="anchored" data-anchor-id="more-information">More information</h3>
+<p>You can find more information on using the iRODS client in the <a href="https://github.com/irods/python-irodsclient/blob/main/README.md" target="_blank">README on github</a>.</p>
+</section>
+</section>
+<section id="ibridges" class="level2">
+<h2 class="anchored" data-anchor-id="ibridges">iBridges</h2>
+<p>The PRC can be hard to use, because it requires some prior knowledge on the structure and terminology used in iRODS. For this reason, developers at Utrecht University created <a href="https://github.com/iBridges-for-iRODS/iBridges" target="_blank">iBridges</a>, which makes it easier to do basic file and metadata manipulation in iRODS.</p>
+<section id="installation" class="level3">
+<h3 class="anchored" data-anchor-id="installation">Installation</h3>
+<p>Installation is again as simple as:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install ibridges</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="connecting" class="level3">
+<h3 class="anchored" data-anchor-id="connecting">Connecting</h3>
+<p>To connect you will need the <a href="../../../manuals/yoda/data_access/yoda_using_icommands.html#environment-file">irods environment file</a>. iBridges expects the file to be in <code>~/.irods/irods_environment.json</code> but you can point it to a different location.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> ibridges <span class="im">import</span> Session</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> getpass <span class="im">import</span> getpass</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>password <span class="op">=</span> getpass(<span class="ss">f"Enter valid DAP: "</span>)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>session <span class="op">=</span> Session(irods_env_path<span class="op">=</span>Path.home() <span class="op">/</span> <span class="st">".irods"</span> <span class="op">/</span> <span class="st">"irods_environment.json"</span>, password<span class="op">=</span>password)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="upload-data" class="level3">
+<h3 class="anchored" data-anchor-id="upload-data">Upload data</h3>
+<p>You can easily upload your data with the previously created session:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> ibridges <span class="im">import</span> upload</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>upload(session, <span class="st">"/your/local/path"</span>, <span class="st">"/irods/path"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This upload function can upload both directories (collections in iRODS) and files (data objects in iRODS).</p>
+</section>
+<section id="add-irods-metadata" class="level3">
+<h3 class="anchored" data-anchor-id="add-irods-metadata">Add iRODS metadata</h3>
+<p>One of the powerful features of iRODS is its ability to store metadata with your data in a consistent manner. Let’s add some metadata to a collection or data object:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> ibridges <span class="im">import</span> IrodsPath</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>ipath <span class="op">=</span> IrodsPath(session, <span class="st">"/irods/path"</span>)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>ipath.meta.add(<span class="st">"some_key"</span>, <span class="st">"some_value"</span>, <span class="st">"some_units"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>We have used the IrodsPath class here, which is another central class to the iBridges API. From here we have access to the metadata as shown above, but additionally there are many more convenient features directly accessible such as getting the size of a collection or data object. A detailed description of the features is present in another part of the documentation.</p>
+</section>
+<section id="download-data" class="level3">
+<h3 class="anchored" data-anchor-id="download-data">Download data</h3>
+<p>Naturally, we also want to download the data back to our local machine. This is done with the download function:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> ibridges <span class="im">import</span> download</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>download(session, <span class="st">"/irods/path"</span>, <span class="st">"/other/local/path"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="closing-the-session" class="level3">
+<h3 class="anchored" data-anchor-id="closing-the-session">Closing the session</h3>
+<p>When you are done with your session, you should generally close it:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>session.close()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="more-information-1" class="level3">
+<h3 class="anchored" data-anchor-id="more-information-1">More information</h3>
+<p>More information on using iBridges can be found in the <a href="https://ibridges.readthedocs.io/en/stable/ibridges_python.html" target="_blank">online documentation</a>.</p>
+</section>
+</section>
+<section id="streaming" class="level2">
+<h2 class="anchored" data-anchor-id="streaming">Streaming</h2>
+<p>With the python-irodsclient which iBridges is built on, we can open the file inside of a data object as a stream and process the content without downloading the data. This is especially useful if you need to access data stored in large files. That works without any problems for textual data.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> ibridges <span class="im">import</span> IrodsPath</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>obj_path <span class="op">=</span> IrodsPath(session, <span class="st">"path"</span>, <span class="st">"to"</span>, <span class="st">"object"</span>)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> obj_path.<span class="bu">open</span>(<span class="st">'r'</span>) <span class="im">as</span> stream:</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    content <span class="op">=</span> stream.read().decode()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Some python libraries allow to be instantiated directly from such a stream. This is supported by e.g.&nbsp;<a href="https://pandas.pydata.org/" target="_blank">pandas</a> and <a href="https://pola.rs/" target="_blank">polars</a> for datafiles or <a href="https://github.com/openai/whisper" target="_blank">whisper</a> for transcription and translation of audio files.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> obj_path.<span class="bu">open</span>(<span class="st">'r'</span>) <span class="im">as</span> stream:</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    df <span class="op">=</span> pd.read_csv(stream)</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 
 </section>
@@ -906,13 +1055,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../../manuals/yoda/securing_distribution/vault_archive.html" class="pagination-link" aria-label="Archiving data">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Archiving data</span>
+      <a href="../../../manuals/yoda/data_access/yoda_using_icommands.html" class="pagination-link" aria-label="Using iCommands">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Using iCommands</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../../manuals/yoda/data_access/introduction.html" class="pagination-link" aria-label="Before getting started">
-        <span class="nav-page-text">Before getting started</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../../manuals/yoda/data_access/yoda_using_rclone.html" class="pagination-link" aria-label="Using Rclone">
+        <span class="nav-page-text">Using Rclone</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -951,7 +1100,7 @@ ul.task-list li input[type="checkbox"] {
 </a>
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/yoda/securing_distribution/vault_publish.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/manuals/yoda/data_access/yoda_using_python.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
