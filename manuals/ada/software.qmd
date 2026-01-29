@@ -99,7 +99,7 @@ Request extra modules **only** when they will measurably help many researchers. 
 Pixi provides reproducible, multi-language environments that work well on shared HPC systems. It automatically resolves dependencies across Python, R, Julia, and more, and stores environments alongside your project. Therefore, Pixi is the recommended way to manage custom software stacks on ADA.
 
 ::: {.callout-tip title="Read: Pixi quick start"}
-Review the upstream [Pixi quick start guide](https://pixi.dev/docs/python/./) to see typical workflows and commands before building environments on ADA.
+Review the upstream [Pixi quick start guide](https://pixi.prefix.dev/latest/) to see typical workflows and commands before building environments on ADA.
 :::
 
 ### Quick Start
