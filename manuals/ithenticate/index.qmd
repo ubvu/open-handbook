@@ -3,7 +3,15 @@ title: iThenticate Manuals
 categories: []
 listing:
   contents: 
-    - ./**/*.qmd
+    - getting_started/getting_started.qmd
+    - getting_started/log_in.qmd
+    - getting_started/first_scan.qmd
+    - getting_started/exporting_results.qmd
+    - similarity_report/similarity_report.qmd
+    - interpreting_sim_scores/similarity_scores.qmd
+    - advanced_settings/folder_options.qmd
+    - advanced_settings/url_phrase_exclusion.qmd
+    - advanced_settings/doc_to_doc_comparison.qmd
   page-size: 40
   filter-ui: true
   type: grid
