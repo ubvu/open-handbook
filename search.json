@@ -685,69 +685,69 @@
     ]
   },
   {
-    "objectID": "manuals/ithenticate/getting_started/exporting_results.html",
-    "href": "manuals/ithenticate/getting_started/exporting_results.html",
-    "title": "Saving, sharing and exporting results",
+    "objectID": "manuals/ithenticate/getting_started/log_in.html",
+    "href": "manuals/ithenticate/getting_started/log_in.html",
+    "title": "Logging in",
     "section": "",
-    "text": "The scan will be saved in the chosen folder enabling the PhD candidate to revisit the scan results. You can share the scan, for instance with the key user for iThenticate via the ‘sharing’ option after selecting the folder on the iThenticate start screen. You can find more information on inviting collaborators in the iThenticate manual\nThe person(s) you want to share the results with needs to have an iThenticate account. All key users for iThenticate have an iThenticate account. If you want to share the results digitally with a person without an iThenticate account (for instance your (co-)supervisor), you can save the results as a PDF file via the print icon in the bottom left corner in de detailed view. Note that reviewing the results together with your supervisor is easiest by viewing your iThenticate account together, either physically or by sharing your screen in an online meeting.\n\n\n\niThenticate download",
+    "text": "After receiving your credentials, you can log in on the iThenticate website, clicking on the ‘Login’ button in the top right corner.\n\n\n\niThenticate login page\n\n\nYou can sign in using your VU email address and password. Note that the ‘Sign Up’ option is not available to create an account yourself, as the VU has a campus licence for PhD candidates. You can create an account by contacting the key user iThenticate within your faculty. In the list of key users you can find all key users of the faculties.\n\n\n\niThenticate login fields\n\n\nAfter a successful login the starting page of the iThenticate app appears:\n\n\n\niThenticate starting page",
     "crumbs": [
       "Getting Started",
-      "Saving, sharing and exporting results"
+      "Logging in"
     ]
   },
   {
-    "objectID": "manuals/ithenticate/similarity_report/similarity_report.html",
-    "href": "manuals/ithenticate/similarity_report/similarity_report.html",
-    "title": "similarity Report",
+    "objectID": "manuals/ithenticate/getting_started/first_scan.html",
+    "href": "manuals/ithenticate/getting_started/first_scan.html",
+    "title": "Your first scan",
     "section": "",
-    "text": "To access the Similarity Report of a submitted document, go to the folder where the submission is located. In the Folder’s tab, you will find the submitted document.\nTo view the Similarity Report, click on the similarity index icon corresponding to that document. This icon displays the percentage in the “Report” column, which is known as the Similarity Score. The Similarity Score provides a quick assessment of the document’s performance. It’s essential to discuss a comprehensive analysis. When you click on the icon, the report will open in the document viewer for your review.\n\n\n\nSimilarity report",
+    "text": "To start a new plagiarism scan you must select the folder ‘My Files’. After selecting the folder, the section ‘Upload’ appears on the right side of the screen. You can submit your document by choosing ‘Upload’.\n\n\n\nNew scan\n\n\nYou will be asked to fill in your first name, last name and the title of the document. Next, you can submit the document that you want to be scanned by browsing via the ‘Choose File’ button. The requirements of the file can be found on the right side of the screen – the file should not be larger than 100 MB or 800 pages, and can be a variety of document types, such as Word, PostScript, PDF, HTML, Excel, PowerPoint, Word Perfect WPD, OpenOffice ODT, RTF and Hangul HWP.\nTo start the plagiarism scan, select the button Submit.\n\n\n\nFiles upload\n\n\nIt can take some time for the tool to process the scan. You can monitor the processing status in your selected folder, which is first indicated by saving, followed up by processing, and is completed when the similarity percentage (%) is shown. This indicates the percentage of the submitted text that is similar to online sources that are part of the iThenticate database.\nBelow you can find an example of a submitted file (test file) which shows 97% similarity with online sources part of the iThenticate database.\n\n\n\niThenticate files\n\n\nThe similarity percentage in itself is not a direct indication of plagiarism. The results of the scan must always be analysed by the PhD candidate together with the (co-)supervisor. The (co-)supervisor can help to interpret the results. Further assistance and more information about completing your mandatory plagiarism check is available via the key user for iThenticate.\nA detailed view of the similarities found by iThenticate can be accessed by clicking on the file title. The texts that are found similar to online sources are highlighted with different colours, each colour corresponding to a different source. The sources of the similarities can be found on the right side of the screen. By clicking on a source (right side of the screen) or the highlighted text (left side of the screen) a drilldown to the source can be made, as well the location of the specific text within the source.\n\n\n\niThenticate scan\n\n\n\n\n\niThenticate scan",
     "crumbs": [
-      "Similarity Report",
-      "similarity Report"
+      "Getting Started",
+      "Your first scan"
     ]
   },
   {
-    "objectID": "manuals/ithenticate/similarity_report/similarity_report.html#accessing-the-similarity-report",
-    "href": "manuals/ithenticate/similarity_report/similarity_report.html#accessing-the-similarity-report",
-    "title": "similarity Report",
+    "objectID": "manuals/ithenticate/similarity_report/faq.html",
+    "href": "manuals/ithenticate/similarity_report/faq.html",
+    "title": "Report FAQ",
     "section": "",
-    "text": "To access the Similarity Report of a submitted document, go to the folder where the submission is located. In the Folder’s tab, you will find the submitted document.\nTo view the Similarity Report, click on the similarity index icon corresponding to that document. This icon displays the percentage in the “Report” column, which is known as the Similarity Score. The Similarity Score provides a quick assessment of the document’s performance. It’s essential to discuss a comprehensive analysis. When you click on the icon, the report will open in the document viewer for your review.\n\n\n\nSimilarity report",
+    "text": "The Similarity Index remains consistent across various report modes. It is determined by creating a digital fingerprint of the submitted document, searching it against selected repositories, and then calculating the percentage of matching words divided by the total word count. If exclusion options are used, the system recalculates the Similarity Index by removing excluded matches from the report.",
     "crumbs": [
       "Similarity Report",
-      "similarity Report"
+      "Report FAQ"
     ]
   },
   {
-    "objectID": "manuals/ithenticate/similarity_report/similarity_report.html#the-document-viewer",
-    "href": "manuals/ithenticate/similarity_report/similarity_report.html#the-document-viewer",
-    "title": "similarity Report",
-    "section": "The Document Viewer",
-    "text": "The Document Viewer\nMatching sources are listed in the right panel. The similarities are highlighted in a color that corresponds to the matching source. There are four different report modes that allow you to view the desired information. The four modes are:\n\nMatch overview shows the matches with the highest to lowest percentage of matching words.\nAll sources shows matches between the primary document and specifically selected sources.\nMatch breakdown reveals underlying sources of a top source.\nSide by side comparison shows matches compared side by side with the original source content.",
+    "objectID": "manuals/ithenticate/similarity_report/faq.html#how-is-the-similarity-indexreport-calculated-for-each-of-the-reports",
+    "href": "manuals/ithenticate/similarity_report/faq.html#how-is-the-similarity-indexreport-calculated-for-each-of-the-reports",
+    "title": "Report FAQ",
+    "section": "",
+    "text": "The Similarity Index remains consistent across various report modes. It is determined by creating a digital fingerprint of the submitted document, searching it against selected repositories, and then calculating the percentage of matching words divided by the total word count. If exclusion options are used, the system recalculates the Similarity Index by removing excluded matches from the report.",
     "crumbs": [
       "Similarity Report",
-      "similarity Report"
+      "Report FAQ"
     ]
   },
   {
-    "objectID": "manuals/ithenticate/similarity_report/similarity_report.html#filters-and-exclusions",
-    "href": "manuals/ithenticate/similarity_report/similarity_report.html#filters-and-exclusions",
-    "title": "similarity Report",
-    "section": "Filters and Exclusions",
-    "text": "Filters and Exclusions\nTo apply filters and exclusions, select the filters icon at the bottom of the Document Viewer sidebar. You can exclude quoted or bibliographic material, small sources, small matches, sections and matches.\n\n\n\nFilter",
+    "objectID": "manuals/ithenticate/similarity_report/faq.html#how-is-the-similarity-report-constructed-what-matches-get-hidden-by-other-matches",
+    "href": "manuals/ithenticate/similarity_report/faq.html#how-is-the-similarity-report-constructed-what-matches-get-hidden-by-other-matches",
+    "title": "Report FAQ",
+    "section": "How is the Similarity Report constructed? What matches get hidden by other matches?",
+    "text": "How is the Similarity Report constructed? What matches get hidden by other matches?\nThe system highlights text sections that match sources in our repositories and lists what it considers the best matches in the report sidebar. While the best matches are displayed, numerous additional sources that match the document’s text can be found in the Content Tracking mode.",
     "crumbs": [
       "Similarity Report",
-      "similarity Report"
+      "Report FAQ"
     ]
   },
   {
-    "objectID": "manuals/ithenticate/similarity_report/similarity_report.html#ai-detection-tool",
-    "href": "manuals/ithenticate/similarity_report/similarity_report.html#ai-detection-tool",
-    "title": "similarity Report",
-    "section": "AI-Detection tool",
-    "text": "AI-Detection tool\niThenticate provides an AI-detection feature to identify potential AI-generated content to support content integrity.\nPlease note that this functionality is not enabled by default in iThenticate. If you would like to use the AI-detection tool, please contact your faculty’s Key User to request access.",
+    "objectID": "manuals/ithenticate/similarity_report/faq.html#what-if-two-sources-have-the-exact-same-amount-of-matching-text-which-source-would-be-displayed-in-the-similarity-report-as-a-best-match",
+    "href": "manuals/ithenticate/similarity_report/faq.html#what-if-two-sources-have-the-exact-same-amount-of-matching-text-which-source-would-be-displayed-in-the-similarity-report-as-a-best-match",
+    "title": "Report FAQ",
+    "section": "What if two sources have the exact same amount of matching text; which source would be displayed in the Similarity Report as a best match?",
+    "text": "What if two sources have the exact same amount of matching text; which source would be displayed in the Similarity Report as a best match?\nThe chosen source depends on the repository that’s been matched. Between two internet sources, the best match is generally the most recently crawled internet source; between an internet source and a publication source, the publication source is presented.",
     "crumbs": [
       "Similarity Report",
-      "similarity Report"
+      "Report FAQ"
     ]
   },
   {
@@ -4881,7 +4881,7 @@
     "href": "manuals/ithenticate/index.html",
     "title": "iThenticate Manuals",
     "section": "",
-    "text": "Tip\n\n\n\nThe iThenticate topic page explains what iThenticate does and how you can set up an account.\n\n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\nDoc-to-doc comparison\n\n\n\n\n\n\n\n\n\n\n\n\nFolder Options\n\n\n\n\n\n\n\n\n\n\n\n\nURL filter & phrase exclusion\n\n\n\n\n\n\n\n\n\n\n\n\nSaving, sharing and exporting results\n\n\n\n\n\n\n\n\n\n\n\n\nYour first scan\n\n\n\n\n\n\n\n\n\n\n\n\nGetting started\n\n\nThe mnauals in this section will help you to get started with using iThenticate. You can only request an iThenticate account via the key user within your faculty. You can…\n\n\n\n\n\n\n\n\n\nLogging in\n\n\n\n\n\n\n\n\n\n\n\n\nInterpreting Similarity Scores\n\n\n\n\n\n\n\n\n\n\n\n\nReport FAQ\n\n\n\n\n\n\n\n\n\n\n\n\nsimilarity Report\n\n\n\n\n\n\n\n\nNo matching items",
+    "text": "Tip\n\n\n\nThe iThenticate topic page explains what iThenticate does and how you can set up an account.\n\n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\nGetting Started\n\n\nThe manuals in this section will help you to get started with using iThenticate. You can only request an iThenticate account via the key user within your faculty. You can…\n\n\n\n\n\n\n\n\n\nLogging in\n\n\nThis page explains how to log in after receiving an invitation for the first time.\n\n\n\n\n\n\n\n\n\nYour first scan\n\n\nThis page explains how to conduct a plagiarism check for the first time.\n\n\n\n\n\n\n\n\n\nSaving, Sharing and Exporting Results\n\n\nThis page explains how to save, share and export your scan.\n\n\n\n\n\n\n\n\n\nSimilarity Report\n\n\nThis page explains how to access the similarity report and adjust document filters.\n\n\n\n\n\n\n\n\n\nInterpreting Similarity Scores\n\n\nThis page provides information on interpeting the results of the similarity report.\n\n\n\n\n\n\n\n\n\nReport FAQ\n\n\nThis page discusses frequently asked questions about the similarity report.\n\n\n\n\n\n\n\n\n\nFolder Options\n\n\nThis page explains how to customise the similarity check.\n\n\n\n\n\n\n\n\n\nURL filter & phrase exclusion\n\n\nThis page explains how to customize the list of sources included in the comparison.\n\n\n\n\n\n\n\n\n\nDoc-to-doc comparison\n\n\nThis page explains how to conduct a doc-to-doc comparison.\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "iThenticate Manuals"
     ]
@@ -4898,97 +4898,97 @@
     ]
   },
   {
-    "objectID": "manuals/ithenticate/similarity_report/faq.html",
-    "href": "manuals/ithenticate/similarity_report/faq.html",
-    "title": "Report FAQ",
-    "section": "",
-    "text": "The Similarity Index remains consistent across various report modes. It is determined by creating a digital fingerprint of the submitted document, searching it against selected repositories, and then calculating the percentage of matching words divided by the total word count. If exclusion options are used, the system recalculates the Similarity Index by removing excluded matches from the report."
-  },
-  {
-    "objectID": "manuals/ithenticate/similarity_report/faq.html#how-is-the-similarity-indexreport-calculated-for-each-of-the-reports",
-    "href": "manuals/ithenticate/similarity_report/faq.html#how-is-the-similarity-indexreport-calculated-for-each-of-the-reports",
-    "title": "Report FAQ",
-    "section": "",
-    "text": "The Similarity Index remains consistent across various report modes. It is determined by creating a digital fingerprint of the submitted document, searching it against selected repositories, and then calculating the percentage of matching words divided by the total word count. If exclusion options are used, the system recalculates the Similarity Index by removing excluded matches from the report."
-  },
-  {
-    "objectID": "manuals/ithenticate/similarity_report/faq.html#how-is-the-similarity-report-constructed-what-matches-get-hidden-by-other-matches",
-    "href": "manuals/ithenticate/similarity_report/faq.html#how-is-the-similarity-report-constructed-what-matches-get-hidden-by-other-matches",
-    "title": "Report FAQ",
-    "section": "How is the Similarity Report constructed? What matches get hidden by other matches?",
-    "text": "How is the Similarity Report constructed? What matches get hidden by other matches?\nThe system highlights text sections that match sources in our repositories and lists what it considers the best matches in the report sidebar. While the best matches are displayed, numerous additional sources that match the document’s text can be found in the Content Tracking mode."
-  },
-  {
-    "objectID": "manuals/ithenticate/similarity_report/faq.html#what-if-two-sources-have-the-exact-same-amount-of-matching-text-which-source-would-be-displayed-in-the-similarity-report-as-a-best-match",
-    "href": "manuals/ithenticate/similarity_report/faq.html#what-if-two-sources-have-the-exact-same-amount-of-matching-text-which-source-would-be-displayed-in-the-similarity-report-as-a-best-match",
-    "title": "Report FAQ",
-    "section": "What if two sources have the exact same amount of matching text; which source would be displayed in the Similarity Report as a best match?",
-    "text": "What if two sources have the exact same amount of matching text; which source would be displayed in the Similarity Report as a best match?\nThe chosen source depends on the repository that’s been matched. Between two internet sources, the best match is generally the most recently crawled internet source; between an internet source and a publication source, the publication source is presented."
-  },
-  {
-    "objectID": "manuals/ithenticate/getting_started/first_scan.html",
-    "href": "manuals/ithenticate/getting_started/first_scan.html",
-    "title": "Your first scan",
-    "section": "",
-    "text": "To start a new plagiarism scan you must select the folder ‘My Files’. After selecting the folder, the section ‘Upload’ appears on the right side of the screen. You can submit your document by choosing ‘Upload’.\n\n\n\nNew scan\n\n\nYou will be asked to fill in your first name, last name and the title of the document. Next, you can submit the document that you want to be scanned by browsing via the ‘Choose File’ button. The requirements of the file can be found on the right side of the screen – the file should not be larger than 100 MB or 800 pages, and can be a variety of document types, such as Word, PostScript, PDF, HTML, Excel, PowerPoint, Word Perfect WPD, OpenOffice ODT, RTF and Hangul HWP.\nTo start the plagiarism scan, select the button Submit.\n\n\n\nFiles upload\n\n\nIt can take some time for the tool to process the scan. You can monitor the processing status in your selected folder, which is first indicated by saving, followed up by processing, and is completed when the similarity percentage (%) is shown. This indicates the percentage of the submitted text that is similar to online sources that are part of the iThenticate database. Below you can find an example of a submitted file (test file) which shows 97% similarity with online sources part of the iThenticate database.\n\n\n\niThenticate files\n\n\nThe similarity percentage in itself is not a direct indication of plagiarism. The results of the scan must always be analysed by the PhD candidate together with the (co-)supervisor. The (co-)supervisor can help to interpret the results. Further assistance and more information about completing your mandatory plagiarism check is available via the key user for iThenticate.\nA detailed view of the similarities found by iThenticate can be accessed by clicking on the file title. The texts that are found similar to online sources are highlighted with different colours, each colour corresponding to a different source. The sources of the similarities can be found on the right side of the screen. By clicking on a source (right side of the screen) or the highlighted text (left side of the screen) a drilldown to the source can be made, as well the location of the specific text within the source.\n\n\n\niThenticate scan\n\n\n\n\n\niThenticate scan",
-    "crumbs": [
-      "Getting Started",
-      "Your first scan"
-    ]
-  },
-  {
-    "objectID": "manuals/ithenticate/getting_started/log_in.html",
-    "href": "manuals/ithenticate/getting_started/log_in.html",
-    "title": "Logging in",
-    "section": "",
-    "text": "After receiving your credentials, you can log in on the iThenticate website, clicking on the ‘Login’ button in the top right corner.\n\n\n\niThenticate login page\n\n\nYou can sign in using your VU email address and password. Note that the ‘Sign Up’ option is not available to create an account yourself, as the VU has a campus licence for PhD candidates. You can create an account by contacting the key user iThenticate within your faculty. In the list of key users you can find key user per faculty.\n\n\n\niThenticate login fields\n\n\nAfter a successful login the starting page of the iThenticate app appears:\n\n\n\niThenticate starting page",
-    "crumbs": [
-      "Getting Started",
-      "Logging in"
-    ]
-  },
-  {
-    "objectID": "manuals/ithenticate/interpreting_sim_scores/similarity_scores.html",
-    "href": "manuals/ithenticate/interpreting_sim_scores/similarity_scores.html",
+    "objectID": "manuals/ithenticate/similarity_report/similarity_scores.html",
+    "href": "manuals/ithenticate/similarity_report/similarity_scores.html",
     "title": "Interpreting Similarity Scores",
     "section": "",
-    "text": "iThenticate does not directly assess the presence of plagiarism in submitted works. Instead, it compares submissions to an extensive database. If similarities or matches are identified between submissions and the content within our database, the system will generate a notification for the supervisor to evaluate. The iThenticate database encompasses billions of web pages, including both current and archived internet content. Additionally, it comprises a repository of submissions made by other students, along with an assortment of documents from various sources, such as periodicals, journals, and publications. The interpretation of the similarity report should therefore be done by a supervisor who is familiar with the established plagiarism policies.",
-    "crumbs": [
-      "Similarity Scores",
-      "Interpreting Similarity Scores"
-    ]
+    "text": "iThenticate does not directly assess the presence of plagiarism in submitted works. Instead, it compares submissions to an extensive database. If similarities or matches are identified between submissions and the content within our database, the system will generate a notification for the supervisor to evaluate. The iThenticate database encompasses billions of web pages, including both current and archived internet content. Additionally, it comprises a repository of submissions made by other students, along with an assortment of documents from various sources, such as periodicals, journals, and publications. The interpretation of the similarity report should therefore be done by a supervisor who is familiar with the established plagiarism policies."
   },
   {
-    "objectID": "manuals/ithenticate/interpreting_sim_scores/similarity_scores.html#information-for-phd-students",
-    "href": "manuals/ithenticate/interpreting_sim_scores/similarity_scores.html#information-for-phd-students",
+    "objectID": "manuals/ithenticate/similarity_report/similarity_scores.html#information-for-phd-students",
+    "href": "manuals/ithenticate/similarity_report/similarity_scores.html#information-for-phd-students",
     "title": "Interpreting Similarity Scores",
     "section": "Information for PhD students",
-    "text": "Information for PhD students\nThe iThenticate tools checks your uploaded work against a database that contains millions of sources. It is therefore normal that matches are found, especially if you’ve used quotes and referenced correctly. The similarity score simply highlights any matching areas in your work so your supervisor can use this as an investigative tool to determine if the match is or is not acceptable. You can apply advanced settings to ensure that the report meets the faculty’s requirements.",
-    "crumbs": [
-      "Similarity Scores",
-      "Interpreting Similarity Scores"
-    ]
+    "text": "Information for PhD students\nThe iThenticate tools checks your uploaded work against a database that contains millions of sources. It is therefore normal that matches are found, especially if you’ve used quotes and referenced correctly. The similarity score simply highlights any matching areas in your work so your supervisor can use this as an investigative tool to determine if the match is or is not acceptable. You can apply advanced settings to ensure that the report meets the faculty’s requirements."
   },
   {
-    "objectID": "manuals/ithenticate/interpreting_sim_scores/similarity_scores.html#information-for-supervisors",
-    "href": "manuals/ithenticate/interpreting_sim_scores/similarity_scores.html#information-for-supervisors",
+    "objectID": "manuals/ithenticate/similarity_report/similarity_scores.html#information-for-supervisors",
+    "href": "manuals/ithenticate/similarity_report/similarity_scores.html#information-for-supervisors",
     "title": "Interpreting Similarity Scores",
     "section": "Information for supervisors",
-    "text": "Information for supervisors\nThe Similarity Report is a dynamic document that offers a synopsis of text matches found in submitted work when compared to an extensive database of online sources, academic publications, and previously submitted documents. This tool enables PhD students and instructors to examine similarities between the submitted work and online materials. The percentage presented in a student’s submission, referred to as the similarity index or similarity score, indicates the extent to which their work matches content from the database. However, this percentage should not be taken as a definitive indicator of plagiarism. The report may show matches to correctly cited and appropriately used sources, making it imperative for the instructor to apply their academic judgment in evaluating these matches.",
+    "text": "Information for supervisors\nThe Similarity Report is a dynamic document that offers a synopsis of text matches found in submitted work when compared to an extensive database of online sources, academic publications, and previously submitted documents. This tool enables PhD students and instructors to examine similarities between the submitted work and online materials. The percentage presented in a student’s submission, referred to as the similarity index or similarity score, indicates the extent to which their work matches content from the database. However, this percentage should not be taken as a definitive indicator of plagiarism. The report may show matches to correctly cited and appropriately used sources, making it imperative for the instructor to apply their academic judgment in evaluating these matches."
+  },
+  {
+    "objectID": "manuals/ithenticate/similarity_report/similarity_scores.html#icons-interpretation",
+    "href": "manuals/ithenticate/similarity_report/similarity_scores.html#icons-interpretation",
+    "title": "Interpreting Similarity Scores",
+    "section": "Icon’s interpretation",
+    "text": "Icon’s interpretation\nThe report icon’s colors can be adjusted, to allow for easier reading of the paper’s similarity score, determined by the extent of matching or similar text found. The score ranges from 0% to 100%. The allocated colors do not have to match the colors that are decided upon by the faculty, as users can apply their color schemes individually. Facilitate easy reading by applying colors to categories, for example:\nBlue: No matching text\nGreen: 1–24% matching text\nYellow: 25–49% matching text\nOrange: 50–74% matching text\nRed: 75–100% matching text\nThe report can show high matches that stem from quotes, references or previously uploaded documents. To exclude such matches in the report, advanced settings can be applied. It is important to note that iThenticate will show a high percentage of matching text when the student has previously uploaded their work to the database. This can be addressed by applying advanced settings, such as excluding specific sources or excluding by word number."
+  },
+  {
+    "objectID": "manuals/ithenticate/similarity_report/similarity_report.html",
+    "href": "manuals/ithenticate/similarity_report/similarity_report.html",
+    "title": "Similarity Report",
+    "section": "",
+    "text": "To access the Similarity Report of a submitted document, go to the folder where the submission is located. In the Folder’s tab, you will find the submitted document.\nTo view the Similarity Report, click on the similarity index icon corresponding to that document. This icon displays the percentage in the “Report” column, which is known as the Similarity Score. The Similarity Score provides a quick assessment of the document’s performance. It’s essential to discuss a comprehensive analysis. When you click on the icon, the report will open in the document viewer for your review.\n\n\n\nSimilarity report",
     "crumbs": [
-      "Similarity Scores",
-      "Interpreting Similarity Scores"
+      "Similarity Report",
+      "Similarity Report"
     ]
   },
   {
-    "objectID": "manuals/ithenticate/interpreting_sim_scores/similarity_scores.html#icons-interpretation",
-    "href": "manuals/ithenticate/interpreting_sim_scores/similarity_scores.html#icons-interpretation",
-    "title": "Interpreting Similarity Scores",
-    "section": "Icon’s interpretation",
-    "text": "Icon’s interpretation\nThe report icon’s colors can be adjusted, to allow for easier reading of the paper’s similarity score, determined by the extent of matching or similar text found. The score ranges from 0% to 100%. The allocated colors do not have to match the colors that are decided upon by the faculty, as users can apply their color schemes individually. Facilitate easy reading by applying colors to categories, for example:\nBlue: No matching text Green: 1-24% matching text Yellow: 25-49% matching text Orange: 50-74% matching text Red: 75-100% matching text\nThe report can show high matches that stem from quotes, references or previously uploaded documents. To exclude such matches in the report, advanced settings can be applied. It is important to note that iThenticate will show a high percentage of matching text when the student has previously uploaded their work to the database. This can be addressed by applying advanced settings, such as excluding specific sources or excluding by word number.",
+    "objectID": "manuals/ithenticate/similarity_report/similarity_report.html#accessing-the-similarity-report",
+    "href": "manuals/ithenticate/similarity_report/similarity_report.html#accessing-the-similarity-report",
+    "title": "Similarity Report",
+    "section": "",
+    "text": "To access the Similarity Report of a submitted document, go to the folder where the submission is located. In the Folder’s tab, you will find the submitted document.\nTo view the Similarity Report, click on the similarity index icon corresponding to that document. This icon displays the percentage in the “Report” column, which is known as the Similarity Score. The Similarity Score provides a quick assessment of the document’s performance. It’s essential to discuss a comprehensive analysis. When you click on the icon, the report will open in the document viewer for your review.\n\n\n\nSimilarity report",
     "crumbs": [
-      "Similarity Scores",
-      "Interpreting Similarity Scores"
+      "Similarity Report",
+      "Similarity Report"
+    ]
+  },
+  {
+    "objectID": "manuals/ithenticate/similarity_report/similarity_report.html#the-document-viewer",
+    "href": "manuals/ithenticate/similarity_report/similarity_report.html#the-document-viewer",
+    "title": "Similarity Report",
+    "section": "The Document Viewer",
+    "text": "The Document Viewer\nMatching sources are listed in the right panel. The similarities are highlighted in a color that corresponds to the matching source. There are four different report modes that allow you to view the desired information. The four modes are:\n\nMatch overview shows the matches with the highest to lowest percentage of matching words.\nAll sources shows matches between the primary document and specifically selected sources.\nMatch breakdown reveals underlying sources of a top source.\nSide by side comparison shows matches compared side by side with the original source content.",
+    "crumbs": [
+      "Similarity Report",
+      "Similarity Report"
+    ]
+  },
+  {
+    "objectID": "manuals/ithenticate/similarity_report/similarity_report.html#filters-and-exclusions",
+    "href": "manuals/ithenticate/similarity_report/similarity_report.html#filters-and-exclusions",
+    "title": "Similarity Report",
+    "section": "Filters and Exclusions",
+    "text": "Filters and Exclusions\nTo apply filters and exclusions, select the filters icon at the bottom of the Document Viewer sidebar. You can exclude quoted or bibliographic material, small sources, small matches, sections and matches.\n\n\n\nFilter",
+    "crumbs": [
+      "Similarity Report",
+      "Similarity Report"
+    ]
+  },
+  {
+    "objectID": "manuals/ithenticate/similarity_report/similarity_report.html#ai-detection-tool",
+    "href": "manuals/ithenticate/similarity_report/similarity_report.html#ai-detection-tool",
+    "title": "Similarity Report",
+    "section": "AI-Detection tool",
+    "text": "AI-Detection tool\niThenticate provides an AI-detection feature to identify potential AI-generated content to support content integrity.\nPlease note that this functionality is not enabled by default in iThenticate. If you would like to use the AI-detection tool, please contact your faculty’s Key User to request access.",
+    "crumbs": [
+      "Similarity Report",
+      "Similarity Report"
+    ]
+  },
+  {
+    "objectID": "manuals/ithenticate/getting_started/exporting_results.html",
+    "href": "manuals/ithenticate/getting_started/exporting_results.html",
+    "title": "Saving, Sharing and Exporting Results",
+    "section": "",
+    "text": "The scan will be saved in the chosen folder enabling the PhD candidate to revisit the scan results. You can share the scan, for instance with the key user for iThenticate via the ‘sharing’ option after selecting the folder on the iThenticate start screen. You can find more information on inviting collaborators in the iThenticate manual.\nThe person(s) you want to share the results with needs to have an iThenticate account. All key users for iThenticate have an iThenticate account. If you want to share the results digitally with a person without an iThenticate account (for instance your (co-)supervisor), you can save the results as a PDF file via the print icon in the bottom left corner in de detailed view. Note that reviewing the results together with your supervisor is easiest by viewing your iThenticate account together, either physically or by sharing your screen in an online meeting.\n\n\n\niThenticate download",
+    "crumbs": [
+      "Getting Started",
+      "Saving, Sharing and Exporting Results"
     ]
   },
   {
