@@ -1,6 +1,7 @@
 ---
 title: Interpreting Similarity Scores
 categories: []
+description: "This page provides information on interpeting the results of the similarity report."
 ---
 
 iThenticate does not directly assess the presence of plagiarism in submitted works. Instead, it compares submissions to an extensive database. If similarities or matches are identified between submissions and the content within our database, the system will generate a notification for the supervisor to evaluate. The iThenticate database encompasses billions of web pages, including both current and archived internet content. Additionally, it comprises a repository of submissions made by other students, along with an assortment of documents from various sources, such as periodicals, journals, and publications.
@@ -18,11 +19,16 @@ The Similarity Report is a dynamic document that offers a synopsis of text match
 
 The report icon's colors can be adjusted, to allow for easier reading of the paper's similarity score, determined by the extent of matching or similar text found. The score ranges from 0% to 100%. The allocated colors do not have to match the colors that are decided upon by the faculty, as users can apply their color schemes individually. Facilitate easy reading by applying colors to categories, for example:
 
-Blue: No matching text
-Green: 1-24% matching text
-Yellow: 25-49% matching text
-Orange: 50-74% matching text
-Red: 75-100% matching text
+<span style="color:blue;">Blue</span>: No matching text  
+
+<span style="color:green;">Green</span>: 1–24% matching text 
+
+<span style="color:gold;">Yellow</span>: 25–49% matching text 
+
+<span style="color:orange;">Orange</span>: 50–74% matching text  
+
+<span style="color:red;">Red</span>: 75–100% matching text
+
 
 The report can show high matches that stem from quotes, references or previously uploaded documents. To exclude such matches in the report, advanced settings can be applied.
 It is important to note that iThenticate will show a high percentage of matching text when the student has previously uploaded their work to the database. This can be addressed by applying advanced settings, such as excluding specific sources or excluding by word number.
