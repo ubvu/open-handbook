@@ -12,23 +12,6 @@ website:
   page-navigation: true
   bread-crumbs: true
   sidebar:
-    - id: sb-ada
-      style: floating
-      search: true
-      contents:
-        - manuals/ada/index.qmd 
-        # - auto: manuals/ada/**/*.qmd # works, but is in the wrong order
-        - manuals/ada/login.qmd
-        - manuals/ada/quick-start.qmd
-        - manuals/ada/slurm.qmd
-        - manuals/ada/software.qmd
-        - manuals/ada/hardware.qmd
-        - manuals/ada/open-ondemand.qmd
-        - manuals/ada/yoda.qmd
-        - manuals/ada/help.qmd
-        - section: Code Examples
-          contents: manuals/ada/code-examples/**/*.qmd
-        - manuals/ada/hpc-101.qmd
     - id: sb-scistor
       style: floating
       search: true
@@ -115,7 +98,7 @@ execute:
   freeze: auto
 
 metadata-files: 
-  - manuals/pure/_sidebar.yml
   - manuals/yoda/_sidebar.yml
+  - manuals/ada/_sidebar.yml
+  - manuals/pure/_sidebar.yml
   - manuals/ithenticate/_sidebar.yml
-  
