@@ -1,2 +1,5 @@
+[build]
+command = "bash .github/scripts/fix-timestamps"
+
 [[plugins]]
 package = "@quarto/netlify-plugin-quarto"
