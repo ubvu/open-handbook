@@ -1,0 +1,13 @@
+<ul class="vu-listing list">
+  <% for (const item of items) { %>
+    <li <%= metadataAttrs(item) %>>
+      <details>
+        <summary>
+          <span class="listing-title"><%= item.title %></span>
+        </summary>
+          <span class="listing-description>"><%= item.description %></span><br>
+          <a href="<%- item.path %>">Read more</a>
+      </details>
+    </li>
+    <% } %>
+</ul>

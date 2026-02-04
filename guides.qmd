@@ -1,14 +1,24 @@
 ---
 title: "Guides"
 listing:
+  template: expandable-details.ejs # ejs is sensitive to indentation, use 2 spaces
   contents: guides
-  type: grid
   categories: true
 include-in-header:
   text: |
     <style type="text/css">
     .quarto-grid-item .listing-item-img-placeholder {
       background-color: #0080c9;
+    }
+    ul.vu-listing {
+      list-style-type: none;
+      list-style-position: inside;
+      padding-left: 0;
+    }
+    ul.vu-listing li {
+      border-bottom: 1px solid #0080c9;
+      margin-bottom: 10px;
+      padding-left: 20px;
     }
     </style>
 ---
