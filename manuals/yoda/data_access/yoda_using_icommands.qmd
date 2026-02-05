@@ -5,7 +5,7 @@ description: "This page explains how to install the iRODS iCommands on a Linux O
 ---
 
 Since Yoda is based on [iRODS technology](https://irods.org), it is possible to transfer
-data to and from Yoda using the iRODS communicatipython3 -m http.server 8000on protocol. This protocol can be used
+data to and from Yoda using the iRODS communication protocol. This protocol can be used
 to transfer large amounts of data in an efficient way. The iCommands command-line tools are the official standard implementation of an iRODS protocol client.
 
 The iCommands are installed on the [ADA](/topics/ada.qmd) and [Snellius](/topics/snellius.qmd) HPC clusters and can be used to transfer data to and from Yoda. Make sure to create the [irods environment file](#environment-file) first. 
