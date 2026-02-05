@@ -119,19 +119,24 @@ You can also copy the contents from the ["Data Transfer" page](https://portal.yo
 ## Getting started with iCommands
 
 After installing and configuring the iCommands, you should be able to log in
-on the Yoda environment using the [iinit](https://docs.irods.org/4.2.12/icommands/user/#iinit) command. Enter a [Yoda Data Access Password](yoda_dap.qmd) when prompted.
+on the Yoda environment using the [iinit](https://docs.irods.org/4.3.4/icommands/user/#iinit) command. Enter a [Yoda Data Access Password](yoda_dap.qmd) when prompted.
 
 These are the basic commands for navigation and data transfer:
 
-- [ipwd](https://docs.irods.org/4.2.12/icommands/user/#ipwd) – Show current iRODS directory
-- [ils](https://docs.irods.org/4.2.12/icommands/user/#ils) – List contents of a directory
-- [icd](https://docs.irods.org/4.2.12/icommands/user/#icd) – Change directory
-- [iput](https://docs.irods.org/4.2.12/icommands/user/#iput) – Upload files to Yoda
-- [iget](https://docs.irods.org/4.2.12/icommands/user/#iget) – Download files from Yoda
-- [irsync](https://docs.irods.org/4.2.12/icommands/user/#irsync) – Synchronize local and remote directories
+- [ipwd](https://docs.irods.org/4.3.4/icommands/user/#ipwd) – Show current iRODS directory
+- [ils](https://docs.irods.org/4.3.4/icommands/user/#ils) – List contents of a directory
+- [icd](https://docs.irods.org/4.3.4/icommands/user/#icd) – Change directory
+- [iput](https://docs.irods.org/4.3.4/icommands/user/#iput) – Upload files to Yoda
+- [iget](https://docs.irods.org/4.3.4/icommands/user/#iget) – Download files from Yoda
+- [irsync](https://docs.irods.org/4.3.4/icommands/user/#irsync) – Synchronize local and remote directories
 
 Your Yoda project folders are located under `/vu/home`.
 
+::: { .callout-tip }
+By default an irods session will time-out after an hour and you will need to login again. You can extend the session by starting it with the `--ttl <hours>` option, e.g. `iinit --ttl 8` will keep the session alive for 8 hours.
+:::
+
+
 You can find a quick introduction of the iCommands on the [SURF wiki](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/19824798/Data+handling+in+Yoda+iRODS+using+iCommands#DatahandlinginYoda%2FiRODSusingiCommands-Createcollectionsandnavigate) or you can check out [this training manual](https://irods.org/uploads/2016/06/irods_beginner_training_2016.pdf).
 
-You can find a full list of available commands in the [iRODS Docs](https://docs.irods.org/4.2.12/icommands/user/). 
+You can find a full list of available commands in the [iRODS Docs](https://docs.irods.org/4.3.4/icommands/user/). 
