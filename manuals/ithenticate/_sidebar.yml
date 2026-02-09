@@ -13,12 +13,13 @@ website:
           - manuals/ithenticate/getting_started/exporting_results.qmd
       - section: Similarity Report
         contents:
-          -  manuals/ithenticate/similarity_report/similarity_report.qmd
-          -  manuals/ithenticate/interpreting_sim_scores/similarity_scores.qmd
-          -  manuals/ithenticate/similarity_report/faq.qmd
+          - manuals/ithenticate/similarity_report/similarity_report.qmd
+          - manuals/ithenticate/interpreting_sim_scores/similarity_scores.qmd
       - section: Advanced Settings
         contents:
           - manuals/ithenticate/advanced_settings/folder_options.qmd
           - manuals/ithenticate/advanced_settings/url_phrase_exclusion.qmd
           - manuals/ithenticate/advanced_settings/doc_to_doc_comparison.qmd
-          
+      - section: FAQ
+        contents: 
+          - manuals/ithenticate/faq/faq.qmd
