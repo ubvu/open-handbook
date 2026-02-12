@@ -605,19 +605,32 @@ Important
 </section>
 <section id="getting-started-with-icommands" class="level2">
 <h2 class="anchored" data-anchor-id="getting-started-with-icommands">Getting started with iCommands</h2>
-<p>After installing and configuring the iCommands, you should be able to log in on the Yoda environment using the <a href="https://docs.irods.org/4.2.12/icommands/user/#iinit" target="_blank">iinit</a> command. Enter a <a href="../../../manuals/yoda/data_access/yoda_dap.html">Yoda Data Access Password</a> when prompted.</p>
+<p>After installing and configuring the iCommands, you should be able to log in on the Yoda environment using the <a href="https://docs.irods.org/4.3.4/icommands/user/#iinit" target="_blank">iinit</a> command. Enter a <a href="../../../manuals/yoda/data_access/yoda_dap.html">Yoda Data Access Password</a> when prompted.</p>
 <p>These are the basic commands for navigation and data transfer:</p>
 <ul>
-<li><a href="https://docs.irods.org/4.2.12/icommands/user/#ipwd" target="_blank">ipwd</a> – Show current iRODS directory</li>
-<li><a href="https://docs.irods.org/4.2.12/icommands/user/#ils" target="_blank">ils</a> – List contents of a directory</li>
-<li><a href="https://docs.irods.org/4.2.12/icommands/user/#icd" target="_blank">icd</a> – Change directory</li>
-<li><a href="https://docs.irods.org/4.2.12/icommands/user/#iput" target="_blank">iput</a> – Upload files to Yoda</li>
-<li><a href="https://docs.irods.org/4.2.12/icommands/user/#iget" target="_blank">iget</a> – Download files from Yoda</li>
-<li><a href="https://docs.irods.org/4.2.12/icommands/user/#irsync" target="_blank">irsync</a> – Synchronize local and remote directories</li>
+<li><a href="https://docs.irods.org/4.3.4/icommands/user/#ipwd" target="_blank">ipwd</a> – Show current iRODS directory</li>
+<li><a href="https://docs.irods.org/4.3.4/icommands/user/#ils" target="_blank">ils</a> – List contents of a directory</li>
+<li><a href="https://docs.irods.org/4.3.4/icommands/user/#icd" target="_blank">icd</a> – Change directory</li>
+<li><a href="https://docs.irods.org/4.3.4/icommands/user/#iput" target="_blank">iput</a> – Upload files to Yoda</li>
+<li><a href="https://docs.irods.org/4.3.4/icommands/user/#iget" target="_blank">iget</a> – Download files from Yoda</li>
+<li><a href="https://docs.irods.org/4.3.4/icommands/user/#irsync" target="_blank">irsync</a> – Synchronize local and remote directories</li>
 </ul>
 <p>Your Yoda project folders are located under <code>/vu/home</code>.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>By default an irods session will time-out after an hour and you will need to login again. You can extend the session by starting it with the <code>--ttl &lt;hours&gt;</code> option, e.g.&nbsp;<code>iinit --ttl 8</code> will keep the session alive for 8 hours.</p>
+</div>
+</div>
 <p>You can find a quick introduction of the iCommands on the <a href="https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/19824798/Data+handling+in+Yoda+iRODS+using+iCommands#DatahandlinginYoda%2FiRODSusingiCommands-Createcollectionsandnavigate" target="_blank">SURF wiki</a> or you can check out <a href="https://irods.org/uploads/2016/06/irods_beginner_training_2016.pdf" target="_blank">this training manual</a>.</p>
-<p>You can find a full list of available commands in the <a href="https://docs.irods.org/4.2.12/icommands/user/" target="_blank">iRODS Docs</a>.</p>
+<p>You can find a full list of available commands in the <a href="https://docs.irods.org/4.3.4/icommands/user/" target="_blank">iRODS Docs</a>.</p>
 
 
 </section>
