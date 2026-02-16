@@ -5,19 +5,50 @@ categories: [Responsible Scholarship]
 
 ## What Is Preregistration?
 
-According to the [Center for Open Science](https://www.cos.io/prereg), preregistration is a core open science practice that supports reproducibility and accountability. [Preregistration](https://vu.nl/en/about-vu/more-about/preregister-your-research-plan) is the practice of documenting your research plan **before** you begin data collection and storing that plan in a time-stamped, read-only public repository. By registering your hypotheses, methods, and planned analyses in advance, you make your research decisions transparent and distinguish **confirmatory** analyses from **exploratory** ones. 
+According to the [Center for Open Science](https://www.cos.io/prereg), preregistration is a core open science practice that supports reproducibility and accountability. Preregistration is the process of documenting your research plan **before** data collection and storing it in a time-stamped, read-only public repository. By registering hypotheses, methods, and planned analyses in advance, researchers make their decisions transparent and clearly distinguish **confirmatory** analyses from **exploratory** ones.  
 
+![Diagram showing preregistration within the theory–data cycle.](public/Preregistration-can-be-added-as-a-step-in-the-theory-data-cycle-Here-preregistration-is.png)
+
+*Preregistration within the theory–data cycle. Adapted from Morling & Calin-Jageman (2020).*
 ---
 
 ## Why Preregister?
 
-Preregistering your research allows others to evaluate your study based on its **design and methodological rigor**, rather than solely on its results. This helps address **publication bias**, where studies with positive findings are more likely to be published than those with null or inconclusive results.
+Preregistration allows others to evaluate a study based on its design and methodological rigor, rather than only on its results. This transparency helps counteract publication bias, which favors positive findings over null or inconclusive results.  
 
-By specifying hypotheses and analysis plans in advance, preregistration clearly distinguishes **confirmatory** analyses from **exploratory** ones. This transparency strengthens the credibility of research findings and supports accurate interpretation by readers, reviewers, and meta-analysts.
+Specifying hypotheses, analytic plans, and methodological details in advance strengthens the credibility of research findings and supports accurate interpretation by readers, reviewers, and meta-analysts.  
 
-Preregistration does **not** restrict flexibility. Any necessary deviations from the original plan can be transparently documented and justified in the final report.
+Preregistration does not prevent modifications to a research plan; however, any changes should be transparently documented and justified in the final report.
 
-![Research cycle diagram showing where preregistration fits within the theory–data cycle. Figure adapted from Morling & Calin-Jageman (2020).](public/Preregistration-can-be-added-as-a-step-in-the-theory-data-cycle-Here-preregistration-is.png)
+---
+
+## How Preregistration Helps Reduce Publication Bias
+
+Preregistration increases transparency and accountability by creating a public record of a study’s hypotheses, methods, and analysis plan before data collection. This helps reduce publication bias in several ways:
+
+- **Records all planned studies** – Timestamped preregistration ensures that null or negative results are documented, making it harder to hide research that “doesn’t work.”  
+- **Encourages reporting of null results** – Reviewers and journals can see that the study was planned and conducted, promoting publication regardless of outcome.  
+- **Reduces selective reporting** – Predefined primary outcomes and analyses prevent highlighting only favorable results.  
+- **Supports meta-analyses and systematic reviews** – Including studies with null results reduces distortion of effect sizes caused by publication bias.  
+
+By making study plans public before data collection, preregistration discourages hiding studies or selectively reporting results, which are major contributors to publication bias.
+
+---
+
+## Questionable Research Practices Addressed by Preregistration
+
+Preregistration promotes transparency and reduces flexible or selective analysis by documenting key research decisions before data collection. It helps limit practices such as:
+
+- **P-hacking** – Trying multiple analyses, models, or outcome measures and reporting only those that reach statistical significance.  
+- **HARKing (Hypothesizing After Results are Known)** – Presenting post hoc explanations as if they were predicted beforehand.  
+- **Selective outcome reporting** – Measuring many variables but reporting only favorable results.  
+- **Optional stopping (data peeking)** – Collecting data until statistical significance is achieved.  
+- **Post hoc exclusion decisions** – Removing participants or outliers based on their effect on results.  
+- **Changing primary outcomes** – Reframing exploratory findings as confirmatory.  
+- **Uncorrected multiple comparisons** – Conducting many tests without adjusting for inflated Type I error.  
+- **Model specification searching** – Testing multiple model configurations and reporting only the most favorable one.  
+
+By documenting hypotheses, sample size, exclusion criteria, and analytic strategies in advance, preregistration clarifies the distinction between confirmatory and exploratory research and strengthens confidence in the results.
 
 ---
 
@@ -26,45 +57,45 @@ Preregistration does **not** restrict flexibility. Any necessary deviations from
 There are two main forms of preregistration:
 
 1. **Unreviewed preregistration**  
-   Researchers publicly register their research plan in a registry before data collection. When the study is later submitted for publication, reviewers and readers can consult the preregistration to assess the alignment between the original plan and the reported analyses.
+   Researchers publicly register their research plan before data collection. When the study is later submitted for publication, reviewers and readers can assess how well the reported analyses match the preregistered plan.
 
 2. **Reviewed preregistration (Registered Reports)**  
-   Researchers submit a detailed research proposal to a journal **prior to data collection**. The proposal is peer reviewed, and the journal makes an in-principle acceptance decision based on the **theoretical motivation and methodological rigor**, rather than the study’s results.
+   Researchers submit a detailed research proposal to a journal **prior to data collection**. The proposal undergoes peer review, and the journal may offer in-principle acceptance based on the study’s **theoretical motivation and methodological rigor**, rather than its results.
 
 ---
 
 ## What to Include in a Study’s Preregistration
 
-A preregistration should clearly document key decisions made before data collection or analysis to promote transparency and reduce questionable research practices (Krypotos et al., 2022).
+Preregistration should document key decisions made before data collection or analysis to promote transparency and reduce questionable research practices (Krypotos et al., 2022).  
+
+> **Note:** Different study types and disciplines may require different preregistration elements. The guidance below represents general best practices, but not every item will be applicable to all research. Researchers should consult templates and field-specific recommendations to tailor their preregistration to their study design and research context.
 
 ### Research hypotheses
-For confirmatory research, hypotheses should be stated clearly and specifically in advance to prevent flexible interpretation of results. Exploratory research does not require predefined hypotheses.
+Confirmatory hypotheses should be clear and specific to prevent flexible interpretation of results. Exploratory research does not require predefined hypotheses.
 
 ### Methodology
-The preregistration should describe how the study will be conducted, including materials, procedures, data sources, and data collection methods. For studies using existing data, researchers should explain how the data were obtained and disclose any prior knowledge that could influence analyses. Whenever possible, study materials should be shared in a repository to support transparency and replication.
+Describe materials, procedures, data sources, and data collection methods. For studies using existing data, explain how it was obtained and disclose any prior knowledge that could influence analyses. Sharing study materials in a repository is encouraged to support transparency and replication.
 
 ### Sample
-Researchers should specify the intended sample characteristics and justify the planned sample size (e.g. through power analysis or other decision rules). Any stopping rules, adaptive sampling procedures, or use of pre-existing datasets should be clearly documented in advance, including how training and validation datasets will be defined where applicable.
+Specify intended sample characteristics and justify sample size (e.g., via power analysis). Document stopping rules, adaptive sampling procedures, or use of pre-existing datasets, including how training and validation datasets will be defined if applicable.
 
 ### Data preprocessing
-All planned data transformations, exclusions, and aggregation procedures should be specified in advance. If exact procedures cannot be fully predefined, researchers should describe planned sensitivity analyses to demonstrate the robustness of results.
+Outline planned data transformations, exclusions, and aggregation procedures. If exact procedures cannot be fully predefined, describe planned sensitivity analyses to assess robustness.
 
 ### Statistical analysis
-The preregistration should outline the planned statistical models, variables, and inferential framework (e.g. NHST or Bayesian analysis). Clear documentation of analytic decisions helps prevent bias and increases the credibility of findings. Preregistrations may be updated when necessary, but changes should be made transparently and documented.
+Specify planned statistical models, variables, and inferential framework (e.g., NHST or Bayesian analysis). Clearly documenting analytic decisions prevents bias and increases credibility. Any changes to the preregistered plan should be transparently documented.
 
 ### Templates and study-specific elements
-Different study types require different preregistration elements. Researchers are encouraged to consult existing preregistration [templates](https://help.osf.io/article/330-welcome-to-registrations) and select one appropriate to their field and research design (Krypotos et al., 2022).
+Different study types require different preregistration elements. Researchers are encouraged to consult existing preregistration [templates](https://help.osf.io/article/330-welcome-to-registrations) and select one appropriate to their field and design (Krypotos et al., 2022).
 
 ---
 
-## Where Can I Preregister my Research?
+## Where Can I Preregister My Research?
 
-The Open Science Framework (OSF), developed by the Center for Open Science (COS), provides an online infrastructure for managing, documenting, and sharing research projects and associated research data. It supports collaboration and transparency by enabling researchers to organize project components, data, and documentation in a centralized environment. COS has compiled a [list](https://osf.io/e6auq/wiki?wiki=6h2fw) of examples of preregistration studies across various disciplines. 
+The [Open Science Framework (OSF)](https://www.osf.io/) provides infrastructure for managing, documenting, and sharing research projects and data. It supports collaboration and transparency by enabling researchers to organize project components and materials in a centralized environment.  
 
-Practical guidance on preregistering studies and registering data using OSF is available here:
-[Registrations & Preregistrations](https://help.osf.io/article/330-welcome-to-registrations)
-
-If you have questions about preregistering your study, please send an email to [rdm@vu.nl](mailto:rdm@vu.nl).
+COS has compiled a [list of preregistration examples](https://osf.io/e6auq/wiki?wiki=6h2fw) across disciplines. Practical guidance on preregistering studies and registering data using OSF is available here: [Registrations & Preregistrations](https://help.osf.io/article/330-welcome-to-registrations).
+If you have questions about preregistering your study, please email [rdm@vu.nl](mailto:rdm@vu.nl).
 
 ---
 
