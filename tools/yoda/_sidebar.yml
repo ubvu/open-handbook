@@ -2,51 +2,51 @@ website:
   sidebar:
     - id: sb-yoda
       style: floating
-      search: true
+      search: false
+      collapse-level: 4
       contents:
-        - tools/yoda/index.qmd
-        - tools/yoda/costs_access.qmd
-        - tools/yoda/contact_support.qmd
-        - tools/yoda/quick_start.qmd
-        - tools/yoda/getting_started.qmd
-        - section: Documentation
+        - section: Yoda
+          href: tools/yoda/index.qmd
           contents:
-          - section: Yoda Portal
+          - tools/yoda/cost_access.qmd
+          - tools/yoda/contact_support.qmd
+          - tools/yoda/quick_start.qmd
+          - section: Documentation
             contents:
-              #- tools/yoda/index.qmd
-              - tools/yoda/introduction.qmd
-              - tools/yoda/notifications.qmd
-              - tools/yoda/sram_invitations_eduid_activation.qmd
-              - tools/yoda/logging_in.qmd
-              - tools/yoda/group_manager.qmd
-          - section: Using Yoda
-            contents:
-              - tools/yoda/finding_restoring.qmd
-              - tools/yoda/metadata.qmd
-              - tools/yoda/workflow_metadata.qmd
-              - tools/yoda/properties_and_explanation.qmd
-              - tools/yoda/workflow_metadata_license.qmd
-              - tools/yoda/analysing_data.qmd
-          - section: Securing and Distributing Data
-            contents: 
-              - tools/yoda/vault_archive.qmd
-              - tools/yoda/vault_publish.qmd
-          - section: Data Access and Transfer
-            contents:
-              - tools/yoda/yoda_portal.qmd
-              - tools/yoda/yoda_dap.qmd
-              - tools/yoda/data_access_linux.qmd
-              - tools/yoda/data_access_macos.qmd
-              - tools/yoda/data_access_windows.qmd
-              - tools/yoda/yoda_using_cyberduck.qmd
-              - tools/yoda/yoda_using_cyberduck_cryptometer.qmd
-              - tools/yoda/yoda_using_icommands.qmd
-              - tools/yoda/yoda_using_python.qmd
-              - tools/yoda/yoda_using_rclone.qmd
-              - tools/yoda/yoda_using_webdrive.qmd
-              - tools/yoda/yoda_using_windowsexplorer.qmd
-              - tools/yoda/yoda_using_winscp.qmd
-        - section: FAQ
-          contents: 
-            - tools/yoda/faq.qmd
-            - tools/yoda/known_issues.qmd
+            - section: Yoda Portal
+              contents:
+                - tools/yoda/yoda_portal.qmd
+                - tools/yoda/introduction.qmd
+                - tools/yoda/notifications.qmd
+                - tools/yoda/sram_invitations_eduid_activation.qmd
+                - tools/yoda/logging_in.qmd
+                - tools/yoda/group_manager.qmd
+            - section: Using Yoda
+              contents:
+                - tools/yoda/finding_restoring.qmd
+                - tools/yoda/metadata.qmd
+                - tools/yoda/workflow_metadata.qmd
+                - tools/yoda/properties_and_explanation.qmd
+                - tools/yoda/workflow_metadata_license.qmd
+                - tools/yoda/analysing_data.qmd
+            - section: Securing and Distributing Data
+              contents: 
+                - tools/yoda/vault_archive.qmd
+                - tools/yoda/vault_publish.qmd
+            - section: Data Access and Transfer
+              contents:
+                - tools/yoda/yoda_portal.qmd
+                - tools/yoda/yoda_dap.qmd
+                - tools/yoda/data_access_linux.qmd
+                - tools/yoda/data_access_macos.qmd
+                - tools/yoda/data_access_windows.qmd
+                - tools/yoda/yoda_using_cyberduck.qmd
+                - tools/yoda/yoda_using_cyberduck_cryptometer.qmd
+                - tools/yoda/yoda_using_icommands.qmd
+                - tools/yoda/yoda_using_python.qmd
+                - tools/yoda/yoda_using_rclone.qmd
+                - tools/yoda/yoda_using_webdrive.qmd
+                - tools/yoda/yoda_using_windowsexplorer.qmd
+                - tools/yoda/yoda_using_winscp.qmd
+          - tools/yoda/faq.qmd
+          - tools/yoda/known_issues.qmd
