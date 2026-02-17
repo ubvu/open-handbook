@@ -1,0 +1,35 @@
+website:
+  sidebar:
+    - id: sb-ada
+      style: floating
+      search: false
+      collapse-level: 4
+      contents:
+        - section: Ada
+          href: tools/ada/index.qmd
+          contents:
+          - tools/ada/cost_access.qmd
+          - tools/ada/contact_support.qmd
+          - tools/ada/quick_start.qmd
+          - section: Documentation
+            contents:
+            - tools/ada/login.qmd
+            - tools/ada/quick-start.qmd
+            - tools/ada/slurm.qmd
+            - tools/ada/software.qmd
+            - tools/ada/hardware.qmd
+            - tools/ada/open-ondemand.qmd
+            - tools/ada/yoda.qmd
+            - tools/ada/help.qmd
+            - section: Code Examples
+              contents:
+              - tools/ada/matlab.qmd
+              - section: Python
+                contents: 
+                - tools/ada/1-python-multithreading.qmd
+                - tools/ada/2-python-multiprocessing.qmd
+                - tools/ada/3-python-pytorch.qmd
+              - section: R
+                contents:
+                - tools/ada/1-R-multiprocessing.qmd
+            - tools/ada/hpc-101.qmd
