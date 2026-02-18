@@ -1,0 +1,13 @@
+---
+title: Quick Start
+---
+
+1. Log in to the Research Drive web application at [vu.data.surf.nl](https://vu.data.surf.nl/). You are only able to log in after you have been invited to one or more project folders. The login process requires a SURFsecureID Token for multi-factor authentication (MFA), which students do not have by default. If you do not yet have an SURFsecureID token, you can, as a VU student, researcher or employee, request an account at the IT Servicedesk in the main building with a legitimate ID.
+
+2. Install the Nextcloud Client software, you can find installation instructions on the [SURF User Knowledge Base](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/117178931/RD+Getting+the+Nextcloud+desktop+app). The Server Address is `https://vu.data.surf.nl`.
+
+For transferring large amounts of data Rclone is good option. The [SURF User Knowledge Base explains how](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/117179081/RD+How+to+use+Rclone+with+Research+Drive). 
+
+Rclone can also be used to [mount](https://rclone.org/commands/rclone_mount/) (make accessible via a drive letter in Windows) a Research Drive folder. This means you can directly access the data from tools such as R, without downloading the entire dataset first. This method has some limitations, but should work fine with smaller datasets (a few GB).
+
+The SURF User Knowledge Base contains more [Tutorials](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/117178986/RD+User+tutorials) on working with Research Drive.

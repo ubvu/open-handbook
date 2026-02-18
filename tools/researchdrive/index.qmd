@@ -1,7 +1,9 @@
 ---
 title: Research Drive
-categories: [Tools]
+categories: [Data Storage]
+image: '/public/logo_nextcloud_blue.svg'
 ---
+
 ## What is it?
 [SURF Research Drive](https://www.surf.nl/en/services/research-drive) is an online storage and collaboration platform for research data. With Research Drive you can easily store and share files with other researchers, inside and outside VU Amsterdam. You can access your data via a web interface or tools, from anywhere in the world.
 
@@ -32,25 +34,3 @@ Within Research Drive, various apps and integrations are available to simplify t
 Since both are based on Nextcloud, Research Drive is very similar to SURFdrive, the main difference is that SURFdrive is personal storage while Research Drive is group based.
 
 Researchers looking for a new home for research data currently on SURFdrive are encouraged to migrate to Research Drive. Manuals for migrating data to Research Drive are available in [English](../public/Manual-migrating-data-SURFdrive-to-ResearchDrive_EN.pdf) and [Dutch](../public/Handleiding-Migreren-data-SURFdrive-naar-ResearchDrive_NL.pdf). Please contact the [Research Support Desk](mailto:rdm@vu.nl) if you have any questions about migrating to Research Drive.
-
-## How to request access
-A new Research Drive projectfolder can be requested via the form on 🔒 [ServiceNow](https://services.vu.nl/esc), go to: Research Data Support > Research Data Support > Request Research Drive.
-
-Once the projectfolder is created you can invite internal and external collaborators yourself.
-
-## Are there costs involved?
-The costs of storing data in Research Drive are detailed on the 🔒 [VU website](https://vu.nl/en/employee/research-data-support/research-archiving-storage-cost-model).
-
-## Getting started
-1. Log in to the Research Drive web application at [vu.data.surf.nl](https://vu.data.surf.nl/). You are only able to log in after you have been invited to one or more project folders. The login process requires a Multi-Factor Authentication (MFA) account, which students do not have by default. If you do not yet have an MFA account, you can, as a VU student, researcher or employee, request an account at the IT Servicedesk in the main building with a legitimate ID.
-
-2. Install the Nextcloud Client software, you can find installation instructions on the [SURF User Knowledge Base](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/117178931/RD+Getting+the+Nextcloud+desktop+app). The Server Address is `https://vu.data.surf.nl`.
-
-For transferring large amounts of data Rclone is good option. The [SURF User Knowledge Base explains how](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/117179081/RD+How+to+use+Rclone+with+Research+Drive). 
-
-Rclone can also be used to [mount](https://rclone.org/commands/rclone_mount/) (make accessible via a drive letter in Windows) a Research Drive folder. This means you can directly access the data from tools such as R, without downloading the entire dataset first. This method has some limitations, but should work fine with smaller datasets (a few GB).
-
-The SURF User Knowledge Base contains more [Tutorials](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/117178986/RD+User+tutorials) on working with Research Drive.
-
-## Contact
-Wondering if Research Drive fits your research needs? Please contact the [Research Support Desk](mailto:rdm@vu.nl).
