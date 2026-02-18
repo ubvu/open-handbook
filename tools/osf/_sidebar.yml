@@ -1,0 +1,14 @@
+website:
+  sidebar:
+    - id: sb-osf
+      collapse-level: 4
+      contents:
+        - section: OSF
+          href: tools/osf/index.qmd
+          contents:
+          - tools/osf/cost_access.qmd
+          - tools/osf/contact_support.qmd
+          - tools/osf/quick_start.qmd
+          - section: Documentation
+            contents:
+            - tools/osf/use-osf.qmd
