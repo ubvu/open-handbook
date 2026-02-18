@@ -2,9 +2,10 @@
 title: ADA documentation
 categories: [Compute, Analysis]
 image: '/public/tools/ada/ada1.jpg'
-alias: 
+aliases: 
   - '/topics/ada.html'
   - '/topics/bazis.html'
+  - '/manuals/ada/index.html'
 ---
 
 ## Welcome
@@ -18,7 +19,7 @@ ADA is named in honour of [Ada Lovelace](https://en.wikipedia.org/wiki/Ada_Lovel
 - New to bash and the command line? Get familiar with Linux basics first through [Carpentries lessons](https://swcarpentry.github.io/shell-novice/).
 - Set-up your SSH access by following the [login instructions](./login.qmd).
 - New to HPC? Get familiar with HPC concepts through [HPC Carpentries lessons](https://carpentries-incubator.github.io/hpc-intro/).
-- Run your first job with the [Quick Start](quick-start.qmd).
+- Run your first job with the [Quick Start](quick_start.qmd).
 :::
 
 ## ADA at a Glance
@@ -26,19 +27,19 @@ ADA is named in honour of [Ada Lovelace](https://en.wikipedia.org/wiki/Ada_Lovel
 - [Heterogeneous cluster](./hardware.qmd) with CPU and GPU partitions financed by VU departments and central IT.
 - Access to partitions depends on departmental ownership; community partitions are available to all approved users.
 - [Software stack](./software.qmd) combines centrally maintained modules with self-service tools (Pixi, Conda, Apptainer).
-- Data on [SciStor](../../topics/scistor.qmd) is mounted directly on ADA.
-- For workloads demanding large GPU quotas, explore [Snellius](../../topics/snellius.qmd) or work with your department on dedicated nodes.
+- Data on [SciStor](/topics/scistor.qmd) is mounted directly on ADA.
+- For workloads demanding large GPU quotas, explore [Snellius](./topics/snellius.qmd) or work with your department on dedicated nodes.
 
 ## Access, Policies, and Costs
 
 - **Eligibility**: VU researchers and collaborators whose departments sponsor ADA hardware or are approved for community access.
-- **Requesting access**: follow the [account request instructions](..//tools/ada/index.qmd#how-to-request-access); requests must include your supervisor’s approval.
+- **Requesting access**: follow the [account request instructions](/tools/ada/cost_access.qmd); requests must include your supervisor’s approval.
 - **Usage costs**: Community partitions are free to use but shared; heavy or specialised workloads may require investing in departmental nodes.
 - **Dedicated hardware**: Contact [IT for Research](mailto:itvo.it@vu.nl) to scope dedicated purchases or long-term resource planning.
 
 ## When ADA Fits Your Work
 
-Use ADA when you need more resources than a laptop or workstation: multi-core CPUs, large memory nodes, or batch GPU capacity. Jobs must run from the Linux command line in non-interactive mode—graphical tools require alternatives such as the [VU Compute Hub](https://hub.compute.vu.nl/) or [SURF Research Cloud](../../topics/researchcloud.qmd).
+Use ADA when you need more resources than a laptop or workstation: multi-core CPUs, large memory nodes, or batch GPU capacity. Jobs must run from the Linux command line in non-interactive mode—graphical tools require alternatives such as the [VU Compute Hub](https://hub.compute.vu.nl/) or [SURF Research Cloud](/topics/researchcloud.qmd).
 
 
 ## Training and External Resources
@@ -50,7 +51,7 @@ Use ADA when you need more resources than a laptop or workstation: multi-core CP
 ## Support
 
 - Technical questions, quota requests, or procurement discussions: [IT for Research](mailto:itvo.it@vu.nl)
-- Issues using the cluster? See [Help](help.qmd) to see how to ask for assistance effectively.
+- Issues using the cluster? See [Help](contact_support.qmd) to see how to ask for assistance effectively.
 
 ## Documentation Feedback
 
