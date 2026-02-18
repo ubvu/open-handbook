@@ -1,0 +1,11 @@
+website:
+  sidebar:
+    - id: sb-dmponline
+      collapse-level: 4
+      contents:
+        - section: DMPonline
+          href: tools/dmponline/index.qmd
+          contents:
+          - tools/dmponline/cost_access.qmd
+          - tools/dmponline/contact_support.qmd
+          - tools/dmponline/quick_start.qmd
