@@ -1,0 +1,12 @@
+website:
+  sidebar:
+    - id: sb-researchcloud
+      collapse-level: 4
+      contents:
+        - section: Research Cloud
+          href: tools/researchcloud/index.qmd
+          contents:
+          - tools/researchcloud/cost_access.qmd
+          - tools/researchcloud/contact_support.qmd
+          - tools/researchcloud/quick_start.qmd
+
