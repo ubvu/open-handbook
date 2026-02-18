@@ -11,13 +11,6 @@ website:
   repo-actions: [edit, issue]
   page-navigation: true
   bread-crumbs: true
-  sidebar:
-    - id: sb-scistor
-      style: floating
-      search: true
-      contents:
-        - manuals/scistor/index.qmd 
-        - auto: manuals/scistor/*.qmd
 
   navbar:
     background: "#0080c9"
@@ -96,5 +89,6 @@ metadata-files:
   - tools/ithenticate/_sidebar.yml
   - tools/pure/_sidebar.yml
   - tools/qualtrics/_sidebar.yml
+  - tools/scistor/_sidebar.yml
   - tools/yoda/_sidebar.yml
   

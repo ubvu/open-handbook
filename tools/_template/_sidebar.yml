@@ -1,16 +1,16 @@
 website:
   sidebar:
-    - id: sb-pure
+    - id: sb-dummy
       collapse-level: 4
       contents:
-        - section: Pure
-          href: tools/pure/index.qmd
+        - section: Dummy
+          href: tools/dummy/index.qmd
           contents:
-          - tools/pure/cost_access.qmd
-          - tools/pure/contact_support.qmd
-          - tools/pure/quick_start.qmd
+          - tools/dummy/cost_access.qmd
+          - tools/dummy/contact_support.qmd
+          - tools/dummy/quick_start.qmd
           - section: Documentation
             contents:
-            - tools/pure/faq.qmd
+            - tools/dummy/faq.qmd
 
 # Remember to put a link to this file in _quarto.yml under "metadata-files"
