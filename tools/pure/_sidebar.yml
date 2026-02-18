@@ -11,6 +11,5 @@ website:
           - tools/pure/quick_start.qmd
           - section: Documentation
             contents:
-            - tools/pure/faq.qmd
-
-# Remember to put a link to this file in _quarto.yml under "metadata-files"
+            - tools/pure/data-registration.qmd
+            - tools/pure/software-registration.qmd
