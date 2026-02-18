@@ -1,0 +1,12 @@
+website:
+  sidebar:
+    - id: sb-nebula
+      collapse-level: 4
+      contents:
+        - section: Nebula
+          href: tools/nebula/index.qmd
+          contents:
+          - tools/nebula/cost_access.qmd
+          - tools/nebula/contact_support.qmd
+          - tools/nebula/quick_start.qmd
+
