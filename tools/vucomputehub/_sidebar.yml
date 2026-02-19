@@ -1,0 +1,15 @@
+website:
+  sidebar:
+    - id: sb-vucomputehub
+      collapse-level: 4
+      contents:
+      # Title that shows up at the top of the sidebar
+        - section: VU Compute Hub
+          href: tools/vucomputehub/index.qmd
+          contents:
+          - tools/vucomputehub/cost_access.qmd
+          - tools/vucomputehub/contact_support.qmd
+          - tools/vucomputehub/quick_start.qmd
+
+
+# Rename application and add to _quarto.yml
