@@ -22,6 +22,7 @@ listing:
   filter-ui: [title]
   categories: true
   fields: [image, title, description, categories]
+  image-align: right
 format: 
   html:
     include-in-header:  
@@ -30,9 +31,19 @@ format:
         .metadata {
           display: none !important; /* hide metadata normally shown left of the description */
         }
-        .image-right {
+        .quarto-post {
             align-items: center; /* vertical align logo */
+            margin-bottom: 0 !important;
+            padding-bottom: 0.75em;
+            padding-top: 0.75em;
         }
+        .quarto-post .listing-description {
+          margin-bottom: 0em !important;
+        }
+        .quarto-post img {
+          max-height: 150px;
+        }
+
         </style>
 ---
 
