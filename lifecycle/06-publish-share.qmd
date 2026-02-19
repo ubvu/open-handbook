@@ -16,10 +16,10 @@ listing:
     table-striped: true
     table-hover: true
     fields: [title, reading-time]
-  - id: manuals
+  - id: tools
     contents:
-      - ../manuals/pure/registration/data-registration.qmd
-      - ../manuals/pure/registration/software-registration.qmd
+      - /tools/pure/data-registration.qmd
+      - /tools/pure/software-registration.qmd
     type: table
     table-striped: true
     table-hover: true
