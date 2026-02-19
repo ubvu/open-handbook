@@ -11,15 +11,15 @@ listing:
       - ../topics/software-licensing.qmd
       - ../topics/dataversenl.qmd
       - ../topics/osf.qmd
-      -   /tools/yoda/index.qmd
+      - ../tools/yoda/index.qmd
     type: table
     table-striped: true
     table-hover: true
     fields: [title, reading-time]
   - id: tools
     contents:
-      - /tools/pure/data-registration.qmd
-      - /tools/pure/software-registration.qmd
+      - ../tools/pure/data-registration.qmd
+      - ../tools/pure/software-registration.qmd
     type: table
     table-striped: true
     table-hover: true
