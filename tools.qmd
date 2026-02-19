@@ -24,7 +24,7 @@ listing:
   fields: [image, title, description, categories]
 format: 
   html:
-    include-in-header: 
+    include-in-header: # Hides the metadata (author data etc. that is normally shown left of the description) 
       text: |
         <style>
         .metadata {
