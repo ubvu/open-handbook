@@ -1,0 +1,15 @@
+website:
+  sidebar:
+    - id: sb-snellius
+      collapse-level: 4
+      contents:
+      # Title that shows up at the top of the sidebar
+        - section: Snellius
+          href: tools/snellius/index.qmd
+          contents:
+          - tools/snellius/cost_access.qmd
+          - tools/snellius/contact_support.qmd
+          - tools/snellius/quick_start.qmd
+
+
+# Rename application and add to _quarto.yml
