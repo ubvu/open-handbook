@@ -22,6 +22,15 @@ listing:
   filter-ui: [title]
   categories: true
   fields: [image, title, description, categories]
+format: 
+  html:
+    include-in-header: 
+      text: |
+        <style>
+        .metadata {
+          display: none !important;
+        }
+        </style>
 ---
 
 ::: {.callout-tip}
