@@ -16,7 +16,7 @@ If you've lost or accidentally modified a file, SciStor Snapshots can help you r
 
 ## Windows (Difficulty: Easy)
 
-If you don't have access to a Windows machine, connect to [Azure Virtual Desktop (AVD)](https://windows.cloud.microsoft/spa-signin-oidc#/devices) and follow the [instructions](./scistor-connection.qmd#windows) for mounting a share in Windows.
+If you don't have access to a Windows machine, connect to [Azure Virtual Desktop (AVD)](https://windows.cloud.microsoft/spa-signin-oidc#/devices) and follow the [instructions](./scistor-connection.qmd#windows) for mounting a project folder in Windows.
 
 ### Steps to Restore a File
 
@@ -50,14 +50,14 @@ Mount SciStor in Finder using **⌘+K**.
 
 The path depends on how you mounted SciStor:
 
-- If you mounted `smb://scistor.vu.nl/shares`, navigate to `/Volumes/shares/<share-name>`
+- If you mounted `smb://scistor.vu.nl/shares`, navigate to `/Volumes/shares/<projectfolder-name>`
 
-- If you mounted `smb://scistor.vu.nl/shares/<share-name>`, navigate to `/Volumes/<share-name>`
+- If you mounted `smb://scistor.vu.nl/shares/<projectfolder-name>`, navigate to `/Volumes/<projectfolder-name>`
 
 
 ### Steps to Restore a File
 
-1. **Open Terminal** and navigate to your mounted share:
+1. **Open Terminal** and navigate to your mounted project folder:
 
 ```bash
 cd /Volumes/IT-ITVO-Scistor-Demo
@@ -109,31 +109,25 @@ ls
 # Your file is now restored!
 ```
 ::: {.callout-note}
-Be aware that `IT-ITVO-Scistor-Demo` is a share used to write this documentation,
-please replace this with your own share.
+Be aware that `IT-ITVO-Scistor-Demo` is a project folder used to write this documentation,
+please replace this with your own project foldername.
 :::
 
 ---
 
 ## Linux (Difficulty: Intermediate)
 
-Linux works similarly to macOS, but the mount path depends on where you choose to mount your share. This example uses the Stepstone server (`sftp.data.vu.nl`).
+Linux works similarly to macOS, but the mount path depends on where you choose to mount your project folder. This example follows the default suggestion in [the handbook](./scistor-connection.qmd#other-linux-workstations).
 
 ### Steps to Restore a File
 
-1. **Connect via SSH**:
+1. **Navigate to your project folder**:
 
 ```bash
-ssh vunetId@sftp.data.vu.nl
+cd /data/VU/shares/
 ```
 
-2. **Navigate to your share**:
-
-```bash
-cd /research/IT-ITVO-SciStor-Demo
-```
-
-3. **Verify your file is missing**:
+2. **Verify your file is missing**:
 
 ```bash
 ls
@@ -174,8 +168,8 @@ ls
 # Your file is now restored!
 ```
 ::: {.callout-note}
-Be aware that `IT-ITVO-Scistor-Demo` is a share used to write this documentation,
-please replace this with your own share.
+Be aware that `IT-ITVO-Scistor-Demo` is a project folder used to write this documentation,
+please replace this with your own project folder.
 :::
 ---
 
@@ -185,7 +179,7 @@ please replace this with your own share.
 - **Most recent snapshot**: The snapshot with the highest number is typically the most recent.
 - **Multiple snapshots**: You can browse different snapshots to find the version of your file you need.
 - **Entire folders**: You can restore entire directories using the same rsync method.
-- **Location of Snapshots**: Snapshots are always in the top level share, subshares contain empty snapshots.
+- **Location of Snapshots**: Snapshots are always in the top level project folder, subfolders contain empty snapshots.
 
 ---
 
