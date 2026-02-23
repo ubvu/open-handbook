@@ -11,11 +11,11 @@ Cyberduck is desktop software for Microsoft Windows and Apple macOS that can be 
 
 - **Microsoft Windows 10/11** : Download Cyberduck from [https://cyberduck.io/download/](https://cyberduck.io/download/) it is free and you **do not** need to register.
 
-![](/public/manuals/yoda/cbd-download.png)
+![](/public/tools/yoda/cbd-download.png)
 
 1. Run the downloaded installer by double clicking on "Cyberduck-installer.exe" which you will find in your Download folder in explorer. Install Cyberduck with the default options, and once that is done launch Cyberduck from the start menu.
 
-![](/public/manuals/yoda/cbd-startmenu.png)
+![](/public/tools/yoda/cbd-startmenu.png)
 
 ## How To: Configuring Cyberduck
 
@@ -24,7 +24,7 @@ Cyberduck is desktop software for Microsoft Windows and Apple macOS that can be 
 
 Cyberducks settings can be accessed by going to the Edit > preferences:
 
-![](/public/manuals/yoda/cbd-preferences.png)
+![](/public/tools/yoda/cbd-preferences.png)
 
 ### Single threaded WebDAV copying
 
@@ -32,7 +32,7 @@ Before using Cyberduck you should change the following settings that ensure bett
 
 Make sure "Transfer Files" is set to "Open single connection" and that "Segmented downloads" is not selected (it is on by default). When using Cyberduck and webDAV it is strongly advised to use the single connection mode.
 
-![](/public/manuals/yoda/cbd-preferences-set.png)
+![](/public/tools/yoda/cbd-preferences-set.png)
 
 **Setting single connection mode**.
 
@@ -43,17 +43,17 @@ Close the settings by clicking the x on the top right of the window.
 
 1. First create a new bookmark by pressing the + button on the lower left side of the screen.
 
-![](/public/manuals/yoda/cbd-add-bookmark.png)
+![](/public/tools/yoda/cbd-add-bookmark.png)
 
 2. You will now see a new connection page:
 
-![](/public/manuals/yoda/cbd-new-connection.png)
+![](/public/tools/yoda/cbd-new-connection.png)
 
 3. Click on the "FTP (File Transfer Protocol)" dropdown list and select a **WebDAV (HTTPS)** connection and you will see the WebDAV (HTTPS) connection page.
 
-![](/public/manuals/yoda/cbd-new-connection-webdav.png)
+![](/public/tools/yoda/cbd-new-connection-webdav.png)
 
-![](/public/manuals/yoda/cbd-new-webdav.png)
+![](/public/tools/yoda/cbd-new-webdav.png)
 
 4. Fill in the following information in the appropriate blocks
 
@@ -65,7 +65,7 @@ First generate a [Data Access Password](/tools/yoda/yoda_dap.qmd).
 
 5. Cyberduck uses your home folder as a default directory to download files. This can be changed by clicking on "More Options" and choosing a new folder
 
-![](/public/manuals/yoda/cbd-new-webdav-options.png)
+![](/public/tools/yoda/cbd-new-webdav-options.png)
 
 6. You have successfully created a bookmark, close the editing window by clicking on the R X button on the top right of the edit window to return to the main Cyberduck screen.
 
@@ -75,43 +75,43 @@ The main screen shows all the connections (bookmarks) you have defined.
 
 1. To connect, double click on the bookmark (in this case "data.yoda.vu.nl - WebDAV (HTTPS)") and you will be connected.
 
-![](/public/manuals/yoda/cbd-main-bookmark.png)
+![](/public/tools/yoda/cbd-main-bookmark.png)
 
 2. If you did not fill in your password in the bookmark you will be asked to do so now. Please note, "Save password" is automatically selected by Cyberduck, you may decide to (un)check this option. Fill in your vunet-id password and click " **Login**" to connect.
 
-![](/public/manuals/yoda/cbd-login-screen.png)
+![](/public/tools/yoda/cbd-login-screen.png)
 
 - If your login unexpectedly fails, please check if your [data access password](/tools/yoda/yoda_dap.qmd) is still valid.
 
 You should now see your project directory in an explorer like window:
 
-![](/public/manuals/yoda/cbd-project-folders.png)
+![](/public/tools/yoda/cbd-project-folders.png)
 
 ## How To: Working with Yoda folders and uploading/downloading files
 
 1. Click on a \> to open a folder,
 
-![](/public/manuals/yoda/cbd-folder-navigate-1.png)
+![](/public/tools/yoda/cbd-folder-navigate-1.png)
 
 - or double click to open in the main window.
 
-![](/public/manuals/yoda/cbd-folder-navigate-2.png)
+![](/public/tools/yoda/cbd-folder-navigate-2.png)
 
 2. Use the left, right and up arrows to navigate the directory tree and right click on the main window to create a new folder:
 
-![](/public/manuals/yoda/cbd-folder-create.png)
+![](/public/tools/yoda/cbd-folder-create.png)
 
 - Alternatively, drag-and-drop folders and files from Windows Explorer to your Yoda project folders:
 
-![](/public/manuals/yoda/cbd-folder-drag-and-drop.png)
+![](/public/tools/yoda/cbd-folder-drag-and-drop.png)
 
 3. In either case, once copying has started you should see the transfer window. Keep this open until the transfer is complete. 
 
-![](/public/manuals/yoda/cbd-file-file-transfer.png)
+![](/public/tools/yoda/cbd-file-file-transfer.png)
 
 - Alternatively, the context menu (activate by right clicking on a Yoda project file/directory) has a number of options for uploading, downloading and synchronizing files and folders:
 
-![](/public/manuals/yoda/cbd-file-right-click.png)
+![](/public/tools/yoda/cbd-file-right-click.png)
 
 ## Some things to consider when using Cyberduck/webDAV
 
@@ -127,7 +127,7 @@ When using Cyberduck you need to make sure that your path lengths (directories +
 
 ### Q1) When I try to delete a file, I get a "cannot delete \<filename\>" Cyberduck error.
 
-![](/public/manuals/yoda/cbd-error-cannot-delete.png)
+![](/public/tools/yoda/cbd-error-cannot-delete.png)
 
 This error message can appear when the file/folder is read-only. Read only access can be a result of:
 
@@ -157,14 +157,14 @@ _Answer: Contact your data manager or iRODS administrator to fix the problem._
 
 Cyberducks settings can be accessed by going to the Edit â preferences:
 
-![](/public/manuals/yoda/cbd-preferences.png)
+![](/public/tools/yoda/cbd-preferences.png)
 
 
 ### Enabling checksum verification
 
 Cyberduck can try to verify that a file was downloaded or uploaded using an internal checksum. To enable this functionality, first go to Cyberducks settings menu and Select "Transfers" from the top menu and the "Checksum" tab. Enable the upload/download verification as required. Enabling either of these options can **negatively** affect Cyberduck's file transfer performance, however, the **upload** option is highly recommended for ensuring **archive** data integrity.
 
-![](/public/manuals/yoda/cbd-preferences-set-checksum.png)
+![](/public/tools/yoda/cbd-preferences-set-checksum.png)
 
 Close the preferences window to save your new configuration.
 -->

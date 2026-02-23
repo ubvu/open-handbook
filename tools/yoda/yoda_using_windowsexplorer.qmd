@@ -11,22 +11,22 @@ using the native WebDAV client if you can't install Cyberduck, for example if th
 
 1. Open "This PC" from the Start menu
 
-![This PC](/public/manuals/yoda/screenshot-windows-thispc.png)
+![This PC](/public/tools/yoda/screenshot-windows-thispc.png)
 
 2. Open the Computer menu item and select "Map network drive". 
 
-![Map network drive icon in This PC](/public/manuals/yoda/screenshot-windows-mapnwdrive.png)
+![Map network drive icon in This PC](/public/tools/yoda/screenshot-windows-mapnwdrive.png)
  
 3. Select a drive letter &mdash; any free letter is okay. Now enter `https://data.yoda.vu.nl/` in the Folder field (see table below).
 
-![folder input field when mapping network drive](/public/manuals/yoda/screenshot-windows-connectfolder.png)
+![folder input field when mapping network drive](/public/tools/yoda/screenshot-windows-connectfolder.png)
 
 4. Ensure the box "Connect using different credentials" is checked and click on the Finish button. 
 
 5. You will be prompted for a name and password. Name is your email address. Create a [data access password](/tools/yoda/yoda_dap.qmd) and copy it to the Password field
 - If you are working on your personal PC or laptop, tick the checkbox &ldquo;Remember my credentials&rdquo;.
 
-![dialog for entering credentials when mapping network drive](/public/manuals/yoda/screenshot-windows-credentials.png)
+![dialog for entering credentials when mapping network drive](/public/tools/yoda/screenshot-windows-credentials.png)
  
 6. The Explorer screen will show the folders you have access rights to. You can now drag and drop your files to upload or download them.
 
@@ -47,11 +47,11 @@ to 4 GB if you have a local administrator account:
 
 3. Open the FileSizeLimitInBytes key
 
-![FileSizeLimitInBytes registry key](/public/manuals/yoda/windows-native-registry-key.jpg)
+![FileSizeLimitInBytes registry key](/public/tools/yoda/windows-native-registry-key.jpg)
 
 4. Set it to FFFFFFFF (hexadecimal)
 
-![increasing the file size limit](/public/manuals/yoda/windows-native-registry-set.jpg)
+![increasing the file size limit](/public/tools/yoda/windows-native-registry-set.jpg)
 
 5. Click on the &ldquo;OK&rdquo; button and close the registry editor
 
@@ -67,25 +67,25 @@ By default the native WebDAV client on Windows 10 & 11 will show a folder contai
 3.  Navigate to key `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WebClient\Parameters`
 
 4.  Open the `FileAttributesLimitInBytes` key:
-![increasing the file size limit](/public/manuals/yoda/screenshot-windows-fileattributeslimit.png)
+![increasing the file size limit](/public/tools/yoda/screenshot-windows-fileattributeslimit.png)
 
 5. In the Value data box, type the value that you want to use, and then click OK. For example, if the Web folder contains 20,000 files, type 20000000 in the Value data box.
-![increasing the file size limit](/public/manuals/yoda/screenshot-windows-fileattributeslimit2.png)
+![increasing the file size limit](/public/tools/yoda/screenshot-windows-fileattributeslimit2.png)
 
 ## How To: Updating your password for a mapped network drive on Windows
 
 1. First open the credential manager by clicking on the start button and typing &ldquo;Manage Windows Credentials&rdquo;.
 
-![starting the Windows credential manager.](/public/manuals/yoda/windowsnative-managewincredentials.png)
+![starting the Windows credential manager.](/public/tools/yoda/windowsnative-managewincredentials.png)
 
 2. Select the address of your Yoda WebDAV interface in the list of generic credentials. 
 
-![selecting the credentials of the Yoda WebDAV interface in the credential manager](/public/manuals/yoda/windowsnative-managewincredentials-select.png)
+![selecting the credentials of the Yoda WebDAV interface in the credential manager](/public/tools/yoda/windowsnative-managewincredentials-select.png)
 
 3. Choose &ldquo;Edit&rdquo;. Edit your credentials and click on the &ldquo;Save&rdquo; button.
 
-![editing the Yoda credentials in the credential manager](/public/manuals/yoda/windowsnative-managewincredentials-edit.png)
+![editing the Yoda credentials in the credential manager](/public/tools/yoda/windowsnative-managewincredentials-edit.png)
 
 4. Restart your computer and open the mapped network drive in &ldquo;This PC&rdquo;.  You may have to re-enter your username and new password once more.
 
-![dialog for entering credentials when mapping network drive](/public/manuals/yoda/screenshot-windows-credentials.png)
+![dialog for entering credentials when mapping network drive](/public/tools/yoda/screenshot-windows-credentials.png)

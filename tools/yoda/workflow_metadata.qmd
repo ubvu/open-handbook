@@ -15,7 +15,7 @@ In order to add structured metadata to a folder:
 1. navigate to the folder in the Yoda portal and press the 
 &ldquo;Metadata&rdquo; button.
 
-![Add-metadata](/public/manuals/yoda/add-metadata.png)
+![Add-metadata](/public/tools/yoda/add-metadata.png)
 
 2. Once you have added metadata and clicked on the &ldquo;Save&rdquo; button, the metadata will be stored in a specific 
 format in the folder. Yoda uses files named &ldquo;yoda-metadata.json&rdquo; for this purpose.
@@ -30,11 +30,11 @@ Please consult the metadata element list below for a detailed description of the
 
 All mandatory fields are marked with an asterisk.
 
-![Mandatory metadata](/public/manuals/yoda/mandatory-metadata.png)
+![Mandatory metadata](/public/tools/yoda/mandatory-metadata.png)
 
 Some metadata elements consist of multiple fields. For example, if you enter a person identifier, you should also  specify the type of identifier.
 
-![Metadata fields](/public/manuals/yoda/compound-metadata.png)
+![Metadata fields](/public/tools/yoda/compound-metadata.png)
 
 Some fields can have multiple values. In order to add a value, press the &ldquo;+&rdquo; sign next to the field.
 
@@ -48,6 +48,6 @@ You can also copy the &ldquo;yoda-metadata.json&rdquo; file of a folder to anoth
 
 When you publish a folder, only the metadata on the level of that folder is published in data catalogs. 
 
-![FolderStructureMetadata](/public/manuals/yoda/FolderStructureMetadata.png)
+![FolderStructureMetadata](/public/tools/yoda/FolderStructureMetadata.png)
 
 
