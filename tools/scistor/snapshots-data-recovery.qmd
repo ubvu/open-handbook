@@ -16,7 +16,7 @@ If you've lost or accidentally modified a file, SciStor Snapshots can help you r
 
 ## Windows (Difficulty: Easy)
 
-If you don't have access to a Windows machine, connect to [Azure Virtual Desktop (AVD)](https://windows.cloud.microsoft/spa-signin-oidc#/devices) and follow the [instructions](./scistor-connection.qmd#windows) for mounting a project folder in Windows.
+If you don't have access to a Windows machine, connect to [Azure Virtual Desktop (AVD)](https://windows.cloud.microsoft/spa-signin-oidc#/devices) and follow the [instructions](./quick_start.qmd#windows) for mounting a project folder in Windows.
 
 ### Steps to Restore a File
 
@@ -117,7 +117,7 @@ please replace this with your own project foldername.
 
 ## Linux (Difficulty: Intermediate)
 
-Linux works similarly to macOS, but the mount path depends on where you choose to mount your project folder. This example follows the default suggestion in [the handbook](./scistor-connection.qmd#other-linux-workstations).
+Linux works similarly to macOS, but the mount path depends on where you choose to mount your project folder. This example follows the default suggestion in [the handbook](./quick_start.qmd#other-linux-workstations).
 
 ### Steps to Restore a File
 
