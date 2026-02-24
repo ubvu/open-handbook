@@ -5,14 +5,21 @@ description: 'How do I connect to SciStor?'
 ---
 
 
-## Overview
 
-To connect to SciStor, on- and off-campus, you need EduVPN installed with institute access.
+## EduVPN Institute Access
+As an extra security measure **eduVPN Institute Access is mandatory** to connect to SciStor, both on- and off-campus. Install the app from the [eduVPN portal](https://vu.eduvpn.nl/portal/home) if you have not already done so. 
 
-### eduVPN
-The easiest way is to install the app for [eduVPN institute access](https://vu.eduvpn.nl/portal/home). Once the VPN is active you can follow the steps below. Note that performance over the internet is limited, you might run into problems when editing large files. If needed copy them to you local disk.
+## Connecting to your project folders
+### Connect to eduVPN
+Make sure you are connected to eduVPN institure access first.
+![](/public/eduVPN-intitute.png)
 
-## Instructions
+Select Institute Access and follow the usual steps to login with your VUnetID.
+
+### MFA for students
+Note that logging in with VUnetID requires MFA with SURFsecureID (via Azure MFA or a YubiKey). All of the employees of the VU have an activated token, but this is not automatically the case for students. The 🔒 [VU service portal](https://services.vu.nl/kb_view.do?sysparm_article=KB0011809) has more information on how to register for SURFsecureID if you have not already done so. 
+
+Then follow the instructions for your Operating System.
 
 ### MacOS
 
