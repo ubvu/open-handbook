@@ -1,0 +1,15 @@
+website:
+  sidebar:
+    - id: sb-scisure
+      collapse-level: 4
+      contents:
+      # Title that shows up at the top of the sidebar
+        - section: SciSure
+          href: tools/scisure/index.qmd
+          contents:
+          - tools/scisure/cost_access.qmd
+          - tools/scisure/contact_support.qmd
+          - tools/scisure/quick_start.qmd
+
+
+# Rename application and add to _quarto.yml

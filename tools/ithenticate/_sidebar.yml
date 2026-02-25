@@ -1,0 +1,29 @@
+website:
+  sidebar:
+    - id: sb-ithenticate
+      collapse-level: 4
+      contents:
+        - section: iThenticate
+          href: tools/ithenticate/index.qmd
+          contents:
+          - tools/ithenticate/cost_access.qmd
+          - tools/ithenticate/contact_support.qmd
+          - tools/ithenticate/quick_start.qmd
+          - section: Documentation
+            contents:
+              - section: Getting Started
+                contents:
+                  - tools/ithenticate/log_in.qmd
+                  - tools/ithenticate/first_scan.qmd
+                  - tools/ithenticate/exporting_results.qmd
+              - section: Similarity Report
+                contents:
+                  - tools/ithenticate/similarity_report.qmd
+                  - tools/ithenticate/similarity_scores.qmd
+              - section: Advanced Settings
+                contents:
+                  - tools/ithenticate/folder_options.qmd
+                  - tools/ithenticate/url_phrase_exclusion.qmd
+                  - tools/ithenticate/doc_to_doc_comparison.qmd
+              - tools/ithenticate/key-users.qmd
+              - tools/ithenticate/faq.qmd

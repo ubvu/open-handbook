@@ -1,0 +1,12 @@
+website:
+  sidebar:
+    - id: sb-researchdrive
+      collapse-level: 4
+      contents:
+        - section: Research Drive
+          href: tools/researchdrive/index.qmd
+          contents:
+          - tools/researchdrive/cost_access.qmd
+          - tools/researchdrive/contact_support.qmd
+          - tools/researchdrive/quick_start.qmd
+

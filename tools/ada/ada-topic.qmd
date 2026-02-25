@@ -1,0 +1,47 @@
+---
+title: ADA HPC
+categories: [Tools]
+aliases:
+  - bazis.html
+---
+
+## What is it?
+
+ADA is a high performance compute (HPC) cluster for research at the Vrije Universiteit Amsterdam. Named after [Ada Lovelace](https://en.wikipedia.org/wiki/Ada_Lovelace), it serves as the successor to the BAZIS cluster and is managed by the IT for Research team.
+
+ADA is a heterogenious cluster composed of partitions and servers financed by various VU research departments and the VU IT department. The cluster is particularly useful for executing multi-node computations that are not possible on the general VU compute servers but do not require the scale of the National Supercomputer, Snellius.
+
+ADA users are granted access to a set of compute partitions based on the resources owned by their research department. Users not affiliated with a research department that owns cluster hardware can get access to the community partition.
+
+A large collection of tools, compilers and libraries is available for your analysis, and your data on [SciStor](/tools/scistor/index.qmd) is directly accessible from ADA. 
+
+ADA is also available through [OpenOndemand](/tools/ada/open-ondemand.qmd), a user-friendly GUI that provides access to ADA.
+
+## What can it be used for?
+
+ADA is particularly usefull for HPC workloads that require one or several compute nodes to complete within a feasible timeframe. The compute nodes in ADA are equipped with high-cpu, high-RAM and GPU functionality such that they will provide significant speedups in comparison to using a standard desktop. 
+
+Please note that GPU functionality on ADA is however limited to several NVIDIA A30 / RTX 2070 cards, if you require more GPU performance (e.g. for training LLMs) you can apply for access to the national HPC infrastructure [Snellius](/tools/snellius/index.qmd) or consider [buying ADA compute nodes](#buying-dedicated-compute-nodes) with GPUs for your department.  
+
+## How to request access
+
+A form to request an account on ADA can be found on 🔒 [VU Service Portal](https://services.vu.nl/esc) under IT > My work field > Research > HPC Cluster Computing > New ADA HPC Cluster Computing.
+
+It is recommended that new users of ADA have some experience in using the command line interface as it is crucial for knowing how to interact with the cluster. 
+
+## Are there costs involved?
+
+The ADA cluster community nodes are free to use for VU researchers, although resources are limited.
+
+### Buying dedicated compute nodes
+
+If your research projects require heavy usage of HPC you can consider spending part of your research budget to buy compute hardware for your group. Please contact [IT for Research](mailto:itvo.it@vu.nl) for more information on what is possible.
+
+## Getting started
+
+You can find information on how to use ADA on the [ADA MANUAL page](https://rdm.vu.nl/tools/ada/index.html). Also take a look at the [SURF wiki Snellius pages](https://servicedesk.surf.nl/wiki/display/WIKI/Snellius), which contains a lot of information that applies to ADA as well.
+
+Once a year, the VU organizes the [HPC Course](https://vu.nl/en/education/phd-courses/hpc-course). All ADA users will be notified when registration opens. Additionally, it is often also possible to attend HPC Courses through SURF at other locations, please consult the [SURF Agenda](https://www.surf.nl/en/agenda) for dates and registration.
+
+## Contact
+Wondering if ADA fits your research needs? Please contact [IT for Research](mailto:itvo.it@vu.nl)

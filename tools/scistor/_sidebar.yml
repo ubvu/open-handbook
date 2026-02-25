@@ -1,0 +1,16 @@
+website:
+  sidebar:
+    - id: sb-scistor
+      collapse-level: 4
+      contents:
+        - section: SciStor
+          href: tools/scistor/index.qmd
+          contents:
+          - tools/scistor/cost_access.qmd
+          - tools/scistor/contact_support.qmd
+          - tools/scistor/quick_start.qmd
+          - section: Documentation
+            contents:
+            - tools/scistor/snapshots-data-recovery.qmd
+
+# Remember to put a link to this file in _quarto.yml under "metadata-files"

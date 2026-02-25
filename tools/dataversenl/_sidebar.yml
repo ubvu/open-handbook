@@ -1,0 +1,12 @@
+website:
+  sidebar:
+    - id: sb-dataversenl
+      collapse-level: 4
+      contents:
+        - section: DataverseNL
+          href: tools/dataversenl/index.qmd
+          contents:
+          - tools/dataversenl/cost_access.qmd
+          - tools/dataversenl/contact_support.qmd
+          - tools/dataversenl/quick_start.qmd
+

@@ -1,0 +1,58 @@
+---
+title: "Tools"
+listing:
+  contents:
+    - tools/ada/index.qmd
+    - tools/dataversenl/index.qmd
+    - tools/dmponline/index.qmd
+    - tools/ithenticate/index.qmd
+    - tools/nebula/index.qmd
+    - tools/osf/index.qmd
+    - tools/pure/index.qmd
+    - tools/qualtrics/index.qmd
+    - tools/researchcloud/index.qmd
+    - tools/researchdrive/index.qmd
+    - tools/scicloud/index.qmd
+    - tools/scistor/index.qmd
+    - tools/scisure/index.qmd
+    - tools/snellius/index.qmd
+    - tools/vucomputehub/index.qmd
+    - tools/yoda/index.qmd
+  sort: false # sort as defined above
+  filter-ui: [title]
+  categories: true
+  fields: [image, title, description, categories]
+  image-align: right
+format: 
+  html:
+    include-in-header:  
+      text: |
+        <style>
+        .metadata {
+          display: none !important; /* hide metadata normally shown left of the description */
+        }
+        .quarto-post {
+            align-items: center; /* vertical align logo */
+            margin-bottom: 0 !important;
+            padding-bottom: 0.75em;
+            padding-top: 0.75em;
+        }
+        .quarto-post .listing-description {
+          margin-bottom: 0em !important;
+        }
+        .quarto-post img {
+          max-height: 150px;
+        }
+
+        </style>
+---
+
+::: {.callout-tip}
+
+## What is a tool?
+
+A tool is a broad term for a software application or platform. These pages list research tools supported by the VU, describe what they are for, how to get access and who to contact for questions and support. You will also find manuals describing how to use the tool in your workflow and links to documentation of the supplier.
+
+Missing a tool description or a manual for a specific tool? You can [submit suggestions using the Contribution portal](https://ez-github-contributor.netlify.app/).
+:::
+ 

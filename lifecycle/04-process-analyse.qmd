@@ -1,14 +1,14 @@
 ---
 title: Process & Analyse
 listing:
-  - id: topics
+  - id: tools
     contents:
-      - ../topics/ada.qmd
-      - ../topics/compute-hub.qmd
-      - ../topics/researchcloud.qmd
-      - ../topics/safe-data-transfer.qmd
-      - ../topics/scicloud.qmd
-      - ../topics/snellius.qmd
+      - ../tools/ada/index.qmd
+      - ../tools/vucomputehub/index.qmd
+      - ../tools/researchcloud/index.qmd
+      - ../topics/data-transfer.qmd
+      - ../tools/scicloud/index.qmd
+      - ../tools/snellius/index.qmd
     type: table
     table-striped: true
     table-hover: true
@@ -20,9 +20,9 @@ listing:
       categories: "Process & Analyse"
 ---
 
-## Topics
+## Tools
 
-:::{#topics}
+:::{#tools}
 :::
 
 ## Guides

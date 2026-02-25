@@ -1,0 +1,13 @@
+---
+title: Quick Start
+---
+
+The IT for Research Team will set up the server(s) with the OS of your choice (Windows or Linux) and will set up a root account for you:
+
+- For access to a Linux server you will need to provide a personal SSH key protected with a passphrase. You will be able to access SSH from home.
+
+- For access to Windows servers use Remote Desktop Protocol (RDP), only via 🔒[eduVPN institute access](https://vu.eduvpn.nl).
+
+Root access to the server allows you to install all the software you need. Note that IT for Research can help you getting started and will automatically install OS security updates, but you are responsible for installing and maintaining software yourself.
+
+It is possible to take _snapshots_ or _clones_ of the virtual server yourself. This allows you to go back to a previously created configuration, if necessary. In addition, ITvO makes daily backups with which a virtual machine can be restored for up to 30 days on request.

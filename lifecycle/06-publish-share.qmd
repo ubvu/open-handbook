@@ -9,17 +9,17 @@ listing:
       - ../topics/software-publishing.qmd
       - ../topics/data-licensing.qmd
       - ../topics/software-licensing.qmd
-      - ../topics/dataversenl.qmd
-      - ../topics/osf.qmd
-      - ../topics/yoda.qmd
+      - ../tools/dataversenl/index.qmd
+      - /tools/osf/index.qmd
+      - ../tools/yoda/index.qmd
     type: table
     table-striped: true
     table-hover: true
     fields: [title, reading-time]
-  - id: manuals
+  - id: tools
     contents:
-      - ../manuals/pure/registration/data-registration.qmd
-      - ../manuals/pure/registration/software-registration.qmd
+      - ../tools/pure/data-registration.qmd
+      - ../tools/pure/software-registration.qmd
     type: table
     table-striped: true
     table-hover: true

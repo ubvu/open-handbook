@@ -1,0 +1,18 @@
+website:
+  sidebar:
+    - id: sb-dummy
+      collapse-level: 4
+      contents:
+      # Title that shows up at the top of the sidebar
+        - section: Dummy
+          href: tools/dummy/index.qmd
+          contents:
+          - tools/dummy/cost_access.qmd
+          - tools/dummy/contact_support.qmd
+          - tools/dummy/quick_start.qmd
+          # Extra pages come here, delete section if there are none
+          - section: Documentation
+            contents:
+            - tools/dummy/faq.qmd
+
+# Rename application and add to _quarto.yml

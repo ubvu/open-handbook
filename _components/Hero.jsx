@@ -32,10 +32,10 @@ function Hero() {
               View guides
             </a>
             <a
-              href="./manuals.html"
+              href="./tools.html"
               className="tw-text-sm tw-font-semibold tw-leading-6 tw-text-gray-900"
             >
-              View manuals
+              View tools
             </a>
           </div>
         </div>

@@ -1,0 +1,12 @@
+website:
+  sidebar:
+    - id: sb-scicloud
+      collapse-level: 4
+      contents:
+        - section: SciCloud
+          href: tools/scicloud/index.qmd
+          contents:
+          - tools/scicloud/cost_access.qmd
+          - tools/scicloud/contact_support.qmd
+          - tools/scicloud/quick_start.qmd
+          

@@ -1,0 +1,15 @@
+website:
+  sidebar:
+    - id: sb-pure
+      collapse-level: 4
+      contents:
+        - section: Pure
+          href: tools/pure/index.qmd
+          contents:
+          - tools/pure/cost_access.qmd
+          - tools/pure/contact_support.qmd
+          - tools/pure/quick_start.qmd
+          - section: Documentation
+            contents:
+            - tools/pure/data-registration.qmd
+            - tools/pure/software-registration.qmd

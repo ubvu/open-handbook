@@ -7,7 +7,7 @@ Backing up your data is about ensuring your data are in at least two and ideally
 
 ## Why backup?
 
-Hard drives fail, computers get stolen or lost, or your data may accidentally get deleted. To avoid data loss, backing up your data regularly is essential. Ideally, you should have your data stored in at least two, but ideally three different locations. Most cloud-based tools will automatically handle backup for you, but they don't protect you from your own mistakes. If you work with data that cannot be easily recreated or recalculated and ensure that it is sufficiently backed up with [the 3-2-1 rule](#3-2-1-rule). This is especially important when migrating your data, such as when updating your operating system to a new major version, or when you get a new computer.
+Hard drives fail, computers get stolen or lost, or your data may accidentally get deleted. To avoid data loss, backing up your data regularly is essential. Ideally, you should have your data stored in at least two, but ideally three different locations. Most cloud-based tools will automatically handle backup for you, but they don't protect you from your own mistakes. If you work with data that cannot be easily recreated or recalculated and ensure that it is sufficiently backed up with [the 3-2-1 rule](#rule). This is especially important when migrating your data, such as when updating your operating system to a new major version, or when you get a new computer.
 
 ## 3-2-1 Rule
 
@@ -31,9 +31,9 @@ If you accidentally delete a file, you can restore your folder to a previous dat
 
 - **OneDrive**: if you're signed in with a work or school account, items in the recycle bin are automatically deleted after 93 days. The files can be restored to OneDrive before then, or you can permanently delete them from your OneDrive. Additionally, you can restore your OneDrive to a state from the previous 29 days. Finally, the university has an additional backup of data, which can be accessed in case of emergency. However, no rights can be derived for the emergency backup.
 - **Snellius**: Not all of the filesystems on Snellius are backed up automatically, most notably the Project and Scratch spaces. Your home folder is backed up however. You can find more information on the [Snellius website](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/85295828/Snellius+filesystems).
-- **[SciStor](../topics/scistor.qmd)**: Depending on the agreements of your department, data may be backed up. Please check with your department cluster manager.
+- **[SciStor](/tools/scistor/index.qmd)**: Depending on the agreements of your department, data may be backed up. Please check with your department cluster manager.
 - **Research Drive**: The Research Drive is backed up daily by SURF.
-- **[Yoda](../topics/yoda.qmd)**: Yoda is backed up daily by SURF.
+- **[Yoda](/tools/yoda/index.qmd)**: Yoda is backed up daily by SURF.
 
 ## Notes
 

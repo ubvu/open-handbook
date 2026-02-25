@@ -1,0 +1,14 @@
+website:
+  sidebar:
+    - id: sb-qualtrics
+      collapse-level: 4
+      contents:
+        - section: Qualtrics
+          href: tools/qualtrics/index.qmd
+          contents:
+          - tools/qualtrics/cost_access.qmd
+          - tools/qualtrics/contact_support.qmd
+          - tools/qualtrics/quick_start.qmd
+          - section: Documentation
+            contents:
+            - tools/qualtrics/faq.qmd
