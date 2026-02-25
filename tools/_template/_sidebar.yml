@@ -5,8 +5,9 @@ website:
       contents:
       # Title that shows up at the top of the sidebar
         - section: Dummy
-          href: tools/dummy/index.qmd # Mandatory, start page 
           contents:
+          - href: tools/dummy/index.qmd # Mandatory, start page 
+            text: What is Dummy?
           # Always use paths relative to the root of the site.
           - tools/dummy/cost_access.qmd # Mandatory
           - tools/dummy/contact_support.qmd # Mandatoty

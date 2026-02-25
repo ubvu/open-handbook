@@ -4,9 +4,10 @@ website:
       search: false
       collapse-level: 4
       contents:
-        - section: Ada
-          href: tools/ada/index.qmd
+        - section: ADA
           contents:
+          - href: tools/ada/index.qmd
+            text: What is ADA?
           - tools/ada/cost_access.qmd
           - tools/ada/contact_support.qmd
           - tools/ada/quick_start.qmd

@@ -4,8 +4,9 @@ website:
       collapse-level: 4
       contents:
         - section: DMPonline
-          href: tools/dmponline/index.qmd
           contents:
+          - href: tools/dmponline/index.qmd
+            text: What is DMPonline?
           - tools/dmponline/cost_access.qmd
           - tools/dmponline/contact_support.qmd
           - tools/dmponline/quick_start.qmd
