@@ -102,7 +102,7 @@ ul.task-list li input[type="checkbox"] {
   
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-manuals .list');
+    const listingTargetEl = window.document.querySelector('#listing-tools .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -115,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-manuals'] = new List('listing-manuals', options);
+    window['quarto-listings']['listing-tools'] = new List('listing-tools', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -233,10 +233,6 @@ window.Quarto = {
  <span class="dropdown-text">Responsible Scholarship</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../topics.html#category=Tools">
- <span class="dropdown-text">Tools</span></a>
-  </li>  
-        <li>
     <a class="dropdown-item" href="../topics.html#category=Trainings and Knowledge Items">
  <span class="dropdown-text">Trainings and Knowledge Items</span></a>
   </li>  
@@ -247,8 +243,8 @@ window.Quarto = {
 <span class="menu-text">Guides</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../manuals.html"> 
-<span class="menu-text">Manuals</span></a>
+    <a class="nav-link" href="../tools.html"> 
+<span class="menu-text">Tools</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../blog.html"> 
@@ -337,7 +333,7 @@ Reading Time
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-categories="UmVzZWFyY2glMjBEYXRh" data-listing-file-modified-sort="1770109401000" data-listing-reading-time-sort="4" data-listing-word-count-sort="692" data-listing-title-sort="Data Licensing" data-listing-filename-sort="data-licensing.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="0" data-categories="UmVzZWFyY2glMjBEYXRh" data-listing-file-modified-sort="1771496219000" data-listing-reading-time-sort="4" data-listing-word-count-sort="692" data-listing-title-sort="Data Licensing" data-listing-filename-sort="data-licensing.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="../topics/data-licensing.html" class="title listing-title">Data Licensing</a>
@@ -348,7 +344,7 @@ Reading Time
 
 </tr>
 
-<tr data-index="1" data-categories="UmVzZWFyY2glMjBEYXRh" data-listing-file-modified-sort="1750333284000" data-listing-reading-time-sort="4" data-listing-word-count-sort="651" data-listing-title-sort="Data Publishing" data-listing-filename-sort="data-publishing.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="1" data-categories="UmVzZWFyY2glMjBEYXRh" data-listing-file-modified-sort="1771502396000" data-listing-reading-time-sort="4" data-listing-word-count-sort="651" data-listing-title-sort="Data Publishing" data-listing-filename-sort="data-publishing.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="../topics/data-publishing.html" class="title listing-title">Data Publishing</a>
@@ -359,18 +355,18 @@ Reading Time
 
 </tr>
 
-<tr data-index="2" data-categories="VG9vbHM=" data-listing-file-modified-sort="1746689853000" data-listing-reading-time-sort="4" data-listing-word-count-sort="700" data-listing-title-sort="DataverseNL" data-listing-filename-sort="dataversenl.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="2" data-categories="RGF0YSUyMEFyY2hpdmluZyUyQ0RhdGElMjBQdWJsaXNoaW5n" data-listing-file-modified-sort="1771496219000" data-listing-reading-time-sort="3" data-listing-word-count-sort="480" data-listing-title-sort="DataverseNL" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<a href="../topics/dataversenl.html" class="title listing-title">DataverseNL</a>
+<a href="../tools/dataversenl/index.html" class="title listing-title">DataverseNL</a>
 </td>
 <td>
-<span class="listing-reading-time">4 min</span>
+<span class="listing-reading-time">3 min</span>
 </td>
 
 </tr>
 
-<tr data-index="3" data-categories="UG9saWNpZXMlMjBhbmQlMjBMZWdpc2xhdGlvbiUyQ1Jlc3BvbnNpYmxlJTIwU2Nob2xhcnNoaXA=" data-listing-file-modified-sort="1770109401000" data-listing-reading-time-sort="4" data-listing-word-count-sort="787" data-listing-title-sort="FAIR Principles" data-listing-filename-sort="fair-principles.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="3" data-categories="UG9saWNpZXMlMjBhbmQlMjBMZWdpc2xhdGlvbiUyQ1Jlc3BvbnNpYmxlJTIwU2Nob2xhcnNoaXA=" data-listing-file-modified-sort="1771502396000" data-listing-reading-time-sort="4" data-listing-word-count-sort="787" data-listing-title-sort="FAIR Principles" data-listing-filename-sort="fair-principles.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="../topics/fair-principles.html" class="title listing-title">FAIR Principles</a>
@@ -381,18 +377,7 @@ Reading Time
 
 </tr>
 
-<tr data-index="4" data-categories="VG9vbHM=" data-listing-file-modified-sort="1757583004000" data-listing-reading-time-sort="5" data-listing-word-count-sort="902" data-listing-title-sort="Open Science Framework (OSF)" data-listing-filename-sort="osf.qmd" onclick="href = this.querySelector('a').getAttribute('href');
- if (href) { window.location=href ; return false; }">
-<td>
-<a href="../topics/osf.html" class="title listing-title">Open Science Framework (OSF)</a>
-</td>
-<td>
-<span class="listing-reading-time">5 min</span>
-</td>
-
-</tr>
-
-<tr data-index="5" data-categories="UmVzZWFyY2glMjBEYXRhJTJDUmVzZWFyY2glMjBTb2Z0d2FyZQ==" data-listing-file-modified-sort="1770109401000" data-listing-reading-time-sort="3" data-listing-word-count-sort="467" data-listing-title-sort="Persistent Identifier" data-listing-filename-sort="persistent-identifier.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="4" data-categories="UmVzZWFyY2glMjBEYXRhJTJDUmVzZWFyY2glMjBTb2Z0d2FyZQ==" data-listing-file-modified-sort="1771502396000" data-listing-reading-time-sort="3" data-listing-word-count-sort="467" data-listing-title-sort="Persistent Identifier" data-listing-filename-sort="persistent-identifier.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="../topics/persistent-identifier.html" class="title listing-title">Persistent Identifier</a>
@@ -403,7 +388,7 @@ Reading Time
 
 </tr>
 
-<tr data-index="6" data-categories="UmVzZWFyY2glMjBTb2Z0d2FyZQ==" data-listing-file-modified-sort="1750333284000" data-listing-reading-time-sort="3" data-listing-word-count-sort="510" data-listing-title-sort="Software Licensing" data-listing-filename-sort="software-licensing.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="5" data-categories="UmVzZWFyY2glMjBTb2Z0d2FyZQ==" data-listing-file-modified-sort="1750333284000" data-listing-reading-time-sort="3" data-listing-word-count-sort="510" data-listing-title-sort="Software Licensing" data-listing-filename-sort="software-licensing.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="../topics/software-licensing.html" class="title listing-title">Software Licensing</a>
@@ -414,7 +399,7 @@ Reading Time
 
 </tr>
 
-<tr data-index="7" data-categories="UmVzZWFyY2glMjBTb2Z0d2FyZQ==" data-listing-file-modified-sort="1767780740000" data-listing-reading-time-sort="6" data-listing-word-count-sort="1026" data-listing-title-sort="Software Publishing" data-listing-filename-sort="software-publishing.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="6" data-categories="UmVzZWFyY2glMjBTb2Z0d2FyZQ==" data-listing-file-modified-sort="1771496290000" data-listing-reading-time-sort="6" data-listing-word-count-sort="1026" data-listing-title-sort="Software Publishing" data-listing-filename-sort="software-publishing.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
 <a href="../topics/software-publishing.html" class="title listing-title">Software Publishing</a>
@@ -425,13 +410,13 @@ Reading Time
 
 </tr>
 
-<tr data-index="8" data-categories="VG9vbHM=" data-listing-file-modified-sort="1770891931000" data-listing-reading-time-sort="5" data-listing-word-count-sort="966" data-listing-title-sort="Yoda" data-listing-filename-sort="yoda.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="7" data-categories="RGF0YSUyMFN0b3JhZ2UlMkNEYXRhJTIwQXJjaGl2aW5nJTJDRGF0YSUyMFB1Ymxpc2hpbmc=" data-listing-file-modified-sort="1771863045000" data-listing-reading-time-sort="4" data-listing-word-count-sort="753" data-listing-title-sort="Yoda" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<a href="../topics/yoda.html" class="title listing-title">Yoda</a>
+<a href="../tools/yoda/index.html" class="title listing-title">Yoda</a>
 </td>
 <td>
-<span class="listing-reading-time">5 min</span>
+<span class="listing-reading-time">4 min</span>
 </td>
 
 </tr>
@@ -445,7 +430,7 @@ Reading Time
 <h2 class="anchored" data-anchor-id="guides">Guides</h2>
 <div id="listing-guides" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="UHVibGlzaCUyMCUyNiUyMFNoYXJl" data-listing-file-modified-sort="1768827717000" data-listing-reading-time-sort="8" data-listing-word-count-sort="1466">
+<div class="g-col-1" data-index="0" data-categories="UHVibGlzaCUyMCUyNiUyMFNoYXJl" data-listing-file-modified-sort="1771496219000" data-listing-reading-time-sort="8" data-listing-word-count-sort="1466">
 <a href="../guides/publish-and-share.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -487,27 +472,6 @@ How can you publish FAIR software
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="Q29sbGVjdCUyMCUyNiUyMFN0b3JlJTJDUHJvY2VzcyUyMCUyNiUyMEFuYWx5c2UlMkNQdWJsaXNoJTIwJTI2JTIwU2hhcmU=" data-listing-file-modified-sort="1770108319000" data-listing-reading-time-sort="13" data-listing-word-count-sort="2590">
-<a href="../guides/use-osf.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../public/osf_logo_dark.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How can you use Open Science Framework (OSF) in your research project?
-</h5>
-<div class="card-text listing-description delink">
-<p>OSF supports an open research life cycle.</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
@@ -516,11 +480,11 @@ How can you use Open Science Framework (OSF) in your research project?
 
 </section>
 
-<div class="quarto-listing quarto-listing-container-table" id="listing-manuals">
+<div class="quarto-listing quarto-listing-container-table" id="listing-tools">
 <div class="listing-actions-group">
    <div class="input-group input-group-sm quarto-listing-sort">
     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-manuals-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-manuals'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+    <select id="listing-tools-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-tools'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
       <option value="" disabled="" selected="" hidden="">Order By</option>
       <option value="index" data-direction="asc">Default</option>
       <option value="listing-title-sort" data-direction="asc">
@@ -549,10 +513,10 @@ Reading Time
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-categories="UmVzZWFyY2glMjBEYXRh" data-listing-file-modified-sort="1768899543000" data-listing-reading-time-sort="2" data-listing-word-count-sort="250" data-listing-title-sort="Data Registration" data-listing-filename-sort="data-registration.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="0" data-categories="UmVzZWFyY2glMjBEYXRh" data-listing-file-modified-sort="1771412935000" data-listing-reading-time-sort="2" data-listing-word-count-sort="250" data-listing-title-sort="Data Registration" data-listing-filename-sort="data-registration.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<a href="../manuals/pure/registration/data-registration.html" class="title listing-title">Data Registration</a>
+<a href="../tools/pure/data-registration.html" class="title listing-title">Data Registration</a>
 </td>
 <td>
 <span class="listing-reading-time">2 min</span>
@@ -560,10 +524,10 @@ Reading Time
 
 </tr>
 
-<tr data-index="1" data-categories="UmVzZWFyY2glMjBTb2Z0d2FyZQ==" data-listing-file-modified-sort="1768899543000" data-listing-reading-time-sort="2" data-listing-word-count-sort="252" data-listing-title-sort="Software Registration" data-listing-filename-sort="software-registration.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="1" data-categories="UmVzZWFyY2glMjBTb2Z0d2FyZQ==" data-listing-file-modified-sort="1771412935000" data-listing-reading-time-sort="2" data-listing-word-count-sort="252" data-listing-title-sort="Software Registration" data-listing-filename-sort="software-registration.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
 <td>
-<a href="../manuals/pure/registration/software-registration.html" class="title listing-title">Software Registration</a>
+<a href="../tools/pure/software-registration.html" class="title listing-title">Software Registration</a>
 </td>
 <td>
 <span class="listing-reading-time">2 min</span>

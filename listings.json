@@ -1,55 +1,121 @@
 [
   {
-    "listing": "/manuals.html",
+    "listing": "/guides.html",
     "items": [
-      "/manuals/ada/index.html",
-      "/manuals/ithenticate/index.html",
-      "/manuals/pure/index.html",
-      "/manuals/qualtrics/index.html",
-      "/manuals/scistor/index.html",
-      "/manuals/yoda/index.html"
+      "/guides/publish-and-share.html",
+      "/guides/comply-with-gdpr.html",
+      "/guides/discover-and-initiate.html",
+      "/guides/collect-and-store.html",
+      "/guides/process-and-analyse.html",
+      "/guides/document-and-preserve.html",
+      "/guides/onboarding.html",
+      "/guides/publishing-fair-software.html",
+      "/guides/plan-and-design.html",
+      "/guides/policies-supporting-vision-open-science.html",
+      "/guides/data-lifecycle.html",
+      "/guides/offboarding.html"
     ]
   },
   {
-    "listing": "/lifecycle/05-document-preserve.html",
+    "listing": "/lifecycle/02-plan-design.html",
     "items": [
+      "/topics/data-classification.html",
+      "/topics/data-management-plan.html",
+      "/topics/data-management-section.html",
+      "/topics/ethical-review.html",
+      "/topics/gdpr.html",
+      "/topics/research-data-and-software-management-policy.html",
+      "/guides/comply-with-gdpr.html",
+      "/guides/onboarding.html",
+      "/guides/plan-and-design.html"
+    ]
+  },
+  {
+    "listing": "/lifecycle/03-collect-store.html",
+    "items": [
+      "/topics/data-backup.html",
+      "/topics/data-collection.html",
+      "/topics/data-protection.html",
+      "/topics/data-storage.html",
+      "/tools/researchdrive/index.html",
+      "/tools/scistor/index.html",
+      "/tools/yoda/index.html",
+      "/guides/collect-and-store.html"
+    ]
+  },
+  {
+    "listing": "/lifecycle/04-process-analyse.html",
+    "items": [
+      "/tools/ada/index.html",
+      "/topics/data-transfer.html",
+      "/tools/researchcloud/index.html",
+      "/tools/scicloud/index.html",
+      "/tools/snellius/index.html",
+      "/tools/vucomputehub/index.html",
+      "/guides/process-and-analyse.html"
+    ]
+  },
+  {
+    "listing": "/tools.html",
+    "items": [
+      "/tools/ada/index.html",
+      "/tools/dataversenl/index.html",
+      "/tools/dmponline/index.html",
+      "/tools/ithenticate/index.html",
+      "/tools/nebula/index.html",
+      "/tools/osf/index.html",
+      "/tools/pure/index.html",
+      "/tools/qualtrics/index.html",
+      "/tools/researchcloud/index.html",
+      "/tools/researchdrive/index.html",
+      "/tools/scicloud/index.html",
+      "/tools/scistor/index.html",
+      "/tools/scisure/index.html",
+      "/tools/snellius/index.html",
+      "/tools/vucomputehub/index.html",
+      "/tools/yoda/index.html"
+    ]
+  },
+  {
+    "listing": "/topics.html",
+    "items": [
+      "/topics/academic-integrity.html",
+      "/topics/care-principles.html",
+      "/topics/cff.html",
       "/topics/data-archiving.html",
+      "/topics/data-backup.html",
+      "/topics/data-citation.html",
+      "/topics/data-classification.html",
+      "/topics/data-collection.html",
       "/topics/data-documentation.html",
-      "/topics/dataversenl.html",
-      "/topics/fair-principles.html",
-      "/topics/metadata.html",
-      "/topics/persistent-identifier.html",
-      "/topics/software-archiving.html",
-      "/topics/selecting-data.html",
-      "/topics/yoda.html",
-      "/guides/document-and-preserve.html"
-    ]
-  },
-  {
-    "listing": "/lifecycle/06-publish-share.html",
-    "items": [
       "/topics/data-licensing.html",
+      "/topics/data-management-plan.html",
+      "/topics/data-management-section.html",
+      "/topics/data-protection.html",
       "/topics/data-publishing.html",
-      "/topics/dataversenl.html",
+      "/topics/data-storage.html",
+      "/topics/data-transfer.html",
+      "/topics/ethical-review.html",
       "/topics/fair-principles.html",
-      "/topics/osf.html",
+      "/topics/finding-existing-data.html",
+      "/topics/finding-existing-software.html",
+      "/topics/gdpr.html",
+      "/topics/itvo.html",
+      "/topics/knowledge-security.html",
+      "/topics/metadata.html",
+      "/topics/open-science.html",
       "/topics/persistent-identifier.html",
+      "/topics/rdm-support-desk.html",
+      "/topics/research-data-management.html",
+      "/topics/research-data-and-software-management-policy.html",
+      "/topics/rdsm-terminology.html",
+      "/topics/research-software.html",
+      "/topics/software-archiving.html",
       "/topics/software-licensing.html",
       "/topics/software-publishing.html",
-      "/topics/yoda.html",
-      "/manuals/pure/registration/data-registration.html",
-      "/manuals/pure/registration/software-registration.html",
-      "/guides/publish-and-share.html",
-      "/guides/publishing-fair-software.html",
-      "/guides/use-osf.html"
-    ]
-  },
-  {
-    "listing": "/lifecycle/01-discover-initiate.html",
-    "items": [
-      "/topics/finding-existing-data.html",
-      "/guides/discover-and-initiate.html",
-      "/guides/onboarding.html"
+      "/topics/selecting-data.html",
+      "/topics/trainings.html",
+      "/topics/transcription.html"
     ]
   },
   {
@@ -69,207 +135,43 @@
     ]
   },
   {
-    "listing": "/manuals/scistor/index.html",
+    "listing": "/lifecycle/01-discover-initiate.html",
     "items": [
-      "/manuals/scistor/scistor-connection.html",
-      "/manuals/scistor/snapshots-data-recovery.html"
-    ]
-  },
-  {
-    "listing": "/manuals/ithenticate/index.html",
-    "items": [
-      "/manuals/ithenticate/getting_started/getting_started.html",
-      "/manuals/ithenticate/getting_started/log_in.html",
-      "/manuals/ithenticate/getting_started/key-users.html",
-      "/manuals/ithenticate/getting_started/first_scan.html",
-      "/manuals/ithenticate/getting_started/exporting_results.html",
-      "/manuals/ithenticate/similarity_report/similarity_report.html",
-      "/manuals/ithenticate/similarity_report/similarity_scores.html",
-      "/manuals/ithenticate/advanced_settings/folder_options.html",
-      "/manuals/ithenticate/advanced_settings/url_phrase_exclusion.html",
-      "/manuals/ithenticate/advanced_settings/doc_to_doc_comparison.html",
-      "/manuals/ithenticate/faq/faq.html"
-    ]
-  },
-  {
-    "listing": "/manuals/ada/index.html",
-    "items": [
-      "/manuals/ada/login.html",
-      "/manuals/ada/quick-start.html",
-      "/manuals/ada/software.html",
-      "/manuals/ada/slurm.html",
-      "/manuals/ada/hardware.html",
-      "/manuals/ada/hpc-101.html",
-      "/manuals/ada/open-ondemand.html",
-      "/manuals/ada/yoda.html",
-      "/manuals/ada/help.html",
-      "/manuals/ada/code-examples/Python/1-python-multithreading.html",
-      "/manuals/ada/code-examples/Python/2-python-multiprocessing.html",
-      "/manuals/ada/code-examples/Python/3-python-pytorch.html",
-      "/manuals/ada/code-examples/R/1-R-multiprocessing.html",
-      "/manuals/ada/code-examples/matlab.html"
-    ]
-  },
-  {
-    "listing": "/topics.html",
-    "items": [
-      "/topics/ada.html",
-      "/topics/academic-integrity.html",
-      "/topics/care-principles.html",
-      "/topics/cff.html",
-      "/topics/dmponline.html",
-      "/topics/data-archiving.html",
-      "/topics/data-backup.html",
-      "/topics/data-citation.html",
-      "/topics/data-classification.html",
-      "/topics/data-collection.html",
-      "/topics/data-documentation.html",
-      "/topics/data-licensing.html",
-      "/topics/data-management-plan.html",
-      "/topics/data-management-section.html",
-      "/topics/data-protection.html",
-      "/topics/data-publishing.html",
-      "/topics/data-storage.html",
-      "/topics/data-transfer.html",
-      "/topics/dataversenl.html",
-      "/topics/ethical-review.html",
-      "/topics/fair-principles.html",
       "/topics/finding-existing-data.html",
-      "/topics/finding-existing-software.html",
-      "/topics/gdpr.html",
-      "/topics/itvo.html",
-      "/topics/knowledge-security.html",
-      "/topics/metadata.html",
-      "/topics/nebula.html",
-      "/topics/open-science.html",
-      "/topics/osf.html",
+      "/guides/discover-and-initiate.html",
+      "/guides/onboarding.html"
+    ]
+  },
+  {
+    "listing": "/lifecycle/06-publish-share.html",
+    "items": [
+      "/topics/data-licensing.html",
+      "/topics/data-publishing.html",
+      "/tools/dataversenl/index.html",
+      "/topics/fair-principles.html",
       "/topics/persistent-identifier.html",
-      "/topics/pure.html",
-      "/topics/qualtrics.html",
-      "/topics/rdm-support-desk.html",
-      "/topics/research-data-management.html",
-      "/topics/research-data-and-software-management-policy.html",
-      "/topics/rdsm-terminology.html",
-      "/topics/researchdrive.html",
-      "/topics/research-software.html",
-      "/topics/researchcloud.html",
-      "/topics/scicloud.html",
-      "/topics/scistor.html",
-      "/topics/scisure.html",
-      "/topics/snellius.html",
-      "/topics/software-archiving.html",
       "/topics/software-licensing.html",
       "/topics/software-publishing.html",
-      "/topics/selecting-data.html",
-      "/topics/trainings.html",
-      "/topics/transcription.html",
-      "/topics/compute-hub.html",
-      "/topics/yoda.html",
-      "/topics/ithenticate.html"
-    ]
-  },
-  {
-    "listing": "/manuals/qualtrics/index.html",
-    "items": [
-      "/manuals/qualtrics/qualtrics-faq.html"
-    ]
-  },
-  {
-    "listing": "/manuals/yoda/index.html",
-    "items": [
-      "/manuals/yoda/yoda_portal/index.html",
-      "/manuals/yoda/yoda_portal/introduction.html",
-      "/manuals/yoda/yoda_portal/notifications.html",
-      "/manuals/yoda/yoda_portal/sram_invitations_eduid_activation.html",
-      "/manuals/yoda/yoda_portal/logging_in.html",
-      "/manuals/yoda/yoda_portal/group_manager.html",
-      "/manuals/yoda/using_yoda/finding_restoring.html",
-      "/manuals/yoda/using_yoda/metadata.html",
-      "/manuals/yoda/using_yoda/workflow_metadata.html",
-      "/manuals/yoda/using_yoda/properties_and_explanation.html",
-      "/manuals/yoda/using_yoda/workflow_metadata_license.html",
-      "/manuals/yoda/securing_distribution/vault_archive.html",
-      "/manuals/yoda/securing_distribution/vault_publish.html",
-      "/manuals/yoda/data_access/introduction.html",
-      "/manuals/yoda/data_access/yoda_dap.html",
-      "/manuals/yoda/data_access/data_access_linux.html",
-      "/manuals/yoda/data_access/data_access_macos.html",
-      "/manuals/yoda/data_access/data_access_windows.html",
-      "/manuals/yoda/data_access/yoda_using_cyberduck.html",
-      "/manuals/yoda/data_access/yoda_using_cyberduck_cryptometer.html",
-      "/manuals/yoda/data_access/yoda_using_icommands.html",
-      "/manuals/yoda/data_access/yoda_using_rclone.html",
-      "/manuals/yoda/data_access/yoda_using_webdrive.html",
-      "/manuals/yoda/data_access/yoda_using_windowsexplorer.html",
-      "/manuals/yoda/data_access/yoda_using_winscp.html",
-      "/manuals/yoda/faq/faq.html",
-      "/manuals/yoda/faq/known_issues.html"
-    ]
-  },
-  {
-    "listing": "/manuals/pure/index.html",
-    "items": [
-      "/manuals/pure/registration/data-registration.html",
-      "/manuals/pure/registration/software-registration.html"
-    ]
-  },
-  {
-    "listing": "/lifecycle/04-process-analyse.html",
-    "items": [
-      "/topics/ada.html",
-      "/topics/researchcloud.html",
-      "/topics/scicloud.html",
-      "/topics/snellius.html",
-      "/topics/compute-hub.html",
-      "/guides/process-and-analyse.html",
-      "/guides/use-osf.html"
-    ]
-  },
-  {
-    "listing": "/lifecycle/03-collect-store.html",
-    "items": [
-      "/topics/data-backup.html",
-      "/topics/data-collection.html",
-      "/topics/data-protection.html",
-      "/topics/data-storage.html",
-      "/topics/qualtrics.html",
-      "/topics/researchdrive.html",
-      "/topics/scistor.html",
-      "/topics/yoda.html",
-      "/guides/collect-and-store.html",
-      "/guides/use-osf.html"
-    ]
-  },
-  {
-    "listing": "/lifecycle/02-plan-design.html",
-    "items": [
-      "/topics/data-classification.html",
-      "/topics/data-management-plan.html",
-      "/topics/data-management-section.html",
-      "/topics/ethical-review.html",
-      "/topics/gdpr.html",
-      "/topics/research-data-and-software-management-policy.html",
-      "/guides/comply-with-gdpr.html",
-      "/guides/onboarding.html",
-      "/guides/plan-and-design.html"
-    ]
-  },
-  {
-    "listing": "/guides.html",
-    "items": [
+      "/tools/yoda/index.html",
+      "/tools/pure/data-registration.html",
+      "/tools/pure/software-registration.html",
       "/guides/publish-and-share.html",
-      "/guides/comply-with-gdpr.html",
-      "/guides/discover-and-initiate.html",
-      "/guides/collect-and-store.html",
-      "/guides/process-and-analyse.html",
-      "/guides/document-and-preserve.html",
-      "/guides/onboarding.html",
-      "/guides/publishing-fair-software.html",
-      "/guides/plan-and-design.html",
-      "/guides/use-osf.html",
-      "/guides/policies-supporting-vision-open-science.html",
-      "/guides/data-lifecycle.html",
-      "/guides/offboarding.html"
+      "/guides/publishing-fair-software.html"
+    ]
+  },
+  {
+    "listing": "/lifecycle/05-document-preserve.html",
+    "items": [
+      "/topics/data-archiving.html",
+      "/topics/data-documentation.html",
+      "/tools/dataversenl/index.html",
+      "/topics/fair-principles.html",
+      "/topics/metadata.html",
+      "/topics/persistent-identifier.html",
+      "/topics/software-archiving.html",
+      "/topics/selecting-data.html",
+      "/tools/yoda/index.html",
+      "/guides/document-and-preserve.html"
     ]
   }
 ]
