@@ -4,8 +4,9 @@ website:
       collapse-level: 4
       contents:
         - section: DataverseNL
-          href: tools/dataversenl/index.qmd
           contents:
+          - href: tools/dataversenl/index.qmd
+            text: What is DataverseNL?
           - tools/dataversenl/cost_access.qmd
           - tools/dataversenl/contact_support.qmd
           - tools/dataversenl/quick_start.qmd

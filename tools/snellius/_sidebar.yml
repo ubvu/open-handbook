@@ -5,8 +5,9 @@ website:
       contents:
       # Title that shows up at the top of the sidebar
         - section: Snellius
-          href: tools/snellius/index.qmd
           contents:
+          - href: tools/snellius/index.qmd
+            text: What is Snellius?
           - tools/snellius/cost_access.qmd
           - tools/snellius/contact_support.qmd
           - tools/snellius/quick_start.qmd

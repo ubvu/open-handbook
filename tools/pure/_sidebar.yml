@@ -4,8 +4,9 @@ website:
       collapse-level: 4
       contents:
         - section: Pure
-          href: tools/pure/index.qmd
           contents:
+          - href: tools/pure/index.qmd
+            text: What is Pure?
           - tools/pure/cost_access.qmd
           - tools/pure/contact_support.qmd
           - tools/pure/quick_start.qmd

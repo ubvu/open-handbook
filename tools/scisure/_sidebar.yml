@@ -5,8 +5,9 @@ website:
       contents:
       # Title that shows up at the top of the sidebar
         - section: SciSure
-          href: tools/scisure/index.qmd
           contents:
+          - href: tools/scisure/index.qmd
+            text: What is SciSure?
           - tools/scisure/cost_access.qmd
           - tools/scisure/contact_support.qmd
           - tools/scisure/quick_start.qmd

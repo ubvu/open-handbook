@@ -4,11 +4,14 @@ website:
       collapse-level: 4
       contents:
         - section: Yoda
-          href: tools/yoda/index.qmd
           contents:
+          - href: tools/yoda/index.qmd
+            text: What is Yoda?
           - tools/yoda/cost_access.qmd
           - tools/yoda/contact_support.qmd
           - tools/yoda/quick_start.qmd
+          - tools/yoda/faq.qmd
+          - tools/yoda/known_issues.qmd
           - section: Documentation
             contents:
             - section: Yoda Portal
@@ -46,5 +49,4 @@ website:
                 - tools/yoda/yoda_using_webdrive.qmd
                 - tools/yoda/yoda_using_windowsexplorer.qmd
                 - tools/yoda/yoda_using_winscp.qmd
-          - tools/yoda/faq.qmd
-          - tools/yoda/known_issues.qmd
+

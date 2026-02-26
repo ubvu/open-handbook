@@ -5,14 +5,17 @@ website:
       contents:
       # Title that shows up at the top of the sidebar
         - section: Dummy
-          href: tools/dummy/index.qmd
           contents:
-          - tools/dummy/cost_access.qmd
-          - tools/dummy/contact_support.qmd
-          - tools/dummy/quick_start.qmd
-          # Extra pages come here, delete section if there are none
-          - section: Documentation
+          - href: tools/dummy/index.qmd # Mandatory, start page 
+            text: What is Dummy?
+          # Always use paths relative to the root of the site.
+          - tools/dummy/cost_access.qmd # Mandatory
+          - tools/dummy/contact_support.qmd # Mandatoty
+          - tools/dummy/quick_start.qmd # Mandatory
+          - tools/dummy/faq.qmd # Optional, delete if not necessary
+          - tools/dummy/known-issues.qmd # Optional, delete if not necessary
+          - section: Documentation # Optional, delete section + contents if there are none
             contents:
-            - tools/dummy/faq.qmd
+            - tools/dummy/some-how-to.qmd
 
 # Rename application and add to _quarto.yml

@@ -5,8 +5,9 @@ website:
       contents:
       # Title that shows up at the top of the sidebar
         - section: VU Compute Hub
-          href: tools/vucomputehub/index.qmd
           contents:
+          - href: tools/vucomputehub/index.qmd
+            text: What is VU Compute Hub?
           - tools/vucomputehub/cost_access.qmd
           - tools/vucomputehub/contact_support.qmd
           - tools/vucomputehub/quick_start.qmd
