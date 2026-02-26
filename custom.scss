@@ -46,3 +46,31 @@ header.headroom--unpinned {
     line-height:1.2rem
 }
 
+/* Colored navbar menu */
+.nav-item {
+  min-width: 100px;
+  height: 75px;
+}
+
+.navbar, .navbar-brand {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.navbar .nav-item {
+  align-content: center; 
+  text-align: center;
+}
+
+.navbar .nav-item:nth-child(1) {
+    background-color: orange;
+}
+
+.navbar .nav-item:nth-child(2) {
+    background-color: green;
+}
+
+.navbar .nav-item:nth-child(3) {
+    background-color: purple;
+}
+
