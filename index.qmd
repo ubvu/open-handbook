@@ -1,26 +1,60 @@
 ---
 toc: false
-include-in-header:
-  text: |
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            corePlugins: {
-                preflight: false,
-            },
-            prefix: 'tw-',
-        }
-    </script>
+---
+::: {.text-center .px-5 .py-3}
+::: {.display-3 .hbcloser .fw-semibold}
+Research Support Handbook
+:::
+::: {.lead .pb-4}
+Your guide towards good data and software management practices
+:::
+All information is curated by VU staff and updated on a daily basis
+:::
+
 ---
 
-{{< react Hero >}}
+::: {.text-center .px-5}
+::: {.lead}
+Topics, Guides and Tools
+:::
+:::
 
-{{< react Lifecycle >}}
+::: {.text-center .px-5}
+::: {.column width=30% .px-1}
+![](public/home-collab.svg){width=50%}  
+[Topics](./topics.qmd)
 
-{{< react Features >}}
+A quick way to learn about specific topics
+:::
+::: {.column width=30% .px-1}
+![](public/home-collab-green.svg){width=50%}  
+[Guides](./guides.qmd)
 
-{{< react Cta >}}
+Guide you through data and software management practices
+:::
+::: {.column width=30% .px-1}
+![](public/home-collab-purple.svg){width=50%}  
+[Tools](./tools.qmd)
 
-## Upcoming events
+How to use VU-supported software tools
+:::
+:::
 
-<iframe src="https://api3-eu.libcal.com/embed_mini_calendar.php?mode=month&amp;iid=4019&amp;cal_id=7052&amp;l=5&amp;tar=0&amp;h=350&amp;audience=&amp;c=&amp;z=32116" style="border-width:0;margin: 0px auto 0px auto; width: 100%" width="270" height="225" frameborder="0" scrolling="no"></iframe>
+---
+
+::: {.text-center .px-5}
+::: {.lead}
+Related Trainings and Events
+:::
+The VU network Research Data Support organizes trainings that will help you develop your data management and coding skills.
+
+::: {.column width=40% .px-1}
+![](public/home-collab.svg){width=30%}  
+[Calendar](./topics/events.qmd)
+:::
+::: {.column width=40% .px-1}
+![](public/home-collab.svg){width=30%}  
+[Trainings](./topics/trainings.qmd)
+:::
+:::
+
