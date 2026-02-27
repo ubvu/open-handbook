@@ -2,10 +2,10 @@
 toc: false
 ---
 ::: {.text-center .px-5 .py-3}
-::: {.display-3 .hbcloser .fw-semibold}
+::: {.display-3 .hbcloser}
 Research Support Handbook
 :::
-::: {.lead .pb-4}
+::: {.h3 .pb-4 .fw-semibold}
 Your guide towards good data and software management practices
 :::
 All information is curated by VU staff and updated on a daily basis
@@ -14,26 +14,26 @@ All information is curated by VU staff and updated on a daily basis
 ---
 
 ::: {.text-center .px-5}
-::: {.lead}
+::: {.h3}
 Topics, Guides and Tools
 :::
 :::
 
 ::: {.text-center .px-5}
 ::: {.column width=30% .px-1}
-![](public/home-collab.svg){width=50%}  
+![](public/home-collab.svg){width=5em}  
 [Topics](./topics.qmd)
 
 A quick way to learn about specific topics
 :::
 ::: {.column width=30% .px-1}
-![](public/home-collab-green.svg){width=50%}  
+![](public/home-collab-green.svg){width=5em}  
 [Guides](./guides.qmd)
 
 Guide you through data and software management practices
 :::
 ::: {.column width=30% .px-1}
-![](public/home-collab-purple.svg){width=50%}  
+![](public/home-collab-purple.svg){width=5em}  
 [Tools](./tools.qmd)
 
 How to use VU-supported software tools
@@ -43,17 +43,17 @@ How to use VU-supported software tools
 ---
 
 ::: {.text-center .px-5}
-::: {.lead}
+::: {.h3}
 Related Trainings and Events
 :::
 The VU network Research Data Support organizes trainings that will help you develop your data management and coding skills.
 
 ::: {.column width=40% .px-1}
-![](public/home-collab.svg){width=30%}  
+![](public/home-collab.svg){width=5em}  
 [Calendar](./topics/events.qmd)
 :::
 ::: {.column width=40% .px-1}
-![](public/home-collab.svg){width=30%}  
+![](public/home-collab.svg){width=5em}  
 [Trainings](./topics/trainings.qmd)
 :::
 :::
