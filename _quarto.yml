@@ -11,10 +11,12 @@ website:
   repo-actions: [edit, issue]
   page-navigation: true
   bread-crumbs: true
-
+  search: 
+    location: navbar
+    type: textbox
   navbar:
     background: "#f0efed"
-    logo: public/VU-logo-Dia-positief.png
+    logo: public/VU-logo-nobg.svg
     logo-alt: "VU Amsterdam logo."
     # title: "Open Handbook"
     title: false
@@ -56,6 +58,9 @@ website:
       - contributing.qmd
 
 bibliography: references.bib
+
+language: 
+  search-text-placeholder: Search
 
 resources:
   - "public/*"

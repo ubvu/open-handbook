@@ -15,7 +15,12 @@ body {
 }
 
 .navbar-logo {
+    width: 200px;
     max-height: 64px;
+}
+
+.navbar-brand.navbar-brand-logo {
+  margin-right: 1.5em;
 }
 
 header.headroom--pinned {
