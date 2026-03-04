@@ -1,9 +1,8 @@
 ---
-title: "Guides"
 listing:
   id: guides
+  template: ./_templates/expandable-details.ejs # ejs is sensitive to indentation, use 2 spaces
   contents: guides
-  type: grid
   categories: true
 include-in-header:
   text: |
@@ -11,19 +10,33 @@ include-in-header:
     .quarto-grid-item .listing-item-img-placeholder {
       background-color: #0080c9;
     }
+    ul.vu-listing {
+      list-style-type: none;
+      list-style-position: inside;
+      padding-left: 0;
+    }
+    ul.vu-listing li {
+      border-bottom: 1px solid #0080c9;
+      margin-bottom: 10px;
+      padding-left: 20px;
+    }
+    .handbook-title {
+      text-align: center;
+    }
     </style>
 ---
 
-::: {.callout-tip}
-
-## What is a guide?
-
+::: {.text-center .px-5}
+::: {.display-3 .hbcloser}
+![](public/home-collab-2.svg){width=1em}    
+Guides
+:::
 These guides help you find answers to questions that come up while doing research. They help guide you through various topics at once.
-
-Missing a guide? You can [submit questions you are dealing with using the Contribution portal](https://ez-github-contributor.netlify.app/).
 :::
 
-:::{#guides}
+---
+
+:::{#guides .py-5}
 :::
 
 {{< include _pagebottom.qmd >}}
