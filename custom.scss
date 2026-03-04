@@ -98,14 +98,8 @@ header.headroom--unpinned {
 /* handbook-title */
 .handbook-title {
     color: grey;
-    position: absolute;
-    left: 1em;
-    top: 5em;
+    position: relative;
     text-align: left;
-}
-
-#quarto-content {
-    padding-top: 1.5em; /* space for handbook-title */
 }
 /* handbook-title */
 
