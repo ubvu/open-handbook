@@ -52,7 +52,7 @@ header.headroom--unpinned {
     line-height:1.2rem
 }
 
-/* Colored navbar menu */
+/* multi=coloured navbar menu */
 .navbar, .navbar-brand {
   padding-top: 0px !important;
   padding-bottom: 0px !important;
@@ -80,6 +80,7 @@ header.headroom--unpinned {
 .navbar .nav-item:nth-child(3) {
     background-color: #f5b995;
 }
+/* multi=coloured navbar menu */
 
 .hbcloser {
     letter-spacing: -0.1rem;
@@ -94,18 +95,21 @@ header.headroom--unpinned {
     color: white;
 }
 
+/* handbook-title */
 .handbook-title {
     color: grey;
     position: absolute;
     left: 1em;
-    top: 80px;
+    top: 5em;
     text-align: left;
 }
 
 #quarto-content {
     padding-top: 1.5em; /* space for handbook-title */
 }
+/* handbook-title */
 
+/* multi-coloured footer */
 footer.footer .nav-footer {
     padding-left: 0px;
     padding-right: 0px;
@@ -129,3 +133,4 @@ footer.footer .nav-footer {
 .toc-action {
     color: #00659d !important;
 }
+/* multi-coloured footer */
