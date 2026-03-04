@@ -1,6 +1,7 @@
 ---
 title: "Topics"
 listing:
+  id: topics
   contents: topics
   type: table
   table-striped: true
@@ -17,3 +18,8 @@ A topic is a specific subject that can be helpful to know about in your daily re
 
 Missing a topic? You can [submit suggestion using the Contribution portal](https://ez-github-contributor.netlify.app/).
 :::
+
+::: {#topics}
+:::
+
+{{< include _pagebottom.qmd >}}

@@ -1,6 +1,7 @@
 ---
 title: "Tools"
 listing:
+  id: tools
   contents:
     - tools/ada/index.qmd
     - tools/dataversenl/index.qmd
@@ -55,4 +56,8 @@ A tool is a broad term for a software application or platform. These pages list 
 
 Missing a tool description or a manual for a specific tool? You can [submit suggestions using the Contribution portal](https://ez-github-contributor.netlify.app/).
 :::
+
+::: {#tools}
+:::
  
+{{< include _pagebottom.qmd >}}

@@ -1,6 +1,7 @@
 ---
 title: "Guides"
 listing:
+  id: guides
   contents: guides
   type: grid
   categories: true
@@ -21,3 +22,8 @@ These guides help you find answers to questions that come up while doing researc
 
 Missing a guide? You can [submit questions you are dealing with using the Contribution portal](https://ez-github-contributor.netlify.app/).
 :::
+
+:::{#guides}
+:::
+
+{{< include _pagebottom.qmd >}}

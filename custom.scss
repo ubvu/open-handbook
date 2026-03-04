@@ -78,6 +78,19 @@ header.headroom--unpinned {
     letter-spacing: -0.1rem;
 }
 
-.blue {
+.pagebottom {
     background-color: #0282c9;
+    margin-bottom: -95px;
+}
+
+.pagebottom a {
+    color: white;
+}
+
+.handbook-title {
+    color: grey;
+    position: absolute;
+    left: 1em;
+    top: 80px;
+    text-align: left;
 }

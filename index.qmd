@@ -1,5 +1,7 @@
 ---
 toc: false
+include-before-body: 
+    text: ""
 ---
 ::: {.text-center .px-5}
 ::: {.display-3 .hbcloser}
@@ -58,17 +60,4 @@ The VU network Research Data Support organizes trainings that will help you deve
 :::
 :::
 
-::: {.column-screen .blue}
-::: {.column-body}
-::: {.text-center .px-5 .py-5}
-::: {.column width=40% .px-1}
-[![](public/home-collab.svg){width=5em}](./topics/events.qmd)  
-[Missing Something?](./topics/events.qmd)
-:::
-::: {.column width=40% .px-1}
-[![](public/home-collab.svg){width=5em}](./topics/trainings.qmd)  
-[Contact RDM Support Desk](./topics/trainings.qmd)
-:::
-:::
-:::
-:::
+{{< include _pagebottom.qmd >}}
