@@ -69,7 +69,7 @@ header.headroom--unpinned {
     background-color: #e96a2d;
 }
 
-.navbar .nav-item:nth-child(1) a, .navbar .nav-item:nth-child(2) a {
+#nav-menu-topics, .navbar .nav-item:nth-child(2) a {
     color: white;
 }
 
@@ -88,7 +88,7 @@ header.headroom--unpinned {
 
 .pagebottom {
     background-color: #333333;
-    margin-bottom: -5em;
+    margin-bottom: -85px;
 }
 
 .pagebottom a {

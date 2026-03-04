@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Technical details – Research Support Handbook</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./public/favicon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-9f23b95b06b6bda74e4905d41d022e7b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "Search",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./public/VU-logo-nobg.svg" alt="VU Amsterdam logo." class="navbar-logo light-content">
+    <img src="./public/VU-logo-nobg.svg" alt="VU Amsterdam logo." class="navbar-logo dark-content">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-topics" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Topics</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-topics">    
+        <li>
+    <a class="dropdown-item" href="./topics.html">
+ <span class="dropdown-text">All</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./topics.html#category=Policies and Legislation">
+ <span class="dropdown-text">Policies and Legislation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./topics.html#category=Research Data">
+ <span class="dropdown-text">Research Data</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./topics.html#category=Research Software">
+ <span class="dropdown-text">Research Software</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./topics.html#category=Responsible Scholarship">
+ <span class="dropdown-text">Responsible Scholarship</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./topics.html#category=Trainings and Knowledge Items">
+ <span class="dropdown-text">Trainings and Knowledge Items</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./guides.html"> 
+<span class="menu-text">Guides</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./tools.html"> 
+<span class="menu-text">Tools</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./blog.html"> 
+<span class="menu-text">News</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="https://github.com/ubvu/open-handbook" title="GitHub VU Open Handbook" class="quarto-navigation-tool px-1" aria-label="GitHub VU Open Handbook"><i class="bi bi-github"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#how-is-the-website-built" id="toc-how-is-the-website-built" class="nav-link active" data-scroll-target="#how-is-the-website-built">How is the website built?</a></li>
+  <li><a href="#preview-deployments" id="toc-preview-deployments" class="nav-link" data-scroll-target="#preview-deployments">Preview deployments</a></li>
+  <li><a href="#easy-github-contributor" id="toc-easy-github-contributor" class="nav-link" data-scroll-target="#easy-github-contributor">Easy GitHub contributor</a></li>
+  <li><a href="#repository-structure-overview" id="toc-repository-structure-overview" class="nav-link" data-scroll-target="#repository-structure-overview">Repository structure overview</a>
+  <ul class="collapse">
+  <li><a href="#key-files-and-directories" id="toc-key-files-and-directories" class="nav-link" data-scroll-target="#key-files-and-directories">Key files and directories</a></li>
+  <li><a href="#content-organization" id="toc-content-organization" class="nav-link" data-scroll-target="#content-organization">Content organization</a></li>
+  <li><a href="#technical-files" id="toc-technical-files" class="nav-link" data-scroll-target="#technical-files">Technical files</a></li>
+  </ul></li>
+  <li><a href="#about-quarto" id="toc-about-quarto" class="nav-link" data-scroll-target="#about-quarto">About Quarto</a>
+  <ul class="collapse">
+  <li><a href="#key-concepts" id="toc-key-concepts" class="nav-link" data-scroll-target="#key-concepts">Key concepts</a></li>
+  <li><a href="#useful-resources" id="toc-useful-resources" class="nav-link" data-scroll-target="#useful-resources">Useful resources</a></li>
+  </ul></li>
+  <li><a href="#common-errors-and-troubleshooting" id="toc-common-errors-and-troubleshooting" class="nav-link" data-scroll-target="#common-errors-and-troubleshooting">Common errors and troubleshooting</a>
+  <ul class="collapse">
+  <li><a href="#build-errors" id="toc-build-errors" class="nav-link" data-scroll-target="#build-errors">Build errors</a></li>
+  <li><a href="#style-issues" id="toc-style-issues" class="nav-link" data-scroll-target="#style-issues">Style issues</a></li>
+  <li><a href="#markdownlint-errors" id="toc-markdownlint-errors" class="nav-link" data-scroll-target="#markdownlint-errors">Markdownlint errors</a></li>
+  <li><a href="#how-to-disable-markdownlint-rules" id="toc-how-to-disable-markdownlint-rules" class="nav-link" data-scroll-target="#how-to-disable-markdownlint-rules">How to disable Markdownlint rules</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/technical-details.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+<div class="handbook-title">Research Support Handbook</div>
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Technical details</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>This handbook is created with a variety of technical resources. This document outlines what technical resources are used to achieve different goals.</p>
+<section id="how-is-the-website-built" class="level2">
+<h2 class="anchored" data-anchor-id="how-is-the-website-built">How is the website built?</h2>
+<p>We use GitHub Actions to build the Quarto website. This automation runs every time something changes for the website – <a href="https://github.com/ubvu/open-handbook/blob/main/.github/workflows/publish.yml" target="_blank">the automation itself can be found on GitHub</a>.</p>
+<p>We use GitHub to subsequently make the website available on <code>https://rdm.vu.nl</code>.</p>
+<p>Please <a href="https://quarto.org/docs/websites/" target="_blank">refer to the Quarto documentation for detailed instructions</a> on how to use Quarto.</p>
+</section>
+<section id="preview-deployments" class="level2">
+<h2 class="anchored" data-anchor-id="preview-deployments">Preview deployments</h2>
+<p>We use Netlify to automatically build previews of pull requests on GitHub. This is provided by Liberate Science GmbH, and is not critical to the operation of <code>https://rdm.vu.nl</code>. It does, however, help the editors manage changes to the handbook.</p>
+<p>If this integration ever breaks, it can be fixed by one of the maintainers of <a href="https://github.com/ubvu/open-handbook">the handbook repository</a>. To fix this, link your GitHub repository through Netlify directly and it will automatically deploy any pull requests - https://app.netlify.com/start.</p>
+</section>
+<section id="easy-github-contributor" class="level2">
+<h2 class="anchored" data-anchor-id="easy-github-contributor">Easy GitHub contributor</h2>
+<p>The easy GitHub contributor is a small integration to make it easier to start contributing to the handbook. This service is provided by Liberate Science GmbH through Netlify. It is supported until September 1st, 2024 – after which it is no longer maintained.</p>
+</section>
+<section id="repository-structure-overview" class="level2">
+<h2 class="anchored" data-anchor-id="repository-structure-overview">Repository structure overview</h2>
+<p>Understanding the repository structure helps you locate and modify the right files:</p>
+<section id="key-files-and-directories" class="level3">
+<h3 class="anchored" data-anchor-id="key-files-and-directories">Key files and directories</h3>
+<ul>
+<li><strong><code>index.qmd</code></strong> - Homepage content</li>
+<li><strong><code>_quarto.yml</code></strong> - Main Quarto configuration file</li>
+<li><strong><code>_variables.yml</code></strong> - Site-wide variables and settings</li>
+<li><strong><code>custom.scss</code></strong> - Custom styling</li>
+<li><strong><code>contributing.qmd</code></strong> - Contributing guidelines</li>
+<li><strong><code>editors-guide.qmd</code></strong> - Editor documentation</li>
+</ul>
+<section id="quarto.yml" class="level4">
+<h4 class="anchored" data-anchor-id="quarto.yml"><code>_quarto.yml</code></h4>
+<p>The <code>_quarto.yml</code> file is especially important, as it contains the metadata and information to structure the handbook. You can use this to find and update the navigation bar. The specifics of <a href="https://quarto.org/docs/websites/website-tools.html" target="_blank">using <code>_quarto.yml</code> is documented very well by Quarto</a>.</p>
+</section>
+</section>
+<section id="content-organization" class="level3">
+<h3 class="anchored" data-anchor-id="content-organization">Content organization</h3>
+<ul>
+<li><strong><code>topics/</code></strong> - Individual topic pages (e.g., <code>data-management-plan.qmd</code>, <code>gdpr.qmd</code>)</li>
+<li><strong><code>guides/</code></strong> - Step-by-step guides organized by research lifecycle</li>
+<li><strong><code>manuals/</code></strong> - Manuals to help researchers use specific tools</li>
+<li><strong><code>blog/</code></strong> - Blog posts and announcements</li>
+<li><strong><code>public/</code></strong> - Static assets (images, PDFs, etc.)</li>
+</ul>
+</section>
+<section id="technical-files" class="level3">
+<h3 class="anchored" data-anchor-id="technical-files">Technical files</h3>
+<ul>
+<li><strong><code>_components/</code></strong> - React components for interactive elements</li>
+<li><strong><code>_extensions/</code></strong> - Quarto extensions (e.g., qreacto for React integration)</li>
+<li><strong><code>.github/workflows/</code></strong> - GitHub Actions for automated building and deployment</li>
+<li><strong><code>_site/</code></strong> - Generated website files (auto-generated, don’t edit directly)</li>
+<li><strong><code>manuals/&lt;tool&gt;/_sidebar.yml</code></strong> - Specifies the order of the left sidebar of a specific tool manual</li>
+</ul>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span>Extra-detailed overview
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<pre><code>.
+├── .git/ - If present, contains the raw git history
+├── .github/ - GitHub files, including automations and templates
+├── .gitignore - Which files to ignore in git commits
+├── .markdownlint.json - Markdownlint rules and exceptions
+├── CITATION.cff - Citation File Format
+├── CNAME - GitHub Pages domain name
+├── LICENSE - CC0 information
+├── README.md - General readme
+├── _components/ - React components for `/`
+├── _extensions/ - Quarto extensions
+├── _quarto.yml - Quarto metadata
+├── _site/ - If present, the rendered version of the website
+├── _variables.yml - Quarto variables, available in all .qmd files
+├── about.qmd - About page
+├── blog/ - Blog posts, one per .qmd file
+├── blog.qmd - Blog overview page
+├── contributing.qmd - Contributor guide page
+├── custom.scss - Custom styling for VU Amsterdam
+├── editors-guide.qmd - Editor guide page
+├── guides/ - Individual guides, one per `.qmd` file
+├── guides.qmd - General guides page
+├── index.qmd - Homepage `/`
+├── manuals/ - Folder containing all manuals and subpages
+├── manuals.qmd - Manual overview page
+├── manuals/&lt;tool&gt;/ - &lt;tool&gt; manuals
+├── manuals/&lt;tool&gt;/index.qmd - Manual start page
+├── manuals/&lt;tool&gt;/_sidebar.yml - Manual sidebar definition
+├── netlify.toml - Netlify (preview) deployment instructions
+├── package.json - Netlify plugin information
+├── public/ - Folder containing public assets such as screenshot images (keep files small)
+├── references.bib - Reference library for use in the handbook
+├── technical-details.qmd - Technical details page
+├── topics/ - Each `.qmd` file is one topic
+├── topics.qmd - Topic overview page
+└── utils/ - Custom utilities for the website (generally do not touch)
+    └── include-files.lua - Utility to shift headings from included files
+    └── linktarget.lua - Utility to open external links in a new tab</code></pre>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="about-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="about-quarto">About Quarto</h2>
+<p>This handbook is built using <a href="https://quarto.org/" target="_blank">Quarto</a>, a scientific and technical publishing system. Quarto allows you to create documents that combine text, code, and data. It supports multiple formats including websites, PDFs, and presentations.</p>
+<section id="key-concepts" class="level3">
+<h3 class="anchored" data-anchor-id="key-concepts">Key concepts</h3>
+<ul>
+<li><strong><code>.qmd</code> files</strong> - Quarto markdown files that combine markdown text with executable code</li>
+<li><strong>YAML front matter</strong> - Configuration at the top of files between <code>---</code> markers</li>
+<li><strong>Shortcodes</strong> - Special syntax for advanced features (e.g., <code>https://github.com/ubvu/open-handbook</code>)</li>
+</ul>
+</section>
+<section id="useful-resources" class="level3">
+<h3 class="anchored" data-anchor-id="useful-resources">Useful resources</h3>
+<ul>
+<li><a href="https://quarto.org/docs/" target="_blank">Quarto documentation</a></li>
+<li><a href="https://quarto.org/docs/websites/" target="_blank">Quarto guide for websites</a></li>
+<li><a href="https://quarto.org/docs/authoring/markdown-basics.html" target="_blank">Markdown basics</a></li>
+</ul>
+</section>
+</section>
+<section id="common-errors-and-troubleshooting" class="level2">
+<h2 class="anchored" data-anchor-id="common-errors-and-troubleshooting">Common errors and troubleshooting</h2>
+<section id="build-errors" class="level3">
+<h3 class="anchored" data-anchor-id="build-errors">Build errors</h3>
+<p><strong>Error: “File not found”</strong> - <strong>Cause</strong>: Missing file reference or incorrect path - <strong>Solution</strong>: Check file paths in links and references - <strong>Can ignore in PR?</strong> No, this will break the build</p>
+<p><strong>Error: “YAML parsing error”</strong> - <strong>Cause</strong>: Invalid YAML syntax in front matter or <code>_quarto.yml</code> - <strong>Solution</strong>: Check YAML indentation and syntax - <strong>Can ignore in PR?</strong> No, this will prevent building</p>
+<p><strong>Error: “Duplicate anchor”</strong> - <strong>Cause</strong>: Multiple headings with the same text create duplicate IDs - <strong>Solution</strong>: Make heading text unique or use custom IDs - <strong>Can ignore in PR?</strong> Yes, but should be fixed for better navigation</p>
+</section>
+<section id="style-issues" class="level3">
+<h3 class="anchored" data-anchor-id="style-issues">Style issues</h3>
+<p><strong>Info: “Missing alt text”</strong> - <strong>Cause</strong>: Images without alt text - <strong>Solution</strong>: Add descriptive alt text for accessibility - <strong>Can ignore in PR?</strong> Should be addressed for accessibility, but won’t break the build</p>
+</section>
+<section id="markdownlint-errors" class="level3">
+<h3 class="anchored" data-anchor-id="markdownlint-errors">Markdownlint errors</h3>
+<p>Markdownlint checks for consistent markdown formatting. This only runs if topics or guides are changed.</p>
+<p>Common errors include:</p>
+<p><strong>MD001: Heading levels should only increment by one level at a time</strong> - <strong>Cause</strong>: Skipping heading levels (e.g., H1 directly to H3) - <strong>Solution</strong>: Use proper heading hierarchy - <strong>Escape</strong>: Add <code>&lt;!-- markdownlint-disable MD001 --&gt;</code> before the heading</p>
+<p><strong>MD033: Inline HTML</strong> - <strong>Cause</strong>: Using HTML tags in markdown - <strong>Solution</strong>: Use markdown syntax instead, or use HTML when necessary - <strong>Escape</strong>: Add <code>&lt;!-- markdownlint-disable MD033 --&gt;</code> around HTML sections - <strong>Can ignore in PR?</strong> Usually yes, HTML is sometimes needed for advanced formatting</p>
+<p><strong>MD041: First line in file should be a top level heading</strong> - <strong>Cause</strong>: File doesn’t start with H1 heading - <strong>Solution</strong>: Add H1 heading or use YAML front matter - <strong>Escape</strong>: Add <code>&lt;!-- markdownlint-disable MD041 --&gt;</code> at the top - <strong>Can ignore in PR?</strong> Yes, especially for files with YAML front matter</p>
+<p>The full set of rules can be found in the <a href="https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md" target="_blank">markdownlint documentation</a>.</p>
+</section>
+<section id="how-to-disable-markdownlint-rules" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-disable-markdownlint-rules">How to disable Markdownlint rules</h3>
+<p>You can disable specific rules in a document in several ways:</p>
+<p><strong>For a single line:</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- markdownlint-disable-next-line MD033 --&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="dt">&gt;</span>Some HTML content<span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>For a section:</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- markdownlint-disable MD033 --&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="dt">&gt;</span>HTML content<span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">span</span><span class="dt">&gt;</span>More HTML<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- markdownlint-enable MD033 --&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>For an entire file:</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- markdownlint-disable MD013 MD033 --&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>In a .markdownlint.json config file:</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"MD013"</span><span class="fu">:</span> <span class="kw">false</span><span class="fu">,</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"MD033"</span><span class="fu">:</span> <span class="kw">false</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Please edit the existing <a href="./markdownlint.json"><code>.markdownlint.json</code> file</a> in case you want to ignore certain rules project-wide.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/ubvu\.github\.io\/open-handbook");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://creativecommons.org/publicdomain/zero/1.0/legalcode">
+<p>CC0 Public Domain Dedication</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="./about.html">
+<p>About</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="./contributing.html">
+<p>Contributing</p>
+</a>
+  </li>  
+</ul>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/technical-details.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
