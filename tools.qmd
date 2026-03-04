@@ -1,5 +1,4 @@
 ---
-title: "Tools"
 listing:
   id: tools
   contents:
@@ -44,20 +43,23 @@ format:
         .quarto-post img {
           max-height: 150px;
         }
-
+        .handbook-title {
+          text-align: center;
+        }
         </style>
 ---
 
-::: {.callout-tip}
-
-## What is a tool?
-
+::: {.text-center .px-5}
+::: {.display-3 .hbcloser}
+![](public/home-collab-3.svg){width=1em}  
+Topics
+:::
 A tool is a broad term for a software application or platform. These pages list research tools supported by the VU, describe what they are for, how to get access and who to contact for questions and support. You will also find manuals describing how to use the tool in your workflow and links to documentation of the supplier.
-
-Missing a tool description or a manual for a specific tool? You can [submit suggestions using the Contribution portal](https://ez-github-contributor.netlify.app/).
 :::
 
-::: {#tools}
+---
+
+::: {#tools .py-5}
 :::
  
 {{< include _pagebottom.qmd >}}
