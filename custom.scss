@@ -47,31 +47,32 @@ header.headroom--unpinned {
 }
 
 /* Colored navbar menu */
-.nav-item {
-  min-width: 100px;
-  height: 75px;
-}
-
 .navbar, .navbar-brand {
   padding-top: 0px !important;
   padding-bottom: 0px !important;
 }
 
 .navbar .nav-item {
+  min-width: 100px;
+  height: 75px;
   align-content: center; 
   text-align: center;
 }
 
 .navbar .nav-item:nth-child(1) {
-    background-color: orange;
+    background-color: #e96a2d;
+}
+
+.navbar .nav-item:nth-child(1) a, .navbar .nav-item:nth-child(2) a {
+    color: white;
 }
 
 .navbar .nav-item:nth-child(2) {
-    background-color: green;
+    background-color: #414141;
 }
 
 .navbar .nav-item:nth-child(3) {
-    background-color: purple;
+    background-color: #f5b995;
 }
 
 .hbcloser {
@@ -79,8 +80,8 @@ header.headroom--unpinned {
 }
 
 .pagebottom {
-    background-color: #0282c9;
-    margin-bottom: -95px;
+    background-color: #333333;
+    margin-bottom: -5em;
 }
 
 .pagebottom a {
@@ -97,4 +98,28 @@ header.headroom--unpinned {
 
 #quarto-content {
     padding-top: 1.5em; /* space for handbook-title */
+}
+
+footer.footer .nav-footer {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.nav-footer-left, .nav-footer-right {
+    display: none; /* forces the center to full-width */
+}
+
+.nav-footer-center {
+    background-color: #318ece;
+}
+
+.nav-footer-center a {
+    color: white;
+}
+.toc-actions {
+    background-color: white;
+}
+
+.toc-action {
+    color: #00659d !important;
 }
