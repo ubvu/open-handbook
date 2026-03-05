@@ -1602,39 +1602,21 @@
     "href": "tools/yoda/yoda_using_webdrive.html",
     "title": "Using Webdrive",
     "section": "",
-    "text": "Windows users can use WebDrive to access their data, as an alternative to the native WebDAV client. With WebDrive the Yoda WebDAV interface can be connected via as a drive in Windows Explorer.\nAs a VU user you can download a licensed version of WebDrive from download.vu.nl.\nNote that you should always disable caching in WebDrive!",
-    "crumbs": [
-      "Yoda",
-      "Documentation",
-      "Data Access and Transfer",
-      "Using Webdrive"
-    ]
+    "text": "Windows users can use WebDrive to access their data, as an alternative to the native WebDAV client. With WebDrive the Yoda WebDAV interface can be connected via as a drive in Windows Explorer.\nAs a VU user you can download a licensed version of WebDrive from download.vu.nl.\nNote that you should always disable caching in WebDrive!"
   },
   {
     "objectID": "tools/yoda/yoda_using_webdrive.html#how-to-using-webdrive",
     "href": "tools/yoda/yoda_using_webdrive.html#how-to-using-webdrive",
     "title": "Using Webdrive",
     "section": "How to: Using WebDrive",
-    "text": "How to: Using WebDrive\n\nStart Webdrive from the Desktop icon or the Start menu.\n\n\n\nIn the initial Window click new.\n\n\n\nChoose Secure WebDAV and click Next.\n\n\n\nEnter https://data.yoda.vu.nl/ in the Url/Address field.\nEnter the Username (an emailaddress). Create a data access password and copy it to the Password field.\n\n\nYou can click Test Connection to see if the credentials are correct.\n\n\nClick Next\n\n\n\nChoose a Drive letter and Connect Now.\n\n\n\nYou should now see the Yoda Disk in your Windows Explorer.",
-    "crumbs": [
-      "Yoda",
-      "Documentation",
-      "Data Access and Transfer",
-      "Using Webdrive"
-    ]
+    "text": "How to: Using WebDrive\n\nStart Webdrive from the Desktop icon or the Start menu.\n\n\n\nIn the initial Window click new.\n\n\n\nChoose Secure WebDAV and click Next.\n\n\n\nEnter https://data.yoda.vu.nl/ in the Url/Address field.\nEnter the Username (an emailaddress). Create a data access password and copy it to the Password field.\n\n\nYou can click Test Connection to see if the credentials are correct.\n\n\nClick Next\n\n\n\nChoose a Drive letter and Connect Now.\n\n\n\nYou should now see the Yoda Disk in your Windows Explorer."
   },
   {
     "objectID": "tools/yoda/yoda_using_webdrive.html#how-to-disable-the-cache",
     "href": "tools/yoda/yoda_using_webdrive.html#how-to-disable-the-cache",
     "title": "Using Webdrive",
     "section": "How To: Disable the cache",
-    "text": "How To: Disable the cache\nBy default WebDrive enables a caching mechanism and suggests this as a way to enable syncing and working offline.\nThis functionality is not implemented very well and you should always disable this to prevent data loss.\n\n\nRight click on “data.yoda.vu.nl” in the server list\n\n\n\nSet Cache Mode to None and Cache Limit to 0.",
-    "crumbs": [
-      "Yoda",
-      "Documentation",
-      "Data Access and Transfer",
-      "Using Webdrive"
-    ]
+    "text": "How To: Disable the cache\nBy default WebDrive enables a caching mechanism and suggests this as a way to enable syncing and working offline.\nThis functionality is not implemented very well and you should always disable this to prevent data loss.\n\n\nRight click on “data.yoda.vu.nl” in the server list\n\n\n\nSet Cache Mode to None and Cache Limit to 0."
   },
   {
     "objectID": "tools/yoda/yoda_dap.html",
@@ -1706,7 +1688,7 @@
     "href": "tools/yoda/data_access_windows.html#drive-letter",
     "title": "Data access on Windows",
     "section": "Drive letter",
-    "text": "Drive letter\nUsing these tools you can access the Yoda Disk via a drive letter.\n\nWebDrive is a VU-supported method to remotely access files and can also be used on “green” pc’s. With WebDrive the Yoda WebDAV interface can be connected as a drive in Windows Explorer.\nDirectly in Windows Explorer. However, this has restrictions: a maximum file size of 4GB on Windows 11 and 50MB(!) on Windows 10 and a maximum of 1000 files per folder (Windows 10&11). Take care if you expect your dataset to exceed these limitations.",
+    "text": "Drive letter\nYou can use Windows Explorer to access the Yoda Disk via a drive letter. However, this has restrictions: a maximum file size of 4GB on Windows 11 and 50MB(!) on Windows 10 and a maximum of 1000 files per folder (Windows 10&11). Take care if you expect your dataset to exceed these limitations.",
     "crumbs": [
       "Yoda",
       "Documentation",
