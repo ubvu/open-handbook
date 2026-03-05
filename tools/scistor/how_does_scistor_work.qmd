@@ -1,0 +1,72 @@
+---
+title: How does SciStor work?
+---
+
+SciStor is VU Amsterdam's on-premises scientific storage solution, designed for active research data management. It provides structured, permission-controlled storage with built-in data protection for research teams operating under VU Amsterdam's faculty structure.
+
+### Naming Convention
+
+All Project Folders must adhere to the following format:
+
+```
+FAC-DPT-PRJ
+```
+
+Where:
+
+- `FAC`: denotes the faculty abbreviation
+
+- `DPT`: the department abbreviation
+
+- `PRJ`: the project name abbreviation.
+
+For example, a Computer Science project within the Faculty of Sciences would be named `BETA-CS-PRJ1`.
+
+
+## Data Protection
+
+### Snapshots
+
+SciStor provides point-in-time snapshots of stored data at no additional cost. Snapshots enable file versioning and recovery without requiring separate backup infrastructure.
+
+| Frequency | Retention period |
+|-----------|-----------------|
+| Daily     | 1 week          |
+| Weekly    | 4 weeks         |
+
+The [Data Recovery page](snapshots-data-recovery.qmd) explains how you can restore data from the snaphots yourself.
+
+::: {.callout-note}
+Upon deletion of a file, the corresponding snapshot will continue to consume storage space until the snapshot retention period expires. Storage capacity is not immediately reclaimed following deletion.
+:::
+
+### Failover System
+
+SciStor operates a replication-based failover system in which data from the primary on-campus node is continuously mirrored to a secondary node located off-campus.
+In the event of a major infrastructure incident, the secondary node ensures data availability and integrity.
+
+
+## Project Folder Structure
+
+Access control in SciStor is organised across two levels.
+
+**Level 0 — Main Folder** is automatically provisioned for all users with read-only permissions. This ensures that all team members can locate and navigate to the Project Folder.
+
+**Level 1 — Subfolders** allow granular, per-folder access control. Each subfolder may be assigned one of the following permission levels:
+
+| Permission | Description           |
+|------------|-----------------------|
+| R          | Read-only access      |
+| RW         | Read and write access |
+
+### Example Structure
+
+```
+/BETA-CS-PROJECT1/        [RW: Root;   R: vunet1, ..., vunetN]
+├── raw_data/             [RW: vunet1, vunet2;   R: vunet3, ..., vunetN]
+├── processed_data/       [RW: vunet1, ..., vunetN;   R: —]
+├── analysis/             [RW: vunet1, ..., vunetN;   R: —]
+└── results/              [RW: vunet1, ..., vunetN;   R: —]
+```
+
+
