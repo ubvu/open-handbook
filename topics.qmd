@@ -1,19 +1,42 @@
 ---
-title: "Topics"
 listing:
+  id: topics
+  template: ./_templates/expandable-details.ejs # ejs is sensitive to indentation, use 2 spaces
   contents: topics
-  type: table
-  table-striped: true
-  table-hover: true
-  fields: [title, reading-time]
   categories: true
+include-in-header:
+  text: |
+    <style type="text/css">
+    .quarto-grid-item .listing-item-img-placeholder {
+      background-color: #0080c9;
+    }
+    ul.vu-listing {
+      list-style-type: none;
+      list-style-position: inside;
+      padding-left: 0;
+    }
+    ul.vu-listing li {
+      border-bottom: 1px solid #0080c9;
+      margin-bottom: 10px;
+      padding-left: 20px;
+    }
+    .handbook-title {
+      text-align: center;
+    }
+    </style>
 ---
 
-::: {.callout-tip}
-
-## What is a topic?
-
-A topic is a specific subject that can be helpful to know about in your daily research. Each page can be read on its own. These pages are a quick way to learn about specific things.
-
-Missing a topic? You can [submit suggestion using the Contribution portal](https://ez-github-contributor.netlify.app/).
+::: {.text-center .px-5}
+::: {.display-3 .hbcloser}
+![](public/home-collab-1.svg){width=1em}  
+Topics
 :::
+A topic is a specific subject that can be helpful to know about in your daily research. Each page can be read on its own. These pages are a quick way to learn about specific things.
+:::
+
+---
+
+::: {#topics .py-5}
+:::
+
+{{< include _pagebottom.qmd >}}

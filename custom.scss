@@ -15,7 +15,13 @@ body {
 }
 
 .navbar-logo {
+    width: 200px;
     max-height: 64px;
+    padding-bottom: 3px;
+}
+
+.navbar-brand.navbar-brand-logo {
+  margin-right: 1.5em;
 }
 
 header.headroom--pinned {
@@ -46,3 +52,62 @@ header.headroom--unpinned {
     line-height:1.2rem
 }
 
+/* multi=coloured navbar menu */
+.navbar, .navbar-brand {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.navbar .nav-item {
+  min-width: 100px;
+  height: 75px;
+  align-content: center; 
+  text-align: center;
+}
+
+.navbar .nav-item:nth-child(1) {
+    background-color: #e96a2d;
+}
+
+#nav-menu-topics, .navbar .nav-item:nth-child(2) a {
+    color: white;
+}
+
+.navbar .nav-item:nth-child(2) {
+    background-color: #414141;
+}
+
+.navbar .nav-item:nth-child(3) {
+    background-color: #f5b995;
+}
+/* multi=coloured navbar menu */
+
+.hbcloser {
+    letter-spacing: -0.1rem;
+}
+
+.pagebottom {
+    background-color: #333333;
+    margin-bottom: -86px;
+}
+
+.pagebottom a {
+    color: white;
+}
+
+/* handbook-title */
+.handbook-title {
+    color: grey;
+    position: relative;
+    text-align: left;
+}
+/* handbook-title */
+
+footer.footer .nav-footer {
+    background-color: #318ece;
+
+}
+
+.nav-footer a {
+    color: white;
+}
