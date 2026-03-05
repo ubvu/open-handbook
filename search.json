@@ -4838,7 +4838,7 @@
     "href": "tools/yoda/known_issues.html",
     "title": "Known issues",
     "section": "",
-    "text": "Updated 2025-11-20, Yoda version 2.0\n\n\n\nIssue\nDescription\nWorkaround\nStatus\n\n\n\n\nSecuring datasets in the Vault fails with folders containing special characters\nWhen a datamanager accepts a Vault submission it is copied to the Vault folder. This process sometimes fails if a foldername in the dataset contains special characters (this includes the diaeresis sign, e.g. ö).\nEnsure folder names do not contain special characters before submitting.\nExpected to be fixed in Yoda 2.1\n\n\nConnecting using icommands fails due to changes in irods_environment.json\nFollowing the Yoda 2.0 upgrade the contents of irods_environment.json need to be updated, see the manual. This is due to an upgrade to the underlying irods system.\n\n\n\n\nIcon of new user does not reflect role\nWhen a Group Manager changes the role of a recently added user, the icon is not changed. The correct icon will be visible after the user has accepted the SRAM invitation.\nTry to change the role of the user again, the system will show a notification stating the user already has this role.\nExpected to be fixed in Yoda 2.1\n\n\nDataset can be archived and published with a missing ORCID field\n\n\nFixed in Yoda 2.0\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nThe Yoda release notes mention irods bugs relevant to Yoda.",
+    "text": "Updated 2025-11-20, Yoda version 2.0\n\n\n\nIssue\nDescription\nWorkaround\nStatus\n\n\n\n\nSecuring datasets in the Vault fails with folders containing special characters\nWhen a datamanager accepts a Vault submission it is copied to the Vault folder. This process sometimes fails if a foldername in the dataset contains special characters (this includes the diaeresis sign, e.g. ö).\nEnsure folder names do not contain special characters before submitting.\nExpected to be fixed in Yoda 2.1\n\n\nConnecting using icommands fails due to changes in irods_environment.json\nFollowing the Yoda 2.0 upgrade the contents of irods_environment.json need to be updated, see the manual. This is due to an upgrade to the underlying irods system.\n\n\n\n\nIcon of new user does not reflect role\nWhen a Group Manager changes the role of a recently added user, the icon is not changed. The correct icon will be visible after the user has accepted the SRAM invitation.\nTry to change the role of the user again, the system will show a notification stating the user already has this role.\nExpected to be fixed in Yoda 2.1\n\n\nRevisions not available\nThe option to “Search revisions by name” in the Search Bar does not return any results.\nIf you need to restore an older version of a file from backup please contact the Research Support Desk\nThis feature is intentionally disabled to reduce storage costs.\n\n\nDataset can be archived and published with a missing ORCID field\n\n\nFixed in Yoda 2.0\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nThe Yoda release notes mention irods bugs relevant to Yoda.",
     "crumbs": [
       "Yoda",
       "Known issues"
@@ -4901,7 +4901,7 @@
     "href": "tools/yoda/finding_restoring.html",
     "title": "Finding and restoring data",
     "section": "",
-    "text": "You might want to search for data files or folders in your research group, especially when the amount of data you are working with is growing or when you have many different research groups of folders you work in. It is also possible to retrieve an earlier version (a revision) of a file, for example if you have accidently deleted a file. With the ‘search’ functionality in Yoda, you can do both.",
+    "text": "You might want to search for data files or folders in your research group, especially when the amount of data you are working with is growing or when you have many different research groups of folders you work in. If you accidentally deleted data you can request a restore from backup.",
     "crumbs": [
       "Yoda",
       "Documentation",
@@ -4962,24 +4962,11 @@
     ]
   },
   {
-    "objectID": "tools/yoda/finding_restoring.html#restoring-previous-file-versions",
-    "href": "tools/yoda/finding_restoring.html#restoring-previous-file-versions",
+    "objectID": "tools/yoda/finding_restoring.html#restore-options",
+    "href": "tools/yoda/finding_restoring.html#restore-options",
     "title": "Finding and restoring data",
-    "section": "Restoring previous file versions",
-    "text": "Restoring previous file versions\nPrevious file versions (revisions) are important if you need to go back to an earlier version of your work. Yoda provides you with a backup functionality of these earlier versions. This means you can restore files yourself.\nYoda saved a new revision of your data every time you save a file using the same name. Yoda does not overwrite the existing file, but creates a new revision while the older revision is stored in a hidden location. This then becomes a previous file version that you can restore if needed.\nAs time passes by, an increasing amount of the revisions will be deleted. This means that you can restore many revisions from the same day, less revisions from the last few days, even less revisions from a week back, etcetera. After 16 weeks, every revision older than 16 weeks is deleted.\nFollow these steps to restore up to 16 weeks older file versions:\n\nGo to the Yoda portal and sign in.\nClick on ‘Research’ in the menu (the black bar). There is a search bar just below the menu.\nSelect ‘Search revisions by name’.\nType the name of a file of which you want to restore a revision.\nClick on a file. You will now see the file versions in the search results.\nYou can save the file version you wish to restore in various ways:\n\n\nunder your own name in the same folder\nwith a different name\nin another folder within the research group\n\nNote that during your work a maximum of one revision per 60 seconds is made. Any changes within 60 seconds of the last revision will not form a new revision even though you saved it in the meantime.",
-    "crumbs": [
-      "Yoda",
-      "Documentation",
-      "Using Yoda",
-      "Finding and restoring data"
-    ]
-  },
-  {
-    "objectID": "tools/yoda/finding_restoring.html#other-restore-options",
-    "href": "tools/yoda/finding_restoring.html#other-restore-options",
-    "title": "Finding and restoring data",
-    "section": "Other restore options",
-    "text": "Other restore options\nA daily backup is made of all data in the Yoda Research space. If you can’t restore the file via the revisions or if you need to restore an entire folder structure please contact the Research Support Desk at rdm@vu.nl for other restore options.",
+    "section": "Restore options",
+    "text": "Restore options\nA daily backup is made of all data in the Yoda Research space. If you need to restore data please contact the Research Support Desk at rdm@vu.nl. Mention the folders and files you need restored and the last date the data was still available on Yoda.",
     "crumbs": [
       "Yoda",
       "Documentation",
