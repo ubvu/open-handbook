@@ -1,20 +1,8 @@
 ---
 title: How does SciStor work?
-categories: []
-# <!-- image: '/public/qxm_color.svg' -->
-description: 'Brief explanation of SCistor workflow'
 ---
 
-# How SciStor Works
-
 SciStor is VU Amsterdam's on-premises scientific storage solution, designed for active research data management. It provides structured, permission-controlled storage with built-in data protection for research teams operating under VU Amsterdam's faculty structure.
-
-
-## Requirements for Access
-
-Access to SciStor requires a valid VUnetID.
-
-A departmental budget number is needed for a creation of a Project Folder, it can obtained from the relevant head of department or project lead.
 
 ### Naming Convention
 
@@ -45,6 +33,8 @@ SciStor provides point-in-time snapshots of stored data at no additional cost. S
 |-----------|-----------------|
 | Daily     | 1 week          |
 | Weekly    | 4 weeks         |
+
+The [Data Recovery page](snapshots-data-recovery.qmd) explains how you can restore data from the snaphots yourself.
 
 ::: {.callout-note}
 Upon deletion of a file, the corresponding snapshot will continue to consume storage space until the snapshot retention period expires. Storage capacity is not immediately reclaimed following deletion.
@@ -80,17 +70,3 @@ Access control in SciStor is organised across two levels.
 ```
 
 
-## Permissions Management
-
-- The user who submits the Project Folder creation request is designated as the folder's owner or primary administrator.
-
-- The owner holds read-write access to all subfolders by default.
-
-- Permission modifications may only be initiated by the folder owner or a designated administrator.
-
-- All such requests must be submitted to the IT Service Desk, specifying the relevant folder, user account, and desired permission level.
-
-
-## Help & Support
-
-For assistance, contact the IT Service Desk via the VU service portal or by email at itvo.it@vu.nl.
