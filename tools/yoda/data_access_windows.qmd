@@ -17,11 +17,7 @@ letter.
 - [WinSCP](/tools/yoda/yoda_using_winscp.qmd) is an alternative free file transfer tool. WinSCP provides a reliable file transfer solution. It allows users to securely download and upload files to Yoda. This option is suitable for large and complex datasets.
 
 ## Drive letter
-Using these tools you can access the Yoda Disk via a drive letter.
-
-- [WebDrive](/tools/yoda/yoda_using_webdrive.qmd) is a VU-supported method to remotely access files and can also be used on "green" pc's. With WebDrive the Yoda WebDAV interface can be connected as a drive in Windows Explorer.
-
-- Directly in [Windows Explorer](/tools/yoda/yoda_using_windowsexplorer.qmd). However, this has restrictions: a maximum file size of 4GB on Windows 11 and 50MB(!) on Windows 10 and a maximum of 1000 files per folder (Windows 10&11). Take care if you expect your dataset to exceed these limitations.
+You can use [Windows Explorer](/tools/yoda/yoda_using_windowsexplorer.qmd) to access the Yoda Disk via a drive letter. However, this has restrictions: a maximum file size of 4GB on Windows 11 and 50MB(!) on Windows 10 and a maximum of 1000 files per folder (Windows 10&11). Take care if you expect your dataset to exceed these limitations.
 
 ## Command line and Rclone
 If you are familiar with command line tools [rclone](/tools/yoda/yoda_using_rclone.qmd) is also a good option to access the Yoda via Webdav. It also provides the option to use a drive letter.
