@@ -105,26 +105,11 @@ header.headroom--unpinned {
 
 /* multi-coloured footer */
 footer.footer .nav-footer {
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
-.nav-footer-left, .nav-footer-right {
-    display: none; /* forces the center to full-width */
-}
-
-.nav-footer-center {
     background-color: #318ece;
+
 }
 
-.nav-footer-center a {
+.nav-footer a {
     color: white;
-}
-.toc-actions {
-    background-color: white;
-}
-
-.toc-action {
-    color: gray !important;
 }
 /* multi-coloured footer */
