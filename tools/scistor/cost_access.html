@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-02-25">
+<meta name="dcterms.date" content="2026-03-05">
 
 <title>Costs and Getting Access – Research Support Handbook</title>
 <style>
@@ -213,6 +213,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Data Recovery</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/scistor/how_does_scistor_work.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How does SciStor work?</span></a>
+  </div>
+</li>
       </ul>
   </li>
       </ul>
@@ -228,7 +234,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#requesting-a-new-project-folder-share" id="toc-requesting-a-new-project-folder-share" class="nav-link active" data-scroll-target="#requesting-a-new-project-folder-share">Requesting a new project folder (share)</a></li>
-  <li><a href="#adding-a-colleague-to-an-existing-project-folder" id="toc-adding-a-colleague-to-an-existing-project-folder" class="nav-link" data-scroll-target="#adding-a-colleague-to-an-existing-project-folder">Adding a colleague to an existing project folder</a></li>
+  <li><a href="#permissions-management-and-adding-users" id="toc-permissions-management-and-adding-users" class="nav-link" data-scroll-target="#permissions-management-and-adding-users">Permissions Management and adding users</a></li>
   <li><a href="#are-there-costs-involved" id="toc-are-there-costs-involved" class="nav-link" data-scroll-target="#are-there-costs-involved">Are there costs involved?</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/scistor/cost_access.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -249,7 +255,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">last modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 25, 2026</p>
+      <p class="date">March 5, 2026</p>
     </div>
   </div>
   
@@ -261,21 +267,39 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="requesting-a-new-project-folder-share" class="level3">
-<h3 class="anchored" data-anchor-id="requesting-a-new-project-folder-share">Requesting a new project folder (share)</h3>
-<p>SciStor is available for all VU research groups. You can find the request form on 🔒 <a href="https://services.vu.nl/esc" target="_blank">ServiceNow</a>, go to: IT &gt; My work field &gt; Research &gt; SciStor &gt; Realisation of new storage for research (SciStor)</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>SciStor is available for all VU research groups. Because SciStor is mainly intended for high performance, on-campus use, access is only possible with a VUnetId. If you need to share data with non-VU researchers you could <a href="https://vu.nl/en/employee/start-employment-contract/onboarding-external-employees" target="_blank">register them as an external employee</a>.</p>
+</div>
+</div>
+<section id="requesting-a-new-project-folder-share" class="level2">
+<h2 class="anchored" data-anchor-id="requesting-a-new-project-folder-share">Requesting a new project folder (share)</h2>
+<p>You can find the request form on 🔒 <a href="https://services.vu.nl/esc" target="_blank">ServiceNow</a>, go to: IT &gt; My work field &gt; Research &gt; SciStor &gt; Realisation of new storage for research (SciStor). A departmental budget number is needed for a creation of a Project Folder, it can be obtained from the relevant head of department or project lead.</p>
 <p>Minimum storage space that can be requested is 100 GB, for a minimum of three months. The capacity can be increased or decreased in units of 100 GB if needed.</p>
 <p>After submitting the application, IT for Research will contact you to schedule an interview to discuss naming the SciStor project folder, how the backups work, who should have access, etc.</p>
 <p>Most SciStor configurations can be delivered within one or two days. More complex configurations may take a little longer.</p>
 </section>
-<section id="adding-a-colleague-to-an-existing-project-folder" class="level3">
-<h3 class="anchored" data-anchor-id="adding-a-colleague-to-an-existing-project-folder">Adding a colleague to an existing project folder</h3>
-<p>The owner of a SciStor project folder can request to add or remove access to the folder via 🔒 <a href="https://services.vu.nl/esc" target="_blank">ServiceNow</a>, go to: IT &gt; My work field &gt; Research &gt; SciStor &gt; Change SciStor access rights</p>
+<section id="permissions-management-and-adding-users" class="level2">
+<h2 class="anchored" data-anchor-id="permissions-management-and-adding-users">Permissions Management and adding users</h2>
+<ul>
+<li><p>The user who submits the Project Folder creation request is designated as the folder’s owner or primary administrator.</p></li>
+<li><p>The owner holds read-write access to all subfolders by default.</p></li>
+<li><p>Permission modifications may only be initiated by the folder owner or a designated administrator.</p></li>
+<li><p>All such requests must be submitted to the IT Service Desk via 🔒 <a href="https://services.vu.nl/esc" target="_blank">ServiceNow</a>, go to: IT &gt; My work field &gt; Research &gt; SciStor &gt; Change SciStor access rights. Specify the relevant folder, user account, and desired permission level.</p></li>
+</ul>
+<p>You can find an explanation of the pemission structure in the <a href="../../tools/scistor/how_does_scistor_work.html">documentation</a></p>
 </section>
 <section id="are-there-costs-involved" class="level2">
 <h2 class="anchored" data-anchor-id="are-there-costs-involved">Are there costs involved?</h2>
 <p>You pay for the amount of space reserved for your project folder: €0,16 per GB per year.</p>
-<p>The owner of the SciStor project folder receives monthly usage reports. The report provides insight on used and available space.</p>
 
 
 </section>

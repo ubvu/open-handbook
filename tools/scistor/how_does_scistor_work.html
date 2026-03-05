@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2026-03-05">
 
-<title>SciStor – Research Support Handbook</title>
+<title>How does SciStor work? – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,7 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../tools/scistor/cost_access.html" rel="next">
+<link href="../../tools/scistor/snapshots-data-recovery.html" rel="prev">
 <link href="../../public/favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -152,7 +152,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tools/scistor/index.html">SciStor</a></li><li class="breadcrumb-item"><a href="../../tools/scistor/index.html">What is SciStor?</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tools/scistor/index.html">SciStor</a></li><li class="breadcrumb-item"><a href="../../tools/scistor/snapshots-data-recovery.html">Documentation</a></li><li class="breadcrumb-item"><a href="../../tools/scistor/how_does_scistor_work.html">How does SciStor work?</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -175,7 +175,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tools/scistor/index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../tools/scistor/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">What is SciStor?</span></a>
   </div>
 </li>
@@ -214,7 +214,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tools/scistor/how_does_scistor_work.html" class="sidebar-item-text sidebar-link">
+  <a href="../../tools/scistor/how_does_scistor_work.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">How does SciStor work?</span></a>
   </div>
 </li>
@@ -232,30 +232,26 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#what-is-it" id="toc-what-is-it" class="nav-link active" data-scroll-target="#what-is-it">What is it?</a></li>
-  <li><a href="#what-can-it-be-used-for" id="toc-what-can-it-be-used-for" class="nav-link" data-scroll-target="#what-can-it-be-used-for">What can it be used for?</a>
+  <li><a href="#naming-convention" id="toc-naming-convention" class="nav-link active" data-scroll-target="#naming-convention">Naming Convention</a></li>
+  <li><a href="#data-protection" id="toc-data-protection" class="nav-link" data-scroll-target="#data-protection">Data Protection</a>
   <ul class="collapse">
-  <li><a href="#networked-drive" id="toc-networked-drive" class="nav-link" data-scroll-target="#networked-drive">Networked Drive</a></li>
-  <li><a href="#access-off-campus" id="toc-access-off-campus" class="nav-link" data-scroll-target="#access-off-campus">Access off-campus</a></li>
-  <li><a href="#lab-instruments" id="toc-lab-instruments" class="nav-link" data-scroll-target="#lab-instruments">Lab instruments</a></li>
-  <li><a href="#storage-space-for-scicloud-servers" id="toc-storage-space-for-scicloud-servers" class="nav-link" data-scroll-target="#storage-space-for-scicloud-servers">Storage space for SciCloud servers</a></li>
-  <li><a href="#ada" id="toc-ada" class="nav-link" data-scroll-target="#ada">ADA</a></li>
-  <li><a href="#sharing-data" id="toc-sharing-data" class="nav-link" data-scroll-target="#sharing-data">Sharing data</a></li>
-  <li><a href="#data-life-cycle" id="toc-data-life-cycle" class="nav-link" data-scroll-target="#data-life-cycle">Data life-cycle</a></li>
+  <li><a href="#snapshots" id="toc-snapshots" class="nav-link" data-scroll-target="#snapshots">Snapshots</a></li>
+  <li><a href="#failover-system" id="toc-failover-system" class="nav-link" data-scroll-target="#failover-system">Failover System</a></li>
+  </ul></li>
+  <li><a href="#project-folder-structure" id="toc-project-folder-structure" class="nav-link" data-scroll-target="#project-folder-structure">Project Folder Structure</a>
+  <ul class="collapse">
+  <li><a href="#example-structure" id="toc-example-structure" class="nav-link" data-scroll-target="#example-structure">Example Structure</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/scistor/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/scistor/how_does_scistor_work.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tools/scistor/index.html">SciStor</a></li><li class="breadcrumb-item"><a href="../../tools/scistor/index.html">What is SciStor?</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tools/scistor/index.html">SciStor</a></li><li class="breadcrumb-item"><a href="../../tools/scistor/snapshots-data-recovery.html">Documentation</a></li><li class="breadcrumb-item"><a href="../../tools/scistor/how_does_scistor_work.html">How does SciStor work?</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">SciStor</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">Data Storage</div>
-  </div>
-  </div>
+<h1 class="title">How does SciStor work?</h1>
+</div>
 
 
 
@@ -277,42 +273,92 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="what-is-it" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-it">What is it?</h2>
-<p>The storage service SciStor is intended for cheaply storing large amounts of research data on campus.</p>
-<p>SciStor is hosted by IT for Research (ITvO) on the VU campus enabling a high-speed connection to lab equipment, laptops and workstations, the <a href="../../tools/ada/index.html">ADA HPC cluster</a> and <a href="../../tools/scicloud/index.html">SciCloud</a>. It can also be accessed off-campus.</p>
-<p>Your data is stored in a <strong>project folder</strong> with group-based <a href="../../tools/scistor/how_does_scistor_work.html#project-folder-structure">access rights</a> (read/write or read-only). Access rights can be set one level deep, so one folder could be used to host data from different subprojects.</p>
-<p>Data is backed up daily with snapshots and replicated to a second location for disaster recovery, the <a href="../../tools/scistor/how_does_scistor_work.html#data-protection">documentation</a> explains how.</p>
+<p>SciStor is VU Amsterdam’s on-premises scientific storage solution, designed for active research data management. It provides structured, permission-controlled storage with built-in data protection for research teams operating under VU Amsterdam’s faculty structure.</p>
+<section id="naming-convention" class="level3">
+<h3 class="anchored" data-anchor-id="naming-convention">Naming Convention</h3>
+<p>All Project Folders must adhere to the following format:</p>
+<pre><code>FAC-DPT-PRJ</code></pre>
+<p>Where:</p>
+<ul>
+<li><p><code>FAC</code>: denotes the faculty abbreviation</p></li>
+<li><p><code>DPT</code>: the department abbreviation</p></li>
+<li><p><code>PRJ</code>: the project name abbreviation.</p></li>
+</ul>
+<p>For example, a Computer Science project within the Faculty of Sciences would be named <code>BETA-CS-PRJ1</code>.</p>
 </section>
-<section id="what-can-it-be-used-for" class="level2">
-<h2 class="anchored" data-anchor-id="what-can-it-be-used-for">What can it be used for?</h2>
-<section id="networked-drive" class="level3">
-<h3 class="anchored" data-anchor-id="networked-drive">Networked Drive</h3>
-<p>Because SciStor is connected to the VU on-campus network you can directly mount (map a network drive) SciStor project folders on your laptop and work as if the data is on a local disk.</p>
+<section id="data-protection" class="level2">
+<h2 class="anchored" data-anchor-id="data-protection">Data Protection</h2>
+<section id="snapshots" class="level3">
+<h3 class="anchored" data-anchor-id="snapshots">Snapshots</h3>
+<p>SciStor provides point-in-time snapshots of stored data at no additional cost. Snapshots enable file versioning and recovery without requiring separate backup infrastructure.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Frequency</th>
+<th>Retention period</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Daily</td>
+<td>1 week</td>
+</tr>
+<tr class="even">
+<td>Weekly</td>
+<td>4 weeks</td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="../../tools/scistor/snapshots-data-recovery.html">Data Recovery page</a> explains how you can restore data from the snaphots yourself.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Upon deletion of a file, the corresponding snapshot will continue to consume storage space until the snapshot retention period expires. Storage capacity is not immediately reclaimed following deletion.</p>
+</div>
+</div>
 </section>
-<section id="access-off-campus" class="level3">
-<h3 class="anchored" data-anchor-id="access-off-campus">Access off-campus</h3>
-<p>Although SciStor is most useful on campus you can also access your project folders off-campus via <a href="https://vu.eduvpn.nl/" target="_blank">EduVPN institute access</a>.</p>
+<section id="failover-system" class="level3">
+<h3 class="anchored" data-anchor-id="failover-system">Failover System</h3>
+<p>SciStor operates a replication-based failover system in which data from the primary on-campus node is continuously mirrored to a secondary node located off-campus. In the event of a major infrastructure incident, the secondary node ensures data availability and integrity.</p>
 </section>
-<section id="lab-instruments" class="level3">
-<h3 class="anchored" data-anchor-id="lab-instruments">Lab instruments</h3>
-<p>In many cases lab equipment can write data directly to SciStor. <a href="mailto:itvo.it@vu.nl">IT for Research</a> can help you setup an automated and secure connection.</p>
 </section>
-<section id="storage-space-for-scicloud-servers" class="level3">
-<h3 class="anchored" data-anchor-id="storage-space-for-scicloud-servers">Storage space for SciCloud servers</h3>
-<p><a href="../../tools/scicloud/index.html">SciCloud</a> virtual servers are provisioned with a 20 to 50GB local disk. A SciStor project folder can be directly mounted on the server to increase storage for your application or directly access your source data for analysis.</p>
-</section>
-<section id="ada" class="level3">
-<h3 class="anchored" data-anchor-id="ada">ADA</h3>
-<p>The <a href="../../tools/ada/index.html">ADA HPC cluster</a> is connected to SciStor via a high speed network. You can run your analysis software directly on your data and easily access the results on your laptop.</p>
-</section>
-<section id="sharing-data" class="level3">
-<h3 class="anchored" data-anchor-id="sharing-data">Sharing data</h3>
-<p>Because SciStor is mainly intended for high performance, on-campus use, access is only possible with a VUnetId. If you need to share data with non-VU researchers you could <a href="https://vu.nl/en/employee/start-employment-contract/onboarding-external-employees" target="_blank">register them as an external employee</a> or host a copy of the data on another storage platform like <a href="../../tools/researchdrive/index.html">Research Drive</a> or <a href="../../tools/yoda/index.html">Yoda</a></p>
-</section>
-<section id="data-life-cycle" class="level3">
-<h3 class="anchored" data-anchor-id="data-life-cycle">Data life-cycle</h3>
-<p>SciStor is meant for data you are actively working with. We recommend archiving datasets that are no langer actively used, but can’t be deleted, in <a href="../../tools/yoda/index.html">Yoda</a>. This ensures SciStor is used optimally and costs are kept down for your research group and the VU.</p>
+<section id="project-folder-structure" class="level2">
+<h2 class="anchored" data-anchor-id="project-folder-structure">Project Folder Structure</h2>
+<p>Access control in SciStor is organised across two levels.</p>
+<p><strong>Level 0 — Main Folder</strong> is automatically provisioned for all users with read-only permissions. This ensures that all team members can locate and navigate to the Project Folder.</p>
+<p><strong>Level 1 — Subfolders</strong> allow granular, per-folder access control. Each subfolder may be assigned one of the following permission levels:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Permission</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>R</td>
+<td>Read-only access</td>
+</tr>
+<tr class="even">
+<td>RW</td>
+<td>Read and write access</td>
+</tr>
+</tbody>
+</table>
+<section id="example-structure" class="level3">
+<h3 class="anchored" data-anchor-id="example-structure">Example Structure</h3>
+<pre><code>/BETA-CS-PROJECT1/        [RW: Root;   R: vunet1, ..., vunetN]
+├── raw_data/             [RW: vunet1, vunet2;   R: vunet3, ..., vunetN]
+├── processed_data/       [RW: vunet1, ..., vunetN;   R: —]
+├── analysis/             [RW: vunet1, ..., vunetN;   R: —]
+└── results/              [RW: vunet1, ..., vunetN;   R: —]</code></pre>
 
 
 </section>
@@ -721,11 +767,11 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="../../tools/scistor/snapshots-data-recovery.html" class="pagination-link" aria-label="Data Recovery">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Data Recovery</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../tools/scistor/cost_access.html" class="pagination-link" aria-label="Costs and Getting Access">
-        <span class="nav-page-text">Costs and Getting Access</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -763,7 +809,7 @@ ul.task-list li input[type="checkbox"] {
 </a>
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/scistor/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/scistor/how_does_scistor_work.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
