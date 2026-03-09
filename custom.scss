@@ -106,3 +106,14 @@ footer.footer .nav-footer {
 .nav-footer a {
     color: black;
 }
+
+.navbar .aa-Autocomplete .aa-Form {
+  width: 250px; /* Searchbar width */
+
+}
+
+@media (min-width: 992px) {
+  .navbar .quarto-navbar-tools {
+    order: 1000;
+  }
+}
