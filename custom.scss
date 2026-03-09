@@ -3,6 +3,9 @@
 // $h2-font-size:          1.6rem !default;
 // $headings-font-weight:  500 !default;
 // $body-color:            $gray-700 !default;
+$topics-color: #e29229;
+$guides-color: #c5503a;
+$tools-color: #764f92;
 
 /*-- scss:rules --*/
 body {
@@ -15,8 +18,8 @@ body {
 }
 
 .navbar-logo {
-    width: 200px;
-    max-height: 64px;
+    width: 250px;
+    max-height: 80px;
     padding-bottom: 3px;
 }
 
@@ -60,34 +63,26 @@ header.headroom--unpinned {
 
 .navbar .nav-item {
   min-width: 100px;
-  height: 75px;
+  height: 90px;
   align-content: center; 
   text-align: center;
 }
 
 .navbar .nav-item:nth-child(1) {
-    background-color: #e96a2d;
-}
-
-#nav-menu-topics, .navbar .nav-item:nth-child(2) a {
-    color: white;
+    background-color:$topics-color;
 }
 
 .navbar .nav-item:nth-child(2) {
-    background-color: #414141;
+    background-color: $guides-color;
 }
 
 .navbar .nav-item:nth-child(3) {
-    background-color: #f5b995;
+    background-color: $tools-color;
 }
 /* multi=coloured navbar menu */
 
-.hbcloser {
-    letter-spacing: -0.1rem;
-}
-
 .pagebottom {
-    background-color: #333333;
+    background-color: #016aa3;
     margin-bottom: -86px;
 }
 
@@ -104,10 +99,10 @@ header.headroom--unpinned {
 /* handbook-title */
 
 footer.footer .nav-footer {
-    background-color: #318ece;
+    background-color: #d2e2ec;
 
 }
 
 .nav-footer a {
-    color: white;
+    color: black;
 }

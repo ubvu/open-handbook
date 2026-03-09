@@ -2,13 +2,37 @@
 toc: false
 include-before-body: 
     text: ""
+include-in-header: 
+    text: |
+        <style>
+        .home-main a {
+        color: black;
+        }
+        .main-title {
+            color: #000000;
+            font-size: 4em;
+            letter-spacing: -0.1rem;
+            font-weight: 900;
+            line-height: 1;
+        }
+
+        .main-subtitle {
+            color: #1c1c1c;
+            font-size: 1.8em;
+            font-weight: 500;
+            line-height: 1;
+            padding-left: 3.5em;
+            padding-right: 3.5em;
+        }
+        </style>
 ---
+::: {.home-main}
 ::: {.text-center .px-5}
-::: {.display-3 .hbcloser}
+::: {.main-title}
 Research Support Handbook
 :::
-::: {.h3 .pb-2 .fw-semibold}
-Your guide towards good data and software management practices
+::: {.pb-2 .main-subtitle}
+Your Guide Towards good Data and Software Management Practices
 :::
 All information is curated by VU staff and updated on a daily basis
 :::
@@ -23,19 +47,19 @@ Topics, Guides and Tools
 
 ::: {.text-center .px-5}
 ::: {.column width=30% .px-1}
-[![](public/home-collab-1.svg){width=5em}](./topics.qmd)  
+[![](public/topics-icon.svg){width=6em}](./topics.qmd)  
 [Topics](./topics.qmd)
 
 A quick way to learn about specific topics
 :::
 ::: {.column width=30% .px-1}
-[![](public/home-collab-2.svg){width=5em}](./guides.qmd)  
+[![](public/guides-icon.svg){width=6em}](./guides.qmd)  
 [Guides](./guides.qmd)
 
 Guide you through data and software management practices
 :::
 ::: {.column width=30% .px-1}
-[![](public/home-collab-3.svg){width=5em}](./tools.qmd)  
+[![](public/tools-icon.svg){width=6em}](./tools.qmd)  
 [Tools](./tools.qmd)
 
 How to use VU-supported software tools
@@ -48,15 +72,16 @@ How to use VU-supported software tools
 ::: {.h3}
 Related Trainings and Events
 :::
-The VU network Research Data Support organizes trainings that will help you develop your data management and coding skills.
+The VU Network Research Data Support organises trainings that will help you develop your data management and coding skills, as well as events for researchers and support staff to exchange ideas and experiences relevant to good research practices.
 
 ::: {.column width=40% .px-1}
-[![](public/home-collab-black.svg){width=5em}](./topics/events.qmd)  
-[Calendar](./topics/events.qmd)
+[![](public/calendar-icon.svg){width=6em}](https://libcal.vu.nl/)  
+[Calendar](https://libcal.vu.nl/)
 :::
 ::: {.column width=40% .px-1}
-[![](public/home-collab-black.svg){width=5em}](./topics/trainings.qmd)  
-[Trainings](./topics/trainings.qmd)
+[![](public/trainings-icon.svg){width=6em}](trainings.qmd)  
+[Trainings](trainings.qmd)
+:::
 :::
 :::
 
