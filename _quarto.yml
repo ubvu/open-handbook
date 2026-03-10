@@ -73,7 +73,7 @@ format:
       - custom.scss # https://quarto.org/docs/output-formats/html-themes.html#theme-options
     code-copy: true
     code-overflow: wrap
-    link-external-icon: true
+    link-external-icon: false
     link-external-newwindow: true
     include-before-body: 
       text: |
