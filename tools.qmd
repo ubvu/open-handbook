@@ -49,9 +49,10 @@ format:
         </style>
 ---
 
+::: {.tools-main}
 ::: {.text-center .px-5}
-::: {.display-3 .hbcloser}
-![](public/home-collab-3.svg){width=1em}  
+::: {.main-title}
+![](public/tools-icon.svg){width=2em}  
 Tools
 :::
 A tool is a broad term for a software application or platform. These pages list research tools supported by the VU, describe what they are for, how to get access and who to contact for questions and support. You will also find manuals describing how to use the tool in your workflow and links to documentation of the supplier.
@@ -60,6 +61,7 @@ A tool is a broad term for a software application or platform. These pages list 
 ---
 
 ::: {#tools .py-5}
+:::
 :::
  
 {{< include _pagebottom.qmd >}}
