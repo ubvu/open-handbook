@@ -73,13 +73,14 @@ format:
       - custom.scss # https://quarto.org/docs/output-formats/html-themes.html#theme-options
     code-copy: true
     code-overflow: wrap
+    link-external-icon: true
+    link-external-newwindow: true
     include-before-body: 
       text: |
         <div class="handbook-title">Research Support Handbook</div>
 # from: "markdown+emoji"
 filters:
   - utils/include-files.lua
-  - utils/linktarget.lua
 execute:
   freeze: auto
 
