@@ -117,3 +117,27 @@ footer.footer .nav-footer {
     order: 1000;
   }
 }
+
+.guides-main a {
+    color: $guides-color;
+}
+
+.home-main a {
+    color: black;
+}
+.main-title {
+    color: #000000;
+    font-size: 4em;
+    letter-spacing: -0.1rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.main-subtitle {
+    color: #1c1c1c;
+    font-size: 1.8em;
+    font-weight: 500;
+    line-height: 1;
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+}
