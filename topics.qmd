@@ -25,10 +25,10 @@ include-in-header:
     }
     </style>
 ---
-
+::: {.topics-main}
 ::: {.text-center .px-5}
-::: {.display-3 .hbcloser}
-![](public/home-collab-1.svg){width=1em}  
+::: {.main-title}
+![](public/topics-icon.svg){width=2em}  
 Topics
 :::
 A topic is a specific subject that can be helpful to know about in your daily research. Each page can be read on its own. These pages are a quick way to learn about specific things.
@@ -37,6 +37,7 @@ A topic is a specific subject that can be helpful to know about in your daily re
 ---
 
 ::: {#topics .py-5}
+:::
 :::
 
 {{< include _pagebottom.qmd >}}
