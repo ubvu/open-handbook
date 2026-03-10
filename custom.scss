@@ -72,17 +72,6 @@ header.headroom--unpinned {
   text-align: center;
 }
 
-.navbar .nav-item:nth-child(1) {
-    background-color:$topics-color;
-}
-
-.navbar .nav-item:nth-child(2) {
-    background-color: $guides-color;
-}
-
-.navbar .nav-item:nth-child(3) {
-    background-color: $tools-color;
-}
 /* multi=coloured navbar menu */
 
 .pagebottom {
@@ -114,6 +103,7 @@ footer.footer .nav-footer {
 
 .navbar .aa-Autocomplete .aa-Form {
   width: 250px; /* Searchbar width */
+  margin-right: 0.5em;
 
 }
 
@@ -168,6 +158,10 @@ footer.footer .nav-footer {
     }
     .page-link.active, .active>.page-link {
         background-color: $guides-color;
+        border-color: $guides-color;
+    }
+    .accordion-button::after { /* how to escape fill color variable? */ 
+        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23c5503a' stroke='' class='bi bi-arrow-right' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8'/></svg>");
     }
 }
 
@@ -180,6 +174,10 @@ footer.footer .nav-footer {
     }
     .page-link.active, .active>.page-link {
         background-color: $topics-color;
+        border-color: $topics-color;
+    }
+    .accordion-button::after {
+        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23e29229' class='bi bi-arrow-right' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8'/></svg>");
     }
 }
 
@@ -192,13 +190,18 @@ footer.footer .nav-footer {
     }
     .page-link.active, .active>.page-link {
         background-color: $tools-color;
+        border-color: $tools-color;
     }
 }
 
-.guides-main .accordion-button::after {
-    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23c5503a' stroke='' class='bi bi-arrow-right' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8'/></svg>");
+.navbar .nav-item:nth-child(1) {
+    background-color:$topics-color;
 }
 
-.topics-main .accordion-button::after {
-    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23e29229' class='bi bi-arrow-right' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8'/></svg>");
+.navbar .nav-item:nth-child(2) {
+    background-color: $guides-color;
+}
+
+.navbar .nav-item:nth-child(3) {
+    background-color: $tools-color;
 }
