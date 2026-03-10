@@ -72,6 +72,18 @@ header.headroom--unpinned {
   text-align: center;
 }
 
+.navbar .nav-item:nth-child(1) {
+    background-color:$topics-color;
+}
+
+.navbar .nav-item:nth-child(2) {
+    background-color: $guides-color;
+}
+
+.navbar .nav-item:nth-child(3) {
+    background-color: $tools-color;
+}
+
 /* multi=coloured navbar menu */
 
 .pagebottom {
@@ -116,6 +128,7 @@ footer.footer .nav-footer {
 .home-main a {
     color: black;
 }
+
 .main-title {
     color: #000000;
     font-size: 4em;
@@ -133,6 +146,7 @@ footer.footer .nav-footer {
     padding-right: 3.5em;
 }
 
+/* tools, topics and guides listing and accent color */
 .accordion-button:after {
     order: -1; //swap order
     margin-left: 0; 
@@ -193,15 +207,4 @@ footer.footer .nav-footer {
         border-color: $tools-color;
     }
 }
-
-.navbar .nav-item:nth-child(1) {
-    background-color:$topics-color;
-}
-
-.navbar .nav-item:nth-child(2) {
-    background-color: $guides-color;
-}
-
-.navbar .nav-item:nth-child(3) {
-    background-color: $tools-color;
-}
+/* tools, topics and guides listing and accent color */
