@@ -2,7 +2,7 @@
 title: Topics
 listing:
   id: topics
-  template: ./_templates/expandable-accordion.ejs # ejs is sensitive to indentation, use 2 spaces
+  template: ./_templates/expandable-accordion.ejs
   contents: topics
   categories: true
   template-params:
