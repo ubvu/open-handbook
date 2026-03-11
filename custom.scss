@@ -86,15 +86,6 @@ header.headroom--unpinned {
 
 /* multi=coloured navbar menu */
 
-.pagebottom {
-    background-color: #0077b3;
-    margin-bottom: -86px;
-    color: white;
-}
-
-.pagebottom a {
-    color: white;
-}
 
 /* handbook-title */
 .handbook-title {
@@ -107,11 +98,32 @@ header.headroom--unpinned {
 
 footer.footer .nav-footer {
     background-color: #d2e2ec;
-
+    padding: 0;
+    a {
+        color: black
+    }
 }
 
-.nav-footer a {
-    color: black;
+/* custom footer */
+.nav-footer .nav-item {
+    min-width: none;
+    max-width: 200px;
+}
+
+.pagebottom {
+    background-color: #0282c9;
+    color: white;
+    a {
+        color: white !important;
+    }
+}
+
+.nav-footer-center {
+    margin-top: 0em;
+}
+
+.nav-footer-left, .nav-footer-right {
+    display: none;
 }
 
 .navbar .aa-Autocomplete .aa-Form {
@@ -120,11 +132,19 @@ footer.footer .nav-footer {
 
 }
 
+.footer .toc-actions {
+    display: none;
+}
+
+/* custom footer */
+
+/* github icon to the right of sidebar */
 @media (min-width: 992px) {
   .navbar .quarto-navbar-tools {
     order: 1000;
   }
 }
+/* github icon to the right of sidebar */
 
 .home-main a {
     color: black;

@@ -49,13 +49,6 @@ website:
       # - icon: rss
       #   href: https://quarto.org/docs/blog/index.xml
       #   text: Quarto Blog RSS
-  page-footer:
-    center:
-      - text: "![](/public/Cc.logo.circle.svg){width=1.3em}![](/public/Cc-zero.svg){width=1.3em}"
-        href: "https://creativecommons.org/publicdomain/zero/1.0/legalcode"
-      - text: "About"
-        href: about.qmd
-      - contributing.qmd
 
 bibliography: references.bib
 
@@ -101,4 +94,4 @@ metadata-files:
   - tools/snellius/_sidebar.yml
   - tools/vucomputehub/_sidebar.yml
   - tools/yoda/_sidebar.yml
-  
+  - _footer.yml
