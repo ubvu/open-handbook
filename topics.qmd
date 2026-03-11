@@ -1,4 +1,5 @@
 ---
+title: Topics
 listing:
   id: topics
   template: ./_templates/expandable-accordion.ejs # ejs is sensitive to indentation, use 2 spaces
@@ -11,6 +12,9 @@ include-in-header:
     <style>
     .handbook-title {
       text-align: center;
+    }
+    #title-block-header {
+      display: none;
     }
     </style>
 ---

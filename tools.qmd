@@ -1,4 +1,5 @@
 ---
+title: Tools
 listing:
   id: tools
   contents:
@@ -45,6 +46,9 @@ format:
         }
         .handbook-title {
           text-align: center;
+        }
+        #title-block-header {
+          display: none;
         }
         </style>
 ---
