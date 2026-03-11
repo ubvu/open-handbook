@@ -107,12 +107,13 @@ footer.footer .nav-footer {
 /* custom footer */
 .nav-footer .nav-item {
     min-width: none;
-    max-width: 200px;
+    max-width: 250px;
 }
 
 .pagebottom {
     background-color: #0282c9;
     color: white;
+    font-size: 1rem;
     a {
         color: white !important;
     }
