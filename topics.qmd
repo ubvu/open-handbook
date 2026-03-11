@@ -2,7 +2,7 @@
 title: Topics
 listing:
   id: topics
-  template: ./_templates/expandable-accordion.ejs
+  template: ./_templates/expandable-accordion-categories.ejs
   contents: topics
   categories: true
   template-params:

@@ -164,6 +164,33 @@ footer.footer .nav-footer {
     font-weight: 800;
 }
 
+.vu-listing-item .listing-categories {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 5px;
+    
+    .listing-category {
+        color: #6c757d;
+        border: solid 1px #dee2e6;
+        border-radius: .25rem;
+        text-transform: uppercase;
+        font-size: .65em;
+        padding-left: .5em;
+        padding-right: .5em;
+        padding-top: .15em;
+        padding-bottom: .15em;
+        cursor: pointer;
+        margin-right: 4px;
+        margin-bottom: 14px;
+        
+        a {
+        color: #6c757d;
+        text-decoration: none;
+        }
+    }
+}
+/* tools, topics and guides listing and accent color */
+
 .guides-main {
     .accordion .accordion-button:not(.collapsed) {
         color: $guides-color;
