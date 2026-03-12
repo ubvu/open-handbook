@@ -220,6 +220,10 @@ footer.footer .nav-footer {
         text-decoration: none;
         color: $body-color;
     }
+    a:hover {
+        color: $guides-color;
+    }
+
     .page-link.active, .active>.page-link {
         background-color: $guides-color;
         border-color: $guides-color;
@@ -237,6 +241,9 @@ footer.footer .nav-footer {
         text-decoration: none;
         color: $body-color;
     }
+    a:hover {
+        color: $topics-color;
+    }
     .page-link.active, .active>.page-link {
         background-color: $topics-color;
         border-color: $topics-color;
@@ -253,6 +260,9 @@ footer.footer .nav-footer {
     a {
         text-decoration: none;
         color: $body-color;
+    }
+    a:hover {
+        color: $tools-color;
     }
 
     .page-link.active, .active>.page-link {
