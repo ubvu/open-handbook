@@ -2,6 +2,7 @@
 title: Tools
 listing:
   id: tools
+  template: ./_templates/accordion-logo.ejs.md
   contents:
     - tools/ada/index.qmd
     - tools/dataversenl/index.qmd
@@ -24,6 +25,8 @@ listing:
   categories: true
   fields: [image, title, description, categories]
   image-align: right
+  template-params:
+    type: Tool
 format: 
   html:
     include-in-header:  
