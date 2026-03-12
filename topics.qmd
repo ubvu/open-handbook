@@ -1,19 +1,35 @@
 ---
-title: "Topics"
+title: Topics
 listing:
+  id: topics
+  template: ./_templates/accordion.ejs.md
   contents: topics
-  type: table
-  table-striped: true
-  table-hover: true
-  fields: [title, reading-time]
   categories: true
+  filter-ui: [title]
+  template-params:
+    type: Topic
+include-in-header:
+  text: |
+    <style>
+    .handbook-title {
+      text-align: center;
+    }
+    #title-block-header {
+      display: none;
+    }
+    </style>
+---
+::: {.topics-main}
+::: {.text-center .px-5}
+::: {.main-title}
+![](public/topics-icon.svg){width=2em}  
+Topics
+:::
+A topic is a specific subject that can be helpful to know about in your daily research. Each page can be read on its own. These pages are a quick way to learn about specific things.
+:::
+
 ---
 
-::: {.callout-tip}
-
-## What is a topic?
-
-A topic is a specific subject that can be helpful to know about in your daily research. Each page can be read on its own. These pages are a quick way to learn about specific things.
-
-Missing a topic? You can [submit suggestion using the Contribution portal](https://ez-github-contributor.netlify.app/).
+::: {#topics .py-5}
+:::
 :::

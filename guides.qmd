@@ -1,23 +1,35 @@
 ---
-title: "Guides"
+title: Guides
 listing:
+  id: guides
+  template: ./_templates/accordion.ejs.md
   contents: guides
-  type: grid
   categories: true
+  filter-ui: [title]
+  template-params:
+    type: Guide
 include-in-header:
   text: |
     <style type="text/css">
-    .quarto-grid-item .listing-item-img-placeholder {
-      background-color: #0080c9;
+    .handbook-title {
+      text-align: center;
+    }
+    #title-block-header {
+      display: none;
     }
     </style>
 ---
-
-::: {.callout-tip}
-
-## What is a guide?
-
+::: {.guides-main}
+::: {.text-center .px-5}
+::: {.main-title}
+![](public/guides-icon.svg){width=2em}    
+Guides
+:::
 These guides help you find answers to questions that come up while doing research. They help guide you through various topics at once.
+:::
 
-Missing a guide? You can [submit questions you are dealing with using the Contribution portal](https://ez-github-contributor.netlify.app/).
+---
+
+:::{#guides .py-5}
+:::
 :::

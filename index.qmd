@@ -1,26 +1,67 @@
 ---
 toc: false
-include-in-header:
-  text: |
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            corePlugins: {
-                preflight: false,
-            },
-            prefix: 'tw-',
-        }
-    </script>
+include-before-body: 
+    text: ""
+---
+::: {.home-main}
+::: {.text-center .px-5}
+::: {.main-title}
+Research Support Handbook
+:::
+::: {.pb-2 .main-subtitle}
+Your Guide Towards Good Data and Software Management Practices
+:::
+All information is curated by VU staff and updated on a daily basis
+:::
+
 ---
 
-{{< react Hero >}}
+::: {.text-center .px-5}
+::: {.h3}
+Topics, Guides and Tools
+:::
+:::
 
-{{< react Lifecycle >}}
+::: {.text-center .px-5}
+::: {.column width=30% .px-1}
+[![](public/topics-icon.svg){width=6em}](./topics.qmd)  
+[Topics](./topics.qmd)
 
-{{< react Features >}}
+A quick way to learn about specific topics
+:::
+::: {.column width=30% .px-1}
+[![](public/guides-icon.svg){width=6em}](./guides.qmd)  
+[Guides](./guides.qmd)
 
-{{< react Cta >}}
+Guide you through data and software management practices
+:::
+::: {.column width=30% .px-1}
+[![](public/tools-icon.svg){width=6em}](./tools.qmd)  
+[Tools](./tools.qmd)
 
-## Upcoming events
+How to use VU-supported research tools
+:::
+:::
 
-<iframe src="https://api3-eu.libcal.com/embed_mini_calendar.php?mode=month&amp;iid=4019&amp;cal_id=7052&amp;l=5&amp;tar=0&amp;h=350&amp;audience=&amp;c=&amp;z=32116" style="border-width:0;margin: 0px auto 0px auto; width: 100%" width="270" height="225" frameborder="0" scrolling="no"></iframe>
+---
+
+::: {.text-center .px-5}
+::: {.h3}
+Related Trainings and Events
+:::
+The VU Network Research Data Support organises trainings that will help you develop your data management and coding skills, as well as events for researchers and support staff to exchange ideas and experiences relevant to good research practices.
+:::
+
+::: {.column-screen}
+::: {.column-page .text-center .px-5 .pb-5}
+::: {.column width=40% .px-1}
+[![](public/calendar-icon.svg){width=6em}](https://libcal.vu.nl/calendar/universitylibrary?cid=7052&t=g&d=0000-00-00&cal=7052&ct=32115&inc=0)  
+[Calendar](https://libcal.vu.nl/calendar/universitylibrary?cid=7052&t=g&d=0000-00-00&cal=7052&ct=32115&inc=0)
+:::
+::: {.column width=40% .px-1}
+[![](public/trainings-icon.svg){width=6em}](trainings.qmd)  
+[Trainings](trainings.qmd)
+:::
+:::
+:::
+:::

@@ -3,11 +3,18 @@
 // $h2-font-size:          1.6rem !default;
 // $headings-font-weight:  500 !default;
 // $body-color:            $gray-700 !default;
+$topics-color: #e29229;
+$guides-color: #c5503a;
+$tools-color: #764f92;
+$accordion-icon-transform:                rotate(90deg);
+$accordion-button-active-bg: white;
+$accordion-button-focus-box-shadow: none;
 
 /*-- scss:rules --*/
 body {
     font-family: 'Roboto';
     line-height: 1.6666666667rem;
+    font-weight: 300;
 }
 
 .fixed-top {
@@ -15,7 +22,13 @@ body {
 }
 
 .navbar-logo {
-    max-height: 64px;
+    width: 250px;
+    max-height: 80px;
+    padding-bottom: 3px;
+}
+
+.navbar-brand.navbar-brand-logo {
+  margin-right: 1.5em;
 }
 
 header.headroom--pinned {
@@ -46,3 +59,234 @@ header.headroom--unpinned {
     line-height:1.2rem
 }
 
+/* multi=coloured navbar menu */
+.navbar, .navbar-brand {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.navbar .nav-item {
+  min-width: 100px;
+  height: 90px;
+  align-content: center; 
+  text-align: center;
+}
+
+.navbar .nav-item:nth-child(1) {
+    background-color:$topics-color;
+}
+
+.navbar .nav-item:nth-child(2) {
+    background-color: $guides-color;
+}
+
+.navbar .nav-item:nth-child(3) {
+    background-color: $tools-color;
+}
+
+/* multi=coloured navbar menu */
+
+
+/* handbook-title */
+.handbook-title {
+    color: grey;
+    position: relative;
+    text-align: left;
+    padding-bottom: 1em;
+}
+/* handbook-title */
+
+footer.footer .nav-footer {
+    background-color: #d2e2ec;
+    padding: 0;
+    a {
+        color: black
+    }
+}
+
+/* custom footer */
+.nav-footer .nav-item {
+    min-width: none;
+    max-width: 250px;
+}
+
+.pagebottom {
+    background-color: #0282c9;
+    color: white;
+    font-size: 1rem;
+    a {
+        color: white !important;
+    }
+}
+
+.nav-footer-center {
+    margin-top: 0em;
+}
+
+.nav-footer-left, .nav-footer-right {
+    display: none;
+}
+
+.navbar .aa-Autocomplete .aa-Form {
+  width: 250px; /* Searchbar width */
+  margin-right: 0.5em;
+
+}
+
+.footer .toc-actions {
+    grid-column-end: screen-end;
+    grid-column-start: screen-start;
+    background-color: white;
+
+}
+.footer .toc-actions ul {
+    padding-right: 2em;
+}
+
+/* github icon to the right of sidebar */
+@media (min-width: 992px) {
+  .navbar .quarto-navbar-tools {
+    order: 1000;
+  }
+}
+/* github icon to the right of sidebar */
+
+.home-main a {
+    color: black;
+}
+
+.main-title {
+    color: #000000;
+    font-size: 4em;
+    letter-spacing: -0.1rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.main-subtitle {
+    color: #1c1c1c;
+    font-size: 1.8em;
+    font-weight: 500;
+    line-height: 1;
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+}
+
+/* tools, topics and guides listing and accent color */
+.accordion-button:after {
+    order: -1; //swap order
+    margin-left: 0; 
+    margin-right:1em; // just extra space between text and icon
+}
+
+.accordion-item {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+.accordion .accordion-button:not(.collapsed) {
+    font-weight: 800;
+}
+
+.accordion-body .column {
+    vertical-align: middle;
+    display: table-cell;
+    img {
+        display: block;
+        padding-left: .25em;
+    }
+}
+
+.vu-listing-item .listing-categories {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 5px;
+    
+    .listing-category {
+        color: #6c757d;
+        border: solid 1px #dee2e6;
+        border-radius: .25rem;
+        text-transform: uppercase;
+        font-size: .65em;
+        padding-left: .5em;
+        padding-right: .5em;
+        padding-top: .15em;
+        padding-bottom: .15em;
+        cursor: pointer;
+        margin-right: 4px;
+        margin-bottom: 14px;
+        
+        a {
+        color: #6c757d;
+        text-decoration: none;
+        }
+    }
+}
+/* tools, topics and guides listing and accent color */
+
+.guides-main {
+    .accordion .accordion-button:not(.collapsed) {
+        color: $guides-color;
+    }
+    a {
+        text-decoration: none;
+        color: $body-color;
+    }
+    a:hover {
+        color: $guides-color;
+    }
+
+    .page-link.active, .active>.page-link {
+        background-color: $guides-color;
+        border-color: $guides-color;
+    }
+    .accordion-button::after { /* how to escape fill color variable? */ 
+        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23c5503a' stroke='' class='bi bi-arrow-right' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8'/></svg>");
+    }
+}
+
+.topics-main {
+    .accordion .accordion-button:not(.collapsed) {
+        color: $topics-color;
+    }
+    a {
+        text-decoration: none;
+        color: $body-color;
+    }
+    a:hover {
+        color: $topics-color;
+    }
+    .page-link.active, .active>.page-link {
+        background-color: $topics-color;
+        border-color: $topics-color;
+    }
+    .accordion-button::after {
+        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23e29229' class='bi bi-arrow-right' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8'/></svg>");
+    }
+}
+
+.tools-main {
+    .accordion .accordion-button:not(.collapsed) {
+        color: $tools-color;
+    }
+    a {
+        text-decoration: none;
+        color: $body-color;
+    }
+    a:hover {
+        color: $tools-color;
+    }
+
+    .page-link.active, .active>.page-link {
+        background-color: $tools-color;
+        border-color: $tools-color;
+    }
+    .accordion-button::after {
+        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23764f92' class='bi bi-arrow-right' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8'/></svg>");
+    }
+    .listing-image {
+        max-height: 150px;
+    }
+}
+/* tools, topics and guides listing and accent color */

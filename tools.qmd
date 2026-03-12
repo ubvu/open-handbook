@@ -1,6 +1,8 @@
 ---
-title: "Tools"
+title: Tools
 listing:
+  id: tools
+  template: ./_templates/accordion-logo.ejs.md
   contents:
     - tools/ada/index.qmd
     - tools/dataversenl/index.qmd
@@ -23,36 +25,33 @@ listing:
   categories: true
   fields: [image, title, description, categories]
   image-align: right
+  template-params:
+    type: Tool
 format: 
   html:
     include-in-header:  
       text: |
         <style>
-        .metadata {
-          display: none !important; /* hide metadata normally shown left of the description */
+        .handbook-title {
+          text-align: center;
         }
-        .quarto-post {
-            align-items: center; /* vertical align logo */
-            margin-bottom: 0 !important;
-            padding-bottom: 0.75em;
-            padding-top: 0.75em;
+        #title-block-header {
+          display: none;
         }
-        .quarto-post .listing-description {
-          margin-bottom: 0em !important;
-        }
-        .quarto-post img {
-          max-height: 150px;
-        }
-
         </style>
 ---
 
-::: {.callout-tip}
-
-## What is a tool?
-
-A tool is a broad term for a software application or platform. These pages list research tools supported by the VU, describe what they are for, how to get access and who to contact for questions and support. You will also find manuals describing how to use the tool in your workflow and links to documentation of the supplier.
-
-Missing a tool description or a manual for a specific tool? You can [submit suggestions using the Contribution portal](https://ez-github-contributor.netlify.app/).
+::: {.tools-main}
+::: {.text-center .px-5}
+::: {.main-title}
+![](public/tools-icon.svg){width=2em}  
+Tools
 :::
- 
+A tool is a broad term for a software application or platform. These pages list research tools supported by VU Amsterdam, describe what they are for, how to get access and who to contact for questions and support. You will also find manuals describing how to use the tool in your workflow and links to documentation of the supplier.
+:::
+
+---
+
+::: {#tools .py-5}
+:::
+:::
