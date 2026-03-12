@@ -22,8 +22,9 @@
                             <% } %>
                         </div>
                     <% } %>
-                    <span class="listing-description"><%= item.description %></span><br>
-                    <a href="<%- item.path %>">Go to <%= templateParams.type %></a>
+                    <a href="<%- item.path %>">
+                        <span class="listing-description"><%= item.description %></span><br>
+                    </a>
                 </div>
             </div>
         </div>

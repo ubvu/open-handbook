@@ -217,7 +217,8 @@ footer.footer .nav-footer {
         color: $guides-color;
     }
     a {
-        color: $guides-color;
+        text-decoration: none;
+        color: $body-color;
     }
     .page-link.active, .active>.page-link {
         background-color: $guides-color;
@@ -233,7 +234,8 @@ footer.footer .nav-footer {
         color: $topics-color;
     }
     a {
-        color: $topics-color;
+        text-decoration: none;
+        color: $body-color;
     }
     .page-link.active, .active>.page-link {
         background-color: $topics-color;
@@ -249,8 +251,10 @@ footer.footer .nav-footer {
         color: $tools-color;
     }
     a {
-        color: $tools-color;
+        text-decoration: none;
+        color: $body-color;
     }
+
     .page-link.active, .active>.page-link {
         background-color: $tools-color;
         border-color: $tools-color;

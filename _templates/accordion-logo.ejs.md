@@ -24,8 +24,9 @@
                         <% } %>
                         <div class="row">
                             <div class="column" style="width: 68%;">
-                                <span class="listing-description"><%= item.description %></span><br>
-                                <a href="<%- item.path %>">Go to <%= templateParams.type %></a>
+                                <a href="<%- item.path %>">
+                                    <span class="listing-description"><%= item.description %></span><br>
+                                </a>
                             </div>
                             <div class="column" style="width: 30%;">
                                 <div class="listing-image "><a href="<%- item.path %>"><img src="<%= item.image %>" style="max-width: 200px; max-height: 150px;"></a></div>
