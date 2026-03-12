@@ -32,21 +32,6 @@ format:
     include-in-header:  
       text: |
         <style>
-        .metadata {
-          display: none !important; /* hide metadata normally shown left of the description */
-        }
-        .quarto-post {
-            align-items: center; /* vertical align logo */
-            margin-bottom: 0 !important;
-            padding-bottom: 0.75em;
-            padding-top: 0.75em;
-        }
-        .quarto-post .listing-description {
-          margin-bottom: 0em !important;
-        }
-        .quarto-post img {
-          max-height: 150px;
-        }
         .handbook-title {
           text-align: center;
         }

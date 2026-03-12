@@ -137,9 +137,11 @@ footer.footer .nav-footer {
     grid-column-end: screen-end;
     grid-column-start: screen-start;
     background-color: white;
-}
 
-/* custom footer */
+}
+.footer .toc-actions ul {
+    padding-right: 2em;
+}
 
 /* github icon to the right of sidebar */
 @media (min-width: 992px) {
@@ -185,6 +187,15 @@ footer.footer .nav-footer {
 
 .accordion .accordion-button:not(.collapsed) {
     font-weight: 800;
+}
+
+.accordion-body .column {
+    vertical-align: middle;
+    display: table-cell;
+    img {
+        display: block;
+        padding-left: .25em;
+    }
 }
 
 .vu-listing-item .listing-categories {

@@ -11,19 +11,19 @@
                 </span>
                 <div id="collapse<%= i %>" class="accordion-collapse collapse show" aria-labelledby="heading<%= i %>">
                     <div class="accordion-body pt-0">
-                        <% if(item.categories) { %>
-                            <div class="listing-categories">
-                                <% for (const cat of item.categories) { %>
-                                    <div class="listing-category">
-                                        <a href="#category=<%= encodeURIComponent(cat) %>">
-                                            <%= cat %>
-                                        </a>
+                        <div class="row">
+                            <div class="column" style="width: 68%;">                        
+                                <% if(item.categories) { %>
+                                    <div class="listing-categories">
+                                        <% for (const cat of item.categories) { %>
+                                            <div class="listing-category">
+                                                <a href="#category=<%= encodeURIComponent(cat) %>">
+                                                    <%= cat %>
+                                                </a>
+                                            </div>
+                                        <% } %>
                                     </div>
                                 <% } %>
-                            </div>
-                        <% } %>
-                        <div class="row">
-                            <div class="column" style="width: 68%;">
                                 <a href="<%- item.path %>">
                                     <span class="listing-description"><%= item.description %></span><br>
                                 </a>
