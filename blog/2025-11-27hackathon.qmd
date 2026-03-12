@@ -1,0 +1,48 @@
+---
+title: Seventh Handbook Hackathon
+date: "2025-11-27"
+author:
+  - Diógenes Cruz de Arcelino
+  - Kirianne Goossen
+  - Sergio Gutierrez Maury
+  - Elisa Rodenburg
+  - Jolien Scholten
+  - Peter Vos
+  - Tycho Hofstra
+  - Jessica Hrudey
+  - Tim Veken
+  - Janna Toebosch
+  - Sreenithya Avadakkam
+  - Wiebe Timmers
+  - Abeer Pervaiz
+categories: ["Handbook","Hackathon"]
+---
+
+On November 27, 2025, all authors participated in the seventh hackathon for the Research Support Handbook. For this hackathon, we focused on **Consolidating content and adding new content**.
+
+## Overview of results
+
+We updated the information about Pure and about data and software registration in Pure (link to LibGuide manuals instead of PDFs, information about Elsevier no longer supporting DataMonitor).
+
+We created two practical pages related to the RDM Support Desk:
+
+- General information about the RDM Support Desk
+- Landing page for requesting access to datasets
+
+Regarding videos in the {{< var title >}}: We stored relevant videos in Panopto and embedded them in our website from there, replacing the YouTube videos. This helps us maintain all video material in a central place and another advantage is that we don't get suggestions for other videos once a video has ended, as on YouTube.
+
+We expanded the Research Software topic by referring to related information in the {{< var title >}}.
+
+We continued working on the topic de-identifying data, but this is still in progress.
+
+A few updates have been done in tools documentation for Yoda, ADA and SciStor before, during and after the hackathon. We have improved navigation in the tools section as well.
+
+Finally, a [new release of the Handbook](https://zenodo.org/records/17937465) has been created on Zenodo.
+
+## Hackathon Issues and Pull Requests
+
+- Data and software registration updates: [Issue #250](https://github.com/ubvu/open-handbook/issues/250), [PR #621](https://github.com/ubvu/open-handbook/pull/621) and [PR #623](https://github.com/ubvu/open-handbook/pull/623); [PR #627](https://github.com/ubvu/open-handbook/pull/627/changes) for updates in the general information about Pure. Note that the information about Pure has been transferred from topics to tools see [Issue #675](https://github.com/ubvu/open-handbook/issues/675) and see [PR #678](https://github.com/ubvu/open-handbook/pull/678).
+- RDM Support Desk: [Issue #588](https://github.com/ubvu/open-handbook/issues/588) and [PR #610](https://github.com/ubvu/open-handbook/pull/610) for the information page and [Issue #589](https://github.com/ubvu/open-handbook/issues/589) and [PR #631](https://github.com/ubvu/open-handbook/pull/631) for the landing page with information about requesting access to datasets.
+- Research software information: [Issue #410](https://github.com/ubvu/open-handbook/issues/410) and [PR #624](https://github.com/ubvu/open-handbook/pull/624).
+- Topic de-identifying data: [Issue #492](https://github.com/ubvu/open-handbook/issues/492)
+
