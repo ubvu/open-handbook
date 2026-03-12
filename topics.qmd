@@ -2,9 +2,10 @@
 title: Topics
 listing:
   id: topics
-  template: ./_templates/expandable-accordion-categories.ejs.md
+  template: ./_templates/accordion.ejs.md
   contents: topics
   categories: true
+  filter-ui: [title]
   template-params:
     type: Topic
 include-in-header:
