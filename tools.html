@@ -43,20 +43,19 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-dacf30ecfe562eafbfb2f154650978a5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-8cb14b621b215de33eb8ab5cd8e9b316.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
   "panel-placement": "end",
-  "type": "overlay",
+  "type": "textbox",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
     "/",
     "s"
   ],
-  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -65,7 +64,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
+    "search-text-placeholder": "Search",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -74,20 +73,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-tools .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
       searchColumns: ["listing-title"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-tools'] = new List('listing-tools', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -101,22 +100,12 @@ ul.task-list li input[type="checkbox"] {
   })
   </script>
 <style>
-.metadata {
-  display: none !important; /* hide metadata normally shown left of the description */
+.handbook-title {
+  text-align: center;
 }
-.quarto-post {
-    align-items: center; /* vertical align logo */
-    margin-bottom: 0 !important;
-    padding-bottom: 0.75em;
-    padding-top: 0.75em;
+#title-block-header {
+  display: none;
 }
-.quarto-post .listing-description {
-  margin-bottom: 0em !important;
-}
-.quarto-post img {
-  max-height: 150px;
-}
-
 </style>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
@@ -159,8 +148,8 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo light-content">
-    <img src="./public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo dark-content">
+    <img src="./public/VU-logo-white.svg" alt="VU Amsterdam logo." class="navbar-logo light-content">
+    <img src="./public/VU-logo-white.svg" alt="VU Amsterdam logo." class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -210,11 +199,7 @@ window.Quarto = {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./blog.html"> 
-<span class="menu-text">Blog</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./contributing.html"> 
-<span class="menu-text">Contributing</span></a>
+<span class="menu-text">News</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -233,6 +218,7 @@ window.Quarto = {
     <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(16)</span></div><div class="category" data-category="Q29tcHV0ZQ==">Compute <span class="quarto-category-count">(6)</span></div><div class="category" data-category="RGF0YSUyMEFyY2hpdmluZw==">Data Archiving <span class="quarto-category-count">(2)</span></div><div class="category" data-category="RGF0YSUyME1hbmFnZW1lbnQlMjBQbGFu">Data Management Plan <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGF0YSUyMFB1Ymxpc2hpbmc=">Data Publishing <span class="quarto-category-count">(3)</span></div><div class="category" data-category="RGF0YSUyMFN0b3JhZ2U=">Data Storage <span class="quarto-category-count">(3)</span></div><div class="category" data-category="TGFiJTIwSm91cm5hbA==">Lab Journal <span class="quarto-category-count">(1)</span></div><div class="category" data-category="T25saW5lJTIwc3VydmV5cw==">Online surveys <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGxhZ2lhcmlzbSUyMERldGVjdGlvbg==">Plagiarism Detection <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UHJlcmVnaXN0cmF0aW9u">Preregistration <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmVzZWFyY2glMjBPdXRwdXQlMjBSZWdpc3RyYXRpb24=">Research Output Registration <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VmlydHVhbCUyMFJlc2VhcmNoJTIwRW52aXJvbm1lbnQ=">Virtual Research Environment <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
+<div class="handbook-title">Research Support Handbook</div>
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -253,431 +239,614 @@ window.Quarto = {
 </header>
 
 
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<div class="tools-main">
+<div class="text-center px-5">
+<div class="main-title">
+<p><img src="public/tools-icon.svg" class="img-fluid" style="width:2em"><br>
+Tools</p>
 </div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>What is a tool?
+<p>A tool is a broad term for a software application or platform. These pages list research tools supported by VU Amsterdam, describe what they are for, how to get access and who to contact for questions and support. You will also find manuals describing how to use the tool in your workflow and links to documentation of the supplier.</p>
 </div>
-</div>
-<div class="callout-body-container callout-body">
-<p>A tool is a broad term for a software application or platform. These pages list research tools supported by the VU, describe what they are for, how to get access and who to contact for questions and support. You will also find manuals describing how to use the tool in your workflow and links to documentation of the supplier.</p>
-<p>Missing a tool description or a manual for a specific tool? You can <a href="https://ez-github-contributor.netlify.app/" target="_blank">submit suggestions using the Contribution portal</a>.</p>
-</div>
-</div>
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<hr>
+<div id="listing-tools" class="py-5 quarto-listing quarto-listing-container-custom">
 <div class="listing-actions-group">
     <div class="input-group input-group-sm quarto-listing-filter">
       <span class="input-group-text"><i class="bi bi-search"></i></span>
       <input type="text" class="search form-control" placeholder="Filter">
     </div>
 </div>
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Q29tcHV0ZQ==" data-listing-file-modified-sort="1771497934000" data-listing-reading-time-sort="3" data-listing-word-count-sort="479">
-<div class="thumbnail"><a href="./tools/ada/index.html" class="no-external">
-
-<img loading="lazy" src="./public/VU-logo-nobg.svg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./tools/ada/index.html" class="no-external">ADA</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q29tcHV0ZQ=='); return false;">Compute</div>
-
-</div>
-<div class="delink listing-description"><a href="./tools/ada/index.html" class="no-external">
-ADA is a high performance compute (HPC) cluster for research at the Vrije Universiteit Amsterdam.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./tools/ada/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="RGF0YSUyMEFyY2hpdmluZyUyQ0RhdGElMjBQdWJsaXNoaW5n" data-listing-file-modified-sort="1771496219000" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
-<div class="thumbnail"><a href="./tools/dataversenl/index.html" class="no-external">
-
-<img loading="lazy" src="./public/DataverseNL-logo.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./tools/dataversenl/index.html" class="no-external">DataverseNL</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMEFyY2hpdmluZw=='); return false;">Data Archiving</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFB1Ymxpc2hpbmc='); return false;">Data Publishing</div>
-
-</div>
-<div class="delink listing-description"><a href="./tools/dataversenl/index.html" class="no-external">
-DataverseNL is an Open Access dataset archiving and publication platform used by various institutions. VU Amsterdam has a section for each faculty to archive and publish…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./tools/dataversenl/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="RGF0YSUyME1hbmFnZW1lbnQlMjBQbGFu" data-listing-file-modified-sort="1771498544000" data-listing-reading-time-sort="1" data-listing-word-count-sort="184">
-<div class="thumbnail"><a href="./tools/dmponline/index.html" class="no-external">
-
-<img loading="lazy" src="./public/logo-dmponline-white.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./tools/dmponline/index.html" class="no-external">DMPonline</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyME1hbmFnZW1lbnQlMjBQbGFu'); return false;">Data Management Plan</div>
-
-</div>
-<div class="delink listing-description"><a href="./tools/dmponline/index.html" class="no-external">
-DMPonline is an online platform that enables researchers to create, manage, and share Data Management Plans (DMPs). VU Amsterdam offers DMPonline as the institutional online…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./tools/dmponline/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="UGxhZ2lhcmlzbSUyMERldGVjdGlvbg==" data-listing-file-modified-sort="1771498544000" data-listing-reading-time-sort="1" data-listing-word-count-sort="178">
-<div class="thumbnail"><a href="./tools/ithenticate/index.html" class="no-external">
-
-<img loading="lazy" src="./public/logo-ithenticate.svg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./tools/ithenticate/index.html" class="no-external">iThenticate</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UGxhZ2lhcmlzbSUyMERldGVjdGlvbg=='); return false;">Plagiarism Detection</div>
-
-</div>
-<div class="delink listing-description"><a href="./tools/ithenticate/index.html" class="no-external">
-iThenticate is plagiarism detection software that compares a researcher’s original work with published academic work available online, and bibliographical databases such as…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./tools/ithenticate/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="Q29tcHV0ZQ==" data-listing-file-modified-sort="1771497604000" data-listing-reading-time-sort="2" data-listing-word-count-sort="386">
-<div class="thumbnail"><a href="./tools/nebula/index.html" class="no-external">
-
-<img loading="lazy" src="./public/open-webui-logo.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./tools/nebula/index.html" class="no-external">Nebula</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q29tcHV0ZQ=='); return false;">Compute</div>
-
-</div>
-<div class="delink listing-description"><a href="./tools/nebula/index.html" class="no-external">
-Nebula is a new Network Institute initiative that aims to provide researchers from all departments with safe, seamless access to open-source large language models (LLMs).
-</a></div>
-</div>
-<div class="metadata">
-<a href="./tools/nebula/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="RGF0YSUyMFB1Ymxpc2hpbmclMkNQcmVyZWdpc3RyYXRpb24=" data-listing-file-modified-sort="1771427549000" data-listing-reading-time-sort="2" data-listing-word-count-sort="396">
-<div class="thumbnail"><a href="./tools/osf/index.html" class="no-external">
-
-<img loading="lazy" src="./public/osf-logo-black.original.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./tools/osf/index.html" class="no-external">OSF</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFB1Ymxpc2hpbmc='); return false;">Data Publishing</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHJlcmVnaXN0cmF0aW9u'); return false;">Preregistration</div>
-
-</div>
-<div class="delink listing-description"><a href="./tools/osf/index.html" class="no-external">
-The Open Science Framework (OSF) is a cloud-based open-source research project management tool that supports researchers throughout the active research stage. It facilitates…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./tools/osf/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-categories="UmVzZWFyY2glMjBPdXRwdXQlMjBSZWdpc3RyYXRpb24=" data-listing-file-modified-sort="1771420580000" data-listing-reading-time-sort="2" data-listing-word-count-sort="357">
-<div class="thumbnail"><a href="./tools/pure/index.html" class="no-external">
-
-<img loading="lazy" src="./public/pure-logo.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./tools/pure/index.html" class="no-external">Pure</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UmVzZWFyY2glMjBPdXRwdXQlMjBSZWdpc3RyYXRpb24='); return false;">Research Output Registration</div>
-
-</div>
-<div class="delink listing-description"><a href="./tools/pure/index.html" class="no-external">
-Pure is VU Amsterdam’s Current Research Information System (CRIS) that serves as the central research information system for recording all research activities and outputs.…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./tools/pure/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-categories="T25saW5lJTIwc3VydmV5cw==" data-listing-file-modified-sort="1771408218000" data-listing-reading-time-sort="2" data-listing-word-count-sort="241">
-<div class="thumbnail"><a href="./tools/qualtrics/index.html" class="no-external">
-
-<img loading="lazy" src="./public/qxm_color.svg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./tools/qualtrics/index.html" class="no-external">Qualtrics</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('T25saW5lJTIwc3VydmV5cw=='); return false;">Online surveys</div>
-
-</div>
-<div class="delink listing-description"><a href="./tools/qualtrics/index.html" class="no-external">
-Qualtrics is a cloud-based subscription and software platform (SaaS) that enables users to create and manage online surveys. The Qualtrics survey tool can support a variety…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./tools/qualtrics/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="8" data-categories="Q29tcHV0ZSUyQ1ZpcnR1YWwlMjBSZXNlYXJjaCUyMEVudmlyb25tZW50" data-listing-file-modified-sort="1771489153000" data-listing-reading-time-sort="1" data-listing-word-count-sort="158">
-<div class="thumbnail"><a href="./tools/researchcloud/index.html" class="no-external">
-
-<img loading="lazy" src="./public/logo-surf.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./tools/researchcloud/index.html" class="no-external">Research Cloud</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q29tcHV0ZQ=='); return false;">Compute</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('VmlydHVhbCUyMFJlc2VhcmNoJTIwRW52aXJvbm1lbnQ='); return false;">Virtual Research Environment</div>
-
-</div>
-<div class="delink listing-description"><a href="./tools/researchcloud/index.html" class="no-external">
-SURF Research Cloud is a portal where you easily build a virtual research environment. You can use preconfigured workspaces and datasets or add them yourself. Institutions…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./tools/researchcloud/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="9" data-categories="RGF0YSUyMFN0b3JhZ2U=" data-listing-file-modified-sort="1771858499000" data-listing-reading-time-sort="3" data-listing-word-count-sort="476">
-<div class="thumbnail"><a href="./tools/researchdrive/index.html" class="no-external">
-
-<img loading="lazy" src="./public/logo_nextcloud_blue.svg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./tools/researchdrive/index.html" class="no-external">Research Drive</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFN0b3JhZ2U='); return false;">Data Storage</div>
-
-</div>
-<div class="delink listing-description"><a href="./tools/researchdrive/index.html" class="no-external">
-SURF Research Drive is an online storage and collaboration platform for research data. With Research Drive you can easily store and share files with other researchers…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./tools/researchdrive/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="10" data-categories="Q29tcHV0ZSUyQ1ZpcnR1YWwlMjBSZXNlYXJjaCUyMEVudmlyb25tZW50" data-listing-file-modified-sort="1771497934000" data-listing-reading-time-sort="2" data-listing-word-count-sort="241">
-<div class="thumbnail"><a href="./tools/scicloud/index.html" class="no-external">
-
-<img loading="lazy" src="./public/VU-logo-nobg.svg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./tools/scicloud/index.html" class="no-external">SciCloud</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q29tcHV0ZQ=='); return false;">Compute</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('VmlydHVhbCUyMFJlc2VhcmNoJTIwRW52aXJvbm1lbnQ='); return false;">Virtual Research Environment</div>
-
-</div>
-<div class="delink listing-description"><a href="./tools/scicloud/index.html" class="no-external">
-IT for Research (ITvO) offers SciCloud, a service where server capacity can be purchased to support research applications. SciCloud virtual servers are easy to implement…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./tools/scicloud/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="11" data-categories="RGF0YSUyMFN0b3JhZ2U=" data-listing-file-modified-sort="1772724291000" data-listing-reading-time-sort="2" data-listing-word-count-sort="355">
-<div class="thumbnail"><a href="./tools/scistor/index.html" class="no-external">
-
-<img loading="lazy" src="./public/VU-logo-nobg.svg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./tools/scistor/index.html" class="no-external">SciStor</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFN0b3JhZ2U='); return false;">Data Storage</div>
-
-</div>
-<div class="delink listing-description"><a href="./tools/scistor/index.html" class="no-external">
-The storage service SciStor is intended for cheaply storing large amounts of research data on campus.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./tools/scistor/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="12" data-categories="TGFiJTIwSm91cm5hbA==" data-listing-file-modified-sort="1771489153000" data-listing-reading-time-sort="1" data-listing-word-count-sort="139">
-<div class="thumbnail"><a href="./tools/scisure/index.html" class="no-external">
-
-<img loading="lazy" src="./public/scisure-logo.svg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./tools/scisure/index.html" class="no-external">SciSure</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('TGFiJTIwSm91cm5hbA=='); return false;">Lab Journal</div>
-
-</div>
-<div class="delink listing-description"><a href="./tools/scisure/index.html" class="no-external">
-SciSure, previously known as eLabNext, is an application that supports researchers with documenting experiments and results in a digital lab journal. The SciSure platform is…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./tools/scisure/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="13" data-categories="Q29tcHV0ZQ==" data-listing-file-modified-sort="1771489684000" data-listing-reading-time-sort="1" data-listing-word-count-sort="184">
-<div class="thumbnail"><a href="./tools/snellius/index.html" class="no-external">
-
-<img loading="lazy" src="./public/logo-surf.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./tools/snellius/index.html" class="no-external">Snellius</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q29tcHV0ZQ=='); return false;">Compute</div>
-
-</div>
-<div class="delink listing-description"><a href="./tools/snellius/index.html" class="no-external">
-Snellius is the National Supercomputer infrastructure hosted by SURF in Amsterdam.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./tools/snellius/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="14" data-categories="Q29tcHV0ZQ==" data-listing-file-modified-sort="1771490401000" data-listing-reading-time-sort="1" data-listing-word-count-sort="182">
-<div class="thumbnail"><a href="./tools/vucomputehub/index.html" class="no-external">
-
-<img loading="lazy" src="./public/logo-jupyterhub.svg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./tools/vucomputehub/index.html" class="no-external">VU Compute Hub</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q29tcHV0ZQ=='); return false;">Compute</div>
-
-</div>
-<div class="delink listing-description"><a href="./tools/vucomputehub/index.html" class="no-external">
-The VU Compute Hub is a JupyterHub instance hosted by IT at VU Amsterdam. It allows you to run a number of common analysis tools on a server. The Hub is mainly aimed at…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./tools/vucomputehub/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="15" data-categories="RGF0YSUyMFN0b3JhZ2UlMkNEYXRhJTIwQXJjaGl2aW5nJTJDRGF0YSUyMFB1Ymxpc2hpbmc=" data-listing-file-modified-sort="1771863045000" data-listing-reading-time-sort="4" data-listing-word-count-sort="753">
-<div class="thumbnail"><a href="./tools/yoda/index.html" class="no-external">
-
-<img loading="lazy" src="./public/yoda-logo.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./tools/yoda/index.html" class="no-external">Yoda</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFN0b3JhZ2U='); return false;">Data Storage</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMEFyY2hpdmluZw=='); return false;">Data Archiving</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFB1Ymxpc2hpbmc='); return false;">Data Publishing</div>
-
-</div>
-<div class="delink listing-description"><a href="./tools/yoda/index.html" class="no-external">
-Yoda is an application for institutions that supports Research Data Management (RDM) throughout the entire research cycle: from the safe and easy storage and sharing of data…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./tools/yoda/index.html" class="no-external">
-</a>
-</div>
-</div>
+<div id="accordionlist list" class="accordion list">
+    
+        
+            <div class="accordion-item vu-listing-item" data-index="0" data-categories="Q29tcHV0ZQ==" data-listing-file-modified-sort="1771497934000" data-listing-reading-time-sort="3" data-listing-word-count-sort="479">
+                <span class="accordion-header" id="heading0">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse0" aria-expanded="false" aria-controls="collapse0">
+                        <span class="listing-title">ADA</span>
+                    </button>
+                </span>
+                <div id="collapse0" class="accordion-collapse collapse show" aria-labelledby="heading0">
+                    <div class="accordion-body pt-0">
+                        <div class="row">
+                            <div class="column" style="width: 68%;">                        
+                                
+                                    <div class="listing-categories">
+                                        
+                                            <div class="listing-category">
+                                                <a href="#category=Compute">
+                                                    Compute
+                                                </a>
+                                            </div>
+                                        
+                                    </div>
+                                
+                                <a href="./tools/ada/index.html">
+                                    <span class="listing-description">ADA is a high performance compute (HPC) cluster for research at the Vrije Universiteit Amsterdam.</span><br>
+                                </a>
+                            </div>
+                            <div class="column" style="width: 30%;">
+                                <div class="listing-image "><a href="./tools/ada/index.html"><img src="./public/VU-logo-nobg.svg" style="max-width: 200px; max-height: 150px;"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        
+            <div class="accordion-item vu-listing-item" data-index="1" data-categories="RGF0YSUyMEFyY2hpdmluZyUyQ0RhdGElMjBQdWJsaXNoaW5n" data-listing-file-modified-sort="1771496219000" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
+                <span class="accordion-header" id="heading1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                        <span class="listing-title">DataverseNL</span>
+                    </button>
+                </span>
+                <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1">
+                    <div class="accordion-body pt-0">
+                        <div class="row">
+                            <div class="column" style="width: 68%;">                        
+                                
+                                    <div class="listing-categories">
+                                        
+                                            <div class="listing-category">
+                                                <a href="#category=Data%20Archiving">
+                                                    Data Archiving
+                                                </a>
+                                            </div>
+                                        
+                                            <div class="listing-category">
+                                                <a href="#category=Data%20Publishing">
+                                                    Data Publishing
+                                                </a>
+                                            </div>
+                                        
+                                    </div>
+                                
+                                <a href="./tools/dataversenl/index.html">
+                                    <span class="listing-description">DataverseNL is an Open Access dataset archiving and publication platform used by various institutions. VU Amsterdam has a section for each faculty to archive and publish…</span><br>
+                                </a>
+                            </div>
+                            <div class="column" style="width: 30%;">
+                                <div class="listing-image "><a href="./tools/dataversenl/index.html"><img src="./public/DataverseNL-logo.png" style="max-width: 200px; max-height: 150px;"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        
+            <div class="accordion-item vu-listing-item" data-index="2" data-categories="RGF0YSUyME1hbmFnZW1lbnQlMjBQbGFu" data-listing-file-modified-sort="1771498544000" data-listing-reading-time-sort="1" data-listing-word-count-sort="184">
+                <span class="accordion-header" id="heading2">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                        <span class="listing-title">DMPonline</span>
+                    </button>
+                </span>
+                <div id="collapse2" class="accordion-collapse collapse show" aria-labelledby="heading2">
+                    <div class="accordion-body pt-0">
+                        <div class="row">
+                            <div class="column" style="width: 68%;">                        
+                                
+                                    <div class="listing-categories">
+                                        
+                                            <div class="listing-category">
+                                                <a href="#category=Data%20Management%20Plan">
+                                                    Data Management Plan
+                                                </a>
+                                            </div>
+                                        
+                                    </div>
+                                
+                                <a href="./tools/dmponline/index.html">
+                                    <span class="listing-description">DMPonline is an online platform that enables researchers to create, manage, and share Data Management Plans (DMPs). VU Amsterdam offers DMPonline as the institutional online…</span><br>
+                                </a>
+                            </div>
+                            <div class="column" style="width: 30%;">
+                                <div class="listing-image "><a href="./tools/dmponline/index.html"><img src="./public/logo-dmponline-white.png" style="max-width: 200px; max-height: 150px;"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        
+            <div class="accordion-item vu-listing-item" data-index="3" data-categories="UGxhZ2lhcmlzbSUyMERldGVjdGlvbg==" data-listing-file-modified-sort="1771498544000" data-listing-reading-time-sort="1" data-listing-word-count-sort="178">
+                <span class="accordion-header" id="heading3">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                        <span class="listing-title">iThenticate</span>
+                    </button>
+                </span>
+                <div id="collapse3" class="accordion-collapse collapse show" aria-labelledby="heading3">
+                    <div class="accordion-body pt-0">
+                        <div class="row">
+                            <div class="column" style="width: 68%;">                        
+                                
+                                    <div class="listing-categories">
+                                        
+                                            <div class="listing-category">
+                                                <a href="#category=Plagiarism%20Detection">
+                                                    Plagiarism Detection
+                                                </a>
+                                            </div>
+                                        
+                                    </div>
+                                
+                                <a href="./tools/ithenticate/index.html">
+                                    <span class="listing-description">iThenticate is plagiarism detection software that compares a researcher’s original work with published academic work available online, and bibliographical databases such as…</span><br>
+                                </a>
+                            </div>
+                            <div class="column" style="width: 30%;">
+                                <div class="listing-image "><a href="./tools/ithenticate/index.html"><img src="./public/logo-ithenticate.svg" style="max-width: 200px; max-height: 150px;"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        
+            <div class="accordion-item vu-listing-item" data-index="4" data-categories="Q29tcHV0ZQ==" data-listing-file-modified-sort="1771497604000" data-listing-reading-time-sort="2" data-listing-word-count-sort="386">
+                <span class="accordion-header" id="heading4">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                        <span class="listing-title">Nebula</span>
+                    </button>
+                </span>
+                <div id="collapse4" class="accordion-collapse collapse show" aria-labelledby="heading4">
+                    <div class="accordion-body pt-0">
+                        <div class="row">
+                            <div class="column" style="width: 68%;">                        
+                                
+                                    <div class="listing-categories">
+                                        
+                                            <div class="listing-category">
+                                                <a href="#category=Compute">
+                                                    Compute
+                                                </a>
+                                            </div>
+                                        
+                                    </div>
+                                
+                                <a href="./tools/nebula/index.html">
+                                    <span class="listing-description">Nebula is a new Network Institute initiative that aims to provide researchers from all departments with safe, seamless access to open-source large language models (LLMs).</span><br>
+                                </a>
+                            </div>
+                            <div class="column" style="width: 30%;">
+                                <div class="listing-image "><a href="./tools/nebula/index.html"><img src="./public/open-webui-logo.png" style="max-width: 200px; max-height: 150px;"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        
+            <div class="accordion-item vu-listing-item" data-index="5" data-categories="RGF0YSUyMFB1Ymxpc2hpbmclMkNQcmVyZWdpc3RyYXRpb24=" data-listing-file-modified-sort="1771427549000" data-listing-reading-time-sort="2" data-listing-word-count-sort="396">
+                <span class="accordion-header" id="heading5">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                        <span class="listing-title">OSF</span>
+                    </button>
+                </span>
+                <div id="collapse5" class="accordion-collapse collapse show" aria-labelledby="heading5">
+                    <div class="accordion-body pt-0">
+                        <div class="row">
+                            <div class="column" style="width: 68%;">                        
+                                
+                                    <div class="listing-categories">
+                                        
+                                            <div class="listing-category">
+                                                <a href="#category=Data%20Publishing">
+                                                    Data Publishing
+                                                </a>
+                                            </div>
+                                        
+                                            <div class="listing-category">
+                                                <a href="#category=Preregistration">
+                                                    Preregistration
+                                                </a>
+                                            </div>
+                                        
+                                    </div>
+                                
+                                <a href="./tools/osf/index.html">
+                                    <span class="listing-description">The Open Science Framework (OSF) is a cloud-based open-source research project management tool that supports researchers throughout the active research stage. It facilitates…</span><br>
+                                </a>
+                            </div>
+                            <div class="column" style="width: 30%;">
+                                <div class="listing-image "><a href="./tools/osf/index.html"><img src="./public/osf-logo-black.original.png" style="max-width: 200px; max-height: 150px;"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        
+            <div class="accordion-item vu-listing-item" data-index="6" data-categories="UmVzZWFyY2glMjBPdXRwdXQlMjBSZWdpc3RyYXRpb24=" data-listing-file-modified-sort="1771420580000" data-listing-reading-time-sort="2" data-listing-word-count-sort="357">
+                <span class="accordion-header" id="heading6">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                        <span class="listing-title">Pure</span>
+                    </button>
+                </span>
+                <div id="collapse6" class="accordion-collapse collapse show" aria-labelledby="heading6">
+                    <div class="accordion-body pt-0">
+                        <div class="row">
+                            <div class="column" style="width: 68%;">                        
+                                
+                                    <div class="listing-categories">
+                                        
+                                            <div class="listing-category">
+                                                <a href="#category=Research%20Output%20Registration">
+                                                    Research Output Registration
+                                                </a>
+                                            </div>
+                                        
+                                    </div>
+                                
+                                <a href="./tools/pure/index.html">
+                                    <span class="listing-description">Pure is VU Amsterdam’s Current Research Information System (CRIS) that serves as the central research information system for recording all research activities and outputs.…</span><br>
+                                </a>
+                            </div>
+                            <div class="column" style="width: 30%;">
+                                <div class="listing-image "><a href="./tools/pure/index.html"><img src="./public/pure-logo.png" style="max-width: 200px; max-height: 150px;"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        
+            <div class="accordion-item vu-listing-item" data-index="7" data-categories="T25saW5lJTIwc3VydmV5cw==" data-listing-file-modified-sort="1771408218000" data-listing-reading-time-sort="2" data-listing-word-count-sort="241">
+                <span class="accordion-header" id="heading7">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                        <span class="listing-title">Qualtrics</span>
+                    </button>
+                </span>
+                <div id="collapse7" class="accordion-collapse collapse show" aria-labelledby="heading7">
+                    <div class="accordion-body pt-0">
+                        <div class="row">
+                            <div class="column" style="width: 68%;">                        
+                                
+                                    <div class="listing-categories">
+                                        
+                                            <div class="listing-category">
+                                                <a href="#category=Online%20surveys">
+                                                    Online surveys
+                                                </a>
+                                            </div>
+                                        
+                                    </div>
+                                
+                                <a href="./tools/qualtrics/index.html">
+                                    <span class="listing-description">Qualtrics is a cloud-based subscription and software platform (SaaS) that enables users to create and manage online surveys. The Qualtrics survey tool can support a variety…</span><br>
+                                </a>
+                            </div>
+                            <div class="column" style="width: 30%;">
+                                <div class="listing-image "><a href="./tools/qualtrics/index.html"><img src="./public/qxm_color.svg" style="max-width: 200px; max-height: 150px;"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        
+            <div class="accordion-item vu-listing-item" data-index="8" data-categories="Q29tcHV0ZSUyQ1ZpcnR1YWwlMjBSZXNlYXJjaCUyMEVudmlyb25tZW50" data-listing-file-modified-sort="1771489153000" data-listing-reading-time-sort="1" data-listing-word-count-sort="158">
+                <span class="accordion-header" id="heading8">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                        <span class="listing-title">Research Cloud</span>
+                    </button>
+                </span>
+                <div id="collapse8" class="accordion-collapse collapse show" aria-labelledby="heading8">
+                    <div class="accordion-body pt-0">
+                        <div class="row">
+                            <div class="column" style="width: 68%;">                        
+                                
+                                    <div class="listing-categories">
+                                        
+                                            <div class="listing-category">
+                                                <a href="#category=Compute">
+                                                    Compute
+                                                </a>
+                                            </div>
+                                        
+                                            <div class="listing-category">
+                                                <a href="#category=Virtual%20Research%20Environment">
+                                                    Virtual Research Environment
+                                                </a>
+                                            </div>
+                                        
+                                    </div>
+                                
+                                <a href="./tools/researchcloud/index.html">
+                                    <span class="listing-description">SURF Research Cloud is a portal where you easily build a virtual research environment. You can use preconfigured workspaces and datasets or add them yourself. Institutions…</span><br>
+                                </a>
+                            </div>
+                            <div class="column" style="width: 30%;">
+                                <div class="listing-image "><a href="./tools/researchcloud/index.html"><img src="./public/logo-surf.png" style="max-width: 200px; max-height: 150px;"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        
+            <div class="accordion-item vu-listing-item" data-index="9" data-categories="RGF0YSUyMFN0b3JhZ2U=" data-listing-file-modified-sort="1771858499000" data-listing-reading-time-sort="3" data-listing-word-count-sort="476">
+                <span class="accordion-header" id="heading9">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                        <span class="listing-title">Research Drive</span>
+                    </button>
+                </span>
+                <div id="collapse9" class="accordion-collapse collapse show" aria-labelledby="heading9">
+                    <div class="accordion-body pt-0">
+                        <div class="row">
+                            <div class="column" style="width: 68%;">                        
+                                
+                                    <div class="listing-categories">
+                                        
+                                            <div class="listing-category">
+                                                <a href="#category=Data%20Storage">
+                                                    Data Storage
+                                                </a>
+                                            </div>
+                                        
+                                    </div>
+                                
+                                <a href="./tools/researchdrive/index.html">
+                                    <span class="listing-description">SURF Research Drive is an online storage and collaboration platform for research data. With Research Drive you can easily store and share files with other researchers…</span><br>
+                                </a>
+                            </div>
+                            <div class="column" style="width: 30%;">
+                                <div class="listing-image "><a href="./tools/researchdrive/index.html"><img src="./public/logo_nextcloud_blue.svg" style="max-width: 200px; max-height: 150px;"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        
+            <div class="accordion-item vu-listing-item" data-index="10" data-categories="Q29tcHV0ZSUyQ1ZpcnR1YWwlMjBSZXNlYXJjaCUyMEVudmlyb25tZW50" data-listing-file-modified-sort="1771497934000" data-listing-reading-time-sort="2" data-listing-word-count-sort="241">
+                <span class="accordion-header" id="heading10">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                        <span class="listing-title">SciCloud</span>
+                    </button>
+                </span>
+                <div id="collapse10" class="accordion-collapse collapse show" aria-labelledby="heading10">
+                    <div class="accordion-body pt-0">
+                        <div class="row">
+                            <div class="column" style="width: 68%;">                        
+                                
+                                    <div class="listing-categories">
+                                        
+                                            <div class="listing-category">
+                                                <a href="#category=Compute">
+                                                    Compute
+                                                </a>
+                                            </div>
+                                        
+                                            <div class="listing-category">
+                                                <a href="#category=Virtual%20Research%20Environment">
+                                                    Virtual Research Environment
+                                                </a>
+                                            </div>
+                                        
+                                    </div>
+                                
+                                <a href="./tools/scicloud/index.html">
+                                    <span class="listing-description">IT for Research (ITvO) offers SciCloud, a service where server capacity can be purchased to support research applications. SciCloud virtual servers are easy to implement…</span><br>
+                                </a>
+                            </div>
+                            <div class="column" style="width: 30%;">
+                                <div class="listing-image "><a href="./tools/scicloud/index.html"><img src="./public/VU-logo-nobg.svg" style="max-width: 200px; max-height: 150px;"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        
+            <div class="accordion-item vu-listing-item" data-index="11" data-categories="RGF0YSUyMFN0b3JhZ2U=" data-listing-file-modified-sort="1772724291000" data-listing-reading-time-sort="2" data-listing-word-count-sort="355">
+                <span class="accordion-header" id="heading11">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                        <span class="listing-title">SciStor</span>
+                    </button>
+                </span>
+                <div id="collapse11" class="accordion-collapse collapse show" aria-labelledby="heading11">
+                    <div class="accordion-body pt-0">
+                        <div class="row">
+                            <div class="column" style="width: 68%;">                        
+                                
+                                    <div class="listing-categories">
+                                        
+                                            <div class="listing-category">
+                                                <a href="#category=Data%20Storage">
+                                                    Data Storage
+                                                </a>
+                                            </div>
+                                        
+                                    </div>
+                                
+                                <a href="./tools/scistor/index.html">
+                                    <span class="listing-description">The storage service SciStor is intended for cheaply storing large amounts of research data on campus.</span><br>
+                                </a>
+                            </div>
+                            <div class="column" style="width: 30%;">
+                                <div class="listing-image "><a href="./tools/scistor/index.html"><img src="./public/VU-logo-nobg.svg" style="max-width: 200px; max-height: 150px;"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        
+            <div class="accordion-item vu-listing-item" data-index="12" data-categories="TGFiJTIwSm91cm5hbA==" data-listing-file-modified-sort="1771489153000" data-listing-reading-time-sort="1" data-listing-word-count-sort="139">
+                <span class="accordion-header" id="heading12">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                        <span class="listing-title">SciSure</span>
+                    </button>
+                </span>
+                <div id="collapse12" class="accordion-collapse collapse show" aria-labelledby="heading12">
+                    <div class="accordion-body pt-0">
+                        <div class="row">
+                            <div class="column" style="width: 68%;">                        
+                                
+                                    <div class="listing-categories">
+                                        
+                                            <div class="listing-category">
+                                                <a href="#category=Lab%20Journal">
+                                                    Lab Journal
+                                                </a>
+                                            </div>
+                                        
+                                    </div>
+                                
+                                <a href="./tools/scisure/index.html">
+                                    <span class="listing-description">SciSure, previously known as eLabNext, is an application that supports researchers with documenting experiments and results in a digital lab journal. The SciSure platform is…</span><br>
+                                </a>
+                            </div>
+                            <div class="column" style="width: 30%;">
+                                <div class="listing-image "><a href="./tools/scisure/index.html"><img src="./public/scisure-logo.svg" style="max-width: 200px; max-height: 150px;"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        
+            <div class="accordion-item vu-listing-item" data-index="13" data-categories="Q29tcHV0ZQ==" data-listing-file-modified-sort="1771489684000" data-listing-reading-time-sort="1" data-listing-word-count-sort="184">
+                <span class="accordion-header" id="heading13">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                        <span class="listing-title">Snellius</span>
+                    </button>
+                </span>
+                <div id="collapse13" class="accordion-collapse collapse show" aria-labelledby="heading13">
+                    <div class="accordion-body pt-0">
+                        <div class="row">
+                            <div class="column" style="width: 68%;">                        
+                                
+                                    <div class="listing-categories">
+                                        
+                                            <div class="listing-category">
+                                                <a href="#category=Compute">
+                                                    Compute
+                                                </a>
+                                            </div>
+                                        
+                                    </div>
+                                
+                                <a href="./tools/snellius/index.html">
+                                    <span class="listing-description">Snellius is the National Supercomputer infrastructure hosted by SURF in Amsterdam.</span><br>
+                                </a>
+                            </div>
+                            <div class="column" style="width: 30%;">
+                                <div class="listing-image "><a href="./tools/snellius/index.html"><img src="./public/logo-surf.png" style="max-width: 200px; max-height: 150px;"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        
+            <div class="accordion-item vu-listing-item" data-index="14" data-categories="Q29tcHV0ZQ==" data-listing-file-modified-sort="1771490401000" data-listing-reading-time-sort="1" data-listing-word-count-sort="182">
+                <span class="accordion-header" id="heading14">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                        <span class="listing-title">VU Compute Hub</span>
+                    </button>
+                </span>
+                <div id="collapse14" class="accordion-collapse collapse show" aria-labelledby="heading14">
+                    <div class="accordion-body pt-0">
+                        <div class="row">
+                            <div class="column" style="width: 68%;">                        
+                                
+                                    <div class="listing-categories">
+                                        
+                                            <div class="listing-category">
+                                                <a href="#category=Compute">
+                                                    Compute
+                                                </a>
+                                            </div>
+                                        
+                                    </div>
+                                
+                                <a href="./tools/vucomputehub/index.html">
+                                    <span class="listing-description">The VU Compute Hub is a JupyterHub instance hosted by IT at VU Amsterdam. It allows you to run a number of common analysis tools on a server. The Hub is mainly aimed at…</span><br>
+                                </a>
+                            </div>
+                            <div class="column" style="width: 30%;">
+                                <div class="listing-image "><a href="./tools/vucomputehub/index.html"><img src="./public/logo-jupyterhub.svg" style="max-width: 200px; max-height: 150px;"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        
+            <div class="accordion-item vu-listing-item" data-index="15" data-categories="RGF0YSUyMFN0b3JhZ2UlMkNEYXRhJTIwQXJjaGl2aW5nJTJDRGF0YSUyMFB1Ymxpc2hpbmc=" data-listing-file-modified-sort="1771863045000" data-listing-reading-time-sort="4" data-listing-word-count-sort="753">
+                <span class="accordion-header" id="heading15">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                        <span class="listing-title">Yoda</span>
+                    </button>
+                </span>
+                <div id="collapse15" class="accordion-collapse collapse show" aria-labelledby="heading15">
+                    <div class="accordion-body pt-0">
+                        <div class="row">
+                            <div class="column" style="width: 68%;">                        
+                                
+                                    <div class="listing-categories">
+                                        
+                                            <div class="listing-category">
+                                                <a href="#category=Data%20Storage">
+                                                    Data Storage
+                                                </a>
+                                            </div>
+                                        
+                                            <div class="listing-category">
+                                                <a href="#category=Data%20Archiving">
+                                                    Data Archiving
+                                                </a>
+                                            </div>
+                                        
+                                            <div class="listing-category">
+                                                <a href="#category=Data%20Publishing">
+                                                    Data Publishing
+                                                </a>
+                                            </div>
+                                        
+                                    </div>
+                                
+                                <a href="./tools/yoda/index.html">
+                                    <span class="listing-description">Yoda is an application for institutions that supports Research Data Management (RDM) throughout the entire research cycle: from the safe and easy storage and sharing of data…</span><br>
+                                </a>
+                            </div>
+                            <div class="column" style="width: 30%;">
+                                <div class="listing-image "><a href="./tools/yoda/index.html"><img src="./public/yoda-logo.png" style="max-width: 200px; max-height: 150px;"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</div>
+</div>
+
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -1079,47 +1248,53 @@ Yoda is an application for institutions that supports Research Data Management (
   });
   </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
+<footer class="footer page-columns page-full">
+  <div class="nav-footer page-columns page-full">
     <div class="nav-footer-left">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item">
-    <a class="nav-link" href="https://creativecommons.org/publicdomain/zero/1.0/legalcode">
-<p>CC0 Public Domain Dedication</p>
-</a>
-  </li>  
-</ul>
+      &nbsp;
     </div>   
-    <div class="nav-footer-center">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item">
-    <a class="nav-link" href="./about.html">
-<p>About</p>
-</a>
-  </li>  
-    <li class="nav-item">
-    <a class="nav-link" href="./technical-details.html">
-<p>Technical details</p>
-</a>
-  </li>  
-    <li class="nav-item">
-    <a class="nav-link" href="./editors-guide.html">
-<p>Editor’s guide</p>
-</a>
-  </li>  
-    <li class="nav-item">
-    <a class="nav-link" href="https://ghostcollective.github.io/games.html">
-<p>GHOST Collective</p>
-</a>
-  </li>  
-</ul>
-    <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-center page-columns page-full">
+<div class="pagebottom py-5 page-columns page-full">
+    <div class="column-page text-center">
+        <ul class="footer-items list-unstyled">
+            <li class="nav-item mx-5">
+                <p><img src="./public/missing_icon.svg" class="img-fluid" style="width:6em"><br>
+                    Missing something in the Handbook?<br>
+                    <a href="https://ez-github-contributor.netlify.app/" target="_blank">Let us know!</a>
+                </p>
+            </li>
+            <li class="nav-item mx-5">
+                <img src="./public/question_icon.svg" class="img-fluid" style="width:6em"><br>
+                Question about your research data or research software?<br>
+                <a href="./topics/rdm-support-desk.html">Contact the RDM Support Desk</a>
+                
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="column-page">
+    <ul class="footer-items list-unstyled">
+        <li class="nav-item">
+            <a class="nav-link" href="https://creativecommons.org/publicdomain/zero/1.0/legalcode">
+                <p><img src="./public/Cc.logo.circle.svg" class="img-fluid" style="width:1.3em">
+                <img src="./public/Cc-zero.svg" class="img-fluid" style="width:1.3em"></p>
+            </a>
+        </li>|
+        <li class="nav-item">
+            <a class="nav-link" href="https://deploy-preview-739--ub-open-handbook.netlify.app/about">
+                <p>About</p>
+            </a>
+        </li>|
+        <li class="nav-item">
+            <a class="nav-link" href="https://deploy-preview-739--ub-open-handbook.netlify.app/contributing">
+                <p>Contributing</p>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item">
- By VU &amp; Liberate Science GmbH
-  </li>  
-</ul>
+      &nbsp;
     </div>
   </div>
 </footer>

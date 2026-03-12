@@ -43,20 +43,19 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-dacf30ecfe562eafbfb2f154650978a5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-8cb14b621b215de33eb8ab5cd8e9b316.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
   "panel-placement": "end",
-  "type": "overlay",
+  "type": "textbox",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
     "/",
     "s"
   ],
-  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -65,7 +64,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
+    "search-text-placeholder": "Search",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -74,20 +73,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-guides .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-project','listing-website','listing-bibliography','listing-language','listing-resources','listing-format','listing-filters','listing-execute','listing-_quarto-vars','listing-title','listing-image','listing-description','listing-categories','listing-path','listing-outputHref','listing-author','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-title"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-guides'] = new List('listing-guides', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -101,8 +100,11 @@ ul.task-list li input[type="checkbox"] {
   })
   </script>
 <style type="text/css">
-.quarto-grid-item .listing-item-img-placeholder {
-  background-color: #0080c9;
+.handbook-title {
+  text-align: center;
+}
+#title-block-header {
+  display: none;
 }
 </style>
 
@@ -146,8 +148,8 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo light-content">
-    <img src="./public/VU-logo-Dia-positief.png" alt="VU Amsterdam logo." class="navbar-logo dark-content">
+    <img src="./public/VU-logo-white.svg" alt="VU Amsterdam logo." class="navbar-logo light-content">
+    <img src="./public/VU-logo-white.svg" alt="VU Amsterdam logo." class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -197,11 +199,7 @@ window.Quarto = {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./blog.html"> 
-<span class="menu-text">Blog</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./contributing.html"> 
-<span class="menu-text">Contributing</span></a>
+<span class="menu-text">News</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -220,6 +218,7 @@ window.Quarto = {
     <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(12)</span></div><div class="category" data-category="Q29sbGVjdCUyMCUyNiUyMFN0b3Jl">Collect &amp; Store <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGlzY292ZXIlMjAlMjYlMjBJbml0aWF0ZQ==">Discover &amp; Initiate <span class="quarto-category-count">(2)</span></div><div class="category" data-category="RG9jdW1lbnQlMjAlMjYlMjBQcmVzZXJ2ZQ==">Document &amp; Preserve <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGxhbiUyMCUyNiUyMERlc2lnbg==">Plan &amp; Design <span class="quarto-category-count">(3)</span></div><div class="category" data-category="UHJvY2VzcyUyMCUyNiUyMEFuYWx5c2U=">Process &amp; Analyse <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UHVibGlzaCUyMCUyNiUyMFNoYXJl">Publish &amp; Share <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
+<div class="handbook-title">Research Support Handbook</div>
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -240,328 +239,334 @@ window.Quarto = {
 </header>
 
 
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<div class="guides-main">
+<div class="text-center px-5">
+<div class="main-title">
+<p><img src="public/guides-icon.svg" class="img-fluid" style="width:2em"><br>
+Guides</p>
 </div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>What is a guide?
-</div>
-</div>
-<div class="callout-body-container callout-body">
 <p>These guides help you find answers to questions that come up while doing research. They help guide you through various topics at once.</p>
-<p>Missing a guide? You can <a href="https://ez-github-contributor.netlify.app/" target="_blank">submit questions you are dealing with using the Contribution portal</a>.</p>
 </div>
-</div>
-
-
-
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="UHVibGlzaCUyMCUyNiUyMFNoYXJl" data-listing-file-modified-sort="1771496219000" data-listing-reading-time-sort="8" data-listing-word-count-sort="1466">
-<a href="./guides/publish-and-share.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/cover-images/DALLE_sharing-research-data.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How can you archive and publish your data?
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHVibGlzaCUyMCUyNiUyMFNoYXJl'); return false;">Publish &amp; Share</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>All data and software leading to a published result, must be archived and published.</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="UGxhbiUyMCUyNiUyMERlc2lnbg==" data-listing-file-modified-sort="1758110798000" data-listing-reading-time-sort="7" data-listing-word-count-sort="1293">
-<a href="./guides/comply-with-gdpr.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/gdpr-europe-united-lock-74673f-1024.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How can you comply with the GDPR?
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UGxhbiUyMCUyNiUyMERlc2lnbg=='); return false;">Plan &amp; Design</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Personal data must be protected.</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="RGlzY292ZXIlMjAlMjYlMjBJbml0aWF0ZQ==" data-listing-file-modified-sort="1739007328000" data-listing-reading-time-sort="1" data-listing-word-count-sort="22">
-<a href="./guides/discover-and-initiate.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/cover-images/DALLE_LEGO-scientist-discovering-metadata.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How can you discover and reuse existing research data?
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RGlzY292ZXIlMjAlMjYlMjBJbml0aWF0ZQ=='); return false;">Discover &amp; Initiate</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>There is so much data out there, that we want to help you find your way more easily.</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="Q29sbGVjdCUyMCUyNiUyMFN0b3Jl" data-listing-file-modified-sort="1770108354000" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
-<a href="./guides/collect-and-store.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/cover-images/DALLE_research-data-storage-2.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How can you ensure data protection and security during collection, storage, and transfer?
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q29sbGVjdCUyMCUyNiUyMFN0b3Jl'); return false;">Collect &amp; Store</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Learn about how to secure research data at any stage.</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="UHJvY2VzcyUyMCUyNiUyMEFuYWx5c2U=" data-listing-file-modified-sort="1772026557000" data-listing-reading-time-sort="11" data-listing-word-count-sort="2028">
-<a href="./guides/process-and-analyse.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/cover-images/DALLE_LEGO-figures-swimming-in-sea-of-notes.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How can you ensure data provenance and accurate data analysis?
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHJvY2VzcyUyMCUyNiUyMEFuYWx5c2U='); return false;">Process &amp; Analyse</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Where data and results come from matters.</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="RG9jdW1lbnQlMjAlMjYlMjBQcmVzZXJ2ZQ==" data-listing-file-modified-sort="1749559182000" data-listing-reading-time-sort="1" data-listing-word-count-sort="18">
-<a href="./guides/document-and-preserve.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/cover-images/DALLE_LEGO-egyptologist-evaluating-folder-structure.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How can you ensure research data is FAIR?
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RG9jdW1lbnQlMjAlMjYlMjBQcmVzZXJ2ZQ=='); return false;">Document &amp; Preserve</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Making your data Findable, Accessible, Interopable, Reusable is more doable than you might think.</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="6" data-categories="RGlzY292ZXIlMjAlMjYlMjBJbml0aWF0ZSUyQ1BsYW4lMjAlMjYlMjBEZXNpZ24=" data-listing-file-modified-sort="1772026557000" data-listing-reading-time-sort="7" data-listing-word-count-sort="1356">
-<a href="./guides/onboarding.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/cover-images/onboarding.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How can you organise your own RDM Onboarding as a new researcher at the VU?
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RGlzY292ZXIlMjAlMjYlMjBJbml0aWF0ZQ=='); return false;">Discover &amp; Initiate</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UGxhbiUyMCUyNiUyMERlc2lnbg=='); return false;">Plan &amp; Design</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Learn about the RDM essentials at the VU when you join the VU or a new project.</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="7" data-categories="UHVibGlzaCUyMCUyNiUyMFNoYXJl" data-listing-file-modified-sort="1743682566000" data-listing-reading-time-sort="14" data-listing-word-count-sort="2625">
-<a href="./guides/publishing-fair-software.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/RSM_sticker_3x2.PNG" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How can you publish FAIR software
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHVibGlzaCUyMCUyNiUyMFNoYXJl'); return false;">Publish &amp; Share</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>A step-wise guide to make your software Findable, Accesible, Interoperable and Reusable.</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="8" data-categories="UGxhbiUyMCUyNiUyMERlc2lnbg==" data-listing-file-modified-sort="1771863045000" data-listing-reading-time-sort="23" data-listing-word-count-sort="4430">
-<a href="./guides/plan-and-design.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/cover-images/DALLE_LEGO-scientists-discussing-metadata.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-How can you set up research data management from the start?
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UGxhbiUyMCUyNiUyMERlc2lnbg=='); return false;">Plan &amp; Design</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>A good plan is half the work.</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="9" data-listing-file-modified-sort="1741784396000" data-listing-reading-time-sort="5" data-listing-word-count-sort="829">
-<a href="./guides/policies-supporting-vision-open-science.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/VU_social_avatar_blauw-rectangle.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-What policies and regulations support VU’s vision on Open Science?
-</h5>
-<div class="card-text listing-description delink">
-<p>As open as possible, as closed as necessary.</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="10" data-listing-file-modified-sort="1772812170000" data-listing-reading-time-sort="8" data-listing-word-count-sort="1431">
-<a href="./guides/data-lifecycle.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/cover-images/DALLE_DMP.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-What research data services and support are available for VU researchers?
-</h5>
-<div class="card-text listing-description delink">
-<p>Who is who and resources that can help you along your research journey.</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="11" data-listing-file-modified-sort="1767879854000" data-listing-reading-time-sort="3" data-listing-word-count-sort="472">
-<a href="./guides/offboarding.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./public/box-office-equipment-resized.PNG" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-What should I do when leaving VU Amsterdam?
-</h5>
-<div class="card-text listing-description delink">
-<p>Processes for data-related offboarding.</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
+<hr>
+<div id="listing-guides" class="py-5 quarto-listing quarto-listing-container-custom">
+<div class="listing-actions-group">
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<div id="accordionlist list" class="accordion list">
+    
+    
+        <div class="accordion-item vu-listing-item" data-index="0" data-categories="UHVibGlzaCUyMCUyNiUyMFNoYXJl" data-listing-file-modified-sort="1771496219000" data-listing-reading-time-sort="8" data-listing-word-count-sort="1466">
+            <span class="accordion-header" id="heading0">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse0" aria-expanded="false" aria-controls="collapse0">
+                    <span class="listing-title">How can you archive and publish your data?</span>
+                </button>
+            </span>
+            <div id="collapse0" class="accordion-collapse collapse" aria-labelledby="heading0">
+                <div class="accordion-body pt-0">
+                    
+                        <div class="listing-categories">
+                            
+                                <div class="listing-category">
+                                    <a href="#category=Publish%20%26%20Share">
+                                        Publish &amp; Share
+                                    </a>
+                                </div>
+                            
+                        </div>
+                    
+                    <a href="./guides/publish-and-share.html">
+                        <span class="listing-description">All data and software leading to a published result, must be archived and published.</span><br>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    
+        <div class="accordion-item vu-listing-item" data-index="1" data-categories="UGxhbiUyMCUyNiUyMERlc2lnbg==" data-listing-file-modified-sort="1758110798000" data-listing-reading-time-sort="7" data-listing-word-count-sort="1293">
+            <span class="accordion-header" id="heading1">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                    <span class="listing-title">How can you comply with the GDPR?</span>
+                </button>
+            </span>
+            <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1">
+                <div class="accordion-body pt-0">
+                    
+                        <div class="listing-categories">
+                            
+                                <div class="listing-category">
+                                    <a href="#category=Plan%20%26%20Design">
+                                        Plan &amp; Design
+                                    </a>
+                                </div>
+                            
+                        </div>
+                    
+                    <a href="./guides/comply-with-gdpr.html">
+                        <span class="listing-description">Personal data must be protected.</span><br>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    
+        <div class="accordion-item vu-listing-item" data-index="2" data-categories="RGlzY292ZXIlMjAlMjYlMjBJbml0aWF0ZQ==" data-listing-file-modified-sort="1739007328000" data-listing-reading-time-sort="1" data-listing-word-count-sort="22">
+            <span class="accordion-header" id="heading2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                    <span class="listing-title">How can you discover and reuse existing research data?</span>
+                </button>
+            </span>
+            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2">
+                <div class="accordion-body pt-0">
+                    
+                        <div class="listing-categories">
+                            
+                                <div class="listing-category">
+                                    <a href="#category=Discover%20%26%20Initiate">
+                                        Discover &amp; Initiate
+                                    </a>
+                                </div>
+                            
+                        </div>
+                    
+                    <a href="./guides/discover-and-initiate.html">
+                        <span class="listing-description">There is so much data out there, that we want to help you find your way more easily.</span><br>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    
+        <div class="accordion-item vu-listing-item" data-index="3" data-categories="Q29sbGVjdCUyMCUyNiUyMFN0b3Jl" data-listing-file-modified-sort="1770108354000" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+            <span class="accordion-header" id="heading3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                    <span class="listing-title">How can you ensure data protection and security during collection, storage, and transfer?</span>
+                </button>
+            </span>
+            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3">
+                <div class="accordion-body pt-0">
+                    
+                        <div class="listing-categories">
+                            
+                                <div class="listing-category">
+                                    <a href="#category=Collect%20%26%20Store">
+                                        Collect &amp; Store
+                                    </a>
+                                </div>
+                            
+                        </div>
+                    
+                    <a href="./guides/collect-and-store.html">
+                        <span class="listing-description">Learn about how to secure research data at any stage.</span><br>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    
+        <div class="accordion-item vu-listing-item" data-index="4" data-categories="UHJvY2VzcyUyMCUyNiUyMEFuYWx5c2U=" data-listing-file-modified-sort="1772026557000" data-listing-reading-time-sort="11" data-listing-word-count-sort="2028">
+            <span class="accordion-header" id="heading4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                    <span class="listing-title">How can you ensure data provenance and accurate data analysis?</span>
+                </button>
+            </span>
+            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4">
+                <div class="accordion-body pt-0">
+                    
+                        <div class="listing-categories">
+                            
+                                <div class="listing-category">
+                                    <a href="#category=Process%20%26%20Analyse">
+                                        Process &amp; Analyse
+                                    </a>
+                                </div>
+                            
+                        </div>
+                    
+                    <a href="./guides/process-and-analyse.html">
+                        <span class="listing-description">Where data and results come from matters.</span><br>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    
+        <div class="accordion-item vu-listing-item" data-index="5" data-categories="RG9jdW1lbnQlMjAlMjYlMjBQcmVzZXJ2ZQ==" data-listing-file-modified-sort="1749559182000" data-listing-reading-time-sort="1" data-listing-word-count-sort="18">
+            <span class="accordion-header" id="heading5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                    <span class="listing-title">How can you ensure research data is FAIR?</span>
+                </button>
+            </span>
+            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5">
+                <div class="accordion-body pt-0">
+                    
+                        <div class="listing-categories">
+                            
+                                <div class="listing-category">
+                                    <a href="#category=Document%20%26%20Preserve">
+                                        Document &amp; Preserve
+                                    </a>
+                                </div>
+                            
+                        </div>
+                    
+                    <a href="./guides/document-and-preserve.html">
+                        <span class="listing-description">Making your data Findable, Accessible, Interopable, Reusable is more doable than you might think.</span><br>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    
+        <div class="accordion-item vu-listing-item" data-index="6" data-categories="RGlzY292ZXIlMjAlMjYlMjBJbml0aWF0ZSUyQ1BsYW4lMjAlMjYlMjBEZXNpZ24=" data-listing-file-modified-sort="1772026557000" data-listing-reading-time-sort="7" data-listing-word-count-sort="1356">
+            <span class="accordion-header" id="heading6">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                    <span class="listing-title">How can you organise your own RDM Onboarding as a new researcher at the VU?</span>
+                </button>
+            </span>
+            <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6">
+                <div class="accordion-body pt-0">
+                    
+                        <div class="listing-categories">
+                            
+                                <div class="listing-category">
+                                    <a href="#category=Discover%20%26%20Initiate">
+                                        Discover &amp; Initiate
+                                    </a>
+                                </div>
+                            
+                                <div class="listing-category">
+                                    <a href="#category=Plan%20%26%20Design">
+                                        Plan &amp; Design
+                                    </a>
+                                </div>
+                            
+                        </div>
+                    
+                    <a href="./guides/onboarding.html">
+                        <span class="listing-description">Learn about the RDM essentials at the VU when you join the VU or a new project.</span><br>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    
+        <div class="accordion-item vu-listing-item" data-index="7" data-categories="UHVibGlzaCUyMCUyNiUyMFNoYXJl" data-listing-file-modified-sort="1743682566000" data-listing-reading-time-sort="14" data-listing-word-count-sort="2625">
+            <span class="accordion-header" id="heading7">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                    <span class="listing-title">How can you publish FAIR software</span>
+                </button>
+            </span>
+            <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7">
+                <div class="accordion-body pt-0">
+                    
+                        <div class="listing-categories">
+                            
+                                <div class="listing-category">
+                                    <a href="#category=Publish%20%26%20Share">
+                                        Publish &amp; Share
+                                    </a>
+                                </div>
+                            
+                        </div>
+                    
+                    <a href="./guides/publishing-fair-software.html">
+                        <span class="listing-description">A step-wise guide to make your software Findable, Accesible, Interoperable and Reusable.</span><br>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    
+        <div class="accordion-item vu-listing-item" data-index="8" data-categories="UGxhbiUyMCUyNiUyMERlc2lnbg==" data-listing-file-modified-sort="1771863045000" data-listing-reading-time-sort="23" data-listing-word-count-sort="4430">
+            <span class="accordion-header" id="heading8">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                    <span class="listing-title">How can you set up research data management from the start?</span>
+                </button>
+            </span>
+            <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8">
+                <div class="accordion-body pt-0">
+                    
+                        <div class="listing-categories">
+                            
+                                <div class="listing-category">
+                                    <a href="#category=Plan%20%26%20Design">
+                                        Plan &amp; Design
+                                    </a>
+                                </div>
+                            
+                        </div>
+                    
+                    <a href="./guides/plan-and-design.html">
+                        <span class="listing-description">A good plan is half the work.</span><br>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    
+        <div class="accordion-item vu-listing-item" data-index="9" data-listing-file-modified-sort="1741784396000" data-listing-reading-time-sort="5" data-listing-word-count-sort="829">
+            <span class="accordion-header" id="heading9">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                    <span class="listing-title">What policies and regulations support VU's vision on Open Science?</span>
+                </button>
+            </span>
+            <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9">
+                <div class="accordion-body pt-0">
+                    
+                    <a href="./guides/policies-supporting-vision-open-science.html">
+                        <span class="listing-description">As open as possible, as closed as necessary.</span><br>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    
+        <div class="accordion-item vu-listing-item" data-index="10" data-listing-file-modified-sort="1772812170000" data-listing-reading-time-sort="8" data-listing-word-count-sort="1431">
+            <span class="accordion-header" id="heading10">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                    <span class="listing-title">What research data services and support are available for VU researchers?</span>
+                </button>
+            </span>
+            <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10">
+                <div class="accordion-body pt-0">
+                    
+                    <a href="./guides/data-lifecycle.html">
+                        <span class="listing-description">Who is who and resources that can help you along your research journey.</span><br>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    
+        <div class="accordion-item vu-listing-item" data-index="11" data-listing-file-modified-sort="1767879854000" data-listing-reading-time-sort="3" data-listing-word-count-sort="472">
+            <span class="accordion-header" id="heading11">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                    <span class="listing-title">What should I do when leaving VU Amsterdam?</span>
+                </button>
+            </span>
+            <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11">
+                <div class="accordion-body pt-0">
+                    
+                    <a href="./guides/offboarding.html">
+                        <span class="listing-description">Processes for data-related offboarding.</span><br>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</div>
+</div>
+
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -963,47 +968,53 @@ What should I do when leaving VU Amsterdam?
   });
   </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
+<footer class="footer page-columns page-full">
+  <div class="nav-footer page-columns page-full">
     <div class="nav-footer-left">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item">
-    <a class="nav-link" href="https://creativecommons.org/publicdomain/zero/1.0/legalcode">
-<p>CC0 Public Domain Dedication</p>
-</a>
-  </li>  
-</ul>
+      &nbsp;
     </div>   
-    <div class="nav-footer-center">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item">
-    <a class="nav-link" href="./about.html">
-<p>About</p>
-</a>
-  </li>  
-    <li class="nav-item">
-    <a class="nav-link" href="./technical-details.html">
-<p>Technical details</p>
-</a>
-  </li>  
-    <li class="nav-item">
-    <a class="nav-link" href="./editors-guide.html">
-<p>Editor’s guide</p>
-</a>
-  </li>  
-    <li class="nav-item">
-    <a class="nav-link" href="https://ghostcollective.github.io/games.html">
-<p>GHOST Collective</p>
-</a>
-  </li>  
-</ul>
-    <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/guides.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-center page-columns page-full">
+<div class="pagebottom py-5 page-columns page-full">
+    <div class="column-page text-center">
+        <ul class="footer-items list-unstyled">
+            <li class="nav-item mx-5">
+                <p><img src="./public/missing_icon.svg" class="img-fluid" style="width:6em"><br>
+                    Missing something in the Handbook?<br>
+                    <a href="https://ez-github-contributor.netlify.app/" target="_blank">Let us know!</a>
+                </p>
+            </li>
+            <li class="nav-item mx-5">
+                <img src="./public/question_icon.svg" class="img-fluid" style="width:6em"><br>
+                Question about your research data or research software?<br>
+                <a href="./topics/rdm-support-desk.html">Contact the RDM Support Desk</a>
+                
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="column-page">
+    <ul class="footer-items list-unstyled">
+        <li class="nav-item">
+            <a class="nav-link" href="https://creativecommons.org/publicdomain/zero/1.0/legalcode">
+                <p><img src="./public/Cc.logo.circle.svg" class="img-fluid" style="width:1.3em">
+                <img src="./public/Cc-zero.svg" class="img-fluid" style="width:1.3em"></p>
+            </a>
+        </li>|
+        <li class="nav-item">
+            <a class="nav-link" href="https://deploy-preview-739--ub-open-handbook.netlify.app/about">
+                <p>About</p>
+            </a>
+        </li>|
+        <li class="nav-item">
+            <a class="nav-link" href="https://deploy-preview-739--ub-open-handbook.netlify.app/contributing">
+                <p>Contributing</p>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/guides.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item">
- By VU &amp; Liberate Science GmbH
-  </li>  
-</ul>
+      &nbsp;
     </div>
   </div>
 </footer>
