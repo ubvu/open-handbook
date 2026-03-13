@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-02-23">
+<meta name="dcterms.date" content="2026-03-13">
 
-<title>Encrypting your data using Cryptomator and Cyberduck – Research Support Handbook</title>
+<title>Encrypting your data – Research Support Handbook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -148,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tools/yoda/index.html">Yoda</a></li><li class="breadcrumb-item">Documentation</li><li class="breadcrumb-item"><a href="../../tools/yoda/data_access_instructions.html">Data Access and Transfer</a></li><li class="breadcrumb-item"><a href="../../tools/yoda/yoda_using_cyberduck_cryptometer.html">Encrypting your data using Cryptomator and Cyberduck</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tools/yoda/index.html">Yoda</a></li><li class="breadcrumb-item">Documentation</li><li class="breadcrumb-item"><a href="../../tools/yoda/data_access_instructions.html">Data Access and Transfer</a></li><li class="breadcrumb-item"><a href="../../tools/yoda/yoda_using_cyberduck_cryptometer.html">Encrypting your data</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -238,7 +238,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../tools/yoda/sram_invitations_eduid_activation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">How to: Invitation to Yoda collaboration</span></a>
+ <span class="menu-text">SRAM Invitations and eduID Activation</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -285,13 +285,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../tools/yoda/properties_and_explanation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Properties and Explanation</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/workflow_metadata_license.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Selecting a license for your Dataset</span></a>
+ <span class="menu-text">Metadata Properties</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -311,6 +305,12 @@ ul.task-list li input[type="checkbox"] {
           </a> 
       </div>
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth3 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/yoda/workflow_metadata_licence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Selecting a licence for your dataset</span></a>
+  </div>
+</li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../tools/yoda/vault_archive.html" class="sidebar-item-text sidebar-link">
@@ -373,7 +373,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../tools/yoda/yoda_using_cyberduck_cryptometer.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Encrypting your data using Cryptomator and Cyberduck</span></a>
+ <span class="menu-text">Encrypting your data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -422,7 +422,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#using-cryptomator" id="toc-using-cryptomator" class="nav-link active" data-scroll-target="#using-cryptomator">Using Cryptomator</a></li>
+  <li><a href="#encrypting-your-data-using-cryptomator-and-cyberduck" id="toc-encrypting-your-data-using-cryptomator-and-cyberduck" class="nav-link active" data-scroll-target="#encrypting-your-data-using-cryptomator-and-cyberduck">Encrypting your data using Cryptomator and Cyberduck</a></li>
+  <li><a href="#using-cryptomator" id="toc-using-cryptomator" class="nav-link" data-scroll-target="#using-cryptomator">Using Cryptomator</a></li>
   <li><a href="#install-cryptomator" id="toc-install-cryptomator" class="nav-link" data-scroll-target="#install-cryptomator">Install Cryptomator</a></li>
   <li><a href="#create-a-new-cryptomator-vault" id="toc-create-a-new-cryptomator-vault" class="nav-link" data-scroll-target="#create-a-new-cryptomator-vault">Create a new Cryptomator vault</a></li>
   </ul>
@@ -432,9 +433,9 @@ ul.task-list li input[type="checkbox"] {
 <main class="content" id="quarto-document-content">
 <div class="handbook-title">Research Support Handbook</div>
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tools/yoda/index.html">Yoda</a></li><li class="breadcrumb-item">Documentation</li><li class="breadcrumb-item"><a href="../../tools/yoda/data_access_instructions.html">Data Access and Transfer</a></li><li class="breadcrumb-item"><a href="../../tools/yoda/yoda_using_cyberduck_cryptometer.html">Encrypting your data using Cryptomator and Cyberduck</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tools/yoda/index.html">Yoda</a></li><li class="breadcrumb-item">Documentation</li><li class="breadcrumb-item"><a href="../../tools/yoda/data_access_instructions.html">Data Access and Transfer</a></li><li class="breadcrumb-item"><a href="../../tools/yoda/yoda_using_cyberduck_cryptometer.html">Encrypting your data</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Encrypting your data using Cryptomator and Cyberduck</h1>
+<h1 class="title">Encrypting your data</h1>
 </div>
 
 
@@ -445,7 +446,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">last modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 23, 2026</p>
+      <p class="date">March 13, 2026</p>
     </div>
   </div>
   
@@ -457,6 +458,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="encrypting-your-data-using-cryptomator-and-cyberduck" class="level2">
+<h2 class="anchored" data-anchor-id="encrypting-your-data-using-cryptomator-and-cyberduck">Encrypting your data using Cryptomator and Cyberduck</h2>
 <p>To work with privacy sensitive data you might be required to encrypt the data you store on Yoda. An easy way to do this is to use Cyberduck (or MountainDuck) together with the free tool Cryptomator.</p>
 <p>Cryptomator is available for Windows, MacOS and Linux.</p>
 <div class="quarto-figure quarto-figure-center">
@@ -466,6 +469,7 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <p>Note this workflow means local copies of the files on your laptop are not in the encrypted vault. To make sure local files are also safely encrypted you should enable Bitlocker, this should be the case on all VU laptops.</p>
+</section>
 <section id="using-cryptomator" class="level2">
 <h2 class="anchored" data-anchor-id="using-cryptomator">Using Cryptomator</h2>
 <p>First connect to the Yoda WebDAV interface using <a href="../../tools/yoda/yoda_using_cyberduck.html">Cyberduck</a>.</p>

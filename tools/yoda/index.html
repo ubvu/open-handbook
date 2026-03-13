@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-02-23">
+<meta name="dcterms.date" content="2026-03-11">
 
 <title>Yoda – Research Support Handbook</title>
 <style>
@@ -237,7 +237,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../tools/yoda/sram_invitations_eduid_activation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">How to: Invitation to Yoda collaboration</span></a>
+ <span class="menu-text">SRAM Invitations and eduID Activation</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -284,13 +284,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../tools/yoda/properties_and_explanation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Properties and Explanation</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/workflow_metadata_license.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Selecting a license for your Dataset</span></a>
+ <span class="menu-text">Metadata Properties</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -310,6 +304,12 @@ ul.task-list li input[type="checkbox"] {
           </a> 
       </div>
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth3 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/yoda/workflow_metadata_licence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Selecting a licence for your dataset</span></a>
+  </div>
+</li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../tools/yoda/vault_archive.html" class="sidebar-item-text sidebar-link">
@@ -372,7 +372,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../tools/yoda/yoda_using_cyberduck_cryptometer.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Encrypting your data using Cryptomator and Cyberduck</span></a>
+ <span class="menu-text">Encrypting your data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -457,7 +457,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">last modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 23, 2026</p>
+      <p class="date">March 11, 2026</p>
     </div>
   </div>
   
@@ -479,13 +479,11 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <!-- markdownlint-enable MD033 -->
 <p>Yoda helps the researcher make their data “<a href="../../topics/fair-principles.html">FAIR</a>” by providing a solution that enables data discovery and sharing (i.e., findable, accessible). In addition, it facilitates the use of metadata, contributing to data interoperability and reusability. Yoda provides a platform for the implementation of standard workflows that can ensure metadata quality satisfying <a href="../../topics/research-data-and-software-management-policy.html">VU policy requirements</a> for data archiving and publication. In addition, Yoda is built on <a href="https://irods.org" target="_blank">iRODS</a> so it accommodates both researchers with data heavy requirements, as well as those seeking an accessible, user-friendly solution.</p>
-<p>Yoda presents researchers a comfortable, easy-to-use solution for securely storing, sharing and organising their research data that follows the internationally adopted <a href="../../topics/fair-principles.html">FAIR</a> data principles. Many research institutions and funding organisations (such as NWO and ZonMw) require researchers to make their data FAIR.</p>
-<p>Project space in Yoda is basically a folder with group based access rights. Access restrictions are only set on the top level, meaning you need one Project Space per research project.</p>
 <p><a href="https://github.com/UtrechtUniversity/Yoda" target="_blank">Yoda is open source software</a> developed and maintained by Utrecht University for the Yoda Consortium (VU, Wageningen University, Erasmus University, Amsterdam UMC, Utrecht University and SURF). Yoda is hosted by SURF in their Amsterdam datacentre.</p>
 </section>
 <section id="what-can-it-be-used-for" class="level2">
 <h2 class="anchored" data-anchor-id="what-can-it-be-used-for">What can it be used for?</h2>
-<p>The particular strength of Yoda lies in the fact that it is an all-in-one solution for managing your data during and after your project. It makes it easy to share and organise your data and add descriptive metadata at any moment. If (part of) your datasets needs to be published during or after your project, this can be done by a few simple steps within Yoda itself. There is no need to upload your data to another platform.</p>
+<p>Yoda is an all-in-one solution for managing your data during and after your project. It makes it easy to share and organise your data and add descriptive metadata at any moment. If (part of) your datasets needs to be published during or after your project, this can be done by a few simple steps within Yoda itself, wthout the need to upload your data to another platform.</p>
 <section id="data-storage" class="level3">
 <h3 class="anchored" data-anchor-id="data-storage">Data storage</h3>
 <p>Yoda is a Cloud storage solution that can be used for small to very large datasets. The underlying <a href="https://irods.org" target="_blank">iRODS</a> software ensures data integrity. Data in Yoda is backed up daily.</p>
@@ -504,11 +502,11 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="archiving" class="level3">
 <h3 class="anchored" data-anchor-id="archiving">Archiving</h3>
-<p>At any moment you can submit a data folder with metadata for Archiving in the Yoda <strong>Vault</strong>. Data in the Vault is read-only and cannot be deleted. To help make sure the dataset is suitable for archiving a Yoda <strong>datamanager</strong> (usually a data manager from your department or a faculty data steward) will review your submission before final approval. Data in the Vault is directly accessible for your collaborators. Access for the Yoda datamanager role ensures the data remains accessible on the long term.</p>
+<p>At any moment you can submit a data folder with metadata for Archiving in the Yoda <a href="https://rdm.vu.nl/tools/yoda/vault_archive.html" target="_blank"><strong>Vault</strong></a>. Data in the Vault is read-only and cannot be deleted. To help make sure the dataset is suitable for archiving a Yoda <strong>datamanager</strong> (usually a data manager from your department or a faculty data steward) will review your submission before final approval. Data in the Vault is directly accessible for your collaborators. Access for the Yoda datamanager role ensures the data remains accessible on the long term.</p>
 </section>
 <section id="publishing-metadata-and-data" class="level3">
 <h3 class="anchored" data-anchor-id="publishing-metadata-and-data">Publishing metadata and data</h3>
-<p>From the Yoda Vault you can submit the dataset for <strong>publication</strong>. A <a href="https://www.doi.org/the-identifier/what-is-a-doi/" target="_blank">DOI</a> will be generated and registered with <a href="https://commons.datacite.org/doi.org?query=client.uid:delft.vudata" target="_blank">DataCite</a> together with the metadata. DataCite ensures your dataset becomes findable on the internet and citable.</p>
+<p>From the Yoda Vault you can submit the dataset for <a href="https://rdm.vu.nl/tools/yoda/vault_publish.html" target="_blank"><strong>publication</strong></a>. A <a href="https://www.doi.org/the-identifier/what-is-a-doi/" target="_blank">DOI</a> will be generated and registered with <a href="https://commons.datacite.org/doi.org?query=client.uid:delft.vudata" target="_blank">DataCite</a> together with the metadata. DataCite ensures your dataset becomes findable on the internet and citable.</p>
 <p>The DOI link will lead to a <strong>landing page</strong> in Yoda showing the metadata. The dataset itself can be Open, allowing direct download, Restricted, meaning other researchers need to follow a data request procedure, or Closed, signalling the dataset is properly archived but not available for reuse.</p>
 </section>
 <section id="automated-workflows" class="level3">
