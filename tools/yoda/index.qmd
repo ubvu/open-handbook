@@ -18,15 +18,11 @@ Yoda is an application for institutions that supports Research Data Management (
 
 Yoda helps the researcher make their data "[FAIR](/topics/fair-principles.qmd)" by providing a solution that enables data discovery and sharing (i.e., findable, accessible). In addition, it facilitates the use of metadata, contributing to data interoperability and reusability. Yoda provides a platform for the implementation of standard workflows that can ensure metadata quality satisfying [VU policy requirements](/topics/research-data-and-software-management-policy.qmd) for data archiving and publication. In addition, Yoda is built on [iRODS](https://irods.org) so it accommodates both researchers with data heavy requirements, as well as those seeking an accessible, user-friendly solution.
 
-Yoda presents researchers a comfortable, easy-to-use solution for securely storing, sharing and organising their research data that follows the internationally adopted [FAIR](/topics/fair-principles.qmd) data principles. Many research institutions and funding organisations (such as NWO and ZonMw) require researchers to make their data FAIR. 
-
-Project space in Yoda is basically a folder with group based access rights. Access restrictions are only set on the top level, meaning you need one Project Space per research project.
-
 [Yoda is open source software](https://github.com/UtrechtUniversity/Yoda) developed and maintained by Utrecht University for the Yoda Consortium (VU, Wageningen University, Erasmus University, Amsterdam UMC, Utrecht University and SURF). Yoda is hosted by SURF in their Amsterdam datacentre.
 
 ## What can it be used for?
 
-The particular strength of Yoda lies in the fact that it is an all-in-one solution for managing your data during and after your project. It makes it easy to share and organise your data and add descriptive metadata at any moment. If (part of) your datasets needs to be published during or after your project, this can be done by a few simple steps within Yoda itself. There is no need to upload your data to another platform. 
+Yoda is an all-in-one solution for managing your data during and after your project. It makes it easy to share and organise your data and add descriptive metadata at any moment. If (part of) your datasets needs to be published during or after your project, this can be done by a few simple steps within Yoda itself, wthout the need to upload your data to another platform. 
 
 ### Data storage
 Yoda is a Cloud storage solution that can be used for small to very large datasets. The underlying [iRODS](https://irods.org) software ensures data integrity. Data in Yoda is backed up daily. 
@@ -41,10 +37,10 @@ The use of Multi-Factor Authentication (MFA) with SRAM and hosting at SURF ensur
 At any moment you can add descriptive metadata to a folder in Yoda via a web form. This means you can easily organize your data in such a way that it is not only ready for archiving and publishing but also findable for your collaborators. 
 
 ### Archiving
-At any moment you can submit a data folder with metadata for Archiving in the Yoda **Vault**. Data in the Vault is read-only and cannot be deleted. To help make sure the dataset is suitable for archiving a Yoda **datamanager** (usually a data manager from your department or a faculty data steward) will review your submission before final approval. Data in the Vault is directly accessible for your collaborators. Access for the Yoda datamanager role ensures the data remains accessible on the long term.
+At any moment you can submit a data folder with metadata for Archiving in the Yoda [**Vault**](https://rdm.vu.nl/tools/yoda/vault_archive.html). Data in the Vault is read-only and cannot be deleted. To help make sure the dataset is suitable for archiving a Yoda **datamanager** (usually a data manager from your department or a faculty data steward) will review your submission before final approval. Data in the Vault is directly accessible for your collaborators. Access for the Yoda datamanager role ensures the data remains accessible on the long term.
 
 ### Publishing metadata and data
-From the Yoda Vault you can submit the dataset for **publication**. A [DOI](https://www.doi.org/the-identifier/what-is-a-doi/) will be generated and registered with [DataCite](https://commons.datacite.org/doi.org?query=client.uid:delft.vudata) together with the metadata. DataCite ensures your dataset becomes findable on the internet and citable.
+From the Yoda Vault you can submit the dataset for [**publication**](https://rdm.vu.nl/tools/yoda/vault_publish.html). A [DOI](https://www.doi.org/the-identifier/what-is-a-doi/) will be generated and registered with [DataCite](https://commons.datacite.org/doi.org?query=client.uid:delft.vudata) together with the metadata. DataCite ensures your dataset becomes findable on the internet and citable.
 
 The DOI link will lead to a **landing page** in Yoda showing the metadata. The dataset itself can be Open, allowing direct download, Restricted, meaning other researchers need to follow a data request procedure, or Closed, signalling the dataset is properly archived but not available for reuse. 
 

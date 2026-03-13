@@ -1,7 +1,12 @@
 ---
-titel: SRAM Invitaitons and eduID Activaiton
+title: SRAM Invitations and eduID Activation
 categories: []
 ---
+
+To access the Yoda Portal a Single Sign-On (SSO) is required.  Access to a Yoda project is managed through SRAM, where you receive an invitation to join a collaboration. If you are not affiliated with a research or educational institution, you can create a free eduID account. The system will guide you through the process. 
+
+You can create an account via the [eduID page](https://login.eduid.nl/request/436c7382-bc00-45f0-b75e-2ede39b49445?lang=en) and use it to log in to SRAM and accept your collaboration invitation.
+
 
 ## How to: Invitation to Yoda collaboration
 After you are added to a Yoda group by the admin or a colleague you will receive an invitation to join a Yoda “collaboration” in SRAM (SURF Research Access Management). The “join” link in the invitation will lead you to SRAM.
@@ -13,7 +18,7 @@ After you are added to a Yoda group by the admin or a colleague you will receive
 
 - If your institute is included in this list and if you are affiliated with a research or education organisation you can choose your institution name which will redirect you to your familiar institutional login page.
 
-- If your institute is not in this list or if you are not affiliated with a research or education organisation please choose **eduID** (NL). If you do not yet have an eduID you can create one for free, the system will lead you through the process. More information on eduID here: https://www.eduid.nl/
+- If your institute is not in this list or if you are not affiliated with a research or education organisation please choose **eduID** (NL). If you do not yet have an eduID you can create one for free, the system will guide you through the process. More information on eduID [here])https://login.eduid.nl/request/436c7382-bc00-45f0-b75e-2ede39b49445?lang=en)
 
 ![SRAM login with eduID](/public/tools/yoda/sramlogineduid.png)
 
@@ -21,13 +26,12 @@ After you are added to a Yoda group by the admin or a colleague you will receive
 
 3. Now click the “Open” button to go to the Yoda portal.
 
+## How to: Creating eduID throught SRAM invitation 
+1. After choosing eduID (NL) you can fill in the email address to create a new eduID account or log in to your acount.  
 
-
-## How to: Creating eduID  
-1. After choosing eduID (NL) you can fill in the email address to create a new eduID account. 
-
-![Creating eduID](/public/tools/yoda/createeduid.png)
-![Creating a new account eduID](/public/tools/yoda/requesteduid.png)
+<p align="center">
+  <img src="/public/tools/yoda/requesteduid.png" width="400">
+</p>
 
 2. After requesting the account, an email is sent to your inbox to verify your eduID account. Please note that the email doesn’t always appear in the inbox folder and may be forwarded to your spam folder.
 
@@ -42,3 +46,5 @@ After you are added to a Yoda group by the admin or a colleague you will receive
 5. If you wish to set up a recovery method, you can proceed to add a phone number.
 
 ![Setting up a recovery method](/public/tools/yoda/eduidrecovery.png)
+
+

@@ -27,10 +27,10 @@ website:
                 - tools/yoda/metadata.qmd
                 - tools/yoda/workflow_metadata.qmd
                 - tools/yoda/properties_and_explanation.qmd
-                - tools/yoda/workflow_metadata_license.qmd
                 - tools/yoda/analysing_data.qmd
             - section: Securing and Distributing Data
               contents: 
+                - tools/yoda/workflow_metadata_licence.qmd
                 - tools/yoda/vault_archive.qmd
                 - tools/yoda/vault_publish.qmd
             - section: Data Access and Transfer
