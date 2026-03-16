@@ -25,7 +25,9 @@
                                     </div>
                                 <% } %>
                                 <a href="<%- item.path %>">
-                                    <span class="listing-description"><%= item.description %></span><br>
+                                    <div>
+                                        <span class="listing-description"><%= item.description %></span><br>
+                                    </div>
                                 </a>
                             </div>
                             <div class="column" style="width: 30%;">
