@@ -239,7 +239,7 @@ The `./topics.qmd`, `./guides.qmd` and `./tools.qmd` files use a [Custom Listing
 Unfortunately Quarto does not provide a way to use templates for other parts of the website layout. See [this discussion](https://github.com/orgs/quarto-dev/discussions/6552). To create the footer a piece of HTML code is used which "abuses" the standard quarto layout to create the desired look, together with styling in `./custom.scss`. You can find it in `./_footer.yml` which is included in `./_quarto.yml`.
 
 #### Custom header
-The navbar in the header is completely styled by the `./custom.scss`. Note that the menu items do not have a unique id, we rely on the `nth-child(n)` selector to give them their specific color, e.g.:
+The navbar in the header is completely styled by the `./custom.scss`. Note that the menu items do not have a unique id, it relies on the `nth-child(n)` selector to give them their specific color, e.g.:
 
 ```css
 .navbar .nav-item:nth-child(2) {
@@ -247,4 +247,4 @@ The navbar in the header is completely styled by the `./custom.scss`. Note that 
 }
 ```
 
-This will of course break if a menu item is added or the order is changed.
+Make sure to modify this if a menu item is added or the order is changed.
