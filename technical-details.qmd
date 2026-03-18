@@ -2,25 +2,25 @@
 title: Technical details
 ---
 
-This handbook is created with a variety of technical resources. This document outlines what technical resources are used to achieve different goals.
+This handbook is created with [Quarto](https://quarto.org) and hosted on [Github pages](https://docs.github.com/en/pages). This document outlines how the website is deployed and which custom changes were made.
 
 ## How is the website built?
 
-We use GitHub Actions to build the Quarto website. This automation runs every time something changes for the website – [the automation itself can be found on GitHub](https://github.com/ubvu/open-handbook/blob/main/.github/workflows/publish.yml).
+We use GitHub Actions to build the Quarto website. This automation runs every time something changes for the website, e.g. after merging a Pull Request – [the automation itself can be found on GitHub](https://github.com/ubvu/open-handbook/blob/main/.github/workflows/publish.yml).
 
-We use GitHub to subsequently make the website available on `https://rdm.vu.nl`.
+We use GitHub to subsequently make the website available on `https://rdm.vu.nl`. This domain name is registerd by the central IT department.
 
 Please [refer to the Quarto documentation for detailed instructions](https://quarto.org/docs/websites/) on how to use Quarto.
 
 ## Preview deployments
 
-We use Netlify to automatically build previews of pull requests on GitHub. This is provided by Liberate Science GmbH, and is not critical to the operation of `https://rdm.vu.nl`. It does, however, help the editors manage changes to the handbook.
+We use Netlify to automatically build previews of pull requests on GitHub. This is is not critical to the operation of `https://rdm.vu.nl`. It does, however, help the editors manage changes to the handbook.
 
-If this integration ever breaks, it can be fixed by one of the maintainers of [the handbook repository]({{< var repo-url >}}). To fix this, link your GitHub repository through Netlify directly and it will automatically deploy any pull requests - https://app.netlify.com/start.
+If this integration ever breaks, it can be fixed by one of the maintainers of [the handbook repository]({{< var repo-url >}}). To fix this, link your GitHub repository through Netlify directly and it will automatically deploy any pull requests - [https://app.netlify.com/start](https://app.netlify.com/start).
 
 ## Easy GitHub contributor
 
-The easy GitHub contributor is a small integration to make it easier to start contributing to the handbook. This service is provided by Liberate Science GmbH through Netlify. It is supported until September 1st, 2024 – after which it is no longer maintained.
+The [easy GitHub contributor](https://github.com/apps/easy-github-contributor) is a small integration to make it easier to start contributing to the handbook. It is no longer maintained, an alternative will need to be implemented in the near future.
 
 ## Repository structure overview
 
@@ -37,23 +37,21 @@ Understanding the repository structure helps you locate and modify the right fil
 
 #### `_quarto.yml`
 
-The `_quarto.yml` file is especially important, as it contains the metadata and information to structure the handbook. You can use this to find and update the navigation bar. The specifics of [using `_quarto.yml` is documented very well by Quarto](https://quarto.org/docs/websites/website-tools.html).
+The `_quarto.yml` file is especially important, as it contains the metadata and information to structure the handbook. You can use this to find and update the navigation bar. The specifics of [using `_quarto.yml` is documented very well by Quarto](https://quarto.org/docs/websites/website-tools.html). Note that the Handbook uses [Metadata Includes](https://quarto.org/docs/projects/quarto-projects.html#metadata-includes). 
 
 ### Content organization
 
 - **`topics/`** - Individual topic pages (e.g., `data-management-plan.qmd`, `gdpr.qmd`)
 - **`guides/`** - Step-by-step guides organized by research lifecycle
-- **`manuals/`** - Manuals to help researchers use specific tools 
+- **`tools/`** - Tool Description and Manuals to help researchers use specific tools 
 - **`blog/`** - Blog posts and announcements
 - **`public/`** - Static assets (images, PDFs, etc.)
 
 ### Technical files
 
-- **`_components/`** - React components for interactive elements
-- **`_extensions/`** - Quarto extensions (e.g., qreacto for React integration)
 - **`.github/workflows/`** - GitHub Actions for automated building and deployment
 - **`_site/`** - Generated website files (auto-generated, don't edit directly)
-- **`manuals/<tool>/_sidebar.yml`** - Specifies the order of the left sidebar of a specific tool manual 
+- **`tools/<tool>/_sidebar.yml`** - Specifies the order of the left sidebar of a specific tool manual 
 
 ::: {.callout-caution collapse="true"}
 ## Extra-detailed overview
@@ -62,16 +60,18 @@ The `_quarto.yml` file is especially important, as it contains the metadata and 
 .
 ├── .git/ - If present, contains the raw git history
 ├── .github/ - GitHub files, including automations and templates
+    └── scripts - scripts used in github workflows
+    └── workflows - these yml files automatically create Github Actions
 ├── .gitignore - Which files to ignore in git commits
 ├── .markdownlint.json - Markdownlint rules and exceptions
 ├── CITATION.cff - Citation File Format
 ├── CNAME - GitHub Pages domain name
 ├── LICENSE - CC0 information
 ├── README.md - General readme
-├── _components/ - React components for `/`
-├── _extensions/ - Quarto extensions
+├── _footer.yml - Custom website footer
 ├── _quarto.yml - Quarto metadata
 ├── _site/ - If present, the rendered version of the website
+├── _templates/ - ejs templates used for custom listings
 ├── _variables.yml - Quarto variables, available in all .qmd files
 ├── about.qmd - About page
 ├── blog/ - Blog posts, one per .qmd file
@@ -80,20 +80,22 @@ The `_quarto.yml` file is especially important, as it contains the metadata and 
 ├── custom.scss - Custom styling for VU Amsterdam
 ├── editors-guide.qmd - Editor guide page
 ├── guides/ - Individual guides, one per `.qmd` file
-├── guides.qmd - General guides page
+├── guides.qmd - Guides overview page
 ├── index.qmd - Homepage `/`
-├── manuals/ - Folder containing all manuals and subpages
-├── manuals.qmd - Manual overview page
-├── manuals/<tool>/ - <tool> manuals
-├── manuals/<tool>/index.qmd - Manual start page
-├── manuals/<tool>/_sidebar.yml - Manual sidebar definition
 ├── netlify.toml - Netlify (preview) deployment instructions
 ├── package.json - Netlify plugin information
 ├── public/ - Folder containing public assets such as screenshot images (keep files small)
 ├── references.bib - Reference library for use in the handbook
 ├── technical-details.qmd - Technical details page
 ├── topics/ - Each `.qmd` file is one topic
-├── topics.qmd - Topic overview page
+├── topics.qmd - Topics overview page
+├── tools/ - Folder containing all tool pages and subpages
+├── tools/<tool>/ - <tool> manuals
+├── tools/<tool>/index.qmd - Tool start page
+├── tools/<tool>/_sidebar.yml - Tool sidebar definition
+├── tools.qmd - Tools overview page
+├── trainings.qmd - Overview of RDM trainings
+├── yoda-contact.qmd - Contact page for https://publication.yoda.vu.nl Landin Pages
 └── utils/ - Custom utilities for the website (generally do not touch)
     └── include-files.lua - Utility to shift headings from included files
     └── linktarget.lua - Utility to open external links in a new tab
@@ -198,4 +200,51 @@ You can disable specific rules in a document in several ways:
 }
 ```
 
+:::{.callout-tip}
+A better way to include HTML is to explicitly declare it in the `.qmd`-file:
+
+```markdown
+    ```{=html}
+    <div>
+        Some HTML content
+    </div>
+    ```
+```
+
+:::
+
 Please edit the existing [`.markdownlint.json` file](./markdownlint.json) in case you want to ignore certain rules project-wide.
+
+## Custom changes
+To avoid unecessary technical maintenance we try to stick as close as possible to the standard functionalities of Quarto. However, a few tweaks were needed to get the desired layout.. 
+
+### Build process
+#### Fixing modified dates
+The pages in the Tools section show a 'last-modified' date, Quarto gets this from the last modified date of the `.qmd` file. The standard build process automatically sets the file date to the date the build process runs. To get a better date the [build process](https://github.com/ubvu/open-handbook/blob/main/.github/workflows/publish.yml) uses an extra `fix-timestamps` [script](https://github.com/ubvu/open-handbook/blob/main/.github/scripts/fix-timestamps) that sets the file date to the last commit date. 
+
+The same script is included in the [Netlify preview build](https://github.com/ubvu/open-handbook/blob/main/netlify.toml). 
+
+#### Opening external websites in a new tab
+The Quarto [standard method](https://quarto.org/docs/output-formats/html-basics.html#external-links) of making external links open in a new tab does not play well with the preview builds. A [simpler script](https://github.com/ubvu/open-handbook/blob/main/utils/linktarget.lua) is used to achieve the same thing. All links in the `.qmd`-files starring with `https:` get the attribute `_blank`. 
+
+### Layout
+Note that [Bootstrap](https://getbootstrap.com/) is included in Quarto by Default. It provides a rich set of tools to create a responsive layout by using specific class names and styling set in `./custom.scss`. 
+
+Refer to the [documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/) to see how this works.
+
+#### Custom listings
+The `./topics.qmd`, `./guides.qmd` and `./tools.qmd` files use a [Custom Listing](https://quarto.org/docs/websites/website-listings-custom.html) template for the page listing. You can find these in the `./_templates` folder. [Bootstrap Accordion](https://getbootstrap.com/docs/5.3/components/accordion/) is used for the layout.
+
+#### Custom footer
+Unfortunately Quarto does not provide a way to use templates for other parts of the website layout. See [this discussion](https://github.com/orgs/quarto-dev/discussions/6552). To create the footer a piece of HTML code is used which "abuses" the standard quarto layout to create the desired look, together with styling in `./custom.scss`. You can find it in `./_footer.yml` which is included in `./_quarto.yml`.
+
+#### Custom header
+The navbar in the header is completely styled by the `./custom.scss`. Note that the menu items do not have a unique id, we rely on the `nth-child(n)` selector to give them their specific color, e.g.:
+
+```css
+.navbar .nav-item:nth-child(2) {
+    background-color: $guides-color;
+}
+```
+
+This will of course break if a menu item is added or the order is changed.
