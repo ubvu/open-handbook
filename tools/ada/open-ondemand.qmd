@@ -60,7 +60,7 @@ Also see the apptainer quick start: [https://apptainer.org/docs/user/main/quick_
 User app development is enabled. You can create and publish your own interactive apps for your projects.
 
 - Follow the official guide: https://osc.github.io/ood-documentation/latest/
-- For inspiration, inspect the definitions of the system apps installed on ADA. These are located on the `inter04` node under `/var/www/ood/apps/sys/` path (`jupyter` and `rstudio_server` folders).
+- For inspiration, inspect the definitions of the system apps installed on ADA. These are located on the `inter03` node under `/var/www/ood/apps/sys/` path (`jupyter` and `rstudio_server` folders).
 
 
 ::: {.callout-warning title="No app requests"}
