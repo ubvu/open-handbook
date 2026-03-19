@@ -4,15 +4,29 @@ toc: false
 
 # About
 
-The Open Handbook is a project started by Research Data Support in early 2024. After planning and design phases, we launched the initial version of the resource at the Research Support Days in May 2024.
+The {{< var title >}} is a project started by the VU Network Research Data Support (NeRDS) in early 2024. After planning and design phases, we launched the initial version of the resource at the Research Support Days in May 2024.
 
-The Open Handbook centralizes resources that VU researchers need to do their work. The Open Handbook also provides everyone with direct guides to change resources in case anything has become outdated.
+The {{< var title >}} centralises resources that VU researchers need to do their work. The {{< var title >}} also provides everyone with direct guides to change resources in case anything has become outdated.
 
-Previously such resources were spread out across many different pages at VU and were hard to update. The Open Handbook is curated by us all, and reviewed by specialists. This way we can help each other.
+Previously such resources were spread out across many different pages at VU Amsterdam and were hard to update. The {{< var title >}} is curated by us all, and reviewed by specialists. This way we can help each other.
+
+## Design
+
+The initial infrastructure for the {{< var title >}} was built by [Liberate Science](https://www.libscie.org/), in collaboration with the VU Network Research Data Support (NeRDS). Early 2026, the website was redesigned by [IM Studio](https://im-studio.eu/). The new design entailed a restructured homepage and introduced new colours, icons for topics, guides, tools and for prominent pages like calendar, trainings and questions.
+
+## Editors
+
+The {{< var title >}} is maintained by a group of editors. Editors tie together all the strings in this VU Amsterdam community handbook. We keep a bird's eye view to ensure that what you read makes sense. Editors also help ensure the style and quality of the different pages are similar. They aim to keep the content relevant to the entirety of VU Amsterdam as well (faculty-specific information is not within scope). We welcome new editors at any time.
+
+More information for and about editors is available in the [editor's guide](./editors-guide.qmd). This includes the quality standards we apply to the {{< var title >}} and our GitHub etiquette.
+
+## Technical details
+
+This handbook is created with a variety of technical resources. The main component for building the handbook is [Quarto](https://quarto.org/), a scientific and technical publishing system. The [technical details page](./technical-details.qmd) provides more information about what technical resources are used to build this website. 
 
 ## Contributors
 
-The Open Handbook was initiated by Lena Karvovskaya, Jessica Hrudey, Elisa, and Jolien Scholten. The initial infrastructure for the Open Handbook was built by Liberate Science. Guide images are by @bres_2024_11147887.
+The Open Handbook was initiated by Lena Karvovskaya, Jessica Hrudey, Elisa Rodenburg, and Jolien Scholten.
 
 We want to specifically call out the following folk who contributed outside of GitHub:
 
@@ -42,7 +56,7 @@ We want to specifically call out the following folk who contributed outside of G
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 
-All contributions to this project are gratefully acknowledged using the [`allcontributors` package](https://github.com/ropensci/allcontributors) following the [all-contributors](https://allcontributors.org) specification. Contributions of any kind are welcome!
+All contributions to this project are gratefully acknowledged using the [`allcontributors` package](https://github.com/ropensci/allcontributors) following the [all-contributors](https://allcontributors.org) specification. Contributions of any kind are welcome! If you want to contribute to the {{< var title >}}, please read the [Contributing guide](./contributing.qmd) first to see how you can do a suggestion for a change or for new content.
 
 <table>
 
