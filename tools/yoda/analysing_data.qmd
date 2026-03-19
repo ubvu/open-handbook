@@ -78,6 +78,8 @@ There are several ways in which you can download and upload the files:
 
 - Treat the downloaded files as a temporary working copy and make sure to remove them whenever they are not needed anymore. In this way, you make sure the version of the file on Yoda is the ‘ground truth’ version of your data and prevents the creation of copies of copies that might go out of sync. Automate the downloading of files, removal of temporary copies, and uploading of output as much as possible. This improves the reproducibility of results and reduces the potential of human error.
 
+- [Rclone](https://rclone.org/commands/rclone_sync/), [iCommands](https://docs.irods.org/4.3.4/icommands/user/#irsync), [Gocommands](https://github.com/cyverse/gocommands/blob/main/docs/commands/sync.md) and [iBridges](https://ibridges.readthedocs.io/en/v1.0.0/sync.html) all have the option to sync a folder on your PC with Yoda. Since only changed files will be transferred this is quicker and you will be able to restart transfers when they get interrupted.
+
 - Use iBridges or iCommands to (automatically) add file-level metadata to your files on Yoda when you upload them (e.g. file version, experimental condition, etc.). This way, you can keep your project organised. Note that metadata to describe the to-be-archived data package as a whole should be added via the web portal.
 
 - If you consistently work with large datasets on campus, e.g. on your PC, SciCloud or Ada, consider storing data you are actively working with on [SciStor](/tools/scistor/index.qmd). You can store the bulk of your source data in Yoda to keep costs down and upload your results to Yoda to organize, share with external collaborators, archive and publish. 
