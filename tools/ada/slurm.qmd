@@ -26,7 +26,7 @@ A typical SLURM batch script that requests resources and runs a Python program m
 #SBATCH --output=logs/%x-%j.out
 #SBATCH --error=logs/%x-%j.err
 
-# Always use your scratch space:
+# Use the job-local temporary directory (/tmp on ADA):
 cd $TMPDIR
 
 echo "== Starting run at $(date)"
@@ -44,7 +44,7 @@ python myscript.py --input data/input.csv --out results/out.csv
 - `--time` – wall-clock limit for the job.
 - `--partition` – the queue to target (use your department partition where possible).
 - `--cpus-per-task` – threads your program uses.
-- `--mem` (or `--mem-per-cpu`) – memory request appropriate for your workload. If not set, might get killed for exceeding default memory limits.
+- `--mem` (or `--mem-per-cpu`) – memory request appropriate for your workload. On ADA, memory is scheduled explicitly, so request it deliberately.
 :::
 
 Other options are also useful:
@@ -112,7 +112,7 @@ That prints a live view of partitions, nodes, CPU/MEM, GPU models, and features 
 For quick debugging on compute nodes, request an interactive shell via SLURM:
 
 ```sh
-srun --pty --partition=<partition> --time=01:00:00 --cpus-per-task=2 bash
+srun --pty --partition=<partition> --time=01:00:00 --cpus-per-task=2 --mem=4G bash
 ```
 
 Use this for short tests only. For heavier interactive development and remote editors, use ADA’s dedicated interactive nodes (`inter01`–`inter04`) as described in the Quick Start.
@@ -137,7 +137,7 @@ See the SLURM docs for [job arrays](https://slurm.schedmd.com/job_array.html) an
 
 ## Storage and I/O Tips
 
-Keep `$HOME` for configuration and small files; use `/scratch/<VUNETID>/` for working data on the nodes themselves. 
+Keep `$HOME` for configuration and small files; use `$TMPDIR` for temporary working data and I/O-heavy computation on compute nodes. On ADA, `$TMPDIR` is backed by `/tmp`, which is local disk space on the node. This is usually faster than `$HOME` on `/home`, which is NFS-mounted. `$TMPDIR` is private per user and cleaned automatically after jobs finish.
 
 ## Quick Reference
 
@@ -145,4 +145,4 @@ Keep `$HOME` for configuration and small files; use `/scratch/<VUNETID>/` for wo
 - Queue: `squeue -u $USER`
 - Account: `sacct -j <jobid> --format=JobID,State,Elapsed,MaxRSS,CPUTime`
 - Cancel: `scancel <jobid>` (or all: `scancel -u $USER`)
-- Interactive: `srun --pty --partition=<p> --time=01:00:00 bash`
+- Interactive: `srun --pty --partition=<p> --time=01:00:00 --mem=4G bash`

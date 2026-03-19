@@ -1,0 +1,22 @@
+---
+title: HPC Updates
+date: last-modified
+---
+
+This page tracks user-facing ADA platform updates. For stable usage instructions, see [Quick Start](./quick_start.qmd), [Slurm](./slurm.qmd), and [Open OnDemand](./open-ondemand.qmd).
+
+## March 27, 2026
+
+::: {.callout-note title="March 27, 2026 update"}
+- **SLURM memory**: memory is now scheduled explicitly. Request `--mem` or `--mem-per-cpu` in your jobs and interactive sessions.
+- **Partitions**: SLURM partitions are being updated and new partitions are being introduced. Older scripts may need a different `--partition`. Check the current layout with `/ada-software/ada-info.sh`.
+- **Open OnDemand**: Open OnDemand is now officially supported. Open OnDemand jobs also have specific limits on jobs, CPU, memory, and walltime through the `ood` QOS. See [Open OnDemand](./open-ondemand.qmd).
+- **Temporary working directory**: `$TMPDIR` now points to `/tmp`, local disk space on the node. Use it for temporary data and I/O-heavy computation instead of `/home`, which is NFS-mounted and slower. `$TMPDIR` is private per user and cleaned up automatically after jobs finish.
+- **First login**: the bug where new users did not get the password change prompt has been fixed.
+:::
+
+## Before Your Next Job
+
+- Add an explicit memory request to older job scripts if needed.
+- Check that your scripts still use the right partition.
+- Use `$TMPDIR` for temporary files and active computation, then copy important output back to persistent storage.
