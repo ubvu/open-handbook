@@ -13,6 +13,7 @@ This page tracks user-facing ADA platform updates. For stable usage instructions
 - **Open OnDemand**: Open OnDemand is now officially supported. Open OnDemand jobs also have specific limits on jobs, CPU, memory, and walltime through the `ood` QOS. See [Open OnDemand](./open-ondemand.qmd).
 - **Temporary working directory**: `$TMPDIR` now points to `/tmp`, local disk space on the node. Use it for temporary data and I/O-heavy computation instead of `/home`, which is NFS-mounted and slower. `$TMPDIR` is private per user and cleaned up automatically after jobs finish.
 - **First login**: the bug where new users did not get the password change prompt has been fixed.
+- **Kernel & CUDA updates**: RHEL 5.14.0-611.30.1.el9_7.x86_64 with CUDA 13.1 (driver 590.48.01)
 :::
 
 ### Before Submitting Your Next Job Script
