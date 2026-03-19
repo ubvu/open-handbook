@@ -42,3 +42,6 @@ You should now have a new Yoda location in Finder. Its name is the network addre
 ## Using Rclone
 
 Rclone is a command-line program to manage files on cloud storage. It is a feature-rich alternative to cloud vendors’ web storage interfaces. Over 40 cloud storage products support rclone including S3 object stores, business & consumer file storage services, as well as standard transfer protocols. You can find more instructions for using rclone on the [dedicated page](/tools/yoda/yoda_using_rclone.qmd).
+
+## Using iRODS command-line tools
+Since Yoda is based on iRODS technology, it is possible to transfer data to and from Yoda using the iRODS communication protocol. This protocol can be used to transfer large amounts of data in an efficient way. The standard iCommands cannot be installed in MacOS, but [Gocommands](yoda_using_gocommands.qmd) offers an alternative.

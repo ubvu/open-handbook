@@ -92,5 +92,5 @@ To manually mount the Yoda WebDAV interface:
 ## Using rclone
 As an alternative you could use [rclone](./yoda_using_rclone.qmd), it offers some useful functionalities to transfer larger ammounts of files via the WebDAV protocol.
 
-## Using irods command-line tools
-Since Yoda is based on iRODS technology, it is possible to transfer data to and from Yoda using the iRODS communication protocol. This protocol can be used to transfer large amounts of data in an efficient way. [Command-line tools](./yoda_using_icommands.qmd) are available for Linux.
+## Using iRODS command-line tools
+Since Yoda is based on iRODS technology, it is possible to transfer data to and from Yoda using the iRODS communication protocol. This protocol can be used to transfer large amounts of data in an efficient way. The command-line tools [iCommands](./yoda_using_icommands.qmd) and [gocommands](yoda_using_gocommands.qmd) are available for Linux.
