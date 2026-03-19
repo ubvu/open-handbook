@@ -20,6 +20,15 @@ This will download the gocmd executable to your current working directory.
 
 Check the [Readme](https://github.com/cyverse/gocommands?tab=readme-ov-file#download-pre-built-binary) for instructions on other platforms.
 
+:::{.callout-warning}
+The current 0.11.x version of Gocommands is not compatible with Yoda 2.0. Please use the [0.10.26](https://github.com/cyverse/gocommands/releases/tag/v0.10.26) version for now. 
+
+Download and zip it manually or adjust the command like this:
+```cmd
+curl -L -s -o gocmd.zip https://github.com/cyverse/gocommands/releases/download/0.10.26/gocmd-0.10.26-windows-amd64.zip && tar zxvf gocmd.zip && del gocmd.zip
+```
+:::
+
 ## Configuring the Gocommands
 Before you can start using the Gocommands, you need to set up your environment to connect to Yoda by creating an `irods_environment.json` file. If you already have an `irods_environment.json` file there is no extra configuring to be done, and you can start using commands with the GoCommands immediately.  
 
