@@ -1,0 +1,80 @@
+---
+title: Using Gocommands
+categories: []
+description: "This page explains how to install the iRODS goommands on Linux, Mac or Windows"
+---
+
+Since Yoda is based on [iRODS technology](https://irods.org), it is possible to transfer data to and from Yoda using the iRODS communication protocol. This protocol can be used to transfer large amounts of data in an efficient way. Gocommands is an alternative to the standard [irods iCommands](yoda_using_icommands.qmd) if your OS is not supported. Gocommands runs on Windows, MacOS, and Linux.
+
+We suggest to only use Gocommands if you are comfortable with command-line tools.
+
+## Installing GoCommands
+You first need to download the gocmd file external link to be able to run the Gocommands from the commandline. You must check what your operating system is and what processor you have. For example, this is the command to download the gocmd executable for Windows with an amd64 processor using Windows Command Prompt:
+
+```cmd
+curl -L -s -o gocmdv.txt https://raw.githubusercontent.com/cyverse/gocommands/main/VERSION.txt && set /p GOCMD_VER=<gocmdv.txt
+curl -L -s -o gocmd.zip https://github.com/cyverse/gocommands/releases/download/%GOCMD_VER%/gocmd-%GOCMD_VER%-windows-amd64.zip && tar zxvf gocmd.zip && del gocmd.zip gocmdv.txt
+```
+
+This will download the gocmd executable to your current working directory.
+
+Check the [Readme](https://github.com/cyverse/gocommands?tab=readme-ov-file#download-pre-built-binary) for instructions on other platforms.
+
+:::{.callout-warning}
+The current 0.11.x version of Gocommands is not compatible with Yoda 2.0. Please use the [0.10.26](https://github.com/cyverse/gocommands/releases/tag/v0.10.26) version for now. 
+
+Download and zip it manually or adjust the command like this:
+```cmd
+curl -L -s -o gocmd.zip https://github.com/cyverse/gocommands/releases/download/0.10.26/gocmd-0.10.26-windows-amd64.zip && tar zxvf gocmd.zip && del gocmd.zip
+```
+:::
+
+## Configuring the Gocommands
+Before you can start using the Gocommands, you need to set up your environment to connect to Yoda by creating an `irods_environment.json` file. If you already have an `irods_environment.json` file there is no extra configuring to be done, and you can start using commands with the GoCommands immediately.  
+
+If you have no `irods_environment.json` file, follow [these instructions](yoda_using_icommands.qmd#environment-file). On windows store it in `%USERPROFILE%\.irods\irods_environment.json`.
+
+## Getting started with the Gocommands
+After downloading and configuring the Gocommands, you can start running commands immediately. Note that the first time the Gocommands are run, it may ask for a password. The password you must use is a [data access password](yoda_dap.qmd).  
+
+A test command to check that the Gocommands have been configured correctly (assuming that you have downloaded the executable in your current directory) is:
+
+```sh
+./gocmd ls
+```
+
+This should list the collections that you have access to on your Yoda instance.
+
+## General use
+There is some general documentation on the Gocommands GitHub external link, along with documentation external link on additional sub commands available to use. The Gocommands executable itself also has in-built information. You can learn about the commands available with the Gocommands by running:
+
+```sh
+./gocmd --help 
+```
+
+And to learn more about a specific command run:
+
+```sh
+./gocmd [name of command] --help
+```
+
+These are the basic commands for navigation and data transfer:
+
+- [gocmd pwd](https://github.com/cyverse/gocommands/blob/main/docs/commands/cd_pwd.md#display-the-current-working-collection) – Show current iRODS directory
+- [gocmd ls](https://github.com/cyverse/gocommands/blob/main/docs/commands/ls.md) – List contents of a directory
+- [gocmd cd](https://github.com/cyverse/gocommands/blob/main/docs/commands/cd_pwd.md#change-the-current-working-collection) – Change directory
+- [gocmd put](https://github.com/cyverse/gocommands/blob/main/docs/commands/put.md) – Upload files to Yoda
+- [gocmd get](https://github.com/cyverse/gocommands/blob/main/docs/commands/get.md) – Download files from Yoda
+
+::: { .callout-tip }
+By default an iRODS session will time-out after an hour and you will need to login again. You can extend the session by starting it with the `gocmd init --ttl <hours>` option, e.g. `gocmd init --ttl 8` will keep the session alive for 8 hours.
+:::
+
+### Copying files 
+Here is an example of how you could copy files from your current directory to iRODS. This would copy the folder “folder” and its contents on your computer to the collection 'research-group' in Yoda:
+
+```sh
+./gocmd sync ./folder i:/vu/home/research-group/ --progress 
+```
+
+This gives an idea of what the process is like. You can learn more about how to use the Gocommands to transfer files in the [syncing section](https://github.com/cyverse/gocommands/blob/main/docs/commands/sync.md). The [section on the sync command](https://github.com/cyverse/gocommands/blob/main/docs/commands/sync.md#sync-data-between-local-and-irods) is especially useful when transferring data to Yoda.

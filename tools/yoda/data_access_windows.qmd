@@ -19,5 +19,10 @@ letter.
 ## Drive letter
 You can use [Windows Explorer](/tools/yoda/yoda_using_windowsexplorer.qmd) to access the Yoda Disk via a drive letter. However, this has restrictions: a maximum file size of 4GB on Windows 11 and 50MB(!) on Windows 10 and a maximum of 1000 files per folder (Windows 10&11). Take care if you expect your dataset to exceed these limitations.
 
-## Command line and Rclone
-If you are familiar with command line tools [rclone](/tools/yoda/yoda_using_rclone.qmd) is also a good option to access the Yoda via Webdav. It also provides the option to use a drive letter.
+## Command-line tools
+### Rclone
+If you are familiar with command-line tools [rclone](/tools/yoda/yoda_using_rclone.qmd) is also a good option to access the Yoda via Webdav. It also provides the option to use a drive letter.
+
+### iRODS protocol
+Since Yoda is based on iRODS technology, it is possible to transfer data to and from Yoda using the iRODS communication protocol. This protocol can be used to transfer large amounts of data in an efficient way. The command-line tools [iCommands](./yoda_using_icommands.qmd) can be installed in [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install) and [gocommands](yoda_using_gocommands.qmd) can be installed directly.
+

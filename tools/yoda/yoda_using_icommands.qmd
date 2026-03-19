@@ -18,9 +18,7 @@ Windows 10/11 users can run the iCommands in [the Windows Subsystem for Linux](h
 There is no officially supported iCommands installation for Mac OSX, you could install the iCommands inside a Linux VM.
 
 ::: { .callout-tip }
-**gocommands** is an alternative command-line client you could try if your OS does not support iCommands. 
-
-The `readme.md` on the [github repository](https://github.com/cyverse/gocommands) has installation instructions. You can find the details of creating the irods environment file [below](#environment-file). Once installed you can execute common iCommands as `gocmd <command>`, e.g. `gocmd init`, `gocmd ls`, `gocmd get`, `gocmd put`, `gocmd rsync`.
+**gocommands** is an alternative command-line client you could try if your OS does not support iCommands. The Handbook [explains](yoda_using_gocommands.qmd) how to install and use it.
 :::
 
 ### Installing iCommands on CentOS
@@ -33,7 +31,7 @@ sudo rpm --import https://packages.irods.org/irods-signing-key.asc
 wget -qO - https://packages.irods.org/renci-irods.yum.repo | sudo tee /etc/yum.repos.d/renci-irods.yum.repo
 ```
 
-- Note that the latest irods version is 5, this client is not compatible with the Yoda irods version.You can list the available versions with:
+- Note that the latest iRODS version is 5, this client is not compatible with the Yoda iRODS version.You can list the available versions with:
 ```sh
 sudo yum --showduplicates list irods-icommands
 ```
@@ -55,14 +53,14 @@ yum versionlock delete irods-runtime irods-icommands
 ### Installing iCommands on Ubuntu
 The following should work to install the iCommands on Ubuntu 22 or 24. 
 
-1. First add the irods package source.
+1. First add the iRODS package source.
 ```sh
 wget -qO - https://packages.irods.org/irods-signing-key.asc | sudo apt-key add -
 echo "deb [arch=amd64] https://packages.irods.org/apt/ $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/renci-irods.list
 sudo apt update
 ```
 
-- Note that the latest irods version is 5, this client is not compatible with the Yoda irods version. You can check which versions are available with:
+- Note that the latest iRODS version is 5, this client is not compatible with the Yoda iRODS version. You can check which versions are available with:
 ```sh
 sudo apt show irods-icommands -a
 ``` 
@@ -133,7 +131,7 @@ These are the basic commands for navigation and data transfer:
 Your Yoda project folders are located under `/vu/home`.
 
 ::: { .callout-tip }
-By default an irods session will time-out after an hour and you will need to login again. You can extend the session by starting it with the `--ttl <hours>` option, e.g. `iinit --ttl 8` will keep the session alive for 8 hours.
+By default an iRODS session will time-out after an hour and you will need to login again. You can extend the session by starting it with the `--ttl <hours>` option, e.g. `iinit --ttl 8` will keep the session alive for 8 hours.
 :::
 
 
