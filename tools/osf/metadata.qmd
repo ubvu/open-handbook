@@ -1,0 +1,53 @@
+---
+title: Metadata Recommendations
+---
+VU Amsterdam has a [minimal metadata guide](https://github.com/vu-rdm-tech/metadata?tab=readme-ov-file) that describes which mandatory, recommended and optional properties VU researchers should use if they publish their data in any repository. These properties and their explanation are given below for OSF. See also the [OSF \| VU OSF Documentation Wiki](https://osf.io/abwzm/wiki/Metadata%20recommendation/).
+
+Properties and their explanation
+
+M Considered mandatory for findability of your dataset and correct
+registration in Pure\
+R Recommended for optimal findability\
+O Optional
+
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **Property**       **Obligation**   **Explanation**       **Remarks**
+  ------------------ ---------------- --------------------- ----------------------------------------------------------------------------------------------------------
+  DOI                R                                      [OSF Guide](https://help.osf.io/hc/en-us/articles/360019931013-Create-DOIs)\
+                                                            If you want to be able to cite your project it is best to create a DOI for it.
+
+  Title              M                A descriptive title 
+                                      for your dataset,     
+                                      should not be longer  
+                                      than about 200        
+                                      characters          
+
+  Contributors       M                The main              [OSF
+                                      researchers involved  Guide](https://help.osf.io/hc/en-us/articles/360019930193-Add-Contributors-to-Projects-and-Components).\
+                                      in producing the      Make sure to check \"Bibliographic Contributor\". You can adjust the order of the contributors.\
+                                      data, in priority     Please ask Contributors to fill in their employment status in their user profile to set their affiliation.
+                                      order.                Users logging in with their VUnetID will automatically be affiliated with the VU.\
+                                                            Adding ORCID or other researcher identifiers to contributor profiles is also highly recommended.
+
+  Tags               M                Provide a list of     [OSF Guide](https://help.osf.io/hc/en-us/articles/360019738974-Tag-Your-Project)
+                                      keywords describing   
+                                      your dataset. This    
+                                      will make it easier   
+                                      to find your dataset  
+                                      on the internet.\     
+                                      Some repositories     
+                                      will have controlled  
+                                      term lists to choose  
+                                      from.               
+
+  Category           M                Choose the most     
+                                      appropriate category  
+                                      for your project    
+
+  License            M                Choose the most       [OSF Guide](https://help.osf.io/hc/en-us/articles/360019737854-License-Your-Project)\
+                                      appropriate license   For most content and data \"CC-By 4.0 International\" is a good choice, but especially in the case of code
+                                      for your project.     you might look into a more appropriate license.
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Based on [VU minimal metadata guidelines](https://github.com/vu-rdm-tech/metadata/blob/main/minimal_metadata_guide.md) version rc2 2022-07-20
+
