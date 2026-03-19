@@ -1,0 +1,17 @@
+---
+title: Connecting Storage and Apps
+---
+
+OSF allows you to connect to other storage platforms and services via Add-ons, see the [OSF Add-ons and integrations Guide](https://help.osf.io/article/395-storage-add-ons) for more information. Storage Add-ons are particularly well suited for data sharing in a project. However, please consider the following when adding them to your project: 
+
+* what data (folders) is being shared; 
+* who this resource is being shared with and; 
+* who manages the Add-on (e.g. how long will it be available).
+
+Recommended connected storage options are [Research Drive](https://services.vu.nl/esc?id=sc_cat_item&sys_id=39d345f097066990e553359fe153af01) ([how-to guide](https://osf.io/4ewgx/)) and [SURFdrive](https://services.vu.nl/esc?id=emp_taxonomy_topic&topic_id=fb4eda9f978f09d0e553359fe153afa5) ([how-to guide](https://osf.io/e9a5v/)). The VU discourages using Dropbox and Google Drive for storing research data.
+
+For projects with a Code component creating connections to GitHub repos is a good idea, see the [OSF Guide](https://help.osf.io/hc/en-us/articles/360019929813-Connect-GitHub-to-a-Project). If you just want to publish a GitHub repo itself consider using Zenodo, see [this guide](https://guides.github.com/activities/citable-code/).
+
+You can also connect a dataset in [DataverseNL](/tools/dataversenl/index.qmd) to your project, so published datasets can be viewed in OSF. You can even upload to and delete files from datasets in Draft ([how-to guide](https://osf.io/w2sme/)).
+
+Remember, everyone who has access to your project will be able to see the files in the storage folder you connect, even if you have not explicitly shared the files on the source location!

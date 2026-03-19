@@ -1,0 +1,15 @@
+---
+title: Working with Sensitive Data
+---
+
+Actively choose \"Germany - Frankfurt\" in the account settings as default storage location when you start a new project. Your research data will be stored in the EU jurisdiction.
+
+Multi-Factor Authentication (MFA) via de SURFsecureID (with the tiqr app or a YubiKey) is enabled for all users who log in with VUnetID credentials for improved security and protection of your research data.
+
+OSF has implemented several measures (e.g. OSF storage encryption, regular backups, Standard Contractual Clauses) to increase security of your stored research data as well as guarantee GDPR compliance.
+
+The OSF is developed to facilitate Open Science and sharing of digital research objects. Medium-level sensitive data (e.g. research data that score 'medium' at confidentiality in a [data classification](/topics/data-classification.qmd), research proposals) can be stored, provided it is available only to a specific group of users. VU Amsterdam does not recommend you to store privacy-sensitive data in OSF. For this type of data, please use a more suitable platform such as [Research Drive](/tools/researchdrive/index.qmd) or [Yoda](/tools/yoda/index.qmd). If there is no other suitable way to share a file with privacy-sensitive data, make sure you encrypt the file(s) before you upload them to the OSF. A good way to do this is by adding the files to a password-protected zip file ([how-to guide](https://osf.io/fn9tx/)). Storing data that score 'high' or 'very high' on confidentiality in a [data classification](/topics/data-classification.qmd) (e.g. directly identifying information, all [special category personal data](https://www.autoriteitpersoonsgegevens.nl/themas/basis-avg/privacy-en-persoonsgegevens/wat-zijn-persoonsgegevens), classified information, data about vulnerable people, key files) is prohibited. Please contact the [RDM Support Desk](mailto:rdm@vu.nl).
+
+In case of a security incident or data leak, the [data breach response plan](https://help.osf.io/hc/en-us/articles/1500011430761-COS-Data-Breach-Response-Plan) is available. Please report possible incidents at [OSF Support](mailto:support@osf.io) and always at the VU IT Servicedesk via [email](mailto:servicedesk@vu.nl) or phone: 020 598 0000.
+
+More information on the OSF security policy and implemented measures can be found on [OSF Guide](https://help.osf.io/hc/en-us/articles/360019930993-FAQs-Security).
