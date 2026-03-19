@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-02-23">
+<meta name="dcterms.date" content="2026-03-19">
 <meta name="description" content="This page explains how to run analysis software on your data in Yoda.">
 
 <title>Analysing Data – Research Support Handbook</title>
@@ -458,7 +458,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">last modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 23, 2026</p>
+      <p class="date">March 19, 2026</p>
     </div>
   </div>
   
@@ -581,6 +581,7 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li><p>Make sure you have a good internet connection when you download (large) files to your PC and when you upload your results to Yoda. Regardless of the method you choose, this will be the biggest determinant of download speed. On HPC and VRE systems, the connections should be ok.</p></li>
 <li><p>Treat the downloaded files as a temporary working copy and make sure to remove them whenever they are not needed anymore. In this way, you make sure the version of the file on Yoda is the ‘ground truth’ version of your data and prevents the creation of copies of copies that might go out of sync. Automate the downloading of files, removal of temporary copies, and uploading of output as much as possible. This improves the reproducibility of results and reduces the potential of human error.</p></li>
+<li><p><a href="https://rclone.org/commands/rclone_sync/" target="_blank">Rclone</a>, <a href="https://docs.irods.org/4.3.4/icommands/user/#irsync" target="_blank">iCommands</a>, <a href="https://github.com/cyverse/gocommands/blob/main/docs/commands/sync.md" target="_blank">Gocommands</a> and <a href="https://ibridges.readthedocs.io/en/v1.0.0/sync.html" target="_blank">iBridges</a> all have the option to sync a folder on your PC with Yoda. Since only changed files will be transferred this is quicker and you will be able to restart transfers when they get interrupted.</p></li>
 <li><p>Use iBridges or iCommands to (automatically) add file-level metadata to your files on Yoda when you upload them (e.g.&nbsp;file version, experimental condition, etc.). This way, you can keep your project organised. Note that metadata to describe the to-be-archived data package as a whole should be added via the web portal.</p></li>
 <li><p>If you consistently work with large datasets on campus, e.g.&nbsp;on your PC, SciCloud or Ada, consider storing data you are actively working with on <a href="../../tools/scistor/index.html">SciStor</a>. You can store the bulk of your source data in Yoda to keep costs down and upload your results to Yoda to organize, share with external collaborators, archive and publish.</p></li>
 </ul>
