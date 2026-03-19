@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-02-23">
+<meta name="dcterms.date" content="2026-03-19">
 <meta name="description" content="This page explains how to install the iRODS iCommands on a Linux OS (native and using WSL2 on Windows).">
 
 <title>Using iCommands – Research Support Handbook</title>
@@ -67,7 +67,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../tools/yoda/yoda_using_python.html" rel="next">
+<link href="../../tools/yoda/yoda_using_gocommands.html" rel="next">
 <link href="../../tools/yoda/yoda_using_cyberduck_cryptometer.html" rel="prev">
 <link href="../../public/favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
@@ -420,6 +420,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../tools/yoda/yoda_using_gocommands.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Using Gocommands</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../tools/yoda/yoda_using_python.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Using Python</span></a>
   </div>
@@ -490,7 +496,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">last modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 23, 2026</p>
+      <p class="date">March 19, 2026</p>
     </div>
   </div>
   
@@ -518,8 +524,7 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>gocommands</strong> is an alternative command-line client you could try if your OS does not support iCommands.</p>
-<p>The <code>readme.md</code> on the <a href="https://github.com/cyverse/gocommands" target="_blank">github repository</a> has installation instructions. You can find the details of creating the irods environment file <a href="#environment-file">below</a>. Once installed you can execute common iCommands as <code>gocmd &lt;command&gt;</code>, e.g.&nbsp;<code>gocmd init</code>, <code>gocmd ls</code>, <code>gocmd get</code>, <code>gocmd put</code>, <code>gocmd rsync</code>.</p>
+<p><strong>gocommands</strong> is an alternative command-line client you could try if your OS does not support iCommands. The Handbook <a href="../../tools/yoda/yoda_using_gocommands.html">explains</a> how to install and use it.</p>
 </div>
 </div>
 <section id="installing-icommands-on-centos" class="level3">
@@ -532,7 +537,7 @@ Tip
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> rpm <span class="at">--import</span> https://packages.irods.org/irods-signing-key.asc</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> <span class="at">-qO</span> <span class="at">-</span> https://packages.irods.org/renci-irods.yum.repo <span class="kw">|</span> <span class="fu">sudo</span> tee /etc/yum.repos.d/renci-irods.yum.repo</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
-<li>Note that the latest irods version is 5, this client is not compatible with the Yoda irods version.You can list the available versions with:</li>
+<li>Note that the latest iRODS version is 5, this client is not compatible with the Yoda iRODS version.You can list the available versions with:</li>
 </ul>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> yum <span class="at">--showduplicates</span> list irods-icommands</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ol start="2" type="1">
@@ -552,13 +557,13 @@ Tip
 <h3 class="anchored" data-anchor-id="installing-icommands-on-ubuntu">Installing iCommands on Ubuntu</h3>
 <p>The following should work to install the iCommands on Ubuntu 22 or 24.</p>
 <ol type="1">
-<li>First add the irods package source.</li>
+<li>First add the iRODS package source.</li>
 </ol>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> <span class="at">-qO</span> <span class="at">-</span> https://packages.irods.org/irods-signing-key.asc <span class="kw">|</span> <span class="fu">sudo</span> apt-key add <span class="at">-</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"deb [arch=amd64] https://packages.irods.org/apt/ </span><span class="va">$(</span><span class="ex">lsb_release</span> <span class="at">-sc</span><span class="va">)</span><span class="st"> main"</span> <span class="kw">|</span> <span class="fu">sudo</span> tee /etc/apt/sources.list.d/renci-irods.list</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt update</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
-<li>Note that the latest irods version is 5, this client is not compatible with the Yoda irods version. You can check which versions are available with:</li>
+<li>Note that the latest iRODS version is 5, this client is not compatible with the Yoda iRODS version. You can check which versions are available with:</li>
 </ul>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt show irods-icommands <span class="at">-a</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ol start="2" type="1">
@@ -634,7 +639,7 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>By default an irods session will time-out after an hour and you will need to login again. You can extend the session by starting it with the <code>--ttl &lt;hours&gt;</code> option, e.g.&nbsp;<code>iinit --ttl 8</code> will keep the session alive for 8 hours.</p>
+<p>By default an iRODS session will time-out after an hour and you will need to login again. You can extend the session by starting it with the <code>--ttl &lt;hours&gt;</code> option, e.g.&nbsp;<code>iinit --ttl 8</code> will keep the session alive for 8 hours.</p>
 </div>
 </div>
 <p>You can find a quick introduction of the iCommands on the <a href="https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/19824798/Data+handling+in+Yoda+iRODS+using+iCommands#DatahandlinginYoda%2FiRODSusingiCommands-Createcollectionsandnavigate" target="_blank">SURF wiki</a> or you can check out <a href="https://irods.org/uploads/2016/06/irods_beginner_training_2016.pdf" target="_blank">this training manual</a>.</p>
@@ -1051,8 +1056,8 @@ Tip
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../tools/yoda/yoda_using_python.html" class="pagination-link" aria-label="Using Python">
-        <span class="nav-page-text">Using Python</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../tools/yoda/yoda_using_gocommands.html" class="pagination-link" aria-label="Using Gocommands">
+        <span class="nav-page-text">Using Gocommands</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

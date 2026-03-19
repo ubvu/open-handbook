@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-03-04">
+<meta name="dcterms.date" content="2026-03-19">
 
 <title>Data Access on MacOS – Research Support Handbook</title>
 <style>
@@ -384,6 +384,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../tools/yoda/yoda_using_gocommands.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Using Gocommands</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../tools/yoda/yoda_using_python.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Using Python</span></a>
   </div>
@@ -424,6 +430,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#mounting-the-yoda-webdav-in-finder" id="toc-mounting-the-yoda-webdav-in-finder" class="nav-link active" data-scroll-target="#mounting-the-yoda-webdav-in-finder">Mounting the Yoda WebDAV in Finder</a></li>
   <li><a href="#using-rclone" id="toc-using-rclone" class="nav-link" data-scroll-target="#using-rclone">Using Rclone</a></li>
+  <li><a href="#using-irods-command-line-tools" id="toc-using-irods-command-line-tools" class="nav-link" data-scroll-target="#using-irods-command-line-tools">Using iRODS command-line tools</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/yoda/data_access_macos.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -444,7 +451,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">last modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 4, 2026</p>
+      <p class="date">March 19, 2026</p>
     </div>
   </div>
   
@@ -513,6 +520,10 @@ ul.task-list li input[type="checkbox"] {
 <section id="using-rclone" class="level2">
 <h2 class="anchored" data-anchor-id="using-rclone">Using Rclone</h2>
 <p>Rclone is a command-line program to manage files on cloud storage. It is a feature-rich alternative to cloud vendors’ web storage interfaces. Over 40 cloud storage products support rclone including S3 object stores, business &amp; consumer file storage services, as well as standard transfer protocols. You can find more instructions for using rclone on the <a href="../../tools/yoda/yoda_using_rclone.html">dedicated page</a>.</p>
+</section>
+<section id="using-irods-command-line-tools" class="level2">
+<h2 class="anchored" data-anchor-id="using-irods-command-line-tools">Using iRODS command-line tools</h2>
+<p>Since Yoda is based on iRODS technology, it is possible to transfer data to and from Yoda using the iRODS communication protocol. This protocol can be used to transfer large amounts of data in an efficient way. The standard iCommands cannot be installed in MacOS, but <a href="../../tools/yoda/yoda_using_gocommands.html">Gocommands</a> offers an alternative.</p>
 
 
 </section>
