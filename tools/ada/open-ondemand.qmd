@@ -17,6 +17,16 @@ Open OnDemand (OOD) is a browser-based portal for launching interactive sessions
 For every session you must request resources: partition, CPUs, memory, and walltime. The scheduler will start your app when suitable nodes are available.
 :::
 
+::: {.callout-note title="Open OnDemand limits"}
+Open OnDemand jobs run with the `ood` QOS. That QOS applies specific limits to how much memory, CPU, walltime, and how many jobs OOD sessions can use.
+
+Check the current `ood` limits on ADA with:
+
+```sh
+sacctmgr show qos ood format=Name,MaxJobsPU,MaxTRESPU%30,MaxWall
+```
+:::
+
 - Sessions keep running until the requested walltime expires, even if you close the browser tab or switch computers. Reconnect from “My Interactive Sessions”.
 - Please stop sessions when finished to free resources for others.
 
@@ -50,7 +60,7 @@ Also see the apptainer quick start: [https://apptainer.org/docs/user/main/quick_
 User app development is enabled. You can create and publish your own interactive apps for your projects.
 
 - Follow the official guide: https://osc.github.io/ood-documentation/latest/
-- For inspiration, inspect the definitions of the system apps installed on ADA. These are located on the `inter04` node under `/var/www/ood/apps/sys/` path (`jupyter` and `rstudio_server` folders).
+- For inspiration, inspect the definitions of the system apps installed on ADA. These are located on the `inter03` node under `/var/www/ood/apps/sys/` path (`jupyter` and `rstudio_server` folders).
 
 
 ::: {.callout-warning title="No app requests"}
@@ -62,4 +72,3 @@ We do not build or maintain user-specific OOD apps. You are responsible for your
 - Session stuck in “Queued/Pending”: your request doesn’t fit current availability. Try a different partition or smaller CPU/memory/walltime; see [SLURM](slurm.qmd).
 - Session reports errors: open the job output/logs from the session card, and include those when requesting help.
 - Need to reconnect: go to “My Interactive Sessions” and click “Connect”. Sessions persist until walltime.
-

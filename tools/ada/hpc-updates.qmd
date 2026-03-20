@@ -1,0 +1,23 @@
+---
+title: HPC Updates
+date: last-modified
+---
+
+This page tracks user-facing ADA platform updates. For stable usage instructions, see [Quick Start](./quick_start.qmd), [Slurm](./slurm.qmd), and [Open OnDemand](./open-ondemand.qmd).
+
+## March 27, 2026
+
+::: {.callout-note title="March 27, 2026 update"}
+- **SLURM memory**: memory is now scheduled explicitly. Request `--mem` or `--mem-per-cpu` in your jobs and interactive sessions. If you do not mention memory in your sbatch script, you will get allocated a default amount of memory per CPU. 
+- **Partitions**: For the majority of the ADA users, a few partitions will be added. These follow the format `<name>-<type>`. For example, there is a `defq` partition covering all nodes within the current partition, a `defq-fat` partition for high-memory nodes, and a `defq-gpu` partition for GPU nodes. The use of the specific partitions for high-memory and GPU is encouraged through priority allocation. In this way we discourage, for example, users with CPU-only jobs from occupying a GPU node. Check the current layout with `/ada-software/ada-info.sh`.
+- **Open OnDemand**: Open OnDemand is now officially supported. Open OnDemand jobs also have specific limits on jobs, CPU, memory, and walltime through the `ood` QOS. See [Open OnDemand](./open-ondemand.qmd).
+- **Temporary working directory**: `$TMPDIR` now points to `/tmp`, local disk space on the node. Use it for temporary data and I/O-heavy computation instead of `/home`, which is NFS-mounted and slower. `$TMPDIR` is private per user and cleaned up automatically after jobs finish.
+- **First login**: the bug where new users did not get the password change prompt has been fixed.
+- **Software & Kernel & CUDA updates**: RHEL 5.14.0-611.30.1.el9_7.x86_64 with CUDA 13.1 (driver 590.48.01); general software updates.
+:::
+
+### Before Submitting Your Next Job Script
+
+- Add an explicit memory request to older job scripts if needed.
+- Check that your scripts still use the right partition.
+- Use `$TMPDIR` for temporary files and active computation, then copy important output back to persistent storage.
