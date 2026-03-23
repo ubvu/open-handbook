@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-02-17">
+<meta name="dcterms.date" content="2026-03-19">
 
 <title>Open OnDemand – Research Support Handbook</title>
 <style>
@@ -230,6 +230,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Quick Start</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/ada/hpc-updates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HPC Updates</span></a>
+  </div>
+</li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
@@ -384,7 +390,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">last modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 17, 2026</p>
+      <p class="date">March 19, 2026</p>
     </div>
   </div>
   
@@ -420,6 +426,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>For every session you must request resources: partition, CPUs, memory, and walltime. The scheduler will start your app when suitable nodes are available.</p>
 </div>
 </div>
+<div class="callout callout-style-default callout-note callout-titled" title="Open OnDemand limits">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Open OnDemand limits
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Open OnDemand jobs run with the <code>ood</code> QOS. That QOS applies specific limits to how much memory, CPU, walltime, and how many jobs OOD sessions can use.</p>
+<p>Check the current <code>ood</code> limits on ADA with:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">sacctmgr</span> show qos ood format=Name,MaxJobsPU,MaxTRESPU%30,MaxWall</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
 <ul>
 <li>Sessions keep running until the requested walltime expires, even if you close the browser tab or switch computers. Reconnect from “My Interactive Sessions”.</li>
 <li>Please stop sessions when finished to free resources for others.</li>
@@ -446,7 +467,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p>Build the image locally or on ADA (compute nodes) following the Apptainer docs and our container guidance: see <a href="../../tools/ada/software.html#apptainer-containers">Apptainer Containers</a>.</p></li>
 <li><p>In the OOD app form, select the Apptainer image” option and browse to your <code>.sif</code> in your home directory.</p></li>
 <li><p>Test the image on a compute node before using it in OOD:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apptainer</span> exec /path/to/your.sif jupyter-lab <span class="at">--version</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">apptainer</span> exec /path/to/your.sif jupyter-lab <span class="at">--version</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
 </ul>
 <p>Also see the apptainer quick start: <a href="https://apptainer.org/docs/user/main/quick_start.html" target="_blank">https://apptainer.org/docs/user/main/quick_start.html</a></p>
 </section>
@@ -455,7 +476,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>User app development is enabled. You can create and publish your own interactive apps for your projects.</p>
 <ul>
 <li>Follow the official guide: https://osc.github.io/ood-documentation/latest/</li>
-<li>For inspiration, inspect the definitions of the system apps installed on ADA. These are located on the <code>inter04</code> node under <code>/var/www/ood/apps/sys/</code> path (<code>jupyter</code> and <code>rstudio_server</code> folders).</li>
+<li>For inspiration, inspect the definitions of the system apps installed on ADA. These are located on the <code>inter03</code> node under <code>/var/www/ood/apps/sys/</code> path (<code>jupyter</code> and <code>rstudio_server</code> folders).</li>
 </ul>
 <div class="callout callout-style-default callout-warning callout-titled" title="No app requests">
 <div class="callout-header d-flex align-content-center">

@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2026-03-19">
 
-<title>Slurm – Research Support Handbook</title>
+<title>HPC Updates – Research Support Handbook</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -24,41 +24,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -69,8 +34,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../tools/ada/software.html" rel="next">
-<link href="../../tools/ada/login.html" rel="prev">
+<link href="../../tools/ada/login.html" rel="next">
+<link href="../../tools/ada/quick_start.html" rel="prev">
 <link href="../../public/favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -185,7 +150,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tools/ada/index.html">ADA</a></li><li class="breadcrumb-item"><a href="../../tools/ada/login.html">Documentation</a></li><li class="breadcrumb-item"><a href="../../tools/ada/slurm.html">Slurm</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tools/ada/index.html">ADA</a></li><li class="breadcrumb-item"><a href="../../tools/ada/hpc-updates.html">HPC Updates</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -232,7 +197,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tools/ada/hpc-updates.html" class="sidebar-item-text sidebar-link">
+  <a href="../../tools/ada/hpc-updates.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">HPC Updates</span></a>
   </div>
 </li>
@@ -253,7 +218,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tools/ada/slurm.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../tools/ada/slurm.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Slurm</span></a>
   </div>
 </li>
@@ -364,23 +329,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#anatomy-of-a-job-script" id="toc-anatomy-of-a-job-script" class="nav-link active" data-scroll-target="#anatomy-of-a-job-script">Anatomy of a Job Script</a></li>
-  <li><a href="#monitoring-and-control" id="toc-monitoring-and-control" class="nav-link" data-scroll-target="#monitoring-and-control">Monitoring and Control</a></li>
-  <li><a href="#gpus-and-specialized-resources" id="toc-gpus-and-specialized-resources" class="nav-link" data-scroll-target="#gpus-and-specialized-resources">GPUs and Specialized Resources</a></li>
-  <li><a href="#interactive-runs-compute-nodes" id="toc-interactive-runs-compute-nodes" class="nav-link" data-scroll-target="#interactive-runs-compute-nodes">Interactive Runs (compute nodes)</a></li>
-  <li><a href="#arrays-and-dependencies" id="toc-arrays-and-dependencies" class="nav-link" data-scroll-target="#arrays-and-dependencies">Arrays and Dependencies</a></li>
-  <li><a href="#storage-and-io-tips" id="toc-storage-and-io-tips" class="nav-link" data-scroll-target="#storage-and-io-tips">Storage and I/O Tips</a></li>
-  <li><a href="#quick-reference" id="toc-quick-reference" class="nav-link" data-scroll-target="#quick-reference">Quick Reference</a></li>
+  <li><a href="#march-27-2026" id="toc-march-27-2026" class="nav-link active" data-scroll-target="#march-27-2026">March 27, 2026</a>
+  <ul class="collapse">
+  <li><a href="#before-submitting-your-next-job-script" id="toc-before-submitting-your-next-job-script" class="nav-link" data-scroll-target="#before-submitting-your-next-job-script">Before Submitting Your Next Job Script</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/ada/slurm.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/ada/hpc-updates.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 <div class="handbook-title">Research Support Handbook</div>
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tools/ada/index.html">ADA</a></li><li class="breadcrumb-item"><a href="../../tools/ada/login.html">Documentation</a></li><li class="breadcrumb-item"><a href="../../tools/ada/slurm.html">Slurm</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tools/ada/index.html">ADA</a></li><li class="breadcrumb-item"><a href="../../tools/ada/hpc-updates.html">HPC Updates</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Slurm</h1>
+<h1 class="title">HPC Updates</h1>
 </div>
 
 
@@ -403,133 +365,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>SLURM is the heartbeat of ADA. It determines where and when your jobs run, what resources they can use (CPUs, memory, GPUs), and how you interact with those jobs. Mastering a few core commands and script options will unlock most of your workflow.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Read this first">
+<p>This page tracks user-facing ADA platform updates. For stable usage instructions, see <a href="../../tools/ada/quick_start.html">Quick Start</a>, <a href="../../tools/ada/slurm.html">Slurm</a>, and <a href="../../tools/ada/open-ondemand.html">Open OnDemand</a>.</p>
+<section id="march-27-2026" class="level2">
+<h2 class="anchored" data-anchor-id="march-27-2026">March 27, 2026</h2>
+<div class="callout callout-style-default callout-note callout-titled" title="March 27, 2026 update">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Read this first
+<span class="screen-reader-only">Note</span>March 27, 2026 update
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>Carpentries HPC lessons on scheduling: https://carpentries-incubator.github.io/hpc-intro/</li>
-<li>SLURM quick start: https://slurm.schedmd.com/quickstart.html</li>
-<li>sbatch reference: https://slurm.schedmd.com/sbatch.html</li>
-<li>srun reference: https://slurm.schedmd.com/srun.html</li>
+<li><strong>SLURM memory</strong>: memory is now scheduled explicitly. Request <code>--mem</code> or <code>--mem-per-cpu</code> in your jobs and interactive sessions. If you do not mention memory in your sbatch script, you will get allocated a default amount of memory per CPU.</li>
+<li><strong>Partitions</strong>: For the majority of the ADA users, a few partitions will be added. These follow the format <code>&lt;name&gt;-&lt;type&gt;</code>. For example, there is a <code>defq</code> partition covering all nodes within the current partition, a <code>defq-fat</code> partition for high-memory nodes, and a <code>defq-gpu</code> partition for GPU nodes. The use of the specific partitions for high-memory and GPU is encouraged through priority allocation. In this way we discourage, for example, users with CPU-only jobs from occupying a GPU node. Check the current layout with <code>/ada-software/ada-info.sh</code>.</li>
+<li><strong>Open OnDemand</strong>: Open OnDemand is now officially supported. Open OnDemand jobs also have specific limits on jobs, CPU, memory, and walltime through the <code>ood</code> QOS. See <a href="../../tools/ada/open-ondemand.html">Open OnDemand</a>.</li>
+<li><strong>Temporary working directory</strong>: <code>$TMPDIR</code> now points to <code>/tmp</code>, local disk space on the node. Use it for temporary data and I/O-heavy computation instead of <code>/home</code>, which is NFS-mounted and slower. <code>$TMPDIR</code> is private per user and cleaned up automatically after jobs finish.</li>
+<li><strong>First login</strong>: the bug where new users did not get the password change prompt has been fixed.</li>
+<li><strong>Software &amp; Kernel &amp; CUDA updates</strong>: RHEL 5.14.0-611.30.1.el9_7.x86_64 with CUDA 13.1 (driver 590.48.01); general software updates.</li>
 </ul>
 </div>
 </div>
-<section id="anatomy-of-a-job-script" class="level2">
-<h2 class="anchored" data-anchor-id="anatomy-of-a-job-script">Anatomy of a Job Script</h2>
-<p>A typical SLURM batch script that requests resources and runs a Python program might look a bit like this:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --job-name=example</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --time=00:10:00</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --partition=defq</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --cpus-per-task=2</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --mem=4G</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --output=logs/%x-%j.out</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --error=logs/%x-%j.err</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Use the job-local temporary directory (/tmp on ADA):</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> <span class="va">$TMPDIR</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Starting run at </span><span class="va">$(</span><span class="fu">date</span><span class="va">)</span><span class="st">"</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Job ID: </span><span class="va">${SLURM_JOBID}</span><span class="st">"</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Node list: </span><span class="va">${SLURM_NODELIST}</span><span class="st">"</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Submit dir: </span><span class="va">${SLURM_SUBMIT_DIR}</span><span class="st">"</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"== Scratch dir: </span><span class="va">${TMPDIR}</span><span class="st">"</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load 2025</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load Python/3.12.3-GCCcore-13.3.0</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> myscript.py <span class="at">--input</span> data/input.csv <span class="at">--out</span> results/out.csv</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="callout callout-style-default callout-important callout-titled" title="Always include these">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Important</span>Always include these
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<section id="before-submitting-your-next-job-script" class="level3">
+<h3 class="anchored" data-anchor-id="before-submitting-your-next-job-script">Before Submitting Your Next Job Script</h3>
 <ul>
-<li><code>--time</code> – wall-clock limit for the job.</li>
-<li><code>--partition</code> – the queue to target (use your department partition where possible).</li>
-<li><code>--cpus-per-task</code> – threads your program uses.</li>
-<li><code>--mem</code> (or <code>--mem-per-cpu</code>) – memory request appropriate for your workload. On ADA, memory is scheduled explicitly, so request it deliberately.</li>
-</ul>
-</div>
-</div>
-<p>Other options are also useful:</p>
-<ul>
-<li><code>--job-name</code> for easy ID in queues.</li>
-<li><code>--output</code>/<code>--error</code> files for logs; include <code>%j</code> (jobid) to keep them unique.</li>
-</ul>
-<p>Submit the job with:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">sbatch</span> job.sbatch</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="monitoring-and-control" class="level2">
-<h2 class="anchored" data-anchor-id="monitoring-and-control">Monitoring and Control</h2>
-<ul>
-<li><p>View your queued/running jobs:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">squeue</span> <span class="at">-u</span> <span class="va">$USER</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
-<li><p>Inspect finished jobs and usage:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">sacct</span> <span class="at">-j</span> <span class="op">&lt;</span>jobid<span class="op">&gt;</span> --format=JobID,State,Elapsed,MaxRSS,CPUTime</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
-<li><p>Cancel a job or all your jobs:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">scancel</span> <span class="op">&lt;</span>jobid<span class="op">&gt;</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ex">scancel</span> <span class="at">-u</span> <span class="va">$USER</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
-<li><p>Stream logs while a job runs:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span> <span class="at">-f</span> slurm-<span class="op">&lt;</span>jobid<span class="op">&gt;</span>.out</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
-</ul>
-</section>
-<section id="gpus-and-specialized-resources" class="level2">
-<h2 class="anchored" data-anchor-id="gpus-and-specialized-resources">GPUs and Specialized Resources</h2>
-<p>Request GPUs with the Generic RESources (GRES) flag and the appropriate partition:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --gpus=&lt;count&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>or if you want a specific GPU type:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --gres=gpu:&lt;type&gt;:&lt;count&gt;   # e.g. gpu:A30:1</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>If your workflow requires specific hardware features, use constraints:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --constraint=zen2           # exact</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --constraint="zen2|haswell" # any of the listed</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>To see what resources (GPU or otherwise) are available on ADA at any time, use the helper command below. For deeper exploration with SLURM’s native tools, consult the official <code>sinfo</code>/<code>scontrol</code> documentation.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">/ada-software/ada-info.sh</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>That prints a live view of partitions, nodes, CPU/MEM, GPU models, and features to guide your requests.</p>
-</section>
-<section id="interactive-runs-compute-nodes" class="level2">
-<h2 class="anchored" data-anchor-id="interactive-runs-compute-nodes">Interactive Runs (compute nodes)</h2>
-<p>For quick debugging on compute nodes, request an interactive shell via SLURM:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">srun</span> <span class="at">--pty</span> <span class="at">--partition</span><span class="op">=&lt;</span>partition<span class="op">&gt;</span> --time=01:00:00 <span class="at">--cpus-per-task</span><span class="op">=</span>2 <span class="at">--mem</span><span class="op">=</span>4G bash</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Use this for short tests only. For heavier interactive development and remote editors, use ADA’s dedicated interactive nodes (<code>inter01</code>–<code>inter04</code>) as described in the Quick Start.</p>
-</section>
-<section id="arrays-and-dependencies" class="level2">
-<h2 class="anchored" data-anchor-id="arrays-and-dependencies">Arrays and Dependencies</h2>
-<p>Submit many similar tasks efficiently with arrays:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --array=0-99</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> train.py <span class="at">--fold</span> <span class="va">${SLURM_ARRAY_TASK_ID}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Chain jobs so one starts after another completes:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="va">jid1</span><span class="op">=</span><span class="va">$(</span><span class="ex">sbatch</span> step1.sbatch <span class="kw">|</span> <span class="fu">awk</span> <span class="st">'{print $4}'</span><span class="va">)</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="ex">sbatch</span> <span class="at">--dependency</span><span class="op">=</span>afterok:<span class="va">${jid1}</span> step2.sbatch</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>See the SLURM docs for <a href="https://slurm.schedmd.com/job_array.html" target="_blank">job arrays</a> and <a href="https://slurm.schedmd.com/sbatch.html#OPT_dependency" target="_blank">dependencies</a>.</p>
-</section>
-<section id="storage-and-io-tips" class="level2">
-<h2 class="anchored" data-anchor-id="storage-and-io-tips">Storage and I/O Tips</h2>
-<p>Keep <code>$HOME</code> for configuration and small files; use <code>$TMPDIR</code> for temporary working data and I/O-heavy computation on compute nodes. On ADA, <code>$TMPDIR</code> is backed by <code>/tmp</code>, which is local disk space on the node. This is usually faster than <code>$HOME</code> on <code>/home</code>, which is NFS-mounted. <code>$TMPDIR</code> is private per user and cleaned automatically after jobs finish.</p>
-</section>
-<section id="quick-reference" class="level2">
-<h2 class="anchored" data-anchor-id="quick-reference">Quick Reference</h2>
-<ul>
-<li>Submit: <code>sbatch job.sbatch</code></li>
-<li>Queue: <code>squeue -u $USER</code></li>
-<li>Account: <code>sacct -j &lt;jobid&gt; --format=JobID,State,Elapsed,MaxRSS,CPUTime</code></li>
-<li>Cancel: <code>scancel &lt;jobid&gt;</code> (or all: <code>scancel -u $USER</code>)</li>
-<li>Interactive: <code>srun --pty --partition=&lt;p&gt; --time=01:00:00 --mem=4G bash</code></li>
+<li>Add an explicit memory request to older job scripts if needed.</li>
+<li>Check that your scripts still use the right partition.</li>
+<li>Use <code>$TMPDIR</code> for temporary files and active computation, then copy important output back to persistent storage.</li>
 </ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -935,13 +803,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../tools/ada/login.html" class="pagination-link" aria-label="Login">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Login</span>
+      <a href="../../tools/ada/quick_start.html" class="pagination-link" aria-label="Quick Start">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Quick Start</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../tools/ada/software.html" class="pagination-link" aria-label="Software">
-        <span class="nav-page-text">Software</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../tools/ada/login.html" class="pagination-link" aria-label="Login">
+        <span class="nav-page-text">Login</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -990,7 +858,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         </li>
     </ul>
 </div>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/ada/slurm.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/ada/hpc-updates.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

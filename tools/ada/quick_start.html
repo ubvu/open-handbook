@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-02-18">
+<meta name="dcterms.date" content="2026-03-19">
 
 <title>Quick Start – Research Support Handbook</title>
 <style>
@@ -69,7 +69,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../tools/ada/login.html" rel="next">
+<link href="../../tools/ada/hpc-updates.html" rel="next">
 <link href="../../tools/ada/contact_support.html" rel="prev">
 <link href="../../public/favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
@@ -228,6 +228,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <div class="sidebar-item-container"> 
   <a href="../../tools/ada/quick_start.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Quick Start</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/ada/hpc-updates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HPC Updates</span></a>
   </div>
 </li>
           <li class="sidebar-item sidebar-item-section">
@@ -393,7 +399,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">last modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 18, 2026</p>
+      <p class="date">March 19, 2026</p>
     </div>
   </div>
   
@@ -456,25 +462,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="st">#SBATCH --time=00:02:00</span></span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="st">#SBATCH --partition=defq</span></span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="st">#SBATCH --cpus-per-task=1</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="st"># Always use your scratch space:</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="st">cd $TMPDIR</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="st">echo "== Starting run at $(date)"</span></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="st">echo "== Job ID: ${SLURM_JOBID}"</span></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="st">echo "== Node list: ${SLURM_NODELIST}"</span></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="st">echo "== Submit dir: ${SLURM_SUBMIT_DIR}"</span></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="st">echo "== Scratch dir: ${TMPDIR}"</span></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="st">module load 2025</span></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="st">module load Python/3.12.3-GCCcore-13.3.0</span></span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="st">python - &lt;&lt;'PYCODE'</span></span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="st">print("Hello from ADA!")</span></span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="st">PYCODE</span></span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="op">EOF</span></span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="ex">sbatch</span> hello.sbatch</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>where we requested a single CPU and requested to run on the general use <code>defq</code> partition. If you have access to department specific partitions, please use those instead as <code>defq</code> resources are pitifully limited.</p>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="st">#SBATCH --mem=2G</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="st"># Always use the job-local temporary directory:</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="st">cd $TMPDIR</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="st">echo "== Starting run at $(date)"</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="st">echo "== Job ID: ${SLURM_JOBID}"</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="st">echo "== Node list: ${SLURM_NODELIST}"</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="st">echo "== Submit dir: ${SLURM_SUBMIT_DIR}"</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="st">echo "== Scratch dir: ${TMPDIR}"</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="st">module load 2025</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="st">module load Python/3.12.3-GCCcore-13.3.0</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="st">python - &lt;&lt;'PYCODE'</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="st">print("Hello from ADA!")</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="st">PYCODE</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="op">EOF</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="ex">sbatch</span> hello.sbatch</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>where we requested a single CPU, 2 GB of memory, and the general use <code>defq</code> partition. If you have access to department specific partitions, please use those instead as <code>defq</code> resources are pitifully limited.</p>
+<p><code>$TMPDIR</code> points to ADA’s temporary job-local workspace. It is backed by <code>/tmp</code>, which is local disk space on the compute node, private per user, and cleaned up automatically after jobs finish. Use <code>$TMPDIR</code> for temporary data and I/O-heavy computation instead of <code>$HOME</code> on <code>/home</code>, because <code>/home</code> is NFS-mounted and slower than local disk. Copy any results you want to keep back to persistent storage before the job ends.</p>
 <p>You can monitor progress with <code>squeue -u &lt;VUNETID&gt;</code> and inspect the output in <code>slurm-&lt;jobid&gt;.out</code>. More SLURM patterns and best practices are in <a href="../../tools/ada/slurm.html">SLURM essentials</a>.</p>
 </section>
 <section id="track-and-inspect-jobs" class="level3">
@@ -490,7 +498,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="move-data" class="level3">
 <h3 class="anchored" data-anchor-id="move-data">Move Data</h3>
-<p>There are times when you will need to transfer data from your local machine/some server onto ADA. For that, you can use the the same SSH proxy configuration for secure copy <code>scp</code>.</p>
+<p>There are times when you will need to transfer data from your local machine/some server onto ADA. For that, you can use the same SSH proxy configuration for secure copy <code>scp</code>.</p>
 <p>For example, copying a <code>results.txt</code> onto the ADA cluster is:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">scp</span> results.txt ada-login:~/project/</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>And likewise copying files from the cluster onto your local machine is:</p>
@@ -949,8 +957,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../tools/ada/login.html" class="pagination-link" aria-label="Login">
-        <span class="nav-page-text">Login</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../tools/ada/hpc-updates.html" class="pagination-link" aria-label="HPC Updates">
+        <span class="nav-page-text">HPC Updates</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
