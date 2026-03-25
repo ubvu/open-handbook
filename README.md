@@ -13,7 +13,7 @@ This is a community led handbook for all things related to research at VU. The h
 
 > [Guides](https://rdm.vu.nl/guides.html) - a collection of topics in a meaningful order to achieve a goal
 
-> [Tools](https://rdm.vu.nl/tools.html) - basic information and manuals about research tools supported by the VU
+> [Tools](https://rdm.vu.nl/tools.html) - basic information and manuals about research tools supported by VU Amsterdam
 
 All information in the handbook is specific to VU's local context. We are happy to hear if things are (un)helpful and you work at VU Amsterdam.
 
