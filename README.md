@@ -3,29 +3,33 @@
 [![DOI](https://zenodo.org/badge/733455013.svg)](https://doi.org/10.5281/zenodo.16986187)
 
 
-Welcome to the source code for VU Amsterdam Research Support Handbook! If you want to report a problem or suggest a new page, [you can do so using our contribution portal](https://ez-github-contributor.netlify.app/).
+Welcome to the source code for [VU Amsterdam Research Support Handbook](https://rdm.vu.nl)! If you want to report a problem or suggest a new page, check the [Contributing pafe](https://rdm.vu.nl/contributing.html).
 
 ## What is this?
 
-This is a community led handbook for all things related to research at VU. The handbook is split into **topics** and **guides**.
+This is a community led handbook for all things related to research at VU. The handbook is split into **topics**, **guides** and **tools**.
 
-> [Topics](https://ubvu.github.io/open-handbook/topics.html) - self-contained descriptions of specific things relevant to your work at VU Amsterdam.
+> [Topics](https://rdm.vu.nl/topics.html) - self-contained descriptions of specific things relevant to your work at VU Amsterdam.
 
-> [Guides](https://ubvu.github.io/open-handbook/guides.html) - a collection of topics in a meaningful order to achieve a goal
+> [Guides](https://rdm.vu.nl/guides.html) - a collection of topics in a meaningful order to achieve a goal
+
+> [Tools](https://rdm.vu.nl/tools.html) - basic information and manuals about research tools supported by the VU
 
 All information in the handbook is specific to VU's local context. We are happy to hear if things are (un)helpful and you work at VU Amsterdam.
 
-## Blog
+Technical aspects of the Handbook are described on the [Technical Details page](https://rdm.vu.nl/technical-details.html).
 
-The handbook also [has a blog](https://ubvu.github.io/open-handbook/blog.html), which you can [follow on RSS](https://ubvu.github.io/open-handbook/blog.xml). If you'd like to write a blog post, you are more than welcome to share it with us.
+## News
 
-Our requirements for blogs:
+The handbook also [has a news blog](https://ubvu.github.io/open-handbook/blog.html), which you can [follow on RSS](https://rdm.vu.nl/blog.xml). If you'd like to write a blog post, you are more than welcome to share it with us.
+
+Our requirements for News posts:
 
 * It articulates its relevance to VU employees
 * It has a clear message and communicates it effectively
 * It is clear and concise
 
-We will assess blogs on a case by case basis before including them. Please mind that we may not immediately post your blog and submitting one does not entitle you to it being posted.
+We will assess News posts on a case by case basis before including them. Please bear in mind that we may not immediately post your blog and submitting one does not entitle you to it being posted.
 
 ## Contributors
 
