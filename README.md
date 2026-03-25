@@ -3,7 +3,7 @@
 [![DOI](https://zenodo.org/badge/733455013.svg)](https://doi.org/10.5281/zenodo.16986187)
 
 
-Welcome to the source code for [VU Amsterdam Research Support Handbook](https://rdm.vu.nl)! If you want to report a problem or suggest a new page, check the [Contributing pafe](https://rdm.vu.nl/contributing.html).
+Welcome to the source code for [VU Amsterdam Research Support Handbook](https://rdm.vu.nl)! If you want to report a problem or suggest a new page, check the [Contributing page](https://rdm.vu.nl/contributing.html).
 
 ## What is this?
 
@@ -17,11 +17,11 @@ This is a community led handbook for all things related to research at VU. The h
 
 All information in the handbook is specific to VU's local context. We are happy to hear if things are (un)helpful and you work at VU Amsterdam.
 
-Technical aspects of the Handbook are described on the [Technical Details page](https://rdm.vu.nl/technical-details.html).
+The [About page](https://rdm.vu.nl/about.html) contains more background information about the Handbook. Technical aspects are described on the [Technical Details page](https://rdm.vu.nl/technical-details.html).
 
 ## News
 
-The handbook also [has a news blog](https://ubvu.github.io/open-handbook/blog.html), which you can [follow on RSS](https://rdm.vu.nl/blog.xml). If you'd like to write a blog post, you are more than welcome to share it with us.
+The Handbook also [has a news blog](https://rdm.vu.nl/blog.html), which you can [follow on RSS](https://rdm.vu.nl/blog.xml). If you'd like to write a blog post, you are more than welcome to share it with us.
 
 Our requirements for News posts:
 
