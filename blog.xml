@@ -10,7 +10,48 @@
 <atom:link href="https://ubvu.github.io/open-handbook/blog.xml" rel="self" type="application/rss+xml"/>
 <description>A place for all things open research at VU Amsterdam.</description>
 <generator>quarto-1.9.36</generator>
-<lastBuildDate>Thu, 27 Nov 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 19 Mar 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Restructuring and redesign</title>
+  <dc:creator>Jolien Scholten</dc:creator>
+  <dc:creator>Peter Vos</dc:creator>
+  <link>https://ubvu.github.io/open-handbook/blog/2026-03-19tools-redesign.html</link>
+  <description><![CDATA[ 
+<div class="handbook-title">Research Support Handbook</div>
+
+
+
+
+<p>In the past few weeks, we did two major updates in the Research Support Handbook. The tool documentation has been restructured and renamed. The website as a whole has been redesigned.</p>
+<section id="tool-documentation" class="level2">
+<h2 class="anchored" data-anchor-id="tool-documentation">Tool documentation</h2>
+<p>This is what we updated regarding the tool documentation:</p>
+<ul>
+<li>What we previously called ‘Manuals’ is now called <a href="../tools.html">‘Tools’</a>.</li>
+<li>The topic pages about tools (basic information about the tools we provide/support) are moved to the ‘Tools’ section, so that basic information and more elaborate documentation (if available) now sit together.</li>
+<li>As a result of the previous action, the ‘Tools’ category in the topics has disappeared. Note that we created aliases for the URLs, meaning that the old tool topic URLs will refer to the home page of the relevant tool in the Tools section.</li>
+<li>We restructured the basic information that was in the old Topic pages into separate pages to make it easier to navigate: description of the tool, costs and getting access, support and contact, quick start.</li>
+<li>Some tools have an additional documentation section for more elaborate manuals, tips and how-to’s.</li>
+<li>The OSF documentation was moved from Guides to the new Tools section.</li>
+<li>The tools are no longer displayed as tiles on the overview page, but are now presented as a list. They can be filtered by category (type of tool).</li>
+</ul>
+<p>If you’re interested in the specifics of this update, you can read all documentation in <a href="https://github.com/ubvu/open-handbook/issues/717" target="_blank">Issue #717</a>.</p>
+<p><strong>N.B. 1</strong>: If you are working on a fork of the Research Support Handbook, make sure to sync it, so that these changes will be updated in your fork as well. <strong>N.B. 2</strong>: If you refer to documentation about the tools we support (e.g.&nbsp;Yoda, Research Drive, ADA, Qualtrics) from another website (e.g.&nbsp;a faculty page on the VU website), make sure to check your URLs. If you need help with finding a page’s new location on the website, let us know.</p>
+<p>These updates are done in the context of the Tools Documentation Project. We’re aiming to have comprehensive documentation for all research-related tools we provide/support, as much as possible along the same structure, by the end of the year. If you have questions about this project, you can send an email to j2.scholten@vu.nl.</p>
+</section>
+<section id="redesign" class="level2">
+<h2 class="anchored" data-anchor-id="redesign">Redesign</h2>
+<p><a href="https://im-studio.eu/" target="_blank">IM Studio</a> created a new design for the Research Support Handbook and this was implemented by Peter Vos. The new design involves a restructured homepage, new colours for topics, guides and manuals, and icons for prominent pages like calendar, trainings and questions. We have changed the overview pages of topics, guides and tools as well, so that they are presented in the same structure.</p>
+<p>We will do some finetuning in the coming weeks. Let us know if you’re missing something.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>Handbook</category>
+  <guid>https://ubvu.github.io/open-handbook/blog/2026-03-19tools-redesign.html</guid>
+  <pubDate>Thu, 19 Mar 2026 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Seventh Handbook Hackathon</title>
   <dc:creator>Diógenes Cruz de Arcelino</dc:creator>

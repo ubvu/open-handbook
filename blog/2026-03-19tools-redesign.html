@@ -6,9 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-02-17">
+<meta name="author" content="Jolien Scholten">
+<meta name="author" content="Peter Vos">
+<meta name="dcterms.date" content="2026-03-19">
 
-<title>Using Slurm – Research Support Handbook</title>
+<title>Restructuring and redesign – Research Support Handbook</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -24,62 +26,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<link href="../../public/favicon.png" rel="icon" type="image/png">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-1b49d38cdf2649af7ffe2c2dda92f719.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../public/favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-1b49d38cdf2649af7ffe2c2dda92f719.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -117,9 +84,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../public/VU-logo-white.svg" alt="VU Amsterdam logo." class="navbar-logo light-content">
-    <img src="../../public/VU-logo-white.svg" alt="VU Amsterdam logo." class="navbar-logo dark-content">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../public/VU-logo-white.svg" alt="VU Amsterdam logo." class="navbar-logo light-content">
+    <img src="../public/VU-logo-white.svg" alt="VU Amsterdam logo." class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -134,41 +101,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-topics">    
         <li>
-    <a class="dropdown-item" href="../../topics.html">
+    <a class="dropdown-item" href="../topics.html">
  <span class="dropdown-text">All</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../topics.html#category=Policies and Legislation">
+    <a class="dropdown-item" href="../topics.html#category=Policies and Legislation">
  <span class="dropdown-text">Policies and Legislation</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../topics.html#category=Research Data">
+    <a class="dropdown-item" href="../topics.html#category=Research Data">
  <span class="dropdown-text">Research Data</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../topics.html#category=Research Software">
+    <a class="dropdown-item" href="../topics.html#category=Research Software">
  <span class="dropdown-text">Research Software</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../topics.html#category=Responsible Scholarship">
+    <a class="dropdown-item" href="../topics.html#category=Responsible Scholarship">
  <span class="dropdown-text">Responsible Scholarship</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../topics.html#category=Knowledge Items">
+    <a class="dropdown-item" href="../topics.html#category=Knowledge Items">
  <span class="dropdown-text">Knowledge Items</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../guides.html"> 
+    <a class="nav-link" href="../guides.html"> 
 <span class="menu-text">Guides</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../tools.html"> 
+    <a class="nav-link" href="../tools.html"> 
 <span class="menu-text">Tools</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../blog.html"> 
+    <a class="nav-link" href="../blog.html"> 
 <span class="menu-text">News</span></a>
   </li>  
 </ul>
@@ -188,12 +155,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#most-used-commands" id="toc-most-used-commands" class="nav-link active" data-scroll-target="#most-used-commands">Most used commands</a></li>
-  <li><a href="#using-a-hpc-cluster-best-practices" id="toc-using-a-hpc-cluster-best-practices" class="nav-link" data-scroll-target="#using-a-hpc-cluster-best-practices">Using a HPC Cluster: Best practices</a></li>
-  <li><a href="#constraints-flag" id="toc-constraints-flag" class="nav-link" data-scroll-target="#constraints-flag">Constraints flag</a></li>
-  <li><a href="#generic-resources-flag" id="toc-generic-resources-flag" class="nav-link" data-scroll-target="#generic-resources-flag">Generic RESources flag</a></li>
+  <li><a href="#tool-documentation" id="toc-tool-documentation" class="nav-link active" data-scroll-target="#tool-documentation">Tool documentation</a></li>
+  <li><a href="#redesign" id="toc-redesign" class="nav-link" data-scroll-target="#redesign">Redesign</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/ada/4-slurm.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/blog/2026-03-19tools-redesign.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -201,18 +166,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Using Slurm</h1>
-</div>
+<h1 class="title">Restructuring and redesign</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Handbook</div>
+  </div>
+  </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-contents">
+             <p>Jolien Scholten </p>
+             <p>Peter Vos </p>
+          </div>
+  </div>
     
     <div>
-    <div class="quarto-title-meta-heading">last modified</div>
+    <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 17, 2026</p>
+      <p class="date">March 19, 2026</p>
     </div>
   </div>
   
@@ -224,51 +199,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>This page explains the basics of using the Slurm scheduler.</p>
-<p>ADA uses the Slurm scheduler to allocate resources to users. This page explains how to get started with the Slurm scheduler.</p>
-<section id="most-used-commands" class="level2">
-<h2 class="anchored" data-anchor-id="most-used-commands">Most used commands</h2>
-<p>See jobs in the queue for a given user:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">squeue</span> <span class="at">-u</span> <span class="op">&lt;</span>VUNETID<span class="op">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Show available node features:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">sinfo</span> <span class="at">-o</span> <span class="st">"%20N  %10c  %10m  %25f  %10G "</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Submit a job:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">sbatch</span> script</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Show the status of a currently running job:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">sstat</span> <span class="at">-j</span> <span class="op">&lt;</span>jobID<span class="op">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Show the final status of a finished job:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">sacct</span> <span class="at">-j</span> <span class="op">&lt;</span>jobID<span class="op">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Cancel a job:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">scancel</span> <span class="op">&lt;</span>jobID<span class="op">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Cancel all your current jobs:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">scancel</span> <span class="at">-u</span> <span class="op">&lt;</span>VUNETID<span class="op">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="using-a-hpc-cluster-best-practices" class="level2">
-<h2 class="anchored" data-anchor-id="using-a-hpc-cluster-best-practices">Using a HPC Cluster: Best practices</h2>
-<p>Distributing your workload can be done in a lot of different ways. It is good practice to first determine your workflow in a single-threaded fashion (no distribution of compute), and then identify parts that can be distributed over multiple processors at the same time. More extensive tutorials on how to do this will follow soon. The most important points for now to get you started:</p>
+<p>In the past few weeks, we did two major updates in the Research Support Handbook. The tool documentation has been restructured and renamed. The website as a whole has been redesigned.</p>
+<section id="tool-documentation" class="level2">
+<h2 class="anchored" data-anchor-id="tool-documentation">Tool documentation</h2>
+<p>This is what we updated regarding the tool documentation:</p>
 <ul>
-<li>Determine your input, output and temporary data. Use the fast scratch directory ($TMPDIR, also see <a href="../../tools/ada/7-firstjob.html">Basic Slurm Job</a>) on the compute nodes if you handle large datasets or if you have to perform intermediate I/O operations. Be aware that the scratch directory is not persistent, data will be removed from it after the job finishes.</li>
-<li>Always specify the –output and –error flags in your Slurm script for debugging purposes.</li>
-<li>The bigger your allocation requests, the longer you might have to wait to get those resources. Split your jobs in smaller chunks if possible (e.g.&nbsp;by using <a href="https://slurm.schedmd.com/job_array.html" target="_blank">job arrays</a>)</li>
-<li>Check your code on style and execution. Do you clear memory when necessary? Are your I/O operations finished correctly before the end of your script?</li>
+<li>What we previously called ‘Manuals’ is now called <a href="../tools.html">‘Tools’</a>.</li>
+<li>The topic pages about tools (basic information about the tools we provide/support) are moved to the ‘Tools’ section, so that basic information and more elaborate documentation (if available) now sit together.</li>
+<li>As a result of the previous action, the ‘Tools’ category in the topics has disappeared. Note that we created aliases for the URLs, meaning that the old tool topic URLs will refer to the home page of the relevant tool in the Tools section.</li>
+<li>We restructured the basic information that was in the old Topic pages into separate pages to make it easier to navigate: description of the tool, costs and getting access, support and contact, quick start.</li>
+<li>Some tools have an additional documentation section for more elaborate manuals, tips and how-to’s.</li>
+<li>The OSF documentation was moved from Guides to the new Tools section.</li>
+<li>The tools are no longer displayed as tiles on the overview page, but are now presented as a list. They can be filtered by category (type of tool).</li>
 </ul>
+<p>If you’re interested in the specifics of this update, you can read all documentation in <a href="https://github.com/ubvu/open-handbook/issues/717" target="_blank">Issue #717</a>.</p>
+<p><strong>N.B. 1</strong>: If you are working on a fork of the Research Support Handbook, make sure to sync it, so that these changes will be updated in your fork as well. <strong>N.B. 2</strong>: If you refer to documentation about the tools we support (e.g.&nbsp;Yoda, Research Drive, ADA, Qualtrics) from another website (e.g.&nbsp;a faculty page on the VU website), make sure to check your URLs. If you need help with finding a page’s new location on the website, let us know.</p>
+<p>These updates are done in the context of the Tools Documentation Project. We’re aiming to have comprehensive documentation for all research-related tools we provide/support, as much as possible along the same structure, by the end of the year. If you have questions about this project, you can send an email to j2.scholten@vu.nl.</p>
 </section>
-<section id="constraints-flag" class="level2">
-<h2 class="anchored" data-anchor-id="constraints-flag">Constraints flag</h2>
-<p>The SLURM constraint option allows for further control over which nodes your job can be scheduled on in a particular partition/queue. You may require a specific processor family or memory bandwidth. The features that can be used with the sbatch constraint option are defined by the system administrator and thus vary among HPC sites.</p>
-<p>Constraints available on ADA are cpu architectures: Example single constraint:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --constraint=zen2</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Example combining constraints:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --constraint="zen2|haswell"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="generic-resources-flag" class="level2">
-<h2 class="anchored" data-anchor-id="generic-resources-flag">Generic RESources flag</h2>
-<p>Another method to get specific resources is to use the gres flag</p>
-<p>Example requesting a gpu, specifically an Nvidia A30:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --gres=gpu:A30:1</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>To see which generic resources are available to you specifically:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">scontrol</span> show nodes <span class="kw">|</span> <span class="fu">grep</span> <span class="at">-E</span> <span class="st">"NodeName|Gres"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>To learn more read the <a href="https://slurm.schedmd.com/quickstart.html" target="_blank">Slurm documentation</a>.</p>
+<section id="redesign" class="level2">
+<h2 class="anchored" data-anchor-id="redesign">Redesign</h2>
+<p><a href="https://im-studio.eu/" target="_blank">IM Studio</a> created a new design for the Research Support Handbook and this was implemented by Peter Vos. The new design involves a restructured homepage, new colours for topics, guides and manuals, and icons for prominent pages like calendar, trainings and questions. We have changed the overview pages of topics, guides and tools as well, so that they are presented in the same structure.</p>
+<p>We will do some finetuning in the coming weeks. Let us know if you’re missing something.</p>
 
 
 </section>
@@ -685,15 +636,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div class="column-page text-center">
         <ul class="footer-items list-unstyled">
             <li class="nav-item mx-md-5">
-                <p><img src="../../public/missing_icon.svg" class="img-fluid" style="width:6em"><br>
+                <p><img src="../public/missing_icon.svg" class="img-fluid" style="width:6em"><br>
                     Missing something in the Handbook?<br>
                     <a href="https://ez-github-contributor.netlify.app/" target="_blank">Let us know!</a>
                 </p>
             </li>
             <li class="nav-item mx-md-5">
-                <img src="../../public/question_icon.svg" class="img-fluid" style="width:6em"><br>
+                <img src="../public/question_icon.svg" class="img-fluid" style="width:6em"><br>
                 Question about your research data or research software?<br>
-                <a href="../../topics/rdm-support-desk.html">Contact the RDM Support Desk</a>
+                <a href="../topics/rdm-support-desk.html">Contact the RDM Support Desk</a>
                 
             </li>
         </ul>
@@ -703,23 +654,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="footer-items list-unstyled">
         <li class="nav-item">
             <a class="nav-link" href="https://creativecommons.org/publicdomain/zero/1.0/legalcode">
-                <p><img src="../../public/Cc.logo.circle.svg" class="img-fluid" style="width:1.3em">
-                <img src="../../public/Cc-zero.svg" class="img-fluid" style="width:1.3em"></p>
+                <p><img src="../public/Cc.logo.circle.svg" class="img-fluid" style="width:1.3em">
+                <img src="../public/Cc-zero.svg" class="img-fluid" style="width:1.3em"></p>
             </a>
         </li>|
         <li class="nav-item">
-            <a class="nav-link" href="../../about.html">
+            <a class="nav-link" href="../about.html">
                 <p>About</p>
             </a>
         </li>|
         <li class="nav-item">
-            <a class="nav-link" href="../../contributing.html">
+            <a class="nav-link" href="../contributing.html">
                 <p>Contributing</p>
             </a>
         </li>
     </ul>
 </div>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/ada/4-slurm.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/blog/2026-03-19tools-redesign.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
