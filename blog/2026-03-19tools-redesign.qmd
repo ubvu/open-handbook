@@ -1,0 +1,35 @@
+---
+title: Restructuring and redesign
+date: "2026-03-19"
+author:
+  - Jolien Scholten
+  - Peter Vos
+categories: ["Handbook"]
+---
+
+In the past few weeks, we did two major updates in the {{< var title >}}. The tool documentation has been restructured and renamed. The website as a whole has been redesigned.
+
+## Tool documentation
+
+This is what we updated regarding the tool documentation:
+
+- What we previously called 'Manuals' is now called ['Tools'](../tools.qmd).
+- The topic pages about tools (basic information about the tools we provide/support) are moved to the 'Tools' section, so that basic information and more elaborate documentation (if available) now sit together.
+- As a result of the previous action, the 'Tools' category in the topics has disappeared. Note that we created aliases for the URLs, meaning that the old tool topic URLs will refer to the home page of the relevant tool in the Tools section.
+- We restructured the basic information that was in the old Topic pages into separate pages to make it easier to navigate: description of the tool, costs and getting access, support and contact, quick start. 
+- Some tools have an additional documentation section for more elaborate manuals, tips and how-to's.
+- The OSF documentation was moved from Guides to the new Tools section.
+- The tools are no longer displayed as tiles on the overview page, but are now presented as a list. They can be filtered by category (type of tool).
+
+If you're interested in the specifics of this update, you can read all documentation in [Issue #717](https://github.com/ubvu/open-handbook/issues/717).
+
+**N.B. 1**: If you are working on a fork of the {{< var title >}}, make sure to sync it, so that these changes will be updated in your fork as well.
+**N.B. 2**: If you refer to documentation about the tools we support (e.g. Yoda, Research Drive, ADA, Qualtrics) from another website (e.g. a faculty page on the VU website), make sure to check your URLs. If you need help with finding a page's new location on the website, let us know.
+
+These updates are done in the context of the Tools Documentation Project. We're aiming to have comprehensive documentation for all research-related tools we provide/support, as much as possible along the same structure, by the end of the year. If you have questions about this project, you can send an email to j2.scholten@vu.nl.
+
+## Redesign
+
+[IM Studio](https://im-studio.eu/) created a new design for the {{< var title >}} and this was implemented by Peter Vos. The new design involves a restructured homepage, new colours for topics, guides and manuals, and icons for prominent pages like calendar, trainings and questions. We have changed the overview pages of topics, guides and tools as well, so that they are presented in the same structure.
+
+We will do some finetuning in the coming weeks. Let us know if you're missing something.
