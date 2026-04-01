@@ -8,7 +8,7 @@ This handbook is created with [Quarto](https://quarto.org) and hosted on [Github
 
 We use GitHub Actions to build the Quarto website. This automation runs every time something changes for the website, e.g. after merging a Pull Request – [the automation itself can be found on GitHub](https://github.com/ubvu/open-handbook/blob/main/.github/workflows/publish.yml).
 
-We use GitHub to subsequently make the website available on `https://rdm.vu.nl`. This domain name is registerd by the central IT department.
+We use GitHub to subsequently make the website available on `https://rdm.vu.nl`. This domain name is registered by the central IT department.
 
 Please [refer to the Quarto documentation for detailed instructions](https://quarto.org/docs/websites/) on how to use Quarto.
 
@@ -16,7 +16,7 @@ Please [refer to the Quarto documentation for detailed instructions](https://qua
 
 We use Netlify to automatically build previews of pull requests on GitHub. This is is not critical to the operation of `https://rdm.vu.nl`. It does, however, help the editors manage changes to the handbook.
 
-If this integration ever breaks, it can be fixed by one of the maintainers of [the handbook repository]({{< var repo-url >}}). To fix this, link your GitHub repository through Netlify directly and it will automatically deploy any pull requests - [https://app.netlify.com/start](https://app.netlify.com/start).
+If this integration ever breaks, it can be fixed by one of the maintainers of [the handbook repository]({{< var repo-url >}}). To fix this, link your GitHub repository through Netlify directly and it will automatically deploy any pull requests. Go to [https://app.netlify.com/start](https://app.netlify.com/start) and login with your github account. The only configuration needed on the Github side is the `/netlify.toml` file.
 
 ## Easy GitHub contributor
 
@@ -216,7 +216,7 @@ A better way to include HTML is to explicitly declare it in the `.qmd`-file:
 Please edit the existing [`.markdownlint.json` file](./markdownlint.json) in case you want to ignore certain rules project-wide.
 
 ## Custom changes
-To avoid unecessary technical maintenance we try to stick as close as possible to the standard functionalities of Quarto. However, a few tweaks were needed to get the desired layout.. 
+To avoid unecessary technical maintenance we try to stick as close as possible to the standard functionalities of Quarto. However, a few tweaks were needed to get the desired layout.
 
 ### Build process
 #### Fixing modified dates
@@ -225,21 +225,21 @@ The pages in the Tools section show a 'last-modified' date, Quarto gets this fro
 The same script is included in the [Netlify preview build](https://github.com/ubvu/open-handbook/blob/main/netlify.toml). 
 
 #### Opening external websites in a new tab
-The Quarto [standard method](https://quarto.org/docs/output-formats/html-basics.html#external-links) of making external links open in a new tab does not play well with the preview builds. A [simpler script](https://github.com/ubvu/open-handbook/blob/main/utils/linktarget.lua) is used to achieve the same thing. All links in the `.qmd`-files starring with `https:` get the attribute `_blank`. 
+The Quarto [standard method](https://quarto.org/docs/output-formats/html-basics.html#external-links) of making external links open in a new tab does not play well with the preview builds. A [simpler script](https://github.com/ubvu/open-handbook/blob/main/utils/linktarget.lua) is used to achieve the same thing. All links starting with `https:` get the attribute `_blank`. 
 
 ### Layout
-Note that [Bootstrap](https://getbootstrap.com/) is included in Quarto by Default. It provides a rich set of tools to create a responsive layout by using specific class names and styling set in `./custom.scss`. 
+Note that [Bootstrap](https://getbootstrap.com/) is included in Quarto by Default. It provides a rich set of tools to create a responsive layout by using specific class names and styling set in `custom.scss`.
 
 Refer to the [documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/) to see how this works.
 
 #### Custom listings
-The `./topics.qmd`, `./guides.qmd` and `./tools.qmd` files use a [Custom Listing](https://quarto.org/docs/websites/website-listings-custom.html) template for the page listing. You can find these in the `./_templates` folder. [Bootstrap Accordion](https://getbootstrap.com/docs/5.3/components/accordion/) is used for the layout.
+The `topics.qmd`, `guides.qmd` and `tools.qmd` files use a [Custom Listing Template](https://quarto.org/docs/websites/website-listings-custom.html) for the page listing. You can find these in the `/_templates` folder. [Bootstrap Accordion](https://getbootstrap.com/docs/5.3/components/accordion/) is used for the layout.
 
 #### Custom footer
-Unfortunately Quarto does not provide a way to use templates for other parts of the website layout. See [this discussion](https://github.com/orgs/quarto-dev/discussions/6552). To create the footer a piece of HTML code is used which "abuses" the standard quarto layout to create the desired look, together with styling in `./custom.scss`. You can find it in `./_footer.yml` which is included in `./_quarto.yml`.
+Unfortunately Quarto does not provide a way to use templates for other parts of the website layout. See [this discussion](https://github.com/orgs/quarto-dev/discussions/6552). To create the footer a piece of HTML code is used which "abuses" the standard quarto layout to create the desired look, together with styling in `custom.scss`. You can find it in `_footer.yml` which is included in `_quarto.yml`.
 
 #### Custom header
-The navbar in the header is completely styled by the `./custom.scss`. Note that the menu items do not have a unique id, it relies on the `nth-child(n)` selector to give them their specific color, e.g.:
+The navbar in the header is completely styled by the `custom.scss`. Note that the menu items do not have a unique id, it relies on the `nth-child(n)` selector to give them their specific color, e.g.:
 
 ```css
 .navbar .nav-item:nth-child(2) {
