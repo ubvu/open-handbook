@@ -4,10 +4,93 @@ title: Quick Start
 
 The IT for Research Team will set up the server(s) with the OS of your choice (Windows or Linux) and will set up a root account for you:
 
-- For access to a Linux server you will need to provide a personal SSH key protected with a passphrase. You will be able to access SSH from home.
+## Access to the server
+### Linux servers
+For access to a Linux server you will need to provide a personal SSH key protected with a passphrase. You will be able to access SSH from home.
 
-- For access to Windows servers use Remote Desktop Protocol (RDP), only via 🔒[eduVPN institute access](https://vu.eduvpn.nl).
+::: {.callout-tip}
+To create a new SSH key pair do the following:
 
-Root access to the server allows you to install all the software you need. Note that IT for Research can help you getting started and will automatically install OS security updates, but you are responsible for installing and maintaining software yourself.
+```sh
+ssh-keygen -t ed25519 -C "my.name@vu.nl" 
+```
+Works on Linux, Mac and Windows command line. Make sure to enter a passphrase for better security
 
-It is possible to take _snapshots_ or _clones_ of the virtual server yourself. This allows you to go back to a previously created configuration, if necessary. In addition, ITvO makes daily backups with which a virtual machine can be restored for up to 30 days on request.
+You keep the private key yourself, store it in `/home/<username>/.ssh/` (in Windows `%USERPROFILE%/.ssh/`). The ITvO team will ask for your Public Key.
+:::
+
+To access use the command:
+```sh
+ssh -i <mykey> <mymachine>.labs.vu.nl
+```
+
+::: {.callout-tip}
+In Windows 11 a SSH client is installed by default and SSH commands work in the Command Prompt and Powershell, it is no longer necessary to install software such as Putty.
+:::
+
+### File transfer
+You can transfer files from the command line to your server by using the [`scp`-command](https://manpages.ubuntu.com/manpages/xenial/man1/scp.1.html). Or use a GUI client such as [WinSCP](https://winscp.net) or [Cyberduck](https://cyberduck.io/). 
+
+<!-- Link to a nice tutorial for beginning Linux users -->
+
+### Windows servers
+For access to Windows servers use Remote Desktop Protocol (RDP), only via 🔒[eduVPN institute access](https://vu.eduvpn.nl).
+
+### Installing software
+Administrator/Root access to the server allows you to install all the software you need, on Linux use the `sudo` command. 
+
+::: {.callout-important}
+Note that [IT for Research](/topics/itvo.qmd) can help you to get started and will automatically install OS security updates, but you are responsible for installing and maintaining software yourself!
+:::
+
+## Backups 
+It is possible to take _snapshots_ or _clones_ of the virtual server yourself. This allows you to go back to a previously created configuration, you can do this before you make major changes to your application, for example. 
+
+In addition, ITvO makes daily backups with which a virtual machine can be restored for up to 30 days on request.
+
+### Creating a snapshot
+Log in to the [OpenNebula web interface](https://one.labs.vu.nl), with your VUnetId as username.
+
+::: {.callout-important}
+To access the web interface from home use [EduVPN institute access](https://vu.eduvpn.nl).
+:::
+
+- Go to Instances > VMs and double-click your VM.
+
+- Open the Storage Tab and locate your disk.
+
+![Snapshot create](/public/tools/scicloud/snapshot.png)
+- Click the camera icon to open a dialog.
+
+![Snapshot dialog](/public/tools/scicloud/snapshot-dialog.png)
+- Enter a name for the snapshor and click the "Take Snapshot" button.
+
+### Restoring a snapshot
+![Power Off](/public/tools/scicloud/poweroff.png)
+- To restore a snapshot the VM has to be shut down. Click the Power button and select the Power Off button, the server will be send a shutdown signal.
+
+- If snapshots are available downward chevron will be shown next to the disk, click on it to view the available snapshots.
+
+![Revert](/public/tools/scicloud/snapshot-restore.png)
+- Check the snapshot you like to restore and click "Revert".
+
+![Power Off](/public/tools/scicloud/poweron.png)
+- Power on the server by clicking the Play button
+
+## Web applications
+This guide assumes you are running Linux, unless your particular application does not support it we strongly recommend running web applications on a Linux server, especially those based on Open Source technology.
+
+### Domain name
+[ITvO](/topics/itvo.qmd) can easily configure a domain inside `.labs.vu.nl` for your server. It is also possible to use other custom domains, contact [ITvO](/topics/itvo.qmd) for advise. 
+
+### HTTPS
+A web application exposed to the internet should only be accessible by HTTPS. [ITvO](/topics/itvo.qmd) can also configure automatically renewing [Let's Encrypt](https://letsencrypt.org/) certificates for servers in the `.labs.vu.nl` domain. 
+
+### Security
+
+### Docker
+
+## Web proxy
+The Web proxy is not actively monitored, but is used to quickly shutdown abusive services.
+
+## 
