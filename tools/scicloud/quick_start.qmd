@@ -2,95 +2,93 @@
 title: Quick Start
 ---
 
-The IT for Research Team will set up the server(s) with the OS of your choice (Windows or Linux) and will set up a root account for you:
+The IT for Research (ITvO) Team will set up the server(s) with the OS of your choice (Windows or Linux) and will set up a root/administrator account for you.
 
-## Access to the server
+## Access to the Server
+
+::: {.callout-important}
+To access the server from outside the VU Campus use [EduVPN institute access](https://vu.eduvpn.nl).
+:::
+
 ### Linux servers
-For access to a Linux server you will need to provide a personal SSH key protected with a passphrase. You will be able to access SSH from home.
-
 ::: {.callout-tip}
+In Windows 11 an SSH client is installed by default and SSH commands work in the Command Prompt and Powershell. It is no longer necessary to install software such as Putty.
+:::
+
+For access to a Linux server you will need to provide a personal SSH key protected with a passphrase. You will be able to access SSH from outside the VU Campus.
+
+#### Create an SSH Key Pair
 To create a new SSH key pair do the following:
 
 ```sh
-ssh-keygen -t ed25519 -C "my.name@vu.nl" 
+ssh-keygen -t ed25519 -C "m.y.name@vu.nl" 
 ```
-Works on Linux, Mac and Windows command line. Make sure to enter a passphrase for better security
+Works on Linux, Mac and Windows command line. Make sure to enter a passphrase for enhanced security.
 
 You keep the private key yourself, store it in `/home/<username>/.ssh/` (in Windows `%USERPROFILE%/.ssh/`). The ITvO team will ask for your Public Key.
-:::
 
-To access use the command:
+#### Log in
+To access the server, use the command:
 ```sh
 ssh -i <mykey> <mymachine>.labs.vu.nl
 ```
 
-::: {.callout-tip}
-In Windows 11 a SSH client is installed by default and SSH commands work in the Command Prompt and Powershell, it is no longer necessary to install software such as Putty.
+::: {.callout-tip }
+## Getting started with the Linux command-line
+
+Software Carpentry has an [online lesson](https://swcarpentry.github.io/shell-novice/) for beginners available on working with Shell commands.
 :::
 
-### File transfer
-You can transfer files from the command line to your server by using the [`scp`-command](https://manpages.ubuntu.com/manpages/xenial/man1/scp.1.html). Or use a GUI client such as [WinSCP](https://winscp.net) or [Cyberduck](https://cyberduck.io/). 
+#### File transfer
+You can transfer files from the command line to your server by using the [`scp`-command](https://manpages.ubuntu.com/manpages/xenial/man1/scp.1.html). Or use a (free) GUI client such as [WinSCP](https://winscp.net) or [Cyberduck](https://cyberduck.io/). 
 
-<!-- Link to a nice tutorial for beginning Linux users -->
+Of course it is also possible to connect to VU supported storage tools such as Yoda and Research Drive. Consult the Tool manuals in the Handbook to learn how to connect to these services in Linux.
 
 ### Windows servers
-For access to Windows servers use Remote Desktop Protocol (RDP), only via 🔒[eduVPN institute access](https://vu.eduvpn.nl).
+[ITvO](/topics/itvo.qmd) will create a username/password for you.
 
-### Installing software
-Administrator/Root access to the server allows you to install all the software you need, on Linux use the `sudo` command. 
+For access to Windows servers use Remote Desktop Protocol (RDP). Connect to EduVPN and use the _Remote Desktop Connection (RDC)_ app to connect.
+
+{{< placeholder 400 >}}
+
+#### File transfer
+You can connect disks to the RDP setting 
+
+- Click on the "Show Options" dropdown in the RDC window.
+- Navigate to the "Local Resources" tab.
+- Under "Local devices and resources", click on "More…".
+- In the "Local devices and resources" dialog, check the boxes for the local drives you want to share (e.g., C:, D:, or other specific drives).
+- You can also select particular folders if supported.
+
+{{< placeholder 400 >}}
+
+Accessing Files on the Remote Machine:
+
+- Once connected, open File Explorer on the remote session.
+- Look for a section titled "Redirected drives" or similar under This PC.
+- You will see your local drives listed, allowing you to browse and transfer files directly.
+
+Of course it is also possible to connect to VU supported storage tools such as Yoda and Research Drive. Consult the Tool manuals in the Handbook to learn how to connect to these services in Windows.
+
+### Firewall
+If you chose a server on the external network only ports 80 and 443 (HTTP and HTTPS) are accessible from the internet. Contact [IT for Research](/topics/itvo.qmd) if you need access to additional ports.
+
+## The OpenNebula Console
+Your VM runs on [OpenNebula](https://opennebula.io/) software. Usually there is no reason to interact with this software, except for [Troubleshooting](trouble_access.qmd) and [Backups](snapshots.qmd). 
+
+You can log in to the [OpenNebula console](https://one.labs.vu.nl), with your VUnetId as username.
 
 ::: {.callout-important}
-Note that [IT for Research](/topics/itvo.qmd) can help you to get started and will automatically install OS security updates, but you are responsible for installing and maintaining software yourself!
+To access the OpenNebula Console from home use [EduVPN institute access](https://vu.eduvpn.nl).
 :::
 
-## Backups 
-It is possible to take _snapshots_ or _clones_ of the virtual server yourself. This allows you to go back to a previously created configuration, you can do this before you make major changes to your application, for example. 
+## Installing Software
+Administrator/Root access to the server allows you to install all the software you need, on Linux use the `sudo` command.
 
-In addition, ITvO makes daily backups with which a virtual machine can be restored for up to 30 days on request.
-
-### Creating a snapshot
-Log in to the [OpenNebula web interface](https://one.labs.vu.nl), with your VUnetId as username.
+On Ubuntu packages can be installed via [`apt`](https://ubuntu.com/server/docs/how-to/software/package-management/). To download software from other sources you must make sure to configure access via the [Web Proxy](webproxy.qmd).
 
 ::: {.callout-important}
-To access the web interface from home use [EduVPN institute access](https://vu.eduvpn.nl).
+Note that [IT for Research](/topics/itvo.qmd) can help you to get started, but you are responsible for installing and maintaining software yourself!
+
+OS Security updates are installed automatically. IT will upgrade the OS to a newer version if needed to make sure it stays supported.
 :::
-
-- Go to Instances > VMs and double-click your VM.
-
-- Open the Storage Tab and locate your disk.
-
-![Snapshot create](/public/tools/scicloud/snapshot.png)
-- Click the camera icon to open a dialog.
-
-![Snapshot dialog](/public/tools/scicloud/snapshot-dialog.png)
-- Enter a name for the snapshor and click the "Take Snapshot" button.
-
-### Restoring a snapshot
-![Power Off](/public/tools/scicloud/poweroff.png)
-- To restore a snapshot the VM has to be shut down. Click the Power button and select the Power Off button, the server will be send a shutdown signal.
-
-- If snapshots are available downward chevron will be shown next to the disk, click on it to view the available snapshots.
-
-![Revert](/public/tools/scicloud/snapshot-restore.png)
-- Check the snapshot you like to restore and click "Revert".
-
-![Power Off](/public/tools/scicloud/poweron.png)
-- Power on the server by clicking the Play button
-
-## Web applications
-This guide assumes you are running Linux, unless your particular application does not support it we strongly recommend running web applications on a Linux server, especially those based on Open Source technology.
-
-### Domain name
-[ITvO](/topics/itvo.qmd) can easily configure a domain inside `.labs.vu.nl` for your server. It is also possible to use other custom domains, contact [ITvO](/topics/itvo.qmd) for advise. 
-
-### HTTPS
-A web application exposed to the internet should only be accessible by HTTPS. [ITvO](/topics/itvo.qmd) can also configure automatically renewing [Let's Encrypt](https://letsencrypt.org/) certificates for servers in the `.labs.vu.nl` domain. 
-
-### Security
-
-### Docker
-
-## Web proxy
-The Web proxy is not actively monitored, but is used to quickly shutdown abusive services.
-
-## 
