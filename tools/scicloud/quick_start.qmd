@@ -49,7 +49,7 @@ Of course it is also possible to connect to VU supported storage tools such as Y
 
 For access to Windows servers use Remote Desktop Protocol (RDP). Connect to EduVPN and use the _Remote Desktop Connection (RDC)_ app to connect.
 
-{{< placeholder 400 >}}
+![RDC](/public/tools/scicloud/rdp.png)
 
 #### File transfer
 You can connect disks to the RDP setting 
@@ -60,7 +60,7 @@ You can connect disks to the RDP setting
 - In the "Local devices and resources" dialog, check the boxes for the local drives you want to share (e.g., C:, D:, or other specific drives).
 - You can also select particular folders if supported.
 
-{{< placeholder 400 >}}
+![RDC Drives](/public/tools/scicloud/rdc-drives.png)
 
 Accessing Files on the Remote Machine:
 
