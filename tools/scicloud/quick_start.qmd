@@ -49,7 +49,7 @@ Of course it is also possible to connect to VU supported storage tools such as Y
 
 For access to Windows servers use Remote Desktop Protocol (RDP). Connect to EduVPN and use the _Remote Desktop Connection (RDC)_ app to connect.
 
-![RDC](/public/tools/scicloud/rdp.png)
+![RDC](/public/tools/scicloud/rdp.png){width=400}
 
 #### File transfer
 You can connect disks to the RDP setting 
@@ -60,7 +60,7 @@ You can connect disks to the RDP setting
 - In the "Local devices and resources" dialog, check the boxes for the local drives you want to share (e.g., C:, D:, or other specific drives).
 - You can also select particular folders if supported.
 
-![RDC Drives](/public/tools/scicloud/rdc-drives.png)
+![RDC Drives](/public/tools/scicloud/rdc-drives.png){width=400}
 
 Accessing Files on the Remote Machine:
 
@@ -71,7 +71,7 @@ Accessing Files on the Remote Machine:
 Of course it is also possible to connect to VU supported storage tools such as Yoda and Research Drive. Consult the Tool manuals in the Handbook to learn how to connect to these services in Windows.
 
 ### Firewall
-If you chose a server on the external network only ports 80 and 443 (HTTP and HTTPS) are accessible from the internet. Contact [IT for Research](/topics/itvo.qmd) if you need access to additional ports.
+If you chose a server on the external network only ports 80 and 443 (HTTP and HTTPS) are accessible from the internet. Contact [IT for Research](contact_support.qmd#support-ticket) if you need access to additional ports.
 
 ## The OpenNebula Console
 Your VM runs on [OpenNebula](https://opennebula.io/) software. Usually there is no reason to interact with this software, except for [Troubleshooting](trouble_access.qmd) and [Backups](snapshots.qmd). 
