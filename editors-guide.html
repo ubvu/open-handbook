@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.36">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -40,10 +40,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ca0c326a1dc295b7df70ad7b5647ffd1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-f2ac84f9b595d6a275ad812340316041.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -157,6 +157,7 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#topics" id="toc-topics" class="nav-link" data-scroll-target="#topics">Topics</a></li>
   <li><a href="#guides" id="toc-guides" class="nav-link" data-scroll-target="#guides">Guides</a></li>
+  <li><a href="#tools" id="toc-tools" class="nav-link" data-scroll-target="#tools">Tools</a></li>
   </ul></li>
   <li><a href="#how-to-keep-an-overview-of-everything" id="toc-how-to-keep-an-overview-of-everything" class="nav-link" data-scroll-target="#how-to-keep-an-overview-of-everything">How to keep an overview of everything?</a></li>
   <li><a href="#etiquette" id="toc-etiquette" class="nav-link" data-scroll-target="#etiquette">Etiquette</a>
@@ -165,6 +166,7 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#protocols" id="toc-protocols" class="nav-link" data-scroll-target="#protocols">Protocols</a>
   <ul class="collapse">
+  <li><a href="#weekly-co-working" id="toc-weekly-co-working" class="nav-link" data-scroll-target="#weekly-co-working">Weekly co-working</a></li>
   <li><a href="#hackathon-protocol" id="toc-hackathon-protocol" class="nav-link" data-scroll-target="#hackathon-protocol">Hackathon protocol</a></li>
   </ul></li>
   <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a></li>
@@ -231,7 +233,7 @@ Tip
 <ul>
 <li>Writing must be primarily in active voice, both for consistent and engaging text across all pages</li>
 <li>Acronyms must be written in full at least once on the page where they are used</li>
-<li>All changes to the handbook are made via pull requests. Each change needs approval from two editors.
+<li>All changes to the Research Support Handbook are made via pull requests. Each change needs approval from at least one editor.
 <ul>
 <li>Pull requests may not be merged if the QA automations fail</li>
 </ul></li>
@@ -263,14 +265,22 @@ Tip
 <li>Guides must be phrased as questions that the reader will get answers to (for example, “how do I preserve data?”)</li>
 </ul>
 </section>
+<section id="tools" class="level3">
+<h3 class="anchored" data-anchor-id="tools">Tools</h3>
+<p>For tools we maintain the following standards:</p>
+<ul>
+<li>Tools must be supported in some way by VU Amsterdam, either full support such as for Research Drive or SciStor, or at least some consultancy, such as for SURF tools like Snellius or Research Cloud.</li>
+<li>Each tool description consists of at least the pages: <em>What is …?</em>, <em>Costs and Getting Access</em>, <em>Support and Contact</em>, <em>Quick Start</em>.</li>
+<li>A tool section can contain an additional <em>Documentation</em> section for “How to’s” and manuals that help researchers accomplish specific tasks with the tool. The structure of the <em>Documentation</em> section is necessarily more free form. To help navigation, additional subsections can be made under <em>Documentation</em>.</li>
+<li>The pages in tools always show the date of the last commit to the page, to show researchers the manuals are actively kept up to date.</li>
+<li>Tool pages will be checked and if necessary revised at least twice a year at the Handbook Hackathons.</li>
+</ul>
+</section>
 </section>
 <section id="how-to-keep-an-overview-of-everything" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-keep-an-overview-of-everything">How to keep an overview of everything?</h2>
-<p>With so many issues and pull requests, it is easy to get lost as an editor. We have a project management board that can be helpful identifying what is going on at this time:</p>
-<ul>
-<li><a href="https://github.com/orgs/ubvu/projects/7/views/1" target="_blank">Topics</a></li>
-<li><a href="https://github.com/orgs/ubvu/projects/7/views/2" target="_blank">Guides</a></li>
-</ul>
+<p>With so many issues and pull requests, it is easy to get lost as an editor. We have a <a href="https://github.com/orgs/ubvu/projects/10" target="_blank">project management board</a> that can be helpful identifying what is going on at this time.</p>
+<p>We create <em>Milestones</em> for upcoming Hackathons. This allows us to prioritise issues by assigning them to a milestone, indicating that we want to work on the issue at or before that Hackathon.</p>
 </section>
 <section id="etiquette" class="level2">
 <h2 class="anchored" data-anchor-id="etiquette">Etiquette</h2>
@@ -279,51 +289,28 @@ Tip
 <h3 class="anchored" data-anchor-id="github-etiquette">GitHub etiquette</h3>
 <p>As editors, we also maintain a certain GitHub etiquette. It is necessary to make managing a project with so many moving pieces and contributors. Important is:</p>
 <ol type="1">
-<li>New topics or guides must be linked to the issue proposing it</li>
+<li>New topics, tool pages or guides must be linked to the issue proposing it</li>
 <li>Each pull request should have a clear purpose and stick to it (for example, no editing a guide when proposing a topic)</li>
 </ol>
 <p>Item 2 also means changes should be branch specific, as pull requests are based off branches. It makes it much harder to review things if there are many different kinds of changes, as we editors will need to keep track of all of this.</p>
 <p>Simplicity is our friend. Simplicity helps us from making mistakes.</p>
-<!-- ### Deleting branches
-
-After merging Pull Requests, it is expected to clean up the branch by deleting it. We enable auto deletion upon merging, but if that for some reason does not happen, please go ahead and "Delete branch". We may periodically clean up branches in the repository. -->
-<!-- ### Closing pull requests
-
-Not all pull requests make it into the handbook, and that is okay. We want to ensure that pull requests are not closed at random, and provide some norms around doing so.
-
-Stale pull requests can be closed with a note for the contributor that they are welcome to request the pull request to be re-opened. We automatically mark pull requests as stale after 30 days.
-
-Pull requests that provide too much discussion and do not have a pathway to resolution may be closed for being disputed. This does not mean the content goes to waste – here we recommend an issue to be opened to continue the discussion. Please note that disputed topics can only be carried on if done so in a mutually constructive manner. -->
 </section>
 </section>
 <section id="protocols" class="level2">
 <h2 class="anchored" data-anchor-id="protocols">Protocols</h2>
+<section id="weekly-co-working" class="level3">
+<h3 class="anchored" data-anchor-id="weekly-co-working">Weekly co-working</h3>
+<p>Each week we have an online co-working hour, attended by the editors. This is a time to discuss issues, pull requests and other relevant matters or just work on the Research Support Handbook. Other contributors are free to join as well.</p>
+</section>
 <section id="hackathon-protocol" class="level3">
 <h3 class="anchored" data-anchor-id="hackathon-protocol">Hackathon protocol</h3>
-<p>We sometimes run hackathons to create space to contribute. We run hackathons as follows:</p>
+<p>We run hackathons twice a year to create space to contribute. We run hackathons as follows:</p>
 <p>Preparation:</p>
 <ul>
-<li>Hackathons are two hours long</li>
-<li>Hackathons are run using Zoom</li>
-<li>Each hackathon has a theme (it helps focus people’s energy on something and can inspire participation)</li>
-<li>We use a collaborative note taking document that requires no logging in, which is the central place to navigate the hackathon</li>
-<li>Assign a host</li>
-</ul>
-<p>During:</p>
-<ul>
-<li>Open 10 breakout rooms in zoom, allowing participants to freely move around</li>
-<li>The host…
-<ul>
-<li>…Welcomes everyone with an icebreaker question</li>
-<li>…Shares the link to the note taking document when people join</li>
-<li>…Sets the stage for the hackathon when it starts</li>
-<li>…Announces a break at the halfway mark</li>
-</ul></li>
-<li>Keep track of all the issues and pull requests opened for the speed blog</li>
-</ul>
-<p>After:</p>
-<ul>
-<li>Finish up the speed blog for the hackathon within one week of the hackathon. It does not have to be perfect and is primarily to document that the hackathon happened and some of the things that were done.</li>
+<li><p>Hackathons are at least half a day long</p></li>
+<li><p>Hackathons are always live</p></li>
+<li><p>Each hackathon has a theme (it helps focus people’s energy on something and can inspire participation)</p></li>
+<li><p>Finish up the speed blog for the hackathon within one week of the hackathon. It does not have to be perfect and is primarily to document that the hackathon happened and some of the things that were done.</p></li>
 </ul>
 </section>
 </section>
