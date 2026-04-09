@@ -78,7 +78,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f2ac84f9b595d6a275ad812340316041.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-ca0c326a1dc295b7df70ad7b5647ffd1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -208,6 +208,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#markdownlint-errors" id="toc-markdownlint-errors" class="nav-link" data-scroll-target="#markdownlint-errors">Markdownlint errors</a></li>
   <li><a href="#how-to-disable-markdownlint-rules" id="toc-how-to-disable-markdownlint-rules" class="nav-link" data-scroll-target="#how-to-disable-markdownlint-rules">How to disable Markdownlint rules</a></li>
   </ul></li>
+  <li><a href="#custom-changes" id="toc-custom-changes" class="nav-link" data-scroll-target="#custom-changes">Custom changes</a>
+  <ul class="collapse">
+  <li><a href="#build-process" id="toc-build-process" class="nav-link" data-scroll-target="#build-process">Build process</a></li>
+  <li><a href="#layout" id="toc-layout" class="nav-link" data-scroll-target="#layout">Layout</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/technical-details.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -234,21 +239,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>This handbook is created with a variety of technical resources. This document outlines what technical resources are used to achieve different goals.</p>
+<p>This handbook is created with <a href="https://quarto.org" target="_blank">Quarto</a> and hosted on <a href="https://docs.github.com/en/pages" target="_blank">Github pages</a>. This document outlines how the website is deployed and which custom changes were made.</p>
 <section id="how-is-the-website-built" class="level2">
 <h2 class="anchored" data-anchor-id="how-is-the-website-built">How is the website built?</h2>
-<p>We use GitHub Actions to build the Quarto website. This automation runs every time something changes for the website – <a href="https://github.com/ubvu/open-handbook/blob/main/.github/workflows/publish.yml" target="_blank">the automation itself can be found on GitHub</a>.</p>
-<p>We use GitHub to subsequently make the website available on <code>https://rdm.vu.nl</code>.</p>
+<p>We use GitHub Actions to build the Quarto website. This automation runs every time something changes for the website, e.g.&nbsp;after merging a Pull Request – <a href="https://github.com/ubvu/open-handbook/blob/main/.github/workflows/publish.yml" target="_blank">the automation itself can be found on GitHub</a>.</p>
+<p>We use GitHub to subsequently make the website available on <code>https://rdm.vu.nl</code>. This domain name is registered by the central IT department.</p>
 <p>Please <a href="https://quarto.org/docs/websites/" target="_blank">refer to the Quarto documentation for detailed instructions</a> on how to use Quarto.</p>
 </section>
 <section id="preview-deployments" class="level2">
 <h2 class="anchored" data-anchor-id="preview-deployments">Preview deployments</h2>
-<p>We use Netlify to automatically build previews of pull requests on GitHub. This is provided by Liberate Science GmbH, and is not critical to the operation of <code>https://rdm.vu.nl</code>. It does, however, help the editors manage changes to the handbook.</p>
-<p>If this integration ever breaks, it can be fixed by one of the maintainers of <a href="https://github.com/ubvu/open-handbook">the handbook repository</a>. To fix this, link your GitHub repository through Netlify directly and it will automatically deploy any pull requests - https://app.netlify.com/start.</p>
+<p>We use Netlify to automatically build previews of pull requests on GitHub. This is is not critical to the operation of <code>https://rdm.vu.nl</code>. It does, however, help the editors manage changes to the handbook.</p>
+<p>If this integration ever breaks, it can be fixed by one of the maintainers of <a href="https://github.com/ubvu/open-handbook">the handbook repository</a>. To fix this, link your GitHub repository through Netlify directly and it will automatically deploy any pull requests. Go to <a href="https://app.netlify.com/start" target="_blank">https://app.netlify.com/start</a> and login with your github account. The only configuration needed on the Github side is the <code>/netlify.toml</code> file.</p>
 </section>
 <section id="easy-github-contributor" class="level2">
 <h2 class="anchored" data-anchor-id="easy-github-contributor">Easy GitHub contributor</h2>
-<p>The easy GitHub contributor is a small integration to make it easier to start contributing to the handbook. This service is provided by Liberate Science GmbH through Netlify. It is supported until September 1st, 2024 – after which it is no longer maintained.</p>
+<p>The <a href="https://github.com/apps/easy-github-contributor" target="_blank">easy GitHub contributor</a> is a small integration created by Liberate Science GmbH to make it easier to start contributing to the handbook. It is no longer maintained, an alternative will need to be implemented in the near future.</p>
 </section>
 <section id="repository-structure-overview" class="level2">
 <h2 class="anchored" data-anchor-id="repository-structure-overview">Repository structure overview</h2>
@@ -265,7 +270,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <section id="quarto.yml" class="level4">
 <h4 class="anchored" data-anchor-id="quarto.yml"><code>_quarto.yml</code></h4>
-<p>The <code>_quarto.yml</code> file is especially important, as it contains the metadata and information to structure the handbook. You can use this to find and update the navigation bar. The specifics of <a href="https://quarto.org/docs/websites/website-tools.html" target="_blank">using <code>_quarto.yml</code> is documented very well by Quarto</a>.</p>
+<p>The <code>_quarto.yml</code> file is especially important, as it contains the metadata and information to structure the handbook. You can use this to find and update the navigation bar. The specifics of <a href="https://quarto.org/docs/websites/website-tools.html" target="_blank">using <code>_quarto.yml</code> is documented very well by Quarto</a>. Note that the Handbook uses <a href="https://quarto.org/docs/projects/quarto-projects.html#metadata-includes" target="_blank">Metadata Includes</a>.</p>
 </section>
 </section>
 <section id="content-organization" class="level3">
@@ -273,7 +278,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li><strong><code>topics/</code></strong> - Individual topic pages (e.g., <code>data-management-plan.qmd</code>, <code>gdpr.qmd</code>)</li>
 <li><strong><code>guides/</code></strong> - Step-by-step guides organized by research lifecycle</li>
-<li><strong><code>manuals/</code></strong> - Manuals to help researchers use specific tools</li>
+<li><strong><code>tools/</code></strong> - Tool Description and Manuals to help researchers use specific tools</li>
 <li><strong><code>blog/</code></strong> - Blog posts and announcements</li>
 <li><strong><code>public/</code></strong> - Static assets (images, PDFs, etc.)</li>
 </ul>
@@ -281,11 +286,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="technical-files" class="level3">
 <h3 class="anchored" data-anchor-id="technical-files">Technical files</h3>
 <ul>
-<li><strong><code>_components/</code></strong> - React components for interactive elements</li>
-<li><strong><code>_extensions/</code></strong> - Quarto extensions (e.g., qreacto for React integration)</li>
 <li><strong><code>.github/workflows/</code></strong> - GitHub Actions for automated building and deployment</li>
 <li><strong><code>_site/</code></strong> - Generated website files (auto-generated, don’t edit directly)</li>
-<li><strong><code>manuals/&lt;tool&gt;/_sidebar.yml</code></strong> - Specifies the order of the left sidebar of a specific tool manual</li>
+<li><strong><code>tools/&lt;tool&gt;/_sidebar.yml</code></strong> - Specifies the order of the left sidebar of a specific tool manual</li>
 </ul>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
@@ -302,16 +305,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>.
 ├── .git/ - If present, contains the raw git history
 ├── .github/ - GitHub files, including automations and templates
+    └── scripts - scripts used in github workflows
+    └── workflows - these yml files automatically create Github Actions
 ├── .gitignore - Which files to ignore in git commits
 ├── .markdownlint.json - Markdownlint rules and exceptions
 ├── CITATION.cff - Citation File Format
 ├── CNAME - GitHub Pages domain name
 ├── LICENSE - CC0 information
 ├── README.md - General readme
-├── _components/ - React components for `/`
-├── _extensions/ - Quarto extensions
+├── _footer.yml - Custom website footer
 ├── _quarto.yml - Quarto metadata
 ├── _site/ - If present, the rendered version of the website
+├── _templates/ - ejs templates used for custom listings
 ├── _variables.yml - Quarto variables, available in all .qmd files
 ├── about.qmd - About page
 ├── blog/ - Blog posts, one per .qmd file
@@ -320,20 +325,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 ├── custom.scss - Custom styling for VU Amsterdam
 ├── editors-guide.qmd - Editor guide page
 ├── guides/ - Individual guides, one per `.qmd` file
-├── guides.qmd - General guides page
+├── guides.qmd - Guides overview page
 ├── index.qmd - Homepage `/`
-├── manuals/ - Folder containing all manuals and subpages
-├── manuals.qmd - Manual overview page
-├── manuals/&lt;tool&gt;/ - &lt;tool&gt; manuals
-├── manuals/&lt;tool&gt;/index.qmd - Manual start page
-├── manuals/&lt;tool&gt;/_sidebar.yml - Manual sidebar definition
 ├── netlify.toml - Netlify (preview) deployment instructions
 ├── package.json - Netlify plugin information
 ├── public/ - Folder containing public assets such as screenshot images (keep files small)
 ├── references.bib - Reference library for use in the handbook
 ├── technical-details.qmd - Technical details page
 ├── topics/ - Each `.qmd` file is one topic
-├── topics.qmd - Topic overview page
+├── topics.qmd - Topics overview page
+├── tools/ - Folder containing all tool pages and subpages
+├── tools/&lt;tool&gt;/ - &lt;tool&gt; manuals
+├── tools/&lt;tool&gt;/index.qmd - Tool start page
+├── tools/&lt;tool&gt;/_sidebar.yml - Tool sidebar definition
+├── tools.qmd - Tools overview page
+├── trainings.qmd - Overview of RDM trainings
+├── yoda-contact.qmd - Contact page for https://publication.yoda.vu.nl Landin Pages
 └── utils/ - Custom utilities for the website (generally do not touch)
     └── include-files.lua - Utility to shift headings from included files
     └── linktarget.lua - Utility to open external links in a new tab</code></pre>
@@ -401,9 +408,64 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"MD013"</span><span class="fu">:</span> <span class="kw">false</span><span class="fu">,</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"MD033"</span><span class="fu">:</span> <span class="kw">false</span></span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A better way to include HTML is to explicitly declare it in the <code>.qmd</code>-file:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="in">    ```{=html}</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;div&gt;</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="in">        Some HTML content</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;/div&gt;</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="in">    ```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</div>
 <p>Please edit the existing <a href="./markdownlint.json"><code>.markdownlint.json</code> file</a> in case you want to ignore certain rules project-wide.</p>
+</section>
+</section>
+<section id="custom-changes" class="level2">
+<h2 class="anchored" data-anchor-id="custom-changes">Custom changes</h2>
+<p>To avoid unecessary technical maintenance we try to stick as close as possible to the standard functionalities of Quarto. However, a few tweaks were needed to get the desired layout.</p>
+<section id="build-process" class="level3">
+<h3 class="anchored" data-anchor-id="build-process">Build process</h3>
+<section id="fixing-modified-dates" class="level4">
+<h4 class="anchored" data-anchor-id="fixing-modified-dates">Fixing modified dates</h4>
+<p>The pages in the Tools section show a ‘last-modified’ date, Quarto gets this from the last modified date of the <code>.qmd</code> file. The standard build process automatically sets the file date to the date the build process runs. To get a better date the <a href="https://github.com/ubvu/open-handbook/blob/main/.github/workflows/publish.yml" target="_blank">build process</a> uses an extra <code>fix-timestamps</code> <a href="https://github.com/ubvu/open-handbook/blob/main/.github/scripts/fix-timestamps" target="_blank">script</a> that sets the file date to the last commit date.</p>
+<p>The same script is included in the <a href="https://github.com/ubvu/open-handbook/blob/main/netlify.toml" target="_blank">Netlify preview build</a>.</p>
+</section>
+<section id="opening-external-websites-in-a-new-tab" class="level4">
+<h4 class="anchored" data-anchor-id="opening-external-websites-in-a-new-tab">Opening external websites in a new tab</h4>
+<p>The Quarto <a href="https://quarto.org/docs/output-formats/html-basics.html#external-links" target="_blank">standard method</a> of making external links open in a new tab does not play well with the preview builds. A <a href="https://github.com/ubvu/open-handbook/blob/main/utils/linktarget.lua" target="_blank">simpler script</a> is used to achieve the same thing. All links starting with <code>https:</code> get the attribute <code>_blank</code>.</p>
+</section>
+</section>
+<section id="layout" class="level3">
+<h3 class="anchored" data-anchor-id="layout">Layout</h3>
+<p>Note that <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> is included in Quarto by Default. It provides a rich set of tools to create a responsive layout by using specific class names and styling set in <code>custom.scss</code>.</p>
+<p>Refer to the <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank">documentation</a> to see how this works.</p>
+<section id="custom-listings" class="level4">
+<h4 class="anchored" data-anchor-id="custom-listings">Custom listings</h4>
+<p>The <code>topics.qmd</code>, <code>guides.qmd</code> and <code>tools.qmd</code> files use a <a href="https://quarto.org/docs/websites/website-listings-custom.html" target="_blank">Custom Listing Template</a> for the page listing. You can find these in the <code>/_templates</code> folder. <a href="https://getbootstrap.com/docs/5.3/components/accordion/" target="_blank">Bootstrap Accordion</a> is used for the layout.</p>
+</section>
+<section id="custom-footer" class="level4">
+<h4 class="anchored" data-anchor-id="custom-footer">Custom footer</h4>
+<p>Unfortunately Quarto does not provide a way to use templates for other parts of the website layout. See <a href="https://github.com/orgs/quarto-dev/discussions/6552" target="_blank">this discussion</a>. To create the footer a piece of HTML code is used which “abuses” the standard quarto layout to create the desired look, together with styling in <code>custom.scss</code>. You can find it in <code>_footer.yml</code> which is included in <code>_quarto.yml</code>.</p>
+</section>
+<section id="custom-header" class="level4">
+<h4 class="anchored" data-anchor-id="custom-header">Custom header</h4>
+<p>The navbar in the header is completely styled by the <code>custom.scss</code>. Note that the menu items do not have a unique id, it relies on the <code>nth-child(n)</code> selector to give them their specific color, e.g.:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.navbar</span> <span class="fu">.nav-item</span><span class="in">:nth-child(</span><span class="dv">2</span><span class="in">)</span> {</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">background-color</span><span class="ch">:</span> $<span class="dv">guides-color</span><span class="op">;</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Make sure to modify this if a menu item is added or the order is changed.</p>
 
 
+</section>
 </section>
 </section>
 
