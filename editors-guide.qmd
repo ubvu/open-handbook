@@ -41,7 +41,7 @@ Here are some quality standards we maintain throughout the handbook:
 
 * Writing must be primarily in active voice, both for consistent and engaging text across all pages
 * Acronyms must be written in full at least once on the page where they are used
-* All changes to the handbook are made via pull requests. Each change needs approval from two editors.
+* All changes to the {{< var title >}} are made via pull requests. Each change needs approval from at least one editor.
   * Pull requests may not be merged if the QA automations fail
 * Links must be `https://`
 * All images must have alt text
@@ -68,12 +68,21 @@ For guides we maintain other standards:
 
 * Guides must be phrased as questions that the reader will get answers to (for example, "how do I preserve data?")
 
+### Tools
+
+For tools we maintain the following standards:
+
+* Tools must be supported in some way by VU Amsterdam, either full support such as for Research Drive or SciStor, or at least some consultancy, such as for SURF tools like Snellius or Research Cloud.
+* Each tool description consists of at least the pages: _What is ...?_, _Costs and Getting Access_, _Support and Contact_, _Quick Start_.
+* A tool section can contain an additional _Documentation_ section for "How to's" and manuals that help researchers accomplish specific tasks with the tool. The structure of the _Documentation_ section is necessarily more free form. To help navigation, additional subsections can be made under _Documentation_.
+* The pages in tools always show the date of the last commit to the page, to show researchers the manuals are actively kept up to date.
+* Tool pages will be checked and if necessary revised at least twice a year at the Handbook Hackathons.
+
 ## How to keep an overview of everything?
 
-With so many issues and pull requests, it is easy to get lost as an editor. We have a project management board that can be helpful identifying what is going on at this time:
+With so many issues and pull requests, it is easy to get lost as an editor. We have a [project management board](https://github.com/orgs/ubvu/projects/10) that can be helpful identifying what is going on at this time.
 
-* [Topics](https://github.com/orgs/ubvu/projects/7/views/1)
-* [Guides](https://github.com/orgs/ubvu/projects/7/views/2)
+We create _Milestones_ for upcoming Hackathons. This allows us to prioritise issues by assigning them to a milestone, indicating that we want to work on the issue at or before that Hackathon.
 
 ## Etiquette
 
@@ -83,50 +92,28 @@ As editors, we may have to make tough calls at times. It is important for us to 
 
 As editors, we also maintain a certain GitHub etiquette. It is necessary to make managing a project with so many moving pieces and contributors. Important is:
 
-1. New topics or guides must be linked to the issue proposing it
+1. New topics, tool pages or guides must be linked to the issue proposing it
 2. Each pull request should have a clear purpose and stick to it (for example, no editing a guide when proposing a topic)
 
 Item 2 also means changes should be branch specific, as pull requests are based off branches. It makes it much harder to review things if there are many different kinds of changes, as we editors will need to keep track of all of this.
 
 Simplicity is our friend. Simplicity helps us from making mistakes.
 
-<!-- ### Deleting branches
-
-After merging Pull Requests, it is expected to clean up the branch by deleting it. We enable auto deletion upon merging, but if that for some reason does not happen, please go ahead and "Delete branch". We may periodically clean up branches in the repository. -->
-
-<!-- ### Closing pull requests
-
-Not all pull requests make it into the handbook, and that is okay. We want to ensure that pull requests are not closed at random, and provide some norms around doing so.
-
-Stale pull requests can be closed with a note for the contributor that they are welcome to request the pull request to be re-opened. We automatically mark pull requests as stale after 30 days.
-
-Pull requests that provide too much discussion and do not have a pathway to resolution may be closed for being disputed. This does not mean the content goes to waste – here we recommend an issue to be opened to continue the discussion. Please note that disputed topics can only be carried on if done so in a mutually constructive manner. -->
-
 ## Protocols
+
+### Weekly co-working
+
+Each week we have an online co-working hour, attended by the editors. This is a time to discuss issues, pull requests and other relevant matters or just work on the {{< var title >}}. Other contributors are free to join as well.
 
 ### Hackathon protocol
 
-We sometimes run hackathons to create space to contribute. We run hackathons as follows:
+We run hackathons twice a year to create space to contribute. We run hackathons as follows:
 
 Preparation:
 
-* Hackathons are two hours long
-* Hackathons are run using Zoom
+* Hackathons are at least half a day long
+* Hackathons are always live
 * Each hackathon has a theme (it helps focus people's energy on something and can inspire participation)
-* We use a collaborative note taking document that requires no logging in, which is the central place to navigate the hackathon
-* Assign a host
-
-During:
-
-* Open 10 breakout rooms in zoom, allowing participants to freely move around
-* The host...
-  * ...Welcomes everyone with an icebreaker question
-  * ...Shares the link to the note taking document when people join
-  * ...Sets the stage for the hackathon when it starts
-  * ...Announces a break at the halfway mark
-* Keep track of all the issues and pull requests opened for the speed blog
-
-After:
 
 * Finish up the speed blog for the hackathon within one week of the hackathon. It does not have to be perfect and is primarily to document that the hackathon happened and some of the things that were done.
 
