@@ -41,7 +41,7 @@ Here are some quality standards we maintain throughout the handbook:
 
 * Writing must be primarily in active voice, both for consistent and engaging text across all pages
 * Acronyms must be written in full at least once on the page where they are used
-* All changes to the handbook are made via pull requests. Each change needs approval from at least one editor.
+* All changes to the {{< var title >}} are made via pull requests. Each change needs approval from at least one editor.
   * Pull requests may not be merged if the QA automations fail
 * Links must be `https://`
 * All images must have alt text
@@ -72,17 +72,17 @@ For guides we maintain other standards:
 
 For tools we maintain the following standards:
 
-* Tools must be supported in some way by the VU, either full support such as for Research Drive or SciStor, or at least some consultancy, such as for SURF Tools like Snellius or Research Cloud.
+* Tools must be supported in some way by VU Amsterdam, either full support such as for Research Drive or SciStor, or at least some consultancy, such as for SURF tools like Snellius or Research Cloud.
 * Each tool description consists of at least the pages: _What is ...?_, _Costs and Getting Access_, _Support and Contact_, _Quick Start_.
 * A tool section can contain an additional _Documentation_ section for "How to's" and manuals that help researchers accomplish specific tasks with the tool. The structure of the _Documentation_ section is necessarily more free form. To help navigation, additional subsections can be made under _Documentation_.
 * The pages in tools always show the date of the last commit to the page, to show researchers the manuals are actively kept up to date.
-* Tool pages will be checked and if necessary revises at least twice a year at the Handbook Hackathons.
+* Tool pages will be checked and if necessary revised at least twice a year at the Handbook Hackathons.
 
 ## How to keep an overview of everything?
 
 With so many issues and pull requests, it is easy to get lost as an editor. We have a [project management board](https://github.com/orgs/ubvu/projects/10) that can be helpful identifying what is going on at this time.
 
-We create _Milestones_ for upcoming Hackathons. This allows us to prioritize issues by assigning them to a milestone, indicating that we want to work on the issue at or before that Hackathon.
+We create _Milestones_ for upcoming Hackathons. This allows us to prioritise issues by assigning them to a milestone, indicating that we want to work on the issue at or before that Hackathon.
 
 ## Etiquette
 
@@ -103,7 +103,7 @@ Simplicity is our friend. Simplicity helps us from making mistakes.
 
 ### Weekly co-working
 
-Each week we have an online co-working hour, attended by the editors. This is a time to discuss issues, pull requests and other relevant matters or just work on the Handbook. Other contributors are free to join as well.
+Each week we have an online co-working hour, attended by the editors. This is a time to discuss issues, pull requests and other relevant matters or just work on the {{< var title >}}. Other contributors are free to join as well.
 
 ### Hackathon protocol
 
