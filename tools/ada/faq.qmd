@@ -1,0 +1,20 @@
+---
+title: FAQ
+date: last-modified
+---
+
+### Why is my job running much longer than expected?
+
+- Always check if your script is really benefitting from parallelism. Are you really using all the threads/cores you got allocated via slurm? (log in the compute node via ssh and check the processes running `htop -u *vunetid*`). 
+- Note that the cpu in high performance servers does not necessarily clocks faster than your laptop cpu, the real performance gain comes from parallelism. 
+- Is your dataset very big? Always use the local scratch space.
+- Use profilers to assess your code for bottlenecks. (Python: cProfile, R: profvis, C++: perf)
+
+### Why does the software I installed via conda return unexpected errors? 
+
+Conda injects settings in your .bashrc file once initialized and prepends directories to your $PATH variables. 
+This can result in dependency errors for software that is actually relying on native system dependencies. 
+
+
+
+
