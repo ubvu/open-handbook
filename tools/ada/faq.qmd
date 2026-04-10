@@ -13,8 +13,8 @@ date: last-modified
 ### Why does the software I installed via conda return unexpected errors? 
 
 Conda injects settings in your .bashrc file once initialized and prepends directories to your $PATH variables. 
-This can result in dependency errors for software that is actually relying on native system depedencies. 
+This can result in dependency errors for software that is actually relying on native system dependencies. 
 
-### 
+
 
 
