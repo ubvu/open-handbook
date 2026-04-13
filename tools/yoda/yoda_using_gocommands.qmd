@@ -78,6 +78,6 @@ Here is an example of how you could copy files from your current directory to iR
 ./gocmd sync ./folder i:/vu/home/research-group/ --progress 
 ```
 
-The sync command will only upload changed files, which is also handy if the transfer gets interrupted.
+The `gocmd sync` command will only upload changed files, which is also handy if the transfer gets interrupted. By default it also compares checksums of the local and remote files, ensuring data integrity.
 
 You can learn more about how to use the Gocommands to transfer files in the [section on the sync command](https://github.com/cyverse/gocommands/blob/main/docs/commands/sync.md#sync-data-between-local-and-irods).
