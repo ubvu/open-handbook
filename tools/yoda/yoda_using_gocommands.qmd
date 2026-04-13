@@ -67,6 +67,8 @@ These are the basic commands for navigation and data transfer:
 - [gocmd get](https://github.com/cyverse/gocommands/blob/main/docs/commands/get.md) – Download files from Yoda
 - [gocmd sync](https://github.com/cyverse/gocommands/blob/main/docs/commands/sync.md) - Sync a local and remote directory
 
+The [datamanagement page](https://github.com/cyverse/gocommands/blob/main/docs/data_management.md) of the gocommands docs offers a good start on working with Gocommonds
+
 ::: { .callout-tip }
 By default an iRODS session will time-out after an hour and you will need to login again. You can extend the session by starting it with the `gocmd init --ttl <hours>` option, e.g. `gocmd init --ttl 8` will keep the session alive for 8 hours.
 :::
@@ -80,4 +82,4 @@ Here is an example of how you could copy files from your current directory to iR
 
 The `gocmd sync` command will only upload changed files, which is also handy if the transfer gets interrupted. By default it also compares checksums of the local and remote files, ensuring data integrity.
 
-You can learn more about how to use the Gocommands to transfer files in the [section on the sync command](https://github.com/cyverse/gocommands/blob/main/docs/commands/sync.md#sync-data-between-local-and-irods).
+You can learn more about how to use the Gocommands to transfer files in the [section on the sync command](https://github.com/cyverse/gocommands/blob/main/docs/commands/sync.md#sync-data-between-local-and-irods) in the Gocommands docs.
