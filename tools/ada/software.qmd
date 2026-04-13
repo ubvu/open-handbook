@@ -90,10 +90,23 @@ If you identify software that would benefit a broad cross-section of ADA users, 
 Request extra modules **only** when they will measurably help many researchers. For niche or project-specific tools, use Pixi, Conda, or Apptainer so cluster admins can focus limited time on maintaining the shared stack.
 :::
 
+### European Environment for Scientific Software Installations (EESSI)
+
+The European Environment for Scientific Software Installations (EESSI, pronounced as "easy") is a collaboration between different European partners in HPC community. The goal of this project is to build a common stack of scientific software installations for HPC systems and beyond, including laptops, personal workstations and cloud infrastructure.
+
+A major advantage of the EESSI stack is that it provides an extensive library of software specifically optimized for various CPU and GPU architectures, significantly improving the computational performance of your code.
+
+To use EESSI on ADA, load in either the eessi-2023.06 or eessi-2026.06 stack, e.g.:
+
+```sh
+[abc123@login1 ~]$ module load eessi-2025.06
+```
+
 ### References
 
 - [Lmod user guide](https://lmod.readthedocs.io/en/latest/)
 - [Carpentries HPC modules lesson](https://carpentries-incubator.github.io/hpc-intro/15-modules/index.html)
+- [EESSI](https://www.eessi.io/docs/)
 
 ## Pixi Environments
 
@@ -259,6 +272,7 @@ Minimal patterns for running distributed and GPU workloads from SLURM through Ap
 ## Git
 
 Git is pre-installed on every login/inter/compute node by default. If you need a specific release of git, use `$ module spider git` to check out all installed module versions.
+
 
 ### References
 
