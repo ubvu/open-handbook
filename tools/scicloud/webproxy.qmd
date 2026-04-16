@@ -1,0 +1,37 @@
+---
+title: Accessing the Internet
+---
+
+> Server OS: Linux
+
+## The HTTP Proxy
+SciCloud is a relatively open system, which allows researchers full control of the software running on the servers. However, most researchers are not system administrators or security experts. To prevent abuse of the servers you must connect to the internet via a Proxy Server. The Proxy Server allows IT to monitor outgoing traffic and to quickly block suspicious activity .
+
+This means you might need a few extra steps to install software (applications, docker images, python packages, etc.) on the server.
+
+### Setting the HTTP proxy in your profile
+Add the following to your ``~/.bashrc` file:
+```conf
+export HTTP_PROXY=http://proxy.labs.vu.nl:8080
+export HTTPS_PROXY=http://proxy.labs.vu.nl:8080
+```
+
+### Git
+```sh
+git config --global http.proxy http://proxy.labs.vu.nl:8080
+```
+
+### Docker
+Create `/etc/systemd/system/docker.service.d/http-proxy.conf` if it does not exist yet.
+
+```sh
+sudo nano /etc/systemd/system/docker.service.d/http-proxy.conf
+```
+
+With this content:
+```conf
+[Service]
+Environment="HTTP_PROXY=http://proxy.labs.vu.nl:8080"
+Environment="HTTPS_PROXY=http://proxy.labs.vu.nl:8080"
+Environment="NO_PROXY=localhost,127.0.0.1
+```

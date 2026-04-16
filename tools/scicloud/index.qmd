@@ -7,7 +7,7 @@ aliases:
 ---
 
 ## What is it?
-IT for Research (ITvO) offers SciCloud, a service where server capacity can be purchased to support research applications. SciCloud virtual servers are easy to implement, easy to scale up and down and have competitive pricing based on agreed purchase. The virtual server can be placed in an external network, so services running on it can be made internet accessible. It can also run on an internal network for extra security and access to some VU services.
+IT for Research (ITvO) offers SciCloud, a service where server capacity can be purchased to support research applications. SciCloud virtual servers are easy to implement, easy to scale up and down and have competitive [pricing](cost_access.qmd#are-there-costs-involved). The virtual server can be placed in an external network, so services running on it can be made internet accessible. It can also run on an internal network for extra security and access to some VU services.
 
 SciCloud is based on the open source middleware [OpenNebula (ONE)](https://opennebula.io/) and offers a service that allows users to quickly start with a virtual server based on available templates, or to upload one of their own virtual images. This concept is known as Infrastructure as a Service (IaaS).
 
@@ -20,6 +20,6 @@ Typical use cases are:
 
 - Hosting a licensed server application for your research group, such as software for analysis, software needed to run lab equipment or elab journal software.
 
-- The Virtual Server can also be connected to [SciStor](/tools/scistor/index.qmd) for environments that need fast access to large amounts of data.
+The Virtual Server can also be connected to [SciStor](/tools/scistor/index.qmd) for environments that need fast access to large amounts of data.
 
-Note that the SciCloud environment has no GPU, so it is not suitable for running graphical environments and machine learning.
+Note that the SciCloud environment has no GPU, so it is not suitable for running graphical environments and machine learning. [SURF Research Cloud](/tools/researchcloud/index.qmd) might be an alternative for these use-cases.
