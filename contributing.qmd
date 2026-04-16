@@ -106,6 +106,93 @@ You need to count the heading level in your guide to identify your shift number.
 
 After that, you are ready to [submit your pull request](#submit-a-pull-request)!
 
+### Adding a tool
+Tool descriptions always consist of multiple pages. To add a new tool it is best to work locally, for example in [VScode](#using-vs-code-to-contribute).
+
+If a new tool needs to be added do the following (using SPSS as an example):
+
+#### Copy template
+- Copy the folder `/tools/_template` to `/tools/spss`. Always use lowercase for folder and file names.
+
+#### Set the left sidebar
+- Edit the `/tools/spss/_sidebar.yml` file and rename `dummy` to `spss` (or `SPSS` in titles). Do not forget the `id`, which should be unique for the tool.
+
+```yaml
+website:
+  sidebar:
+    - id: sb-spss 
+      collapse-level: 4
+      contents:
+      # Title that shows up at the top of the sidebar
+        - section: SPSS
+          href: tools/spss/index.qmd
+          contents:
+          - href: tools/spss/index.qmd # Mandatory, start page 
+            text: What is SPSS?
+          # Always use paths relative to the root of the site.
+          - tools/spss/cost_access.qmd # Mandatory
+          - tools/spss/contact_support.qmd # Mandatoty
+          - tools/spss/quick_start.qmd # Mandatory
+          - tools/spss/faq.qmd # Optional, delete if not necessary
+          - tools/spss/known-issues.qmd # Optional, delete if not necessary
+          - section: Documentation # Optional, delete section + contents if there are none
+            contents: # Add additional documentation pages here. Subsections are possible
+            - tools/spss/some-how-to.qmd 
+```
+
+- Add a reference to this sidebar in `/_quarto.yml` in the `metadata-files` section (keep this in alphabetical order for clarity):
+
+```yaml
+...
+metadata-files:
+  ...
+  - tools/snellius/_sidebar.yml
+  - tools/spss/_sidebar.yml
+  - tools/vucomputehub/_sidebar.yml
+  - tools/yoda/_sidebar.yml
+```
+
+#### Add the tool to the Tools overview page
+- Copy a logo image to the `/public` folder (use Google image search to find one). Preferred format is svg. 
+- Edit the metadata section in `/tools/spss/index.qmd`. Set the application name as `title`, the path to the logo image and one or more appropriate categories:
+
+```yaml
+---
+title: SPSS # Add link to this page to ./tools.qmd title must be the tool name
+categories: [Statistics] # categories appropriate to this tool
+image: '/public/spss-logo.svg' # Make sure to add a logo
+---
+
+## What is it?
+
+## What can it be used for?
+```
+
+- Edit the metadata section of `/tools.qmd`, add `/tools/spss/index.qmd` to the `listing` `contents` to make the tool visible on the tools page:
+
+```yaml
+---
+title: Tools
+listing:
+  id: tools
+  template: ./_templates/accordion-logo.ejs.md
+  contents:
+...
+    - tools/snellius/index.qmd
+    - tools/spss/index.qmd
+    - tools/vucomputehub/index.qmd
+    - tools/yoda/index.qmd
+...
+---
+
+...
+```
+
+#### Edit the pages
+- Make sure to edit at least the `index.qmd` (What is?), `cost_access.qmd`, `contact_support.qmd` and `quick_start.qmd` files. 
+- Delete unused files from the tool folder and the `_sidebar.yml`.
+- You can also add extra pages as needed. Make sure to add them to the `_sidebar.yml` file under the `Documentation` section. If you need extra subsections under `Documentation` you can add them to `_sidebar.yml` as needed. 
+
 ### Editing multiple files
 
 There are situations in which you need to edit multiple files. If you carry out all edits in separate [pull requests](#submit-a-pull-request), this may be a long and repetitive task. Instead, you can change multiple files at once in a single pull request.
