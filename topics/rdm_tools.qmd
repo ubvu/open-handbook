@@ -1,0 +1,179 @@
+---
+title: RDM Tools
+categories: [Knowledge Items]
+---
+
+The Vrije Universiteit Amsterdam hosts a wide range of research data management (RDM) tools designed for researchers to support researchers throughout their enitre project lifecycle. 
+
+Whether you are starting your data management plan, collecting data or looking for long-term storage solutions, RDM tools help you optimise your research process and make data handling efficient. 
+
+## RDM tools
+
+<details>
+
+<summary>Code Development Tools</summary>
+
+VU Amsterdam has a GitLab instance in which you can collaboratorively work on code:
+
+- [GitLab](https://gitlab.vu.nl) is a code repository for **research use**; features include version control and the possibility to collaborate. Maintained by the University Library. There is also a [gitlab server for general use](https://git.vu.nl).
+
+</details>
+
+<details>
+
+<summary>Computing Tools</summary>
+
+There are several tools available to support researchers in performing computational analysis and processing data efficiently:
+
+- [ADA](https://rdm.vu.nl/tools/ada/index.html) is designed by VU and is beneficial when your research requires more computational power than a standard laptop or workstation. It offers access to multi-core CPUs, large-memory nodes, and batch GPU capacity for effiecient large-scale data processing and analysis.
+
+- [Nebula](https://rdm.vu.nl/tools/nebula/index.html) is developed to support researchers who want to use AI models in their work. It provides researchers across all departments with safe and semaless access to open-source langugae models (LLMs). Nebula is fully hosted on VU premises ensuring that no data leaves the campus.
+
+- [Research Cloud](https://rdm.vu.nl/tools/researchcloud/index.html) is a SURF-hosted portal that allows you to easily build or reuse a virtual research environment. It enables you to run one or more servers with applications that are accessible over the internet. 
+
+- [SciCloud](https://rdm.vu.nl/tools/scicloud/index.html) is based on the open-source middleware OpenNebula (ONE) and allows researchers to purchase server capacity to support their research applications.
+
+- [Snellius](https://rdm.vu.nl/tools/snellius/index.html) is a SURF-hosted service designed for large-scale experiments, such as simulations and modelling, that require significant computing power.
+
+- [VU Compute hub](https://rdm.vu.nl/tools/vucomputehub/index.html) is a JupyterHub service hosted by IT that is primarily intended for educational use, but is also available to VU researchers who need a low-threshold environment for running analyses.
+
+</details>
+
+
+<details>
+
+<summary>Data Archiving Tools</summary>
+
+There are several tools available to support researchers in archiving data efficiently:
+
+- [DataverseNL](https://rdm.vu.nl/tools/dataversenl/index.html) is a data repository hosted by DANS for archiving and publishing research datasets. DataverseNL is not suitable for data files containing personal or confidential data. For archiving and publishing sensitive data, researchers should consider using Yoda. 
+
+- [Yoda](https://rdm.vu.nl/tools/yoda/index.html) is developed by Utrecht University and hosted by SURF. It supports researchers throughout the entire research lifecycle, from the safe and easy storage and sharing of data during the research process, to the sharing of data within research collaborations and ultimately to research data archiving and publication.
+
+
+</details>
+
+
+<details>
+
+<summary>Data Management Plan Tools</summary>
+
+- [DMPonline](https://rdm.vu.nl/tools/dmponline/) is an online platform that enables researchers to create, manage, and share Data Management Plans. The platform provides structured templates to help researchers address key aspects of the research lifecycle, including legal and ethical requirements, storage, preservation, documentation, and responsibilities.
+
+
+</details>
+
+
+<details>
+
+<summary>Data Publishing Tools</summary>
+
+There are several tools available to support researchers in publishing data efficiently:
+
+- [DataverseNL](https://rdm.vu.nl/tools/dataversenl/index.html) is an open access platform hosted by DANS for archiving and publishing research datasets. DataverseNl is not suitable for data files containing personl or confidential data. For archiving and publishing sensitive data, researchers should consider Yoda. 
+
+- [OSF](https://rdm.vu.nl/tools/osf/index.html) is a cloud-based, open-source tool that supports researchers throughout the active research stage. It facilitates collaboration and connects services, materials, and other research objects for private use or public sharing.
+
+- [Yoda](https://rdm.vu.nl/tools/yoda/index.html) is developed by Utrecht University and hosted by SURF. It supports researchers throughout the entire research lifecycle, from the safe and easy storage and sharing of data during the research process, to the sharing of data within research collaborations and ultimately to research data archiving and publication.
+
+</details>
+
+
+<details>
+
+<summary>Data Storage Tools</summary>
+
+There are several tools available to support researchers in storing data efficiently. The [Data Storage Finder](https://vu.nl/en/research/storagefinder) can help you decide which tools fits your situation best.
+
+- [Research Drive](https://rdm.vu.nl/tools/researchdrive/index.html) is a SURF-hosted online storage and collaboration platform for research data. It allows researchers to easily store and share files with others, both within and outside VU Amsterdam. Research Drive is a cloud storage platform that requires downloading data using Nextcloud to a local device for analysis. 
+
+- [SciStore](https://rdm.vu.nl/tools/scistor/index.html) is an IT-hosted data storage service designed for storing large volumes of research data on campus. It provides high-speed connections to lab equipment, laptops, and workstations.
+
+- [Yoda](https://rdm.vu.nl/tools/yoda/index.html) is developed by Utrecht University and hosted by SURF. It supports researchers throughout the entire research lifecycle, from the safe and easy storage and sharing of data during the research process, to the sharing of data within research collaborations and ultimately to research data archiving and publication.
+
+</details>
+
+<details>
+
+<summary>File Transfer Tools</summary>
+
+A storage platform that allows (external) sharing is the easiest way to share data with others working on your project. This is possible with [Yoda]() and [Research Drive]() (with VU-internal and external colleagues) and with [SciStor]() (only with VU colleagues). However, sometimes you might need to send data to a third party as a one-off. Regular email is not suitable for sending sensitive data, but there are alternatives:
+
+- [SURFfilesender](https://filesender.surf.nl/?s=home) is a web-based application that allows authenticated users to securely and easily send arbitrarily large files to other users. Users without an account can be sent a guest upload voucher by an authenticated user. SURFfilesender is developed to the requirements of the higher education and research community.
+
+- [Zivver](https://www.zivver.com/products/email-encryption-software) offers a secure way to send (large) files. With Zivver, you can encrypt your emails and attachments up to 5TB. This is available to all VU employees. You can find information on how to use Zivver in 🔒 [the VU service portal](https://services.vu.nl/esc?id=kb_article&sysparm_article=KB0012157). Encrypted email and file transfer with attachments up to 5TB.
+
+</details>
+
+<details>
+
+<summary>Lab Journal Tools</summary>
+
+- [SciSure](https://rdm.vu.nl/tools/scisure/index.html) is an application that supports researchers in documenting experiments and results in a digital lab journal.It can be used to track results and share data recorded during experiments within an electronic lab notebook.
+
+
+</details>
+
+<details>
+
+<summary>Online Surveys Tools</summary>
+
+- [Qualtrics](https://rdm.vu.nl/tools/qualtrics/index.html) is a cloud-based survey platform that enables users to create and manage online surveys. It supports a variety of (complex) survey design requirements. VU’s Qualtrics licence is intended for scientific research purposes only, including data collection and management.
+
+</details>
+
+<details>
+
+<summary>Plagiarism Detection Tools</summary>
+
+- [iThenticate](https://rdm.vu.nl/tools/ithenticate/index.html) is plagiarism detection software offered by Turnitin that compares a researcher’s work with published academic sources and bibliographic databases such as Crossref. At VU, plagiarism checks are used primarily in an educational and preventative way, with the aim of raising awareness of scientific integrity rather than focusing on retrospective detection.
+</details>
+
+<details>
+
+<summary>Preregistration Tools</summary>
+
+- [OSF](https://rdm.vu.nl/tools/osf/index.html) is a cloud-based, open-source tool that supports researchers throughout the active research stage. It facilitates collaboration and connects services, materials, and other research objects for private use or public sharing.
+
+</details>
+
+<details>
+
+<summary>Research Output Registration Tools</summary>
+
+- [Pure](https://rdm.vu.nl/tools/pure/index.html) is the Current Research Information System (CRIS) used at VU, serving as the central platform for registering and managing all research activities and outputs, including publications, datasets, and projects.
+
+</details>
+
+<details>
+
+<summary>Transcription Tools</summary>
+
+VU Amsterdam has agreements with two transcription services for converting speech in audio or video files to text:
+
+- [Transcript Online](../topics/transcription.qmd) offers human-edited transcription. Experienced transcribers convert speech into both verbatim and literal transcriptions. This is a paid service.
+
+- [Amberscript](../topics/transcription.qmd) offers both automated transcription and human-edited transcription. Human-edited transcriptions can be done verbatim or literal. This is a paid service.
+
+</details>
+
+<details>
+
+<summary>Virtual Research Environment Tools</summary>
+
+There are several tools available to support researchers in building and using virtual research environments efficiently:
+
+- [Research Cloud](https://rdm.vu.nl/tools/researchcloud/index.html) is a SURF-hosted portal that allows you to easily build or reuse a virtual research environment. It enables you to run one or more servers with applications that are accessible over the internet.
+
+- [SciCloud](https://rdm.vu.nl/tools/scicloud/index.html) is based on the open-source middleware OpenNebula (ONE) and allows researchers to purchase server capacity to support their research applications.
+
+</details>
+
+## Choosing a Tool
+
+Which tool is most suitable for your research can vary, depending on what kind of functionality you're looking for, what sort of data you're dealing with, or whether you need to share data with external partners. Not sure which tools fits your project? The [RDM Support Desk](mailto:rdm.vu.nl) is available to provide you with the guidance throughout your entire project lifecycle.
+
+## Tool Not Listed?
+
+If you need a research tool that isn't provided by VU Amsterdam, you can contact the RDM Support Desk at [rdm@vu.nl](mailto:rdm@vu.nl) to discuss your requirements. We can suggest an alternative or forward your question to the IT or the procurement team.
+
