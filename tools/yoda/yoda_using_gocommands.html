@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-03-19">
+<meta name="dcterms.date" content="2026-04-13">
 <meta name="description" content="This page explains how to install the iRODS goommands on Linux, Mac or Windows">
 
 <title>Using Gocommands – Research Support Handbook</title>
@@ -498,7 +498,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">last modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 19, 2026</p>
+      <p class="date">April 13, 2026</p>
     </div>
   </div>
   
@@ -531,7 +531,7 @@ Warning
 <div class="callout-body-container callout-body">
 <p>The current 0.11.x version of Gocommands is not compatible with Yoda 2.0. Please use the <a href="https://github.com/cyverse/gocommands/releases/tag/v0.10.26" target="_blank">0.10.26</a> version for now.</p>
 <p>Download and zip it manually or adjust the command like this:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>curl <span class="at">-L</span> <span class="at">-s</span> <span class="at">-o</span> gocmd.zip https:/<span class="at">/github</span>.com<span class="at">/cyverse/gocommands/releases/download/0</span>.10.26<span class="at">/gocmd-0</span>.10.26<span class="at">-windows-amd64</span>.zip <span class="kw">&amp;&amp;</span> tar zxvf gocmd.zip <span class="kw">&amp;&amp;</span> <span class="bu">del</span> gocmd.zip</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode cmd code-with-copy"><code class="sourceCode dosbat"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>curl <span class="at">-L</span> <span class="at">-s</span> <span class="at">-o</span> gocmd.zip https:/<span class="at">/github</span>.com<span class="at">/cyverse/gocommands/releases/download/v0</span>.10.26<span class="at">/gocmd-v0</span>.10.26<span class="at">-windows-amd64</span>.zip <span class="kw">&amp;&amp;</span> tar zxvf gocmd.zip <span class="kw">&amp;&amp;</span> <span class="bu">del</span> gocmd.zip</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 </section>
@@ -560,7 +560,9 @@ Warning
 <li><a href="https://github.com/cyverse/gocommands/blob/main/docs/commands/cd_pwd.md#change-the-current-working-collection" target="_blank">gocmd cd</a> – Change directory</li>
 <li><a href="https://github.com/cyverse/gocommands/blob/main/docs/commands/put.md" target="_blank">gocmd put</a> – Upload files to Yoda</li>
 <li><a href="https://github.com/cyverse/gocommands/blob/main/docs/commands/get.md" target="_blank">gocmd get</a> – Download files from Yoda</li>
+<li><a href="https://github.com/cyverse/gocommands/blob/main/docs/commands/sync.md" target="_blank">gocmd sync</a> - Sync a local and remote directory</li>
 </ul>
+<p>The <a href="https://github.com/cyverse/gocommands/blob/main/docs/data_management.md" target="_blank">datamanagement page</a> of the gocommands docs offers a good start on working with Gocommonds</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -578,7 +580,8 @@ Tip
 <h3 class="anchored" data-anchor-id="copying-files">Copying files</h3>
 <p>Here is an example of how you could copy files from your current directory to iRODS. This would copy the folder “folder” and its contents on your computer to the collection ‘research-group’ in Yoda:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">./gocmd</span> sync ./folder i:/vu/home/research-group/ <span class="at">--progress</span> </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>This gives an idea of what the process is like. You can learn more about how to use the Gocommands to transfer files in the <a href="https://github.com/cyverse/gocommands/blob/main/docs/commands/sync.md" target="_blank">syncing section</a>. The <a href="https://github.com/cyverse/gocommands/blob/main/docs/commands/sync.md#sync-data-between-local-and-irods" target="_blank">section on the sync command</a> is especially useful when transferring data to Yoda.</p>
+<p>The <code>gocmd sync</code> command will only upload changed files, which is also handy if the transfer gets interrupted. By default it also compares checksums of the local and remote files, ensuring data integrity.</p>
+<p>You can learn more about how to use the Gocommands to transfer files in the <a href="https://github.com/cyverse/gocommands/blob/main/docs/commands/sync.md#sync-data-between-local-and-irods" target="_blank">section on the sync command</a> in the Gocommands docs.</p>
 
 
 </section>
