@@ -5,11 +5,19 @@ categories: [Knowledge Items]
 
 The Vrije Universiteit Amsterdam hosts a wide range of research data management (RDM) tools designed for researchers to support researchers throughout their enitre project lifecycle. 
 
-Whether you are starting your data management plan, collecting data or looking for long-term storage solutions, RDM tools help you optimize your research process and make data handling efficient. 
-
-Not sure which tools fits your project? The [RDM Support Desk](mailto:rdm.vu.nl) is available to provide you with the guidance throughout your entire project lifecycle. 
+Whether you are starting your data management plan, collecting data or looking for long-term storage solutions, RDM tools help you optimise your research process and make data handling efficient. 
 
 ## RDM tools
+
+<details>
+
+<summary>Code Development Tools</summary>
+
+VU Amsterdam has a GitLab instance in which you can collaboratorively work on code:
+
+- [GitLab](https://gitlab.vu.nl) is a code repository for **research use**; features include version control and the possibility to collaborate. Maintained by the University Library. There is also a [gitlab server for general use](https://git.vu.nl).
+
+</details>
 
 <details>
 
@@ -75,7 +83,7 @@ There are several tools available to support researchers in publishing data effi
 
 <summary>Data Storage Tools</summary>
 
-There are several tools available to support researchers in storing data efficiently:
+There are several tools available to support researchers in storing data efficiently. The [Data Storage Finder](https://vu.nl/en/research/storagefinder) can help you decide which tools fits your situation best.
 
 - [Research Drive](https://rdm.vu.nl/tools/researchdrive/index.html) is a SURF-hosted online storage and collaboration platform for research data. It allows researchers to easily store and share files with others, both within and outside VU Amsterdam. Research Drive is a cloud storage platform that requires downloading data using Nextcloud to a local device for analysis. 
 
@@ -85,6 +93,17 @@ There are several tools available to support researchers in storing data efficie
 
 </details>
 
+<details>
+
+<summary>File Transfer Tools</summary>
+
+A storage platform that allows (external) sharing is the easiest way to share data with others working on your project. This is possible with [Yoda]() and [Research Drive]() (with VU-internal and external colleagues) and with [SciStor]() (only with VU colleagues). However, sometimes you might need to send data to a third party as a one-off. Regular email is not suitable for sending sensitive data, but there are alternatives:
+
+- [SURFfilesender](https://filesender.surf.nl/?s=home) is a web-based application that allows authenticated users to securely and easily send arbitrarily large files to other users. Users without an account can be sent a guest upload voucher by an authenticated user. SURFfilesender is developed to the requirements of the higher education and research community.
+
+- [Zivver](https://www.zivver.com/products/email-encryption-software) offers a secure way to send (large) files. With Zivver, you can encrypt your emails and attachments up to 5TB. This is available to all VU employees. You can find information on how to use Zivver in 🔒 [the VU service portal](https://services.vu.nl/esc?id=kb_article&sysparm_article=KB0012157). Encrypted email and file transfer with attachments up to 5TB.
+
+</details>
 
 <details>
 
@@ -128,6 +147,18 @@ There are several tools available to support researchers in storing data efficie
 
 <details>
 
+<summary>Transcription Tools</summary>
+
+VU Amsterdam has agreements with two transcription services for converting speech in audio or video files to text:
+
+- [Transcript Online](../topics/transcription.qmd) offers human-edited transcription. Experienced transcribers convert speech into both verbatim and literal transcriptions. This is a paid service.
+
+- [Amberscript](../topics/transcription.qmd) offers both automated transcription and human-edited transcription. Human-edited transcriptions can be done verbatim or literal. This is a paid service.
+
+</details>
+
+<details>
+
 <summary>Virtual Research Environment Tools</summary>
 
 There are several tools available to support researchers in building and using virtual research environments efficiently:
@@ -137,4 +168,12 @@ There are several tools available to support researchers in building and using v
 - [SciCloud](https://rdm.vu.nl/tools/scicloud/index.html) is based on the open-source middleware OpenNebula (ONE) and allows researchers to purchase server capacity to support their research applications.
 
 </details>
+
+## Choosing a Tool
+
+Which tool is most suitable for your research can vary, depending on what kind of functionality you're looking for, what sort of data you're dealing with, or whether you need to share data with external partners. Not sure which tools fits your project? The [RDM Support Desk](mailto:rdm.vu.nl) is available to provide you with the guidance throughout your entire project lifecycle.
+
+## Tool Not Listed?
+
+If you need a research tool that isn't provided by VU Amsterdam, you can contact the RDM Support Desk at [rdm@vu.nl](mailto:rdm@vu.nl) to discuss your requirements. We can suggest an alternative or forward your question to the IT or the procurement team.
 
