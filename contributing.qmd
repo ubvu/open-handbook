@@ -193,6 +193,8 @@ listing:
 - Delete unused files from the tool folder and the `_sidebar.yml`.
 - You can also add extra pages as needed. Make sure to add them to the `_sidebar.yml` file under the `Documentation` section. If you need extra subsections under `Documentation` you can add them to `_sidebar.yml` as needed. 
 
+After that, you are ready to [submit your pull request](#submit-a-pull-request)!
+
 ### Editing multiple files
 
 There are situations in which you need to edit multiple files. If you carry out all edits in separate [pull requests](#submit-a-pull-request), this may be a long and repetitive task. Instead, you can change multiple files at once in a single pull request.
