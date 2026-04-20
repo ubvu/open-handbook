@@ -20,3 +20,37 @@ Ask questions to the [Qualtrics community](https://www.qualtrics.com/community/)
 
 When logging in choose "Sign in with SSO", when asked "Enter your company's Organization ID" fill in `vuamsterdam`.
 
+**To create a user account and access the Qualtrics environment** at the Central Brand, please proceed as follows:
+
+1. Go to: [https://vuamsterdam.eu.qualtrics.com](https://vuamsterdam.eu.qualtrics.com)
+2. On the login page, choose: Vrije Universiteit SSO
+3. Log in with your VU account credentials (email address and password)
+
+    ![VU's central brand login page](/public/qualtrics-vu-brand-login-page.png)
+
+4. Choose “No, I don’t have a preexisting account here” when it is your first time enrolling the central brand
+
+    ![Qualtrics preexisting account](/public/tools/qualtrics/qualtrics-preexisting-account.png)
+
+5. Click `Sign In`
+
+    ![Qualtrics account created successfully](/public/tools/qualtrics/qualtrics-account-created-successfully.png)
+
+6. Terms of Service or General Terms and Conditions for Qualtrics Services are presented for review and acceptance. 
+
+    ![Qualtrics terms conditions](/public/tools/qualtrics/qualtrics-terms-conditions.png)
+
+> It is recommended to save [VU's Central Brand](https://vuamsterdam.eu.qualtrics.com) as a Favourite or Bookmark link for future reference.
+
+### Note to Existing Users
+
+#### Security Settings: Login Error Disabled Account
+
+Security settings are in place that disable a user account after a certain amount of inactivity. This threshold is currently 12 months. This setting follows security requirements regarding User Account Management.
+
+![Notification of disabled Qualtrics account](/public/qualtrics-account-disabled.png)
+
+A disabled account status does not affect its data.
+
+Users who receive an error when trying to log back in after extended periods of inactivity (`User account is disabled`) should contact the [RDM Support Desk](mailto:rdm@vu.nl) to have their accounts re-enabled.
+
