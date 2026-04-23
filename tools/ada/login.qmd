@@ -6,7 +6,20 @@ date: last-modified
 - You must be comfortable with Bash and basic HPC concepts. See: [Unix Shell](https://swcarpentry.github.io/shell-novice/) and [HPC Introduction](https://carpentries-incubator.github.io/hpc-intro/).
 :::
 
-## SSH Login Setup (Linux and macOS, recommended)
+## SSH Password login
+
+To log in with the password you've received from ITVO, first connect to EduVPN or use ssh.data.vu.nl. Once connected, you can directly log in via terminal: 
+
+```sh
+ssh *vunetid*@ada.labs.vu.nl
+```
+
+On your first login, you are prompted to change your password. Follow the interactive prompts, filling in the old password first, followed by the new password + confirmation. 
+
+If you need assistance in resetting your password, you can reach out to ITvO (itvo.it@vu.nl)
+
+
+## SSH Key Login Setup (Linux and macOS, recommended)
 
 Here we will set-up passwordless SSH access to ADA. 
 
@@ -111,7 +124,7 @@ Here we provide the steps to connect to the cluster using MobaXterm.
 ## Login node policy
 
 ::: {.callout-danger title="Strict rule on login nodes"}
-Login nodes are only for light tasks: edit scripts, manage files, submit SLURM jobs. Do not run notebooks, VS Code Server, heavy compiles, or long‑running programs here.
+Login nodes are only for light tasks: edit scripts, manage files, submit SLURM jobs. Do not run notebooks, VS Code Server, heavy compiles, or long‑running programs here. User sessions that do not adhere to this policy, are automatically logged off every 5 minutes. 
 :::
 
 Use interactive nodes (`inter01`–`inter04`) for heavier interactive work, or see Open OnDemand in the Quick Start.
