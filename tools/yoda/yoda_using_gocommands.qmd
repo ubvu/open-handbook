@@ -25,7 +25,7 @@ The current 0.11.x version of Gocommands is not compatible with Yoda 2.0. Please
 
 Download and zip it manually or adjust the command like this:
 ```cmd
-curl -L -s -o gocmd.zip https://github.com/cyverse/gocommands/releases/download/0.10.26/gocmd-0.10.26-windows-amd64.zip && tar zxvf gocmd.zip && del gocmd.zip
+curl -L -s -o gocmd.zip https://github.com/cyverse/gocommands/releases/download/v0.10.26/gocmd-v0.10.26-windows-amd64.zip && tar zxvf gocmd.zip && del gocmd.zip
 ```
 :::
 
@@ -65,6 +65,9 @@ These are the basic commands for navigation and data transfer:
 - [gocmd cd](https://github.com/cyverse/gocommands/blob/main/docs/commands/cd_pwd.md#change-the-current-working-collection) – Change directory
 - [gocmd put](https://github.com/cyverse/gocommands/blob/main/docs/commands/put.md) – Upload files to Yoda
 - [gocmd get](https://github.com/cyverse/gocommands/blob/main/docs/commands/get.md) – Download files from Yoda
+- [gocmd sync](https://github.com/cyverse/gocommands/blob/main/docs/commands/sync.md) - Sync a local and remote directory
+
+The [datamanagement page](https://github.com/cyverse/gocommands/blob/main/docs/data_management.md) of the gocommands docs offers a good start on working with Gocommonds
 
 ::: { .callout-tip }
 By default an iRODS session will time-out after an hour and you will need to login again. You can extend the session by starting it with the `gocmd init --ttl <hours>` option, e.g. `gocmd init --ttl 8` will keep the session alive for 8 hours.
@@ -77,4 +80,6 @@ Here is an example of how you could copy files from your current directory to iR
 ./gocmd sync ./folder i:/vu/home/research-group/ --progress 
 ```
 
-This gives an idea of what the process is like. You can learn more about how to use the Gocommands to transfer files in the [syncing section](https://github.com/cyverse/gocommands/blob/main/docs/commands/sync.md). The [section on the sync command](https://github.com/cyverse/gocommands/blob/main/docs/commands/sync.md#sync-data-between-local-and-irods) is especially useful when transferring data to Yoda.
+The `gocmd sync` command will only upload changed files, which is also handy if the transfer gets interrupted. By default it also compares checksums of the local and remote files, ensuring data integrity.
+
+You can learn more about how to use the Gocommands to transfer files in the [section on the sync command](https://github.com/cyverse/gocommands/blob/main/docs/commands/sync.md#sync-data-between-local-and-irods) in the Gocommands docs.
