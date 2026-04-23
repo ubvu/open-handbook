@@ -5,6 +5,7 @@ website:
       contents:
       # Title that shows up at the top of the sidebar
         - section: Dummy
+          href: tools/dummy/index.qmd
           contents:
           - href: tools/dummy/index.qmd # Mandatory, start page 
             text: What is Dummy?
@@ -15,7 +16,7 @@ website:
           - tools/dummy/faq.qmd # Optional, delete if not necessary
           - tools/dummy/known-issues.qmd # Optional, delete if not necessary
           - section: Documentation # Optional, delete section + contents if there are none
-            contents:
-            - tools/dummy/some-how-to.qmd
+            contents: # Add additional documentation pages here. Subsections are possible
+            - tools/dummy/some-how-to.qmd 
 
 # Rename application and add to _quarto.yml
