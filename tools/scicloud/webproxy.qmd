@@ -1,0 +1,86 @@
+---
+title: Accessing the Internet
+---
+
+> Server OS: Linux
+
+## The HTTP Proxy
+SciCloud is a relatively open system, which allows researchers full control of the software running on the servers. However, most researchers are not system administrators or security experts. To prevent abuse of the servers you must connect to the internet via a Proxy Server. The Proxy Server allows IT to monitor outgoing traffic and to quickly block suspicious activity .
+
+This means you might need a few extra steps to install software (applications, docker images, python packages, etc.) on the server.
+
+## Enable the proxy for your current SSH session
+Use the following command:
+```sh
+export http_proxy=http://proxy.labs.vu.nl:8080 https_proxy=http://proxy.labs.vu.nl:8080
+```
+
+## Enable for specific applications
+If your workflow necessitates frequent access or some automation, it is a good idea to set the proxy config for the software you use. Below are some examples for frequently used software on Ubuntu server. Other software that relies on an internet connection will have similar configurations.
+
+### curl
+Create or add to `~/.curlc`:
+
+```sh
+echo 'proxy="http://proxy.labs.vu.nl:8080"' >> ~/.curlrc
+```
+
+### wget
+Create or add to `~/.wgetrc`:
+```sh
+echo -e "Use_proxy = on\nhttp_Proxy = http://proxy.labs.vu.nl:8080\nhttps_Proxy = http://proxy.labs.vu.nl:8080" >> ~/.wgetrc
+```
+
+### git
+If you work with git add it to the global configuration:
+```sh
+git config --global http.proxy http://proxy.labs.vu.nl:8080
+```
+
+### Docker
+Create `/etc/systemd/system/docker.service.d/http-proxy.conf` if it does not exist yet.
+```sh
+sudo nano /etc/systemd/system/docker.service.d/http-proxy.conf
+```
+
+With this content:
+```conf
+[Service]
+Environment="HTTP_PROXY=http://proxy.labs.vu.nl:8080"
+Environment="HTTPS_PROXY=http://proxy.labs.vu.nl:8080"
+Environment="NO_PROXY=localhost,127.0.0.1
+```
+
+Reload:
+```sh
+systemctl daemon-reload
+systemctl restart docker
+```
+
+Check the active configuration with:
+```sh
+systemctl show --property=Environment docker
+```
+
+### R
+
+#### Via console
+```R
+Sys.setenv("ftp_proxy"="http://proxy.labs.vu.nl:8080/")
+Sys.setenv("http_proxy"="http://proxy.labs.vu.nl:8080")
+
+Sys.setenv("https_proxy"="http://proxy.labs.vu.nl:8080")
+
+Sys.getenv()
+```
+
+#### Via environment file
+User:
+```sh
+echo -e "http_proxy = http://proxy.labs.vu.nl:8080\nhttps_proxy = http://proxy.labs.vu.nl:8080' >> ~/.Renviron
+```
+
+Global:
+```sh
+echo -e "http_proxy = http://proxy.labs.vu.nl:8080\nhttps_proxy = http://proxy.labs.vu.nl:8080' >> /etc/R/Renviron.site
+```

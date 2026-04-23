@@ -1,0 +1,25 @@
+---
+title: Troubleshooting Access
+---
+Sometimes you can run into errors that leave the server inaccessible by SSH. In that case you could first try to reboot the server from the OpenNebula Console. 
+
+## Reboot
+Log in to the [OpenNebula Console](https://one.labs.vu.nl), with your VUnetId as username.
+
+::: {.callout-important}
+To access the web interface from outside the VU campus use [EduVPN institute access](https://vu.eduvpn.nl).
+:::
+
+- Go to Instances > VMs and double-click your VM
+
+![Reboot](/public/tools/scicloud/reboot.png)
+- Click on the reboot button. _Reboot_ will try to stop running software first, _Reboot Hard_ will immediately shut down the server.
+
+## Viewing the Server Console
+If the system is still inaccessible you can check if there are any errors in the boot process, by viewing the server console.
+
+![VNC](/public/tools/scicloud/vnc.png)
+- Click on the button with the screen and click VNC
+
+![Server console](/public/tools/scicloud/server-console.png)
+You will see the screen output of the server as if you had connected a monitor to it.

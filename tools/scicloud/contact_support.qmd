@@ -2,4 +2,74 @@
 title: Support and Contact
 ---
 
-Wondering if SciCloud fits your research needs or questions about using SciCloud? Please contact [IT for Research](mailto:itvo.it@vu.nl)
+## Contact
+Wondering if SciCloud fits your research needs or questions about using SciCloud? Please contact [IT for Research (ITvO)](mailto:itvo.it@vu.nl).
+
+## Requesting Changes to the Server
+If you need to change the server configuration (CPU, RAM or Storage), please use the
+[Changes Form](https://services.vu.nl/esc?id=sc_cat_item&sys_id=c9a91cf947be8150bfa46d72e36d4330)
+
+If you no longer need the server(s), please request removal via the [Delete Form](https://services.vu.nl/esc?id=sc_cat_item&sys_id=faf8d03947be8150bfa46d72e36d4365).
+
+## Requesting Support
+### Scope and Expectations
+
+**What ITvO supports:**
+
+- SciCloud specific issues (login/access issues, hardware performance, network issues, issues with the OpenNebula platform).
+
+**What ITvO does not support:**
+
+- Installing, configuring and maintaining software you installed on the server. 
+- Security issues with your software.
+- Out of scope: teaching programming, server admin and command-line basic; debugging your custom built application; building bespoke environments for a single project.
+
+The ITvO team is happy to spend some time to help you to get started with a new server, but the team lacks the capacity to offer full tech-support for each software stack 
+running on SciCloud. That said, asking questions is always free and the team might be able to point you in the right direction.
+
+In some cases it might be possible to offer more support on a project basis to assist in developing and building your setup, but long-term maintenance of the setup will never be possible.
+
+### Support ticket
+If you run into problems SciCloud with you can open a support ticket by emailing the [IT Service Desk](mailto:servicedesk.it@vu.nl).
+
+Use the template below to provide a clear and actionable description of your issue:
+
+```markdown
+Summary
+  Short description of the problem. Always mention SciCloud.
+
+What I tried
+  Exact commands run (copy/paste), scripts used, and any changes recently made.
+
+Expected vs. actual
+  What you expected to happen, and what happened instead.
+
+Reproduction steps (minimal)
+  Smallest example that fails, with steps someone else can run.
+
+Context
+  Server name
+  Applications you were using
+
+Artifacts (attach as files or paste snippets)
+  Command output and full error messages
+  If using containers: image name, how it was built, links to git repo's
+  Screenshots
+```
+
+## Backups
+[IT for Research](/topics/itvo.qmd) makes daily backups with which a virtual machine can be restored on request. Backups are kept for up to 30 days. 
+
+They can also create an extra snapshot on request, for example if you are planning a major upgrade and want an easy way to revert if it fails.
+
+## Documentation Feedback
+Found a typo, missing page, or confusing section? Please open an issue in the handbook’s issue tracker (see the link to the right) with:
+
+- Page path (for example tools/scicloud/snapshots.qmd) and what needs to change
+- A suggested fix or the exact text that confused you
+- Optional: a PR if you already made the change
+
+If you prefer, you can also email [ITvO](mailto:itvo.it@vu.nl) with the same details and we will triage it.
+
+
+
