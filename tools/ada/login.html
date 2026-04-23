@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-02-17">
+<meta name="dcterms.date" content="2026-04-09">
 
 <title>Login – Research Support Handbook</title>
 <style>
@@ -70,7 +70,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
 <link href="../../tools/ada/slurm.html" rel="next">
-<link href="../../tools/ada/hpc-updates.html" rel="prev">
+<link href="../../tools/ada/hpc-training.html" rel="prev">
 <link href="../../public/favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -236,6 +236,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">HPC Updates</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/ada/hpc-training.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HPC Training Courses</span></a>
+  </div>
+</li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
@@ -350,6 +356,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">HPC 101</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/ada/faq.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">FAQ</span></a>
+  </div>
+</li>
       </ul>
   </li>
       </ul>
@@ -364,7 +376,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#ssh-login-setup-linux-and-macos-recommended" id="toc-ssh-login-setup-linux-and-macos-recommended" class="nav-link active" data-scroll-target="#ssh-login-setup-linux-and-macos-recommended">SSH Login Setup (Linux and macOS, recommended)</a>
+  <li><a href="#ssh-password-login" id="toc-ssh-password-login" class="nav-link active" data-scroll-target="#ssh-password-login">SSH Password login</a></li>
+  <li><a href="#ssh-key-login-setup-linux-and-macos-recommended" id="toc-ssh-key-login-setup-linux-and-macos-recommended" class="nav-link" data-scroll-target="#ssh-key-login-setup-linux-and-macos-recommended">SSH Key Login Setup (Linux and macOS, recommended)</a>
   <ul class="collapse">
   <li><a href="#step-1-create-an-ssh-key" id="toc-step-1-create-an-ssh-key" class="nav-link" data-scroll-target="#step-1-create-an-ssh-key">Step 1 — Create an SSH key</a></li>
   <li><a href="#step-2-configure-ssh" id="toc-step-2-configure-ssh" class="nav-link" data-scroll-target="#step-2-configure-ssh">Step 2 — Configure SSH</a></li>
@@ -394,7 +407,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">last modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 17, 2026</p>
+      <p class="date">April 9, 2026</p>
     </div>
   </div>
   
@@ -421,8 +434,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 </div>
 </div>
-<section id="ssh-login-setup-linux-and-macos-recommended" class="level2">
-<h2 class="anchored" data-anchor-id="ssh-login-setup-linux-and-macos-recommended">SSH Login Setup (Linux and macOS, recommended)</h2>
+<section id="ssh-password-login" class="level2">
+<h2 class="anchored" data-anchor-id="ssh-password-login">SSH Password login</h2>
+<p>To log in with the password you’ve received from ITVO, first connect to EduVPN or use ssh.data.vu.nl. Once connected, you can directly log in via terminal:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh</span> <span class="pp">*</span>vunetid<span class="pp">*</span>@ada.labs.vu.nl</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>On your first login, you are prompted to change your password. Follow the interactive prompts, filling in the old password first, followed by the new password + confirmation.</p>
+<p>If you need assistance in resetting your password, you can reach out to ITvO (itvo.it@vu.nl)</p>
+</section>
+<section id="ssh-key-login-setup-linux-and-macos-recommended" class="level2">
+<h2 class="anchored" data-anchor-id="ssh-key-login-setup-linux-and-macos-recommended">SSH Key Login Setup (Linux and macOS, recommended)</h2>
 <p>Here we will set-up passwordless SSH access to ADA.</p>
 <p>ADA endpoints (for example <code>ada.labs.vu.nl</code>, <code>inter01.labs.vu.nl</code>) are only reachable on campus or via the VU VPN. Therefore we will use the public stepstone server <code>ssh.data.vu.nl</code> as a jump host (ProxyJump), so you could connect from anywhere.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="End state">
@@ -446,9 +466,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="step-1-create-an-ssh-key" class="level3">
 <h3 class="anchored" data-anchor-id="step-1-create-an-ssh-key">Step 1 — Create an SSH key</h3>
 <p>On your local linux machine, generate a modern key and load it into your agent:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh-keygen</span> <span class="at">-t</span> ed25519 <span class="at">-C</span> <span class="st">"&lt;your VU email&gt;"</span> <span class="at">-f</span> ~/.ssh/ada_ed25519</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">eval</span> <span class="st">"</span><span class="va">$(</span><span class="fu">ssh-agent</span> <span class="at">-s</span><span class="va">)</span><span class="st">"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh-add</span> ~/.ssh/ada_ed25519</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh-keygen</span> <span class="at">-t</span> ed25519 <span class="at">-C</span> <span class="st">"&lt;your VU email&gt;"</span> <span class="at">-f</span> ~/.ssh/ada_ed25519</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">eval</span> <span class="st">"</span><span class="va">$(</span><span class="fu">ssh-agent</span> <span class="at">-s</span><span class="va">)</span><span class="st">"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh-add</span> ~/.ssh/ada_ed25519</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="step-2-configure-ssh" class="level3">
 <h3 class="anchored" data-anchor-id="step-2-configure-ssh">Step 2 — Configure SSH</h3>
@@ -486,11 +506,11 @@ Host ada-login-direct inter0?-direct
 <section id="step-3-install-your-key-on-ada" class="level3">
 <h3 class="anchored" data-anchor-id="step-3-install-your-key-on-ada">Step 3 — Install your key on ADA</h3>
 <p>First copy your public key to the stepstone:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">ssh-copy-id</span> stepstone-vu   <span class="co"># prompts for your VU password </span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">ssh-copy-id</span> stepstone-vu   <span class="co"># prompts for your VU password </span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Then copy your public key to ADA:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">ssh-copy-id</span> ada-login   <span class="co"># prompts for your ADA password once</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">ssh-copy-id</span> ada-login   <span class="co"># prompts for your ADA password once</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Test connections:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh</span> ada-login</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh</span> ada-login</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>You should be logged into ADA without being prompted for a password!</p>
 </section>
 </section>
@@ -522,7 +542,7 @@ Host ada-login-direct inter0?-direct
 <section id="login-node-policy" class="level2">
 <h2 class="anchored" data-anchor-id="login-node-policy">Login node policy</h2>
 <div class="callout-danger" title="Strict rule on login nodes">
-<p>Login nodes are only for light tasks: edit scripts, manage files, submit SLURM jobs. Do not run notebooks, VS Code Server, heavy compiles, or long‑running programs here.</p>
+<p>Login nodes are only for light tasks: edit scripts, manage files, submit SLURM jobs. Do not run notebooks, VS Code Server, heavy compiles, or long‑running programs here. User sessions that do not adhere to this policy, are automatically logged off every 5 minutes.</p>
 </div>
 <p>Use interactive nodes (<code>inter01</code>–<code>inter04</code>) for heavier interactive work, or see Open OnDemand in the Quick Start.</p>
 </section>
@@ -951,8 +971,8 @@ Host ada-login-direct inter0?-direct
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../tools/ada/hpc-updates.html" class="pagination-link" aria-label="HPC Updates">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">HPC Updates</span>
+      <a href="../../tools/ada/hpc-training.html" class="pagination-link" aria-label="HPC Training Courses">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">HPC Training Courses</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

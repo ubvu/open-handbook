@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-02-17">
+<meta name="dcterms.date" content="2026-04-13">
 
 <title>Software – Research Support Handbook</title>
 <style>
@@ -236,6 +236,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">HPC Updates</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/ada/hpc-training.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HPC Training Courses</span></a>
+  </div>
+</li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
@@ -350,6 +356,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">HPC 101</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/ada/faq.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">FAQ</span></a>
+  </div>
+</li>
       </ul>
   </li>
       </ul>
@@ -369,6 +381,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#quick-start" id="toc-quick-start" class="nav-link" data-scroll-target="#quick-start">Quick Start</a></li>
   <li><a href="#when-to-choose-modules" id="toc-when-to-choose-modules" class="nav-link" data-scroll-target="#when-to-choose-modules">When to choose modules</a></li>
+  <li><a href="#european-environment-for-scientific-software-installations-eessi" id="toc-european-environment-for-scientific-software-installations-eessi" class="nav-link" data-scroll-target="#european-environment-for-scientific-software-installations-eessi">European Environment for Scientific Software Installations (EESSI)</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul></li>
   <li><a href="#pixi-environments" id="toc-pixi-environments" class="nav-link" data-scroll-target="#pixi-environments">Pixi Environments</a>
@@ -388,6 +401,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#quick-start-3" id="toc-quick-start-3" class="nav-link" data-scroll-target="#quick-start-3">Quick Start</a></li>
   <li><a href="#obtaining-images" id="toc-obtaining-images" class="nav-link" data-scroll-target="#obtaining-images">Obtaining images</a></li>
   <li><a href="#when-to-choose-apptainer" id="toc-when-to-choose-apptainer" class="nav-link" data-scroll-target="#when-to-choose-apptainer">When to choose Apptainer</a></li>
+  </ul></li>
+  <li><a href="#git" id="toc-git" class="nav-link" data-scroll-target="#git">Git</a>
+  <ul class="collapse">
   <li><a href="#references-3" id="toc-references-3" class="nav-link" data-scroll-target="#references-3">References</a></li>
   </ul></li>
   </ul>
@@ -410,7 +426,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">last modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 17, 2026</p>
+      <p class="date">April 13, 2026</p>
     </div>
   </div>
   
@@ -430,6 +446,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><a href="#pixi-environments"><code>Pixi</code></a> – lightweight multi-language environments for reproducible projects.</li>
 <li><a href="#conda-and-virtualenv"><code>Conda</code>/<code>virtualenv</code></a> – established Python-first tooling for legacy workflows.</li>
 <li><a href="#apptainer-containers"><code>Apptainer</code></a> – container images for bespoke stacks or portable workflows.</li>
+<li><a href="#git"><code>Git</code></a> - version control software</li>
 </ul>
 <div class="callout callout-style-default callout-note callout-titled" title="Need a quick recommendation?">
 <div class="callout-header d-flex align-content-center">
@@ -537,11 +554,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
+<section id="european-environment-for-scientific-software-installations-eessi" class="level3">
+<h3 class="anchored" data-anchor-id="european-environment-for-scientific-software-installations-eessi">European Environment for Scientific Software Installations (EESSI)</h3>
+<p>The European Environment for Scientific Software Installations (EESSI, pronounced as “easy”) is a collaboration between different European partners in HPC community. The goal of this project is to build a common stack of scientific software installations for HPC systems and beyond, including laptops, personal workstations and cloud infrastructure.</p>
+<p>A major advantage of the EESSI stack is that it provides an extensive library of software specifically optimized for various CPU and GPU architectures, significantly improving the computational performance of your code.</p>
+<p>To use EESSI on ADA, load in either the eessi-2023.06 or eessi-2026.06 stack, e.g.:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ module load eessi-2025.06</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
 <section id="references" class="level3">
 <h3 class="anchored" data-anchor-id="references">References</h3>
 <ul>
 <li><a href="https://lmod.readthedocs.io/en/latest/" target="_blank">Lmod user guide</a></li>
 <li><a href="https://carpentries-incubator.github.io/hpc-intro/15-modules/index.html" target="_blank">Carpentries HPC modules lesson</a></li>
+<li><a href="https://www.eessi.io/docs/" target="_blank">EESSI</a></li>
 </ul>
 </section>
 </section>
@@ -563,13 +588,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <section id="quick-start-1" class="level3">
 <h3 class="anchored" data-anchor-id="quick-start-1">Quick Start</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ module load 2025</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ module load Pixi</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ mkdir newproject</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ cd newproject</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~/newproject]$ pixi init</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~/newproject]$ pixi add numpy pandas matplotlib</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~/newproject]$ pixi run python <span class="at">-c</span> <span class="st">"import pandas as pd; print(pd.__version__)"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ module load 2025</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ module load Pixi</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ mkdir newproject</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ cd newproject</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~/newproject]$ pixi init</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~/newproject]$ pixi add numpy pandas matplotlib</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~/newproject]$ pixi run python <span class="at">-c</span> <span class="st">"import pandas as pd; print(pd.__version__)"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>The project directory now contains <code>pixi.toml</code> and <code>.pixi/</code> with the resolved environment. Share the <code>pixi.toml</code> file with collaborators so they can recreate the exact environment.</p>
 </section>
 <section id="when-to-choose-pixi" class="level3">
@@ -608,15 +633,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <section id="quick-start-2" class="level3">
 <h3 class="anchored" data-anchor-id="quick-start-2">Quick Start</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ module load 2025</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ module load Miniconda3</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ conda create <span class="at">-n</span> analysis python=3.12 numpy scipy</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ conda activate analysis</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>For virtualenv:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ module load 2025</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ module load Python/3.12.3-GCCcore-13.3.0</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ python <span class="at">-m</span> venv ~/envs/my-project</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ source ~/envs/my-project/bin/activate</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ module load Miniconda3</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ conda create <span class="at">-n</span> analysis python=3.12 numpy scipy</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ conda activate analysis</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>For virtualenv:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ module load 2025</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ module load Python/3.12.3-GCCcore-13.3.0</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ python <span class="at">-m</span> venv ~/envs/my-project</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ source ~/envs/my-project/bin/activate</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Remember to deactivate environments before logging out to avoid polluting future sessions.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Read: virtualenv essentials">
 <div class="callout-header d-flex align-content-center">
@@ -680,11 +705,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <section id="quick-start-3" class="level3">
 <h3 class="anchored" data-anchor-id="quick-start-3">Quick Start</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ srun <span class="at">--pty</span> <span class="at">--time</span><span class="op">=</span>00:30:00 <span class="at">--cpus-per-task</span><span class="op">=</span>2 bash</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@compute-node</span> ~]$ apptainer <span class="at">--version</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="ex">apptainer</span> version 1.4.2-1.el9</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@compute-node</span> ~]$ apptainer pull docker://alpine:latest</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@compute-node</span> ~]$ apptainer exec alpine_latest.sif cat /etc/os-release</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ srun <span class="at">--pty</span> <span class="at">--time</span><span class="op">=</span>00:30:00 <span class="at">--cpus-per-task</span><span class="op">=</span>2 bash</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@compute-node</span> ~]$ apptainer <span class="at">--version</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="ex">apptainer</span> version 1.4.2-1.el9</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@compute-node</span> ~]$ apptainer pull docker://alpine:latest</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@compute-node</span> ~]$ apptainer exec alpine_latest.sif cat /etc/os-release</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>The <code>alpine_latest.sif</code> file contains the immutably built image you can reuse in batch jobs.</p>
 </section>
 <section id="obtaining-images" class="level3">
@@ -720,27 +745,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Minimal patterns for running distributed and GPU workloads from SLURM through Apptainer. See the official docs for full guidance.</p>
 <ul>
 <li><p>MPI (distributed across tasks):</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --partition=&lt;cpu-partition&gt;</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --time=00:30:00</span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --ntasks=4</span></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --cpus-per-task=1</span></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load 2025</span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Launch ranks with the host scheduler; enter the container per rank</span></span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="ex">srun</span> apptainer exec /path/to/image.sif <span class="dt">\ </span></span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>     <span class="ex">/path/in/container/my_mpi_program</span> <span class="at">--arg</span> foo</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --partition=&lt;cpu-partition&gt;</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --time=00:30:00</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --ntasks=4</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --cpus-per-task=1</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load 2025</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Launch ranks with the host scheduler; enter the container per rank</span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="ex">srun</span> apptainer exec /path/to/image.sif <span class="dt">\ </span></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>     <span class="ex">/path/in/container/my_mpi_program</span> <span class="at">--arg</span> foo</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
 <li>Build containers against an MPI implementation compatible with ADA’s stack, or follow the Apptainer guidance on binding host MPI into the container.</li>
 <li>References: Apptainer MPI docs: https://apptainer.org/docs/user/main/mpi.html</li>
 </ul></li>
 <li><p>GPUs (NVIDIA):</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --partition=&lt;gpu-partition&gt;</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --gres=gpu:1</span></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --time=00:20:00</span></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load 2025</span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Expose NVIDIA devices and libraries to the container</span></span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="ex">apptainer</span> exec <span class="at">--nv</span> /path/to/image.sif nvidia-smi</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --partition=&lt;gpu-partition&gt;</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --gres=gpu:1</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --time=00:20:00</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load 2025</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Expose NVIDIA devices and libraries to the container</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="ex">apptainer</span> exec <span class="at">--nv</span> /path/to/image.sif nvidia-smi</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
 <li>Use <code>--nv</code> to enable NVIDIA GPU passthrough (or <code>--rocm</code> for AMD if applicable).</li>
 <li>For framework runs (PyTorch/TensorFlow), add <code>--nv</code> and run your normal command inside the container.</li>
@@ -751,6 +776,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
+</section>
+<section id="git" class="level2">
+<h2 class="anchored" data-anchor-id="git">Git</h2>
+<p>Git is pre-installed on every login/inter/compute node by default. If you need a specific release of git, use <code>$ module spider git</code> to check out all installed module versions.</p>
 <section id="references-3" class="level3">
 <h3 class="anchored" data-anchor-id="references-3">References</h3>
 <ul>

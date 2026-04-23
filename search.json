@@ -2690,11 +2690,23 @@
     ]
   },
   {
-    "objectID": "tools/ada/login.html#ssh-login-setup-linux-and-macos-recommended",
-    "href": "tools/ada/login.html#ssh-login-setup-linux-and-macos-recommended",
+    "objectID": "tools/ada/login.html#ssh-password-login",
+    "href": "tools/ada/login.html#ssh-password-login",
     "title": "Login",
-    "section": "SSH Login Setup (Linux and macOS, recommended)",
-    "text": "SSH Login Setup (Linux and macOS, recommended)\nHere we will set-up passwordless SSH access to ADA.\nADA endpoints (for example ada.labs.vu.nl, inter01.labs.vu.nl) are only reachable on campus or via the VU VPN. Therefore we will use the public stepstone server ssh.data.vu.nl as a jump host (ProxyJump), so you could connect from anywhere.\n\n\n\n\n\n\nTipEnd state\n\n\n\nAfter setup you should be able to run:\n\nssh ada-login → ada.labs.vu.nl\nssh inter01 → inter01.labs.vu.nl\n\nNo passwords; the stepstone is used automatically.\n\n\n\nStep 1 — Create an SSH key\nOn your local linux machine, generate a modern key and load it into your agent:\nssh-keygen -t ed25519 -C \"&lt;your VU email&gt;\" -f ~/.ssh/ada_ed25519\neval \"$(ssh-agent -s)\"\nssh-add ~/.ssh/ada_ed25519\n\n\nStep 2 — Configure SSH\nCreate or edit ~/.ssh/config and add:\nHost stepstone-vu\n    HostName ssh.data.vu.nl\n    User &lt;VUNETID&gt;\n    IdentityFile ~/.ssh/ada_ed25519\n    ServerAliveInterval 120\n\nHost ada-login\n    HostName ada.labs.vu.nl\n    User &lt;VUNETID&gt;\n    ProxyJump stepstone-vu\n    IdentityFile ~/.ssh/ada_ed25519\n    IdentitiesOnly yes\n    ServerAliveInterval 120\n\n# Interactive nodes (pattern covers inter01–inter04)\nHost inter0?\n    HostName %h.labs.vu.nl\n    User &lt;VUNETID&gt;\n    ProxyJump stepstone-vu\n    IdentityFile ~/.ssh/ada_ed25519\n    IdentitiesOnly yes\n    ServerAliveInterval 120\n\n# Optional direct paths when on campus/VPN (no ProxyJump)\nHost ada-login-direct inter0?-direct\n    HostName %n.labs.vu.nl\n    User &lt;VUNETID&gt;\n    IdentityFile ~/.ssh/ada_ed25519\n    IdentitiesOnly yes\n\n\nStep 3 — Install your key on ADA\nFirst copy your public key to the stepstone:\nssh-copy-id stepstone-vu   # prompts for your VU password \nThen copy your public key to ADA:\nssh-copy-id ada-login   # prompts for your ADA password once\nTest connections:\nssh ada-login\nYou should be logged into ADA without being prompted for a password!",
+    "section": "SSH Password login",
+    "text": "SSH Password login\nTo log in with the password you’ve received from ITVO, first connect to EduVPN or use ssh.data.vu.nl. Once connected, you can directly log in via terminal:\nssh *vunetid*@ada.labs.vu.nl\nOn your first login, you are prompted to change your password. Follow the interactive prompts, filling in the old password first, followed by the new password + confirmation.\nIf you need assistance in resetting your password, you can reach out to ITvO (itvo.it@vu.nl)",
+    "crumbs": [
+      "ADA",
+      "Documentation",
+      "Login"
+    ]
+  },
+  {
+    "objectID": "tools/ada/login.html#ssh-key-login-setup-linux-and-macos-recommended",
+    "href": "tools/ada/login.html#ssh-key-login-setup-linux-and-macos-recommended",
+    "title": "Login",
+    "section": "SSH Key Login Setup (Linux and macOS, recommended)",
+    "text": "SSH Key Login Setup (Linux and macOS, recommended)\nHere we will set-up passwordless SSH access to ADA.\nADA endpoints (for example ada.labs.vu.nl, inter01.labs.vu.nl) are only reachable on campus or via the VU VPN. Therefore we will use the public stepstone server ssh.data.vu.nl as a jump host (ProxyJump), so you could connect from anywhere.\n\n\n\n\n\n\nTipEnd state\n\n\n\nAfter setup you should be able to run:\n\nssh ada-login → ada.labs.vu.nl\nssh inter01 → inter01.labs.vu.nl\n\nNo passwords; the stepstone is used automatically.\n\n\n\nStep 1 — Create an SSH key\nOn your local linux machine, generate a modern key and load it into your agent:\nssh-keygen -t ed25519 -C \"&lt;your VU email&gt;\" -f ~/.ssh/ada_ed25519\neval \"$(ssh-agent -s)\"\nssh-add ~/.ssh/ada_ed25519\n\n\nStep 2 — Configure SSH\nCreate or edit ~/.ssh/config and add:\nHost stepstone-vu\n    HostName ssh.data.vu.nl\n    User &lt;VUNETID&gt;\n    IdentityFile ~/.ssh/ada_ed25519\n    ServerAliveInterval 120\n\nHost ada-login\n    HostName ada.labs.vu.nl\n    User &lt;VUNETID&gt;\n    ProxyJump stepstone-vu\n    IdentityFile ~/.ssh/ada_ed25519\n    IdentitiesOnly yes\n    ServerAliveInterval 120\n\n# Interactive nodes (pattern covers inter01–inter04)\nHost inter0?\n    HostName %h.labs.vu.nl\n    User &lt;VUNETID&gt;\n    ProxyJump stepstone-vu\n    IdentityFile ~/.ssh/ada_ed25519\n    IdentitiesOnly yes\n    ServerAliveInterval 120\n\n# Optional direct paths when on campus/VPN (no ProxyJump)\nHost ada-login-direct inter0?-direct\n    HostName %n.labs.vu.nl\n    User &lt;VUNETID&gt;\n    IdentityFile ~/.ssh/ada_ed25519\n    IdentitiesOnly yes\n\n\nStep 3 — Install your key on ADA\nFirst copy your public key to the stepstone:\nssh-copy-id stepstone-vu   # prompts for your VU password \nThen copy your public key to ADA:\nssh-copy-id ada-login   # prompts for your ADA password once\nTest connections:\nssh ada-login\nYou should be logged into ADA without being prompted for a password!",
     "crumbs": [
       "ADA",
       "Documentation",
@@ -2718,7 +2730,7 @@
     "href": "tools/ada/login.html#login-node-policy",
     "title": "Login",
     "section": "Login node policy",
-    "text": "Login node policy\n\nLogin nodes are only for light tasks: edit scripts, manage files, submit SLURM jobs. Do not run notebooks, VS Code Server, heavy compiles, or long‑running programs here.\n\nUse interactive nodes (inter01–inter04) for heavier interactive work, or see Open OnDemand in the Quick Start.",
+    "text": "Login node policy\n\nLogin nodes are only for light tasks: edit scripts, manage files, submit SLURM jobs. Do not run notebooks, VS Code Server, heavy compiles, or long‑running programs here. User sessions that do not adhere to this policy, are automatically logged off every 5 minutes.\n\nUse interactive nodes (inter01–inter04) for heavier interactive work, or see Open OnDemand in the Quick Start.",
     "crumbs": [
       "ADA",
       "Documentation",
@@ -2747,6 +2759,62 @@
       "ADA",
       "Documentation",
       "Login"
+    ]
+  },
+  {
+    "objectID": "tools/ada/2-python-multiprocessing.html",
+    "href": "tools/ada/2-python-multiprocessing.html",
+    "title": "Multiprocessing",
+    "section": "",
+    "text": "Research Support Handbook\nThis example applies multiprocessing in Python on 1 compute node.\nTo apply this to your own work, insert your sequential program in this template as a task. Be aware of how you read/write data in your sequential program and prevent multiple processes from reading/writing to the same data location at the same time. Best practice is to either use separate result files on scratch for each process or use queues (multiprocessing.Queue) or pipes (multiprocessing.Pipe) for inter-process communication.",
+    "crumbs": [
+      "ADA",
+      "Documentation",
+      "Code Examples",
+      "Python",
+      "Multiprocessing"
+    ]
+  },
+  {
+    "objectID": "tools/ada/2-python-multiprocessing.html#slurm-batch-submission-script",
+    "href": "tools/ada/2-python-multiprocessing.html#slurm-batch-submission-script",
+    "title": "Multiprocessing",
+    "section": "Slurm batch submission script:",
+    "text": "Slurm batch submission script:\nmultiproc.slurm\n#!/bin/bash\n#SBATCH --job-name=multiproc_1n_10c\n#SBATCH --nodes=1\n#SBATCH --ntasks=1\n#SBATCH --cpus-per-task=10\n#SBATCH --time=00:20:00\n#SBATCH --output=%x_output.log   # Auto-generated log file name (x = job-name)\n#SBATCH --error=%x_error.log    # Auto-generated error file name (x = job-name)\n\n# Optional: allow passing cores as argument\nNUM_CORES=${SLURM_CPUS_PER_TASK:-10}  # Default to 10 if no argument is given\n\necho \"== Starting run at $(date)\"\necho \"== Job ID: ${SLURM_JOBID}\"\necho \"== Node list: ${SLURM_NODELIST}\"\necho \"== Submit dir: ${SLURM_SUBMIT_DIR}\"\necho \"== Using $NUM_CORES CPU cores for this job\"\n\n# Move to scratch space and copy Python script to scratch directory\ncd \"$TMPDIR\"\ncp \"$SLURM_SUBMIT_DIR/multiproc.py\" .\n\n# Load Python module\nmodule load 2025\nmodule load Python/3.12.3-GCCcore-13.3.0\n\n# Run Python script with specified number of cores\npython3 multiproc.py $NUM_CORES\n\necho \"== Job completed at $(date)\"",
+    "crumbs": [
+      "ADA",
+      "Documentation",
+      "Code Examples",
+      "Python",
+      "Multiprocessing"
+    ]
+  },
+  {
+    "objectID": "tools/ada/2-python-multiprocessing.html#python-script",
+    "href": "tools/ada/2-python-multiprocessing.html#python-script",
+    "title": "Multiprocessing",
+    "section": "Python script:",
+    "text": "Python script:\nmultiproc.py\n#!/usr/bin/env python3\n\nimport sys\nimport multiprocessing\n\ndef task(core_id):\n    \"\"\"Function to simulate a CPU-intensive task.\"\"\"\n    print(f\"Core {core_id} is working...\")\n    result = sum(i * i for i in range(10**7))  # Example \"heavy\" computation\n    print(f\"Core {core_id} finished with result: {result}\")\n    return result\n\ndef main():\n    num_cores = int(sys.argv[1]) if len(sys.argv) &gt; 1 else 10\n    \n    with multiprocessing.Pool(processes=num_cores) as pool:\n        results = pool.map(task, range(num_cores))\n    \n    print(\"All tasks completed.\")\n    print(\"Results:\", results)\n\nif __name__ == \"__main__\":\n    main()",
+    "crumbs": [
+      "ADA",
+      "Documentation",
+      "Code Examples",
+      "Python",
+      "Multiprocessing"
+    ]
+  },
+  {
+    "objectID": "tools/ada/2-python-multiprocessing.html#running-the-script",
+    "href": "tools/ada/2-python-multiprocessing.html#running-the-script",
+    "title": "Multiprocessing",
+    "section": "Running the script",
+    "text": "Running the script\nAssuming you are inside your slurm submission directory, for example, running on 8 logical cores:\n$ sbatch --cpus-per-task=8 multiproc.slurm\nOnce you kicked your job off, its good practice to check if its really running on the amount of cores you specified. Check you current jobs and note on which node it is running:\n$ squeue -u &lt;vunetid&gt;\nJOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)\n1122822        defq PythonMu   &lt;VUNETID&gt;  R       0:07      1 node010\nThen, ssh into that allocated compute node and run htop to checkout your work in action:\n    $ ssh node010\n    $ htop -u &lt;VUNETID&gt;",
+    "crumbs": [
+      "ADA",
+      "Documentation",
+      "Code Examples",
+      "Python",
+      "Multiprocessing"
     ]
   },
   {
@@ -3748,7 +3816,7 @@
     "href": "tools/ada/software.html#overview",
     "title": "Software",
     "section": "Overview",
-    "text": "Overview\nADA offers several supported ways to access software depending on how much control you need. Start with the pre-installed module stack and only move to self-managed environments when necessary.\n\nSoftware modules – centrally maintained applications optimized for ADA.\nPixi – lightweight multi-language environments for reproducible projects.\nConda/virtualenv – established Python-first tooling for legacy workflows.\nApptainer – container images for bespoke stacks or portable workflows.\n\n\n\n\n\n\n\nNoteNeed a quick recommendation?\n\n\n\nUse modules whenever a supported version exists. Choose Pixi when you need custom packages or multi-language environments, fall back to Conda or virtualenv if you already rely on them, and build an Apptainer container when you must control the full user-space stack.",
+    "text": "Overview\nADA offers several supported ways to access software depending on how much control you need. Start with the pre-installed module stack and only move to self-managed environments when necessary.\n\nSoftware modules – centrally maintained applications optimized for ADA.\nPixi – lightweight multi-language environments for reproducible projects.\nConda/virtualenv – established Python-first tooling for legacy workflows.\nApptainer – container images for bespoke stacks or portable workflows.\nGit - version control software\n\n\n\n\n\n\n\nNoteNeed a quick recommendation?\n\n\n\nUse modules whenever a supported version exists. Choose Pixi when you need custom packages or multi-language environments, fall back to Conda or virtualenv if you already rely on them, and build an Apptainer container when you must control the full user-space stack.",
     "crumbs": [
       "ADA",
       "Documentation",
@@ -3760,7 +3828,7 @@
     "href": "tools/ada/software.html#software-modules",
     "title": "Software",
     "section": "Software Modules",
-    "text": "Software Modules\nADA ships a curated, architecture-optimized software stack living under /ada-software/ and exposed through Lmod modules. The stack follows an annual release (for example 2025) that bundles compilers, MPI, and libraries maintained by ITvO.\n\n\n\n\n\n\nImportantRead: Modules primer\n\n\n\nNew to Lmod? Start with the Carpentries HPC modules lesson for a friendly walkthrough of the core concepts.\n\n\n\nQuick Start\n\nCheck which modules load by default:\n[abc123@login1 ~]$ module list\n\nCurrently Loaded Modules:\n1) shared   2) DefaultModules   3) gcc/11.2.0   4) slurm/bazis/23.02.8\nLoad the yearly release to unlock the supported applications:\n[abc123@login1 ~]$ module load 2025\n[abc123@login1 ~]$ module list\n\nCurrently Loaded Modules:\n1) shared   2) DefaultModules   3) slurm/bazis/23.02.8   4) 2025\nLoad the software you need. Dependencies are resolved automatically in the order you request them:\nmodule load Python/3.13.1-GCCcore-14.2.0\nmodule load HDF5/1.14.5-gompi-2024a\n\nWhen you are done, use module unload &lt;name&gt; to remove a single module or module purge to reset the session.\n\n\n\n\n\n\nTipFind modules quickly\n\n\n\n\n\nList all the available modules with module avail. However, that is usually very slow, so for a more efficient search and targeted search use module spider:\n[abc123@login1 ~]$ module spider Python\n\n---------------------------------------------------------------------\nPython:\n---------------------------------------------------------------------\n    Description:\n    Python is a programming language that lets you work more quickly\n    and integrate your systems more effectively.\n\n    Versions:\n      Python/3.11.5-GCCcore-13.2.0\n      Python/3.12.3-GCCcore-13.3.0\n      Python/3.13.1-GCCcore-14.2.0\n\n    Other possible module matches:\n      Biopython  GitPython  IPython  ...\nFollow up with the full version to view prerequisites and optional extensions:\n[abc123@login1 ~]$ module spider Python/3.12.3-GCCcore-13.3.0\n\n\n\n\n\nWhen to choose modules\n\nYou want the simplest, most supported path on ADA.\nThe required package and version already exist in the release.\nYou prefer not to manage your own builds or dependency stacks.\n\nIf you identify software that would benefit a broad cross-section of ADA users, contact ITvO at itvo.it@vu.nl with your request. Users cannot publish custom modules on ADA.\n\n\n\n\n\n\nWarningRequesting new modules\n\n\n\nRequest extra modules only when they will measurably help many researchers. For niche or project-specific tools, use Pixi, Conda, or Apptainer so cluster admins can focus limited time on maintaining the shared stack.\n\n\n\n\nReferences\n\nLmod user guide\nCarpentries HPC modules lesson",
+    "text": "Software Modules\nADA ships a curated, architecture-optimized software stack living under /ada-software/ and exposed through Lmod modules. The stack follows an annual release (for example 2025) that bundles compilers, MPI, and libraries maintained by ITvO.\n\n\n\n\n\n\nImportantRead: Modules primer\n\n\n\nNew to Lmod? Start with the Carpentries HPC modules lesson for a friendly walkthrough of the core concepts.\n\n\n\nQuick Start\n\nCheck which modules load by default:\n[abc123@login1 ~]$ module list\n\nCurrently Loaded Modules:\n1) shared   2) DefaultModules   3) gcc/11.2.0   4) slurm/bazis/23.02.8\nLoad the yearly release to unlock the supported applications:\n[abc123@login1 ~]$ module load 2025\n[abc123@login1 ~]$ module list\n\nCurrently Loaded Modules:\n1) shared   2) DefaultModules   3) slurm/bazis/23.02.8   4) 2025\nLoad the software you need. Dependencies are resolved automatically in the order you request them:\nmodule load Python/3.13.1-GCCcore-14.2.0\nmodule load HDF5/1.14.5-gompi-2024a\n\nWhen you are done, use module unload &lt;name&gt; to remove a single module or module purge to reset the session.\n\n\n\n\n\n\nTipFind modules quickly\n\n\n\n\n\nList all the available modules with module avail. However, that is usually very slow, so for a more efficient search and targeted search use module spider:\n[abc123@login1 ~]$ module spider Python\n\n---------------------------------------------------------------------\nPython:\n---------------------------------------------------------------------\n    Description:\n    Python is a programming language that lets you work more quickly\n    and integrate your systems more effectively.\n\n    Versions:\n      Python/3.11.5-GCCcore-13.2.0\n      Python/3.12.3-GCCcore-13.3.0\n      Python/3.13.1-GCCcore-14.2.0\n\n    Other possible module matches:\n      Biopython  GitPython  IPython  ...\nFollow up with the full version to view prerequisites and optional extensions:\n[abc123@login1 ~]$ module spider Python/3.12.3-GCCcore-13.3.0\n\n\n\n\n\nWhen to choose modules\n\nYou want the simplest, most supported path on ADA.\nThe required package and version already exist in the release.\nYou prefer not to manage your own builds or dependency stacks.\n\nIf you identify software that would benefit a broad cross-section of ADA users, contact ITvO at itvo.it@vu.nl with your request. Users cannot publish custom modules on ADA.\n\n\n\n\n\n\nWarningRequesting new modules\n\n\n\nRequest extra modules only when they will measurably help many researchers. For niche or project-specific tools, use Pixi, Conda, or Apptainer so cluster admins can focus limited time on maintaining the shared stack.\n\n\n\n\nEuropean Environment for Scientific Software Installations (EESSI)\nThe European Environment for Scientific Software Installations (EESSI, pronounced as “easy”) is a collaboration between different European partners in HPC community. The goal of this project is to build a common stack of scientific software installations for HPC systems and beyond, including laptops, personal workstations and cloud infrastructure.\nA major advantage of the EESSI stack is that it provides an extensive library of software specifically optimized for various CPU and GPU architectures, significantly improving the computational performance of your code.\nTo use EESSI on ADA, load in either the eessi-2023.06 or eessi-2026.06 stack, e.g.:\n[abc123@login1 ~]$ module load eessi-2025.06\n\n\nReferences\n\nLmod user guide\nCarpentries HPC modules lesson\nEESSI",
     "crumbs": [
       "ADA",
       "Documentation",
@@ -3796,7 +3864,19 @@
     "href": "tools/ada/software.html#apptainer-containers",
     "title": "Software",
     "section": "Apptainer Containers",
-    "text": "Apptainer Containers\nApptainer (formerly Singularity) runs full container images on ADA compute nodes. Use it to bundle complex stacks, legacy software, or reproducible workflows that must match another system exactly.\n\n\n\n\n\n\nNoteRead: Apptainer quick start\n\n\n\nRead the upstream Apptainer quick start for the full lifecycle—pull, build, execute—before running containers on ADA.\n\n\n\n\n\n\n\n\nWarningRun Apptainer on compute nodes\n\n\n\nApptainer is only available on compute nodes. Start an interactive session or submit a SLURM job before running container commands.\n\n\n\nQuick Start\n[abc123@login1 ~]$ srun --pty --time=00:30:00 --cpus-per-task=2 bash\n[abc123@compute-node ~]$ apptainer --version\napptainer version 1.4.2-1.el9\n[abc123@compute-node ~]$ apptainer pull docker://alpine:latest\n[abc123@compute-node ~]$ apptainer exec alpine_latest.sif cat /etc/os-release\nThe alpine_latest.sif file contains the immutably built image you can reuse in batch jobs.\n\n\nObtaining images\nThere exsits some more widely-used images under /ada-software/containers/. Likely however, they won’t be enough and you’ll need to obtain other images onto your $HOME directory. There are several ways to do so:\n\napptainer pull docker://&lt;image&gt; to download from Docker Hub or other registries.\nBuild from a definition file with apptainer build (supported on compute nodes).\nTransfer a local .sif file to ADA via scp or rsync.\n\nWhen running in SLURM scripts, invoke apptainer exec directly inside the job steps. Note that ADA disables setuid and fakeroot, so plan on unprivileged builds. If you need special privileges when building, then you need to first build on your local machine and then transfer the .sif image onto ADA.\n\n\nWhen to choose Apptainer\n\nYour workflow depends on exact system libraries not offered on ADA.\nYou need to reproduce an environment built elsewhere.\nYou are packaging complex stacks for collaborators or for publication.\n\nExpect a steeper learning curve compared to modules or Pixi, but gain portability and reproducibility.\n\n\n\n\n\n\nTipParallel (MPI) and GPU with Apptainer\n\n\n\n\n\nMinimal patterns for running distributed and GPU workloads from SLURM through Apptainer. See the official docs for full guidance.\n\nMPI (distributed across tasks):\n#SBATCH --partition=&lt;cpu-partition&gt;\n#SBATCH --time=00:30:00\n#SBATCH --ntasks=4\n#SBATCH --cpus-per-task=1\n\nmodule load 2025\n# Launch ranks with the host scheduler; enter the container per rank\nsrun apptainer exec /path/to/image.sif \\ \n     /path/in/container/my_mpi_program --arg foo\n\nBuild containers against an MPI implementation compatible with ADA’s stack, or follow the Apptainer guidance on binding host MPI into the container.\nReferences: Apptainer MPI docs: https://apptainer.org/docs/user/main/mpi.html\n\nGPUs (NVIDIA):\n#SBATCH --partition=&lt;gpu-partition&gt;\n#SBATCH --gres=gpu:1\n#SBATCH --time=00:20:00\n\nmodule load 2025\n# Expose NVIDIA devices and libraries to the container\napptainer exec --nv /path/to/image.sif nvidia-smi\n\nUse --nv to enable NVIDIA GPU passthrough (or --rocm for AMD if applicable).\nFor framework runs (PyTorch/TensorFlow), add --nv and run your normal command inside the container.\nReferences: Apptainer GPU docs: https://apptainer.org/docs/user/main/gpu.html\n\n\n\n\n\n\n\nReferences\n\nApptainer user guide",
+    "text": "Apptainer Containers\nApptainer (formerly Singularity) runs full container images on ADA compute nodes. Use it to bundle complex stacks, legacy software, or reproducible workflows that must match another system exactly.\n\n\n\n\n\n\nNoteRead: Apptainer quick start\n\n\n\nRead the upstream Apptainer quick start for the full lifecycle—pull, build, execute—before running containers on ADA.\n\n\n\n\n\n\n\n\nWarningRun Apptainer on compute nodes\n\n\n\nApptainer is only available on compute nodes. Start an interactive session or submit a SLURM job before running container commands.\n\n\n\nQuick Start\n[abc123@login1 ~]$ srun --pty --time=00:30:00 --cpus-per-task=2 bash\n[abc123@compute-node ~]$ apptainer --version\napptainer version 1.4.2-1.el9\n[abc123@compute-node ~]$ apptainer pull docker://alpine:latest\n[abc123@compute-node ~]$ apptainer exec alpine_latest.sif cat /etc/os-release\nThe alpine_latest.sif file contains the immutably built image you can reuse in batch jobs.\n\n\nObtaining images\nThere exsits some more widely-used images under /ada-software/containers/. Likely however, they won’t be enough and you’ll need to obtain other images onto your $HOME directory. There are several ways to do so:\n\napptainer pull docker://&lt;image&gt; to download from Docker Hub or other registries.\nBuild from a definition file with apptainer build (supported on compute nodes).\nTransfer a local .sif file to ADA via scp or rsync.\n\nWhen running in SLURM scripts, invoke apptainer exec directly inside the job steps. Note that ADA disables setuid and fakeroot, so plan on unprivileged builds. If you need special privileges when building, then you need to first build on your local machine and then transfer the .sif image onto ADA.\n\n\nWhen to choose Apptainer\n\nYour workflow depends on exact system libraries not offered on ADA.\nYou need to reproduce an environment built elsewhere.\nYou are packaging complex stacks for collaborators or for publication.\n\nExpect a steeper learning curve compared to modules or Pixi, but gain portability and reproducibility.\n\n\n\n\n\n\nTipParallel (MPI) and GPU with Apptainer\n\n\n\n\n\nMinimal patterns for running distributed and GPU workloads from SLURM through Apptainer. See the official docs for full guidance.\n\nMPI (distributed across tasks):\n#SBATCH --partition=&lt;cpu-partition&gt;\n#SBATCH --time=00:30:00\n#SBATCH --ntasks=4\n#SBATCH --cpus-per-task=1\n\nmodule load 2025\n# Launch ranks with the host scheduler; enter the container per rank\nsrun apptainer exec /path/to/image.sif \\ \n     /path/in/container/my_mpi_program --arg foo\n\nBuild containers against an MPI implementation compatible with ADA’s stack, or follow the Apptainer guidance on binding host MPI into the container.\nReferences: Apptainer MPI docs: https://apptainer.org/docs/user/main/mpi.html\n\nGPUs (NVIDIA):\n#SBATCH --partition=&lt;gpu-partition&gt;\n#SBATCH --gres=gpu:1\n#SBATCH --time=00:20:00\n\nmodule load 2025\n# Expose NVIDIA devices and libraries to the container\napptainer exec --nv /path/to/image.sif nvidia-smi\n\nUse --nv to enable NVIDIA GPU passthrough (or --rocm for AMD if applicable).\nFor framework runs (PyTorch/TensorFlow), add --nv and run your normal command inside the container.\nReferences: Apptainer GPU docs: https://apptainer.org/docs/user/main/gpu.html",
+    "crumbs": [
+      "ADA",
+      "Documentation",
+      "Software"
+    ]
+  },
+  {
+    "objectID": "tools/ada/software.html#git",
+    "href": "tools/ada/software.html#git",
+    "title": "Software",
+    "section": "Git",
+    "text": "Git\nGit is pre-installed on every login/inter/compute node by default. If you need a specific release of git, use $ module spider git to check out all installed module versions.\n\nReferences\n\nApptainer user guide",
     "crumbs": [
       "ADA",
       "Documentation",
@@ -4050,59 +4130,26 @@
     "text": "Running the script\nAssuming you are inside your slurm submission directory, run the following:\n$ sbatch mytestjob.slurm"
   },
   {
-    "objectID": "tools/ada/2-python-multiprocessing.html",
-    "href": "tools/ada/2-python-multiprocessing.html",
-    "title": "Multiprocessing",
+    "objectID": "tools/ada/hpc-training.html",
+    "href": "tools/ada/hpc-training.html",
+    "title": "HPC Training Courses",
     "section": "",
-    "text": "Research Support Handbook\nThis example applies multiprocessing in Python on 1 compute node.\nTo apply this to your own work, insert your sequential program in this template as a task. Be aware of how you read/write data in your sequential program and prevent multiple processes from reading/writing to the same data location at the same time. Best practice is to either use separate result files on scratch for each process or use queues (multiprocessing.Queue) or pipes (multiprocessing.Pipe) for inter-process communication.",
+    "text": "Research Support Handbook\n\n\n\n\nThroughout the year, there are various opportunities to get more acquainted with HPC through several workshops and courses:\n\nYearly HPC Winter Course VU\nEvery year, the VU HPC Winter Course is organized in collaboration with SURF. For more information see the course page .\n\n\nSURF Training Courses\nSURF Calendar\n\n\nEuroCC Project Training Courses\nEuroCC Project Training Courses\n\n\nTaxila: hub for research data training courses and events\nTaxila",
     "crumbs": [
       "ADA",
-      "Documentation",
-      "Code Examples",
-      "Python",
-      "Multiprocessing"
+      "HPC Training Courses"
     ]
   },
   {
-    "objectID": "tools/ada/2-python-multiprocessing.html#slurm-batch-submission-script",
-    "href": "tools/ada/2-python-multiprocessing.html#slurm-batch-submission-script",
-    "title": "Multiprocessing",
-    "section": "Slurm batch submission script:",
-    "text": "Slurm batch submission script:\nmultiproc.slurm\n#!/bin/bash\n#SBATCH --job-name=multiproc_1n_10c\n#SBATCH --nodes=1\n#SBATCH --ntasks=1\n#SBATCH --cpus-per-task=10\n#SBATCH --time=00:20:00\n#SBATCH --output=%x_output.log   # Auto-generated log file name (x = job-name)\n#SBATCH --error=%x_error.log    # Auto-generated error file name (x = job-name)\n\n# Optional: allow passing cores as argument\nNUM_CORES=${SLURM_CPUS_PER_TASK:-10}  # Default to 10 if no argument is given\n\necho \"== Starting run at $(date)\"\necho \"== Job ID: ${SLURM_JOBID}\"\necho \"== Node list: ${SLURM_NODELIST}\"\necho \"== Submit dir: ${SLURM_SUBMIT_DIR}\"\necho \"== Using $NUM_CORES CPU cores for this job\"\n\n# Move to scratch space and copy Python script to scratch directory\ncd \"$TMPDIR\"\ncp \"$SLURM_SUBMIT_DIR/multiproc.py\" .\n\n# Load Python module\nmodule load 2025\nmodule load Python/3.12.3-GCCcore-13.3.0\n\n# Run Python script with specified number of cores\npython3 multiproc.py $NUM_CORES\n\necho \"== Job completed at $(date)\"",
+    "objectID": "tools/ada/faq.html",
+    "href": "tools/ada/faq.html",
+    "title": "FAQ",
+    "section": "",
+    "text": "Research Support Handbook\n\n\n\n\n\nWhy is my job running much longer than expected?\n\nAlways check if your script is really benefitting from parallelism. Are you really using all the threads/cores you got allocated via slurm? (log in the compute node via ssh and check the processes running htop -u *vunetid*).\nNote that the cpu in high performance servers does not necessarily clocks faster than your laptop cpu, the real performance gain comes from parallelism.\nIs your dataset very big? Always use the local scratch space.\nUse profilers to assess your code for bottlenecks. (Python: cProfile, R: profvis, C++: perf)\n\n\n\nWhy does the software I installed via conda return unexpected errors?\nConda injects settings in your .bashrc file once initialized and prepends directories to your $PATH variables. This can result in dependency errors for software that is actually relying on native system dependencies.",
     "crumbs": [
       "ADA",
       "Documentation",
-      "Code Examples",
-      "Python",
-      "Multiprocessing"
-    ]
-  },
-  {
-    "objectID": "tools/ada/2-python-multiprocessing.html#python-script",
-    "href": "tools/ada/2-python-multiprocessing.html#python-script",
-    "title": "Multiprocessing",
-    "section": "Python script:",
-    "text": "Python script:\nmultiproc.py\n#!/usr/bin/env python3\n\nimport sys\nimport multiprocessing\n\ndef task(core_id):\n    \"\"\"Function to simulate a CPU-intensive task.\"\"\"\n    print(f\"Core {core_id} is working...\")\n    result = sum(i * i for i in range(10**7))  # Example \"heavy\" computation\n    print(f\"Core {core_id} finished with result: {result}\")\n    return result\n\ndef main():\n    num_cores = int(sys.argv[1]) if len(sys.argv) &gt; 1 else 10\n    \n    with multiprocessing.Pool(processes=num_cores) as pool:\n        results = pool.map(task, range(num_cores))\n    \n    print(\"All tasks completed.\")\n    print(\"Results:\", results)\n\nif __name__ == \"__main__\":\n    main()",
-    "crumbs": [
-      "ADA",
-      "Documentation",
-      "Code Examples",
-      "Python",
-      "Multiprocessing"
-    ]
-  },
-  {
-    "objectID": "tools/ada/2-python-multiprocessing.html#running-the-script",
-    "href": "tools/ada/2-python-multiprocessing.html#running-the-script",
-    "title": "Multiprocessing",
-    "section": "Running the script",
-    "text": "Running the script\nAssuming you are inside your slurm submission directory, for example, running on 8 logical cores:\n$ sbatch --cpus-per-task=8 multiproc.slurm\nOnce you kicked your job off, its good practice to check if its really running on the amount of cores you specified. Check you current jobs and note on which node it is running:\n$ squeue -u &lt;vunetid&gt;\nJOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)\n1122822        defq PythonMu   &lt;VUNETID&gt;  R       0:07      1 node010\nThen, ssh into that allocated compute node and run htop to checkout your work in action:\n    $ ssh node010\n    $ htop -u &lt;VUNETID&gt;",
-    "crumbs": [
-      "ADA",
-      "Documentation",
-      "Code Examples",
-      "Python",
-      "Multiprocessing"
+      "FAQ"
     ]
   },
   {

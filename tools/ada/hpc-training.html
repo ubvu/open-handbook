@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-03-19">
+<meta name="dcterms.date" content="2026-04-14">
 
-<title>Quick Start – Research Support Handbook</title>
+<title>HPC Training Courses – Research Support Handbook</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -24,41 +24,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -69,8 +34,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../tools/ada/hpc-updates.html" rel="next">
-<link href="../../tools/ada/contact_support.html" rel="prev">
+<link href="../../tools/ada/login.html" rel="next">
+<link href="../../tools/ada/hpc-updates.html" rel="prev">
 <link href="../../public/favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -185,7 +150,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tools/ada/index.html">ADA</a></li><li class="breadcrumb-item"><a href="../../tools/ada/quick_start.html">Quick Start</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tools/ada/index.html">ADA</a></li><li class="breadcrumb-item"><a href="../../tools/ada/hpc-training.html">HPC Training Courses</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -226,7 +191,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tools/ada/quick_start.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../tools/ada/quick_start.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Quick Start</span></a>
   </div>
 </li>
@@ -238,7 +203,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tools/ada/hpc-training.html" class="sidebar-item-text sidebar-link">
+  <a href="../../tools/ada/hpc-training.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">HPC Training Courses</span></a>
   </div>
 </li>
@@ -376,31 +341,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link active" data-scroll-target="#prerequisites">Prerequisites</a></li>
-  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#login-nodes-launchpad-for-batch-work" id="toc-login-nodes-launchpad-for-batch-work" class="nav-link" data-scroll-target="#login-nodes-launchpad-for-batch-work">Login Nodes: Launchpad for Batch Work</a>
-  <ul class="collapse">
-  <li><a href="#connect" id="toc-connect" class="nav-link" data-scroll-target="#connect">Connect</a></li>
-  <li><a href="#submit-a-batch-job" id="toc-submit-a-batch-job" class="nav-link" data-scroll-target="#submit-a-batch-job">Submit a Batch Job</a></li>
-  <li><a href="#track-and-inspect-jobs" id="toc-track-and-inspect-jobs" class="nav-link" data-scroll-target="#track-and-inspect-jobs">Track and Inspect Jobs</a></li>
-  <li><a href="#move-data" id="toc-move-data" class="nav-link" data-scroll-target="#move-data">Move Data</a></li>
-  </ul></li>
-  <li><a href="#interactive-nodes-development-sandbox" id="toc-interactive-nodes-development-sandbox" class="nav-link" data-scroll-target="#interactive-nodes-development-sandbox">Interactive Nodes: Development Sandbox</a>
-  <ul class="collapse">
-  <li><a href="#connect-1" id="toc-connect-1" class="nav-link" data-scroll-target="#connect-1">Connect</a></li>
-  <li><a href="#usage-guidelines" id="toc-usage-guidelines" class="nav-link" data-scroll-target="#usage-guidelines">Usage Guidelines</a></li>
-  </ul></li>
-  <li><a href="#open-ondemand-browser-based-access" id="toc-open-ondemand-browser-based-access" class="nav-link" data-scroll-target="#open-ondemand-browser-based-access">Open OnDemand: Browser-Based Access</a></li>
+  <li><a href="#yearly-hpc-winter-course-vu" id="toc-yearly-hpc-winter-course-vu" class="nav-link active" data-scroll-target="#yearly-hpc-winter-course-vu">Yearly HPC Winter Course VU</a></li>
+  <li><a href="#surf-training-courses" id="toc-surf-training-courses" class="nav-link" data-scroll-target="#surf-training-courses">SURF Training Courses</a></li>
+  <li><a href="#eurocc-project-training-courses" id="toc-eurocc-project-training-courses" class="nav-link" data-scroll-target="#eurocc-project-training-courses">EuroCC Project Training Courses</a></li>
+  <li><a href="#taxila-hub-for-research-data-training-courses-and-events" id="toc-taxila-hub-for-research-data-training-courses-and-events" class="nav-link" data-scroll-target="#taxila-hub-for-research-data-training-courses-and-events">Taxila: hub for research data training courses and events</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/ada/quick_start.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/ada/hpc-training.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 <div class="handbook-title">Research Support Handbook</div>
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tools/ada/index.html">ADA</a></li><li class="breadcrumb-item"><a href="../../tools/ada/quick_start.html">Quick Start</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tools/ada/index.html">ADA</a></li><li class="breadcrumb-item"><a href="../../tools/ada/hpc-training.html">HPC Training Courses</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Quick Start</h1>
+<h1 class="title">HPC Training Courses</h1>
 </div>
 
 
@@ -411,7 +365,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">last modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 19, 2026</p>
+      <p class="date">April 14, 2026</p>
     </div>
   </div>
   
@@ -423,140 +377,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="prerequisites" class="level2">
-<h2 class="anchored" data-anchor-id="prerequisites">Prerequisites</h2>
-<div class="callout callout-style-default callout-warning callout-titled" title="Do this first">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>Do this first
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>Complete the Carpentries <a href="https://swcarpentry.github.io/shell-novice/" target="_blank">Unix Shell</a> and <a href="https://carpentries-incubator.github.io/hpc-intro/" target="_blank">HPC Introduction</a> lessons (or have equivalent command-line and scheduler experience).</li>
-<li>Make sure you configured your SSH access as documented in <a href="../../tools/ada/login.html">Login &amp; Access</a> so you can connect to ADA with a single <code>ssh ada-login</code>.</li>
-</ul>
-</div>
-</div>
+<p>Throughout the year, there are various opportunities to get more acquainted with HPC through several workshops and courses:</p>
+<section id="yearly-hpc-winter-course-vu" class="level3">
+<h3 class="anchored" data-anchor-id="yearly-hpc-winter-course-vu">Yearly HPC Winter Course VU</h3>
+<p>Every year, the VU HPC Winter Course is organized in collaboration with SURF. For more information see <a href="https://vu.nl/en/education/phd-courses/high-performance-computing-hpc-course" target="_blank">the course page</a> .</p>
 </section>
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>This quick-start guide covers three ways to work on ADA:</p>
-<ul>
-<li>Login Nodes — lightweight access for job submission and management.</li>
-<li>Interactive Nodes — more resources for heavier interactive work and remote development.</li>
-<li>Open OnDemand — browser-based terminal, file management, and interactive apps.</li>
-</ul>
+<section id="surf-training-courses" class="level3">
+<h3 class="anchored" data-anchor-id="surf-training-courses">SURF Training Courses</h3>
+<p><a href="https://www.surf.nl/en/agenda" target="_blank">SURF Calendar</a></p>
 </section>
-<section id="login-nodes-launchpad-for-batch-work" class="level2">
-<h2 class="anchored" data-anchor-id="login-nodes-launchpad-for-batch-work">Login Nodes: Launchpad for Batch Work</h2>
-<section id="connect" class="level3">
-<h3 class="anchored" data-anchor-id="connect">Connect</h3>
-<p>With your SSH configuration in place, open a session on a login node:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh</span> ada-login</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>You will land within your home directory (<code>$HOME</code>) on SciStor. This is your persistent storage area for configuration files, datasets, etc. This folder is shared across all ADA nodes.</p>
-<p>Login nodes are for lightweight tasks only—editing scripts, managing files, preparing SLURM submissions. Do <strong>not</strong> run VS Code Server, Jupyter, container builds, or heavy computations here. Use interactive nodes or Open OnDemand for those workloads.</p>
-<div class="callout-danger" title="Strict rule on login nodes">
-<p>No notebooks, VS Code Server, heavy compiles, or long-running jobs on login nodes.</p>
-</div>
-<p>See the <a href="../../tools/ada/software.html">software overview</a> for managing applications and environments.</p>
+<section id="eurocc-project-training-courses" class="level3">
+<h3 class="anchored" data-anchor-id="eurocc-project-training-courses">EuroCC Project Training Courses</h3>
+<p><a href="https://eurocc-netherlands.nl/training/" target="_blank">EuroCC Project Training Courses</a></p>
 </section>
-<section id="submit-a-batch-job" class="level3">
-<h3 class="anchored" data-anchor-id="submit-a-batch-job">Submit a Batch Job</h3>
-<p>To actually run your computations, you need to submit jobs to the SLURM scheduler. For SLURM jobs, you need to specify resources (memory, CPU, walltime), partition and additional devices (GPUs) you require. SLURM will then allocate resources and run your job on appropriate compute nodes once they are free. Please see the <a href="../../tools/ada/slurm.html">SLURM essentials</a> page for ADA-specific options and best practices.</p>
-<p>Here we will create and submit a simple SLURM script from the login node:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> <span class="op">&gt;</span> hello.sbatch <span class="op">&lt;&lt;'EOF'</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="st">#!/bin/bash</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="st">#SBATCH --job-name=hello</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="st">#SBATCH --time=00:02:00</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="st">#SBATCH --partition=defq</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="st">#SBATCH --cpus-per-task=1</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="st">#SBATCH --mem=2G</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="st"># Always use the job-local temporary directory:</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="st">cd $TMPDIR</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="st">echo "== Starting run at $(date)"</span></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="st">echo "== Job ID: ${SLURM_JOBID}"</span></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="st">echo "== Node list: ${SLURM_NODELIST}"</span></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="st">echo "== Submit dir: ${SLURM_SUBMIT_DIR}"</span></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="st">echo "== Scratch dir: ${TMPDIR}"</span></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="st">module load 2025</span></span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="st">module load Python/3.12.3-GCCcore-13.3.0</span></span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="st">python - &lt;&lt;'PYCODE'</span></span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="st">print("Hello from ADA!")</span></span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="st">PYCODE</span></span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="op">EOF</span></span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="ex">sbatch</span> hello.sbatch</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>where we requested a single CPU, 2 GB of memory, and the general use <code>defq</code> partition. If you have access to department specific partitions, please use those instead as <code>defq</code> resources are pitifully limited.</p>
-<p><code>$TMPDIR</code> points to ADA’s temporary job-local workspace. It is backed by <code>/tmp</code>, which is local disk space on the compute node, private per user, and cleaned up automatically after jobs finish. Use <code>$TMPDIR</code> for temporary data and I/O-heavy computation instead of <code>$HOME</code> on <code>/home</code>, because <code>/home</code> is NFS-mounted and slower than local disk. Copy any results you want to keep back to persistent storage before the job ends.</p>
-<p>You can monitor progress with <code>squeue -u &lt;VUNETID&gt;</code> and inspect the output in <code>slurm-&lt;jobid&gt;.out</code>. More SLURM patterns and best practices are in <a href="../../tools/ada/slurm.html">SLURM essentials</a>.</p>
-</section>
-<section id="track-and-inspect-jobs" class="level3">
-<h3 class="anchored" data-anchor-id="track-and-inspect-jobs">Track and Inspect Jobs</h3>
-<ul>
-<li><p>Live queue view:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">squeue</span> <span class="at">-u</span> <span class="op">&lt;</span>VUNETID<span class="op">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
-<li><p>Finished job summary:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">sacct</span> <span class="at">-j</span> <span class="op">&lt;</span>jobid<span class="op">&gt;</span> --format=JobID,State,Elapsed,MaxRSS,CPUTime</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
-<li><p>Stream output while a job runs:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span> <span class="at">-f</span> slurm-<span class="op">&lt;</span>jobid<span class="op">&gt;</span>.out</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
-</ul>
-</section>
-<section id="move-data" class="level3">
-<h3 class="anchored" data-anchor-id="move-data">Move Data</h3>
-<p>There are times when you will need to transfer data from your local machine/some server onto ADA. For that, you can use the same SSH proxy configuration for secure copy <code>scp</code>.</p>
-<p>For example, copying a <code>results.txt</code> onto the ADA cluster is:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">scp</span> results.txt ada-login:~/project/</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>And likewise copying files from the cluster onto your local machine is:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">scp</span> ada-login:~/project/output.dat .</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Prefer <code>rsync</code> for larger transfers or frequent syncs.</p>
-</section>
-</section>
-<section id="interactive-nodes-development-sandbox" class="level2">
-<h2 class="anchored" data-anchor-id="interactive-nodes-development-sandbox">Interactive Nodes: Development Sandbox</h2>
-<p>ADA provides dedicated interactive nodes (<code>inter01</code>–<code>inter04</code>) for heavier interactive workloads, prototyping, and remote development.</p>
-<section id="connect-1" class="level3">
-<h3 class="anchored" data-anchor-id="connect-1">Connect</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh</span> inter01</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>You’ll land on a node with more generous CPU/RAM allocations and relaxed limits for tools such as VS Code Server, Jupyter, or data preparation workflows. These nodes share the same file systems and SLURM access as the login nodes.</p>
-</section>
-<section id="usage-guidelines" class="level3">
-<h3 class="anchored" data-anchor-id="usage-guidelines">Usage Guidelines</h3>
-<ul>
-<li>Always remain considerate: terminate idle services, keep resource usage aligned with your allocation, and fall back to batch jobs for long-running production workloads.</li>
-<li>Submit SLURM jobs from interactive nodes exactly as you would from a login node if you prefer to keep your development environment and job submission together.</li>
-<li>Use SSH tunnels to expose VS Code, Jupyter, or other services securely back to your workstation.</li>
-</ul>
-</section>
-</section>
-<section id="open-ondemand-browser-based-access" class="level2">
-<h2 class="anchored" data-anchor-id="open-ondemand-browser-based-access">Open OnDemand: Browser-Based Access</h2>
-<p>Open OnDemand offers a web portal with terminal access, file management, and launchers for interactive applications. Use it when you prefer a graphical interactive workflow or cannot configure SSH locally.</p>
-<p>Access it at <a href="https://ondemand.labs.vu.nl" target="_blank">ondemand.labs.vu.nl</a>.</p>
-<div class="callout callout-style-default callout-warning callout-titled" title="Access requirement">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>Access requirement
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Open OnDemand is only reachable on campus or via the VU VPN.</p>
-</div>
-</div>
-<ul>
-<li>Supports launching desktop-style sessions, JupyterLab, and VS Code directly from your browser.</li>
-<li>Respects the same quotas and scheduling policies as SSH sessions.</li>
-<li>More documentation and ADA-specific features are described in <a href="../../tools/ada/open-ondemand.html">Open OnDemand</a>.</li>
-</ul>
+<section id="taxila-hub-for-research-data-training-courses-and-events" class="level3">
+<h3 class="anchored" data-anchor-id="taxila-hub-for-research-data-training-courses-and-events">Taxila: hub for research data training courses and events</h3>
+<p><a href="https://taxila.nl/events" target="_blank">Taxila</a></p>
 
 
 </section>
@@ -964,13 +800,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../tools/ada/contact_support.html" class="pagination-link" aria-label="Support and Contact">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Support and Contact</span>
+      <a href="../../tools/ada/hpc-updates.html" class="pagination-link" aria-label="HPC Updates">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">HPC Updates</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../tools/ada/hpc-updates.html" class="pagination-link" aria-label="HPC Updates">
-        <span class="nav-page-text">HPC Updates</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../tools/ada/login.html" class="pagination-link" aria-label="Login">
+        <span class="nav-page-text">Login</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1019,7 +855,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         </li>
     </ul>
 </div>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/ada/quick_start.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/ada/hpc-training.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
