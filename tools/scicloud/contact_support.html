@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-02-25">
+<meta name="dcterms.date" content="2026-04-23">
 
 <title>Support and Contact – Research Support Handbook</title>
 <style>
@@ -23,6 +23,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -46,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-f2ac84f9b595d6a275ad812340316041.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-d1f8dbf254d5c5491b41443bc67fde45.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -195,6 +230,35 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Quick Start</span></a>
   </div>
 </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Documentation</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/scicloud/trouble_access.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Troubleshooting Access</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/scicloud/webproxy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Accessing the Internet</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/scicloud/webapplications.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Running Web Applications</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
       </ul>
   </li>
     </ul>
@@ -202,8 +266,22 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#contact" id="toc-contact" class="nav-link active" data-scroll-target="#contact">Contact</a></li>
+  <li><a href="#requesting-changes-to-the-server" id="toc-requesting-changes-to-the-server" class="nav-link" data-scroll-target="#requesting-changes-to-the-server">Requesting Changes to the Server</a></li>
+  <li><a href="#requesting-support" id="toc-requesting-support" class="nav-link" data-scroll-target="#requesting-support">Requesting Support</a>
+  <ul class="collapse">
+  <li><a href="#scope-and-expectations" id="toc-scope-and-expectations" class="nav-link" data-scroll-target="#scope-and-expectations">Scope and Expectations</a></li>
+  <li><a href="#support-ticket" id="toc-support-ticket" class="nav-link" data-scroll-target="#support-ticket">Support ticket</a></li>
+  </ul></li>
+  <li><a href="#backups" id="toc-backups" class="nav-link" data-scroll-target="#backups">Backups</a></li>
+  <li><a href="#documentation-feedback" id="toc-documentation-feedback" class="nav-link" data-scroll-target="#documentation-feedback">Documentation Feedback</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/scicloud/contact_support.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -222,7 +300,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">last modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 25, 2026</p>
+      <p class="date">April 23, 2026</p>
     </div>
   </div>
   
@@ -234,9 +312,75 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Wondering if SciCloud fits your research needs or questions about using SciCloud? Please contact <a href="mailto:itvo.it@vu.nl">IT for Research</a></p>
+<section id="contact" class="level2">
+<h2 class="anchored" data-anchor-id="contact">Contact</h2>
+<p>Wondering if SciCloud fits your research needs or questions about using SciCloud? Please contact <a href="mailto:itvo.it@vu.nl">IT for Research (ITvO)</a>.</p>
+</section>
+<section id="requesting-changes-to-the-server" class="level2">
+<h2 class="anchored" data-anchor-id="requesting-changes-to-the-server">Requesting Changes to the Server</h2>
+<p>If you need to change the server configuration (CPU, RAM or Storage), please use the <a href="https://services.vu.nl/esc?id=sc_cat_item&amp;sys_id=c9a91cf947be8150bfa46d72e36d4330" target="_blank">Changes Form</a></p>
+<p>If you no longer need the server(s), please request removal via the <a href="https://services.vu.nl/esc?id=sc_cat_item&amp;sys_id=faf8d03947be8150bfa46d72e36d4365" target="_blank">Delete Form</a>.</p>
+</section>
+<section id="requesting-support" class="level2">
+<h2 class="anchored" data-anchor-id="requesting-support">Requesting Support</h2>
+<section id="scope-and-expectations" class="level3">
+<h3 class="anchored" data-anchor-id="scope-and-expectations">Scope and Expectations</h3>
+<p><strong>What ITvO supports:</strong></p>
+<ul>
+<li>SciCloud specific issues (login/access issues, hardware performance, network issues, issues with the OpenNebula platform).</li>
+</ul>
+<p><strong>What ITvO does not support:</strong></p>
+<ul>
+<li>Installing, configuring and maintaining software you installed on the server.</li>
+<li>Security issues with your software.</li>
+<li>Out of scope: teaching programming, server admin and command-line basic; debugging your custom built application; building bespoke environments for a single project.</li>
+</ul>
+<p>The ITvO team is happy to spend some time to help you to get started with a new server, but the team lacks the capacity to offer full tech-support for each software stack running on SciCloud. That said, asking questions is always free and the team might be able to point you in the right direction.</p>
+<p>In some cases it might be possible to offer more support on a project basis to assist in developing and building your setup, but long-term maintenance of the setup will never be possible.</p>
+</section>
+<section id="support-ticket" class="level3">
+<h3 class="anchored" data-anchor-id="support-ticket">Support ticket</h3>
+<p>If you run into problems SciCloud with you can open a support ticket by emailing the <a href="mailto:servicedesk.it@vu.nl">IT Service Desk</a>.</p>
+<p>Use the template below to provide a clear and actionable description of your issue:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Summary</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  Short description of the problem. Always mention SciCloud.</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>What I tried</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  Exact commands run (copy/paste), scripts used, and any changes recently made.</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>Expected vs. actual</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  What you expected to happen, and what happened instead.</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>Reproduction steps (minimal)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  Smallest example that fails, with steps someone else can run.</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>Context</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  Server name</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  Applications you were using</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>Artifacts (attach as files or paste snippets)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  Command output and full error messages</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  If using containers: image name, how it was built, links to git repo's</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  Screenshots</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+<section id="backups" class="level2">
+<h2 class="anchored" data-anchor-id="backups">Backups</h2>
+<p><a href="../../topics/itvo.html">IT for Research</a> makes daily backups with which a virtual machine can be restored on request. Backups are kept for up to 30 days.</p>
+<p>They can also create an extra snapshot on request, for example if you are planning a major upgrade and want an easy way to revert if it fails.</p>
+</section>
+<section id="documentation-feedback" class="level2">
+<h2 class="anchored" data-anchor-id="documentation-feedback">Documentation Feedback</h2>
+<p>Found a typo, missing page, or confusing section? Please open an issue in the handbook’s issue tracker (see the link to the right) with:</p>
+<ul>
+<li>Page path (for example tools/scicloud/snapshots.qmd) and what needs to change</li>
+<li>A suggested fix or the exact text that confused you</li>
+<li>Optional: a PR if you already made the change</li>
+</ul>
+<p>If you prefer, you can also email <a href="mailto:itvo.it@vu.nl">ITvO</a> with the same details and we will triage it.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -696,7 +840,7 @@ ul.task-list li input[type="checkbox"] {
         </li>
     </ul>
 </div>
-<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/scicloud/contact_support.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/scicloud/contact_support.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

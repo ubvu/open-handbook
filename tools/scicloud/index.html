@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-02-19">
+<meta name="dcterms.date" content="2026-04-16">
 
 <title>SciCloud – Research Support Handbook</title>
 <style>
@@ -45,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-f2ac84f9b595d6a275ad812340316041.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-d1f8dbf254d5c5491b41443bc67fde45.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -194,6 +194,35 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Quick Start</span></a>
   </div>
 </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Documentation</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/scicloud/trouble_access.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Troubleshooting Access</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/scicloud/webproxy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Accessing the Internet</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../tools/scicloud/webapplications.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Running Web Applications</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
       </ul>
   </li>
     </ul>
@@ -232,7 +261,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">last modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 19, 2026</p>
+      <p class="date">April 16, 2026</p>
     </div>
   </div>
   
@@ -246,7 +275,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="what-is-it" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-it">What is it?</h2>
-<p>IT for Research (ITvO) offers SciCloud, a service where server capacity can be purchased to support research applications. SciCloud virtual servers are easy to implement, easy to scale up and down and have competitive pricing based on agreed purchase. The virtual server can be placed in an external network, so services running on it can be made internet accessible. It can also run on an internal network for extra security and access to some VU services.</p>
+<p>IT for Research (ITvO) offers SciCloud, a service where server capacity can be purchased to support research applications. SciCloud virtual servers are easy to implement, easy to scale up and down and have competitive <a href="../../tools/scicloud/cost_access.html#are-there-costs-involved">pricing</a>. The virtual server can be placed in an external network, so services running on it can be made internet accessible. It can also run on an internal network for extra security and access to some VU services.</p>
 <p>SciCloud is based on the open source middleware <a href="https://opennebula.io/" target="_blank">OpenNebula (ONE)</a> and offers a service that allows users to quickly start with a virtual server based on available templates, or to upload one of their own virtual images. This concept is known as Infrastructure as a Service (IaaS).</p>
 </section>
 <section id="what-can-it-be-used-for" class="level2">
@@ -256,9 +285,9 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li><p>Running web applications and services that need to be publicly accessible 24/7, for example a website showcasing your research, a wiki, chatbot, etc.</p></li>
 <li><p>Hosting a licensed server application for your research group, such as software for analysis, software needed to run lab equipment or elab journal software.</p></li>
-<li><p>The Virtual Server can also be connected to <a href="../../tools/scistor/index.html">SciStor</a> for environments that need fast access to large amounts of data.</p></li>
 </ul>
-<p>Note that the SciCloud environment has no GPU, so it is not suitable for running graphical environments and machine learning.</p>
+<p>The Virtual Server can also be connected to <a href="../../tools/scistor/index.html">SciStor</a> for environments that need fast access to large amounts of data.</p>
+<p>Note that the SciCloud environment has no GPU, so it is not suitable for running graphical environments and machine learning. <a href="../../tools/researchcloud/index.html">SURF Research Cloud</a> might be an alternative for these use-cases.</p>
 
 
 </section>
