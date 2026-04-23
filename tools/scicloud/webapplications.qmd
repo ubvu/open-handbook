@@ -7,14 +7,13 @@ title: Running Web Applications
 This guide assumes you are running Linux. Unless your particular application does not support it, it is strongly recommended to run web applications on a Linux server, especially those based on Open Source technology.
 
 ## Domain Name
-[ITvO](/topics/itvo.qmd) can easily configure a domain inside `.labs.vu.nl` for your server. It is also possible to use other custom domains, contact [ITvO](/topics/itvo.qmd) for advice. 
+[IT for Research (ITvO)](/topics/itvo.qmd) can easily configure a domain inside `.labs.vu.nl` for your server. It is also possible to use other custom domains, contact [ITvO](/topics/itvo.qmd#contact) for advice. 
 
-## HTTPS
+### HTTPS
 A web application exposed to the internet should only be accessible by HTTPS. [ITvO](/topics/itvo.qmd) can configure automatically renewing [Let's Encrypt](https://letsencrypt.org/) certificates for servers in the `.labs.vu.nl` domain. 
 
 ## NGINX
 The ITvO Team recommends using [NGINX](https://nginx.org) as webserver, it is light-weight, secure and easy to maintain. 
-
 ## Security Considerations
 
 ::: {.callout-warning}
