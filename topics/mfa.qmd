@@ -1,0 +1,22 @@
+---
+title: Multi-factor Authentication (MFA)
+categories: [Knowledge Items]
+---
+
+Multifactor Authentication (MFA) is a security method that requires users to verify their identity in two steps when logging in. In addition to your password, you confirm your identity using a second factor, such as an authentication app or a security key.
+
+The Vrije Universiteit Amsterdam (VU) is legally required to ensure that sensitive personal information is properly secured. Logging in with only a VUnetID and password is no longer sufficient. Therefore, for several digital applications, an additional verification step is required. MFA is essential for creating a safer study and work environment. It not only helps prevent password theft but also significantly reduces the risk of cyberattacks. This additional verification step helps protect both your personal data and university systems.
+
+### How does it work?
+
+After logging in with your VUnetID and password, you will be asked to verify your identity using one of the following methods:
+- An app on your smartphone, such as the Microsoft Authenticator
+- A physical USB security key, such as a YubiKey
+
+Please keep in mind that when using a YubiKey, you can only log in on devices with a USB port (e.g., laptops or desktops).
+
+### Setting up MFA
+
+You can choose to:
+1. Register for Azure MFA using the Microsoft Authenticator app
+2. Set up SURFsecureID with Azure MFA as the primary authentication method
