@@ -5,18 +5,20 @@ categories: [Knowledge Items]
 
 Multifactor Authentication (MFA) is a security method that requires users to verify their identity in two steps when logging in. In addition to your password, you confirm your identity using a second factor, such as an authentication app or a security key.
 
-The Vrije Universiteit Amsterdam (VU) is legally required to ensure that sensitive personal information is properly secured. Logging in with only a VUnetID and password is no longer sufficient. Therefore, for several digital applications, an additional verification step is required. MFA is essential for creating a safer study and work environment. It not only helps prevent password theft but also significantly reduces the risk of cyberattacks. This additional verification step helps protect both your personal data and university systems.
+The Vrije Universiteit Amsterdam (VU) is legally required to ensure that sensitive personal information is properly secured. Logging in with only a VUnetID and password is no longer sufficient. Therefore, several digital applications nownow require an additional verification step. MFA is essential for creating a safer study and work environment. It not only helps prevent password theft but also significantly reduces the risk of cyberattacks. This additional verification step helps protect both your personal data and university systems.
+
+Many tools, such as Yoda, Research Drive, GitHub, and Microsoft apps, require MFA to successfully log in to their virtual environments. 
 
 ### How does it work?
 
 After logging in with your VUnetID and password, you will be asked to verify your identity using one of the following methods:
 
-- An app on your smartphone, such as the Microsoft Authenticator
+- An app on your smartphone, such as the Microsoft Authenticator app.
 
-- A physical USB security key, such as a YubiKey
+- A physical USB security key, such as a YubiKey.
 
-Please keep in mind that when using a YubiKey, you can only log in on devices with a USB port (e.g., laptops or desktops), or devices with NFC chips (many smartphones).
+Pleasenote that when using a YubiKey, you can only log in on devices with a USB port (such as laptops or desktops), or devices with NFC chips (many smartphones).
 
 ### Setting up MFA
 
-You can visit [SurfCoNext](https://sa.surfconext.nl) to add a token. After selecting the Azure MFA token, you can link your token to your mobile authentication app. The final step of the activation process requires a visit to the IT Service Desk for identitiy verification. 
+You can visit [SURFconext](https://sa.surfconext.nl) to add a token. After selecting the Azure MFA token, you can link your token to your mobile authentication app. The final step of the activation process requires a visit to the IT Service Desk for identity verification.
