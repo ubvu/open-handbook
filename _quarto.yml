@@ -1,11 +1,5 @@
 project:
   type: website
-  render:
-    - "*.qmd"
-    - "blog/*.qmd"
-    - "guides/*.qmd"
-    - "topics/*.qmd"
-    - "tools/**/*.qmd"
 
 website:
   site-url: "https://ubvu.github.io/open-handbook"
