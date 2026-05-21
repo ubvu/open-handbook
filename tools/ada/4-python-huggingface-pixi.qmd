@@ -1,0 +1,351 @@
+---
+title: Hugging Face models with Pixi
+date: last-modified
+---
+
+This tutorial shows how to run a [Hugging Face](https://huggingface.co/) model on ADA using Pixi. The same project can run on CPU or GPU. The only difference is the Slurm submit command:
+
+```sh
+sbatch --partition=defq run_bulkrnabert.sbatch
+```
+
+or:
+
+```sh
+sbatch --partition=defq-gpu --gres=gpu:1 run_bulkrnabert.sbatch
+```
+
+The example model is [`InstaDeepAI/BulkRNABert`](https://huggingface.co/InstaDeepAI/BulkRNABert), a transformer model for bulk RNA-seq embeddings. The model repository uses custom model code, so the script below uses `trust_remote_code=True`.
+
+::: {.callout-warning title="Remote model code"}
+Only use `trust_remote_code=True` with models you trust. Hugging Face Transformers requires this option for custom model implementations, because it executes Python code from the model repository. For reproducible research, consider pinning a specific model revision.
+:::
+
+## Create the project
+
+Log in to ADA first. Run the setup commands in this tutorial on an ADA login node unless a step explicitly says to submit a Slurm job.
+
+Load Pixi and create a project directory:
+
+```sh
+module load 2025
+module load Pixi
+
+mkdir -p ~/projects/bulkrnabert-demo
+cd ~/projects/bulkrnabert-demo
+mkdir -p scripts logs
+pixi init .
+```
+
+Set the Hugging Face cache location:
+
+```sh
+export HF_HOME=~/huggingface
+mkdir -p "$HF_HOME"
+```
+
+`HF_HOME` controls where Hugging Face stores local data such as downloaded models and tokens. Keeping this outside the project directory avoids storing model files in your Git repository or Pixi environment.
+
+## Create `pixi.toml`
+
+Replace your `pixi.toml` with:
+
+```toml
+[workspace]
+name = "bulkrnabert-demo"
+channels = ["https://prefix.dev/conda-forge"]
+platforms = ["linux-64"]
+
+[dependencies]
+python = ">=3.11,<3.13"
+
+[pypi-dependencies]
+torch = { version = ">=2.6,<2.7", index = "https://download.pytorch.org/whl/cu124" }
+numpy = "*"
+pandas = "*"
+safetensors = "*"
+accelerate = "*"
+huggingface-hub = ">=0.30,<1.0"
+transformers = "==4.51.0"
+```
+
+Then install:
+
+```sh
+pixi install
+```
+
+Pixi supports multiple ways of installing PyTorch, including PyPI/CUDA wheel based installs. This example uses the PyTorch CUDA 12.4 wheel index so the same environment can use the GPU when Slurm allocates one.
+
+Test the environment:
+
+```sh
+pixi run python <<'PY'
+import torch
+import transformers
+import huggingface_hub
+
+print("torch:", torch.__version__)
+print("torch CUDA build:", torch.version.cuda)
+print("CUDA available:", torch.cuda.is_available())
+print("transformers:", transformers.__version__)
+print("huggingface_hub:", huggingface_hub.__version__)
+PY
+```
+
+On an ADA login node, `CUDA available` may be `False`. That is fine. PyTorch checks GPU visibility with `torch.cuda.is_available()`, so the same Python file can run on CPU or GPU depending on the Slurm allocation.
+
+## Download the model once
+
+Create `scripts/download_model.py`:
+
+```python
+from huggingface_hub import snapshot_download
+
+path = snapshot_download(
+    repo_id="InstaDeepAI/BulkRNABert",
+    repo_type="model",
+)
+print(f"Downloaded to: {path}")
+```
+
+Run the download on an ADA login node before submitting offline jobs:
+
+```sh
+export HF_HOME=~/huggingface
+pixi run python scripts/download_model.py
+```
+
+## Create the inference script
+
+Create `scripts/run_bulkrnabert.py`:
+
+::: {.callout-note collapse="true" title="Full `scripts/run_bulkrnabert.py`"}
+```python
+import types
+
+import numpy as np
+import pandas as pd
+import torch
+import torch.nn.functional as F
+from huggingface_hub import hf_hub_download
+from transformers import AutoConfig, AutoModel, AutoTokenizer
+
+
+MODEL_ID = "InstaDeepAI/BulkRNABert"
+
+
+def patch_attention(model):
+    def forward(self, query, key, value, attention_mask=None, attention_weight_bias=None):
+        q = self.w_q(query).reshape(*query.shape[:-1], self.num_heads, self.key_size)
+        k = self.w_k(key).reshape(*key.shape[:-1], self.num_heads, self.key_size)
+        v = self.w_v(value).reshape(*value.shape[:-1], self.num_heads, self.value_size)
+
+        q = q.transpose(-3, -2)
+        k = k.transpose(-3, -2)
+        v = v.transpose(-3, -2)
+
+        out = F.scaled_dot_product_attention(
+            q,
+            k,
+            v,
+            attn_mask=attention_mask,
+            dropout_p=0.0,
+            is_causal=False,
+        )
+        out = out.transpose(-3, -2).reshape(*out.shape[:-2], -1)
+
+        return {
+            "attention_weights": None,
+            "embeddings": self.output(out),
+        }
+
+    for layer in model.transformer_layers:
+        layer.mha.forward = types.MethodType(forward, layer.mha)
+
+
+def main():
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    dtype = torch.bfloat16 if device.type == "cuda" else torch.float32
+
+    print(f"Using device: {device}")
+    if device.type == "cuda":
+        print(f"GPU: {torch.cuda.get_device_name(0)}")
+
+    config = AutoConfig.from_pretrained(MODEL_ID, trust_remote_code=True)
+    config.embeddings_layers_to_save = (4,)
+    config.attention_maps_to_save = []
+
+    tokenizer = AutoTokenizer.from_pretrained(MODEL_ID, trust_remote_code=True)
+    model = AutoModel.from_pretrained(
+        MODEL_ID,
+        config=config,
+        trust_remote_code=True,
+        torch_dtype=dtype,
+    ).to(device)
+    model.eval()
+
+    if device.type == "cuda":
+        patch_attention(model)
+
+    csv_path = hf_hub_download(
+        repo_id=MODEL_ID,
+        filename="data/tcga_sample.csv",
+        repo_type="model",
+    )
+
+    x = pd.read_csv(csv_path).drop(columns=["identifier"]).to_numpy()[:1]
+    x = np.log10(1 + x)
+    input_ids = tokenizer.batch_encode_plus(x, return_tensors="pt")["input_ids"].to(device)
+
+    with torch.inference_mode():
+        if device.type == "cuda":
+            with torch.autocast("cuda", dtype=torch.bfloat16):
+                output = model(input_ids)
+        else:
+            output = model(input_ids)
+
+    embeddings = output["embeddings_4"].mean(dim=1)
+    print("Embedding shape:", tuple(embeddings.shape))
+    print("First values:", embeddings[0, :8].detach().cpu().float().numpy())
+
+
+if __name__ == "__main__":
+    main()
+```
+:::
+
+::: {.callout-note title="Why patch the attention function?"}
+BulkRNABert's current custom implementation builds a very large full attention matrix over all genes. On an A30 GPU, this can run out of memory. The `patch_attention` function replaces that attention step with PyTorch's `scaled_dot_product_attention`, which can use memory-efficient CUDA implementations.
+
+This patch is specific to BulkRNABert. Most Hugging Face models do not need it.
+:::
+
+## Create one Slurm script
+
+Create `run_bulkrnabert.sbatch`:
+
+```sh
+#!/bin/bash -l
+#SBATCH --job-name=bulkrnabert
+#SBATCH --output=logs/%x-%j.out
+#SBATCH --error=logs/%x-%j.err
+#SBATCH --time=00:30:00
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=16G
+
+set -euo pipefail
+
+cd "$SLURM_SUBMIT_DIR"
+
+module load 2025
+module load Pixi
+
+export HF_HOME=~/huggingface
+export HF_HUB_OFFLINE=1
+export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
+
+mkdir -p "$HF_HOME" logs
+pixi run python scripts/run_bulkrnabert.py
+```
+
+`HF_HUB_OFFLINE=1` tells Hugging Face to use only cached files during the batch job. `PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True` is a PyTorch CUDA memory allocator setting that can help with changing allocation sizes and fragmentation.
+
+## Submit on CPU
+
+```sh
+sbatch --partition=defq run_bulkrnabert.sbatch
+```
+
+Expected output in `logs/bulkrnabert-<jobid>.out`:
+
+```text
+Using device: cpu
+Embedding shape: (1, 256)
+```
+
+## Submit on GPU
+
+```sh
+sbatch --partition=defq-gpu --gres=gpu:1 run_bulkrnabert.sbatch
+```
+
+Expected output in `logs/bulkrnabert-<jobid>.out`:
+
+```text
+Using device: cuda
+GPU: NVIDIA A30
+Embedding shape: (1, 256)
+```
+
+Same Pixi environment. Same Python script. Same Slurm script. Only the Slurm partition and GPU request change.
+
+## Minimal user workflow
+
+After setup, users normally only need:
+
+```sh
+cd ~/projects/bulkrnabert-demo
+export HF_HOME=~/huggingface
+```
+
+CPU:
+
+```sh
+sbatch --partition=defq run_bulkrnabert.sbatch
+```
+
+GPU:
+
+```sh
+sbatch --partition=defq-gpu --gres=gpu:1 run_bulkrnabert.sbatch
+```
+
+## Troubleshooting
+
+### Check whether PyTorch sees the GPU
+
+Run this inside a GPU job or interactive GPU allocation:
+
+```sh
+pixi run python <<'PY'
+import torch
+
+print("torch:", torch.__version__)
+print("torch CUDA build:", torch.version.cuda)
+print("CUDA available:", torch.cuda.is_available())
+if torch.cuda.is_available():
+    print("GPU:", torch.cuda.get_device_name(0))
+PY
+```
+
+If `CUDA available` is `False` on a login node or CPU job, that is expected. It should be `True` inside a GPU allocation.
+
+### If Hugging Face tries to download during a job
+
+Make sure the model was downloaded first:
+
+```sh
+export HF_HOME=~/huggingface
+pixi run python scripts/download_model.py
+```
+
+Then submit the Slurm job again.
+
+### If the model code cache is stale
+
+Clear the cached remote code and rerun:
+
+```sh
+rm -rf ~/huggingface/modules/transformers_modules/InstaDeepAI/BulkRNABert
+pixi run python scripts/run_bulkrnabert.py
+```
+
+## References
+
+- [BulkRNABert on Hugging Face](https://huggingface.co/InstaDeepAI/BulkRNABert)
+- [Hugging Face Transformers: loading models and custom model code](https://huggingface.co/docs/transformers/models)
+- [Hugging Face Hub environment variables](https://huggingface.co/docs/huggingface_hub/package_reference/environment_variables)
+- [Pixi PyTorch integration guide](https://pixi.sh/latest/features/pytorch/)
+- [PyTorch `torch.cuda.is_available`](https://docs.pytorch.org/docs/stable/generated/torch.cuda.is_available.html)
+- [PyTorch CUDA memory management](https://docs.pytorch.org/docs/stable/notes/cuda.html#cuda-memory-management)
