@@ -10,15 +10,15 @@ Please contact [IT for Research (ITvO)](/topics/itvo.qmd#contact) to discuss add
 ## Requirements hardware for ADA HPC
 To make sure the hardware fits in the existing cluster it must meet certain requirements:
 
-- be rear I/O configured.
-- have a modern generation of PCIe expansion slots.
-- have an IPMI (network card).
-- fit into a 42U 19-inch rack.
-- be compatible with the current ITvO network infrastructure.
-- have a redundant 80 PLUS power supply unit (PSU) that is titanium certified.
-- be ordered with a network cable included.
-- be air cooled.
-- have a minimum of 2 NVMe disks for scratch space.
+- be rear I/O configured;
+- have a modern generation of PCIe expansion slots;
+- have an IPMI (network card);
+- fit into a 42U 19-inch rack;
+- be compatible with the current ITvO network infrastructure;
+- have a redundant 80 PLUS power supply unit (PSU) that is titanium certified;
+- be ordered with a network cable included;
+- be air cooled;
+- have a minimum of 2 NVMe disks for scratch space;
 - not contain any consumer grade GPU’s (data center verified only).
 
 ITvO further recommends the following specifications:
@@ -36,15 +36,15 @@ Besides the hardware requirements the following policies apply to dedicated node
 ### Delivery of hardware ordered via IT
 - If the product does not meet the requirements (i.e. defective, not the ordered product), it can be returned to the supplier based on the supplier’s return policy.
 
-- ITvO cannot guarantee delivery within a financial year, because this depends on suppliers and procurement processes. ITVO cannot be held responsible for any delays. 
+- ITvO cannot guarantee delivery within a financial year, because this depends on suppliers and procurement processes. ITvO cannot be held responsible for any delays. 
 
 ### Existing hardware
-- If a researcher moves from another institute to the VU, equipment may be relocated as well, provided that it meets the VU’s requirements. The [IT for Research team](/topics/itvo.qmd) can provide advice and assistance in this process. 
+- If a researcher moves from another institute to VU Amsterdam, equipment may be relocated as well, provided that it meets VU Amsterdam’s requirements. The [IT for Research team](/topics/itvo.qmd) can provide advice and assistance in this process. 
 
-- In case the hardware would create disproportionate operational maintenance, ITVO is entitled to reject it.
+- In case the hardware would create disproportionate operational maintenance, ITvO is entitled to reject it.
 
 ### Ownership
-- The user will maintain the right to remove the hardware if it has been funded from their own resources. If the hardware has been funded by the VU, the hardware will remain VU property.
+- The user will maintain the right to remove the hardware if it has been funded from their own resources. If the hardware has been funded by VU Amsterdam, the hardware will remain VU property.
 
 ### Disposing of old hardware
 - Any defective hardware will be disposed of according to IT policy.
