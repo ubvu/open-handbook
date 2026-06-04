@@ -27,41 +27,19 @@ include-in-header:
           color: #fff;
           border-color: var(--bs-primary, #0077b3);
         }
-        .tool-header { cursor: pointer; user-select: none; }
-        .tool-header:hover h2 { opacity: 0.8; }
-        .tool-toggle {
-          display: inline-block;
-          font-size: 0.6em;
-          color: var(--bs-secondary, #6c757d);
-          transition: transform 0.15s;
-          vertical-align: middle;
-          margin-right: 0.3em;
-        }
-        .tool-section[data-open="true"] .tool-toggle { transform: rotate(90deg); }
-        .tool-body {
-          padding-left: 1rem;
-          border-left: 3px solid var(--bs-border-color, #dee2e6);
-          margin-bottom: 1rem;
-        }
         </style>
         <script>
-        const __searchQuery = new URLSearchParams(window.location.search).get('q');
-        const __textFragment = decodeURIComponent(
-            window.location.hash.match(/#:~:text=([^&]*)/)?.[1] ?? ''
-        );
-
         document.addEventListener('DOMContentLoaded', () => {
             const list = document.getElementById('tools-list');
             if (!list) return;
 
             // Quarto/Pandoc wraps each heading + content in <section class="levelN" id="...">
-            const SKIP = new Set(['level2', 'level3', 'anchored', 'unnumbered', 'unlisted', 'header-section-number']);
-            const toolSections = [...list.querySelectorAll('section.level2')];
+            const SKIP = new Set(['level3', 'level4', 'anchored', 'unnumbered', 'unlisted', 'header-section-number']);
+            const toolSections = [...list.querySelectorAll('section.level3')];
             if (!toolSections.length) return;
 
             const sections = toolSections.map(sec => ({
                 sec,
-                heading: sec.querySelector('h2'),
                 cats: [...sec.classList].filter(c => !SKIP.has(c)),
             }));
 
@@ -96,75 +74,6 @@ include-in-header:
                 filterBar.appendChild(makeBtn(label, cat));
             });
             list.before(filterBar);
-
-            // Make sections collapsible
-            const sectionEls = sections.map(({ sec, heading, cats }) => {
-                sec.classList.add('tool-section');
-                sec.dataset.cats = cats.join(' ');
-                sec.dataset.open = 'false';
-
-                const headerDiv = document.createElement('div');
-                headerDiv.className = 'tool-header';
-                headerDiv.setAttribute('role', 'button');
-                headerDiv.setAttribute('tabindex', '0');
-
-                const toggleSpan = document.createElement('span');
-                toggleSpan.className = 'tool-toggle';
-                toggleSpan.setAttribute('aria-hidden', 'true');
-                toggleSpan.textContent = '▶';
-
-                // Wrap h2 in headerDiv; move all remaining children into bodyDiv
-                sec.insertBefore(headerDiv, heading);
-                heading.prepend(toggleSpan);
-                headerDiv.appendChild(heading);
-
-                const bodyDiv = document.createElement('div');
-                bodyDiv.className = 'tool-body';
-                bodyDiv.style.display = 'none';
-                while (sec.children.length > 1) {
-                    bodyDiv.appendChild(sec.children[1]);
-                }
-                sec.appendChild(bodyDiv);
-
-                const open = (scroll = false) => {
-                    bodyDiv.style.display = '';
-                    sec.dataset.open = 'true';
-                    if (scroll) setTimeout(() => heading.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
-                };
-                const close = () => {
-                    bodyDiv.style.display = 'none';
-                    sec.dataset.open = 'false';
-                };
-                const handleToggle = () => sec.dataset.open === 'true' ? close() : open();
-
-                headerDiv.addEventListener('click', (e) => {
-                    if (e.target.closest('a')) return;
-                    handleToggle();
-                });
-                headerDiv.addEventListener('keydown', e => {
-                    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handleToggle(); }
-                });
-
-                return { sec, heading, open, close };
-            });
-
-            // Open based on URL hash (Quarto puts the id on the <section>, not the <h2>)
-            const getHash = () => window.location.hash.split('#:~:')[0].slice(1);
-            const openByHash = (hash) => {
-                if (!hash) return;
-                const match = sectionEls.find(s => s.sec.id === hash);
-                if (match) match.open(true);
-            };
-            openByHash(getHash());
-            window.addEventListener('hashchange', () => openByHash(getHash()));
-
-            // Open based on Quarto search query or Google text fragment
-            const query = (__searchQuery || __textFragment || '').toLowerCase();
-            if (query) {
-                sectionEls.forEach(({ sec, open }) => {
-                    if (sec.textContent.toLowerCase().includes(query)) open();
-                });
-            }
         });
         </script>
 ---
@@ -172,112 +81,6 @@ include-in-header:
 The Vrije Universiteit Amsterdam hosts a wide range of research data management (RDM) tools designed to support researchers throughout their entire project lifecycle.
 
 Whether you are starting your data management plan, collecting data, or looking for long-term storage solutions, RDM tools help you optimise your research process and make data handling efficient.
-
-::: {#tools-list}
-
-## ADA {#ada .computing}
-
-[ADA](/tools/ada/index.qmd) is VU's on-campus computing cluster for multi-node computations. ADA is beneficial when your research requires more computational power than a standard laptop or workstation. It offers access to multi-core CPUs, large-memory nodes, and batch GPU capacity for efficient large-scale data processing and analysis. Account needs to be requested via the VU Service Portal.
-
-## Amberscript {#amberscript .transcription}
-
-[Amberscript](../topics/transcription.qmd) offers both automated transcription and human-edited transcription. Human-edited transcriptions can be done verbatim or literal. This is a paid service available to VU researchers.
-
-## ATLAS.ti {#atlasti .data-analysis}
-
-[ATLAS.ti](https://atlasti.com/) is qualitative data analysis software that supports coding, text interpretation, and multimedia analysis. Instructions for using the VU ATLAS.ti licence are on the 🔒 [VU Service Portal](https://services.vu.nl/esc?id=kb_article&table=kb_knowledge&sys_id=e8a8a1f4874bc15010be65b40cbb351c). ATLAS.ti also provides [video tutorials](https://atlasti.com/video-tutorials) to help users get started.
-
-## DataverseNL {#dataversenl .data-archiving .data-publishing}
-
-[DataverseNL](/tools/dataversenl/index.qmd) is an open access data repository hosted by DANS for archiving and publishing research datasets. DataverseNL is not suitable for data files containing personal or confidential data. For archiving and publishing sensitive data, researchers should use [Yoda](#yoda).
-
-## DMPonline {#dmponline .data-management-plan}
-
-[DMPonline](/tools/dmponline/index.qmd) is an online platform that enables researchers to create, manage, and share Data Management Plans. The platform provides structured templates to help researchers address key aspects of the research lifecycle, including legal and ethical requirements, storage, preservation, documentation, and responsibilities. Log in using VU credentials with Single Sign-on (SSO).
-
-## GitLab {#gitlab .code-development}
-
-[GitLab](https://gitlab.vu.nl) is VU's code repository for research use. Features include version control and the possibility to collaborate on code. Maintained by the University Library. There is also a [GitLab server for general use](https://git.vu.nl).
-
-## iThenticate {#ithenticate .plagiarism-detection}
-
-[iThenticate](/tools/ithenticate/index.qmd) is plagiarism detection software offered by Turnitin that compares a researcher's work with published academic sources and bibliographic databases such as Crossref. At VU Amsterdam, plagiarism checks are used primarily in an educational and preventative way, with the aim of raising awareness of scientific integrity.
-
-## MATLAB {#matlab .data-analysis}
-
-[MATLAB](https://www.mathworks.com/academia/tah-portal/vrije-universiteit-amsterdam-30688271.html) is a programming language for numerical analysis, data visualisation, and algorithm development. Instructions for using the VU MATLAB licence are on the 🔒 [VU Service Portal](https://services.vu.nl/esc?id=kb_article&sysparm_article=KB0011916&table=kb_knowledge&searchTerm=matlab).
-
-## Nebula {#nebula .computing}
-
-[Nebula](/tools/nebula/index.qmd) is developed to support researchers who want to use AI models in their work. It provides researchers across all departments with safe and seamless access to open-source large language models (LLMs). Nebula is fully hosted on VU premises, ensuring that no data leaves the campus.
-
-## OSF {#osf .data-publishing .preregistration}
-
-[OSF](/tools/osf/index.qmd) is a cloud-based, open-source tool that supports researchers throughout the **active research stage**. It facilitates collaboration and connects services, materials, and other research objects for private use or public sharing. OSF also supports preregistration of research.
-
-## Pure {#pure .research-output-registration}
-
-[Pure](/tools/pure/index.qmd) is the Current Research Information System (CRIS) used at VU, serving as the central platform for registering and managing all research activities and outputs, including publications, datasets, research software/code, and projects. All researchers at VU Amsterdam have access to the back end and a public profile page.
-
-## Qualtrics {#qualtrics .online-survey}
-
-[Qualtrics](/tools/qualtrics/index.qmd) is a cloud-based survey platform that enables users to create and manage online surveys. It supports a variety of complex survey design requirements. VU's Qualtrics licence is intended for scientific research purposes only. Log in using VU credentials with Single Sign-on (SSO).
-
-## Research Cloud {#research-cloud .computing .virtual-research-environment}
-
-[Research Cloud](/tools/researchcloud/index.qmd) is a SURF-hosted portal that allows you to easily build or reuse a virtual research environment. It enables you to run one or more servers with applications that are accessible over the internet. Requires SRAM collaboration credentials and computing credits.
-
-## Research Drive {#research-drive .data-storage}
-
-[Research Drive](/tools/researchdrive/index.qmd) is a SURF-hosted online storage and collaboration platform for research data. It allows researchers to easily store and share files with others, both within and outside VU Amsterdam. Data must be downloaded via Nextcloud to a local device for analysis. Fine-grained folder access rights are possible. Account needs to be requested via the VU Service Portal.
-
-## SciCloud {#scicloud .computing .virtual-research-environment}
-
-[SciCloud](/tools/scicloud/index.qmd) is offered by IT for Research (ITvO) and is based on the open-source middleware OpenNebula (ONE). It allows researchers to purchase server capacity to support their research applications. Good for web applications and 24/7 services.
-
-## SciStor {#scistor .data-storage .file-transfer}
-
-[SciStor](/tools/scistor/index.qmd) is an IT-hosted data storage service designed for storing large volumes of research data on campus. It provides high-speed connections to lab equipment, laptops, and workstations, and can connect to high-performance computers. Storage space needs to be requested via the VU Service Portal.
-
-## SciSure {#scisure .lab-journal}
-
-[SciSure](/tools/scisure/index.qmd) is an application that supports researchers in documenting experiments and results in a digital lab journal. It can be used to track results and share data recorded during experiments within an electronic lab notebook.
-
-## Snellius {#snellius .computing}
-
-[Snellius](/tools/snellius/index.qmd) is a National Supercomputer hosted by SURF, designed for large-scale experiments such as simulations and modelling that require significant computing power. Access can be requested through the VU contract with SURF or through an NWO compute grant.
-
-## SPSS {#spss .data-analysis}
-
-[SPSS](https://www.surfspot.nl/vu) is a statistical analysis software package used for data management, statistical analysis, and data visualisation. Instructions for using the VU SPSS licence are on the 🔒 [VU Service Portal](https://services.vu.nl/esc?id=kb_article&sysparm_article=KB0022399&table=kb_knowledge&searchTerm=spss). Free tutorials are available from [how2stats](https://how2stats.net/); more in-depth paid tutorials from [Laerd Statistics](https://statistics.laerd.com/).
-
-## Stata {#stata .data-analysis}
-
-[Stata](https://www.scienceplus.com/nl/statistiek/stata/) is a statistical package used for quantitative data analysis. Stata is only available for specific user groups — if you are unsure whether Stata is available to you, ask your supervisor or head of research group. More information and tutorials can be found in the [VU LibGuide 'Working with data'](https://libguides.vu.nl/working-with-data/software/stata-sources).
-
-## SURFfilesender {#surffilesender .file-transfer}
-
-[SURFfilesender](https://filesender.surf.nl/?s=home) is a web-based application that allows authenticated users to securely send arbitrarily large files to other users. Users without an account can be sent a guest upload voucher by an authenticated user. Log in using VU credentials with Single Sign-on (SSO).
-
-## Transcript Online {#transcript-online .transcription}
-
-[Transcript Online](../topics/transcription.qmd) offers human-edited transcription. Experienced transcribers convert speech in audio or video files into both verbatim and literal transcriptions. This is a paid service available to VU researchers.
-
-## VU Compute Hub {#vu-compute-hub .computing}
-
-[VU Compute Hub](/tools/vucomputehub/index.qmd) is a JupyterHub service hosted by IT primarily intended for educational use, but also available to VU researchers who need a low-threshold environment for running analyses.
-
-## Yoda {#yoda .data-archiving .data-publishing .data-storage}
-
-[Yoda](/tools/yoda/index.qmd) is a data storage platform and repository hosted by SURF. It supports researchers throughout the entire research lifecycle, from safe storage and sharing during the research process, to sharing within research collaborations, and ultimately to data archiving and publication. Account needs to be requested via the VU Service Portal.
-
-## Zivver {#zivver .file-transfer}
-
-[Zivver](https://www.zivver.com/products/email-encryption-software) offers a secure way to send encrypted emails and file attachments up to 5TB. This is available to all VU employees. Instructions for using Zivver are on the 🔒 [VU Service Portal](https://services.vu.nl/esc?id=kb_article&sysparm_article=KB0012157).
-
-:::
-
-
 
 ## Choosing a Tool
 
@@ -304,3 +107,112 @@ The image below lists all services and tools provided by the Network Research Da
 ## Tool Not Listed?
 
 If you need a research tool that isn't provided by VU Amsterdam, you can contact the RDM Support Desk at [rdm@vu.nl](mailto:rdm@vu.nl) to discuss your requirements. We can suggest an alternative or forward your question to IT or the procurement team.
+
+
+## Tool list
+Click on a category to filter the list.
+
+::: {#tools-list}
+
+### ADA {#ada .computing}
+
+[ADA](/tools/ada/index.qmd) is VU's on-campus computing cluster for multi-node computations. ADA is beneficial when your research requires more computational power than a standard laptop or workstation. It offers access to multi-core CPUs, large-memory nodes, and batch GPU capacity for efficient large-scale data processing and analysis. Account needs to be requested via the VU Service Portal.
+
+### Amberscript {#amberscript .transcription}
+
+[Amberscript](../topics/transcription.qmd) offers both automated transcription and human-edited transcription. Human-edited transcriptions can be done verbatim or literal. This is a paid service available to VU researchers.
+
+### ATLAS.ti {#atlasti .data-analysis}
+
+[ATLAS.ti](https://atlasti.com/) is qualitative data analysis software that supports coding, text interpretation, and multimedia analysis. Instructions for using the VU ATLAS.ti licence are on the 🔒 [VU Service Portal](https://services.vu.nl/esc?id=kb_article&table=kb_knowledge&sys_id=e8a8a1f4874bc15010be65b40cbb351c). ATLAS.ti also provides [video tutorials](https://atlasti.com/video-tutorials) to help users get started.
+
+### DataverseNL {#dataversenl .data-archiving .data-publishing}
+
+[DataverseNL](/tools/dataversenl/index.qmd) is an open access data repository hosted by DANS for archiving and publishing research datasets. DataverseNL is not suitable for data files containing personal or confidential data. For archiving and publishing sensitive data, researchers should use [Yoda](#yoda).
+
+### DMPonline {#dmponline .data-management-plan}
+
+[DMPonline](/tools/dmponline/index.qmd) is an online platform that enables researchers to create, manage, and share Data Management Plans. The platform provides structured templates to help researchers address key aspects of the research lifecycle, including legal and ethical requirements, storage, preservation, documentation, and responsibilities. Log in using VU credentials with Single Sign-on (SSO).
+
+### GitLab {#gitlab .code-development}
+
+[GitLab](https://gitlab.vu.nl) is VU's code repository for research use. Features include version control and the possibility to collaborate on code. Maintained by the University Library. There is also a [GitLab server for general use](https://git.vu.nl).
+
+### iThenticate {#ithenticate .plagiarism-detection}
+
+[iThenticate](/tools/ithenticate/index.qmd) is plagiarism detection software offered by Turnitin that compares a researcher's work with published academic sources and bibliographic databases such as Crossref. At VU Amsterdam, plagiarism checks are used primarily in an educational and preventative way, with the aim of raising awareness of scientific integrity.
+
+### MATLAB {#matlab .data-analysis}
+
+[MATLAB](https://www.mathworks.com/academia/tah-portal/vrije-universiteit-amsterdam-30688271.html) is a programming language for numerical analysis, data visualisation, and algorithm development. Instructions for using the VU MATLAB licence are on the 🔒 [VU Service Portal](https://services.vu.nl/esc?id=kb_article&sysparm_article=KB0011916&table=kb_knowledge&searchTerm=matlab).
+
+### Nebula {#nebula .computing}
+
+[Nebula](/tools/nebula/index.qmd) is developed to support researchers who want to use AI models in their work. It provides researchers across all departments with safe and seamless access to open-source large language models (LLMs). Nebula is fully hosted on VU premises, ensuring that no data leaves the campus.
+
+### OSF {#osf .data-publishing .preregistration}
+
+[OSF](/tools/osf/index.qmd) is a cloud-based, open-source tool that supports researchers throughout the **active research stage**. It facilitates collaboration and connects services, materials, and other research objects for private use or public sharing. OSF also supports preregistration of research.
+
+### Pure {#pure .research-output-registration}
+
+[Pure](/tools/pure/index.qmd) is the Current Research Information System (CRIS) used at VU, serving as the central platform for registering and managing all research activities and outputs, including publications, datasets, research software/code, and projects. All researchers at VU Amsterdam have access to the back end and a public profile page.
+
+### Qualtrics {#qualtrics .online-survey}
+
+[Qualtrics](/tools/qualtrics/index.qmd) is a cloud-based survey platform that enables users to create and manage online surveys. It supports a variety of complex survey design requirements. VU's Qualtrics licence is intended for scientific research purposes only. Log in using VU credentials with Single Sign-on (SSO).
+
+### Research Cloud {#research-cloud .computing .virtual-research-environment}
+
+[Research Cloud](/tools/researchcloud/index.qmd) is a SURF-hosted portal that allows you to easily build or reuse a virtual research environment. It enables you to run one or more servers with applications that are accessible over the internet. Requires SRAM collaboration credentials and computing credits.
+
+### Research Drive {#research-drive .data-storage}
+
+[Research Drive](/tools/researchdrive/index.qmd) is a SURF-hosted online storage and collaboration platform for research data. It allows researchers to easily store and share files with others, both within and outside VU Amsterdam. Data must be downloaded via Nextcloud to a local device for analysis. Fine-grained folder access rights are possible. Account needs to be requested via the VU Service Portal.
+
+### SciCloud {#scicloud .computing .virtual-research-environment}
+
+[SciCloud](/tools/scicloud/index.qmd) is offered by IT for Research (ITvO) and is based on the open-source middleware OpenNebula (ONE). It allows researchers to purchase server capacity to support their research applications. Good for web applications and 24/7 services.
+
+### SciStor {#scistor .data-storage .file-transfer}
+
+[SciStor](/tools/scistor/index.qmd) is an IT-hosted data storage service designed for storing large volumes of research data on campus. It provides high-speed connections to lab equipment, laptops, and workstations, and can connect to high-performance computers. Storage space needs to be requested via the VU Service Portal.
+
+### SciSure {#scisure .lab-journal}
+
+[SciSure](/tools/scisure/index.qmd) is an application that supports researchers in documenting experiments and results in a digital lab journal. It can be used to track results and share data recorded during experiments within an electronic lab notebook.
+
+### Snellius {#snellius .computing}
+
+[Snellius](/tools/snellius/index.qmd) is a National Supercomputer hosted by SURF, designed for large-scale experiments such as simulations and modelling that require significant computing power. Access can be requested through the VU contract with SURF or through an NWO compute grant.
+
+### SPSS {#spss .data-analysis}
+
+[SPSS](https://www.surfspot.nl/vu) is a statistical analysis software package used for data management, statistical analysis, and data visualisation. Instructions for using the VU SPSS licence are on the 🔒 [VU Service Portal](https://services.vu.nl/esc?id=kb_article&sysparm_article=KB0022399&table=kb_knowledge&searchTerm=spss). Free tutorials are available from [how2stats](https://how2stats.net/); more in-depth paid tutorials from [Laerd Statistics](https://statistics.laerd.com/).
+
+### Stata {#stata .data-analysis}
+
+[Stata](https://www.scienceplus.com/nl/statistiek/stata/) is a statistical package used for quantitative data analysis. Stata is only available for specific user groups — if you are unsure whether Stata is available to you, ask your supervisor or head of research group. More information and tutorials can be found in the [VU LibGuide 'Working with data'](https://libguides.vu.nl/working-with-data/software/stata-sources).
+
+### SURFfilesender {#surffilesender .file-transfer}
+
+[SURFfilesender](https://filesender.surf.nl/?s=home) is a web-based application that allows authenticated users to securely send arbitrarily large files to other users. Users without an account can be sent a guest upload voucher by an authenticated user. Log in using VU credentials with Single Sign-on (SSO).
+
+### Transcript Online {#transcript-online .transcription}
+
+[Transcript Online](../topics/transcription.qmd) offers human-edited transcription. Experienced transcribers convert speech in audio or video files into both verbatim and literal transcriptions. This is a paid service available to VU researchers.
+
+### VU Compute Hub {#vu-compute-hub .computing}
+
+[VU Compute Hub](/tools/vucomputehub/index.qmd) is a JupyterHub service hosted by IT primarily intended for educational use, but also available to VU researchers who need a low-threshold environment for running analyses.
+
+### Yoda {#yoda .data-archiving .data-publishing .data-storage}
+
+[Yoda](/tools/yoda/index.qmd) is a data storage platform and repository hosted by SURF. It supports researchers throughout the entire research lifecycle, from safe storage and sharing during the research process, to sharing within research collaborations, and ultimately to data archiving and publication. Account needs to be requested via the VU Service Portal.
+
+### Zivver {#zivver .file-transfer}
+
+[Zivver](https://www.zivver.com/products/email-encryption-software) offers a secure way to send encrypted emails and file attachments up to 5TB. This is available to all VU employees. Instructions for using Zivver are on the 🔒 [VU Service Portal](https://services.vu.nl/esc?id=kb_article&sysparm_article=KB0012157).
+
+:::
+
