@@ -1,6 +1,30 @@
 ---
 title: RDM Tools
 categories: [Knowledge Items]
+include-in-header: 
+    - text: |
+        <script>
+        const params = new URLSearchParams(window.location.search);
+        const query = params.get('q');
+        window.addEventListener('DOMContentLoaded', () => {
+            if (!query) return;
+
+            const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+            const queryLower = query.toLowerCase();
+
+            let node;
+
+            while ((node = walker.nextNode())) {
+                if (node.nodeValue.toLowerCase().includes(queryLower)) {
+                let el = node.parentElement;
+                while (el) {
+                    if (el.tagName === 'DETAILS') el.open = true;
+                    el = el.parentElement;
+                }
+                }
+            }
+        });
+        </script>
 ---
 
 The Vrije Universiteit Amsterdam hosts a wide range of research data management (RDM) tools designed for researchers to support researchers throughout their enitre project lifecycle. 
@@ -31,7 +55,7 @@ There are several tools available to support researchers in performing computati
 
 - [Research Cloud](/tools/researchcloud/index.qmd) is a SURF-hosted portal that allows you to easily build or reuse a virtual research environment. It enables you to run one or more servers with applications that are accessible over the internet. Requires SRAM collaboration credentials and computing credits.
 
-- [SciCloud](/tools/scicloud/index.qmd) is offered by IT for Research ([ITvO](topics/itvo.qmd)) and is based on the open-source middleware OpenNebula (ONE). It allows researchers to purchase server capacity to support their research applications. Good for web applications and 24/7 services.
+- [SciCloud](/tools/scicloud/index.qmd) is offered by IT for Research ([ITvO](/topics/itvo.qmd)) and is based on the open-source middleware OpenNebula (ONE). It allows researchers to purchase server capacity to support their research applications. Good for web applications and 24/7 services.
 
 - [Snellius](/tools/snellius/index.qmd) is a National Supercomputer hosted by SURF, designed for large-scale experiments, such as simulations and modelling, that require significant computing power. Access can be requested through the VU contract with SURF or through an NWO compute grant.
 
