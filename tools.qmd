@@ -27,18 +27,16 @@ listing:
   image-align: right
   template-params:
     type: Tool
-format: 
-  html:
-    include-in-header:  
-      text: |
-        <style>
-        .handbook-title {
-          text-align: center;
-        }
-        #title-block-header {
-          display: none;
-        }
-        </style>
+include-in-header:  
+  - text: |
+      <style>
+      .handbook-title {
+        text-align: center;
+      }
+      #title-block-header {
+        display: none;
+      }
+      </style>
 ---
 
 ::: {.tools-main}

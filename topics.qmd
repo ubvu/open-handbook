@@ -9,15 +9,15 @@ listing:
   template-params:
     type: Topic
 include-in-header:
-  text: |
-    <style>
-    .handbook-title {
-      text-align: center;
-    }
-    #title-block-header {
-      display: none;
-    }
-    </style>
+  - text: |
+      <style>
+      .handbook-title {
+        text-align: center;
+      }
+      #title-block-header {
+        display: none;
+      }
+      </style>
 ---
 ::: {.topics-main}
 ::: {.text-center .px-5}
