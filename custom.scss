@@ -277,7 +277,44 @@ footer.footer .nav-footer {
     .listing-image {
         display: flex;
         align-items: center;
-        justify-content: center;   
+        justify-content: center;
     }
 }
 /* tools, topics and guides listing and accent color */
+
+/* glossary links and popup */
+a.glossary-link {
+    text-decoration: underline dotted;
+    text-decoration-color: #0282c9;
+    text-underline-offset: 2px;
+    cursor: help;
+}
+
+.glossary-tooltip {
+    position: absolute;
+    z-index: 1060;
+    max-width: 320px;
+    background-color: #1c1c1c;
+    color: white;
+    border-radius: .25rem;
+    padding: .6em .8em;
+    font-size: .85rem;
+    line-height: 1.4;
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .25);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .1s ease-in-out;
+    pointer-events: none;
+}
+
+.glossary-tooltip.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.glossary-tooltip-title {
+    display: block;
+    margin-bottom: .25em;
+    color: #6fc2f4;
+}
+/* glossary links and popup */

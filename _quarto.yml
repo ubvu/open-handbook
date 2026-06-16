@@ -57,6 +57,7 @@ language:
 
 resources:
   - "public/*"
+  - "js/*"
   - CNAME
 format:
   html:
@@ -72,6 +73,8 @@ format:
         <div class="handbook-title">Research Support Handbook</div>
     include-in-header:
       text: <script defer src="https://umami.labs.vu.nl/script.js" data-website-id="d8c5a441-b2ab-4d33-ba3a-6647fd821974"></script>
+    include-after-body:
+      text: <script defer src="/js/glossary-popup.js"></script>
 # from: "markdown+emoji"
 filters:
   - utils/include-files.lua
