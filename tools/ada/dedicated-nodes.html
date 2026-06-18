@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-02-18">
+<meta name="dcterms.date" content="2026-06-04">
 
-<title>HPC 101 – Research Support Handbook</title>
+<title>Buying dedicated nodes – Research Support Handbook</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -34,8 +34,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../tools/ada/faq.html" rel="next">
-<link href="../../tools/ada/1-R-multiprocessing.html" rel="prev">
+<link href="../../tools/ada/open-ondemand.html" rel="next">
+<link href="../../tools/ada/hardware.html" rel="prev">
 <link href="../../public/favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -151,7 +151,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tools/ada/index.html">ADA</a></li><li class="breadcrumb-item"><a href="../../tools/ada/login.html">Documentation</a></li><li class="breadcrumb-item"><a href="../../tools/ada/hpc-101.html">HPC 101</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tools/ada/index.html">ADA</a></li><li class="breadcrumb-item"><a href="../../tools/ada/login.html">Documentation</a></li><li class="breadcrumb-item"><a href="../../tools/ada/dedicated-nodes.html">Buying dedicated nodes</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -243,7 +243,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tools/ada/dedicated-nodes.html" class="sidebar-item-text sidebar-link">
+  <a href="../../tools/ada/dedicated-nodes.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Buying dedicated nodes</span></a>
   </div>
 </li>
@@ -330,7 +330,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tools/ada/hpc-101.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../tools/ada/hpc-101.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">HPC 101</span></a>
   </div>
 </li>
@@ -354,21 +354,25 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#concurrent-vs.-parallel" id="toc-concurrent-vs.-parallel" class="nav-link active" data-scroll-target="#concurrent-vs.-parallel">Concurrent vs.&nbsp;Parallel</a></li>
-  <li><a href="#multithreading-vs.-multiprocessing" id="toc-multithreading-vs.-multiprocessing" class="nav-link" data-scroll-target="#multithreading-vs.-multiprocessing">Multithreading vs.&nbsp;Multiprocessing</a></li>
-  <li><a href="#compute-time-vs.-communication-overhead" id="toc-compute-time-vs.-communication-overhead" class="nav-link" data-scroll-target="#compute-time-vs.-communication-overhead">Compute Time vs.&nbsp;Communication Overhead</a></li>
-  <li><a href="#amdahls-law" id="toc-amdahls-law" class="nav-link" data-scroll-target="#amdahls-law">Amdahls Law</a></li>
-  <li><a href="#terms" id="toc-terms" class="nav-link" data-scroll-target="#terms">Terms</a></li>
+  <li><a href="#requirements-hardware-for-ada-hpc" id="toc-requirements-hardware-for-ada-hpc" class="nav-link active" data-scroll-target="#requirements-hardware-for-ada-hpc">Requirements hardware for ADA HPC</a></li>
+  <li><a href="#user-policy-for-adding-own-hardware-to-ada-hpc" id="toc-user-policy-for-adding-own-hardware-to-ada-hpc" class="nav-link" data-scroll-target="#user-policy-for-adding-own-hardware-to-ada-hpc">User policy for adding own hardware to ADA HPC</a>
+  <ul class="collapse">
+  <li><a href="#warranties-maintenance" id="toc-warranties-maintenance" class="nav-link" data-scroll-target="#warranties-maintenance">Warranties &amp; maintenance</a></li>
+  <li><a href="#delivery-of-hardware-ordered-via-it" id="toc-delivery-of-hardware-ordered-via-it" class="nav-link" data-scroll-target="#delivery-of-hardware-ordered-via-it">Delivery of hardware ordered via IT</a></li>
+  <li><a href="#existing-hardware" id="toc-existing-hardware" class="nav-link" data-scroll-target="#existing-hardware">Existing hardware</a></li>
+  <li><a href="#ownership" id="toc-ownership" class="nav-link" data-scroll-target="#ownership">Ownership</a></li>
+  <li><a href="#disposing-of-old-hardware" id="toc-disposing-of-old-hardware" class="nav-link" data-scroll-target="#disposing-of-old-hardware">Disposing of old hardware</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/ada/hpc-101.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/ada/dedicated-nodes.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 <div class="handbook-title">Research Support Handbook</div>
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tools/ada/index.html">ADA</a></li><li class="breadcrumb-item"><a href="../../tools/ada/login.html">Documentation</a></li><li class="breadcrumb-item"><a href="../../tools/ada/hpc-101.html">HPC 101</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tools/ada/index.html">ADA</a></li><li class="breadcrumb-item"><a href="../../tools/ada/login.html">Documentation</a></li><li class="breadcrumb-item"><a href="../../tools/ada/dedicated-nodes.html">Buying dedicated nodes</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">HPC 101</h1>
+<h1 class="title">Buying dedicated nodes</h1>
 </div>
 
 
@@ -379,7 +383,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">last modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 18, 2026</p>
+      <p class="date">June 4, 2026</p>
     </div>
   </div>
   
@@ -391,58 +395,68 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This page offers a short explanation of essential concepts in High Performance Computing.</p>
-<section id="concurrent-vs.-parallel" class="level3">
-<h3 class="anchored" data-anchor-id="concurrent-vs.-parallel">Concurrent vs.&nbsp;Parallel</h3>
-<p><strong>Concurrent</strong> programs handle multiple instruction sequences at the same time.</p>
-<p><strong>Parallel</strong> programs execute multiple instruction sequences at the same time.</p>
-<p>When a program runs in parallel on multiple cores it is <strong>always concurrent</strong>.</p>
-<p>When a program is handled concurrently, it is <strong>not necessarily a parallel program</strong>. Instructions can also make use of time-sharing (e.g.&nbsp;sharing a single CPU core).</p>
-</section>
-<section id="multithreading-vs.-multiprocessing" class="level3">
-<h3 class="anchored" data-anchor-id="multithreading-vs.-multiprocessing">Multithreading vs.&nbsp;Multiprocessing</h3>
-<p><strong>Multithreaded</strong> programs use multiple threads and are all part of the same process. These threads share the same memory and resources.</p>
-<p><strong>Multiprocessed</strong> programs use multiple processes. Each process has its own memory and resource allocation.</p>
-<p>Both multithreaded and multiprocessed programs are <strong>concurrent programs</strong>, they are therefore also not necessarily parallel.</p>
-<p>Multiprocessed programs however enable <strong>true parallelism</strong>, by using multiple CPU cores simultanously where each CPU core is assigned one process.</p>
-</section>
-<section id="compute-time-vs.-communication-overhead" class="level3">
-<h3 class="anchored" data-anchor-id="compute-time-vs.-communication-overhead">Compute Time vs.&nbsp;Communication Overhead</h3>
-<p>In HPC, program execution often focuses on designing multiprocessing programs that execute tasks in parallel across multiple compute nodes. A crucial consideration is balancing compute time against communication overhead.</p>
-<p>For instance, when dealing with large datasets, distributing the workload by dividing the data into smaller chunks across multiple processors can significantly reduce computation time. However, excessively fine-grained data partitioning can lead to substantial communication overhead, where the time spent transferring data between nodes outweighs the computational gains.</p>
-</section>
-<section id="amdahls-law" class="level3">
-<h3 class="anchored" data-anchor-id="amdahls-law">Amdahls Law</h3>
-<p>Amdahls law is formula that shows how much faster a task can be completed when more resources are added to a system. In the context of P (fraction of the code that can be parallelized) and N (number of processors) the speedup is defined as follows:</p>
+<p>If your research projects require heavy usage of HPC you can consider spending part of your research budget to buy compute hardware (nodes) for your group.</p>
+<p>The nodes will be hosted in the ITvO data center and added to the ADA cluster. <a href="../../topics/itvo.html">IT for Research (ITvO)</a> manages the OS, base software environment, access model and user access.</p>
+<p>Please contact <a href="../../topics/itvo.html#contact">IT for Research (ITvO)</a> to discuss adding dedicated nodes for your group. ITvO can help you find the best hardware for your budget and will order the hardware for you via the central IT department.</p>
+<section id="requirements-hardware-for-ada-hpc" class="level2">
+<h2 class="anchored" data-anchor-id="requirements-hardware-for-ada-hpc">Requirements hardware for ADA HPC</h2>
+<p>To make sure the hardware fits in the existing cluster it must meet certain requirements:</p>
 <ul>
-<li>Speedup = 1 / (1 - P + P / N)</li>
+<li>be rear I/O configured;</li>
+<li>have a modern generation of PCIe expansion slots;</li>
+<li>have an IPMI (network card);</li>
+<li>fit into a 42U 19-inch rack;</li>
+<li>be compatible with the current ITvO network infrastructure;</li>
+<li>have a redundant 80 PLUS power supply unit (PSU) that is titanium certified;</li>
+<li>be ordered with a network cable included;</li>
+<li>be air cooled;</li>
+<li>have a minimum of 2 NVMe disks for scratch space;</li>
+<li>not contain any consumer grade GPU’s (data center verified only).</li>
 </ul>
-<p>Below example illustrates that the serial portion of a program has a big impact on the overall speedup:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../public/tools/ada/Amdahls.webp" class="img-fluid figure-img"></p>
-<figcaption>Amdahls Law</figcaption>
-</figure>
-</div>
-<p>When using ADA, take Amdahls Law into consideration: parallelize your code as much as possible before scaling up your requested processors.</p>
+<p>ITvO further recommends the following specifications:</p>
+<ul>
+<li>The server is configured with all RDIMM slots occupied as necessary for maximum CPU performance (e.g.&nbsp;12 for most zen5 AMD chips).</li>
+<li>Possible future expansion of GPU/memory is taken into account when ordering the chassis configuration.</li>
+<li>A warranty of at least 3 year on the purchased hardware.</li>
+</ul>
 </section>
-<section id="terms" class="level3">
-<h3 class="anchored" data-anchor-id="terms">Terms</h3>
-<p><strong>CPU</strong>: a physical, central processing unit in compute hardware. Most modern day CPU’s are multi-core, containing multiple cores.</p>
-<p><strong>vCPU</strong>: a virtual, central processing unit. A CPU can contain multiple vCPU’s.</p>
-<p><strong>Core</strong>: a physical processing unit on a CPU chip.</p>
-<p><strong>Logical core</strong>: a virtual processing unit. A core can have multiple logical cores.</p>
-<p><strong>Hyperthreading</strong>: a technology that allows a core to appear as two logical cores in an operating system. Most hardware in the ADA cluster uses this technology by default. Compute intensive workloads will benefit to disable hyperthreading.</p>
-<p><strong>GPU</strong>: a physical, graphical processing unit in compute hardware.</p>
-<p><strong>vGPU</strong>: a virtual, graphical processing unit. A GPU can contain multiple vGPU’s.</p>
-<p><strong>RAM</strong>: Random Access Memory, the temporary storage for data that the CPU needs. RAM offers fast Read/Write speeds and is volatile (data is lost when power is turned off).</p>
-<p><strong>HDD</strong>: Hard Disk Drive, persistent storage offering Read/Write operations.</p>
-<p><strong>SSD</strong>: Solid State Drive, persistent storage that offers faster Read/Write speeds than HDD’s.</p>
-<p><strong>Scratch Space</strong>: When we refer to scratch space, we usually refer to the local SSD storage on the compute nodes. Use of scratch can significantly speed up your programs if it relies heavily on data operations.</p>
-<!-- ## Other
-- Network topology-->
+<section id="user-policy-for-adding-own-hardware-to-ada-hpc" class="level2">
+<h2 class="anchored" data-anchor-id="user-policy-for-adding-own-hardware-to-ada-hpc">User policy for adding own hardware to ADA HPC</h2>
+<p>Besides the hardware requirements the following policies apply to dedicated nodes:</p>
+<section id="warranties-maintenance" class="level3">
+<h3 class="anchored" data-anchor-id="warranties-maintenance">Warranties &amp; maintenance</h3>
+<ul>
+<li>Within the warranty period, replacement and/or repairs of the hardware are possible and will be reimbursed by the supplier. After the warranty period has passed, replacing and/or repairing hardware will be done at your own expense. Any required support from ITvO for this will be done on a best effort basis.</li>
+</ul>
+</section>
+<section id="delivery-of-hardware-ordered-via-it" class="level3">
+<h3 class="anchored" data-anchor-id="delivery-of-hardware-ordered-via-it">Delivery of hardware ordered via IT</h3>
+<ul>
+<li><p>If the product does not meet the requirements (i.e.&nbsp;defective, not the ordered product), it can be returned to the supplier based on the supplier’s return policy.</p></li>
+<li><p>ITvO cannot guarantee delivery within a financial year, because this depends on suppliers and procurement processes. ITvO cannot be held responsible for any delays.</p></li>
+</ul>
+</section>
+<section id="existing-hardware" class="level3">
+<h3 class="anchored" data-anchor-id="existing-hardware">Existing hardware</h3>
+<ul>
+<li><p>If a researcher moves from another institute to VU Amsterdam, equipment may be relocated as well, provided that it meets VU Amsterdam’s requirements. The <a href="../../topics/itvo.html">IT for Research team</a> can provide advice and assistance in this process.</p></li>
+<li><p>In case the hardware would create disproportionate operational maintenance, ITvO is entitled to reject it.</p></li>
+</ul>
+</section>
+<section id="ownership" class="level3">
+<h3 class="anchored" data-anchor-id="ownership">Ownership</h3>
+<ul>
+<li>The user will maintain the right to remove the hardware if it has been funded from their own resources. If the hardware has been funded by VU Amsterdam, the hardware will remain VU property.</li>
+</ul>
+</section>
+<section id="disposing-of-old-hardware" class="level3">
+<h3 class="anchored" data-anchor-id="disposing-of-old-hardware">Disposing of old hardware</h3>
+<ul>
+<li>Any defective hardware will be disposed of according to IT policy.</li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -848,13 +862,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../tools/ada/1-R-multiprocessing.html" class="pagination-link" aria-label="Multiprocessing">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Multiprocessing</span>
+      <a href="../../tools/ada/hardware.html" class="pagination-link" aria-label="Hardware">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Hardware</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../tools/ada/faq.html" class="pagination-link" aria-label="FAQ">
-        <span class="nav-page-text">FAQ</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../tools/ada/open-ondemand.html" class="pagination-link" aria-label="Open OnDemand">
+        <span class="nav-page-text">Open OnDemand</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -908,7 +922,7 @@ ul.task-list li input[type="checkbox"] {
         </li>
     </ul>
 </div>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/ada/hpc-101.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/ada/dedicated-nodes.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
