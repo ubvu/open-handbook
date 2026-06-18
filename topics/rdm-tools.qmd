@@ -34,8 +34,8 @@ include-in-header:
             if (!list) return;
 
             // Quarto/Pandoc wraps each heading + content in <section class="levelN" id="...">
-            const SKIP = new Set(['level3', 'level4', 'anchored', 'unnumbered', 'unlisted', 'header-section-number']);
-            const toolSections = [...list.querySelectorAll('section.level3')];
+            const SKIP = new Set(['level2', 'level4', 'anchored', 'unnumbered', 'unlisted', 'header-section-number']);
+            const toolSections = [...list.querySelectorAll('section.level2')];
             if (!toolSections.length) return;
 
             const sections = toolSections.map(sec => ({
