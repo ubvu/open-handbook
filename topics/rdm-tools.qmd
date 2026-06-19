@@ -87,7 +87,7 @@ Which tool is most suitable for your research can vary, depending on what kind o
 
 Specifically for data storage tools, the [Data Storage Finder](https://vu.nl/en/research/storagefinder) can help you decide which storage platforms fit your situation best.
 
-## Tool Not Listed?
+### Tool Not Listed?
 
 If you need a research tool that isn't provided by VU Amsterdam, you can contact the RDM Support Desk at [rdm@vu.nl](mailto:rdm@vu.nl) to discuss your requirements. We can suggest an alternative or forward your question to IT or the procurement team.
 
@@ -108,6 +108,10 @@ Click on a category to filter the list.
 
 [ATLAS.ti](https://atlasti.com/) is qualitative data analysis software that supports coding, text interpretation, and multimedia analysis. Instructions for using the VU ATLAS.ti licence are on the 🔒 [VU Service Portal](https://services.vu.nl/esc?id=kb_article&table=kb_knowledge&sys_id=e8a8a1f4874bc15010be65b40cbb351c). ATLAS.ti also provides [video tutorials](https://atlasti.com/video-tutorials) to help users get started.
 
+## Bitwarden {#bitwarden .data-security}
+
+[Bitwarden](https://vault.bitwarden.eu/#/signup) is a password manager provided by VU Amsterdam. With Bitwarden Password Manager, you can generate strong, unique passwords for every account you use online. The tool can create, save, and autofill passwords. Instructions for using the VU Bitwarden licence are on the 🔒 [VU Service Portal](https://services.vu.nl/esc?id=kb_article&sysparm_article=KB0022553&table=kb_knowledge&searchTerm=bitwarden). Bitwarden also provides [documentation](https://bitwarden.com/help/getting-started-webvault/) to help users get started.
+
 ## DataverseNL {#dataversenl .data-archiving .data-publishing}
 
 [DataverseNL](/tools/dataversenl/index.qmd) is an open access data repository hosted by DANS for archiving and publishing research datasets. DataverseNL is not suitable for data files containing personal or confidential data. For archiving and publishing sensitive data, researchers should use [Yoda](#yoda).
@@ -115,6 +119,10 @@ Click on a category to filter the list.
 ## DMPonline {#dmponline .data-management-plan}
 
 [DMPonline](/tools/dmponline/index.qmd) is an online platform that enables researchers to create, manage, and share Data Management Plans. The platform provides structured templates to help researchers address key aspects of the research lifecycle, including legal and ethical requirements, storage, preservation, documentation, and responsibilities. Log in using VU credentials with Single Sign-on (SSO).
+
+## eduVPN {#eduvpn .data-security}
+
+[eduVPN](https://www.surf.nl/diensten/beveiliging/eduvpn) is an app that allows you to safely access the internet anywhere and access restricted VU services. This allows you to work safely on public Wi-Fi networks and access systems that are only available from campus. eduVPN offers two different options for connecting securely. Secure Internet protects your internet connection on public or unsecured Wi-Fi networks, ensuring that your data and privacy remain protected. Institute Access gives you secure access to a number of restricted VU services as if you were physically present on campus. This second option is only available for staff with a valid VUnetID and only works on laptops issued and managed by VU Amsterdam. Instructions for using eduVPN are on the 🔒 [VU Service Portal](https://services.vu.nl/esc?id=kb_article&sysparm_article=KB0022732&table=kb_knowledge&searchTerm=eduvpn). If you want to access SciStor, SciCloud and ADA from outside campus, you need eduVPN.
 
 ## GitLab {#gitlab .code-development}
 
@@ -192,7 +200,7 @@ Click on a category to filter the list.
 
 [Yoda](/tools/yoda/index.qmd) is a data storage platform and repository hosted by SURF. It supports researchers throughout the entire research lifecycle, from safe storage and sharing during the research process, to sharing within research collaborations, and ultimately to data archiving and publication. Account needs to be requested via the VU Service Portal.
 
-## Zivver {#zivver .file-transfer}
+## Zivver {#zivver .file-transfer .data-security}
 
 [Zivver](https://www.zivver.com/products/email-encryption-software) offers a secure way to send encrypted emails and file attachments up to 5TB. This is available to all VU employees. Instructions for using Zivver are on the 🔒 [VU Service Portal](https://services.vu.nl/esc?id=kb_article&sysparm_article=KB0012157).
 
