@@ -1,9 +1,9 @@
 ---
-title: Compute Platforms
+title: Compute Environments
 categories: ["Knowledge Items"]
 ---
 
-This pages tries to give an overview of the platforms available for VU researchers. By compute we mean all kinds of tools to work with research data, such as:
+This pages tries to give an overview of the compute environments available for VU researchers. By compute we mean all kinds of tools to work with research data, such as:
 
 - Data gathering
 - Data analysis
@@ -11,7 +11,7 @@ This pages tries to give an overview of the platforms available for VU researche
 - Running (licensed) server applications
 - Visualization
 
-### Considerations for choosing a platform
+### Considerations for choosing a environment
 
 - The amount of data you need to work with.
 - Processing time, a more performant system will speed up processing.
@@ -29,65 +29,77 @@ This pages tries to give an overview of the platforms available for VU researche
 
 
 ## Workstations and Laptops
-### Laptop
-Every VU researcher has a digital workplace, by default this is a laptop (Windows or Mac). The small formfactor means a laptop will have limited CPU,RAM and GPU power, usually only enough for basic office tasks and light analysis tool.
-
-If the standard laptop is too slow for your tooling a more powerful workstation laptop might help.
-
-https://services.vu.nl/esc?id=kb_article&table=kb_knowledge&sys_kb_id=588865b4874bc15010be65b40cbb3503
-
+### General pros and cons
 Pros:
 
-- Always available, install software and go
 - Can use graphical tools
+- Can install software yourself
 - Can connect to [SciStor](/tools/scistor/index.qmd)
 
 Cons:
 
-- Not all software is available on all OS's 
+- Cannot host web applications for 3rd party
+- Single user, only one person at a time can log in and run tasks
+
+### Laptop
+Every VU researcher has a digital workplace, by default this is a laptop (Windows or Mac). The small formfactor means a laptop will have limited CPU, RAM and GPU power, usually only enough for basic office tasks and light analysis tools.
+
+If the standard laptop is too slow for your tooling a more powerful [workstation laptop](https://services.vu.nl/esc?id=kb_article&table=kb_knowledge&sys_kb_id=588865b4874bc15010be65b40cbb3503) might help.
+
+Pros:
+
+- Available to you on campus or at home, install software and go
+
+Cons:
+
 - Limited performance
 - Can not run 24/7
-- Can not host web applications for 3rd party
 
 ### Desktop PC
-https://services.vu.nl/esc?id=kb_article&table=kb_knowledge&sysparm_article=KB0011799&sys_kb_id=288865b4874bc15010be65b40cbb3552&spa=1
-
-Desktop pcs have more powerful hardware. A better CPU, more RAM and a dedicated GPU. 
+[Desktop PCs](https://services.vu.nl/esc?id=kb_article&table=kb_knowledge&sysparm_article=KB0011799&sys_kb_id=288865b4874bc15010be65b40cbb3552&spa=1) have more powerful hardware. A better CPU, more RAM and a dedicated GPU. 
 
 Pros:
 
 - Possible to run 24/7
 - More performance than a laptop
-- Always available, install software and go
-- Can use graphical tools
-- Can connect to [SciStor](/tools/scistor/index.qmd)
 
 Cons:
 
 - Only availabe in "lab"-spaces. The modern VU "flex" workspace is just for laptops
-- Single user, only one person at a time can log in and run tasks
 - Limited remote accessibility
 
-## Virtual Desktop
+## Virtual Desktops
+This is a Linux or Windows PC running on a cloud environment. Users can access it using a Virtual Desktop Client and are presented with the familiar desktop interface. It can run Linux/Windows desktop GUI applications.
+
+### General pros and cons
+Pros:
+
+- Can use GUI tools, as available on a nornal PC
+- Accessible over the internet
+- Possible to scale up the machine with extra CPU, GPU (if available) and RAM
+- Multiple users can login and run tasks (depending on software)
+
+Cons:
+
+- Because you need to work with a Virtual Desktop Client, performance of visualisations will be lower
+
 
 ### SURF Research Cloud
-[Research Cloud](/tools/researchcloud/index.qmd) is usually used for server applications, it is also possible to run a Windows or Linux Desktop on [SURF Research Cloud](/tools/researchcloud/index.qmd).
+[Research Cloud](/tools/researchcloud/index.qmd) is usually used for server applications, but it is also possible to run a Windows or Linux Desktops.
 
 Pros:
 
 - Can be left running 24/7 (costs credits)
-- Can use graphical tools
 - GPU can be added
-- Possible to scale up the machine with extra CPU, GPU and RAM
 - You can install software yourself
 - Make use of existing setups created by others. There is a collaborative catalog of installs, chances are someone will have figured out how to create a workspace with all the applications you need.
-- Accessible over the internet
 - Custom environment for working with highly senstive data is possible: [SANE](https://www.surf.nl/en/themes/research-infrastructure/sane-secure-environment-for-analysing-sensitive-data)
 
 Cons:
 
 - You need [credits](/tools/researchcloud/cost_access.qmd#a-wallet-with-credits), although for research projects an NWO small compute grant can usually be obtained
-- It takes technical knowledge to create a reproducible environment 
+- You are responsible for backups yourself
+- It takes technical knowledge to create a reproducible environment
 
 ### SciCloud
 Like Research Cloud [SciCloud](/tools/scicloud/index.qmd) is usually for server applications, but it can also be used to run a Desktop (Linux).
@@ -95,12 +107,10 @@ Like Research Cloud [SciCloud](/tools/scicloud/index.qmd) is usually for server 
 Pros:
 
 - Can be left running 24/7
-- Can use graphical tools
-- Possible to scale up the machine with extra CPU and RAM
 - [Low fixed price per month](/tools/scicloud/cost_access.qmd)
 - You can install software yourself
-- Accessible over the internet
 - Custom environment for working with highly senstive data is possible
+- Daily backups (snapshots) made, available for 30 days
 
 Cons:
 
@@ -109,33 +119,52 @@ Cons:
 
 
 ### Azure Virtual Desktop
-An [Azure Virtual Desktop]() for research can be provided by IT, it is a virtual Windows PC running in the Microsoft Azure Cloud. TODO: LINK
+An [Azure Virtual Desktop](https://services.vu.nl/esc?id=kb_article&sysparm_article=KB0011861&table=kb_knowledge) for research can be provided by IT, it is a virtual Windows PC running in the Microsoft Azure Cloud.
 
 Pros:
 
 - Custom environment for working with highly senstive data is possible
-- Accessible over the internet
-- Possible to scale up the machine with extra CPU, GPU and RAM
 - Can connect to [SciStor](/tools/scistor/index.qmd)
+- No extra costs for you as researcher
 
 Cons:
 
 - You cannot install software yourself
 - Availability of software is limited
-- No extra costs for you as researcher
+- Machines are turned off automatically at night
 
 
 ## (Virtual) servers
-A server gets around some limitations of a personal workstation. Virtual servers can be scaled to your needs, run 24/7 and be made accessible for multiple users, even over the internet.
+Used to host web and other server applications. Could also be used for data analysis tasks, but [HPC](#hpc) is generally better for that use-case. Virtual servers can be scaled to your needs, run 24/7 and be made accessible for multiple users, even over the internet. 
+
+Example use-cases:
+- Hosting [Shiny](https://shiny.posit.co/) apps
+- Hosting a database
+- Hosting a custom chat application to gather data from your participants
+- Hosting licensed software necessary for your lab equipment
+- Hosting [ASReview](https://asreview.nl/) for AI-assisted systematic reviews
+- Hosting a [Galaxy Server](https://galaxyproject.org/)
+- Running scripts that gather data from other sources, such as APIs or measurement instruments
+And many more...
+
+### General pros and cons
+Pros:
+- Can run 24/7
+- Can host web applications, accessible to 3rd parties
+- Accessible over the internet
+- Possible to scale up the machine with extra CPU, GPU (if available) and RAM, or run multiple identical servers
+- Multiple users can login and run tasks (depending on software)
+
+Cons:
+- Not used for desktop GUI applications, although you can host applications like R-Studio on a server
 
 ### SciCloud
+[SciCloud](/tools/scicloud/index.qmd) is a platform where researchers can host virtual servers for their research applications. 
+
 Pros:
 
 - [Low fixed price per month](/tools/scicloud/cost_access.qmd)
-- Runs 24/7
-- Can host web applications for 3rd parties
 - Can connect to SciStor
-- Possible to use GUI tools
 - You can install software yourself
 
 Cons:
@@ -161,28 +190,32 @@ Cons:
 
 - You pay for usage so it is less suitable for hosting web applications that have to run 24/7
 - No backup if your workspace (=servers) is deleted you have to rebuild it
+- Knowledge needed on how to setup your environment(*)
 - Technical knowledge needed to make the environment reproducible
 
-### Physical servers
-In unusual cases you need a server to run specific applications, but the performance of a Virtual Server on SciCloud is not sufficient or some other requirement demands physical hardware. 
-In that case you could opt to buy your own hardware and host it in IT for research's Data Centre. 
-IT will take care of the hardware and network connectivity, when absolutely necessary you can have physical access to the machine.
+(*) Setup and maintenance of applications is your own responsibility. SURF and IT for Research can help you get started, time permitting. 
 
-Please contact ITvO to discuss your requirements.
+## Physical servers
+In unusual cases you need a server to run specific applications, for example if the performance of a Virtual Server is not sufficient or some other requirement demands physical hardware. 
+
+In that case you could opt to buy your own hardware and host it in IT for research's Data Centre. IT will take care of the hardware and network connectivity, when absolutely necessary you can have physical access to the machine.
+
+Hosting hardware in the Data Centre has certain requirements ans is subject to capacity. Please [contact ITvO](/topics/itvo.qmd#contact) to discuss your requirements first.
 
 ## HPC
-Some tasks require more compute power. Running it on a laptop takes too long and a virtual server needs so much resources the task becomes very expensive. 
-This is when High Performance Computing comes in view. The basic idea is that you have nodes with lots of RAM, CPU and GPU.
-You submit your job (basically a script) to a queue along with hints about the amount of processing you need and the HPC cluster figures out the best moment to execute it.
+Some tasks require more compute power. Running it on a laptop takes too long and a virtual server needs so much resources the task becomes very expensive. This is when High Performance Computing comes in view. 
+
+The basic idea is that you have compute nodes with lots of RAM, CPU and GPU. You submit your job (basically a script) to a queue along with hints about the amount of processing you need and the HPC cluster figures out the best moment to execute it. Once it is done, you can collect your results
+
 The large amount of available compute resources mean it pays to figure out how to run your analysis in parallel tasks.
 
 Pros:
 
-- Massive amount resources available
+- Large amounts of CPU, GPU and RAM resources available
 
 Cons:
 
-- Learning curve. Some commandline knowledge necessary
+- Learning curve. Scripting and some commandline knowledge necessary
 - Limited availability of GUI tools
 
 ### ADA (VU)
@@ -240,7 +273,7 @@ Cons:
 - Some CLI knowledge needed 
 
 ### OpenShift
-OpenShift is a platform specifically created for hosting containers. 
+OpenShift is a environment specifically created for hosting containers. 
 
 Pros:
 
