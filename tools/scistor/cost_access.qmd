@@ -1,0 +1,33 @@
+---
+title: Costs and Getting Access
+---
+
+::: {.callout-important}
+SciStor is available for all VU research groups. Because SciStor is mainly intended for high performance, on-campus use, access is only possible with a VUnetId. If you need to share data with non-VU researchers you could [register them as an external employee](https://vu.nl/en/employee/start-employment-contract/onboarding-external-employees).
+:::
+
+## Requesting a new project folder (share)
+
+You can find the request form on 🔒 [ServiceNow](https://services.vu.nl/esc), go to: IT > My work field > Research > SciStor > Realisation of new storage for research (SciStor). A departmental budget number is needed for a creation of a Project Folder, it can be obtained from the relevant head of department or project lead.
+
+Minimum storage space that can be requested is 100 GB, for a minimum of three months. The capacity can be increased or decreased in units of 100 GB if needed.
+
+After submitting the application, IT for Research will contact you to schedule an interview to discuss naming the SciStor project folder, how the backups work, who should have access, etc.
+
+Most SciStor configurations can be delivered within one or two days. More complex configurations may take a little longer.
+
+## Permissions Management and adding users
+
+- The user who submits the Project Folder creation request is designated as the folder's owner or primary administrator.
+
+- The owner holds read-write access to all subfolders by default.
+
+- Permission modifications may only be initiated by the folder owner or a designated administrator.
+
+- All such requests must be submitted to the IT Service Desk via 🔒 [ServiceNow](https://services.vu.nl/esc), go to: IT > My work field > Research > SciStor > Change SciStor access rights. Specify the relevant folder, user account, and desired permission level.
+
+You can find an explanation of the pemission structure in the [documentation](how_does_scistor_work.qmd)
+
+## Are there costs involved?
+
+You pay for the amount of space used for your project folder: €0,16 per GB per year.

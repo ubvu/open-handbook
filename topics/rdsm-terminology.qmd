@@ -1,6 +1,6 @@
 ---
 title: Research Data and Software Management Terminology
-categories: [Trainings and Knowledge Items]
+categories: [Knowledge Items]
 ---
 
 ## What is RDSM Terminology?
@@ -49,6 +49,10 @@ Principles for making research data Findable (F), Accessible (A), Interoperable 
 Data that describe characteristics of other data. In the research context this concerns data that
 provide further information and context about research data. Metadata describe the data and the
 context in which they have been collected or created. See also [Research data](#research-data).
+
+### Multi-factor Authentication (MFA)
+
+A security method that requires users to verify their identitiy using two or more factors, such as an authentication app or security key. Many tools, including Yoda, Research Drive, GitHub, and Microsoft apps, require MFA for secure access to their virtual environments. Instructions for settting up MFA can be found on the [VU Service Portal](https://vu.service-now.com/kb?id=kb_article_view&sysparm_article=KB0012310). 
 
 ### Persistent identifier
 

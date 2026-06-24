@@ -1,0 +1,20 @@
+website:
+  sidebar:
+    - id: sb-osf
+      collapse-level: 4
+      contents:
+        - section: OSF
+          href: tools/osf/index.qmd
+          contents:
+          - href: tools/osf/index.qmd
+            text: What is OSF?
+          - tools/osf/cost_access.qmd
+          - tools/osf/contact_support.qmd
+          - tools/osf/quick_start.qmd
+          - section: Documentation
+            contents:
+            - tools/osf/connecting-apps.qmd
+            - tools/osf/metadata.qmd
+            - tools/osf/preregistration.qmd
+            - tools/osf/sensitive-data.qmd
+            - tools/osf/account.qmd

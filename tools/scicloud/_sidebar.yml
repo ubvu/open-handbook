@@ -1,0 +1,21 @@
+website:
+  sidebar:
+    - id: sb-scicloud
+      collapse-level: 4
+      contents:
+        - section: SciCloud
+          href: tools/scicloud/index.qmd
+          contents:
+          - href: tools/scicloud/index.qmd
+            text: What is SciCloud?
+          - tools/scicloud/cost_access.qmd
+          - tools/scicloud/contact_support.qmd
+          - tools/scicloud/quick_start.qmd
+          - section: Documentation
+            contents:
+              - tools/scicloud/trouble_access.qmd
+              - tools/scicloud/webproxy.qmd
+              - tools/scicloud/webapplications.qmd
+              #- tools/scicloud/containers.qmd
+
+          

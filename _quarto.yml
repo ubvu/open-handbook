@@ -11,40 +11,12 @@ website:
   repo-actions: [edit, issue]
   page-navigation: true
   bread-crumbs: true
-  sidebar:
-    - id: sb-ada
-      style: floating
-      search: true
-      contents:
-        - manuals/ada/index.qmd 
-        # - auto: manuals/ada/**/*.qmd # works, but is in the wrong order
-        - manuals/ada/login.qmd
-        - manuals/ada/quick-start.qmd
-        - manuals/ada/slurm.qmd
-        - manuals/ada/software.qmd
-        - manuals/ada/hardware.qmd
-        - manuals/ada/open-ondemand.qmd
-        - manuals/ada/yoda.qmd
-        - manuals/ada/help.qmd
-        - section: Code Examples
-          contents: manuals/ada/code-examples/**/*.qmd
-        - manuals/ada/hpc-101.qmd
-    - id: sb-scistor
-      style: floating
-      search: true
-      contents:
-        - manuals/scistor/index.qmd 
-        - auto: manuals/scistor/*.qmd
-    - id: sb-qualtrics
-      style: floating
-      search: true
-      contents:
-        - manuals/qualtrics/index.qmd
-        - auto: manuals/qualtrics/*.qmd 
-
+  search: 
+    location: navbar
+    type: textbox
   navbar:
-    background: "#0080c9"
-    logo: public/VU-logo-Dia-positief.png
+    background: "#0077b3"
+    logo: public/VU-logo-white.svg
     logo-alt: "VU Amsterdam logo."
     # title: "Open Handbook"
     title: false
@@ -62,17 +34,14 @@ website:
             href: /topics.html#category=Research%20Software
           - text: Responsible Scholarship
             href: /topics.html#category=Responsible%20Scholarship
-          - text: Tools
-            href: /topics.html#category=Tools
-          - text: Trainings and Knowledge Items
-            href: /topics.html#category=Trainings%20and%20Knowledge%20Items
+          - text: Knowledge Items
+            href: /topics.html#category=Knowledge%20Items
       - text: Guides
         file: guides.qmd
-      - text: Manuals
-        file: manuals.qmd
-      - text: Blog
+      - text: Tools
+        file: tools.qmd
+      - text: News
         file: blog.qmd
-      - contributing.qmd
     tools:
       - icon: github
         href: https://github.com/ubvu/open-handbook
@@ -80,21 +49,11 @@ website:
       # - icon: rss
       #   href: https://quarto.org/docs/blog/index.xml
       #   text: Quarto Blog RSS
-  page-footer:
-    left:
-      - text: "CC0 Public Domain Dedication"
-        href: "https://creativecommons.org/publicdomain/zero/1.0/legalcode"
-    center:
-      - text: "About"
-        href: about.qmd
-      - href: technical-details.qmd
-      - href: editors-guide.qmd
-      - text: "GHOST Collective"
-        href: https://ghostcollective.github.io/games.html
-    right:
-      - text: "By VU & Liberate Science GmbH"
 
 bibliography: references.bib
+
+language: 
+  search-text-placeholder: Search
 
 resources:
   - "public/*"
@@ -107,6 +66,12 @@ format:
       - custom.scss # https://quarto.org/docs/output-formats/html-themes.html#theme-options
     code-copy: true
     code-overflow: wrap
+    link-external-icon: false
+    include-before-body: 
+      text: |
+        <div class="handbook-title">Research Support Handbook</div>
+    include-in-header:
+      - text: <script defer src="https://umami.labs.vu.nl/script.js" data-website-id="d8c5a441-b2ab-4d33-ba3a-6647fd821974"></script>
 # from: "markdown+emoji"
 filters:
   - utils/include-files.lua
@@ -114,5 +79,21 @@ filters:
 execute:
   freeze: auto
 
-metadata-files: 
-  - manuals/yoda/_sidebar.yml
+metadata-files:
+  - _footer.yml
+  - tools/ada/_sidebar.yml
+  - tools/dataversenl/_sidebar.yml
+  - tools/dmponline/_sidebar.yml
+  - tools/ithenticate/_sidebar.yml
+  - tools/nebula/_sidebar.yml
+  - tools/osf/_sidebar.yml
+  - tools/pure/_sidebar.yml  
+  - tools/qualtrics/_sidebar.yml
+  - tools/researchcloud/_sidebar.yml
+  - tools/researchdrive/_sidebar.yml
+  - tools/scicloud/_sidebar.yml
+  - tools/scistor/_sidebar.yml
+  - tools/scisure/_sidebar.yml
+  - tools/snellius/_sidebar.yml
+  - tools/vucomputehub/_sidebar.yml
+  - tools/yoda/_sidebar.yml

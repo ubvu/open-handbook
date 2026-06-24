@@ -1,0 +1,27 @@
+---
+title: Snellius # Add link to this page to ./tools.qmd
+categories: [Compute] # categories appropriate to this tool
+image: '/public/logo-surf.png'
+aliases:
+    - "/topics/snellius.html"
+---
+
+## What is it?
+Snellius is the National Supercomputer infrastructure hosted by SURF in Amsterdam.
+
+## What can it be used for?
+### **Simulation and modelling**
+
+Do you work with large and complex models that require a lot of computing power? The National Supercomputer provides that with a large number of super-fast processors. The system is ideally suited for large-scale experiments, such as simulations and modelling. These require a lot of processing power and memory usage, but also communication between the different processors. An important feature of Snellius is its fast internal network.
+
+### **Computing power**
+
+Snellius runs on Linux. Besides AMD processors, the system also features GPGPUs (General Purpose Graphics Processing Units). These accelerators combine the processing power of graphics cards (GPUs) with that of CPUs. In addition, Snellius has 'fat nodes' with more memory space (1 TB) and 'high-memory nodes' (4 TB and 8 TB of memory space).
+
+### **Tools and libraries**
+
+As a researcher, you can make use of a large collection of tools, compilers and libraries.
+
+Are you doing research or experiments in the field of machine learning, e.g. neural networks? The libraries and tools on Snellius make it a lot easier.
+
+

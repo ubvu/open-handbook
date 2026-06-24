@@ -1,0 +1,28 @@
+---
+title: Data Access on Windows
+categories: []
+---
+
+There are two basic ways to access the Yoda WebDAV interface from Windows. 
+Using a tool to mount the Yoda Disk as a drive letter or file transfer tools. Which one works best depends on your workflow.
+ 
+## File transfer
+There are numerous free file transfer tools. Using these tools you must download the files you want to work on to 
+your computer and upload the changes. This way of working is more stable and robust. 
+
+- [Cyberduck](/tools/yoda/yoda_using_cyberduck.qmd) is a free file transfer tool for Mac and Windows. Cyberduck is the preferred
+way to access the Yoda Disk. There is also a paid addon "Mountainduck" which adds functionality to access via a drive 
+letter.
+
+- [WinSCP](/tools/yoda/yoda_using_winscp.qmd) is an alternative free file transfer tool. WinSCP provides a reliable file transfer solution. It allows users to securely download and upload files to Yoda. This option is suitable for large and complex datasets.
+
+## Drive letter
+You can use [Windows Explorer](/tools/yoda/yoda_using_windowsexplorer.qmd) to access the Yoda Disk via a drive letter. However, this has restrictions: a maximum file size of 4GB on Windows 11 and 50MB(!) on Windows 10 and a maximum of 1000 files per folder (Windows 10&11). Take care if you expect your dataset to exceed these limitations.
+
+## Command-line tools
+### Rclone
+If you are familiar with command-line tools [rclone](/tools/yoda/yoda_using_rclone.qmd) is also a good option to access the Yoda via Webdav. It also provides the option to use a drive letter.
+
+### iRODS protocol
+Since Yoda is based on iRODS technology, it is possible to transfer data to and from Yoda using the iRODS communication protocol. This protocol can be used to transfer large amounts of data in an efficient way. The command-line tools [iCommands](./yoda_using_icommands.qmd) can be installed in [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install) and [gocommands](yoda_using_gocommands.qmd) can be installed directly.
+

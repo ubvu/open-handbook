@@ -27,17 +27,18 @@ At VU Amsterdam, we sometimes use the term 'Data Assets'. You can think of data 
 
 Here are some examples of data assets in research data management:
 
-| Data Stage     | Dataset description         | Type of data    | Format |
-|----------------|-----------------------------|-----------------|--------|
-| Raw data       | Interviews                  | Audio files     | MP3    |
-|                | Spectographic analysis      | Text files      | CSV    |
-| Processed data | Transcription of interviews | Text files      | Docx   |
-|                | Data spreadsheet            | SPSS files      | SAV    |
-| Analysed data  | Regression graphic          | Graph           | PNG    |
-|                | Data table                  | Word file       | Docx   |
-| Other          | Poster presentation         | Powerpoint      | PPS    |
-|                | Project Website             | HTML            |        |
-|                | Analysis code               | Text files      | Python |
+| **Data Stage** | **Dataset Description**      | **Data Type**        | **File Format** |
+| -------------- | ---------------------------- | -------------------- | --------------- |
+| Raw data       | Interviews                   | Audio recordings     | MP3             |
+|                | Spectrographic analysis      | Tabular data         | CSV             |
+| Processed data | Interview transcripts        | Text documents       | DOCX            |
+|                | Data spreadsheet             | Statistical data     | SAV (SPSS)      |
+| Analysed data  | Regression graphic           | Image                | PNG             |
+|                | Summary data table           | Text documents       | DOCX            |
+| Other          | Poster presentation          | Presentation         | PPS             |
+|                | Project website              | Web content          | HTML            |
+|                | Analysis code                | Source code          | PY              |
+
 
 Note that these data assets also change in the different phases of the research! While the interview data are audio files in the raw stage, they are transcribed and become text files in the processed stage.
 
