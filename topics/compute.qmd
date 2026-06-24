@@ -1,9 +1,9 @@
 ---
-Title: Compute Platforms
+title: Compute Platforms
+categories: ["Knowledge Items"]
 ---
 
-# Compute environments
-This pages tries to give an overview of the platforms available for VU researchers. By compute we mean all kinds of applications, such as:
+This pages tries to give an overview of the platforms available for VU researchers. By compute we mean all kinds of tools to work with research data, such as:
 
 - Data gathering
 - Data analysis
@@ -11,11 +11,11 @@ This pages tries to give an overview of the platforms available for VU researche
 - Running (licensed) server applications
 - Visualization
 
-## Considerations for choosing an environment
+### Considerations for choosing a platform
 
 - The amount of data you need to work with.
 - Processing time, a more performant system will speed up processing.
-- Coding skills. Are you able to develop scripts to automate your analysis workflow or even optimize it. 
+- Coding skills. Are you able to develop scripts to automate your analysis workflow or even optimize it? 
 - Availability of software and tools on the environment.
 - Availability of GUI tools. Does your workflow depend on specific software with a graphical interface?
 - Availability of GPUs (e.g. to use LLMs).
@@ -25,13 +25,12 @@ This pages tries to give an overview of the platforms available for VU researche
 
 - Learning curve. A different environment and toolset might be more efficient for your workflow, but of course mastering new skills takes time.
 - Reproducibility. 
-- Location of source data (data transfer). Working with data that is directly available 
-- Availability of relevant software (licenses, support, GUI).
+- Data transfer. Does the storage system your data is on have a fast connection to the environment, or do you need to copy the data first. 
 
 
 ## Workstations and Laptops
 ### Laptop
-Every VU researcher has a digital workplace, by default this is a standard laptop (Windows or Mac). The small formfactor means a laptop will have limited CPU and RAM and very little GPU power, enough for basic office tasks and light analysis tools
+Every VU researcher has a digital workplace, by default this is a laptop (Windows or Mac). The small formfactor means a laptop will have limited CPU,RAM and GPU power, usually only enough for basic office tasks and light analysis tool.
 
 If the standard laptop is too slow for your tooling a more powerful workstation laptop might help.
 
@@ -41,6 +40,7 @@ Pros:
 
 - Always available, install software and go
 - Can use graphical tools
+- Can connect to [SciStor](/tools/scistor/index.qmd)
 
 Cons:
 
@@ -49,10 +49,10 @@ Cons:
 - Can not run 24/7
 - Can not host web applications for 3rd party
 
-### Desktop
+### Desktop PC
 https://services.vu.nl/esc?id=kb_article&table=kb_knowledge&sysparm_article=KB0011799&sys_kb_id=288865b4874bc15010be65b40cbb3552&spa=1
 
-Desktop pcs have more powerful hardware. A better CPU, more RAM and a dedicated GPU can be added. 
+Desktop pcs have more powerful hardware. A better CPU, more RAM and a dedicated GPU. 
 
 Pros:
 
@@ -60,6 +60,7 @@ Pros:
 - More performance than a laptop
 - Always available, install software and go
 - Can use graphical tools
+- Can connect to [SciStor](/tools/scistor/index.qmd)
 
 Cons:
 
@@ -67,18 +68,75 @@ Cons:
 - Single user, only one person at a time can log in and run tasks
 - Limited remote accessibility
 
+## Virtual Desktop
+
+### SURF Research Cloud
+[Research Cloud](/tools/researchcloud/index.qmd) is usually used for server applications, it is also possible to run a Windows or Linux Desktop on [SURF Research Cloud](/tools/researchcloud/index.qmd).
+
+Pros:
+
+- Can be left running 24/7 (costs credits)
+- Can use graphical tools
+- GPU can be added
+- Possible to scale up the machine with extra CPU, GPU and RAM
+- You can install software yourself
+- Make use of existing setups created by others. There is a collaborative catalog of installs, chances are someone will have figured out how to create a workspace with all the applications you need.
+- Accessible over the internet
+- Custom environment for working with highly senstive data is possible: [SANE](https://www.surf.nl/en/themes/research-infrastructure/sane-secure-environment-for-analysing-sensitive-data)
+
+Cons:
+
+- You need [credits](/tools/researchcloud/cost_access.qmd#a-wallet-with-credits), although for research projects an NWO small compute grant can usually be obtained
+- It takes technical knowledge to create a reproducible environment 
+
+### SciCloud
+Like Research Cloud [SciCloud](/tools/scicloud/index.qmd) is usually for server applications, but it can also be used to run a Desktop (Linux).
+
+Pros:
+
+- Can be left running 24/7
+- Can use graphical tools
+- Possible to scale up the machine with extra CPU and RAM
+- [Low fixed price per month](/tools/scicloud/cost_access.qmd)
+- You can install software yourself
+- Accessible over the internet
+- Custom environment for working with highly senstive data is possible
+
+Cons:
+
+- More effort to setup (compared to [Research Cloud](#surf-research-cloud) and [Azure Virtual Desktop](#azure-virtual-desktop)
+- No GPU available (might change in the future)
+
+
+### Azure Virtual Desktop
+An [Azure Virtual Desktop]() for research can be provided by IT, it is a virtual Windows PC running in the Microsoft Azure Cloud. TODO: LINK
+
+Pros:
+
+- Custom environment for working with highly senstive data is possible
+- Accessible over the internet
+- Possible to scale up the machine with extra CPU, GPU and RAM
+- Can connect to [SciStor](/tools/scistor/index.qmd)
+
+Cons:
+
+- You cannot install software yourself
+- Availability of software is limited
+- No extra costs for you as researcher
+
+
 ## (Virtual) servers
 A server gets around some limitations of a personal workstation. Virtual servers can be scaled to your needs, run 24/7 and be made accessible for multiple users, even over the internet.
 
 ### SciCloud
 Pros:
 
-- Low fixed price per month
-- Windows or Linux
+- [Low fixed price per month](/tools/scicloud/cost_access.qmd)
+- Runs 24/7
 - Can host web applications for 3rd parties
-- Mount SciStor shares
+- Can connect to SciStor
 - Possible to use GUI tools
-- Create snapshots to backup your working configuration
+- You can install software yourself
 
 Cons:
 
@@ -97,27 +155,13 @@ Pros:
 - GPU available
 - Possible to use GUI tools
 - Can host web applications for 3rd parties
-- Make use of existing setups created by others. There is a collaborative catalog of installs, chances are someone else will have figured out how to create a workspace with all the applications you need.
+- Make use of existing setups created by others. There is a collaborative catalog of installs, chances are someone will have figured out how to create a workspace with all the applications you need.
 
 Cons:
 
 - You pay for usage so it is less suitable for hosting web applications that have to run 24/7
 - No backup if your workspace (=servers) is deleted you have to rebuild it
-- Some extra work needed to create scripts to make server rebuildable
-
-### Azure Virtual Desktop
-This is a Windows 11 environment 
-
-Pros:
-
-- Free for researchers
-- Possible to use GUI tools
-
-Cons:
-
-- Windows only
-- Can not leave running 24/7
-- Extra software only available on request
+- Technical knowledge needed to make the environment reproducible
 
 ### Physical servers
 In unusual cases you need a server to run specific applications, but the performance of a Virtual Server on SciCloud is not sufficient or some other requirement demands physical hardware. 
