@@ -3,9 +3,10 @@ title: Compute Environments
 categories: ["Knowledge Items"]
 ---
 
-This pages tries to give an overview of the compute environments available for VU researchers. By compute we mean all kinds of tools to work with research data, such as:
+This pages tries to give an overview of the compute environments available for VU researchers. By compute we mean environments that can run tools to work with research data, such as:
 
 - Data gathering
+- Data transformation
 - Data analysis
 - Hosting web applications
 - Running (licensed) server applications
@@ -14,18 +15,43 @@ This pages tries to give an overview of the compute environments available for V
 ### Considerations for choosing a environment
 
 - The amount of data you need to work with.
-- Processing time, a more performant system will speed up processing.
-- Coding skills. Are you able to develop scripts to automate your analysis workflow or even optimize it? 
-- Availability of software and tools on the environment.
-- Availability of GUI tools. Does your workflow depend on specific software with a graphical interface?
-- Availability of GPUs (e.g. to use LLMs).
+
+Working with a large amount of data means a fast and large storage system must be available to the environment.
+
+- Processing time.
+
+Besides the amount of data other factors can affect the time it takes for your tasks to run. A more performant system will speed up processing.
+
+- Your coding skills. 
+
+Are you able to develop scripts to automate your analysis workflow or even optimize those scripts? 
+
+- Can the tools you need run on the environment? 
+
+Can the software be installed on the Operating System? Does your workflow depend on specific software with a graphical interface? If your favorite software is not available, are there altenatives?
+
+
+- Availability of GPUs.
+
+Some tasks run a lot faster on systems with a GPU (Graphical Processing Unit). Such as training a Large Language Model (LLM).
+
 - Do you need to work with highly sensitive data?
+
+Not all environments are suitable for sensitive data and in some cases extra measures need to be taken to make the environment suitable
 
 **Other considerations:**
 
-- Learning curve. A different environment and toolset might be more efficient for your workflow, but of course mastering new skills takes time.
+- Learning curve. 
+
+A different environment and toolset might be more efficient for your workflow, but of course mastering new skills takes time.
+
 - Reproducibility. 
-- Data transfer. Does the storage system your data is on have a fast connection to the environment, or do you need to copy the data first. 
+
+Can a future researcher recreate the exact same environment?
+
+- Data transfer. 
+
+Does the storage system your data is on have a fast connection to the environment, or do you need to copy the data first. 
 
 
 ## Workstations and Laptops
