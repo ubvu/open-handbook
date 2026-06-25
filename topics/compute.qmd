@@ -31,7 +31,15 @@ Are you able to develop scripts to automate your analysis workflow or even to op
 Can the software be installed on the Operating System? Does your workflow depend on specific software which needs a GUI (Graphical User Interface)? If your favorite software is not available, are there altenatives? If you have written your own software can all its dependencies be installed on the environment?
 
 ::: {.callout-tip title="Application Virtualization - containers"}
+Popular open source platforms are [Docker](https://www.docker.com/) and [Podman](https://podman.io/). If you are starting out with containers IT for Research suggests learning Podman.
 
+- Easier to spin up multiple indentical applications
+- Platform independent, easy to develop on your laptop and then deploy somewhere else
+- More reproducible, your Docker- and compose files document your setup
+- Can use software dependencies that cannot be directly installed on the system
+- Things don't break as easily on OS updates
+
+You can run containers on SciCloud, [SURF Research Cloud](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/74225031/Creating+a+Docker+Compose+catalog+item), [OpenShift](#openshift) and [ADA](/tools/ada/software.qmd#apptainer-containers).
 :::
 
 - GPUs
@@ -259,6 +267,7 @@ Cons:
 
 ### ADA (VU)
 Pros:
+
 - Low barrier to entry, all VU researchers can get an [account](/tools/ada/cost_access.qmd)
 - No direct costs for you as a researcher
 - Some web-based GUI applications available via [Open OnDemand](/tools/ada/open-ondemand.qmd)
@@ -266,6 +275,7 @@ Pros:
 - Fast access to data on [SciStor](/tools/scistor/index.qmd)
 
 Cons:
+
 - Limited resources available, although you can [buy nodes](/tools/ada/dedicated-nodes.qmd) for your research group
 - Limited availability of GPUs
 
@@ -278,11 +288,13 @@ Snellius is a cluster of heterogeneous nodes built by Lenovo, containing predomi
 The system has a peak performance of 14 petaflop/s, making it the most powerful high-performance computing system in the Netherlands.
 
 Pros:
+
 - Low barrier to entry, all VU researchers can get an [account](/tools/snellius/cost_access.qmd) and credits
 - No direct costs for you as a researcher
 - More resources, including GPUs
 
-Coms:
+Cons:
+
 - In order to have fast access to your data, you must copy it to Snellius first
 
 
@@ -306,21 +318,6 @@ Cons:
 - Limited amount of applications and modules available (but you can always ask the team to add something!)
 
 
-## Containers
-It is possible to spin up Docker containers on SciCloud, SURF Research Cloud and BAZIS.
-
-Pros:
-
-- Easier to spin up multiple indentical applications
-- Platform independent, easy to develop on your laptop and then deploy somewhere else
-- More reproducible, your Docker- and compose files document your setup
-- Things don't break as easily on OS updates
-
-Cons:
-
-- Some knowledge about Docker needed
-- Some CLI knowledge needed 
-
 ### OpenShift
 OpenShift is a environment specifically created for hosting containers. 
 
@@ -330,7 +327,7 @@ Pros:
 - No need to worry about updating a (virtual) server
 
 Cons:
-- It takes extra work to make your containers suitable for OpenShift.
+- It might take extra work to make regular docker containers suitable for OpenShift.
 
 ### Apptainer/Singularity on HPC
 
