@@ -281,17 +281,13 @@ Cons:
 
 
 ### Snellius (SURF)
-[Snellius](/tools/snellius/index.qmd) is the Dutch National supercomputer hosted at SURF. The system facilitates scientific research carried out in many Universities, independent research institutes, governmental organizations, and private companies in the Netherlands. 
-
-Snellius is a cluster of heterogeneous nodes built by Lenovo, containing predominantly AMD technology, with capabilities for high performance computing (parallel, symmetric multiprocessing), data-processing, and machine learning. The system also has several system-specific storage resources, that are geared towards supporting the various types of computing. 
-
-The system has a peak performance of 14 petaflop/s, making it the most powerful high-performance computing system in the Netherlands.
+[Snellius](/tools/snellius/index.qmd) is the Dutch National supercomputer hosted at SURF. The VU has a contract with search so all researchers can get access to Snellius.
 
 Pros:
 
 - Low barrier to entry, all VU researchers can get an [account](/tools/snellius/cost_access.qmd) and credits
 - No direct costs for you as a researcher
-- More resources, including GPUs
+- More resources than ADA, including GPUs
 
 Cons:
 
@@ -299,8 +295,17 @@ Cons:
 
 
 ### LUMI (European)
-https://servicedesk.surf.nl/wiki/display/WIKI/LUMI
+Especially for large scale GPU project VU researcher can ask for access to the European [LUMI](https://servicedesk.surf.nl/wiki/display/WIKI/LUMI) cluster.
 
+The [SURF Wiki](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/102837156/Obtaining+compute+time#Obtainingcomputetime-ComparisonLUMItoSnellius) compares Snellius to LUMI
+
+Pros:
+
+- Suitable for large-scale GPU projects. 
+
+Cons:
+
+- Higher [barrier to entry](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/102837156/Obtaining+compute+time#Obtainingcomputetime-CallsforLUMIcomputetime)
 
 ### VU JupyterHub for education 
 https://hub.compute.vu.nl/
