@@ -71,6 +71,78 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <script defer="" src="https://umami.labs.vu.nl/script.js" data-website-id="d8c5a441-b2ab-4d33-ba3a-6647fd821974"></script>
+<style>
+#tool-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0.25rem;
+}
+.tool-filter-btn {
+  padding: 0.25rem 0.875rem;
+  border: 1px solid var(--bs-border-color, #dee2e6);
+  border-radius: 1rem;
+  background: none;
+  cursor: pointer;
+  font-size: 0.875rem;
+  color: inherit;
+}
+.tool-filter-btn:hover,
+.tool-filter-btn.active {
+  background: var(--bs-primary, #0077b3);
+  color: #fff;
+  border-color: var(--bs-primary, #0077b3);
+}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const list = document.getElementById('tools-list');
+    if (!list) return;
+
+    // Quarto/Pandoc wraps each heading + content in <section class="levelN" id="...">
+    const SKIP = new Set(['level2', 'level4', 'anchored', 'unnumbered', 'unlisted', 'header-section-number']);
+    const toolSections = [...list.querySelectorAll('section.level2')];
+    if (!toolSections.length) return;
+
+    const sections = toolSections.map(sec => ({
+        sec,
+        cats: [...sec.classList].filter(c => !SKIP.has(c)),
+    }));
+
+    // Build category filter bar
+    const allCats = [...new Set(sections.flatMap(s => s.cats))].sort();
+    const filterBar = document.createElement('div');
+    filterBar.id = 'tool-filter-bar';
+    filterBar.setAttribute('role', 'group');
+    filterBar.setAttribute('aria-label', 'Filter by category');
+
+    const applyFilter = (cat) => {
+        [...filterBar.children].forEach(b =>
+            b.classList.toggle('active', b.dataset.cat === cat)
+        );
+        sections.forEach(({ sec, cats }) => {
+            sec.style.display = (!cat || cats.includes(cat)) ? '' : 'none';
+        });
+    };
+
+    const makeBtn = (label, cat) => {
+        const btn = document.createElement('button');
+        btn.className = 'tool-filter-btn' + (cat === '' ? ' active' : '');
+        btn.textContent = label;
+        btn.dataset.cat = cat;
+        btn.addEventListener('click', () => applyFilter(cat));
+        return btn;
+    };
+
+    filterBar.appendChild(makeBtn('All', ''));
+    allCats.forEach(cat => {
+        const label = cat.split('-').map(w => w[0].toUpperCase() + w.slice(1)).join(' ');
+        filterBar.appendChild(makeBtn(label, cat));
+    });
+    list.before(filterBar);
+});
+</script>
 
 
 </head>
@@ -153,13 +225,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#rdm-tools" id="toc-rdm-tools" class="nav-link active" data-scroll-target="#rdm-tools">RDM tools</a></li>
-  <li><a href="#choosing-a-tool" id="toc-choosing-a-tool" class="nav-link" data-scroll-target="#choosing-a-tool">Choosing a Tool</a>
+  <li><a href="#choosing-a-tool" id="toc-choosing-a-tool" class="nav-link active" data-scroll-target="#choosing-a-tool">Choosing a Tool</a>
   <ul class="collapse">
   <li><a href="#data-storage-finder" id="toc-data-storage-finder" class="nav-link" data-scroll-target="#data-storage-finder">Data Storage Finder</a></li>
-  <li><a href="#overviews" id="toc-overviews" class="nav-link" data-scroll-target="#overviews">Overviews</a></li>
-  </ul></li>
   <li><a href="#tool-not-listed" id="toc-tool-not-listed" class="nav-link" data-scroll-target="#tool-not-listed">Tool Not Listed?</a></li>
+  </ul></li>
+  <li><a href="#tool-list" id="toc-tool-list" class="nav-link" data-scroll-target="#tool-list">Tool list</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/topics/rdm-tools.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -189,189 +260,135 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The Vrije Universiteit Amsterdam hosts a wide range of research data management (RDM) tools designed for researchers to support researchers throughout their enitre project lifecycle.</p>
-<p>Whether you are starting your data management plan, collecting data or looking for long-term storage solutions, RDM tools help you optimise your research process and make data handling efficient.</p>
-<section id="rdm-tools" class="level2">
-<h2 class="anchored" data-anchor-id="rdm-tools">RDM tools</h2>
-<details>
-<summary>
-Code Development Tools
-</summary>
-<p>VU Amsterdam has a GitLab instance in which you can collaboratorively work on code:</p>
-<ul>
-<li><a href="https://gitlab.vu.nl" target="_blank">GitLab</a> is a code repository for <strong>research use</strong>; features include version control and the possibility to collaborate. Maintained by the University Library. There is also a <a href="https://git.vu.nl" target="_blank">gitlab server for general use</a>.</li>
-</ul>
-</details>
-<details>
-<summary>
-Computing Tools
-</summary>
-<p>There are several tools available to support researchers in performing computational analysis and processing data efficiently:</p>
-<ul>
-<li><p><a href="../tools/ada/index.html">ADA</a> is VU’s on-campus computing cluster for multi-node computations. ADA is beneficial when your research requires more computational power than a standard laptop or workstation. It offers access to multi-core CPUs, large-memory nodes, and batch GPU capacity for effiecient large-scale data processing and analysis. Account needs to be requested via the VU Service Portal.</p></li>
-<li><p><a href="../tools/nebula/index.html">Nebula</a> is developed to support researchers who want to use AI models in their work. It provides researchers across all departments with safe and seamless access to open-source large langugae models (LLMs). Nebula is fully hosted on VU premises ensuring that no data leaves the campus.</p></li>
-<li><p><a href="../tools/researchcloud/index.html">Research Cloud</a> is a SURF-hosted portal that allows you to easily build or reuse a virtual research environment. It enables you to run one or more servers with applications that are accessible over the internet. Requires SRAM collaboration credentials and computing credits.</p></li>
-<li><p><a href="../tools/scicloud/index.html">SciCloud</a> is offered by IT for Research (<a href="topics/itvo.qmd">ITvO</a>) and is based on the open-source middleware OpenNebula (ONE). It allows researchers to purchase server capacity to support their research applications. Good for web applications and 24/7 services.</p></li>
-<li><p><a href="../tools/snellius/index.html">Snellius</a> is a National Supercomputer hosted by SURF, designed for large-scale experiments, such as simulations and modelling, that require significant computing power. Access can be requested through the VU contract with SURF or through an NWO compute grant.</p></li>
-<li><p><a href="../tools/vucomputehub/index.html">VU Compute hub</a> is a JupyterHub service hosted by IT that is primarily intended for educational use, but is also available to VU researchers who need a low-threshold environment for running analyses.</p></li>
-</ul>
-</details>
-<details>
-<summary>
-Data Analysis Tools
-</summary>
-<p>VU Amsterdam provides licences for several data analysis tools. The different software options provided by IT are described in the 🔒 <a href="https://services.vu.nl/esc?id=kb_article&amp;sysparm_article=KB0012864&amp;table=kb_knowledge&amp;searchTerm=spss" target="_blank">the VU Service Portal</a>.</p>
-<p>You can find more information on working with data in <a href="https://libguides.vu.nl/working-with-data/introduction" target="_blank">the VU LibGuide ‘Working with data’</a>.</p>
-<p>If you have any questions about the tools listed below, you can contact the <a href="mailto:servicedesk.it@vu.nl">IT Servicedesk</a>.</p>
-<ul>
-<li><p><a href="https://atlasti.com/" target="_blank">ATLAS.ti</a> is a qualitative data analysis software that supports coding, text interpretation and multimedia analysis. You can find instructions for using the ATLAS.ti licence on the 🔒 <a href="https://services.vu.nl/esc?id=kb_article&amp;table=kb_knowledge&amp;sys_id=e8a8a1f4874bc15010be65b40cbb351c&amp;recordUrl=%2Fkb_view.do%3Fsys_kb_id%3De8a8a1f4874bc15010be65b40cbb351c" target="_blank">the VU Service Portal</a>. ATLAS.ti provides <a href="https://atlasti.com/video-tutorials" target="_blank">video tutorials</a> to help users get started.</p></li>
-<li><p><a href="https://www.surfspot.nl/vu" target="_blank">SPSS</a> is a quantitative statistical analysis software package used for data management, statistical analysis, and data visualisation. You can find instructions for using the SPSS licence on the 🔒 <a href="https://services.vu.nl/esc?id=kb_article&amp;sysparm_article=KB0022399&amp;table=kb_knowledge&amp;searchTerm=spss" target="_blank">the VU Service Portal</a>. There are <a href="https://resultnetsearch.com/?dn=how2stats.net&amp;sksubid=44786252&amp;_slsen=0" target="_blank">free tutorials</a> available to help users get started. You can find more in-depth, paid tutorials by <a href="https://statistics.laerd.com/" target="_blank">Laerd Statistics</a>.</p></li>
-<li><p><a href="https://www.mathworks.com/academia/tah-portal/vrije-universiteit-amsterdam-30688271.html" target="_blank">MATLAB</a> is a programming language for numerical analysis, data visualisation, and algorithm development. You can find instructions for using the MATLAB licence on the 🔒 <a href="https://services.vu.nl/esc?id=kb_article&amp;sysparm_article=KB0011916&amp;table=kb_knowledge&amp;searchTerm=matlab" target="_blank">the VU Service Portal</a>.</p></li>
-<li><p><a href="https://www.scienceplus.com/nl/statistiek/stata/?gad_source=1&amp;gad_campaignid=251688141&amp;gbraid=0AAAAAD_cwtmYS8azW8JFKlpADJ1WIR2yy&amp;gclid=CjwKCAjwhqfPBhBWEiwAZo196pDjD5tymxrHz163VRmksMh8P6zM_YzEYpkzFDHlnssDHcKBoeMKEBoCRh4QAvD_BwE" target="_blank">Stata</a> is a statistical package used for quantitative data analysis. Stata is what IT calls ‘a specific software package’, meaning that it’s only available for specific user groups. If you’re unsure whether Stata is available for you, we recommend asking someone in your department (e.g.&nbsp;supervisor or head of research group). More information and tutorials can be found in <a href="https://libguides.vu.nl/working-with-data/software/stata-sources" target="_blank">the VU LibGuide ‘Working with data’</a>.</p></li>
-</ul>
-</details>
-<details>
-<summary>
-Data Archiving Tools
-</summary>
-<p>There are several tools available to support researchers in archiving their data:</p>
-<ul>
-<li><p><a href="../tools/dataversenl/index.html">DataverseNL</a> is a data repository hosted by DANS for archiving and publishing research datasets. DataverseNL is not suitable for data files containing personal or confidential data. For archiving and publishing sensitive data, researchers should use Yoda.</p></li>
-<li><p><a href="../tools/yoda/index.html">Yoda</a> is a data storage platform and repository hosted by SURF. It supports researchers throughout the entire research lifecycle, from the safe and easy storage and sharing of data during the research process, to the sharing of data within research collaborations and ultimately to research data archiving and publication. Account needs to be requested via the VU Service Portal.</p></li>
-</ul>
-</details>
-<details>
-<summary>
-Data Management Plan Tools
-</summary>
-<ul>
-<li><a href="../tools/dmponline/index.html">DMPonline</a> is an online platform that enables researchers to create, manage, and share Data Management Plans. The platform provides structured templates to help researchers address key aspects of the research lifecycle, including legal and ethical requirements, storage, preservation, documentation, and responsibilities. Log in using VU credentials with Single Sign-on (SSO).</li>
-</ul>
-</details>
-<details>
-<summary>
-Data Publishing Tools
-</summary>
-<p>There are several tools available to support researchers in publishing data:</p>
-<ul>
-<li><p><a href="../tools/dataversenl/index.html">DataverseNL</a> is an open access platform hosted by Data Archiving and Networked Services (DANS) for archiving and publishing research datasets. DataverseNL is not suitable for data files containing personl or confidential data. For archiving and publishing sensitive data, researchers should use Yoda.</p></li>
-<li><p><a href="../tools/osf/index.html">OSF</a> is a cloud-based, open-source tool that supports researchers throughout the <strong>active research stage</strong>. It facilitates collaboration and connects services, materials, and other research objects for private use or public sharing.</p></li>
-<li><p><a href="../tools/yoda/index.html">Yoda</a> is a data storage platform and repository hosted by SURF. It supports researchers throughout the entire research lifecycle, from the safe and easy storage and sharing of data during the research process, to the sharing of data within research collaborations and ultimately to research data archiving and publication. Account needs to be requested via the VU Service Portal.</p></li>
-</ul>
-</details>
-<details>
-<summary>
-Data Storage Tools
-</summary>
-<p>There are several tools available to support researchers in storing data in a way that suits their research project. The <a href="https://vu.nl/en/research/storagefinder" target="_blank">Data Storage Finder</a> can help you decide which storage platforms fit your situation best.</p>
-<ul>
-<li><p><a href="../tools/researchdrive/index.html">Research Drive</a> is a SURF-hosted online storage and collaboration platform for research data. It allows researchers to easily store and share files with others, both within and outside VU Amsterdam. Research Drive is a cloud storage platform that requires downloading data using Nextcloud to a local device for analysis. Fine-grained distribution of folder access rights is possible. Account needs to be requested via the VU Service Portal.</p></li>
-<li><p><a href="../tools/scistor/index.html">SciStor</a> is an IT-hosted data storage service designed for storing large volumes of research data on campus. It provides high-speed connections to lab equipment, laptops, and workstations. Connecting to high-performance computers is possible. Storage space needs to be requested via the VU Service Portal.</p></li>
-<li><p><a href="../tools/yoda/index.html">Yoda</a> is a data storage platform and repository hosted by SURF. It supports researchers throughout the entire research lifecycle, from the safe and easy storage and sharing of data during the research process, to the sharing of data within research collaborations and ultimately to research data archiving and publication. Account needs to be requested via the VU Service Portal.</p></li>
-</ul>
-</details>
-<details>
-<summary>
-File Transfer Tools
-</summary>
-<p>A storage platform that allows (external) sharing is the easiest way to share data with others working on your project. This is possible with <a href="../tools/yoda/index.html">Yoda</a> and <a href="../tools/researchdrive/index.html">Research Drive</a> (with VU-internal and external colleagues) and with <a href="../tools/scistor/index.html">SciStor</a> (only with VU colleagues). However, sometimes you might need to send data to a third party as a one-off. Regular email is not suitable for sending sensitive data, but there are alternatives:</p>
-<ul>
-<li><p><a href="https://filesender.surf.nl/?s=home" target="_blank">SURFfilesender</a> is a web-based application that allows authenticated users to securely and easily send arbitrarily large files to other users. Users without an account can be sent a guest upload voucher by an authenticated user. SURFfilesender is developed to the requirements of the higher education and research community. Log in using VU credentials with Single Sign-on (SSO).</p></li>
-<li><p><a href="https://www.zivver.com/products/email-encryption-software" target="_blank">Zivver</a> offers a secure way to send (large) files. With Zivver, you can encrypt your emails and attachments up to 5TB. This is available to all VU employees. You can find information on how to use Zivver in 🔒 <a href="https://services.vu.nl/esc?id=kb_article&amp;sysparm_article=KB0012157" target="_blank">the VU Service Portal</a>. Encrypted email and file transfer with attachments up to 5TB.</p></li>
-</ul>
-</details>
-<details>
-<summary>
-Lab Journal Tools
-</summary>
-<ul>
-<li><a href="../tools/scisure/index.html">SciSure</a> is an application that supports researchers in documenting experiments and results in a digital lab journal. It can be used to track results and share data recorded during experiments within an electronic lab notebook.</li>
-</ul>
-</details>
-<details>
-<summary>
-Online Survey Tools
-</summary>
-<ul>
-<li><a href="../tools/qualtrics/index.html">Qualtrics</a> is a cloud-based survey platform that enables users to create and manage online surveys. It supports a variety of (complex) survey design requirements. VU’s Qualtrics licence is intended for scientific research purposes only, including data collection and management. Log in using VU credentials with Single Sign-on (SSO).</li>
-</ul>
-</details>
-<details>
-<summary>
-Plagiarism Detection Tools
-</summary>
-<ul>
-<li><a href="../tools/ithenticate/index.html">iThenticate</a> is plagiarism detection software offered by Turnitin that compares a researcher’s work with published academic sources and bibliographic databases such as Crossref. At VU Amsterdam, plagiarism checks are used primarily in an educational and preventative way, with the aim of raising awareness of scientific integrity rather than focusing on retrospective detection.</li>
-</ul>
-</details>
-<details>
-<summary>
-Preregistration Tools
-</summary>
-<ul>
-<li><a href="../tools/osf/index.html">OSF</a> is a cloud-based, open-source tool that supports researchers throughout the <strong>active research stage</strong>. It facilitates collaboration and connects services, materials, and other research objects for private use or public sharing.</li>
-</ul>
-</details>
-<details>
-<summary>
-Research Output Registration Tools
-</summary>
-<ul>
-<li><a href="../tools/pure/index.html">Pure</a> is the Current Research Information System (CRIS) used at VU, serving as the central platform for registering and managing all research activities and outputs, including publications, datasets, research software/code, and projects. All researchers at VU Amsterdam have access to the back end and a public profile page.</li>
-</ul>
-</details>
-<details>
-<summary>
-Transcription Tools
-</summary>
-<p>VU Amsterdam has agreements with two transcription services for converting speech in audio or video files to text:</p>
-<ul>
-<li><p><a href="../topics/transcription.html">Transcript Online</a> offers human-edited transcription. Experienced transcribers convert speech into both verbatim and literal transcriptions. This is a paid service.</p></li>
-<li><p><a href="../topics/transcription.html">Amberscript</a> offers both automated transcription and human-edited transcription. Human-edited transcriptions can be done verbatim or literal. This is a paid service.</p></li>
-</ul>
-</details>
-<details>
-<summary>
-Virtual Research Environment Tools
-</summary>
-<p>There are several tools available to support researchers in building and using virtual research environments efficiently:</p>
-<ul>
-<li><p><a href="../tools/researchcloud/index.html">Research Cloud</a> is a SURF-hosted portal that allows you to easily build or reuse a virtual research environment. It enables you to run one or more servers with applications that are accessible over the internet.</p></li>
-<li><p><a href="../tools/scicloud/index.html">SciCloud</a> is based on the open-source middleware OpenNebula (ONE) and allows researchers to purchase server capacity to support their research applications.</p></li>
-</ul>
-</details>
-</section>
+<p>The Vrije Universiteit Amsterdam offers a wide range of Research Data Management (RDM) tools designed to support researchers throughout their entire project lifecycle.</p>
 <section id="choosing-a-tool" class="level2">
 <h2 class="anchored" data-anchor-id="choosing-a-tool">Choosing a Tool</h2>
-<p>Which tool is most suitable for your research can vary, depending on what kind of functionality you’re looking for, what sort of data you’re dealing with, or whether you need to share data with external partners. Not sure which tools fits your project? The <a href="mailto:rdm.vu.nl">RDM Support Desk</a> is available to provide you with the guidance throughout your entire project lifecycle.</p>
+<p>Which tool is most suitable for your research can vary, depending on what kind of functionality you’re looking for, what sort of data you’re dealing with, or whether you need to share data with external partners. Not sure which tool fits your project? The <a href="mailto:rdm@vu.nl">RDM Support Desk</a> is available to provide guidance throughout your entire project lifecycle.</p>
 <section id="data-storage-finder" class="level3">
 <h3 class="anchored" data-anchor-id="data-storage-finder">Data Storage Finder</h3>
 <p>Specifically for data storage tools, the <a href="https://vu.nl/en/research/storagefinder" target="_blank">Data Storage Finder</a> can help you decide which storage platforms fit your situation best.</p>
 </section>
-<section id="overviews" class="level3">
-<h3 class="anchored" data-anchor-id="overviews">Overviews</h3>
-<p>A subset of the tools listed above is highlighted in the video below (<a href="../tools/dmponline/index.html">DMPonline</a>, <a href="../tools/dataversenl/index.html">DataverserNL</a>, <a href="../tools/yoda/index.html">Yoda</a>, <a href="../tools/osf/index.html">OSF</a>, <a href="../tools/researchdrive/index.html">Research Drive</a>, <a href="../tools/scistor/index.html">SciStor</a>). This is a nice resource if you’d like a quick, visual overview of these tools.</p>
-<!-- markdownlint-disable MD033 -->
-<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%">
-<iframe src="https://vu.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=8357c8b8-3983-422d-a48e-b3a900b38cf1&amp;autoplay=false&amp;offerviewer=true&amp;showtitle=true&amp;showbrand=true&amp;captions=false&amp;interactivity=all" style="border: 1px solid #464646; position: absolute; top: 0; left: 0; width: 100%; height: 100%; box-sizing: border-box;" allowfullscreen="" allow="autoplay" aria-label="Panopto Embedded Video Player" aria-description="VU RDM - RDM tools V3 + subs">
-</iframe>
-</div>
-<!-- markdownlint-enable MD033 -->
-<p>The image below lists all services and tools provided by the Network Research Data Support (NeRDS).</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../public/nerds-overview-services-tools.jpg" class="img-fluid figure-img"></p>
-<figcaption>Overview of services and tools provided by the Network Research Data Support to researchers</figcaption>
-</figure>
-</div>
-</section>
-</section>
-<section id="tool-not-listed" class="level2">
-<h2 class="anchored" data-anchor-id="tool-not-listed">Tool Not Listed?</h2>
+<section id="tool-not-listed" class="level3">
+<h3 class="anchored" data-anchor-id="tool-not-listed">Tool Not Listed?</h3>
 <p>If you need a research tool that isn’t provided by VU Amsterdam, you can contact the RDM Support Desk at <a href="mailto:rdm@vu.nl">rdm@vu.nl</a> to discuss your requirements. We can suggest an alternative or forward your question to IT or the procurement team.</p>
-
-
 </section>
+</section>
+<section id="tool-list" class="level2">
+<h2 class="anchored" data-anchor-id="tool-list">Tool list</h2>
+<p>Click on a category to filter the list.</p>
+</section>
+<div id="tools-list">
+<section id="ada" class="level2 computing">
+<h2 class="computing anchored" data-anchor-id="ada">ADA</h2>
+<p><a href="../tools/ada/index.html">ADA</a> is VU’s on-campus computing cluster for multi-node computations. ADA is beneficial when your research requires more computational power than a standard laptop or workstation. It offers access to multi-core CPUs, large-memory nodes, and batch GPU capacity for efficient large-scale data processing and analysis. Account needs to be requested via the VU Service Portal.</p>
+</section>
+<section id="amberscript" class="level2 transcription">
+<h2 class="transcription anchored" data-anchor-id="amberscript">Amberscript</h2>
+<p><a href="../topics/transcription.html">Amberscript</a> offers both automated transcription and human-edited transcription. Human-edited transcriptions can be done verbatim or literal. This is a paid service available to VU researchers.</p>
+</section>
+<section id="atlasti" class="level2 data-analysis">
+<h2 class="data-analysis anchored" data-anchor-id="atlasti">ATLAS.ti</h2>
+<p><a href="https://atlasti.com/" target="_blank">ATLAS.ti</a> is qualitative data analysis software that supports coding, text interpretation, and multimedia analysis. Instructions for using the VU ATLAS.ti licence are on the 🔒 <a href="https://services.vu.nl/esc?id=kb_article&amp;table=kb_knowledge&amp;sys_id=e8a8a1f4874bc15010be65b40cbb351c" target="_blank">VU Service Portal</a>. ATLAS.ti also provides <a href="https://atlasti.com/video-tutorials" target="_blank">video tutorials</a> to help users get started.</p>
+</section>
+<section id="bitwarden" class="level2 data-security">
+<h2 class="data-security anchored" data-anchor-id="bitwarden">Bitwarden</h2>
+<p><a href="https://vault.bitwarden.eu/#/signup" target="_blank">Bitwarden</a> is a password manager provided by VU Amsterdam. With Bitwarden Password Manager, you can generate strong, unique passwords for every account you use online. The tool can create, save, and autofill passwords. Instructions for using the VU Bitwarden licence are on the 🔒 <a href="https://services.vu.nl/esc?id=kb_article&amp;sysparm_article=KB0022553&amp;table=kb_knowledge&amp;searchTerm=bitwarden" target="_blank">VU Service Portal</a>. Bitwarden also provides <a href="https://bitwarden.com/help/getting-started-webvault/" target="_blank">documentation</a> to help users get started.</p>
+</section>
+<section id="dataversenl" class="level2 data-archiving data-publishing">
+<h2 class="data-archiving data-publishing anchored" data-anchor-id="dataversenl">DataverseNL</h2>
+<p><a href="../tools/dataversenl/index.html">DataverseNL</a> is an open access data repository hosted by DANS for archiving and publishing research datasets. DataverseNL is not suitable for data files containing personal or confidential data. For archiving and publishing sensitive data, researchers should use <a href="#yoda">Yoda</a>.</p>
+</section>
+<section id="dmponline" class="level2 data-management-plan">
+<h2 class="data-management-plan anchored" data-anchor-id="dmponline">DMPonline</h2>
+<p><a href="../tools/dmponline/index.html">DMPonline</a> is an online platform that enables researchers to create, manage, and share Data Management Plans. The platform provides structured templates to help researchers address key aspects of the research lifecycle, including legal and ethical requirements, storage, preservation, documentation, and responsibilities. Log in using VU credentials with Single Sign-on (SSO).</p>
+</section>
+<section id="eduvpn" class="level2 data-security">
+<h2 class="data-security anchored" data-anchor-id="eduvpn">eduVPN</h2>
+<p><a href="https://www.surf.nl/diensten/beveiliging/eduvpn" target="_blank">eduVPN</a> is an app that allows you to safely access the internet anywhere and access restricted VU services. This allows you to work safely on public Wi-Fi networks and access systems that are only available from campus. eduVPN offers two different options for connecting securely. Secure Internet protects your internet connection on public or unsecured Wi-Fi networks, ensuring that your data and privacy remain protected. Institute Access gives you secure access to a number of restricted VU services as if you were physically present on campus. This second option is only available for staff with a valid VUnetID and only works on laptops issued and managed by VU Amsterdam. Instructions for using eduVPN are on the 🔒 <a href="https://services.vu.nl/esc?id=kb_article&amp;sysparm_article=KB0022732&amp;table=kb_knowledge&amp;searchTerm=eduvpn" target="_blank">VU Service Portal</a>. If you want to access SciStor, SciCloud and ADA from outside campus, you need eduVPN.</p>
+</section>
+<section id="gitlab" class="level2 code-development">
+<h2 class="code-development anchored" data-anchor-id="gitlab">GitLab</h2>
+<p><a href="https://gitlab.vu.nl" target="_blank">GitLab</a> is VU’s code repository for research use. Features include version control and the possibility to collaborate on code. Maintained by the University Library. There is also a <a href="https://git.vu.nl" target="_blank">GitLab server for general use</a>.</p>
+</section>
+<section id="ithenticate" class="level2 plagiarism-detection">
+<h2 class="plagiarism-detection anchored" data-anchor-id="ithenticate">iThenticate</h2>
+<p><a href="../tools/ithenticate/index.html">iThenticate</a> is plagiarism detection software offered by Turnitin that compares a researcher’s work with published academic sources and bibliographic databases such as Crossref. At VU Amsterdam, plagiarism checks are used primarily in an educational and preventative way, with the aim of raising awareness of scientific integrity.</p>
+</section>
+<section id="matlab" class="level2 data-analysis">
+<h2 class="data-analysis anchored" data-anchor-id="matlab">MATLAB</h2>
+<p><a href="https://www.mathworks.com/academia/tah-portal/vrije-universiteit-amsterdam-30688271.html" target="_blank">MATLAB</a> is a programming language for numerical analysis, data visualisation, and algorithm development. Instructions for using the VU MATLAB licence are on the 🔒 <a href="https://services.vu.nl/esc?id=kb_article&amp;sysparm_article=KB0011916&amp;table=kb_knowledge&amp;searchTerm=matlab" target="_blank">VU Service Portal</a>.</p>
+</section>
+<section id="nebula" class="level2 computing">
+<h2 class="computing anchored" data-anchor-id="nebula">Nebula</h2>
+<p><a href="../tools/nebula/index.html">Nebula</a> is developed to support researchers who want to use AI models in their work. It provides researchers across all departments with safe and seamless access to open-source large language models (LLMs). Nebula is fully hosted on VU premises, ensuring that no data leaves the campus.</p>
+</section>
+<section id="osf" class="level2 data-publishing preregistration">
+<h2 class="data-publishing preregistration anchored" data-anchor-id="osf">OSF</h2>
+<p><a href="../tools/osf/index.html">OSF</a> is a cloud-based, open-source tool that supports researchers throughout the <strong>active research stage</strong>. It facilitates collaboration and connects services, materials, and other research objects for private use or public sharing. OSF also supports preregistration of research.</p>
+</section>
+<section id="pure" class="level2 research-output-registration">
+<h2 class="research-output-registration anchored" data-anchor-id="pure">Pure</h2>
+<p><a href="../tools/pure/index.html">Pure</a> is the Current Research Information System (CRIS) used at VU, serving as the central platform for registering and managing all research activities and outputs, including publications, datasets, research software/code, and projects. All researchers at VU Amsterdam have access to the back end and a public profile page.</p>
+</section>
+<section id="qualtrics" class="level2 online-survey">
+<h2 class="online-survey anchored" data-anchor-id="qualtrics">Qualtrics</h2>
+<p><a href="../tools/qualtrics/index.html">Qualtrics</a> is a cloud-based survey platform that enables users to create and manage online surveys. It supports a variety of complex survey design requirements. VU’s Qualtrics licence is intended for scientific research purposes only. Log in using VU credentials with Single Sign-on (SSO).</p>
+</section>
+<section id="research-cloud" class="level2 computing virtual-research-environment">
+<h2 class="computing virtual-research-environment anchored" data-anchor-id="research-cloud">Research Cloud</h2>
+<p><a href="../tools/researchcloud/index.html">Research Cloud</a> is a SURF-hosted portal that allows you to easily build or reuse a virtual research environment. It enables you to run one or more servers with applications that are accessible over the internet. Requires SRAM collaboration credentials and computing credits.</p>
+</section>
+<section id="research-drive" class="level2 data-storage">
+<h2 class="data-storage anchored" data-anchor-id="research-drive">Research Drive</h2>
+<p><a href="../tools/researchdrive/index.html">Research Drive</a> is a SURF-hosted online storage and collaboration platform for research data. It allows researchers to easily store and share files with others, both within and outside VU Amsterdam. Data must be downloaded via Nextcloud to a local device for analysis. Fine-grained folder access rights are possible. Account needs to be requested via the VU Service Portal.</p>
+</section>
+<section id="scicloud" class="level2 computing virtual-research-environment">
+<h2 class="computing virtual-research-environment anchored" data-anchor-id="scicloud">SciCloud</h2>
+<p><a href="../tools/scicloud/index.html">SciCloud</a> is offered by IT for Research (ITvO) and is based on the open-source middleware OpenNebula (ONE). It allows researchers to purchase server capacity to support their research applications. Good for web applications and 24/7 services.</p>
+</section>
+<section id="scistor" class="level2 data-storage">
+<h2 class="data-storage anchored" data-anchor-id="scistor">SciStor</h2>
+<p><a href="../tools/scistor/index.html">SciStor</a> is an IT-hosted data storage service designed for storing large volumes of research data on campus. It provides high-speed connections to lab equipment, laptops, and workstations, and can connect to high-performance computers. Storage space needs to be requested via the VU Service Portal.</p>
+</section>
+<section id="scisure" class="level2 lab-journal">
+<h2 class="lab-journal anchored" data-anchor-id="scisure">SciSure</h2>
+<p><a href="../tools/scisure/index.html">SciSure</a> is an application that supports researchers in documenting experiments and results in a digital lab journal. It can be used to track results and share data recorded during experiments within an electronic lab notebook.</p>
+</section>
+<section id="snellius" class="level2 computing">
+<h2 class="computing anchored" data-anchor-id="snellius">Snellius</h2>
+<p><a href="../tools/snellius/index.html">Snellius</a> is a National Supercomputer hosted by SURF, designed for large-scale experiments such as simulations and modelling that require significant computing power. Access can be requested through the VU contract with SURF or through an NWO compute grant.</p>
+</section>
+<section id="spss" class="level2 data-analysis">
+<h2 class="data-analysis anchored" data-anchor-id="spss">SPSS</h2>
+<p><a href="https://www.surfspot.nl/vu" target="_blank">SPSS</a> is a statistical analysis software package used for data management, statistical analysis, and data visualisation. Instructions for using the VU SPSS licence are on the 🔒 <a href="https://services.vu.nl/esc?id=kb_article&amp;sysparm_article=KB0022399&amp;table=kb_knowledge&amp;searchTerm=spss" target="_blank">VU Service Portal</a>. Free tutorials are available from <a href="https://how2stats.net/" target="_blank">how2stats</a>; more in-depth paid tutorials from <a href="https://statistics.laerd.com/" target="_blank">Laerd Statistics</a>.</p>
+</section>
+<section id="stata" class="level2 data-analysis">
+<h2 class="data-analysis anchored" data-anchor-id="stata">Stata</h2>
+<p><a href="https://www.scienceplus.com/nl/statistiek/stata/" target="_blank">Stata</a> is a statistical package used for quantitative data analysis. Stata is only available for specific user groups — if you are unsure whether Stata is available to you, ask your supervisor or head of research group. More information and tutorials can be found in the <a href="https://libguides.vu.nl/working-with-data/software/stata-sources" target="_blank">VU LibGuide ‘Working with data’</a>.</p>
+</section>
+<section id="surffilesender" class="level2 file-transfer">
+<h2 class="file-transfer anchored" data-anchor-id="surffilesender">SURFfilesender</h2>
+<p><a href="https://filesender.surf.nl/?s=home" target="_blank">SURFfilesender</a> is a web-based application that allows authenticated users to securely send arbitrarily large files to other users. Users without an account can be sent a guest upload voucher by an authenticated user. Log in using VU credentials with Single Sign-on (SSO).</p>
+</section>
+<section id="transcript-online" class="level2 transcription">
+<h2 class="transcription anchored" data-anchor-id="transcript-online">Transcript Online</h2>
+<p><a href="../topics/transcription.html">Transcript Online</a> offers human-edited transcription. Experienced transcribers convert speech in audio or video files into both verbatim and literal transcriptions. This is a paid service available to VU researchers.</p>
+</section>
+<section id="vu-compute-hub" class="level2 computing">
+<h2 class="computing anchored" data-anchor-id="vu-compute-hub">VU Compute Hub</h2>
+<p><a href="../tools/vucomputehub/index.html">VU Compute Hub</a> is a JupyterHub service hosted by IT primarily intended for educational use, but also available to VU researchers who need a low-threshold environment for running analyses.</p>
+</section>
+<section id="yoda" class="level2 data-archiving data-publishing data-storage">
+<h2 class="data-archiving data-publishing data-storage anchored" data-anchor-id="yoda">Yoda</h2>
+<p><a href="../tools/yoda/index.html">Yoda</a> is a data storage platform and repository hosted by SURF. It supports researchers throughout the entire research lifecycle, from safe storage and sharing during the research process, to sharing within research collaborations, and ultimately to data archiving and publication. Account needs to be requested via the VU Service Portal.</p>
+</section>
+<section id="zivver" class="level2 file-transfer data-security">
+<h2 class="file-transfer data-security anchored" data-anchor-id="zivver">Zivver</h2>
+<p><a href="https://www.zivver.com/products/email-encryption-software" target="_blank">Zivver</a> offers a secure way to send encrypted emails and file attachments up to 5TB. This is available to all VU employees. Instructions for using Zivver are on the 🔒 <a href="https://services.vu.nl/esc?id=kb_article&amp;sysparm_article=KB0012157" target="_blank">VU Service Portal</a>.</p>
+</section>
+</div>
+
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
