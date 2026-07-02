@@ -1,0 +1,172 @@
+# Encryption
+
+## What Is Encryption?
+
+Encryption is the process of transforming readable data (**plaintext**) into an unreadable format (**ciphertext**) using a mathematical algorithm.  
+Only someone with the corresponding **decryption key** can turn the ciphertext back into plaintext.
+
+In good **Research Data Management**, encryption is used to:
+
+- Protect sensitive or personal data (e.g., research participants’ information)
+- Secure data during storage (at rest)
+- Secure data during transfer (in transit)
+- Comply with data protection requirements (e.g., GDPR)
+
+---
+
+## Types of Encryption
+
+There are two main types of encryption:
+
+### 1. Symmetric Encryption
+
+- The **same key** is used to encrypt and decrypt data
+- Fast and efficient
+- Commonly used for storage encryption (e.g., AES-256)
+- Requires **secure key distribution**
+
+### 2. Asymmetric Encryption
+
+- Uses a **public/private key pair**
+- Public key encrypts data; private key decrypts it
+- Commonly used for secure file exchange and email security
+
+---
+
+## Key Management: What You Need to Know
+
+Encryption is only as strong as the user’s **key management**.
+
+### Key Management Tasks Include:
+
+### 1. Secure Key Storage
+
+- Keys must be stored **separately** from encrypted data
+- Prefer dedicated storage solutions such as:
+  - Hardware Security Modules (HSMs)
+  - Encrypted key vaults (e.g., institution-provided vaults)
+
+### 2. Access Control
+
+- Only authorized individuals should have access to encryption keys
+- Enforce:
+  - Role-based permissions
+  - Strong authentication (e.g., MFA)
+
+### 3. Key Distribution
+
+- Keys must be shared securely
+- **Never** send keys via the same channel as the data
+- Prefer:
+  - Separate communication channels
+  - Secure messaging tools
+  - Institutional key exchange provisions
+
+### 4. Key Rotation and Revocation
+
+- Keys should be replaced regularly, especially after:
+  - Personnel changes
+  - Suspected compromise
+- Old keys must be revoked so they cannot be reused
+
+---
+
+## Risks
+
+Even with encryption in place, several risks must be considered.
+
+### 1. Losing the Key
+
+- If the decryption key is lost, the data becomes **permanently inaccessible**
+- Always keep a backup stored in a secure, access-controlled vault
+
+### 2. Weak Passwords or Passphrases
+
+- Weak passwords make keys vulnerable to brute-force attacks
+- Always use:
+  - Long passphrases
+  - Password manager–generated passwords
+
+### 3. Storing Encrypted Data and Keys Together
+
+- This defeats the purpose of encryption
+- Keep keys and data **physically and logically separate**
+
+### 4. Human Error
+
+Examples include:
+
+- Sending keys via email
+- Forgetting to encrypt files before sharing
+- Using personal cloud tools not intended for sensitive data
+
+### 5. Relying on Non-Compliant “Encryption” Tools
+
+- Some services encrypt data but still allow provider access
+- For GDPR-regulated data, tools must guarantee:
+  - End-to-end encryption, **or**
+  - Institutional agreements with compliant hosting
+
+---
+
+## Tools for Encryption
+
+### 1. SURFfilesender
+
+A secure file transfer service for Dutch higher education and research institutions.
+
+**Provides:**
+
+- End-to-end encryption
+- Support for large files (often hundreds of GB)
+- No storage in commercial clouds
+- GDPR compliance via SURF’s trust infrastructure
+
+**Good for:**
+
+- Exchanging sensitive research data between institutions
+- Sharing confidential files with external collaborators
+
+---
+
+### 2. Cryptomator
+
+An open-source tool that encrypts files before uploading them to cloud storage.
+
+**Provides:**
+
+- Client-side encrypted “vaults”
+- Cloud providers only see encrypted data
+- Compatibility with OneDrive, Dropbox, and similar services
+
+**Good for:**
+
+- Protecting files stored in commercial clouds
+- Ensuring researchers retain control of encryption keys
+
+**Key management requirement:**
+
+- Users must securely store their vault password  
+  (Cryptomator cannot recover it)
+
+---
+
+### 3. Zivver
+
+A secure communication and file-transfer platform used in healthcare, education, and research.
+
+**Provides:**
+
+- End-to-end encrypted email and file sharing
+- Policy-based protections to reduce misdirected data
+- Multi-factor authentication (MFA)
+
+**Good for:**
+
+- Emailing sensitive research data
+- Secure file sharing with external parties
+
+**Key management requirement:**
+
+- Key handling is managed institutionally
+- Users must use strong authentication
