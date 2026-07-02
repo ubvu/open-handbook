@@ -3,7 +3,7 @@ title: Compute Environments
 categories: ["Knowledge Items"]
 ---
 
-This pages tries to give an overview of the compute environments available for VU researchers. By compute we mean environments that can run tools to work with research data, such as:
+This pages tries to give an overview of the compute environments available for VU researchers. By compute we mean environments where you can run tools to work with research data, such as:
 
 * Data gathering
 * Data transformation
@@ -28,14 +28,14 @@ Are you able to develop scripts to automate your analysis workflow or even to op
 
 * Software requirements
 
-Can the software be installed on the Operating System? Does your workflow depend on specific software which needs a GUI (Graphical User Interface)? If your favorite software is not available, are there altenatives? If you have written your own software can all its dependencies be installed on the environment?
+Can the software be installed on the Operating System? Does your workflow depend on specific software with a GUI (Graphical User Interface)? If your favorite software is not available, are there altenatives? If you have written your own software can all its dependencies be installed on the environment?
 
 ::: {.callout-tip title="OS-level virtualization - containers"}
 If your environment does not meet the necessary requirements, running the software in a [container](https://en.wikipedia.org/wiki/OS-level_virtualization) might be a solution. This way the application can run inside its own OS with any software dependencies. Popular open source platforms are [Docker](https://www.docker.com/) and [Podman](https://podman.io/). If you are starting out with containers IT for Research suggests learning Podman.
 
 * Easier to spin up multiple indentical applications
 * Platform independent, easy to develop on your laptop and then deploy somewhere else
-* More reproducible, your Docker* and compose files document your setup
+* More reproducible, your Docker and compose files document your setup
 * Can use software dependencies that cannot be directly installed on the system
 * Things don't break as easily on OS updates
 
@@ -78,9 +78,9 @@ Is there help available to fix problems with your software or do you have suffic
 ### General pros and cons
 Pros:
 
-* Can use GUI tools
-* Can install software yourself
-* Can connect to [SciStor](/tools/scistor/index.qmd)
+* Use GUI tools
+* Install software yourself
+* Connect to [SciStor](/tools/scistor/index.qmd)
 
 Cons:
 
@@ -120,7 +120,7 @@ This is a Linux or Windows PC running on a cloud environment. Users can access i
 ### General pros and cons
 Pros:
 
-* Can use GUI tools, as available on a nornal PC
+* Use GUI tools, as available on a normal PC
 * Accessible over the internet
 * Possible to scale up the machine with extra CPU, GPU (if available) and RAM
 * Multiple users can login and run tasks (depending on software)
@@ -138,7 +138,7 @@ Pros:
 * Can be left running 24/7 (costs credits)
 * GPU can be added
 * You can install software yourself
-* Make use of existing setups created by others. There is a collaborative catalog of installs, chances are someone will have figured out how to create a workspace with all the applications you need.
+* Make use of existing setups created by others. There is a collaborative catalog of installs, chances are someone will have figured out how to create a workspace with all the applications you need
 
 Cons:
 
@@ -184,12 +184,12 @@ Used to host web and other server applications. Could also be used for data anal
 
 Example use-cases:
 * Hosting [Shiny](https://shiny.posit.co/) apps
-* Hosting a database
-* Hosting a custom chat application to gather data from your participants
+* Hosting a custom database with a web interface
+* Hosting a custom chat application to gather data from participants
 * Hosting licensed software necessary for your lab equipment
 * Hosting [ASReview](https://asreview.nl/) for AI-assisted systematic reviews
 * Hosting a [Galaxy Server](https://galaxyproject.org/)
-* Running scripts that gather data from other sources, such as APIs or measurement instruments in the field
+* Running scripts that gather data from other sources, such as measurement instruments in the field
 And many more...
 
 ### General pros and cons
@@ -201,15 +201,15 @@ Pros:
 * Multiple users can login and run tasks (depending on software)
 
 Cons:
-* Not used for desktop GUI applications, although you can host applications like R-Studio on a server
+* Not used for desktop GUI applications, although you can host web-versions of applications, such as R-Studio, on a server
 
 ### SciCloud
-[SciCloud](/tools/scicloud/index.qmd) is a platform where researchers can host virtual servers for their research applications. 
+[SciCloud](/tools/scicloud/index.qmd) is a VU-hosted platform where researchers can host virtual servers for their research applications. 
 
 Pros:
 
 * [Low fixed price per month](/tools/scicloud/cost_access.qmd)
-* Can connect to SciStor
+* Fast connection to SciStor
 * You can install software yourself
 
 Cons:
@@ -250,7 +250,7 @@ Hosting hardware in the Data Centre has certain requirements ans is subject to c
 ## HPC
 Some tasks require more compute power. Running it on a laptop takes too long and a virtual server needs so much resources the task becomes very expensive. This is when High Performance Computing comes in view. 
 
-The basic idea is that you have compute nodes with lots of RAM, CPU and GPU. You submit your job (basically a script) to a queue along with hints about the amount of processing you need and the HPC cluster figures out the best moment to execute it. Once it is done, you can collect your results.
+The basic idea is that you have compute nodes with lots of RAM, CPU and GPU. You submit your job (a bunch of scripts) to a queue along with hints about the amount of processing you need. The HPC cluster runs it once sufficient resources are available. Once it is done, you can collect your results.
 
 The large amount of available compute resources mean it pays to figure out how to run your analysis in parallel tasks.
 
@@ -261,7 +261,7 @@ Pros:
 
 Cons:
 
-* Learning curve, scripting and some commandline knowledge necessary. [Trainings](/tools/ada/index.qmd#training-and-external-resources) are available
+* Learning curve, scripting and some commandline knowledge necessary. [Trainings](/tools/ada/index.qmd#training-and-external-resources) are available.
 * Limited availability of GUI tools
 * Not suitable for server tasks that should run 24/7
 
@@ -307,7 +307,7 @@ Cons:
 
 * Higher [barrier to entry](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/102837156/Obtaining+compute+time#Obtainingcomputetime-CallsforLUMIcomputetime)
 
-### VU JupyterHub for education 
+### VU ComputeHub for education 
 https://hub.compute.vu.nl/
 
 VU IT has built a Jupyter Notebook environment meant mainly for Education purposes, but accessible for researchers as well. 
