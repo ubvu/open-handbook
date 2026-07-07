@@ -47,7 +47,7 @@ Often, code can also be published through software developing platforms.
     * [Codeberg](https://codeberg.org/)
     * [Github](https://github.com)
 
-Some of these provide an integrated option to get a DOI for your software or have documentation on how to include one within their recommended workflow.
+Software development environments such as GitHub and GitLab have the possibility to include a DOI and metadata, but do not require it. As a result, VU Amsterdam recommends does not recommend them *on their own* for publishing FAIR research software. That said, one can release code from GitHub to Zenodo, which VU Amsterdam does recommend for software publishing. If you have code on GitLab or Codeberg, such direct integration is not available, but you could think of a workaround.
 
 Note that [OSF](/tools/osf/index.qmd) can be used to publish code as well, but that you cannot assign a DOI to your software files specifically. You can assign a DOI at project level, but currently it is not possible in OSF to create an immutable copy of a file with its own DOI. For that reason, OSF is not the most suitable option for publishing software. If you do prefer to make your research output visible through OSF, you can consider having an additional copy of your code in the [Yoda vault](/tools/yoda/vault_archive.qmd) or [connecting published software in DataverseNL to your OSF project](https://osf.io/w2sme), so that it can be viewed in OSF.
 
