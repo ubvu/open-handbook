@@ -44,15 +44,11 @@ local function load_glossary()
         local doc = pandoc.read(text, 'markdown')
         local title = doc.meta.title and stringify(doc.meta.title) or id
 
-        local parts = {}
-        for _, block in ipairs(doc.blocks) do
-          local part = stringify(block)
-          if part ~= '' then
-            table.insert(parts, part)
-          end
-        end
+        -- Rendered as HTML (not stringify'd to plain text) so that links in a
+        -- term's description survive into the popup and stay clickable.
+        local description = pandoc.write(pandoc.Pandoc(doc.blocks), 'html'):gsub('%s+$', '')
 
-        local term = { id = id, title = title, description = table.concat(parts, ' ') }
+        local term = { id = id, title = title, description = description }
         index[id:lower()] = term
 
         if doc.meta.aliases then

@@ -285,7 +285,7 @@ footer.footer .nav-footer {
 /* glossary links and popup */
 a.glossary-link {
     text-decoration: underline dotted;
-    text-decoration-color: #0282c9;
+    color: green;
     text-underline-offset: 2px;
     cursor: help;
 }
@@ -312,9 +312,20 @@ a.glossary-link {
     opacity: 1;
 }
 
+/* Only a pinned (clicked, not just hovered) popup stays open long enough for
+   a pointer to reach it, so only pinned popups need to accept clicks. */
+.glossary-tooltip.pinned {
+    pointer-events: auto;
+}
+
 .glossary-tooltip-title {
     display: block;
     margin-bottom: .25em;
     color: #6fc2f4;
+}
+
+.glossary-tooltip-description a {
+    color: #6fc2f4;
+    text-decoration: underline;
 }
 /* glossary links and popup */

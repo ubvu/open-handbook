@@ -46,13 +46,16 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!link) return;
     activeLink = link;
     title.textContent = link.dataset.glossaryTitle || link.textContent;
-    description.textContent = link.dataset.glossaryDescription || '';
+    // Descriptions are rendered from markdown to HTML by glossary.lua so that
+    // links within a term's definition remain clickable in the popup.
+    description.innerHTML = link.dataset.glossaryDescription || '';
     tooltip.classList.add('visible');
+    tooltip.classList.toggle('pinned', pinned);
     positionTooltip(link);
   }
 
   function hideTooltip() {
-    tooltip.classList.remove('visible');
+    tooltip.classList.remove('visible', 'pinned');
     activeLink = null;
     pinned = false;
   }
