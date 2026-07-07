@@ -1,0 +1,236 @@
+---
+title: How to ...? - AI
+image: '/public/gdpr-europe-united-lock-74673f-1024.jpg'
+description: "Short explanations and guides for how to use AI along with some FAQs."
+categories: ["Plan & Design"]
+---
+
+
+There are many types of AI available, almost all relying on statistical models. Currently the most commonly requested and used type is Large Language Models (LLM), as such this article will alternate between AI and LLM. In this guide we cover how to use them for different tasks and end with some FAQs.
+
+
+# How to run your own model on your own machine
+There are a lot of reasons you might want to run a model on your computer instead of an external server. There are also a lot of solutions for this. One of the easiest ways is with [JanAI](https://www.jan.ai), an opensource tool that allows both [local API servers](https://www.jan.ai/docs/desktop/api-server) to be setup and a regular chatbot format to be used. 
+
+
+# How to use AI in a Project
+https://www.york.ac.uk/staff/research/governance/research-policies/generative-ai/ 
+
+
+# How to use AI in project planning
+Research projects can vary greatly in size, from a week beginning to end to the multi year projects at CERN with thousands of contributors. Planning projects can take a lot of time and communication. One way that you might use AI to help with this is as a reflective partner or estimating the time needed for tasks and fitting that into a plan. Tools like [Goblin Tools](https://goblin.tools/) can help here.
+
+Do remember to check the times and planning to make sure the estimates are reasonable and the timeline works with others, holidays, deadlines, and the laws of spacetime.
+
+
+# How to use AI in data gathering
+You might have a colleague interested in using AI however possible, or funds available for using it in an innovative way, so how can you use AI to gather data? 
+
+One way might be using a model to conduct interviews to get deeper and more personalised questions than a questionnaire might. 
+
+Models that are connected to the internet have the ability to scrape websites for information, but ensure that scraping of the website is allowed before you make the request. 
+
+If you want to research LLMs themselves you can use an API connection to systematically make requests and store the results.
+
+
+# How to use AI in analysis
+LLMs seem to have incredible insight and are sometimes very accurate and as a result you might want to use AI in the analysis step of your research. Many models have the option to feed in a dataset and then ask the model about it, however it will not have the context or understanding of the variables and so might not provide anything useful. Furthermore you are unable to see the process it takes to produce the results meaning you are unable to properly share or explain the analysis process.
+One way to get more explainable and reproducible results from an AI model is to ask it to produce code to analyse the data instead. To find out more read [how to use AI to write code](#how-to-use-ai-to-write-code).
+
+:::{.callout-caution}
+# Caution
+Almost all commercial LLM models use conversations for training and training data can be extracted from models. Think about what you share before you press Enter.
+:::
+
+
+# How to use AI to write code
+One of the biggest hypes about LLMs is their coding ability. It has been helping those with little to no coding experience start producing hundreds to thousands of lines of code.
+
+However, it is typical of these AI written codebases to get very bloated and inefficient. This means without proper understanding a user will struggle to find bugs and fix them effectively. As with all uses of LLMs it is best to ask for an explanation of the steps and reasoning to determine if it makes sense and help you understand the code base. 
+
+In most cases of scientific research code is written to perform analysis of research data. That means if you don't understand the code you don't know if the analysis is being correctly performed. In order to avoid a retraction of your work you must ensure the code works and does what you intend. 
+
+If you want to build a basis of coding knowledge you can join one of the free classes provided by the library. Look for 'Software Carpentries' on the [VU events pages](https://vu.nl/en/events/) or [libcal](https://libcal.vu.nl/).
+
+
+# How to use AI in writing
+Typically journals that researchers at the VU will publish in are written in English. It is not the first language of everyone on the planet and as such you might want some help to check or refine your writing. This is a typical use of LLMs as well as describing the work to get help structuring the manuscript or writing the draft of a section.
+
+:::{.callout-caution}
+# Caution
+Almost all commercial LLM models use conversations for training and training data can be extracted from models. Think about what you share before you press Enter.
+:::
+
+:::{.callout-warning}
+# Warning
+Most journals require a delcaration and or citation of AI use. Read more in [citing AI](#how-to-cite-usage) and [can I use AI to write my paper?](#can-i-use-it-for-writing-my-paper)
+:::
+
+# How to use AI as a collaborator
+
+
+
+# How to cite usage
+Having used an AI in your research you may now need to cite its output. Some basics you should include in the citation are:
+
+    -   The prompt
+    -   The model name and version
+    -   The company or service
+    -   The date that the output was made
+
+For more specific information look at the generative AI section of the official style guides, e.g. [MLA](https://style.mla.org/citing-generative-ai/) and [APA](https://apastyle.apa.org/blog/cite-generative-ai-references).
+
+
+# How to select or evaluate a model
+That depends on how you measure them against each other. There could measure by speed, depth of knowledge, breadth of knowledge, cost of running, accuracy, level of bias, context window (how much they remember in a conversation), energy use, privacy level, or functionality.
+You will need to choose what is right for you own project based on its scope. There are websites that compare the models using different benchmarks such as [whatllm](https://whatllm.org/) and [livebench.ai](https://livebench.ai/#/). Think about how the models could vary and what is most important to your work. 
+
+
+# How to choose between Open source and Commercially available
+There are several things to consider in this choice:
+
+    -   Price
+        +   Open source is free, but needs hosting
+        +   Commercial models cost, but there is no setup fee
+    -   Model choice
+        +   Typically the largest models are commercial
+        +   Almost all models you can run on your own machine or setup are open source
+    -   Bias
+        +   All models will have bias based on training materials, knowing what they are trained on helps to better understand the bias
+        +   Models also include rules, commercial rules will likely differ from open source rules. Think about how a company might want to shape a model vs the team making your favourite open source model
+    -   Technical requirements
+        +   Commercial models have support teams and typically well maintained documentation for use
+        +   Open source models may require extra technical knowledge to self host and run
+
+
+# How to choose between local or cloud-based models
+All data you create and save falls into one of two categories, it is stored on something you physically possess or it is stored on a server (sometimes both). LLMs can also be hosted on your own computer or a server, most commercial models are on a server and most open source ones are intended for you to run on your own machine. 
+
+Some reasons people choose to run a model locally:
+
+    -   Security. You can choose if the data leaves or not
+    -   Energy. You know if you use green or grey energy
+    -   Privacy. Data that is sensitive should not leave your computer or the trusted storage
+    -   Cost. If you run a smaller model on your own computer there are no costs beyond your electricity use
+    -   Customisation. There are often more parameters you can adjust with open source models
+Some reasons people choose cloud-based models:
+    -   Model size. You are limited by your hardware when running locally, far larger models can be run on server farms
+    -   No technical barrier. Using a local model might be a little confronting for some users
+    -   Cross device usage. You might want to use the same tool on other computers or devices
+
+
+# How to Use Nebula 
+
+
+Policy layer, safety mitigation, bias analysis?
+
+Strengths and weaknesses
+
+Speed & accuracy
+
+make adjustments to meet your needs/criteria
+
+Fine-tuning parameters
+
+RAG (Knowledge bases)
+
+System prompts
+
+Testing
+
+
+# FAQs
+
+## Which model is best?
+That depends on how you measure them against each other. There could measure by speed, depth of knowledge, breadth of knowledge, cost of running, accuracy, level of bias, context window (how much they remember in a conversation), energy use, privacy level, or functionality. 
+You will need to choose what is right for you own project based on its scope. There are websites that compare the models using different benchmarks such as [whatllm](https://whatllm.org/) and [livebench.ai](https://livebench.ai/#/).
+
+
+## How can I use it?
+There are many models with free tiers of usage, but access to the API typically costs money. That means if you want to automate some work using an LLM or integrate it into your code, you will need to pay. The VU hosts some open source models at [Nebula](https://networkinstitute.org/nebula/), and you can make use of any of their models for your project. You can also work with a local model that can also be connected to via API or used with its regular chatbot interface.  
+
+
+## Can it analyse text?
+Yes and no. It will do so, but there are better tools and methods to do this than an LLM. There is a risk of it re-interpreting wording, making things up, and skipping sections. With other methods, you won’t have the first two issues at least. Additionally, what goes on under the hood of LLMs and how they solve tasks always remains unclear. Would you like to base your research on a data analysis of which you’re not sure how it was done?
+Consider typical Natural Language Processing (NLP) tools, like SpaCy, SpacyR, koRpus, stanford nlp(https://github.com/stanfordnlp) 
+
+
+## How much will it cost?
+Making an account with most services is free, but you will be limited to the chatbot setup and most likely a smaller model. To find out the costs for more systematic use look at the pricing pages for API use for the models, most of the top end current models cost (as of 07/07/2026) between €1.5 and €8 for 1 million tokens input and €6 and €40 per million tokens output.
+
+Currently [Nebula](https://networkinstitute.org/nebula/) (the VU hosted AI service) is free to use for researchers, models run on your own computer only cost as much as the electricity needed to run your laptop.
+
+
+## Can I automate X with AI?
+Certain tasks can be successfully automated with LLMs, but they do not have "knowledge" beyond the information in the model or what you feed into it. 
+
+:::{.callout-warning}
+# Warning
+Feeding information into an LLM model does have risks as almost all LLM providers [use your chats to train their models](https://hai.stanford.edu/news/be-careful-what-you-tell-your-ai-chatbot) and [research](https://arxiv.org/abs/2311.17035) has found that data can be recovered/discovered by other users. Only provide data and information you are allowed and willing to share.
+:::
+
+LLMs are "rewarded" when they provide a result, so will provide something even if unsuccessful. This means that verification of the process and results is still very important. For guaranteed repeatable results ask your model to produce code to automate the process.
+
+
+## Can I use Nebula for my project?
+If you would like to use Nebula look at their [getting started page](https://networkinstitute.org/nebula-main/nebula-getting-started/) and then get in touch with the team to [request access](https://forms.gle/oYbGvhQ9rendeTyy8).
+
+
+## Can I use X tool?
+You will have to speak to the project lead, faculty datasteward, and consider the needs of the project yourself to choose what tool works best and is safe to use. This is a list of tools currently in use or available in the VU:
+
+-   Cogniti
+-   Co-pilot
+-   Nebula
+-   ...
+
+
+## Can I use an LLM for this data?
+For production of fake data to test, sure. For analysis directly [read below](#should-i-use-ai-to-analyse-my-data).
+
+
+## Can I use it for writing my paper?
+You can and often people do. However, many journals will not accept work written with an AI without a label stating that how and where a model was used for writing. Do consider the effect it might have when others see the label (or lack thereof) and wonder if the writing have been reviewed and verified by a human or not. For example [the nature journal](https://www.nature.com/articles/s41592-026-03020-1) requires that the use of an AI model is declared in the methods section; [Elsevier requires](https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals) an AI delcaration statement in the manuscript; Wiley requires a declaration in the acknowledgements, methods, or figure captions depending on where AI was used.
+
+
+## Can I use an LLM to interview people?
+If you can get the model to ask the questions you want and provide relevant follow ups, yes. But be aware that respondents might provide different answers knowing that they are not speaking to a person. Some respondents might refuse to cooperate with an LLM.
+
+
+## What should I do if I discover errors in AI-generated content that affects research I have published?
+If you find errors in work that has already been published the same procedure applies whether the content is AI generated or human created.
+
+    -   Check for other errors
+    -   Speak to your PI
+    -   Find out if you can publish a correction or need to retract
+    -   Find out the steps for correction/retraction for your faculty
+    -   Contact the editors at the journal to explain the situation
+    -   Think of how to avoid this issue in the future
+    -   Consider writing a guide/blog post to help others avoid the mistake
+    -   Consider reaching out to people who cited your work to update them
+
+For more information check out the following:
+-   [COPE retraction guidelines](https://publicationethics.org/guidance/guideline/retraction-guidelines)
+-   UK reserach integrity office [Guidance on retractions](https://ukrio.org/wp-content/uploads/UKRIO-Guidance-for-researchers-on-retractions-in-academic-journals.pdf)
+
+
+## My research involves collaborators from outside the VU. Do they need to comply with the policy for using GenAI in Research?
+Currently the VU does not have explicit guidelines, but your research group or faculty may have rules. Speak with your PI or faculty datasteward to find out what those rules are and how they might apply to outside researchers or citizen scientists.
+
+
+## Should I use AI to analyse my data?
+Analysis is an important part of research, just as important as data gathering. In that regard it is a duty as a researcher to make sure the analysis is valid. If you can verify the process and understand and agree with the decisions made in the analysis then you can feel confident that the work is correct. 
+
+::: {.callout-important}
+## Important Note
+
+Personal or sensitive data should never be fed directly into a model! Uploading personal or sensitive data should only be done in secure and trusted repositories and storage, see [aaag]() for more information.
+:::
+
+It is generally best to ask the model to produce code, that way you can run the code and verify the logic as well as repeating the exact same analysis and share the code so others can verify, repeat, and re-use the code for their own work.
+
+::: {.callout-warning}
+## Warning
+
+Most journals require you to state the use of AI. Where it was used and how it was used should be included to avoid a retraction or rejection.
+:::
