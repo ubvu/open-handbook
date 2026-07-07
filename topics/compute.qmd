@@ -14,23 +14,19 @@ This pages tries to give an overview of the compute environments available for V
 
 ## Considerations for choosing a environment
 
-* The amount of data you need to work with
+The amount of data you need to work with
+: Working with a large amount of data means a fast and large storage system must be available to the environment.
 
-Working with a large amount of data means a fast and large storage system must be available to the environment.
+Processing time
+: Besides the amount of data other factors can affect the time it takes for your tasks to run. A more performant system will speed up processing. If the task takes more than a workday you must ensure it can keep running.
 
-* Processing time
+Your coding skills
+: Are you able to develop scripts to automate your analysis workflow or even to optimize those scripts? 
 
-Besides the amount of data other factors can affect the time it takes for your tasks to run. A more performant system will speed up processing. If the task takes more than a workday you must ensure it can keep running.
+Software requirements
+: Can the software be installed on the Operating System? Does your workflow depend on specific software with a GUI (Graphical User Interface)? If your favorite software is not available, are there altenatives? If you have written your own software can all its dependencies be installed on the environment?
 
-* Your coding skills
-
-Are you able to develop scripts to automate your analysis workflow or even to optimize those scripts? 
-
-* Software requirements
-
-Can the software be installed on the Operating System? Does your workflow depend on specific software with a GUI (Graphical User Interface)? If your favorite software is not available, are there altenatives? If you have written your own software can all its dependencies be installed on the environment?
-
-::: {.callout-tip title="OS-level virtualization - containers"}
+::: {.callout-tip title="OS-level virtualization: Containers"}
 If your environment does not meet the necessary requirements, running the software in a [container](https://en.wikipedia.org/wiki/OS-level_virtualization) might be a solution. This way the application can run inside its own OS with any software dependencies. Popular open source platforms are [Docker](https://www.docker.com/) and [Podman](https://podman.io/). If you are starting out with containers IT for Research suggests learning Podman.
 
 * Easier to spin up multiple indentical applications
@@ -42,40 +38,34 @@ If your environment does not meet the necessary requirements, running the softwa
 You can run containers on [SciCloud](/tools/scicloud/index.qmd), [SURF Research Cloud](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/74225031/Creating+a+Docker+Compose+catalog+item), [OpenShift](#openshift) and [ADA](/tools/ada/software.qmd#apptainer-containers).
 :::
 
-* GPUs
+GPUs
+: Some tasks run a lot faster on systems with a GPU (Graphical Processing Unit). Such as training a Large Language Model (LLM).
 
-Some tasks run a lot faster on systems with a GPU (Graphical Processing Unit). Such as training a Large Language Model (LLM).
+(Privacy) sensitive data
+: Not all environments are suitable for sensitive data and in some cases extra measures need to be taken to make the environment suitable.
 
-* (Privacy) sensitive data
+Availability
+: Does the software need to keep running 24/7? Does the software (such as a web app) need to be accessible over the internet?
 
-Not all environments are suitable for sensitive data and in some cases extra measures need to be taken to make the environment suitable.
+### Other considerations
 
-* Availability
+Learning curve
+: A different environment and toolset might be more efficient for your workflow, but mastering new skills takes time.
 
-Does the software need to keep running 24/7? Does the software (such as a web app) need to be accessible over the internet?
+Reproducibility
+: Can a future researcher recreate the exact same environment?
 
-**Other considerations:**
+Data transfer
+: Does the storage system your data is on have a fast connection to the environment, or do you need to copy the data first?
 
-* Learning curve
-
-A different environment and toolset might be more efficient for your workflow, but mastering new skills takes time.
-
-* Reproducibility
-
-Can a future researcher recreate the exact same environment?
-
-* Data transfer
-
-Does the storage system your data is on have a fast connection to the environment, or do you need to copy the data first?
-
-* Maintenance
-
-Is there help available to fix problems with your software or do you have sufficient knowledge yourself? What other maintenance do you need to do on the environment?
+Maintenance
+: Is there help available to fix problems with your software or do you have sufficient knowledge yourself? What other maintenance do you need to do on the environment?
 
 ## Laptops and Workstations
- 
+> Typical workloads: Data transformation, Data analysis, Visualization
 
-### General pros and cons
+Physical computers are the most common compute environment. They can be used for a wide range of tasks, but have limited performance.
+
 Pros:
 
 * Use GUI tools
@@ -84,7 +74,7 @@ Pros:
 
 Cons:
 
-* Cannot host web applications for 3rd party
+* Cannot host web applications on the internet
 * Single user, only one person at a time can log in and run tasks
 
 ### Laptop
@@ -115,7 +105,9 @@ Cons:
 * Limited remote accessibility
 
 ## Virtual Desktops
-This is a Linux or Windows PC running on a cloud environment. Users can access it using a Virtual Desktop Client and are presented with the familiar desktop interface. It can run Linux/Windows desktop GUI applications.
+> Typical workloads: Data transformation, Data analysis, Visualization
+
+This is a Linux or Windows PC running on a cloud environment. Users can access it using a Virtual Desktop Client and are presented with the familiar desktop interface. It can run Linux/Windows desktop applications.
 
 ### General pros and cons
 Pros:
@@ -179,10 +171,14 @@ Cons:
 * Machines are turned off automatically at night
 
 
-## (Virtual) servers
+## Virtual servers
+> Typical workloads: Data gathering, Hosting Web Applications, Running Server Applications
+ (Data Transformation, Data Analysis)
+
 Used to host web and other server applications. Could also be used for data analysis tasks, but [HPC](#hpc) is generally better for that use-case. Virtual servers can be scaled to your needs, run 24/7 and be made accessible for multiple users, even over the internet. This kind of setup is sometimes called a VRE (Virtual Research Environment).
 
 Example use-cases:
+
 * Hosting [Shiny](https://shiny.posit.co/) apps
 * Hosting a custom database with a web interface
 * Hosting a custom chat application to gather data from participants
@@ -194,6 +190,7 @@ And many more...
 
 ### General pros and cons
 Pros:
+
 * Can run 24/7
 * Can host web applications accessible to 3rd parties
 * Accessible over the internet
@@ -201,6 +198,7 @@ Pros:
 * Multiple users can login and run tasks (depending on software)
 
 Cons:
+
 * Not used for desktop GUI applications, although you can host web-versions of applications, such as R-Studio, on a server
 
 ### SciCloud
@@ -240,7 +238,7 @@ Cons:
 
 (*) Setup and maintenance of applications is your own responsibility. SURF and IT for Research can help you get started, time permitting. 
 
-## Physical servers
+### Physical servers
 In unusual cases you need a server to run specific applications, for example if the performance of a Virtual Server is not sufficient or some other requirement demands physical hardware. 
 
 In that case you could opt to buy your own hardware and host it in IT for research's Data Centre. IT will take care of the hardware and network connectivity, when absolutely necessary you can have physical access to the machine.
@@ -248,6 +246,8 @@ In that case you could opt to buy your own hardware and host it in IT for resear
 Hosting hardware in the Data Centre has certain requirements ans is subject to capacity. Please [contact ITvO](/topics/itvo.qmd#contact) to discuss your requirements first.
 
 ## HPC
+> Typical workloads: Data Transformation, Data Analysis
+
 Some tasks require more compute power. Running it on a laptop takes too long and a virtual server needs so much resources the task becomes very expensive. This is when High Performance Computing comes in view. 
 
 The basic idea is that you have compute nodes with lots of RAM, CPU and GPU. You submit your job (a bunch of scripts) to a queue along with hints about the amount of processing you need. The HPC cluster runs it once sufficient resources are available. Once it is done, you can collect your results.
@@ -308,9 +308,7 @@ Cons:
 * Higher [barrier to entry](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/102837156/Obtaining+compute+time#Obtainingcomputetime-CallsforLUMIcomputetime)
 
 ### VU ComputeHub for education 
-https://hub.compute.vu.nl/
-
-VU IT has built a Jupyter Notebook environment meant mainly for Education purposes, but accessible for researchers as well. 
+VU IT has built a [Jupyter Notebook environment](/tools/vucomputehub/index.qmd) meant mainly for Education purposes, but accessible for researchers as well. 
 
 Pros:
 
@@ -322,27 +320,19 @@ Cons:
 * Limited resources
 * Limited amount of applications and modules available (but you can always ask the team to add something!)
 
-
+## Other environments
 ### OpenShift
-OpenShift is a environment specifically created for hosting containers. 
+> Typical workloads: Hosting Web Applications, Running Server Applications
+
+OpenShift is a environment specifically created for hosting containers. It is especially suitable for hosting static web applications. 
 
 Pros:
 
 * CI/CD pipelines, e.g. push code on Github/Gitlab and automatically rebuild the container
 * No need to worry about updating a (virtual) server
+* Can host web applications for 3rd parties
+* Can easily spin up multiple identical containers
 
 Cons:
-* It might take extra work to make regular docker containers suitable for OpenShift.
 
-### Apptainer/Singularity on HPC
-
-## Jupyter Notebooks [past dit hier?]??
-### VU
-### HPC
-Both Snellius and BAZIS have a Jupyter interface available. This means you can execute Notebooks build on your laptop on a HPC cluster, making it an excellent way to get familiar with HPC.
-
-https://servicedesk.surf.nl/wiki/display/WIKI/Jupyter+Notebooks+on+Snellius
-### Research Cloud
-### Google Colab
-Free for limited use, so an excellent place to share and play around with Jupyter Notebooks. Only use data which can be considered public.
-
+* It takes extra work to make regular docker containers suitable for OpenShift.
