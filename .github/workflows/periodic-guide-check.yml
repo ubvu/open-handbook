@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7
 
       - name: Find outdated files (90 days)
         id: find-outdated
@@ -21,7 +21,7 @@ jobs:
 
       - name: Create issues for outdated files
         if: steps.find-outdated.outputs.outdated_files != ''
-        uses: actions/github-script@v6
+        uses: actions/github-script@v9
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
