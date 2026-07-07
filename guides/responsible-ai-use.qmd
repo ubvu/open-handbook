@@ -1,0 +1,139 @@
+---
+title: How can you discover and reuse existing research data?
+image: '/public/cover-images/DALLE_LEGO-scientist-discovering-metadata.jpg'
+description: "There is so much data out there, that we want to help you find your way more easily."
+categories: ["Discover & Initiate"]
+---
+
+# Safety & Privacy
+
+## Privacy concerns when using AI
+
+The same privacy concerns you have when doing your research normally also hold when working with AI (or LLMs). Any data you are working with should be anonymised or pseudonymised to protect the respondents. Any proprietary information or data is not to be shared beyond those already with access. Any data related to national defence cannot leave the strict group it has been shared with.
+
+To help you consider whether using an AI is safe, the following question can be useful:
+    -   Is this data personal?
+    -   Is this data sensitive?
+    -   Is this data confidential?
+    -   Are there intellectual property implications for uploading data?
+    -   Do I have consent or a legal basis to process this data?
+
+Or, more directly.
+    -   Would you hand this text or data directly to Sam Altman?
+    -   Would you post this data on Instagram?
+    -   Would you leave a printed copy of the data on a park bench?
+
+If the answer was yes to (any of) the first 4 or no to (any of) the last 3 then you should not be using any service hosted or stored outside of your own computer.
+
+***Decision tree would do well here***
+
+## How can I use an AI safely in my work?
+
+Do not use any AI tools that are not officially approved by VU IT.
+Do not upload data that you would not happily give to a company for unknown use
+Avoid uploading data without proper safeguards
+Examine the data retention policy of the service. How long will they keep this for? Will it be shared with 3rd parties?
+Look at Nebula and consider if it is suitable for your use case
+Consider running a model locally (on your own computer)
+Check that the output it provides is accurate
+Avoid outsourcing too much to AI
+Keep in mind that all models have inbuilt bias (just like us!)
+Don’t use a model to make decisions that put lives or jobs at risk
+
+
+****NOTES****
+
+Safety and Privacy
+Uploading sensitive research data
+Sharing personal data without proper safeguards
+Risk of data retention or unintended reuse
+Data classification 
+Is this data personal?
+Is this data sensitive?
+Is this data confidential?
+Are there intellectual property implications for uploading data?
+Do I have consent or a legal basis to process this data?
+Maybe add information about connecting with Privacy Champion in these points.
+
+#***** Should ethics be a separate article?
+
+Ethics (built-in bias)
+AI may generate incorrect or fabricated information
+Embedded bias in training data
+Lack of transparency in model decision-making
+Potential harm to human subjects in the case of experiments using AI
+Connection can be formed with the model, anthropomorphism
+Data shared with models is now accessible to others
+Water use
+Legality of training data
+Electricity use
+Respondents might not want their data to be analysed by AI
+Data leaving the EU
+
+Privacy and Security Considerations
+Do NOT Input
+Personal identifiable information
+Student records
+Health data
+Confidential research data
+Unpublished manuscripts
+Defence industry-related data
+Legal documents
+Anything you would not personally hand to Sam Altman
+Proprietary institutional data
+*Unless you or your institution has a formal agreement and approved AI tools (Nebula)
+	
+
+GDPR Considerations
+Lawfulness, Fairness, and Transparency
+Inform individuals how their data is used
+Have a legal basis for processing
+Avoid hidden automated decision-making
+
+Purpose Limitation
+Data must only be used for its stated purpose.
+
+Data Minimization
+Only process what is strictly necessary
+Accuracy
+Ensure AI outputs affecting individuals are verified.
+
+Storage Limitation
+Do not store personal data longer than necessary.
+
+Integrity and Confidentiality
+Ensure appropriate security measures.
+
+Automated Decision-Making (Article 22 GDPR)
+Individuals have rights regarding:
+Automated decisions
+Profiling
+AI-driven grading or admissions decisions.
+Human oversight is essential. 
+
+Key GDPR Concepts in Relation to AI Usage (Dewitte, 2025)
+GDPR applies when personal data is processed for AI training or output.
+Controllers and processors must be identified, and responsibilities allocated, even in complex AI ecosystems.
+Advances in AI can make supposedly “anonymised” data re-identifiable, thus widening GDPR’s scope.
+AI systems often reuse data collected for one purpose to train models for another; controllers must show such processing is both lawful and necessary.
+The GDPR demands transparent communication to data subjects (e.g. why their data is being processed, by whom, and for what purpose); AI’s complexity creates challenges for explainability in this case. 
+AI systems qualify as “high-risk” processing, making DPIA necessary and providing risk mitigation.
+In summary, researchers need to ensure that AI systems respect fundamental data protection rights.
+
+
+Best Practices For Responsible AI Usage
+Transparency
+Disclose AI usage/assistance in research or coursework.
+Human Oversight
+AI is meant to assist and NOT replace human expertise and/or judgement. 
+Documentation
+Record how AI tools were used in research methodology.
+Risk Assessment
+Conduct an impact assessment for high-risk AI uses
+Secure Use 
+Use institutionally approved platforms
+Enable two-factor authentication
+Avoid public/free tools for sensitive data?
+AI Citation?
+“Portions of this manuscript were drafted with the assistance of an AI Language Model and subsequently reviewed and edited by the author.”
+
