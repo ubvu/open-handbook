@@ -22,7 +22,7 @@ ADA ships a curated, architecture-optimized software stack living under `/ada-so
 The stack follows an annual release (for example `2025`) that bundles compilers, MPI, and libraries maintained by ITvO.
 
 ::: {.callout-important title="Read: Modules primer"}
-New to Lmod? Start with the [Carpentries HPC modules lesson](https://carpentries-incubator.github.io/hpc-intro/15-modules/index.html) for a friendly walkthrough of the core concepts.
+New to Lmod? Start with the [Carpentries HPC modules lesson](https://carpentries-incubator.github.io/hpc-intro/15-modules.html) for a friendly walkthrough of the core concepts.
 :::
 
 ### Quick Start
@@ -105,7 +105,7 @@ To use EESSI on ADA, load in either the eessi-2023.06 or eessi-2026.06 stack, e.
 ### References
 
 - [Lmod user guide](https://lmod.readthedocs.io/en/latest/)
-- [Carpentries HPC modules lesson](https://carpentries-incubator.github.io/hpc-intro/15-modules/index.html)
+- [Carpentries HPC modules lesson](https://carpentries-incubator.github.io/hpc-intro/15-modules.html)
 - [EESSI](https://www.eessi.io/docs/)
 
 ## Pixi Environments
@@ -173,7 +173,7 @@ For virtualenv:
 Remember to deactivate environments before logging out to avoid polluting future sessions.
 
 ::: {.callout-tip title="Read: virtualenv essentials"}
-Skim the official [virtualenv documentation](https://virtualenv.pypa.io/en/latest/user_guide.html) for tips on creating and managing virtual environments.
+Skim the official [virtualenv documentation](https://virtualenv.pypa.io/en/latest/) for tips on creating and managing virtual environments.
 :::
 
 ### When to choose Conda or virtualenv
@@ -187,7 +187,7 @@ Be mindful that Conda solves can be slower and more resource-heavy on shared fil
 ### References
 
 - [Conda user guide](https://docs.conda.io/projects/conda/en/stable/user-guide/)
-- [virtualenv documentation](https://virtualenv.pypa.io/en/latest/user_guide.html)
+- [virtualenv documentation](https://virtualenv.pypa.io/en/latest/)
 
 ## Apptainer Containers
 
