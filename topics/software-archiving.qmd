@@ -34,7 +34,7 @@ Since code can be written in any number of ways to solve a problem, the absolute
 
 ## How does software archiving work in practice?
 
-Data archiving must happen in a repository. This means that data storage solutions for during research, like Research Drive, are not suitable for software archiving. They don’t generate a Persistent Identifier and do not ask for metadata or a licence. Code repositories like GitHub and GitLab fall under the label of development environments: They have the possibility to include a DOI and metadata, but do not require it. As a result, VU Amsterdam recommends using the following services for archiving research software:
+Data archiving must happen in a repository. This means that data storage solutions for during research, like Research Drive, are not suitable for software archiving. They don’t generate a Persistent Identifier and do not ask for metadata or a licence. Code repositories like GitHub and GitLab fall under the label of development environments: they have the possibility to include a DOI and metadata, but do not require it. As a result, VU Amsterdam recommends using the following services for archiving research software:
 
 - **[Zenodo](https://zenodo.org/)**: Long-term preservation with permanent DOIs, integrated with GitHub for automatic archiving
 - **[DataverseNL](/tools/dataversenl/index.qmd)**: For software associated with published datasets and research outputs
