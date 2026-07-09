@@ -2,22 +2,29 @@
 title: Quick Start
 ---
 
-#### Access and getting Started
-If your research project does not have a project space yet, [request it](cost_access.qmd#how-to-request-access) first. 
+## Access and getting Started
+### Requesting project space
+If your research project does not have a project space yet, [request it](cost_access.qmd#how-to-request-access) first. A Yoda functional admin will create the project space and invite you as a Group Manager.
 
+### Inviting colleagues
 Once a project space is created a user with the Group Manager role can [invite colleagues](group_manager.qmd) and set their [access rights](group_manager.qmd#how-to-changing-the-role-of-a-user-in-a-group). 
 
+### Logging in
 Newly added users receive an [invitation](sram_invitations_eduid_activation.qmd), after accepting they can [login](logging_in.qmd) with their institutional account (VUnetId), with their primary e-mail address as username.
 
-#### Working With Your Project Space
-A project space is a data folder for storing and organising data during your project. Depending on the Operating System you are using, different methods can be used to [transfer data](data_access_instructions.qmd). 
+## Working With Your Project Space
+A project space is a data folder for storing and organising data during your project. It has a structured name: `research-<faculty>-<department>-<project>`.
 
+### Data Transfer
+Depending on the Operating System you are using, different methods can be used to [transfer data](data_access_instructions.qmd) to and from your data folder. 
+
+### Working with analysis tools
 Although you cannot directly access the data in Yoda with analysis tools, there are [several ways](analysing_data.qmd) to work with your data. 
 
+### Searching
 You can easily [search](finding_restoring.qmd) for your files in Yoda using the built-in search tool.
 
-#### Metadata and Dataset Preparation
-Yoda enables you to [add metadata](workflow_metadata.qmd) to describe and contextualise your dataset. You can find more information in the [Metadata](metadata.qmd) section. 
+## Archiving and Publishing
+Yoda enables you to [add metadata](workflow_metadata.qmd) to describe and contextualise your dataset. 
 
-#### Archiving and Publishing
 Once your research is complete, you can [archive](vault_archive.qmd) and [publish](vault_publish.qmd) it, so you can reference it with a DOI.
