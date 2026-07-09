@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-03-05">
+<meta name="dcterms.date" content="2026-07-09">
 
 <title>Quick Start – Research Support Handbook</title>
 <style>
@@ -426,8 +426,26 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#access-and-getting-started" id="toc-access-and-getting-started" class="nav-link active" data-scroll-target="#access-and-getting-started">Access and getting Started</a>
+  <ul class="collapse">
+  <li><a href="#requesting-project-space" id="toc-requesting-project-space" class="nav-link" data-scroll-target="#requesting-project-space">Requesting project space</a></li>
+  <li><a href="#inviting-colleagues" id="toc-inviting-colleagues" class="nav-link" data-scroll-target="#inviting-colleagues">Inviting colleagues</a></li>
+  <li><a href="#logging-in" id="toc-logging-in" class="nav-link" data-scroll-target="#logging-in">Logging in</a></li>
+  </ul></li>
+  <li><a href="#working-with-your-project-space" id="toc-working-with-your-project-space" class="nav-link" data-scroll-target="#working-with-your-project-space">Working With Your Project Space</a>
+  <ul class="collapse">
+  <li><a href="#data-transfer" id="toc-data-transfer" class="nav-link" data-scroll-target="#data-transfer">Data Transfer</a></li>
+  <li><a href="#working-with-analysis-tools" id="toc-working-with-analysis-tools" class="nav-link" data-scroll-target="#working-with-analysis-tools">Working with analysis tools</a></li>
+  <li><a href="#searching" id="toc-searching" class="nav-link" data-scroll-target="#searching">Searching</a></li>
+  </ul></li>
+  <li><a href="#archiving-and-publishing" id="toc-archiving-and-publishing" class="nav-link" data-scroll-target="#archiving-and-publishing">Archiving and Publishing</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/yoda/quick_start.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -446,7 +464,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">last modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 5, 2026</p>
+      <p class="date">July 9, 2026</p>
     </div>
   </div>
   
@@ -458,21 +476,41 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="access-and-getting-started" class="level4">
-<h4 class="anchored" data-anchor-id="access-and-getting-started">Access and getting Started</h4>
-<p>To grant a user access to Yoda, a project space must be created and a user account must be added by the Yoda administrator. Whilst Yoda leverages on a user’s VUnetID as an authentication and identification mechanism, single sign-on (SSO), users should always use their primary e-mail address to login to the <a href="https://portal.yoda.vu.nl/" target="_blank">Yoda Web Portal</a>. After receiving an invitation, you can <a href="https://rdm.vu.nl/tools/yoda/sram_invitations_eduid_activation.html" target="_blank">accept</a> the invitation to proceed to <a href="https://rdm.vu.nl/tools/yoda/logging_in.html" target="_blank">log in</a> to the system. Depending on your access rights you may <a href="https://rdm.vu.nl/tools/yoda/group_manager.html" target="_blank">invite</a> other users to the project space.</p>
+<section id="access-and-getting-started" class="level2">
+<h2 class="anchored" data-anchor-id="access-and-getting-started">Access and getting Started</h2>
+<section id="requesting-project-space" class="level3">
+<h3 class="anchored" data-anchor-id="requesting-project-space">Requesting project space</h3>
+<p>If your research project does not have a project space yet, <a href="../../tools/yoda/cost_access.html#how-to-request-access">request it</a> first. A Yoda functional admin will create the project space and invite you as a Group Manager.</p>
 </section>
-<section id="working-with-your-project-space" class="level4">
-<h4 class="anchored" data-anchor-id="working-with-your-project-space">Working With Your Project Space</h4>
-<p>A project space is the place for storing and organising data during your project. To transfer data to Yoda from your computer, you must first create a <a href="https://rdm.vu.nl/tools/yoda/yoda_dap.html" target="_blank">data access password</a>. Depending on the Operating System you are using, different methods can be used.</p>
+<section id="inviting-colleagues" class="level3">
+<h3 class="anchored" data-anchor-id="inviting-colleagues">Inviting colleagues</h3>
+<p>Once a project space is created a user with the Group Manager role can <a href="../../tools/yoda/group_manager.html">invite colleagues</a> and set their <a href="../../tools/yoda/group_manager.html#how-to-changing-the-role-of-a-user-in-a-group">access rights</a>.</p>
 </section>
-<section id="metadata-and-dataset-preparation" class="level4">
-<h4 class="anchored" data-anchor-id="metadata-and-dataset-preparation">Metadata and Dataset Preparation</h4>
-<p>Yoda enables you to add metadata to describe and contextualise your dataset. You can find more information in the <a href="https://rdm.vu.nl/tools/yoda/metadata.html" target="_blank">Metadata</a> section. You can easily <a href="https://rdm.vu.nl/tools/yoda/finding_restoring.html" target="_blank">search</a> for your files in Yoda using the built-in search tool.</p>
+<section id="logging-in" class="level3">
+<h3 class="anchored" data-anchor-id="logging-in">Logging in</h3>
+<p>Newly added users receive an <a href="../../tools/yoda/sram_invitations_eduid_activation.html">invitation</a>, after accepting they can <a href="../../tools/yoda/logging_in.html">login</a> with their institutional account (VUnetId), with their primary e-mail address as username.</p>
 </section>
-<section id="archiving-and-publishing" class="level4">
-<h4 class="anchored" data-anchor-id="archiving-and-publishing">Archiving and Publishing</h4>
-<p>Once your research is complete, you can <a href="https://rdm.vu.nl/tools/yoda/vault_archive.html" target="_blank">archive</a> and <a href="https://rdm.vu.nl/tools/yoda/vault_publish.html" target="_blank">publish</a> your data.</p>
+</section>
+<section id="working-with-your-project-space" class="level2">
+<h2 class="anchored" data-anchor-id="working-with-your-project-space">Working With Your Project Space</h2>
+<p>A project space is a data folder for storing and organising data during your project. It has a structured name: <code>research-&lt;faculty&gt;-&lt;department&gt;-&lt;project&gt;</code>.</p>
+<section id="data-transfer" class="level3">
+<h3 class="anchored" data-anchor-id="data-transfer">Data Transfer</h3>
+<p>Depending on the Operating System you are using, different methods can be used to <a href="../../tools/yoda/data_access_instructions.html">transfer data</a> to and from your data folder.</p>
+</section>
+<section id="working-with-analysis-tools" class="level3">
+<h3 class="anchored" data-anchor-id="working-with-analysis-tools">Working with analysis tools</h3>
+<p>Although you cannot directly access the data in Yoda with analysis tools, there are <a href="../../tools/yoda/analysing_data.html">several ways</a> to work with your data.</p>
+</section>
+<section id="searching" class="level3">
+<h3 class="anchored" data-anchor-id="searching">Searching</h3>
+<p>You can easily <a href="../../tools/yoda/finding_restoring.html">search</a> for your files in Yoda using the built-in search tool.</p>
+</section>
+</section>
+<section id="archiving-and-publishing" class="level2">
+<h2 class="anchored" data-anchor-id="archiving-and-publishing">Archiving and Publishing</h2>
+<p>Yoda enables you to <a href="../../tools/yoda/workflow_metadata.html">add metadata</a> to describe and contextualise your dataset.</p>
+<p>Once your research is complete, you can <a href="../../tools/yoda/vault_archive.html">archive</a> and <a href="../../tools/yoda/vault_publish.html">publish</a> it, so you can reference it with a DOI.</p>
 
 
 </section>
@@ -940,7 +978,7 @@ ul.task-list li input[type="checkbox"] {
         </li>
     </ul>
 </div>
-<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/yoda/quick_start.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/yoda/quick_start.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
