@@ -22,7 +22,7 @@ However, Git only works well for plain text files. These are files that end in e
 
 #### Git platforms
 
-When Git is run on an online platform, it can also be used work remotely and to collaborate on files (and versions). Examples of such platforms are [GitLab](../topics/rdm-tools.qmd#gitlab), GitHub and Bitbucket. This handbook, for example, is run on GitHub. There, editors and contributors can propose changes and keep building on each other's work in a transparent and flexible manner. They can also go back to a previous version if something went wrong.
+When Git is run on an online platform, it can also be used to work remotely and to collaborate on files (and versions). Examples of such platforms are [GitLab](../topics/rdm-tools.qmd#gitlab), GitHub and Bitbucket. This handbook, for example, is run on GitHub. There, editors and contributors can propose changes and keep building on each other's work in a transparent and flexible manner. They can also go back to a previous version if something went wrong.
 Git platforms also usually include a way to resolve conflicts for files, which occur if two or more authors edited the same line of the same file simultaneously.
 
 ### Learning more
@@ -34,4 +34,4 @@ There are many online resources that can help you to get started, or practise wi
 - Coderefinery has some excellent material on working with Git: an [introductory lesson](https://coderefinery.github.io/git-intro/) and a [lesson about working remotely, and collaborating, with Git (using GitHub)](https://coderefinery.github.io/git-collaborative/).
 - The [Turing Way materials on version control are also worthwhile to read through](https://book.the-turing-way.org/reproducible-research/vcs/), particularly the guidance in the first three paragraphs of the page about [version control for data](https://book.the-turing-way.org/reproducible-research/vcs/vcs-data/).
 
-Additionally, the University Library includes material on Git in their Software Carpentry courses. In those courses, learning Git is combined with learning a programming language (Python or R). Would you like to know more about these workshop sessions, when they take place, and how you can attend? Get in touch with the [RDM Support Desk](mailto:rdm@vu.nl).
+Additionally, VU Amsterdam organises [Software Carpentry courses](/trainings.qmd#software-carpentries), which include material on Git. In those courses, learning Git is combined with learning a programming language (Python or R). Would you like to know more about these workshop sessions, when they take place, and how you can attend? Check out [LibCal](https://libcal.vu.nl/calendar/universitylibrary?cid=7052&t=g&d=0000-00-00&cal=7052&ct=32115&inc=0) for upcoming courses or get in touch with the [RDM Support Desk](mailto:rdm@vu.nl).
