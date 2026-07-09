@@ -2,15 +2,29 @@
 title: Quick Start
 ---
 
-#### Access and getting Started
-To grant a user access to Yoda, a project space must be created and a user account must be added by the Yoda administrator. Whilst Yoda leverages on a user’s VUnetID as an authentication and identification mechanism, single sign-on (SSO), users should always use their primary e-mail address to login to the [Yoda Web Portal](https://portal.yoda.vu.nl/).
-After receiving an invitation, you can [accept](https://rdm.vu.nl/tools/yoda/sram_invitations_eduid_activation.html)  the invitation to proceed to [log in](https://rdm.vu.nl/tools/yoda/logging_in.html) to the system. Depending on your access rights you may [invite](https://rdm.vu.nl/tools/yoda/group_manager.html) other users to the project space. 
+## Access and getting Started
+### Requesting project space
+If your research project does not have a project space yet, [request it](cost_access.qmd#how-to-request-access) first. A Yoda functional admin will create the project space and invite you as a Group Manager.
 
-#### Working With Your Project Space
-A project space is the place for storing and organising data during your project. To transfer data to Yoda from your computer, you must first create a [data access password](https://rdm.vu.nl/tools/yoda/yoda_dap.html). Depending on the Operating System you are using, different methods can be used. 
+### Inviting colleagues
+Once a project space is created a user with the Group Manager role can [invite colleagues](group_manager.qmd) and set their [access rights](group_manager.qmd#how-to-changing-the-role-of-a-user-in-a-group). 
 
-#### Metadata and Dataset Preparation
-Yoda enables you to add metadata to describe and contextualise your dataset. You can find more information in the [Metadata]( https://rdm.vu.nl/tools/yoda/metadata.html) section. You can easily [search]( https://rdm.vu.nl/tools/yoda/finding_restoring.html) for your files in Yoda using the built-in search tool.
+### Logging in
+Newly added users receive an [invitation](sram_invitations_eduid_activation.qmd), after accepting they can [login](logging_in.qmd) with their institutional account (VUnetId), with their primary e-mail address as username.
 
-#### Archiving and Publishing
-Once your research is complete, you can [archive]( https://rdm.vu.nl/tools/yoda/vault_archive.html) and [publish]( https://rdm.vu.nl/tools/yoda/vault_publish.html) your data.
+## Working With Your Project Space
+A project space is a data folder for storing and organising data during your project. It has a structured name: `research-<faculty>-<department>-<project>`.
+
+### Data Transfer
+Depending on the Operating System you are using, different methods can be used to [transfer data](data_access_instructions.qmd) to and from your data folder. 
+
+### Working with analysis tools
+Although you cannot directly access the data in Yoda with analysis tools, there are [several ways](analysing_data.qmd) to work with your data. 
+
+### Searching
+You can easily [search](finding_restoring.qmd) for your files in Yoda using the built-in search tool.
+
+## Archiving and Publishing
+Yoda enables you to [add metadata](workflow_metadata.qmd) to describe and contextualise your dataset. 
+
+Once your research is complete, you can [archive](vault_archive.qmd) and [publish](vault_publish.qmd) it, so you can reference it with a DOI.
