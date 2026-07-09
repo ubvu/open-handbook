@@ -5389,7 +5389,33 @@
     "href": "tools/yoda/data_access_instructions.html",
     "title": "Before Getting Started",
     "section": "",
-    "text": "Research Support Handbook\n\n\n\n\nThere are three main ways to transfer data to and from Yoda. Note that creating a data access password is necessary to transfer data from and to Yoda.\nYou can transfer files to and from Yoda dependent on the size of the file:\n\nFor small amounts of data you can upload files via the Drag & Drop via de Yoda Portal.\nFor transferring larger amounts of data (tens of GB) it is better to use the WebDAV interface.\n\nThere are several methods to access Yoda data via WebDAV, they depend on the Operating System you are using:\n\nWindows (link)\nMacOS (link)\nLinux (Link)\n\nNote that performance of WebDAV is limited, especially when transferring a large amount of files.\nFor transferring large amounts of data (&gt;100GB) consider using direct access to iRODS. A direct iRODS connection offers better performance by enabling multi-threaded transfers and the option to compare checksums.\nPower users who are comfortable with command line tools can use the iRODS iCommands to interact with the iRODS backend of Yoda directly. If iCommands are not available on your OS, Gocommands can be used as an alternative.",
+    "text": "Research Support Handbook\nThere are three main ways to transfer data to and from Yoda. Note that creating a data access password is necessary to transfer data from and to Yoda.\nYou can transfer files to and from Yoda dependent on the size and number of files:",
+    "crumbs": [
+      "Yoda",
+      "Documentation",
+      "Data Access and Transfer",
+      "Before Getting Started"
+    ]
+  },
+  {
+    "objectID": "tools/yoda/data_access_instructions.html#access-via-webdav",
+    "href": "tools/yoda/data_access_instructions.html#access-via-webdav",
+    "title": "Before Getting Started",
+    "section": "Access via WebDAV",
+    "text": "Access via WebDAV\nThere are several methods to access Yoda data via WebDAV, they depend on the Operating System you are using:\n\nWindows\nMacOS\nLinux",
+    "crumbs": [
+      "Yoda",
+      "Documentation",
+      "Data Access and Transfer",
+      "Before Getting Started"
+    ]
+  },
+  {
+    "objectID": "tools/yoda/data_access_instructions.html#access-via-irods",
+    "href": "tools/yoda/data_access_instructions.html#access-via-irods",
+    "title": "Before Getting Started",
+    "section": "Access via iRODS",
+    "text": "Access via iRODS\nFor transferring large amounts of data (&gt;100GB) consider using direct access to iRODS. A direct iRODS connection offers better performance by enabling multi-threaded transfers and the option to compare checksums.\nPower users who are comfortable with command line tools can use the iRODS iCommands to interact with the iRODS backend of Yoda directly. If iCommands are not available on your OS, Gocommands can be used as an alternative.",
     "crumbs": [
       "Yoda",
       "Documentation",
