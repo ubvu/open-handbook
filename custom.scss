@@ -67,7 +67,7 @@ header.headroom--unpinned {
 .navbar .nav-item {
   min-width: 100px;
   height: 90px;
-  align-content: center; 
+  align-content: center;
   text-align: center;
 }
 
@@ -142,6 +142,11 @@ footer.footer .nav-footer {
     padding-right: 2em;
 }
 
+.footer .footer-links-bar {
+    grid-column-start: page-start;
+    grid-column-end: page-end;
+}
+
 /* github icon to the right of sidebar */
 @media (min-width: 992px) {
   .navbar .quarto-navbar-tools {
@@ -172,7 +177,7 @@ footer.footer .nav-footer {
 /* tools, topics and guides listing and accent color */
 .accordion-button:after {
     order: -1; //swap order
-    margin-left: 0; 
+    margin-left: 0;
     margin-right:1em; // just extra space between text and icon
 }
 
@@ -190,7 +195,7 @@ footer.footer .nav-footer {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 5px;
-    
+
     .listing-category {
         color: #6c757d;
         border: solid 1px #dee2e6;
@@ -204,7 +209,7 @@ footer.footer .nav-footer {
         cursor: pointer;
         margin-right: 4px;
         margin-bottom: 14px;
-        
+
         a {
         color: #6c757d;
         text-decoration: none;
@@ -229,7 +234,7 @@ footer.footer .nav-footer {
         background-color: $guides-color;
         border-color: $guides-color;
     }
-    .accordion-button::after { /* how to escape fill color variable? */ 
+    .accordion-button::after { /* how to escape fill color variable? */
         background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23c5503a' stroke='' class='bi bi-arrow-right' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8'/></svg>");
     }
 }
@@ -277,7 +282,7 @@ footer.footer .nav-footer {
     .listing-image {
         display: flex;
         align-items: center;
-        justify-content: center;   
+        justify-content: center;
     }
 }
 /* tools, topics and guides listing and accent color */

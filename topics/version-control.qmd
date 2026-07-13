@@ -1,0 +1,37 @@
+---
+title: Version Control
+categories: [Research Software]
+---
+
+When you are working with data, writing a research publication, or writing software, it is important to keep track of the different versions of your work. With this, we mean that you keep track of what changes were made by whom, and that these changes can be reversed. Version control is important, because it helps you to fix mistakes and keep track of the work that you have done. There are several ways to do so:
+
+- You could indicate in the filename which version it concerns, for example: 2026-07-07-script-version1.py. For a new version, you'd have to make a copy of the file, or update the filename. This method is a bit imperfect, because it may not allow you to go back to a previous version of the file. For research data, we **always** recommend that you keep a copy of the raw, and the processed data, next to the analysed data (or for each stage of your data, if your workflow looks different from this simplified example).
+- You could make use of, for example, Microsoft Word's or Google Docs's automated version history, where you can go back in time to see what changes were made by whom. This method works reasonably well, but is, again, imperfect, because the software provider decides for you what changes constitute a version, and there could be a situation where many changes are lumped into one version.
+- You could use a dedicated version control software, such as Git. With version control software, you are in control of what constitutes a version (contrary to the example above, where the software is in charge). You are also able to go back to a previous version. This page is about this method of version control.
+
+You can find a more in-depth explanation of version control, with more examples, on [the lesson page of The Carpentries](https://swcarpentry.github.io/git-novice/01-basics.html).
+
+Version control using version control software is mostly applied in the process of writing software. When you write [research software](../topics/research-software.qmd), you want to keep track of what your software does, what changes you've made, and how these changes work. You also want to be able to return to a previous version if it turns out that one of the recent changes contained a mistake that means that the software no longer runs (correctly). Version control software allows you to do that.
+You could also use version control software for data or publication-writing, but it is not always as straightforward, for reasons explained below.
+
+### Git
+
+Git is an example of the version control software that allows you to do the activities as described above. It is also the most-used version control software and therefore worthwhile to learn more about (for example, [in this lesson from the Carpentries](https://swcarpentry.github.io/git-novice/index.html)). With Git, you can create new versions of files by creating a 'commit'. You can also go back in time to look at previous versions of files, and even reverse commits if necessary. 
+
+However, Git only works well for plain text files. These are files that end in extensions such as .txt, .md, .csv, .py, .R (there are more examples). It does not work well for other file types, such as .docx, .pdf or .xlsx. This is one of the reasons that Git is not commonly used for writing research publications: many researchers still use a text processor, such as Microsoft Word, for writing publications. Research data may also be saved in a file format for which Git does not work well.
+
+#### Git platforms
+
+When Git is run on an online platform, it can also be used to work remotely and to collaborate on files (and versions). Examples of such platforms are [GitLab](../topics/rdm-tools.qmd#gitlab), GitHub and Bitbucket. This handbook, for example, is run on GitHub. There, editors and contributors can propose changes and keep building on each other's work in a transparent and flexible manner. They can also go back to a previous version if something went wrong.
+Git platforms also usually include a way to resolve conflicts for files, which occur if two or more authors edited the same line of the same file simultaneously.
+
+### Learning more
+
+There are many online resources that can help you to get started, or practise with version control:
+
+- Already referenced earlier on this page, the [Carpentries lesson for Version control with Git](https://swcarpentry.github.io/git-novice/index.html) is a very good first introduction to working locally and remotely with Git.
+- This lesson depends on some prerequisite knowledge of working with the Unix Shell. If you haven't worked with the Unix Shell before, you can also get yourself up to date easily by working through the first three episodes of the [Carpentries' Unix Shell lesson](https://swcarpentry.github.io/shell-novice/)
+- Coderefinery has some excellent material on working with Git: an [introductory lesson](https://coderefinery.github.io/git-intro/) and a [lesson about working remotely, and collaborating, with Git (using GitHub)](https://coderefinery.github.io/git-collaborative/).
+- The [Turing Way materials on version control are also worthwhile to read through](https://book.the-turing-way.org/reproducible-research/vcs/), particularly the guidance in the first three paragraphs of the page about [version control for data](https://book.the-turing-way.org/reproducible-research/vcs/vcs-data/).
+
+Additionally, VU Amsterdam organises [Software Carpentry courses](/trainings.qmd#software-carpentries), which include material on Git. In those courses, learning Git is combined with learning a programming language (Python or R). Would you like to know more about these workshop sessions, when they take place, and how you can attend? Check out [LibCal](https://libcal.vu.nl/calendar/universitylibrary?cid=7052&t=g&d=0000-00-00&cal=7052&ct=32115&inc=0) for upcoming courses or get in touch with the [RDM Support Desk](mailto:rdm@vu.nl).

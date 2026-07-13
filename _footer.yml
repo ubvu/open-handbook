@@ -2,8 +2,8 @@
 website:
   page-footer: |
     ```{=html}
-    <div class="pagebottom py-5 page-columns page-full">
-        <div class="column-page text-center">
+    <div class="pagebottom py-5 page-full">
+        <div class="text-center">
             <ul class="footer-items list-unstyled">
                 <li class="nav-item mx-md-5">
                     <p><img src="/public/missing_icon.svg" class="img-fluid" style="width:6em"><br>
@@ -20,7 +20,7 @@ website:
             </ul>
         </div>
     </div>
-    <div class="column-page">
+    <div class="footer-links-bar">
         <ul class="footer-items list-unstyled">
             <li class="nav-item">
                 <a class="nav-link" href="https://creativecommons.org/publicdomain/zero/1.0/legalcode">
@@ -36,6 +36,11 @@ website:
             <li class="nav-item">
                 <a class="nav-link" href="/contributing.html">
                     <p>Contributing</p>
+                </a>
+            </li>|
+            <li class="nav-item">
+                <a class="nav-link" href="/privacy.html">
+                    <p>Privacy</p>
                 </a>
             </li>
         </ul>
