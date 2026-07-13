@@ -1,0 +1,13 @@
+---
+title: Yoda 2.1
+date: "2026-07-20"
+author:
+  - Peter Vos
+  - Diógenes Cruz de Arcelino
+categories: ["Tools","Yoda"]
+---
+The Yoda team has updated the [documentation](/tools/yoda/index.qmd) to reflect changes in the new Yoda 2.1 version, see the ([Release Notes](https://utrechtuniversity.github.io/yoda/release-notes/release-2.1.html)).
+
+Please note the [Known Issues](/tools/yoda/known_issues.qmd).
+
+During the upgrade new functionality was added to be able to move datasets in the Vault from disk storage to the [SURF Data Archive](https://www.surf.nl/en/services/storage-data-management/data-archive), a form of tape storage. The Yoda team will extensively test this functionality in the coming period. Note that this change is only visible to members of a Datamanager Group.
