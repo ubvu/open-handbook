@@ -13,9 +13,25 @@ author:
 categories: ["Handbook","Hackathon"]
 ---
 
-On July 7, 2026, all authors participated in the eighth hackathon for the Research Support Handbook. For this hackathon, we focused on **Tools documentation**.
+On July 7, 2026, all authors participated in the eighth hackathon for the Research Support Handbook. For this hackathon, our initial plan was to focus on **Tools documentation**, but we worked on other parts of the website as well.
 
 ## Overview of results
 
+With respect to tools, we did the following:
+- We updated Yoda documentation (see below for specifics)
+- We did small updates in the Snellius and Research Drive information
+
+We [checked external links](https://github.com/ubvu/open-handbook/pull/861) and found a number of broken links, which have all been repaired now.
+
+We published two new topics: [Research Software Management](../topics/research-software-management.qmd) and [Version Control](../topics/version-control.qmd).
+
+A group of colleagues is working on information about AI and LLMs, including advice on how to use AI tools responsibly. This is work in progress, it has not been published yet. We'll keep you posted.
 
 ## Hackathon Issues and Pull Requests
+
+- Broken link fixes: PRs [861](https://github.com/ubvu/open-handbook/pull/861), [866](https://github.com/ubvu/open-handbook/pull/866), [868](https://github.com/ubvu/open-handbook/pull/868), [870](https://github.com/ubvu/open-handbook/pull/870), [871](https://github.com/ubvu/open-handbook/pull/871) and [872](https://github.com/ubvu/open-handbook/pull/872)
+- Topic Research Software Management: [Issue #](https://github.com/ubvu/open-handbook/issues/490), [PR #856](https://github.com/ubvu/open-handbook/pull/856)
+- Topic Version Control: [Issue #613](https://github.com/ubvu/open-handbook/issues/613), [PR #877](https://github.com/ubvu/open-handbook/pull/877)
+- Updated Yoda documentation: [Issue #858](https://github.com/ubvu/open-handbook/issues/858), [PR #878](https://github.com/ubvu/open-handbook/pull/878); [Issue #874](https://github.com/ubvu/open-handbook/issues/874), [PR #881](https://github.com/ubvu/open-handbook/pull/881); [Issue #876](https://github.com/ubvu/open-handbook/issues/876), [PR #883](https://github.com/ubvu/open-handbook/pull/883); [Issue #885](https://github.com/ubvu/open-handbook/issues/885), [PR #886](https://github.com/ubvu/open-handbook/pull/886)
+- Updated Snellius documentation: [PR #]852(https://github.com/ubvu/open-handbook/pull/852)
+- Updated Research Drive documentation: [Issue #867](https://github.com/ubvu/open-handbook/issues/867), [PR #879](https://github.com/ubvu/open-handbook/pull/879)
