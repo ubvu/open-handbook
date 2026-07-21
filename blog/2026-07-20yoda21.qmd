@@ -1,0 +1,19 @@
+---
+title: Yoda 2.1 upgrade
+date: "2026-07-20"
+author:
+  - Peter Vos
+  - Diógenes Cruz de Arcelino
+categories: ["Yoda"]
+---
+The Yoda team has updated the [documentation](/tools/yoda/index.qmd) to reflect changes in the new Yoda 2.1 version ([Release Notes](https://utrechtuniversity.github.io/yoda/release-notes/release-2.1.html)). 
+
+Main changes for researchers:
+
+- [Invitation workflow](/tools/yoda/invitation_workflow.qmd) only for external users.
+- Works with latest version of[GoCommands](/tools/yoda/yoda_using_gocommands.qmd). 
+- Option to [move datasets to the Vault](/tools/yoda/vault_archive.qmd#how-to-submitting-a-data-package-to-the-vault) instead of copying them.
+
+Please note the [Known Issues](/tools/yoda/known_issues.qmd).
+
+During the upgrade new functionality was added to be able to move datasets in the Vault from disk storage to the [SURF Data Archive](https://www.surf.nl/en/services/storage-data-management/data-archive), a form of tape storage. The Yoda team will extensively test this functionality in the coming period. Note that this change is only visible to members of a Datamanager Group.

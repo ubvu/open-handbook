@@ -3,17 +3,15 @@ title: Known Issues
 categories: []
 description: Known bugs and issues in the current Yoda version.
 ---
-_Yoda version 2.0_
+_Yoda version 2.1_
 
 | Issue | Description | Workaround | Status |
 | --- | --- | --- | --- |
-| Authentication errors using [Gocommands](yoda_using_gocommands.qmd) version 0.11.x | The 0.11.x versions of Gocommands are incompatible with Yoda 2.0 | Use version 0.10.26 | Expected to be fixed in Yoda 2.1 |
-| Securing datasets in the Vault fails with folders containing special characters | When a datamanager accepts a Vault submission it is copied to the Vault folder. This process sometimes fails if a foldername in the dataset contains special characters (this includes the diaeresis sign, e.g. `ö`). | Ensure folder names do not contain special characters before submitting. | Expected to be fixed in Yoda 2.1 |
-| Connecting using icommands fails due to changes in `irods_environment.json` | Following the Yoda 2.0 upgrade the contents of `irods_environment.json` need to be updated, see [the manual](/tools/yoda/yoda_using_icommands.qmd#environment-file). This is due to an upgrade to the underlying irods system. |  |  |
-| Icon of new user does not reflect role | When a Group Manager changes the role of a recently added user, the icon is not changed. The correct icon will be visible after the user has accepted the SRAM invitation. | Try to change the role of the user again, the system will show a notification stating the user already has this role. | Expected to be fixed in Yoda 2.1 | 
-| Revisions not available | The option to "Search revisions by name" in the Search Bar does not return any results. | If you need to restore an older version of a file from backup please [contact the Research Support Desk](contact_support.qmd) | This feature is intentionally disabled to reduce storage costs. | 
-| _Dataset can be archived and published with a missing ORCID field_ | | | _Fixed in Yoda 2.0_ |
-
+| External users cannot login until they accept a new SRAM invitation | During the Yoda 2.1 upgrade on July 20 2026, all external users received a new invitation by email. They must accept this invitation to be able to login.  |  | This is due to a change in the Yoda-SRAM connection, see [the documentation](sram_invitations_eduid_activation.qmd). |
+| Revisions not available | The option to "Search revisions by name" in the Search Bar does not return any results. | If you need to restore an older version of a file from backup please [contact the Research Support Desk](contact_support.qmd) | This feature is intentionally disabled to reduce storage costs. |
+| _Securing datasets in the Vault fails with folders containing special characters_ |  |  | _Fixed in Yoda 2.1_ |
+| _Authentication errors using [Gocommands](yoda_using_gocommands.qmd) version 0.11.x_ |  |  | _Fixed in Yoda 2.1_ |
+| _Icon of new user does not reflect role_ | _When a Group Manager changes the role of a recently added user, the icon is not changed. The correct icon will be visible after the user has accepted the SRAM invitation._ |  | _Fixed in Yoda 2.1_ |
 
 ::: {.callout-tip}
 The [Yoda release notes](https://utrechtuniversity.github.io/yoda/release-notes/) mention irods bugs relevant to Yoda.
