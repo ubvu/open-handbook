@@ -238,46 +238,81 @@
     "text": "Hackathon Pull Requests\nhttps://github.com/ubvu/open-handbook/pull/277\nhttps://github.com/ubvu/open-handbook/pull/276\nhttps://github.com/ubvu/open-handbook/pull/140\nhttps://github.com/ubvu/open-handbook/pull/273\nMerged https://github.com/ubvu/open-handbook/pull/270#pullrequestreview-2467652120"
   },
   {
-    "objectID": "blog/2024-11-01hackathon.html",
-    "href": "blog/2024-11-01hackathon.html",
-    "title": "Fourth Handbook Hackathon",
+    "objectID": "blog/2026-07-07hackathon.html",
+    "href": "blog/2026-07-07hackathon.html",
+    "title": "8th Handbook Hackathon",
     "section": "",
-    "text": "Research Support Handbook\nOn October 30th, 2024, all authors participated in the fourth hackathon for the Research Support Handbook. Since the third hackathon, we migrated to rdm.vu.nl, which is a huge milestone! 🎉\nFor the fourth hackathon, we focused on tying up loose ends that we accumulated. The migration means we are now in a stable state, yet there is always more work to be done. During this hackathon, we focused on picking up stale discussions, reviewing open pull requests, and generally closing issues that we took too long to revisit.\nWe considered how (un)balanced the various Topics had gotten, because we want readers to be able to form consistent expectations. We observed that some topics are related to tools, others to concepts. Some topics are concise, whereas others are lengthy.\nOne breakout group focused on creating templates for both kinds of topics, resulting in an initial structure that will make it easier to start new topics in the future. Specifically we propose the following template structure for tools (for example, Qualtrics, HPC, DMPonline):\nAnd the following structure for concepts (for example, DMP, data citation, data storage):\nWe will follow up with a new hackathon in late november."
+    "text": "Research Support Handbook\nOn July 7, 2026, all authors participated in the eighth hackathon for the Research Support Handbook. For this hackathon, our initial plan was to focus on Tools documentation, but we worked on other parts of the website as well."
   },
   {
-    "objectID": "blog/2024-11-01hackathon.html#issues-worked-on",
-    "href": "blog/2024-11-01hackathon.html#issues-worked-on",
-    "title": "Fourth Handbook Hackathon",
-    "section": "Issues worked on",
-    "text": "Issues worked on\nhttps://github.com/ubvu/open-handbook/issues/232\nhttps://github.com/ubvu/open-handbook/issues/233"
-  },
-  {
-    "objectID": "blog/2024-11-01hackathon.html#pull-requests-worked-on",
-    "href": "blog/2024-11-01hackathon.html#pull-requests-worked-on",
-    "title": "Fourth Handbook Hackathon",
-    "section": "Pull Requests worked on",
-    "text": "Pull Requests worked on\nhttps://github.com/ubvu/open-handbook/pull/229\nhttps://github.com/ubvu/open-handbook/pull/231\nhttps://github.com/ubvu/open-handbook/pull/234\nhttps://github.com/ubvu/open-handbook/pull/235\nhttps://github.com/ubvu/open-handbook/pull/236\nhttps://github.com/ubvu/open-handbook/pull/237"
-  },
-  {
-    "objectID": "blog/2025-11-27hackathon.html",
-    "href": "blog/2025-11-27hackathon.html",
-    "title": "Seventh Handbook Hackathon",
-    "section": "",
-    "text": "Research Support Handbook\nOn November 27, 2025, all authors participated in the seventh hackathon for the Research Support Handbook. For this hackathon, we focused on Consolidating content and adding new content."
-  },
-  {
-    "objectID": "blog/2025-11-27hackathon.html#overview-of-results",
-    "href": "blog/2025-11-27hackathon.html#overview-of-results",
-    "title": "Seventh Handbook Hackathon",
+    "objectID": "blog/2026-07-07hackathon.html#overview-of-results",
+    "href": "blog/2026-07-07hackathon.html#overview-of-results",
+    "title": "8th Handbook Hackathon",
     "section": "Overview of results",
-    "text": "Overview of results\nWe updated the information about Pure and about data and software registration in Pure (link to LibGuide manuals instead of PDFs, information about Elsevier no longer supporting DataMonitor).\nWe created two practical pages related to the RDM Support Desk:\n\nGeneral information about the RDM Support Desk\nLanding page for requesting access to datasets\n\nRegarding videos in the Research Support Handbook: We stored relevant videos in Panopto and embedded them in our website from there, replacing the YouTube videos. This helps us maintain all video material in a central place and another advantage is that we don’t get suggestions for other videos once a video has ended, as on YouTube.\nWe expanded the Research Software topic by referring to related information in the Research Support Handbook.\nWe continued working on the topic de-identifying data, but this is still in progress.\nA few updates have been done in tools documentation for Yoda, ADA and SciStor before, during and after the hackathon. We have improved navigation in the tools section as well.\nFinally, a new release of the Handbook has been created on Zenodo."
+    "text": "Overview of results\nWith respect to tools, we did the following:\n\nWe updated Yoda documentation (see below for specifics)\nWe did small updates in the Snellius and Research Drive information\n\nWe checked external links and found a number of broken links, which have all been repaired now.\nWe published two new topics: Research Software Management and Version Control.\nA group of colleagues is working on information about AI and LLMs, including advice on how to use AI tools responsibly. This is work in progress, it has not been published yet. We’ll keep you posted."
   },
   {
-    "objectID": "blog/2025-11-27hackathon.html#hackathon-issues-and-pull-requests",
-    "href": "blog/2025-11-27hackathon.html#hackathon-issues-and-pull-requests",
-    "title": "Seventh Handbook Hackathon",
+    "objectID": "blog/2026-07-07hackathon.html#hackathon-issues-and-pull-requests",
+    "href": "blog/2026-07-07hackathon.html#hackathon-issues-and-pull-requests",
+    "title": "8th Handbook Hackathon",
     "section": "Hackathon Issues and Pull Requests",
-    "text": "Hackathon Issues and Pull Requests\n\nData and software registration updates: Issue #250, PR #621 and PR #623; PR #627 for updates in the general information about Pure. Note that the information about Pure has been transferred from topics to tools see Issue #675 and see PR #678.\nRDM Support Desk: Issue #588 and PR #610 for the information page and Issue #589 and PR #631 for the landing page with information about requesting access to datasets.\nResearch software information: Issue #410 and PR #624.\nTopic de-identifying data: Issue #492"
+    "text": "Hackathon Issues and Pull Requests\n\nBroken link fixes: PRs 861, 866, 868, 870, 871 and 872\nTopic Research Software Management: Issue 490, PR 856\nTopic Version Control: Issue 613, PR 877\nUpdated Yoda documentation:\n\nIssue 858, PR 878\nIssue 874, PR 881\nIssue 876, PR 883\nIssue 885, PR 886\n\nUpdated Snellius documentation: PR 852\nUpdated Research Drive documentation: Issue 867, PR 879\nTechnical maintenance: PR 882, PR 865"
+  },
+  {
+    "objectID": "blog/2024-05-23welcome.html",
+    "href": "blog/2024-05-23welcome.html",
+    "title": "Hello world!",
+    "section": "",
+    "text": "Research Support Handbook\n\n\n\n\nThis is the first blog entry on the Research Support Handbook. We will be posting more at a later time, and are looking forward to your contributions as well.\nWe will follow up with more details later."
+  },
+  {
+    "objectID": "blog/2024-10-22post-mortem.html",
+    "href": "blog/2024-10-22post-mortem.html",
+    "title": "Why was rdm.vu.nl down for ten hours?",
+    "section": "",
+    "text": "Research Support Handbook\nOn Friday October 18th 2024, we experienced around ten hours of downtime on the rdm.vu.nl website. The downtime started around 10AM after merging changes to the handbook and was resolved the same day, by 8PM.1"
+  },
+  {
+    "objectID": "blog/2024-10-22post-mortem.html#root-cause",
+    "href": "blog/2024-10-22post-mortem.html#root-cause",
+    "title": "Why was rdm.vu.nl down for ten hours?",
+    "section": "Root cause",
+    "text": "Root cause\nThe downtime started after merging changes to the handbook in commit 669b065. These changes themselves, did not cause the downtime. The root cause was an incorrect configuration in the deployment of the webpage, which inadvertently removed the rdm.vu.nl domain name from the GitHub settings every time we made changes in the handbook and redeployed the website. This resulted in 404 errors that the page could not be found.\nWe first observed this issue on Thursday, one day prior to the downtime, in commit 678ff88. We proposed a fix for this issue in #220, before the downtime started."
+  },
+  {
+    "objectID": "blog/2024-10-22post-mortem.html#how-could-the-downtime-happen-if-the-fix-was-clear",
+    "href": "blog/2024-10-22post-mortem.html#how-could-the-downtime-happen-if-the-fix-was-clear",
+    "title": "Why was rdm.vu.nl down for ten hours?",
+    "section": "How could the downtime happen if the fix was clear?",
+    "text": "How could the downtime happen if the fix was clear?\nThe fix for the domain specification was not merged in time for two reasons.\n\nReason 1\nAt this time, we require two reviews before merging changes to the handbook. The fix was proposed at 1.11PM on Thursday, and did not receive the required reviews by the time the downtime happened (reason 1). However, this was a technical administration task and could have been merged immediately, as this supercedes regular review procedures.\n\n\nReason 2\nThe domain specification fix was not immediately merged to allow time to pass and ensure the fix was appropriate upon further reflection. This is because administrator (chartgerink?) both proposed the fix and would also be the one to supercede the “two reviews” requirement. Due to travel, the administrator forgot about it in the morning, and only saw the messages about the downtime at 8PM. At that time, the fix was quickly merged and the downtime resolved."
+  },
+  {
+    "objectID": "blog/2024-10-22post-mortem.html#improvements",
+    "href": "blog/2024-10-22post-mortem.html#improvements",
+    "title": "Why was rdm.vu.nl down for ten hours?",
+    "section": "Improvements",
+    "text": "Improvements\nThe domain configuration is corrected and the deployment ensures the domain name is re-added to the GitHub settings every time there are changes to the handbook. This is now automated, which ensures that the domain name will not be removed inadvertently when future changes are incorporated.\nHowever, we also learned that critical administration fixes should not be left open for longer than is absolutely necessary. Here it was left open for longer than absolutely necessary due to travel, and a second administrator could have caught this issue sooner. This means we should work towards resilient reporting mechanisms to escalate such critical issues, and build capacity in the editor team to ensure no one person is responsible for merging critical fixes that are already available."
+  },
+  {
+    "objectID": "blog/2024-10-22post-mortem.html#acknowledgements",
+    "href": "blog/2024-10-22post-mortem.html#acknowledgements",
+    "title": "Why was rdm.vu.nl down for ten hours?",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\nWe would like to thank the editors for dealing with the stress from this inadvertent issue. We also thank the community for their patience as we only recently migrated to rdm.vu.nl and figure out these initial unexpected hurdles."
+  },
+  {
+    "objectID": "blog/2024-10-22post-mortem.html#references",
+    "href": "blog/2024-10-22post-mortem.html#references",
+    "title": "Why was rdm.vu.nl down for ten hours?",
+    "section": "References",
+    "text": "References\n\nRoot cause for the downtime first observed in commit 678ff88\nProposed a fix for the root cause in pull Request #220\nDowntime started at commit 669b065 is where the\nResolved downtime in commit 678ff88"
+  },
+  {
+    "objectID": "blog/2024-10-22post-mortem.html#footnotes",
+    "href": "blog/2024-10-22post-mortem.html#footnotes",
+    "title": "Why was rdm.vu.nl down for ten hours?",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nubvu.github.io/open-handbook remained online during this entire time, and functions indirectly as a backup.↩︎"
   },
   {
     "objectID": "blog/2025-05-15embed-iframe.html",
@@ -2259,7 +2294,7 @@
     "href": "tools/yoda/group_manager.html#how-to-granting-access-to-a-group",
     "title": "Managing Groups, Users and Access Rights",
     "section": "How to: Granting access to a group",
-    "text": "How to: Granting access to a group\nIf you are the group manager of a group, you will be able to add users to the group in the following way:\n\nNavigate to the Yoda portal.\nLog in with your email address.\nClick on the button on the top-right with your username.\n\n\n\n\nGroup manager\n\n\n\nIn the left pane of the Group Manager, select the group.\nClick on the link “Click here to add a new user to the group”.\nEnter the email address of the user. The address must be entered entirely in lower case.\nIf the email address is new for Yoda you will have the option to create the user otherwise you add the existing user to this group.\n\n\n\n\nAdding user\n\n\nThe added user will receive an invitation to join the connected SRAM collaboration. Most users will be able to log in with their own institutional account, if their institute is not connected to SRAM they need to create an eduID (NL) account.\nBy default, a new user will be a regular member of the group. If you want the user to be a member with read-only access or a group manager, see below for how to change users’ roles.",
+    "text": "How to: Granting access to a group\nIf you are the group manager of a group, you will be able to add users to the group in the following way:\n\nNavigate to the Yoda portal.\nLog in with your email address.\nClick on the button on the top-right with your username.\n\n\n\n\nGroup manager\n\n\n\nIn the left pane of the Group Manager, select the group.\nClick on the link “Click here to add a new user to the group”.\nEnter the email address of the user. The address must be entered entirely in lower case.\nIf the email address is new for Yoda you will have the option to create the user otherwise you add the existing user to this group.\n\n\n\n\nAdding user\n\n\nIf the user is external (no VU email address) they will receive an invitation to join the SURF Research Access Management (SRAM) Collaboration for external VU Yoda users.\nMost users will be able to log in with their own institutional account; if their institute is not connected to SRAM they need to create an eduID (NL) account.\nBy default, a new user will be a regular member of the group. If you want the user to be a member with read-only access or a group manager, see below for how to change users’ roles.",
     "crumbs": [
       "Yoda",
       "Documentation",
@@ -2272,7 +2307,7 @@
     "href": "tools/yoda/group_manager.html#how-to-changing-the-role-of-a-user-in-a-group",
     "title": "Managing Groups, Users and Access Rights",
     "section": "How to: Changing the role of a user in a group",
-    "text": "How to: Changing the role of a user in a group\nIf you are the group manager of a group, you will be able to alter the role of other members.\nUsers can have three different roles in a group:\n\nMember with read-only access: is able to view or download files in the group.\nRegular member: can view, download, upload, modify or delete files and folders in the group.\nGroup manager: is able to grant and revoke access rights for the group. Can also view, download, upload, modify or delete files and folders in the group.\n\nIn order to change the role of a group member:\n\nNavigate to the Yoda portal.\nLog in.\nClick on the button on the top-right with your username.\n\n\n\n\nGroup manager\n\n\n\nIn the left pane of the Group Manager, select the group.\nIn the right pane of the Group Manager, select the user.\nPress one of the buttons next to the “Change role” label to change the user’s role.\n\n\n\n\nSetting user rights\n\n\nNote that you can only change the role of the user after they have accepted the SRAM invitation.",
+    "text": "How to: Changing the role of a user in a group\nIf you are the group manager of a group, you will be able to alter the role of other members.\nUsers can have three different roles in a group:\n\nMember with read-only access: is able to view or download files in the group.\nRegular member: can view, download, upload, modify or delete files and folders in the group.\nGroup manager: is able to grant and revoke access rights for the group. Can also view, download, upload, modify or delete files and folders in the group.\n\nIn order to change the role of a group member:\n\nNavigate to the Yoda portal.\nLog in.\nClick on the button on the top-right with your username.\n\n\n\n\nGroup manager\n\n\n\nIn the left pane of the Group Manager, select the group.\nIn the right pane of the Group Manager, select the user.\nPress one of the buttons next to the “Change role” label to change the user’s role.\n\n\n\n\nSetting user rights",
     "crumbs": [
       "Yoda",
       "Documentation",
@@ -2285,7 +2320,7 @@
     "href": "tools/yoda/group_manager.html#how-to-revoking-access-to-a-group",
     "title": "Managing Groups, Users and Access Rights",
     "section": "How to: Revoking access to a group",
-    "text": "How to: Revoking access to a group\nIf you are the group manager of a group, you will be able to revoke access to a group in the following way:\n\nNavigate to the Yoda portal.\nLog in.\nClick on the button on the top-right with your username.\n\n\n\n\nGroup manager\n\n\n\nIn the left pane of the Group Manager, select the group.\nIn the right pane of the Group Manager, select the user.\nClick on the red “Remove user” button.\n\n\n\n\nRemoving user\n\n\nNote that you can only remove a user after they have accepted the SRAM invitation.",
+    "text": "How to: Revoking access to a group\nIf you are the group manager of a group, you will be able to revoke access to a group in the following way:\n\nNavigate to the Yoda portal.\nLog in.\nClick on the button on the top-right with your username.\n\n\n\n\nGroup manager\n\n\n\nIn the left pane of the Group Manager, select the group.\nIn the right pane of the Group Manager, select the user.\nClick on the red “Remove user” button.\n\n\n\n\nRemoving user",
     "crumbs": [
       "Yoda",
       "Documentation",
@@ -2309,7 +2344,7 @@
     "href": "tools/yoda/quick_start.html#access-and-getting-started",
     "title": "Quick Start",
     "section": "Access and getting Started",
-    "text": "Access and getting Started\n\nRequesting project space\nIf your research project does not have a project space yet, request it first. A Yoda functional admin will create the project space and invite you as a Group Manager.\n\n\nInviting colleagues\nOnce a project space is created a user with the Group Manager role can invite colleagues and set their access rights.\n\n\nLogging in\nNewly added users receive an invitation, after accepting they can login with their institutional account (VUnetId), with their primary e-mail address as username.",
+    "text": "Access and getting Started\n\nRequesting project space\nIf your research project does not have a project space yet, request it first. A Yoda functional admin will create the project space and invite you as a Group Manager.\n\n\nInviting colleagues\nOnce a project space is created a user with the Group Manager role can invite colleagues and set their access rights.\n\n\nLogging in\nVU users can login straight away after being added, with their primary email address as username.\nNewly added external users receive an invitation, after accepting they can login with their institutional account or EduID, with their primary e-mail address as username.",
     "crumbs": [
       "Yoda",
       "Quick Start"
@@ -2457,40 +2492,40 @@
   {
     "objectID": "tools/yoda/sram_invitations_eduid_activation.html",
     "href": "tools/yoda/sram_invitations_eduid_activation.html",
-    "title": "SRAM Invitations and eduID Activation",
+    "title": "External users - SRAM Invitations and eduID Activation",
     "section": "",
     "text": "Research Support Handbook\nTo access the Yoda Portal a Single Sign-On (SSO) is required. Access to a Yoda project is managed through SRAM, where you receive an invitation to join a collaboration. If you are not affiliated with a research or educational institution, you can create a free eduID account. The system will guide you through the process.\nYou can create an account via the eduID page and use it to log in to SRAM and accept your collaboration invitation.",
     "crumbs": [
       "Yoda",
       "Documentation",
       "Yoda Portal",
-      "SRAM Invitations and eduID Activation"
+      "External users - SRAM Invitations and eduID Activation"
     ]
   },
   {
     "objectID": "tools/yoda/sram_invitations_eduid_activation.html#how-to-invitation-to-yoda-collaboration",
     "href": "tools/yoda/sram_invitations_eduid_activation.html#how-to-invitation-to-yoda-collaboration",
-    "title": "SRAM Invitations and eduID Activation",
+    "title": "External users - SRAM Invitations and eduID Activation",
     "section": "How to: Invitation to Yoda collaboration",
-    "text": "How to: Invitation to Yoda collaboration\nAfter you are added to a Yoda group by the admin or a colleague you will receive an invitation to join a Yoda “collaboration” in SRAM (SURF Research Access Management). The “join” link in the invitation will lead you to SRAM.  \n\nIf you have not logged in to SRAM before with your browser, you will see the following screen where you can search for your institute: \n\n\nIf your institute is included in this list and if you are affiliated with a research or education organisation you can choose your institution name which will redirect you to your familiar institutional login page.\nIf your institute is not in this list or if you are not affiliated with a research or education organisation please choose eduID (NL). If you do not yet have an eduID you can create one for free, the system will guide you through the process. More information on eduID [here])https://login.eduid.nl/request/436c7382-bc00-45f0-b75e-2ede39b49445?lang=en)\n\n\n\n\nSRAM login with eduID\n\n\n\nWhen logged in you will be shown a welcome screen in SRAM, click proceed to accept the invitation.\nNow click the “Open” button to go to the Yoda portal.",
+    "text": "How to: Invitation to Yoda collaboration\nAfter you are added to a Yoda group by the admin or a colleague you will receive an invitation to join a Yoda “collaboration” in SRAM (SURF Research Access Management). The “join” link in the invitation will lead you to SRAM.  \n\nIf you have not logged in to SRAM before with your browser, you will see the following screen where you can search for your institute: \n\n\nIf your institute is included in this list and if you are affiliated with a research or education organisation you can choose your institution name which will redirect you to your familiar institutional login page.\nIf your institute is not in this list or if you are not affiliated with a research or education organisation please choose eduID (NL). If you do not yet have an eduID you can create one for free, the system will guide you through the process. More information on eduID is available on the eduID page\n\n\n\n\nSRAM login with eduID\n\n\n\nWhen logged in you will be shown a welcome screen in SRAM, click proceed to accept the invitation.\nNow click the “Open” button to go to the Yoda portal.",
     "crumbs": [
       "Yoda",
       "Documentation",
       "Yoda Portal",
-      "SRAM Invitations and eduID Activation"
+      "External users - SRAM Invitations and eduID Activation"
     ]
   },
   {
     "objectID": "tools/yoda/sram_invitations_eduid_activation.html#how-to-creating-eduid-throught-sram-invitation",
     "href": "tools/yoda/sram_invitations_eduid_activation.html#how-to-creating-eduid-throught-sram-invitation",
-    "title": "SRAM Invitations and eduID Activation",
+    "title": "External users - SRAM Invitations and eduID Activation",
     "section": "How to: Creating eduID throught SRAM invitation",
     "text": "How to: Creating eduID throught SRAM invitation\n\nAfter choosing eduID (NL) you can fill in the email address to create a new eduID account or log in to your acount.\n\n\n\n\n\nAfter requesting the account, an email is sent to your inbox to verify your eduID account. Please note that the email doesn’t always appear in the inbox folder and may be forwarded to your spam folder.\nIn order to proceed to Yoda Portal succsefuly, the eduID app is needed which can be downloaded and installed on any phone device.\n\n\n\n\nInstalling eduID app\n\n\n\nAfter setting up the app you can proceed to scan the QR code with your app.\n\n\n\n\nscanning QR code\n\n\n\nIf you wish to set up a recovery method, you can proceed to add a phone number.\n\n\n\n\nSetting up a recovery method",
     "crumbs": [
       "Yoda",
       "Documentation",
       "Yoda Portal",
-      "SRAM Invitations and eduID Activation"
+      "External users - SRAM Invitations and eduID Activation"
     ]
   },
   {
@@ -2558,7 +2593,7 @@
     "href": "tools/yoda/known_issues.html",
     "title": "Known Issues",
     "section": "",
-    "text": "Research Support Handbook\n\n\n\n\nYoda version 2.0\n\n\n\nIssue\nDescription\nWorkaround\nStatus\n\n\n\n\nAuthentication errors using Gocommands version 0.11.x\nThe 0.11.x versions of Gocommands are incompatible with Yoda 2.0\nUse version 0.10.26\nExpected to be fixed in Yoda 2.1\n\n\nSecuring datasets in the Vault fails with folders containing special characters\nWhen a datamanager accepts a Vault submission it is copied to the Vault folder. This process sometimes fails if a foldername in the dataset contains special characters (this includes the diaeresis sign, e.g. ö).\nEnsure folder names do not contain special characters before submitting.\nExpected to be fixed in Yoda 2.1\n\n\nConnecting using icommands fails due to changes in irods_environment.json\nFollowing the Yoda 2.0 upgrade the contents of irods_environment.json need to be updated, see the manual. This is due to an upgrade to the underlying irods system.\n\n\n\n\nIcon of new user does not reflect role\nWhen a Group Manager changes the role of a recently added user, the icon is not changed. The correct icon will be visible after the user has accepted the SRAM invitation.\nTry to change the role of the user again, the system will show a notification stating the user already has this role.\nExpected to be fixed in Yoda 2.1\n\n\nRevisions not available\nThe option to “Search revisions by name” in the Search Bar does not return any results.\nIf you need to restore an older version of a file from backup please contact the Research Support Desk\nThis feature is intentionally disabled to reduce storage costs.\n\n\nDataset can be archived and published with a missing ORCID field\n\n\nFixed in Yoda 2.0\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nThe Yoda release notes mention irods bugs relevant to Yoda.",
+    "text": "Research Support Handbook\n\n\n\n\nYoda version 2.1\n\n\n\nIssue\nDescription\nWorkaround\nStatus\n\n\n\n\nExternal users cannot login until they accept a new SRAM invitation\nDuring the Yoda 2.1 upgrade on July 20 2026, all external users received a new invitation by email. They must accept this invitation to be able to login.\n\nThis is due to a change in the Yoda-SRAM connection, see the documentation.\n\n\nRevisions not available\nThe option to “Search revisions by name” in the Search Bar does not return any results.\nIf you need to restore an older version of a file from backup please contact the Research Support Desk\nThis feature is intentionally disabled to reduce storage costs.\n\n\nSecuring datasets in the Vault fails with folders containing special characters\n\n\nFixed in Yoda 2.1\n\n\nAuthentication errors using Gocommands version 0.11.x\n\n\nFixed in Yoda 2.1\n\n\nIcon of new user does not reflect role\nWhen a Group Manager changes the role of a recently added user, the icon is not changed. The correct icon will be visible after the user has accepted the SRAM invitation.\n\nFixed in Yoda 2.1\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nThe Yoda release notes mention irods bugs relevant to Yoda.",
     "crumbs": [
       "Yoda",
       "Known Issues"
@@ -3783,7 +3818,7 @@
     "href": "blog.html",
     "title": "News",
     "section": "",
-    "text": "Research Support Handbook\n\n\n\n\nSubscribe to News via RSS.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRestructuring and redesign\n\n\n\nHandbook\n\n\n\n\n\n\n\n\n\nMar 19, 2026\n\n\nJolien Scholten, Peter Vos\n\n\n\n\n\n\n\n\n\n\n\n\nSeventh Handbook Hackathon\n\n\n\nHandbook\n\nHackathon\n\n\n\n\n\n\n\n\n\nNov 27, 2025\n\n\nDiógenes Cruz de Arcelino, Kirianne Goossen, Sergio Gutierrez Maury, Elisa Rodenburg, Jolien Scholten, Peter Vos, Tycho Hofstra, Jessica Hrudey, Tim Veken, Janna Toebosch, Sreenithya Avadakkam, Wiebe Timmers, Abeer Pervaiz\n\n\n\n\n\n\n\n\n\n\n\n\nNew Manuals section in the Handbook\n\n\n\nHandbook\n\nYoda\n\n\n\n\n\n\n\n\n\nJul 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nSixth Handbook Hackathon\n\n\n\nHandbook\n\nHackathon\n\n\n\n\n\n\n\n\n\nJul 24, 2025\n\n\nEmily Barabas, Diógenes Cruz de Arcelino, Kirianne Goossen, Charlie Greene, Sergio Gutierrez Maury, Sam Heijnen, Marcel Ras, Elisa Rodenburg, Jolien Scholten, Dimitri Unger, Peter Vos\n\n\n\n\n\n\n\n\n\n\n\n\nITvO blog\n\n\n\nIT for Research\n\n\n\n\n\n\n\n\n\nJul 24, 2025\n\n\nSergio Gutierrez, Peter Vos\n\n\n\n\n\n\n\n\n\n\n\n\nHow to embed handbook pages using iframes\n\n\n\nHandbook\n\n\n\n\n\n\n\n\n\nMay 19, 2025\n\n\nChris Hartgerink, Elisa Rodenburg, Jessica Hrudey\n\n\n\n\n\n\n\n\n\n\n\n\nFifth Handbook Hackathon\n\n\n\nHandbook\n\nHackathon\n\n\n\n\n\n\n\n\n\nNov 28, 2024\n\n\nLena Karvovskaya, Jolien Scholten, Kostas Vilkelis, Tycho Hofstra, Irene Martorelli, Peter Vos\n\n\n\n\n\n\n\n\n\n\n\n\nFourth Handbook Hackathon\n\n\n\nHandbook\n\nHackathon\n\n\n\n\n\n\n\n\n\nNov 1, 2024\n\n\nChris Hartgerink, Lena Karvovskaya, Jolien Scholten, Tycho Hofstra, Elisa Rodenburg, Stephanie van de Sandt\n\n\n\n\n\n\n\n\n\n\n\n\nWhy was rdm.vu.nl down for ten hours?\n\n\n\nHandbook\n\n\n\n\n\n\n\n\n\nOct 22, 2024\n\n\nChris Hartgerink, Lena Karvovskaya\n\n\n\n\n\n\n\n\n\n\n\n\nThird Handbook Hackathon\n\n\n\nHandbook\n\nHackathon\n\n\n\n\n\n\n\n\n\nSep 30, 2024\n\n\nAlex van der Jagt, FGB, sec. KNOP, Chris Hartgerink (host), Diogenes Cruz de Arcelino, Elisa Rodenburg, UBVU, Jessica Hrudey, FGB, Jolien Scholten, UB, Lena Karvovskaya, UBVU, Stephanie van de Sandt, UBVU, Tycho Hofstra, UBVU\n\n\n\n\n\n\n\n\n\n\n\n\nSecond Handbook Hackathon\n\n\n\nHandbook\n\nHackathon\n\n\n\n\n\n\n\n\n\nSep 5, 2024\n\n\nAlex van der Jagt, Chris Hartgerink, Elisa Rodenburg, Jens de Bruijn, Jolien Scholten, Joy Jiayi Cheng, Lena Karvovskaya, Meron Vermaas, Peter Vos, Stephanie van de Sandt, Tycho Hofstra\n\n\n\n\n\n\n\n\n\n\n\n\nFirst Handbook Hackathon\n\n\n\nHandbook\n\nHackathon\n\n\n\n\n\n\n\n\n\nJun 27, 2024\n\n\nAlex van der Jagt, Chris Hartgerink, Dimitri Unger, Elisa Rodenburg, Jessica Hrudey, Jolien Scholten, Lena Karvovskaya, Lucy O’ Shea, Mar Barrantes-Cepas, Meron Vermaas, Peter Vos, Stephanie van de Sandt\n\n\n\n\n\n\n\n\n\n\n\n\nHello world!\n\n\n\nHandbook\n\n\n\n\n\n\n\n\n\nMay 23, 2024\n\n\n\n\n\nNo matching items"
+    "text": "Research Support Handbook\n\n\n\n\nSubscribe to News via RSS.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYoda 2.1 upgrade\n\n\n\nYoda\n\n\n\n\n\n\n\n\n\nJul 20, 2026\n\n\nPeter Vos, Diógenes Cruz de Arcelino\n\n\n\n\n\n\n\n\n\n\n\n\n8th Handbook Hackathon\n\n\n\nHandbook\n\nHackathon\n\n\n\n\n\n\n\n\n\nJul 7, 2026\n\n\nElisa Rodenburg, Jolien Scholten, Peter Vos, Morgan Taylor Peterson, Dania Dukmak, Dimitri Unger, Irene Martorelli, Charlie Greene\n\n\n\n\n\n\n\n\n\n\n\n\nRestructuring and redesign\n\n\n\nHandbook\n\n\n\n\n\n\n\n\n\nMar 19, 2026\n\n\nJolien Scholten, Peter Vos\n\n\n\n\n\n\n\n\n\n\n\n\nSeventh Handbook Hackathon\n\n\n\nHandbook\n\nHackathon\n\n\n\n\n\n\n\n\n\nNov 27, 2025\n\n\nDiógenes Cruz de Arcelino, Kirianne Goossen, Sergio Gutierrez Maury, Elisa Rodenburg, Jolien Scholten, Peter Vos, Tycho Hofstra, Jessica Hrudey, Tim Veken, Janna Toebosch, Sreenithya Avadakkam, Wiebe Timmers, Abeer Pervaiz\n\n\n\n\n\n\n\n\n\n\n\n\nNew Manuals section in the Handbook\n\n\n\nHandbook\n\nYoda\n\n\n\n\n\n\n\n\n\nJul 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nSixth Handbook Hackathon\n\n\n\nHandbook\n\nHackathon\n\n\n\n\n\n\n\n\n\nJul 24, 2025\n\n\nEmily Barabas, Diógenes Cruz de Arcelino, Kirianne Goossen, Charlie Greene, Sergio Gutierrez Maury, Sam Heijnen, Marcel Ras, Elisa Rodenburg, Jolien Scholten, Dimitri Unger, Peter Vos\n\n\n\n\n\n\n\n\n\n\n\n\nITvO blog\n\n\n\nIT for Research\n\n\n\n\n\n\n\n\n\nJul 24, 2025\n\n\nSergio Gutierrez, Peter Vos\n\n\n\n\n\n\n\n\n\n\n\n\nHow to embed handbook pages using iframes\n\n\n\nHandbook\n\n\n\n\n\n\n\n\n\nMay 19, 2025\n\n\nChris Hartgerink, Elisa Rodenburg, Jessica Hrudey\n\n\n\n\n\n\n\n\n\n\n\n\nFifth Handbook Hackathon\n\n\n\nHandbook\n\nHackathon\n\n\n\n\n\n\n\n\n\nNov 28, 2024\n\n\nLena Karvovskaya, Jolien Scholten, Kostas Vilkelis, Tycho Hofstra, Irene Martorelli, Peter Vos\n\n\n\n\n\n\n\n\n\n\n\n\nFourth Handbook Hackathon\n\n\n\nHandbook\n\nHackathon\n\n\n\n\n\n\n\n\n\nNov 1, 2024\n\n\nChris Hartgerink, Lena Karvovskaya, Jolien Scholten, Tycho Hofstra, Elisa Rodenburg, Stephanie van de Sandt\n\n\n\n\n\n\n\n\n\n\n\n\nWhy was rdm.vu.nl down for ten hours?\n\n\n\nHandbook\n\n\n\n\n\n\n\n\n\nOct 22, 2024\n\n\nChris Hartgerink, Lena Karvovskaya\n\n\n\n\n\n\n\n\n\n\n\n\nThird Handbook Hackathon\n\n\n\nHandbook\n\nHackathon\n\n\n\n\n\n\n\n\n\nSep 30, 2024\n\n\nAlex van der Jagt, FGB, sec. KNOP, Chris Hartgerink (host), Diogenes Cruz de Arcelino, Elisa Rodenburg, UBVU, Jessica Hrudey, FGB, Jolien Scholten, UB, Lena Karvovskaya, UBVU, Stephanie van de Sandt, UBVU, Tycho Hofstra, UBVU\n\n\n\n\n\n\n\n\n\n\n\n\nSecond Handbook Hackathon\n\n\n\nHandbook\n\nHackathon\n\n\n\n\n\n\n\n\n\nSep 5, 2024\n\n\nAlex van der Jagt, Chris Hartgerink, Elisa Rodenburg, Jens de Bruijn, Jolien Scholten, Joy Jiayi Cheng, Lena Karvovskaya, Meron Vermaas, Peter Vos, Stephanie van de Sandt, Tycho Hofstra\n\n\n\n\n\n\n\n\n\n\n\n\nFirst Handbook Hackathon\n\n\n\nHandbook\n\nHackathon\n\n\n\n\n\n\n\n\n\nJun 27, 2024\n\n\nAlex van der Jagt, Chris Hartgerink, Dimitri Unger, Elisa Rodenburg, Jessica Hrudey, Jolien Scholten, Lena Karvovskaya, Lucy O’ Shea, Mar Barrantes-Cepas, Meron Vermaas, Peter Vos, Stephanie van de Sandt\n\n\n\n\n\n\n\n\n\n\n\n\nHello world!\n\n\n\nHandbook\n\n\n\n\n\n\n\n\n\nMay 23, 2024\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "guides/publishing-fair-software.html",
@@ -4959,7 +4994,7 @@
     "href": "tools/yoda/vault_archive.html#how-to-submitting-a-data-package-to-the-vault",
     "title": "Archiving Data",
     "section": "How to: Submitting a data package to the Vault",
-    "text": "How to: Submitting a data package to the Vault\nIn order to submit a data package to the vault, you need to be either a group manager or a regular member of the group that contains the data.\n\nFirst, navigate to the folder you want to archive in the Yoda portal. Ensure that you are in the folder which you want to submit to the vault. Check that all mandatory metadata has been entered in the metadata form of the folder.\nNow press the “Actions (Submit)” button.\n\n\n\n\nSubmit\n\n\nIf any mandatory metadata is missing, the system will tell you what metadata still needs to be entered. If all required metadata is present, the system will lock the folder and its subfolders during the archiving process. This ensures that data in the folder can no longer be changed. Once the system has copied all data to the vault, the lock will be removed automatically.",
+    "text": "How to: Submitting a data package to the Vault\nIn order to submit a data package to the vault, you need to be either a group manager or a regular member of the group that contains the data.\n\nFirst, navigate to the folder you want to archive in the Yoda portal. Ensure that you are in the folder which you want to submit to the vault. Check that all mandatory metadata has been entered in the metadata form of the folder.\nNow press the “Actions (Submit)” button.\n\n\n\n\nSubmit\n\n\nIf any mandatory metadata is missing, the system will tell you what metadata still needs to be entered.\nYou will be presented with a choice to copy or move the dataset:\n\n\n\nSubmit, copy or move\n\n\nIf you are not planning to work further on the dataset after archiving/publication, choose move. Note that you can always copy the dataset back from the Vault to Research space later.\nIf all required metadata is present, the system will lock the folder and its subfolders during the archiving process. This ensures that data in the folder can no longer be changed. Once the system has copied all data to the vault, the lock will be removed automatically.",
     "crumbs": [
       "Yoda",
       "Documentation",
@@ -5141,7 +5176,7 @@
     "href": "tools/yoda/faq.html",
     "title": "FAQ",
     "section": "",
-    "text": "Research Support Handbook\n\n\n\n\n\nWhat is Yoda?\nYODA is an application for institutions that supports RDM throughout the entire research cycle: from the safe and easy storage and sharing of data during the research process, to the sharing of data within research groups and projects and ultimately to research data archiving and publication\n\n\nHow do I Request Project Space on Yoda?\nEvery VU researcher can request storage space for their projects in Yoda. Requesting space is done via a request form. Please note that because there can be costs involved, you need to supply a budget code. You can find more about the costs involved in the Cost Model.\n\n\nHow do I Access Yoda?\nThe Yoda administrator will create a new Yoda Group and folder for you in the system and invite you to this Group. You can then access Yoda via the Yoda Portal at https://portal.yoda.vu.nl/.\n\n\nDo I need special credentials to access Yoda?\nAs a VU researcher, once your project space on Yoda is confirmed, you will be able to login using your (primary) e-mail address (no aliases or VUnetId) and password. You can further access your project folder through network drive in your file manager or client software. You can find more information about logging in to the Yoda portal here.\n\n\nCan I Invite others to Collaborate on my Research Projects?\nYes, you can. Once your Project Space is confirmed by the Yoda Administrator, you can invite others to have access to it as well. As project owner, you are automatically designated Group Manager. You can find more information about managing access here.\n\n\nWhat is a Group Manager?\nWithin a Yoda project space, a Group manager is able to grant and revoke access rights for other users to the group. Can also view, download, upload, modify or delete files and folders in the group. A Group Manager will be a Project owner or a Delegate. More information about managing groups, users and access rights can be found here.\n\n\nWhat rights can I grant to those collaborating with me on Yoda Projects?\nProject members with read-only access: are able to view or download files in the group. Regular project members: can view, download, upload, modify or delete files and folders in the project space. More information about managing groups, users and access rights can be found here.\n\n\nIf I revoke rights access from a user, will the data uploaded by that user be deleted?\nNo, the data will not be deleted by revoking a user’s access rights.\n\n\nWhat Type of data may I store on Yoda?\nIt is suitable for sensitive data. Yoda cannot be used for research projects that involve extremely sensitive datasets, such as state secrets or medical information of vulnerable individuals. When in doubt about what type of data you’re dealing with, please consult your Faculty Data Steward and/or Privacy Champion.\n\n\nWhat else can I do on Yoda besides Data Storage?\nIt supports the entire research process from data acquisition to publication. It enables data publication and the associated minting of persistent identifiers (DOIs). It offers support for standardised workflows for the storage and archiving of research data. You can find more information in the Yoda Topic Page.\n\n\nWhat is Metadata? And why is it Important when Using Yoda?\nMetadata is “data about data”. Metadata serves multiple purposes in Yoda. Yoda facilitates adding both structured and unstructured metadata to your research data. Entering structured metadata is a prerequisite for archiving a data package. If a folder is published, its structured metadata will be published as well and can be harvested by data catalogs such as DANS NARCIS and DataCite. You can find more information about Metadata here.\n\n\nWhat is a Data Package?\nThe data in your research data compartment is a set of files and folders. If part of this data is to be archived, the collection of this data, including its folder structure, appropriate metadata, documentation which describes the data in more detail (such as a readme.txt file or codebook files), are collectively referred to as Data Package.\n\n\nHow does Archiving works in Yoda?\nIf you choose to archive a part of your data, Yoda will make a copy of the data to the archive (also known as “Vault”) of your project space, where it will be retained unchanged during its retention period. You can visit the Vault Page for more information about archiving data.\n\n\nHow Do I Submit a Data Package to The Vault?\nOnly Group Manager or regular group members may submit data packages to the Vault. Navigate to the folder you want to archive in the Yoda portal. Ensure that you are in the folder which you want to submit to the vault. Check that all mandatory metadata has been entered in the metadata form of the folder. Now press the “Actions (Submit)” button. You can visit the Vault Page for more information about archiving data.\n\n\nWhat is the Role of the Data Manager?\nThe data manager will check that the data package is self-evident for other researchers, and will check for compliance with privacy rules and regulations. The data manager can either approve the data package for archiving or suggest improvements.\n\n\nHow Do I Access my Archived Data?\nThe vault of your group becomes visible in the Yoda portal once it contains at least one data package. Everyone with access to your group research folder also has read-only access to the vault of your group.\n\n\nHow does Publishing works in Yoda?\nAfter archiving your data, you can optionally publish it, thus making your data findable. If you classify your data as open - freely retrievable, then the data itself can be downloaded anonymously by any third party.\n\n\nHow Do I Make My Data Package Ready for Publication?\nIf needed, you can update the metadata by clicking the “Metadata” button. To submit a data package for publication, navigate to the data package in the vault and press the “Submit for publication” button. For more information on submitting a dataset for publication you can visit Publishing Data.\n\n\nWhat is the Process of Data Review for Publication?\nOnce you’ve submitted a data package for publication, the data manager of your Yoda community will be notified. The Data Manager will check that the data package meets various criteria for publication. If the data manager encounters any issues, you will be contacted.\n\n\nHow do I receive the DOI number of my publication?\nOnce the Data Manager has approved your data package, you’ll receive an email notification that your data package has been published. This notification contains the DOI that has been assigned to your data package. You can also find the DOI by going to the Vault dataset in the Yoda webportal.\n\n\nDo I always need to make my Data Package freely available to 3rd parties?\nYou may choose what level of access you assign to your data package. If the [Access Type] metadata field is set to “Open - Freely retrievable”, the data in the data package will be published as well. If the [Access Type] metadata field is set to “Restricted” or “Closed”, the data in the data package won’t be published.\n\n\nI am a VU-student, and I have been invited to join a collaboration in Yoda but I can’t seem to be able to log in\nIt is important to ensure that you have SurfSecure MFA enabled. This is not a standard option for students and requires an appointment with IT Service Desk. Once this is in place you should be able to log into Yoda. For more information about MFA SurfSecure you can visit: MS Authenticator activation for SURF Secure ID.",
+    "text": "Research Support Handbook\n\n\n\n\n\nWhat is Yoda?\nYODA is an application for institutions that supports RDM throughout the entire research cycle: from the safe and easy storage and sharing of data during the research process, to the sharing of data within research groups and projects and ultimately to research data archiving and publication\n\n\nHow do I Request Project Space on Yoda?\nEvery VU researcher can request storage space for their projects in Yoda. Requesting space is done via a request form. Please note that because there can be costs involved, you need to supply a budget code. You can find more about the costs involved in the Cost Model.\n\n\nHow do I Access Yoda?\nThe Yoda administrator will create a new Yoda Group and folder for you in the system and invite you to this Group. You can then access Yoda via the Yoda Portal at https://portal.yoda.vu.nl/.\n\n\nDo I need special credentials to access Yoda?\nAs a VU researcher, once your project space on Yoda is confirmed, you will be able to login using your (primary) e-mail address (no aliases or VUnetId) and password. You can further access your project folder through network drive in your file manager or client software. You can find more information about logging in to the Yoda portal here.\n\n\nCan I Invite others to Collaborate on my Research Projects?\nYes, you can. Once your Project Space is confirmed by the Yoda Administrator, you can invite others to have access to it as well. As project owner, you are automatically designated Group Manager. You can find more information about managing access here.\n\n\nWhat is a Group Manager?\nWithin a Yoda project space, a Group manager is able to grant and revoke access rights for other users to the group. Can also view, download, upload, modify or delete files and folders in the group. A Group Manager will be a Project owner or a Delegate. More information about managing groups, users and access rights can be found here.\n\n\nWhat rights can I grant to those collaborating with me on Yoda Projects?\nProject members with read-only access: are able to view or download files in the group. Regular project members: can view, download, upload, modify or delete files and folders in the project space. More information about managing groups, users and access rights can be found here.\n\n\nIf I revoke rights access from a user, will the data uploaded by that user be deleted?\nNo, the data will not be deleted by revoking a user’s access rights.\n\n\nWhat Type of data may I store on Yoda?\nIt is suitable for sensitive data. Yoda cannot be used for research projects that involve extremely sensitive datasets, such as state secrets or medical information of vulnerable individuals. When in doubt about what type of data you’re dealing with, please consult your Faculty Data Steward and/or Privacy Champion.\n\n\nWhat else can I do on Yoda besides Data Storage?\nIt supports the entire research process from data acquisition to publication. It enables data publication and the associated minting of persistent identifiers (DOIs). It offers support for standardised workflows for the storage and archiving of research data. You can find more information in the Documentation.\n\n\nWhat is Metadata? And why is it Important when Using Yoda?\nMetadata is “data about data”. Metadata serves multiple purposes in Yoda. Yoda facilitates adding both structured and unstructured metadata to your research data. Entering structured metadata is a prerequisite for archiving a data package. If a folder is published, its structured metadata will be published as well and can be harvested by data catalogs such as DANS NARCIS and DataCite. You can find more information about Metadata here.\n\n\nWhat is a Data Package?\nThe data in your research data compartment is a set of files and folders. If part of this data is to be archived, the collection of this data, including its folder structure, appropriate metadata, documentation which describes the data in more detail (such as a readme.txt file or codebook files), are collectively referred to as Data Package.\n\n\nHow does Archiving works in Yoda?\nIf you choose to archive a part of your data, Yoda will make a copy of the data to the archive (also known as “Vault”) of your project space, where it will be retained unchanged during its retention period. You can visit the Vault Page for more information about archiving data.\n\n\nHow Do I Submit a Data Package to The Vault?\nOnly Group Manager or regular group members may submit data packages to the Vault. Navigate to the folder you want to archive in the Yoda portal. Ensure that you are in the folder which you want to submit to the vault. Check that all mandatory metadata has been entered in the metadata form of the folder. Now press the “Actions (Submit)” button. You can visit the Vault Page for more information about archiving data.\n\n\nWhat is the Role of the Data Manager?\nThe data manager will check that the data package is self-evident for other researchers, and will check for compliance with privacy rules and regulations. The data manager can either approve the data package for archiving or suggest improvements.\n\n\nHow Do I Access my Archived Data?\nThe vault of your group becomes visible in the Yoda portal once it contains at least one data package. Everyone with access to your group research folder also has read-only access to the vault of your group.\n\n\nHow does Publishing works in Yoda?\nAfter archiving your data, you can optionally publish it, thus making your data findable. If you classify your data as open - freely retrievable, then the data itself can be downloaded anonymously by any third party.\n\n\nHow Do I Make My Data Package Ready for Publication?\nIf needed, you can update the metadata by clicking the “Metadata” button. To submit a data package for publication, navigate to the data package in the vault and press the “Submit for publication” button. For more information on submitting a dataset for publication you can visit Publishing Data.\n\n\nWhat is the Process of Data Review for Publication?\nOnce you’ve submitted a data package for publication, the data manager of your Yoda community will be notified. The Data Manager will check that the data package meets various criteria for publication. If the data manager encounters any issues, you will be contacted.\n\n\nHow do I receive the DOI number of my publication?\nOnce the Data Manager has approved your data package, you’ll receive an email notification that your data package has been published. This notification contains the DOI that has been assigned to your data package. You can also find the DOI by going to the Vault dataset in the Yoda webportal.\n\n\nDo I always need to make my Data Package freely available to 3rd parties?\nYou may choose what level of access you assign to your data package. If the [Access Type] metadata field is set to “Open - Freely retrievable”, the data in the data package will be published as well. If the [Access Type] metadata field is set to “Restricted” or “Closed”, the data in the data package won’t be published.\n\n\nI am a VU-student, and I have been invited to join a collaboration in Yoda but I can’t seem to be able to log in\nIt is important to ensure that you have SurfSecure MFA enabled. This is not a standard option for students and requires an appointment with IT Service Desk. Once this is in place you should be able to log into Yoda. For more information about MFA SurfSecure you can visit: MS Authenticator activation for SURF Secure ID.",
     "crumbs": [
       "Yoda",
       "FAQ"
@@ -5321,7 +5356,7 @@
     "href": "tools/yoda/yoda_using_icommands.html#environment-file",
     "title": "Using iCommands",
     "section": "Environment file",
-    "text": "Environment file\nThe iCommands need to be configured to connect to the right Yoda environment.\nPlease copy and paste this configuration into your ~/.irods/irods_environment.json configuration file.\nYou will need to change the example user name to your Yoda user name.\n{\n    \"irods_host\": \"portal.yoda.vu.nl\",\n    \"irods_port\": 1247,\n    \"irods_home\": \"/vu/home\",\n    \"irods_user_name\": \"xxx@vu.nl\",\n    \"irods_zone_name\": \"vu\",\n    \"irods_authentication_scheme\": \"pam_password\",\n    \"irods_encryption_algorithm\": \"AES-256-CBC\",\n    \"irods_encryption_key_size\": 32,\n    \"irods_encryption_num_hash_rounds\": 16,\n    \"irods_encryption_salt_size\": 8,\n    \"irods_client_server_negotiation\": \"request_server_negotiation\"\n}\n\n\n\n\n\n\nImportant\n\n\n\nPlease note that irods_authentication_scheme has changed from pam to pam_password in Yoda 2.0.\n\n\nYou can also copy the contents from the “Data Transfer” page on the Yoda Portal:",
+    "text": "Environment file\nThe iCommands need to be configured to connect to the right Yoda environment.\nPlease copy and paste this configuration into your ~/.irods/irods_environment.json configuration file.\nYou will need to change the example user name to your Yoda user name.\n{\n    \"irods_host\": \"portal.yoda.vu.nl\",\n    \"irods_port\": 1247,\n    \"irods_home\": \"/vu/home\",\n    \"irods_user_name\": \"xxx@vu.nl\",\n    \"irods_zone_name\": \"vu\",\n    \"irods_default_resource\": \"irodsResc\",\n    \"irods_authentication_scheme\": \"pam_password\",\n    \"irods_encryption_algorithm\": \"AES-256-CBC\",\n    \"irods_encryption_key_size\": 32,\n    \"irods_encryption_num_hash_rounds\": 16,\n    \"irods_encryption_salt_size\": 8,\n    \"irods_client_server_negotiation\": \"request_server_negotiation\",\n    \"irods_client_server_policy\": \"CS_NEG_REQUIRE\"\n}\n\n\n\n\n\n\nImportant\n\n\n\nPlease note that irods_authentication_scheme has changed from pam to pam_password in Yoda 2.0.\n\n\nYou can also copy the contents from the “Data Transfer” page on the Yoda Portal:",
     "crumbs": [
       "Yoda",
       "Documentation",
@@ -5384,7 +5419,7 @@
     "href": "tools/yoda/cost_access.html#how-to-request-access",
     "title": "Costs and Getting Access",
     "section": "How to request access",
-    "text": "How to request access\nRequesting a project folder in Yoda is done via a 🔒 request form on ServiceNow.Please note that because there can be costs involved (see below) you need to supply a budget code.\nOnce the project space has been created you can start to invite your collaborators yourself. Note that VU students must 🔒 connect a token to SURFsecureID to be able to log in.\n\nIntake procedure\nWhen you work with sensitive data we will always schedule a meeting with you to help you to safely work with your data.\nIn the form you can also indicate if you would like some help getting started with Yoda. We can either schedule a short 15 minute meeting to get you started or a longer meeting to have a closer look at your data and help you setting up a workflow.",
+    "text": "How to request access\n\nNew projects\nRequesting a project folder in Yoda is done via a 🔒 request form on ServiceNow. Please note that because there can be costs involved (see below) you need to supply a budget code.\n\nIntake procedure\nWhen you work with sensitive data we will always schedule a meeting with you to help you to safely work with your data.\nIn the form you can also indicate if you would like some help getting started with Yoda. We can either schedule a short 15 minute meeting to get you started or a longer meeting to have a closer look at your data and help you setting up a workflow.\n\n\n\nExisting projects\nOnce the project space has been created you can start to invite your collaborators yourself. Note that VU students must 🔒 connect a token to SURFsecureID to be able to log in.",
     "crumbs": [
       "Yoda",
       "Costs and Getting Access"
@@ -5549,7 +5584,7 @@
     "href": "tools/yoda/yoda_using_gocommands.html#installing-gocommands",
     "title": "Using Gocommands",
     "section": "Installing GoCommands",
-    "text": "Installing GoCommands\nYou first need to download the gocmd file external link to be able to run the Gocommands from the commandline. You must check what your operating system is and what processor you have. For example, this is the command to download the gocmd executable for Windows with an amd64 processor using Windows Command Prompt:\ncurl -L -s -o gocmdv.txt https://raw.githubusercontent.com/cyverse/gocommands/main/VERSION.txt && set /p GOCMD_VER=&lt;gocmdv.txt\ncurl -L -s -o gocmd.zip https://github.com/cyverse/gocommands/releases/download/%GOCMD_VER%/gocmd-%GOCMD_VER%-windows-amd64.zip && tar zxvf gocmd.zip && del gocmd.zip gocmdv.txt\nThis will download the gocmd executable to your current working directory.\nCheck the Readme for instructions on other platforms.\n\n\n\n\n\n\nWarning\n\n\n\nThe current 0.11.x version of Gocommands is not compatible with Yoda 2.0. Please use the 0.10.26 version for now.\nDownload and zip it manually or adjust the command like this:\ncurl -L -s -o gocmd.zip https://github.com/cyverse/gocommands/releases/download/v0.10.26/gocmd-v0.10.26-windows-amd64.zip && tar zxvf gocmd.zip && del gocmd.zip",
+    "text": "Installing GoCommands\nYou first need to download the gocmd file external link to be able to run the Gocommands from the commandline. You must check what your operating system is and what processor you have. For example, this is the command to download the gocmd executable for Windows with an amd64 processor using Windows Command Prompt:\ncurl -L -s -o gocmdv.txt https://raw.githubusercontent.com/cyverse/gocommands/main/VERSION.txt && set /p GOCMD_VER=&lt;gocmdv.txt\ncurl -L -s -o gocmd.zip https://github.com/cyverse/gocommands/releases/download/%GOCMD_VER%/gocmd-%GOCMD_VER%-windows-amd64.zip && tar zxvf gocmd.zip && del gocmd.zip gocmdv.txt\nThis will download the gocmd executable to your current working directory.\nCheck the Readme for instructions on other platforms.",
     "crumbs": [
       "Yoda",
       "Documentation",
@@ -7238,60 +7273,53 @@
     "text": "Hackathon Pull Requests\nhttps://github.com/ubvu/open-handbook/pull/118 https://github.com/ubvu/open-handbook/pull/165 https://github.com/ubvu/open-handbook/pull/176 https://github.com/ubvu/open-handbook/pull/177 https://github.com/ubvu/open-handbook/pull/179 https://github.com/ubvu/open-handbook/pull/180 https://github.com/ubvu/open-handbook/pull/181 https://github.com/ubvu/open-handbook/pull/184 https://github.com/ubvu/open-handbook/pull/186 https://github.com/ubvu/open-handbook/pull/188"
   },
   {
-    "objectID": "blog/2024-10-22post-mortem.html",
-    "href": "blog/2024-10-22post-mortem.html",
-    "title": "Why was rdm.vu.nl down for ten hours?",
+    "objectID": "blog/2026-07-20yoda21.html",
+    "href": "blog/2026-07-20yoda21.html",
+    "title": "Yoda 2.1 upgrade",
     "section": "",
-    "text": "Research Support Handbook\nOn Friday October 18th 2024, we experienced around ten hours of downtime on the rdm.vu.nl website. The downtime started around 10AM after merging changes to the handbook and was resolved the same day, by 8PM.1"
+    "text": "Research Support Handbook\n\n\n\n\nThe Yoda team has updated the documentation to reflect changes in the new Yoda 2.1 version (Release Notes).\nMain changes for researchers:\n\nInvitation workflow only for external users.\nWorks with latest version ofGoCommands.\nOption to move datasets to the Vault instead of copying them.\n\nPlease note the Known Issues.\nDuring the upgrade new functionality was added to be able to move datasets in the Vault from disk storage to the SURF Data Archive, a form of tape storage. The Yoda team will extensively test this functionality in the coming period. Note that this change is only visible to members of a Datamanager Group."
   },
   {
-    "objectID": "blog/2024-10-22post-mortem.html#root-cause",
-    "href": "blog/2024-10-22post-mortem.html#root-cause",
-    "title": "Why was rdm.vu.nl down for ten hours?",
-    "section": "Root cause",
-    "text": "Root cause\nThe downtime started after merging changes to the handbook in commit 669b065. These changes themselves, did not cause the downtime. The root cause was an incorrect configuration in the deployment of the webpage, which inadvertently removed the rdm.vu.nl domain name from the GitHub settings every time we made changes in the handbook and redeployed the website. This resulted in 404 errors that the page could not be found.\nWe first observed this issue on Thursday, one day prior to the downtime, in commit 678ff88. We proposed a fix for this issue in #220, before the downtime started."
-  },
-  {
-    "objectID": "blog/2024-10-22post-mortem.html#how-could-the-downtime-happen-if-the-fix-was-clear",
-    "href": "blog/2024-10-22post-mortem.html#how-could-the-downtime-happen-if-the-fix-was-clear",
-    "title": "Why was rdm.vu.nl down for ten hours?",
-    "section": "How could the downtime happen if the fix was clear?",
-    "text": "How could the downtime happen if the fix was clear?\nThe fix for the domain specification was not merged in time for two reasons.\n\nReason 1\nAt this time, we require two reviews before merging changes to the handbook. The fix was proposed at 1.11PM on Thursday, and did not receive the required reviews by the time the downtime happened (reason 1). However, this was a technical administration task and could have been merged immediately, as this supercedes regular review procedures.\n\n\nReason 2\nThe domain specification fix was not immediately merged to allow time to pass and ensure the fix was appropriate upon further reflection. This is because administrator (chartgerink?) both proposed the fix and would also be the one to supercede the “two reviews” requirement. Due to travel, the administrator forgot about it in the morning, and only saw the messages about the downtime at 8PM. At that time, the fix was quickly merged and the downtime resolved."
-  },
-  {
-    "objectID": "blog/2024-10-22post-mortem.html#improvements",
-    "href": "blog/2024-10-22post-mortem.html#improvements",
-    "title": "Why was rdm.vu.nl down for ten hours?",
-    "section": "Improvements",
-    "text": "Improvements\nThe domain configuration is corrected and the deployment ensures the domain name is re-added to the GitHub settings every time there are changes to the handbook. This is now automated, which ensures that the domain name will not be removed inadvertently when future changes are incorporated.\nHowever, we also learned that critical administration fixes should not be left open for longer than is absolutely necessary. Here it was left open for longer than absolutely necessary due to travel, and a second administrator could have caught this issue sooner. This means we should work towards resilient reporting mechanisms to escalate such critical issues, and build capacity in the editor team to ensure no one person is responsible for merging critical fixes that are already available."
-  },
-  {
-    "objectID": "blog/2024-10-22post-mortem.html#acknowledgements",
-    "href": "blog/2024-10-22post-mortem.html#acknowledgements",
-    "title": "Why was rdm.vu.nl down for ten hours?",
-    "section": "Acknowledgements",
-    "text": "Acknowledgements\nWe would like to thank the editors for dealing with the stress from this inadvertent issue. We also thank the community for their patience as we only recently migrated to rdm.vu.nl and figure out these initial unexpected hurdles."
-  },
-  {
-    "objectID": "blog/2024-10-22post-mortem.html#references",
-    "href": "blog/2024-10-22post-mortem.html#references",
-    "title": "Why was rdm.vu.nl down for ten hours?",
-    "section": "References",
-    "text": "References\n\nRoot cause for the downtime first observed in commit 678ff88\nProposed a fix for the root cause in pull Request #220\nDowntime started at commit 669b065 is where the\nResolved downtime in commit 678ff88"
-  },
-  {
-    "objectID": "blog/2024-10-22post-mortem.html#footnotes",
-    "href": "blog/2024-10-22post-mortem.html#footnotes",
-    "title": "Why was rdm.vu.nl down for ten hours?",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nubvu.github.io/open-handbook remained online during this entire time, and functions indirectly as a backup.↩︎"
-  },
-  {
-    "objectID": "blog/2024-05-23welcome.html",
-    "href": "blog/2024-05-23welcome.html",
-    "title": "Hello world!",
+    "objectID": "blog/2025-11-27hackathon.html",
+    "href": "blog/2025-11-27hackathon.html",
+    "title": "Seventh Handbook Hackathon",
     "section": "",
-    "text": "Research Support Handbook\n\n\n\n\nThis is the first blog entry on the Research Support Handbook. We will be posting more at a later time, and are looking forward to your contributions as well.\nWe will follow up with more details later."
+    "text": "Research Support Handbook\nOn November 27, 2025, all authors participated in the seventh hackathon for the Research Support Handbook. For this hackathon, we focused on Consolidating content and adding new content."
+  },
+  {
+    "objectID": "blog/2025-11-27hackathon.html#overview-of-results",
+    "href": "blog/2025-11-27hackathon.html#overview-of-results",
+    "title": "Seventh Handbook Hackathon",
+    "section": "Overview of results",
+    "text": "Overview of results\nWe updated the information about Pure and about data and software registration in Pure (link to LibGuide manuals instead of PDFs, information about Elsevier no longer supporting DataMonitor).\nWe created two practical pages related to the RDM Support Desk:\n\nGeneral information about the RDM Support Desk\nLanding page for requesting access to datasets\n\nRegarding videos in the Research Support Handbook: We stored relevant videos in Panopto and embedded them in our website from there, replacing the YouTube videos. This helps us maintain all video material in a central place and another advantage is that we don’t get suggestions for other videos once a video has ended, as on YouTube.\nWe expanded the Research Software topic by referring to related information in the Research Support Handbook.\nWe continued working on the topic de-identifying data, but this is still in progress.\nA few updates have been done in tools documentation for Yoda, ADA and SciStor before, during and after the hackathon. We have improved navigation in the tools section as well.\nFinally, a new release of the Handbook has been created on Zenodo."
+  },
+  {
+    "objectID": "blog/2025-11-27hackathon.html#hackathon-issues-and-pull-requests",
+    "href": "blog/2025-11-27hackathon.html#hackathon-issues-and-pull-requests",
+    "title": "Seventh Handbook Hackathon",
+    "section": "Hackathon Issues and Pull Requests",
+    "text": "Hackathon Issues and Pull Requests\n\nData and software registration updates: Issue #250, PR #621 and PR #623; PR #627 for updates in the general information about Pure. Note that the information about Pure has been transferred from topics to tools see Issue #675 and see PR #678.\nRDM Support Desk: Issue #588 and PR #610 for the information page and Issue #589 and PR #631 for the landing page with information about requesting access to datasets.\nResearch software information: Issue #410 and PR #624.\nTopic de-identifying data: Issue #492"
+  },
+  {
+    "objectID": "blog/2024-11-01hackathon.html",
+    "href": "blog/2024-11-01hackathon.html",
+    "title": "Fourth Handbook Hackathon",
+    "section": "",
+    "text": "Research Support Handbook\nOn October 30th, 2024, all authors participated in the fourth hackathon for the Research Support Handbook. Since the third hackathon, we migrated to rdm.vu.nl, which is a huge milestone! 🎉\nFor the fourth hackathon, we focused on tying up loose ends that we accumulated. The migration means we are now in a stable state, yet there is always more work to be done. During this hackathon, we focused on picking up stale discussions, reviewing open pull requests, and generally closing issues that we took too long to revisit.\nWe considered how (un)balanced the various Topics had gotten, because we want readers to be able to form consistent expectations. We observed that some topics are related to tools, others to concepts. Some topics are concise, whereas others are lengthy.\nOne breakout group focused on creating templates for both kinds of topics, resulting in an initial structure that will make it easier to start new topics in the future. Specifically we propose the following template structure for tools (for example, Qualtrics, HPC, DMPonline):\nAnd the following structure for concepts (for example, DMP, data citation, data storage):\nWe will follow up with a new hackathon in late november."
+  },
+  {
+    "objectID": "blog/2024-11-01hackathon.html#issues-worked-on",
+    "href": "blog/2024-11-01hackathon.html#issues-worked-on",
+    "title": "Fourth Handbook Hackathon",
+    "section": "Issues worked on",
+    "text": "Issues worked on\nhttps://github.com/ubvu/open-handbook/issues/232\nhttps://github.com/ubvu/open-handbook/issues/233"
+  },
+  {
+    "objectID": "blog/2024-11-01hackathon.html#pull-requests-worked-on",
+    "href": "blog/2024-11-01hackathon.html#pull-requests-worked-on",
+    "title": "Fourth Handbook Hackathon",
+    "section": "Pull Requests worked on",
+    "text": "Pull Requests worked on\nhttps://github.com/ubvu/open-handbook/pull/229\nhttps://github.com/ubvu/open-handbook/pull/231\nhttps://github.com/ubvu/open-handbook/pull/234\nhttps://github.com/ubvu/open-handbook/pull/235\nhttps://github.com/ubvu/open-handbook/pull/236\nhttps://github.com/ubvu/open-handbook/pull/237"
   },
   {
     "objectID": "blog/2025-07-24hackathon.html",

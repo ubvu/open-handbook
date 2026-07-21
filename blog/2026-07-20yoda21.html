@@ -6,9 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-02-17">
+<meta name="author" content="Peter Vos">
+<meta name="author" content="Diógenes Cruz de Arcelino">
+<meta name="dcterms.date" content="2026-07-20">
 
-<title>What is Metadata? – Research Support Handbook</title>
+<title>Yoda 2.1 upgrade – Research Support Handbook</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -27,26 +29,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<link href="../../tools/yoda/workflow_metadata.html" rel="next">
-<link href="../../tools/yoda/finding_restoring.html" rel="prev">
-<link href="../../public/favicon.png" rel="icon" type="image/png">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-f758ea82564dc71728efbba0c62ca92f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../public/favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-f758ea82564dc71728efbba0c62ca92f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -78,16 +78,16 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar floating nav-fixed quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../public/VU-logo-white.svg" alt="VU Amsterdam logo." class="navbar-logo light-content">
-    <img src="../../public/VU-logo-white.svg" alt="VU Amsterdam logo." class="navbar-logo dark-content">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../public/VU-logo-white.svg" alt="VU Amsterdam logo." class="navbar-logo light-content">
+    <img src="../public/VU-logo-white.svg" alt="VU Amsterdam logo." class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -102,41 +102,41 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-topics">    
         <li>
-    <a class="dropdown-item" href="../../topics.html">
+    <a class="dropdown-item" href="../topics.html">
  <span class="dropdown-text">All</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../topics.html#category=Policies and Legislation">
+    <a class="dropdown-item" href="../topics.html#category=Policies and Legislation">
  <span class="dropdown-text">Policies and Legislation</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../topics.html#category=Research Data">
+    <a class="dropdown-item" href="../topics.html#category=Research Data">
  <span class="dropdown-text">Research Data</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../topics.html#category=Research Software">
+    <a class="dropdown-item" href="../topics.html#category=Research Software">
  <span class="dropdown-text">Research Software</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../topics.html#category=Responsible Scholarship">
+    <a class="dropdown-item" href="../topics.html#category=Responsible Scholarship">
  <span class="dropdown-text">Responsible Scholarship</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../topics.html#category=Knowledge Items">
+    <a class="dropdown-item" href="../topics.html#category=Knowledge Items">
  <span class="dropdown-text">Knowledge Items</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../guides.html"> 
+    <a class="nav-link" href="../guides.html"> 
 <span class="menu-text">Guides</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../tools.html"> 
+    <a class="nav-link" href="../tools.html"> 
 <span class="menu-text">Tools</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../blog.html"> 
+    <a class="nav-link" href="../blog.html"> 
 <span class="menu-text">News</span></a>
   </li>  
 </ul>
@@ -146,285 +146,10 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tools/yoda/index.html">Yoda</a></li><li class="breadcrumb-item">Documentation</li><li class="breadcrumb-item"><a href="../../tools/yoda/finding_restoring.html">Using Yoda</a></li><li class="breadcrumb-item"><a href="../../tools/yoda/metadata.html">What is Metadata?</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-    </div>
-  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../tools/yoda/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Yoda</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">What is Yoda?</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/cost_access.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Costs and Getting Access</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/contact_support.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Support and Contact</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/quick_start.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Quick Start</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/faq.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">FAQ</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/known_issues.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Known Issues</span></a>
-  </div>
-</li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Documentation</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Yoda Portal</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth3 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/introduction.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/notifications.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Notifications</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/sram_invitations_eduid_activation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">External users - SRAM Invitations and eduID Activation</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/logging_in.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Logging In</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/group_manager.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Managing Groups, Users and Access Rights</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
- <span class="menu-text">Using Yoda</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth3 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/finding_restoring.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Finding and Restoring Data</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/metadata.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">What is Metadata?</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/workflow_metadata.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Adding Metadata</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/properties_and_explanation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Metadata Properties</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/analysing_data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Analysing Data</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
- <span class="menu-text">Securing and Distributing Data</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth3 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/workflow_metadata_licence.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Selecting a licence for your dataset</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/vault_archive.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Archiving Data</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/vault_publish.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Publishing Data</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
- <span class="menu-text">Data Access and Transfer</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth3 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/data_access_instructions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Before Getting Started</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/yoda_dap.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Creating a Data Access Password</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/data_access_linux.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Access on Linux</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/data_access_macos.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Access on MacOS</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/data_access_windows.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Access on Windows</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/yoda_using_cyberduck.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Using Cyberduck</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/yoda_using_cyberduck_cryptometer.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Encrypting your data</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/yoda_using_icommands.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Using iCommands</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/yoda_using_gocommands.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Using Gocommands</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/yoda_using_python.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Using Python</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/yoda_using_rclone.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Using Rclone</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/yoda_using_windowsexplorer.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Using Windows Explorer</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../tools/yoda/yoda_using_winscp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Using WinSCP</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-      </ul>
-  </li>
-      </ul>
-  </li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
@@ -433,20 +158,30 @@ ul.task-list li input[type="checkbox"] {
 <main class="content" id="quarto-document-content">
 <div class="handbook-title">Research Support Handbook</div>
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tools/yoda/index.html">Yoda</a></li><li class="breadcrumb-item">Documentation</li><li class="breadcrumb-item"><a href="../../tools/yoda/finding_restoring.html">Using Yoda</a></li><li class="breadcrumb-item"><a href="../../tools/yoda/metadata.html">What is Metadata?</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">What is Metadata?</h1>
-</div>
+<h1 class="title">Yoda 2.1 upgrade</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Yoda</div>
+  </div>
+  </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-contents">
+             <p>Peter Vos </p>
+             <p>Diógenes Cruz de Arcelino </p>
+          </div>
+  </div>
     
     <div>
-    <div class="quarto-title-meta-heading">last modified</div>
+    <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 17, 2026</p>
+      <p class="date">July 20, 2026</p>
     </div>
   </div>
   
@@ -458,19 +193,15 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Metadata is “data about data”. Metadata serves multiple purposes in Yoda, the most important being:</p>
+<p>The Yoda team has updated the <a href="../tools/yoda/index.html">documentation</a> to reflect changes in the new Yoda 2.1 version (<a href="https://utrechtuniversity.github.io/yoda/release-notes/release-2.1.html" target="_blank">Release Notes</a>).</p>
+<p>Main changes for researchers:</p>
 <ul>
-<li>To describe the contents of a dataset for a broad audience.</li>
-<li>To inform the audience whether the data can be reused and if so, under what conditions.</li>
-<li>To prescribe how the data should be cited and whom to acknowledge.</li>
-<li>To inform digital archivists and IT staff about how long the data should be retained.</li>
-<li>To facilitate finding the dataset in data catalogues.</li>
+<li><a href="../tools/yoda/invitation_workflow.qmd">Invitation workflow</a> only for external users.</li>
+<li>Works with latest version of<a href="../tools/yoda/yoda_using_gocommands.html">GoCommands</a>.</li>
+<li>Option to <a href="../tools/yoda/vault_archive.html#how-to-submitting-a-data-package-to-the-vault">move datasets to the Vault</a> instead of copying them.</li>
 </ul>
-<p>We distinguish two types of metadata:</p>
-<p><strong>Structured metadata</strong> consists of information that is standardized globally and used by data catalogs. Examples are the title of the data package, its creator, the retention period of the package, etc.</p>
-<p>When a data package is published, Yoda makes the structured metadata available for harvesting by data catalogs, such as <a href="https://search.datacite.org/" target="_blank">DataCite</a>.</p>
-<p><strong>Unstructured metadata</strong> is intended to provide more detailed information about the data. This information can be in a README.TXT or other file that is included as part of the data package. The format of this file is chosen by the researcher. Users will need to open and inspect the data package to find this metadata. Unstructured metadata can include information about (for example) the experimental design, data transformation, sampling method, etc.</p>
-<p>You can read more in-depth information about metadata on the <a href="../../topics/metadata.html">dedicated page</a></p>
+<p>Please note the <a href="../tools/yoda/known_issues.html">Known Issues</a>.</p>
+<p>During the upgrade new functionality was added to be able to move datasets in the Vault from disk storage to the <a href="https://www.surf.nl/en/services/storage-data-management/data-archive" target="_blank">SURF Data Archive</a>, a form of tape storage. The Yoda team will extensively test this functionality in the coming period. Note that this change is only visible to members of a Datamanager Group.</p>
 
 
 
@@ -875,18 +606,6 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../../tools/yoda/finding_restoring.html" class="pagination-link" aria-label="Finding and Restoring Data">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Finding and Restoring Data</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../../tools/yoda/workflow_metadata.html" class="pagination-link" aria-label="Adding Metadata">
-        <span class="nav-page-text">Adding Metadata</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -898,15 +617,15 @@ ul.task-list li input[type="checkbox"] {
     <div class="text-center">
         <ul class="footer-items list-unstyled">
             <li class="nav-item mx-md-5">
-                <p><img src="../../public/missing_icon.svg" class="img-fluid" style="width:6em"><br>
+                <p><img src="../public/missing_icon.svg" class="img-fluid" style="width:6em"><br>
                     Missing something in the Handbook?<br>
                     <a href="https://ez-github-contributor.netlify.app/" target="_blank">Let us know!</a>
                 </p>
             </li>
             <li class="nav-item mx-md-5">
-                <img src="../../public/question_icon.svg" class="img-fluid" style="width:6em"><br>
+                <img src="../public/question_icon.svg" class="img-fluid" style="width:6em"><br>
                 Question about your research data or research software?<br>
-                <a href="../../topics/rdm-support-desk.html">Contact the RDM Support Desk</a>
+                <a href="../topics/rdm-support-desk.html">Contact the RDM Support Desk</a>
                 
             </li>
         </ul>
@@ -916,28 +635,28 @@ ul.task-list li input[type="checkbox"] {
     <ul class="footer-items list-unstyled">
         <li class="nav-item">
             <a class="nav-link" href="https://creativecommons.org/publicdomain/zero/1.0/legalcode">
-                <p><img src="../../public/Cc.logo.circle.svg" class="img-fluid" style="width:1.3em">
-                <img src="../../public/Cc-zero.svg" class="img-fluid" style="width:1.3em"></p>
+                <p><img src="../public/Cc.logo.circle.svg" class="img-fluid" style="width:1.3em">
+                <img src="../public/Cc-zero.svg" class="img-fluid" style="width:1.3em"></p>
             </a>
         </li>|
         <li class="nav-item">
-            <a class="nav-link" href="../../about.html">
+            <a class="nav-link" href="../about.html">
                 <p>About</p>
             </a>
         </li>|
         <li class="nav-item">
-            <a class="nav-link" href="../../contributing.html">
+            <a class="nav-link" href="../contributing.html">
                 <p>Contributing</p>
             </a>
         </li>|
         <li class="nav-item">
-            <a class="nav-link" href="../../privacy.html">
+            <a class="nav-link" href="../privacy.html">
                 <p>Privacy</p>
             </a>
         </li>
     </ul>
 </div>
-<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/yoda/metadata.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/blog/2026-07-20yoda21.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

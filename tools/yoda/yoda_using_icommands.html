@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-03-19">
+<meta name="dcterms.date" content="2026-07-13">
 <meta name="description" content="This page explains how to install the iRODS iCommands on a Linux OS (native and using WSL2 on Windows).">
 
 <title>Using iCommands – Research Support Handbook</title>
@@ -277,7 +277,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../tools/yoda/sram_invitations_eduid_activation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">SRAM Invitations and eduID Activation</span></a>
+ <span class="menu-text">External users - SRAM Invitations and eduID Activation</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -499,7 +499,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">last modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 19, 2026</p>
+      <p class="date">July 13, 2026</p>
     </div>
   </div>
   
@@ -597,13 +597,15 @@ Tip
 <span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"irods_home"</span><span class="fu">:</span> <span class="st">"/vu/home"</span><span class="fu">,</span></span>
 <span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"irods_user_name"</span><span class="fu">:</span> <span class="st">"xxx@vu.nl"</span><span class="fu">,</span></span>
 <span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"irods_zone_name"</span><span class="fu">:</span> <span class="st">"vu"</span><span class="fu">,</span></span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"irods_authentication_scheme"</span><span class="fu">:</span> <span class="st">"pam_password"</span><span class="fu">,</span></span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"irods_encryption_algorithm"</span><span class="fu">:</span> <span class="st">"AES-256-CBC"</span><span class="fu">,</span></span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"irods_encryption_key_size"</span><span class="fu">:</span> <span class="dv">32</span><span class="fu">,</span></span>
-<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"irods_encryption_num_hash_rounds"</span><span class="fu">:</span> <span class="dv">16</span><span class="fu">,</span></span>
-<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"irods_encryption_salt_size"</span><span class="fu">:</span> <span class="dv">8</span><span class="fu">,</span></span>
-<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"irods_client_server_negotiation"</span><span class="fu">:</span> <span class="st">"request_server_negotiation"</span></span>
-<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"irods_default_resource"</span><span class="fu">:</span> <span class="st">"irodsResc"</span><span class="fu">,</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"irods_authentication_scheme"</span><span class="fu">:</span> <span class="st">"pam_password"</span><span class="fu">,</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"irods_encryption_algorithm"</span><span class="fu">:</span> <span class="st">"AES-256-CBC"</span><span class="fu">,</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"irods_encryption_key_size"</span><span class="fu">:</span> <span class="dv">32</span><span class="fu">,</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"irods_encryption_num_hash_rounds"</span><span class="fu">:</span> <span class="dv">16</span><span class="fu">,</span></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"irods_encryption_salt_size"</span><span class="fu">:</span> <span class="dv">8</span><span class="fu">,</span></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"irods_client_server_negotiation"</span><span class="fu">:</span> <span class="st">"request_server_negotiation"</span><span class="fu">,</span></span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"irods_client_server_policy"</span><span class="fu">:</span> <span class="st">"CS_NEG_REQUIRE"</span></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
