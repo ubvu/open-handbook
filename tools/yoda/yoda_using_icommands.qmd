@@ -86,7 +86,7 @@ sudo apt show irods-icommands -a
 sudo apt -y install irods-runtime irods-icommands
 ```
 
-- Make sure to hold the package to prevent inadvertently updating to an unsupported version:
+Make sure to hold the package to prevent inadvertently updating to an unsupported version:
 ```sh
 sudo apt-mark hold irods-runtime irods-icommands
 ```
