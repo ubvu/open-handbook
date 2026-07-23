@@ -3,11 +3,21 @@ title: Data De-identification
 categories: [Policies and Legislation, Research Data]
 ---
 
-If your research involves **data about human beings**, these data probably will be identifiable, meaning that this information can reveal your research participants' identities. See for example [this example](https://lcrdm.nl/wp-content/uploads/2023/03/Anonymization-reference-card-for-researchers.pdf), which shows that even an apparently general description can reveal someone's identity, depending on the context. This is not problematic in itself, it means that you must make sure to carry out your research in line with the [GDPR](../topics/gdpr.qmd). Having said that, it is nevertheless useful to see if and to what extent you can make your data less identifiable. Below is explained why.
+If your research involves **data about human beings**, these data probably will be identifiable, meaning that this information can reveal your research participants' identities. Take a look at the image below:
+
+![Image of brown chicken in a context of white chicken, explaining that even a general description can reveal someone's identity](../public/anonymization-reference-card-brown-chicken.png)
+
+This example [@reference-card-anonymization] shows that even an apparently general description can reveal someone's identity, depending on the context. This is not problematic in itself, it means that you must make sure to carry out your research in line with the [GDPR](../topics/gdpr.qmd). Having said that, it is nevertheless useful to see if and to what extent you can make your data less identifiable. Below is explained why.
 
 ## Pseudonymisation and anonymisation
 
 Within the [GDPR definitions](../topics/gdpr.qmd#definitions) several terms are used: pseudonymisation, anonymisation, direct identification and indirect identification. All of these terms are related to which extent it is possible to identify an individual. Pseudonymisation and anonymisation are processes that make personal data less easily linkable to individual data subjects or research participants. In other words, they are methods to de-identify personal data. If the data undergo enough de-identification that it is no longer possible to re-identify a data subject, they are considered anonymised (see also @data-privacy-handbook-uu).
+
+The process of pseudonymisation and anonymisation is depicted in the image below.
+
+![Table with fully identifiable data in the first column, pseudonymous data in the second column and anonymous data in the third column](../public/anonymization-reference-card-table.png)
+
+This overview [@reference-card-anonymization] explains the difference between fully identifiable, pseudonymous and anonymous data and provides an example of how data can be made less identifiable. The data in the left-most column is fully identifiable. The information is made less identifiable in the second column, for example by replacing the patient number with a random study subject number, and by aggregating some of the data, for example by using year of birth instead of the specific date. The combination of variables in the second column still makes it possible to reveal this person's identity, but it is more difficult. In the third column, the pieces of information are aggregated even further, making it impossible to identify the person. These data are considered anonymous, but note that this information is probably too general for many scientific research purposes.
 
 ## Why is de-identification useful
 
