@@ -31,7 +31,7 @@ sudo rpm --import https://packages.irods.org/irods-signing-key.asc
 wget -qO - https://packages.irods.org/renci-irods.yum.repo | sudo tee /etc/yum.repos.d/renci-irods.yum.repo
 ```
 
-Note that Yoda 2.1 uses iRODS server version 5.0.2, any version 5 client should work.You can list the available versions with:
+Note that Yoda 2.1 uses iRODS server version 5.0.2, any version 5 client should work. You can list the available versions with:
 ```sh
 sudo yum --showduplicates list irods-icommands
 ```
@@ -144,7 +144,7 @@ These are the basic commands for navigation and data transfer:
 - [icd](https://docs.irods.org/5.0.2/icommands/user/#icd) – Change directory
 - [iput](https://docs.irods.org/5.0.2/icommands/user/#iput) – Upload files to Yoda
 - [iget](https://docs.irods.org/5.0.2/icommands/user/#iget) – Download files from Yoda
-- [irsync](https://docs.irods.org/5.0.2/icommands/user/#irsync) – Synchronize local and remote directories
+- [irsync](https://docs.irods.org/5.0.2/icommands/user/#irsync) – Synchronise local and remote directories
 
 Your Yoda project folders are located under `/vu/home`.
 
