@@ -1,4 +1,3 @@
-
 ---
 title: Research Data
 categories: [Research Data, Knowledge Items]
@@ -6,17 +5,15 @@ categories: [Research Data, Knowledge Items]
 
 ## What is Research Data?
 
-At VU Amsterdam, research data refers to:
+Research data can take many forms, including text, images, audio, video, databases, software, survey results, laboratory measurements, and other materials used to support research findings. In short, research data refers to:
 
-> "Information that is collected, observed, generated, or reused for the purpose of underpinning academic research."
-
-Research data can take many forms, including text, images, audio, video, databases, software, survey results, laboratory measurements, and other materials used to support research findings.
+> "Information that is captured for the purpose of underpinning academic research."
 
 In the context of the [Research Data and Software Management Policy](https://rdm.vu.nl/public/policies-regulations/RDSM-policy-VU-EN-v3.0.pdf), research data includes not only the data itself, but also the metadata, documentation, and contextual information needed to understand, verify, and reuse it.
 
 ## Examples of Research Data
 
-Research data are produced across all academic disciplines and can take many different forms. It's impossible to present an exhaustive list, but the overview below gives an impression of what types of data can be used in research (based on).
+Research data are produced across all academic disciplines and can take many different forms. It's impossible to present an exhaustive list, but the overview below gives an impression of what types of data can be used in research (based on @bekkers-what-data, @oecd-principles-guidelines and the [VU Research Data and Software Management Policy](https://rdm.vu.nl/public/policies-regulations/RDSM-policy-VU-EN-v3.0.pdf)).
 
 - Databases and statistical datasets
 - Survey responses
@@ -42,9 +39,3 @@ Research data often evolve throughout the research lifecycle. Different versions
 During the project, [research data should be stored](https://rdm.vu.nl/topics/data-storage.html) in secure, backed-up storage environments that comply with institutional and legal requirements to ensure data integrity and appropriate access control throughout the research.
 
 Managing these data carefully is essential for ensuring transparency, reproducibility, and long-term reuse, in line with the [FAIR principles](../topics/fair-principles.qmd).
-
-## Reference and Further Reading
-
-- Organisation for Economic Co-operation and Development. (2007). OECD principles and guidelines for access to research data from public funding. OECD Publishing. https://doi.org/10.1787/9789264034020-en-fr
-- University of Geneva. (n.d.). Identify research data. Researchdata. https://www.unige.ch/researchdata/generate-collect/identifier-donnees-de-recherche
-- Vrije Universiteit Amsterdam. *Research Data and Software Management (RDSM) Policy, version 3.0*. https://rdm.vu.nl/public/policies-regulations/RDSM-policy-VU-EN-v3.0.pdf
