@@ -17,7 +17,7 @@ The sections below highlight several of the most commonly used features within t
 
 Researchers should therefore carefully consider the privacy implications of the features they enable, and the survey configurations they choose. As a general principle, privacy and data protection considerations should be assessed whenever selecting or configuring Qualtrics functionality for research purposes.
 
-## After Collecting Your Data: Please Consider an Appropriate Data Storage Tool
+## After Collecting Your Data: Consider an Appropriate Data Storage Tool
 
 Qualtrics is intended for the collection and management of survey data and should not be used as a data storage platform.
 
@@ -43,13 +43,13 @@ For further details, see the Qualtrics documentation on [Browser Compatibility &
 
 For studies involving personal data, researchers can enable **Anonymize Responses**, which removes identifying information such as IP addresses, location data, and other metadata from responses before they are stored, contributing to GDPR compliance and participant confidentiality. Researchers should carefully review these settings and select the options that are appropriate for their study design and data protection requirements.
 
-For further details on the available security settings, see the Qualtrics **[Security Survey Options](https://www.qualtrics.com/support/survey-platform/survey-module/survey-options/survey-protection/) documentation**.
+For further details on the available security settings, see the Qualtrics [**Security Survey Options**](https://www.qualtrics.com/support/survey-platform/survey-module/survey-options/survey-protection/) **documentation**.
 
 ## Survey Distribution: Anonymous Survey Links and Personal Data
 
 Qualtrics allows for a survey distribution method called "Anonymous Survey" or "Anonymous Links". "You can distribute your survey by pasting this link into an email, onto a website, or into any mode of communication you use with your recipients. Anyone who clicks on the link will be able to take the survey.
 
-It’s called the “anonymous” link because it does not collect identifying information such as name or email address, unless you specifically ask for it in the survey. However, by default, the anonymous link will collect the user’s IP Address and location data based on that IP Address" (see the [Qualtrics website](https://www.qualtrics.com/support/survey-platform/distributions-module/web-distribution/anonymous-link/).
+It’s called the “anonymous” link because it does not collect identifying information such as name or email address, unless you specifically ask for it in the survey. However, by default, the anonymous link will collect the user’s IP Address and location data based on that IP Address" (see the [Qualtrics Knowledge Base](https://www.qualtrics.com/support/survey-platform/distributions-module/web-distribution/anonymous-link/)).
 
 From a GDPR perspective, an “anonymous” survey should not automatically be considered anonymous, as the processing of personal data depends on the survey design, the questions asked, and the privacy settings selected. Researchers should therefore review their survey configuration carefully and enable safeguards such as **Anonymize Responses** where appropriate. For further information on the behaviour, limitations, and privacy implications of anonymous survey links, please consult the Qualtrics [**Anonymous Link** documentation](https://www.qualtrics.com/support/survey-platform/distributions-module/web-distribution/anonymous-link/).
 
