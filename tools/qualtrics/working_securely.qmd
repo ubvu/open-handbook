@@ -3,9 +3,9 @@ title: Working Securely
 categories: []
 ---
 
-## Working with Personal Data  and GDPR Compliance
+## Working with Personal Data and GDPR Compliance
 
-When conducting research with Qualtrics, you will often collect and process [personal data](https://rdm.vu.nl/topics/gdpr.html#definitions). Personal data is protected under the General Data Protection Regulation (GDPR).
+When conducting research with Qualtrics, you will often collect and process [personal data](https://rdm.vu.nl/topics/gdpr.html#definitions). Personal data is protected under the [General Data Protection Regulation](../topics/gdpr.qmd) (GDPR).
 
 When using Qualtrics to collect research data, GDPR compliance should be considered from the start of the project. Researchers must ensure that personal data are collected on a valid legal ground, that participants are properly informed, and that the subject's rights are upheld. Depending on the study, additional requirements such as a DPIA or data sharing agreements may apply. Please refer to this [GDPR guidance page](https://rdm.vu.nl/guides/comply-with-gdpr.html) for more information on how to comply with GDPR requirements in research.
 
@@ -21,8 +21,70 @@ Researchers should therefore carefully consider the privacy implications of the 
 
 Qualtrics is intended for the collection and management of survey data and should not be used as a data storage platform.
 
+![Image stating that no storage is allowed.](/public/caution-no-storage.png)
+
 When data collection is completed, please delete all data from Qualtrics as soon as possible. It is strongly recommended that all research data is transferred three months after data collection is completed at the latest. 
 
-**Transfer** all data from Qualtrics to an appropriate [data storage](https://rdm.vu.nl/topics/data-storage.html) solution and make sure to **delete** the data in Qualtrics as soon as the transfer is completed. The Data Storage Finder can assist you in finding appropriate storage platforms and you can contact your Faculty Data Steward or the RDM Support Desk if you need more advice on this.
+**Transfer** all data from Qualtrics to an appropriate [data storage](https://rdm.vu.nl/topics/data-storage.html) solution and make sure to **delete** the data in Qualtrics as soon as the transfer is completed. The [Data Storage Finder](https://rdm.vu.nl/blog/2026-09-02-storagefinder-classificationtool-unavailable.html) can assist you in finding appropriate storage platforms and you can contact your [Faculty Data Steward](https://vu.nl/en/employee/research-data-support/contact-your-data-steward) or the [RDM Support Desk](mailto:rdm@vu.nl) if you need more advice on this.
 
 Following the above, Qualtrics should never be used as an archive for long-term storage of your data after your research has been completed.
+
+## Metadata and Cookies Collection in Qualtrics
+
+Qualtrics uses a number of essential [cookies and browser storage items](https://www.qualtrics.com/support/survey-platform/getting-started/browser-cookies/) to support core survey functionality, including maintaining survey sessions, authentication, and preventing duplicate submissions.
+
+Additional cookies and browser metadata may be used when optional features such as **Prevent Multiple Submissions**, **Duplicate Detection**, or **Bot Detection** are enabled. These features can process limited technical information, including browser, device, or IP-related data, to help improve data quality and identify potentially fraudulent responses.
+
+Researchers should therefore **carefully consider whether these features are necessary for their study** and ensure their use is consistent with the research purpose and GDPR requirements. See the Qualtrics page on [Fraud Detection](https://www.qualtrics.com/support/survey-platform/survey-module/survey-checker/fraud-detection/).
+
+For further details, see the Qualtrics documentation on [Browser Compatibility & Cookies](https://www.qualtrics.com/support/survey-platform/getting-started/browser-cookies/) and [Fraud Detection](https://www.qualtrics.com/support/survey-platform/survey-module/survey-checker/fraud-detection/).
+
+## Survey Security and Response Anonymisation
+
+For studies involving personal data, researchers can enable **Anonymize Responses**, which removes identifying information such as IP addresses, location data, and other metadata from responses before they are stored, contributing to GDPR compliance and participant confidentiality. Researchers should carefully review these settings and select the options that are appropriate for their study design and data protection requirements.
+
+For further details on the available security settings, see the Qualtrics **[Security Survey Options](https://www.qualtrics.com/support/survey-platform/survey-module/survey-options/survey-protection/) documentation**.
+
+## Survey Distribution: Anonymous Survey Links and Personal Data
+
+Qualtrics allows for a survey distribution method called "Anonymous Survey" or "Anonymous Links". "You can distribute your survey by pasting this link into an email, onto a website, or into any mode of communication you use with your recipients. Anyone who clicks on the link will be able to take the survey.
+
+It’s called the “anonymous” link because it does not collect identifying information such as name or email address, unless you specifically ask for it in the survey. However, by default, the anonymous link will collect the user’s IP Address and location data based on that IP Address" (see the [Qualtrics website](https://www.qualtrics.com/support/survey-platform/distributions-module/web-distribution/anonymous-link/).
+
+From a GDPR perspective, an “anonymous” survey should not automatically be considered anonymous, as the processing of personal data depends on the survey design, the questions asked, and the privacy settings selected. Researchers should therefore review their survey configuration carefully and enable safeguards such as **Anonymize Responses** where appropriate. For further information on the behaviour, limitations, and privacy implications of anonymous survey links, please consult the Qualtrics [**Anonymous Link** documentation](https://www.qualtrics.com/support/survey-platform/distributions-module/web-distribution/anonymous-link/).
+
+## Survey Distribution: Email Distribution and Personal Data
+
+When using [Qualtrics email distributions](https://www.qualtrics.com/support/survey-platform/distributions-module/email-distribution/email-distribution-management/), researchers should be aware that email invitations are linked to identifiable recipient information and can be associated with survey participation and response status. Distribution histories may also contain email addresses, individual survey links, and participation metrics, which means that personal data can be processed even when survey responses themselves do not contain direct identifiers.
+
+To reduce privacy risks and support GDPR compliance, surveys should be configured to minimise the collection and retention of personal information where possible. As a best practice, enable **Prevent Indexing**, **Secure Participants’ Files**, and **Anonymize Response** in the Survey Options. In addition, add an **End of Survey** element and select **Do NOT record any personal information and remove panel association**. These settings help to limit the link between respondents and their survey responses and reduce the amount of personal data retained within Qualtrics.
+
+Researchers should nevertheless assess whether email distributions are appropriate for their specific study and ensure that any processing of participant contact details has a valid legal basis and appropriate safeguards; see [Survey Options Overview](https://www.qualtrics.com/support/survey-platform/survey-module/survey-options/survey-options-overview/) and [Email Distribution Management](https://www.qualtrics.com/support/survey-platform/distributions-module/email-distribution/email-distribution-management/) for details.
+
+A method to distribute surveys without the Qualtrics built-in email distribution functionality is explained with [detailed instructions](https://fgb-rdm.nl/rdm/tools/SecureUseOfQuestionnaireTools.html#qNoEmails) provided by FGB’s Research and Policy Support Team.
+
+## Sharing Surveys and Collaboration Permissions
+
+Qualtrics allows survey owners to [share surveys with collaborators](https://www.qualtrics.com/support/survey-platform/my-projects/sharing-a-project/) and define what they can view, edit, or access. Researchers should grant only the permissions necessary for a collaborator’s role. Access can be restricted to specific survey content, settings, or response data.
+
+By default, when enabling [Collaborations](https://www.qualtrics.com/support/survey-platform/my-projects/sharing-a-project/), Qualtrics will grant all available access rights to the selected survey. Hence, sharing surveys may expose personal data, survey responses, and contact information to additional users. Researchers should therefore limit access to authorised individuals, regularly review permissions, and exercise particular caution when collaborating with external partners or users outside the institution, as additional resources such as contact lists or libraries may also become accessible depending on the sharing configuration.
+
+**Key points of attention when sharing surveys**:
+
+- Limit access to response data and personal information to collaborators who genuinely require it.
+- Restrict editing permissions for survey questions, flow, and survey options to avoid unintended changes that could affect data quality, privacy, or compliance.
+- Exercise particular caution when collaborating outside your organisation, as external sharing may provide access to additional surveys, libraries, or contact lists.
+
+The Qualtrics documentation on Collaboration Permissions is available through [Qualtrics Knowledge Base](https://www.qualtrics.com/support/survey-platform/my-projects/sharing-a-project/).
+
+## Automatic Survey Translation and GDPR Considerations
+
+Qualtrics offers an **Automatic Survey Translation** feature that can translate survey questions, blocks, or entire surveys using third-party services by **Amazon Translate** and **Google Translate**.
+
+When this feature is used, the text of the survey questions is transmitted to the selected external translation provider and returned in the target language. Qualtrics states that only the survey text is sent for translation and that respondent data is not transferred as part of this process, see the [Qualtrics Knowledge Base](https://www.qualtrics.com/support/survey-platform/survey-module/survey-tools/translate-survey/).
+
+Researchers should therefore carefully assess whether [automatic translation](https://www.qualtrics.com/support/survey-platform/survey-module/survey-tools/translate-survey/) is appropriate for their project and ensure that any transfer of information complies with applicable GDPR requirements and institutional policies. Where necessary, consider using manual translation methods instead.
+
+**OR**
+
+Researchers should therefore carefully assess whether [automatic translation](https://www.qualtrics.com/support/survey-platform/survey-module/survey-tools/translate-survey/) is appropriate for their project. If a survey potentially contains personal data, the automatic translation feature must not be used, because the data will processed by a third party, which may be outside of the European Economic Area (EEA), for which VU Amsterdam does not have guarantees that respondents' privacy will be respected. In that case, use manual translation methods instead.
