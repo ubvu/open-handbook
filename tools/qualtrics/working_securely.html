@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-09-03">
+<meta name="dcterms.date" content="2026-09-04">
 
 <title>Working Securely – Research Support Handbook</title>
 <style>
@@ -228,8 +228,22 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#working-with-personal-data-and-gdpr-compliance" id="toc-working-with-personal-data-and-gdpr-compliance" class="nav-link active" data-scroll-target="#working-with-personal-data-and-gdpr-compliance">Working with Personal Data and GDPR Compliance</a></li>
+  <li><a href="#qualtrics-features-and-gdpr-considerations" id="toc-qualtrics-features-and-gdpr-considerations" class="nav-link" data-scroll-target="#qualtrics-features-and-gdpr-considerations">Qualtrics Features and GDPR Considerations</a></li>
+  <li><a href="#after-collecting-your-data-consider-an-appropriate-data-storage-tool" id="toc-after-collecting-your-data-consider-an-appropriate-data-storage-tool" class="nav-link" data-scroll-target="#after-collecting-your-data-consider-an-appropriate-data-storage-tool">After Collecting Your Data: Consider an Appropriate Data Storage Tool</a></li>
+  <li><a href="#metadata-and-cookies-collection-in-qualtrics" id="toc-metadata-and-cookies-collection-in-qualtrics" class="nav-link" data-scroll-target="#metadata-and-cookies-collection-in-qualtrics">Metadata and Cookies Collection in Qualtrics</a></li>
+  <li><a href="#survey-security-and-response-anonymisation" id="toc-survey-security-and-response-anonymisation" class="nav-link" data-scroll-target="#survey-security-and-response-anonymisation">Survey Security and Response Anonymisation</a></li>
+  <li><a href="#survey-distribution-anonymous-survey-links-and-personal-data" id="toc-survey-distribution-anonymous-survey-links-and-personal-data" class="nav-link" data-scroll-target="#survey-distribution-anonymous-survey-links-and-personal-data">Survey Distribution: Anonymous Survey Links and Personal Data</a></li>
+  <li><a href="#survey-distribution-email-distribution-and-personal-data" id="toc-survey-distribution-email-distribution-and-personal-data" class="nav-link" data-scroll-target="#survey-distribution-email-distribution-and-personal-data">Survey Distribution: Email Distribution and Personal Data</a></li>
+  <li><a href="#sharing-surveys-and-collaboration-permissions" id="toc-sharing-surveys-and-collaboration-permissions" class="nav-link" data-scroll-target="#sharing-surveys-and-collaboration-permissions">Sharing Surveys and Collaboration Permissions</a></li>
+  <li><a href="#automatic-survey-translation-and-gdpr-considerations" id="toc-automatic-survey-translation-and-gdpr-considerations" class="nav-link" data-scroll-target="#automatic-survey-translation-and-gdpr-considerations">Automatic Survey Translation and GDPR Considerations</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/qualtrics/working_securely.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -248,7 +262,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">last modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 3, 2026</p>
+      <p class="date">September 4, 2026</p>
     </div>
   </div>
   
@@ -260,8 +274,75 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="working-with-personal-data-and-gdpr-compliance" class="level2">
+<h2 class="anchored" data-anchor-id="working-with-personal-data-and-gdpr-compliance">Working with Personal Data and GDPR Compliance</h2>
+<p>When conducting research with Qualtrics, you will often collect and process <a href="https://rdm.vu.nl/topics/gdpr.html#definitions" target="_blank">personal data</a>. Personal data is protected under the <a href="../../topics/gdpr.html">General Data Protection Regulation</a> (GDPR).</p>
+<p>When using Qualtrics to collect research data, GDPR compliance should be considered from the start of the project. Researchers must ensure that personal data are collected on a valid legal ground, that participants are properly informed, and that the subject’s rights are upheld. Depending on the study, additional requirements such as a DPIA or data sharing agreements may apply. Please refer to this <a href="https://rdm.vu.nl/guides/comply-with-gdpr.html" target="_blank">GDPR guidance page</a> for more information on how to comply with GDPR requirements in research.</p>
+</section>
+<section id="qualtrics-features-and-gdpr-considerations" class="level2">
+<h2 class="anchored" data-anchor-id="qualtrics-features-and-gdpr-considerations">Qualtrics Features and GDPR Considerations</h2>
+<p>Qualtrics offers a wide range of features that can influence how personal data is collected, processed, stored, shared, or transferred.</p>
+<p>The sections below highlight several of the most commonly used features within the organisation and explain their potential GDPR implications. However, this overview is not exhaustive. Other Qualtrics functionality, settings, integrations, or design choices may also affect the processing of personal data.</p>
+<p>Researchers should therefore carefully consider the privacy implications of the features they enable, and the survey configurations they choose. As a general principle, privacy and data protection considerations should be assessed whenever selecting or configuring Qualtrics functionality for research purposes.</p>
+</section>
+<section id="after-collecting-your-data-consider-an-appropriate-data-storage-tool" class="level2">
+<h2 class="anchored" data-anchor-id="after-collecting-your-data-consider-an-appropriate-data-storage-tool">After Collecting Your Data: Consider an Appropriate Data Storage Tool</h2>
+<p>Qualtrics is intended for the collection and management of survey data and should not be used as a data storage platform.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../public/caution-no-storage.png" class="img-fluid figure-img"></p>
+<figcaption>Image stating that no storage is allowed.</figcaption>
+</figure>
+</div>
+<p>When data collection is completed, please delete all data from Qualtrics as soon as possible. It is strongly recommended that all research data is transferred three months after data collection is completed at the latest.</p>
+<p><strong>Transfer</strong> all data from Qualtrics to an appropriate <a href="https://rdm.vu.nl/topics/data-storage.html" target="_blank">data storage</a> solution and make sure to <strong>delete</strong> the data in Qualtrics as soon as the transfer is completed. The <a href="https://rdm.vu.nl/blog/2026-09-02-storagefinder-classificationtool-unavailable.html" target="_blank">Data Storage Finder</a> can assist you in finding appropriate storage platforms and you can contact your <a href="https://vu.nl/en/employee/research-data-support/contact-your-data-steward" target="_blank">Faculty Data Steward</a> or the <a href="mailto:rdm@vu.nl">RDM Support Desk</a> if you need more advice on this.</p>
+<p>Following the above, Qualtrics should never be used as an archive for long-term storage of your data after your research has been completed.</p>
+</section>
+<section id="metadata-and-cookies-collection-in-qualtrics" class="level2">
+<h2 class="anchored" data-anchor-id="metadata-and-cookies-collection-in-qualtrics">Metadata and Cookies Collection in Qualtrics</h2>
+<p>Qualtrics uses a number of essential <a href="https://www.qualtrics.com/support/survey-platform/getting-started/browser-cookies/" target="_blank">cookies and browser storage items</a> to support core survey functionality, including maintaining survey sessions, authentication, and preventing duplicate submissions.</p>
+<p>Additional cookies and browser metadata may be used when optional features such as <strong>Prevent Multiple Submissions</strong>, <strong>Duplicate Detection</strong>, or <strong>Bot Detection</strong> are enabled. These features can process limited technical information, including browser, device, or IP-related data, to help improve data quality and identify potentially fraudulent responses.</p>
+<p>Researchers should therefore <strong>carefully consider whether these features are necessary for their study</strong> and ensure their use is consistent with the research purpose and GDPR requirements. See the Qualtrics page on <a href="https://www.qualtrics.com/support/survey-platform/survey-module/survey-checker/fraud-detection/" target="_blank">Fraud Detection</a>.</p>
+<p>For further details, see the Qualtrics documentation on <a href="https://www.qualtrics.com/support/survey-platform/getting-started/browser-cookies/" target="_blank">Browser Compatibility &amp; Cookies</a> and <a href="https://www.qualtrics.com/support/survey-platform/survey-module/survey-checker/fraud-detection/" target="_blank">Fraud Detection</a>.</p>
+</section>
+<section id="survey-security-and-response-anonymisation" class="level2">
+<h2 class="anchored" data-anchor-id="survey-security-and-response-anonymisation">Survey Security and Response Anonymisation</h2>
+<p>For studies involving personal data, researchers can enable <strong>Anonymize Responses</strong>, which removes identifying information such as IP addresses, location data, and other metadata from responses before they are stored, contributing to GDPR compliance and participant confidentiality. Researchers should carefully review these settings and select the options that are appropriate for their study design and data protection requirements.</p>
+<p>For further details on the available security settings, see the Qualtrics <a href="https://www.qualtrics.com/support/survey-platform/survey-module/survey-options/survey-protection/" target="_blank"><strong>Security Survey Options</strong></a> <strong>documentation</strong>.</p>
+</section>
+<section id="survey-distribution-anonymous-survey-links-and-personal-data" class="level2">
+<h2 class="anchored" data-anchor-id="survey-distribution-anonymous-survey-links-and-personal-data">Survey Distribution: Anonymous Survey Links and Personal Data</h2>
+<p>Qualtrics allows for a survey distribution method called “Anonymous Survey” or “Anonymous Links”. “You can distribute your survey by pasting this link into an email, onto a website, or into any mode of communication you use with your recipients. Anyone who clicks on the link will be able to take the survey.</p>
+<p>It’s called the “anonymous” link because it does not collect identifying information such as name or email address, unless you specifically ask for it in the survey. However, by default, the anonymous link will collect the user’s IP Address and location data based on that IP Address” (see the <a href="https://www.qualtrics.com/support/survey-platform/distributions-module/web-distribution/anonymous-link/" target="_blank">Qualtrics Knowledge Base</a>).</p>
+<p>From a GDPR perspective, an “anonymous” survey should not automatically be considered anonymous, as the processing of personal data depends on the survey design, the questions asked, and the privacy settings selected. Researchers should therefore review their survey configuration carefully and enable safeguards such as <strong>Anonymize Responses</strong> where appropriate. For further information on the behaviour, limitations, and privacy implications of anonymous survey links, please consult the Qualtrics <a href="https://www.qualtrics.com/support/survey-platform/distributions-module/web-distribution/anonymous-link/" target="_blank"><strong>Anonymous Link</strong> documentation</a>.</p>
+</section>
+<section id="survey-distribution-email-distribution-and-personal-data" class="level2">
+<h2 class="anchored" data-anchor-id="survey-distribution-email-distribution-and-personal-data">Survey Distribution: Email Distribution and Personal Data</h2>
+<p>When using <a href="https://www.qualtrics.com/support/survey-platform/distributions-module/email-distribution/email-distribution-management/" target="_blank">Qualtrics email distributions</a>, researchers should be aware that email invitations are linked to identifiable recipient information and can be associated with survey participation and response status. Distribution histories may also contain email addresses, individual survey links, and participation metrics, which means that personal data can be processed even when survey responses themselves do not contain direct identifiers.</p>
+<p>To reduce privacy risks and support GDPR compliance, surveys should be configured to minimise the collection and retention of personal information where possible. As a best practice, enable <strong>Prevent Indexing</strong>, <strong>Secure Participants’ Files</strong>, and <strong>Anonymize Response</strong> in the Survey Options. In addition, add an <strong>End of Survey</strong> element and select <strong>Do NOT record any personal information and remove panel association</strong>. These settings help to limit the link between respondents and their survey responses and reduce the amount of personal data retained within Qualtrics.</p>
+<p>Researchers should nevertheless assess whether email distributions are appropriate for their specific study and ensure that any processing of participant contact details has a valid legal basis and appropriate safeguards; see <a href="https://www.qualtrics.com/support/survey-platform/survey-module/survey-options/survey-options-overview/" target="_blank">Survey Options Overview</a> and <a href="https://www.qualtrics.com/support/survey-platform/distributions-module/email-distribution/email-distribution-management/" target="_blank">Email Distribution Management</a> for details.</p>
+<p>A method to distribute surveys without the Qualtrics built-in email distribution functionality is explained with <a href="https://fgb-rdm.nl/rdm/tools/SecureUseOfQuestionnaireTools.html#qNoEmails" target="_blank">detailed instructions</a> provided by FGB’s Research and Policy Support Team.</p>
+</section>
+<section id="sharing-surveys-and-collaboration-permissions" class="level2">
+<h2 class="anchored" data-anchor-id="sharing-surveys-and-collaboration-permissions">Sharing Surveys and Collaboration Permissions</h2>
+<p>Qualtrics allows survey owners to <a href="https://www.qualtrics.com/support/survey-platform/my-projects/sharing-a-project/" target="_blank">share surveys with collaborators</a> and define what they can view, edit, or access. Researchers should grant only the permissions necessary for a collaborator’s role. Access can be restricted to specific survey content, settings, or response data.</p>
+<p>By default, when enabling <a href="https://www.qualtrics.com/support/survey-platform/my-projects/sharing-a-project/" target="_blank">Collaborations</a>, Qualtrics will grant all available access rights to the selected survey. Hence, sharing surveys may expose personal data, survey responses, and contact information to additional users. Researchers should therefore limit access to authorised individuals, regularly review permissions, and exercise particular caution when collaborating with external partners or users outside the institution, as additional resources such as contact lists or libraries may also become accessible depending on the sharing configuration.</p>
+<p><strong>Key points of attention when sharing surveys</strong>:</p>
+<ul>
+<li>Limit access to response data and personal information to collaborators who genuinely require it.</li>
+<li>Restrict editing permissions for survey questions, flow, and survey options to avoid unintended changes that could affect data quality, privacy, or compliance.</li>
+<li>Exercise particular caution when collaborating outside your organisation, as external sharing may provide access to additional surveys, libraries, or contact lists.</li>
+</ul>
+<p>The Qualtrics documentation on Collaboration Permissions is available through <a href="https://www.qualtrics.com/support/survey-platform/my-projects/sharing-a-project/" target="_blank">Qualtrics Knowledge Base</a>.</p>
+</section>
+<section id="automatic-survey-translation-and-gdpr-considerations" class="level2">
+<h2 class="anchored" data-anchor-id="automatic-survey-translation-and-gdpr-considerations">Automatic Survey Translation and GDPR Considerations</h2>
+<p>Qualtrics offers an <strong>Automatic Survey Translation</strong> feature that can translate survey questions, blocks, or entire surveys using third-party services by <strong>Amazon Translate</strong> and <strong>Google Translate</strong>.</p>
+<p>When this feature is used, the text of the survey questions is transmitted to the selected external translation provider and returned in the target language. Qualtrics states that only the survey text is sent for translation and that respondent data is not transferred as part of this process, see the <a href="https://www.qualtrics.com/support/survey-platform/survey-module/survey-tools/translate-survey/" target="_blank">Qualtrics Knowledge Base</a>.</p>
+<p>Researchers should therefore carefully assess whether <a href="https://www.qualtrics.com/support/survey-platform/survey-module/survey-tools/translate-survey/" target="_blank">automatic translation</a> is appropriate for their project and ensure that any transfer of information complies with applicable GDPR requirements and institutional policies. Where necessary, consider using manual translation methods instead.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -723,7 +804,7 @@ ul.task-list li input[type="checkbox"] {
         </li>
     </ul>
 </div>
-<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/qualtrics/working_securely.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/qualtrics/working_securely.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
