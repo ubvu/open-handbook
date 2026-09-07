@@ -10,9 +10,9 @@ A SURFfilesender download URL, API key, and encryption password are credentials.
 
 ## Network access
 
-To open `ada.labs.vu.nl`, an interactive node such as `inter01.labs.vu.nl`, or [Open OnDemand](https://ondemand.labs.vu.nl/) directly from your computer, you must be on the VU campus network or connected to eduVPN.
+To open `ada.labs.vu.nl` or [Open OnDemand](https://ondemand.labs.vu.nl/) directly from your computer, you must be on the VU campus network or connected to eduVPN.
 
-You can also connect to ADA through the public stepstone `ssh.data.vu.nl`. If you configured it as a `ProxyJump` according to the [ADA login instructions](https://rdm.vu.nl/tools/ada/login.html), eduVPN is not required.
+You can also connect to ADA through the public stepstone `ssh.data.vu.nl`. If you configured it as a `ProxyJump` according to the [ADA login instructions](login.qmd), eduVPN is not required.
 
 Once you are logged in to ADA, no additional VPN is needed. ADA can access SURFfilesender, SciStor, and the interactive nodes directly.
 
@@ -57,7 +57,7 @@ To receive files from SURFfilesender:
 3. In step 3, paste the SURFfilesender download link. Enter your email address and select a destination in your home or shared project storage.
 4. Start the transfer. A successful transfer shows **Success**. If it fails, open **Live Output** to inspect the error.
 
-Open OnDemand sessions run as Slurm jobs. Request enough walltime for the transfer. The session continues until its walltime expires, even if you close the browser tab, and can be reopened from **My Interactive Sessions**. See the [Open OnDemand documentation](https://rdm.vu.nl/tools/ada/open-ondemand.html).
+Open OnDemand sessions run as Slurm jobs. Request enough walltime for the transfer. The session continues until its walltime expires, even if you close the browser tab, and can be reopened from **My Interactive Sessions**. See the [Open OnDemand documentation](open-ondemand.qmd).
 
 
 ## Option 2: download directly from an ADA terminal
@@ -274,8 +274,8 @@ The destination is not writable. Use your home directory or request access to th
 
 - [SURFfilesender](https://www.surf.nl/en/services/storage-data-management/surffilesender)
 - [SURFfilesender CLI client](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/198967770/SURFfilesender+CLI+client)
-- [ADA Login](https://rdm.vu.nl/tools/ada/login.html)
-- [ADA Quick Start](https://rdm.vu.nl/tools/ada/quick_start.html)
-- [SciStor Quick Start](https://rdm.vu.nl/tools/scistor/quick_start.html)
+- [ADA Login](login.qmd)
+- [ADA Quick Start](quick_start.qmd)
+- [SciStor Quick Start](../scistor/quick_start.qmd)
 
 For unresolved problems, contact IT for Research. Include the node name and complete error message, but remove API keys, download tokens, passwords, and sensitive filenames.
