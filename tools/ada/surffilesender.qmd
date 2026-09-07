@@ -42,7 +42,22 @@ SURFfilesender can host individual files or complete directories. Avoid creating
 
 After selecting the files, you can copy the transfer link or send it to specific recipients. You need this link to download the data from SURFfilesender to ADA. Existing transfers and their links are available under **My transfers** in SURFfilesender.
 
-## Option 1: use the SURFfilesender app in Open OnDemand
+### Collaborating with external users
+
+SURFfilesender is useful when you collaborate with researchers who do not have a VUnetID or access to ADA and SciStor. For example, an external collaborator can upload raw measurements, sequencing data, microscopy images, or simulation results through a temporary guest link. You can then download the files directly to SciStor.
+
+#### Receive files from an external collaborator
+
+1. Sign in to [SURFfilesender](https://filesender.surf.nl/) with your VU account.
+2. Open the **Guests** tab and click "New invitation" button.
+3. Enter the collaborator's email address and, if available, choose an expiry date.
+4. Send the invitation.
+5. The collaborator receives an email containing a guest upload link. They can open this link in a web browser, add the files, and send the transfer to you.
+6. When the upload is complete, you receive a normal SURFfilesender download link. Use the Open OnDemand or terminal instructions below to download the files to SciStor.
+
+The external collaborator does not need a VUnetID, an ADA account, eduVPN, or access to the VU campus network. They only need an internet connection and the valid guest link.
+
+## Option 1: Use the SURFfilesender app in Open OnDemand
 
 The SURFfilesender app in [Open OnDemand](https://ondemand.labs.vu.nl/) can transfer files between SURFfilesender and the ADA storage without using an SSH client.
 
@@ -59,8 +74,7 @@ To receive files from SURFfilesender:
 
 Open OnDemand sessions run as Slurm jobs. Request enough walltime for the transfer. The session continues until its walltime expires, even if you close the browser tab, and can be reopened from **My Interactive Sessions**. See the [Open OnDemand documentation](open-ondemand.qmd).
 
-
-## Option 2: download directly from an ADA terminal
+## Option 2: Download directly from an ADA terminal
 
 ### 1. Get the client and credentials
 
@@ -115,7 +129,7 @@ read -rsp 'SURFfilesender API key: ' FS_APIKEY
 ```
 
 ::: {.callout-note}
-Keep the login node for light tasks. For a long command-line transfer, connect to `inter01`–`inter04` and use `tmux`, as described under [Large transfers](#large-transfers).
+Keep the login node for light tasks. For a long command-line transfer, connect to `ondemand` and use `tmux`, as described under [Large transfers](#large-transfers).
 :::
 
 Download to your home directory:
@@ -177,7 +191,7 @@ python3 ~/filesender.py \
 
 SURF currently advertises support for individual files up to **1 TB**. This is the FileSender limit, not the available space in SciStor. A 1 TB file cannot fit in a guest user's 200 GB home directory.
 
-Run a long download on `inter01`–`inter04` inside `tmux`. This lets it continue if the browser closes or the SSH connection is interrupted:
+Run a long download on `ondemand` inside `tmux`. This lets it continue if the browser closes or the SSH connection is interrupted:
 
 ```bash
 tmux new -s filesender
@@ -186,7 +200,7 @@ tmux new -s filesender
 Run the download, then detach by pressing `Ctrl-B`, followed by `D`. Later, reconnect to the same node and restore the session:
 
 ```bash
-ssh inter01
+ssh ondemand
 tmux attach -t filesender
 ```
 
