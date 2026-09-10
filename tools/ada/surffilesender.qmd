@@ -1,0 +1,269 @@
+---
+title: "How Do I Download Data from SURFfilesender to SciStor?"
+---
+
+This page explains how to place files received through [SURFfilesender](https://filesender.surf.nl/) in SciStor. You can use the graphical Open OnDemand portal or download files directly from an ADA terminal.
+
+## Network Access
+
+To open `ada.labs.vu.nl` or [Open OnDemand](https://ondemand.labs.vu.nl/) directly from your computer, you must be on the VU campus network or connected through the eduVPN virtual private network (VPN).
+
+You can also connect to ADA through the public stepstone `ssh.data.vu.nl`. If you configured it as a `ProxyJump` according to the [ADA login instructions](login.qmd), you do not need eduVPN.
+
+## Check Your Available Space
+
+Your ADA home directory (`$HOME`) is on SciStor, and all ADA nodes share it. Guest users have up to **200 gigabytes (GB)** in their home directory. Existing data, Python environments, notebooks, software, and results also count toward this limit.
+
+Check your current usage before downloading:
+
+```bash
+du -sh "$HOME"
+```
+
+To find large top-level directories:
+
+```bash
+du -sh "$HOME"/* 2>/dev/null | sort -h
+```
+
+> **Warning**
+>
+> A 150 GB download will not fit if 70 GB of your 200 GB allowance is already occupied. Use a SciStor project directory with sufficient capacity or contact IT for Research.
+
+## Prepare the Transfer in SURFfilesender
+
+SURFfilesender can host individual files or complete directories. Avoid creating unnecessarily large single archives. For example, split a 2TB dataset into several parts because SURFfilesender currently supports individual files up to **1 TB**. See [Package or Split a Dataset](#package-or-split-a-dataset) for an example.
+
+After selecting the files, you can copy the transfer link or send it to specific recipients. You need this link to download the data from SURFfilesender to ADA. You can find existing transfers and their links under **My transfers** in SURFfilesender.
+
+### Collaborating with External Users
+
+SURFfilesender is useful when you collaborate with researchers who do not have a VUnetID or access to ADA and SciStor. For example, an external collaborator can upload raw measurements, sequencing data, microscopy images, or simulation results through a temporary guest link. You can then download the files directly to SciStor.
+
+#### Receive Files from an External Collaborator
+
+1. Sign in to [SURFfilesender](https://filesender.surf.nl/) with your VU account.
+2. Open the **Guests** tab and select **New invitation**.
+3. Enter the collaborator's email address and, if available, choose an expiry date.
+4. Send the invitation.
+5. The collaborator receives an email containing a guest upload link. They can open this link in a web browser, add the files, and send the transfer to you.
+6. When the upload is complete, you receive a standard SURFfilesender download link. Use the Open OnDemand or terminal instructions below to download the files to SciStor.
+
+The external collaborator does not need a VUnetID, an ADA account, eduVPN, or access to the VU campus network. They need only an internet connection and a valid guest link.
+
+## Option 1: Use the SURFfilesender App in Open OnDemand
+
+The SURFfilesender app in [Open OnDemand](https://ondemand.labs.vu.nl/) can transfer files between SURFfilesender and ADA storage without an SSH (Secure Shell) client.
+
+> **Important**
+>
+> The **Username** field refers to the **Identifiant** shown in your SURFfilesender profile. It is not your VUnetID or email address.
+
+To receive files from SURFfilesender:
+
+1. In step 1, select **Send files**.
+2. In step 2, enter the credentials from **SURFfilesender > My profile**. You can enter them manually or use a Python command-line interface (CLI) configuration file stored in `~/.filesender/`. The configuration-file option is convenient for frequent transfers.
+3. In step 3, paste the SURFfilesender download link. Enter your email address and select a destination in your home or shared project storage.
+4. Start the transfer. A successful transfer shows **Success**. If the transfer fails, open **Live Output** to inspect the error.
+
+Open OnDemand sessions run as Slurm jobs. The session continues until its walltime expires, even if you close the browser tab. You can reopen it from **My Interactive Sessions**. See the [Open OnDemand documentation](open-ondemand.qmd).
+
+## Option 2: Download Directly from an ADA Terminal
+
+### 1. Get the Client and Credentials
+
+Sign in to [SURFfilesender](https://filesender.surf.nl/) and open your profile page from your local machine.
+
+1. Go to **SURFfilesender > My profile**, scroll down, and download the Python CLI client, normally named `filesender.py`.
+2. Copy your **Identifiant**.
+3. Create an **API key** if you do not already have one.
+
+Copy it to ADA:
+
+```bash
+scp filesender.py ada-login:~/
+```
+
+### 2. Choose the Destination
+
+To download to your home directory, select an existing folder or create one:
+
+```bash
+mkdir -p ~/filesender-downloads
+```
+
+For shared research data, use the SciStor project directory assigned to your group. Check that the exact destination exists and is writable:
+
+```bash
+test -d '/scistor/PATH/TO/PROJECT' && echo 'Directory exists'
+test -w '/scistor/PATH/TO/PROJECT' && echo 'Directory is writable'
+```
+
+Create a destination only after confirming the correct project path:
+
+```bash
+mkdir -p '/scistor/PATH/TO/PROJECT/incoming/filesender-transfer'
+```
+
+Do not change permissions on a shared project directory. Ask the project owner or IT for Research if you do not know the correct path.
+
+### 3. Download the Transfer
+
+Copy the complete URL from the SURFfilesender email or download page. It normally resembles:
+
+```text
+https://filesender.surf.nl/?s=download&token=...
+```
+
+Read the API key into a temporary variable. This keeps the literal key out of your shell history. Repeat this in every new shell session. For frequent transfers, consider the configuration-file method described below.
+
+```bash
+read -rsp 'SURFfilesender API key: ' FS_APIKEY
+```
+
+> **Note**
+>
+> Keep the login node for light tasks. For a long command-line transfer, connect to `ondemand` and use `tmux`, as described under [Large Transfers](#large-transfers).
+
+Download to your home directory:
+
+```bash
+python3 ~/filesender.py \
+  -b 'https://filesender.surf.nl/rest.php' \
+  -f 'YOUR.NAME@vu.nl' \
+  -u 'YOUR_FILESENDER_IDENTIFIER' \
+  -a "$FS_APIKEY" \
+  -d 'COMPLETE_FILESENDER_DOWNLOAD_URL' \
+  -o ~/filesender-downloads \
+  --progress
+```
+
+Replace the email address, identifier, and download URL. Do not change `-a "$FS_APIKEY"`, it reads the key from the temporary variable. Always keep the URL in single quotes because it contains the special Bash character `&`.
+
+For a project folder, replace the output option with:
+
+```bash
+-o '/scistor/PATH/TO/PROJECT/incoming/filesender-transfer'
+```
+
+Clear the API key afterward:
+
+```bash
+unset FS_APIKEY
+```
+
+### Optional: Save the SURFfilesender Configuration
+
+If you transfer files regularly, store the identifier and API key in a private configuration file instead of entering them each time:
+
+```bash
+ssh ada-login
+mkdir -p ~/.filesender
+chmod 700 ~/.filesender
+```
+
+Download the Python CLI configuration from **SURFfilesender > My profile** to your computer. Copy the configuration file to ADA and save it as `~/.filesender/filesender.py.ini`:
+
+```bash
+scp filesender.py.ini ada-login:~/.filesender/filesender.py.ini
+ssh ada-login 'chmod 600 ~/.filesender/filesender.py.ini'
+```
+
+The download command is then shorter:
+
+```bash
+python3 ~/filesender.py \
+  -f 'YOUR.NAME@vu.nl' \
+  -d 'COMPLETE_FILESENDER_DOWNLOAD_URL' \
+  -o ~/filesender-downloads \
+  --progress
+```
+
+## Large Transfers
+
+SURF currently advertises support for individual files up to **1 TB**. This is the FileSender limit, not the available space in SciStor. A 1 TB file cannot fit in a guest user's 200 GB home directory.
+
+Run a long download on `ondemand` inside `tmux`. This lets it continue if the browser closes or the SSH connection is interrupted:
+
+```bash
+tmux new -s filesender
+```
+
+Run the download, then detach by pressing `Ctrl-B`, followed by `D`. Later, reconnect to the same node and restore the session:
+
+```bash
+ssh ondemand
+tmux attach -t filesender
+```
+
+Record the node name. A `tmux` session stays on the node where it was started.
+
+## Package or Split a Dataset
+
+Splitting can help when a dataset is large and is necessary when an individual file exceeds the SURFfilesender limit.
+
+Split a compressed archive into numbered parts of at most 100 GB:
+
+```bash
+split -b 100G -d -a 3 experiment-data.tar.gz experiment-data.tar.gz.part-
+```
+
+Send all generated parts. After downloading them into the same SciStor directory, join and extract them:
+
+```bash
+cat experiment-data.tar.gz.part-* > experiment-data.tar.gz
+tar -xzf experiment-data.tar.gz
+```
+
+> **Warning**
+>
+> Splitting does not reduce the total space needed. Joining and extracting may temporarily require space for the parts, the joined archive, and the extracted data. Check capacity first and delete the parts only after verifying the extracted files.
+
+To combine a directory containing many files into one compressed archive:
+
+```bash
+tar -czf experiment-data.tar.gz experiment-data/
+```
+
+Formats such as `.fastq.gz`, `.vcf.gz`, `.bam`, `.cram`, and `.zip` are already compressed. Package them without trying to compress them again:
+
+```bash
+tar -cf experiment-data.tar experiment-data/
+```
+
+## Verify the Files
+
+Check the downloaded files and total size:
+
+```bash
+find ~/filesender-downloads -maxdepth 2 -type f -ls
+du -sh ~/filesender-downloads
+```
+
+For a project directory, replace the path. Compare the file names and sizes with the SURFfilesender page. If the sender supplied Secure Hash Algorithm 256-bit (SHA-256) checksums, verify them:
+
+```bash
+sha256sum '/path/to/downloaded/file'
+```
+
+## Troubleshooting
+
+### `Authentication failed, check API token`
+
+Make sure `-u` contains the long SURFfilesender identifier, not your email address or VUnetID. Create the API key in the same account, read it into `FS_APIKEY`, and use exactly:
+
+```bash
+-a "$FS_APIKEY"
+```
+
+Do not use `-a "$<API_KEY>"`.
+
+### `TypeError: 'NoneType' object is not iterable`
+
+The client did not receive an API key. Supply both `-u 'YOUR_FILESENDER_IDENTIFIER'` and `-a "$FS_APIKEY"`.
+
+### `Permission denied`
+
+The destination is not writable. Use your home directory or request access to the correct project folder.
+
+For unresolved problems, contact IT for Research. Include the node name and complete error message, but remove API keys, download tokens, passwords, and sensitive filenames.
