@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-02-25">
+<meta name="dcterms.date" content="2026-09-07">
 
-<title>Costs and Getting Access – Research Support Handbook</title>
+<title>How Do I Download Data from SURFfilesender to SciStor? – Research Support Handbook</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -27,6 +27,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -37,8 +72,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../tools/ada/contact_support.html" rel="next">
-<link href="../../tools/ada/index.html" rel="prev">
+<link href="../../tools/ada/yoda.html" rel="next">
+<link href="../../tools/ada/open-ondemand.html" rel="prev">
 <link href="../../public/favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -154,7 +189,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tools/ada/index.html">ADA</a></li><li class="breadcrumb-item"><a href="../../tools/ada/cost_access.html">Costs and Getting Access</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tools/ada/index.html">ADA</a></li><li class="breadcrumb-item"><a href="../../tools/ada/login.html">Documentation</a></li><li class="breadcrumb-item"><a href="../../tools/ada/surffilesender.html">How Do I Download Data from SURFfilesender to SciStor?</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -183,7 +218,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tools/ada/cost_access.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../tools/ada/cost_access.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Costs and Getting Access</span></a>
   </div>
 </li>
@@ -258,7 +293,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tools/ada/surffilesender.html" class="sidebar-item-text sidebar-link">
+  <a href="../../tools/ada/surffilesender.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">How Do I Download Data from SURFfilesender to SciStor?</span></a>
   </div>
 </li>
@@ -363,21 +398,39 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#how-to-request-access" id="toc-how-to-request-access" class="nav-link active" data-scroll-target="#how-to-request-access">How to request access</a></li>
-  <li><a href="#are-there-costs-involved" id="toc-are-there-costs-involved" class="nav-link" data-scroll-target="#are-there-costs-involved">Are there costs involved?</a>
+  <li><a href="#network-access" id="toc-network-access" class="nav-link active" data-scroll-target="#network-access">Network Access</a></li>
+  <li><a href="#check-your-available-space" id="toc-check-your-available-space" class="nav-link" data-scroll-target="#check-your-available-space">Check Your Available Space</a></li>
+  <li><a href="#prepare-the-transfer-in-surffilesender" id="toc-prepare-the-transfer-in-surffilesender" class="nav-link" data-scroll-target="#prepare-the-transfer-in-surffilesender">Prepare the Transfer in SURFfilesender</a>
   <ul class="collapse">
-  <li><a href="#buying-dedicated-compute-nodes" id="toc-buying-dedicated-compute-nodes" class="nav-link" data-scroll-target="#buying-dedicated-compute-nodes">Buying dedicated compute nodes</a></li>
+  <li><a href="#collaborating-with-external-users" id="toc-collaborating-with-external-users" class="nav-link" data-scroll-target="#collaborating-with-external-users">Collaborating with External Users</a></li>
+  </ul></li>
+  <li><a href="#option-1-use-the-surffilesender-app-in-open-ondemand" id="toc-option-1-use-the-surffilesender-app-in-open-ondemand" class="nav-link" data-scroll-target="#option-1-use-the-surffilesender-app-in-open-ondemand">Option 1: Use the SURFfilesender App in Open OnDemand</a></li>
+  <li><a href="#option-2-download-directly-from-an-ada-terminal" id="toc-option-2-download-directly-from-an-ada-terminal" class="nav-link" data-scroll-target="#option-2-download-directly-from-an-ada-terminal">Option 2: Download Directly from an ADA Terminal</a>
+  <ul class="collapse">
+  <li><a href="#get-the-client-and-credentials" id="toc-get-the-client-and-credentials" class="nav-link" data-scroll-target="#get-the-client-and-credentials">1. Get the Client and Credentials</a></li>
+  <li><a href="#choose-the-destination" id="toc-choose-the-destination" class="nav-link" data-scroll-target="#choose-the-destination">2. Choose the Destination</a></li>
+  <li><a href="#download-the-transfer" id="toc-download-the-transfer" class="nav-link" data-scroll-target="#download-the-transfer">3. Download the Transfer</a></li>
+  <li><a href="#optional-save-the-surffilesender-configuration" id="toc-optional-save-the-surffilesender-configuration" class="nav-link" data-scroll-target="#optional-save-the-surffilesender-configuration">Optional: Save the SURFfilesender Configuration</a></li>
+  </ul></li>
+  <li><a href="#large-transfers" id="toc-large-transfers" class="nav-link" data-scroll-target="#large-transfers">Large Transfers</a></li>
+  <li><a href="#package-or-split-a-dataset" id="toc-package-or-split-a-dataset" class="nav-link" data-scroll-target="#package-or-split-a-dataset">Package or Split a Dataset</a></li>
+  <li><a href="#verify-the-files" id="toc-verify-the-files" class="nav-link" data-scroll-target="#verify-the-files">Verify the Files</a></li>
+  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a>
+  <ul class="collapse">
+  <li><a href="#authentication-failed-check-api-token" id="toc-authentication-failed-check-api-token" class="nav-link" data-scroll-target="#authentication-failed-check-api-token"><code>Authentication failed, check API token</code></a></li>
+  <li><a href="#typeerror-nonetype-object-is-not-iterable" id="toc-typeerror-nonetype-object-is-not-iterable" class="nav-link" data-scroll-target="#typeerror-nonetype-object-is-not-iterable"><code>TypeError: 'NoneType' object is not iterable</code></a></li>
+  <li><a href="#permission-denied" id="toc-permission-denied" class="nav-link" data-scroll-target="#permission-denied"><code>Permission denied</code></a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/ada/cost_access.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/ada/surffilesender.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 <div class="handbook-title">Research Support Handbook</div>
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tools/ada/index.html">ADA</a></li><li class="breadcrumb-item"><a href="../../tools/ada/cost_access.html">Costs and Getting Access</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../tools/ada/index.html">ADA</a></li><li class="breadcrumb-item"><a href="../../tools/ada/login.html">Documentation</a></li><li class="breadcrumb-item"><a href="../../tools/ada/surffilesender.html">How Do I Download Data from SURFfilesender to SciStor?</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Costs and Getting Access</h1>
+<h1 class="title">How Do I Download Data from SURFfilesender to SciStor?</h1>
 </div>
 
 
@@ -388,7 +441,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">last modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 25, 2026</p>
+      <p class="date">September 7, 2026</p>
     </div>
   </div>
   
@@ -400,16 +453,178 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="how-to-request-access" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-request-access">How to request access</h2>
-<p>A form to request an account on ADA can be found on 🔒 <a href="https://services.vu.nl/esc" target="_blank">VU Service Portal</a> under IT &gt; My work field &gt; Research &gt; HPC Cluster Computing &gt; New ADA HPC Cluster Computing.</p>
+<p>This page explains how to place files received through <a href="https://filesender.surf.nl/" target="_blank">SURFfilesender</a> in SciStor. You can use the graphical Open OnDemand portal or download files directly from an ADA terminal.</p>
+<section id="network-access" class="level2">
+<h2 class="anchored" data-anchor-id="network-access">Network Access</h2>
+<p>To open <code>ada.labs.vu.nl</code> or <a href="https://ondemand.labs.vu.nl/" target="_blank">Open OnDemand</a> directly from your computer, you must be on the VU campus network or connected through the eduVPN virtual private network (VPN).</p>
+<p>You can also connect to ADA through the public stepstone <code>ssh.data.vu.nl</code>. If you configured it as a <code>ProxyJump</code> according to the <a href="../../tools/ada/login.html">ADA login instructions</a>, you do not need eduVPN.</p>
 </section>
-<section id="are-there-costs-involved" class="level2">
-<h2 class="anchored" data-anchor-id="are-there-costs-involved">Are there costs involved?</h2>
-<p>The ADA cluster community nodes are free to use for VU researchers, although resources are limited.</p>
-<section id="buying-dedicated-compute-nodes" class="level3">
-<h3 class="anchored" data-anchor-id="buying-dedicated-compute-nodes">Buying dedicated compute nodes</h3>
-<p>If your research projects require heavy usage of HPC you can consider spending part of your research budget to buy compute hardware for your group. Please contact <a href="mailto:itvo.it@vu.nl">IT for Research</a> for more information on what is possible.</p>
+<section id="check-your-available-space" class="level2">
+<h2 class="anchored" data-anchor-id="check-your-available-space">Check Your Available Space</h2>
+<p>Your ADA home directory (<code>$HOME</code>) is on SciStor, and all ADA nodes share it. Guest users have up to <strong>200 gigabytes (GB)</strong> in their home directory. Existing data, Python environments, notebooks, software, and results also count toward this limit.</p>
+<p>Check your current usage before downloading:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">du</span> <span class="at">-sh</span> <span class="st">"</span><span class="va">$HOME</span><span class="st">"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>To find large top-level directories:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">du</span> <span class="at">-sh</span> <span class="st">"</span><span class="va">$HOME</span><span class="st">"</span>/<span class="pp">*</span> <span class="dv">2</span><span class="op">&gt;</span>/dev/null <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-h</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<blockquote class="blockquote">
+<p><strong>Warning</strong></p>
+<p>A 150 GB download will not fit if 70 GB of your 200 GB allowance is already occupied. Use a SciStor project directory with sufficient capacity or contact IT for Research.</p>
+</blockquote>
+</section>
+<section id="prepare-the-transfer-in-surffilesender" class="level2">
+<h2 class="anchored" data-anchor-id="prepare-the-transfer-in-surffilesender">Prepare the Transfer in SURFfilesender</h2>
+<p>SURFfilesender can host individual files or complete directories. Avoid creating unnecessarily large single archives. For example, split a 2TB dataset into several parts because SURFfilesender currently supports individual files up to <strong>1 TB</strong>. See <a href="#package-or-split-a-dataset">Package or Split a Dataset</a> for an example.</p>
+<p>After selecting the files, you can copy the transfer link or send it to specific recipients. You need this link to download the data from SURFfilesender to ADA. You can find existing transfers and their links under <strong>My transfers</strong> in SURFfilesender.</p>
+<section id="collaborating-with-external-users" class="level3">
+<h3 class="anchored" data-anchor-id="collaborating-with-external-users">Collaborating with External Users</h3>
+<p>SURFfilesender is useful when you collaborate with researchers who do not have a VUnetID or access to ADA and SciStor. For example, an external collaborator can upload raw measurements, sequencing data, microscopy images, or simulation results through a temporary guest link. You can then download the files directly to SciStor.</p>
+<section id="receive-files-from-an-external-collaborator" class="level4">
+<h4 class="anchored" data-anchor-id="receive-files-from-an-external-collaborator">Receive Files from an External Collaborator</h4>
+<ol type="1">
+<li>Sign in to <a href="https://filesender.surf.nl/" target="_blank">SURFfilesender</a> with your VU account.</li>
+<li>Open the <strong>Guests</strong> tab and select <strong>New invitation</strong>.</li>
+<li>Enter the collaborator’s email address and, if available, choose an expiry date.</li>
+<li>Send the invitation.</li>
+<li>The collaborator receives an email containing a guest upload link. They can open this link in a web browser, add the files, and send the transfer to you.</li>
+<li>When the upload is complete, you receive a standard SURFfilesender download link. Use the Open OnDemand or terminal instructions below to download the files to SciStor.</li>
+</ol>
+<p>The external collaborator does not need a VUnetID, an ADA account, eduVPN, or access to the VU campus network. They need only an internet connection and a valid guest link.</p>
+</section>
+</section>
+</section>
+<section id="option-1-use-the-surffilesender-app-in-open-ondemand" class="level2">
+<h2 class="anchored" data-anchor-id="option-1-use-the-surffilesender-app-in-open-ondemand">Option 1: Use the SURFfilesender App in Open OnDemand</h2>
+<p>The SURFfilesender app in <a href="https://ondemand.labs.vu.nl/" target="_blank">Open OnDemand</a> can transfer files between SURFfilesender and ADA storage without an SSH (Secure Shell) client.</p>
+<blockquote class="blockquote">
+<p><strong>Important</strong></p>
+<p>The <strong>Username</strong> field refers to the <strong>Identifiant</strong> shown in your SURFfilesender profile. It is not your VUnetID or email address.</p>
+</blockquote>
+<p>To receive files from SURFfilesender:</p>
+<ol type="1">
+<li>In step 1, select <strong>Send files</strong>.</li>
+<li>In step 2, enter the credentials from <strong>SURFfilesender &gt; My profile</strong>. You can enter them manually or use a Python command-line interface (CLI) configuration file stored in <code>~/.filesender/</code>. The configuration-file option is convenient for frequent transfers.</li>
+<li>In step 3, paste the SURFfilesender download link. Enter your email address and select a destination in your home or shared project storage.</li>
+<li>Start the transfer. A successful transfer shows <strong>Success</strong>. If the transfer fails, open <strong>Live Output</strong> to inspect the error.</li>
+</ol>
+<p>Open OnDemand sessions run as Slurm jobs. The session continues until its walltime expires, even if you close the browser tab. You can reopen it from <strong>My Interactive Sessions</strong>. See the <a href="../../tools/ada/open-ondemand.html">Open OnDemand documentation</a>.</p>
+</section>
+<section id="option-2-download-directly-from-an-ada-terminal" class="level2">
+<h2 class="anchored" data-anchor-id="option-2-download-directly-from-an-ada-terminal">Option 2: Download Directly from an ADA Terminal</h2>
+<section id="get-the-client-and-credentials" class="level3">
+<h3 class="anchored" data-anchor-id="get-the-client-and-credentials">1. Get the Client and Credentials</h3>
+<p>Sign in to <a href="https://filesender.surf.nl/" target="_blank">SURFfilesender</a> and open your profile page from your local machine.</p>
+<ol type="1">
+<li>Go to <strong>SURFfilesender &gt; My profile</strong>, scroll down, and download the Python CLI client, normally named <code>filesender.py</code>.</li>
+<li>Copy your <strong>Identifiant</strong>.</li>
+<li>Create an <strong>API key</strong> if you do not already have one.</li>
+</ol>
+<p>Copy it to ADA:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">scp</span> filesender.py ada-login:~/</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="choose-the-destination" class="level3">
+<h3 class="anchored" data-anchor-id="choose-the-destination">2. Choose the Destination</h3>
+<p>To download to your home directory, select an existing folder or create one:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> <span class="at">-p</span> ~/filesender-downloads</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>For shared research data, use the SciStor project directory assigned to your group. Check that the exact destination exists and is writable:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">test</span> <span class="at">-d</span> <span class="st">'/scistor/PATH/TO/PROJECT'</span> <span class="kw">&amp;&amp;</span> <span class="bu">echo</span> <span class="st">'Directory exists'</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">test</span> <span class="at">-w</span> <span class="st">'/scistor/PATH/TO/PROJECT'</span> <span class="kw">&amp;&amp;</span> <span class="bu">echo</span> <span class="st">'Directory is writable'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Create a destination only after confirming the correct project path:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> <span class="at">-p</span> <span class="st">'/scistor/PATH/TO/PROJECT/incoming/filesender-transfer'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Do not change permissions on a shared project directory. Ask the project owner or IT for Research if you do not know the correct path.</p>
+</section>
+<section id="download-the-transfer" class="level3">
+<h3 class="anchored" data-anchor-id="download-the-transfer">3. Download the Transfer</h3>
+<p>Copy the complete URL from the SURFfilesender email or download page. It normally resembles:</p>
+<pre class="text"><code>https://filesender.surf.nl/?s=download&amp;token=...</code></pre>
+<p>Read the API key into a temporary variable. This keeps the literal key out of your shell history. Repeat this in every new shell session. For frequent transfers, consider the configuration-file method described below.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="bu">read</span> <span class="at">-rsp</span> <span class="st">'SURFfilesender API key: '</span> <span class="va">FS_APIKEY</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<blockquote class="blockquote">
+<p><strong>Note</strong></p>
+<p>Keep the login node for light tasks. For a long command-line transfer, connect to <code>ondemand</code> and use <code>tmux</code>, as described under <a href="#large-transfers">Large Transfers</a>.</p>
+</blockquote>
+<p>Download to your home directory:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> ~/filesender.py <span class="dt">\</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">-b</span> <span class="st">'https://filesender.surf.nl/rest.php'</span> <span class="dt">\</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">-f</span> <span class="st">'YOUR.NAME@vu.nl'</span> <span class="dt">\</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">-u</span> <span class="st">'YOUR_FILESENDER_IDENTIFIER'</span> <span class="dt">\</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">-a</span> <span class="st">"</span><span class="va">$FS_APIKEY</span><span class="st">"</span> <span class="dt">\</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">-d</span> <span class="st">'COMPLETE_FILESENDER_DOWNLOAD_URL'</span> <span class="dt">\</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">-o</span> ~/filesender-downloads <span class="dt">\</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">--progress</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Replace the email address, identifier, and download URL. Do not change <code>-a "$FS_APIKEY"</code>, it reads the key from the temporary variable. Always keep the URL in single quotes because it contains the special Bash character <code>&amp;</code>.</p>
+<p>For a project folder, replace the output option with:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">-o</span> <span class="st">'/scistor/PATH/TO/PROJECT/incoming/filesender-transfer'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Clear the API key afterward:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="bu">unset</span> <span class="va">FS_APIKEY</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="optional-save-the-surffilesender-configuration" class="level3">
+<h3 class="anchored" data-anchor-id="optional-save-the-surffilesender-configuration">Optional: Save the SURFfilesender Configuration</h3>
+<p>If you transfer files regularly, store the identifier and API key in a private configuration file instead of entering them each time:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh</span> ada-login</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> <span class="at">-p</span> ~/.filesender</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">chmod</span> 700 ~/.filesender</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Download the Python CLI configuration from <strong>SURFfilesender &gt; My profile</strong> to your computer. Copy the configuration file to ADA and save it as <code>~/.filesender/filesender.py.ini</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">scp</span> filesender.py.ini ada-login:~/.filesender/filesender.py.ini</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh</span> ada-login <span class="st">'chmod 600 ~/.filesender/filesender.py.ini'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The download command is then shorter:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> ~/filesender.py <span class="dt">\</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">-f</span> <span class="st">'YOUR.NAME@vu.nl'</span> <span class="dt">\</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">-d</span> <span class="st">'COMPLETE_FILESENDER_DOWNLOAD_URL'</span> <span class="dt">\</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">-o</span> ~/filesender-downloads <span class="dt">\</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">--progress</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+<section id="large-transfers" class="level2">
+<h2 class="anchored" data-anchor-id="large-transfers">Large Transfers</h2>
+<p>SURF currently advertises support for individual files up to <strong>1 TB</strong>. This is the FileSender limit, not the available space in SciStor. A 1 TB file cannot fit in a guest user’s 200 GB home directory.</p>
+<p>Run a long download on <code>ondemand</code> inside <code>tmux</code>. This lets it continue if the browser closes or the SSH connection is interrupted:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ex">tmux</span> new <span class="at">-s</span> filesender</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Run the download, then detach by pressing <code>Ctrl-B</code>, followed by <code>D</code>. Later, reconnect to the same node and restore the session:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh</span> ondemand</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="ex">tmux</span> attach <span class="at">-t</span> filesender</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Record the node name. A <code>tmux</code> session stays on the node where it was started.</p>
+</section>
+<section id="package-or-split-a-dataset" class="level2">
+<h2 class="anchored" data-anchor-id="package-or-split-a-dataset">Package or Split a Dataset</h2>
+<p>Splitting can help when a dataset is large and is necessary when an individual file exceeds the SURFfilesender limit.</p>
+<p>Split a compressed archive into numbered parts of at most 100 GB:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">split</span> <span class="at">-b</span> 100G <span class="at">-d</span> <span class="at">-a</span> 3 experiment-data.tar.gz experiment-data.tar.gz.part-</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Send all generated parts. After downloading them into the same SciStor directory, join and extract them:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> experiment-data.tar.gz.part-<span class="pp">*</span> <span class="op">&gt;</span> experiment-data.tar.gz</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">tar</span> <span class="at">-xzf</span> experiment-data.tar.gz</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<blockquote class="blockquote">
+<p><strong>Warning</strong></p>
+<p>Splitting does not reduce the total space needed. Joining and extracting may temporarily require space for the parts, the joined archive, and the extracted data. Check capacity first and delete the parts only after verifying the extracted files.</p>
+</blockquote>
+<p>To combine a directory containing many files into one compressed archive:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tar</span> <span class="at">-czf</span> experiment-data.tar.gz experiment-data/</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Formats such as <code>.fastq.gz</code>, <code>.vcf.gz</code>, <code>.bam</code>, <code>.cram</code>, and <code>.zip</code> are already compressed. Package them without trying to compress them again:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tar</span> <span class="at">-cf</span> experiment-data.tar experiment-data/</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="verify-the-files" class="level2">
+<h2 class="anchored" data-anchor-id="verify-the-files">Verify the Files</h2>
+<p>Check the downloaded files and total size:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">find</span> ~/filesender-downloads <span class="at">-maxdepth</span> 2 <span class="at">-type</span> f <span class="at">-ls</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">du</span> <span class="at">-sh</span> ~/filesender-downloads</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>For a project directory, replace the path. Compare the file names and sizes with the SURFfilesender page. If the sender supplied Secure Hash Algorithm 256-bit (SHA-256) checksums, verify them:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb22"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sha256sum</span> <span class="st">'/path/to/downloaded/file'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="troubleshooting" class="level2">
+<h2 class="anchored" data-anchor-id="troubleshooting">Troubleshooting</h2>
+<section id="authentication-failed-check-api-token" class="level3">
+<h3 class="anchored" data-anchor-id="authentication-failed-check-api-token"><code>Authentication failed, check API token</code></h3>
+<p>Make sure <code>-u</code> contains the long SURFfilesender identifier, not your email address or VUnetID. Create the API key in the same account, read it into <code>FS_APIKEY</code>, and use exactly:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="ex">-a</span> <span class="st">"</span><span class="va">$FS_APIKEY</span><span class="st">"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Do not use <code>-a "$&lt;API_KEY&gt;"</code>.</p>
+</section>
+<section id="typeerror-nonetype-object-is-not-iterable" class="level3">
+<h3 class="anchored" data-anchor-id="typeerror-nonetype-object-is-not-iterable"><code>TypeError: 'NoneType' object is not iterable</code></h3>
+<p>The client did not receive an API key. Supply both <code>-u 'YOUR_FILESENDER_IDENTIFIER'</code> and <code>-a "$FS_APIKEY"</code>.</p>
+</section>
+<section id="permission-denied" class="level3">
+<h3 class="anchored" data-anchor-id="permission-denied"><code>Permission denied</code></h3>
+<p>The destination is not writable. Use your home directory or request access to the correct project folder.</p>
+<p>For unresolved problems, contact IT for Research. Include the node name and complete error message, but remove API keys, download tokens, passwords, and sensitive filenames.</p>
 
 
 </section>
@@ -818,13 +1033,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../tools/ada/index.html" class="pagination-link" aria-label="ADA">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">ADA</span>
+      <a href="../../tools/ada/open-ondemand.html" class="pagination-link" aria-label="Open OnDemand">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Open OnDemand</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../tools/ada/contact_support.html" class="pagination-link" aria-label="Support and Contact">
-        <span class="nav-page-text">Support and Contact</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../tools/ada/yoda.html" class="pagination-link" aria-label="Data transfer to and from Yoda">
+        <span class="nav-page-text">Data transfer to and from Yoda</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -878,7 +1093,7 @@ ul.task-list li input[type="checkbox"] {
         </li>
     </ul>
 </div>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/ada/cost_access.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/tools/ada/surffilesender.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
