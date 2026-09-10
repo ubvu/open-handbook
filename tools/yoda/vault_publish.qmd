@@ -1,40 +1,25 @@
 ---
 title: Publishing Data
-categories: []
 ---
 
-After a data package has been archived in the vault, it can optionally be submitted for publication.
+After a data package has been archived in the Vault, it can optionally be submitted for publication.
 
 Publishing a data package has the following effects:
 
 - A [DOI](/topics/persistent-identifier.qmd) will be assigned to the data package by Yoda. This persistent identifier can be used to refer to the data package, e.g. in a scientific publication.
 - The metadata of the data package will be registered and published in [DataCite](https://commons.datacite.org/). 
-    - DataCite itself is harvested by numerous other websites such as Scopus, Google Scholar, Web of Science, etc.
+    - DataCite is harvested by numerous other websites such as Scopus, Google Scholar, Web of Science, etc. ensuring your dataset is findable.
 - The dataset itself will stay in the Yoda Vault.
-- The dataset will be included in the list of [VU data publications](https://commons.datacite.org/repositories/delft.vudata)
-- Clicking on the DOI link will lead the visitor to a "landing page" of the dataset, see for example this [data publication](https://publication.yoda.vu.nl/full/VU01/2LT5V4.html), which shows the metadata for a particular dataset.
+- Clicking on the DOI link will lead the visitor to a "landing page" of the dataset, see for example this [data publication](https://publication.yoda.vu.nl/full/VU01/2LT5V4.html).
     - If the Access Type metadata field is set to `Open - Freely retrievable`, the data in the data package is downloadable from the landing page. 
     - If the Access Type metadata field is set to `Restricted` or `Closed`, only the metadata will be shown.
     - By setting the Access Type to `Restricted` you indicate a visitor can use the Contact link on the landing page to request access to the data. 
-    - By setting the Access Type to `Closed` you indicate the data are deposited in Yoda, but cannot be requested.
+    - By setting the Access Type to `Closed` you indicate the data are deposited in Yoda, but cannot be requested. 
 - For all cases you need to supply a suitable licence that details the terms and conditions under which your data can or cannot be used. See [this page for more information on suitable licences](/tools/yoda/workflow_metadata_licence.qmd). 
 
 The [VU Yoda repository page](https://commons.datacite.org/repositories/9z2c5d2) on DataCite Commons shows statistics of datasets currently published in VU Yoda.
 
-## How to: Submitting a dataset for publication
 
-1. Navigate to the data package in the vault and press the `Submit for publication` button.
-
-![Submit for publication](/public/tools/yoda/pub-submit-publication.png)
-
-2. Once you’ve submitted a data package for publication, the data manager of your Yoda community will be notified. The data manager will check that the data package meets various criteria for publication.
-
-3. If the data manager encounters any issues, you will be contacted. Otherwise you'll receive a [notification](/tools/yoda/notifications.qmd) that your data package has been published. This notification contains the DOI that has been assigned to your data package.
-
-Note: If needed a data manager can update metadata of a dataset _after_ it has been published.
-
-## Long-term accessibility
-Yoda ensures there is always a data manager assigned to a Vault who can access Restricted and Closed datasets even if the creators no longer have an account.
 
 ## Searching for unpublished datasets
 
@@ -43,4 +28,38 @@ Click on a data package in the results list in order to view it.
 
 ![Unpublished data packages](/public/tools/yoda/pub-search-unpublished.png)
 
-<!-- TODO add information on versioning -->
+
+## How to: Submitting a dataset for publication
+
+::: {.callout-important}
+Publishing your data package is an important step, just like the publication of a journal article or book chapter. Before you publish your data package, you must make sure that it is correct, well-structured, and well-described. Once published, the data package will be findable (and potentially accessible) for anyone on the internet by its DOI. Only in exceptional cases will a data package be depublished, and its landing page will then have to explain why it is not available anymore. 
+
+In general, you should assume that once your data package is published, it will remain published and be part of the academic record. If you have a good reason to depublish a data package, please contact your data manager.
+:::
+
+1. In the Yoda portal, navigate to the data package in the Vault.
+
+2. Under Actions, click _Submit for publication_.
+
+![Submit for publication](/public/tools/yoda/pub-submit-publication.png)
+
+3. Select if the data package is a new publication, or a new version of an already published data package in the same Vault.
+
+When you link your data package to an existing publication, Yoda will assign the same base DOI to the data package, and register the new data package as a new version of the earlier data package. [Here you can find an example](https://doi.org/10.24416/UU01-DV3YZA) of linked data packages.
+
+![Screenshot showing Versions](/public/tools/yoda/pub-versions.png)
+
+4. Once you’ve submitted a data package for publication, the data manager will be notified. The data manager will check that the data package meets various criteria for publication.
+
+5. If the data manager encounters any issues, you will be contacted. Otherwise you'll receive a [notification](/tools/yoda/notifications.qmd) that your data package has been published. This notification contains the DOI that has been assigned to your data package.
+
+
+::: {.callout-note}
+If needed, a data manager can update metadata of a dataset _after_ it has been published. 
+
+Since the Vault is immutable it is not possible to change the dataset itself. If you need to, you can submit the updated original datafolder again to create a new version, as described above.
+:::
+
+## Long-term accessibility
+Yoda ensures there is always a data manager assigned to a Vault who can access Restricted and Closed datasets even if the creators no longer have an account. 
+
