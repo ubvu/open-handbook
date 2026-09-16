@@ -3,32 +3,57 @@ title: Best Practices for Data Storage
 categories: [Research Data,Knowledge Items]
 ---
 
-This page aims to provide you with some practical technical and organizational guidelines on storing research data. 
+This page aims to provide you with some practical technical and organizational guidelines on storing research data. In general you should keep in mind that data should be easy to work with for both humans and computers.
 
-### Avoiding technical issues
-To to improve reusability of your research data and avoid techincal issues it is good to follow some best practices in naming your files and folders. 
+## Avoiding technical issues
+To to improve resability of your research data and avoid techincal issues it is good to follow some best practices in naming your files and folders. 
 
 :::{.callout-note}
 This is meant as a guideline, if your source data does not adhere to these practices it is not always feasible to rename everything. [The VU provided storage platforms](https://rdm.vu.nl/tools.html#category=Data%20Storage) will be able to store it properly, but be aware of the issues mentioned. 
 :::
 
-#### Only use lowercase characters
+### Only use lowercase characters
 Linux and [Yoda](/tools/yoda/index.qmd) are case sensitive, but Windows and MacOS are not, which leads to unexpected behavior when transferring data. For this reason it is best to stick to lowercase characters in file and folder names, especially when creating data on a Linux system such as [ADA](/tools/ada/index.qmd) or [Snellius](/tools/snellius/index.qmd).
 
-#### Avoid spaces, use `-` or `_`
+### Avoid spaces
+Use `-` or `_` instead of spaces, this keeps file and folder names readable without sacrificing technical accessibility. 
+
 Accessing data from the CLI (Command Line Interface) or a script is a lot easier if you avoid spaces. 
 
-Take the file `run 1/my data.json`. Viewing with `cat run 1/my data.json` will not work and you need to remember to use quotes: `cat "run 1/my data.json"` ,or "escape" the space: `vi run\ 1/my\ data.json`. The path `run1/my_data.json` is just as clearly readable, but easier to access.
+Take attempting to view the file `run 1/lab output.txt` with the `cat` command.
+```sh
+~$ cat run 1/lab output.txt
+cat: run: No such file or directory
+cat: 1/lab: No such file or directory
+cat: output.txt: No such file or directory
+```
+You must either "escape":
+```sh
+~$ cat run\ 1/lab\ output.txt
+Output from my lab equipment
+```
+Or use quotes:
+```sh
+~$ cat "run 1/lab output.txt"
+Output from my lab equipment
+```
+Avoiding spaces, the path is just as clearly readable, but easier to access:
+```sh
+~$ cat "run1/lab_output.txt"
+Output from my lab equipment
+```
 
-#### Avoid other special characters such as: ``! # $ % & ' " ` @ ^ ~ + , . ; = ) (``
-Modern filesystems can deal with these characters in file and folder names, but applications might have trouble, and special characters, like spaces, often need to be "escaped" on the commandline. 
+### Avoid other special characters
+Modern filesystems can deal with special characters, such as ``! # $ % & ' " ` @ ^ ~ + , . ; = ) (``, in file and folder names, but applications might have trouble. Special characters, like spaces, also often need to be "escaped" on the commandline. 
 
-#### Try to keep file and folder names as short as possible
+### Keep file and folder names as short as possible
 Windows for example has a maximum path (folder, subfolders and file) length of 250 characters. You could create a much longer path on a Linux system (such as ADA or Snellius) and find you are unable to download it to a Windows laptop. 
 
 File and foldernames should be short but descriptive. Avoid nesting subfolders to deep. 
 
 ## Make a plan
+You should certainly make a practical plan on how to work with reseach data when working with collaborators. But even if you are the only one working on the project it is useful to think on a useful data structure and naming scheme.
+
 ### Agree on a naming convention before you start a new project
 Some topics to decide on:
 
@@ -41,13 +66,18 @@ Some topics to decide on:
 ### Agree on how to work with files
 Most tools and storage platforms do not allow you to work on files simultaneously. 
 
-With the exception of tools like Office365, most applications will not allow you to work on files simultaneously. This usually means the last person who saves a file "wins", overwriting a colleagues edits. Make sure you communicate who works on what files and when, choosing a good folder structure helps with that.
+With the exception of tools like Office365, most applications will not allow you to work on files simultaneously. This means the last person who saves a file "wins", overwriting a colleagues edits. In the best case a file is "locked" so only one user at a time can access it. Make sure you communicate who works on what files and when, choosing a good folder structure helps with that.
 
 ### Document your choices
 Document relevant choices in a README file so collaborators know what to do and future users of the dataset can navigate the dataset more easily.
 
 ## Working with your research data on a laptop
 Roughly speaking there are 3 ways to make your research data available to analysis tools running on your laptop:
+
+| | SciStor | Research Drive | Yoda |
+| --- | --- | --- | --- |
+| Access it directly on a mounted drive (driveletter) | ✅ | 〰️ | 〰️ |
+
 
 ### 1. Access it directly on a mounted drive (driveletter)
 > Main way of working with SciStor
