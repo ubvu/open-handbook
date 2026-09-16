@@ -48,6 +48,13 @@ you want to submit to the vault. Check that all mandatory metadata has been ente
 ![Submit](/public/tools/yoda/arch-submit.png)
 
 If any mandatory metadata is missing, the system will tell you what metadata still needs to be entered.
+
+You will be presented with a choice to copy or move the dataset:
+
+![Submit, copy or move](/public/tools/yoda/arch-submit-question.png)
+
+If you are not planning to work further on the dataset after archiving/publication, choose move. Note that you can always copy the dataset back from the Vault to Research space later.
+
 If all required metadata is present, the system will lock the folder and its subfolders during the archiving process. This ensures that data in the folder can no longer be changed. Once the system has copied all data to the vault, the lock will be removed
 automatically.
 
