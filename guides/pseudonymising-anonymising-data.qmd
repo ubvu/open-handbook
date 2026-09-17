@@ -1,0 +1,44 @@
+---
+title: How can you pseudonymise and anonymise personal data?
+description: "Learn how you can make data about humans less identifiable."
+categories: ["Process & Analyse"]
+---
+
+## Data De-identification
+
+```{.include shift-heading-level-by=2}
+../topics/data-deidentification.qmd
+```
+
+## How do I pseudonymise and anonymise my data
+
+In very general terms pseudonymisation and anonymisation involve the following steps:
+
+1. Write a [data management plan](../topics/data-management-plan.qmd) so that you know exactly which data you need for which purposes, as well as how these data will be processed to achieve your research goals
+2. Identify any **potentially directly identifying information** in your data
+3. Assess whether you need to collect this **directly identifying information**. For example:
+    a. Do you really need IP addresses in your survey data?
+    b. Do you really need to record audio or video?
+    c. Do you really need a consent form with a name, contact information, and signature on it?
+4. If you do not need **directly identifying information** to answer your research question, but you do need it to, for example, contact data subjects:
+    a. Separate directly identifying information from the research data.
+    b. Use pseudonyms or hashes to refer to individuals instead of names.
+    c. Create a keyfile to link the pseudonyms to the names.
+    d. Store the directly identifiable information and the keyfile in a separate location from the research data and/or in encrypted form.
+5. Consider which types of information may lead to indirect identification, such as demographic information (age, education, occupation, etc.), geolocation, specific dates, medical conditions, unique personal characteristics, open text responses, etc.
+6. Carry out pseudonymising and anonymising the directly and indirectly identifiable data. Methods for this are described in the the [FGB De-identification Guide](https://fgb-rdm.nl/Security/Deidentification.html#how-is-it-done), particularly under [step 5](https://fgb-rdm.nl/Security/Deidentification.html#step5)
+7. Go as far as you can in the de-identification process and once you’ve reached the endpoint that is feasible for your research, reassess the privacy risks posed by your data.
+
+### Pseudonymisation and anonymisation tools and software
+
+There are also various "anonymisation" tools available online, such as [OpenAire's Amnesia](https://amnesia.openaire.eu/) for quantitative data. These tools can assist with the de-identification process and in some cases achieve anonymised data, however they do require knowledge of statistical anonymisation techniques. These tools also cannot tell you when the data are anonymous, so it can be difficult to tell if you've done enough to meet the GDPR's definition of anonymised. If you wish to use such tools, it is a good idea to speak with your [data steward](https://vu.nl/en/employee/research-data-support/contact-your-data-steward) for support.
+
+## Additional support
+
+You can find a detailed guide on how to plan for and carry out pseudonymisation and anonymisation on the [FGB De-identification Guide](https://fgb-rdm.nl/Security/Deidentification.html#how-is-it-done). This guide is focused on life sciences and social sciences data, so it may not be generaliseable to your situation.
+
+In addition to the FGB guide, the University of Groningen has an [excellent generalised overview](https://www.rug.nl/digital-competence-centre/privacy-and-data-protection/data-protection/de-identification) on de-identification.
+
+Making qualitative data, such as interview data, audio and video recordings, unstructured observations, less identifiable is often challenging, because it can lead to substantial information loss [@dans-qualitative-data-guide]. In the guide [Making Qualitative Data Reusable](https://doi.org/10.5281/zenodo.8319060), provided by DANS (Data Archiving and Networked Services), you can find some tools that support pseudonymisation and anonymisation of qualitative data (p. 19). The Community of Practice for Open Naturally Occurring Data has an [FAQ about anonymising and pseudonymising naturally occurring data (NOD)](https://www.opennaturallyoccurringdata.com/faq) (see the section 'Anonymising and pseudonymising NOD').
+
+Lastly, it's also a good idea to discuss your pseudonymisation and anonymisation plans with your your [data steward](https://vu.nl/en/employee/research-data-support/contact-your-data-steward) and [Privacy Champion](https://vu.nl/en/employee/policy-and-organisation/privacy-champions-information), *especially* before making any assumptions that the data are anonymous.
