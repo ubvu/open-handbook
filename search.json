@@ -1715,33 +1715,7 @@
     "href": "tools/yoda/vault_publish.html",
     "title": "Publishing Data",
     "section": "",
-    "text": "Research Support Handbook\nAfter a data package has been archived in the vault, it can optionally be submitted for publication.\nPublishing a data package has the following effects:\nThe VU Yoda repository page on DataCite Commons shows statistics of datasets currently published in VU Yoda.",
-    "crumbs": [
-      "Yoda",
-      "Documentation",
-      "Securing and Distributing Data",
-      "Publishing Data"
-    ]
-  },
-  {
-    "objectID": "tools/yoda/vault_publish.html#how-to-submitting-a-dataset-for-publication",
-    "href": "tools/yoda/vault_publish.html#how-to-submitting-a-dataset-for-publication",
-    "title": "Publishing Data",
-    "section": "How to: Submitting a dataset for publication",
-    "text": "How to: Submitting a dataset for publication\n\nNavigate to the data package in the vault and press the Submit for publication button.\n\n\n\n\nSubmit for publication\n\n\n\nOnce you’ve submitted a data package for publication, the data manager of your Yoda community will be notified. The data manager will check that the data package meets various criteria for publication.\nIf the data manager encounters any issues, you will be contacted. Otherwise you’ll receive a notification that your data package has been published. This notification contains the DOI that has been assigned to your data package.\n\nNote: If needed a data manager can update metadata of a dataset after it has been published.",
-    "crumbs": [
-      "Yoda",
-      "Documentation",
-      "Securing and Distributing Data",
-      "Publishing Data"
-    ]
-  },
-  {
-    "objectID": "tools/yoda/vault_publish.html#long-term-accessibility",
-    "href": "tools/yoda/vault_publish.html#long-term-accessibility",
-    "title": "Publishing Data",
-    "section": "Long-term accessibility",
-    "text": "Long-term accessibility\nYoda ensures there is always a data manager assigned to a Vault who can access Restricted and Closed datasets even if the creators no longer have an account.",
+    "text": "Research Support Handbook\nAfter a data package has been archived in the Vault, it can optionally be submitted for publication.\nPublishing a data package has the following effects:\nThe VU Yoda repository page on DataCite Commons shows statistics of datasets currently published in VU Yoda.",
     "crumbs": [
       "Yoda",
       "Documentation",
@@ -1755,6 +1729,32 @@
     "title": "Publishing Data",
     "section": "Searching for unpublished datasets",
     "text": "Searching for unpublished datasets\nYou can search for datasets that are archived but not (yet) published using the Search by Status function in the Yoda Portal. The list of data packages will include only the data packages of project groups of which you are a member. Click on a data package in the results list in order to view it.\n\n\n\nUnpublished data packages",
+    "crumbs": [
+      "Yoda",
+      "Documentation",
+      "Securing and Distributing Data",
+      "Publishing Data"
+    ]
+  },
+  {
+    "objectID": "tools/yoda/vault_publish.html#how-to-submitting-a-dataset-for-publication",
+    "href": "tools/yoda/vault_publish.html#how-to-submitting-a-dataset-for-publication",
+    "title": "Publishing Data",
+    "section": "How to: Submitting a dataset for publication",
+    "text": "How to: Submitting a dataset for publication\n\n\n\n\n\n\nImportant\n\n\n\nPublishing your data package is an important step, just like the publication of a journal article or book chapter. Before you publish your data package, you must make sure that it is correct, well-structured, and well-described. Once published, the data package will be findable (and potentially accessible) for anyone on the internet by its DOI. Only in exceptional cases will a data package be depublished, and its landing page will then have to explain why it is not available anymore.\nIn general, you should assume that once your data package is published, it will remain published and be part of the academic record. If you have a good reason to depublish a data package, please contact your data manager.\n\n\n\nIn the Yoda portal, navigate to the data package in the Vault.\nUnder Actions, click Submit for publication.\n\n\n\n\nSubmit for publication\n\n\n\nSelect if the data package is a new publication, or a new version of an already published data package in the same Vault.\n\nWhen you link your data package to an existing publication, Yoda will assign the same base DOI to the data package, and register the new data package as a new version of the earlier data package. Here you can find an example of linked data packages.\n\n\n\nScreenshot showing Versions\n\n\n\nOnce you’ve submitted a data package for publication, the data manager will be notified. The data manager will check that the data package meets various criteria for publication.\nIf the data manager encounters any issues, you will be contacted. Otherwise you’ll receive a notification that your data package has been published. This notification contains the DOI that has been assigned to your data package.\n\n\n\n\n\n\n\nNote\n\n\n\nIf needed, a data manager can update metadata of a dataset after it has been published.\nSince the Vault is immutable it is not possible to change the dataset itself. If you need to, you can submit the updated original data folder again to create a new version, as described above.",
+    "crumbs": [
+      "Yoda",
+      "Documentation",
+      "Securing and Distributing Data",
+      "Publishing Data"
+    ]
+  },
+  {
+    "objectID": "tools/yoda/vault_publish.html#long-term-accessibility",
+    "href": "tools/yoda/vault_publish.html#long-term-accessibility",
+    "title": "Publishing Data",
+    "section": "Long-term accessibility",
+    "text": "Long-term accessibility\nYoda ensures there is always a data manager assigned to a Vault who can access Restricted and Closed datasets, even if the creators no longer have an account.",
     "crumbs": [
       "Yoda",
       "Documentation",
