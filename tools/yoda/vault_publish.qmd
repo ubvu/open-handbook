@@ -45,7 +45,7 @@ In general, you should assume that once your data package is published, it will 
 
 3. Select if the data package is a new publication, or a new version of an already published data package in the same Vault.
 
-When you link your data package to an existing publication, Yoda will assign the same base DOI to the data package, and register the new data package as a new version of the earlier data package. [Here you can find an example](https://doi.org/10.24416/UU01-DV3YZA) of linked data packages.
+When you link your data package to an existing publication, Yoda will assign the same base DOI to the data package, and register the new data package as a new version of the earlier data package. Here you can find an [example of linked data packages](https://doi.org/10.24416/UU01-DV3YZA).
 
 ![Screenshot showing Versions](/public/tools/yoda/pub-versions.png)
 
@@ -57,9 +57,9 @@ When you link your data package to an existing publication, Yoda will assign the
 ::: {.callout-note}
 If needed, a data manager can update metadata of a dataset _after_ it has been published. 
 
-Since the Vault is immutable it is not possible to change the dataset itself. If you need to, you can submit the updated original datafolder again to create a new version, as described above.
+Since the Vault is immutable it is not possible to change the dataset itself. If you need to, you can submit the updated original data folder again to create a new version, as described above.
 :::
 
 ## Long-term accessibility
-Yoda ensures there is always a data manager assigned to a Vault who can access Restricted and Closed datasets even if the creators no longer have an account. 
+Yoda ensures there is always a data manager assigned to a Vault who can access Restricted and Closed datasets, even if the creators no longer have an account. 
 
