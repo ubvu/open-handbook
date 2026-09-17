@@ -7,15 +7,17 @@ title: Costs and Getting Access
 Ask the owner of the project folder to invite you.
 
 ### New project folder
-A new Research Drive projectfolder can be requested via the form on 🔒 [ServiceNow](https://services.vu.nl/esc?id=sc_cat_item&sys_id=39d345f097066990e553359fe153af01). Please note that because there can be costs involved (see below) you need to supply a budget code.
+A new Research Drive project folder can be requested via the form on 🔒 [ServiceNow](https://services.vu.nl/esc?id=sc_cat_item&sys_id=39d345f097066990e553359fe153af01). Please note that because there can be costs involved (see below) you need to supply a budget code.
 
-Once the projectfolder is created you can invite internal and external collaborators yourself.
+Once the project folder is created you can invite internal and external collaborators yourself.
 
 #### Inviting internal and external collaborators
 
-The owner of the projectfolder can create new accounts and grant access through the following steps.
+The owner of the project folder can create new accounts and grant access through the following steps.
 
 ##### Inviting a new user
+
+If a prospective user does not yet have a Research Drive account, the owner needs to invite them. Instructions for this process are in the current section. If a user does already have a Research Drive account, you can skip to the instructions about granting rights to {groups)[#granting-access-rights-to-groups) and [single users](#granting-access-rights-to-single-users).
 
 After having logged into Research Drive, select in the top menu bar: Dashboard > User accounts (2nd tab) > Invite user.
 
@@ -26,17 +28,39 @@ All VU email accounts are automatically required to use Multi-Factor Authenticat
 
 
 Contributors from outside VU Amsterdam will need to create an eduID account to log into Research Drive. An [instruction](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/134479930/RD+How+to+create+an+eduID+account) on how to do this can be found on SURF's Research Drive Wiki. Additionally, it is important to turn on the MFA step in the eduID account. This is a requirement to better protect the data stored in VU Research Drive.
+It is greatly preferred that external contributors use the email address provided to them by their institution or workplace. Research Drive functional managers discourage the use of personal email addresses.
 
-##### Grant Access Right to the New User  
+##### Granting access rights to groups
 
-When a new user has activated their account, you will receive an email confirming this. At this point you can grant them access to your entire project folder or only to a specific subfolder / several subfolders. 
-After each folder or document you will see the term "Shared". If you click on the term "Shared" you will see an overview of all users who have access rights to this folder or document.  By using the search function and selecting a user you can grant various rights (Can view/Can edit/Custom permissions) to this user. If the user needs specific rights you can click on "Custom permissions".  
+The best practice for Research Drive is to create groups ('Teams') to which roles and rights can be awarded. Using Teams, it is easier to keep track of which rights a group should have, and it is easier to revoke these rights as well. The steps to create a Team are as follows:
 
-Options:  
+1. Click on the 'Contacts' button on the Research Drive top bar.
+2. In the left-hand side of the screen, click the 'Plus'-icon next to Teams. This allows you to create a Team and name it descriptively.
+3. Add the right users as members of the Team. You can also make existing Teams members of the new Team.
+4. Navigating back to the project folder, you can share appropriate files or folders with the correct Team(s).
+
+This process is explained in more detail, with screenshots, in [SURF's wiki](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/117179008/RD+How+to+structure+your+project#RD%3AHowtostructureyourproject-3.3Sharetheprojectfolderwithcustomgroups).
+
+The following rights can be given out:  
 
 1. Create (Grants the ability to create new documents or upload them into a folder).  
 2. Edit (Grants the ability to make alterations to documents). 
-3. Share (this enables the user to invite new users to RD and afterward this user can grant them access to the parts of your project folder they have access to. In general, we discourage granting these rights. If many people have share rights, it can become difficult to have an overview of which user has access to the data). 
+3. Share (this enables the user to invite new users to RD and afterward this user can grant them access to the parts of your project folder they have access to. In general, we **discourage** granting these rights. If many people have share rights, it can become difficult to have an overview of which user has access to the data, and revoking rights may also prove complicated). 
+4. Delete (Grants the ability to delete files or folders. This right may not be necessary for most users to have).
+
+Please also read the [Do's and Don'ts of Sharing](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/128909585/RD+Do+s+and+don+ts+of+Sharing) to stick to the best practices of these functionalities, as formulated by SURF.
+
+##### Granting access rights to single users  
+
+It does happen sometimes that a single user, rather than a group, needs to get access to a specific (sub)folder or file. For example when individual contributors need to share data with you, but should not see each other's data, so they get their own subfolder.
+When a new user has activated their account, you will receive an email confirming this. At this point you can grant them access to your entire project folder or only to a specific subfolder / several subfolders. 
+After each folder or document you will see the term "Shared". If you click on the term "Shared" you will see an overview of all users who have access rights to this folder or document.  By using the search function and selecting a user you can grant various rights (Can view/Can edit/Custom permissions) to this user. If the user needs specific rights you can click on "Custom permissions".  
+
+The following rights can be given out:  
+
+1. Create (Grants the ability to create new documents or upload them into a folder).  
+2. Edit (Grants the ability to make alterations to documents). 
+3. Share (this enables the user to invite new users to RD and afterward this user can grant them access to the parts of your project folder they have access to. In general, we **discourage** granting these rights. If many people have share rights, it can become difficult to have an overview of which user has access to the data, and revoking rights may also prove complicated). 
 4. Delete (Grants the ability to delete files or folders. This right may not be necessary for most users to have).
 
 Please also read the [Do's and Don'ts of Sharing](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/128909585/RD+Do+s+and+don+ts+of+Sharing) to stick to the best practices of these functionalities, as formulated by SURF.
