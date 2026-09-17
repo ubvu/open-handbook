@@ -218,6 +218,52 @@ div.csl-indent {
 
 <section id="data-de-identification" class="level2">
 <h2 class="anchored" data-anchor-id="data-de-identification">Data De-identification</h2>
+<p>If your research involves <strong>data about human beings</strong>, these data probably will be identifiable, meaning that this information can reveal your research participants’ identities. Take a look at the image below:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../topics/../public/anonymization-reference-card-brown-chicken.png" class="img-fluid figure-img"></p>
+<figcaption>Image of brown chicken in a context of white chicken, explaining that even a general description can reveal someone’s identity</figcaption>
+</figure>
+</div>
+<p>This example <span class="citation" data-cites="reference-card-anonymization">(<a href="#ref-reference-card-anonymization" role="doc-biblioref">Hrudey et al. 2019</a>)</span> shows that even an apparently general description can reveal someone’s identity, depending on the context. This is not problematic in itself, it means that you must make sure to carry out your research in line with the <a href="../topics/gdpr.html">GDPR</a>. Having said that, it is nevertheless useful to see if and to what extent you can make your data less identifiable. We explain why below.</p>
+<section id="different-levels-of-identifiability" class="level4">
+<h4 class="anchored" data-anchor-id="different-levels-of-identifiability">Different levels of identifiability</h4>
+<p>Within the <a href="../topics/gdpr.html#definitions">GDPR definitions</a> several terms are used: pseudonymisation, anonymisation, direct identification and indirect identification. All of these terms are related to the extent to which it is possible to identify an individual. Pseudonymisation is a process to make personal data less easily linkable to individual data subjects or research participants. In other words, it is a method to de-identify personal data. If the data undergo enough de-identification that it is no longer possible to re-identify a data subject, they are considered anonymised (see also <span class="citation" data-cites="data-privacy-handbook-uu">Support et al. (<a href="#ref-data-privacy-handbook-uu" role="doc-biblioref">2025</a>)</span>). This process is called anonymisation.</p>
+<p>The processes of pseudonymisation and anonymisation are depicted in the image below.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../topics/../public/anonymization-reference-card-table.png" class="img-fluid figure-img"></p>
+<figcaption>Table with fully identifiable data in the first column, pseudonymous data in the second column and anonymous data in the third column</figcaption>
+</figure>
+</div>
+<p>This overview <span class="citation" data-cites="reference-card-anonymization">(<a href="#ref-reference-card-anonymization" role="doc-biblioref">Hrudey et al. 2019</a>)</span> explains the difference between fully identifiable, pseudonymous and anonymous data and provides an example of how data can be made less identifiable. The data in the left-most column are fully identifiable. The information is made less identifiable in the second column, for example by replacing the patient number with a random study subject number, and by aggregating some of the data, for example by using year of birth instead of the specific date. The combination of variables in the second column still makes it possible to reveal this person’s identity, but it is more difficult. In the third column, the pieces of information are aggregated even further, making it impossible to identify the person. These data are considered anonymous, but note that this information is probably too general for many scientific research purposes.</p>
+</section>
+<section id="why-are-pseudonymisation-and-anonymisation-useful" class="level4">
+<h4 class="anchored" data-anchor-id="why-are-pseudonymisation-and-anonymisation-useful">Why are pseudonymisation and anonymisation useful?</h4>
+<p>Full anonymisation is not always achievable or the steps involved may render the data less useful for analysis. The extent to which you will de-identify your data depends on:</p>
+<ul>
+<li>Characteristics of the dataset</li>
+<li>The context in which it was obtained</li>
+<li>What the researcher plans to do with the data</li>
+<li>The resources available for making the data less identifiable</li>
+</ul>
+<p>Even if you cannot fully anonymise your data, a basic level of data pseudonymisation, such as removing names and contact information from a dataset, has important advantages. Pseudonymisation helps you to:</p>
+<ul>
+<li>Safeguard the privacy of research subjects, which helps maintain public trust</li>
+<li>Prevent developing a bias when working with the data</li>
+<li>Meet data protection obligations</li>
+<li>Decrease the privacy risks posed by your data which:
+<ul>
+<li>Increases your <a href="../topics/data-storage.html">data storage options</a></li>
+<li>Allows you to more securely share data with appropriate parties</li>
+</ul></li>
+</ul>
+</section>
+<section id="pseudonymisation-and-anonymisation-methods" class="level4">
+<h4 class="anchored" data-anchor-id="pseudonymisation-and-anonymisation-methods">Pseudonymisation and anonymisation methods</h4>
+<p>As there are many different types of data in very different formats, there is no uniform method to apply data pseudonymisation and anonymisation. General considerations for making data less identifiable are provided in the <a href="../guides/pseudonymising-anonymising-data.html">Guide ‘How can you pseudonymise and anonymise personal data?’</a>. This Guide includes references to more specific recommendations for specific types of data (e.g.&nbsp;audiovisual data, consent forms, imaging data, tabular data and questionnaire data).</p>
+<p>Acknowledgement: This text is based on the Data Privacy Handbook of Utrecht University <span class="citation" data-cites="data-privacy-handbook-uu">(<a href="#ref-data-privacy-handbook-uu" role="doc-biblioref">Support et al. 2025</a>)</span> and the <a href="https://fgb-rdm.nl/Security/Deidentification.html" target="_blank">FGB (VU Faculty of Behavioural and Movement Sciences) Security Tips</a>. We thank our colleagues for creating and sharing their work.</p>
+</section>
 </section>
 <section id="how-do-i-pseudonymise-and-anonymise-my-data" class="level2">
 <h2 class="anchored" data-anchor-id="how-do-i-pseudonymise-and-anonymise-my-data">How do I pseudonymise and anonymise my data</h2>
@@ -259,6 +305,12 @@ div.csl-indent {
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-reference-card-anonymization" class="csl-entry" role="listitem">
+Hrudey, E. Jessica, Jan Lucas van der Ploeg, Joan Schrijvers, et al. 2019. <em>Anonymization - Reference Card for Researchers</em>. Version final. Zenodo. <a href="https://doi.org/10.5281/zenodo.3584842">https://doi.org/10.5281/zenodo.3584842</a>.
+</div>
+<div id="ref-data-privacy-handbook-uu" class="csl-entry" role="listitem">
+Support, Research Data Management, Dorien Huijser, Neha Moopen, et al. 2025. <em>Data Privacy Handbook</em>. Zenodo. <a href="https://doi.org/10.5281/zenodo.15350653">https://doi.org/10.5281/zenodo.15350653</a>.
+</div>
 <div id="ref-dans-qualitative-data-guide" class="csl-entry" role="listitem">
 Verburg, Maaike, Ricarda Braukmann, and Widia Mahabier. 2026. <em>Making Qualitative Data Reusable - a Short Guidebook for Researchers and Data Stewards Working with Qualitative Data</em>. Version 3.0. Zenodo. <a href="https://doi.org/10.5281/zenodo.8319060">https://doi.org/10.5281/zenodo.8319060</a>.
 </div>
