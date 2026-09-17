@@ -37,6 +37,8 @@ There are also various "anonymisation" tools available online, such as [OpenAire
 
 You can find a detailed guide on how to plan for and carry out pseudonymisation and anonymisation on the [FGB De-identification Guide](https://fgb-rdm.nl/Security/Deidentification.html#how-is-it-done). This guide is focused on life sciences and social sciences data, so it may not be generaliseable to your situation.
 
-In addition to the FGB guide, the University of Groningen has an [excellent generalised overview](https://www.rug.nl/digital-competence-centre/privacy-and-data-protection/data-protection/de-identification) on de-identification. 
+In addition to the FGB guide, the University of Groningen has an [excellent generalised overview](https://www.rug.nl/digital-competence-centre/privacy-and-data-protection/data-protection/de-identification) on de-identification.
+
+Making qualitative data, such as interview data, audio and video recordings, unstructured observations, less identifiable is often challenging, because it can lead to substantial information loss [@dans-qualitative-data-guide]. In the guide [Making Qualitative Data Reusable](https://doi.org/10.5281/zenodo.8319060), provided by DANS (Data Archiving and Networked Services), you can find some tools that support pseudonymisation and anonymisation of qualitative data (p. 19).
 
 Lastly, it's also a good idea to discuss your pseudonymisation and anonymisation plans with your your [data steward](https://vu.nl/en/employee/research-data-support/contact-your-data-steward) and [Privacy Champion](https://vu.nl/en/employee/policy-and-organisation/privacy-champions-information), *especially* before making any assumptions that the data are anonymous.
