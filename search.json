@@ -3805,7 +3805,7 @@
     "href": "tools/researchdrive/cost_access.html#how-to-get-access",
     "title": "Costs and Getting Access",
     "section": "How to get access",
-    "text": "How to get access\n\nExisting project folder\nAsk the owner of the project folder to invite you.\n\n\nNew project folder\nA new Research Drive projectfolder can be requested via the form on 🔒 ServiceNow. Please note that because there can be costs involved (see below) you need to supply a budget code.\nOnce the projectfolder is created you can invite internal and external collaborators yourself.",
+    "text": "How to get access\n\nExisting project folder\nAsk the owner of the project folder to invite you.\n\n\nNew project folder\nA new Research Drive project folder can be requested via the form on 🔒 ServiceNow. Please note that because there can be costs involved (see below) you need to supply a budget code.\nOnce the project folder is created you can invite internal and external collaborators yourself. Please see the page on Managing groups, users and access rights for detailed instructions how to invite users and assign desired access rights.",
     "crumbs": [
       "Research Drive",
       "Costs and Getting Access"
@@ -3823,80 +3823,541 @@
     ]
   },
   {
-    "objectID": "tools/researchdrive/contact_support.html",
-    "href": "tools/researchdrive/contact_support.html",
-    "title": "Support and Contact",
+    "objectID": "tools/researchdrive/managing_access_rights.html",
+    "href": "tools/researchdrive/managing_access_rights.html",
+    "title": "Managing Groups, Users and Access Rights",
     "section": "",
-    "text": "Research Support Handbook\n\n\n\n\nWondering if Research Drive fits your research needs or questions about using Research Drive? Please contact the Research Support Desk.",
+    "text": "Research Support Handbook\nProject owners can invite internal and external collaborators to a project folder. Below you can find detailed instructions for this.",
     "crumbs": [
       "Research Drive",
+      "Documentation",
+      "Managing Groups, Users and Access Rights"
+    ]
+  },
+  {
+    "objectID": "tools/researchdrive/managing_access_rights.html#inviting-internal-and-external-collaborators",
+    "href": "tools/researchdrive/managing_access_rights.html#inviting-internal-and-external-collaborators",
+    "title": "Managing Groups, Users and Access Rights",
+    "section": "Inviting internal and external collaborators",
+    "text": "Inviting internal and external collaborators\nThe owner of the project folder can create new accounts and grant access through the following steps.\n\nInviting a new user\nIf a prospective user does not yet have a Research Drive account, the owner needs to invite them. Instructions for this process are in the current section. If a user does already have a Research Drive account, you can skip to the instructions about granting rights to groups and single users.\nAfter having logged into Research Drive, select in the top menu bar: Dashboard &gt; User accounts (2nd tab) &gt; Invite user.\n\n\n\nThe Research Drive top menu bar\n\n\nEnter the initials and last name and the email in the pop-up window, if available use the e-mail of their research institute or university.   All VU email accounts are automatically required to use Multi-Factor Authentication (MFA). This is most commonly done through the Tiqr or Azure app. VU students do not automatically have MFA activated on their account. They can set this up by visiting the IT ServiceDesk, bringing an official ID.\nContributors from outside VU Amsterdam will need to create an eduID account to log into Research Drive. An instruction on how to do this can be found on SURF’s Research Drive Wiki. Additionally, it is important to turn on the MFA step in the eduID account. This is a requirement to better protect the data stored in VU Research Drive. It is greatly preferred that external contributors use the email address provided to them by their institution or workplace. Research Drive functional managers discourage the use of personal email addresses.\n\n\nGranting access rights to groups\nThe best practice for Research Drive is to create groups (‘Teams’) to which roles and rights can be awarded. Using Teams, it is easier to keep track of which rights a group should have, and it is easier to revoke these rights as well. The steps to create a Team are as follows:\n\nClick on the ‘Contacts’ button on the Research Drive top bar.\nIn the left-hand side of the screen, click the ‘Plus’-icon next to Teams. This allows you to create a Team and name it descriptively.\nAdd the right users as members of the Team. You can also make existing Teams members of the new Team.\nNavigating back to the project folder, you can share appropriate files or folders with the correct Team(s).\n\nThis process is explained in more detail, with screenshots, in SURF’s wiki.\nThe following rights can be given out: \n\nCreate (Grants the ability to create new documents or upload them into a folder).\n\nEdit (Grants the ability to make alterations to documents). \nShare (this enables the user to invite new users to RD and afterward this user can grant them access to the parts of your project folder they have access to. In general, we discourage granting these rights. If many people have share rights, it can become difficult to have an overview of which user has access to the data, and revoking rights may also prove complicated).\nDelete (Grants the ability to delete files or folders. This right may not be necessary for most users to have).\n\nPlease also read the Do’s and Don’ts of Sharing to stick to the best practices of these functionalities, as formulated by SURF.\n\n\nGranting access rights to single users \nIt does happen sometimes that a single user, rather than a group, needs to get access to a specific (sub)folder or file. For example when individual contributors need to share data with you, but should not see each other’s data, so they get their own subfolder. When a new user has activated their account, you will receive an email confirming this. At this point you can grant them access to your entire project folder or only to a specific subfolder / several subfolders. After each folder or document you will see the term “Shared”. If you click on the term “Shared” you will see an overview of all users who have access rights to this folder or document.  By using the search function and selecting a user you can grant various rights (Can view/Can edit/Custom permissions) to this user. If the user needs specific rights you can click on “Custom permissions”. \nThe following rights can be given out: \n\nCreate (Grants the ability to create new documents or upload them into a folder).\n\nEdit (Grants the ability to make alterations to documents). \nShare (this enables the user to invite new users to RD and afterward this user can grant them access to the parts of your project folder they have access to. In general, we discourage granting these rights. If many people have share rights, it can become difficult to have an overview of which user has access to the data, and revoking rights may also prove complicated).\nDelete (Grants the ability to delete files or folders. This right may not be necessary for most users to have).\n\nPlease also read the Do’s and Don’ts of Sharing to stick to the best practices of these functionalities, as formulated by SURF.",
+    "crumbs": [
+      "Research Drive",
+      "Documentation",
+      "Managing Groups, Users and Access Rights"
+    ]
+  },
+  {
+    "objectID": "tools/researchdrive/index.html",
+    "href": "tools/researchdrive/index.html",
+    "title": "Research Drive",
+    "section": "",
+    "text": "Research Support Handbook",
+    "crumbs": [
+      "Research Drive"
+    ]
+  },
+  {
+    "objectID": "tools/researchdrive/index.html#what-is-it",
+    "href": "tools/researchdrive/index.html#what-is-it",
+    "title": "Research Drive",
+    "section": "What is it?",
+    "text": "What is it?\nSURF Research Drive is an online storage and collaboration platform for research data. With Research Drive you can easily store and share files with other researchers, inside and outside VU Amsterdam. You can access your data via a web interface or tools, from anywhere in the world.\nResearch Drive is based on the Open Source Nextcloud software and is hosted by SURF in their Amsterdam datacentre.",
+    "crumbs": [
+      "Research Drive"
+    ]
+  },
+  {
+    "objectID": "tools/researchdrive/index.html#what-can-it-be-used-for",
+    "href": "tools/researchdrive/index.html#what-can-it-be-used-for",
+    "title": "Research Drive",
+    "section": "What can it be used for?",
+    "text": "What can it be used for?\n\nData storage\nResearch Drive is a Cloud storage solution that can be used for small (a few GBs) to larger (a few TBs) datasets. Because it is a cloud storage platform you will need to download data to your laptop to work with it. Research Drive makes this easy by using the Nextcloud client, which allows you to automatically sync the folders you want to work with. Data is backed up daily.\n\n\nData sharing\nAs project owner you can invite internal and external collaborators yourself, or you can delegate this task to others.\nYou can set access rights to folders and subfolders yourself, making Research Drive ideal for use in collaborations with many institutions.\n\n\nSensitive data\nHosting at SURF and the use of Multi Factor Authentication (MFA), among other measures, makes Research Drive suitable for storing data that score Medium on confidentiality (see the Policy Classification of Research Data and the Research Data Classification Tool). Data that score High on confidentiality can be stored in Research Drive with additional security measures. Please make sure to contact the RDM Support Desk to check if further measures are needed.\n\n\nData life cycle\nResearch Drive is meant for data you are actively working with. We recommend to archive datasets that are no longer actively used, but can’t be deleted, in a repository. Transferring data from Research Drive to a repository ensures Research Drive is used optimally and costs are kept down for your research group and VU Amsterdam. Repositories that are available at VU Amsterdam are Yoda and DataverseNL. Yoda is suitable for all types of data, including personal data and other types of confidential data. DataverseNL is only suitable for data that can be made available publicly.\n\n\nCollaborative tools\nWithin Research Drive, various apps and integrations are available to simplify the use and handling of research data, such as a tool to edit documents directly in the web interface. You can find a current list of app integrations on the SURF User Knowledge Base.\n\n\nSURFdrive replacement\nSince both are based on Nextcloud, Research Drive is very similar to SURFdrive, the main difference is that SURFdrive is personal storage while Research Drive is group based.\nResearchers looking for a new home for research data currently on SURFdrive are encouraged to migrate to Research Drive. Manuals for migrating data to Research Drive are available in English and Dutch. Please contact the Research Support Desk if you have any questions about migrating to Research Drive.",
+    "crumbs": [
+      "Research Drive"
+    ]
+  },
+  {
+    "objectID": "tools/scistor/how_does_scistor_work.html",
+    "href": "tools/scistor/how_does_scistor_work.html",
+    "title": "How does SciStor work?",
+    "section": "",
+    "text": "Research Support Handbook\nSciStor is VU Amsterdam’s on-premises scientific storage solution, designed for active research data management. It provides structured, permission-controlled storage with built-in data protection for research teams operating under VU Amsterdam’s faculty structure.",
+    "crumbs": [
+      "SciStor",
+      "Documentation",
+      "How does SciStor work?"
+    ]
+  },
+  {
+    "objectID": "tools/scistor/how_does_scistor_work.html#data-protection",
+    "href": "tools/scistor/how_does_scistor_work.html#data-protection",
+    "title": "How does SciStor work?",
+    "section": "Data Protection",
+    "text": "Data Protection\n\nSnapshots\nSciStor provides point-in-time snapshots of stored data at no additional cost. Snapshots enable file versioning and recovery without requiring separate backup infrastructure.\n\n\n\nFrequency\nRetention period\n\n\n\n\nDaily\n1 week\n\n\nWeekly\n4 weeks\n\n\n\nThe Data Recovery page explains how you can restore data from the snaphots yourself.\n\n\n\n\n\n\nNote\n\n\n\nUpon deletion of a file, the corresponding snapshot will continue to consume storage space until the snapshot retention period expires. Storage capacity is not immediately reclaimed following deletion.\n\n\n\n\nFailover System\nSciStor operates a replication-based failover system in which data from the primary on-campus node is continuously mirrored to a secondary node located off-campus. In the event of a major infrastructure incident, the secondary node ensures data availability and integrity.",
+    "crumbs": [
+      "SciStor",
+      "Documentation",
+      "How does SciStor work?"
+    ]
+  },
+  {
+    "objectID": "tools/scistor/how_does_scistor_work.html#project-folder-structure",
+    "href": "tools/scistor/how_does_scistor_work.html#project-folder-structure",
+    "title": "How does SciStor work?",
+    "section": "Project Folder Structure",
+    "text": "Project Folder Structure\nAccess control in SciStor is organised across two levels.\nLevel 0 — Main Folder is automatically provisioned for all users with read-only permissions. This ensures that all team members can locate and navigate to the Project Folder.\nLevel 1 — Subfolders allow granular, per-folder access control. Each subfolder may be assigned one of the following permission levels:\n\n\n\nPermission\nDescription\n\n\n\n\nR\nRead-only access\n\n\nRW\nRead and write access\n\n\n\n\nExample Structure\n/BETA-CS-PROJECT1/        [RW: Root;   R: vunet1, ..., vunetN]\n├── raw_data/             [RW: vunet1, vunet2;   R: vunet3, ..., vunetN]\n├── processed_data/       [RW: vunet1, ..., vunetN;   R: —]\n├── analysis/             [RW: vunet1, ..., vunetN;   R: —]\n└── results/              [RW: vunet1, ..., vunetN;   R: —]",
+    "crumbs": [
+      "SciStor",
+      "Documentation",
+      "How does SciStor work?"
+    ]
+  },
+  {
+    "objectID": "tools/scistor/contact_support.html",
+    "href": "tools/scistor/contact_support.html",
+    "title": "Support and Contact",
+    "section": "",
+    "text": "Research Support Handbook\n\n\n\n\nWondering if SciStor fits your research needs? Please contact IT for Research.\nNeed help? Please contact the IT Servicedesk.",
+    "crumbs": [
+      "SciStor",
       "Support and Contact"
     ]
   },
   {
-    "objectID": "tools/scistor/cost_access.html",
-    "href": "tools/scistor/cost_access.html",
+    "objectID": "tools/scistor/index.html",
+    "href": "tools/scistor/index.html",
+    "title": "SciStor",
+    "section": "",
+    "text": "Research Support Handbook",
+    "crumbs": [
+      "SciStor"
+    ]
+  },
+  {
+    "objectID": "tools/scistor/index.html#what-is-it",
+    "href": "tools/scistor/index.html#what-is-it",
+    "title": "SciStor",
+    "section": "What is it?",
+    "text": "What is it?\nThe storage service SciStor is intended for cheaply storing large amounts of research data on campus.\nSciStor is hosted by IT for Research (ITvO) on the VU campus enabling a high-speed connection to lab equipment, laptops and workstations, the ADA HPC cluster and SciCloud. It can also be accessed off-campus.\nYour data is stored in a project folder with group-based access rights (read/write or read-only). Access rights can be set one level deep, so one folder could be used to host data from different subprojects.\nData is backed up daily with snapshots and replicated to a second location for disaster recovery, the documentation explains how.",
+    "crumbs": [
+      "SciStor"
+    ]
+  },
+  {
+    "objectID": "tools/scistor/index.html#what-can-it-be-used-for",
+    "href": "tools/scistor/index.html#what-can-it-be-used-for",
+    "title": "SciStor",
+    "section": "What can it be used for?",
+    "text": "What can it be used for?\n\nNetworked Drive\nBecause SciStor is connected to the VU on-campus network you can directly mount (map a network drive) SciStor project folders on your laptop and work as if the data is on a local disk.\n\n\nAccess off-campus\nAlthough SciStor is most useful on campus you can also access your project folders off-campus via EduVPN institute access.\n\n\nLab instruments\nIn many cases lab equipment can write data directly to SciStor. IT for Research can help you setup an automated and secure connection.\n\n\nStorage space for SciCloud servers\nSciCloud virtual servers are provisioned with a 20 to 50GB local disk. A SciStor project folder can be directly mounted on the server to increase storage for your application or directly access your source data for analysis.\n\n\nADA\nThe ADA HPC cluster is connected to SciStor via a high speed network. You can run your analysis software directly on your data and easily access the results on your laptop.\n\n\nSharing data\nBecause SciStor is mainly intended for high performance, on-campus use, access is only possible with a VUnetId. If you need to share data with non-VU researchers you could register them as an external employee or host a copy of the data on another storage platform like Research Drive or Yoda\n\n\nData life-cycle\nSciStor is meant for data you are actively working with. We recommend archiving datasets that are no langer actively used, but can’t be deleted, in Yoda. This ensures SciStor is used optimally and costs are kept down for your research group and the VU.",
+    "crumbs": [
+      "SciStor"
+    ]
+  },
+  {
+    "objectID": "tools/vucomputehub/quick_start.html",
+    "href": "tools/vucomputehub/quick_start.html",
+    "title": "Quick Start",
+    "section": "",
+    "text": "Research Support Handbook\n\n\n\n\nYou can access the Linux Compute Services through VU JupyterHub in your web browser. The VU JupyterHub gives you access to familiar interfaces like Jupyter Notebooks, MATLAB and R Studio.\nIf you prefer using SSH, you can connect in the following way:\n\n$ ssh &lt;VUnetID&gt;@x.compute.vu.nl\n\n# from home or outside campus:\n$ ssh -J &lt;VUnetID&gt;@ssh.data.vu.nl &lt;VUnetID&gt;@x.compute.vu.nl\nReplace x with either 1, 2, or 3, depending on your choice.",
+    "crumbs": [
+      "VU Compute Hub",
+      "Quick Start"
+    ]
+  },
+  {
+    "objectID": "tools/vucomputehub/index.html",
+    "href": "tools/vucomputehub/index.html",
+    "title": "VU Compute Hub",
+    "section": "",
+    "text": "Research Support Handbook",
+    "crumbs": [
+      "VU Compute Hub"
+    ]
+  },
+  {
+    "objectID": "tools/vucomputehub/index.html#what-is-it",
+    "href": "tools/vucomputehub/index.html#what-is-it",
+    "title": "VU Compute Hub",
+    "section": "What is it?",
+    "text": "What is it?\nThe VU Compute Hub is a JupyterHub instance hosted by IT at VU Amsterdam. It allows you to run a number of common analysis tools on a server. The Hub is mainly aimed at providing environments for student courses, but is available for VU researchers as well.",
+    "crumbs": [
+      "VU Compute Hub"
+    ]
+  },
+  {
+    "objectID": "tools/vucomputehub/index.html#what-can-it-be-used-for",
+    "href": "tools/vucomputehub/index.html#what-can-it-be-used-for",
+    "title": "VU Compute Hub",
+    "section": "What can it be used for?",
+    "text": "What can it be used for?\nThe VU Compute Hub is a great environment to try if your analysis takes too much time on a laptop. It allows you to use the graphical tools you are familiar with in an environment with more compute power where you can leave your script running until it is finished.\nSince every VU researcher can just log in, the barrier to entry is very low.\nBe aware the service is mainly aimed at education. If your scripts use a lot of resources, it might be time for you to start using a High Performance Computing (HPC) environment: ADA at VU Amsterdam or the national supercomputer Snellius. Please contact IT for Research to discuss the best options.\n\nAvailable tools\nThe following applications are currently available: Jupyter Notebooks, MATLAB, STATA, R Studio and QGIS.",
+    "crumbs": [
+      "VU Compute Hub"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Research Support Handbook",
+    "section": "",
+    "text": "Research Support Handbook\n\n\nYour Guide Towards Good Data and Software Management Practices\n\nAll information is curated by VU staff and updated on a daily basis\n\n\n\n\nTopics, Guides and Tools\n\n\n\n\n\nTopics\nA quick way to learn about specific topics\n\n\n\nGuides\nGuide you through data and software management practices\n\n\n\nTools\nHow to use VU-supported research tools\n\n\n\n\n\nRelated Trainings and Events\n\nThe VU Network Research Data Support organises trainings that will help you develop your data management and coding skills, as well as events for researchers and support staff to exchange ideas and experiences relevant to good research practices.\n\n\n\n\n\nCalendar\n\n\n\nTrainings"
+  },
+  {
+    "objectID": "blog/2024-05-23welcome.html",
+    "href": "blog/2024-05-23welcome.html",
+    "title": "Hello world!",
+    "section": "",
+    "text": "Research Support Handbook\n\n\n\n\nThis is the first blog entry on the Research Support Handbook. We will be posting more at a later time, and are looking forward to your contributions as well.\nWe will follow up with more details later."
+  },
+  {
+    "objectID": "blog/2026-07-20yoda21.html",
+    "href": "blog/2026-07-20yoda21.html",
+    "title": "Yoda 2.1 upgrade",
+    "section": "",
+    "text": "Research Support Handbook\n\n\n\n\nThe Yoda team has updated the documentation to reflect changes in the new Yoda 2.1 version (Release Notes).\nMain changes for researchers:\n\nInvitation workflow only for external users.\nWorks with latest version ofGoCommands.\nOption to move datasets to the Vault instead of copying them.\n\nPlease note the Known Issues.\nDuring the upgrade new functionality was added to be able to move datasets in the Vault from disk storage to the SURF Data Archive, a form of tape storage. The Yoda team will extensively test this functionality in the coming period. Note that this change is only visible to members of a Datamanager Group."
+  },
+  {
+    "objectID": "blog/2026-07-07hackathon.html",
+    "href": "blog/2026-07-07hackathon.html",
+    "title": "8th Handbook Hackathon",
+    "section": "",
+    "text": "Research Support Handbook\nOn July 7, 2026, all authors participated in the eighth hackathon for the Research Support Handbook. For this hackathon, our initial plan was to focus on Tools documentation, but we worked on other parts of the website as well."
+  },
+  {
+    "objectID": "blog/2026-07-07hackathon.html#overview-of-results",
+    "href": "blog/2026-07-07hackathon.html#overview-of-results",
+    "title": "8th Handbook Hackathon",
+    "section": "Overview of results",
+    "text": "Overview of results\nWith respect to tools, we did the following:\n\nWe updated Yoda documentation (see below for specifics)\nWe did small updates in the Snellius and Research Drive information\n\nWe checked external links and found a number of broken links, which have all been repaired now.\nWe published two new topics: Research Software Management and Version Control.\nA group of colleagues is working on information about AI and LLMs, including advice on how to use AI tools responsibly. This is work in progress, it has not been published yet. We’ll keep you posted."
+  },
+  {
+    "objectID": "blog/2026-07-07hackathon.html#hackathon-issues-and-pull-requests",
+    "href": "blog/2026-07-07hackathon.html#hackathon-issues-and-pull-requests",
+    "title": "8th Handbook Hackathon",
+    "section": "Hackathon Issues and Pull Requests",
+    "text": "Hackathon Issues and Pull Requests\n\nBroken link fixes: PRs 861, 866, 868, 870, 871 and 872\nTopic Research Software Management: Issue 490, PR 856\nTopic Version Control: Issue 613, PR 877\nUpdated Yoda documentation:\n\nIssue 858, PR 878\nIssue 874, PR 881\nIssue 876, PR 883\nIssue 885, PR 886\n\nUpdated Snellius documentation: PR 852\nUpdated Research Drive documentation: Issue 867, PR 879\nTechnical maintenance: PR 882, PR 865"
+  },
+  {
+    "objectID": "blog/2026-03-19tools-redesign.html",
+    "href": "blog/2026-03-19tools-redesign.html",
+    "title": "Restructuring and redesign",
+    "section": "",
+    "text": "Research Support Handbook\nIn the past few weeks, we did two major updates in the Research Support Handbook. The tool documentation has been restructured and renamed. The website as a whole has been redesigned."
+  },
+  {
+    "objectID": "blog/2026-03-19tools-redesign.html#tool-documentation",
+    "href": "blog/2026-03-19tools-redesign.html#tool-documentation",
+    "title": "Restructuring and redesign",
+    "section": "Tool documentation",
+    "text": "Tool documentation\nThis is what we updated regarding the tool documentation:\n\nWhat we previously called ‘Manuals’ is now called ‘Tools’.\nThe topic pages about tools (basic information about the tools we provide/support) are moved to the ‘Tools’ section, so that basic information and more elaborate documentation (if available) now sit together.\nAs a result of the previous action, the ‘Tools’ category in the topics has disappeared. Note that we created aliases for the URLs, meaning that the old tool topic URLs will refer to the home page of the relevant tool in the Tools section.\nWe restructured the basic information that was in the old Topic pages into separate pages to make it easier to navigate: description of the tool, costs and getting access, support and contact, quick start.\nSome tools have an additional documentation section for more elaborate manuals, tips and how-to’s.\nThe OSF documentation was moved from Guides to the new Tools section.\nThe tools are no longer displayed as tiles on the overview page, but are now presented as a list. They can be filtered by category (type of tool).\n\nIf you’re interested in the specifics of this update, you can read all documentation in Issue #717.\nN.B. 1: If you are working on a fork of the Research Support Handbook, make sure to sync it, so that these changes will be updated in your fork as well. N.B. 2: If you refer to documentation about the tools we support (e.g. Yoda, Research Drive, ADA, Qualtrics) from another website (e.g. a faculty page on the VU website), make sure to check your URLs. If you need help with finding a page’s new location on the website, let us know.\nThese updates are done in the context of the Tools Documentation Project. We’re aiming to have comprehensive documentation for all research-related tools we provide/support, as much as possible along the same structure, by the end of the year. If you have questions about this project, you can send an email to j2.scholten@vu.nl."
+  },
+  {
+    "objectID": "blog/2026-03-19tools-redesign.html#redesign",
+    "href": "blog/2026-03-19tools-redesign.html#redesign",
+    "title": "Restructuring and redesign",
+    "section": "Redesign",
+    "text": "Redesign\nIM Studio created a new design for the Research Support Handbook and this was implemented by Peter Vos. The new design involves a restructured homepage, new colours for topics, guides and manuals, and icons for prominent pages like calendar, trainings and questions. We have changed the overview pages of topics, guides and tools as well, so that they are presented in the same structure.\nWe will do some finetuning in the coming weeks. Let us know if you’re missing something."
+  },
+  {
+    "objectID": "blog/2025-07-29itvoblog.html",
+    "href": "blog/2025-07-29itvoblog.html",
+    "title": "ITvO blog",
+    "section": "",
+    "text": "Research Support Handbook"
+  },
+  {
+    "objectID": "blog/2025-07-29itvoblog.html#first-itvo-blog",
+    "href": "blog/2025-07-29itvoblog.html#first-itvo-blog",
+    "title": "ITvO blog",
+    "section": "First ITvO Blog",
+    "text": "First ITvO Blog\nFrom now on the ITvO (IT for Research) team will be using the Handbook Blog for sharing news, updates, and important announcements related to SciCloud, ADA HPC, SciStor, and other services provided by ITvO. Here you will find information about new features, scheduled maintenance, service improvements. Stay tuned for the latest developments and insights from the ITvO team."
+  },
+  {
+    "objectID": "blog/2026-09-02-storagefinder-classificationtool-unavailable.html",
+    "href": "blog/2026-09-02-storagefinder-classificationtool-unavailable.html",
+    "title": "Data Storage Finder and Data Classification Tool unavailable",
+    "section": "",
+    "text": "Research Support Handbook\n\n\n\n\nThe Data Storage Finder and the Data Classification Tool are currently unavailable. Communication and Marketing is aware of the situation. They will make sure that these resources will be available again on September 24.\nIn the Data Storage Finder, you can find information about data storage tools available at VU Amsterdam. With various filters you can find the storage platform that is most suitable for your research data. It’s very unfortunate that this support is unavailable at the moment, but note that extensive information about the tools we support is also available in the Research Support Handbook. You can find this information per tool (Research Drive, SciStor, Yoda) in the Tools section. If you need help with finding the right storage platform, please reach out to the RDM Support Desk.\nIn the Data Classification Tool, you can determine the classification of your data for the criteria of availability, integrity and confidentiality. If you wish to classify your data in the short term, you can estimate this with the help of the Data Classification Policy (in Dutch), which includes a table (“Bijlage 1”) giving examples for the classification levels for each criterion. If you need help with this, please reach out to the RDM Support Desk.\nWe’re sorry for the inconvenience.\nOther URLs may have changed as well. We’re trying our best to update these as soon as we can. If you see any dead links related to RDM information, you can help us by letting us know at rdm@vu.nl or by suggesting an edit. Thank you very much in advance!"
+  },
+  {
+    "objectID": "blog/2024-10-22post-mortem.html",
+    "href": "blog/2024-10-22post-mortem.html",
+    "title": "Why was rdm.vu.nl down for ten hours?",
+    "section": "",
+    "text": "Research Support Handbook\nOn Friday October 18th 2024, we experienced around ten hours of downtime on the rdm.vu.nl website. The downtime started around 10AM after merging changes to the handbook and was resolved the same day, by 8PM.1"
+  },
+  {
+    "objectID": "blog/2024-10-22post-mortem.html#root-cause",
+    "href": "blog/2024-10-22post-mortem.html#root-cause",
+    "title": "Why was rdm.vu.nl down for ten hours?",
+    "section": "Root cause",
+    "text": "Root cause\nThe downtime started after merging changes to the handbook in commit 669b065. These changes themselves, did not cause the downtime. The root cause was an incorrect configuration in the deployment of the webpage, which inadvertently removed the rdm.vu.nl domain name from the GitHub settings every time we made changes in the handbook and redeployed the website. This resulted in 404 errors that the page could not be found.\nWe first observed this issue on Thursday, one day prior to the downtime, in commit 678ff88. We proposed a fix for this issue in #220, before the downtime started."
+  },
+  {
+    "objectID": "blog/2024-10-22post-mortem.html#how-could-the-downtime-happen-if-the-fix-was-clear",
+    "href": "blog/2024-10-22post-mortem.html#how-could-the-downtime-happen-if-the-fix-was-clear",
+    "title": "Why was rdm.vu.nl down for ten hours?",
+    "section": "How could the downtime happen if the fix was clear?",
+    "text": "How could the downtime happen if the fix was clear?\nThe fix for the domain specification was not merged in time for two reasons.\n\nReason 1\nAt this time, we require two reviews before merging changes to the handbook. The fix was proposed at 1.11PM on Thursday, and did not receive the required reviews by the time the downtime happened (reason 1). However, this was a technical administration task and could have been merged immediately, as this supercedes regular review procedures.\n\n\nReason 2\nThe domain specification fix was not immediately merged to allow time to pass and ensure the fix was appropriate upon further reflection. This is because administrator (chartgerink?) both proposed the fix and would also be the one to supercede the “two reviews” requirement. Due to travel, the administrator forgot about it in the morning, and only saw the messages about the downtime at 8PM. At that time, the fix was quickly merged and the downtime resolved."
+  },
+  {
+    "objectID": "blog/2024-10-22post-mortem.html#improvements",
+    "href": "blog/2024-10-22post-mortem.html#improvements",
+    "title": "Why was rdm.vu.nl down for ten hours?",
+    "section": "Improvements",
+    "text": "Improvements\nThe domain configuration is corrected and the deployment ensures the domain name is re-added to the GitHub settings every time there are changes to the handbook. This is now automated, which ensures that the domain name will not be removed inadvertently when future changes are incorporated.\nHowever, we also learned that critical administration fixes should not be left open for longer than is absolutely necessary. Here it was left open for longer than absolutely necessary due to travel, and a second administrator could have caught this issue sooner. This means we should work towards resilient reporting mechanisms to escalate such critical issues, and build capacity in the editor team to ensure no one person is responsible for merging critical fixes that are already available."
+  },
+  {
+    "objectID": "blog/2024-10-22post-mortem.html#acknowledgements",
+    "href": "blog/2024-10-22post-mortem.html#acknowledgements",
+    "title": "Why was rdm.vu.nl down for ten hours?",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\nWe would like to thank the editors for dealing with the stress from this inadvertent issue. We also thank the community for their patience as we only recently migrated to rdm.vu.nl and figure out these initial unexpected hurdles."
+  },
+  {
+    "objectID": "blog/2024-10-22post-mortem.html#references",
+    "href": "blog/2024-10-22post-mortem.html#references",
+    "title": "Why was rdm.vu.nl down for ten hours?",
+    "section": "References",
+    "text": "References\n\nRoot cause for the downtime first observed in commit 678ff88\nProposed a fix for the root cause in pull Request #220\nDowntime started at commit 669b065 is where the\nResolved downtime in commit 678ff88"
+  },
+  {
+    "objectID": "blog/2024-10-22post-mortem.html#footnotes",
+    "href": "blog/2024-10-22post-mortem.html#footnotes",
+    "title": "Why was rdm.vu.nl down for ten hours?",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nubvu.github.io/open-handbook remained online during this entire time, and functions indirectly as a backup.↩︎"
+  },
+  {
+    "objectID": "blog/2024-11-01hackathon.html",
+    "href": "blog/2024-11-01hackathon.html",
+    "title": "Fourth Handbook Hackathon",
+    "section": "",
+    "text": "Research Support Handbook\nOn October 30th, 2024, all authors participated in the fourth hackathon for the Research Support Handbook. Since the third hackathon, we migrated to rdm.vu.nl, which is a huge milestone! 🎉\nFor the fourth hackathon, we focused on tying up loose ends that we accumulated. The migration means we are now in a stable state, yet there is always more work to be done. During this hackathon, we focused on picking up stale discussions, reviewing open pull requests, and generally closing issues that we took too long to revisit.\nWe considered how (un)balanced the various Topics had gotten, because we want readers to be able to form consistent expectations. We observed that some topics are related to tools, others to concepts. Some topics are concise, whereas others are lengthy.\nOne breakout group focused on creating templates for both kinds of topics, resulting in an initial structure that will make it easier to start new topics in the future. Specifically we propose the following template structure for tools (for example, Qualtrics, HPC, DMPonline):\nAnd the following structure for concepts (for example, DMP, data citation, data storage):\nWe will follow up with a new hackathon in late november."
+  },
+  {
+    "objectID": "blog/2024-11-01hackathon.html#issues-worked-on",
+    "href": "blog/2024-11-01hackathon.html#issues-worked-on",
+    "title": "Fourth Handbook Hackathon",
+    "section": "Issues worked on",
+    "text": "Issues worked on\nhttps://github.com/ubvu/open-handbook/issues/232\nhttps://github.com/ubvu/open-handbook/issues/233"
+  },
+  {
+    "objectID": "blog/2024-11-01hackathon.html#pull-requests-worked-on",
+    "href": "blog/2024-11-01hackathon.html#pull-requests-worked-on",
+    "title": "Fourth Handbook Hackathon",
+    "section": "Pull Requests worked on",
+    "text": "Pull Requests worked on\nhttps://github.com/ubvu/open-handbook/pull/229\nhttps://github.com/ubvu/open-handbook/pull/231\nhttps://github.com/ubvu/open-handbook/pull/234\nhttps://github.com/ubvu/open-handbook/pull/235\nhttps://github.com/ubvu/open-handbook/pull/236\nhttps://github.com/ubvu/open-handbook/pull/237"
+  },
+  {
+    "objectID": "blog/2025-07-24hackathon.html",
+    "href": "blog/2025-07-24hackathon.html",
+    "title": "Sixth Handbook Hackathon",
+    "section": "",
+    "text": "Research Support Handbook\nOn July 24, 2025, all authors participated in the sixth hackathon for the Research Support Handbook. For this hackathon, we focused on adding and updating topics."
+  },
+  {
+    "objectID": "blog/2025-07-24hackathon.html#overview-of-results",
+    "href": "blog/2025-07-24hackathon.html#overview-of-results",
+    "title": "Sixth Handbook Hackathon",
+    "section": "Overview of results",
+    "text": "Overview of results\nNew topics that we have added during or in the days after the Hackathon:\n\nITvO\nPure\nCARE Principles\nSoftware Archiving\nSoftware Publishing\nOSF\n\nWe have started on the following topics, but these still need some work before they can be published:\n\nRDM tools overview (to replace the current one on the VU website)\nDe-identifying data: Pseudonymisation and Anonymisation\nInformed consent forms (content will be discussed with the privacy experts)\n\nThe following topics have been updated:\n\nDMP: we moved the instructions for selecting the VU DMP template to the guide How can you set up research data management from the start?\n\nWe worked on some guides as well:\n\nWe updated the guide What research data services and support are available for VU researchers?\nWe transferred all information related to OSF from the VU OSF Wiki to the Handbook, resulting in a topic (see above) and a guide How can you use Open Science Framework (OSF) in your research project?\nWe updated the guide How can you set up research data management from the start?, where we included the instructions for selecting the VU DMP template\n\nIn addition, we introduced a new type of page: Manuals (a big thanks to Peter, who put a lot of effort in preparing this 🙏). A user manual provides guidance and instructions to users of a tool. User manuals are created to be easily understood by individuals with varying levels of technical knowledge. It can be assumed that most of the tools will already have their own manuals on the suppliers website. We will link to those as much as possible, we don’t want to duplicate information. If you’re interested, you can read more in Issue #416. The Yoda manuals have now been included in the Handbook (the website yoda.vu.nl will be phased out). Manuals on the handbook will be written in the form of a how-to, the aim is to provide guidance for specific tasks “How do I?”. From the basic: “How do I log in” to the more in-depth “How do I use CUDA on ADA”.\nFinally, we also worked on contributing guidelines and categorised the blog posts, introducing a new type of blog post by ITvO:\n\nInstructions for using VSCode to contribute\nUpdated instructions for rendering the Research Support Handbook locally\nIntroduced Blog categories and ITvO Blog"
+  },
+  {
+    "objectID": "blog/2025-07-24hackathon.html#hackathon-issues-and-pull-requests",
+    "href": "blog/2025-07-24hackathon.html#hackathon-issues-and-pull-requests",
+    "title": "Sixth Handbook Hackathon",
+    "section": "Hackathon Issues and Pull Requests",
+    "text": "Hackathon Issues and Pull Requests\n\n(Yoda) manuals: Issue #416 and PR #484\nInformation about ITvO: Issue #344 and PR #516\nSoftware Archiving: Issue #354 and PR #500\nSoftware Publishing: Issue #354 and PR #501\nOSF: Issue #100 and PR #538 (topic) and PR #541 (guide)\nCARE Principles: Issue #448 and PR #503\nWhat research data services and support are available for VU researchers? PR #530\nPure: Issue #482 and PR #497 and #PR 537\nHow can you set up research data management from the start?: PR #524\nDMP: PR #525\nUsing VSCode to contribute: PR #509\nRendering Handbook locally: PR #463\nIntroducing Blog categories and ITvO Blog PR #533"
+  },
+  {
+    "objectID": "blog/2025-07-24hackathon.html#ai-generated-texts",
+    "href": "blog/2025-07-24hackathon.html#ai-generated-texts",
+    "title": "Sixth Handbook Hackathon",
+    "section": "AI-generated texts",
+    "text": "AI-generated texts\nIn preparation for this hackathon, we had some texts for new topics drafted by Claude LLM, as part of a trial to explore AI-assisted content creation for the handbook. The idea was that it is easier for people to review existing content than creating something from scratch. During the hackathon, most people seemed to have a preference for writing text themselves. It is more fun, and part of the content created by Claude LLM was not useful. So for now, we think we will keep writing our own texts."
+  },
+  {
+    "objectID": "blog/2025-11-27hackathon.html",
+    "href": "blog/2025-11-27hackathon.html",
+    "title": "Seventh Handbook Hackathon",
+    "section": "",
+    "text": "Research Support Handbook\nOn November 27, 2025, all authors participated in the seventh hackathon for the Research Support Handbook. For this hackathon, we focused on Consolidating content and adding new content."
+  },
+  {
+    "objectID": "blog/2025-11-27hackathon.html#overview-of-results",
+    "href": "blog/2025-11-27hackathon.html#overview-of-results",
+    "title": "Seventh Handbook Hackathon",
+    "section": "Overview of results",
+    "text": "Overview of results\nWe updated the information about Pure and about data and software registration in Pure (link to LibGuide manuals instead of PDFs, information about Elsevier no longer supporting DataMonitor).\nWe created two practical pages related to the RDM Support Desk:\n\nGeneral information about the RDM Support Desk\nLanding page for requesting access to datasets\n\nRegarding videos in the Research Support Handbook: We stored relevant videos in Panopto and embedded them in our website from there, replacing the YouTube videos. This helps us maintain all video material in a central place and another advantage is that we don’t get suggestions for other videos once a video has ended, as on YouTube.\nWe expanded the Research Software topic by referring to related information in the Research Support Handbook.\nWe continued working on the topic de-identifying data, but this is still in progress.\nA few updates have been done in tools documentation for Yoda, ADA and SciStor before, during and after the hackathon. We have improved navigation in the tools section as well.\nFinally, a new release of the Handbook has been created on Zenodo."
+  },
+  {
+    "objectID": "blog/2025-11-27hackathon.html#hackathon-issues-and-pull-requests",
+    "href": "blog/2025-11-27hackathon.html#hackathon-issues-and-pull-requests",
+    "title": "Seventh Handbook Hackathon",
+    "section": "Hackathon Issues and Pull Requests",
+    "text": "Hackathon Issues and Pull Requests\n\nData and software registration updates: Issue #250, PR #621 and PR #623; PR #627 for updates in the general information about Pure. Note that the information about Pure has been transferred from topics to tools see Issue #675 and see PR #678.\nRDM Support Desk: Issue #588 and PR #610 for the information page and Issue #589 and PR #631 for the landing page with information about requesting access to datasets.\nResearch software information: Issue #410 and PR #624.\nTopic de-identifying data: Issue #492"
+  },
+  {
+    "objectID": "blog/2024-09-30hackathon.html",
+    "href": "blog/2024-09-30hackathon.html",
+    "title": "Third Handbook Hackathon",
+    "section": "",
+    "text": "Research Support Handbook\nIn the third hackathon for the Research Support Handbook, held on September 25th, 2024, contributors gathered to make significant progress towards migrating the handbook to the VU domain (rdm.vu.nl). The event centered around sprinting to a finish line by refining existing content and ensuring accessibility standards are met.\nKey activities included:\nOverall, the hackathon was a productive session, and the handbook is now in its final stage, with the team preparing for the official launch on &lt;rdm.vu.nl&gt;. In next hackathons, we may focus on splitting existing topics and adding new ones, as our list of idea topics is growing rapidly."
+  },
+  {
+    "objectID": "blog/2024-09-30hackathon.html#hackathon-issues",
+    "href": "blog/2024-09-30hackathon.html#hackathon-issues",
+    "title": "Third Handbook Hackathon",
+    "section": "Hackathon Issues",
+    "text": "Hackathon Issues\nhttps://github.com/ubvu/open-handbook/issues/175 https://github.com/ubvu/open-handbook/issues/178"
+  },
+  {
+    "objectID": "blog/2024-09-30hackathon.html#hackathon-pull-requests",
+    "href": "blog/2024-09-30hackathon.html#hackathon-pull-requests",
+    "title": "Third Handbook Hackathon",
+    "section": "Hackathon Pull Requests",
+    "text": "Hackathon Pull Requests\nhttps://github.com/ubvu/open-handbook/pull/118 https://github.com/ubvu/open-handbook/pull/165 https://github.com/ubvu/open-handbook/pull/176 https://github.com/ubvu/open-handbook/pull/177 https://github.com/ubvu/open-handbook/pull/179 https://github.com/ubvu/open-handbook/pull/180 https://github.com/ubvu/open-handbook/pull/181 https://github.com/ubvu/open-handbook/pull/184 https://github.com/ubvu/open-handbook/pull/186 https://github.com/ubvu/open-handbook/pull/188"
+  },
+  {
+    "objectID": "blog/2024-11-28hackathon.html",
+    "href": "blog/2024-11-28hackathon.html",
+    "title": "Fifth Handbook Hackathon",
+    "section": "",
+    "text": "Research Support Handbook\nOn November 28, 2024, all authors participated in the fifth hackathon for the Research Support Handbook. For this hackathon, we focused on adding new content and consolidating requests.\nWe had a large number of contributions related to tools. The handbook now has information about Research Cloud, SciCloud and Yoda. These were long-standing issues and it is really nice that they turned into topics.\nIrene helped us to revise the metadata topic.\nTycho is working on a page for ORCID, the ORCID Libguide page will be adjusted to redirect to the handbook.\nLena was working on a data backup topic, trying to make it generic and applicable to multiple tools.\nWe had a discussion of an overview page. New colleagues also within support miss an overview of the services available. There are many pages that give some ideas: the RDS portal on Tools, the guide on available services and RISP - but all these overviews have diverse struggles so we are still looking for a good way of doing it.\nITvO colleagues noticed that they miss an official VU page which gives a summary of what ITvO is and does.\nQuestion that came up: how to add new contributors? Do they need access rights? Do they work with forks or branches?"
+  },
+  {
+    "objectID": "blog/2024-11-28hackathon.html#hackathon-issues",
+    "href": "blog/2024-11-28hackathon.html#hackathon-issues",
+    "title": "Fifth Handbook Hackathon",
+    "section": "Hackathon Issues",
+    "text": "Hackathon Issues\nhttps://github.com/ubvu/open-handbook/issues/275"
+  },
+  {
+    "objectID": "blog/2024-11-28hackathon.html#hackathon-pull-requests",
+    "href": "blog/2024-11-28hackathon.html#hackathon-pull-requests",
+    "title": "Fifth Handbook Hackathon",
+    "section": "Hackathon Pull Requests",
+    "text": "Hackathon Pull Requests\nhttps://github.com/ubvu/open-handbook/pull/277\nhttps://github.com/ubvu/open-handbook/pull/276\nhttps://github.com/ubvu/open-handbook/pull/140\nhttps://github.com/ubvu/open-handbook/pull/273\nMerged https://github.com/ubvu/open-handbook/pull/270#pullrequestreview-2467652120"
+  },
+  {
+    "objectID": "blog/2024-06-27hackathon.html",
+    "href": "blog/2024-06-27hackathon.html",
+    "title": "First Handbook Hackathon",
+    "section": "",
+    "text": "Research Support Handbook\n\n\n\n\nOn June 27th, 2024, the first hackathon for the Research Support Handbook took place with all the post authors. For this hackathon, we focused on non-GitHub based contributions, to make it as easy as possible to contribute. To make getting started with contributing easier, we created a choose your own adventure game. We document some lessons and clarifications below, in addition to the twelve reported problems and suggested changes.\nThe workshop helped articulate the dynamic relation between topics and pathways. Topics are contained pages around a specific subject; pathways are a collection of topics. This means that pathways include the topics directly and that this content should be up to date at any given time. When topics are changed, pathways are dynamically updated, making sure there are no discrepancies. The only situation where this may not be the case, is when a pathway is still a work in progress and the topics are not yet properly linked.\nPathways will become more efficient to create as we include more topics in the handbook. Given that pathways are primarily collections of topics, this means that there is barely any new content in there, if any at all. As we include more topics (eight at this time), pathways can focus more and more on the structuring of content, and focus less on creating the content itself.\nWith new contributions, contributors surfaced the need to preview the changes to the handbook. We documented two ways to render the handbook for such previews: (1) creating a Pull Request automatically deploys a preview website and (2) running quarto render locally on the code. Option 1 requires no additional software to be installed, but requires some knowledge of GitHub. Option 2 does not require much knowledge of GitHub, but requires the Quarto software to be installed. There was also the note that deploying the handbook using GitHub pages required a change to the URL, which may cause issues when merging the changes back into the main handbook. This highlights that ensuring reliable previews of contributed content is of importance to some contributors to the handbook.\nLastly, the hackathon surfaced many questions and discussions around the collaborative decisions that will need to be made. When does a topic become too long and should it be split up into multiple topics? Can a topic include subtopics? How is the GitHub environment maintained? How much technical expertise is necessary to ensure the content does not go offline? What contributor roles are there and who has which role? How do roles get distributed and can people volunteer for them? This highlights the engagement with the handbook, and we encourage everyone (including ourselves) to generously surface these discussions in issues or in a next hackathon.\nIn summary, the first hackathon is a success! This is the start of the next phase of the handbook journey, moving from design and scaffolding to nurturing and growing the contents. There will be more hackathons, and these will be announced on this blog and on other channels at VU Amsterdam. Until the next one!"
+  },
+  {
+    "objectID": "blog/2024-09-05hackathon.html",
+    "href": "blog/2024-09-05hackathon.html",
+    "title": "Second Handbook Hackathon",
+    "section": "",
+    "text": "Research Support Handbook\nOn September 5th, 2024, all authors participated in the second hackathon for the Research Support Handbook. For this hackathon, we focused on quality assurance. Quality assurance is crucial in ensuring that all parties at VU Amsterdam feel confident adopting this evolving, community-led resource as an official university page. Our goal is to migrate the handbook to rdm.vu.nl in the near future, which requires us to everything is in tip-top shape.\nCollectively, we proofread the migrated LibGuide pages. The result of this are seven GitHub issues and nine pull requests for revisions. These include making sure all images are migrated into the handbook, ensuring appropriate page titles, and refining the contribution guide.\nDuring the hackathon, we observed a lot of links in the old LibGuide resource, are broken. We did some much needed maintenance work during the hackathon, given that the Research Support Handbook will replace the LibGuide resource. We identified broken links and replaced them where possible. There is a need to make this a less manual process in the future and will seek out automations to help us maintain the links moving forward. Additionally, there are many internal links that need updating, changing from LibGuide URLs to GitHub pages. We also discovered several links accessible only with university credentials, which we believe detract from the user experience; these links will require special labeling and contextualization.\nThe general sentiment at the end of the hackathon is that there is still lots of work to do. The community standards are manifesting themselves, and it is clear that pathways need more work to be production ready. These discussions surfaced a wish to have more frequent hackathons at this time, until the standards are set and the included content is ready for rdm.vu.nl."
+  },
+  {
+    "objectID": "blog/2024-09-05hackathon.html#hackathon-issues",
+    "href": "blog/2024-09-05hackathon.html#hackathon-issues",
+    "title": "Second Handbook Hackathon",
+    "section": "Hackathon Issues",
+    "text": "Hackathon Issues\n\nhttps://github.com/ubvu/open-handbook/issues/123\nhttps://github.com/ubvu/open-handbook/issues/128\nhttps://github.com/ubvu/open-handbook/issues/125\nhttps://github.com/ubvu/open-handbook/issues/124\nhttps://github.com/ubvu/open-handbook/issues/123\nhttps://github.com/ubvu/open-handbook/issues/130\nhttps://github.com/ubvu/open-handbook/issues/131"
+  },
+  {
+    "objectID": "blog/2024-09-05hackathon.html#hackathon-pull-requests",
+    "href": "blog/2024-09-05hackathon.html#hackathon-pull-requests",
+    "title": "Second Handbook Hackathon",
+    "section": "Hackathon Pull Requests",
+    "text": "Hackathon Pull Requests\n\nhttps://github.com/ubvu/open-handbook/pull/126\nhttps://github.com/ubvu/open-handbook/pull/110\nhttps://github.com/ubvu/open-handbook/pull/127\nhttps://github.com/ubvu/open-handbook/pull/129\nhttps://github.com/ubvu/open-handbook/pull/132\nhttps://github.com/ubvu/open-handbook/pull/133\nhttps://github.com/ubvu/open-handbook/pull/134\nhttps://github.com/ubvu/open-handbook/pull/135"
+  },
+  {
+    "objectID": "blog/2025-05-15embed-iframe.html",
+    "href": "blog/2025-05-15embed-iframe.html",
+    "title": "How to embed handbook pages using iframes",
+    "section": "",
+    "text": "Research Support Handbook\nIf you want to reuse content from the Research Support Handbook, you can do so using an HTML iframe. This post will help you through the steps to successfully embed a handbook page on a website you administer."
+  },
+  {
+    "objectID": "blog/2025-05-15embed-iframe.html#selecting-what-to-embed",
+    "href": "blog/2025-05-15embed-iframe.html#selecting-what-to-embed",
+    "title": "How to embed handbook pages using iframes",
+    "section": "Selecting what to embed",
+    "text": "Selecting what to embed\nBefore we can embed a page, we need to select what to embed.\nEach page in the Research Support Handbook has sections, which can be used as anchors for embedding the content. This ensures that the right page shows up displaying the right content.\nFor example, if you are interested in the DataverseNL page, you can select any of the headings as an anchor. Here are the steps involved:\n\nIdentify the specific anchor to embed at (for example, “How to request access”)\nClick the link icon next to the anchor\n\n\n\n\nScreenshot of the anchor and the link icon highlighted\n\n\n\nGo to your browser’s navigation bar and copy the new link (https://rdm.vu.nl/topics/dataversenl.html#how-to-request-access)\n\nThis link is all you need to anchor the embedding itself, which we explain in the section How to embed."
+  },
+  {
+    "objectID": "blog/2025-05-15embed-iframe.html#how-to-embed",
+    "href": "blog/2025-05-15embed-iframe.html#how-to-embed",
+    "title": "How to embed handbook pages using iframes",
+    "section": "How to embed",
+    "text": "How to embed\nAfter you identified the page and possible anchor to embed, we can now move on to actually embedding it. Embedding the pages themselves is supported by all major browsers using the HTML element iframe.\nConcretely, you can use the following example code for the link we found in Selecting what to embed.\n&lt;iframe\n    src=\"https://rdm.vu.nl/topics/dataversenl.html#how-to-request-access\"\n    title=\"How to request access to DataverseNL\"\n    width=\"100%\"\n    height=\"300px\"\n    loading=lazy\n    style=\"border: solid 1px #0080c9\"&gt;\n&lt;/iframe&gt;\nYou can switch out the link, title, and other attributes to your liking – we include some styling options here to get started. You can copy-paste this into any handbook page directly or into any HTML editor:\n\n\nYou can find the detailed code on how this page embeds the content, on GitHub, from line 43.\nThanks for reading and good luck creating your own embeds of the Research Support Handbook across VU Amsterdam pages 😊 If you have questions or it does not work and you don’t understand why, please contact the RDM Support Desk and one of the editors will try to help you."
+  },
+  {
+    "objectID": "blog/2025-07-28manuals.html",
+    "href": "blog/2025-07-28manuals.html",
+    "title": "New Manuals section in the Handbook",
+    "section": "",
+    "text": "Research Support Handbook\nLast week we added a new section to the Research Support Handbook: Manuals. Manuals are short pages describing how to accomplish specific tasks in a Tool and should be easily understood by individuals with varying levels of technical knowledge. Manuals on the handbook will be written in the form of a how-to. The aim is to provide guidance for specific tasks “How do I?”. From the basic: “How do I log in” to the more in-depth “How do I use CUDA on ADA”.\nWe have started by migrating the manuals on using Yoda, from their old spot on yoda.vu.nl. Next step will be migrating the ADA HPC manuals from readthedocs.\nBy consolidating all user manuals on the Research Support Handbook we hope to increase the findability of both the manuals and the rest of the Research Support Handbook."
+  },
+  {
+    "objectID": "blog/2025-07-28manuals.html#maintaining-the-manuals",
+    "href": "blog/2025-07-28manuals.html#maintaining-the-manuals",
+    "title": "New Manuals section in the Handbook",
+    "section": "Maintaining the manuals",
+    "text": "Maintaining the manuals\nEven more than Topic and Guide pages, Manuals have a short shelf life. Hence, they must be checked regularly. Each manual will have one or two support staff responsible for keeping it up to date. To make sure enough time is set aside to work on the manuals we plan to have two update moments per year, perhaps in the form of a Hackathon."
+  },
+  {
+    "objectID": "privacy.html",
+    "href": "privacy.html",
+    "title": "Privacy Statement",
+    "section": "",
+    "text": "Research Support Handbook\n\n\n\n\nThis site adheres to the Privacy Statement of Vrije Universiteit Amsterdam.\nThis site uses Umami to gather site visitor statistics (e.g. page views, session duration, country, browser and operating system used). This system does not use Cookies, but does assign each visitor a temporary unique ID to track users within the rdm.vu.nl site. This data is stored on VU campus and is not shared with third parties."
+  },
+  {
+    "objectID": "guides.html",
+    "href": "guides.html",
+    "title": "Guides",
+    "section": "",
+    "text": "Research Support Handbook\n\n\n\n\n\n\n\n\nGuides\n\nThese guides help you find answers to questions that come up while doing research. They help guide you through various topics at once.\n\n\n\n\n    \n      \n      \n    \n\n\n    \n    \n        \n            \n                \n                    How can you archive and publish your data?\n                \n            \n            \n                \n                    \n                        \n                            \n                                \n                                    \n                                        Publish & Share\n                                    \n                                \n                            \n                        \n                    \n                    \n                        \n                            All data and software leading to a published result, must be archived and published.\n                        \n                    \n                \n            \n        \n        \n    \n        \n            \n                \n                    How can you comply with the GDPR?\n                \n            \n            \n                \n                    \n                        \n                            \n                                \n                                    \n                                        Plan & Design\n                                    \n                                \n                            \n                        \n                    \n                    \n                        \n                            Personal data must be protected.\n                        \n                    \n                \n            \n        \n        \n    \n        \n            \n                \n                    How can you discover and reuse existing research data?\n                \n            \n            \n                \n                    \n                        \n                            \n                                \n                                    \n                                        Discover & Initiate\n                                    \n                                \n                            \n                        \n                    \n                    \n                        \n                            There is so much data out there, that we want to help you find your way more easily.\n                        \n                    \n                \n            \n        \n        \n    \n        \n            \n                \n                    How can you ensure data protection and security during collection, storage, and transfer?\n                \n            \n            \n                \n                    \n                        \n                            \n                                \n                                    \n                                        Collect & Store\n                                    \n                                \n                            \n                        \n                    \n                    \n                        \n                            Learn about how to secure research data at any stage.\n                        \n                    \n                \n            \n        \n        \n    \n        \n            \n                \n                    How can you ensure data provenance and accurate data analysis?\n                \n            \n            \n                \n                    \n                        \n                            \n                                \n                                    \n                                        Process & Analyse\n                                    \n                                \n                            \n                        \n                    \n                    \n                        \n                            Where data and results come from matters.\n                        \n                    \n                \n            \n        \n        \n    \n        \n            \n                \n                    How can you ensure research data is FAIR?\n                \n            \n            \n                \n                    \n                        \n                            \n                                \n                                    \n                                        Document & Preserve\n                                    \n                                \n                            \n                        \n                    \n                    \n                        \n                            Making your data Findable, Accessible, Interopable, Reusable is more doable than you might think.\n                        \n                    \n                \n            \n        \n        \n    \n        \n            \n                \n                    How can you organise your own RDM Onboarding as a new researcher at the VU?\n                \n            \n            \n                \n                    \n                        \n                            \n                                \n                                    \n                                        Discover & Initiate\n                                    \n                                \n                            \n                                \n                                    \n                                        Plan & Design\n                                    \n                                \n                            \n                        \n                    \n                    \n                        \n                            Learn about the RDM essentials at the VU when you join the VU or a new project.\n                        \n                    \n                \n            \n        \n        \n    \n        \n            \n                \n                    How can you pseudonymise and anonymise personal data?\n                \n            \n            \n                \n                    \n                        \n                            \n                                \n                                    \n                                        Process & Analyse\n                                    \n                                \n                            \n                        \n                    \n                    \n                        \n                            Learn how you can make data about humans less identifiable.\n                        \n                    \n                \n            \n        \n        \n    \n        \n            \n                \n                    How can you publish FAIR software\n                \n            \n            \n                \n                    \n                        \n                            \n                                \n                                    \n                                        Publish & Share\n                                    \n                                \n                            \n                        \n                    \n                    \n                        \n                            A step-wise guide to make your software Findable, Accesible, Interoperable and Reusable.\n                        \n                    \n                \n            \n        \n        \n    \n        \n            \n                \n                    How can you set up research data management from the start?\n                \n            \n            \n                \n                    \n                        \n                            \n                                \n                                    \n                                        Plan & Design\n                                    \n                                \n                            \n                        \n                    \n                    \n                        \n                            A good plan is half the work.\n                        \n                    \n                \n            \n        \n        \n    \n        \n            \n                \n                    What policies and regulations support VU's vision on Open Science?\n                \n            \n            \n                \n                    \n                    \n                        \n                            As open as possible, as closed as necessary.\n                        \n                    \n                \n            \n        \n        \n    \n        \n            \n                \n                    What research data services and support are available for VU researchers?\n                \n            \n            \n                \n                    \n                    \n                        \n                            Who is who and resources that can help you along your research journey.\n                        \n                    \n                \n            \n        \n        \n    \n        \n            \n                \n                    What should I do when leaving VU Amsterdam?\n                \n            \n            \n                \n                    \n                    \n                        \n                            Processes for data-related offboarding.\n                        \n                    \n                \n            \n        \n        \n    \n\nNo matching items"
+  },
+  {
+    "objectID": "tools/vucomputehub/contact_support.html",
+    "href": "tools/vucomputehub/contact_support.html",
+    "title": "Support and Contact",
+    "section": "",
+    "text": "Research Support Handbook\n\n\n\n\nWondering if the VU Compute Hub fits your research needs? Please contact IT for Research.\nIf you run into any issues while using the Compute Servers please send a mail to the IT Service Desk mentioning “JupyterHub”.",
+    "crumbs": [
+      "VU Compute Hub",
+      "Support and Contact"
+    ]
+  },
+  {
+    "objectID": "tools/vucomputehub/cost_access.html",
+    "href": "tools/vucomputehub/cost_access.html",
     "title": "Costs and Getting Access",
     "section": "",
     "text": "Research Support Handbook",
     "crumbs": [
-      "SciStor",
+      "VU Compute Hub",
       "Costs and Getting Access"
     ]
   },
   {
-    "objectID": "tools/scistor/cost_access.html#requesting-a-new-project-folder-share",
-    "href": "tools/scistor/cost_access.html#requesting-a-new-project-folder-share",
+    "objectID": "tools/vucomputehub/cost_access.html#how-to-request-access",
+    "href": "tools/vucomputehub/cost_access.html#how-to-request-access",
     "title": "Costs and Getting Access",
-    "section": "Requesting a new project folder (share)",
-    "text": "Requesting a new project folder (share)\nYou can find the request form on 🔒 ServiceNow, go to: IT &gt; My work field &gt; Research &gt; SciStor &gt; Realisation of new storage for research (SciStor). A departmental budget number is needed for a creation of a Project Folder, it can be obtained from the relevant head of department or project lead.\nMinimum storage space that can be requested is 100 GB, for a minimum of three months. The capacity can be increased or decreased in units of 100 GB if needed.\nAfter submitting the application, IT for Research will contact you to schedule an interview to discuss naming the SciStor project folder, how the backups work, who should have access, etc.\nMost SciStor configurations can be delivered within one or two days. More complex configurations may take a little longer.",
+    "section": "How to request access",
+    "text": "How to request access\nYou do not need to request access. You can log in with your VU credentials.",
     "crumbs": [
-      "SciStor",
+      "VU Compute Hub",
       "Costs and Getting Access"
     ]
   },
   {
-    "objectID": "tools/scistor/cost_access.html#permissions-management-and-adding-users",
-    "href": "tools/scistor/cost_access.html#permissions-management-and-adding-users",
-    "title": "Costs and Getting Access",
-    "section": "Permissions Management and adding users",
-    "text": "Permissions Management and adding users\n\nThe user who submits the Project Folder creation request is designated as the folder’s owner or primary administrator.\nThe owner holds read-write access to all subfolders by default.\nPermission modifications may only be initiated by the folder owner or a designated administrator.\nAll such requests must be submitted to the IT Service Desk via 🔒 ServiceNow, go to: IT &gt; My work field &gt; Research &gt; SciStor &gt; Change SciStor access rights. Specify the relevant folder, user account, and desired permission level.\n\nYou can find an explanation of the pemission structure in the documentation",
-    "crumbs": [
-      "SciStor",
-      "Costs and Getting Access"
-    ]
-  },
-  {
-    "objectID": "tools/scistor/cost_access.html#are-there-costs-involved",
-    "href": "tools/scistor/cost_access.html#are-there-costs-involved",
+    "objectID": "tools/vucomputehub/cost_access.html#are-there-costs-involved",
+    "href": "tools/vucomputehub/cost_access.html#are-there-costs-involved",
     "title": "Costs and Getting Access",
     "section": "Are there costs involved?",
-    "text": "Are there costs involved?\nYou pay for the amount of space used for your project folder: €0,16 per GB per year.",
+    "text": "Are there costs involved?\nThere are no costs involved.",
     "crumbs": [
-      "SciStor",
+      "VU Compute Hub",
       "Costs and Getting Access"
-    ]
-  },
-  {
-    "objectID": "tools/scistor/quick_start.html",
-    "href": "tools/scistor/quick_start.html",
-    "title": "Quick Start",
-    "section": "",
-    "text": "Research Support Handbook",
-    "crumbs": [
-      "SciStor",
-      "Quick Start"
-    ]
-  },
-  {
-    "objectID": "tools/scistor/quick_start.html#connecting-to-your-project-folders",
-    "href": "tools/scistor/quick_start.html#connecting-to-your-project-folders",
-    "title": "Quick Start",
-    "section": "Connecting to your project folders",
-    "text": "Connecting to your project folders\n\nConnect to eduVPN\nMake sure you are connected to eduVPN institure access first. \nSelect Institute Access and follow the usual steps to login with your VUnetID.\nThen follow the instructions for your Operating System.\n\n\nMacOS\n\nOpen the Finder application\nIn the “Go” menu, pick “Connect to Server…” or press “⌘K”\nFill in: smb://scistor.vu.nl/shares\nClick “Connect”\nSelect “Registered User” if this is not yet selected\nFill in your VUnetID and password\nPress “Connect”. Optionally, tick the “Remember this password in my keychain” checkbox. After doing this, macOS will no longer ask for credentials the next time this connection is used.\n\nSciStor project folders appear on the left after opening the SciStor location. You may open the desired SciStor project folder by double-clicking it.\n\n\nWindows\n\nOpen Windows File Explorer\nRight-click on This PC and choose “Map network drive…””\nSelect a desired drive letter, for example S. In the Folder field you can enter the following: \\\\scistor.vu.nl\\shares\\&lt;the name of the project folder&gt;. Make sure the checkboxes are checked.\nClick “Finish”\nYou will now be asked to log in. This is not possible with your PIN code. Choose the “More choices” option, and log in with your VU email address and password\n\n\n\n‘Green’ Linux workspaces\nGreen Linux workplaces (supported by VU IT) have a connection to SciStor from home. All SciStor project folders can be found under the path /research.\n\n\nOther Linux workstations\nOther self-managed Linux workstations can connect to SciStor via the Samba protocol:\n$ sudo apt install cifs-utils\n$ sudo nano /etc/credentials/&lt;vunetID&gt;\n    # nano\nusername=&lt;vumail@vu.nl&gt;\npassword=&lt;your-vunet-password&gt; # you can put you password for convinence, otherwise you have to type your password everytime.\n$ sudo mkdir -p /data/VU/shares/&lt;name-of-your-folder&gt;\n$ sudo mount -t cifs //scistor.vu.nl/shares/&lt;name-of-your-folder&gt; /data/VU/shares/&lt;name-of-your-folder&gt; -o credentials=/etc/credentials/&lt;vunetID&gt;\nThe scistor project folder will be mounted at location: /data/VU/shares. To unmount it, simply do:\n$ sudo umount /data/VU/shares/&lt;name-of-your-folder&gt;\n\n\n\n\n\n\nNote\n\n\n\nThe path /data/VU/shares is just a suggestion, you can choose any mount path that suits your setup.",
-    "crumbs": [
-      "SciStor",
-      "Quick Start"
     ]
   },
   {
@@ -3984,517 +4445,80 @@
     ]
   },
   {
-    "objectID": "tools/vucomputehub/cost_access.html",
-    "href": "tools/vucomputehub/cost_access.html",
-    "title": "Costs and Getting Access",
-    "section": "",
-    "text": "Research Support Handbook",
-    "crumbs": [
-      "VU Compute Hub",
-      "Costs and Getting Access"
-    ]
-  },
-  {
-    "objectID": "tools/vucomputehub/cost_access.html#how-to-request-access",
-    "href": "tools/vucomputehub/cost_access.html#how-to-request-access",
-    "title": "Costs and Getting Access",
-    "section": "How to request access",
-    "text": "How to request access\nYou do not need to request access. You can log in with your VU credentials.",
-    "crumbs": [
-      "VU Compute Hub",
-      "Costs and Getting Access"
-    ]
-  },
-  {
-    "objectID": "tools/vucomputehub/cost_access.html#are-there-costs-involved",
-    "href": "tools/vucomputehub/cost_access.html#are-there-costs-involved",
-    "title": "Costs and Getting Access",
-    "section": "Are there costs involved?",
-    "text": "Are there costs involved?\nThere are no costs involved.",
-    "crumbs": [
-      "VU Compute Hub",
-      "Costs and Getting Access"
-    ]
-  },
-  {
-    "objectID": "tools/vucomputehub/contact_support.html",
-    "href": "tools/vucomputehub/contact_support.html",
-    "title": "Support and Contact",
-    "section": "",
-    "text": "Research Support Handbook\n\n\n\n\nWondering if the VU Compute Hub fits your research needs? Please contact IT for Research.\nIf you run into any issues while using the Compute Servers please send a mail to the IT Service Desk mentioning “JupyterHub”.",
-    "crumbs": [
-      "VU Compute Hub",
-      "Support and Contact"
-    ]
-  },
-  {
-    "objectID": "guides.html",
-    "href": "guides.html",
-    "title": "Guides",
-    "section": "",
-    "text": "Research Support Handbook\n\n\n\n\n\n\n\n\nGuides\n\nThese guides help you find answers to questions that come up while doing research. They help guide you through various topics at once.\n\n\n\n\n    \n      \n      \n    \n\n\n    \n    \n        \n            \n                \n                    How can you archive and publish your data?\n                \n            \n            \n                \n                    \n                        \n                            \n                                \n                                    \n                                        Publish & Share\n                                    \n                                \n                            \n                        \n                    \n                    \n                        \n                            All data and software leading to a published result, must be archived and published.\n                        \n                    \n                \n            \n        \n        \n    \n        \n            \n                \n                    How can you comply with the GDPR?\n                \n            \n            \n                \n                    \n                        \n                            \n                                \n                                    \n                                        Plan & Design\n                                    \n                                \n                            \n                        \n                    \n                    \n                        \n                            Personal data must be protected.\n                        \n                    \n                \n            \n        \n        \n    \n        \n            \n                \n                    How can you discover and reuse existing research data?\n                \n            \n            \n                \n                    \n                        \n                            \n                                \n                                    \n                                        Discover & Initiate\n                                    \n                                \n                            \n                        \n                    \n                    \n                        \n                            There is so much data out there, that we want to help you find your way more easily.\n                        \n                    \n                \n            \n        \n        \n    \n        \n            \n                \n                    How can you ensure data protection and security during collection, storage, and transfer?\n                \n            \n            \n                \n                    \n                        \n                            \n                                \n                                    \n                                        Collect & Store\n                                    \n                                \n                            \n                        \n                    \n                    \n                        \n                            Learn about how to secure research data at any stage.\n                        \n                    \n                \n            \n        \n        \n    \n        \n            \n                \n                    How can you ensure data provenance and accurate data analysis?\n                \n            \n            \n                \n                    \n                        \n                            \n                                \n                                    \n                                        Process & Analyse\n                                    \n                                \n                            \n                        \n                    \n                    \n                        \n                            Where data and results come from matters.\n                        \n                    \n                \n            \n        \n        \n    \n        \n            \n                \n                    How can you ensure research data is FAIR?\n                \n            \n            \n                \n                    \n                        \n                            \n                                \n                                    \n                                        Document & Preserve\n                                    \n                                \n                            \n                        \n                    \n                    \n                        \n                            Making your data Findable, Accessible, Interopable, Reusable is more doable than you might think.\n                        \n                    \n                \n            \n        \n        \n    \n        \n            \n                \n                    How can you organise your own RDM Onboarding as a new researcher at the VU?\n                \n            \n            \n                \n                    \n                        \n                            \n                                \n                                    \n                                        Discover & Initiate\n                                    \n                                \n                            \n                                \n                                    \n                                        Plan & Design\n                                    \n                                \n                            \n                        \n                    \n                    \n                        \n                            Learn about the RDM essentials at the VU when you join the VU or a new project.\n                        \n                    \n                \n            \n        \n        \n    \n        \n            \n                \n                    How can you pseudonymise and anonymise personal data?\n                \n            \n            \n                \n                    \n                        \n                            \n                                \n                                    \n                                        Process & Analyse\n                                    \n                                \n                            \n                        \n                    \n                    \n                        \n                            Learn how you can make data about humans less identifiable.\n                        \n                    \n                \n            \n        \n        \n    \n        \n            \n                \n                    How can you publish FAIR software\n                \n            \n            \n                \n                    \n                        \n                            \n                                \n                                    \n                                        Publish & Share\n                                    \n                                \n                            \n                        \n                    \n                    \n                        \n                            A step-wise guide to make your software Findable, Accesible, Interoperable and Reusable.\n                        \n                    \n                \n            \n        \n        \n    \n        \n            \n                \n                    How can you set up research data management from the start?\n                \n            \n            \n                \n                    \n                        \n                            \n                                \n                                    \n                                        Plan & Design\n                                    \n                                \n                            \n                        \n                    \n                    \n                        \n                            A good plan is half the work.\n                        \n                    \n                \n            \n        \n        \n    \n        \n            \n                \n                    What policies and regulations support VU's vision on Open Science?\n                \n            \n            \n                \n                    \n                    \n                        \n                            As open as possible, as closed as necessary.\n                        \n                    \n                \n            \n        \n        \n    \n        \n            \n                \n                    What research data services and support are available for VU researchers?\n                \n            \n            \n                \n                    \n                    \n                        \n                            Who is who and resources that can help you along your research journey.\n                        \n                    \n                \n            \n        \n        \n    \n        \n            \n                \n                    What should I do when leaving VU Amsterdam?\n                \n            \n            \n                \n                    \n                    \n                        \n                            Processes for data-related offboarding.\n                        \n                    \n                \n            \n        \n        \n    \n\nNo matching items"
-  },
-  {
-    "objectID": "privacy.html",
-    "href": "privacy.html",
-    "title": "Privacy Statement",
-    "section": "",
-    "text": "Research Support Handbook\n\n\n\n\nThis site adheres to the Privacy Statement of Vrije Universiteit Amsterdam.\nThis site uses Umami to gather site visitor statistics (e.g. page views, session duration, country, browser and operating system used). This system does not use Cookies, but does assign each visitor a temporary unique ID to track users within the rdm.vu.nl site. This data is stored on VU campus and is not shared with third parties."
-  },
-  {
-    "objectID": "blog/2025-07-28manuals.html",
-    "href": "blog/2025-07-28manuals.html",
-    "title": "New Manuals section in the Handbook",
-    "section": "",
-    "text": "Research Support Handbook\nLast week we added a new section to the Research Support Handbook: Manuals. Manuals are short pages describing how to accomplish specific tasks in a Tool and should be easily understood by individuals with varying levels of technical knowledge. Manuals on the handbook will be written in the form of a how-to. The aim is to provide guidance for specific tasks “How do I?”. From the basic: “How do I log in” to the more in-depth “How do I use CUDA on ADA”.\nWe have started by migrating the manuals on using Yoda, from their old spot on yoda.vu.nl. Next step will be migrating the ADA HPC manuals from readthedocs.\nBy consolidating all user manuals on the Research Support Handbook we hope to increase the findability of both the manuals and the rest of the Research Support Handbook."
-  },
-  {
-    "objectID": "blog/2025-07-28manuals.html#maintaining-the-manuals",
-    "href": "blog/2025-07-28manuals.html#maintaining-the-manuals",
-    "title": "New Manuals section in the Handbook",
-    "section": "Maintaining the manuals",
-    "text": "Maintaining the manuals\nEven more than Topic and Guide pages, Manuals have a short shelf life. Hence, they must be checked regularly. Each manual will have one or two support staff responsible for keeping it up to date. To make sure enough time is set aside to work on the manuals we plan to have two update moments per year, perhaps in the form of a Hackathon."
-  },
-  {
-    "objectID": "blog/2025-05-15embed-iframe.html",
-    "href": "blog/2025-05-15embed-iframe.html",
-    "title": "How to embed handbook pages using iframes",
-    "section": "",
-    "text": "Research Support Handbook\nIf you want to reuse content from the Research Support Handbook, you can do so using an HTML iframe. This post will help you through the steps to successfully embed a handbook page on a website you administer."
-  },
-  {
-    "objectID": "blog/2025-05-15embed-iframe.html#selecting-what-to-embed",
-    "href": "blog/2025-05-15embed-iframe.html#selecting-what-to-embed",
-    "title": "How to embed handbook pages using iframes",
-    "section": "Selecting what to embed",
-    "text": "Selecting what to embed\nBefore we can embed a page, we need to select what to embed.\nEach page in the Research Support Handbook has sections, which can be used as anchors for embedding the content. This ensures that the right page shows up displaying the right content.\nFor example, if you are interested in the DataverseNL page, you can select any of the headings as an anchor. Here are the steps involved:\n\nIdentify the specific anchor to embed at (for example, “How to request access”)\nClick the link icon next to the anchor\n\n\n\n\nScreenshot of the anchor and the link icon highlighted\n\n\n\nGo to your browser’s navigation bar and copy the new link (https://rdm.vu.nl/topics/dataversenl.html#how-to-request-access)\n\nThis link is all you need to anchor the embedding itself, which we explain in the section How to embed."
-  },
-  {
-    "objectID": "blog/2025-05-15embed-iframe.html#how-to-embed",
-    "href": "blog/2025-05-15embed-iframe.html#how-to-embed",
-    "title": "How to embed handbook pages using iframes",
-    "section": "How to embed",
-    "text": "How to embed\nAfter you identified the page and possible anchor to embed, we can now move on to actually embedding it. Embedding the pages themselves is supported by all major browsers using the HTML element iframe.\nConcretely, you can use the following example code for the link we found in Selecting what to embed.\n&lt;iframe\n    src=\"https://rdm.vu.nl/topics/dataversenl.html#how-to-request-access\"\n    title=\"How to request access to DataverseNL\"\n    width=\"100%\"\n    height=\"300px\"\n    loading=lazy\n    style=\"border: solid 1px #0080c9\"&gt;\n&lt;/iframe&gt;\nYou can switch out the link, title, and other attributes to your liking – we include some styling options here to get started. You can copy-paste this into any handbook page directly or into any HTML editor:\n\n\nYou can find the detailed code on how this page embeds the content, on GitHub, from line 43.\nThanks for reading and good luck creating your own embeds of the Research Support Handbook across VU Amsterdam pages 😊 If you have questions or it does not work and you don’t understand why, please contact the RDM Support Desk and one of the editors will try to help you."
-  },
-  {
-    "objectID": "blog/2024-09-05hackathon.html",
-    "href": "blog/2024-09-05hackathon.html",
-    "title": "Second Handbook Hackathon",
-    "section": "",
-    "text": "Research Support Handbook\nOn September 5th, 2024, all authors participated in the second hackathon for the Research Support Handbook. For this hackathon, we focused on quality assurance. Quality assurance is crucial in ensuring that all parties at VU Amsterdam feel confident adopting this evolving, community-led resource as an official university page. Our goal is to migrate the handbook to rdm.vu.nl in the near future, which requires us to everything is in tip-top shape.\nCollectively, we proofread the migrated LibGuide pages. The result of this are seven GitHub issues and nine pull requests for revisions. These include making sure all images are migrated into the handbook, ensuring appropriate page titles, and refining the contribution guide.\nDuring the hackathon, we observed a lot of links in the old LibGuide resource, are broken. We did some much needed maintenance work during the hackathon, given that the Research Support Handbook will replace the LibGuide resource. We identified broken links and replaced them where possible. There is a need to make this a less manual process in the future and will seek out automations to help us maintain the links moving forward. Additionally, there are many internal links that need updating, changing from LibGuide URLs to GitHub pages. We also discovered several links accessible only with university credentials, which we believe detract from the user experience; these links will require special labeling and contextualization.\nThe general sentiment at the end of the hackathon is that there is still lots of work to do. The community standards are manifesting themselves, and it is clear that pathways need more work to be production ready. These discussions surfaced a wish to have more frequent hackathons at this time, until the standards are set and the included content is ready for rdm.vu.nl."
-  },
-  {
-    "objectID": "blog/2024-09-05hackathon.html#hackathon-issues",
-    "href": "blog/2024-09-05hackathon.html#hackathon-issues",
-    "title": "Second Handbook Hackathon",
-    "section": "Hackathon Issues",
-    "text": "Hackathon Issues\n\nhttps://github.com/ubvu/open-handbook/issues/123\nhttps://github.com/ubvu/open-handbook/issues/128\nhttps://github.com/ubvu/open-handbook/issues/125\nhttps://github.com/ubvu/open-handbook/issues/124\nhttps://github.com/ubvu/open-handbook/issues/123\nhttps://github.com/ubvu/open-handbook/issues/130\nhttps://github.com/ubvu/open-handbook/issues/131"
-  },
-  {
-    "objectID": "blog/2024-09-05hackathon.html#hackathon-pull-requests",
-    "href": "blog/2024-09-05hackathon.html#hackathon-pull-requests",
-    "title": "Second Handbook Hackathon",
-    "section": "Hackathon Pull Requests",
-    "text": "Hackathon Pull Requests\n\nhttps://github.com/ubvu/open-handbook/pull/126\nhttps://github.com/ubvu/open-handbook/pull/110\nhttps://github.com/ubvu/open-handbook/pull/127\nhttps://github.com/ubvu/open-handbook/pull/129\nhttps://github.com/ubvu/open-handbook/pull/132\nhttps://github.com/ubvu/open-handbook/pull/133\nhttps://github.com/ubvu/open-handbook/pull/134\nhttps://github.com/ubvu/open-handbook/pull/135"
-  },
-  {
-    "objectID": "blog/2024-06-27hackathon.html",
-    "href": "blog/2024-06-27hackathon.html",
-    "title": "First Handbook Hackathon",
-    "section": "",
-    "text": "Research Support Handbook\n\n\n\n\nOn June 27th, 2024, the first hackathon for the Research Support Handbook took place with all the post authors. For this hackathon, we focused on non-GitHub based contributions, to make it as easy as possible to contribute. To make getting started with contributing easier, we created a choose your own adventure game. We document some lessons and clarifications below, in addition to the twelve reported problems and suggested changes.\nThe workshop helped articulate the dynamic relation between topics and pathways. Topics are contained pages around a specific subject; pathways are a collection of topics. This means that pathways include the topics directly and that this content should be up to date at any given time. When topics are changed, pathways are dynamically updated, making sure there are no discrepancies. The only situation where this may not be the case, is when a pathway is still a work in progress and the topics are not yet properly linked.\nPathways will become more efficient to create as we include more topics in the handbook. Given that pathways are primarily collections of topics, this means that there is barely any new content in there, if any at all. As we include more topics (eight at this time), pathways can focus more and more on the structuring of content, and focus less on creating the content itself.\nWith new contributions, contributors surfaced the need to preview the changes to the handbook. We documented two ways to render the handbook for such previews: (1) creating a Pull Request automatically deploys a preview website and (2) running quarto render locally on the code. Option 1 requires no additional software to be installed, but requires some knowledge of GitHub. Option 2 does not require much knowledge of GitHub, but requires the Quarto software to be installed. There was also the note that deploying the handbook using GitHub pages required a change to the URL, which may cause issues when merging the changes back into the main handbook. This highlights that ensuring reliable previews of contributed content is of importance to some contributors to the handbook.\nLastly, the hackathon surfaced many questions and discussions around the collaborative decisions that will need to be made. When does a topic become too long and should it be split up into multiple topics? Can a topic include subtopics? How is the GitHub environment maintained? How much technical expertise is necessary to ensure the content does not go offline? What contributor roles are there and who has which role? How do roles get distributed and can people volunteer for them? This highlights the engagement with the handbook, and we encourage everyone (including ourselves) to generously surface these discussions in issues or in a next hackathon.\nIn summary, the first hackathon is a success! This is the start of the next phase of the handbook journey, moving from design and scaffolding to nurturing and growing the contents. There will be more hackathons, and these will be announced on this blog and on other channels at VU Amsterdam. Until the next one!"
-  },
-  {
-    "objectID": "blog/2024-11-28hackathon.html",
-    "href": "blog/2024-11-28hackathon.html",
-    "title": "Fifth Handbook Hackathon",
-    "section": "",
-    "text": "Research Support Handbook\nOn November 28, 2024, all authors participated in the fifth hackathon for the Research Support Handbook. For this hackathon, we focused on adding new content and consolidating requests.\nWe had a large number of contributions related to tools. The handbook now has information about Research Cloud, SciCloud and Yoda. These were long-standing issues and it is really nice that they turned into topics.\nIrene helped us to revise the metadata topic.\nTycho is working on a page for ORCID, the ORCID Libguide page will be adjusted to redirect to the handbook.\nLena was working on a data backup topic, trying to make it generic and applicable to multiple tools.\nWe had a discussion of an overview page. New colleagues also within support miss an overview of the services available. There are many pages that give some ideas: the RDS portal on Tools, the guide on available services and RISP - but all these overviews have diverse struggles so we are still looking for a good way of doing it.\nITvO colleagues noticed that they miss an official VU page which gives a summary of what ITvO is and does.\nQuestion that came up: how to add new contributors? Do they need access rights? Do they work with forks or branches?"
-  },
-  {
-    "objectID": "blog/2024-11-28hackathon.html#hackathon-issues",
-    "href": "blog/2024-11-28hackathon.html#hackathon-issues",
-    "title": "Fifth Handbook Hackathon",
-    "section": "Hackathon Issues",
-    "text": "Hackathon Issues\nhttps://github.com/ubvu/open-handbook/issues/275"
-  },
-  {
-    "objectID": "blog/2024-11-28hackathon.html#hackathon-pull-requests",
-    "href": "blog/2024-11-28hackathon.html#hackathon-pull-requests",
-    "title": "Fifth Handbook Hackathon",
-    "section": "Hackathon Pull Requests",
-    "text": "Hackathon Pull Requests\nhttps://github.com/ubvu/open-handbook/pull/277\nhttps://github.com/ubvu/open-handbook/pull/276\nhttps://github.com/ubvu/open-handbook/pull/140\nhttps://github.com/ubvu/open-handbook/pull/273\nMerged https://github.com/ubvu/open-handbook/pull/270#pullrequestreview-2467652120"
-  },
-  {
-    "objectID": "blog/2024-09-30hackathon.html",
-    "href": "blog/2024-09-30hackathon.html",
-    "title": "Third Handbook Hackathon",
-    "section": "",
-    "text": "Research Support Handbook\nIn the third hackathon for the Research Support Handbook, held on September 25th, 2024, contributors gathered to make significant progress towards migrating the handbook to the VU domain (rdm.vu.nl). The event centered around sprinting to a finish line by refining existing content and ensuring accessibility standards are met.\nKey activities included:\nOverall, the hackathon was a productive session, and the handbook is now in its final stage, with the team preparing for the official launch on &lt;rdm.vu.nl&gt;. In next hackathons, we may focus on splitting existing topics and adding new ones, as our list of idea topics is growing rapidly."
-  },
-  {
-    "objectID": "blog/2024-09-30hackathon.html#hackathon-issues",
-    "href": "blog/2024-09-30hackathon.html#hackathon-issues",
-    "title": "Third Handbook Hackathon",
-    "section": "Hackathon Issues",
-    "text": "Hackathon Issues\nhttps://github.com/ubvu/open-handbook/issues/175 https://github.com/ubvu/open-handbook/issues/178"
-  },
-  {
-    "objectID": "blog/2024-09-30hackathon.html#hackathon-pull-requests",
-    "href": "blog/2024-09-30hackathon.html#hackathon-pull-requests",
-    "title": "Third Handbook Hackathon",
-    "section": "Hackathon Pull Requests",
-    "text": "Hackathon Pull Requests\nhttps://github.com/ubvu/open-handbook/pull/118 https://github.com/ubvu/open-handbook/pull/165 https://github.com/ubvu/open-handbook/pull/176 https://github.com/ubvu/open-handbook/pull/177 https://github.com/ubvu/open-handbook/pull/179 https://github.com/ubvu/open-handbook/pull/180 https://github.com/ubvu/open-handbook/pull/181 https://github.com/ubvu/open-handbook/pull/184 https://github.com/ubvu/open-handbook/pull/186 https://github.com/ubvu/open-handbook/pull/188"
-  },
-  {
-    "objectID": "blog/2025-11-27hackathon.html",
-    "href": "blog/2025-11-27hackathon.html",
-    "title": "Seventh Handbook Hackathon",
-    "section": "",
-    "text": "Research Support Handbook\nOn November 27, 2025, all authors participated in the seventh hackathon for the Research Support Handbook. For this hackathon, we focused on Consolidating content and adding new content."
-  },
-  {
-    "objectID": "blog/2025-11-27hackathon.html#overview-of-results",
-    "href": "blog/2025-11-27hackathon.html#overview-of-results",
-    "title": "Seventh Handbook Hackathon",
-    "section": "Overview of results",
-    "text": "Overview of results\nWe updated the information about Pure and about data and software registration in Pure (link to LibGuide manuals instead of PDFs, information about Elsevier no longer supporting DataMonitor).\nWe created two practical pages related to the RDM Support Desk:\n\nGeneral information about the RDM Support Desk\nLanding page for requesting access to datasets\n\nRegarding videos in the Research Support Handbook: We stored relevant videos in Panopto and embedded them in our website from there, replacing the YouTube videos. This helps us maintain all video material in a central place and another advantage is that we don’t get suggestions for other videos once a video has ended, as on YouTube.\nWe expanded the Research Software topic by referring to related information in the Research Support Handbook.\nWe continued working on the topic de-identifying data, but this is still in progress.\nA few updates have been done in tools documentation for Yoda, ADA and SciStor before, during and after the hackathon. We have improved navigation in the tools section as well.\nFinally, a new release of the Handbook has been created on Zenodo."
-  },
-  {
-    "objectID": "blog/2025-11-27hackathon.html#hackathon-issues-and-pull-requests",
-    "href": "blog/2025-11-27hackathon.html#hackathon-issues-and-pull-requests",
-    "title": "Seventh Handbook Hackathon",
-    "section": "Hackathon Issues and Pull Requests",
-    "text": "Hackathon Issues and Pull Requests\n\nData and software registration updates: Issue #250, PR #621 and PR #623; PR #627 for updates in the general information about Pure. Note that the information about Pure has been transferred from topics to tools see Issue #675 and see PR #678.\nRDM Support Desk: Issue #588 and PR #610 for the information page and Issue #589 and PR #631 for the landing page with information about requesting access to datasets.\nResearch software information: Issue #410 and PR #624.\nTopic de-identifying data: Issue #492"
-  },
-  {
-    "objectID": "blog/2025-07-24hackathon.html",
-    "href": "blog/2025-07-24hackathon.html",
-    "title": "Sixth Handbook Hackathon",
-    "section": "",
-    "text": "Research Support Handbook\nOn July 24, 2025, all authors participated in the sixth hackathon for the Research Support Handbook. For this hackathon, we focused on adding and updating topics."
-  },
-  {
-    "objectID": "blog/2025-07-24hackathon.html#overview-of-results",
-    "href": "blog/2025-07-24hackathon.html#overview-of-results",
-    "title": "Sixth Handbook Hackathon",
-    "section": "Overview of results",
-    "text": "Overview of results\nNew topics that we have added during or in the days after the Hackathon:\n\nITvO\nPure\nCARE Principles\nSoftware Archiving\nSoftware Publishing\nOSF\n\nWe have started on the following topics, but these still need some work before they can be published:\n\nRDM tools overview (to replace the current one on the VU website)\nDe-identifying data: Pseudonymisation and Anonymisation\nInformed consent forms (content will be discussed with the privacy experts)\n\nThe following topics have been updated:\n\nDMP: we moved the instructions for selecting the VU DMP template to the guide How can you set up research data management from the start?\n\nWe worked on some guides as well:\n\nWe updated the guide What research data services and support are available for VU researchers?\nWe transferred all information related to OSF from the VU OSF Wiki to the Handbook, resulting in a topic (see above) and a guide How can you use Open Science Framework (OSF) in your research project?\nWe updated the guide How can you set up research data management from the start?, where we included the instructions for selecting the VU DMP template\n\nIn addition, we introduced a new type of page: Manuals (a big thanks to Peter, who put a lot of effort in preparing this 🙏). A user manual provides guidance and instructions to users of a tool. User manuals are created to be easily understood by individuals with varying levels of technical knowledge. It can be assumed that most of the tools will already have their own manuals on the suppliers website. We will link to those as much as possible, we don’t want to duplicate information. If you’re interested, you can read more in Issue #416. The Yoda manuals have now been included in the Handbook (the website yoda.vu.nl will be phased out). Manuals on the handbook will be written in the form of a how-to, the aim is to provide guidance for specific tasks “How do I?”. From the basic: “How do I log in” to the more in-depth “How do I use CUDA on ADA”.\nFinally, we also worked on contributing guidelines and categorised the blog posts, introducing a new type of blog post by ITvO:\n\nInstructions for using VSCode to contribute\nUpdated instructions for rendering the Research Support Handbook locally\nIntroduced Blog categories and ITvO Blog"
-  },
-  {
-    "objectID": "blog/2025-07-24hackathon.html#hackathon-issues-and-pull-requests",
-    "href": "blog/2025-07-24hackathon.html#hackathon-issues-and-pull-requests",
-    "title": "Sixth Handbook Hackathon",
-    "section": "Hackathon Issues and Pull Requests",
-    "text": "Hackathon Issues and Pull Requests\n\n(Yoda) manuals: Issue #416 and PR #484\nInformation about ITvO: Issue #344 and PR #516\nSoftware Archiving: Issue #354 and PR #500\nSoftware Publishing: Issue #354 and PR #501\nOSF: Issue #100 and PR #538 (topic) and PR #541 (guide)\nCARE Principles: Issue #448 and PR #503\nWhat research data services and support are available for VU researchers? PR #530\nPure: Issue #482 and PR #497 and #PR 537\nHow can you set up research data management from the start?: PR #524\nDMP: PR #525\nUsing VSCode to contribute: PR #509\nRendering Handbook locally: PR #463\nIntroducing Blog categories and ITvO Blog PR #533"
-  },
-  {
-    "objectID": "blog/2025-07-24hackathon.html#ai-generated-texts",
-    "href": "blog/2025-07-24hackathon.html#ai-generated-texts",
-    "title": "Sixth Handbook Hackathon",
-    "section": "AI-generated texts",
-    "text": "AI-generated texts\nIn preparation for this hackathon, we had some texts for new topics drafted by Claude LLM, as part of a trial to explore AI-assisted content creation for the handbook. The idea was that it is easier for people to review existing content than creating something from scratch. During the hackathon, most people seemed to have a preference for writing text themselves. It is more fun, and part of the content created by Claude LLM was not useful. So for now, we think we will keep writing our own texts."
-  },
-  {
-    "objectID": "blog/2024-11-01hackathon.html",
-    "href": "blog/2024-11-01hackathon.html",
-    "title": "Fourth Handbook Hackathon",
-    "section": "",
-    "text": "Research Support Handbook\nOn October 30th, 2024, all authors participated in the fourth hackathon for the Research Support Handbook. Since the third hackathon, we migrated to rdm.vu.nl, which is a huge milestone! 🎉\nFor the fourth hackathon, we focused on tying up loose ends that we accumulated. The migration means we are now in a stable state, yet there is always more work to be done. During this hackathon, we focused on picking up stale discussions, reviewing open pull requests, and generally closing issues that we took too long to revisit.\nWe considered how (un)balanced the various Topics had gotten, because we want readers to be able to form consistent expectations. We observed that some topics are related to tools, others to concepts. Some topics are concise, whereas others are lengthy.\nOne breakout group focused on creating templates for both kinds of topics, resulting in an initial structure that will make it easier to start new topics in the future. Specifically we propose the following template structure for tools (for example, Qualtrics, HPC, DMPonline):\nAnd the following structure for concepts (for example, DMP, data citation, data storage):\nWe will follow up with a new hackathon in late november."
-  },
-  {
-    "objectID": "blog/2024-11-01hackathon.html#issues-worked-on",
-    "href": "blog/2024-11-01hackathon.html#issues-worked-on",
-    "title": "Fourth Handbook Hackathon",
-    "section": "Issues worked on",
-    "text": "Issues worked on\nhttps://github.com/ubvu/open-handbook/issues/232\nhttps://github.com/ubvu/open-handbook/issues/233"
-  },
-  {
-    "objectID": "blog/2024-11-01hackathon.html#pull-requests-worked-on",
-    "href": "blog/2024-11-01hackathon.html#pull-requests-worked-on",
-    "title": "Fourth Handbook Hackathon",
-    "section": "Pull Requests worked on",
-    "text": "Pull Requests worked on\nhttps://github.com/ubvu/open-handbook/pull/229\nhttps://github.com/ubvu/open-handbook/pull/231\nhttps://github.com/ubvu/open-handbook/pull/234\nhttps://github.com/ubvu/open-handbook/pull/235\nhttps://github.com/ubvu/open-handbook/pull/236\nhttps://github.com/ubvu/open-handbook/pull/237"
-  },
-  {
-    "objectID": "blog/2024-10-22post-mortem.html",
-    "href": "blog/2024-10-22post-mortem.html",
-    "title": "Why was rdm.vu.nl down for ten hours?",
-    "section": "",
-    "text": "Research Support Handbook\nOn Friday October 18th 2024, we experienced around ten hours of downtime on the rdm.vu.nl website. The downtime started around 10AM after merging changes to the handbook and was resolved the same day, by 8PM.1"
-  },
-  {
-    "objectID": "blog/2024-10-22post-mortem.html#root-cause",
-    "href": "blog/2024-10-22post-mortem.html#root-cause",
-    "title": "Why was rdm.vu.nl down for ten hours?",
-    "section": "Root cause",
-    "text": "Root cause\nThe downtime started after merging changes to the handbook in commit 669b065. These changes themselves, did not cause the downtime. The root cause was an incorrect configuration in the deployment of the webpage, which inadvertently removed the rdm.vu.nl domain name from the GitHub settings every time we made changes in the handbook and redeployed the website. This resulted in 404 errors that the page could not be found.\nWe first observed this issue on Thursday, one day prior to the downtime, in commit 678ff88. We proposed a fix for this issue in #220, before the downtime started."
-  },
-  {
-    "objectID": "blog/2024-10-22post-mortem.html#how-could-the-downtime-happen-if-the-fix-was-clear",
-    "href": "blog/2024-10-22post-mortem.html#how-could-the-downtime-happen-if-the-fix-was-clear",
-    "title": "Why was rdm.vu.nl down for ten hours?",
-    "section": "How could the downtime happen if the fix was clear?",
-    "text": "How could the downtime happen if the fix was clear?\nThe fix for the domain specification was not merged in time for two reasons.\n\nReason 1\nAt this time, we require two reviews before merging changes to the handbook. The fix was proposed at 1.11PM on Thursday, and did not receive the required reviews by the time the downtime happened (reason 1). However, this was a technical administration task and could have been merged immediately, as this supercedes regular review procedures.\n\n\nReason 2\nThe domain specification fix was not immediately merged to allow time to pass and ensure the fix was appropriate upon further reflection. This is because administrator (chartgerink?) both proposed the fix and would also be the one to supercede the “two reviews” requirement. Due to travel, the administrator forgot about it in the morning, and only saw the messages about the downtime at 8PM. At that time, the fix was quickly merged and the downtime resolved."
-  },
-  {
-    "objectID": "blog/2024-10-22post-mortem.html#improvements",
-    "href": "blog/2024-10-22post-mortem.html#improvements",
-    "title": "Why was rdm.vu.nl down for ten hours?",
-    "section": "Improvements",
-    "text": "Improvements\nThe domain configuration is corrected and the deployment ensures the domain name is re-added to the GitHub settings every time there are changes to the handbook. This is now automated, which ensures that the domain name will not be removed inadvertently when future changes are incorporated.\nHowever, we also learned that critical administration fixes should not be left open for longer than is absolutely necessary. Here it was left open for longer than absolutely necessary due to travel, and a second administrator could have caught this issue sooner. This means we should work towards resilient reporting mechanisms to escalate such critical issues, and build capacity in the editor team to ensure no one person is responsible for merging critical fixes that are already available."
-  },
-  {
-    "objectID": "blog/2024-10-22post-mortem.html#acknowledgements",
-    "href": "blog/2024-10-22post-mortem.html#acknowledgements",
-    "title": "Why was rdm.vu.nl down for ten hours?",
-    "section": "Acknowledgements",
-    "text": "Acknowledgements\nWe would like to thank the editors for dealing with the stress from this inadvertent issue. We also thank the community for their patience as we only recently migrated to rdm.vu.nl and figure out these initial unexpected hurdles."
-  },
-  {
-    "objectID": "blog/2024-10-22post-mortem.html#references",
-    "href": "blog/2024-10-22post-mortem.html#references",
-    "title": "Why was rdm.vu.nl down for ten hours?",
-    "section": "References",
-    "text": "References\n\nRoot cause for the downtime first observed in commit 678ff88\nProposed a fix for the root cause in pull Request #220\nDowntime started at commit 669b065 is where the\nResolved downtime in commit 678ff88"
-  },
-  {
-    "objectID": "blog/2024-10-22post-mortem.html#footnotes",
-    "href": "blog/2024-10-22post-mortem.html#footnotes",
-    "title": "Why was rdm.vu.nl down for ten hours?",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nubvu.github.io/open-handbook remained online during this entire time, and functions indirectly as a backup.↩︎"
-  },
-  {
-    "objectID": "blog/2026-09-02-storagefinder-classificationtool-unavailable.html",
-    "href": "blog/2026-09-02-storagefinder-classificationtool-unavailable.html",
-    "title": "Data Storage Finder and Data Classification Tool unavailable",
-    "section": "",
-    "text": "Research Support Handbook\n\n\n\n\nThe Data Storage Finder and the Data Classification Tool are currently unavailable. Communication and Marketing is aware of the situation. They will make sure that these resources will be available again on September 24.\nIn the Data Storage Finder, you can find information about data storage tools available at VU Amsterdam. With various filters you can find the storage platform that is most suitable for your research data. It’s very unfortunate that this support is unavailable at the moment, but note that extensive information about the tools we support is also available in the Research Support Handbook. You can find this information per tool (Research Drive, SciStor, Yoda) in the Tools section. If you need help with finding the right storage platform, please reach out to the RDM Support Desk.\nIn the Data Classification Tool, you can determine the classification of your data for the criteria of availability, integrity and confidentiality. If you wish to classify your data in the short term, you can estimate this with the help of the Data Classification Policy (in Dutch), which includes a table (“Bijlage 1”) giving examples for the classification levels for each criterion. If you need help with this, please reach out to the RDM Support Desk.\nWe’re sorry for the inconvenience.\nOther URLs may have changed as well. We’re trying our best to update these as soon as we can. If you see any dead links related to RDM information, you can help us by letting us know at rdm@vu.nl or by suggesting an edit. Thank you very much in advance!"
-  },
-  {
-    "objectID": "blog/2025-07-29itvoblog.html",
-    "href": "blog/2025-07-29itvoblog.html",
-    "title": "ITvO blog",
-    "section": "",
-    "text": "Research Support Handbook"
-  },
-  {
-    "objectID": "blog/2025-07-29itvoblog.html#first-itvo-blog",
-    "href": "blog/2025-07-29itvoblog.html#first-itvo-blog",
-    "title": "ITvO blog",
-    "section": "First ITvO Blog",
-    "text": "First ITvO Blog\nFrom now on the ITvO (IT for Research) team will be using the Handbook Blog for sharing news, updates, and important announcements related to SciCloud, ADA HPC, SciStor, and other services provided by ITvO. Here you will find information about new features, scheduled maintenance, service improvements. Stay tuned for the latest developments and insights from the ITvO team."
-  },
-  {
-    "objectID": "blog/2026-03-19tools-redesign.html",
-    "href": "blog/2026-03-19tools-redesign.html",
-    "title": "Restructuring and redesign",
-    "section": "",
-    "text": "Research Support Handbook\nIn the past few weeks, we did two major updates in the Research Support Handbook. The tool documentation has been restructured and renamed. The website as a whole has been redesigned."
-  },
-  {
-    "objectID": "blog/2026-03-19tools-redesign.html#tool-documentation",
-    "href": "blog/2026-03-19tools-redesign.html#tool-documentation",
-    "title": "Restructuring and redesign",
-    "section": "Tool documentation",
-    "text": "Tool documentation\nThis is what we updated regarding the tool documentation:\n\nWhat we previously called ‘Manuals’ is now called ‘Tools’.\nThe topic pages about tools (basic information about the tools we provide/support) are moved to the ‘Tools’ section, so that basic information and more elaborate documentation (if available) now sit together.\nAs a result of the previous action, the ‘Tools’ category in the topics has disappeared. Note that we created aliases for the URLs, meaning that the old tool topic URLs will refer to the home page of the relevant tool in the Tools section.\nWe restructured the basic information that was in the old Topic pages into separate pages to make it easier to navigate: description of the tool, costs and getting access, support and contact, quick start.\nSome tools have an additional documentation section for more elaborate manuals, tips and how-to’s.\nThe OSF documentation was moved from Guides to the new Tools section.\nThe tools are no longer displayed as tiles on the overview page, but are now presented as a list. They can be filtered by category (type of tool).\n\nIf you’re interested in the specifics of this update, you can read all documentation in Issue #717.\nN.B. 1: If you are working on a fork of the Research Support Handbook, make sure to sync it, so that these changes will be updated in your fork as well. N.B. 2: If you refer to documentation about the tools we support (e.g. Yoda, Research Drive, ADA, Qualtrics) from another website (e.g. a faculty page on the VU website), make sure to check your URLs. If you need help with finding a page’s new location on the website, let us know.\nThese updates are done in the context of the Tools Documentation Project. We’re aiming to have comprehensive documentation for all research-related tools we provide/support, as much as possible along the same structure, by the end of the year. If you have questions about this project, you can send an email to j2.scholten@vu.nl."
-  },
-  {
-    "objectID": "blog/2026-03-19tools-redesign.html#redesign",
-    "href": "blog/2026-03-19tools-redesign.html#redesign",
-    "title": "Restructuring and redesign",
-    "section": "Redesign",
-    "text": "Redesign\nIM Studio created a new design for the Research Support Handbook and this was implemented by Peter Vos. The new design involves a restructured homepage, new colours for topics, guides and manuals, and icons for prominent pages like calendar, trainings and questions. We have changed the overview pages of topics, guides and tools as well, so that they are presented in the same structure.\nWe will do some finetuning in the coming weeks. Let us know if you’re missing something."
-  },
-  {
-    "objectID": "blog/2026-07-07hackathon.html",
-    "href": "blog/2026-07-07hackathon.html",
-    "title": "8th Handbook Hackathon",
-    "section": "",
-    "text": "Research Support Handbook\nOn July 7, 2026, all authors participated in the eighth hackathon for the Research Support Handbook. For this hackathon, our initial plan was to focus on Tools documentation, but we worked on other parts of the website as well."
-  },
-  {
-    "objectID": "blog/2026-07-07hackathon.html#overview-of-results",
-    "href": "blog/2026-07-07hackathon.html#overview-of-results",
-    "title": "8th Handbook Hackathon",
-    "section": "Overview of results",
-    "text": "Overview of results\nWith respect to tools, we did the following:\n\nWe updated Yoda documentation (see below for specifics)\nWe did small updates in the Snellius and Research Drive information\n\nWe checked external links and found a number of broken links, which have all been repaired now.\nWe published two new topics: Research Software Management and Version Control.\nA group of colleagues is working on information about AI and LLMs, including advice on how to use AI tools responsibly. This is work in progress, it has not been published yet. We’ll keep you posted."
-  },
-  {
-    "objectID": "blog/2026-07-07hackathon.html#hackathon-issues-and-pull-requests",
-    "href": "blog/2026-07-07hackathon.html#hackathon-issues-and-pull-requests",
-    "title": "8th Handbook Hackathon",
-    "section": "Hackathon Issues and Pull Requests",
-    "text": "Hackathon Issues and Pull Requests\n\nBroken link fixes: PRs 861, 866, 868, 870, 871 and 872\nTopic Research Software Management: Issue 490, PR 856\nTopic Version Control: Issue 613, PR 877\nUpdated Yoda documentation:\n\nIssue 858, PR 878\nIssue 874, PR 881\nIssue 876, PR 883\nIssue 885, PR 886\n\nUpdated Snellius documentation: PR 852\nUpdated Research Drive documentation: Issue 867, PR 879\nTechnical maintenance: PR 882, PR 865"
-  },
-  {
-    "objectID": "blog/2026-07-20yoda21.html",
-    "href": "blog/2026-07-20yoda21.html",
-    "title": "Yoda 2.1 upgrade",
-    "section": "",
-    "text": "Research Support Handbook\n\n\n\n\nThe Yoda team has updated the documentation to reflect changes in the new Yoda 2.1 version (Release Notes).\nMain changes for researchers:\n\nInvitation workflow only for external users.\nWorks with latest version ofGoCommands.\nOption to move datasets to the Vault instead of copying them.\n\nPlease note the Known Issues.\nDuring the upgrade new functionality was added to be able to move datasets in the Vault from disk storage to the SURF Data Archive, a form of tape storage. The Yoda team will extensively test this functionality in the coming period. Note that this change is only visible to members of a Datamanager Group."
-  },
-  {
-    "objectID": "blog/2024-05-23welcome.html",
-    "href": "blog/2024-05-23welcome.html",
-    "title": "Hello world!",
-    "section": "",
-    "text": "Research Support Handbook\n\n\n\n\nThis is the first blog entry on the Research Support Handbook. We will be posting more at a later time, and are looking forward to your contributions as well.\nWe will follow up with more details later."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Research Support Handbook",
-    "section": "",
-    "text": "Research Support Handbook\n\n\nYour Guide Towards Good Data and Software Management Practices\n\nAll information is curated by VU staff and updated on a daily basis\n\n\n\n\nTopics, Guides and Tools\n\n\n\n\n\nTopics\nA quick way to learn about specific topics\n\n\n\nGuides\nGuide you through data and software management practices\n\n\n\nTools\nHow to use VU-supported research tools\n\n\n\n\n\nRelated Trainings and Events\n\nThe VU Network Research Data Support organises trainings that will help you develop your data management and coding skills, as well as events for researchers and support staff to exchange ideas and experiences relevant to good research practices.\n\n\n\n\n\nCalendar\n\n\n\nTrainings"
-  },
-  {
-    "objectID": "tools/vucomputehub/index.html",
-    "href": "tools/vucomputehub/index.html",
-    "title": "VU Compute Hub",
-    "section": "",
-    "text": "Research Support Handbook",
-    "crumbs": [
-      "VU Compute Hub"
-    ]
-  },
-  {
-    "objectID": "tools/vucomputehub/index.html#what-is-it",
-    "href": "tools/vucomputehub/index.html#what-is-it",
-    "title": "VU Compute Hub",
-    "section": "What is it?",
-    "text": "What is it?\nThe VU Compute Hub is a JupyterHub instance hosted by IT at VU Amsterdam. It allows you to run a number of common analysis tools on a server. The Hub is mainly aimed at providing environments for student courses, but is available for VU researchers as well.",
-    "crumbs": [
-      "VU Compute Hub"
-    ]
-  },
-  {
-    "objectID": "tools/vucomputehub/index.html#what-can-it-be-used-for",
-    "href": "tools/vucomputehub/index.html#what-can-it-be-used-for",
-    "title": "VU Compute Hub",
-    "section": "What can it be used for?",
-    "text": "What can it be used for?\nThe VU Compute Hub is a great environment to try if your analysis takes too much time on a laptop. It allows you to use the graphical tools you are familiar with in an environment with more compute power where you can leave your script running until it is finished.\nSince every VU researcher can just log in, the barrier to entry is very low.\nBe aware the service is mainly aimed at education. If your scripts use a lot of resources, it might be time for you to start using a High Performance Computing (HPC) environment: ADA at VU Amsterdam or the national supercomputer Snellius. Please contact IT for Research to discuss the best options.\n\nAvailable tools\nThe following applications are currently available: Jupyter Notebooks, MATLAB, STATA, R Studio and QGIS.",
-    "crumbs": [
-      "VU Compute Hub"
-    ]
-  },
-  {
-    "objectID": "tools/vucomputehub/quick_start.html",
-    "href": "tools/vucomputehub/quick_start.html",
+    "objectID": "tools/scistor/quick_start.html",
+    "href": "tools/scistor/quick_start.html",
     "title": "Quick Start",
     "section": "",
-    "text": "Research Support Handbook\n\n\n\n\nYou can access the Linux Compute Services through VU JupyterHub in your web browser. The VU JupyterHub gives you access to familiar interfaces like Jupyter Notebooks, MATLAB and R Studio.\nIf you prefer using SSH, you can connect in the following way:\n\n$ ssh &lt;VUnetID&gt;@x.compute.vu.nl\n\n# from home or outside campus:\n$ ssh -J &lt;VUnetID&gt;@ssh.data.vu.nl &lt;VUnetID&gt;@x.compute.vu.nl\nReplace x with either 1, 2, or 3, depending on your choice.",
+    "text": "Research Support Handbook",
     "crumbs": [
-      "VU Compute Hub",
+      "SciStor",
       "Quick Start"
     ]
   },
   {
-    "objectID": "tools/scistor/index.html",
-    "href": "tools/scistor/index.html",
-    "title": "SciStor",
+    "objectID": "tools/scistor/quick_start.html#connecting-to-your-project-folders",
+    "href": "tools/scistor/quick_start.html#connecting-to-your-project-folders",
+    "title": "Quick Start",
+    "section": "Connecting to your project folders",
+    "text": "Connecting to your project folders\n\nConnect to eduVPN\nMake sure you are connected to eduVPN institure access first. \nSelect Institute Access and follow the usual steps to login with your VUnetID.\nThen follow the instructions for your Operating System.\n\n\nMacOS\n\nOpen the Finder application\nIn the “Go” menu, pick “Connect to Server…” or press “⌘K”\nFill in: smb://scistor.vu.nl/shares\nClick “Connect”\nSelect “Registered User” if this is not yet selected\nFill in your VUnetID and password\nPress “Connect”. Optionally, tick the “Remember this password in my keychain” checkbox. After doing this, macOS will no longer ask for credentials the next time this connection is used.\n\nSciStor project folders appear on the left after opening the SciStor location. You may open the desired SciStor project folder by double-clicking it.\n\n\nWindows\n\nOpen Windows File Explorer\nRight-click on This PC and choose “Map network drive…””\nSelect a desired drive letter, for example S. In the Folder field you can enter the following: \\\\scistor.vu.nl\\shares\\&lt;the name of the project folder&gt;. Make sure the checkboxes are checked.\nClick “Finish”\nYou will now be asked to log in. This is not possible with your PIN code. Choose the “More choices” option, and log in with your VU email address and password\n\n\n\n‘Green’ Linux workspaces\nGreen Linux workplaces (supported by VU IT) have a connection to SciStor from home. All SciStor project folders can be found under the path /research.\n\n\nOther Linux workstations\nOther self-managed Linux workstations can connect to SciStor via the Samba protocol:\n$ sudo apt install cifs-utils\n$ sudo nano /etc/credentials/&lt;vunetID&gt;\n    # nano\nusername=&lt;vumail@vu.nl&gt;\npassword=&lt;your-vunet-password&gt; # you can put you password for convinence, otherwise you have to type your password everytime.\n$ sudo mkdir -p /data/VU/shares/&lt;name-of-your-folder&gt;\n$ sudo mount -t cifs //scistor.vu.nl/shares/&lt;name-of-your-folder&gt; /data/VU/shares/&lt;name-of-your-folder&gt; -o credentials=/etc/credentials/&lt;vunetID&gt;\nThe scistor project folder will be mounted at location: /data/VU/shares. To unmount it, simply do:\n$ sudo umount /data/VU/shares/&lt;name-of-your-folder&gt;\n\n\n\n\n\n\nNote\n\n\n\nThe path /data/VU/shares is just a suggestion, you can choose any mount path that suits your setup.",
+    "crumbs": [
+      "SciStor",
+      "Quick Start"
+    ]
+  },
+  {
+    "objectID": "tools/scistor/cost_access.html",
+    "href": "tools/scistor/cost_access.html",
+    "title": "Costs and Getting Access",
     "section": "",
     "text": "Research Support Handbook",
     "crumbs": [
-      "SciStor"
+      "SciStor",
+      "Costs and Getting Access"
     ]
   },
   {
-    "objectID": "tools/scistor/index.html#what-is-it",
-    "href": "tools/scistor/index.html#what-is-it",
-    "title": "SciStor",
-    "section": "What is it?",
-    "text": "What is it?\nThe storage service SciStor is intended for cheaply storing large amounts of research data on campus.\nSciStor is hosted by IT for Research (ITvO) on the VU campus enabling a high-speed connection to lab equipment, laptops and workstations, the ADA HPC cluster and SciCloud. It can also be accessed off-campus.\nYour data is stored in a project folder with group-based access rights (read/write or read-only). Access rights can be set one level deep, so one folder could be used to host data from different subprojects.\nData is backed up daily with snapshots and replicated to a second location for disaster recovery, the documentation explains how.",
+    "objectID": "tools/scistor/cost_access.html#requesting-a-new-project-folder-share",
+    "href": "tools/scistor/cost_access.html#requesting-a-new-project-folder-share",
+    "title": "Costs and Getting Access",
+    "section": "Requesting a new project folder (share)",
+    "text": "Requesting a new project folder (share)\nYou can find the request form on 🔒 ServiceNow, go to: IT &gt; My work field &gt; Research &gt; SciStor &gt; Realisation of new storage for research (SciStor). A departmental budget number is needed for a creation of a Project Folder, it can be obtained from the relevant head of department or project lead.\nMinimum storage space that can be requested is 100 GB, for a minimum of three months. The capacity can be increased or decreased in units of 100 GB if needed.\nAfter submitting the application, IT for Research will contact you to schedule an interview to discuss naming the SciStor project folder, how the backups work, who should have access, etc.\nMost SciStor configurations can be delivered within one or two days. More complex configurations may take a little longer.",
     "crumbs": [
-      "SciStor"
+      "SciStor",
+      "Costs and Getting Access"
     ]
   },
   {
-    "objectID": "tools/scistor/index.html#what-can-it-be-used-for",
-    "href": "tools/scistor/index.html#what-can-it-be-used-for",
-    "title": "SciStor",
-    "section": "What can it be used for?",
-    "text": "What can it be used for?\n\nNetworked Drive\nBecause SciStor is connected to the VU on-campus network you can directly mount (map a network drive) SciStor project folders on your laptop and work as if the data is on a local disk.\n\n\nAccess off-campus\nAlthough SciStor is most useful on campus you can also access your project folders off-campus via EduVPN institute access.\n\n\nLab instruments\nIn many cases lab equipment can write data directly to SciStor. IT for Research can help you setup an automated and secure connection.\n\n\nStorage space for SciCloud servers\nSciCloud virtual servers are provisioned with a 20 to 50GB local disk. A SciStor project folder can be directly mounted on the server to increase storage for your application or directly access your source data for analysis.\n\n\nADA\nThe ADA HPC cluster is connected to SciStor via a high speed network. You can run your analysis software directly on your data and easily access the results on your laptop.\n\n\nSharing data\nBecause SciStor is mainly intended for high performance, on-campus use, access is only possible with a VUnetId. If you need to share data with non-VU researchers you could register them as an external employee or host a copy of the data on another storage platform like Research Drive or Yoda\n\n\nData life-cycle\nSciStor is meant for data you are actively working with. We recommend archiving datasets that are no langer actively used, but can’t be deleted, in Yoda. This ensures SciStor is used optimally and costs are kept down for your research group and the VU.",
+    "objectID": "tools/scistor/cost_access.html#permissions-management-and-adding-users",
+    "href": "tools/scistor/cost_access.html#permissions-management-and-adding-users",
+    "title": "Costs and Getting Access",
+    "section": "Permissions Management and adding users",
+    "text": "Permissions Management and adding users\n\nThe user who submits the Project Folder creation request is designated as the folder’s owner or primary administrator.\nThe owner holds read-write access to all subfolders by default.\nPermission modifications may only be initiated by the folder owner or a designated administrator.\nAll such requests must be submitted to the IT Service Desk via 🔒 ServiceNow, go to: IT &gt; My work field &gt; Research &gt; SciStor &gt; Change SciStor access rights. Specify the relevant folder, user account, and desired permission level.\n\nYou can find an explanation of the pemission structure in the documentation",
     "crumbs": [
-      "SciStor"
+      "SciStor",
+      "Costs and Getting Access"
     ]
   },
   {
-    "objectID": "tools/scistor/contact_support.html",
-    "href": "tools/scistor/contact_support.html",
+    "objectID": "tools/scistor/cost_access.html#are-there-costs-involved",
+    "href": "tools/scistor/cost_access.html#are-there-costs-involved",
+    "title": "Costs and Getting Access",
+    "section": "Are there costs involved?",
+    "text": "Are there costs involved?\nYou pay for the amount of space used for your project folder: €0,16 per GB per year.",
+    "crumbs": [
+      "SciStor",
+      "Costs and Getting Access"
+    ]
+  },
+  {
+    "objectID": "tools/researchdrive/contact_support.html",
+    "href": "tools/researchdrive/contact_support.html",
     "title": "Support and Contact",
     "section": "",
-    "text": "Research Support Handbook\n\n\n\n\nWondering if SciStor fits your research needs? Please contact IT for Research.\nNeed help? Please contact the IT Servicedesk.",
+    "text": "Research Support Handbook\n\n\n\n\nWondering if Research Drive fits your research needs or questions about using Research Drive? Please contact the Research Support Desk.",
     "crumbs": [
-      "SciStor",
+      "Research Drive",
       "Support and Contact"
-    ]
-  },
-  {
-    "objectID": "tools/scistor/how_does_scistor_work.html",
-    "href": "tools/scistor/how_does_scistor_work.html",
-    "title": "How does SciStor work?",
-    "section": "",
-    "text": "Research Support Handbook\nSciStor is VU Amsterdam’s on-premises scientific storage solution, designed for active research data management. It provides structured, permission-controlled storage with built-in data protection for research teams operating under VU Amsterdam’s faculty structure.",
-    "crumbs": [
-      "SciStor",
-      "Documentation",
-      "How does SciStor work?"
-    ]
-  },
-  {
-    "objectID": "tools/scistor/how_does_scistor_work.html#data-protection",
-    "href": "tools/scistor/how_does_scistor_work.html#data-protection",
-    "title": "How does SciStor work?",
-    "section": "Data Protection",
-    "text": "Data Protection\n\nSnapshots\nSciStor provides point-in-time snapshots of stored data at no additional cost. Snapshots enable file versioning and recovery without requiring separate backup infrastructure.\n\n\n\nFrequency\nRetention period\n\n\n\n\nDaily\n1 week\n\n\nWeekly\n4 weeks\n\n\n\nThe Data Recovery page explains how you can restore data from the snaphots yourself.\n\n\n\n\n\n\nNote\n\n\n\nUpon deletion of a file, the corresponding snapshot will continue to consume storage space until the snapshot retention period expires. Storage capacity is not immediately reclaimed following deletion.\n\n\n\n\nFailover System\nSciStor operates a replication-based failover system in which data from the primary on-campus node is continuously mirrored to a secondary node located off-campus. In the event of a major infrastructure incident, the secondary node ensures data availability and integrity.",
-    "crumbs": [
-      "SciStor",
-      "Documentation",
-      "How does SciStor work?"
-    ]
-  },
-  {
-    "objectID": "tools/scistor/how_does_scistor_work.html#project-folder-structure",
-    "href": "tools/scistor/how_does_scistor_work.html#project-folder-structure",
-    "title": "How does SciStor work?",
-    "section": "Project Folder Structure",
-    "text": "Project Folder Structure\nAccess control in SciStor is organised across two levels.\nLevel 0 — Main Folder is automatically provisioned for all users with read-only permissions. This ensures that all team members can locate and navigate to the Project Folder.\nLevel 1 — Subfolders allow granular, per-folder access control. Each subfolder may be assigned one of the following permission levels:\n\n\n\nPermission\nDescription\n\n\n\n\nR\nRead-only access\n\n\nRW\nRead and write access\n\n\n\n\nExample Structure\n/BETA-CS-PROJECT1/        [RW: Root;   R: vunet1, ..., vunetN]\n├── raw_data/             [RW: vunet1, vunet2;   R: vunet3, ..., vunetN]\n├── processed_data/       [RW: vunet1, ..., vunetN;   R: —]\n├── analysis/             [RW: vunet1, ..., vunetN;   R: —]\n└── results/              [RW: vunet1, ..., vunetN;   R: —]",
-    "crumbs": [
-      "SciStor",
-      "Documentation",
-      "How does SciStor work?"
-    ]
-  },
-  {
-    "objectID": "tools/researchdrive/index.html",
-    "href": "tools/researchdrive/index.html",
-    "title": "Research Drive",
-    "section": "",
-    "text": "Research Support Handbook",
-    "crumbs": [
-      "Research Drive"
-    ]
-  },
-  {
-    "objectID": "tools/researchdrive/index.html#what-is-it",
-    "href": "tools/researchdrive/index.html#what-is-it",
-    "title": "Research Drive",
-    "section": "What is it?",
-    "text": "What is it?\nSURF Research Drive is an online storage and collaboration platform for research data. With Research Drive you can easily store and share files with other researchers, inside and outside VU Amsterdam. You can access your data via a web interface or tools, from anywhere in the world.\nResearch Drive is based on the Open Source Nextcloud software and is hosted by SURF in their Amsterdam datacentre.",
-    "crumbs": [
-      "Research Drive"
-    ]
-  },
-  {
-    "objectID": "tools/researchdrive/index.html#what-can-it-be-used-for",
-    "href": "tools/researchdrive/index.html#what-can-it-be-used-for",
-    "title": "Research Drive",
-    "section": "What can it be used for?",
-    "text": "What can it be used for?\n\nData storage\nResearch Drive is a Cloud storage solution that can be used for small (a few GBs) to larger (a few TBs) datasets. Because it is a cloud storage platform you will need to download data to your laptop to work with it. Research Drive makes this easy by using the Nextcloud client, which allows you to automatically sync the folders you want to work with. Data is backed up daily.\n\n\nData sharing\nAs project owner you can invite internal and external collaborators yourself, or you can delegate this task to others.\nYou can set access rights to folders and subfolders yourself, making Research Drive ideal for use in collaborations with many institutions.\n\n\nSensitive data\nHosting at SURF and the use of Multi Factor Authentication (MFA), among other measures, makes Research Drive suitable for storing data that score Medium on confidentiality (see the Policy Classification of Research Data and the Research Data Classification Tool). Data that score High on confidentiality can be stored in Research Drive with additional security measures. Please make sure to contact the RDM Support Desk to check if further measures are needed.\n\n\nData life cycle\nResearch Drive is meant for data you are actively working with. We recommend to archive datasets that are no longer actively used, but can’t be deleted, in a repository. Transferring data from Research Drive to a repository ensures Research Drive is used optimally and costs are kept down for your research group and VU Amsterdam. Repositories that are available at VU Amsterdam are Yoda and DataverseNL. Yoda is suitable for all types of data, including personal data and other types of confidential data. DataverseNL is only suitable for data that can be made available publicly.\n\n\nCollaborative tools\nWithin Research Drive, various apps and integrations are available to simplify the use and handling of research data, such as a tool to edit documents directly in the web interface. You can find a current list of app integrations on the SURF User Knowledge Base.\n\n\nSURFdrive replacement\nSince both are based on Nextcloud, Research Drive is very similar to SURFdrive, the main difference is that SURFdrive is personal storage while Research Drive is group based.\nResearchers looking for a new home for research data currently on SURFdrive are encouraged to migrate to Research Drive. Manuals for migrating data to Research Drive are available in English and Dutch. Please contact the Research Support Desk if you have any questions about migrating to Research Drive.",
-    "crumbs": [
-      "Research Drive"
     ]
   },
   {
