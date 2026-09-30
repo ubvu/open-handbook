@@ -43,7 +43,7 @@ Output from lab equipment
 Modern filesystems can deal with special characters, such as ``! # $ % & ' " ` @ ^ ~ + , . ; = ) (``, in file and folder names, but applications might have trouble. Special characters, like spaces, also often need to be "escaped" on the commandline. 
 
 ### Keep file and folder names as short as possible
-File and foldernames should be short but descriptive. Avoid nesting subfolders to deep.
+File and foldernames should be short but descriptive. Avoid nesting subfolders too deep.
 
 Windows in some cases has a maximum path (folder, subfolders and file name) length of 250 characters. You could create a much longer path on a Linux system (such as ADA or Snellius) and find you are unable to download it to a Windows laptop.  
 
