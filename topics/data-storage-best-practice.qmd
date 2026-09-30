@@ -48,15 +48,15 @@ File and foldernames should be short but descriptive. Avoid nesting subfolders t
 Windows in some cases has a maximum path (folder, subfolders and file name) length of 250 characters. You could create a much longer path on a Linux system (such as ADA or Snellius) and find you are unable to download it to a Windows laptop.  
 
 ## Working with data on your laptop
-[SciStor](/tools/scistor/index.qmd) allows you to "mount" (assign a driveletter) your project folder. This is fast enough to be able to directly edit files without copying them to your local drive. 
+[SciStor](/tools/scistor/index.qmd) allows you to "mount" (assign a driveletter to) your project folder. This is fast enough to be able to directly edit files without copying them to your local drive first. 
 
 Connections to cloud storage such as [Research Drive](/tools/researchdrive/index.qmd) or [Yoda](/tools/yoda/index.qmd) are not fast enough to directly edit files. This means you will primarily store and work with a copy of the data on your laptop. Create a dedicated folder for your research data. 
 
-Make sure to avoid storing data in a folder synced to OneDrive (such as the Documents folder on Windows). 
+Make sure to avoid storing data in a folder synced to OneDrive such as the Documents folder on Windows. 
 
 For Research Drive you can configure the [Nextcloud client](/tools/researchdrive/quick_start.qmd) so it automatically syncs your data folder to Research Drive. Make sure to regurarly check the [web interface](https://vu.data.surf.nl) and client to ensure the sync process is still functioning.
 
-For Yoda you will need to manually transfer data to your laptop. Create a dedicated folder to make this easier. The Handbook has a [page with tips](/tools/yoda/analysing_data.qmd) on ways to work with data on Yoda. 
+For Yoda you will need to manually transfer data to your laptop. Create a dedicated folder to make this easier. The Handbook has a [page with tips](/tools/yoda/analysing_data.qmd) on ways to work with data stored on Yoda. 
 
 ## Make a plan
 When working with collaborators, you should make a practical plan on how to work with your project's data. But even if you are the only one working on the project it is useful to decide on a useful data structure and naming scheme.
