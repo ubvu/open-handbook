@@ -17,7 +17,7 @@ Users can have three different roles in a group:
 
 These access rights are applied to the top-level and all subfolders and files of the Research Folder.
 
-## How to: Granting access to a group
+## How to: Granting users access to a group
 
 If you are the group manager of a group, you will be able to add users to the group in the following way:
 
@@ -30,9 +30,11 @@ If you are the group manager of a group, you will be able to add users to the gr
 4. In the left pane of the Group Manager, select the group.
 5. Click on the link &ldquo;Click here to add a new user to the group&rdquo;.
 6. Enter the email address of the user. The address must be entered entirely in lower case.
-7. If the email address is new for Yoda you will have the option to create the user otherwise you add the existing user to this group. 
+7. If the email address is new for Yoda you will have the option to create the user, otherwise you add the existing user to this group. 
 
 ![Adding user](/public/tools/yoda/gm-adduser.png)
+
+VU users will not receive an invitation to log in to Yoda. Group Managers should inform them that they have been added to the Yoda group and should provide instructions on how to log in.
 
 If the user is external (no VU email address) they will receive an [invitation](./sram_invitations_eduid_activation.qmd) to join the SURF Research Access Management (SRAM) _Collaboration_ for external VU Yoda users. 
 
