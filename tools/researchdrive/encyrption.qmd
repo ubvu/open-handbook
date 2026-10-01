@@ -18,21 +18,25 @@ When you set up the program it will ask you the name of the server to connect 
 Download and install from the [Cryptomator](https://cryptomator.org/) site.
 
 ## Create a new Cryptomator vault
-Right click in Cyberduck and choose "New Encrypted Vault"
+1. Click on the + sign and choose “Create New Vault”
 ![Create Cryptomator Vault](/public/tools/yoda/cry-create.png)
-Give the folder a name and set a passphrase.
+
+2. Give the folder a name
 
 ![Set passphrase](/public/tools/yoda/cry-passphrase.png)
-The vault will look like a normal folder in Cyberduck
+
+3. Choose a location within NextCloud. Expert settings can be ignored 
 
 ![Cryptomator folder](/public/tools/yoda/cry-folder.png)
 
-When you doubleclick the new folder you will be asked for the passphrase.
+4. Set a passphrase
 ![Enter passphrase](/public/tools/yoda/cry-passphrase.png)
 
-Enter the correct passphrase and the folder will be opened as normal. You can now work with the vault as with a normal folder.
+5. Make sure to create a recovery key 
+![Cyberduck refresh](/public/tools/yoda/cry-cyberduck-refresh.png)
 
-If you cancel the passphrase prompt you will only see the Cryptomator files in the folder. Adding or deleting files could corrupt your data!
+6. The vault will look like a normal folder in NextCloud
+![Cyberduck refresh](/public/tools/yoda/cry-cyberduck-refresh.png)
 
-If you are not prompted for the passphrase click refresh first.
+7. When you doubleclick the new folder you will be asked for the passphrase. Enter the correct passphrase and the folder will be opened as normal. You can now work with the vault as with a normal folder.  
 ![Cyberduck refresh](/public/tools/yoda/cry-cyberduck-refresh.png)
