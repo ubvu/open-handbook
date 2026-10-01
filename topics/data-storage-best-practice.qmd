@@ -1,0 +1,81 @@
+---
+title: Best Practices for Data Storage
+categories: [Research Data,Knowledge Items]
+---
+
+This page aims to provide you with some practical technical and organizational guidelines on storing research data. In general you should keep in mind that data should be easy to work with for both humans and computers.
+
+## Avoiding technical issues
+To improve resability of your research data and avoid technical issues it is good to follow some best practices in naming your files and folders. 
+
+:::{.callout-note}
+This topic is meant as a guideline, if your source data does not adhere to these practices it is not always feasible to rename everything. [The VU provided storage platforms](https://rdm.vu.nl/tools.html#category=Data%20Storage) will be able to store the data properly, but be aware of the issues mentioned. 
+:::
+
+### Only use lowercase characters
+Linux and [Yoda](/tools/yoda/index.qmd) are case sensitive, but Windows and MacOS are not, which leads to unexpected behavior when transferring data. For this reason it is best to stick to lowercase characters in file and folder names, especially when creating data on a Linux system such as [ADA](/tools/ada/index.qmd) or [Snellius](/tools/snellius/index.qmd).
+
+### Avoid spaces
+Use `-` or `_` instead of spaces, this keeps file and folder names readable without sacrificing accessibility. 
+
+Accessing data from the CLI (Command Line Interface) or a script is a lot easier if you avoid spaces. Take attempting to view the contents of the file `run 1/lab output.txt` with the `cat` command:
+```sh
+~$ cat run 1/lab output.txt
+cat: run: No such file or directory
+cat: 1/lab: No such file or directory
+cat: output.txt: No such file or directory
+```
+You must either "escape" the spaces or put quotes around the path:
+```sh
+~$ cat run\ 1/lab\ output.txt
+Output from lab equipment
+
+~$ cat "run 1/lab output.txt"
+Output from lab equipment
+```
+If you avoid spaces the path is just as clearly readable, but easier to access:
+```sh
+~$ cat "run1/lab_output.txt"
+Output from lab equipment
+```
+
+### Avoid other special characters
+Modern filesystems can deal with special characters, such as ``! # $ % & ' " ` @ ^ ~ + , . ; = ) (``, in file and folder names, but applications might have trouble. Special characters, like spaces, also often need to be "escaped" on the commandline. 
+
+### Keep file and folder names as short as possible
+File and foldernames should be short but descriptive. Avoid nesting subfolders too deep.
+
+Windows in some cases has a maximum path (folder, subfolders and file name) length of 250 characters. You could create a much longer path on a Linux system (such as ADA or Snellius) and find you are unable to download it to a Windows laptop.  
+
+## Working with data on your laptop
+[SciStor](/tools/scistor/index.qmd) allows you to "mount" (assign a driveletter to) your project folder. This is fast enough to be able to directly edit files without copying them to your local drive first. 
+
+Connections to cloud storage such as [Research Drive](/tools/researchdrive/index.qmd) or [Yoda](/tools/yoda/index.qmd) are not fast enough to directly edit files. This means you will primarily store and work with a copy of the data on your laptop. Create a dedicated folder for your research data. 
+
+Make sure to avoid storing data in a folder synced to OneDrive such as the Documents folder on Windows. 
+
+For Research Drive you can configure the [Nextcloud client](/tools/researchdrive/quick_start.qmd) so it automatically syncs your data folder to Research Drive. Make sure to regurarly check the [web interface](https://vu.data.surf.nl) and client to ensure the sync process is still functioning.
+
+For Yoda you will need to manually transfer data to your laptop. Create a dedicated folder to make this easier. The Handbook has a [page with tips](/tools/yoda/analysing_data.qmd) on ways to work with data stored on Yoda. 
+
+## Make a plan
+When working with collaborators, you should make a practical plan on how to work with your project's data. But even if you are the only one working on the project it is useful to decide on a useful data structure and naming scheme.
+
+### Agree on a naming convention and folder structure
+Some topics to decide on:
+
+- Hyphens or underscores?
+- Dates in file and folder names? If using dates: YYYYMMDD is unambiguous, short and sorts well.
+- Version numbers in file names? Avoid using FINAL, it never is.
+- Prefixes for document types? INV for invoices, etc. This will make finding files easier.
+- A folder structure. Where you will put which data. 
+
+### Agree on how to work with files
+Most tools and storage platforms do not allow you to work with others on files simultaneously. This means the last person who saves a file overwrites a colleagues edits. In the best case a file will be "locked" so only one user at a time can access it. 
+
+Make sure you communicate with your collaborators who works on what files and when, choosing a good folder structure helps with that.
+
+### Document your choices
+Document relevant choices in a README file so your collaborators know what to do and improve reusability of the dataset.
+
+
