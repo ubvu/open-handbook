@@ -1,1 +1,36 @@
+---
+title: Encrypting your data
+categories: []
+---
 
+## Encrypting your data using Cryptomator and Cyberduck
+To work with privacy sensitive data you might be required to encrypt the data you store on RD. An easy way to do this is to use NextCloud together with the free tool Cryptomator.
+Cryptomator is available for Windows, MacOS and Linux. 
+
+## Using Cryptomator
+[Download and install Nextcloud](https://nextcloud.com/install/#desktop-files)  
+You can follow the instructions to set up your NextCloud environment: RD: Getting the Nextcloud desktop app - SURF User Knowledge Base - SURF User Knowledge Base (https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/117178931/RD+Getting+the+Nextcloud+desktop+app)  
+When you set up the program it will ask you the name of the server to connect to. Here you have to use the VU RD environment url: https://vu.data.surf.nl/ For example; https://tst-test.data.surfsara.nl. 
+
+## Install Cryptomator
+Download and install from the [Cryptomator](https://cryptomator.org/) site.
+
+## Create a new Cryptomator vault
+Right click in Cyberduck and choose "New Encrypted Vault"
+![Create Cryptomator Vault](/public/tools/yoda/cry-create.png)
+Give the folder a name and set a passphrase.
+
+![Set passphrase](/public/tools/yoda/cry-passphrase.png)
+The vault will look like a normal folder in Cyberduck
+
+![Cryptomator folder](/public/tools/yoda/cry-folder.png)
+
+When you doubleclick the new folder you will be asked for the passphrase.
+![Enter passphrase](/public/tools/yoda/cry-passphrase.png)
+
+Enter the correct passphrase and the folder will be opened as normal. You can now work with the vault as with a normal folder.
+
+If you cancel the passphrase prompt you will only see the Cryptomator files in the folder. Adding or deleting files could corrupt your data!
+
+If you are not prompted for the passphrase click refresh first.
+![Cyberduck refresh](/public/tools/yoda/cry-cyberduck-refresh.png)
