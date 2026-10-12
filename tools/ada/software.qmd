@@ -14,15 +14,15 @@ ADA offers several supported ways to access software depending on how much contr
 - [`Git`](#git) - version control software
 
 ::: {.callout-note title="Need a quick recommendation?"}
-Use modules whenever a supported version exists. Choose Pixi when you need custom packages or multi-language environments, fall back to Conda or virtualenv if you already rely on them, and build an Apptainer container when you must control the full user-space stack.
+Use modules whenever a supported version exists. Choose Pixi when you need custom packages or multi-language environments, use Conda or virtualenv if you already rely on them, and build an Apptainer container when you must control the full user-space stack.
 :::
 
 ## Software Modules
 ADA ships a curated, architecture-optimized software stack living under `/ada-software/` and exposed through Lmod modules.
-The stack follows an annual release (for example `2025`) that bundles compilers, MPI, and libraries maintained by ITvO.
+The stack follows an annual release (for example `2025`) that bundles compilers, message passing interface (MPI), and libraries maintained by IT for Research (ITvO).
 
 ::: {.callout-important title="Read: Modules primer"}
-New to Lmod? Start with the [Carpentries HPC modules lesson](https://carpentries-incubator.github.io/hpc-intro/15-modules.html) for a friendly walkthrough of the core concepts.
+New to Lmod? Start with the [Carpentries high-performance computing (HPC) modules lesson](https://carpentries-incubator.github.io/hpc-intro/15-modules.html) for a friendly walkthrough of the core concepts.
 :::
 
 ### Quick Start
@@ -84,7 +84,7 @@ Follow up with the full version to view prerequisites and optional extensions:
 - The required package and version already exist in the release.
 - You prefer not to manage your own builds or dependency stacks.
 
-If you identify software that would benefit a broad cross-section of ADA users, contact ITvO at `itvo.it@vu.nl` with your request. Users cannot publish custom modules on ADA.
+If you identify software that would benefit a broad cross-section of ADA users, contact IT for Research (ITvO) at `itvo.it@vu.nl` with your request. Users cannot publish custom modules on ADA.
 
 ::: {.callout-warning title="Requesting new modules"}
 Request extra modules **only** when they will measurably help many researchers. For niche or project-specific tools, use Pixi, Conda, or Apptainer so cluster admins can focus limited time on maintaining the shared stack.
@@ -92,7 +92,7 @@ Request extra modules **only** when they will measurably help many researchers. 
 
 ### European Environment for Scientific Software Installations (EESSI)
 
-The European Environment for Scientific Software Installations (EESSI, pronounced as "easy") is a collaboration between different European partners in HPC community. The goal of this project is to build a common stack of scientific software installations for HPC systems and beyond, including laptops, personal workstations and cloud infrastructure.
+The European Environment for Scientific Software Installations (EESSI, pronounced as "easy") is a collaboration between different European partners in the high-performance computing (HPC) community. The goal of this project is to build a common stack of scientific software installations for HPC systems and beyond, including laptops, personal workstations and cloud infrastructure.
 
 A major advantage of the EESSI stack is that it provides an extensive library of software specifically optimized for various CPU and GPU architectures, significantly improving the computational performance of your code.
 
@@ -110,7 +110,7 @@ To use EESSI on ADA, load in either the eessi-2023.06 or eessi-2026.06 stack, e.
 
 ## Pixi Environments
 
-Pixi provides reproducible, multi-language environments that work well on shared HPC systems. It automatically resolves dependencies across Python, R, Julia, and more, and stores environments alongside your project. Therefore, Pixi is the recommended way to manage custom software stacks on ADA.
+Pixi provides reproducible, multi-language environments that work well on shared HPC systems. It automatically resolves dependencies across Python, R, Julia, and more, and stores environments alongside your project. Pixi is the preferred way to manage custom software stacks on ADA.
 
 ::: {.callout-tip title="Read: Pixi quick start"}
 Review the upstream [Pixi quick start guide](https://pixi.dev/docs/python/./) to see typical workflows and commands before building environments on ADA.
@@ -153,7 +153,7 @@ Read the upstream [Apptainer quick start](https://apptainer.org/docs/user/main/q
 :::
 
 ::: {.callout-warning title="Run Apptainer on compute nodes"}
-Apptainer is only available on compute nodes. Start an interactive session or submit a SLURM job before running container commands.
+Apptainer is only available on compute nodes. Start an interactive session or submit a Simple Linux Utility for Resource Management (SLURM) job before running container commands.
 :::
 
 ### Quick Start
@@ -238,7 +238,7 @@ Git is pre-installed on every login/inter/compute node by default. If you need a
 Conda and virtualenv remain popular for Python-centric workflows. On ADA you should start from the modules provided versions to ensure compatibility with the cluster toolchain.
 
 ::: {.callout-warning title="Not recommended"}
-We do not recommend Conda and virtualenv on ADA. Use them only if your project absolutely needs them, because we cannot help debug them effectively.
+Only use Conda and virtualenv on ADA if your project absolutely needs them, because they can be difficult to debug effectively.
 :::
 
 ### Quick Start
@@ -275,7 +275,7 @@ Skim the official [virtualenv documentation](https://virtualenv.pypa.io/en/lates
 - You require packages that Pixi cannot currently install.
 - You need per-user env management with conda-forge or custom channels.
 
-Be mindful that Conda solves can be slower and more resource-heavy on shared filesystems. Pixi usually offers faster resolution on ADA and therefore we recommend it over Conda.
+Be mindful that Conda solves can be slower and more resource-heavy on shared filesystems. Pixi usually offers faster resolution on ADA and is preferred over Conda.
 
 ### References
 
