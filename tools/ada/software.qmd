@@ -36,11 +36,11 @@ New to Lmod? Start with the [Carpentries HPC modules lesson](https://carpentries
    ```
 2. Load the yearly release to unlock the supported applications:
    ```sh
-   [abc123@login1 ~]$ module load 2025
+  [abc123@login1 ~]$ module load <year>
    [abc123@login1 ~]$ module list
 
    Currently Loaded Modules:
-   1) shared   2) DefaultModules   3) slurm/bazis/23.02.8   4) 2025
+  1) shared   2) DefaultModules   3) slurm/bazis/23.02.8   4) <year>
    ```
 3. Load the software you need. Dependencies are resolved automatically in the order you request them:
    ```sh
@@ -119,7 +119,7 @@ Review the upstream [Pixi quick start guide](https://pixi.dev/docs/python/./) to
 ### Quick Start
 
 ```sh
-[abc123@login1 ~]$ module load 2025
+[abc123@login1 ~]$ module load <year>
 [abc123@login1 ~]$ module load Pixi
 [abc123@login1 ~]$ mkdir newproject
 [abc123@login1 ~]$ cd newproject
@@ -143,51 +143,6 @@ Pixi retrieves packages from maintained channels (PyPI, conda-forge, CRAN, etc.)
 
 - [Pixi documentation](https://pixi.dev/)
 - [Basic usage of Pixi](https://pixi.prefix.dev/latest/getting_started/)
-
-## Conda and virtualenv
-
-Conda and virtualenv remain popular for Python-centric workflows. On ADA you should start from the modules provided versions to ensure compatibility with the cluster toolchain.
-
-::: {.callout-tip title="Read: Conda essentials"}
-Skim the official [Conda getting-started guide](https://docs.conda.io/projects/conda/en/stable/user-guide/getting-started.html) to refresh fundamentals like channel management and environment activation.
-:::
-
-### Quick Start
-
-```sh
-[abc123@login1 ~]$ module load 2025
-[abc123@login1 ~]$ module load Miniconda3
-[abc123@login1 ~]$ conda create -n analysis python=3.12 numpy scipy
-[abc123@login1 ~]$ conda activate analysis
-```
-
-For virtualenv:
-
-```sh
-[abc123@login1 ~]$ module load 2025
-[abc123@login1 ~]$ module load Python/3.12.3-GCCcore-13.3.0
-[abc123@login1 ~]$ python -m venv ~/envs/my-project
-[abc123@login1 ~]$ source ~/envs/my-project/bin/activate
-```
-
-Remember to deactivate environments before logging out to avoid polluting future sessions.
-
-::: {.callout-tip title="Read: virtualenv essentials"}
-Skim the official [virtualenv documentation](https://virtualenv.pypa.io/en/latest/) for tips on creating and managing virtual environments.
-:::
-
-### When to choose Conda or virtualenv
-
-- Existing workflows already rely on Conda environments or `environment.yml`.
-- You require packages that Pixi cannot currently install.
-- You need per-user env management with conda-forge or custom channels.
-
-Be mindful that Conda solves can be slower and more resource-heavy on shared filesystems. Pixi usually offers faster resolution on ADA and therefore we recommend it over Conda. 
-
-### References
-
-- [Conda user guide](https://docs.conda.io/projects/conda/en/stable/user-guide/)
-- [virtualenv documentation](https://virtualenv.pypa.io/en/latest/)
 
 ## Apptainer Containers
 
@@ -245,7 +200,7 @@ Minimal patterns for running distributed and GPU workloads from SLURM through Ap
   #SBATCH --ntasks=4
   #SBATCH --cpus-per-task=1
 
-  module load 2025
+  module load <year>
   # Launch ranks with the host scheduler; enter the container per rank
   srun apptainer exec /path/to/image.sif \ 
        /path/in/container/my_mpi_program --arg foo
@@ -259,7 +214,7 @@ Minimal patterns for running distributed and GPU workloads from SLURM through Ap
   #SBATCH --gres=gpu:1
   #SBATCH --time=00:20:00
 
-  module load 2025
+  module load <year>
   # Expose NVIDIA devices and libraries to the container
   apptainer exec --nv /path/to/image.sif nvidia-smi
   ```
@@ -277,3 +232,52 @@ Git is pre-installed on every login/inter/compute node by default. If you need a
 ### References
 
 - [Apptainer user guide](https://apptainer.org/docs/user/main/quick_start.html)
+
+## Conda and virtualenv
+
+Conda and virtualenv remain popular for Python-centric workflows. On ADA you should start from the modules provided versions to ensure compatibility with the cluster toolchain.
+
+::: {.callout-warning title="Not recommended"}
+We do not recommend Conda and virtualenv on ADA. Use them only if your project absolutely needs them, because we cannot help debug them effectively.
+:::
+
+### Quick Start
+
+```sh
+[abc123@login1 ~]$ module load <year>
+[abc123@login1 ~]$ module load Miniconda3
+[abc123@login1 ~]$ conda create -n analysis python=3.12 numpy scipy
+[abc123@login1 ~]$ conda activate analysis
+```
+
+For virtualenv:
+
+```sh
+[abc123@login1 ~]$ module load <year>
+[abc123@login1 ~]$ module load Python/3.12.3-GCCcore-13.3.0
+[abc123@login1 ~]$ python -m venv ~/envs/my-project
+[abc123@login1 ~]$ source ~/envs/my-project/bin/activate
+```
+
+Remember to deactivate environments before logging out to avoid polluting future sessions.
+
+::: {.callout-tip title="Read: Conda essentials"}
+Skim the official [Conda getting-started guide](https://docs.conda.io/projects/conda/en/stable/user-guide/getting-started.html) to refresh fundamentals like channel management and environment activation.
+:::
+
+::: {.callout-tip title="Read: virtualenv essentials"}
+Skim the official [virtualenv documentation](https://virtualenv.pypa.io/en/latest/) for tips on creating and managing virtual environments.
+:::
+
+### When to choose Conda or virtualenv
+
+- Existing workflows already rely on Conda environments or `environment.yml`.
+- You require packages that Pixi cannot currently install.
+- You need per-user env management with conda-forge or custom channels.
+
+Be mindful that Conda solves can be slower and more resource-heavy on shared filesystems. Pixi usually offers faster resolution on ADA and therefore we recommend it over Conda.
+
+### References
+
+- [Conda user guide](https://docs.conda.io/projects/conda/en/stable/user-guide/)
+- [virtualenv documentation](https://virtualenv.pypa.io/en/latest/)
