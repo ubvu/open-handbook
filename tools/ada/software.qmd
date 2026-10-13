@@ -96,10 +96,18 @@ The European Environment for Scientific Software Installations (EESSI, pronounce
 
 A major advantage of the EESSI stack is that it provides an extensive library of software specifically optimized for various CPU and GPU architectures, significantly improving the computational performance of your code.
 
-To use EESSI on ADA, load in either the eessi-2023.06 or eessi-2026.06 stack, e.g.:
+To use EESSI on ADA, load in either the eessi-2023.06, eessi-2025.06 or eessi-2026.06 stack:
+
+```sh
+[abc123@login1 ~]$ module load eessi-2023.06
+```
 
 ```sh
 [abc123@login1 ~]$ module load eessi-2025.06
+```
+
+```sh
+[abc123@login1 ~]$ module load eessi-2026.06
 ```
 
 ### References
