@@ -17,7 +17,7 @@ Users can have three different roles in a group:
 
 These access rights are applied to the top-level and all subfolders and files of the Research Folder.
 
-## How to: Granting access to a group
+## How to: Granting users access to a group
 
 If you are the group manager of a group, you will be able to add users to the group in the following way:
 
@@ -30,11 +30,15 @@ If you are the group manager of a group, you will be able to add users to the gr
 4. In the left pane of the Group Manager, select the group.
 5. Click on the link &ldquo;Click here to add a new user to the group&rdquo;.
 6. Enter the email address of the user. The address must be entered entirely in lower case.
-7. If the email address is new for Yoda you will have the option to create the user otherwise you add the existing user to this group. 
+7. If the email address is new for Yoda you will have the option to create the user, otherwise you add the existing user to this group. 
 
 ![Adding user](/public/tools/yoda/gm-adduser.png)
 
-The added user will receive an [invitation](./sram_invitations_eduid_activation.qmd) to join the connected SRAM collaboration. Most users will be able to log in with their own institutional account, if their institute is not connected to SRAM they need to create an **eduID (NL)** account.
+VU users will not receive an invitation to log in to Yoda. Group Managers should inform them that they have been added to the Yoda group and should provide instructions on how to log in.
+
+If the user is external (no VU email address) they will receive an [invitation](./sram_invitations_eduid_activation.qmd) to join the SURF Research Access Management (SRAM) _Collaboration_ for external VU Yoda users. 
+
+Most users will be able to log in with their own institutional account; if their institute is not connected to SRAM they need to [create an **eduID (NL)** account](sram_invitations_eduid_activation.qmd#how-to-creating-eduid-throught-sram-invitation).
 
 By default, a new user will be a regular member of the group. If you want the user to be a member with read-only access or
 a group manager, see below for how to change users' roles.
@@ -64,8 +68,6 @@ In order to change the role of a group member:
 
 ![Setting user rights](/public/tools/yoda/gm-role.png)
 
-_Note that you can only change the role of the user after they have accepted the [SRAM invitation](./sram_invitations_eduid_activation.qmd)._
-
 ## How to: Revoking access to a group
 If you are the group manager of a group, you will be able to revoke access to a group in the following way:
 
@@ -80,5 +82,3 @@ If you are the group manager of a group, you will be able to revoke access to a 
 6. Click on the red &ldquo;Remove user&rdquo; button.
 
 ![Removing user](/public/tools/yoda/gm-removeuser.png)
-
-_Note that you can only remove a user after they have accepted the [SRAM invitation](./sram_invitations_eduid_activation.qmd)._

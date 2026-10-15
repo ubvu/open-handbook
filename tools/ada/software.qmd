@@ -14,15 +14,15 @@ ADA offers several supported ways to access software depending on how much contr
 - [`Git`](#git) - version control software
 
 ::: {.callout-note title="Need a quick recommendation?"}
-Use modules whenever a supported version exists. Choose Pixi when you need custom packages or multi-language environments, fall back to Conda or virtualenv if you already rely on them, and build an Apptainer container when you must control the full user-space stack.
+Use modules whenever a supported version exists. Choose Pixi when you need custom packages or multi-language environments, use Conda or virtualenv if you already rely on them, and build an Apptainer container when you must control the full user-space stack.
 :::
 
 ## Software Modules
 ADA ships a curated, architecture-optimized software stack living under `/ada-software/` and exposed through Lmod modules.
-The stack follows an annual release (for example `2025`) that bundles compilers, MPI, and libraries maintained by ITvO.
+The stack follows an annual release (for example `2025`) that bundles compilers, message passing interface (MPI), and libraries maintained by IT for Research (ITvO).
 
 ::: {.callout-important title="Read: Modules primer"}
-New to Lmod? Start with the [Carpentries HPC modules lesson](https://carpentries-incubator.github.io/hpc-intro/15-modules/index.html) for a friendly walkthrough of the core concepts.
+New to Lmod? Start with the [Carpentries high-performance computing (HPC) modules lesson](https://carpentries-incubator.github.io/hpc-intro/15-modules.html) for a friendly walkthrough of the core concepts.
 :::
 
 ### Quick Start
@@ -36,11 +36,11 @@ New to Lmod? Start with the [Carpentries HPC modules lesson](https://carpentries
    ```
 2. Load the yearly release to unlock the supported applications:
    ```sh
-   [abc123@login1 ~]$ module load 2025
+  [abc123@login1 ~]$ module load <year>
    [abc123@login1 ~]$ module list
 
    Currently Loaded Modules:
-   1) shared   2) DefaultModules   3) slurm/bazis/23.02.8   4) 2025
+  1) shared   2) DefaultModules   3) slurm/bazis/23.02.8   4) <year>
    ```
 3. Load the software you need. Dependencies are resolved automatically in the order you request them:
    ```sh
@@ -84,7 +84,7 @@ Follow up with the full version to view prerequisites and optional extensions:
 - The required package and version already exist in the release.
 - You prefer not to manage your own builds or dependency stacks.
 
-If you identify software that would benefit a broad cross-section of ADA users, contact ITvO at `itvo.it@vu.nl` with your request. Users cannot publish custom modules on ADA.
+If you identify software that would benefit a broad cross-section of ADA users, contact IT for Research (ITvO) at `itvo.it@vu.nl` with your request. Users cannot publish custom modules on ADA.
 
 ::: {.callout-warning title="Requesting new modules"}
 Request extra modules **only** when they will measurably help many researchers. For niche or project-specific tools, use Pixi, Conda, or Apptainer so cluster admins can focus limited time on maintaining the shared stack.
@@ -92,25 +92,33 @@ Request extra modules **only** when they will measurably help many researchers. 
 
 ### European Environment for Scientific Software Installations (EESSI)
 
-The European Environment for Scientific Software Installations (EESSI, pronounced as "easy") is a collaboration between different European partners in HPC community. The goal of this project is to build a common stack of scientific software installations for HPC systems and beyond, including laptops, personal workstations and cloud infrastructure.
+The European Environment for Scientific Software Installations (EESSI, pronounced as "easy") is a collaboration between different European partners in the high-performance computing (HPC) community. The goal of this project is to build a common stack of scientific software installations for HPC systems and beyond, including laptops, personal workstations and cloud infrastructure.
 
 A major advantage of the EESSI stack is that it provides an extensive library of software specifically optimized for various CPU and GPU architectures, significantly improving the computational performance of your code.
 
-To use EESSI on ADA, load in either the eessi-2023.06 or eessi-2026.06 stack, e.g.:
+To use EESSI on ADA, load in either the eessi-2023.06, eessi-2025.06 or eessi-2026.06 stack:
+
+```sh
+[abc123@login1 ~]$ module load eessi-2023.06
+```
 
 ```sh
 [abc123@login1 ~]$ module load eessi-2025.06
 ```
 
+```sh
+[abc123@login1 ~]$ module load eessi-2026.06
+```
+
 ### References
 
 - [Lmod user guide](https://lmod.readthedocs.io/en/latest/)
-- [Carpentries HPC modules lesson](https://carpentries-incubator.github.io/hpc-intro/15-modules/index.html)
+- [Carpentries HPC modules lesson](https://carpentries-incubator.github.io/hpc-intro/15-modules.html)
 - [EESSI](https://www.eessi.io/docs/)
 
 ## Pixi Environments
 
-Pixi provides reproducible, multi-language environments that work well on shared HPC systems. It automatically resolves dependencies across Python, R, Julia, and more, and stores environments alongside your project. Therefore, Pixi is the recommended way to manage custom software stacks on ADA.
+Pixi provides reproducible, multi-language environments that work well on shared HPC systems. It automatically resolves dependencies across Python, R, Julia, and more, and stores environments alongside your project. Pixi is the preferred way to manage custom software stacks on ADA.
 
 ::: {.callout-tip title="Read: Pixi quick start"}
 Review the upstream [Pixi quick start guide](https://pixi.dev/docs/python/./) to see typical workflows and commands before building environments on ADA.
@@ -119,7 +127,7 @@ Review the upstream [Pixi quick start guide](https://pixi.dev/docs/python/./) to
 ### Quick Start
 
 ```sh
-[abc123@login1 ~]$ module load 2025
+[abc123@login1 ~]$ module load <year>
 [abc123@login1 ~]$ module load Pixi
 [abc123@login1 ~]$ mkdir newproject
 [abc123@login1 ~]$ cd newproject
@@ -144,51 +152,6 @@ Pixi retrieves packages from maintained channels (PyPI, conda-forge, CRAN, etc.)
 - [Pixi documentation](https://pixi.dev/)
 - [Basic usage of Pixi](https://pixi.prefix.dev/latest/getting_started/)
 
-## Conda and virtualenv
-
-Conda and virtualenv remain popular for Python-centric workflows. On ADA you should start from the modules provided versions to ensure compatibility with the cluster toolchain.
-
-::: {.callout-tip title="Read: Conda essentials"}
-Skim the official [Conda getting-started guide](https://docs.conda.io/projects/conda/en/stable/user-guide/getting-started.html) to refresh fundamentals like channel management and environment activation.
-:::
-
-### Quick Start
-
-```sh
-[abc123@login1 ~]$ module load 2025
-[abc123@login1 ~]$ module load Miniconda3
-[abc123@login1 ~]$ conda create -n analysis python=3.12 numpy scipy
-[abc123@login1 ~]$ conda activate analysis
-```
-
-For virtualenv:
-
-```sh
-[abc123@login1 ~]$ module load 2025
-[abc123@login1 ~]$ module load Python/3.12.3-GCCcore-13.3.0
-[abc123@login1 ~]$ python -m venv ~/envs/my-project
-[abc123@login1 ~]$ source ~/envs/my-project/bin/activate
-```
-
-Remember to deactivate environments before logging out to avoid polluting future sessions.
-
-::: {.callout-tip title="Read: virtualenv essentials"}
-Skim the official [virtualenv documentation](https://virtualenv.pypa.io/en/latest/user_guide.html) for tips on creating and managing virtual environments.
-:::
-
-### When to choose Conda or virtualenv
-
-- Existing workflows already rely on Conda environments or `environment.yml`.
-- You require packages that Pixi cannot currently install.
-- You need per-user env management with conda-forge or custom channels.
-
-Be mindful that Conda solves can be slower and more resource-heavy on shared filesystems. Pixi usually offers faster resolution on ADA and therefore we recommend it over Conda. 
-
-### References
-
-- [Conda user guide](https://docs.conda.io/projects/conda/en/stable/user-guide/)
-- [virtualenv documentation](https://virtualenv.pypa.io/en/latest/user_guide.html)
-
 ## Apptainer Containers
 
 Apptainer (formerly Singularity) runs full container images on ADA compute nodes. Use it to bundle complex stacks, legacy software, or reproducible workflows that must match another system exactly.
@@ -198,7 +161,7 @@ Read the upstream [Apptainer quick start](https://apptainer.org/docs/user/main/q
 :::
 
 ::: {.callout-warning title="Run Apptainer on compute nodes"}
-Apptainer is only available on compute nodes. Start an interactive session or submit a SLURM job before running container commands.
+Apptainer is only available on compute nodes. Start an interactive session or submit a Simple Linux Utility for Resource Management (SLURM) job before running container commands.
 :::
 
 ### Quick Start
@@ -245,7 +208,7 @@ Minimal patterns for running distributed and GPU workloads from SLURM through Ap
   #SBATCH --ntasks=4
   #SBATCH --cpus-per-task=1
 
-  module load 2025
+  module load <year>
   # Launch ranks with the host scheduler; enter the container per rank
   srun apptainer exec /path/to/image.sif \ 
        /path/in/container/my_mpi_program --arg foo
@@ -259,7 +222,7 @@ Minimal patterns for running distributed and GPU workloads from SLURM through Ap
   #SBATCH --gres=gpu:1
   #SBATCH --time=00:20:00
 
-  module load 2025
+  module load <year>
   # Expose NVIDIA devices and libraries to the container
   apptainer exec --nv /path/to/image.sif nvidia-smi
   ```
@@ -277,3 +240,52 @@ Git is pre-installed on every login/inter/compute node by default. If you need a
 ### References
 
 - [Apptainer user guide](https://apptainer.org/docs/user/main/quick_start.html)
+
+## Conda and virtualenv
+
+Conda and virtualenv remain popular for Python-centric workflows. On ADA you should start from the modules provided versions to ensure compatibility with the cluster toolchain.
+
+::: {.callout-warning title="Not recommended"}
+Only use Conda and virtualenv on ADA if your project absolutely needs them, because they can be difficult to debug effectively.
+:::
+
+### Quick Start
+
+```sh
+[abc123@login1 ~]$ module load <year>
+[abc123@login1 ~]$ module load Miniconda3
+[abc123@login1 ~]$ conda create -n analysis python=3.12 numpy scipy
+[abc123@login1 ~]$ conda activate analysis
+```
+
+For virtualenv:
+
+```sh
+[abc123@login1 ~]$ module load <year>
+[abc123@login1 ~]$ module load Python/3.12.3-GCCcore-13.3.0
+[abc123@login1 ~]$ python -m venv ~/envs/my-project
+[abc123@login1 ~]$ source ~/envs/my-project/bin/activate
+```
+
+Remember to deactivate environments before logging out to avoid polluting future sessions.
+
+::: {.callout-tip title="Read: Conda essentials"}
+Skim the official [Conda getting-started guide](https://docs.conda.io/projects/conda/en/stable/user-guide/getting-started.html) to refresh fundamentals like channel management and environment activation.
+:::
+
+::: {.callout-tip title="Read: virtualenv essentials"}
+Skim the official [virtualenv documentation](https://virtualenv.pypa.io/en/latest/) for tips on creating and managing virtual environments.
+:::
+
+### When to choose Conda or virtualenv
+
+- Existing workflows already rely on Conda environments or `environment.yml`.
+- You require packages that Pixi cannot currently install.
+- You need per-user env management with conda-forge or custom channels.
+
+Be mindful that Conda solves can be slower and more resource-heavy on shared filesystems. Pixi usually offers faster resolution on ADA and is preferred over Conda.
+
+### References
+
+- [Conda user guide](https://docs.conda.io/projects/conda/en/stable/user-guide/)
+- [virtualenv documentation](https://virtualenv.pypa.io/en/latest/)
