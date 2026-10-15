@@ -536,4 +536,35 @@ The [Quarto tutorial](https://quarto.org/docs/get-started/hello/VS%20Code.html) 
 
 #### Changing text in multiple locations
 
-It happens from time to time that text that occurs in multiple locations needs to be changed. This can be the case when a URL to an external website changes; when this URL occurs in multiple places in the handbook, it can be easier to change it in one go, rather than several times, separately.
+It happens from time to time that text that occurs in multiple locations needs to be changed. This can be the case when a URL to an external website changes; when this URL occurs in multiple places in the handbook, it can be easier to change it in one go, rather than several times, separately. There are several ways to do this; the method below describes how to do it in the command line. One should use the Terminal (Mac and Linux users) or the Git Bash to follow this method.
+
+##### Step 1: Cloning or pulling the handbook repository and navigating to the folder
+
+If you don't already have the handbook cloned locally (see also [above](#rendering-handbook-locally)), you should clone the handbook:
+`git clone https://github.com/ubvu/open-handbook`
+
+If you have the handbook cloned locally but you want to make sure that you have the most up-to-date version, you should pull from the online (remote) repository:
+`git pull origin main`
+
+Now navigate to the folder so you can start working in it:
+`cd open-handbook`
+
+##### Step 2: Making changes
+
+Before you make any changes to the handbook, make sure to open a new branch in which you can make your changes:
+```
+git branch url-replacement main
+git switch url-replacement # Now you switch over to the new branch
+```
+This creates the branch `url-replacement` from the main branch. In principle, you can use any branch name you like as long as it's descriptive and intuitive to understand for someone else and yourself.
+
+Now you should find the occurrences of the old URL:
+`grep -rl old-url`
+`grep` is the command to find text in files. The option `r` is for recursive: the command then also looks into folders and subfolders. The option `l` prints the file names to the shell. `old-url` is the place where you should write the old URL. 
+
+This command will give you an overview of the occurrences of the old URL. The editors would recommend writing this overview to a new file so that you can check later on that all occurrences were updated. Make sure to save this file **outside of the handbook folder/repository**, otherwise this will be included when you push back to the remote repository. So, for example:
+`grep -rl old-url > /your-folder-path/url-replacement.txt`
+
+In principle, you can choose any folder to save this file in and any file name. But make sure it makes sense so you can find it back easily. If you are not sure about navigating files and directories, you can find more information on the [Carpentries website](https://swcarpentry.github.io/shell-novice/02-filedir.html).
+
+
