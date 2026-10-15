@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-10-05">
+<meta name="dcterms.date" content="2026-10-15">
 
 <title>Software – Research Support Handbook</title>
 <style>
@@ -412,20 +412,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#when-to-choose-pixi" id="toc-when-to-choose-pixi" class="nav-link" data-scroll-target="#when-to-choose-pixi">When to choose Pixi</a></li>
   <li><a href="#references-1" id="toc-references-1" class="nav-link" data-scroll-target="#references-1">References</a></li>
   </ul></li>
-  <li><a href="#conda-and-virtualenv" id="toc-conda-and-virtualenv" class="nav-link" data-scroll-target="#conda-and-virtualenv">Conda and virtualenv</a>
-  <ul class="collapse">
-  <li><a href="#quick-start-2" id="toc-quick-start-2" class="nav-link" data-scroll-target="#quick-start-2">Quick Start</a></li>
-  <li><a href="#when-to-choose-conda-or-virtualenv" id="toc-when-to-choose-conda-or-virtualenv" class="nav-link" data-scroll-target="#when-to-choose-conda-or-virtualenv">When to choose Conda or virtualenv</a></li>
-  <li><a href="#references-2" id="toc-references-2" class="nav-link" data-scroll-target="#references-2">References</a></li>
-  </ul></li>
   <li><a href="#apptainer-containers" id="toc-apptainer-containers" class="nav-link" data-scroll-target="#apptainer-containers">Apptainer Containers</a>
   <ul class="collapse">
-  <li><a href="#quick-start-3" id="toc-quick-start-3" class="nav-link" data-scroll-target="#quick-start-3">Quick Start</a></li>
+  <li><a href="#quick-start-2" id="toc-quick-start-2" class="nav-link" data-scroll-target="#quick-start-2">Quick Start</a></li>
   <li><a href="#obtaining-images" id="toc-obtaining-images" class="nav-link" data-scroll-target="#obtaining-images">Obtaining images</a></li>
   <li><a href="#when-to-choose-apptainer" id="toc-when-to-choose-apptainer" class="nav-link" data-scroll-target="#when-to-choose-apptainer">When to choose Apptainer</a></li>
   </ul></li>
   <li><a href="#git" id="toc-git" class="nav-link" data-scroll-target="#git">Git</a>
   <ul class="collapse">
+  <li><a href="#references-2" id="toc-references-2" class="nav-link" data-scroll-target="#references-2">References</a></li>
+  </ul></li>
+  <li><a href="#conda-and-virtualenv" id="toc-conda-and-virtualenv" class="nav-link" data-scroll-target="#conda-and-virtualenv">Conda and virtualenv</a>
+  <ul class="collapse">
+  <li><a href="#quick-start-3" id="toc-quick-start-3" class="nav-link" data-scroll-target="#quick-start-3">Quick Start</a></li>
+  <li><a href="#when-to-choose-conda-or-virtualenv" id="toc-when-to-choose-conda-or-virtualenv" class="nav-link" data-scroll-target="#when-to-choose-conda-or-virtualenv">When to choose Conda or virtualenv</a></li>
   <li><a href="#references-3" id="toc-references-3" class="nav-link" data-scroll-target="#references-3">References</a></li>
   </ul></li>
   </ul>
@@ -448,7 +448,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">last modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 5, 2026</p>
+      <p class="date">October 15, 2026</p>
     </div>
   </div>
   
@@ -480,13 +480,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Use modules whenever a supported version exists. Choose Pixi when you need custom packages or multi-language environments, fall back to Conda or virtualenv if you already rely on them, and build an Apptainer container when you must control the full user-space stack.</p>
+<p>Use modules whenever a supported version exists. Choose Pixi when you need custom packages or multi-language environments, use Conda or virtualenv if you already rely on them, and build an Apptainer container when you must control the full user-space stack.</p>
 </div>
 </div>
 </section>
 <section id="software-modules" class="level2">
 <h2 class="anchored" data-anchor-id="software-modules">Software Modules</h2>
-<p>ADA ships a curated, architecture-optimized software stack living under <code>/ada-software/</code> and exposed through Lmod modules. The stack follows an annual release (for example <code>2025</code>) that bundles compilers, MPI, and libraries maintained by ITvO.</p>
+<p>ADA ships a curated, architecture-optimized software stack living under <code>/ada-software/</code> and exposed through Lmod modules. The stack follows an annual release (for example <code>2025</code>) that bundles compilers, message passing interface (MPI), and libraries maintained by IT for Research (ITvO).</p>
 <div class="callout callout-style-default callout-important callout-titled" title="Read: Modules primer">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -497,7 +497,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>New to Lmod? Start with the <a href="https://carpentries-incubator.github.io/hpc-intro/15-modules.html" target="_blank">Carpentries HPC modules lesson</a> for a friendly walkthrough of the core concepts.</p>
+<p>New to Lmod? Start with the <a href="https://carpentries-incubator.github.io/hpc-intro/15-modules.html" target="_blank">Carpentries high-performance computing (HPC) modules lesson</a> for a friendly walkthrough of the core concepts.</p>
 </div>
 </div>
 <section id="quick-start" class="level3">
@@ -508,16 +508,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">Currently</span> Loaded Modules:</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">1</span><span class="er">)</span> <span class="ex">shared</span>   2<span class="er">)</span> <span class="ex">DefaultModules</span>   3<span class="er">)</span> <span class="ex">gcc/11.2.0</span>   4<span class="er">)</span> <span class="ex">slurm/bazis/23.02.8</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
-<li><p>Load the yearly release to unlock the supported applications:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ module load 2025</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ module list</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="ex">Currently</span> Loaded Modules:</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ex">1</span><span class="er">)</span> <span class="ex">shared</span>   2<span class="er">)</span> <span class="ex">DefaultModules</span>   3<span class="er">)</span> <span class="ex">slurm/bazis/23.02.8</span>   4<span class="er">)</span> <span class="ex">2025</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
-<li><p>Load the software you need. Dependencies are resolved automatically in the order you request them:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load Python/3.13.1-GCCcore-14.2.0</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load HDF5/1.14.5-gompi-2024a</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>Load the yearly release to unlock the supported applications: ```sh [abc123@login1 ~]$ module load <year> [abc123@login1 ~]$ module list</year></p>
+<p>Currently Loaded Modules:</p></li>
 </ol>
+<ol type="1">
+<li>shared 2) DefaultModules 3) slurm/bazis/23.02.8 4) <year></year></li>
+</ol>
+<pre><code>3. Load the software you need. Dependencies are resolved automatically in the order you request them:
+```sh
+module load Python/3.13.1-GCCcore-14.2.0
+module load HDF5/1.14.5-gompi-2024a</code></pre>
 <p>When you are done, use <code>module unload &lt;name&gt;</code> to remove a single module or <code>module purge</code> to reset the session.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Find modules quickly">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
@@ -532,24 +532,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>List all the available modules with <code>module avail</code>. However, that is usually very slow, so for a more efficient search and targeted search use <code>module spider</code>:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ module spider Python</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="ex">---------------------------------------------------------------------</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="ex">Python:</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="ex">---------------------------------------------------------------------</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="ex">Description:</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="ex">Python</span> is a programming language that lets you work more quickly</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="ex">and</span> integrate your systems more effectively.</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    <span class="ex">Versions:</span></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>      <span class="ex">Python/3.11.5-GCCcore-13.2.0</span></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>      <span class="ex">Python/3.12.3-GCCcore-13.3.0</span></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>      <span class="ex">Python/3.13.1-GCCcore-14.2.0</span></span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>    <span class="ex">Other</span> possible module matches:</span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>      <span class="ex">Biopython</span>  GitPython  IPython  ...</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ module spider Python</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ex">---------------------------------------------------------------------</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="ex">Python:</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="ex">---------------------------------------------------------------------</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="ex">Description:</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="ex">Python</span> is a programming language that lets you work more quickly</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="ex">and</span> integrate your systems more effectively.</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="ex">Versions:</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>      <span class="ex">Python/3.11.5-GCCcore-13.2.0</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>      <span class="ex">Python/3.12.3-GCCcore-13.3.0</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>      <span class="ex">Python/3.13.1-GCCcore-14.2.0</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>    <span class="ex">Other</span> possible module matches:</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>      <span class="ex">Biopython</span>  GitPython  IPython  ...</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Follow up with the full version to view prerequisites and optional extensions:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ module spider Python/3.12.3-GCCcore-13.3.0</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ module spider Python/3.12.3-GCCcore-13.3.0</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 </div>
@@ -561,7 +561,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>The required package and version already exist in the release.</li>
 <li>You prefer not to manage your own builds or dependency stacks.</li>
 </ul>
-<p>If you identify software that would benefit a broad cross-section of ADA users, contact ITvO at <code>itvo.it@vu.nl</code> with your request. Users cannot publish custom modules on ADA.</p>
+<p>If you identify software that would benefit a broad cross-section of ADA users, contact IT for Research (ITvO) at <code>itvo.it@vu.nl</code> with your request. Users cannot publish custom modules on ADA.</p>
 <div class="callout callout-style-default callout-warning callout-titled" title="Requesting new modules">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -578,12 +578,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="european-environment-for-scientific-software-installations-eessi" class="level3">
 <h3 class="anchored" data-anchor-id="european-environment-for-scientific-software-installations-eessi">European Environment for Scientific Software Installations (EESSI)</h3>
-<p>The European Environment for Scientific Software Installations (EESSI, pronounced as “easy”) is a collaboration between different European partners in HPC community. The goal of this project is to build a common stack of scientific software installations for HPC systems and beyond, including laptops, personal workstations and cloud infrastructure.</p>
+<p>The European Environment for Scientific Software Installations (EESSI, pronounced as “easy”) is a collaboration between different European partners in the high-performance computing (HPC) community. The goal of this project is to build a common stack of scientific software installations for HPC systems and beyond, including laptops, personal workstations and cloud infrastructure.</p>
 <p>A major advantage of the EESSI stack is that it provides an extensive library of software specifically optimized for various CPU and GPU architectures, significantly improving the computational performance of your code.</p>
 <p>To use EESSI on ADA, load in either the eessi-2023.06, eessi-2025.06 or eessi-2026.06 stack:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ module load eessi-2023.06</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ module load eessi-2025.06</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ module load eessi-2026.06</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ module load eessi-2023.06</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ module load eessi-2025.06</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ module load eessi-2026.06</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="references" class="level3">
 <h3 class="anchored" data-anchor-id="references">References</h3>
@@ -596,7 +596,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="pixi-environments" class="level2">
 <h2 class="anchored" data-anchor-id="pixi-environments">Pixi Environments</h2>
-<p>Pixi provides reproducible, multi-language environments that work well on shared HPC systems. It automatically resolves dependencies across Python, R, Julia, and more, and stores environments alongside your project. Therefore, Pixi is the recommended way to manage custom software stacks on ADA.</p>
+<p>Pixi provides reproducible, multi-language environments that work well on shared HPC systems. It automatically resolves dependencies across Python, R, Julia, and more, and stores environments alongside your project. Pixi is the preferred way to manage custom software stacks on ADA.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Read: Pixi quick start">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -612,13 +612,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <section id="quick-start-1" class="level3">
 <h3 class="anchored" data-anchor-id="quick-start-1">Quick Start</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ module load 2025</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ module load Pixi</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ mkdir newproject</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ cd newproject</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~/newproject]$ pixi init</span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~/newproject]$ pixi add numpy pandas matplotlib</span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~/newproject]$ pixi run python <span class="at">-c</span> <span class="st">"import pandas as pd; print(pd.__version__)"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ module load <span class="op">&lt;</span>year<span class="op">&gt;</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ module load Pixi</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ mkdir newproject</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ cd newproject</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~/newproject]$ pixi init</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~/newproject]$ pixi add numpy pandas matplotlib</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~/newproject]$ pixi run python <span class="at">-c</span> <span class="st">"import pandas as pd; print(pd.__version__)"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>The project directory now contains <code>pixi.toml</code> and <code>.pixi/</code> with the resolved environment. Share the <code>pixi.toml</code> file with collaborators so they can recreate the exact environment.</p>
 </section>
 <section id="when-to-choose-pixi" class="level3">
@@ -636,65 +636,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li><a href="https://pixi.dev/" target="_blank">Pixi documentation</a></li>
 <li><a href="https://pixi.prefix.dev/latest/getting_started/" target="_blank">Basic usage of Pixi</a></li>
-</ul>
-</section>
-</section>
-<section id="conda-and-virtualenv" class="level2">
-<h2 class="anchored" data-anchor-id="conda-and-virtualenv">Conda and virtualenv</h2>
-<p>Conda and virtualenv remain popular for Python-centric workflows. On ADA you should start from the modules provided versions to ensure compatibility with the cluster toolchain.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Read: Conda essentials">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Read: Conda essentials
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Skim the official <a href="https://docs.conda.io/projects/conda/en/stable/user-guide/getting-started.html" target="_blank">Conda getting-started guide</a> to refresh fundamentals like channel management and environment activation.</p>
-</div>
-</div>
-<section id="quick-start-2" class="level3">
-<h3 class="anchored" data-anchor-id="quick-start-2">Quick Start</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ module load 2025</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ module load Miniconda3</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ conda create <span class="at">-n</span> analysis python=3.12 numpy scipy</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ conda activate analysis</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>For virtualenv:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ module load 2025</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ module load Python/3.12.3-GCCcore-13.3.0</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ python <span class="at">-m</span> venv ~/envs/my-project</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ source ~/envs/my-project/bin/activate</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Remember to deactivate environments before logging out to avoid polluting future sessions.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Read: virtualenv essentials">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Read: virtualenv essentials
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Skim the official <a href="https://virtualenv.pypa.io/en/latest/" target="_blank">virtualenv documentation</a> for tips on creating and managing virtual environments.</p>
-</div>
-</div>
-</section>
-<section id="when-to-choose-conda-or-virtualenv" class="level3">
-<h3 class="anchored" data-anchor-id="when-to-choose-conda-or-virtualenv">When to choose Conda or virtualenv</h3>
-<ul>
-<li>Existing workflows already rely on Conda environments or <code>environment.yml</code>.</li>
-<li>You require packages that Pixi cannot currently install.</li>
-<li>You need per-user env management with conda-forge or custom channels.</li>
-</ul>
-<p>Be mindful that Conda solves can be slower and more resource-heavy on shared filesystems. Pixi usually offers faster resolution on ADA and therefore we recommend it over Conda.</p>
-</section>
-<section id="references-2" class="level3">
-<h3 class="anchored" data-anchor-id="references-2">References</h3>
-<ul>
-<li><a href="https://docs.conda.io/projects/conda/en/stable/user-guide/" target="_blank">Conda user guide</a></li>
-<li><a href="https://virtualenv.pypa.io/en/latest/" target="_blank">virtualenv documentation</a></li>
 </ul>
 </section>
 </section>
@@ -724,16 +665,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Apptainer is only available on compute nodes. Start an interactive session or submit a SLURM job before running container commands.</p>
+<p>Apptainer is only available on compute nodes. Start an interactive session or submit a Simple Linux Utility for Resource Management (SLURM) job before running container commands.</p>
 </div>
 </div>
-<section id="quick-start-3" class="level3">
-<h3 class="anchored" data-anchor-id="quick-start-3">Quick Start</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ srun <span class="at">--pty</span> <span class="at">--time</span><span class="op">=</span>00:30:00 <span class="at">--cpus-per-task</span><span class="op">=</span>2 bash</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@compute-node</span> ~]$ apptainer <span class="at">--version</span></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="ex">apptainer</span> version 1.4.2-1.el9</span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@compute-node</span> ~]$ apptainer pull docker://alpine:latest</span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@compute-node</span> ~]$ apptainer exec alpine_latest.sif cat /etc/os-release</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="quick-start-2" class="level3">
+<h3 class="anchored" data-anchor-id="quick-start-2">Quick Start</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ srun <span class="at">--pty</span> <span class="at">--time</span><span class="op">=</span>00:30:00 <span class="at">--cpus-per-task</span><span class="op">=</span>2 bash</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@compute-node</span> ~]$ apptainer <span class="at">--version</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="ex">apptainer</span> version 1.4.2-1.el9</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@compute-node</span> ~]$ apptainer pull docker://alpine:latest</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@compute-node</span> ~]$ apptainer exec alpine_latest.sif cat /etc/os-release</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>The <code>alpine_latest.sif</code> file contains the immutably built image you can reuse in batch jobs.</p>
 </section>
 <section id="obtaining-images" class="level3">
@@ -755,7 +696,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <p>Expect a steeper learning curve compared to modules or Pixi, but gain portability and reproducibility.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Parallel (MPI) and GPU with Apptainer">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -764,32 +705,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Minimal patterns for running distributed and GPU workloads from SLURM through Apptainer. See the official docs for full guidance.</p>
 <ul>
 <li><p>MPI (distributed across tasks):</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --partition=&lt;cpu-partition&gt;</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --time=00:30:00</span></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --ntasks=4</span></span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --cpus-per-task=1</span></span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load 2025</span>
-<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Launch ranks with the host scheduler; enter the container per rank</span></span>
-<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="ex">srun</span> apptainer exec /path/to/image.sif <span class="dt">\ </span></span>
-<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>     <span class="ex">/path/in/container/my_mpi_program</span> <span class="at">--arg</span> foo</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --partition=&lt;cpu-partition&gt;</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --time=00:30:00</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --ntasks=4</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --cpus-per-task=1</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load <span class="op">&lt;</span>year<span class="op">&gt;</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Launch ranks with the host scheduler; enter the container per rank</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="ex">srun</span> apptainer exec /path/to/image.sif <span class="dt">\ </span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>     <span class="ex">/path/in/container/my_mpi_program</span> <span class="at">--arg</span> foo</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
 <li>Build containers against an MPI implementation compatible with ADA’s stack, or follow the Apptainer guidance on binding host MPI into the container.</li>
 <li>References: Apptainer MPI docs: https://apptainer.org/docs/user/main/mpi.html</li>
 </ul></li>
 <li><p>GPUs (NVIDIA):</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --partition=&lt;gpu-partition&gt;</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --gres=gpu:1</span></span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --time=00:20:00</span></span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load 2025</span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Expose NVIDIA devices and libraries to the container</span></span>
-<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="ex">apptainer</span> exec <span class="at">--nv</span> /path/to/image.sif nvidia-smi</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --partition=&lt;gpu-partition&gt;</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --gres=gpu:1</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --time=00:20:00</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="ex">module</span> load <span class="op">&lt;</span>year<span class="op">&gt;</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Expose NVIDIA devices and libraries to the container</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="ex">apptainer</span> exec <span class="at">--nv</span> /path/to/image.sif nvidia-smi</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
 <li>Use <code>--nv</code> to enable NVIDIA GPU passthrough (or <code>--rocm</code> for AMD if applicable).</li>
 <li>For framework runs (PyTorch/TensorFlow), add <code>--nv</code> and run your normal command inside the container.</li>
@@ -804,10 +745,82 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="git" class="level2">
 <h2 class="anchored" data-anchor-id="git">Git</h2>
 <p>Git is pre-installed on every login/inter/compute node by default. If you need a specific release of git, use <code>$ module spider git</code> to check out all installed module versions.</p>
+<section id="references-2" class="level3">
+<h3 class="anchored" data-anchor-id="references-2">References</h3>
+<ul>
+<li><a href="https://apptainer.org/docs/user/main/quick_start.html" target="_blank">Apptainer user guide</a></li>
+</ul>
+</section>
+</section>
+<section id="conda-and-virtualenv" class="level2">
+<h2 class="anchored" data-anchor-id="conda-and-virtualenv">Conda and virtualenv</h2>
+<p>Conda and virtualenv remain popular for Python-centric workflows. On ADA you should start from the modules provided versions to ensure compatibility with the cluster toolchain.</p>
+<div class="callout callout-style-default callout-warning callout-titled" title="Not recommended">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Not recommended
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Only use Conda and virtualenv on ADA if your project absolutely needs them, because they can be difficult to debug effectively.</p>
+</div>
+</div>
+<section id="quick-start-3" class="level3">
+<h3 class="anchored" data-anchor-id="quick-start-3">Quick Start</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ module load <span class="op">&lt;</span>year<span class="op">&gt;</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ module load Miniconda3</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ conda create <span class="at">-n</span> analysis python=3.12 numpy scipy</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ conda activate analysis</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>For virtualenv:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ module load <span class="op">&lt;</span>year<span class="op">&gt;</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ module load Python/3.12.3-GCCcore-13.3.0</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ python <span class="at">-m</span> venv ~/envs/my-project</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="ex">[abc123@login1</span> ~]$ source ~/envs/my-project/bin/activate</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Remember to deactivate environments before logging out to avoid polluting future sessions.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Read: Conda essentials">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Read: Conda essentials
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Skim the official <a href="https://docs.conda.io/projects/conda/en/stable/user-guide/getting-started.html" target="_blank">Conda getting-started guide</a> to refresh fundamentals like channel management and environment activation.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Read: virtualenv essentials">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Read: virtualenv essentials
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Skim the official <a href="https://virtualenv.pypa.io/en/latest/" target="_blank">virtualenv documentation</a> for tips on creating and managing virtual environments.</p>
+</div>
+</div>
+</section>
+<section id="when-to-choose-conda-or-virtualenv" class="level3">
+<h3 class="anchored" data-anchor-id="when-to-choose-conda-or-virtualenv">When to choose Conda or virtualenv</h3>
+<ul>
+<li>Existing workflows already rely on Conda environments or <code>environment.yml</code>.</li>
+<li>You require packages that Pixi cannot currently install.</li>
+<li>You need per-user env management with conda-forge or custom channels.</li>
+</ul>
+<p>Be mindful that Conda solves can be slower and more resource-heavy on shared filesystems. Pixi usually offers faster resolution on ADA and is preferred over Conda.</p>
+</section>
 <section id="references-3" class="level3">
 <h3 class="anchored" data-anchor-id="references-3">References</h3>
 <ul>
-<li><a href="https://apptainer.org/docs/user/main/quick_start.html" target="_blank">Apptainer user guide</a></li>
+<li><a href="https://docs.conda.io/projects/conda/en/stable/user-guide/" target="_blank">Conda user guide</a></li>
+<li><a href="https://virtualenv.pypa.io/en/latest/" target="_blank">virtualenv documentation</a></li>
 </ul>
 
 
