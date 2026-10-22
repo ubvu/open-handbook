@@ -73,6 +73,9 @@ header.headroom--unpinned {
 
 .navbar .nav-item:nth-child(1) {
     background-color:$topics-color;
+    .menu-text, .nav-link.dropdown-toggle::after {
+        color: #000000 !important;
+    }
 }
 
 .navbar .nav-item:nth-child(2) {
