@@ -15,7 +15,7 @@
                                     <div class="listing-categories">
                                         <% for (const cat of item.categories) { %>
                                             <div class="listing-category">
-                                                <a href="#category=<%= encodeURIComponent(cat) %>">
+                                                <a href="#category=<%= encodeURIComponent(cat) %>" aria-label="Go to <%= item.title %> information">
                                                     <%= cat %>
                                                 </a>
                                             </div>
@@ -31,7 +31,7 @@
                                 </a>
                             </div>
                             <div class="g-col-12 g-col-sm-3">
-                                <div class="listing-image "><a href="<%- item.path %>"><img src="<%= item.image %>" style="max-width:100%"></a></div>
+                                <div class="listing-image "><a href="<%- item.path %>"><img src="<%= item.image %>" style="max-width:100%" alt="<%= item.title %> logo" aria-label="Go to <%= item.title %> information"></a></div>
                             </div>
                         </div>
                     </div>
