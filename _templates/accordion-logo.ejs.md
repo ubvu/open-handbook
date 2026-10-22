@@ -31,7 +31,7 @@
                                 </a>
                             </div>
                             <div class="g-col-12 g-col-sm-3">
-                                <div class="listing-image "><a href="<%- item.path %>"><img src="<%= item.image %>" style="max-width:100%" alt="<%= item.title %> logo" aria-label="Go to <%= item.title %> information"></a></div>
+                                <div class="listing-image "><a href="<%- item.path %>" aria-label="Go to tool"><img src="<%= item.image %>" style="max-width:100%" alt="<%= item.title %> logo"></a></div>
                             </div>
                         </div>
                     </div>
