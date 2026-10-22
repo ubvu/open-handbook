@@ -587,7 +587,7 @@ Now check which files were edited by sed:
 
 `git diff --name-only`
 
-This will give you a list of files that were changed by the loop. This allows you to compare them with the list of files containing the old URL that you made earlier. If all files are included, you can add, commit and push to the remote repository (see below). If not all files were included, look closely at the file names that were not included. Usually this is the case for files that are in a parent or 'grandchild' directory. The wildcard \*/\* may not work in the same way in all operating systems. In such a case, check what is the case and run the for loop again with *.qmd or with */*/*.qmd (this is explained in more detail in [this conversation - in Dutch - between two of the editors](https://github.com/ubvu/open-handbook/pull/917)).
+This will give you a list of files that were changed by the loop. This allows you to compare them with the list of files containing the old URL that you made earlier. If all files are included, you can add, commit and push to the remote repository (see below). If not all files were included, look closely at the file names that were not included. Usually this is the case for files that are in a parent or 'grandchild' directory. The wildcard \*/\* may not work in the same way in all operating systems. In such a case, check what is the case and run the for loop again with \*.qmd or with \*/\*/\*.qmd (this is explained in more detail in [this conversation - in Dutch - between two of the editors](https://github.com/ubvu/open-handbook/pull/917)).
 Now run `git diff --name-only` again to check that all files were included.
 
 #### Step 3: Adding, committing and pushing
