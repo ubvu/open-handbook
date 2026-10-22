@@ -147,6 +147,13 @@ footer.footer .nav-footer {
     grid-column-end: page-end;
 }
 
+.footer-links-bar li {
+  display: contents;
+}
+.footer-links-bar li + li::before {
+  content: '|';
+}
+
 /* github icon to the right of sidebar */
 @media (min-width: 992px) {
   .navbar .quarto-navbar-tools {
