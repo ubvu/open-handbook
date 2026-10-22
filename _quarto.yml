@@ -60,6 +60,7 @@ resources:
   - CNAME
 format:
   html:
+    axe: true
     toc: true
     theme:
       - cosmo # https://bootswatch.com/
