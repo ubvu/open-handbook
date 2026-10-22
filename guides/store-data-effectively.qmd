@@ -46,7 +46,12 @@ Modern filesystems can deal with special characters, such as ``! # $ % & ' " ` @
 ### Keep file and folder names as short as possible
 File and foldernames should be short but descriptive. Avoid nesting subfolders too deep.
 
-Windows in some cases has a maximum path (folder, subfolders and file name) length of 250 characters. You could create a much longer path on a Linux system (such as ADA or Snellius) and find you are unable to download it to a Windows laptop.  
+Windows in some cases has a maximum path (folder, subfolders and file name) length of 250 characters. You could create a much longer path on a Linux system (such as ADA or Snellius) and find you are unable to download it to a Windows laptop.
+
+Some practical advice on file naming practices illustrated with examples (good and bad):
+
+* The [repository by Jenny Bryan](https://github.com/jennybc/how-to-name-files/tree/main) provides examples of good and bad file naming practices
+* The [CESSDA Data Management Expert Guide](https://dmeg.cessda.eu/Data-Management-Expert-Guide/2.-Organise-Document/File-naming-and-folder-structure) discusses file name elements and best practices, and provides examples as well
 
 ## Working with data on your laptop
 [SciStor](/tools/scistor/index.qmd) allows you to "mount" (assign a driveletter to) your project folder. This is fast enough to be able to directly edit files without copying them to your local drive first. 
@@ -59,7 +64,7 @@ Make sure to avoid storing data in a folder synced to OneDrive, such as the Docu
  
 For Research Drive you can configure the [Nextcloud client](/tools/researchdrive/quick_start.qmd) so it automatically syncs your data folder to Research Drive. Make sure to regurarly check the [web interface](https://vu.data.surf.nl) and client to ensure the sync process is still functioning.
 
-For Yoda you will need to manually transfer data to your laptop. Create a dedicated folder to make this easier. The Handbook has a [page with tips](/tools/yoda/analysing_data.qmd) on ways to work with data stored on Yoda. 
+For Yoda you will need to manually transfer data to your laptop. Create a dedicated folder to make this easier. The {{< var title >}} has a [page with tips](/tools/yoda/analysing_data.qmd) on ways to work with data stored on Yoda. 
 
 ## Make a plan
 When working with collaborators, you should make a practical plan on how to work with your project's data. But even if you are the only one working on the project it is useful to decide on a useful data structure and naming scheme.
@@ -67,18 +72,16 @@ When working with collaborators, you should make a practical plan on how to work
 ### Agree on a naming convention and folder structure
 Some topics to decide on:
 
-- Hyphens or underscores?
+- Hyphens or underscores? Both can be used to separate file name elements; it is useful to be consistent.
 - Dates in file and folder names? If using dates: YYYYMMDD is unambiguous, short and sorts well.
 - Version numbers in file names? Avoid using FINAL, it never is.
 - Prefixes for document types? INV for invoices, etc. This will make finding files easier.
-- A folder structure. Where you will put which data. 
+- A folder structure. Where you will put which data. The [CESSDA Data Management Expert Guide](https://dmeg.cessda.eu/Data-Management-Expert-Guide/2.-Organise-Document/File-naming-and-folder-structure) provides some practical advice for folder structures. It is focussed on Social Sciences data, but its insights can be applied to other types of research as well. If the repository in which you would like to preserve your data requires a certain folder structure, you will save time if you apply this folder structure from the beginning.
 
 ### Agree on how to work with files
-Most tools and storage platforms do not allow you to work with others on files simultaneously. This means the last person who saves a file overwrites a colleagues edits. In the best case a file will be "locked" so only one user at a time can access it. 
+Most tools and storage platforms do not allow you to work with others on files simultaneously. This means the last person who saves a file overwrites a colleague's edits. In the best case a file will be "locked" so only one user at a time can access it. 
 
 Make sure you communicate with your collaborators who works on what files and when, choosing a good folder structure helps with that.
 
 ### Document your choices
 Document relevant choices in a README file so your collaborators know what to do and improve reusability of the dataset.
-
-
