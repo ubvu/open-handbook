@@ -15,7 +15,7 @@
                                     <div class="listing-categories">
                                         <% for (const cat of item.categories) { %>
                                             <div class="listing-category">
-                                                <a href="#category=<%= encodeURIComponent(cat) %>" aria-label="Go to <%= item.title %> information">
+                                                <a href="#category=<%= encodeURIComponent(cat) %>" aria-label="Filter by category">
                                                     <%= cat %>
                                                 </a>
                                             </div>
@@ -24,7 +24,7 @@
                                 <% } %>
                         <div class="grid">
                             <div class="g-col-12 g-col-sm-9">                        
-                                <a href="<%- item.path %>">
+                                <a href="<%- item.path %>" aria-label="Go to tool">
                                     <div>
                                         <span class="listing-description"><%= item.description %></span><br>
                                     </div>
