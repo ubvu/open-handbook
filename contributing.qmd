@@ -544,7 +544,7 @@ If you don't already have the handbook cloned locally (see also [above](#renderi
 `git clone https://github.com/ubvu/open-handbook`
 
 If you have the handbook cloned locally but you want to make sure that you have the most up-to-date version, you should pull from the online (remote) repository:
-`git pull origin main`
+`git pull origin main` This updates the main branch on your local repository.
 
 Now navigate to the folder so you can start working in it:
 `cd open-handbook`
@@ -574,7 +574,7 @@ do
 sed -i 's/old-url/new-url/g' $file
 done
 ```
-The wildcard * makes sure that files in the nested directory ending in the .qmd file extension are looped. `sed` is a command that edits contents of files, the option -i ensures that changes are made in the existing file, s is for substitute, and g is for global (i.e. change each occurrence, not just the first one)
+The wildcard * makes sure that files in the nested directory ending in the .qmd file extension are looped. `sed` is a command that edits contents of files, the option -i ensures that changes are made in the existing file and no new file is created, s is for substitute, and g is for global (i.e. change each occurrence, not just the first one) ([source](https://askubuntu.com/questions/20414/find-and-replace-text-within-a-file-using-commands)). 
 
 Within both the old and new URLs, make sure to use a back slash, `\`, in front of every forward slash `/`. Otherwise the shell will interpret the first forward slash as the separator between the old and new URLs and it may throw you an error, or, worse, do something that you did not want to happen, and you may not notice.
 
@@ -583,4 +583,17 @@ Now check which files were edited by sed:
 This will give you a list of files that were changed by the loop. This allows you to compare them with the list of files containing the old URL that you made earlier. If all files are included, you can add, commit and push to the remote repository (see below). If not all files were included, look closely at the file names that were not included. Usually this is the case for files that are in a parent or 'grandchild' directory. The wildcard */* may not work in the same way in all operating systems. In such a case, check what is the case and run the for loop again with *.qmd or with */*/*.qmd (this is explained in more detail in [this conversation - in Dutch - between two of the editors](https://github.com/ubvu/open-handbook/pull/917)).
 Now run `git diff --name-only` again to check that all files were included.
 
+##### Step 3: Adding, committing and pushing
+
+Now that you have ensured that all files have been updated as necessary, you should add the changed files to git:
+`git add -A` The option -A ensures that all edited files are staged.
+
+Now commit the staged files:
+`git commit -m "Updating outdated URLs"` You can choose any appropriate commit message.
+
+Finally, you need to push the new branch with the commit to the remote repository (on GitHub):
+`git push origin url-replacement`
+This pushes your new branch url-replacement to the remote repository.
+
+When you now log in to GitHub, you will see a notification that your new branch has new commits. You can press the button 'Compare and Pull Request` to open a Pull Request. From there, an editor will review your changes and merge the branch into the main branch.
 
