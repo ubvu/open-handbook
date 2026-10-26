@@ -4,21 +4,26 @@ title: Quick Start
 
 ### Creating an account
 
-DataverseNL can be accessed via SURFconext. Make sure to [log in](https://dataverse.nl/loginpage.xhtml?redirectPage=dataverseuser.xhtml) with your institution credentials. 
+All VU employees can create an account in DataverseNL. If you would like to start with DataverseNL please go to [DataverseNL](https://dataverse.nl/loginpage.xhtml?redirectPage=dataverseuser.xhtml). 
 
+![DataverseNL login](/public/tools/dataversenl/dataverse_login.png)
 
 ### Uploading data
 
-To deposit or publish data, you need permissions from the Vrije Universiteit. Please contact [RDM support desk](mailto:rdm@vu.nl) to request access to create and upload dataset.
+All VU employees can upload and publish datasets in DataverseNL. 
 
-It is important to select your faculty or department when uploading data to DataverseNL. If you want to upload your dataset as part of a certain department, and your department is not yet included in DataverseNL, you can contact the DataverseNL manager to request your department to be added. You can use the Contact button in DataverseNL to submit such a request.
+It is important to select your University and faculty when uploading data to DataverseNL. 
 
+![Select VU](/public/tools/dataversenl/dataversenl_select_vu.png)
 
-### Viewing and reusing data
+![Select Faculty](/public/tools/dataversenl/dataversenl_select_faculty.png)
 
-Data that are publicly available, are visible and downloadable for everyone. 
+![Add Data](/public/tools/dataversenl/dataversenl_add_data.png)
 
-If a dataset includes files with restricted access, people interested in the data have to create an account in DataverseNL to be able to request access to those files. The contact person for the dataset needs to grant access in order for others to use the data.
- 
+### Sensitive data 
 
-For practical information please visit the [DataverseNL website](https://dans.knaw.nl/en/data-services/dataversenl/user-guide/).
+Use DataverseNL only for archiving and publishing non-sensitive data. 
+
+Do not use DataverseNL for archiving and publishing datasets that contain personal data or other types of confidential data. Even though access to data files in DataverseNL can be restricted, datasets containing personal data or other types of confidential data must not be uploaded to DataverseNL. A suitable repository for archiving and publishing personal and sensitive data is [Yoda](https://rdm.vu.nl/tools/yoda/index.html).
+
+For more information please visit the [DataverseNL website](https://dans.knaw.nl/en/data-services/dataversenl/user-guide/).
