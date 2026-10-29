@@ -73,6 +73,9 @@ header.headroom--unpinned {
 
 .navbar .nav-item:nth-child(1) {
     background-color:$topics-color;
+    .menu-text, .nav-link.dropdown-toggle::after {
+        color: #000000 !important;
+    }
 }
 
 .navbar .nav-item:nth-child(2) {
@@ -96,7 +99,7 @@ header.headroom--unpinned {
 /* handbook-title */
 
 footer.footer .nav-footer {
-    background-color: #d2e2ec;
+    background-color: #d4effa;
     padding: 0;
     a {
         color: black
@@ -110,7 +113,7 @@ footer.footer .nav-footer {
 }
 
 .pagebottom {
-    background-color: #0282c9;
+    background-color: #0077b3;
     color: white;
     font-size: 1rem;
     a {
