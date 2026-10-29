@@ -336,7 +336,7 @@ Sometimes you may want to preview the changes you are making to the handbook. Th
 
 ``` sh
 # Clone the git repository
-git clone https://github.com/ubvu/open-handbook
+git clone git@github.com:ubvu/open-handbook.git
 # Go into the right folder
 cd  open-handbook
 # Render the handbook
@@ -533,3 +533,77 @@ The [Quarto tutorial](https://quarto.org/docs/get-started/hello/VS%20Code.html) 
 ![Formatting menu](/public/vscode/contr-vscode-visualmenu.png)
 
 - You can now format text using a simple menu bar, instead of typing Markdown code.
+
+### Changing text in multiple locations
+
+It happens from time to time that text that occurs in multiple locations needs to be changed. This can be the case when a URL to an external website changes; when this URL occurs in multiple places in the handbook, it can be easier to change it in one go, rather than several times, separately. There are several ways to do this; the method below describes how to do it in the command line. One should use the Terminal (Mac and Linux users) or the Git Bash to follow this method.
+
+#### Step 1: Cloning or pulling the handbook repository and navigating to the folder
+
+If you don't already have the handbook cloned locally (see also [above](#rendering-handbook-locally)), you should clone the handbook:
+
+`git clone git@github.com:ubvu/open-handbook.git`
+
+If you have the handbook cloned locally but you want to make sure that you have the most up-to-date version, you should pull from the online (remote) repository:
+
+`git pull origin main` This updates the main branch on your local repository.
+
+Now navigate to the folder so you can start working in it:
+
+`cd open-handbook`
+
+#### Step 2: Making changes
+
+Before you make any changes to the handbook, make sure to open a new branch in which you can make your changes:
+```
+git branch url-replacement main
+git switch url-replacement # Now you switch over to the new branch
+```
+This creates the branch `url-replacement` from the main branch. In principle, you can use any branch name you like as long as it's descriptive and intuitive to understand for someone else and yourself.
+
+Now you should find the occurrences of the old URL:
+
+`grep -rl old-url`
+
+`grep` is the command to find text in files. The option `r` is for recursive: the command then also looks into folders and subfolders. The option `l` prints the file names to the shell. `old-url` is the place where you should write the old URL. 
+
+This command will give you an overview of the occurrences of the old URL. The editors would recommend **writing this overview to a new file** so that you can check later on that all occurrences were updated. Make sure to save this file **outside of the handbook folder/repository**, otherwise this will be included when you push back to the remote repository. So, for example:
+`grep -rl old-url > /your-folder-path/url-replacement.txt`
+
+In principle, you can choose any folder to save this file in and any file name. But make sure it makes sense so you can find it back easily. If you are not sure about navigating files and directories, you can find more information on the [Carpentries website](https://swcarpentry.github.io/shell-novice/02-filedir.html).
+
+Now write the for loop:
+```
+for file in */*.qmd
+do
+sed -i 's/old-url/new-url/g' $file
+done
+```
+The wildcard * makes sure that files in the nested directory ending in the .qmd file extension are looped. `sed` is a command that edits contents of files, the option -i ensures that changes are made in the existing file and no new file is created, s is for substitute, and g is for global (i.e. change each occurrence, not just the first one) ([source](https://askubuntu.com/questions/20414/find-and-replace-text-within-a-file-using-commands)). 
+
+Within both the old and new URLs, make sure to use a back slash, `\`, in front of every forward slash `/`. Otherwise the shell will interpret the first forward slash as the separator between the old and new URLs and it may throw you an error, or, worse, do something that you did not want to happen, and you may not notice.
+
+Now check which files were edited by sed:
+
+`git diff --name-only`
+
+This will give you a list of files that were changed by the loop. This allows you to compare them with the list of files containing the old URL that you made earlier. If all files are included, you can add, commit and push to the remote repository (see below). If not all files were included, look closely at the file names that were not included. Usually this is the case for files that are in a parent or 'grandchild' directory. The wildcard \*/\* may not work in the same way in all operating systems. In such a case, check what is the case and run the for loop again with \*.qmd or with \*/\*/\*.qmd (this is explained in more detail in [this conversation - in Dutch - between two of the editors](https://github.com/ubvu/open-handbook/pull/917)).
+Now run `git diff --name-only` again to check that all files were included.
+
+#### Step 3: Adding, committing and pushing
+
+Now that you have ensured that all files have been updated as necessary, you should add the changed files to git:
+
+`git add -A` The option -A ensures that all edited files are staged.
+
+Now commit the staged files:
+
+`git commit -m "Updating outdated URLs"` You can choose any appropriate commit message.
+
+Finally, you need to push the new branch with the commit to the remote repository (on GitHub):
+
+`git push origin url-replacement`
+This pushes your new branch url-replacement to the remote repository.
+
+When you now log in to GitHub, you will see a notification that your new branch has new commits. You can press the button 'Compare and Pull Request` to open a Pull Request. From there, an editor will review your changes and merge the branch into the main branch.
+
