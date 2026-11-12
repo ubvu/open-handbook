@@ -26,7 +26,7 @@ Your coding skills
 Software requirements
 : Can the software be installed on the Operating System? Does your workflow depend on specific software with a GUI (Graphical User Interface)? If your favorite software is not available, are there altenatives? If you have written your own software, can all its dependencies be installed on the environment?
 
-::: {.callout-tip title="OS-level virtualization: Containers"}
+::: {.callout-tip title="OS-level virtualization: Containers" #tip-containers}
 To avoid conflicting requirements for different pieces of software, running the software in a [container](https://en.wikipedia.org/wiki/OS-level_virtualization) might be a solution. This way the application can run inside its own OS with any software dependencies. This approach has a number of advantages:
 
 * Easier to spin up multiple instances of an application.
@@ -57,8 +57,8 @@ Learning curve
 Reproducibility
 : Can a future researcher recreate the exact same environment?
 
-Data storage and transfer
-: Does the storage system your data is on have a fast connection to the environment, or do you need to copy the data first?
+Data transfer
+: If the storage your data is on is not connected directly to the environment you will need to copy the data first.
 
 Maintenance
 : Is there help available to fix problems with your software or do you have sufficient knowledge yourself? What other maintenance do you need to do on the environment? Are you using a script for a one-off task such as analysing a text document or do you need a web environment which has to run for years?
@@ -103,7 +103,7 @@ Pros:
 
 Cons:
 
-* Only availabe in "lab"-spaces.
+* Only availabe in "lab"-spaces on campus.
 * Limited remote accessibility.
 
 ## Virtual Desktops and Servers
@@ -147,10 +147,6 @@ Pros:
 * Accessible over the internet.
 * Possible to scale up the machine with extra CPU, GPU (if available) and RAM, or run multiple identical servers.
 * Multiple users can login and run tasks (depending on software).
-
-Cons:
-
-
 
 ### SURF Research Cloud (Desktop & Server)
 [Research Cloud](/tools/researchcloud/index.qmd) is usually used for server applications, but it is also possible to run Windows or Linux Desktops.
@@ -238,7 +234,7 @@ Cons:
 
 * Learning curve, scripting and some commandline knowledge necessary. [Trainings](/tools/ada/index.qmd#training-and-external-resources) are available.
 * Limited availability of GUI tools.
-* Not suitable for server tasks that should run 24/7.
+* Not suitable for server tasks that should run 24/7 like web applications.
 
 ### ADA (VU)
 Pros:
@@ -266,6 +262,7 @@ Pros:
 Cons:
 
 * In order to have fast access to your data, you must copy it to Snellius first.
+* Not suitable for large-scale GPU usage.
 
 
 ### LUMI (European)
@@ -298,7 +295,7 @@ Cons:
 ### OpenShift
 > Typical workloads: Hosting Web Applications, Running Server Applications
 
-OpenShift is a environment specifically created for hosting containers. It is especially suitable for hosting static web applications. 
+OpenShift is an environment specifically created for running containers (see: @tip-containers). It is especially suitable for hosting static web applications. 
 
 Pros:
 
