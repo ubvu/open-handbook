@@ -536,15 +536,15 @@ The [Quarto tutorial](https://quarto.org/docs/get-started/hello/VS%20Code.html) 
 
 ### Changing text in multiple locations
 
-It happens from time to time that text that occurs in multiple locations needs to be changed. This can be the case when a URL to an external website changes; when this URL occurs in multiple places in the handbook, it can be easier to change it in one go, rather than several times, separately. There are several ways to do this; the method below describes how to do it in the command line. One should use the Terminal (Mac and Linux users) or the Git Bash to follow this method.
+It happens from time to time that text that occurs in multiple locations needs to be changed. This can be the case when a URL to an external website changes; when this URL occurs in multiple places in the {{< var title >}}, it can be easier to change it in one go, rather than several times, separately. There are several ways to do this; the method below describes how to do it in the command line. One should use the Terminal (Mac and Linux users) or the Git Bash to follow this method.
 
 #### Step 1: Cloning or pulling the handbook repository and navigating to the folder
 
-If you don't already have the handbook cloned locally (see also [above](#rendering-handbook-locally)), you should clone the handbook:
+If you don't already have the {{< var title >}} cloned locally (see also [above](#rendering-handbook-locally)), you should clone the {{< var title >}}:
 
 `git clone git@github.com:ubvu/open-handbook.git`
 
-If you have the handbook cloned locally but you want to make sure that you have the most up-to-date version, you should pull from the online (remote) repository:
+If you have the {{< var title >}} cloned locally but you want to make sure that you have the most up-to-date version, you should pull from the online (remote) repository:
 
 `git pull origin main` This updates the main branch on your local repository.
 
@@ -554,7 +554,7 @@ Now navigate to the folder so you can start working in it:
 
 #### Step 2: Making changes
 
-Before you make any changes to the handbook, make sure to open a new branch in which you can make your changes:
+Before you make any changes to the {{< var title >}}, make sure to open a new branch in which you can make your changes:
 ```
 git branch url-replacement main
 git switch url-replacement # Now you switch over to the new branch
