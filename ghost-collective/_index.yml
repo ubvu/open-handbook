@@ -1,0 +1,20 @@
+website:
+  sidebar:
+    - id: sb-ghost-collective
+      collapse-level: 4
+      contents:
+        - section: GHOST Collective
+          href: ghost-collective/ghost-collective.qmd
+          contents:
+          - href: ghost-collective/ghost-collective.qmd
+            text: The GHOST Collective
+          - section: Data Horror Stories
+            contents:
+          - href: ghost-collective/data-horror-stories.qmd
+            text: Data Horror Stories
+          - ghost-collective/access-to-a-projects-data.qmd
+          - ghost-collective/ocean-drilling-cores.qmd
+          - ghost-collective/data-transfer-shopping-bags.qmd
+          - ghost-collective/forgotten-collections.qmd
+          - ghost-collective/infected-data.qmd
+          - 
