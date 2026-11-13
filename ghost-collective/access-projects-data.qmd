@@ -1,0 +1,24 @@
+---
+title: Access to a project's data
+image: 'public/access-project-data.png'
+---
+
+'A couple of years ago I was the co-supervisor of a PhD student who was looking into the effects of teleworking on commuting distance.'
+
+#### Where does this story come from?
+
+SBE; department of Spatial Economics – this story was told us by Dr. Thomas de Graaff
+
+#### Tell us your horror story, what happened?
+
+In our line of experimental research we often make use of the micro data of the CBS (Statistics Netherlands). This data contains highly confidential data of most Dutch inhabitants (where they live, work, etcetera). Unsurprisingly, as this data is highly confidential, there are lots of procedures in place in order to make an online connection to the database. The security measures include scanning of fingerprints and access only  from computers in one room, which can be locked. Moreover, one needs to take a costly subscription to access the database.
+A couple of years ago I was the co-supervisor of a PhD student who was looking into the effects of teleworking on commuting distance. And we came up with an interesting pseudo-experiment to identify this effect (under some strong assumptions). Initial journal submissions were however rejected and we let it rest for some time. The PhD then successfully defended his thesis and went working abroad. I however still felt that the paper was interesting enough to be published (triggered as well by some other publications on this topic) and I submitted the paper once again and was allowed to publish the paper conditional on some robustness checks.
+Unfortunately, our account for the micro data was closed already and we could only open it against some high initial costs. Worse, the scripts for data reading and wrangling (reading, selecting & transforming data), were not in my possession and the PhD students was at that time difficult to reach. So I had no possibility to do the robustness checks (or even reproduce our results)--and the referees had a fair point that some of the results should actually be checked!
+
+#### Did you find a solution? How did this situation end?
+
+I finally consulted with the main editor of the journal, was very open in explaining the situation and finally she decided that the paper was allowed to be published. I must admit that I still feel quite bad about this as the results cannot (easily) be reproduced -- even though the paper in itself is very transparent in its procedures.
+
+#### Was there a lesson learned? How could this horror be avoided?
+
+The lesson learned is that especially data, code and scripts should be shared under some protocol or, even better, stored publicly (say on GitHub). Many times we work together with colleagues, where each colleague does something (transform data, do the estimations, create figures) and the others do not have access to her source files. Reproducibility also means transferability of data, code and so on. Not so much reproducibility by others but at least by ourselves.
