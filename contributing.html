@@ -246,6 +246,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#more-information" id="toc-more-information" class="nav-link" data-scroll-target="#more-information">More information</a></li>
   <li><a href="#using-the-visual-editor" id="toc-using-the-visual-editor" class="nav-link" data-scroll-target="#using-the-visual-editor">Using the Visual editor</a></li>
   </ul></li>
+  <li><a href="#changing-text-in-multiple-locations" id="toc-changing-text-in-multiple-locations" class="nav-link" data-scroll-target="#changing-text-in-multiple-locations">Changing text in multiple locations</a>
+  <ul class="collapse">
+  <li><a href="#step-1-cloning-or-pulling-the-handbook-repository-and-navigating-to-the-folder" id="toc-step-1-cloning-or-pulling-the-handbook-repository-and-navigating-to-the-folder" class="nav-link" data-scroll-target="#step-1-cloning-or-pulling-the-handbook-repository-and-navigating-to-the-folder">Step 1: Cloning or pulling the handbook repository and navigating to the folder</a></li>
+  <li><a href="#step-2-making-changes" id="toc-step-2-making-changes" class="nav-link" data-scroll-target="#step-2-making-changes">Step 2: Making changes</a></li>
+  <li><a href="#step-3-adding-committing-and-pushing" id="toc-step-3-adding-committing-and-pushing" class="nav-link" data-scroll-target="#step-3-adding-committing-and-pushing">Step 3: Adding, committing and pushing</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ubvu/open-handbook/edit/main/contributing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ubvu/open-handbook/issues/new/choose" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -619,7 +625,7 @@ Note
 <h2 class="anchored" data-anchor-id="rendering-handbook-locally">Rendering handbook locally</h2>
 <p>Sometimes you may want to preview the changes you are making to the handbook. That is possible in most cases, but requires you to install some software. <a href="https://quarto.org/docs/download/" target="_blank">You need to install Quarto</a> and assuming a successful installation, you then need to run the following code in your terminal<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Clone the git repository</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/ubvu/open-handbook</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone git@github.com:ubvu/open-handbook.git</span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Go into the right folder</span></span>
 <span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span>  open-handbook</span>
 <span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Render the handbook</span></span>
@@ -828,7 +834,7 @@ Tip
 <section id="more-information" class="level4">
 <h4 class="anchored" data-anchor-id="more-information">More information</h4>
 <p>The VS Code documentation has a nice <a href="https://code.visualstudio.com/docs/sourcecontrol/intro-to-git" target="_blank">introduction to Git section</a> with more useful tips.</p>
-<p>The <a href="https://quarto.org/docs/get-started/hello/VS%20Code.html" target="_blank">Quarto tutorial</a> has more tips on using VS Code to edit Quarto pages.</p>
+<p>The <a href="https://quarto.org/docs/get-started/hello/vscode.html" target="_blank">Quarto tutorial</a> has more tips on using VS Code to edit Quarto pages.</p>
 </section>
 <section id="using-the-visual-editor" class="level4">
 <h4 class="anchored" data-anchor-id="using-the-visual-editor">Using the Visual editor</h4>
@@ -850,6 +856,51 @@ Tip
 <ul>
 <li>You can now format text using a simple menu bar, instead of typing Markdown code.</li>
 </ul>
+</section>
+</section>
+<section id="changing-text-in-multiple-locations" class="level3">
+<h3 class="anchored" data-anchor-id="changing-text-in-multiple-locations">Changing text in multiple locations</h3>
+<p>It happens from time to time that text that occurs in multiple locations needs to be changed. This can be the case when a URL to an external website changes; when this URL occurs in multiple places in the Research Support Handbook, it can be easier to change it in one go, rather than several times, separately. There are several ways to do this; the method below describes how to do it in the command line. One should use the Terminal (Mac and Linux users) or the Git Bash to follow this method.</p>
+<section id="step-1-cloning-or-pulling-the-handbook-repository-and-navigating-to-the-folder" class="level4">
+<h4 class="anchored" data-anchor-id="step-1-cloning-or-pulling-the-handbook-repository-and-navigating-to-the-folder">Step 1: Cloning or pulling the handbook repository and navigating to the folder</h4>
+<p>If you don’t already have the Research Support Handbook cloned locally (see also <a href="#rendering-handbook-locally">above</a>), you should clone the Research Support Handbook:</p>
+<p><code>git clone git@github.com:ubvu/open-handbook.git</code></p>
+<p>If you have the Research Support Handbook cloned locally but you want to make sure that you have the most up-to-date version, you should pull from the online (remote) repository:</p>
+<p><code>git pull origin main</code> This updates the main branch on your local repository.</p>
+<p>Now navigate to the folder so you can start working in it:</p>
+<p><code>cd open-handbook</code></p>
+</section>
+<section id="step-2-making-changes" class="level4">
+<h4 class="anchored" data-anchor-id="step-2-making-changes">Step 2: Making changes</h4>
+<p>Before you make any changes to the Research Support Handbook, make sure to open a new branch in which you can make your changes:</p>
+<pre><code>git branch url-replacement main
+git switch url-replacement # Now you switch over to the new branch</code></pre>
+<p>This creates the branch <code>url-replacement</code> from the main branch. In principle, you can use any branch name you like as long as it’s descriptive and intuitive to understand for someone else and yourself.</p>
+<p>Now you should find the occurrences of the old URL:</p>
+<p><code>grep -rl old-url</code></p>
+<p><code>grep</code> is the command to find text in files. The option <code>r</code> is for recursive: the command then also looks into folders and subfolders. The option <code>l</code> prints the file names to the shell. <code>old-url</code> is the place where you should write the old URL.</p>
+<p>This command will give you an overview of the occurrences of the old URL. The editors would recommend <strong>writing this overview to a new file</strong> so that you can check later on that all occurrences were updated. Make sure to save this file <strong>outside of the handbook folder/repository</strong>, otherwise this will be included when you push back to the remote repository. So, for example: <code>grep -rl old-url &gt; /your-folder-path/url-replacement.txt</code></p>
+<p>In principle, you can choose any folder to save this file in and any file name. But make sure it makes sense so you can find it back easily. If you are not sure about navigating files and directories, you can find more information on the <a href="https://swcarpentry.github.io/shell-novice/02-filedir.html" target="_blank">Carpentries website</a>.</p>
+<p>Now write the for loop:</p>
+<pre><code>for file in */*.qmd
+do
+sed -i 's/old-url/new-url/g' $file
+done</code></pre>
+<p>The wildcard * makes sure that files in the nested directory ending in the .qmd file extension are looped. <code>sed</code> is a command that edits contents of files, the option -i ensures that changes are made in the existing file and no new file is created, s is for substitute, and g is for global (i.e.&nbsp;change each occurrence, not just the first one) (<a href="https://askubuntu.com/questions/20414/find-and-replace-text-within-a-file-using-commands" target="_blank">source</a>).</p>
+<p>Within both the old and new URLs, make sure to use a back slash, <code>\</code>, in front of every forward slash <code>/</code>. Otherwise the shell will interpret the first forward slash as the separator between the old and new URLs and it may throw you an error, or, worse, do something that you did not want to happen, and you may not notice.</p>
+<p>Now check which files were edited by sed:</p>
+<p><code>git diff --name-only</code></p>
+<p>This will give you a list of files that were changed by the loop. This allows you to compare them with the list of files containing the old URL that you made earlier. If all files are included, you can add, commit and push to the remote repository (see below). If not all files were included, look closely at the file names that were not included. Usually this is the case for files that are in a parent or ‘grandchild’ directory. The wildcard */* may not work in the same way in all operating systems. In such a case, check what is the case and run the for loop again with *.qmd or with */*/*.qmd (this is explained in more detail in <a href="https://github.com/ubvu/open-handbook/pull/917" target="_blank">this conversation - in Dutch - between two of the editors</a>). Now run <code>git diff --name-only</code> again to check that all files were included.</p>
+</section>
+<section id="step-3-adding-committing-and-pushing" class="level4">
+<h4 class="anchored" data-anchor-id="step-3-adding-committing-and-pushing">Step 3: Adding, committing and pushing</h4>
+<p>Now that you have ensured that all files have been updated as necessary, you should add the changed files to git:</p>
+<p><code>git add -A</code> The option -A ensures that all edited files are staged.</p>
+<p>Now commit the staged files:</p>
+<p><code>git commit -m "Updating outdated URLs"</code> You can choose any appropriate commit message.</p>
+<p>Finally, you need to push the new branch with the commit to the remote repository (on GitHub):</p>
+<p><code>git push origin url-replacement</code> This pushes your new branch url-replacement to the remote repository.</p>
+<p>When you now log in to GitHub, you will see a notification that your new branch has new commits. You can press the button ’Compare and Pull Request` to open a Pull Request. From there, an editor will review your changes and merge the branch into the main branch.</p>
 
 
 </section>
