@@ -56,6 +56,7 @@ Contributions can be anything, from reporting typo's to opening up an issue, or 
 
 
 
+
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
@@ -256,6 +257,12 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 <a href="https://github.com/ubvu/open-handbook/commits?author=mtthsdzwn">mtthsdzwn</a>
 </td>
 <td align="center">
+<a href="https://github.com/Raiduy">
+<img src="https://avatars.githubusercontent.com/u/45077493?v=4" width="100px;" alt=""/>
+</a><br>
+<a href="https://github.com/ubvu/open-handbook/commits?author=Raiduy">Raiduy</a>
+</td>
+<td align="center">
 <a href="https://github.com/zesloth">
 <img src="https://avatars.githubusercontent.com/u/22980759?v=4" width="100px;" alt=""/>
 </a><br>
@@ -285,16 +292,16 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 </a><br>
 <a href="https://github.com/ubvu/open-handbook/commits?author=emilybarabas-vu">emilybarabas-vu</a>
 </td>
+</tr>
+
+
+<tr>
 <td align="center">
 <a href="https://github.com/reinout538">
 <img src="https://avatars.githubusercontent.com/u/78550421?v=4" width="100px;" alt=""/>
 </a><br>
 <a href="https://github.com/ubvu/open-handbook/commits?author=reinout538">reinout538</a>
 </td>
-</tr>
-
-
-<tr>
 <td align="center">
 <a href="https://github.com/MarcelRas-391">
 <img src="https://avatars.githubusercontent.com/u/188169871?v=4" width="100px;" alt=""/>
@@ -331,6 +338,10 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 </a><br>
 <a href="https://github.com/ubvu/open-handbook/commits?author=tmunker">tmunker</a>
 </td>
+</tr>
+
+
+<tr>
 <td align="center">
 <a href="https://github.com/dtk-10">
 <img src="https://avatars.githubusercontent.com/u/218951954?v=4" width="100px;" alt=""/>
@@ -344,6 +355,7 @@ All contributions to this project are gratefully acknowledged using the [`allcon
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
 
 
 
