@@ -14,8 +14,6 @@ your computer and upload the changes. This way of working is more stable and rob
 way to access the Yoda Disk. There is also a paid addon "Mountainduck" which adds functionality to access via a drive 
 letter.
 
-- [WinSCP](/tools/yoda/yoda_using_winscp.qmd) is an alternative free file transfer tool. WinSCP provides a reliable file transfer solution. It allows users to securely download and upload files to Yoda. This option is suitable for large and complex datasets.
-
 ## Drive letter
 You can use [Windows Explorer](/tools/yoda/yoda_using_windowsexplorer.qmd) to access the Yoda Disk via a drive letter. However, this has restrictions: a maximum file size of 4GB on Windows 11 and 50MB(!) on Windows 10 and a maximum of 1000 files per folder (Windows 10&11). Take care if you expect your dataset to exceed these limitations.
 
