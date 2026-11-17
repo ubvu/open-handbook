@@ -411,376 +411,228 @@
     "text": "Restoring a Snapshot\n\n\n\nPower Off\n\n\n\nTo restore a snapshot the VM has to be shut down. Click the Power button and select the Power Off button, the server will be send a shutdown signal.\nIf snapshots are available downward chevron will be shown next to the disk, click on it to view the available snapshots.\n\n\n\n\nRevert\n\n\n\nCheck the snapshot you like to restore and click “Revert”.\n\n\n\n\nPower On\n\n\n\nPower on the server by clicking the Play button"
   },
   {
-    "objectID": "tools/scicloud/containers.html",
-    "href": "tools/scicloud/containers.html",
-    "title": "Running Software in Containers",
+    "objectID": "tools/scicloud/wrap_up.html",
+    "href": "tools/scicloud/wrap_up.html",
+    "title": "Wrapping up",
     "section": "",
-    "text": "Research Support Handbook\n\n\n\n\n\nServer OS: Linux"
+    "text": "Research Support Handbook\n\n\n\n\nWhen a project ends or you no longer need the virtual machine you can terminate it through this form: Request to terminate SciCloud.",
+    "crumbs": [
+      "SciCloud",
+      "Documentation",
+      "Wrapping up"
+    ]
   },
   {
-    "objectID": "tools/scicloud/cost_access.html",
-    "href": "tools/scicloud/cost_access.html",
-    "title": "Costs and Getting Access",
+    "objectID": "tools/scicloud/webapplications.html",
+    "href": "tools/scicloud/webapplications.html",
+    "title": "Running Web Applications",
+    "section": "",
+    "text": "Research Support Handbook\nThis guide assumes you are running Linux. Unless your particular application does not support it, it is strongly recommended to run web applications on a Linux server, especially those based on Open Source technology.",
+    "crumbs": [
+      "SciCloud",
+      "Documentation",
+      "Running Web Applications"
+    ]
+  },
+  {
+    "objectID": "tools/scicloud/webapplications.html#domain-name",
+    "href": "tools/scicloud/webapplications.html#domain-name",
+    "title": "Running Web Applications",
+    "section": "Domain Name",
+    "text": "Domain Name\nIT for Research (ITvO) can easily configure a domain inside .labs.vu.nl for your server. It is also possible to use other custom domains, contact ITvO for advice.\n\nHTTPS\nA web application exposed to the internet should only be accessible by HTTPS. ITvO can configure automatically renewing Let’s Encrypt certificates for servers in the .labs.vu.nl domain.",
+    "crumbs": [
+      "SciCloud",
+      "Documentation",
+      "Running Web Applications"
+    ]
+  },
+  {
+    "objectID": "tools/scicloud/webapplications.html#nginx",
+    "href": "tools/scicloud/webapplications.html#nginx",
+    "title": "Running Web Applications",
+    "section": "NGINX",
+    "text": "NGINX\nThe ITvO Team recommends using NGINX as webserver, it is light-weight, secure and easy to maintain. ## Security Considerations\n\n\n\n\n\n\nWarning\n\n\n\nDo not store any (privacy) sensitive data on a server that is accessible from the internet unless you have discussed and implemented extra security measures with the ITvO team!",
+    "crumbs": [
+      "SciCloud",
+      "Documentation",
+      "Running Web Applications"
+    ]
+  },
+  {
+    "objectID": "tools/scicloud/webproxy.html",
+    "href": "tools/scicloud/webproxy.html",
+    "title": "Accessing the Internet",
     "section": "",
     "text": "Research Support Handbook",
     "crumbs": [
       "SciCloud",
-      "Costs and Getting Access"
+      "Documentation",
+      "Accessing the Internet"
     ]
   },
   {
-    "objectID": "tools/scicloud/cost_access.html#how-to-request-access",
-    "href": "tools/scicloud/cost_access.html#how-to-request-access",
-    "title": "Costs and Getting Access",
-    "section": "How to request access",
-    "text": "How to request access\nVia a form on 🔒ServiceNow, go to: IT &gt; My work field &gt; Research &gt; SciCloud &gt; Order SciCloud capacity\nAfter you have requested a SciCloud virtual server, IT for Research will schedule an interview to discuss your wishes.\nThe Quick Start page explains how to access the server once it is online.",
+    "objectID": "tools/scicloud/webproxy.html#the-http-proxy",
+    "href": "tools/scicloud/webproxy.html#the-http-proxy",
+    "title": "Accessing the Internet",
+    "section": "The HTTP Proxy",
+    "text": "The HTTP Proxy\nSciCloud is a relatively open system, which allows researchers full control of the software running on the servers. However, most researchers are not system administrators or security experts. To prevent abuse of the servers you must connect to the internet via a Proxy Server. The Proxy Server allows IT to monitor outgoing traffic and to quickly block suspicious activity .\nThis means you might need a few extra steps to install software (applications, docker images, python packages, etc.) on the server.",
     "crumbs": [
       "SciCloud",
-      "Costs and Getting Access"
+      "Documentation",
+      "Accessing the Internet"
     ]
   },
   {
-    "objectID": "tools/scicloud/cost_access.html#are-there-costs-involved",
-    "href": "tools/scicloud/cost_access.html#are-there-costs-involved",
-    "title": "Costs and Getting Access",
-    "section": "Are there costs involved?",
-    "text": "Are there costs involved?\nConfigurations of a virtual server are based on standard “Building Blocks”, combinations of the following two options can be purchased:\n• Building Block 1: 1 CPU core with 2 GB RAM\n• Building Block 2: 1 CPU core with 4 GB RAM\nCosts are calculated as: €1 per CPU per month, €1 per GB memory per month, €0.40 per GB storage per year (minimum 20GB).",
+    "objectID": "tools/scicloud/webproxy.html#enable-the-proxy-for-your-current-ssh-session",
+    "href": "tools/scicloud/webproxy.html#enable-the-proxy-for-your-current-ssh-session",
+    "title": "Accessing the Internet",
+    "section": "Enable the proxy for your current SSH session",
+    "text": "Enable the proxy for your current SSH session\nUse the following command:\nexport http_proxy=http://proxy.labs.vu.nl:8080 https_proxy=http://proxy.labs.vu.nl:8080",
     "crumbs": [
       "SciCloud",
-      "Costs and Getting Access"
-    ]
-  },
-  {
-    "objectID": "tools/researchdrive/managing_access_rights.html",
-    "href": "tools/researchdrive/managing_access_rights.html",
-    "title": "Managing Groups, Users and Access Rights",
-    "section": "",
-    "text": "Research Support Handbook\nProject owners can invite internal and external collaborators to a project folder. Below you can find detailed instructions for this.",
-    "crumbs": [
-      "Research Drive",
       "Documentation",
-      "Managing Groups, Users and Access Rights"
+      "Accessing the Internet"
     ]
   },
   {
-    "objectID": "tools/researchdrive/managing_access_rights.html#inviting-internal-and-external-collaborators",
-    "href": "tools/researchdrive/managing_access_rights.html#inviting-internal-and-external-collaborators",
-    "title": "Managing Groups, Users and Access Rights",
-    "section": "Inviting internal and external collaborators",
-    "text": "Inviting internal and external collaborators\nThe owner of the project folder can create new accounts and grant access through the following steps.\n\nInviting a new user\nIf a prospective user does not yet have a Research Drive account, the owner needs to invite them. Instructions for this process are in the current section. If a user does already have a Research Drive account, you can skip to the instructions about granting rights to groups and single users.\nAfter having logged into Research Drive, select in the top menu bar: Dashboard &gt; User accounts (2nd tab) &gt; Invite user.\n\n\n\nThe Research Drive top menu bar\n\n\nEnter the initials and last name and the email in the pop-up window, if available use the e-mail of their research institute or university.   All VU email accounts are automatically required to use Multi-Factor Authentication (MFA). This is most commonly done through the Tiqr or Azure app. VU students do not automatically have MFA activated on their account. They can set this up by visiting the IT ServiceDesk, bringing an official ID.\nContributors from outside VU Amsterdam will need to create an eduID account to log into Research Drive. An instruction on how to do this can be found on SURF’s Research Drive Wiki. Additionally, it is important to turn on the MFA step in the eduID account. This is a requirement to better protect the data stored in VU Research Drive. It is greatly preferred that external contributors use the email address provided to them by their institution or workplace. Research Drive functional managers discourage the use of personal email addresses.\n\n\nGranting access rights to groups\nThe best practice for Research Drive is to create groups (‘Teams’) to which roles and rights can be awarded. Using Teams, it is easier to keep track of which rights a group should have, and it is easier to revoke these rights as well. The steps to create a Team are as follows:\n\nClick on the ‘Contacts’ button on the Research Drive top bar.\nIn the left-hand side of the screen, click the ‘Plus’-icon next to Teams. This allows you to create a Team and name it descriptively.\nAdd the right users as members of the Team. You can also make existing Teams members of the new Team.\nNavigating back to the project folder, you can share appropriate files or folders with the correct Team(s).\n\nThis process is explained in more detail, with screenshots, in SURF’s wiki.\nThe following rights can be given out: \n\nCreate (Grants the ability to create new documents or upload them into a folder).\n\nEdit (Grants the ability to make alterations to documents). \nShare (this enables the user to invite new users to RD and afterward this user can grant them access to the parts of your project folder they have access to. In general, we discourage granting these rights. If many people have share rights, it can become difficult to have an overview of which user has access to the data, and revoking rights may also prove complicated).\nDelete (Grants the ability to delete files or folders. This right may not be necessary for most users to have).\n\nPlease also read the Do’s and Don’ts of Sharing to stick to the best practices of these functionalities, as formulated by SURF.\n\n\nGranting access rights to single users \nIt does happen sometimes that a single user, rather than a group, needs to get access to a specific (sub)folder or file. For example when individual contributors need to share data with you, but should not see each other’s data, so they get their own subfolder. When a new user has activated their account, you will receive an email confirming this. At this point you can grant them access to your entire project folder or only to a specific subfolder / several subfolders. After each folder or document you will see the term “Shared”. If you click on the term “Shared” you will see an overview of all users who have access rights to this folder or document.  By using the search function and selecting a user you can grant various rights (Can view/Can edit/Custom permissions) to this user. If the user needs specific rights you can click on “Custom permissions”. \nThe following rights can be given out: \n\nCreate (Grants the ability to create new documents or upload them into a folder).\n\nEdit (Grants the ability to make alterations to documents). \nShare (this enables the user to invite new users to RD and afterward this user can grant them access to the parts of your project folder they have access to. In general, we discourage granting these rights. If many people have share rights, it can become difficult to have an overview of which user has access to the data, and revoking rights may also prove complicated).\nDelete (Grants the ability to delete files or folders. This right may not be necessary for most users to have).\n\nPlease also read the Do’s and Don’ts of Sharing to stick to the best practices of these functionalities, as formulated by SURF.",
+    "objectID": "tools/scicloud/webproxy.html#enable-for-specific-applications",
+    "href": "tools/scicloud/webproxy.html#enable-for-specific-applications",
+    "title": "Accessing the Internet",
+    "section": "Enable for specific applications",
+    "text": "Enable for specific applications\nIf your workflow necessitates frequent access or some automation, it is a good idea to set the proxy config for the software you use. Below are some examples for frequently used software on Ubuntu server. Other software that relies on an internet connection will have similar configurations.\n\ncurl\nCreate or add to ~/.curlc:\necho 'proxy=\"http://proxy.labs.vu.nl:8080\"' &gt;&gt; ~/.curlrc\n\n\nwget\nCreate or add to ~/.wgetrc:\necho -e \"Use_proxy = on\\nhttp_Proxy = http://proxy.labs.vu.nl:8080\\nhttps_Proxy = http://proxy.labs.vu.nl:8080\" &gt;&gt; ~/.wgetrc\n\n\ngit\nIf you work with git add it to the global configuration:\ngit config --global http.proxy http://proxy.labs.vu.nl:8080\n\n\nDocker\nCreate /etc/systemd/system/docker.service.d/http-proxy.conf if it does not exist yet.\nsudo nano /etc/systemd/system/docker.service.d/http-proxy.conf\nWith this content:\n[Service]\nEnvironment=\"HTTP_PROXY=http://proxy.labs.vu.nl:8080\"\nEnvironment=\"HTTPS_PROXY=http://proxy.labs.vu.nl:8080\"\nEnvironment=\"NO_PROXY=localhost,127.0.0.1\nReload:\nsystemctl daemon-reload\nsystemctl restart docker\nCheck the active configuration with:\nsystemctl show --property=Environment docker\n\n\nR\n\nVia console\nSys.setenv(\"ftp_proxy\"=\"http://proxy.labs.vu.nl:8080/\")\nSys.setenv(\"http_proxy\"=\"http://proxy.labs.vu.nl:8080\")\n\nSys.setenv(\"https_proxy\"=\"http://proxy.labs.vu.nl:8080\")\n\nSys.getenv()\n\n\nVia environment file\nUser:\necho -e \"http_proxy = http://proxy.labs.vu.nl:8080\\nhttps_proxy = http://proxy.labs.vu.nl:8080' &gt;&gt; ~/.Renviron\nGlobal:\necho -e \"http_proxy = http://proxy.labs.vu.nl:8080\\nhttps_proxy = http://proxy.labs.vu.nl:8080' &gt;&gt; /etc/R/Renviron.site",
     "crumbs": [
-      "Research Drive",
+      "SciCloud",
       "Documentation",
-      "Managing Groups, Users and Access Rights"
+      "Accessing the Internet"
     ]
   },
   {
-    "objectID": "tools/researchdrive/index.html",
-    "href": "tools/researchdrive/index.html",
-    "title": "Research Drive",
+    "objectID": "tools/researchdrive/quick_start.html",
+    "href": "tools/researchdrive/quick_start.html",
+    "title": "Quick Start",
     "section": "",
-    "text": "Research Support Handbook",
-    "crumbs": [
-      "Research Drive"
-    ]
-  },
-  {
-    "objectID": "tools/researchdrive/index.html#what-is-it",
-    "href": "tools/researchdrive/index.html#what-is-it",
-    "title": "Research Drive",
-    "section": "What is it?",
-    "text": "What is it?\nSURF Research Drive is an online storage and collaboration platform for research data. With Research Drive you can easily store and share files with other researchers, inside and outside VU Amsterdam. You can access your data via a web interface or tools, from anywhere in the world.\nResearch Drive is based on the Open Source Nextcloud software and is hosted by SURF in their Amsterdam datacentre.",
-    "crumbs": [
-      "Research Drive"
-    ]
-  },
-  {
-    "objectID": "tools/researchdrive/index.html#what-can-it-be-used-for",
-    "href": "tools/researchdrive/index.html#what-can-it-be-used-for",
-    "title": "Research Drive",
-    "section": "What can it be used for?",
-    "text": "What can it be used for?\n\nData storage\nResearch Drive is a Cloud storage solution that can be used for small (a few GBs) to larger (a few TBs) datasets. Because it is a cloud storage platform you will need to download data to your laptop to work with it. Research Drive makes this easy by using the Nextcloud client, which allows you to automatically sync the folders you want to work with. Data is backed up daily.\n\n\nData sharing\nAs project owner you can invite internal and external collaborators yourself, or you can delegate this task to others.\nYou can set access rights to folders and subfolders yourself, making Research Drive ideal for use in collaborations with many institutions.\n\n\nSensitive data\nHosting at SURF and the use of Multi Factor Authentication (MFA), among other measures, makes Research Drive suitable for storing data that score Medium on confidentiality (see the Policy Classification of Research Data and the Research Data Classification Tool). Data that score High on confidentiality can be stored in Research Drive with additional security measures. Please make sure to contact the RDM Support Desk to check if further measures are needed.\n\n\nData life cycle\nResearch Drive is meant for data you are actively working with. We recommend to archive datasets that are no longer actively used, but can’t be deleted, in a repository. Transferring data from Research Drive to a repository ensures Research Drive is used optimally and costs are kept down for your research group and VU Amsterdam. Repositories that are available at VU Amsterdam are Yoda and DataverseNL. Yoda is suitable for all types of data, including personal data and other types of confidential data. DataverseNL is only suitable for data that can be made available publicly.\n\n\nCollaborative tools\nWithin Research Drive, various apps and integrations are available to simplify the use and handling of research data, such as a tool to edit documents directly in the web interface. You can find a current list of app integrations on the SURF User Knowledge Base.\n\n\nSURFdrive replacement\nSince both are based on Nextcloud, Research Drive is very similar to SURFdrive, the main difference is that SURFdrive is personal storage while Research Drive is group based.\nResearchers looking for a new home for research data currently on SURFdrive are encouraged to migrate to Research Drive. Manuals for migrating data to Research Drive are available in English and Dutch. Please contact the Research Support Desk if you have any questions about migrating to Research Drive.",
-    "crumbs": [
-      "Research Drive"
-    ]
-  },
-  {
-    "objectID": "tools/researchdrive/cost_access.html",
-    "href": "tools/researchdrive/cost_access.html",
-    "title": "Costs and Getting Access",
-    "section": "",
-    "text": "Research Support Handbook",
+    "text": "Research Support Handbook\n\n\n\n\n\nLog in to the Research Drive web application at vu.data.surf.nl. You are only able to log in after you have been invited to one or more project folders. The login process requires a SURFsecureID Token for multi-factor authentication (MFA), which students do not have by default. If you do not yet have an SURFsecureID token, you can, as a VU student, researcher or employee, request an account at the IT Servicedesk in the main building with a legitimate ID.\nInstall the Nextcloud Client software, you can find installation instructions on the SURF User Knowledge Base. The Server Address is https://vu.data.surf.nl.\n\nFor transferring large amounts of data Rclone is good option. The SURF User Knowledge Base explains how.\nRclone can also be used to mount (make accessible via a drive letter in Windows) a Research Drive folder. This means you can directly access the data from tools such as R, without downloading the entire dataset first. This method has some limitations, but should work fine with smaller datasets (a few GB).\nThe SURF User Knowledge Base contains more Tutorials on working with Research Drive.",
     "crumbs": [
       "Research Drive",
-      "Costs and Getting Access"
+      "Quick Start"
     ]
   },
   {
-    "objectID": "tools/researchdrive/cost_access.html#how-to-get-access",
-    "href": "tools/researchdrive/cost_access.html#how-to-get-access",
-    "title": "Costs and Getting Access",
-    "section": "How to get access",
-    "text": "How to get access\n\nExisting project folder\nAsk the owner of the project folder to invite you.\n\n\nNew project folder\nA new Research Drive project folder can be requested via the form on 🔒 ServiceNow. Please note that because there can be costs involved (see below) you need to supply a budget code.\nOnce the project folder is created you can invite internal and external collaborators yourself. Please see the page on Managing groups, users and access rights for detailed instructions how to invite users and assign desired access rights.",
+    "objectID": "tools/researchdrive/contact_support.html",
+    "href": "tools/researchdrive/contact_support.html",
+    "title": "Support and Contact",
+    "section": "",
+    "text": "Research Support Handbook\n\n\n\n\nWondering if Research Drive fits your research needs or questions about using Research Drive? Please contact the RDM Support Desk.",
     "crumbs": [
       "Research Drive",
-      "Costs and Getting Access"
+      "Support and Contact"
     ]
   },
   {
-    "objectID": "tools/researchdrive/cost_access.html#are-there-costs-involved",
-    "href": "tools/researchdrive/cost_access.html#are-there-costs-involved",
-    "title": "Costs and Getting Access",
-    "section": "Are there costs involved?",
-    "text": "Are there costs involved?\nThe costs of storing data in Research Drive are detailed in the Research and Archiving Storage Cost Model.",
-    "crumbs": [
-      "Research Drive",
-      "Costs and Getting Access"
-    ]
-  },
-  {
-    "objectID": "tools/snellius/index.html",
-    "href": "tools/snellius/index.html",
-    "title": "Snellius",
+    "objectID": "tools/snellius/quick_start.html",
+    "href": "tools/snellius/quick_start.html",
+    "title": "Quick Start",
     "section": "",
-    "text": "Research Support Handbook",
-    "crumbs": [
-      "Snellius"
-    ]
-  },
-  {
-    "objectID": "tools/snellius/index.html#what-is-it",
-    "href": "tools/snellius/index.html#what-is-it",
-    "title": "Snellius",
-    "section": "What is it?",
-    "text": "What is it?\nSnellius is the National Supercomputer infrastructure hosted by SURF in Amsterdam.",
-    "crumbs": [
-      "Snellius"
-    ]
-  },
-  {
-    "objectID": "tools/snellius/index.html#what-can-it-be-used-for",
-    "href": "tools/snellius/index.html#what-can-it-be-used-for",
-    "title": "Snellius",
-    "section": "What can it be used for?",
-    "text": "What can it be used for?\n\nSimulation and modelling\nDo you work with large and complex models that require a lot of computing power? The National Supercomputer provides that with a large number of super-fast processors. The system is ideally suited for large-scale experiments, such as simulations and modelling. These require a lot of processing power and memory usage, but also communication between the different processors. An important feature of Snellius is its fast internal network.\n\n\nComputing power\nSnellius runs on Linux. Besides AMD processors, the system also features GPGPUs (General Purpose Graphics Processing Units). These accelerators combine the processing power of graphics cards (GPUs) with that of CPUs. In addition, Snellius has ‘fat nodes’ with more memory space (1 TB) and ‘high-memory nodes’ (4 TB and 8 TB of memory space).\n\n\nTools and libraries\nAs a researcher, you can make use of a large collection of tools, compilers and libraries.\nAre you doing research or experiments in the field of machine learning, e.g. neural networks? The libraries and tools on Snellius make it a lot easier.",
-    "crumbs": [
-      "Snellius"
-    ]
-  },
-  {
-    "objectID": "tools/snellius/cost_access.html",
-    "href": "tools/snellius/cost_access.html",
-    "title": "Costs and Getting Access",
-    "section": "",
-    "text": "Research Support Handbook",
+    "text": "Research Support Handbook\n\n\n\n\nThe SURF User Knowledge Base has lots of information to get you started.\nSURF organises regular “Introduction to Supercomputing” training sessions, these are free to attend for VU researchers. Please consult the SURF Agenda for dates and registration.\nNote that there is a free community partition available on the VU HPC cluser ADA, where you can refine your analysis scripts before running them on the more expensive Snellius cluster. Experts at IT for Research can help you optimise your code to run more efficiently.",
     "crumbs": [
       "Snellius",
-      "Costs and Getting Access"
+      "Quick Start"
     ]
   },
   {
-    "objectID": "tools/snellius/cost_access.html#how-to-request-access",
-    "href": "tools/snellius/cost_access.html#how-to-request-access",
-    "title": "Costs and Getting Access",
-    "section": "How to request access",
-    "text": "How to request access\nYou can request access via a form on the 🔒SURF service desk portal. There are 2 options:\n\n1. Direct institute contract\nThe VU has a contract with SURF for the usage of Snellius. Every VU researcher or master student can request Snellius SBUs (System Billing Units). The total amount available to the VU is limited however, you can request up to 500.000 CPU and/or 300.000 GPU SBUs per person, per year.\nThe SURF wiki provides some guidance on estimating the amount of SBUs you need. We recommend you start with the default 50.000 CPU and/or GPU SBUs. You can use the same form to request a top-up if you run out.\n\n\n2. NWO compute grant\nIf you have a large project involving more than 1.000.000 CPU and/or GPU SBUs you should apply for an NWO Large Compute applications grant.\nEach Snellius account is provided with 200GB Home space (backups available), apart from that 8TB of temporary fast scratch space is available for your calculations. If the Home space is not sufficient or you can request Project Space to store your data during your project. Note that the Project Space is not backed-up! Always make sure a copy of valuable data is also stored on a recommended storage system.\nNote that for large-scale GPU projects access the European LUMI supercomputer can also be requested by VU researcers. Obtaining compute time on LUMI.",
+    "objectID": "tools/snellius/contact_support.html",
+    "href": "tools/snellius/contact_support.html",
+    "title": "Support and Contact",
+    "section": "",
+    "text": "Research Support Handbook\n\n\n\n\nSURF offers limited direct support for researchers using Snellius. To ask a question create a ticket on the 🔒SURF Service Desk Portal.\nFor general questions on HPC please contact IT for Research.",
     "crumbs": [
       "Snellius",
-      "Costs and Getting Access"
+      "Support and Contact"
     ]
   },
   {
-    "objectID": "tools/snellius/cost_access.html#are-there-costs-involved",
-    "href": "tools/snellius/cost_access.html#are-there-costs-involved",
-    "title": "Costs and Getting Access",
-    "section": "Are there costs involved?",
-    "text": "Are there costs involved?\nThere are no direct costs for researchers, but be aware that “Direct institute contract” usage costs are billed to the faculties via KDM (“Kosten Doorbelasting Model”).",
+    "objectID": "tools/scisure/quick_start.html",
+    "href": "tools/scisure/quick_start.html",
+    "title": "Quick Start",
+    "section": "",
+    "text": "Research Support Handbook\n\n\n\n\n\nEach lab has its own onboaring and offboarding procedures. Please contact your lab’s key-user for more information on how to use SciSure.\nTo get started with SciSure, please see the Quick Start Guide\nFor more information regarding all SciSure products, such as inventory, protocols, or studies, see the Product Documentation",
     "crumbs": [
-      "Snellius",
-      "Costs and Getting Access"
+      "SciSure",
+      "Quick Start"
     ]
   },
   {
-    "objectID": "tools/scisure/index.html",
-    "href": "tools/scisure/index.html",
-    "title": "SciSure",
+    "objectID": "tools/scisure/contact_support.html",
+    "href": "tools/scisure/contact_support.html",
+    "title": "Support and Contact",
+    "section": "",
+    "text": "Research Support Handbook\n\n\n\n\nFor support, you can contact the SciSure key users of your department.\nFor technical support, SciSure key users can contact the RDM Support Desk or contact SciSure https://support.elabnext.com/hc/en-us/requests/new?request_type=support",
+    "crumbs": [
+      "SciSure",
+      "Support and Contact"
+    ]
+  },
+  {
+    "objectID": "tools/scistor/quick_start.html",
+    "href": "tools/scistor/quick_start.html",
+    "title": "Quick Start",
     "section": "",
     "text": "Research Support Handbook",
     "crumbs": [
-      "SciSure"
+      "SciStor",
+      "Quick Start"
     ]
   },
   {
-    "objectID": "tools/scisure/index.html#what-is-it",
-    "href": "tools/scisure/index.html#what-is-it",
-    "title": "SciSure",
+    "objectID": "tools/scistor/quick_start.html#connecting-to-your-project-folders",
+    "href": "tools/scistor/quick_start.html#connecting-to-your-project-folders",
+    "title": "Quick Start",
+    "section": "Connecting to your project folders",
+    "text": "Connecting to your project folders\n\nConnect to eduVPN\nMake sure you are connected to eduVPN institure access first. \nSelect Institute Access and follow the usual steps to login with your VUnetID.\nThen follow the instructions for your Operating System.\n\n\nMacOS\n\nOpen the Finder application\nIn the “Go” menu, pick “Connect to Server…” or press “⌘K”\nFill in: smb://scistor.vu.nl/shares\nClick “Connect”\nSelect “Registered User” if this is not yet selected\nFill in your VUnetID and password\nPress “Connect”. Optionally, tick the “Remember this password in my keychain” checkbox. After doing this, macOS will no longer ask for credentials the next time this connection is used.\n\nSciStor project folders appear on the left after opening the SciStor location. You may open the desired SciStor project folder by double-clicking it.\n\n\nWindows\n\nOpen Windows File Explorer\nRight-click on This PC and choose “Map network drive…””\nSelect a desired drive letter, for example S. In the Folder field you can enter the following: \\\\scistor.vu.nl\\shares\\&lt;the name of the project folder&gt;. Make sure the checkboxes are checked.\nClick “Finish”\nYou will now be asked to log in. This is not possible with your PIN code. Choose the “More choices” option, and log in with your VU email address and password\n\n\n\n‘Green’ Linux workspaces\nGreen Linux workplaces (supported by VU IT) have a connection to SciStor from home. All SciStor project folders can be found under the path /research.\n\n\nOther Linux workstations\nOther self-managed Linux workstations can connect to SciStor via the Samba protocol:\n$ sudo apt install cifs-utils\n$ sudo nano /etc/credentials/&lt;vunetID&gt;\n    # nano\nusername=&lt;vumail@vu.nl&gt;\npassword=&lt;your-vunet-password&gt; # you can put you password for convinence, otherwise you have to type your password everytime.\n$ sudo mkdir -p /data/VU/shares/&lt;name-of-your-folder&gt;\n$ sudo mount -t cifs //scistor.vu.nl/shares/&lt;name-of-your-folder&gt; /data/VU/shares/&lt;name-of-your-folder&gt; -o credentials=/etc/credentials/&lt;vunetID&gt;\nThe scistor project folder will be mounted at location: /data/VU/shares. To unmount it, simply do:\n$ sudo umount /data/VU/shares/&lt;name-of-your-folder&gt;\n\n\n\n\n\n\nNote\n\n\n\nThe path /data/VU/shares is just a suggestion, you can choose any mount path that suits your setup.",
+    "crumbs": [
+      "SciStor",
+      "Quick Start"
+    ]
+  },
+  {
+    "objectID": "tools/scistor/index.html",
+    "href": "tools/scistor/index.html",
+    "title": "SciStor",
+    "section": "",
+    "text": "Research Support Handbook",
+    "crumbs": [
+      "SciStor"
+    ]
+  },
+  {
+    "objectID": "tools/scistor/index.html#what-is-it",
+    "href": "tools/scistor/index.html#what-is-it",
+    "title": "SciStor",
     "section": "What is it?",
-    "text": "What is it?\nSciSure is an application that supports researchers with documenting experiments and results in a digital journal, inventory and protocols. The SciSure platform is hosted by SciSure.\nSciSure is used by three faculties at VU Amsterdam: BETA, FGB and ACTA. If you are interested in using SciSure, but it is not yet available in your department, please contact your VU organisational admin to discuss the possibilities.",
+    "text": "What is it?\nThe storage service SciStor is intended for cheaply storing large amounts of research data on campus.\nSciStor is hosted by IT for Research (ITvO) on the VU campus enabling a high-speed connection to lab equipment, laptops and workstations, the ADA HPC cluster and SciCloud. It can also be accessed off-campus.\nYour data is stored in a project folder with group-based access rights (read/write or read-only). Access rights can be set one level deep, so one folder could be used to host data from different subprojects.\nData is backed up daily with snapshots and replicated to a second location for disaster recovery, the documentation explains how.",
     "crumbs": [
-      "SciSure"
+      "SciStor"
     ]
   },
   {
-    "objectID": "tools/scisure/index.html#what-can-it-be-used-for",
-    "href": "tools/scisure/index.html#what-can-it-be-used-for",
-    "title": "SciSure",
+    "objectID": "tools/scistor/index.html#what-can-it-be-used-for",
+    "href": "tools/scistor/index.html#what-can-it-be-used-for",
+    "title": "SciStor",
     "section": "What can it be used for?",
-    "text": "What can it be used for?\nSciSure is used as a digital lab journal where you can track your results and share data recorded in experiments in the electronic lab notebook.\nExperiments are organised by projects; each project can contain multiple studies. SciSure can also be used to document your inventory, e.g. samples.\nNext to this, SciSure can be used to create and share protocols and to register and book equipment.",
+    "text": "What can it be used for?\n\nNetworked Drive\nBecause SciStor is connected to the VU on-campus network you can directly mount (map a network drive) SciStor project folders on your laptop and work as if the data is on a local disk.\n\n\nAccess off-campus\nAlthough SciStor is most useful on campus you can also access your project folders off-campus via EduVPN institute access.\n\n\nLab instruments\nIn many cases lab equipment can write data directly to SciStor. IT for Research can help you setup an automated and secure connection.\n\n\nStorage space for SciCloud servers\nSciCloud virtual servers are provisioned with a 20 to 50GB local disk. A SciStor project folder can be directly mounted on the server to increase storage for your application or directly access your source data for analysis.\n\n\nADA\nThe ADA HPC cluster is connected to SciStor via a high speed network. You can run your analysis software directly on your data and easily access the results on your laptop.\n\n\nSharing data\nBecause SciStor is mainly intended for high performance, on-campus use, access is only possible with a VUnetId. If you need to share data with non-VU researchers you could register them as an external employee or host a copy of the data on another storage platform like Research Drive or Yoda\n\n\nData life-cycle\nSciStor is meant for data you are actively working with. We recommend archiving datasets that are no langer actively used, but can’t be deleted, in Yoda. This ensures SciStor is used optimally and costs are kept down for your research group and the VU.",
     "crumbs": [
-      "SciSure"
+      "SciStor"
     ]
   },
   {
-    "objectID": "tools/scisure/cost_access.html",
-    "href": "tools/scisure/cost_access.html",
-    "title": "Costs and Getting Access",
+    "objectID": "tools/scistor/contact_support.html",
+    "href": "tools/scistor/contact_support.html",
+    "title": "Support and Contact",
     "section": "",
-    "text": "Research Support Handbook",
-    "crumbs": [
-      "SciSure",
-      "Costs and Getting Access"
-    ]
-  },
-  {
-    "objectID": "tools/scisure/cost_access.html#how-to-get-access",
-    "href": "tools/scisure/cost_access.html#how-to-get-access",
-    "title": "Costs and Getting Access",
-    "section": "How to get access?",
-    "text": "How to get access?\nEach lab has designated key-users with admin rights in SciSure. VU SciSure key users can invite new users to the project group. Users can login via SSO using their VU credentials: eLabNext.",
-    "crumbs": [
-      "SciSure",
-      "Costs and Getting Access"
-    ]
-  },
-  {
-    "objectID": "tools/scisure/cost_access.html#are-there-costs-involved",
-    "href": "tools/scisure/cost_access.html#are-there-costs-involved",
-    "title": "Costs and Getting Access",
-    "section": "Are there costs involved?",
-    "text": "Are there costs involved?\nCosts are based on active licence seats and are on a yearly basis for the faculties ACTA, FGB and BETA.\nThe way costs are charged is determined at the faculty level. For more information about costs, please contact your VU SciSure organisational admin.",
-    "crumbs": [
-      "SciSure",
-      "Costs and Getting Access"
-    ]
-  },
-  {
-    "objectID": "tools/scistor/snapshots-data-recovery.html",
-    "href": "tools/scistor/snapshots-data-recovery.html",
-    "title": "Data Recovery",
-    "section": "",
-    "text": "Research Support Handbook",
+    "text": "Research Support Handbook\n\n\n\n\nWondering if SciStor fits your research needs? Please contact IT for Research.\nNeed help? Please contact the IT Servicedesk.",
     "crumbs": [
       "SciStor",
-      "Documentation",
-      "Data Recovery"
-    ]
-  },
-  {
-    "objectID": "tools/scistor/snapshots-data-recovery.html#overview",
-    "href": "tools/scistor/snapshots-data-recovery.html#overview",
-    "title": "Data Recovery",
-    "section": "Overview",
-    "text": "Overview\nIf you’ve lost or accidentally modified a file, SciStor Snapshots can help you restore it quickly and easily. This guide provides step-by-step instructions for restoring files on Windows, macOS, and Linux.\nNeed assistance? If you’re unable to recover the file yourself, contact the IT for Research (ITvO) team:",
-    "crumbs": [
-      "SciStor",
-      "Documentation",
-      "Data Recovery"
-    ]
-  },
-  {
-    "objectID": "tools/scistor/snapshots-data-recovery.html#windows-difficulty-easy",
-    "href": "tools/scistor/snapshots-data-recovery.html#windows-difficulty-easy",
-    "title": "Data Recovery",
-    "section": "Windows (Difficulty: Easy)",
-    "text": "Windows (Difficulty: Easy)\nIf you don’t have access to a Windows machine, connect to Azure Virtual Desktop (AVD) and follow the instructions for mounting a project folder in Windows.\n\nSteps to Restore a File\n\nLocate the folder where your deleted or modified file was stored.\nRight-click in the folder window and select Properties. \nIn the Properties dialog, navigate to the “Previous Versions” tab.\nSelect the snapshot date from which you want to retrieve the file. \nA new File Explorer window will open, showing the files from that point in time. \nCopy or drag the file back to your current folder. \nThe file has been restored! You can now close the Previous Versions window.",
-    "crumbs": [
-      "SciStor",
-      "Documentation",
-      "Data Recovery"
-    ]
-  },
-  {
-    "objectID": "tools/scistor/snapshots-data-recovery.html#macos-difficulty-intermediate",
-    "href": "tools/scistor/snapshots-data-recovery.html#macos-difficulty-intermediate",
-    "title": "Data Recovery",
-    "section": "macOS (Difficulty: Intermediate)",
-    "text": "macOS (Difficulty: Intermediate)\nFor macOS users, you’ll need to use the command line (Terminal). If this seems too complicated, you can use Azure Virtual Desktop (AVD) and follow the Windows instructions instead.\n\nPrerequisites\nMount SciStor in Finder using ⌘+K.\nThe path depends on how you mounted SciStor:\n\nIf you mounted smb://scistor.vu.nl/shares, navigate to /Volumes/shares/&lt;projectfolder-name&gt;\nIf you mounted smb://scistor.vu.nl/shares/&lt;projectfolder-name&gt;, navigate to /Volumes/&lt;projectfolder-name&gt;\n\n\n\nSteps to Restore a File\n\nOpen Terminal and navigate to your mounted project folder:\n\ncd /Volumes/IT-ITVO-Scistor-Demo\n\nVerify your deleted file is missing:\n\nls\n# Output: 123.txt abc123 Archive.zip data_ro data_rw info rename shared_rw test.doc testme xyz456\n\nNavigate to the hidden .snapshot folder:\n\ncd .snapshot\n\n\n\n\n\n\nNote\n\n\n\nThis folder is protected and cannot be listed with ls -la or accessed through Finder, even with ⌘+G.\n\n\n\nList available snapshots:\n\nls\n# Output: auto.28851 auto.29982 auto.31962 auto.32805 auto.33083 auto.33361 auto.33638 auto.33918 auto.34198 auto.34479\n\nNavigate to the most recent snapshot (the last one in the list):\n\ncd auto.34479\nls\n# Output shows your deleted file: file_demo.txt\n\nRestore the file using rsync:\n\nrsync -rtlHOi file_demo.txt ../../.\n# Output: &gt;f+++++++ file_demo.txt\n\nVerify the restoration:\n\ncd ../../\nls\n# Your file is now restored!\n\n\n\n\n\n\nNote\n\n\n\nBe aware that IT-ITVO-Scistor-Demo is a project folder used to write this documentation, please replace this with your own project foldername.",
-    "crumbs": [
-      "SciStor",
-      "Documentation",
-      "Data Recovery"
-    ]
-  },
-  {
-    "objectID": "tools/scistor/snapshots-data-recovery.html#linux-difficulty-intermediate",
-    "href": "tools/scistor/snapshots-data-recovery.html#linux-difficulty-intermediate",
-    "title": "Data Recovery",
-    "section": "Linux (Difficulty: Intermediate)",
-    "text": "Linux (Difficulty: Intermediate)\nLinux works similarly to macOS, but the mount path depends on where you choose to mount your project folder. This example follows the default suggestion in the handbook.\n\nSteps to Restore a File\n\nNavigate to your project folder:\n\ncd /data/VU/shares/\n\nVerify your file is missing:\n\nls\n# Output: 123.txt abc123 Archive.zip data_ro data_rw info rename shared_rw test.doc testme xyz456\n\nNavigate to the .snapshot folder:\n\ncd .snapshot/\n\nView available snapshots (you can use tab completion):\n\ncd auto.\n# Tab completion shows: auto.28851/ auto.29982/ auto.31962/ auto.32805/ auto.33083/ auto.33361/ auto.33638/ auto.33918/ auto.34198/ auto.34479/\n\nEnter the most recent snapshot:\n\ncd auto.34479/\n\nRestore the file using rsync:\n\nrsync -rtlHOi file_demo.txt ../../.\n# Output: &gt;f+++++++++ file_demo.txt\n\nVerify the restoration:\n\ncd ../../\nls\n# Your file is now restored!\n\n\n\n\n\n\nNote\n\n\n\nBe aware that IT-ITVO-Scistor-Demo is a project folder used to write this documentation, please replace this with your own project folder.",
-    "crumbs": [
-      "SciStor",
-      "Documentation",
-      "Data Recovery"
-    ]
-  },
-  {
-    "objectID": "tools/scistor/snapshots-data-recovery.html#tips-best-practices",
-    "href": "tools/scistor/snapshots-data-recovery.html#tips-best-practices",
-    "title": "Data Recovery",
-    "section": "Tips & Best Practices",
-    "text": "Tips & Best Practices\n\nSnapshots are read-only: You cannot modify files within the .snapshot folder.\nMost recent snapshot: The snapshot with the highest number is typically the most recent.\nMultiple snapshots: You can browse different snapshots to find the version of your file you need.\nEntire folders: You can restore entire directories using the same rsync method.\nLocation of Snapshots: Snapshots are always in the top level project folder, subfolders contain empty snapshots.",
-    "crumbs": [
-      "SciStor",
-      "Documentation",
-      "Data Recovery"
-    ]
-  },
-  {
-    "objectID": "tools/scistor/snapshots-data-recovery.html#still-need-help",
-    "href": "tools/scistor/snapshots-data-recovery.html#still-need-help",
-    "title": "Data Recovery",
-    "section": "Still Need Help?",
-    "text": "Still Need Help?\nContact IT for Research (ITvO) team.",
-    "crumbs": [
-      "SciStor",
-      "Documentation",
-      "Data Recovery"
-    ]
-  },
-  {
-    "objectID": "tools/scistor/how_does_scistor_work.html",
-    "href": "tools/scistor/how_does_scistor_work.html",
-    "title": "How does SciStor work?",
-    "section": "",
-    "text": "Research Support Handbook\nSciStor is VU Amsterdam’s on-premises scientific storage solution, designed for active research data management. It provides structured, permission-controlled storage with built-in data protection for research teams operating under VU Amsterdam’s faculty structure.",
-    "crumbs": [
-      "SciStor",
-      "Documentation",
-      "How does SciStor work?"
-    ]
-  },
-  {
-    "objectID": "tools/scistor/how_does_scistor_work.html#data-protection",
-    "href": "tools/scistor/how_does_scistor_work.html#data-protection",
-    "title": "How does SciStor work?",
-    "section": "Data Protection",
-    "text": "Data Protection\n\nSnapshots\nSciStor provides point-in-time snapshots of stored data at no additional cost. Snapshots enable file versioning and recovery without requiring separate backup infrastructure.\n\n\n\nFrequency\nRetention period\n\n\n\n\nDaily\n1 week\n\n\nWeekly\n4 weeks\n\n\n\nThe Data Recovery page explains how you can restore data from the snaphots yourself.\n\n\n\n\n\n\nNote\n\n\n\nUpon deletion of a file, the corresponding snapshot will continue to consume storage space until the snapshot retention period expires. Storage capacity is not immediately reclaimed following deletion.\n\n\n\n\nFailover System\nSciStor operates a replication-based failover system in which data from the primary on-campus node is continuously mirrored to a secondary node located off-campus. In the event of a major infrastructure incident, the secondary node ensures data availability and integrity.",
-    "crumbs": [
-      "SciStor",
-      "Documentation",
-      "How does SciStor work?"
-    ]
-  },
-  {
-    "objectID": "tools/scistor/how_does_scistor_work.html#project-folder-structure",
-    "href": "tools/scistor/how_does_scistor_work.html#project-folder-structure",
-    "title": "How does SciStor work?",
-    "section": "Project Folder Structure",
-    "text": "Project Folder Structure\nAccess control in SciStor is organised across two levels.\nLevel 0 — Main Folder is automatically provisioned for all users with read-only permissions. This ensures that all team members can locate and navigate to the Project Folder.\nLevel 1 — Subfolders allow granular, per-folder access control. Each subfolder may be assigned one of the following permission levels:\n\n\n\nPermission\nDescription\n\n\n\n\nR\nRead-only access\n\n\nRW\nRead and write access\n\n\n\n\nExample Structure\n/BETA-CS-PROJECT1/        [RW: Root;   R: vunet1, ..., vunetN]\n├── raw_data/             [RW: vunet1, vunet2;   R: vunet3, ..., vunetN]\n├── processed_data/       [RW: vunet1, ..., vunetN;   R: —]\n├── analysis/             [RW: vunet1, ..., vunetN;   R: —]\n└── results/              [RW: vunet1, ..., vunetN;   R: —]",
-    "crumbs": [
-      "SciStor",
-      "Documentation",
-      "How does SciStor work?"
+      "Support and Contact"
     ]
   },
   {
@@ -810,7 +662,7 @@
     "href": "tools/scistor/cost_access.html#permissions-management-and-adding-users",
     "title": "Costs and Getting Access",
     "section": "Permissions Management and adding users",
-    "text": "Permissions Management and adding users\n\nThe user who submits the Project Folder creation request is designated as the folder’s owner or primary administrator.\nThe owner holds read-write access to all subfolders by default.\nPermission modifications may only be initiated by the folder owner or a designated administrator.\nAll such requests must be submitted to the IT Service Desk via 🔒 ServiceNow, go to: IT &gt; My work field &gt; Research &gt; SciStor &gt; Change SciStor access rights. Specify the relevant folder, user account, and desired permission level.\n\nYou can find an explanation of the pemission structure in the documentation",
+    "text": "Permissions Management and adding users\n\nThe user who submits the Project Folder creation request is designated as the folder’s owner or primary administrator.\nThe owner holds read-write access to all subfolders by default.\nPermission modifications may only be initiated by the folder owner or a designated administrator.\nAll such requests must be submitted to the IT Service Desk via 🔒 ServiceNow, go to: IT &gt; My work field &gt; Research &gt; SciStor &gt; Change SciStor access rights. Specify the relevant folder, user account, and desired permission level.\n\nYou can find an explanation of the permission structure in the documentation",
     "crumbs": [
       "SciStor",
       "Costs and Getting Access"
@@ -7128,217 +6980,389 @@
     ]
   },
   {
-    "objectID": "tools/scistor/contact_support.html",
-    "href": "tools/scistor/contact_support.html",
-    "title": "Support and Contact",
+    "objectID": "tools/scistor/wrap_up.html",
+    "href": "tools/scistor/wrap_up.html",
+    "title": "Wrapping up",
     "section": "",
-    "text": "Research Support Handbook\n\n\n\n\nWondering if SciStor fits your research needs? Please contact IT for Research.\nNeed help? Please contact the IT Servicedesk.",
+    "text": "Research Support Handbook\n\n\n\n\nWhen a project ends or you no longer need the storage, you can terminate the SciStor project through this form: Request to terminate SciStor.\nBefore terminating your SciStor project folder we recommend archiving data that you would like to preserve in Yoda.",
     "crumbs": [
       "SciStor",
-      "Support and Contact"
+      "Documentation",
+      "Wrapping up"
     ]
   },
   {
-    "objectID": "tools/scistor/index.html",
-    "href": "tools/scistor/index.html",
-    "title": "SciStor",
+    "objectID": "tools/scistor/how_does_scistor_work.html",
+    "href": "tools/scistor/how_does_scistor_work.html",
+    "title": "How does SciStor work?",
+    "section": "",
+    "text": "Research Support Handbook\nSciStor is VU Amsterdam’s on-premises scientific storage solution, designed for active research data management. It provides structured, permission-controlled storage with built-in data protection for research teams operating under VU Amsterdam’s faculty structure.",
+    "crumbs": [
+      "SciStor",
+      "Documentation",
+      "How does SciStor work?"
+    ]
+  },
+  {
+    "objectID": "tools/scistor/how_does_scistor_work.html#data-protection",
+    "href": "tools/scistor/how_does_scistor_work.html#data-protection",
+    "title": "How does SciStor work?",
+    "section": "Data Protection",
+    "text": "Data Protection\n\nSnapshots\nSciStor provides point-in-time snapshots of stored data at no additional cost. Snapshots enable file versioning and recovery without requiring separate backup infrastructure.\n\n\n\nFrequency\nRetention period\n\n\n\n\nDaily\n1 week\n\n\nWeekly\n4 weeks\n\n\n\nThe Data Recovery page explains how you can restore data from the snaphots yourself.\n\n\n\n\n\n\nNote\n\n\n\nUpon deletion of a file, the corresponding snapshot will continue to consume storage space until the snapshot retention period expires. Storage capacity is not immediately reclaimed following deletion.\n\n\n\n\nFailover System\nSciStor operates a replication-based failover system in which data from the primary on-campus node is continuously mirrored to a secondary node located off-campus. In the event of a major infrastructure incident, the secondary node ensures data availability and integrity.",
+    "crumbs": [
+      "SciStor",
+      "Documentation",
+      "How does SciStor work?"
+    ]
+  },
+  {
+    "objectID": "tools/scistor/how_does_scistor_work.html#project-folder-structure",
+    "href": "tools/scistor/how_does_scistor_work.html#project-folder-structure",
+    "title": "How does SciStor work?",
+    "section": "Project Folder Structure",
+    "text": "Project Folder Structure\nAccess control in SciStor is organised across two levels.\nLevel 0 — Main Folder is automatically provisioned for all users with read-only permissions. This ensures that all team members can locate and navigate to the Project Folder.\nLevel 1 — Subfolders allow granular, per-folder access control. Each subfolder may be assigned one of the following permission levels:\n\n\n\nPermission\nDescription\n\n\n\n\nR\nRead-only access\n\n\nRW\nRead and write access\n\n\n\n\nExample Structure\n/BETA-CS-PROJECT1/        [RW: Root;   R: vunet1, ..., vunetN]\n├── raw_data/             [RW: vunet1, vunet2;   R: vunet3, ..., vunetN]\n├── processed_data/       [RW: vunet1, ..., vunetN;   R: —]\n├── analysis/             [RW: vunet1, ..., vunetN;   R: —]\n└── results/              [RW: vunet1, ..., vunetN;   R: —]",
+    "crumbs": [
+      "SciStor",
+      "Documentation",
+      "How does SciStor work?"
+    ]
+  },
+  {
+    "objectID": "tools/scistor/snapshots-data-recovery.html",
+    "href": "tools/scistor/snapshots-data-recovery.html",
+    "title": "Data Recovery",
     "section": "",
     "text": "Research Support Handbook",
     "crumbs": [
-      "SciStor"
+      "SciStor",
+      "Documentation",
+      "Data Recovery"
     ]
   },
   {
-    "objectID": "tools/scistor/index.html#what-is-it",
-    "href": "tools/scistor/index.html#what-is-it",
-    "title": "SciStor",
+    "objectID": "tools/scistor/snapshots-data-recovery.html#overview",
+    "href": "tools/scistor/snapshots-data-recovery.html#overview",
+    "title": "Data Recovery",
+    "section": "Overview",
+    "text": "Overview\nIf you’ve lost or accidentally modified a file, SciStor Snapshots can help you restore it quickly and easily. This guide provides step-by-step instructions for restoring files on Windows, macOS, and Linux.\nNeed assistance? If you’re unable to recover the file yourself, contact the IT for Research (ITvO) team:",
+    "crumbs": [
+      "SciStor",
+      "Documentation",
+      "Data Recovery"
+    ]
+  },
+  {
+    "objectID": "tools/scistor/snapshots-data-recovery.html#windows-difficulty-easy",
+    "href": "tools/scistor/snapshots-data-recovery.html#windows-difficulty-easy",
+    "title": "Data Recovery",
+    "section": "Windows (Difficulty: Easy)",
+    "text": "Windows (Difficulty: Easy)\nIf you don’t have access to a Windows machine, connect to Azure Virtual Desktop (AVD) and follow the instructions for mounting a project folder in Windows.\n\nSteps to Restore a File\n\nLocate the folder where your deleted or modified file was stored.\nRight-click in the folder window and select Properties. \nIn the Properties dialog, navigate to the “Previous Versions” tab.\nSelect the snapshot date from which you want to retrieve the file. \nA new File Explorer window will open, showing the files from that point in time. \nCopy or drag the file back to your current folder. \nThe file has been restored! You can now close the Previous Versions window.",
+    "crumbs": [
+      "SciStor",
+      "Documentation",
+      "Data Recovery"
+    ]
+  },
+  {
+    "objectID": "tools/scistor/snapshots-data-recovery.html#macos-difficulty-intermediate",
+    "href": "tools/scistor/snapshots-data-recovery.html#macos-difficulty-intermediate",
+    "title": "Data Recovery",
+    "section": "macOS (Difficulty: Intermediate)",
+    "text": "macOS (Difficulty: Intermediate)\nFor macOS users, you’ll need to use the command line (Terminal). If this seems too complicated, you can use Azure Virtual Desktop (AVD) and follow the Windows instructions instead.\n\nPrerequisites\nMount SciStor in Finder using ⌘+K.\nThe path depends on how you mounted SciStor:\n\nIf you mounted smb://scistor.vu.nl/shares, navigate to /Volumes/shares/&lt;projectfolder-name&gt;\nIf you mounted smb://scistor.vu.nl/shares/&lt;projectfolder-name&gt;, navigate to /Volumes/&lt;projectfolder-name&gt;\n\n\n\nSteps to Restore a File\n\nOpen Terminal and navigate to your mounted project folder:\n\ncd /Volumes/IT-ITVO-Scistor-Demo\n\nVerify your deleted file is missing:\n\nls\n# Output: 123.txt abc123 Archive.zip data_ro data_rw info rename shared_rw test.doc testme xyz456\n\nNavigate to the hidden .snapshot folder:\n\ncd .snapshot\n\n\n\n\n\n\nNote\n\n\n\nThis folder is protected and cannot be listed with ls -la or accessed through Finder, even with ⌘+G.\n\n\n\nList available snapshots:\n\nls\n# Output: auto.28851 auto.29982 auto.31962 auto.32805 auto.33083 auto.33361 auto.33638 auto.33918 auto.34198 auto.34479\n\nNavigate to the most recent snapshot (the last one in the list):\n\ncd auto.34479\nls\n# Output shows your deleted file: file_demo.txt\n\nRestore the file using rsync:\n\nrsync -rtlHOi file_demo.txt ../../.\n# Output: &gt;f+++++++ file_demo.txt\n\nVerify the restoration:\n\ncd ../../\nls\n# Your file is now restored!\n\n\n\n\n\n\nNote\n\n\n\nBe aware that IT-ITVO-Scistor-Demo is a project folder used to write this documentation, please replace this with your own project foldername.",
+    "crumbs": [
+      "SciStor",
+      "Documentation",
+      "Data Recovery"
+    ]
+  },
+  {
+    "objectID": "tools/scistor/snapshots-data-recovery.html#linux-difficulty-intermediate",
+    "href": "tools/scistor/snapshots-data-recovery.html#linux-difficulty-intermediate",
+    "title": "Data Recovery",
+    "section": "Linux (Difficulty: Intermediate)",
+    "text": "Linux (Difficulty: Intermediate)\nLinux works similarly to macOS, but the mount path depends on where you choose to mount your project folder. This example follows the default suggestion in the handbook.\n\nSteps to Restore a File\n\nNavigate to your project folder:\n\ncd /data/VU/shares/\n\nVerify your file is missing:\n\nls\n# Output: 123.txt abc123 Archive.zip data_ro data_rw info rename shared_rw test.doc testme xyz456\n\nNavigate to the .snapshot folder:\n\ncd .snapshot/\n\nView available snapshots (you can use tab completion):\n\ncd auto.\n# Tab completion shows: auto.28851/ auto.29982/ auto.31962/ auto.32805/ auto.33083/ auto.33361/ auto.33638/ auto.33918/ auto.34198/ auto.34479/\n\nEnter the most recent snapshot:\n\ncd auto.34479/\n\nRestore the file using rsync:\n\nrsync -rtlHOi file_demo.txt ../../.\n# Output: &gt;f+++++++++ file_demo.txt\n\nVerify the restoration:\n\ncd ../../\nls\n# Your file is now restored!\n\n\n\n\n\n\nNote\n\n\n\nBe aware that IT-ITVO-Scistor-Demo is a project folder used to write this documentation, please replace this with your own project folder.",
+    "crumbs": [
+      "SciStor",
+      "Documentation",
+      "Data Recovery"
+    ]
+  },
+  {
+    "objectID": "tools/scistor/snapshots-data-recovery.html#tips-best-practices",
+    "href": "tools/scistor/snapshots-data-recovery.html#tips-best-practices",
+    "title": "Data Recovery",
+    "section": "Tips & Best Practices",
+    "text": "Tips & Best Practices\n\nSnapshots are read-only: You cannot modify files within the .snapshot folder.\nMost recent snapshot: The snapshot with the highest number is typically the most recent.\nMultiple snapshots: You can browse different snapshots to find the version of your file you need.\nEntire folders: You can restore entire directories using the same rsync method.\nLocation of Snapshots: Snapshots are always in the top level project folder, subfolders contain empty snapshots.",
+    "crumbs": [
+      "SciStor",
+      "Documentation",
+      "Data Recovery"
+    ]
+  },
+  {
+    "objectID": "tools/scistor/snapshots-data-recovery.html#still-need-help",
+    "href": "tools/scistor/snapshots-data-recovery.html#still-need-help",
+    "title": "Data Recovery",
+    "section": "Still Need Help?",
+    "text": "Still Need Help?\nContact IT for Research (ITvO) team.",
+    "crumbs": [
+      "SciStor",
+      "Documentation",
+      "Data Recovery"
+    ]
+  },
+  {
+    "objectID": "tools/scisure/cost_access.html",
+    "href": "tools/scisure/cost_access.html",
+    "title": "Costs and Getting Access",
+    "section": "",
+    "text": "Research Support Handbook",
+    "crumbs": [
+      "SciSure",
+      "Costs and Getting Access"
+    ]
+  },
+  {
+    "objectID": "tools/scisure/cost_access.html#how-to-get-access",
+    "href": "tools/scisure/cost_access.html#how-to-get-access",
+    "title": "Costs and Getting Access",
+    "section": "How to get access?",
+    "text": "How to get access?\nEach lab has designated key-users with admin rights in SciSure. VU SciSure key users can invite new users to the project group. Users can login via SSO using their VU credentials: eLabNext.",
+    "crumbs": [
+      "SciSure",
+      "Costs and Getting Access"
+    ]
+  },
+  {
+    "objectID": "tools/scisure/cost_access.html#are-there-costs-involved",
+    "href": "tools/scisure/cost_access.html#are-there-costs-involved",
+    "title": "Costs and Getting Access",
+    "section": "Are there costs involved?",
+    "text": "Are there costs involved?\nCosts are based on active licence seats and are on a yearly basis for the faculties ACTA, FGB and BETA.\nThe way costs are charged is determined at the faculty level. For more information about costs, please contact your VU SciSure organisational admin.",
+    "crumbs": [
+      "SciSure",
+      "Costs and Getting Access"
+    ]
+  },
+  {
+    "objectID": "tools/scisure/index.html",
+    "href": "tools/scisure/index.html",
+    "title": "SciSure",
+    "section": "",
+    "text": "Research Support Handbook",
+    "crumbs": [
+      "SciSure"
+    ]
+  },
+  {
+    "objectID": "tools/scisure/index.html#what-is-it",
+    "href": "tools/scisure/index.html#what-is-it",
+    "title": "SciSure",
     "section": "What is it?",
-    "text": "What is it?\nThe storage service SciStor is intended for cheaply storing large amounts of research data on campus.\nSciStor is hosted by IT for Research (ITvO) on the VU campus enabling a high-speed connection to lab equipment, laptops and workstations, the ADA HPC cluster and SciCloud. It can also be accessed off-campus.\nYour data is stored in a project folder with group-based access rights (read/write or read-only). Access rights can be set one level deep, so one folder could be used to host data from different subprojects.\nData is backed up daily with snapshots and replicated to a second location for disaster recovery, the documentation explains how.",
+    "text": "What is it?\nSciSure is an application that supports researchers with documenting experiments and results in a digital journal, inventory and protocols. The SciSure platform is hosted by SciSure.\nSciSure is used by three faculties at VU Amsterdam: BETA, FGB and ACTA. If you are interested in using SciSure, but it is not yet available in your department, please contact your VU organisational admin to discuss the possibilities.",
     "crumbs": [
-      "SciStor"
+      "SciSure"
     ]
   },
   {
-    "objectID": "tools/scistor/index.html#what-can-it-be-used-for",
-    "href": "tools/scistor/index.html#what-can-it-be-used-for",
-    "title": "SciStor",
+    "objectID": "tools/scisure/index.html#what-can-it-be-used-for",
+    "href": "tools/scisure/index.html#what-can-it-be-used-for",
+    "title": "SciSure",
     "section": "What can it be used for?",
-    "text": "What can it be used for?\n\nNetworked Drive\nBecause SciStor is connected to the VU on-campus network you can directly mount (map a network drive) SciStor project folders on your laptop and work as if the data is on a local disk.\n\n\nAccess off-campus\nAlthough SciStor is most useful on campus you can also access your project folders off-campus via EduVPN institute access.\n\n\nLab instruments\nIn many cases lab equipment can write data directly to SciStor. IT for Research can help you setup an automated and secure connection.\n\n\nStorage space for SciCloud servers\nSciCloud virtual servers are provisioned with a 20 to 50GB local disk. A SciStor project folder can be directly mounted on the server to increase storage for your application or directly access your source data for analysis.\n\n\nADA\nThe ADA HPC cluster is connected to SciStor via a high speed network. You can run your analysis software directly on your data and easily access the results on your laptop.\n\n\nSharing data\nBecause SciStor is mainly intended for high performance, on-campus use, access is only possible with a VUnetId. If you need to share data with non-VU researchers you could register them as an external employee or host a copy of the data on another storage platform like Research Drive or Yoda\n\n\nData life-cycle\nSciStor is meant for data you are actively working with. We recommend archiving datasets that are no langer actively used, but can’t be deleted, in Yoda. This ensures SciStor is used optimally and costs are kept down for your research group and the VU.",
+    "text": "What can it be used for?\nSciSure is used as a digital lab journal where you can track your results and share data recorded in experiments in the electronic lab notebook.\nExperiments are organised by projects; each project can contain multiple studies. SciSure can also be used to document your inventory, e.g. samples.\nNext to this, SciSure can be used to create and share protocols and to register and book equipment.",
     "crumbs": [
-      "SciStor"
+      "SciSure"
     ]
   },
   {
-    "objectID": "tools/scistor/quick_start.html",
-    "href": "tools/scistor/quick_start.html",
-    "title": "Quick Start",
+    "objectID": "tools/snellius/cost_access.html",
+    "href": "tools/snellius/cost_access.html",
+    "title": "Costs and Getting Access",
     "section": "",
     "text": "Research Support Handbook",
     "crumbs": [
-      "SciStor",
-      "Quick Start"
+      "Snellius",
+      "Costs and Getting Access"
     ]
   },
   {
-    "objectID": "tools/scistor/quick_start.html#connecting-to-your-project-folders",
-    "href": "tools/scistor/quick_start.html#connecting-to-your-project-folders",
-    "title": "Quick Start",
-    "section": "Connecting to your project folders",
-    "text": "Connecting to your project folders\n\nConnect to eduVPN\nMake sure you are connected to eduVPN institure access first. \nSelect Institute Access and follow the usual steps to login with your VUnetID.\nThen follow the instructions for your Operating System.\n\n\nMacOS\n\nOpen the Finder application\nIn the “Go” menu, pick “Connect to Server…” or press “⌘K”\nFill in: smb://scistor.vu.nl/shares\nClick “Connect”\nSelect “Registered User” if this is not yet selected\nFill in your VUnetID and password\nPress “Connect”. Optionally, tick the “Remember this password in my keychain” checkbox. After doing this, macOS will no longer ask for credentials the next time this connection is used.\n\nSciStor project folders appear on the left after opening the SciStor location. You may open the desired SciStor project folder by double-clicking it.\n\n\nWindows\n\nOpen Windows File Explorer\nRight-click on This PC and choose “Map network drive…””\nSelect a desired drive letter, for example S. In the Folder field you can enter the following: \\\\scistor.vu.nl\\shares\\&lt;the name of the project folder&gt;. Make sure the checkboxes are checked.\nClick “Finish”\nYou will now be asked to log in. This is not possible with your PIN code. Choose the “More choices” option, and log in with your VU email address and password\n\n\n\n‘Green’ Linux workspaces\nGreen Linux workplaces (supported by VU IT) have a connection to SciStor from home. All SciStor project folders can be found under the path /research.\n\n\nOther Linux workstations\nOther self-managed Linux workstations can connect to SciStor via the Samba protocol:\n$ sudo apt install cifs-utils\n$ sudo nano /etc/credentials/&lt;vunetID&gt;\n    # nano\nusername=&lt;vumail@vu.nl&gt;\npassword=&lt;your-vunet-password&gt; # you can put you password for convinence, otherwise you have to type your password everytime.\n$ sudo mkdir -p /data/VU/shares/&lt;name-of-your-folder&gt;\n$ sudo mount -t cifs //scistor.vu.nl/shares/&lt;name-of-your-folder&gt; /data/VU/shares/&lt;name-of-your-folder&gt; -o credentials=/etc/credentials/&lt;vunetID&gt;\nThe scistor project folder will be mounted at location: /data/VU/shares. To unmount it, simply do:\n$ sudo umount /data/VU/shares/&lt;name-of-your-folder&gt;\n\n\n\n\n\n\nNote\n\n\n\nThe path /data/VU/shares is just a suggestion, you can choose any mount path that suits your setup.",
-    "crumbs": [
-      "SciStor",
-      "Quick Start"
-    ]
-  },
-  {
-    "objectID": "tools/scisure/contact_support.html",
-    "href": "tools/scisure/contact_support.html",
-    "title": "Support and Contact",
-    "section": "",
-    "text": "Research Support Handbook\n\n\n\n\nFor support, you can contact the SciSure key users of your department.\nFor technical support, SciSure key users can contact the RDM Support Desk or contact SciSure https://support.elabnext.com/hc/en-us/requests/new?request_type=support",
-    "crumbs": [
-      "SciSure",
-      "Support and Contact"
-    ]
-  },
-  {
-    "objectID": "tools/scisure/quick_start.html",
-    "href": "tools/scisure/quick_start.html",
-    "title": "Quick Start",
-    "section": "",
-    "text": "Research Support Handbook\n\n\n\n\n\nEach lab has its own onboaring and offboarding procedures. Please contact your lab’s key-user for more information on how to use SciSure.\nTo get started with SciSure, please see the Quick Start Guide\nFor more information regarding all SciSure products, such as inventory, protocols, or studies, see the Product Documentation",
-    "crumbs": [
-      "SciSure",
-      "Quick Start"
-    ]
-  },
-  {
-    "objectID": "tools/snellius/contact_support.html",
-    "href": "tools/snellius/contact_support.html",
-    "title": "Support and Contact",
-    "section": "",
-    "text": "Research Support Handbook\n\n\n\n\nSURF offers limited direct support for researchers using Snellius. To ask a question create a ticket on the 🔒SURF Service Desk Portal.\nFor general questions on HPC please contact IT for Research.",
+    "objectID": "tools/snellius/cost_access.html#how-to-request-access",
+    "href": "tools/snellius/cost_access.html#how-to-request-access",
+    "title": "Costs and Getting Access",
+    "section": "How to request access",
+    "text": "How to request access\nYou can request access via a form on the 🔒SURF service desk portal. There are 2 options:\n\n1. Direct institute contract\nThe VU has a contract with SURF for the usage of Snellius. Every VU researcher or master student can request Snellius SBUs (System Billing Units). The total amount available to the VU is limited however, you can request up to 500.000 CPU and/or 300.000 GPU SBUs per person, per year.\nThe SURF wiki provides some guidance on estimating the amount of SBUs you need. We recommend you start with the default 50.000 CPU and/or GPU SBUs. You can use the same form to request a top-up if you run out.\n\n\n2. NWO compute grant\nIf you have a large project involving more than 1.000.000 CPU and/or GPU SBUs you should apply for an NWO Large Compute applications grant.\nEach Snellius account is provided with 200GB Home space (backups available), apart from that 8TB of temporary fast scratch space is available for your calculations. If the Home space is not sufficient or you can request Project Space to store your data during your project. Note that the Project Space is not backed-up! Always make sure a copy of valuable data is also stored on a recommended storage system.\nNote that for large-scale GPU projects access the European LUMI supercomputer can also be requested by VU researcers. Obtaining compute time on LUMI.",
     "crumbs": [
       "Snellius",
-      "Support and Contact"
+      "Costs and Getting Access"
     ]
   },
   {
-    "objectID": "tools/snellius/quick_start.html",
-    "href": "tools/snellius/quick_start.html",
-    "title": "Quick Start",
-    "section": "",
-    "text": "Research Support Handbook\n\n\n\n\nThe SURF User Knowledge Base has lots of information to get you started.\nSURF organises regular “Introduction to Supercomputing” training sessions, these are free to attend for VU researchers. Please consult the SURF Agenda for dates and registration.\nNote that there is a free community partition available on the VU HPC cluser ADA, where you can refine your analysis scripts before running them on the more expensive Snellius cluster. Experts at IT for Research can help you optimise your code to run more efficiently.",
+    "objectID": "tools/snellius/cost_access.html#are-there-costs-involved",
+    "href": "tools/snellius/cost_access.html#are-there-costs-involved",
+    "title": "Costs and Getting Access",
+    "section": "Are there costs involved?",
+    "text": "Are there costs involved?\nThere are no direct costs for researchers, but be aware that “Direct institute contract” usage costs are billed to the faculties via KDM (“Kosten Doorbelasting Model”).",
     "crumbs": [
       "Snellius",
-      "Quick Start"
+      "Costs and Getting Access"
     ]
   },
   {
-    "objectID": "tools/researchdrive/contact_support.html",
-    "href": "tools/researchdrive/contact_support.html",
-    "title": "Support and Contact",
+    "objectID": "tools/snellius/index.html",
+    "href": "tools/snellius/index.html",
+    "title": "Snellius",
     "section": "",
-    "text": "Research Support Handbook\n\n\n\n\nWondering if Research Drive fits your research needs or questions about using Research Drive? Please contact the RDM Support Desk.",
+    "text": "Research Support Handbook",
+    "crumbs": [
+      "Snellius"
+    ]
+  },
+  {
+    "objectID": "tools/snellius/index.html#what-is-it",
+    "href": "tools/snellius/index.html#what-is-it",
+    "title": "Snellius",
+    "section": "What is it?",
+    "text": "What is it?\nSnellius is the National Supercomputer infrastructure hosted by SURF in Amsterdam.",
+    "crumbs": [
+      "Snellius"
+    ]
+  },
+  {
+    "objectID": "tools/snellius/index.html#what-can-it-be-used-for",
+    "href": "tools/snellius/index.html#what-can-it-be-used-for",
+    "title": "Snellius",
+    "section": "What can it be used for?",
+    "text": "What can it be used for?\n\nSimulation and modelling\nDo you work with large and complex models that require a lot of computing power? The National Supercomputer provides that with a large number of super-fast processors. The system is ideally suited for large-scale experiments, such as simulations and modelling. These require a lot of processing power and memory usage, but also communication between the different processors. An important feature of Snellius is its fast internal network.\n\n\nComputing power\nSnellius runs on Linux. Besides AMD processors, the system also features GPGPUs (General Purpose Graphics Processing Units). These accelerators combine the processing power of graphics cards (GPUs) with that of CPUs. In addition, Snellius has ‘fat nodes’ with more memory space (1 TB) and ‘high-memory nodes’ (4 TB and 8 TB of memory space).\n\n\nTools and libraries\nAs a researcher, you can make use of a large collection of tools, compilers and libraries.\nAre you doing research or experiments in the field of machine learning, e.g. neural networks? The libraries and tools on Snellius make it a lot easier.",
+    "crumbs": [
+      "Snellius"
+    ]
+  },
+  {
+    "objectID": "tools/researchdrive/cost_access.html",
+    "href": "tools/researchdrive/cost_access.html",
+    "title": "Costs and Getting Access",
+    "section": "",
+    "text": "Research Support Handbook",
     "crumbs": [
       "Research Drive",
-      "Support and Contact"
+      "Costs and Getting Access"
     ]
   },
   {
-    "objectID": "tools/researchdrive/quick_start.html",
-    "href": "tools/researchdrive/quick_start.html",
-    "title": "Quick Start",
-    "section": "",
-    "text": "Research Support Handbook\n\n\n\n\n\nLog in to the Research Drive web application at vu.data.surf.nl. You are only able to log in after you have been invited to one or more project folders. The login process requires a SURFsecureID Token for multi-factor authentication (MFA), which students do not have by default. If you do not yet have an SURFsecureID token, you can, as a VU student, researcher or employee, request an account at the IT Servicedesk in the main building with a legitimate ID.\nInstall the Nextcloud Client software, you can find installation instructions on the SURF User Knowledge Base. The Server Address is https://vu.data.surf.nl.\n\nFor transferring large amounts of data Rclone is good option. The SURF User Knowledge Base explains how.\nRclone can also be used to mount (make accessible via a drive letter in Windows) a Research Drive folder. This means you can directly access the data from tools such as R, without downloading the entire dataset first. This method has some limitations, but should work fine with smaller datasets (a few GB).\nThe SURF User Knowledge Base contains more Tutorials on working with Research Drive.",
+    "objectID": "tools/researchdrive/cost_access.html#how-to-get-access",
+    "href": "tools/researchdrive/cost_access.html#how-to-get-access",
+    "title": "Costs and Getting Access",
+    "section": "How to get access",
+    "text": "How to get access\n\nExisting project folder\nAsk the owner of the project folder to invite you.\n\n\nNew project folder\nA new Research Drive project folder can be requested via the form on 🔒 ServiceNow. Please note that because there can be costs involved (see below) you need to supply a budget code.\nOnce the project folder is created you can invite internal and external collaborators yourself. Please see the page on Managing groups, users and access rights for detailed instructions how to invite users and assign desired access rights.",
     "crumbs": [
       "Research Drive",
-      "Quick Start"
+      "Costs and Getting Access"
     ]
   },
   {
-    "objectID": "tools/scicloud/webproxy.html",
-    "href": "tools/scicloud/webproxy.html",
-    "title": "Accessing the Internet",
+    "objectID": "tools/researchdrive/cost_access.html#are-there-costs-involved",
+    "href": "tools/researchdrive/cost_access.html#are-there-costs-involved",
+    "title": "Costs and Getting Access",
+    "section": "Are there costs involved?",
+    "text": "Are there costs involved?\nThe costs of storing data in Research Drive are detailed in the Research and Archiving Storage Cost Model.",
+    "crumbs": [
+      "Research Drive",
+      "Costs and Getting Access"
+    ]
+  },
+  {
+    "objectID": "tools/researchdrive/index.html",
+    "href": "tools/researchdrive/index.html",
+    "title": "Research Drive",
+    "section": "",
+    "text": "Research Support Handbook",
+    "crumbs": [
+      "Research Drive"
+    ]
+  },
+  {
+    "objectID": "tools/researchdrive/index.html#what-is-it",
+    "href": "tools/researchdrive/index.html#what-is-it",
+    "title": "Research Drive",
+    "section": "What is it?",
+    "text": "What is it?\nSURF Research Drive is an online storage and collaboration platform for research data. With Research Drive you can easily store and share files with other researchers, inside and outside VU Amsterdam. You can access your data via a web interface or tools, from anywhere in the world.\nResearch Drive is based on the Open Source Nextcloud software and is hosted by SURF in their Amsterdam datacentre.",
+    "crumbs": [
+      "Research Drive"
+    ]
+  },
+  {
+    "objectID": "tools/researchdrive/index.html#what-can-it-be-used-for",
+    "href": "tools/researchdrive/index.html#what-can-it-be-used-for",
+    "title": "Research Drive",
+    "section": "What can it be used for?",
+    "text": "What can it be used for?\n\nData storage\nResearch Drive is a Cloud storage solution that can be used for small (a few GBs) to larger (a few TBs) datasets. Because it is a cloud storage platform you will need to download data to your laptop to work with it. Research Drive makes this easy by using the Nextcloud client, which allows you to automatically sync the folders you want to work with. Data is backed up daily.\n\n\nData sharing\nAs project owner you can invite internal and external collaborators yourself, or you can delegate this task to others.\nYou can set access rights to folders and subfolders yourself, making Research Drive ideal for use in collaborations with many institutions.\n\n\nSensitive data\nHosting at SURF and the use of Multi Factor Authentication (MFA), among other measures, makes Research Drive suitable for storing data that score Medium on confidentiality (see the Policy Classification of Research Data and the Research Data Classification Tool). Data that score High on confidentiality can be stored in Research Drive with additional security measures. Please make sure to contact the RDM Support Desk to check if further measures are needed.\n\n\nData life cycle\nResearch Drive is meant for data you are actively working with. We recommend to archive datasets that are no longer actively used, but can’t be deleted, in a repository. Transferring data from Research Drive to a repository ensures Research Drive is used optimally and costs are kept down for your research group and VU Amsterdam. Repositories that are available at VU Amsterdam are Yoda and DataverseNL. Yoda is suitable for all types of data, including personal data and other types of confidential data. DataverseNL is only suitable for data that can be made available publicly.\n\n\nCollaborative tools\nWithin Research Drive, various apps and integrations are available to simplify the use and handling of research data, such as a tool to edit documents directly in the web interface. You can find a current list of app integrations on the SURF User Knowledge Base.\n\n\nSURFdrive replacement\nSince both are based on Nextcloud, Research Drive is very similar to SURFdrive, the main difference is that SURFdrive is personal storage while Research Drive is group based.\nResearchers looking for a new home for research data currently on SURFdrive are encouraged to migrate to Research Drive. Manuals for migrating data to Research Drive are available in English and Dutch. Please contact the Research Support Desk if you have any questions about migrating to Research Drive.",
+    "crumbs": [
+      "Research Drive"
+    ]
+  },
+  {
+    "objectID": "tools/researchdrive/managing_access_rights.html",
+    "href": "tools/researchdrive/managing_access_rights.html",
+    "title": "Managing Groups, Users and Access Rights",
+    "section": "",
+    "text": "Research Support Handbook\nProject owners can invite internal and external collaborators to a project folder. Below you can find detailed instructions for this.",
+    "crumbs": [
+      "Research Drive",
+      "Documentation",
+      "Managing Groups, Users and Access Rights"
+    ]
+  },
+  {
+    "objectID": "tools/researchdrive/managing_access_rights.html#inviting-internal-and-external-collaborators",
+    "href": "tools/researchdrive/managing_access_rights.html#inviting-internal-and-external-collaborators",
+    "title": "Managing Groups, Users and Access Rights",
+    "section": "Inviting internal and external collaborators",
+    "text": "Inviting internal and external collaborators\nThe owner of the project folder can create new accounts and grant access through the following steps.\n\nInviting a new user\nIf a prospective user does not yet have a Research Drive account, the owner needs to invite them. Instructions for this process are in the current section. If a user does already have a Research Drive account, you can skip to the instructions about granting rights to groups and single users.\nAfter having logged into Research Drive, select in the top menu bar: Dashboard &gt; User accounts (2nd tab) &gt; Invite user.\n\n\n\nThe Research Drive top menu bar\n\n\nEnter the initials and last name and the email in the pop-up window, if available use the e-mail of their research institute or university.   All VU email accounts are automatically required to use Multi-Factor Authentication (MFA). This is most commonly done through the Tiqr or Azure app. VU students do not automatically have MFA activated on their account. They can set this up by visiting the IT ServiceDesk, bringing an official ID.\nContributors from outside VU Amsterdam will need to create an eduID account to log into Research Drive. An instruction on how to do this can be found on SURF’s Research Drive Wiki. Additionally, it is important to turn on the MFA step in the eduID account. This is a requirement to better protect the data stored in VU Research Drive. It is greatly preferred that external contributors use the email address provided to them by their institution or workplace. Research Drive functional managers discourage the use of personal email addresses.\n\n\nGranting access rights to groups\nThe best practice for Research Drive is to create groups (‘Teams’) to which roles and rights can be awarded. Using Teams, it is easier to keep track of which rights a group should have, and it is easier to revoke these rights as well. The steps to create a Team are as follows:\n\nClick on the ‘Contacts’ button on the Research Drive top bar.\nIn the left-hand side of the screen, click the ‘Plus’-icon next to Teams. This allows you to create a Team and name it descriptively.\nAdd the right users as members of the Team. You can also make existing Teams members of the new Team.\nNavigating back to the project folder, you can share appropriate files or folders with the correct Team(s).\n\nThis process is explained in more detail, with screenshots, in SURF’s wiki.\nThe following rights can be given out: \n\nCreate (Grants the ability to create new documents or upload them into a folder).\n\nEdit (Grants the ability to make alterations to documents). \nShare (this enables the user to invite new users to RD and afterward this user can grant them access to the parts of your project folder they have access to. In general, we discourage granting these rights. If many people have share rights, it can become difficult to have an overview of which user has access to the data, and revoking rights may also prove complicated).\nDelete (Grants the ability to delete files or folders. This right may not be necessary for most users to have).\n\nPlease also read the Do’s and Don’ts of Sharing to stick to the best practices of these functionalities, as formulated by SURF.\n\n\nGranting access rights to single users \nIt does happen sometimes that a single user, rather than a group, needs to get access to a specific (sub)folder or file. For example when individual contributors need to share data with you, but should not see each other’s data, so they get their own subfolder. When a new user has activated their account, you will receive an email confirming this. At this point you can grant them access to your entire project folder or only to a specific subfolder / several subfolders. After each folder or document you will see the term “Shared”. If you click on the term “Shared” you will see an overview of all users who have access rights to this folder or document.  By using the search function and selecting a user you can grant various rights (Can view/Can edit/Custom permissions) to this user. If the user needs specific rights you can click on “Custom permissions”. \nThe following rights can be given out: \n\nCreate (Grants the ability to create new documents or upload them into a folder).\n\nEdit (Grants the ability to make alterations to documents). \nShare (this enables the user to invite new users to RD and afterward this user can grant them access to the parts of your project folder they have access to. In general, we discourage granting these rights. If many people have share rights, it can become difficult to have an overview of which user has access to the data, and revoking rights may also prove complicated).\nDelete (Grants the ability to delete files or folders. This right may not be necessary for most users to have).\n\nPlease also read the Do’s and Don’ts of Sharing to stick to the best practices of these functionalities, as formulated by SURF.",
+    "crumbs": [
+      "Research Drive",
+      "Documentation",
+      "Managing Groups, Users and Access Rights"
+    ]
+  },
+  {
+    "objectID": "tools/scicloud/cost_access.html",
+    "href": "tools/scicloud/cost_access.html",
+    "title": "Costs and Getting Access",
     "section": "",
     "text": "Research Support Handbook",
     "crumbs": [
       "SciCloud",
-      "Documentation",
-      "Accessing the Internet"
+      "Costs and Getting Access"
     ]
   },
   {
-    "objectID": "tools/scicloud/webproxy.html#the-http-proxy",
-    "href": "tools/scicloud/webproxy.html#the-http-proxy",
-    "title": "Accessing the Internet",
-    "section": "The HTTP Proxy",
-    "text": "The HTTP Proxy\nSciCloud is a relatively open system, which allows researchers full control of the software running on the servers. However, most researchers are not system administrators or security experts. To prevent abuse of the servers you must connect to the internet via a Proxy Server. The Proxy Server allows IT to monitor outgoing traffic and to quickly block suspicious activity .\nThis means you might need a few extra steps to install software (applications, docker images, python packages, etc.) on the server.",
+    "objectID": "tools/scicloud/cost_access.html#how-to-request-access",
+    "href": "tools/scicloud/cost_access.html#how-to-request-access",
+    "title": "Costs and Getting Access",
+    "section": "How to request access",
+    "text": "How to request access\nVia a form on 🔒ServiceNow, go to: IT &gt; My work field &gt; Research &gt; SciCloud &gt; Order SciCloud capacity\nAfter you have requested a SciCloud virtual server, IT for Research will schedule an interview to discuss your wishes.\nThe Quick Start page explains how to access the server once it is online.",
     "crumbs": [
       "SciCloud",
-      "Documentation",
-      "Accessing the Internet"
+      "Costs and Getting Access"
     ]
   },
   {
-    "objectID": "tools/scicloud/webproxy.html#enable-the-proxy-for-your-current-ssh-session",
-    "href": "tools/scicloud/webproxy.html#enable-the-proxy-for-your-current-ssh-session",
-    "title": "Accessing the Internet",
-    "section": "Enable the proxy for your current SSH session",
-    "text": "Enable the proxy for your current SSH session\nUse the following command:\nexport http_proxy=http://proxy.labs.vu.nl:8080 https_proxy=http://proxy.labs.vu.nl:8080",
+    "objectID": "tools/scicloud/cost_access.html#are-there-costs-involved",
+    "href": "tools/scicloud/cost_access.html#are-there-costs-involved",
+    "title": "Costs and Getting Access",
+    "section": "Are there costs involved?",
+    "text": "Are there costs involved?\nConfigurations of a virtual server are based on standard “Building Blocks”, combinations of the following two options can be purchased:\n• Building Block 1: 1 CPU core with 2 GB RAM\n• Building Block 2: 1 CPU core with 4 GB RAM\nCosts are calculated as: €1 per CPU per month, €1 per GB memory per month, €0.40 per GB storage per year (minimum 20GB).",
     "crumbs": [
       "SciCloud",
-      "Documentation",
-      "Accessing the Internet"
+      "Costs and Getting Access"
     ]
   },
   {
-    "objectID": "tools/scicloud/webproxy.html#enable-for-specific-applications",
-    "href": "tools/scicloud/webproxy.html#enable-for-specific-applications",
-    "title": "Accessing the Internet",
-    "section": "Enable for specific applications",
-    "text": "Enable for specific applications\nIf your workflow necessitates frequent access or some automation, it is a good idea to set the proxy config for the software you use. Below are some examples for frequently used software on Ubuntu server. Other software that relies on an internet connection will have similar configurations.\n\ncurl\nCreate or add to ~/.curlc:\necho 'proxy=\"http://proxy.labs.vu.nl:8080\"' &gt;&gt; ~/.curlrc\n\n\nwget\nCreate or add to ~/.wgetrc:\necho -e \"Use_proxy = on\\nhttp_Proxy = http://proxy.labs.vu.nl:8080\\nhttps_Proxy = http://proxy.labs.vu.nl:8080\" &gt;&gt; ~/.wgetrc\n\n\ngit\nIf you work with git add it to the global configuration:\ngit config --global http.proxy http://proxy.labs.vu.nl:8080\n\n\nDocker\nCreate /etc/systemd/system/docker.service.d/http-proxy.conf if it does not exist yet.\nsudo nano /etc/systemd/system/docker.service.d/http-proxy.conf\nWith this content:\n[Service]\nEnvironment=\"HTTP_PROXY=http://proxy.labs.vu.nl:8080\"\nEnvironment=\"HTTPS_PROXY=http://proxy.labs.vu.nl:8080\"\nEnvironment=\"NO_PROXY=localhost,127.0.0.1\nReload:\nsystemctl daemon-reload\nsystemctl restart docker\nCheck the active configuration with:\nsystemctl show --property=Environment docker\n\n\nR\n\nVia console\nSys.setenv(\"ftp_proxy\"=\"http://proxy.labs.vu.nl:8080/\")\nSys.setenv(\"http_proxy\"=\"http://proxy.labs.vu.nl:8080\")\n\nSys.setenv(\"https_proxy\"=\"http://proxy.labs.vu.nl:8080\")\n\nSys.getenv()\n\n\nVia environment file\nUser:\necho -e \"http_proxy = http://proxy.labs.vu.nl:8080\\nhttps_proxy = http://proxy.labs.vu.nl:8080' &gt;&gt; ~/.Renviron\nGlobal:\necho -e \"http_proxy = http://proxy.labs.vu.nl:8080\\nhttps_proxy = http://proxy.labs.vu.nl:8080' &gt;&gt; /etc/R/Renviron.site",
-    "crumbs": [
-      "SciCloud",
-      "Documentation",
-      "Accessing the Internet"
-    ]
-  },
-  {
-    "objectID": "tools/scicloud/webapplications.html",
-    "href": "tools/scicloud/webapplications.html",
-    "title": "Running Web Applications",
+    "objectID": "tools/scicloud/containers.html",
+    "href": "tools/scicloud/containers.html",
+    "title": "Running Software in Containers",
     "section": "",
-    "text": "Research Support Handbook\nThis guide assumes you are running Linux. Unless your particular application does not support it, it is strongly recommended to run web applications on a Linux server, especially those based on Open Source technology.",
-    "crumbs": [
-      "SciCloud",
-      "Documentation",
-      "Running Web Applications"
-    ]
-  },
-  {
-    "objectID": "tools/scicloud/webapplications.html#domain-name",
-    "href": "tools/scicloud/webapplications.html#domain-name",
-    "title": "Running Web Applications",
-    "section": "Domain Name",
-    "text": "Domain Name\nIT for Research (ITvO) can easily configure a domain inside .labs.vu.nl for your server. It is also possible to use other custom domains, contact ITvO for advice.\n\nHTTPS\nA web application exposed to the internet should only be accessible by HTTPS. ITvO can configure automatically renewing Let’s Encrypt certificates for servers in the .labs.vu.nl domain.",
-    "crumbs": [
-      "SciCloud",
-      "Documentation",
-      "Running Web Applications"
-    ]
-  },
-  {
-    "objectID": "tools/scicloud/webapplications.html#nginx",
-    "href": "tools/scicloud/webapplications.html#nginx",
-    "title": "Running Web Applications",
-    "section": "NGINX",
-    "text": "NGINX\nThe ITvO Team recommends using NGINX as webserver, it is light-weight, secure and easy to maintain. ## Security Considerations\n\n\n\n\n\n\nWarning\n\n\n\nDo not store any (privacy) sensitive data on a server that is accessible from the internet unless you have discussed and implemented extra security measures with the ITvO team!",
-    "crumbs": [
-      "SciCloud",
-      "Documentation",
-      "Running Web Applications"
-    ]
+    "text": "Research Support Handbook\n\n\n\n\n\nServer OS: Linux"
   },
   {
     "objectID": "tools/scicloud/contact_support.html",
