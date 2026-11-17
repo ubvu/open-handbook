@@ -121,7 +121,7 @@ To use EESSI on ADA, load in either the eessi-2023.06, eessi-2025.06 or eessi-20
 Pixi provides reproducible, multi-language environments that work well on shared HPC systems. It automatically resolves dependencies across Python, R, Julia, and more, and stores environments alongside your project. Pixi is the preferred way to manage custom software stacks on ADA.
 
 ::: {.callout-tip title="Read: Pixi quick start"}
-Review the upstream [Pixi quick start guide](https://pixi.dev/docs/python/./) to see typical workflows and commands before building environments on ADA.
+Review the upstream [Pixi quick start guide](https://pixi.prefix.dev/latest/python/tutorial/) to see typical workflows and commands before building environments on ADA.
 :::
 
 ### Quick Start
@@ -149,7 +149,7 @@ Pixi retrieves packages from maintained channels (PyPI, conda-forge, CRAN, etc.)
 
 ### References
 
-- [Pixi documentation](https://pixi.dev/)
+- [Pixi documentation](https://pixi.prefix.dev/)
 - [Basic usage of Pixi](https://pixi.prefix.dev/latest/getting_started/)
 
 ## Apptainer Containers
