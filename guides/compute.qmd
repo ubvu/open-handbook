@@ -63,6 +63,31 @@ Data transfer
 Maintenance
 : Is there help available to fix problems with your software or do you have sufficient knowledge yourself? What other maintenance do you need to do on the environment? Are you using a script for a one-off task such as analysing a text document or do you need a web environment which has to run for years?
 
+## Matrix
+|  | PC | Virtual Desktop |  |  | HPC |  |  |  |
+|---|---|---|---|---|---|---|---|---|
+|  | Laptop | SciCloud | Research Cloud | AVD | ADA | Snellius | LUMI | Compute Hub |
+| Use GUI tools | y | y | y | y | l | n | n | l |
+| Use desktop tools | y | y | y | y | n | n | n | n |
+| Install software yourself | y | y | y | n | y | y | y | n |
+| Connect to SciStor | y | y | n | y | y | n | n | y |
+| Performance | * | ** | ** | * | *** | **** | ***** | ** |
+| Run 24/7 | n | y | y | n | ~ | ~  | ~  | ~ |
+| Remote working | y | y | y | y | y | y | y | y |
+| Scalable | n | y | y | n | y | y | y | n |
+| GPU | *  | * | ** | *  | ** | *** | ***** | ** |
+| Multi-user | n | y | y | n | y | y | y | y |
+| Windows | y | (y) | y | y | n | n | n | n |
+| Linux | y | y | y | y | y | y | y | y |
+| Hosting | n | y | y | n | n | n | n | n |
+| Backups?? | n | y | n | n |  |  |  |  |
+| Cost | * | * | * | 0 | 0 | ** |  |  |
+| Technical knowledge to use | * | * | * | * | *** | *** | *** | * |
+| Technical knowledge to set up | * | ** | *** (*) | - | - | - |  |  |
+| Coding skills necessary | n | n | n | n | y | y | y | y |
+| CLI skills necessary | n | n | n | n | y | y | y | n |
+| Barrier to entry | low | medium | medium | low |  |  |  |  |
+
 ## Laptops and Workstations
 > Typical workloads: Data transformation, Data analysis, Visualization.
 
