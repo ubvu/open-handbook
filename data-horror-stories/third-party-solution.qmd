@@ -1,0 +1,23 @@
+---
+title: Third-party solution
+---
+
+'We used a third-party tool to download data from the internet.'
+
+![Programming language on a computer screen](/public/third-party-solution.jpeg)
+
+#### Where does this story come from?
+
+VU Library – this story was told to us by Dr. Yasin Gunes
+
+#### Tell us your horror story, what happened?
+
+We used a third-party tool to download data from the internet, and it worked well, but halfway through the project the data provider updates some settings but the third-party tool did not, so the third-party tool stopped working and the maintainer was on vacation.
+
+#### Did you find a solution? How did this situation end?
+
+We made our own code last minute.
+
+#### Was there a lesson learned? How could this horror be avoided?
+
+Yes, be careful with what third-party packages you use, especially if it's not on a proper repository or not a famous one.

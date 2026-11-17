@@ -1,0 +1,21 @@
+website:
+  sidebar:
+    - id: sb-data-horror-stories
+      collapse-level: 4
+      contents:
+        - section: Data Horror Stories
+          href: data-horror-stories/index.qmd
+          contents:
+          - href: data-horror-stories/index.qmd
+            text: Data Horror Stories
+          - data-horror-stories/access-projects-data.qmd
+          - data-horror-stories/ocean-drilling-cores.qmd
+          - data-horror-stories/data-transfer-shopping-bags.qmd
+          - data-horror-stories/forgotten-collections.qmd
+          - data-horror-stories/infected-data.qmd
+          - data-horror-stories/interoperable-reusable-data.qmd
+          - data-horror-stories/taking-over-dataset.qmd
+          - data-horror-stories/validity-ai.qmd
+          - data-horror-stories/third-party-solution.qmd
+          - data-horror-stories/unexpected-results.qmd
+          - data-horror-stories/reproducible-personal-data.qmd

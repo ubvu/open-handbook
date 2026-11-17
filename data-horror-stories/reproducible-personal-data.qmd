@@ -1,0 +1,25 @@
+---
+title: Working reproducibly with personal data
+---
+
+'I wanted to get rid of this version and removed it from my workspace in OpenRefine, thinking that was a very clever thing to do. It wasn’t.'
+
+!(Person playing with Lego](/public/working-reproducibly.jpg)
+
+#### Where does this story come from?
+
+University Library, Research data support
+
+####Tell us your horror story, what happened? 
+
+I was working with survey data and had downloaded the raw data from the questionnaire platform that I had used. I was using an open-source tool called OpenRefine to clean the data, and one of the actions I performed was to remove several columns - some of them were information such as how the user had accessed the survey (not relevant for my project) but one of them was the column with contact details for those users who wanted to hear about the results of my survey. I needed those contact details, but I wanted to remove them from the dataset that I would work with, so I wouldn’t accidentally leak them. I then performed some data cleaning to standardise the input and use a comma separator, so that the data would be easier to analyse and there would be fewer bugs when writing the analysis scripts. Those were really important actions for which I used OpenRefine’s general expressions (and to their credit, it worked like a charm!). After exporting a cleaned version of the dataset, I went on and started the analysis. A few days later I realised that OpenRefine tracks the previous versions of the dataset and that the column containing the contact details was still in the file - just in a previous version, but if my laptop was breached, it would be easy to find (the raw data file that contains contact details was in an encrypted folder). I wanted to get rid of this version and removed it from my workspace in OpenRefine, thinking that was a very clever thing to do.
+It wasn’t.
+In order to ensure reproducibility of the project, I first should have exported the script of the cleaning actions that I had performed, which is an option in OpenRefine (and which makes it a good tool to work with). But I was so quick in wanting to get rid of this version, I completely forgot about it. Fortunately, in my case, I wasn’t planning to publish about this very small dataset in any meaningful way, so this isn’t an enormous problem. But as a research supporter who encourages researchers to save their scripts, it was definitely a teachable moment.
+
+#### Did you find a solution? 
+
+There was no solution: my data cleaning script was lost for posterity.
+#### Was there a lesson learned? 
+
+One thing I could have done to avoid the horror is to design a data cleaning protocol that takes into account that OpenRefine also saves previous versions of datasets *and* that this version should be removed AFTER exporting the cleaning script. I did learn from it in the sense that when I did something else in OpenRefine later on, I took this approach.
+Such a protocol can then be shared as part of the dataset documentation so that others can learn from it.
