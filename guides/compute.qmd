@@ -64,9 +64,10 @@ Maintenance
 : Is there help available to fix problems with your software or do you have sufficient knowledge yourself? What other maintenance do you need to do on the environment? Are you using a script for a one-off task such as analysing a text document or do you need a web environment which has to run for years?
 
 ## Matrix
-|  | PC | Virtual Desktop |  |  | HPC |  |  |  |
-|---|---|---|---|---|---|---|---|---|
+:::{.column-page}
+
 |  | Laptop | SciCloud | Research Cloud | AVD | ADA | Snellius | LUMI | Compute Hub |
+|---|---|---|---|---|---|---|---|---|
 | Use GUI tools | y | y | y | y | l | n | n | l |
 | Use desktop tools | y | y | y | y | n | n | n | n |
 | Install software yourself | y | y | y | n | y | y | y | n |
@@ -81,73 +82,42 @@ Maintenance
 | Linux | y | y | y | y | y | y | y | y |
 | Hosting | n | y | y | n | n | n | n | n |
 | Backups?? | n | y | n | n |  |  |  |  |
-| Cost | * | * | * | 0 | 0 | ** |  |  |
+| Direct cost | 0 | low | 0 | 0 | 0 | 0 |  |  |
 | Technical knowledge to use | * | * | * | * | *** | *** | *** | * |
 | Technical knowledge to set up | * | ** | *** (*) | - | - | - |  |  |
 | Coding skills necessary | n | n | n | n | y | y | y | y |
 | CLI skills necessary | n | n | n | n | y | y | y | n |
 | Barrier to entry | low | medium | medium | low |  |  |  |  |
 
+: Comparison of compute environments {.striped .hover}
+:::
+
 ## Laptops and Workstations
 > Typical workloads: Data transformation, Data analysis, Visualization.
 
 Desktops and laptops are the most common compute environment. They can be used for a wide range of tasks, but have limited performance.
-
-Pros:
-
-* Use GUI tools.
-* Install software yourself.
-* Connect to [SciStor](/tools/scistor/index.qmd).
-
-Cons:
-
-* Cannot host web applications on the internet.
-* Single user, only one person at a time can log in and run tasks.
 
 ### Laptop
 Every VU researcher has a digital workplace, by default this is a laptop (Windows or Mac). The small formfactor means a laptop will have limited CPU, RAM and GPU power, usually only enough for basic office tasks and light analysis tools.
 
 If the standard laptop is too slow for your tooling a more powerful [workstation laptop](https://services.vu.nl/esc?id=kb_article&table=kb_knowledge&sys_kb_id=588865b4874bc15010be65b40cbb3503) might help.
 
-Pros:
-
-* Available to you on campus or at home, install software and go.
-
-Cons:
-
-* Limited performance.
-* Can not run 24/7.
 
 ### Desktop PC
-[Desktop PCs](https://services.vu.nl/esc?id=kb_article&table=kb_knowledge&sysparm_article=KB0011799&sys_kb_id=288865b4874bc15010be65b40cbb3552&spa=1) have more powerful hardware. A better CPU, more RAM and a dedicated GPU. 
-
-Pros:
-
-* Possible to run 24/7.
-* More performance than a laptop.
-
-Cons:
-
-* Only availabe in "lab"-spaces on campus.
-* Limited remote accessibility.
+[Desktop PCs](https://services.vu.nl/esc?id=kb_article&table=kb_knowledge&sysparm_article=KB0011799&sys_kb_id=288865b4874bc15010be65b40cbb3552&spa=1) have more powerful hardware. A better CPU, more RAM and a dedicated GPU. At the VU they can only be installed in designated lab-spaces.
 
 ## Virtual Desktops and Servers
 
 ### Virtual Desktops
 > Typical workloads: Data transformation, Data analysis, Visualization.
 
-This is a Linux or Windows desktop or server running on a cloud environment. Users can access it using a Virtual Desktop Client and are presented with the familiar desktop interface. It can run Linux/Windows desktop applications.
+This is a Linux or Windows desktop or server running on a cloud environment. Users can access it using a Virtual Desktop Client and are presented with the familiar desktop interface. It can run Linux/Windows desktop applications. Graphical performance is more limited when using a remote desktop client. A virtual desktop is a good way to set up a collaborative environment with all the tools and data for a specific task, for example when working with a group of students.
 
-Pros:
+Example use-cases:
 
-* Use GUI tools, as available on a normal PC.
-* Accessible over the internet.
-* Possible to scale up the machine with extra CPU, GPU (if available) and RAM.
-* Multiple users can login and run tasks (depending on software).
-
-Cons:
-
-* Because you need to work with a Virtual Desktop Client, performance of visualisations will be lower.
+* An environment where students have all the tools ready for an analysis task.
+* A secure environment to work with sensitive data, so the data does not need to be copied to multiple laptops. 
+* An environment where you can keep desktop applications running overnight for intensive tasks.
 
 ### Virtual Servers
 > Typical workloads: Data gathering, Hosting Web Applications, Running Server Applications (Data Transformation, Data Analysis).
@@ -165,71 +135,28 @@ Example use-cases:
 * Running scripts that gather data from other sources, such as measurement instruments in the field.
 * ...and many more
 
-Pros:
-
-* Can run 24/7.
-* Can host web applications accessible to 3rd parties.
-* Accessible over the internet.
-* Possible to scale up the machine with extra CPU, GPU (if available) and RAM, or run multiple identical servers.
-* Multiple users can login and run tasks (depending on software).
 
 ### SURF Research Cloud (Desktop & Server)
-[Research Cloud](/tools/researchcloud/index.qmd) is usually used for server applications, but it is also possible to run Windows or Linux Desktops.
+[Research Cloud](/tools/researchcloud/index.qmd) is usually used for server applications, but it is also possible to run Windows or Linux Desktops. You need [credits](/tools/researchcloud/cost_access.qmd#a-wallet-with-credits), although for research projects an NWO small compute grant can usually be obtained. 
 
-Pros:
+You only use credits when the machines are running, this means Research Cloud is less suitable for hosting web applications that need to run 24/7.
 
-* Can be left running 24/7 (costs credits).
-* Windows or Linux.
-* Easier to spin up multiple identical servers.
-* Possible to use GUI desktop tools.
-* GPU can be added.
-* You can install software yourself.
-* Can host web applications for 3rd parties.
-* Make use of existing setups created by others. There is a collaborative catalog of installs, chances are someone will have figured out how to create a workspace with all the applications you need.
+The idea of Research Cloud is to automatically create and run machines when you need them, this means setting up applications is a more involved process. The upside of this way of working is that there is a growing catalog of environments available. For example, if you want to run a server with ASReview or Whisper you can start it with just a few clicks.
 
-Cons:
-
-* You need [credits](/tools/researchcloud/cost_access.qmd#a-wallet-with-credits), although for research projects an NWO small compute grant can usually be obtained.
-* You are responsible for backups yourself.
-* Knowledge needed on how to setup your environment if a premade setup is not avbailable(*).
-
-(*) Setup and maintenance of applications are your own responsibility. SURF and IT for Research can help you get started, time permitting. 
+Setup and maintenance of applications are your own responsibility. SURF and IT for Research can help you get started, time permitting. 
 
 ### SciCloud (Desktop & Server)
-[SciCloud](/tools/scicloud/index.qmd) is a VU-hosted platform where researchers can host virtual servers for their research applications. Like Research Cloud it is usually for server applications, but it can also be used to run a Desktop (Linux).
+[SciCloud](/tools/scicloud/index.qmd) is a VU-hosted platform where researchers can host virtual servers for their research applications. Like Research Cloud it is mainly meant for server applications, but it can also be used to run a Desktop (Linux).
 
-Pros:
+Unlike Research Cloud SciCloud uses a [low fixed price per month](/tools/scicloud/cost_access.qmd), which makes it a cheap option to run applications and websites 24/7.
 
-* Can be left running 24/7
-* [Low fixed price per month](/tools/scicloud/cost_access.qmd).
-* You can install software yourself.
-* Custom environments for working with highly senstive data are possible.
-* Daily backups (snapshots) made, available for 30 days.
-* Fast connection to [SciStor](/tools/scistor/index.qmd) possible.
+IT for Research will give you a machine with the basic OS installed. You are responsible for installing applications yourself, although ITvO will usually help you to get started.
 
-Cons:
-
-* More effort to setup a desktop environment (compared to [Research Cloud](#surf-research-cloud) and [Azure Virtual Desktop](#azure-virtual-desktop).
-* No GPU available (might change in the future).
-* Some server maintenance necessary (application & OS updates).
-* Knowledge needed on how to setup your environment(*).
-
-(*) IT for Research will only install the basic OS and automate OS updates. Setup and maintenance of applications is your own responsibility. Time permitting we will do our best to help you get started.
 
 ### Azure Virtual Desktop (Desktop only[^azure])
 An [Azure Virtual Desktop](https://services.vu.nl/esc?id=kb_article&sysparm_article=KB0011861&table=kb_knowledge) for research can be provided by IT, it is a virtual Windows PC running in the [Microsoft Azure](https://azure.microsoft.com/en-us) cloud environment. 
 
-Pros:
-
-* Custom environment for working with highly senstive data is possible.
-* Can connect to [SciStor](/tools/scistor/index.qmd).
-* No extra costs for you as researcher.
-
-Cons:
-
-* You cannot install software yourself.
-* Availability of software is limited.
-* Machines are turned off automatically at night.
+Only a limited amount of applications are installed and the machine will be automatically shut down outside of working hours.
 
 [^azure]: At the moment the VU Azure environment does not permit deploying virtual servers for research. You can of course pay for direct access to Azure, Amazon Web Services (AWA) or another cloud provider, but IT can offer no support. Make sure to discuss with a [Privacy Champion](/topics/gdpr.qmd) whether such an environment is suitable for sensitive data.
 
@@ -249,72 +176,22 @@ The basic idea is that you have compute nodes with lots of RAM, CPU and GPU. You
 
 The large amount of available compute resources mean it pays to figure out how to run your analysis in parallel tasks.
 
-Pros:
-
-* Large amounts of CPU, GPU and RAM resources available.
-* Accessible over the internet.
-* Optimal use of expensive hardware.
-
-Cons:
-
-* Learning curve, scripting and some commandline knowledge necessary. [Trainings](/tools/ada/index.qmd#training-and-external-resources) are available.
-* Limited availability of GUI tools.
-* Not suitable for server tasks that should run 24/7 like web applications.
-
 ### ADA (VU)
-Pros:
+[ADA](/tools/ada/index.qmd) is the compute cluster hosted on campus by IT for Research. All VU researchers can get an [account](/tools/ada/cost_access.qmd). The cluster has fast access to your data on SciStor. Access is mainly through the command-line, so some CLI skills are needed. A limited amount of GUI tools is available via [Open OnDemand](/tools/ada/open-ondemand.qmd).
 
-* Low barrier to entry, all VU researchers can get an [account](/tools/ada/cost_access.qmd).
-* No direct costs for you as a researcher.
-* Some web-based GUI applications available via [Open OnDemand](/tools/ada/open-ondemand.qmd).
-* Fast access to data on [SciStor](/tools/scistor/index.qmd).
-
-Cons:
-
-* Limited resources available, although you can [buy nodes](/tools/ada/dedicated-nodes.qmd) for your research group.
-* Limited availability of GPUs.
-
+There are only limited resources available, although you can [buy hardware](/tools/ada/dedicated-nodes.qmd) for your research group.
 
 ### Snellius (SURF)
-[Snellius](/tools/snellius/index.qmd) is the Dutch National supercomputer hosted at SURF. The VU has a contract with SURF so all researchers can request access to Snellius.
-
-Pros:
-
-* Low barrier to entry, all VU researchers can get an [account](/tools/snellius/cost_access.qmd) and credits.
-* No direct costs for you as a researcher.
-* More resources than ADA, including GPUs.
-
-Cons:
-
-* In order to have fast access to your data, you must copy it to Snellius first.
-* Not suitable for large-scale GPU usage.
-
+[Snellius](/tools/snellius/index.qmd) is the Dutch National supercomputer hosted at SURF. The VU has a contract with SURF so all researchers can [request access to Snellius](/tools/snellius/cost_access.qmd). There are no direct costs for researchersk, but the total amount of SBUs ("credits") is limited. To use your data on Snellius you need to copy it there first. Snellius has more GPU resources available.
 
 ### LUMI (European)
 Especially for large scale GPU project VU researcher can ask for access to the European [LUMI](https://servicedesk.surf.nl/wiki/display/WIKI/LUMI) cluster.
 
-The [SURF Wiki](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/102837156/Obtaining+compute+time#Obtainingcomputetime-ComparisonLUMItoSnellius) compares Snellius to LUMI
-
-Pros:
-
-* Suitable for large-scale GPU projects. 
-
-Cons:
-
-* Higher [barrier to entry](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/102837156/Obtaining+compute+time#Obtainingcomputetime-CallsforLUMIcomputetime).
+The [SURF Wiki](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/102837156/Obtaining+compute+time#Obtainingcomputetime-ComparisonLUMItoSnellius) compares Snellius to LUMI. Researchers wanting access to LUMI have to  follow an [application procedure](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/102837156/Obtaining+compute+time#Obtainingcomputetime-CallsforLUMIcomputetime)
+.
 
 ### VU ComputeHub for education 
-VU IT has built a [Jupyter Notebook environment](/tools/vucomputehub/index.qmd) meant mainly for Education purposes, but accessible for researchers as well. 
-
-Pros:
-
-* Graphical interface available for some applications.
-* GPU available.
-
-Cons:
-
-* Limited resources.
-* Limited amount of applications and modules available (but you can always ask the team to add something!).
+VU IT has built a [Jupyter Notebook environment](/tools/vucomputehub/index.qmd) meant mainly for Education purposes, but accessible for researchers as well. It runs a limited amount of GUI tools.
 
 ## Other environments
 ### OpenShift
@@ -322,13 +199,3 @@ Cons:
 
 OpenShift is an environment specifically created for running containers (see: @tip-containers). It is especially suitable for hosting static web applications. 
 
-Pros:
-
-* CI/CD pipelines, e.g. push code on Github/Gitlab and automatically deploy the latest version.
-* No need to worry about updating a (virtual) server.
-* Can host web applications for 3rd parties.
-* Can easily spin up multiple identical containers.
-
-Cons:
-
-* It takes extra work to make regular docker containers suitable for OpenShift.
