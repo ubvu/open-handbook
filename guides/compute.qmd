@@ -74,34 +74,32 @@ Maintenance
 
 : Is there help available to fix problems with your software or do you have sufficient knowledge yourself? What other maintenance do you need to do on the environment? Are you using a script for a one-off task such as analysing a text document or do you need a web environment which has to run for years?
 
-## Matrix
+## Comparison of main compute environments
+Below is a table comparing the main compute environments available to VU researchers. Below the table the options and their typical use-cases are explained further.
 
-::: column-page
+
 |   | PC | SciCloud | Research Cloud | ADA | Snellius | Compute Hub |
-|---------|:-------:|:-------:|:------:|:-------:|:-------:|:-------:|
-| Use GUI tools | y | y | y | l | n | l |
-| Use desktop tools | y | y | y | n | n | n |
-| Install software yourself | y | y | y | y | y | n |
-| Connect to SciStor | y | y | n | y | n | y |
-| Performance | \* | \*\* | \*\* | \*\*\* | \*\*\*\* | \*\* |
-| Run 24/7 | n | y | y | \~ | \~ | \~ |
-| Remote working | y | y | y | y | y | y |
-| Scalable | n | y | y | y | y | n |
-| GPU | \* | \* | \*\* | \*\* | \*\*\* | \*\* |
-| Multi-user | n | y | y | y | y | y |
-| Windows | y | \(y\) | y | n | n | n |
-| Linux | y | y | y | y | y | y |
-| Hosting | n | y | y | n | n | n |
-| Backups?? | n | y | n |  |  |  |
-| Direct cost | 0 | low | 0 | 0 | 0 |  |
-| Technical knowledge to use | \* | \* | \* | \*\*\* | \*\*\* | \* |
-| Technical knowledge to set up | \* | \*\* | \*\*\* (\*) | \- | \- |  |
-| Coding skills necessary | n | n | n | y | y | y |
-| CLI skills necessary | n | n | n | y | y | n |
-| Barrier to entry | low | medium | medium |  |  |  |
+|-----------|:---:|:---:|:---:|:---:|:---:|:---:|
+| Work with tools with a graphical interface or just command-line tools? (**y**es/**n**o/**l**imited) | y | y | y | l | n | l |
+| Work with familiar desktop tools? | y | y | y | n | n | n |
+| Install software yourself? | y | y | y | y | y | n |
+| Work with very large (TBs) datasets? | n | n | n | y | y | n |
+| Direct connection to SciStor? | y | y | n | y | n | y |
+| Performance | * | ** | ** | *** | **** | ** |
+| Run 24/7 | n | y | y | ~^[Your jobs can run 24/7, but HPC is not suitable for things like web applications.] | \~ | \~ |
+| Remote working | (y)^[If you work on a laptop] | y | y | y | y | y |
+| Scalable, can you easily add more compute power? | \- | \* | \* | \*\*\* | \*\*\* | \- |
+| GPU available? | \* | \* | \*\* | \*\* | \*\*\* | \*\* |
+| MS Windows available? | y | \(y\) | y | n | n | n |
+| Can host web/server applications? | n | y | y | n | n | n |
+| Direct cost^[billed to your department or your project] | - | * | - | - | - | - |
+| Technical skills needed? | * | ** | *** (*^[If the configuration you need is in the catalog]) | ** | ** | * |
+| Coding skills necessary? | n | n | n | y | y | y |
+| CLI skills necessary? | n | y | n | y | y | n |
+| Barrier to entry (**g**et started right away, **r**equest form, **c**ost center, **a**pply for credits) | g | rc | ra | r | r(a^[For large projects]) | g |
+| Work with sensitive data? (**y**es, **n**o, **p**ossible) | y^[On VU-provided hardware] | p^[A suitable environment can be set up by IT for Research] | p^[Extra secure environment can be set up by SURF] | n^[might change in the future] | n | n |
 
-: Comparison of compute environments
-:::
+: Comparison of compute environments {.striped .hover}
 
 ## Laptops and Workstations
 
