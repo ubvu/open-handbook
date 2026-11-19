@@ -474,7 +474,7 @@ The [Quarto tutorial](https://quarto.org/docs/get-started/hello/vscode.html) has
 
 ## Working on the {{< var title >}} in the command line
 
-In some cases, contributors may want to use the command line to make changes and preview the {{< var title >}} locally. This can be useful if you have basic coding skills in the command line and if you enjoy working with git in the command line. In any case, basic git and command line skills are useful for everybody! It also helps you to understand what's going on when you edit something on github.
+In some cases, contributors may want to use the command line to make changes and preview the {{< var title >}} locally. This can be useful if you have basic coding skills in the command line and if you enjoy working with git in the command line. In any case, basic git and command line skills are useful for everybody! It also helps you to understand what's going on when you edit something on GitHub.
 The procedures outlined below require some background knowledge on working (with git) in the command line. The resources below give more explanation:
 
 -   [Navigating Files and Directories](https://swcarpentry.github.io/shell-novice/02-filedir.html) and [Create a text file](https://swcarpentry.github.io/shell-novice/02-filedir.html) from the Carpentries' Unix Shell lesson.
@@ -490,7 +490,7 @@ Sometimes you may want to preview locally the changes you are making to the hand
 
 ``` sh
 # Go to the folder where you want to work on the handbook
-cd <folder-path> # do not copy the \< and \>
+cd <folder-path> # do not copy the `<` and `>`
 # Clone the git repository. This means you're downloading the repository and the edits (commits) history to your computer
 git clone git@github.com:ubvu/open-handbook.git
 # You can also clone a specific branch if you're already working on one
@@ -551,7 +551,7 @@ It happens from time to time that text that occurs in multiple locations needs t
 
 #### Step 1: Cloning or pulling the handbook repository and navigating to the folder
 
-If you don't already have the {{< var title >}} cloned locally (see also [above](#rendering-{{< var title >}}-locally)), you should clone the {{< var title >}}:
+If you don't already have the {{< var title >}} cloned locally (see also [above](#rendering-the-{{< var title >}}-locally)), you should clone the {{< var title >}}:
 
 `git clone git@github.com:ubvu/open-handbook.git`
 
@@ -566,7 +566,7 @@ Now navigate to the folder so you can start working in it:
 #### Step 2: Making changes
 
 Before you make any changes to the {{< var title >}}, make sure to open a new branch in which you can make your changes:
-```
+``` sh
 git branch url-replacement main
 git switch url-replacement # Now you switch over to the new branch
 ```
@@ -584,7 +584,7 @@ This command will give you an overview of the occurrences of the old URL. The ed
 In principle, you can choose any folder to save this file in and any file name. But make sure it makes sense so you can find it back easily. If you are not sure about navigating files and directories, you can find more information on the [Carpentries website](https://swcarpentry.github.io/shell-novice/02-filedir.html).
 
 Now write the for loop:
-```
+``` sh
 for file in */*.qmd
 do
 sed -i 's/old-url/new-url/g' $file
