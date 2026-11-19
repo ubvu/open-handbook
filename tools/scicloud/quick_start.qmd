@@ -23,7 +23,7 @@ To create a new SSH key pair do the following:
 ```sh
 ssh-keygen -t ed25519 -C "m.y.name@vu.nl" 
 ```
-Works on Linux, Mac and Windows command line. Make sure to enter a passphrase for enhanced security.
+Works on Linux, Mac and Windows command line. Make sure to enter a passphrase for enhanced security. Store the passphrase in a safe place, such as [Bitwarden](/topics/rdm-tools.qmd#bitwarden).
 
 You keep the private key yourself, store it in `/home/<username>/.ssh/` (in Windows `%USERPROFILE%/.ssh/`). The ITvO team will ask for your Public Key.
 
