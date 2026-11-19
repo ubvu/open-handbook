@@ -1,18 +1,19 @@
 ---
 title: How can you choose the right compute environment?
+description: "Learn which compute environment suits your research tasks."
 categories: ["Process & Analyse"]
 ---
 
-This pages aims to give an overview of the compute environments available for VU researchers. By compute we mean environments where you can run tools to work with research data, such as:
+This pages aims to give an overview of the compute environments available for VU researchers to perform research-related tasks. By compute we mean environments where you can run tools to work with research data, such as:
 
-- Data gathering.
-- Data transformation.
-- Data analysis.
-- Hosting web applications.
-- Running (licensed) server applications.
-- Visualization.
+- Data gathering
+- Data transformation
+- Data analysis
+- Hosting web applications
+- Running (licensed) server applications
+- Visualisation
 
-## Considerations for choosing a environment
+## Technical considerations for choosing an environment
 
 The amount of data you need to work with
 
@@ -20,35 +21,35 @@ The amount of data you need to work with
 
 Processing time
 
-: Besides the amount of data other factors can affect the time it takes for your tasks to run. A more performant system will speed up processing. If the task takes more than a workday you must ensure it can keep running.
+: Besides the amount of data, other factors can affect the time it takes for your tasks to run. A more performant system will speed up processing. If the task takes more than a workday you must ensure it can keep running.
 
 Your coding skills
 
-: Are you able to develop scripts to automate your analysis workflow or even to optimize those scripts?
+: Are you able to develop scripts to automate your analysis workflow or even to optimise those scripts?
 
 Software requirements
 
-: Can the software be installed on the Operating System? Does your workflow depend on specific software with a GUI (Graphical User Interface)? If your favorite software is not available, are there altenatives? If you have written your own software, can all its dependencies be installed on the environment?
+: Can the software be installed on the Operating System (OS) you use? Does your workflow depend on specific software with a GUI (Graphical User Interface)? If your favorite software is not available, are there altenatives? If you have written your own software, can all its dependencies be installed on the environment?
 
 ::: {#tip-containers .callout-tip title="OS-level virtualization: Containers"}
 To avoid conflicting requirements for different pieces of software, running the software in a [container](https://en.wikipedia.org/wiki/OS-level_virtualization) might be a solution. This way the application can run inside its own OS with any software dependencies. This approach has a number of advantages:
 
-- Easier to spin up multiple instances of an application.
-- Platform independent, easy to develop on your laptop and then deploy somewhere else.
-- More reproducible, your Docker and compose files document your setup and make it easier for others to setup the exact same environment.
-- Can use software dependencies that cannot be directly installed on the system.
-- Things don't break as easily on OS updates.
+- Easier to spin up multiple instances of an application
+- Platform-independent; easy to develop on your laptop and then deploy somewhere else
+- More reproducible; your Docker and compose files document your setup and make it easier for others to setup the exact same environment
+- Can use software dependencies that cannot be directly installed on the system
+- Things don't break as easily on OS updates
 
-Popular open source platforms are [Docker](https://www.docker.com/) and [Podman](https://podman.io/). If you are starting out with containers IT for Research suggests learning Podman.
+Popular open source platforms are [Docker](https://www.docker.com/) and [Podman](https://podman.io/). If you are starting out with containers, IT for Research suggests learning Podman.
 
 You can run containers on [SciCloud](/tools/scicloud/index.qmd), [SURF Research Cloud](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/74225031/Creating+a+Docker+Compose+catalog+item), [OpenShift](#openshift) and [ADA](/tools/ada/software.qmd#apptainer-containers).
 :::
 
 GPUs
 
-: Some tasks run a lot faster on systems with a GPU (Graphical Processing Unit). Such as using and training Large Language Models (LLMs).
+: Some tasks run a lot faster on systems with a GPU (Graphical Processing Unit), such as using and training Large Language Models (LLMs).
 
-(Privacy) sensitive data
+(Privacy-)sensitive data
 
 : Not all environments are suitable for sensitive data and in some cases extra measures need to be taken to make the environment suitable.
 
@@ -56,7 +57,11 @@ Availability
 
 : Does the software need to keep running 24/7? Does the software (such as a web app) need to be accessible over the internet?
 
-### Other considerations
+Data transfer
+
+: If the storage facility your data is on is not connected directly to the environment, you will need to copy the data first.
+
+## Other considerations
 
 Learning curve
 
@@ -65,10 +70,6 @@ Learning curve
 Reproducibility
 
 : Can a future researcher recreate the exact same environment?
-
-Data transfer
-
-: If the storage your data is on is not connected directly to the environment you will need to copy the data first.
 
 Maintenance
 
@@ -104,7 +105,7 @@ Below is a table comparing the main compute environments available to VU researc
 
 ## Laptops and Workstations
 
-> Typical workloads: Data transformation, Data analysis, Visualization.
+> Typical tasks: Data transformation, Data analysis, Visualisation.
 
 Desktops and laptops are the most common compute environment. They can be used for a wide range of tasks, but have limited performance.
 
@@ -112,47 +113,47 @@ Desktops and laptops are the most common compute environment. They can be used f
 
 Every VU researcher has a digital workplace, by default this is a laptop (Windows or Mac). The small formfactor means a laptop will have limited CPU, RAM and GPU power, usually only enough for basic office tasks and light analysis tools.
 
-If the standard laptop is too slow for your tooling a more powerful [workstation laptop](https://services.vu.nl/esc?id=kb_article&table=kb_knowledge&sys_kb_id=588865b4874bc15010be65b40cbb3503) might help.
+If the standard laptop is too slow for your tooling, a more powerful [workstation laptop](https://services.vu.nl/esc?id=kb_article&table=kb_knowledge&sys_kb_id=588865b4874bc15010be65b40cbb3503) might help.
 
 ### Desktop PC
 
-[Desktop PCs](https://services.vu.nl/esc?id=kb_article&table=kb_knowledge&sysparm_article=KB0011799&sys_kb_id=288865b4874bc15010be65b40cbb3552&spa=1) have more powerful hardware. A better CPU, more RAM and a dedicated GPU. At the VU they can only be installed in designated lab-spaces.
+[Desktop PCs](https://services.vu.nl/esc?id=kb_article&table=kb_knowledge&sysparm_article=KB0011799&sys_kb_id=288865b4874bc15010be65b40cbb3552&spa=1) have more powerful hardware. A better CPU, more RAM and a dedicated GPU. At VU Amsterdam they can only be installed in designated lab-spaces.
 
 ## Virtual Desktops and Servers
 
 ### Virtual Desktops
 
-> Typical workloads: Data transformation, Data analysis, Visualization.
+> Typical tasks: Data transformation, Data analysis, Visualisation.
 
 This is a Linux or Windows desktop or server running on a cloud environment. Users can access it using a Virtual Desktop Client and are presented with the familiar desktop interface. It can run Linux/Windows desktop applications. Graphical performance is more limited when using a remote desktop client.
 
 Example use-cases:
 
-- An environment where students have all the tools ready for an analysis task.
-- A secure environment to work with sensitive data, so the data does not need to be copied to multiple laptops.
-- An environment where you can keep desktop applications running overnight for intensive tasks.
+- An environment where students have all the tools ready for an analysis task
+- A secure environment to work with sensitive data, so the data does not need to be copied to multiple laptops
+- An environment where you can keep desktop applications running overnight for intensive tasks
 
 ### Virtual Servers
 
-> Typical workloads: Data gathering, Hosting Web Applications, Running Server Applications (Data Transformation, Data Analysis).
+> Typical tasks: Data gathering, Hosting Web Applications, Running Server Applications (Data Transformation, Data Analysis).
 
 Used to host web and other server applications. Could also be used for data analysis tasks, but [HPC](#hpc) is generally better for that use-case. Virtual servers can be scaled to your needs, run 24/7 and made accessible for multiple users, even over the internet. This kind of setup is sometimes called a VRE (Virtual Research Environment). The advantage of a virtual over a [physical server](#physical-servers) is that you can easily allocate more resources (storage, CPU, GPU and RAM) to the server.
 
 Example use-cases:
 
-- Hosting [Shiny](https://shiny.posit.co/) apps.
-- Hosting a custom database with a web interface.
-- Hosting a custom chat application to gather data from participants.
-- Hosting licensed software necessary for your lab equipment.
-- Hosting [ASReview](https://asreview.nl/) for AI-assisted systematic reviews.
-- Hosting a [Galaxy Server](https://galaxyproject.org/).
-- Running software that gather data from other sources, such as measurement instruments in the field. ...and many more
+- Hosting [Shiny](https://shiny.posit.co/) apps
+- Hosting a custom database with a web interface
+- Hosting a custom chat application to gather data from participants
+- Hosting licensed software necessary for your lab equipment
+- Hosting [ASReview](https://asreview.nl/) for AI-assisted systematic reviews
+- Hosting a [Galaxy Server](https://galaxyproject.org/)
+- Running software that gathers data from other sources, such as measurement instruments in the field ...and many more
 
 ### SURF Research Cloud (Desktop & Server)
 
 [Research Cloud](/tools/researchcloud/index.qmd) is usually used for server applications, but it is also possible to run Windows or Linux Desktops. You need [credits](/tools/researchcloud/cost_access.qmd#a-wallet-with-credits), although for research projects an NWO small compute grant can usually be obtained.
 
-You only use credits when the machines are running, this means Research Cloud is less suitable for hosting web applications that need to run 24/7.
+You only use credits when the machines are running; this means Research Cloud is less suitable for hosting web applications that need to run 24/7.
 
 The idea of Research Cloud is to automatically deploy machines when you need them, this means setting up applications is a more involved process. The upside of this way of working is that there is a growing catalog of premade configurations available. For example, if you want to run a server with [ASReview](https://asreview.nl/) or [Whisper](https://whisperai.com/) you can deploy it with just a few clicks.
 
@@ -160,9 +161,9 @@ Setup and maintenance of applications are your own responsibility. SURF and IT f
 
 ### SciCloud (Desktop & Server)
 
-[SciCloud](/tools/scicloud/index.qmd) is a VU-hosted platform where researchers can host virtual servers for their research applications. Like Research Cloud it is mainly meant for server applications, but it can also be used to run a Desktop (Linux).
+[SciCloud](/tools/scicloud/index.qmd) is a VU-hosted platform where researchers can host virtual servers for their research applications. Like Research Cloud, it is mainly meant for server applications, but it can also be used to run a Desktop (Linux).
 
-Unlike Research Cloud SciCloud uses a [low fixed price per month](/tools/scicloud/cost_access.qmd), which makes it a cheap option to run applications and websites 24/7.
+Unlike Research Cloud, SciCloud uses a [low fixed price per month](/tools/scicloud/cost_access.qmd), which makes it a cheap option to run applications and websites 24/7.
 
 IT for Research will give you a machine with the basic OS installed. You are responsible for installing applications yourself, although ITvO will usually help you to get started.
 
@@ -184,13 +185,13 @@ Hosting hardware in the ITvO's Data Centre has certain requirements and is subje
 
 ## HPC {#hpc}
 
-> Typical workloads: Data Transformation, Data Analysis.
+> Typical tasks: Data Transformation, Data Analysis.
 
 Some tasks require more compute power. Running it on a laptop takes too long and a virtual server needs so much resources the task becomes very expensive. This is when High Performance Computing comes in view.
 
 The basic idea is that you have compute nodes with lots of RAM, CPU and GPU. You submit your job (a bunch of scripts) to a queue along with hints about the amount of processing you need. The HPC cluster runs it once sufficient resources are available. Once it is done, you can collect your results.
 
-The large amount of available compute resources mean it pays to figure out how to run your analysis in parallel tasks.
+The large amount of available compute resources means it pays to figure out how to run your analysis in parallel tasks.
 
 ### ADA (VU)
 
@@ -200,11 +201,11 @@ There are only limited resources available, although you can [buy hardware](/too
 
 ### Snellius (SURF)
 
-[Snellius](/tools/snellius/index.qmd) is the Dutch National supercomputer hosted at SURF. The VU has a contract with SURF so all researchers can [request access to Snellius](/tools/snellius/cost_access.qmd). There are no direct costs for researchersk, but the total amount of SBUs ("credits") is limited. To use your data on Snellius you need to copy it there first. Snellius has more GPU resources available.
+[Snellius](/tools/snellius/index.qmd) is the Dutch National supercomputer hosted at SURF. The VU has a contract with SURF, so all researchers can [request access to Snellius](/tools/snellius/cost_access.qmd). There are no direct costs for researchers, but the total amount of SBUs ("credits") is limited. To use your data on Snellius you need to copy it there first. Snellius has more GPU resources available.
 
 ### LUMI (European)
 
-Especially for large scale GPU project VU researcher can ask for access to the European [LUMI](https://servicedesk.surf.nl/wiki/display/WIKI/LUMI) cluster.
+Especially for large scale GPU projects, VU researchers can ask for access to the European [LUMI](https://servicedesk.surf.nl/wiki/display/WIKI/LUMI) cluster.
 
 The [SURF Wiki](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/102837156/Obtaining+compute+time#Obtainingcomputetime-ComparisonLUMItoSnellius) compares Snellius to LUMI. Researchers wanting access to LUMI have to follow an [application procedure](https://servicedesk.surf.nl/wiki/spaces/WIKI/pages/102837156/Obtaining+compute+time#Obtainingcomputetime-CallsforLUMIcomputetime) .
 
@@ -216,6 +217,6 @@ VU IT has built a [Jupyter Notebook environment](/tools/vucomputehub/index.qmd) 
 
 ### OpenShift {#openshift}
 
-> Typical workloads: Hosting Web Applications, Running Server Applications
+> Typical tasks: Hosting Web Applications, Running Server Applications
 
 OpenShift is an environment specifically created for running containers (see: @tip-containers). It is especially suitable for hosting static web applications.
