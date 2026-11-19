@@ -482,7 +482,7 @@ The procedures outlined below require some background knowledge on working (with
 
 You may also need to download some software to work locally with the {{< var title>}}. At the very least, you should download and install git ([instructions from the Carpentries](https://swcarpentry.github.io/git-novice/#installing-git)).
 
-### Rendering the {{< var title >}} locally
+### Rendering the handbook locally
 
 Sometimes you may want to preview locally the changes you are making to the handbook. For example when you're working on something that requires some tinkering and you don't want to wait for the rendering of the page each time that you're trying something out (this can take a few minutes each time). Rendering locally is possible, but requires you to install software. [You need to install Quarto](https://quarto.org/docs/download/) and assuming a successful installation, you then need to run the following code in your terminal[^1]:
 
@@ -490,7 +490,7 @@ Sometimes you may want to preview locally the changes you are making to the hand
 
 ``` sh
 # Go to the folder where you want to work on the handbook
-cd <folder-path> # do not copy the `<` and `>`
+cd <folder-path> # do not copy the < and >
 # Clone the git repository. This means you're downloading the repository and the edits (commits) history to your computer
 git clone git@github.com:ubvu/open-handbook.git
 # You can also clone a specific branch if you're already working on one
@@ -551,7 +551,7 @@ It happens from time to time that text that occurs in multiple locations needs t
 
 #### Step 1: Cloning or pulling the handbook repository and navigating to the folder
 
-If you don't already have the {{< var title >}} cloned locally (see also [above](#rendering-the-{{< var title >}}-locally)), you should clone the {{< var title >}}:
+If you don't already have the {{< var title >}} cloned locally (see also [above](#rendering-the-handbook-locally)), you should clone the {{< var title >}}:
 
 `git clone git@github.com:ubvu/open-handbook.git`
 
