@@ -133,7 +133,6 @@ Example use-cases:
 - An environment where you can keep desktop applications running overnight for intensive tasks
 
 ### Virtual Servers
-
 > Typical tasks: Data gathering, Hosting Web Applications, Running Server Applications (Data Transformation, Data Analysis).
 
 Used to host web and other server applications. Could also be used for data analysis tasks, but [HPC](#hpc) is generally better for that use-case. Virtual servers can be scaled to your needs, run 24/7 and made accessible for multiple users, even over the internet. This kind of setup is sometimes called a VRE (Virtual Research Environment). The advantage of a virtual over a [physical server](#physical-servers) is that you can easily allocate more resources (storage, CPU, GPU and RAM) to the server.
