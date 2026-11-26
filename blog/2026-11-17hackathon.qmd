@@ -1,0 +1,47 @@
+---
+title: 9th Handbook Hackathon
+date: "2026-11-17"
+author:
+  - Elisa Rodenburg
+  - Jolien Scholten
+  - Peter Vos
+  - Morgan Taylor Peterson
+  - Dania Dukmak
+  - Dimitri Unger
+  - Irene Martorelli
+  - Kirianne Goossen
+  - Diógenes Cruz de Arcelino
+  - Dimitri Unger
+  - Lucy O' Shea
+  - Elena Stroiu
+  - Janna Toebosch
+categories: ["Handbook","Hackathon"]
+---
+
+On November 17, 2026, all authors participated in the ninth hackathon for the Research Support Handbook. For this hackathon, we mostly worked on **Tools documentation**, but completed a few other updates as well.
+
+## Overview of results
+
+With respect to tools, we did the following:
+
+- We updated the OSF information to align it with current developments at OSF, namely the termination of OSF Projects
+- We added termination information for a number of tools (SciStor and SciCloud), more will follow
+- The Qualtrics documentation has been restructured so that it better aligns with documentation about the other tools
+- We updated the list of ADA maintainers
+- We updated some SciSure information
+- We removed information about winscp from the Yoda documentation
+- We're working on a compute guide, this will be published soon
+
+We [checked external links](https://github.com/ubvu/open-handbook/pull/976) and found a number of broken links, which have all been repaired now.
+
+Some other stuff we worked on:
+
+- The Data Horror Stories, which used to be on the VU website, have been transferred to the {{< var title >}}. You can now find them in the footer of the website. If you need an example to showcase the importance of good data management practices, you can use those.
+- We used to have a reference to the GHOST Collective (the group of people working on serious games for Open Science) in the footer, but this information is now included in the [trainings overview](https://rdm.vu.nl/trainings.html#ghost-collective)
+- We updated the policies page with the new VU Strategy (2026-2030) and the VU Research Strategy (2023-2033)
+
+## Hackathon Issues and Pull Requests
+
+- Broken link fixes: [Issue ](), [PR]()
+- Qualtrics updates: [PR 956](https://github.com/ubvu/open-handbook/pull/956)
+
